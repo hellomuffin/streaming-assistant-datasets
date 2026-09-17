@@ -1,0 +1,473 @@
+{
+ "slug": "youcook2",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "http://youcook2.eecs.umich.edu/static/YouCookII/youcookii_annotations_trainval.tar.gz (youcookii_annotations_trainval.json)"
+ ],
+ "access_used": "open download",
+ "note": "An example is one cooking video's YouCook2 entry: temporally ordered procedure segments (whole seconds), each with an imperative English sentence; recipe_type is a numeric recipe id. The dataset does not distribute videos (YouTube only), so no clip.",
+ "examples": [
+  {
+   "title": "m7eR6vTPCxE: recipe 203 (training) — 15 captioned procedure segments",
+   "video_ref": "https://www.youtube.com/watch?v=m7eR6vTPCxE",
+   "duration_s": 276.28,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 31,
+     "te": 44,
+     "lane": "caption",
+     "text": "mince onions and add ground beef to a bowl with them"
+    },
+    {
+     "t": 38,
+     "te": 66,
+     "lane": "caption",
+     "text": "add bread crumbs parmesan cheese soy sauce crushed garlic milk egg"
+    },
+    {
+     "t": 67,
+     "te": 76,
+     "lane": "caption",
+     "text": "season with salt and pepper"
+    },
+    {
+     "t": 77,
+     "te": 89,
+     "lane": "caption",
+     "text": "use hand to mix everything"
+    },
+    {
+     "t": 92,
+     "te": 114,
+     "lane": "caption",
+     "text": "take small portion of the mixture to shape into balls"
+    },
+    {
+     "t": 116,
+     "te": 120,
+     "lane": "caption",
+     "text": "add some oil to a preheated pan"
+    },
+    {
+     "t": 120,
+     "te": 138,
+     "lane": "caption",
+     "text": "put the balls in and cook in batches"
+    },
+    {
+     "t": 145,
+     "te": 148,
+     "lane": "caption",
+     "text": "add some cooking oil to a preheated pan"
+    },
+    {
+     "t": 150,
+     "te": 162,
+     "lane": "caption",
+     "text": "add onions garlic and saute"
+    },
+    {
+     "t": 165,
+     "te": 180,
+     "lane": "caption",
+     "text": "add pasta sauce a little water and season with basil"
+    },
+    {
+     "t": 181,
+     "te": 193,
+     "lane": "caption",
+     "text": "add sugar pepper and the bell peppers"
+    },
+    {
+     "t": 194,
+     "te": 198,
+     "lane": "caption",
+     "text": "stir and cook to a boil"
+    },
+    {
+     "t": 205,
+     "te": 215,
+     "lane": "caption",
+     "text": "add the balls in it and cook with lid covered"
+    },
+    {
+     "t": 219,
+     "te": 224,
+     "lane": "caption",
+     "text": "boil some spaghetti in the water"
+    },
+    {
+     "t": 233,
+     "te": 247,
+     "lane": "caption",
+     "text": "pour the sauce on the cooked pasta and place meat balls on top"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "m7eR6vTPCxE": {
+     "duration": 276.28,
+     "subset": "training",
+     "recipe_type": "203",
+     "annotations": [
+      {
+       "segment": [
+        31,
+        44
+       ],
+       "id": 0,
+       "sentence": "mince onions and add ground beef to a bowl with them"
+      },
+      {
+       "segment": [
+        38,
+        66
+       ],
+       "id": 1,
+       "sentence": "add bread crumbs parmesan cheese soy sauce crushed garlic milk egg"
+      },
+      {
+       "segment": [
+        67,
+        76
+       ],
+       "id": 2,
+       "sentence": "season with salt and pepper"
+      },
+      {
+       "segment": [
+        77,
+        89
+       ],
+       "id": 3,
+       "sentence": "use hand to mix everything"
+      },
+      {
+       "segment": [
+        92,
+        114
+       ],
+       "id": 4,
+       "sentence": "take small portion of the mixture to shape into balls"
+      },
+      {
+       "segment": [
+        116,
+        120
+       ],
+       "id": 5,
+       "sentence": "add some oil to a preheated pan"
+      },
+      {
+       "segment": [
+        120,
+        138
+       ],
+       "id": 6,
+       "sentence": "put the balls in and cook in batches"
+      },
+      {
+       "segment": [
+        145,
+        148
+       ],
+       "id": 7,
+       "sentence": "add some cooking oil to a preheated pan"
+      },
+      {
+       "segment": [
+        150,
+        162
+       ],
+       "id": 8,
+       "sentence": "add onions garlic and saute"
+      },
+      {
+       "segment": [
+        165,
+        180
+       ],
+       "id": 9,
+       "sentence": "add pasta sauce a little water and season with basil"
+      },
+      {
+       "segment": [
+        181,
+        193
+       ],
+       "id": 10,
+       "sentence": "add sugar pepper and the bell peppers"
+      },
+      {
+       "segment": [
+        194,
+        198
+       ],
+       "id": 11,
+       "sentence": "stir and cook to a boil"
+      },
+      {
+       "segment": [
+        205,
+        215
+       ],
+       "id": 12,
+       "sentence": "add the balls in it and cook with lid covered"
+      },
+      {
+       "segment": [
+        219,
+        224
+       ],
+       "id": 13,
+       "sentence": "boil some spaghetti in the water"
+      },
+      {
+       "segment": [
+        233,
+        247
+       ],
+       "id": 14,
+       "sentence": "pour the sauce on the cooked pasta and place meat balls on top"
+      }
+     ],
+     "video_url": "https://www.youtube.com/watch?v=m7eR6vTPCxE"
+    }
+   }
+  },
+  {
+   "title": "OEfzgobszUA: recipe 127 (validation) — 15 captioned procedure segments",
+   "video_ref": "https://www.youtube.com/watch?v=OEfzgobszUA",
+   "duration_s": 228.79,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 14,
+     "te": 21,
+     "lane": "caption",
+     "text": "take 2 peppers and 1 green bell pepper take out the seeds and cut it into half"
+    },
+    {
+     "t": 24,
+     "te": 27,
+     "lane": "caption",
+     "text": "grease the pan and place them upside down at 400 degrees for 30 minutes in the oven"
+    },
+    {
+     "t": 31,
+     "te": 40,
+     "lane": "caption",
+     "text": "when it is done take out and cover them up and let them steam in its heat for 15 mins"
+    },
+    {
+     "t": 42,
+     "te": 49,
+     "lane": "caption",
+     "text": "you can easily peel the skin and get roasted pepper"
+    },
+    {
+     "t": 51,
+     "te": 58,
+     "lane": "caption",
+     "text": "then dice them up"
+    },
+    {
+     "t": 61,
+     "te": 74,
+     "lane": "caption",
+     "text": "take a pan and put some ground beef and add some chopped onions and garlic"
+    },
+    {
+     "t": 76,
+     "te": 83,
+     "lane": "caption",
+     "text": "add 1 can of kidney beans and 1 can of refried beans and mix it well"
+    },
+    {
+     "t": 84,
+     "te": 97,
+     "lane": "caption",
+     "text": "add the roasted pepper"
+    },
+    {
+     "t": 98,
+     "te": 104,
+     "lane": "caption",
+     "text": "add seasoning at last chili powder cumin powder salt and pepper powder and mix it well"
+    },
+    {
+     "t": 108,
+     "te": 124,
+     "lane": "caption",
+     "text": "take tortilla and fill the baked mix into it and add shredded cheese and roll it"
+    },
+    {
+     "t": 125,
+     "te": 141,
+     "lane": "caption",
+     "text": "grease the pan and place all the rolls in it"
+    },
+    {
+     "t": 144,
+     "te": 168,
+     "lane": "caption",
+     "text": "put the leftover filling on top and some sauce and some more cheese"
+    },
+    {
+     "t": 170,
+     "te": 180,
+     "lane": "caption",
+     "text": "keep it in the oven at 400 degrees for 30 mins"
+    },
+    {
+     "t": 181,
+     "te": 190,
+     "lane": "caption",
+     "text": "take out and turn the oven to boil and keep it for 3-5 mins"
+    },
+    {
+     "t": 191,
+     "te": 195,
+     "lane": "caption",
+     "text": "serve the burrito with sour cream"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "OEfzgobszUA": {
+     "duration": 228.79,
+     "subset": "validation",
+     "recipe_type": "127",
+     "annotations": [
+      {
+       "segment": [
+        14,
+        21
+       ],
+       "id": 0,
+       "sentence": "take 2 peppers and 1 green bell pepper take out the seeds and cut it into half"
+      },
+      {
+       "segment": [
+        24,
+        27
+       ],
+       "id": 1,
+       "sentence": "grease the pan and place them upside down at 400 degrees for 30 minutes in the oven"
+      },
+      {
+       "segment": [
+        31,
+        40
+       ],
+       "id": 2,
+       "sentence": "when it is done take out and cover them up and let them steam in its heat for 15 mins"
+      },
+      {
+       "segment": [
+        42,
+        49
+       ],
+       "id": 3,
+       "sentence": "you can easily peel the skin and get roasted pepper"
+      },
+      {
+       "segment": [
+        51,
+        58
+       ],
+       "id": 4,
+       "sentence": "then dice them up"
+      },
+      {
+       "segment": [
+        61,
+        74
+       ],
+       "id": 5,
+       "sentence": "take a pan and put some ground beef and add some chopped onions and garlic"
+      },
+      {
+       "segment": [
+        76,
+        83
+       ],
+       "id": 6,
+       "sentence": "add 1 can of kidney beans and 1 can of refried beans and mix it well"
+      },
+      {
+       "segment": [
+        84,
+        97
+       ],
+       "id": 7,
+       "sentence": "add the roasted pepper"
+      },
+      {
+       "segment": [
+        98,
+        104
+       ],
+       "id": 8,
+       "sentence": "add seasoning at last chili powder cumin powder salt and pepper powder and mix it well"
+      },
+      {
+       "segment": [
+        108,
+        124
+       ],
+       "id": 9,
+       "sentence": "take tortilla and fill the baked mix into it and add shredded cheese and roll it"
+      },
+      {
+       "segment": [
+        125,
+        141
+       ],
+       "id": 10,
+       "sentence": "grease the pan and place all the rolls in it"
+      },
+      {
+       "segment": [
+        144,
+        168
+       ],
+       "id": 11,
+       "sentence": "put the leftover filling on top and some sauce and some more cheese"
+      },
+      {
+       "segment": [
+        170,
+        180
+       ],
+       "id": 12,
+       "sentence": "keep it in the oven at 400 degrees for 30 mins"
+      },
+      {
+       "segment": [
+        181,
+        190
+       ],
+       "id": 13,
+       "sentence": "take out and turn the oven to boil and keep it for 3-5 mins"
+      },
+      {
+       "segment": [
+        191,
+        195
+       ],
+       "id": 14,
+       "sentence": "serve the burrito with sour cream"
+      }
+     ],
+     "video_url": "https://www.youtube.com/watch?v=OEfzgobszUA"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,806 @@
+{
+ "slug": "ht-step",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://github.com/facebookresearch/htstep/blob/main/data/annotations.json",
+  "https://github.com/facebookresearch/htstep/blob/main/data/taxonomy.csv"
+ ],
+ "access_used": "open download",
+ "note": "An example is one HowTo100M video's full HT-Step record: step segments whose id points to a wikiHow step in taxonomy.csv (global_step_index), each marked Full or Partial Match; segments are not in time order and a step can recur. Videos are YouTube-only, so no clip.",
+ "examples": [
+  {
+   "title": "-0SRuOWzudk: Make Potstickers (Guo Tie) — 31 step segments, 6 partial matches",
+   "video_ref": "YouTube -0SRuOWzudk",
+   "duration_s": 156.0,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 20.01,
+     "te": 24.89,
+     "lane": "step",
+     "text": "Mix the vegetables and ground meat together. (Partial Match)"
+    },
+    {
+     "t": 25.06,
+     "te": 36.5,
+     "lane": "step",
+     "text": "Add seasonings. (Full Match)"
+    },
+    {
+     "t": 36.76,
+     "te": 39.19,
+     "lane": "step",
+     "text": "Mix the vegetables and ground meat together. (Partial Match)"
+    },
+    {
+     "t": 41.65,
+     "te": 48.61,
+     "lane": "step",
+     "text": "Keep the wrappers wet. (Full Match)"
+    },
+    {
+     "t": 48.61,
+     "te": 54.91,
+     "lane": "step",
+     "text": "Repeat until there are three or four folds on each side. (Full Match)"
+    },
+    {
+     "t": 54.91,
+     "te": 60.04,
+     "lane": "step",
+     "text": "Hold a potsticker wrapper on the palm of your non-dominant hand. (Full Match)"
+    },
+    {
+     "t": 60.04,
+     "te": 65.28,
+     "lane": "step",
+     "text": "Place the filling in the potsticker wrapper. (Full Match)"
+    },
+    {
+     "t": 65.51,
+     "te": 73.5,
+     "lane": "step",
+     "text": "Fold the wrapper loosely around the filling. (Full Match)"
+    },
+    {
+     "t": 75.58,
+     "te": 77.37,
+     "lane": "step",
+     "text": "Keep the wrappers wet. (Full Match)"
+    },
+    {
+     "t": 77.37,
+     "te": 77.7,
+     "lane": "step",
+     "text": "Repeat until there are three or four folds on each side. (Full Match)"
+    },
+    {
+     "t": 77.73,
+     "te": 78.04,
+     "lane": "step",
+     "text": "Place the filling in the potsticker wrapper. (Full Match)"
+    },
+    {
+     "t": 78.07,
+     "te": 78.37,
+     "lane": "step",
+     "text": "Fold the wrapper loosely around the filling. (Full Match)"
+    },
+    {
+     "t": 78.39,
+     "te": 78.52,
+     "lane": "step",
+     "text": "Keep the wrappers wet. (Full Match)"
+    },
+    {
+     "t": 78.52,
+     "te": 78.75,
+     "lane": "step",
+     "text": "Repeat until there are three or four folds on each side. (Full Match)"
+    },
+    {
+     "t": 78.9,
+     "te": 79.3,
+     "lane": "step",
+     "text": "Place the filling in the potsticker wrapper. (Full Match)"
+    },
+    {
+     "t": 79.3,
+     "te": 79.54,
+     "lane": "step",
+     "text": "Fold the wrapper loosely around the filling. (Full Match)"
+    },
+    {
+     "t": 79.54,
+     "te": 79.7,
+     "lane": "step",
+     "text": "Keep the wrappers wet. (Full Match)"
+    },
+    {
+     "t": 79.71,
+     "te": 79.91,
+     "lane": "step",
+     "text": "Repeat until there are three or four folds on each side. (Full Match)"
+    },
+    {
+     "t": 80.03,
+     "te": 80.28,
+     "lane": "step",
+     "text": "Place the filling in the potsticker wrapper. (Full Match)"
+    },
+    {
+     "t": 80.28,
+     "te": 80.41,
+     "lane": "step",
+     "text": "Fold the wrapper loosely around the filling. (Full Match)"
+    },
+    {
+     "t": 80.41,
+     "te": 80.71,
+     "lane": "step",
+     "text": "Keep the wrappers wet. (Full Match)"
+    },
+    {
+     "t": 80.71,
+     "te": 80.95,
+     "lane": "step",
+     "text": "Roll each piece of dough into a circle. (Full Match)"
+    },
+    {
+     "t": 80.98,
+     "te": 81.28,
+     "lane": "step",
+     "text": "Place the filling in the potsticker wrapper. (Full Match)"
+    },
+    {
+     "t": 81.56,
+     "te": 84.87,
+     "lane": "step",
+     "text": "Sprinkle each circle with flour. (Partial Match)"
+    },
+    {
+     "t": 87.3,
+     "te": 88.3,
+     "lane": "step",
+     "text": "Heat a pan of oil. (Full Match)"
+    },
+    {
+     "t": 88.49,
+     "te": 101.03,
+     "lane": "step",
+     "text": "Add the potstickers to the hot oil. (Full Match)"
+    },
+    {
+     "t": 106.8,
+     "te": 109.44,
+     "lane": "step",
+     "text": "Reduce heat and cover the pan. (Partial Match)"
+    },
+    {
+     "t": 109.44,
+     "te": 120.25,
+     "lane": "step",
+     "text": "Cover and cook for a few minutes more. (Partial Match)"
+    },
+    {
+     "t": 120.25,
+     "te": 122.1,
+     "lane": "step",
+     "text": "Add a small amount of water to the pan. (Full Match)"
+    },
+    {
+     "t": 122.17,
+     "te": 141.78,
+     "lane": "step",
+     "text": "Cover and cook for a few minutes more. (Full Match)"
+    },
+    {
+     "t": 141.81,
+     "te": 155.78,
+     "lane": "step",
+     "text": "Serve immediately with dipping sauce. (Partial Match)"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "annotations.json": {
+     "-0SRuOWzudk": {
+      "subset": "train",
+      "duration": 156.0,
+      "activity": "Make Potstickers (Guo Tie)",
+      "variation": "none",
+      "annotations": [
+       {
+        "segment": [
+         20.014179229736328,
+         24.891590118408203
+        ],
+        "partial": "Partial Match",
+        "id": 563
+       },
+       {
+        "segment": [
+         36.76464080810547,
+         39.18743896484375
+        ],
+        "partial": "Partial Match",
+        "id": 563
+       },
+       {
+        "segment": [
+         41.65182876586914,
+         48.61085891723633
+        ],
+        "partial": "Full Match",
+        "id": 559
+       },
+       {
+        "segment": [
+         48.61085891723633,
+         54.90985107421875
+        ],
+        "partial": "Full Match",
+        "id": 569
+       },
+       {
+        "segment": [
+         54.90985107421875,
+         60.04254913330078
+        ],
+        "partial": "Full Match",
+        "id": 565
+       },
+       {
+        "segment": [
+         60.04254913330078,
+         65.27810668945312
+        ],
+        "partial": "Full Match",
+        "id": 566
+       },
+       {
+        "segment": [
+         25.05978012084961,
+         36.4964485168457
+        ],
+        "partial": "Full Match",
+        "id": 564
+       },
+       {
+        "segment": [
+         65.50884246826172,
+         73.49746704101562
+        ],
+        "partial": "Full Match",
+        "id": 567
+       },
+       {
+        "segment": [
+         87.2972412109375,
+         88.29786682128906
+        ],
+        "partial": "Full Match",
+        "id": 570
+       },
+       {
+        "segment": [
+         88.4903335571289,
+         101.02947235107422
+        ],
+        "partial": "Full Match",
+        "id": 571
+       },
+       {
+        "segment": [
+         106.79837799072266,
+         109.43614196777344
+        ],
+        "partial": "Partial Match",
+        "id": 572
+       },
+       {
+        "segment": [
+         109.43614196777344,
+         120.25328826904297
+        ],
+        "partial": "Partial Match",
+        "id": 574
+       },
+       {
+        "segment": [
+         75.5797119140625,
+         77.36575317382812
+        ],
+        "partial": "Full Match",
+        "id": 559
+       },
+       {
+        "segment": [
+         77.36575317382812,
+         77.70213317871094
+        ],
+        "partial": "Full Match",
+        "id": 569
+       },
+       {
+        "segment": [
+         77.7283935546875,
+         78.03894805908203
+        ],
+        "partial": "Full Match",
+        "id": 566
+       },
+       {
+        "segment": [
+         78.06519317626953,
+         78.36528778076172
+        ],
+        "partial": "Full Match",
+        "id": 567
+       },
+       {
+        "segment": [
+         78.38958740234375,
+         78.52001953125
+        ],
+        "partial": "Full Match",
+        "id": 559
+       },
+       {
+        "segment": [
+         78.52001953125,
+         78.7470703125
+        ],
+        "partial": "Full Match",
+        "id": 569
+       },
+       {
+        "segment": [
+         78.89833068847656,
+         79.2957534790039
+        ],
+        "partial": "Full Match",
+        "id": 566
+       },
+       {
+        "segment": [
+         79.2957534790039,
+         79.54060363769531
+        ],
+        "partial": "Full Match",
+        "id": 567
+       },
+       {
+        "segment": [
+         79.54060363769531,
+         79.69612121582031
+        ],
+        "partial": "Full Match",
+        "id": 559
+       },
+       {
+        "segment": [
+         79.70842742919922,
+         79.90804290771484
+        ],
+        "partial": "Full Match",
+        "id": 569
+       },
+       {
+        "segment": [
+         80.02506256103516,
+         80.27964782714844
+        ],
+        "partial": "Full Match",
+        "id": 566
+       },
+       {
+        "segment": [
+         80.27964782714844,
+         80.4131088256836
+        ],
+        "partial": "Full Match",
+        "id": 567
+       },
+       {
+        "segment": [
+         80.41310119628906,
+         80.71338653564453
+        ],
+        "partial": "Full Match",
+        "id": 559
+       },
+       {
+        "segment": [
+         80.71338653564453,
+         80.94695281982422
+        ],
+        "partial": "Full Match",
+        "id": 557
+       },
+       {
+        "segment": [
+         80.98030853271484,
+         81.28060150146484
+        ],
+        "partial": "Full Match",
+        "id": 566
+       },
+       {
+        "segment": [
+         81.56346893310547,
+         84.86662292480469
+        ],
+        "partial": "Partial Match",
+        "id": 558
+       },
+       {
+        "segment": [
+         120.25328826904297,
+         122.10334014892578
+        ],
+        "partial": "Full Match",
+        "id": 573
+       },
+       {
+        "segment": [
+         122.1700668334961,
+         141.78115844726562
+        ],
+        "partial": "Full Match",
+        "id": 574
+       },
+       {
+        "segment": [
+         141.81451416015625,
+         155.78268432617188
+        ],
+        "partial": "Partial Match",
+        "id": 575
+       }
+      ]
+     }
+    },
+    "taxonomy.csv rows (steps referenced by id)": [
+     {
+      "global_step_index": "557",
+      "activity": "Make Potstickers (Guo Tie)",
+      "step_index": "6",
+      "variation": "none",
+      "variation_index": "7",
+      "headline": "Roll each piece of dough into a circle.",
+      "paragraph": "Sprinkle flour over a flat, clean counter or cutting board to prevent the dough from sticking. Use a rolling pin to flatten each piece of dough over this surface, creating circles about 3 inches (7.5 cm) across.Use smaller circles if the dough breaks apart or looks translucent, as the dumplings may fall apart if they are rolled too thin.   You can speed up the rolling process by using the heel of your palm to flatten each piece of dough into a roughly circular shape before you roll it out more thoroughly. Filling the potstickers may be easier if you keep the center of the circle thick and the outside edges thin."
+     },
+     {
+      "global_step_index": "558",
+      "activity": "Make Potstickers (Guo Tie)",
+      "step_index": "7",
+      "variation": "none",
+      "variation_index": "8",
+      "headline": "Sprinkle each circle with flour.",
+      "paragraph": "After each circle is finished, sprinkle both sides generously with flour to prevent sticking, and add it to the stack of finished dough circles. Your dumpling wrappers are now complete."
+     },
+     {
+      "global_step_index": "559",
+      "activity": "Make Potstickers (Guo Tie)",
+      "step_index": "8",
+      "variation": "none",
+      "variation_index": "9",
+      "headline": "Keep the wrappers wet.",
+      "paragraph": "Cover wrappers with a damp paper towel to keep them moist as you work. Once you have made the wrappers, it is best to fill them immediately before they dry out. Store unused wrappers in the fridge if you will use them within a few days, or freeze them and use any time in the next few months."
+     },
+     {
+      "global_step_index": "563",
+      "activity": "Make Potstickers (Guo Tie)",
+      "step_index": "12",
+      "variation": "none",
+      "variation_index": "13",
+      "headline": "Mix the vegetables and ground meat together.",
+      "paragraph": "Mix these vegetables in a large bowl containing ground or finely minced meat. In different areas of Asia, ground pork, beef, or shrimp are all commonly used, or a mixture of these.   Wash your hands in warm, soapy water after handling raw meat to reduce the risk of exposure to harmful bacteria. Clean any surfaces or utensils that came into contact with the meat in hot, soapy water once you are done using them."
+     },
+     {
+      "global_step_index": "564",
+      "activity": "Make Potstickers (Guo Tie)",
+      "step_index": "13",
+      "variation": "none",
+      "variation_index": "14",
+      "headline": "Add seasonings.",
+      "paragraph": "Mix in 2 tsp (10 mL) soy sauce, 2 tsp (20 mL) sesame oil or Chinese cooking wine, and 1/2 tsp (2.5 mL) pepper. There are many variations on this recipe, and you may decide to replace some seasonings or add your own. Other common options include 1/4 cup (60 mL) chicken stock or chicken broth, a dash of chili powder, or a dash of Chinese five spice powder.If you'd like to adjust the seasonings before you make the potstickers, take a small spoonful of filling and fry it in oil until it is browned through. Taste the filling and add more seasoning if necessary."
+     },
+     {
+      "global_step_index": "565",
+      "activity": "Make Potstickers (Guo Tie)",
+      "step_index": "14",
+      "variation": "none",
+      "variation_index": "15",
+      "headline": "Hold a potsticker wrapper on the palm of your non-dominant hand.",
+      "paragraph": "Take one of your circular potsticker wrappings and place it on the palm of the hand you use least."
+     },
+     {
+      "global_step_index": "566",
+      "activity": "Make Potstickers (Guo Tie)",
+      "step_index": "15",
+      "variation": "none",
+      "variation_index": "16",
+      "headline": "Place the filling in the potsticker wrapper.",
+      "paragraph": "Take approximately 1/2–1 tablespoon (7–15 mL) of filling using a spoon or chopsticks and place in the center of the potsticker wrapper. If the dough is thin or the circles of dough are small, use less filling."
+     },
+     {
+      "global_step_index": "567",
+      "activity": "Make Potstickers (Guo Tie)",
+      "step_index": "16",
+      "variation": "none",
+      "variation_index": "17",
+      "headline": "Fold the wrapper loosely around the filling.",
+      "paragraph": "Fold the potsticker in half to make a half-moon shape, but do not press the edges completely together. Only press the center of the edges together, so the corners of the dumpling are still unattached.    Note: If you are using storebought dumpling wrappers, use wet fingers to dampen the edges until they are soft enough to press together."
+     },
+     {
+      "global_step_index": "569",
+      "activity": "Make Potstickers (Guo Tie)",
+      "step_index": "18",
+      "variation": "none",
+      "variation_index": "19",
+      "headline": "Repeat until there are three or four folds on each side.",
+      "paragraph": "Using the same technique, grasp one layer of dough at the corner and fold it over toward the center edge. Press together with the opposite layer of the potsticker. Repeat this until there are three or four folds on each potsticker, and the potsticker is completely closed."
+     },
+     {
+      "global_step_index": "570",
+      "activity": "Make Potstickers (Guo Tie)",
+      "step_index": "19",
+      "variation": "none",
+      "variation_index": "20",
+      "headline": "Heat a pan of oil.",
+      "paragraph": "Add cooking oil to a wok, flat skillet, or frying pan, just enough to cover the bottom of the pan in a thin layer. Heat over medium heat until the oil begins to shimmer, or when a small piece of vegetable or filling sizzles when placed in the oil.   Use a vegetable oil with a high smoking point, such as canola oil or peanut oil."
+     },
+     {
+      "global_step_index": "571",
+      "activity": "Make Potstickers (Guo Tie)",
+      "step_index": "20",
+      "variation": "none",
+      "variation_index": "21",
+      "headline": "Add the potstickers to the hot oil.",
+      "paragraph": "Carefully drop the potstickers into the pan from a short distance above the oil. Arrange them with a heat-safe utensil so the dumplings are close together but do not touch each other.You will likely need to cook your potstickers in several batches. Do not pile potstickers on top of each other in the pan, or they may not cook properly."
+     },
+     {
+      "global_step_index": "572",
+      "activity": "Make Potstickers (Guo Tie)",
+      "step_index": "21",
+      "variation": "none",
+      "variation_index": "22",
+      "headline": "Reduce heat and cover the pan.",
+      "paragraph": "Cover the pan, reduce to low heat, and fry for a few minutes until the bottom of the potstickers are crisp and golden-brown. Depending on the temperature of the pan, this could take anywhere from two to seven minutes.You may lift the lid to check on the potstickers' progress.   Remove from heat immediately if you smell burning. Use a heat-safe utensil to unstick the potstickers from the pan, and continue after one or two minutes."
+     },
+     {
+      "global_step_index": "573",
+      "activity": "Make Potstickers (Guo Tie)",
+      "step_index": "22",
+      "variation": "none",
+      "variation_index": "23",
+      "headline": "Add a small amount of water to the pan.",
+      "paragraph": "Once one side of the potstickers are brown, lift the lid and pour 1–3 tablespoons (15–45 mL) water onto the pan, just enough to cover the base of the pan with a shallow layer.   Pour the water while rapidly moving in a circular motion around the edge of the pan. This distributes the water evenly and prevents one part of the pan from cooling down too quickly. This also reduces splatter from hot oil and water coming into contact."
+     },
+     {
+      "global_step_index": "574",
+      "activity": "Make Potstickers (Guo Tie)",
+      "step_index": "23",
+      "variation": "none",
+      "variation_index": "24",
+      "headline": "Cover and cook for a few minutes more.",
+      "paragraph": "Cover the pan again and cook on moderate or low heat for 4-5 minutes. Add more water if it boils away before the potstickers are done cooking. Note that you do not need to flip the potstickers at any point in this process; it is intentional that they are only crisp on one side.   Remove a potsticker and cut it open to check that it is done. The filling inside should be browned and fully cooked."
+     },
+     {
+      "global_step_index": "575",
+      "activity": "Make Potstickers (Guo Tie)",
+      "step_index": "24",
+      "variation": "none",
+      "variation_index": "25",
+      "headline": "Serve immediately with dipping sauce.",
+      "paragraph": "Remove the potstickers from the pan and cook additional batches if necessary. Once all the potstickers are cooked, serve them with a sauce of your choice:   Any dark vinegar can be used alone or mixed with an equal amount of soy sauce and a dash of sesame oil. Mix vinegar with sherry or dry wine and sweet soy sauce for a sweeter dipping sauce. Black pepper and sliced ginger add a sophisticated flavor, and can be provided with or without a dipping sauce."
+     }
+    ]
+   }
+  },
+  {
+   "title": "--PJxhY3sNw: Make a Ham Panini on a George Foreman Grill — 8 step segments, 5 partial matches",
+   "video_ref": "YouTube --PJxhY3sNw",
+   "duration_s": 749.0,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 101.86,
+     "te": 115.6,
+     "lane": "step",
+     "text": "Get your grill ready and let it heat up as you make your sandwich. (Full Match)"
+    },
+    {
+     "t": 198.06,
+     "te": 206.14,
+     "lane": "step",
+     "text": "Mix butter and mustard together until you have a smooth, spreadable mixture. (Partial Match)"
+    },
+    {
+     "t": 242.52,
+     "te": 270.0,
+     "lane": "step",
+     "text": "Spread your butter-mustard mixture over one side of each slice of bread and sprinkle on your poppy seeds. (Partial Match)"
+    },
+    {
+     "t": 438.96,
+     "te": 472.91,
+     "lane": "step",
+     "text": "Add as much ham as your heart desires! (Full Match)"
+    },
+    {
+     "t": 474.53,
+     "te": 487.46,
+     "lane": "step",
+     "text": "Close up your sandwich. (Full Match)"
+    },
+    {
+     "t": 488.27,
+     "te": 518.18,
+     "lane": "step",
+     "text": "Carefully place your sandwich into the grill, as it should be heated, and allow it to cook for at least three minutes. (Partial Match)"
+    },
+    {
+     "t": 527.07,
+     "te": 560.22,
+     "lane": "step",
+     "text": "Remove your sandwich, slice and enjoy! (Partial Match)"
+    },
+    {
+     "t": 694.41,
+     "te": 736.45,
+     "lane": "step",
+     "text": "Remove your sandwich, slice and enjoy! (Partial Match)"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "annotations.json": {
+     "--PJxhY3sNw": {
+      "subset": "train",
+      "duration": 749.0,
+      "activity": "Make a Ham Panini on a George Foreman Grill",
+      "variation": "none",
+      "annotations": [
+       {
+        "segment": [
+         101.85749816894531,
+         115.60018157958984
+        ],
+        "partial": "Full Match",
+        "id": 1328
+       },
+       {
+        "segment": [
+         198.05624389648438,
+         206.1401824951172
+        ],
+        "partial": "Partial Match",
+        "id": 1329
+       },
+       {
+        "segment": [
+         242.51785278320312,
+         270.0032043457031
+        ],
+        "partial": "Partial Match",
+        "id": 1330
+       },
+       {
+        "segment": [
+         438.9573059082031,
+         472.9098205566406
+        ],
+        "partial": "Full Match",
+        "id": 1331
+       },
+       {
+        "segment": [
+         474.526611328125,
+         487.46087646484375
+        ],
+        "partial": "Full Match",
+        "id": 1332
+       },
+       {
+        "segment": [
+         488.269287109375,
+         518.1798095703125
+        ],
+        "partial": "Partial Match",
+        "id": 1334
+       },
+       {
+        "segment": [
+         527.0721435546875,
+         560.2162475585938
+        ],
+        "partial": "Partial Match",
+        "id": 1335
+       },
+       {
+        "segment": [
+         694.4094848632812,
+         736.4458618164062
+        ],
+        "partial": "Partial Match",
+        "id": 1335
+       }
+      ]
+     }
+    },
+    "taxonomy.csv rows (steps referenced by id)": [
+     {
+      "global_step_index": "1328",
+      "activity": "Make a Ham Panini on a George Foreman Grill",
+      "step_index": "0",
+      "variation": "none",
+      "variation_index": "1",
+      "headline": "Get your grill ready and let it heat up as you make your sandwich.",
+      "paragraph": ";"
+     },
+     {
+      "global_step_index": "1329",
+      "activity": "Make a Ham Panini on a George Foreman Grill",
+      "step_index": "1",
+      "variation": "none",
+      "variation_index": "2",
+      "headline": "Mix butter and mustard together until you have a smooth, spreadable mixture.",
+      "paragraph": "Use more or less of each depending on your tastes (if you want a stronger mustard flavor, use more mustard or less butter). You should not need more than a half a tablespoon of each for one sandwich."
+     },
+     {
+      "global_step_index": "1330",
+      "activity": "Make a Ham Panini on a George Foreman Grill",
+      "step_index": "2",
+      "variation": "none",
+      "variation_index": "3",
+      "headline": "Spread your butter-mustard mixture over one side of each slice of bread and sprinkle on your poppy seeds.",
+      "paragraph": ""
+     },
+     {
+      "global_step_index": "1331",
+      "activity": "Make a Ham Panini on a George Foreman Grill",
+      "step_index": "3",
+      "variation": "none",
+      "variation_index": "4",
+      "headline": "Add as much ham as your heart desires!",
+      "paragraph": "If you are using cheese, layer on a slice of ham, cheese, ham and so on to get as much of its melted goodness as possible."
+     },
+     {
+      "global_step_index": "1332",
+      "activity": "Make a Ham Panini on a George Foreman Grill",
+      "step_index": "4",
+      "variation": "none",
+      "variation_index": "5",
+      "headline": "Close up your sandwich.",
+      "paragraph": ""
+     },
+     {
+      "global_step_index": "1334",
+      "activity": "Make a Ham Panini on a George Foreman Grill",
+      "step_index": "6",
+      "variation": "none",
+      "variation_index": "7",
+      "headline": "Carefully place your sandwich into the grill, as it should be heated, and allow it to cook for at least three minutes.",
+      "paragraph": "If you desire, you can rotate your sandwich to create a criss-cross of grill marks."
+     },
+     {
+      "global_step_index": "1335",
+      "activity": "Make a Ham Panini on a George Foreman Grill",
+      "step_index": "7",
+      "variation": "none",
+      "variation_index": "8",
+      "headline": "Remove your sandwich, slice and enjoy!",
+      "paragraph": ""
+     }
+    ]
+   }
+  }
+ ]
+}

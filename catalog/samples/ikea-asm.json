@@ -1,0 +1,607 @@
+{
+ "slug": "ikea-asm",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "action_annotations.zip (Google Drive id 1SwBNLViktSpk99jhh3sMXVGTMVr6tpju) → gt_segments.json",
+  "ikea_asm_dataset_RGB_top.zip (Google Drive id 1CFOH-W-6N50AVA_NqHnm06GUsfpcka0L, 67.7 GB; two members range-read): ANU_ikea_dataset_video/Kallax_Shelf_Drawer/0001_black_table_02_01_2019_08_16_14_00/dev3/images/scan_video.avi, ANU_ikea_dataset_video/Lack_Side_Table/0007_black_table_02_01_2019_08_16_13_18/dev3/images/scan_video.avi"
+ ],
+ "access_used": "open download",
+ "note": "One example is one assembly's full atomic-action record from gt_segments.json: labelled [startFrame, endFrame] segments, with 'NA' (shown as the silence lane) for no action. Times convert frames at the 25 fps stored in the .avi header (the paper says about 24 fps); the clip is the dev3 camera from the 'RGB top' archive, downscaled from 1920x1080.",
+ "examples": [
+  {
+   "title": "Kallax drawer 0001 (table): 23 segments, 13 actions + NA gaps",
+   "video_ref": "ANU_ikea_dataset_video/Kallax_Shelf_Drawer/0001_black_table_02_01_2019_08_16_14_00/dev3/images/scan_video.avi",
+   "duration_s": 39.72,
+   "clip": "samples/media/ikea-asm_1.mp4",
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 2.44,
+     "lane": "silence",
+     "text": "NA"
+    },
+    {
+     "t": 2.44,
+     "te": 3.52,
+     "lane": "action",
+     "text": "pick up side panel"
+    },
+    {
+     "t": 3.52,
+     "te": 4.64,
+     "lane": "action",
+     "text": "align side panel holes with front panel dowels"
+    },
+    {
+     "t": 4.64,
+     "te": 5.4,
+     "lane": "action",
+     "text": "attach drawer side panel"
+    },
+    {
+     "t": 5.4,
+     "te": 5.92,
+     "lane": "silence",
+     "text": "NA"
+    },
+    {
+     "t": 5.92,
+     "te": 7.68,
+     "lane": "action",
+     "text": "pick up side panel"
+    },
+    {
+     "t": 7.68,
+     "te": 9.28,
+     "lane": "action",
+     "text": "align side panel holes with front panel dowels"
+    },
+    {
+     "t": 9.28,
+     "te": 9.88,
+     "lane": "action",
+     "text": "attach drawer side panel"
+    },
+    {
+     "t": 9.88,
+     "te": 11.12,
+     "lane": "silence",
+     "text": "NA"
+    },
+    {
+     "t": 11.12,
+     "te": 12.92,
+     "lane": "action",
+     "text": "pick up bottom panel"
+    },
+    {
+     "t": 12.92,
+     "te": 18.28,
+     "lane": "action",
+     "text": "slide bottom of drawer"
+    },
+    {
+     "t": 18.28,
+     "te": 19.44,
+     "lane": "silence",
+     "text": "NA"
+    },
+    {
+     "t": 19.44,
+     "te": 20.4,
+     "lane": "action",
+     "text": "pick up back panel"
+    },
+    {
+     "t": 20.4,
+     "te": 28.2,
+     "lane": "action",
+     "text": "attach drawer back panel"
+    },
+    {
+     "t": 28.2,
+     "te": 28.96,
+     "lane": "silence",
+     "text": "NA"
+    },
+    {
+     "t": 28.96,
+     "te": 29.64,
+     "lane": "action",
+     "text": "pick up pin"
+    },
+    {
+     "t": 29.64,
+     "te": 30.44,
+     "lane": "action",
+     "text": "insert drawer pin"
+    },
+    {
+     "t": 30.44,
+     "te": 33.64,
+     "lane": "silence",
+     "text": "NA"
+    },
+    {
+     "t": 33.64,
+     "te": 34.44,
+     "lane": "action",
+     "text": "pick up pin"
+    },
+    {
+     "t": 34.44,
+     "te": 35.56,
+     "lane": "action",
+     "text": "insert drawer pin"
+    },
+    {
+     "t": 35.56,
+     "te": 36.28,
+     "lane": "silence",
+     "text": "NA"
+    },
+    {
+     "t": 36.28,
+     "te": 37.36,
+     "lane": "action",
+     "text": "position the drawer right side up"
+    },
+    {
+     "t": 37.36,
+     "te": 39.72,
+     "lane": "silence",
+     "text": "NA"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "Kallax_Shelf_Drawer/0001_black_table_02_01_2019_08_16_14_00": {
+     "subset": "training",
+     "annotation": [
+      {
+       "label": "NA",
+       "segment": [
+        0,
+        60
+       ]
+      },
+      {
+       "label": "pick up side panel",
+       "segment": [
+        61,
+        87
+       ]
+      },
+      {
+       "label": "align side panel holes with front panel dowels",
+       "segment": [
+        88,
+        115
+       ]
+      },
+      {
+       "label": "attach drawer side panel",
+       "segment": [
+        116,
+        134
+       ]
+      },
+      {
+       "label": "NA",
+       "segment": [
+        135,
+        147
+       ]
+      },
+      {
+       "label": "pick up side panel",
+       "segment": [
+        148,
+        191
+       ]
+      },
+      {
+       "label": "align side panel holes with front panel dowels",
+       "segment": [
+        192,
+        231
+       ]
+      },
+      {
+       "label": "attach drawer side panel",
+       "segment": [
+        232,
+        246
+       ]
+      },
+      {
+       "label": "NA",
+       "segment": [
+        247,
+        277
+       ]
+      },
+      {
+       "label": "pick up bottom panel",
+       "segment": [
+        278,
+        322
+       ]
+      },
+      {
+       "label": "slide bottom of drawer",
+       "segment": [
+        323,
+        456
+       ]
+      },
+      {
+       "label": "NA",
+       "segment": [
+        457,
+        485
+       ]
+      },
+      {
+       "label": "pick up back panel",
+       "segment": [
+        486,
+        509
+       ]
+      },
+      {
+       "label": "attach drawer back panel",
+       "segment": [
+        510,
+        704
+       ]
+      },
+      {
+       "label": "NA",
+       "segment": [
+        705,
+        723
+       ]
+      },
+      {
+       "label": "pick up pin",
+       "segment": [
+        724,
+        740
+       ]
+      },
+      {
+       "label": "insert drawer pin",
+       "segment": [
+        741,
+        760
+       ]
+      },
+      {
+       "label": "NA",
+       "segment": [
+        761,
+        840
+       ]
+      },
+      {
+       "label": "pick up pin",
+       "segment": [
+        841,
+        860
+       ]
+      },
+      {
+       "label": "insert drawer pin",
+       "segment": [
+        861,
+        888
+       ]
+      },
+      {
+       "label": "NA",
+       "segment": [
+        889,
+        906
+       ]
+      },
+      {
+       "label": "position the drawer right side up",
+       "segment": [
+        907,
+        933
+       ]
+      },
+      {
+       "label": "NA",
+       "segment": [
+        934,
+        992
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "Lack side table 0007 (table): four legs screwed in, then flip — 20 segments",
+   "video_ref": "ANU_ikea_dataset_video/Lack_Side_Table/0007_black_table_02_01_2019_08_16_13_18/dev3/images/scan_video.avi",
+   "duration_s": 78.2,
+   "clip": "samples/media/ikea-asm_2.mp4",
+   "clip_offset_s": 56,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 3.04,
+     "lane": "silence",
+     "text": "NA"
+    },
+    {
+     "t": 3.04,
+     "te": 4.8,
+     "lane": "action",
+     "text": "pick up leg"
+    },
+    {
+     "t": 4.8,
+     "te": 6.0,
+     "lane": "action",
+     "text": "align leg screw with table thread"
+    },
+    {
+     "t": 6.0,
+     "te": 17.64,
+     "lane": "action",
+     "text": "spin leg"
+    },
+    {
+     "t": 17.64,
+     "te": 17.84,
+     "lane": "silence",
+     "text": "NA"
+    },
+    {
+     "t": 17.84,
+     "te": 21.12,
+     "lane": "action",
+     "text": "rotate table"
+    },
+    {
+     "t": 21.12,
+     "te": 23.52,
+     "lane": "action",
+     "text": "pick up leg"
+    },
+    {
+     "t": 23.52,
+     "te": 24.32,
+     "lane": "action",
+     "text": "align leg screw with table thread"
+    },
+    {
+     "t": 24.32,
+     "te": 38.08,
+     "lane": "action",
+     "text": "spin leg"
+    },
+    {
+     "t": 38.08,
+     "te": 41.2,
+     "lane": "action",
+     "text": "rotate table"
+    },
+    {
+     "t": 41.2,
+     "te": 43.44,
+     "lane": "action",
+     "text": "pick up leg"
+    },
+    {
+     "t": 43.44,
+     "te": 44.08,
+     "lane": "action",
+     "text": "align leg screw with table thread"
+    },
+    {
+     "t": 44.08,
+     "te": 53.72,
+     "lane": "action",
+     "text": "spin leg"
+    },
+    {
+     "t": 53.72,
+     "te": 55.64,
+     "lane": "action",
+     "text": "rotate table"
+    },
+    {
+     "t": 55.64,
+     "te": 56.44,
+     "lane": "silence",
+     "text": "NA"
+    },
+    {
+     "t": 56.44,
+     "te": 58.04,
+     "lane": "action",
+     "text": "pick up leg"
+    },
+    {
+     "t": 58.04,
+     "te": 58.84,
+     "lane": "action",
+     "text": "align leg screw with table thread"
+    },
+    {
+     "t": 58.84,
+     "te": 71.72,
+     "lane": "action",
+     "text": "spin leg"
+    },
+    {
+     "t": 71.72,
+     "te": 76.12,
+     "lane": "action",
+     "text": "flip table"
+    },
+    {
+     "t": 76.12,
+     "te": 78.2,
+     "lane": "silence",
+     "text": "NA"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "Lack_Side_Table/0007_black_table_02_01_2019_08_16_13_18": {
+     "subset": "training",
+     "annotation": [
+      {
+       "label": "NA",
+       "segment": [
+        0,
+        75
+       ]
+      },
+      {
+       "label": "pick up leg",
+       "segment": [
+        76,
+        119
+       ]
+      },
+      {
+       "label": "align leg screw with table thread",
+       "segment": [
+        120,
+        149
+       ]
+      },
+      {
+       "label": "spin leg",
+       "segment": [
+        150,
+        440
+       ]
+      },
+      {
+       "label": "NA",
+       "segment": [
+        441,
+        445
+       ]
+      },
+      {
+       "label": "rotate table",
+       "segment": [
+        446,
+        527
+       ]
+      },
+      {
+       "label": "pick up leg",
+       "segment": [
+        528,
+        587
+       ]
+      },
+      {
+       "label": "align leg screw with table thread",
+       "segment": [
+        588,
+        607
+       ]
+      },
+      {
+       "label": "spin leg",
+       "segment": [
+        608,
+        951
+       ]
+      },
+      {
+       "label": "rotate table",
+       "segment": [
+        952,
+        1029
+       ]
+      },
+      {
+       "label": "pick up leg",
+       "segment": [
+        1030,
+        1085
+       ]
+      },
+      {
+       "label": "align leg screw with table thread",
+       "segment": [
+        1086,
+        1101
+       ]
+      },
+      {
+       "label": "spin leg",
+       "segment": [
+        1102,
+        1342
+       ]
+      },
+      {
+       "label": "rotate table",
+       "segment": [
+        1343,
+        1390
+       ]
+      },
+      {
+       "label": "NA",
+       "segment": [
+        1391,
+        1410
+       ]
+      },
+      {
+       "label": "pick up leg",
+       "segment": [
+        1411,
+        1450
+       ]
+      },
+      {
+       "label": "align leg screw with table thread",
+       "segment": [
+        1451,
+        1470
+       ]
+      },
+      {
+       "label": "spin leg",
+       "segment": [
+        1471,
+        1792
+       ]
+      },
+      {
+       "label": "flip table",
+       "segment": [
+        1793,
+        1902
+       ]
+      },
+      {
+       "label": "NA",
+       "segment": [
+        1903,
+        1954
+       ]
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "slug": "ego-exo4d",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://docs.ego-exo4d-data.org/annotations/expert_commentary/ (Sample JSON of expert_commentary_<split>.json)",
+  "https://docs.ego-exo4d-data.org/annotations/keystep/ (Sample JSON of the keystep file)"
+ ],
+ "access_used": "public sample in paper/repo/card only (full data needs Ego-Exo4D License Agreement)",
+ "note": "No Ego-Exo4D annotation file is downloadable without the signed license (the GitHub tutorial notebooks ship without outputs), so both examples are the documentation's own sample snippets, copied verbatim with their // comments and '...' elisions (hence raw_format txt, not valid JSON). Example 1 is one expert-commentary entry (the expert paused at video_time and spoke; Whisper transcript); example 2 is the first two keystep segments of a take plus the start of the keystep taxonomy and vocabulary. No clip: videos need the license.",
+ "examples": [
+  {
+   "title": "cmu_bike15_4 (Clean and Lubricate the Chain): one expert comment, docs sample",
+   "video_ref": "take_uid 816c4bd2-a5ba-4e40-854f-c98d771d1060 (take_name cmu_bike15_4)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 27.833885,
+     "te": null,
+     "lane": "commentary",
+     "text": " Our mechanic is using a 15mm ratcheting combination wrench, which will be a great tool for the job and will make this job quicker and more efficient."
+    }
+   ],
+   "raw_format": "txt",
+   "raw": "{\n   \"ds\": \"YYYYDDMM_HH:MM:SS\", # when the data was exported\n   \"annotations\": {\n       \"<take_uid1>\": [\n           {\n               // take identifiers\n               \"take_name\": \"cmu_bike15_4\",\n               \"take_uid\": \"816c4bd2-a5ba-4e40-854f-c98d771d1060\",\n\n               // task information for the take\n               \"task_id\": 4004,\n               \"task_name\": \"Clean and Lubricate the Chain\",\n\n               // where the commentary is located relative to annotations/expert_commentary/\n               \"commentary\": \"cmu_bike15_4/qfbn5o\", // last 6 characters (after the slash) is the expert's uid\n               \"commentary_data\": [\n                   {\n                       \"recording\": \"4.webm\", // associated audio file\n                        // where in the video the commentary was made\n                       \"video_time\": 27.833885,\n\n                       // a transcription of the commentary\n                       \"text\": \" Our mechanic is using a 15mm ratcheting combination wrench, which will be a great tool for the job and will make this job quicker and more efficient.\",\n                       // how long the audio recording is (approximately)\n                       \"duration_approx\": 12.76620000000298\n\n                        // whether there was an error transcribing the audio\n                        \"error\": false,\n                   },\n                    ...\n                ]\n            }\n            ...\n        ]\n        \"<take_uid2>\": [ ... ],\n        ...\n    }\n}"
+  },
+  {
+   "title": "georgiatech_covid_07_6 (Covid-19 Rapid Antigen Test): first 2 keysteps + taxonomy, docs sample",
+   "video_ref": "take_uid 77cd56fc-6b68-4c7f-814b-81545484dd2d (take_name georgiatech_covid_07_6)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.85598,
+     "te": 33.20377,
+     "lane": "step",
+     "text": "Unbox package — Unbox covid19 test package"
+    },
+    {
+     "t": 33.204,
+     "te": 56.61153,
+     "lane": "step",
+     "text": "Read the instructions — Read the instruction leaflet on the table"
+    }
+   ],
+   "raw_format": "txt",
+   "raw": "\"annotations\": {\n    \"77cd56fc-6b68-4c7f-814b-81545484dd2d\": {\n      \"take_uid\": \"77cd56fc-6b68-4c7f-814b-81545484dd2d\",\n      \"take_name\": \"georgiatech_covid_07_6\",\n      \"scenario\": \"Covid-19 Rapid Antigen Test\",\n      \"annotation_meta\": {\n        \"annotation_uid\": \"16ef27f8-7bff-42fa-b2c9-49856a570c6b\",\n        \"annotator_id\": 5792777457490871,\n        \"response_time\": 1695039187,\n        \"job_id\": 6534429029945912,\n        \"response_id\": 825514846028714,\n      },\n      \"segments\": [\n        {\n          \"start_time\": 0.85598,\n          \"end_time\": 33.20377,\n          \"step_id\": 31,\n          \"step_name\": \"Unbox package\",\n          \"step_description\": \"Unbox covid19 test package\",\n          \"is_essential\": true,\n          \"step_unique_id\": 843\n        },\n        {\n          \"start_time\": 33.204,\n          \"end_time\": 56.61153,\n          \"step_id\": 10,\n          \"step_name\": \"Read the instructions\",\n          \"step_description\": \"Read the instruction leaflet on the table\",\n          \"is_essential\": true,\n          \"step_unique_id\": 824\n        },\n    ...\n    ]\n  ...\n  }\n}\n\"taxonomy\": {\n  \"Covid-19 Rapid Antigen Test\": {\n    \"0\": {\n      \"id\": 0,\n      \"is_leafnode\": false,\n      \"name\": \"Covid-19 Rapid Antigen Test\",\n      \"parent_id\": null,\n      \"parent_name\": null\n    },\n    \"1\": {\n      \"id\": 1,\n      \"is_leafnode\": false,\n      \"name\": \"Preparation\",\n      \"parent_id\": 0,\n      \"parent_name\": \"Covid-19 Rapid Antigen Test\"\n    },\n    \"2\": {\n      \"id\": 2,\n      \"is_leafnode\": true,\n      \"name\": \"Check the expiration date\",\n      \"parent_id\": 1,\n      \"parent_name\": \"Preparation\",\n      \"unique_id\": 818\n    },\n  ...\n  }\n...\n}\n\"vocabulary\": {\n  ...\n  \"818\": \"Check the expiration date\",\n  \"819\": \"Locate test tube\",\n  \"820\": \"Locate and unwrap test tube cap\",\n  \"821\": \"Arrange test material\",\n  \"822\": \"Unwrap the testing tube\",\n  \"823\": \"return the test kit items back into the box\",\n  \"824\": \"Read the instructions\",\n  \"825\": \"fold the instruction paper\",\n  \"828\": \"Get the testing tube\",\n  \"829\": \"Fill the testing with a testing solution\",\n  \"830\": \"Locate and unwrap the collection swab\",\n  \"832\": \"carefully open the test tube seal paper\",\n  \"833\": \"Locate and unwrap the test plate\",\n  \"834\": \"cover the test tube\",\n  \"835\": \"Wrap or Unwrap Covid- 19 Rapid Antigen Test Pack\",\n  \"836\": \"Add sealed solution\",\n  \"837\": \"Blow nose\",\n  \"838\": \"Slowly insert the tip of the swab into the nose\",\n  \"839\": \"Rotate and swirl the swab around for 5-10 times\",\n  \"840\": \"Slowly extract the swab from the nostril\",\n  \"841\": \"Repeat the process with the other nostril\",\n  \"843\": \"Unbox package\",\n  \"844\": \"Unwrap testing plate\",\n  ...\n}"
+  }
+ ]
+}

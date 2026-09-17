@@ -89,7 +89,8 @@
   "_groups": [
    "Egocentric interaction (ready-made)"
   ],
-  "_file": "ego_interaction.json"
+  "_file": "ego_interaction.json",
+  "_has_samples": false
  },
  {
   "name": "MMDuet2-data — egocentric subsets (Ego-Exo4D + EgoExoLearn)",
@@ -161,7 +162,8 @@
   "_groups": [
    "Egocentric interaction (ready-made)"
   ],
-  "_file": "ego_interaction.json"
+  "_file": "ego_interaction.json",
+  "_has_samples": true
  },
  {
   "name": "MMDuet2-data (whole release)",
@@ -234,7 +236,8 @@
   "_groups": [
    "Egocentric interaction (ready-made)"
   ],
-  "_file": "ego_interaction.json"
+  "_file": "ego_interaction.json",
+  "_has_samples": true
  },
  {
   "name": "MMDuetIT",
@@ -311,308 +314,8 @@
    "Egocentric interaction (ready-made)",
    "General streaming / proactive"
   ],
-  "_file": "ego_interaction.json"
- },
- {
-  "name": "EgoProactive (Wearable AI Challenge / Pro2Bench val-700)",
-  "slug": "egoproactive",
-  "group": "egocentric streaming interaction (ready-made)",
-  "role": "ready-made streaming interaction data",
-  "org": "Meta Reality Labs (Wearable AI Workshop @ ECCV 2026)",
-  "year": 2026,
-  "paper": "arXiv 2606.04970 (Plan, Watch, Recover)",
-  "links": {
-   "data": "https://huggingface.co/datasets/facebook/wearable-ai (config egoproactive)",
-   "paper": "https://arxiv.org/abs/2606.04970",
-   "code": "https://huggingface.co/datasets/facebook/wearable-ai/tree/main/starter_kit",
-   "project": "https://wearable-ai-workshop.github.io/"
-  },
-  "access": "gated click-through",
-  "license": "CC-BY-NC-4.0 for annotations, videos and starter kit (repo LICENSE, live)",
-  "videos_included": "yes (hosted with annotations)",
-  "download_size": "≈23 GB videos + 7.8 MB jsonl (card)",
-  "scale": {
-   "videos": "700 (computed)",
-   "hours": "31.5 h annotated (computed)",
-   "samples": "9,935 decision intervals (computed)",
-   "annotation_units": "5,352 interrupt utterances + 4,583 silent labels (computed)",
-   "clip_length": "median 146.7 s (range 16–588 s, computed)"
-  },
-  "viewpoint": "egocentric",
-  "video_domains": [
-   "cooking (Chef)",
-   "arts and crafts",
-   "handyman / DIY",
-   "tutorials"
-  ],
-  "what_people_do": "Participants wearing Ray-Ban Meta glasses follow scripted procedures at home (577 distinct tasks such as decorating a notebook with stickers or replacing thermostat batteries); some videos include a scripted out-of-plan mistake and its fix.",
-  "annotations_per_video": [
-   {
-    "type": "per-interval decision `$interrupt$<utterance>` or `$silent$`",
-    "timing": "interval [start,end]",
-    "density": "median 14 intervals, 7 interrupts per video (computed)",
-    "made_by": "rule from human-corrected step boundaries and OOP onsets; utterances VLM-template then human-edited (step) or human-written (OOP) per paper",
-    "content": "Step guidance ('Time to …', 'Grab your …') and recovery lines ('Oops — skip …')"
-   },
-   {
-    "type": "user query, domain, task, cumulative gold dialog history",
-    "timing": "per-clip label",
-    "density": "1 query per video",
-    "made_by": "human (scripts)",
-    "content": "e.g. 'How do I decorate a notebook cover with stickers?'"
-   }
-  ],
-  "silence_or_when_to_speak": "Explicit binary label per candidate interval (mostly 8 s; 61.9% exactly 8 s); silent intervals are subsampled (gaps of 8/16/24/32 s), and the first [0,2] interval is an interrupt in 679/700 videos (computed).",
-  "mistakes_or_errors": "No OOP field in the release; heuristic finds 231 recovery utterances in 174 videos (computed). Paper reports 1,267 / 1,833 / 3,433 OOP instances in different places.",
-  "languages": "en",
-  "example": "\"answers\": [\"$interrupt$Got your notebook? Lay it flat, grab all your sticker stuff—open the case and pouch, and spread out those sticker sheets so they're ready to go!\", \"$interrupt$Peel the stickers from the sheet and arrange them on the notebook cover—don't press yet—just play with the layout!\", \"$silent$\", ...]",
-  "trained_models": [
-   "Ambient egoproactive-4b-lora / -2b-lora (Qwen3.5-4B/2B, trained on 560 val videos ×2)",
-   "other ECCV 2026 challenge entries (undocumented)"
-  ],
-  "fit_for_streaming_assistant": "Purpose-recorded smart-glasses video with human-verified speak/silent decisions and recovery utterances, the closest public match to a wearable proactive assistant. It is a validation split (700 videos) with pre-cut candidate intervals, so it teaches a binary decision at given boundaries; the interval structure itself leaks timing. Use for fine-tuning/validation of the speak head; avoid over-fitting to the interval cadence.",
-  "caveats": [
-   "Only the val split is public; the hidden test set is 'equal volume' and the 4,340-row EP train split was not released.",
-   "No plan, cue, step or OOP-onset fields despite the paper describing them.",
-   "Card says H.265 1080p; downloaded files were H.264 720×960 @15 fps; 11/18 files run 0.4–36 s past duration_in_sec.",
-   "Paper's own EP eval size is inconsistent (9,935 vs 5,065)."
-  ],
-  "sample_viewer": "training-data/",
-  "sources": [
-   "https://huggingface.co/api/datasets/facebook/wearable-ai",
-   "https://huggingface.co/datasets/facebook/wearable-ai (README, live)",
-   "https://arxiv.org/html/2606.04970",
-   "https://huggingface.co/spaces/facebook/wearable-ai-leaderboard",
-   "/tmp/claude-0/-weka-oe-training-default-jasonr-chenhao-prior-home-simulation-home/7e2b2c6e-262d-450d-b41c-f33aeedb0a67/scratchpad/data/egoproactive/stats.json",
-   "/tmp/claude-0/-weka-oe-training-default-jasonr-chenhao-prior-home-simulation-home/7e2b2c6e-262d-450d-b41c-f33aeedb0a67/scratchpad/models/meta-pro2bench.md"
-  ],
-  "_groups": [
-   "Egocentric interaction (ready-made)"
-  ],
-  "_file": "ego_interaction.json"
- },
- {
-  "name": "EgoConv (Wearable AI Challenge val-700)",
-  "slug": "egoconv",
-  "group": "egocentric streaming interaction (ready-made)",
-  "role": "ready-made streaming interaction data",
-  "org": "Meta Reality Labs (Wearable AI Workshop @ ECCV 2026)",
-  "year": 2026,
-  "paper": "no dataset paper found (challenge card only)",
-  "links": {
-   "data": "https://huggingface.co/datasets/facebook/wearable-ai (config egoconv)",
-   "paper": null,
-   "code": "https://huggingface.co/datasets/facebook/wearable-ai/tree/main/starter_kit",
-   "project": "https://wearable-ai-workshop.github.io/"
-  },
-  "access": "gated click-through",
-  "license": "CC-BY-NC-4.0 for annotations and videos (repo LICENSE, live)",
-  "videos_included": "yes (hosted with annotations)",
-  "download_size": "≈91 GB videos + 4.1 MB jsonl (card)",
-  "scale": {
-   "videos": "700 (computed)",
-   "hours": "not derivable from the jsonl: duration_in_sec equals the summed answer windows (36.9 h total), while dialog times run past it in 699/700 videos; Ambient measured 30.1 h over 234 of these videos (median 493 s)",
-   "samples": "700 conversations; 4,415 questions (computed)",
-   "annotation_units": "4,422 assistant answers; 14,355 human speaker turns (P1 10,729 / P2 3,622 / P0 4) (computed)",
-   "clip_length": "median last dialog turn at 332 s (computed); card lists no video length"
-  },
-  "viewpoint": "egocentric",
-  "video_domains": [
-   "indoor/outdoor activities",
-   "sightseeing / tourism",
-   "shopping",
-   "daily activities",
-   "cooking",
-   "home DIY",
-   "hobbies",
-   "sports",
-   "fashion",
-   "homework",
-   "dance/exercise",
-   "gardening"
-  ],
-  "what_people_do": "Wearers of AI glasses go about everyday life (sightseeing, shopping, cooking, DIY, homework, sports) while talking to companions and asking the assistant questions about what they see.",
-  "annotations_per_video": [
-   {
-    "type": "multi-party dialog with assistant answers",
-    "timing": "interval [start,end]",
-    "density": "median 6 questions per video (computed)",
-    "made_by": "human speech (transcribed); assistant answers of unknown provenance (card does not say)",
-    "content": "User questions ('Am I kneading this correctly?') and long reference answers (median 28 words); question types Multimodal_relevant 2,423 / Unimodal_relevant 1,269 / Multiturn 697"
-   },
-   {
-    "type": "answer windows (video_intervals)",
-    "timing": "interval [start,end]",
-    "density": "1 per question",
-    "made_by": "unknown (card)",
-    "content": "Time window covered by each Q/A exchange"
-   }
-  ],
-  "silence_or_when_to_speak": "Reactive only: the assistant answers after a user question (median 1 s after the question ends, computed); no proactive or silence labels.",
-  "mistakes_or_errors": "none",
-  "languages": "en",
-  "example": "{\"text\": \"Am I kneading this correctly?\", \"role\": \"P1\", \"start_time\": \"03:01\", \"end_time\": \"03:02\"}, {\"text\": \"Yes, it seems you're kneading correctly. The dough is developing a smooth, elastic texture, indicating effective gluten development. Continue kneading to achieve the desired consistency.\", \"role\": \"Assistant\", \"start_time\": \"03:03\", \"end_time\": \"03:20\"}",
-  "trained_models": [
-   "Ambient used 234 EgoConv videos (not its answers) as input for synthetic EgoProactive labels"
-  ],
-  "fit_for_streaming_assistant": "Real egocentric glasses footage with timed, spoken user questions in natural multi-party settings — useful for reactive, visually grounded answering at the right moment and for handling non-addressed speech (P2). No proactive labels, and answers look model-written. Convert by placing user turns at their timestamps and training the answer after the question ends.",
-  "caveats": [
-   "`duration_in_sec` is not the video length (it equals the sum of `video_intervals`); dialog timestamps exceed it in 699/700 records (computed).",
-   "Answer authorship (human vs LLM) not documented.",
-   "Val split only; test hidden."
-  ],
-  "sample_viewer": null,
-  "sources": [
-   "https://huggingface.co/datasets/facebook/wearable-ai (README + egoconv jsonl, live)",
-   "https://huggingface.co/api/datasets/facebook/wearable-ai",
-   "https://arxiv.org/html/2609.07099"
-  ],
-  "_groups": [
-   "Egocentric interaction (ready-made)"
-  ],
-  "_file": "ego_interaction.json"
- },
- {
-  "name": "EgoLongQA (Wearable AI Challenge val-700)",
-  "slug": "egolongqa",
-  "group": "egocentric streaming interaction (ready-made)",
-  "role": "annotated source video (needs conversion)",
-  "org": "Meta Reality Labs (Wearable AI Workshop @ ECCV 2026)",
-  "year": 2026,
-  "paper": "no dataset paper found (challenge card only)",
-  "links": {
-   "data": "https://huggingface.co/datasets/facebook/wearable-ai (config egolongqa)",
-   "paper": null,
-   "code": "https://huggingface.co/datasets/facebook/wearable-ai/tree/main/starter_kit",
-   "project": "https://wearable-ai-workshop.github.io/"
-  },
-  "access": "gated click-through",
-  "license": "CC-BY-NC-4.0 (repo LICENSE, live)",
-  "videos_included": "yes (hosted with annotations)",
-  "download_size": "≈203 GB videos + 0.4 MB jsonl (card)",
-  "scale": {
-   "videos": "700 (computed)",
-   "hours": "≈117 h if all ≈10 min (Ambient's 158-video subset: median 601 s, 27.1 h; computed) — exact total not in the release",
-   "samples": "700 questions (1 per video, computed)",
-   "annotation_units": "700 open answers + 700 four-way MCQs (computed)",
-   "clip_length": "≈10 min (median 601 s on the 158-video subset, computed)"
-  },
-  "viewpoint": "egocentric",
-  "video_domains": [
-   "daily activities",
-   "sightseeing / travel",
-   "shopping",
-   "hiking / outdoors",
-   "gardening",
-   "pets / social gatherings",
-   "events",
-   "fashion"
-  ],
-  "what_people_do": "Glasses wearers record ≈10-minute stretches of daily life, sightseeing, shopping, hiking and hobbies; the question asks about something that happened earlier in the recording.",
-  "annotations_per_video": [
-   {
-    "type": "long-video question with open answer and MCQ",
-    "timing": "none",
-    "density": "1 per video",
-    "made_by": "unknown (card)",
-    "content": "Episodic-memory questions, e.g. first structure met after leaving a trail"
-   }
-  ],
-  "silence_or_when_to_speak": "none (offline QA over the whole video)",
-  "mistakes_or_errors": "none",
-  "languages": "en",
-  "example": "\"question\": \"After I left the grassy trail that ran alongside the flooded marsh, what was the first man-made structure I encountered on the paved section of my walk?\", \"answer\": \"A concrete bench on the left side of the path.\", \"mcq_answer\": \"C\"",
-  "trained_models": [
-   "Ambient EgoLongQA ≤2B distill adapter (arXiv 2609.07154)"
-  ],
-  "fit_for_streaming_assistant": "Mainly useful as raw long-form glasses video plus a memory-QA probe; it has no timing or interaction labels. Its value for a streaming assistant is as source video for synthetic proactive labelling (as Ambient did for 158 procedural clips).",
-  "caveats": [
-   "No video durations in the jsonl; hours estimated.",
-   "Categories are inconsistent strings (e.g. 'Sightseeing' vs 'Travel-Sightseeing (Outdoors)')."
-  ],
-  "sample_viewer": null,
-  "sources": [
-   "https://huggingface.co/datasets/facebook/wearable-ai (README + egolongqa jsonl, live)",
-   "https://huggingface.co/datasets/ambient-intelligence-labs/egoproactive-synth-annotations (egolongqa_rows.jsonl, live)"
-  ],
-  "_groups": [
-   "Egocentric interaction (ready-made)"
-  ],
-  "_file": "ego_interaction.json"
- },
- {
-  "name": "Pro2Bench training relabels (PWR duplex + planner rows)",
-  "slug": "pro2bench-train",
-  "group": "egocentric streaming interaction (ready-made)",
-  "role": "ready-made streaming interaction data",
-  "org": "Meta",
-  "year": 2026,
-  "paper": "arXiv 2606.04970",
-  "links": {
-   "data": null,
-   "paper": "https://arxiv.org/abs/2606.04970",
-   "code": null,
-   "project": null
-  },
-  "access": "not released",
-  "license": "Not released (paper states artifacts 'will be released'); underlying videos Ego4D / Ego-Exo4D license agreements, EPIC-KITCHENS CC BY-NC 4.0, HowTo100M YouTube, HoloAssist own terms",
-  "videos_included": "no, must fetch from source Ego4D, EPIC-KITCHENS, Ego-Exo4D, HowTo100M, HoloAssist",
-  "download_size": null,
-  "scale": {
-   "videos": "29,337 incl. eval (paper Table 1)",
-   "hours": null,
-   "samples": "249,584 duplex train clips (paper Table 1) vs 314,290 duplex + 212,818 planner rows (paper Table 33)",
-   "annotation_units": "≈52% interrupt / 48% silent (paper Table 33)",
-   "clip_length": "8 s decision windows, up to 15 plan-anchored clips per row (paper)"
-  },
-  "viewpoint": "mixed",
-  "video_domains": [
-   "cooking",
-   "household",
-   "DIY",
-   "skilled activities",
-   "web how-to"
-  ],
-  "what_people_do": "Existing corpora re-annotated: Ego4D daily activities, EPIC-KITCHENS cooking, Ego-Exo4D keystep procedures, HowTo100M web tutorials (third-person) and HoloAssist device manipulation.",
-  "annotations_per_video": [
-   {
-    "type": "duplex decision `$interrupt$<utterance>` / `$silent$` with plan context",
-    "timing": "interval [start,end]",
-    "density": null,
-    "made_by": "VLM/LLM pipeline (V-JEPA2 segmentation → Qwen3-VL-235B captions → Llama-4-Maverick grouping/alignment/filtering) + rule sampler; no human review",
-    "content": "Interrupt at step boundaries, silents ≥3 s (App. J) or ≥5 s (App. F.5) away"
-   },
-   {
-    "type": "planner target (goal, completed steps, plan, completion/incompletion cues)",
-    "timing": "point timestamp (s)",
-    "density": null,
-    "made_by": "VLM/LLM",
-    "content": "<|mode|>…<|step_incomplete_cues|> token-delimited plan"
-   }
-  ],
-  "silence_or_when_to_speak": "Explicit silent rows sampled ≈1:1 with interrupts per video; interrupts at step boundaries.",
-  "mistakes_or_errors": "None in the inherited corpora (0 OOP); only EgoProactive has mistakes.",
-  "languages": "en",
-  "example": null,
-  "trained_models": [
-   "PWR Llama-4-Maverick FT",
-   "PWR Qwen3.6-VL-27B FT (weights unreleased)"
-  ],
-  "fit_for_streaming_assistant": "Would be the largest plan-conditioned speak/silent SFT set on egocentric video, but it is not public. Listed so users do not search for it; the recipe (VLM step discovery + rule duplex sampler) is reproducible from the paper appendices.",
-  "caveats": [
-   "Not found on HF/GitHub as of 2026-09-17 (only facebook/wearable-ai val sets exist).",
-   "Table 1 vs Table 33 counts disagree; HoloAssist and EgoProactive rows were built but not used for the reported models."
-  ],
-  "sample_viewer": null,
-  "sources": [
-   "https://arxiv.org/html/2606.04970",
-   "/tmp/claude-0/-weka-oe-training-default-jasonr-chenhao-prior-home-simulation-home/7e2b2c6e-262d-450d-b41c-f33aeedb0a67/scratchpad/models/meta-pro2bench.md",
-   "https://huggingface.co/api/datasets?search=Pro2Bench"
-  ],
-  "_groups": [
-   "Egocentric interaction (ready-made)"
-  ],
-  "_file": "ego_interaction.json"
+  "_file": "ego_interaction.json",
+  "_has_samples": true
  },
  {
   "name": "Ambient egoproactive-synth-annotations (EgoConv dense + val700 training rows)",
@@ -703,7 +406,8 @@
   "_groups": [
    "Egocentric interaction (ready-made)"
   ],
-  "_file": "ego_interaction.json"
+  "_file": "ego_interaction.json",
+  "_has_samples": true
  },
  {
   "name": "Ambient synthetic EgoLongQA proactive annotations (158 procedural clips)",
@@ -784,7 +488,8 @@
   "_groups": [
    "Egocentric interaction (ready-made)"
   ],
-  "_file": "ego_interaction.json"
+  "_file": "ego_interaction.json",
+  "_has_samples": true
  },
  {
   "name": "Ego-CoMist (Qualcomm Interactive Cooking — counterfactual mistakes)",
@@ -856,7 +561,8 @@
   "_groups": [
    "Egocentric interaction (ready-made)"
   ],
-  "_file": "ego_interaction.json"
+  "_file": "ego_interaction.json",
+  "_has_samples": true
  },
  {
   "name": "QICD / LiveCook (Qualcomm Interactive Cooking Dataset: main + advanced_planning)",
@@ -943,7 +649,8 @@
   "_groups": [
    "Egocentric interaction (ready-made)"
   ],
-  "_file": "ego_interaction.json"
+  "_file": "ego_interaction.json",
+  "_has_samples": false
  },
  {
   "name": "QEVD / FitCoach (Qualcomm Exercise Video Dataset: Fit-300K + Fit-Coach)",
@@ -1018,7 +725,8 @@
   "_groups": [
    "Egocentric interaction (ready-made)"
   ],
-  "_file": "ego_interaction.json"
+  "_file": "ego_interaction.json",
+  "_has_samples": false
  },
  {
   "name": "ESTP-IT (VideoLLM-EyeWO instruction tuning)",
@@ -1086,7 +794,8 @@
   "_groups": [
    "Egocentric interaction (ready-made)"
   ],
-  "_file": "ego_interaction.json"
+  "_file": "ego_interaction.json",
+  "_has_samples": false
  },
  {
   "name": "EgoIT-99K",
@@ -1154,228 +863,8 @@
   "_groups": [
    "Egocentric interaction (ready-made)"
   ],
-  "_file": "ego_interaction.json"
- },
- {
-  "name": "EgoLife (EgoLifeQA + EgoLife_QA/Caption instruction data)",
-  "slug": "egolife-qa",
-  "group": "egocentric streaming interaction (ready-made)",
-  "role": "annotated source video (needs conversion)",
-  "org": "NTU S-Lab / LMMs-Lab",
-  "year": 2025,
-  "paper": "arXiv 2503.03803 (CVPR 2025)",
-  "links": {
-   "data": "https://huggingface.co/datasets/lmms-lab/EgoLife",
-   "paper": "https://arxiv.org/abs/2503.03803",
-   "code": "https://github.com/egolife-ai/EgoLife",
-   "project": "https://egolife-ai.github.io/"
-  },
-  "access": "open download",
-  "license": "MIT (HF card, live); card says 'Data cleaning, stay tuned!'",
-  "videos_included": "yes (hosted with annotations)",
-  "download_size": "512 GB (HF API usedStorage, live)",
-  "scale": {
-   "videos": "6 participants × 7 days of Aria video, 30-s files (repo layout)",
-   "hours": "≈300 h collected, 266 h retained (paper)",
-   "samples": "EgoLife_QA.json 33,352 clip QA conversations (computed); EgoLifeQA benchmark: only A1_JAKE released, 500 MCQs (computed)",
-   "annotation_units": "361K narrations → 25K merged captions → visual-audio captions (paper)",
-   "clip_length": "30 s video files"
-  },
-  "viewpoint": "egocentric",
-  "video_domains": [
-   "shared-house daily life",
-   "cooking",
-   "party preparation",
-   "shopping",
-   "games",
-   "cleaning"
-  ],
-  "what_people_do": "Six people live together for a week preparing an Earth Day party, recording ≈8 h/day with Aria glasses: cooking, decorating, shopping, dancing, playing games, cleaning up.",
-  "annotations_per_video": [
-   {
-    "type": "clip QA with speech (EgoLife_QA)",
-    "timing": "interval [start,end]",
-    "density": null,
-    "made_by": "LLM (GPT-4o family) from human-verified visual-audio captions",
-    "content": "'What was I doing before looking up?' → 'You were fiddling with your phone.'"
-   },
-   {
-    "type": "long-horizon MCQ with query and target times (EgoLifeQA)",
-    "timing": "point timestamp (s)",
-    "density": "500 for A1_JAKE",
-    "made_by": "human",
-    "content": "Entity log, event recall, habit, relation, task questions with reason and trigger text"
-   },
-   {
-    "type": "dense captions and transcripts (EgoLifeCap)",
-    "timing": "interval [start,end]",
-    "density": null,
-    "made_by": "human narration + GPT-4o merging, human-verified",
-    "content": "Synchronised first-person descriptions and speech"
-   }
-  ],
-  "silence_or_when_to_speak": "none (QA is question-triggered; no proactive labels)",
-  "mistakes_or_errors": "none",
-  "languages": "zh (card) / en (QA)",
-  "example": "{\"conversations\": [{\"from\": \"human\", \"value\": \"<speech>\\n<image>\\nWhat was I doing before looking up?\"}, {\"from\": \"gpt\", \"value\": \"You were fiddling with your phone.\"}]} (DAY1_A5_KATRINA_11100000)",
-  "trained_models": [
-   "EgoGPT",
-   "EgoRAG"
-  ],
-  "fit_for_streaming_assistant": "Week-long multi-person egocentric life-log with dense captions and memory questions — valuable for long-horizon memory and as source video (EgoServe built its episodic/long-term services on it). No proactive or guidance labels. Convert captions to timed reminders or use EgoServe's EgoLife instances.",
-  "caveats": [
-   "Only A1_JAKE EgoLifeQA file is released in the repo (checked live).",
-   "Card language tag is zh; QA text is English.",
-   "Vinci (arXiv 2412.21080) released model weights and deployment code but no training dataset; EgoServe (Vinci2) is the data release in this line."
-  ],
-  "sample_viewer": null,
-  "sources": [
-   "https://huggingface.co/api/datasets/lmms-lab/EgoLife",
-   "https://huggingface.co/api/datasets/lmms-lab/EgoLife/tree/main/EgoLifeQA",
-   "https://huggingface.co/datasets/lmms-lab/EgoLife/resolve/main/EgoIT/EgoLife_QA.json",
-   "https://arxiv.org/html/2503.03803",
-   "https://arxiv.org/html/2412.21080"
-  ],
-  "_groups": [
-   "Egocentric interaction (ready-made)"
-  ],
-  "_file": "ego_interaction.json"
- },
- {
-  "name": "GuideMe (train unreleased; 50-video test preview)",
-  "slug": "guideme",
-  "group": "egocentric streaming interaction (ready-made)",
-  "role": "ready-made streaming interaction data",
-  "org": "City University of Hong Kong, Huawei Research, USTC, CUHK",
-  "year": 2026,
-  "paper": "arXiv 2607.02991 (ECCV 2026)",
-  "links": {
-   "data": "https://huggingface.co/datasets/alisn/GuideMe_Test_Subset50",
-   "paper": "https://arxiv.org/abs/2607.02991",
-   "code": "https://github.com/fawnliu/GuideMe",
-   "project": "https://fawnliu.github.io/project/guideme/"
-  },
-  "access": "not released",
-  "license": "Preview: no license on HF card or GitHub (live); re-hosted videos from CaptainCook4D (Apache-2.0), EgoPER and QEVD (own research terms)",
-  "videos_included": "partial",
-  "download_size": "Preview 1.76 GB incl. 50 videos at 2 fps (HF API, live); full set not available",
-  "scale": {
-   "videos": "2,458 full (1,985 train unreleased / 473 test) (paper); preview 50 (computed)",
-   "hours": "223.7 h full (177.0 train) (paper); preview 5.75 h (computed)",
-   "samples": "47,775 interaction samples full (paper); preview 50 conversations (computed)",
-   "annotation_units": "preview: 1,095 assistant turns + 50 user queries (computed)",
-   "clip_length": "full median 3.6 min (paper); preview median 4.1 min (computed)"
-  },
-  "viewpoint": "mixed",
-  "video_domains": [
-   "object manipulation (HoloAssist 68%)",
-   "cooking (CaptainCook4D)",
-   "daily-life procedures (EgoPER)",
-   "fitness (QEVD, exocentric)"
-  ],
-  "what_people_do": "People follow procedures from HoloAssist (device setup/repair), CaptainCook4D and EgoPER (cooking with errors) and QEVD (workouts), often making mistakes.",
-  "annotations_per_video": [
-   {
-    "type": "assistant turns: next-step instruction / completion feedback / error detection / corrective guidance",
-    "timing": "point timestamp (s)",
-    "density": "≈22 assistant turns per preview video (computed)",
-    "made_by": "LLM (not named) from source step/error labels; QEVD lines appear to be original coach feedback",
-    "content": "Instruction at action start; feedback or error+correction at action end; integer-second timestamps"
-   }
-  ],
-  "silence_or_when_to_speak": "Implicit in data; the benchmark queries every GT turn plus an equal number of silent anchors ≥5 s away (or dense 1 s).",
-  "mistakes_or_errors": "Preview heuristic: 161 error-detection and 232 corrective-guidance turns (computed); full set inherits EgoPER / CaptainCook4D / HoloAssist / QEVD errors.",
-  "languages": "en",
-  "example": "{\"from\": \"assistant\", \"value\": \"Wait, it looks like you only added one piece of chocolate. You should be putting in two pieces instead.\", \"timestamp\": 52} (CaptainCook4D 8_45, preview)",
-  "trained_models": [
-   "Qwen3-VL-8B fine-tuned on GuideMe-Train (authors; best sF1 39.7)"
-  ],
-  "fit_for_streaming_assistant": "Would be a strong multi-domain instruct/feedback/error/correct SFT set, but only a 50-video test preview is public, and it has no type labels. Wait for the full release; meanwhile ProAssist and EgoServe cover similar sources.",
-  "caveats": [
-   "README (repo pushed 2026-07-28): 'full data will be released soon'.",
-   "Preview has 0 HoloAssist videos although HoloAssist is 68% of the full set.",
-   "No human verification of generated dialogues reported."
-  ],
-  "sample_viewer": "guideme/",
-  "sources": [
-   "https://huggingface.co/api/datasets/alisn/GuideMe_Test_Subset50",
-   "https://raw.githubusercontent.com/fawnliu/GuideMe/main/data/README.md",
-   "https://github.com/fawnliu/GuideMe",
-   "https://arxiv.org/abs/2607.02991",
-   "/tmp/claude-0/-weka-oe-training-default-jasonr-chenhao-prior-home-simulation-home/7e2b2c6e-262d-450d-b41c-f33aeedb0a67/scratchpad/viewers/guideme/README.md",
-   "/tmp/claude-0/-weka-oe-training-default-jasonr-chenhao-prior-home-simulation-home/7e2b2c6e-262d-450d-b41c-f33aeedb0a67/scratchpad/viewers/guideme/full_dataset_stats.json"
-  ],
-  "_groups": [
-   "Egocentric interaction (ready-made)"
-  ],
-  "_file": "ego_interaction.json"
- },
- {
-  "name": "EgoServe annotations",
-  "slug": "egoserve",
-  "group": "egocentric streaming interaction (ready-made)",
-  "role": "ready-made streaming interaction data",
-  "org": "Dalian University of Technology, Alaya Lab (Shanda), University of Tokyo",
-  "year": 2026,
-  "paper": "arXiv 2607.11523 (Vinci2)",
-  "links": {
-   "data": "https://huggingface.co/datasets/SitongGong/EgoServe",
-   "paper": "https://arxiv.org/abs/2607.11523",
-   "code": "https://github.com/SitongGong/EgoMemo",
-   "project": "https://sitonggong.github.io/EgoServe-page/"
-  },
-  "access": "open download",
-  "license": "Annotations CC-BY-4.0 (HF card, live); videos from HoloAssist, CaptainCook4D (Apache-2.0) and EgoLife (MIT) under their own terms",
-  "videos_included": "no, must fetch from source HoloAssist, CaptainCook4D, EgoLife",
-  "download_size": "≈3–4 MB JSON (file sizes, live)",
-  "scale": {
-   "videos": "191 HoloAssist + 87 CaptainCook4D recordings + 3 EgoLife participants × 5 days (11,846 segments) (dataset_statistics.json)",
-   "hours": "128.5 h (95.5 EgoLife + 14.6 HoloAssist + 18.4 CaptainCook4D; dataset_statistics.json)",
-   "samples": "3,437 service instances (892 EgoLife + 1,717 HoloAssist + 828 CaptainCook4D; dataset_statistics.json)",
-   "annotation_units": "3,437 trigger windows, each with a short assistant↔user dialogue",
-   "clip_length": null
-  },
-  "viewpoint": "egocentric",
-  "video_domains": [
-   "device setup / repair (HoloAssist)",
-   "cooking with errors (CaptainCook4D)",
-   "multi-day shared-house life (EgoLife)"
-  ],
-  "what_people_do": "HoloAssist users set up or fix devices, CaptainCook4D participants cook with scripted errors, and EgoLife residents live through several days of chores and party preparation.",
-  "annotations_per_video": [
-   {
-    "type": "proactive service instance (10 subtypes: safety, tool_use, error_recovery, next_step_guidance, resource_reminder, task_reminder, memory_recall, habit_coaching, routine_optimization, memory_link)",
-    "timing": "interval [start,end]",
-    "density": "≈9 per HoloAssist video, ≈9.5 per CaptainCook4D recording (computed from stats)",
-    "made_by": "LLM (Gemini-2.5-Pro) from source human annotations, every instance human-verified by two annotators",
-    "content": "Trigger window, observation/trigger reason, and assistant→user→assistant dialogue"
-   }
-  ],
-  "silence_or_when_to_speak": "Trigger windows only; evaluation tolerance δ = 10 s (HoloAssist), 25 s (CaptainCook4D), 60 s (EgoLife); no explicit silence labels.",
-  "mistakes_or_errors": "error_recovery: 485 HoloAssist + 402 CaptainCook4D + 38 EgoLife = 925; plus safety 241 and tool_use 510 (computed from dataset_statistics.json).",
-  "languages": "en",
-  "example": "{\"time_window\": \"00:02:47.578-00:02:48.686\", \"risk_type\": \"improper_grip\", \"dialogue\": [{\"role\": \"assistant\", \"utterance\": \"Your finger placement is still a bit off. Use your fingertip to catch the edge of the mount leg.\"}, ...]} (HoloAssist R0027-12)",
-  "trained_models": [
-   "EgoMemo (training-free agent)"
-  ],
-  "fit_for_streaming_assistant": "Human-verified proactive-service triggers with dialogue, including error recovery and long-horizon reminders, released under a permissive license. It was built as an evaluation set (3.4k instances), so using it for training contaminates the benchmark. Useful as a small high-quality fine-tune or as a source of trigger-window supervision on HoloAssist/CaptainCook4D.",
-  "caveats": [
-   "Benchmark, not a designated training split.",
-   "SitongGong/EgoServe-RL (2026-08-22) holds agent code and caches, not additional labels (checked live).",
-   "HoloAssist dialogues' user turns are LLM-written."
-  ],
-  "sample_viewer": null,
-  "sources": [
-   "https://huggingface.co/api/datasets/SitongGong/EgoServe",
-   "https://huggingface.co/datasets/SitongGong/EgoServe/resolve/main/dataset_statistics.json",
-   "https://huggingface.co/datasets/SitongGong/EgoServe (README, annotation files)",
-   "https://arxiv.org/abs/2607.11523",
-   "https://huggingface.co/api/datasets/SitongGong/EgoServe-RL"
-  ],
-  "_groups": [
-   "Egocentric interaction (ready-made)"
-  ],
-  "_file": "ego_interaction.json"
+  "_file": "ego_interaction.json",
+  "_has_samples": false
  },
  {
   "name": "Ego4D Narration Stream (VideoLLM-online refined_narration_stream)",
@@ -1443,7 +932,8 @@
   "_groups": [
    "Egocentric interaction (ready-made)"
   ],
-  "_file": "ego_interaction.json"
+  "_file": "ego_interaction.json",
+  "_has_samples": false
  },
  {
   "name": "Ego4D GoalStep LiveChat 21K (VideoLLM-online)",
@@ -1508,7 +998,8 @@
   "_groups": [
    "Egocentric interaction (ready-made)"
   ],
-  "_file": "ego_interaction.json"
+  "_file": "ego_interaction.json",
+  "_has_samples": false
  },
  {
   "name": "EgoTimeQA",
@@ -1574,7 +1065,8 @@
   "_groups": [
    "Egocentric interaction (ready-made)"
   ],
-  "_file": "ego_interaction.json"
+  "_file": "ego_interaction.json",
+  "_has_samples": false
  },
  {
   "name": "MultiHop-EgoQA",
@@ -1636,7 +1128,8 @@
   "_groups": [
    "Egocentric interaction (ready-made)"
   ],
-  "_file": "ego_interaction.json"
+  "_file": "ego_interaction.json",
+  "_has_samples": false
  },
  {
   "name": "WTaG (Watch, Talk and Guide)",
@@ -1725,7 +1218,8 @@
    "Egocentric source video",
    "Egocentric interaction (ready-made)"
   ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": false
  },
  {
   "name": "Ego-EXTRA",
@@ -1820,7 +1314,8 @@
    "Egocentric source video",
    "Egocentric interaction (ready-made)"
   ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": false
  },
  {
   "name": "Proact-VL Ego4D Goal-Step coaching subset (ego4d_final_train.jsonl)",
@@ -1884,7 +1379,8 @@
   "_groups": [
    "Egocentric interaction (ready-made)"
   ],
-  "_file": "ego_interaction.json"
+  "_file": "ego_interaction.json",
+  "_has_samples": false
  },
  {
   "name": "JoyAI-VL-Interaction training data",
@@ -1962,7 +1458,8 @@
   "_groups": [
    "General streaming / proactive"
   ],
-  "_file": "general_streaming.json"
+  "_file": "general_streaming.json",
+  "_has_samples": true
  },
  {
   "name": "Streamo-Instruct-465K",
@@ -2054,7 +1551,8 @@
   "_groups": [
    "General streaming / proactive"
   ],
-  "_file": "general_streaming.json"
+  "_file": "general_streaming.json",
+  "_has_samples": false
  },
  {
   "name": "RealTimeVideo-Instruct-112K (StreamTTT)",
@@ -2121,7 +1619,8 @@
   "_groups": [
    "General streaming / proactive"
   ],
-  "_file": "general_streaming.json"
+  "_file": "general_streaming.json",
+  "_has_samples": false
  },
  {
   "name": "StreamBridge Stream-IT (StreamingQA-120K released; activation set not released)",
@@ -2188,7 +1687,8 @@
   "_groups": [
    "General streaming / proactive"
   ],
-  "_file": "general_streaming.json"
+  "_file": "general_streaming.json",
+  "_has_samples": false
  },
  {
   "name": "ROMA_proactive (alert + narration)",
@@ -2280,7 +1780,8 @@
    "General streaming / proactive",
    "Duplex, audio-visual & assistive"
   ],
-  "_file": "general_streaming.json"
+  "_file": "general_streaming.json",
+  "_has_samples": true
  },
  {
   "name": "Proact-VL game commentary SFT (game_commentary_sft)",
@@ -2366,7 +1867,8 @@
    "Commentary & narration",
    "General streaming / proactive"
   ],
-  "_file": "commentary.json"
+  "_file": "commentary.json",
+  "_has_samples": false
  },
  {
   "name": "OmniStar-RNG (LiveStar released data)",
@@ -2435,80 +1937,8 @@
   "_groups": [
    "General streaming / proactive"
   ],
-  "_file": "general_streaming.json"
- },
- {
-  "name": "OmniStarPro full training data / LiveStarPro training recipe",
-  "slug": "omnistarpro-livestar-training",
-  "group": "general streaming / proactive instruction data (ready-made)",
-  "role": "ready-made streaming interaction data",
-  "org": "CASIA / UCAS (LiveStar authors; the LiveStarPro HTML does not render affiliations)",
-  "year": 2026,
-  "paper": "arXiv 2606.17798 (LiveStarPro); arXiv 2511.05299 (LiveStar)",
-  "links": {
-   "data": null,
-   "paper": "https://arxiv.org/abs/2606.17798",
-   "code": "https://github.com/sotayang/LiveStar",
-   "project": null
-  },
-  "access": "not released",
-  "license": null,
-  "videos_included": "no, must fetch from YouTube (OmniStarPro) and ActivityNet / Shot2Story / Ego4D / MVBench (Phase I)",
-  "download_size": null,
-  "scale": {
-   "videos": "OmniStarPro-Live 20,137 streams (19,137 train / 1,000 eval); Long 2,108 streams (paper)",
-   "hours": null,
-   "samples": "83K training samples: Phase I 63K (ActivityNet Captions 9K, Shot2Story 33K, Ego4D Narration Stream 20K, MVBench 1K) + Phase II 20K OmniStarPro (paper)",
-   "annotation_units": "avg 14.5 QA pairs and 8.2 caption segments per Live video; 12,704 Long memory queries (paper)",
-   "clip_length": "Live ≤6 min, mostly 51–150 s; Long mean 34.7 min (paper)"
-  },
-  "viewpoint": "mixed",
-  "video_domains": [
-   "YouTube 15 scenarios / 46 categories",
-   "activities (ActivityNet)",
-   "web shots (Shot2Story)",
-   "egocentric daily life (Ego4D narration)"
-  ],
-  "what_people_do": "Web videos across 15 scenarios (travel, sports, news, gaming), plus Ego4D egocentric footage of people doing daily activities in Phase I.",
-  "annotations_per_video": [
-   {
-    "type": "five online tasks: real-time narration, online temporal grounding, frame-level dense QA, contextual online QA, multi-turn interactive QA",
-    "timing": "interval [start,end]",
-    "density": "14.5 QA + 8.2 caption segments per video (paper)",
-    "made_by": "VLM (Qwen2-VL) draft + human expert correction (87.8% retained)",
-    "content": "narration, grounded answers, QA"
-   },
-   {
-    "type": "long-memory queries (Long partition)",
-    "timing": "interval [start,end]",
-    "density": "≈6 per stream (paper)",
-    "made_by": "human",
-    "content": "recall / cross-event difference / backtracking questions with evidence timestamps"
-   }
-  ],
-  "silence_or_when_to_speak": "Response windows are the ground-truth semantic clip intervals. Silence is not a label; the model's own verification decides it (SVeD).",
-  "mistakes_or_errors": "none",
-  "languages": "en",
-  "example": null,
-  "trained_models": [
-   "LiveStar-8B / LiveStarPro (same weights, inference-time memory)"
-  ],
-  "fit_for_streaming_assistant": "The only released part is OmniStar-RNG (see that entry). The other four Live tasks, the Long partition and the Phase I 63K alignment mix are not downloadable, but Phase I can be rebuilt from public sources (ActivityNet Captions, Shot2Story, Ego4D narrations, MVBench).",
-  "caveats": [
-   "The README marks the OmniStar section 'Coming Soon'. HF/GitHub checked 2026-09-17: only OmniStar-RNG is present.",
-   "The benchmark and training set come from the same pipeline, which risks in-distribution inflation."
-  ],
-  "sample_viewer": null,
-  "sources": [
-   "https://arxiv.org/html/2606.17798",
-   "https://arxiv.org/html/2511.05299",
-   "https://github.com/sotayang/LiveStar",
-   "report_benchmarks.md"
-  ],
-  "_groups": [
-   "General streaming / proactive"
-  ],
-  "_file": "general_streaming.json"
+  "_file": "general_streaming.json",
+  "_has_samples": true
  },
  {
   "name": "TimeLens-100K",
@@ -2577,7 +2007,8 @@
   "_groups": [
    "General streaming / proactive"
   ],
-  "_file": "general_streaming.json"
+  "_file": "general_streaming.json",
+  "_has_samples": false
  },
  {
   "name": "VideoChatOnline-IT (OVBench / VideoChat-Online training data)",
@@ -2645,7 +2076,8 @@
   "_groups": [
    "General streaming / proactive"
   ],
-  "_file": "general_streaming.json"
+  "_file": "general_streaming.json",
+  "_has_samples": false
  },
  {
   "name": "StreamForest OnlineIT (general + drive) and ODV-Bench annotations",
@@ -2714,278 +2146,8 @@
   "_groups": [
    "General streaming / proactive"
   ],
-  "_file": "general_streaming.json"
- },
- {
-  "name": "Dispider training data (streaming QA / reaction set)",
-  "slug": "dispider-training-data",
-  "group": "general streaming / proactive instruction data (ready-made)",
-  "role": "ready-made streaming interaction data",
-  "org": "The Chinese University of Hong Kong + Shanghai AI Laboratory",
-  "year": 2025,
-  "paper": "arXiv 2501.03218",
-  "links": {
-   "data": null,
-   "paper": "https://arxiv.org/abs/2501.03218",
-   "code": "https://github.com/Mark12Ding/Dispider",
-   "project": null
-  },
-  "access": "not released",
-  "license": null,
-  "videos_included": "no, must fetch from source datasets (GroundVQA/Ego4D, ET-Instruct-164K sources, VideoChatGPT, LLaVA-Next-Video)",
-  "download_size": null,
-  "scale": {
-   "videos": null,
-   "hours": null,
-   "samples": "stage 1: GroundVQA + ET-Instruct + 50K implicit time-labelled QA; stage 2: 122K streaming QA pairs (paper)",
-   "annotation_units": null,
-   "clip_length": null
-  },
-  "viewpoint": "mixed",
-  "video_domains": [
-   "egocentric (GroundVQA/Ego4D)",
-   "web general (ET-Instruct sources)"
-  ],
-  "what_people_do": "Mix of Ego4D egocentric daily activities (GroundVQA) and web videos from ET-Instruct sources.",
-  "annotations_per_video": [
-   {
-    "type": "streaming QA with clip-level relevance labels for the decision module",
-    "timing": "interval [start,end]",
-    "density": null,
-    "made_by": "converted from timestamped QA in ET-Instruct + VideoChatGPT/LLaVA-Next-Video augmentation",
-    "content": "question, answer, relevant-clip mask"
-   }
-  ],
-  "silence_or_when_to_speak": "A decision module trained on binary clip-relevance distributions decides when the reaction module answers.",
-  "mistakes_or_errors": "none",
-  "languages": "en",
-  "example": null,
-  "trained_models": [
-   "Dispider-7B"
-  ],
-  "fit_for_streaming_assistant": "Not usable directly. The recipe (grounded QA converted into relevance and trigger labels) can be rebuilt from ET-Instruct-164K and GroundVQA.",
-  "caveats": [
-   "The README says the repo 'keeps only Dispider-specific ... inference logic. Training objectives and trainer code are intentionally not included'. No data link on GitHub or HF (checked 2026-09-17).",
-   "The checkpoint Mar2Ding/Dispider is public."
-  ],
-  "sample_viewer": null,
-  "sources": [
-   "https://arxiv.org/html/2501.03218",
-   "https://raw.githubusercontent.com/Mark12Ding/Dispider/master/README.md",
-   "https://api.github.com/repos/Mark12Ding/Dispider"
-  ],
-  "_groups": [
-   "General streaming / proactive"
-  ],
-  "_file": "general_streaming.json"
- },
- {
-  "name": "StreamMind StreamVD conversions (MSR) and StreamArena StreamMind",
-  "slug": "streammind-streamvd",
-  "group": "general streaming / proactive instruction data (ready-made)",
-  "role": "commentary / narration stream",
-  "org": "Microsoft Research (StreamMind, arXiv 2503.06220); StreamArena authors (arXiv 2608.05703)",
-  "year": 2025,
-  "paper": "arXiv 2503.06220; arXiv 2608.05703",
-  "links": {
-   "data": null,
-   "paper": "https://arxiv.org/abs/2503.06220",
-   "code": "https://github.com/xinding-sys/StreamMind",
-   "project": "https://aka.ms/StreamMind"
-  },
-  "access": "not released",
-  "license": "Code Apache-2.0 (the README adds non-commercial research-preview terms). No converted data is hosted; it is rebuilt from Ego4D (license agreement) and MatchTime SN-Caption / SoccerNet (NDA-style download).",
-  "videos_included": "no, must fetch from Ego4D v2 and SoccerNet (MatchTime)",
-  "download_size": null,
-  "scale": {
-   "videos": null,
-   "hours": null,
-   "samples": null,
-   "annotation_units": null,
-   "clip_length": null
-  },
-  "viewpoint": "mixed",
-  "video_domains": [
-   "egocentric daily life (Ego4D narration)",
-   "soccer broadcast commentary (SoccerNet/MatchTime)"
-  ],
-  "what_people_do": "Ego4D wearers doing daily activities with dense narrations; professional soccer matches with timestamped commentary.",
-  "annotations_per_video": [
-   {
-    "type": "deduplicated captions placed at the first frame of each new event; silence/response gate tokens",
-    "timing": "point timestamp (s)",
-    "density": null,
-    "made_by": "rule (Algorithm 1: merge identical adjacent captions, label first frame)",
-    "content": "narration / commentary text"
-   }
-  ],
-  "silence_or_when_to_speak": "Explicit: frames between captions are silence tokens and the first frame of a new caption is a response token. The authors report a silence:response imbalance as extreme as 360:1 at 30 fps and use a weighted CE.",
-  "mistakes_or_errors": "none",
-  "languages": "en",
-  "example": null,
-  "trained_models": [
-   "StreamMind (MSR; CLIP + EPFE state-space encoder + Cognition Gate + LLM)"
-  ],
-  "fit_for_streaming_assistant": "No downloadable data: the paper's 'code and data' link points to a repo with training scripts and a directory layout for Ego4D/MatchTime only. The name collides with StreamArena's StreamMind (2608.05703), a training-free agent built on Qwen3.5-397B-A17B that also ships no training data.",
-  "caveats": [
-   "Two unrelated systems share the name StreamMind.",
-   "The StreamArena release is a benchmark (243 YouTube IDs, 3,646 QA) plus agent code. It is not training data and belongs with the benchmarks."
-  ],
-  "sample_viewer": null,
-  "sources": [
-   "https://arxiv.org/html/2503.06220",
-   "https://aka.ms/StreamMind",
-   "https://github.com/xinding-sys/StreamMind",
-   "https://arxiv.org/html/2608.05703",
-   "report_benchmarks.md"
-  ],
-  "_groups": [
-   "General streaming / proactive"
-  ],
-  "_file": "general_streaming.json"
- },
- {
-  "name": "TV-Online (Learning to Respond: trigger-centric online video understanding)",
-  "slug": "tv-online",
-  "group": "general streaming / proactive instruction data (ready-made)",
-  "role": "ready-made streaming interaction data",
-  "org": "Anonymous (ICLR 2026 submission)",
-  "year": 2025,
-  "paper": "OpenReview gmpnSSiJt7 (submitted to ICLR 2026)",
-  "links": {
-   "data": null,
-   "paper": "https://openreview.net/forum?id=gmpnSSiJt7",
-   "code": null,
-   "project": null
-  },
-  "access": "not released",
-  "license": null,
-  "videos_included": null,
-  "download_size": null,
-  "scale": {
-   "videos": "50K (abstract)",
-   "hours": null,
-   "samples": "200K questions (abstract)",
-   "annotation_units": "500K time-stamped answers (abstract)",
-   "clip_length": null
-  },
-  "viewpoint": null,
-  "video_domains": [],
-  "what_people_do": null,
-  "annotations_per_video": [
-   {
-    "type": "trigger-based questions with time-stamped answers across 3 hierarchical trigger levels / 11 subcategories (single trigger, one-to-many, asynchronous multi-trigger, multi-turn)",
-    "timing": "point timestamp (s)",
-    "density": "≈10 answers per video (abstract ratio)",
-    "made_by": null,
-    "content": "answers emitted when enough evidence has appeared"
-   }
-  ],
-  "silence_or_when_to_speak": "Frame-by-frame respond-or-stay-silent decisions with 'protocol-level tagging' and difficulty labels used for progressive and RL training (abstract).",
-  "mistakes_or_errors": null,
-  "languages": null,
-  "example": null,
-  "trained_models": [
-   "unnamed streaming-oriented model (paper)"
-  ],
-  "fit_for_streaming_assistant": "By its description, a large trigger-timing corpus covering asynchronous multi-trigger scheduling. It cannot be used: there is no public data or code, and the PDF sits behind OpenReview's bot challenge.",
-  "caveats": [
-   "Only the abstract and metadata were verifiable via the OpenReview API; the PDF and supplementary zip returned a ChallengeRequiredError (2026-09-17).",
-   "No arXiv version or GitHub repo found.",
-   "Video sources and the annotation models are unverified."
-  ],
-  "sample_viewer": null,
-  "sources": [
-   "https://openreview.net/forum?id=gmpnSSiJt7",
-   "https://api2.openreview.net/notes?id=gmpnSSiJt7"
-  ],
-  "_groups": [
-   "General streaming / proactive"
-  ],
-  "_file": "general_streaming.json"
- },
- {
-  "name": "VAPDA-127K (AssistPDA)",
-  "slug": "vapda-127k",
-  "group": "third-person procedural, event grounding & alert/anomaly source video",
-  "role": "alert / anomaly",
-  "org": "Xidian University / Show Lab, National University of Singapore et al.",
-  "year": 2025,
-  "paper": "arXiv 2503.21904",
-  "links": {
-   "data": null,
-   "paper": "https://arxiv.org/abs/2503.21904",
-   "code": null,
-   "project": null
-  },
-  "access": "not released",
-  "license": "not released; source videos UCF-Crime and XD-Violence (research use)",
-  "videos_included": "no, must fetch from source UCF-Crime and XD-Violence",
-  "download_size": null,
-  "scale": {
-   "videos": "2,415 untrimmed videos, 15 anomaly categories (paper)",
-   "hours": null,
-   "samples": "127,451 timestamped items (paper)",
-   "annotation_units": "train: 2,511 prediction texts, 6,513 detection texts, 96,720 analysis QA; test: 556 / 1,521 / 19,630 QA (1,963 used) (paper, Table 5)",
-   "clip_length": null
-  },
-  "viewpoint": "mixed",
-  "video_domains": [
-   "surveillance / CCTV crime (UCF-Crime)",
-   "movies and live broadcasts with violence (XD-Violence)"
-  ],
-  "what_people_do": "Same footage as UCF-Crime and XD-Violence: crimes, fights, riots, shootings, explosions and car accidents, watched as a live stream.",
-  "annotations_per_video": [
-   {
-    "type": "anomaly prediction (early warning) text",
-    "timing": "point timestamp (s)",
-    "density": "≈1 per anomalous event (paper)",
-    "made_by": "LLM (Qwen2.5-72B-Instruct) over 1 fps BLIP-2 frame captions, manual review (5 annotators × ≈10 h) (paper)",
-    "content": "earliest second a coming anomaly is predictable, predicted type and short description"
-   },
-   {
-    "type": "anomaly detection text",
-    "timing": "point timestamp (s)",
-    "density": "several per event (paper)",
-    "made_by": "LLM (Qwen2.5-72B-Instruct) over HIVAU-70k timestamps and captions, manual review (paper)",
-    "content": "concise description of an ongoing anomaly with its type at key moments"
-   },
-   {
-    "type": "interactive analysis QA",
-    "timing": "point timestamp (s)",
-    "density": "10 open questions per key timestamp (paper)",
-    "made_by": "LLM (Qwen2.5-72B-Instruct), 5W2H prompts, manual review (paper)",
-    "content": "who/what/when/where/why/how questions about the ongoing event with answers"
-   }
-  ],
-  "silence_or_when_to_speak": "Explicit: the assistant watches frame-by-frame and speaks at the predicted-anomaly second and at detection moments, silent otherwise; QA answered immediately (paper). Evaluated with TimeDiff (paper).",
-  "mistakes_or_errors": "15 anomaly categories (abuse, arson, car accident, fighting, explosion, riot, stealing, shooting, ...) (paper).",
-  "languages": "en",
-  "example": null,
-  "trained_models": [
-   "AssistPDA (Qwen2-VL-2B-Instruct + SpatioTemporal Relation Distillation, LoRA)",
-   "AssistPDA (Qwen2-VL-2B + STRD module)"
-  ],
-  "fit_for_streaming_assistant": "By design the closest match to a streaming alert assistant: timestamped early warnings, onset alerts and follow-up QA in one stream. But as of 2026-09-17 no data or code has been released (paper: 'will be open-sourced'); a similar set can be rebuilt from HIVAU-70k intervals plus an LLM. Not used by JoyAI, ROMA, StreamBridge or GuideMe.",
-  "caveats": [
-   "Only arXiv v1 (27 Mar 2025); no GitHub or HF repo found (GitHub repo/code search, HF dataset search, web search on 2026-09-17).",
-   "Built on HIVAU-70k annotations, so inherits its sources and licenses.",
-   "No verbatim record available; example left null.",
-   "'Our dataset and code will be open-sourced' was not fulfilled as of 2026-09-17.",
-   "This is an alert/anomaly set and may overlap with an alert-focused group."
-  ],
-  "sample_viewer": null,
-  "sources": [
-   "https://arxiv.org/abs/2503.21904",
-   "https://arxiv.org/html/2503.21904",
-   "https://github.com/sotayang/Awesome-Streaming-Video-Understanding",
-   "https://huggingface.co/api/datasets?search=HIVAU"
-  ],
-  "_groups": [
-   "Third-person procedural & alerts",
-   "General streaming / proactive"
-  ],
-  "_file": "exo_alert_sources.json"
+  "_file": "general_streaming.json",
+  "_has_samples": false
  },
  {
   "name": "Inf-Streams-Train / Inf-Streams-Eval (StreamingVLM)",
@@ -3082,73 +2244,8 @@
    "Commentary & narration",
    "General streaming / proactive"
   ],
-  "_file": "commentary.json"
- },
- {
-  "name": "Streaming-Train-248K (StreamingHarness)",
-  "slug": "streaming-train-248k",
-  "group": "general streaming / proactive instruction data (ready-made)",
-  "role": "ready-made streaming interaction data",
-  "org": "Institute of Information Engineering CAS + UCAS + JD.COM",
-  "year": 2026,
-  "paper": "arXiv 2606.08615",
-  "links": {
-   "data": null,
-   "paper": "https://arxiv.org/abs/2606.08615",
-   "code": null,
-   "project": null
-  },
-  "access": "not released",
-  "license": null,
-  "videos_included": "no, must fetch from EPIC-KITCHENS, YouCook2, Ego4D, EgoBlind, Ego-Exo4D, EgoExoLearn, DiDeMo, Charades, OmniStar, QVHighlights, ActivityNet, Shot2Story, Assembly101, HoloAssist, WTaG, MovieChat, QuerYD, Live-WhisperX",
-  "download_size": null,
-  "scale": {
-   "videos": null,
-   "hours": null,
-   "samples": "248K (paper)",
-   "annotation_units": null,
-   "clip_length": null
-  },
-  "viewpoint": "mixed",
-  "video_domains": [
-   "egocentric cooking/kitchens",
-   "egocentric assembly and guided tasks (Assembly101, HoloAssist, WTaG)",
-   "blind-user egocentric (EgoBlind)",
-   "web activities",
-   "movies",
-   "live commentary (Live-WhisperX)"
-  ],
-  "what_people_do": "Daily living, work and productivity, knowledge and learning, and outdoor recreation (paper), including egocentric cooking, assembly and guided-task footage.",
-  "annotations_per_video": [
-   {
-    "type": "per-second narration and QA (answer-invariant backward/present/forward; answer-variant objective-fact changing; question changing with/without inter-question dependency)",
-    "timing": "per-second label",
-    "density": null,
-    "made_by": "converted from source dense annotations and ASR; generators not named for training data (the benchmark uses GPT 5.4 / Claude Opus 4.6)",
-    "content": "</response> text or </silence> each second with <Xs-Ys> timestamps"
-   }
-  ],
-  "silence_or_when_to_speak": "Explicit per-second </silence> vs </response> tokens. The weighted loss down-weights silence continuations and up-weights response onsets.",
-  "mistakes_or_errors": "none stated",
-  "languages": "en",
-  "example": null,
-  "trained_models": [
-   "StreamingHarness-8B (Qwen3-VL-8B continued training, ≈4,096 H200 GPU-hours)"
-  ],
-  "fit_for_streaming_assistant": "By its description it is exactly the target format and covers egocentric guided-task sources. It is not released: no repo or HF dataset was found. The same token scheme and very similar source list appear in the released JoyAI-VL-Interaction data (both involve JD), which is the practical substitute (the overlap is an inference).",
-  "caveats": [
-   "Abstract: 'We will open-source our data, code, and benchmark'. Not found on GitHub or HF on 2026-09-17."
-  ],
-  "sample_viewer": null,
-  "sources": [
-   "https://arxiv.org/html/2606.08615",
-   "https://huggingface.co/api/datasets?search=Streaming-Train",
-   "report_benchmarks.md"
-  ],
-  "_groups": [
-   "General streaming / proactive"
-  ],
-  "_file": "general_streaming.json"
+  "_file": "commentary.json",
+  "_has_samples": false
  },
  {
   "name": "SVBench training split",
@@ -3217,193 +2314,8 @@
   "_groups": [
    "General streaming / proactive"
   ],
-  "_file": "general_streaming.json"
- },
- {
-  "name": "Parse2Prop-1K (Em-Garde)",
-  "slug": "parse2prop-1k",
-  "group": "general streaming / proactive instruction data (ready-made)",
-  "role": "ready-made streaming interaction data",
-  "org": "Tsinghua AIR/IIIS + USTC + Microsoft Research Asia",
-  "year": 2026,
-  "paper": "arXiv 2603.19054",
-  "links": {
-   "data": null,
-   "paper": "https://arxiv.org/abs/2603.19054",
-   "code": "https://github.com/air-embodied-brain/Em-Garde",
-   "project": null
-  },
-  "access": "not released",
-  "license": "Code MIT. The dataset is not in the repo; only 8 small seed task files under train/sft/llm_data_generation/tasks/ (≈0.7–3.8 KB each).",
-  "videos_included": "no, must fetch from COIN, Ego4D, BEHAVIOR-1K",
-  "download_size": null,
-  "scale": {
-   "videos": "92 (paper)",
-   "hours": null,
-   "samples": "668 queries (paper)",
-   "annotation_units": "avg 3.99 visual cues per query, 13.5 words per cue (paper)",
-   "clip_length": "30 s segments (paper)"
-  },
-  "viewpoint": "mixed",
-  "video_domains": [
-   "how-to (COIN)",
-   "egocentric daily life (Ego4D)",
-   "simulated robot household activities (BEHAVIOR-1K head camera)"
-  ],
-  "what_people_do": "Instructional how-to clips, egocentric daily activities, and simulated robots doing household tasks.",
-  "annotations_per_video": [
-   {
-    "type": "query → structured visual proposals → target response time(s)",
-    "timing": "point timestamp (s)",
-    "density": "≈7 queries per video (paper ratio)",
-    "made_by": "human (40 seed pairs) + LLM (GPT-5), hand-filtered",
-    "content": "perceptually grounded proposal cues that trigger a response when matched"
-   }
-  ],
-  "silence_or_when_to_speak": "A response is triggered when frame embeddings match a proposal; the target response times are labelled.",
-  "mistakes_or_errors": "none",
-  "languages": "en",
-  "example": null,
-  "trained_models": [
-   "Em-Garde-7B (proposal parser)"
-  ],
-  "fit_for_streaming_assistant": "Too small and unreleased. The idea is useful: turn a request into visual cues and let a cheap matcher decide when to speak.",
-  "caveats": [
-   "Checked the repo tree on 2026-09-17: no Parse2Prop data files."
-  ],
-  "sample_viewer": null,
-  "sources": [
-   "https://arxiv.org/html/2603.19054v2",
-   "https://github.com/air-embodied-brain/Em-Garde",
-   "https://api.github.com/repos/air-embodied-brain/Em-Garde"
-  ],
-  "_groups": [
-   "General streaming / proactive"
-  ],
-  "_file": "general_streaming.json"
- },
- {
-  "name": "StreamPro-SFT-63K and StreamPro-RL-3K",
-  "slug": "streampro-sft-rl",
-  "group": "general streaming / proactive instruction data (ready-made)",
-  "role": "ready-made streaming interaction data",
-  "org": "AIM3 Lab Renmin University of China + Xiaomi MiLM Plus + Peking University",
-  "year": 2026,
-  "paper": "arXiv 2605.16381",
-  "links": {
-   "data": null,
-   "paper": "https://arxiv.org/abs/2605.16381",
-   "code": null,
-   "project": null
-  },
-  "access": "not released",
-  "license": null,
-  "videos_included": "no, must fetch from ET-Instruct-164K, LLaVA-Video-178K, MSAD and hand-crawled videos (benchmark pipeline sources)",
-  "download_size": null,
-  "scale": {
-   "videos": null,
-   "hours": null,
-   "samples": "63K SFT + 3K RL, filtered from a 66K pipeline output (paper)",
-   "annotation_units": null,
-   "clip_length": null
-  },
-  "viewpoint": "mixed",
-  "video_domains": [
-   "web general",
-   "anomaly (MSAD)",
-   "egocentric outdoor (benchmark only)"
-  ],
-  "what_people_do": "Web videos with events, objects, anomalies and procedures; Risk Forecasting (egocentric pedestrian hazards) is excluded from the training sets.",
-  "annotations_per_video": [
-   {
-    "type": "proactive responses with task-specific best response time and tolerance window (event/action captioning, event/object understanding, temporal perception/grounding; RL adds anomaly alert and goal planning)",
-    "timing": "interval [start,end]",
-    "density": null,
-    "made_by": "VLM (Gemini 2.5 Pro) captions → QA → two-agent verification loop (no human review for training data)",
-    "content": "answers scored by time decay × LLM-judged accuracy; RL uses trajectory rubrics"
-   }
-  ],
-  "silence_or_when_to_speak": "Per-step respond or stay silent at 1 FPS, with a class-balanced CB-Stream loss for SFT and GRPO with turn-level and trajectory-level rewards.",
-  "mistakes_or_errors": "Anomaly Alert task in RL-3K; no human-error labels",
-  "languages": "en",
-  "example": null,
-  "trained_models": [
-   "StreamPro-GRPO-4B (Qwen3-VL-4B)"
-  ],
-  "fit_for_streaming_assistant": "By its description it has useful goal-planning and anomaly RL targets with timing windows. Not released: no link in the paper, and GitHub/HF searches find nothing. The SFT mix also used public TimeChat-Online-139K, VideoChat-Flash-3K and 287K filtered Streamo-Instruct samples.",
-  "caveats": [
-   "Not found on GitHub or HF on 2026-09-17."
-  ],
-  "sample_viewer": null,
-  "sources": [
-   "https://arxiv.org/html/2605.16381",
-   "report_benchmarks.md"
-  ],
-  "_groups": [
-   "General streaming / proactive"
-  ],
-  "_file": "general_streaming.json"
- },
- {
-  "name": "EvoStreaming self-evolved trajectories",
-  "slug": "evostreaming-trajectories",
-  "group": "general streaming / proactive instruction data (ready-made)",
-  "role": "ready-made streaming interaction data",
-  "org": "EPIC Lab Shanghai Jiao Tong University + Tsinghua + HKUST(GZ) + Fudan",
-  "year": 2026,
-  "paper": "arXiv 2605.10343",
-  "links": {
-   "data": null,
-   "paper": "https://arxiv.org/abs/2605.10343",
-   "code": "https://github.com/BoxueYang/EvoStreaming",
-   "project": null
-  },
-  "access": "not released",
-  "license": null,
-  "videos_included": "no, must fetch from the TimeChat-Online-139K video pool",
-  "download_size": null,
-  "scale": {
-   "videos": null,
-   "hours": null,
-   "samples": "≈1,000 self-generated trajectories ('139× less data than TimeChat-Online') (paper)",
-   "annotation_units": null,
-   "clip_length": null
-  },
-  "viewpoint": "third-person web",
-  "video_domains": [
-   "web general (TimeChat-Online-139K pool)"
-  ],
-  "what_people_do": "Same web videos as TimeChat-Online-139K (vlogs, makeup tutorials, movies, how-to).",
-  "annotations_per_video": [
-   {
-    "type": "Silent/respond trajectory with segment relevance labels (5 task types: immediate visual, memory-dependent, temporal aggregation, anticipatory monitoring, dynamic event description)",
-    "timing": "per-second label",
-    "density": null,
-    "made_by": "the base VideoLLM itself (self-generated questions, relevance labels and roll-outs)",
-    "content": "when to answer as evidence emerges"
-   }
-  ],
-  "silence_or_when_to_speak": "Explicit Silent vs respond decisions per video segment.",
-  "mistakes_or_errors": "none",
-  "languages": "en",
-  "example": null,
-  "trained_models": [
-   "EvoStreaming LoRA variants of Qwen2-VL, Qwen2.5-VL, Qwen3-VL, InternVL-3.5, MiniCPM-V4.5"
-  ],
-  "fit_for_streaming_assistant": "Not data to download but a recipe: any offline VLM can generate its own timing supervision on your videos. That is cheap, but it inherits the base model's errors.",
-  "caveats": [
-   "The GitHub repo is empty (size 0, one push on 2026-05-09)."
-  ],
-  "sample_viewer": null,
-  "sources": [
-   "https://arxiv.org/html/2605.10343",
-   "https://api.github.com/repos/BoxueYang/EvoStreaming",
-   "report_benchmarks.md"
-  ],
-  "_groups": [
-   "General streaming / proactive"
-  ],
-  "_file": "general_streaming.json"
+  "_file": "general_streaming.json",
+  "_has_samples": true
  },
  {
   "name": "ThinkStream streaming CoT data (cold-start + RLVR)",
@@ -3476,69 +2388,8 @@
   "_groups": [
    "General streaming / proactive"
   ],
-  "_file": "general_streaming.json"
- },
- {
-  "name": "Think While Watching three-stage streaming CoT data",
-  "slug": "think-while-watching",
-  "group": "general streaming / proactive instruction data (ready-made)",
-  "role": "ready-made streaming interaction data",
-  "org": "Institute of Automation CAS (CASIA)",
-  "year": 2026,
-  "paper": "arXiv 2603.11896",
-  "links": {
-   "data": null,
-   "paper": "https://arxiv.org/abs/2603.11896",
-   "code": "https://github.com/wanglu-cs/Think_While_Watching",
-   "project": null
-  },
-  "access": "not released",
-  "license": "Code MIT; only one sample JSON (data/sample_data/data_000000.json) is in the repo.",
-  "videos_included": "no, must fetch from VideoChatOnline-IT sources and YouTube",
-  "download_size": null,
-  "scale": {
-   "videos": null,
-   "hours": null,
-   "samples": "Stage 1: 5,160 single-round; Stage 2: 2,752 multi-round dialogues from 8,513 QA; Stage 3: 1,500 long-video multi-round instances (paper)",
-   "annotation_units": null,
-   "clip_length": "Stage 3: 100 to 300+ frames (paper)"
-  },
-  "viewpoint": "third-person web",
-  "video_domains": [
-   "VideoChatOnline-IT sources",
-   "YouTube tutorials, lectures, long-form recordings"
-  ],
-  "what_people_do": "Short activity and how-to clips (Stages 1–2), plus YouTube tutorials, lectures and continuous recordings (Stage 3).",
-  "annotations_per_video": [
-   {
-    "type": "segment-level memory notes + answer CoT for multi-round questions",
-    "timing": "per-clip label",
-    "density": "3–5 rounds per Stage 3 instance (paper)",
-    "made_by": "LLM (GPT-5.2)",
-    "content": "memory-anchored reasoning and answers"
-   }
-  ],
-  "silence_or_when_to_speak": "None (question-driven).",
-  "mistakes_or_errors": "none",
-  "languages": "en",
-  "example": null,
-  "trained_models": [
-   "TWW on Qwen3-VL-2B/4B/8B"
-  ],
-  "fit_for_streaming_assistant": "Not downloadable. The recipe shows how to add per-segment memory notes for long multi-turn sessions.",
-  "caveats": [
-   "The README says training code and scripts 'will be released in a future update' (checked 2026-09-17)."
-  ],
-  "sample_viewer": null,
-  "sources": [
-   "https://arxiv.org/html/2603.11896v1",
-   "https://github.com/wanglu-cs/Think_While_Watching",
-   "https://api.github.com/repos/wanglu-cs/Think_While_Watching"
-  ],
-  "_groups": [
-   "General streaming / proactive"
-  ],
-  "_file": "general_streaming.json"
+  "_file": "general_streaming.json",
+  "_has_samples": true
  },
  {
   "name": "Molmo2-VideoCapQA (CapQA + LongCapQA)",
@@ -3606,7 +2457,8 @@
   "_groups": [
    "General streaming / proactive"
   ],
-  "_file": "general_streaming.json"
+  "_file": "general_streaming.json",
+  "_has_samples": false
  },
  {
   "name": "Molmo2-AskModelAnything (HumanQA)",
@@ -3670,7 +2522,8 @@
   "_groups": [
    "General streaming / proactive"
   ],
-  "_file": "general_streaming.json"
+  "_file": "general_streaming.json",
+  "_has_samples": false
  },
  {
   "name": "TimeChat-Online-139K",
@@ -3743,7 +2596,8 @@
   "_groups": [
    "General streaming / proactive"
   ],
-  "_file": "general_streaming.json"
+  "_file": "general_streaming.json",
+  "_has_samples": false
  },
  {
   "name": "ViSpeak-Instruct",
@@ -3808,7 +2662,8 @@
   "_groups": [
    "General streaming / proactive"
   ],
-  "_file": "general_streaming.json"
+  "_file": "general_streaming.json",
+  "_has_samples": true
  },
  {
   "name": "SOVBench-T trigger training set (StreamOV)",
@@ -3869,7 +2724,8 @@
   "_groups": [
    "General streaming / proactive"
   ],
-  "_file": "general_streaming.json"
+  "_file": "general_streaming.json",
+  "_has_samples": true
  },
  {
   "name": "CogStream (train split)",
@@ -3935,7 +2791,8 @@
   "_groups": [
    "General streaming / proactive"
   ],
-  "_file": "general_streaming.json"
+  "_file": "general_streaming.json",
+  "_has_samples": false
  },
  {
   "name": "Offline video caption/QA pretraining sources used by Baichuan-Omni-1.5 (Koala-36M, ShareGPT4Video, ShareGemini)",
@@ -4004,7 +2861,8 @@
   "_groups": [
    "General streaming / proactive"
   ],
-  "_file": "general_streaming.json"
+  "_file": "general_streaming.json",
+  "_has_samples": false
  },
  {
   "name": "Live-CC-5M",
@@ -4083,7 +2941,8 @@
   "_groups": [
    "Commentary & narration"
   ],
-  "_file": "commentary.json"
+  "_file": "commentary.json",
+  "_has_samples": false
  },
  {
   "name": "Live-WhisperX-526K",
@@ -4174,84 +3033,8 @@
   "_groups": [
    "Commentary & narration"
   ],
-  "_file": "commentary.json"
- },
- {
-  "name": "LiveSports-3K (CC and QA tracks)",
-  "slug": "livesports-3k",
-  "group": "real-time commentary / narration streams",
-  "role": "commentary / narration stream",
-  "org": "NUS Show Lab + ByteDance",
-  "year": 2025,
-  "paper": "arXiv 2504.16030 (CVPR 2025, LiveCC)",
-  "links": {
-   "data": "https://huggingface.co/datasets/stdKonjac/LiveSports-3K",
-   "paper": "https://arxiv.org/abs/2504.16030",
-   "code": "https://github.com/showlab/livecc",
-   "project": "https://showlab.github.io/livecc"
-  },
-  "access": "open download",
-  "license": "Annotations: no license declared on the HF card (license field empty, 2026-09-17). Videos: YouTube sports videos redistributed in tar parts; copyright stays with uploaders.",
-  "videos_included": "yes (hosted with annotations; 5 tar parts)",
-  "download_size": "22.4 GB (5 × 4.5 GB video tar parts + 8.9 MB CC JSON + 0.6 MB QA JSON; computed from HF tree)",
-  "scale": {
-   "videos": "416 YouTube videos across 49 sports (computed; paper agrees)",
-   "hours": "15.4 h of annotated event time (computed: 55,368 s); videos median ≈192 s to last event end (computed)",
-   "samples": "CC: 1,702 events; QA: 1,174 4-option MCQs over 407 videos (computed; paper says 414 videos before removing speech-dependent questions)",
-   "annotation_units": "12,954 timestamped ASR segments, 137,268 words in CC events (computed)",
-   "clip_length": "events median 22.4 s, p10–p90 11.8–64.9 s, max 284.5 s (computed)"
-  },
-  "viewpoint": "third-person web",
-  "video_domains": [
-   "sports broadcasts (49 sports: martial arts, volleyball, lacrosse, rowing, bowling, fishing, rugby, tennis, cricket, golf …)"
-  ],
-  "what_people_do": "Athletes compete in 49 sports while a commentator or presenter talks over the action; videos were drawn from Live-WhisperX-526K and removed from its training use.",
-  "annotations_per_video": [
-   {
-    "type": "ground-truth ASR commentary per event",
-    "timing": "interval [start,end] per ASR segment",
-    "density": "median 2.66 words/s within events; ≈20% of event time not covered by any ASR segment (mean; median 14%) (computed); ≈4 events per video",
-    "made_by": "ASR (WhisperX, from Live-WhisperX pipeline); events merged by LLM (GPT-4o-mini) and filtered by human annotators",
-    "content": "live commentary sentences; plus preceding ASR (preasr) as context"
-   },
-   {
-    "type": "event title + sport class",
-    "timing": "per-clip label",
-    "density": "1 per event",
-    "made_by": "LLM (GPT-4o-mini)",
-    "content": "e.g. \"Tom's performance and struggles during the game.\" / class 'Bowling'"
-   },
-   {
-    "type": "multiple-choice question (Who/When/What, OCR flag)",
-    "timing": "interval [start,end]",
-    "density": "1,174 total: What 465, Who 374, When 335; 298 need OCR (computed)",
-    "made_by": "human (paper: questions designed per event, 62 speech-dependent ones manually removed; question writer not named explicitly)",
-    "content": "4-option MCQ about the event clip"
-   }
-  ],
-  "silence_or_when_to_speak": "Evaluation only: the model gets title + previous ASR and must commentate the event span; timing is judged via GPT-4o win rate against GPT-4o output, not via speak/silence labels. Gaps between ASR segments give implicit pauses.",
-  "mistakes_or_errors": "none",
-  "languages": "en",
-  "example": "{\"video_id\": \"6gyD-Mte2ZM\", \"begin\": 26.127, \"end\": 38.876, \"class\": \"Bowling\", \"event_title\": \"Tom's performance and struggles during the game.\"} event_asr: [[26.127, 29.509, \"A season for him and his first television show.\"], [29.529, 31.131, \"A big cleanup effort here.\"], [31.151, 33.973, \"A lot of RPMs coming out of this hand right here.\"], [38.135, 38",
-  "trained_models": [],
-  "fit_for_streaming_assistant": "An evaluation set for live commentary quality (used by LiveCC, StreamingVLM, MiniCPM-o 4.5 and others), not training data; there is no train split on HF or in the paper. Useful as a held-out check that commentary skill survives assistant fine-tuning; its videos were excluded from Live-WhisperX training.",
-  "caveats": [
-   "No train split exists; both HF configs are 'test'.",
-   "No license declared on the dataset card.",
-   "event_asr / preasr are JSON-encoded strings inside the JSON, not lists.",
-   "QA file covers 407 video ids; paper reports 1,236 MCQs over 414 videos before manually removing 62 speech-dependent questions."
-  ],
-  "sample_viewer": null,
-  "sources": [
-   "https://huggingface.co/datasets/stdKonjac/LiveSports-3K",
-   "https://huggingface.co/datasets/stdKonjac/LiveSports-3K/resolve/main/LiveSports-3K-CC.json",
-   "https://huggingface.co/datasets/stdKonjac/LiveSports-3K/resolve/main/LiveSports-3K-QA.json",
-   "https://arxiv.org/html/2504.16030v1"
-  ],
-  "_groups": [
-   "Commentary & narration"
-  ],
-  "_file": "commentary.json"
+  "_file": "commentary.json",
+  "_has_samples": false
  },
  {
   "name": "SoccerNet-Caption",
@@ -4339,7 +3122,8 @@
   "_groups": [
    "Commentary & narration"
   ],
-  "_file": "commentary.json"
+  "_file": "commentary.json",
+  "_has_samples": false
  },
  {
   "name": "SoccerNet-Echoes",
@@ -4418,7 +3202,8 @@
   "_groups": [
    "Commentary & narration"
   ],
-  "_file": "commentary.json"
+  "_file": "commentary.json",
+  "_has_samples": false
  },
  {
   "name": "MatchTime (SN-Caption realigned) + SN-Caption-test-align",
@@ -4494,7 +3279,8 @@
   "_groups": [
    "Commentary & narration"
   ],
-  "_file": "commentary.json"
+  "_file": "commentary.json",
+  "_has_samples": false
  },
  {
   "name": "SoccerReplay-1988 (UniSoccer / MatchVision)",
@@ -4575,7 +3361,8 @@
   "_groups": [
    "Commentary & narration"
   ],
-  "_file": "commentary.json"
+  "_file": "commentary.json",
+  "_has_samples": false
  },
  {
   "name": "GOAL (knowledge-grounded soccer commentary)",
@@ -4649,77 +3436,8 @@
   "_groups": [
    "Commentary & narration"
   ],
-  "_file": "commentary.json"
- },
- {
-  "name": "NBA_Streaming",
-  "slug": "nba-streaming",
-  "group": "real-time commentary / narration streams",
-  "role": "commentary / narration stream",
-  "org": "Beijing University of Technology; Fudan University; CASIA",
-  "year": 2026,
-  "paper": "arXiv 2608.09200",
-  "links": {
-   "data": null,
-   "paper": "https://arxiv.org/abs/2608.09200",
-   "code": null,
-   "project": null
-  },
-  "access": "not released",
-  "license": "Paper states annotations will be CC BY-NC 4.0 (academic research only); video = NBA broadcast footage, rights with NBA/broadcasters (paper)",
-  "videos_included": "no, must fetch from source (NBA full-game broadcasts; nothing released yet)",
-  "download_size": null,
-  "scale": {
-   "videos": "152 full games, 2025–26 season; 121 train / 15 val / 16 test (paper)",
-   "hours": "≈307.5 h (paper)",
-   "samples": "≈35K temporally aligned events (paper)",
-   "annotation_units": "50.4K commentary sentences (paper)",
-   "clip_length": "full games, ≈2 h each (derived: 307.5 h / 152)"
-  },
-  "viewpoint": "third-person web",
-  "video_domains": [
-   "sport broadcast",
-   "basketball"
-  ],
-  "what_people_do": "Professional NBA players play full games in the 2025–26 season. The videos are the complete TV broadcasts, not pre-cut highlight clips.",
-  "annotations_per_video": [
-   {
-    "type": "event boundaries + fine-grained action (11 families / 71 classes), player identity, event chains",
-    "timing": "interval [start,end]",
-    "density": "≈230 events per game, ≈1.9 events/min (derived from paper totals)",
-    "made_by": "rule (official NBA play-by-play records aligned to video by OCR of the game clock, boundaries expanded per event type)",
-    "content": "when each play starts/ends, what action, which player"
-   },
-   {
-    "type": "natural-language commentary sentence",
-    "timing": "interval [start,end]",
-    "density": "≈331 sentences per game, ≈2.7 per minute (derived: 50.4K / 307.5 h)",
-    "made_by": "LLM (Llama3-8B expands PBP abbreviations via per-event-type templates)",
-    "content": "one or more commentary sentences per event, e.g. who shot/scored/assisted"
-   }
-  ],
-  "silence_or_when_to_speak": "The task is causal: a model should speak once an event has ended (an 'event-ending detector' fires y_t=1; y_t=0 is silence). Timing labels are the event windows. They come from play-by-play timestamps, not from when a human commentator actually spoke.",
-  "mistakes_or_errors": "none",
-  "languages": "en",
-  "example": null,
-  "trained_models": [
-   "the paper's causal two-stage framework (CLIP-feature event localizer + Qwen3-VL-8B-Instruct commentary modules)"
-  ],
-  "fit_for_streaming_assistant": "This is the only basketball set with full continuous games and event-aligned 'speak now' targets, so it teaches event-triggered speaking in long streams. The text is templated LLM expansion of play-by-play, not real commentator speech, and the data is still unreleased.",
-  "caveats": [
-   "Data and code 'will be made publicly available upon acceptance'. No GitHub/HF link was found on 2026-09-17.",
-   "Paper-reported annotation QA on 20 games: timestamp inclusion 97%, commentary consistency 99%, full-event coverage 96%.",
-   "No verbatim annotation example is given in the paper text (Figure 5 is an image)."
-  ],
-  "sample_viewer": null,
-  "sources": [
-   "https://arxiv.org/abs/2608.09200",
-   "https://arxiv.org/html/2608.09200"
-  ],
-  "_groups": [
-   "Commentary & narration"
-  ],
-  "_file": "commentary.json"
+  "_file": "commentary.json",
+  "_has_samples": false
  },
  {
   "name": "SCBench CommentarySet",
@@ -4787,7 +3505,8 @@
   "_groups": [
    "Commentary & narration"
   ],
-  "_file": "commentary.json"
+  "_file": "commentary.json",
+  "_has_samples": false
  },
  {
   "name": "BoxComm",
@@ -4860,7 +3579,8 @@
   "_groups": [
    "Commentary & narration"
   ],
-  "_file": "commentary.json"
+  "_file": "commentary.json",
+  "_has_samples": false
  },
  {
   "name": "LoL-V2T",
@@ -4926,7 +3646,8 @@
   "_groups": [
    "Commentary & narration"
   ],
-  "_file": "commentary.json"
+  "_file": "commentary.json",
+  "_has_samples": false
  },
  {
   "name": "RacingGame Commentary Dataset (Assetto Corsa)",
@@ -5000,7 +3721,8 @@
   "_groups": [
    "Commentary & narration"
   ],
-  "_file": "commentary.json"
+  "_file": "commentary.json",
+  "_has_samples": false
  },
  {
   "name": "Ego4D Narrations (narration_pass_1 / narration_pass_2)",
@@ -5089,95 +3811,8 @@
   "_groups": [
    "Commentary & narration"
   ],
-  "_file": "commentary.json"
- },
- {
-  "name": "HowTo100M",
-  "slug": "howto100m",
-  "group": "real-time commentary / narration streams",
-  "role": "commentary / narration stream",
-  "org": "Inria / ENS (WILLOW), CIIRC CTU, DeepMind",
-  "year": 2019,
-  "paper": "arXiv 1906.03327 (ICCV 2019)",
-  "links": {
-   "data": "https://www.di.ens.fr/willow/research/howto100m/",
-   "paper": "https://arxiv.org/abs/1906.03327",
-   "code": "https://github.com/antoine77340/howto100m",
-   "project": "https://www.di.ens.fr/willow/research/howto100m/"
-  },
-  "access": "not released",
-  "license": "No license stated for captions (HF mirror card: 'Not specified'); videos are YouTube content owned by uploaders, historically served by the authors after a request form (user id/password)",
-  "videos_included": "no, must fetch from source YouTube (official video server and metadata zip no longer reachable)",
-  "download_size": "caption.json ≈5 GB inside HowTo100M.zip (HF loader comment); official zip now HTTP 403",
-  "scale": {
-   "videos": "1.22M (paper; 1,221k in Table 1)",
-   "hours": "134,472 h (paper Table 1)",
-   "samples": "136.6M clip–caption pairs (paper Table 2)",
-   "annotation_units": "≈110 subtitle lines per video (paper)",
-   "clip_length": "videos avg 6.5 min (≤2,000 s); caption lines avg 4 s (paper)"
-  },
-  "viewpoint": "third-person web",
-  "video_domains": [
-   "cooking / food",
-   "home & garden",
-   "hobbies & crafts",
-   "vehicles",
-   "pets",
-   "personal care",
-   "fitness",
-   "electronics"
-  ],
-  "what_people_do": "YouTube 'how to …' videos for 23.6k WikiHow tasks: a creator performs and explains a task (cooking, crafts, car repair, gardening). The narration is the creator's own speech as YouTube subtitles.",
-  "annotations_per_video": [
-   {
-    "type": "subtitle line (auto-ASR or uploaded caption)",
-    "timing": "interval [start,end]",
-    "density": "≈110 lines per 6.5-min video ≈17 lines/min; 4 non-stop-words per line (paper); ≈2.4 words/s in the sentencified derivative (computed, see HTM-AA/HTM-370K entry)",
-    "made_by": "ASR (YouTube auto-captions) or uploader captions",
-    "content": "Raw speech of the instructor, often not visually grounded (only 51% of 400 sampled pairs mention something visible, paper)"
-   },
-   {
-    "type": "task label",
-    "timing": "per-clip label",
-    "density": "1 per video",
-    "made_by": "rule (search query)",
-    "content": "WikiHow task name + 2-level category + search rank"
-   }
-  ],
-  "silence_or_when_to_speak": "Only the natural pauses of the YouTube narrator; subtitle lines overlap (rolling auto-captions), so explicit silence must be derived from gaps. Timing is when the instructor spoke, which is often before or after the action.",
-  "mistakes_or_errors": "none",
-  "languages": "en (subtitles include machine-translated captions)",
-  "example": "'task_description': 'Paint a Motorcycle Tank', 'starts': [6.02, 9.45, 12.54, …], 'captions': ['melt alright', 'watching', 'dad stripping paint', 'gas bike frame 1979', 'yamaha xs 1100 got', 'engine rebuilt', …] (HF mirror card; stop words removed)",
-  "trained_models": [
-   "MIL-NCE",
-   "VideoCLIP",
-   "TAN",
-   "Vid2Seq (HTM variants)",
-   "LiveCC (HowTo100M IDs among its YouTube sources)"
-  ],
-  "fit_for_streaming_assistant": "The largest narrated how-to corpus: an instructor talking over their own task is the closest web analogue to a guide speaking while a task happens. Raw auto-captions are noisy, often unaligned and nearly continuous, so they teach talkativeness more than when to speak. Use re-transcribed (WhisperX) or aligned derivatives (HTM-AA, HowToCaption) and re-download videos from YouTube by ID.",
-  "caveats": [
-   "Access label 'not released' reflects today's state only: HowTo100M was publicly released in 2019 (metadata zip + video server behind a request form), but on 2026-09-17 every official download endpoint failed (403 / no response).",
-   "On 2026-09-17 the official metadata (rocq.inria.fr/cluster-willow/amiech/howto100m/HowTo100M.zip, README.txt, model) returned HTTP 403 and howto100m.inria.fr (video/S3D-feature server) did not respond.",
-   "The HF loader HuggingFaceM4/howto100m depends on the same dead URL; totuta/youtube_subs_howto100M (apache-2.0 tag, 309k videos) keeps transcripts but no timestamps.",
-   "Default caption.json strips stop words; raw_caption.zip had the unprocessed text.",
-   "Paper: 71% of 100 sampled videos instructional, 12% vlogs, 7% ads/reviews.",
-   "Many YouTube videos have since been deleted."
-  ],
-  "sample_viewer": null,
-  "sources": [
-   "https://www.di.ens.fr/willow/research/howto100m/",
-   "https://arxiv.org/abs/1906.03327",
-   "https://arxiv.org/pdf/1906.03327",
-   "https://github.com/antoine77340/howto100m",
-   "https://www.rocq.inria.fr/cluster-willow/amiech/howto100m/HowTo100M.zip",
-   "https://huggingface.co/datasets/HuggingFaceM4/howto100m",
-   "https://huggingface.co/datasets/totuta/youtube_subs_howto100M"
-  ],
-  "_groups": [
-   "Commentary & narration"
-  ],
-  "_file": "commentary.json"
+  "_file": "commentary.json",
+  "_has_samples": false
  },
  {
   "name": "HTM-AA / Sentencified HTM (HTM-370K, HTM-1.2M) / HTM WhisperX",
@@ -5273,7 +3908,8 @@
   "_groups": [
    "Commentary & narration"
   ],
-  "_file": "commentary.json"
+  "_file": "commentary.json",
+  "_has_samples": false
  },
  {
   "name": "HowToCaption (and HowToCaption-grounded)",
@@ -5352,7 +3988,8 @@
   "_groups": [
    "Commentary & narration"
   ],
-  "_file": "commentary.json"
+  "_file": "commentary.json",
+  "_has_samples": false
  },
  {
   "name": "YT-Temporal-180M / YT-Temporal-1B",
@@ -5448,7 +4085,8 @@
   "_groups": [
    "Commentary & narration"
   ],
-  "_file": "commentary.json"
+  "_file": "commentary.json",
+  "_has_samples": false
  },
  {
   "name": "VidChapters-7M",
@@ -5532,7 +4170,8 @@
   "_groups": [
    "Commentary & narration"
   ],
-  "_file": "commentary.json"
+  "_file": "commentary.json",
+  "_has_samples": false
  },
  {
   "name": "Vript (+ Vript_Chinese)",
@@ -5620,7 +4259,8 @@
   "_groups": [
    "Commentary & narration"
   ],
-  "_file": "commentary.json"
+  "_file": "commentary.json",
+  "_has_samples": false
  },
  {
   "name": "ShareGPT4Video (40K GPT-4V captions)",
@@ -5697,7 +4337,8 @@
   "_groups": [
    "Commentary & narration"
   ],
-  "_file": "commentary.json"
+  "_file": "commentary.json",
+  "_has_samples": false
  },
  {
   "name": "ActivityNet Captions",
@@ -5783,81 +4424,8 @@
    "Commentary & narration",
    "Third-person procedural & alerts"
   ],
-  "_file": "commentary.json"
- },
- {
-  "name": "ViTT (Video Timeline Tags)",
-  "slug": "vitt",
-  "group": "real-time commentary / narration streams",
-  "role": "commentary / narration stream",
-  "org": "Google Research",
-  "year": 2020,
-  "paper": "AACL-IJCNLP 2020, 'Multimodal Pretraining for Dense Video Captioning' (arXiv 2011.11760)",
-  "links": {
-   "data": "https://storage.googleapis.com/video-timeline-tags/ViTT-annotations.json",
-   "paper": "https://arxiv.org/abs/2011.11760",
-   "code": "https://github.com/google-research-datasets/Video-Timeline-Tags-ViTT",
-   "project": null
-  },
-  "access": "not released",
-  "license": "Annotations: repo LICENSE says 'The dataset may be freely used for any purpose, although acknowledgement of Google LLC (\"Google\") as the data source would be appreciated' (GitHub reports NOASSERTION). Videos: YouTube (YouTube-8M ids), copyright with uploaders.",
-  "videos_included": "no, must fetch from YouTube (convert YouTube-8M ids to YouTube ids)",
-  "download_size": null,
-  "scale": {
-   "videos": "8,169 annotated videos (card); 5,840 annotated once",
-   "hours": null,
-   "samples": "12,461 annotation sets (card)",
-   "annotation_units": "88,455 tagged segments, 56,027 unique tags (paper); 7.1 segments per video on average (paper)",
-   "clip_length": "≈4 min average (VidChapters-7M paper, Table 1)"
-  },
-  "viewpoint": "third-person web",
-  "video_domains": [
-   "cooking (≈half)",
-   "home repair",
-   "maintenance",
-   "crafts",
-   "sports technique",
-   "other instructional"
-  ],
-  "what_people_do": "Instructional YouTube videos in which a real person demonstrates and verbally explains a procedure; about half are cooking/recipe videos, the rest are randomly sampled non-cooking how-to videos. Gaming videos were excluded.",
-  "annotations_per_video": [
-   {
-    "type": "timeline tag (segment start + short free-text tag)",
-    "timing": "point timestamp (s)",
-    "density": "7.1 per video (paper) ≈ 1.8 per minute (derived from paper averages)",
-    "made_by": "human (annotators shown timestamped ASR sentences)",
-    "content": "concise step/section label such as 'Demonstrating crossover' or 'Opening'; start time in milliseconds only"
-   }
-  ],
-  "silence_or_when_to_speak": "None; only segment start points. Start times were suggested from ASR sentence starts, so tags mark step transitions.",
-  "mistakes_or_errors": "none",
-  "languages": "en",
-  "example": "{\"id\": \"FmTp\", \"annotations\": [{\"timestamp\": 260, \"tag\": \"Opening\"}, {\"timestamp\": 16000, \"tag\": \"Displaying technique\"}, {\"timestamp\": 23990, \"tag\": \"Showing foot positioning\"}, {\"timestamp\": 55530, \"tag\": \"Demonstrating crossover\"}, {\"timestamp\": 114100, \"tag\": \"Closing\"}]}  (from the GitHub README)",
-  "trained_models": [
-   "Vid2Seq (fine-tuned/evaluated)",
-   "VidChapters-7M Vid2Seq transfer models",
-   "E2ESG"
-  ],
-  "fit_for_streaming_assistant": "Human step-transition points on real how-to videos, a good small signal for 'announce the next step when it starts'. It is tiny, point-only, and tags are 2–4 words; currently it cannot be downloaded at all.",
-  "caveats": [
-   "Access label 'not released' reflects today's state only: ViTT was publicly released in 2020 via Google Cloud Storage, but all download links return 403 as of 2026-09-17.",
-   "All four GCS download links (ViTT-annotations.json, train/dev/test_id.txt) return HTTP 403 AccessDenied (checked 2026-09-17); open GitHub issue 'AccessDenied error when downloading ViTT dataset' (2026-01-24) has no reply. No HF mirror found; the Wayback Machine was offline when checked.",
-   "IDs are YouTube-8M pseudo-ids that need conversion, and only still-public videos resolve.",
-   "276 videos have more than 3 annotation sets and were outside the paper's splits."
-  ],
-  "sample_viewer": null,
-  "sources": [
-   "https://github.com/google-research-datasets/Video-Timeline-Tags-ViTT",
-   "https://raw.githubusercontent.com/google-research-datasets/Video-Timeline-Tags-ViTT/main/LICENSE",
-   "https://storage.googleapis.com/video-timeline-tags/ViTT-annotations.json",
-   "https://github.com/google-research-datasets/Video-Timeline-Tags-ViTT/issues",
-   "https://arxiv.org/pdf/2011.11760",
-   "https://arxiv.org/html/2309.13952"
-  ],
-  "_groups": [
-   "Commentary & narration"
-  ],
-  "_file": "commentary.json"
+  "_file": "commentary.json",
+  "_has_samples": false
  },
  {
   "name": "MAD (Movie Audio Descriptions)",
@@ -5922,7 +4490,8 @@
   "_groups": [
    "Commentary & narration"
   ],
-  "_file": "commentary.json"
+  "_file": "commentary.json",
+  "_has_samples": false
  },
  {
   "name": "LSMDC (Large Scale Movie Description Challenge; MPII-MD + M-VAD)",
@@ -5991,96 +4560,8 @@
   "_groups": [
    "Commentary & narration"
   ],
-  "_file": "commentary.json"
- },
- {
-  "name": "Gander duplex interaction corpus (12 released example dialogues; 2.7M announced)",
-  "slug": "gander-duplex",
-  "group": "duplex / audio-visual dialogue & assistive",
-  "role": "duplex / audio-visual dialogue",
-  "org": "Tencent Hunyuan Speech Team, Zhejiang University, SJTU",
-  "year": 2026,
-  "paper": "arXiv 2609.08977",
-  "links": {
-   "data": "https://github.com/Omni-Interaction-Gander/Omni-Interaction-Agent/tree/main/minicpm_ft/examples/release",
-   "paper": "https://arxiv.org/abs/2609.08977",
-   "code": "https://github.com/Omni-Interaction-Gander/Omni-Interaction-Agent",
-   "project": "https://huggingface.co/Gander-Omni/Gander"
-  },
-  "access": "not released",
-  "license": "Examples: Apache-2.0 (repo LICENSE, live 2026-09-17); full corpus not released, license unknown. Audio-visual portion is derived from JoyAI-VL, LiveCC and Streamo, whose source videos keep their own (mostly YouTube) rights.",
-  "videos_included": "partial",
-  "download_size": "examples ≈0.1 MB of manifests plus bundled wav/mp3/jpg/ppm media (computed); full corpus: not released",
-  "scale": {
-   "videos": "examples: 2 records carry frames (irrelevant_video, gui_agent) plus 2 ppm frames in video_understanding (computed); full corpus: not stated",
-   "hours": "examples: 216 s total over 12 dialogues (computed)",
-   "samples": "released: 12 unique dialogues = 12 Thinker + 6 Talker manifest records (Talker records re-use Thinker ids; computed live from GitHub tree 2026-09-17). Announced: 2.7M examples (paper Table 2)",
-   "annotation_units": "announced mixture (paper): InteractionSpeech turn-taking/interrupt 260.8K; audio-visual interaction (streaming QA, narration, proactive visual response) 1.1M; no-command silence 40.0K; irrelevant video 116.2K; anti-interference 64.7K; multi-party 8.8K",
-   "clip_length": "examples 4–55 s (computed)"
-  },
-  "viewpoint": "mixed",
-  "video_domains": [
-   "web video (via JoyAI-VL, LiveCC, Streamo)",
-   "GUI screen recordings",
-   "speech-only dialogue"
-  ],
-  "what_people_do": "Mostly synthetic: a user speaks (voice-cloned TTS) to an assistant while video or a GUI may be playing; tasks include spoken QA, interrupting the assistant, backchannels, delegating long agent tasks, and asking about video content. Distractor speakers and irrelevant videos are mixed in as negatives.",
-  "annotations_per_video": [
-   {
-    "type": "per-turn timeline (user audio / assistant text)",
-    "timing": "interval [start,end]",
-    "density": "1–7 assistant turns per example (computed)",
-    "made_by": "LLM (DeepSeek-V4-Pro dialogues) + TTS (Qwen3-TTS / voice cloning)",
-    "content": "turn onset/offset in ms, turn_state, assistant text snapped to 1 s units via speak_block_indices"
-   },
-   {
-    "type": "interaction event labels",
-    "timing": "interval [start,end]",
-    "density": "per turn",
-    "made_by": "rule + LLM judge",
-    "content": "event_type (e.g. overlap_user_head, competitive interruption, supportive backchannel), distractor windows, should_respond / should_ignore flags, SIR/SNR"
-   },
-   {
-    "type": "tool calls / responses",
-    "timing": "point timestamp (s)",
-    "density": "0–5 per example (computed)",
-    "made_by": "LLM",
-    "content": "task_start / task_resolve calls to a back-end agent and worker deliveries"
-   },
-   {
-    "type": "Talker speech targets",
-    "timing": "per-second label",
-    "density": "50 S3 tokens per 1 s unit",
-    "made_by": "rule (model tokenizer)",
-    "content": "CosyVoice2 S3 codes for assistant speech"
-   }
-  ],
-  "silence_or_when_to_speak": "Explicit: each 1 s unit ends in a control token (<|listen|>, <|speak|>, <|interrupt|>, plus <|backchannel|> in code). Silence = listen units; a dedicated 40.0K no-command set and 116.2K irrelevant-video set supervise staying quiet (paper Table 2).",
-  "mistakes_or_errors": "none (no task-mistake labels; 'user correction' is one of 5 dialogue interaction profiles)",
-  "languages": "zh, en",
-  "example": "{\"role\":\"user\",...\"meta\":{\"event_type\":\"overlap_user_head\",\"distractor_type\":\"courier_notice\",\"target_user_window_ms\":[0,11192],\"distractor_window_ms\":[2807,5314],\"should_respond_to_target\":true,\"should_ignore_distractor\":true}}",
-  "trained_models": [
-   "Gander (MiniCPM-o 4.5 fine-tune)"
-  ],
-  "fit_for_streaming_assistant": "The released format is directly the 1 s listen/speak/interrupt unit grammar a duplex streaming assistant needs, and the paper documents the most complete recipe for building such data. Only 12 example dialogues exist today, so it is a format template, not training data. Its video part is streaming QA and narration from web video; it has no egocentric task guidance or mistake content.",
-  "caveats": [
-   "Full 2.7M corpus not released; README badge 'Dataset Coming Soon', note 2026-09-10 'undergoing the open source release process' (live 2026-09-17).",
-   "Record count depends on convention: 12 unique dialogues, 18 manifest lines (12 Thinker + 6 Talker); earlier local notes counted 13 (12 Thinker + 1 Talker-only sample).",
-   "One example's frames come from a re-used web video ('unused_verified_joyai_video') of unknown copyright.",
-   "Paper names 'Qwen3.5-297B-A17B', probably a typo for 397B."
-  ],
-  "sample_viewer": null,
-  "sources": [
-   "https://github.com/Omni-Interaction-Gander/Omni-Interaction-Agent",
-   "https://arxiv.org/html/2609.08977",
-   "https://huggingface.co/Gander-Omni/Gander",
-   "local: data/gander-duplex-examples/stats.json (computed)",
-   "local: models/omni-duplex-models.md"
-  ],
-  "_groups": [
-   "Duplex, audio-visual & assistive"
-  ],
-  "_file": "duplex_assistive.json"
+  "_file": "commentary.json",
+  "_has_samples": false
  },
  {
   "name": "InteractSpeech (English text-and-timeline release)",
@@ -6159,7 +4640,8 @@
   "_groups": [
    "Duplex, audio-visual & assistive"
   ],
-  "_file": "duplex_assistive.json"
+  "_file": "duplex_assistive.json",
+  "_has_samples": true
  },
  {
   "name": "Seamless Interaction Dataset",
@@ -6252,7 +4734,8 @@
   "_groups": [
    "Duplex, audio-visual & assistive"
   ],
-  "_file": "duplex_assistive.json"
+  "_file": "duplex_assistive.json",
+  "_has_samples": true
  },
  {
   "name": "CANDOR corpus",
@@ -6331,7 +4814,8 @@
   "_groups": [
    "Duplex, audio-visual & assistive"
   ],
-  "_file": "duplex_assistive.json"
+  "_file": "duplex_assistive.json",
+  "_has_samples": false
  },
  {
   "name": "MultiDialog",
@@ -6403,81 +4887,8 @@
   "_groups": [
    "Duplex, audio-visual & assistive"
   ],
-  "_file": "duplex_assistive.json"
- },
- {
-  "name": "VideoFDB (full-duplex vision-speech benchmark)",
-  "slug": "videofdb",
-  "group": "duplex / audio-visual dialogue & assistive",
-  "role": "duplex / audio-visual dialogue",
-  "org": "NVIDIA, David AI",
-  "year": 2026,
-  "paper": "arXiv 2605.30256",
-  "links": {
-   "data": null,
-   "paper": "https://arxiv.org/abs/2605.30256",
-   "code": null,
-   "project": null
-  },
-  "access": "not released",
-  "license": "Paper CC BY 4.0; data license not announced. Paper says 'We will release benchmark data and evaluation code'; no repo or HF dataset found (checked 2026-09-17).",
-  "videos_included": "no (not released)",
-  "download_size": null,
-  "scale": {
-   "videos": "237 dyadic clips: 226 held-out test (105 perception / 121 generation) + 11 public validation (paper)",
-   "hours": "≈3 h (estimate from median 46 s; paper gives only the median)",
-   "samples": "237 clips (paper)",
-   "annotation_units": "one dynamic event per clip; median event window 2.5 s (paper)",
-   "clip_length": "median 46 s (paper)"
-  },
-  "viewpoint": "exocentric",
-  "video_domains": [
-   "video-call conversation"
-  ],
-  "what_people_do": "Two people (130 speakers, US/Canada) talk over webcam calls; clips are cut around nonverbal conversational events such as a pause with gaze aversion, a nod backchannel, laughter or an interruption.",
-  "annotations_per_video": [
-   {
-    "type": "conversational dynamic event",
-    "timing": "interval [start,end]",
-    "density": "1 per clip (paper)",
-    "made_by": "human (three-pass)",
-    "content": "11 dynamic labels, e.g. nonverbal backchanneling, pause handling, verbal interruption, turn-taking, emotion matching"
-   },
-   {
-    "type": "expected takeover class",
-    "timing": "per-clip label",
-    "density": "1 per clip",
-    "made_by": "human",
-    "content": "stay-silent / continue-speaking / yield / smooth-handoff / backchannel (for TOR-Alignment)"
-   },
-   {
-    "type": "audio-visual captions and agent system prompts",
-    "timing": "per-clip label",
-    "density": "1 per clip",
-    "made_by": "VLM (Qwen3.5-397B visual; Nemotron v3 Nano Omni audio)",
-    "content": "scene and speech descriptions used by the text judge"
-   }
-  ],
-  "silence_or_when_to_speak": "Explicit per clip: expected takeover behaviour (stay silent ≤1 s speech in window, yield within 1.5 s, backchannel, etc.).",
-  "mistakes_or_errors": "none",
-  "languages": "en",
-  "example": null,
-  "trained_models": [],
-  "fit_for_streaming_assistant": "The only benchmark that scores whether a live audio-visual agent reacts correctly to nonverbal turn cues (gaze, nods, laughter) in a real video call; useful as an evaluation target for duplex behaviour. Unreleased, tiny, and not task assistance. The underlying larger David AI conversation corpus is commercial and held out.",
-  "caveats": [
-   "Not released as of 2026-09-17 (no GitHub or HF hit).",
-   "Adding video did not help any tested model (paper), so the visual cues may be under-used by current systems."
-  ],
-  "sample_viewer": null,
-  "sources": [
-   "https://arxiv.org/abs/2605.30256",
-   "https://arxiv.org/html/2605.30256",
-   "local: report_benchmarks.md §9"
-  ],
-  "_groups": [
-   "Duplex, audio-visual & assistive"
-  ],
-  "_file": "duplex_assistive.json"
+  "_file": "duplex_assistive.json",
+  "_has_samples": true
  },
  {
   "name": "Ego4D Audio-Visual Diarization + Social Interactions (Talking-to-Me / Looking-at-Me)",
@@ -6565,7 +4976,8 @@
   "_groups": [
    "Duplex, audio-visual & assistive"
   ],
-  "_file": "duplex_assistive.json"
+  "_file": "duplex_assistive.json",
+  "_has_samples": false
  },
  {
   "name": "EasyCom",
@@ -6649,7 +5061,8 @@
   "_groups": [
    "Duplex, audio-visual & assistive"
   ],
-  "_file": "duplex_assistive.json"
+  "_file": "duplex_assistive.json",
+  "_has_samples": false
  },
  {
   "name": "EgoCom",
@@ -6727,7 +5140,8 @@
   "_groups": [
    "Duplex, audio-visual & assistive"
   ],
-  "_file": "duplex_assistive.json"
+  "_file": "duplex_assistive.json",
+  "_has_samples": true
  },
  {
   "name": "MMCSG (Multi-Modal Conversations in Smart Glasses, CHiME-8 Task 3)",
@@ -6797,88 +5211,8 @@
   "_groups": [
    "Duplex, audio-visual & assistive"
   ],
-  "_file": "duplex_assistive.json"
- },
- {
-  "name": "Open omni models' duplex / audio-visual interaction training data (MiniCPM-o 4.5, Qwen3-Omni, LongCat-Flash-Omni, Baichuan-Omni-1.5, VITA)",
-  "slug": "omni-model-interaction-data-unreleased",
-  "group": "duplex / audio-visual dialogue & assistive",
-  "role": "duplex / audio-visual dialogue",
-  "org": "OpenBMB/ModelBest; Alibaba Qwen; Meituan LongCat; Baichuan; VITA-MLLM",
-  "year": 2026,
-  "paper": "arXiv 2604.27393 (MiniCPM-o 4.5); 2509.17765 (Qwen3-Omni); 2511.00279 (LongCat-Flash-Omni); 2501.15368 (Baichuan-Omni-1.5)",
-  "links": {
-   "data": null,
-   "paper": "https://arxiv.org/html/2604.27393v1",
-   "code": "https://github.com/OpenBMB/MiniCPM-o",
-   "project": "https://huggingface.co/openbmb/MiniCPM-o-4_5"
-  },
-  "access": "not released",
-  "license": "None of the omni interaction corpora is released. Weights: MiniCPM-o 4.5 apache-2.0; Qwen3-Omni 'other'; LongCat MIT; Baichuan-Omni-1.5 apache-2.0.",
-  "videos_included": "no (not released)",
-  "download_size": null,
-  "scale": {
-   "videos": "Baichuan-Omni-1.5 video pretraining ≈31M samples, of which Koala 30M (paper Table 2)",
-   "hours": "MiniCPM-o 4.5: 'millions of hours of unlabeled speech' (paper), no video hours; Qwen3-Omni audio encoder trained on ≈20M h supervised audio (paper)",
-   "samples": "Baichuan-Omni-1.5 SFT ≈17M pairs incl. 100K video (paper Table 4)",
-   "annotation_units": "Qwen3-Omni pretraining ≈2T tokens incl. 0.05T video + 0.05T video-audio (paper)",
-   "clip_length": null
-  },
-  "viewpoint": "mixed",
-  "video_domains": [
-   "web video",
-   "speech dialogue"
-  ],
-  "what_people_do": "Undisclosed web audio-video. MiniCPM-o 4.5 describes filtered web audio-video (dropping single-speaker-dominated or weakly audio-visually related segments, OCR subtitle removal, talking-head detection, ASR-transcript filtering) plus manually built full-duplex scenarios (continuous scene description, proactive reminding), dense time-indexed video captions and LLM-written spoken dialogue partly re-recorded by voice actors.",
-  "annotations_per_video": [
-   {
-    "type": "time-indexed omni duplex streams (MiniCPM-o 4.5)",
-    "timing": "per-second label",
-    "density": "1 s chunks with <|listen|>/<|speak|> control (inference code)",
-    "made_by": "undisclosed (web ASR alignment + manual scenario annotation)",
-    "content": "visual input, audio input, output text and output speech each tagged with a time index"
-   },
-   {
-    "type": "turn-based ChatML audio-visual SFT (Qwen3-Omni, Baichuan-Omni-1.5, LongCat)",
-    "timing": "none",
-    "density": null,
-    "made_by": "LLM/VLM + TTS (LongCat adds human repair; Baichuan uses 10,000 voice tones)",
-    "content": "multi-turn QA with TTS-voiced questions; no duplex timing"
-   }
-  ],
-  "silence_or_when_to_speak": "MiniCPM-o 4.5 supervises a per-second listen/speak decision; Qwen3-Omni, Baichuan-Omni-1.5, LongCat and VITA-1.5 data are turn-based with no silence supervision (Qwen3-Omni lists 'audiovisual proactive learning' as future work).",
-  "mistakes_or_errors": "none disclosed",
-  "languages": "zh, en",
-  "example": "MiniCPM-o 4.5 paper §4.3: \"Each training sample contains the full visual input, audio input, output text and output speech, where each piece of information is tagged with a time index.\"",
-  "trained_models": [
-   "MiniCPM-o 4.5",
-   "Qwen3-Omni-30B-A3B",
-   "LongCat-Flash-Omni",
-   "Baichuan-Omni-1.5",
-   "VITA-1.5 / VITA-Audio"
-  ],
-  "fit_for_streaming_assistant": "Listed so nobody searches for it: the recipes (1 s units, explicit listen/speak token, web-video ASR timelines, TTS-voiced user turns) are documented, but none of the omni interaction data can be downloaded. The only related released items are speech-only (VITA-MLLM/VITA-Audio-Data manifests of public speech corpora, VITA-MLLM/AudioQA-1M; baichuan-inc/OpenAudioBench eval) and OpenBMB's Omni-DuplexEval benchmark.",
-  "caveats": [
-   "HF orgs checked 2026-09-17: openbmb, Qwen, meituan-longcat and baichuan-inc have no omni/duplex training dataset; VITA-MLLM has speech/text-only sets.",
-   "MiniCPM-o 4.5 components verified from config.json + README: SigLIP2-style vision tower (siglip_vision_model, 27 layers, width 1152), Whisper-medium audio encoder, CosyVoice2 speech tokens, Qwen3-8B LLM.",
-   "MiniCPM-o 4.5 discloses no data sizes, sources, ratios, TTS, or annotator details."
-  ],
-  "sample_viewer": null,
-  "sources": [
-   "https://arxiv.org/html/2604.27393v1",
-   "https://huggingface.co/openbmb/MiniCPM-o-4_5/raw/main/config.json",
-   "https://huggingface.co/openbmb/MiniCPM-o-4_5",
-   "https://arxiv.org/html/2509.17765",
-   "https://arxiv.org/html/2511.00279v1",
-   "https://arxiv.org/html/2501.15368v1",
-   "https://huggingface.co/datasets/VITA-MLLM/VITA-Audio-Data",
-   "https://huggingface.co/api/datasets?author=openbmb",
-   "local: models/omni-duplex-models.md"
-  ],
-  "_groups": [
-   "Duplex, audio-visual & assistive"
-  ],
-  "_file": "duplex_assistive.json"
+  "_file": "duplex_assistive.json",
+  "_has_samples": false
  },
  {
   "name": "M4-IT (training set for M4; evaluated on OmniMMI)",
@@ -6950,93 +5284,8 @@
   "_groups": [
    "Duplex, audio-visual & assistive"
   ],
-  "_file": "duplex_assistive.json"
- },
- {
-  "name": "Omni-DuplexEval",
-  "slug": "omni-duplexeval",
-  "group": "duplex / audio-visual dialogue & assistive",
-  "role": "ready-made streaming interaction data",
-  "org": "Tsinghua University, Shanghai Qi Zhi Institute, ModelBest (MiniCPM-o developer)",
-  "year": 2026,
-  "paper": "arXiv 2605.17360",
-  "links": {
-   "data": "https://huggingface.co/datasets/Hothan/Omni-DuplexEval",
-   "paper": "https://arxiv.org/abs/2605.17360",
-   "code": "https://github.com/OpenBMB/Omni-DuplexEval",
-   "project": null
-  },
-  "access": "open download",
-  "license": "HF card apache-2.0 (not gated, checked 2026-09-17); code MIT. Videos collected from YouTube and Bilibili, whose rights the tag cannot grant.",
-  "videos_included": "yes (hosted with annotations)",
-  "download_size": "17.10 GB, 23 parquet shards (datasets-server size API)",
-  "scale": {
-   "videos": "660 (computed)",
-   "hours": "6.22 h (computed from video_duration)",
-   "samples": "660: RTD 300 (6 tasks × 50) + PR 360 (correction 133, event reminder 128, post-event reminder 99) (computed)",
-   "annotation_units": "RTD: 2 human reference narrations per video; PR: 1 event timestamp per item, 62 items with a second timestamp (computed)",
-   "clip_length": "mean 33.9 s, median 30.3 s (computed)"
-  },
-  "viewpoint": "third-person web",
-  "video_domains": [
-   "entertainment",
-   "lifestyle / cooking",
-   "art",
-   "education",
-   "sports",
-   "hobby",
-   "news",
-   "cars",
-   "scenery"
-  ],
-  "what_people_do": "Short web clips (e.g. someone wrapping dumplings, a violinist on stage, a news anchor); a spoken user request arrives in a separate audio track, asking for continuous description ('keep me posted on how many dumplings are wrapped') or a reminder when an event happens, or states something false that must be corrected.",
-  "annotations_per_video": [
-   {
-    "type": "spoken question track",
-    "timing": "interval [start,end]",
-    "density": "1 per video",
-    "made_by": "not stated (audio aligned to full video length)",
-    "content": "question_audio + question_text; RTD asked at start, PR at arbitrary time"
-   },
-   {
-    "type": "real-time description references",
-    "timing": "none",
-    "density": "2 per RTD video",
-    "made_by": "human (two annotators narrating while watching; third resolves)",
-    "content": "running narration text"
-   },
-   {
-    "type": "reminder / correction timestamps",
-    "timing": "point timestamp (s)",
-    "density": "1–2 per PR video",
-    "made_by": "human",
-    "content": "event time; for correction, time of the wrong user statement plus corrected answer text"
-   }
-  ],
-  "silence_or_when_to_speak": "PR: a response counts only in [t_event, t_event+10 s]; RTD scores temporal sensitivity of each sentence. False alarms outside PR windows are not directly penalized.",
-  "mistakes_or_errors": "PR_correction: 133 items where the user's spoken statement is wrong and must be corrected (computed)",
-  "languages": "en",
-  "example": "{'id': '0', 'question_text': 'The girl who is playing the violin is wearing black trousers.', 'answer1': 'The girl who is playing the violin is wearing an orange dress.', 'reminder1': '15.0', 'video_type': 'Art', 'video_duration': 30.0}",
-  "trained_models": [],
-  "fit_for_streaming_assistant": "Human-timed duplex evaluation with a spoken request track, covering continuous narration, event reminders and correcting the user, which match assistant behaviours. Clips are under 1 min, third-person web video, and it is an eval set (MiniCPM-o 4.5 scores 39.6, with co-author conflict of interest).",
-  "caveats": [
-   "Benchmark authors are affiliated with MiniCPM-o's developer.",
-   "Card does not say whether question audio is TTS or human.",
-   "Probably also owned by the benchmark group; included for its duplex speech track."
-  ],
-  "sample_viewer": null,
-  "sources": [
-   "https://huggingface.co/datasets/Hothan/Omni-DuplexEval",
-   "https://datasets-server.huggingface.co/size?dataset=Hothan/Omni-DuplexEval",
-   "https://datasets-server.huggingface.co/rows?dataset=Hothan/Omni-DuplexEval&config=default&split=PR_correction&offset=0&length=10",
-   "https://github.com/OpenBMB/Omni-DuplexEval",
-   "https://arxiv.org/abs/2605.17360",
-   "local: report_benchmarks.md §8"
-  ],
-  "_groups": [
-   "Duplex, audio-visual & assistive"
-  ],
-  "_file": "duplex_assistive.json"
+  "_file": "duplex_assistive.json",
+  "_has_samples": false
  },
  {
   "name": "AVSD (Audio-Visual Scene-Aware Dialog, DSTC7/8)",
@@ -7106,7 +5355,8 @@
   "_groups": [
    "Duplex, audio-visual & assistive"
   ],
-  "_file": "duplex_assistive.json"
+  "_file": "duplex_assistive.json",
+  "_has_samples": true
  },
  {
   "name": "MUSIC-AVQA",
@@ -7169,7 +5419,8 @@
   "_groups": [
    "Duplex, audio-visual & assistive"
   ],
-  "_file": "duplex_assistive.json"
+  "_file": "duplex_assistive.json",
+  "_has_samples": true
  },
  {
   "name": "AVQA (Audio-Visual Question Answering on Videos)",
@@ -7235,7 +5486,8 @@
   "_groups": [
    "Duplex, audio-visual & assistive"
   ],
-  "_file": "duplex_assistive.json"
+  "_file": "duplex_assistive.json",
+  "_has_samples": true
  },
  {
   "name": "EgoBlind",
@@ -7321,86 +5573,8 @@
    "Egocentric source video",
    "Duplex, audio-visual & assistive"
   ],
-  "_file": "ego_sources.json"
- },
- {
-  "name": "VIABench",
-  "slug": "viabench",
-  "group": "duplex / audio-visual dialogue & assistive",
-  "role": "alert / anomaly",
-  "org": "Nanjing University MCG, Shanghai AI Laboratory",
-  "year": 2026,
-  "paper": "arXiv 2607.14660",
-  "links": {
-   "data": "https://huggingface.co/datasets/MCG-NJU/VIABench",
-   "paper": "https://arxiv.org/abs/2607.14660",
-   "code": "https://github.com/MCG-NJU/VIABench",
-   "project": null
-  },
-  "access": "open download",
-  "license": "HF tag MIT only (no LICENSE file); 530 of 600 videos are Douyin/Bilibili/YouTube creator footage whose redistribution is not covered by the tag; 70 VGI videos purpose-filmed.",
-  "videos_included": "yes (hosted with annotations)",
-  "download_size": "69.26 GB (computed)",
-  "scale": {
-   "videos": "600 released (computed) vs 761 in paper",
-   "hours": "45.42 h (computed) vs 46.9 h (paper)",
-   "samples": "PR 530 videos; VQA 165 videos; VGI 70 episodes (computed)",
-   "annotation_units": "14,158 annotations: 13,152 proactive-reminder windows, 340 VQA, 666 guidance turns (computed)",
-   "clip_length": "median 2:54, max 32:39 (computed)"
-  },
-  "viewpoint": "egocentric",
-  "video_domains": [
-   "blind navigation",
-   "streets and crossings",
-   "stairs, escalators, elevators",
-   "finding objects / packages"
-  ],
-  "what_people_do": "Blind creators walk through cities (crossings, stairs, escalators, obstacles) filming first-person; in 70 purpose-filmed episodes a person is guided by voice to find a target such as a package with a given pickup code.",
-  "annotations_per_video": [
-   {
-    "type": "proactive reminder windows",
-    "timing": "interval [start,end]",
-    "density": "≈24.8 per PR video (computed)",
-    "made_by": "human",
-    "content": "22 subtasks (Obstacle Alert 6,776, Active Avoidance 1,275, Stairs, Traffic Light…) with reference reminder text"
-   },
-   {
-    "type": "time-stamped VQA",
-    "timing": "interval [start,end]",
-    "density": "≈2.1 per VQA video (computed)",
-    "made_by": "human (110 real blind-person queries + 230 simulated)",
-    "content": "question, answer"
-   },
-   {
-    "type": "vision-guided interaction turns",
-    "timing": "interval [start,end]",
-    "density": "≈9.5 per episode (computed)",
-    "made_by": "human",
-    "content": "Camera Manipulation 301, Target Manipulation 286, Completion 70, Movement Guidance 9, with the user's goal"
-   }
-  ],
-  "silence_or_when_to_speak": "Reminder windows define when an unprompted alert is correct (median 1.77 s); outside windows the assistant should stay silent, though the paper's metric is recall-only.",
-  "mistakes_or_errors": "none (hazard alerts, not user mistakes); VGI 'Camera Manipulation' turns correct bad framing",
-  "languages": "zh, en",
-  "example": "{\"qid\": 4078, \"start_time\": 0.0, \"end_time\": 25.23, \"task\": \"Camera Content Anomaly\", \"description\": \"The camera image is tilted counterclockwise. Please rotate clockwise to adjust properly.\"}",
-  "trained_models": [],
-  "fit_for_streaming_assistant": "Real blind-user egocentric streams with dense human alert windows and multi-turn camera/target guidance, very close to the proactive assistive target. Benchmark-sized, with data-quality defects and unclear video rights; use for evaluation or small-scale SFT after cleaning.",
-  "caveats": [
-   "42 PR windows end before they start, 10 zero-length, 10 past video end; 2 query labels misfiled in PR (computed).",
-   "Only 70 of the paper's 231 VGI videos released.",
-   "'Stairs Up/Down' and 'Staircase Up/Down' appear to be one subtask split in two."
-  ],
-  "sample_viewer": "viabench/",
-  "sources": [
-   "https://huggingface.co/datasets/MCG-NJU/VIABench",
-   "https://arxiv.org/abs/2607.14660",
-   "https://github.com/MCG-NJU/VIABench",
-   "local: viewers/viabench/README.md and full_dataset_stats.json (computed)"
-  ],
-  "_groups": [
-   "Duplex, audio-visual & assistive"
-  ],
-  "_file": "duplex_assistive.json"
+  "_file": "ego_sources.json",
+  "_has_samples": false
  },
  {
   "name": "WAD (Walking Awareness Dataset) + WRD (WalkStream)",
@@ -7483,81 +5657,8 @@
   "_groups": [
    "Duplex, audio-visual & assistive"
   ],
-  "_file": "duplex_assistive.json"
- },
- {
-  "name": "OmniAssistBench",
-  "slug": "omniassistbench",
-  "group": "duplex / audio-visual dialogue & assistive",
-  "role": "ready-made streaming interaction data",
-  "org": "Nanjing University, Nankai University, University of Waterloo",
-  "year": 2026,
-  "paper": "arXiv 2608.21360",
-  "links": {
-   "data": "https://huggingface.co/datasets/JontiSun/OmniAssistBench",
-   "paper": "https://arxiv.org/abs/2608.21360",
-   "code": "https://github.com/XianyunSun/OmniAssistBench",
-   "project": "https://xianyunsun.github.io/OmniAssistBench/"
-  },
-  "access": "open download",
-  "license": "Annotations Apache-2.0 (HF card; GitHub badge says MIT). Clips: 571 rows cut from YouTube, others from Mustard++, Ego4D, VIRAT, Assembly101, BASKET, MELD, COIN, CASTLE under their own licenses; 62 rows filmed by authors.",
-  "videos_included": "yes (hosted with annotations)",
-  "download_size": "67.9 GB, 4 parquet shards (computed)",
-  "scale": {
-   "videos": "300 cases (102 multi-turn, 198 single-turn) from 685 unique clip names (computed)",
-   "hours": "10.71 h (computed)",
-   "samples": "687 QA turns (computed; paper 685, 2 duplicated rows)",
-   "annotation_units": "687 reference answers + key points; 80 turns expect [KEEP QUIET] (computed)",
-   "clip_length": "case mean 128.5 s, median 73.8 s (computed)"
-  },
-  "viewpoint": "mixed",
-  "video_domains": [
-   "web video",
-   "meetings",
-   "blind navigation (filmed)",
-   "handicraft",
-   "egocentric procedures"
-  ],
-  "what_people_do": "Clips of everyday scenes, social conversations and procedures (crafts, checklists, multitasking) with a user's request embedded as TTS speech, a gesture or on-screen text; three filmed real cases include a 20-minute meeting and blind-user navigation.",
-  "annotations_per_video": [
-   {
-    "type": "per-segment QA turn",
-    "timing": "per-clip label",
-    "density": "≈2.3 turns per case (computed)",
-    "made_by": "human (1,000+ expert hours)",
-    "content": "question (also spoken in the clip), gt_answer, 1–3 key points, sub-task"
-   },
-   {
-    "type": "silence target",
-    "timing": "per-clip label",
-    "density": "80 of 687 turns",
-    "made_by": "human",
-    "content": "[KEEP QUIET] when the segment should get no reply"
-   }
-  ],
-  "silence_or_when_to_speak": "Per segment: the model sees a clip ending at the prompt and must answer or output [KEEP QUIET]; no continuous per-second timing.",
-  "mistakes_or_errors": "none",
-  "languages": "en",
-  "example": "question: 'Am I sitting at the correct desk? Please tell me when my friend arrives at his desk.' gt_answer: \"Yes, you're sitting at an empty desk. Your friend's desk is behind you, so I can't see it right now. Could you turn the camera around? \"",
-  "trained_models": [],
-  "fit_for_streaming_assistant": "Voiced in-video user requests with human answers and explicit keep-quiet turns, a useful evaluation of omni assistants that hear the user. Too small to train on, segment-level rather than real-time, and mostly repurposed web video.",
-  "caveats": [
-   "2 duplicated rows (VSYjs5RnlRo-q1, gB0XyrWGFC4-q1).",
-   "Paper mean length 182 s vs computed case mean 128.5 s.",
-   "Probably also owned by the benchmark group; included here for its TTS-voiced prompts."
-  ],
-  "sample_viewer": "omniassistbench/",
-  "sources": [
-   "https://huggingface.co/datasets/JontiSun/OmniAssistBench",
-   "https://arxiv.org/html/2608.21360",
-   "https://github.com/XianyunSun/OmniAssistBench",
-   "local: viewers/omniassistbench/README.md and full_dataset_stats.json (computed)",
-   "local: report_benchmarks.md §2.2"
-  ],
-  "_groups": [
-   "Duplex, audio-visual & assistive"
-  ],
-  "_file": "duplex_assistive.json"
+  "_file": "duplex_assistive.json",
+  "_has_samples": false
  },
  {
   "name": "Ego4D (v2 / v2.1, incl. Goal-Step)",
@@ -7692,7 +5793,8 @@
   "_groups": [
    "Egocentric source video"
   ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": true
  },
  {
   "name": "Ego-Exo4D (v2)",
@@ -7824,7 +5926,8 @@
   "_groups": [
    "Egocentric source video"
   ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": true
  },
  {
   "name": "EgoLife",
@@ -7920,7 +6023,8 @@
   "_groups": [
    "Egocentric source video"
   ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": false
  },
  {
   "name": "Project Aria open datasets: Nymeria (+ Aria Everyday Activities, Aria Digital Twin)",
@@ -8020,7 +6124,8 @@
   "_groups": [
    "Egocentric source video"
   ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": false
  },
  {
   "name": "Charades-Ego",
@@ -8097,7 +6202,8 @@
   "_groups": [
    "Egocentric source video"
   ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": false
  },
  {
   "name": "HoloAssist",
@@ -8207,7 +6313,8 @@
   "_groups": [
    "Egocentric source video"
   ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": false
  },
  {
   "name": "EgoExoLearn",
@@ -8308,7 +6415,8 @@
   "_groups": [
    "Egocentric source video"
   ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": false
  },
  {
   "name": "EgoProceL",
@@ -8380,7 +6488,8 @@
   "_groups": [
    "Egocentric source video"
   ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": false
  },
  {
   "name": "EgoExo-Fitness",
@@ -8469,7 +6578,8 @@
   "_groups": [
    "Egocentric source video"
   ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": false
  },
  {
   "name": "Assembly101 (+ mistake-detection annotations)",
@@ -8572,7 +6682,8 @@
   "_groups": [
    "Egocentric source video"
   ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": false
  },
  {
   "name": "IndustReal",
@@ -8660,7 +6771,8 @@
   "_groups": [
    "Egocentric source video"
   ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": false
  },
  {
   "name": "MECCANO",
@@ -8740,7 +6852,8 @@
   "_groups": [
    "Egocentric source video"
   ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": false
  },
  {
   "name": "ENIGMA-51",
@@ -8830,7 +6943,8 @@
   "_groups": [
    "Egocentric source video"
   ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": false
  },
  {
   "name": "ENIGMA-360",
@@ -8908,7 +7022,8 @@
   "_groups": [
    "Egocentric source video"
   ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": false
  },
  {
   "name": "EPIC-Tent",
@@ -8998,7 +7113,8 @@
   "_groups": [
    "Egocentric source video"
   ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": false
  },
  {
   "name": "EgoOops",
@@ -9073,7 +7189,8 @@
   "_groups": [
    "Egocentric source video"
   ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": false
  },
  {
   "name": "ATA (Anomalous Toy Assembly)",
@@ -9153,7 +7270,8 @@
   "_groups": [
    "Egocentric source video"
   ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": false
  },
  {
   "name": "EPIC-KITCHENS-100 (with VISOR and EPIC-SOUNDS)",
@@ -9254,107 +7372,8 @@
   "_groups": [
    "Egocentric source video"
   ],
-  "_file": "ego_sources.json"
- },
- {
-  "name": "HD-EPIC",
-  "slug": "hd-epic",
-  "group": "egocentric procedural source video (human annotations)",
-  "role": "annotated source video (needs conversion)",
-  "org": "University of Bristol, Leiden Univ., Singapore Management Univ., Univ. of Bath",
-  "year": 2025,
-  "paper": "CVPR 2025 (arXiv 2502.04144)",
-  "links": {
-   "data": "https://data.bris.ac.uk/data/dataset/3cqb5b81wk2dc2379fx1mrxh47",
-   "paper": "https://arxiv.org/abs/2502.04144",
-   "code": "https://github.com/hd-epic/hd-epic-annotations",
-   "project": "https://hd-epic.github.io/"
-  },
-  "access": "open download",
-  "license": "data.bris record: Creative Commons Attribution 4.0 (covers videos and annotations); the annotation GitHub repo has no LICENSE file.",
-  "videos_included": "no, must fetch from source data.bris (videos, VRS, audio HDF5, digital twin, hand masks, SLAM+gaze); annotations on GitHub; YouTube viewing links provided",
-  "download_size": "2.3 TiB complete zip (data.bris); annotation repo 88 MB (computed)",
-  "scale": {
-   "videos": "156 (paper; 156 video_ids in narrations, computed); 9 participants / 9 kitchens",
-   "hours": "41.3 h (paper)",
-   "samples": "59,454 fine-grained action segments (computed); 26,550 VQA questions in 30 question prototypes across 7 categories (computed)",
-   "annotation_units": "69 recipes (computed, complete_recipes.json), 1,490 high-level activity/recipe segments (computed), 50,968 audio events (computed), ≈20K object movements, 37K object masks lifted to 3D, 413 digital-twin fixtures (paper)",
-   "clip_length": "mean 15.9 ± 14.5 min (paper); median action segment 1.18 s (computed)"
-  },
-  "viewpoint": "egocentric",
-  "video_domains": [
-   "cooking",
-   "kitchen chores"
-  ],
-  "what_people_do": "9 participants wear Project Aria glasses in their own kitchens for 3 days and record everything they do there, unscripted, including 69 recipes of their own choosing (often several recipes interleaved). Ingredients are weighed and nutrition recorded.",
-  "annotations_per_video": [
-   {
-    "type": "fine-grained narration with how/why + action segment",
-    "timing": "interval [start,end] plus narration point timestamp",
-    "density": "median 304.5, mean 381 per video (computed); paper: 263 annotations per minute across all layers",
-    "made_by": "human (participants narrate their own footage; ASR ensemble Whisper/Qwen-Audio/NeMo then manual correction; boundaries by ≥3 AMT workers; paper)",
-    "content": "full-sentence description with hand, manner and reason, parsed into verbs, nouns, main action classes (mean 15.6 words, computed)"
-   },
-   {
-    "type": "recipe steps, prep segments and ingredient weigh/add segments",
-    "timing": "interval [start,end]",
-    "density": "1,490 high-level segments over 156 videos, ≈9.6 per video (computed); 69 recipes with step lists",
-    "made_by": "human (participants supply recipes; annotators time steps and prep; paper)",
-    "content": "recipe name, step text, which videos contain it, per-ingredient weigh/add times with nutrition values"
-   },
-   {
-    "type": "object movement tracks and associations, masks, digital twin",
-    "timing": "interval [pick-up, put-down] with boxes at onset/end",
-    "density": "≈20K movements over 41 h (paper)",
-    "made_by": "human (annotators) plus 3D lifting",
-    "content": "which object moved from which fixture to which fixture; 3D location"
-   },
-   {
-    "type": "audio events (HD-EPIC-Sounds)",
-    "timing": "interval [start,end]",
-    "density": "50,968 total, ≈327 per video (computed)",
-    "made_by": "human",
-    "content": "EPIC-SOUNDS style audio class labels"
-   },
-   {
-    "type": "gaze priming",
-    "timing": "point timestamp (s)",
-    "density": null,
-    "made_by": "rule (Aria eye tracking aligned to object pick-ups)",
-    "content": "when gaze first primes the next object to be picked up"
-   },
-   {
-    "type": "VQA benchmark questions",
-    "timing": "per-clip label",
-    "density": "26,550 over 156 videos (computed)",
-    "made_by": "rule (templated from the human annotations; paper)",
-    "content": "5-way multiple choice on recipe, ingredient, nutrition, fine-grained action, 3D perception, object motion, gaze"
-   }
-  ],
-  "silence_or_when_to_speak": "Not encoded. Step and prep intervals give natural guidance points; gaze priming gives an anticipation cue a few seconds before an object interaction.",
-  "mistakes_or_errors": "none labelled. The paper notes participants modify the source recipe (ingredients and steps; Fig. 3), but these are recorded as the recipe actually made, not as errors.",
-  "languages": "en",
-  "example": "P01-20240202-110250 [360.37–364.0 s]: \"While holding the glass using the left hand, tilt the food processor bowl, which is in the right hand, so that the juice inside it would be poured into the glass that's being held with the left hand.\" (HD_EPIC_Narrations.pkl)",
-  "trained_models": [],
-  "fit_for_streaming_assistant": "The densest human annotation available for real, unscripted home cooking: recipes with timed steps, weighed ingredients, how/why narrations, object itineraries and gaze, so it is ideal for memory ('where did I put the salt?'), recipe-progress and anticipation questions. Limitations: it was built as a validation set (41 h, 9 people), there are no mistakes or dialogue, and it is too small to be a main training source. Best used as a held-out streaming eval, e.g. EGOSTREAM already drew 316 streaming episodic-memory items from HD-EPIC with Gemini-rewritten questions.",
-  "caveats": [
-   "The paper frames HD-EPIC as a validation/test dataset; training on it removes its value as an unseen benchmark.",
-   "Annotation repo has no license file; rely on the CC BY 4.0 data.bris record.",
-   "Narrations file has an erratum CSV that must be applied.",
-   "The project page says 45 kitchens, but that figure is for EPIC-KITCHENS-100; HD-EPIC itself has 9 kitchens (paper)."
-  ],
-  "sample_viewer": null,
-  "sources": [
-   "https://hd-epic.github.io/",
-   "https://arxiv.org/html/2502.04144",
-   "https://github.com/hd-epic/hd-epic-annotations",
-   "https://data.bris.ac.uk/data/dataset/3cqb5b81wk2dc2379fx1mrxh47",
-   "$SCRATCH/report_benchmarks.md (EGOSTREAM)"
-  ],
-  "_groups": [
-   "Egocentric source video"
-  ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": false
  },
  {
   "name": "CaptainCook4D",
@@ -9447,7 +7466,8 @@
   "_groups": [
    "Egocentric source video"
   ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": false
  },
  {
   "name": "EgoPER (Egocentric Procedural ERror dataset)",
@@ -9535,7 +7555,8 @@
   "_groups": [
    "Egocentric source video"
   ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": false
  },
  {
   "name": "IndEgo",
@@ -9636,7 +7657,8 @@
   "_groups": [
    "Egocentric source video"
   ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": false
  },
  {
   "name": "IMPACT (industrial angle-grinder assembly)",
@@ -9728,7 +7750,8 @@
   "_groups": [
    "Egocentric source video"
   ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": false
  },
  {
   "name": "EgoEMS",
@@ -9821,7 +7844,8 @@
   "_groups": [
    "Egocentric source video"
   ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": false
  },
  {
   "name": "EgoMAGIC (PTG-MAGIC field medicine)",
@@ -9908,7 +7932,8 @@
   "_groups": [
    "Egocentric source video"
   ],
-  "_file": "ego_sources.json"
+  "_file": "ego_sources.json",
+  "_has_samples": false
  },
  {
   "name": "HT-Step",
@@ -9990,7 +8015,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": true
  },
  {
   "name": "COIN (COmprehensive INstructional video analysis)",
@@ -10086,7 +8112,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": true
  },
  {
   "name": "CrossTask",
@@ -10165,7 +8192,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": true
  },
  {
   "name": "YouCook2",
@@ -10257,7 +8285,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": true
  },
  {
   "name": "ProceL (Procedure Learning)",
@@ -10344,7 +8373,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": true
  },
  {
   "name": "Breakfast Actions",
@@ -10428,7 +8458,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": true
  },
  {
   "name": "IKEA ASM (IKEA Assembly)",
@@ -10510,7 +8541,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": true
  },
  {
   "name": "FineGym",
@@ -10581,7 +8613,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": false
  },
  {
   "name": "Fitness-AQA",
@@ -10644,7 +8677,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": false
  },
  {
   "name": "RepCount-A (TransRAC / LLSP)",
@@ -10723,7 +8757,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": false
  },
  {
   "name": "Countix",
@@ -10793,7 +8828,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": false
  },
  {
   "name": "Charades-STA",
@@ -10863,7 +8899,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": false
  },
  {
   "name": "DiDeMo (Distinct Describable Moments)",
@@ -10939,7 +8976,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": false
  },
  {
   "name": "QVHighlights",
@@ -11015,7 +9053,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": false
  },
  {
   "name": "UCF-Crime + UCA",
@@ -11115,7 +9154,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": false
  },
  {
   "name": "XD-Violence",
@@ -11199,7 +9239,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": false
  },
  {
   "name": "ShanghaiTech Campus",
@@ -11274,7 +9315,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": false
  },
  {
   "name": "CCTV-Fights",
@@ -11343,7 +9385,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": false
  },
  {
   "name": "OOPS!",
@@ -11426,7 +9469,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": false
  },
  {
   "name": "UBnormal",
@@ -11503,7 +9547,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": false
  },
  {
   "name": "MSAD (Multi-Scenario Anomaly Detection)",
@@ -11580,7 +9625,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": false
  },
  {
   "name": "Hawk (anomaly description + QA data)",
@@ -11658,86 +9704,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
- },
- {
-  "name": "Holmes-VAD: VAD-Instruct50k",
-  "slug": "holmes-vad-vad-instruct50k",
-  "group": "third-person procedural, event grounding & alert/anomaly source video",
-  "role": "alert / anomaly",
-  "org": "Huazhong University of Science and Technology / Alibaba (Tongyi) et al.",
-  "year": 2024,
-  "paper": "arXiv 2406.12235",
-  "links": {
-   "data": null,
-   "paper": "https://arxiv.org/abs/2406.12235",
-   "code": "https://github.com/pipixin321/HolmesVAD",
-   "project": "https://holmesvad.github.io/"
-  },
-  "access": "not released",
-  "license": "Code repo MIT; dataset never released so no data license; source videos UCF-Crime / XD-Violence (research use)",
-  "videos_included": "no, must fetch from source UCF-Crime and XD-Violence",
-  "download_size": null,
-  "scale": {
-   "videos": "5,547 untrimmed videos (paper, Table 6)",
-   "hours": null,
-   "samples": "51,567 instruction queries, avg 44.83 words (paper)",
-   "annotation_units": "avg 2.35 single-frame anomaly clicks per abnormal video (paper)",
-   "clip_length": null
-  },
-  "viewpoint": "mixed",
-  "video_domains": [
-   "surveillance / CCTV crime (UCF-Crime)",
-   "movies, news, dashcam and game footage with violence (XD-Violence)"
-  ],
-  "what_people_do": "Real-world surveillance and web footage of crimes and violent events (abuse, arson, explosions, fighting, riots, shooting, road accidents) plus normal footage.",
-  "annotations_per_video": [
-   {
-    "type": "single-frame anomaly click",
-    "timing": "point timestamp (s)",
-    "density": "≈2.35 per abnormal video (paper)",
-    "made_by": "human",
-    "content": "one click per abnormal event"
-   },
-   {
-    "type": "event-clip caption",
-    "timing": "interval [start,end]",
-    "density": null,
-    "made_by": "VLM (Video-LLaVA) plus manual UCA/SurveillanceVision captions for UCF-Crime (paper)",
-    "content": "description of each pseudo-labelled event clip"
-   },
-   {
-    "type": "instruction QA (judgement + explanation)",
-    "timing": "per-clip label",
-    "density": null,
-    "made_by": "LLM (Llama3-Instruct-70B), manually filtered (paper)",
-    "content": "is there an anomaly, which, and why"
-   }
-  ],
-  "silence_or_when_to_speak": "Not encoded in released form (nothing released); single-frame clicks would give alert onsets.",
-  "mistakes_or_errors": "Anomaly categories of UCF-Crime (13) and XD-Violence (6) (paper).",
-  "languages": "en",
-  "example": "Typical user prompt (paper): \"<video>\\n Are there any unexpected or unusual events in the video clip?\" (only prompt style published; no released records)",
-  "trained_models": [
-   "Holmes-VAD-7B (Video-LLaVA based; weights released at huggingface.co/ppxin321/HolmesVAD-7B)"
-  ],
-  "fit_for_streaming_assistant": "Would have given point-level alert onsets plus explanations, but the data were never published; the authors redirect users to the successor HIVAU-70k (separate entry). Not used by JoyAI, ROMA, StreamBridge or GuideMe.",
-  "caveats": [
-   "GitHub issues #2, #9, #11 (2024) asked for release; authors said data were being cleaned because of violent content, then (Dec 2024) pointed to HolmesVAU / HIVAU-70k. Issue #21 (Jan 2026) still asks for the data — unreleased as of 2026-09-17.",
-   "Superseded by HIVAU-70k."
-  ],
-  "sample_viewer": null,
-  "sources": [
-   "https://github.com/pipixin321/HolmesVAD",
-   "https://github.com/pipixin321/HolmesVAD/issues/9",
-   "https://github.com/pipixin321/HolmesVAD/issues/11",
-   "https://github.com/pipixin321/HolmesVAD/issues/21",
-   "https://arxiv.org/html/2406.12235"
-  ],
-  "_groups": [
-   "Third-person procedural & alerts"
-  ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": false
  },
  {
   "name": "HIVAU-70k (Holmes-VAU)",
@@ -11819,7 +9787,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": false
  },
  {
   "name": "DoTA (Detection of Traffic Anomaly)",
@@ -11899,7 +9868,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": false
  },
  {
   "name": "MM-AU (LOTVS-CAP + DADA-2000)",
@@ -11997,7 +9967,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": false
  },
  {
   "name": "Something-Something V2",
@@ -12065,7 +10036,8 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": false
  },
  {
   "name": "Kinetics-400 / 600 / 700(-2020)",
@@ -12138,6 +10110,7 @@
   "_groups": [
    "Third-person procedural & alerts"
   ],
-  "_file": "exo_alert_sources.json"
+  "_file": "exo_alert_sources.json",
+  "_has_samples": false
  }
 ]

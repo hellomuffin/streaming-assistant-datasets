@@ -1,0 +1,61 @@
+{
+ "slug": "avqa",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://github.com/AlyssaYoung/AVQA/blob/main/data/annotation/val_qa.json"
+ ],
+ "access_used": "open download",
+ "note": "An example is one multiple-choice QA record for a 10 s VGG-Sound YouTube clip (video_name = YouTube id + start second); answer is the 0-based index into multi_choice. No timestamps; videos exist only on YouTube, so no clip.",
+ "examples": [
+  {
+   "title": "081dgPO47vE_000020: \"What is the source of the sound?\" — Come From, 4 options",
+   "video_ref": "YouTube 081dgPO47vE from 20 s (VGG-Sound clip 081dgPO47vE_000020)",
+   "duration_s": 10.0,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "json",
+   "raw": {
+    "id": 1170,
+    "video_name": "081dgPO47vE_000020",
+    "video_id": 1428,
+    "question_text": "What is the source of the sound in the video?",
+    "multi_choice": [
+     "motorcycle",
+     "automobile",
+     "motorboat",
+     "bus"
+    ],
+    "answer": 1,
+    "question_relation": "Both",
+    "question_type": "Come From"
+   }
+  },
+  {
+   "title": "0AEJTlHIhz0_000358: \"Why do the people in the video scream?\" — Why, 4 options",
+   "video_ref": "YouTube 0AEJTlHIhz0 from 358 s (VGG-Sound clip 0AEJTlHIhz0_000358)",
+   "duration_s": 10.0,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "json",
+   "raw": {
+    "id": 1205,
+    "video_name": "0AEJTlHIhz0_000358",
+    "video_id": 1467,
+    "question_text": "Why do the people in the video scream?",
+    "multi_choice": [
+     "Roller coaster",
+     "On a pirate ship",
+     "Take Ferris wheel",
+     "Take the jumping machine"
+    ],
+    "answer": 0,
+    "question_relation": "Both",
+    "question_type": "Why"
+   }
+  }
+ ]
+}

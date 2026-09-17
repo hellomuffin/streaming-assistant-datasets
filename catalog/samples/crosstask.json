@@ -1,0 +1,416 @@
+{
+ "slug": "crosstask",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://www.di.ens.fr/~dzhukov/crosstask/crosstask_release.zip (annotations/*.csv, tasks_primary.txt, videos.csv)"
+ ],
+ "access_used": "open download",
+ "note": "An example is one primary-task video's annotation CSV (<step number>,<start s>,<end s>; step numbers are 1-based into the task's ordered step list in tasks_primary.txt). Rows are not sorted by time and a step can occur more than once. Videos are YouTube-only (the removed-videos tarball returned 403), so no clip; durations are not in the release.",
+ "examples": [
+  {
+   "title": "6JUvHsQ1PbM: Change a Tire — 13 step segments",
+   "video_ref": "YouTube 6JUvHsQ1PbM",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 2.73,
+     "lane": "step",
+     "text": "3: start loose"
+    },
+    {
+     "t": 44.75,
+     "te": 75.75,
+     "lane": "step",
+     "text": "4: jack up"
+    },
+    {
+     "t": 53.79,
+     "te": 74.71,
+     "lane": "step",
+     "text": "4: jack up"
+    },
+    {
+     "t": 80.94,
+     "te": 85.74,
+     "lane": "step",
+     "text": "3: start loose"
+    },
+    {
+     "t": 85.83,
+     "te": 91.23,
+     "lane": "step",
+     "text": "5: unscrew wheel"
+    },
+    {
+     "t": 86.27,
+     "te": 91.27,
+     "lane": "step",
+     "text": "5: unscrew wheel"
+    },
+    {
+     "t": 138.74,
+     "te": 171.29,
+     "lane": "step",
+     "text": "8: screw wheel"
+    },
+    {
+     "t": 139.41,
+     "te": 146.67,
+     "lane": "step",
+     "text": "8: screw wheel"
+    },
+    {
+     "t": 148.12,
+     "te": 171.12,
+     "lane": "step",
+     "text": "8: screw wheel"
+    },
+    {
+     "t": 171.46,
+     "te": 175.06,
+     "lane": "step",
+     "text": "9: jack down"
+    },
+    {
+     "t": 171.78,
+     "te": 175.18,
+     "lane": "step",
+     "text": "9: jack down"
+    },
+    {
+     "t": 180.06,
+     "te": 196.1,
+     "lane": "step",
+     "text": "10: tight wheel"
+    },
+    {
+     "t": 180.68,
+     "te": 194.28,
+     "lane": "step",
+     "text": "10: tight wheel"
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": {
+    "annotations/40567_6JUvHsQ1PbM.csv": [
+     "4,44.75,75.75",
+     "3,80.94,85.74",
+     "5,85.83,91.23",
+     "8,138.74,171.29",
+     "9,171.46,175.06",
+     "10,180.68,194.28",
+     "3,0.0,2.73",
+     "4,53.79,74.71",
+     "5,86.27,91.27",
+     "8,139.41,146.67",
+     "8,148.12,171.12",
+     "9,171.78,175.18",
+     "10,180.06,196.1"
+    ],
+    "tasks_primary.txt block": "40567\nChange a Tire\nhttp://www.wikihow.com/Change-a-Tire\n11\nbrake on,get things out,start loose,jack up,unscrew wheel,withdraw wheel,put wheel,screw wheel,jack down,tight wheel,put things back",
+    "videos.csv row": "40567,6JUvHsQ1PbM,https://www.youtube.com/watch?v=6JUvHsQ1PbM"
+   }
+  },
+  {
+   "title": "MpzxR2_dXLg: Make Pancakes — 40 step segments",
+   "video_ref": "YouTube MpzxR2_dXLg",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 59.58,
+     "te": 61.79,
+     "lane": "step",
+     "text": "1: add flour"
+    },
+    {
+     "t": 59.81,
+     "te": 61.95,
+     "lane": "step",
+     "text": "1: add flour"
+    },
+    {
+     "t": 70.65,
+     "te": 76.73,
+     "lane": "step",
+     "text": "5: whisk mixture"
+    },
+    {
+     "t": 70.88,
+     "te": 77.23,
+     "lane": "step",
+     "text": "5: whisk mixture"
+    },
+    {
+     "t": 83.83,
+     "te": 97.97,
+     "lane": "step",
+     "text": "4: pour egg"
+    },
+    {
+     "t": 86.93,
+     "te": 99.11,
+     "lane": "step",
+     "text": "4: pour egg"
+    },
+    {
+     "t": 107.96,
+     "te": 116.7,
+     "lane": "step",
+     "text": "5: whisk mixture"
+    },
+    {
+     "t": 108.11,
+     "te": 116.19,
+     "lane": "step",
+     "text": "5: whisk mixture"
+    },
+    {
+     "t": 120.76,
+     "te": 124.87,
+     "lane": "step",
+     "text": "2: add sugar"
+    },
+    {
+     "t": 122.56,
+     "te": 125.53,
+     "lane": "step",
+     "text": "2: add sugar"
+    },
+    {
+     "t": 126.05,
+     "te": 132.75,
+     "lane": "step",
+     "text": "5: whisk mixture"
+    },
+    {
+     "t": 126.08,
+     "te": 132.82,
+     "lane": "step",
+     "text": "5: whisk mixture"
+    },
+    {
+     "t": 139.66,
+     "te": 144.71,
+     "lane": "step",
+     "text": "5: whisk mixture"
+    },
+    {
+     "t": 139.72,
+     "te": 144.21,
+     "lane": "step",
+     "text": "5: whisk mixture"
+    },
+    {
+     "t": 146.51,
+     "te": 151.51,
+     "lane": "step",
+     "text": "4: pour egg"
+    },
+    {
+     "t": 152.08,
+     "te": 154.62,
+     "lane": "step",
+     "text": "5: whisk mixture"
+    },
+    {
+     "t": 152.11,
+     "te": 163.76,
+     "lane": "step",
+     "text": "5: whisk mixture"
+    },
+    {
+     "t": 155.71,
+     "te": 159.01,
+     "lane": "step",
+     "text": "3: pour milk"
+    },
+    {
+     "t": 156.33,
+     "te": 158.62,
+     "lane": "step",
+     "text": "3: pour milk"
+    },
+    {
+     "t": 160.46,
+     "te": 163.81,
+     "lane": "step",
+     "text": "5: whisk mixture"
+    },
+    {
+     "t": 166.13,
+     "te": 170.2,
+     "lane": "step",
+     "text": "1: add flour"
+    },
+    {
+     "t": 171.45,
+     "te": 180.49,
+     "lane": "step",
+     "text": "5: whisk mixture"
+    },
+    {
+     "t": 172.18,
+     "te": 198.6,
+     "lane": "step",
+     "text": "5: whisk mixture"
+    },
+    {
+     "t": 182.73,
+     "te": 184.48,
+     "lane": "step",
+     "text": "3: pour milk"
+    },
+    {
+     "t": 182.97,
+     "te": 184.8,
+     "lane": "step",
+     "text": "3: pour milk"
+    },
+    {
+     "t": 185.93,
+     "te": 198.38,
+     "lane": "step",
+     "text": "5: whisk mixture"
+    },
+    {
+     "t": 208.92,
+     "te": 212.29,
+     "lane": "step",
+     "text": "5: whisk mixture"
+    },
+    {
+     "t": 209.12,
+     "te": 212.57,
+     "lane": "step",
+     "text": "5: whisk mixture"
+    },
+    {
+     "t": 226.5,
+     "te": 234.61,
+     "lane": "step",
+     "text": "6: pour mixture into pan"
+    },
+    {
+     "t": 228.05,
+     "te": 234.71,
+     "lane": "step",
+     "text": "6: pour mixture into pan"
+    },
+    {
+     "t": 242.0,
+     "te": 251.0,
+     "lane": "step",
+     "text": "7: flip pancake"
+    },
+    {
+     "t": 246.86,
+     "te": 250.68,
+     "lane": "step",
+     "text": "7: flip pancake"
+    },
+    {
+     "t": 261.63,
+     "te": 265.71,
+     "lane": "step",
+     "text": "8: take pancake from pan"
+    },
+    {
+     "t": 261.65,
+     "te": 264.15,
+     "lane": "step",
+     "text": "8: take pancake from pan"
+    },
+    {
+     "t": 270.05,
+     "te": 274.28,
+     "lane": "step",
+     "text": "6: pour mixture into pan"
+    },
+    {
+     "t": 270.48,
+     "te": 274.57,
+     "lane": "step",
+     "text": "6: pour mixture into pan"
+    },
+    {
+     "t": 296.29,
+     "te": 298.38,
+     "lane": "step",
+     "text": "2: add sugar"
+    },
+    {
+     "t": 299.31,
+     "te": 303.19,
+     "lane": "step",
+     "text": "5: whisk mixture"
+    },
+    {
+     "t": 309.18,
+     "te": 312.53,
+     "lane": "step",
+     "text": "5: whisk mixture"
+    },
+    {
+     "t": 327.42,
+     "te": 334.65,
+     "lane": "step",
+     "text": "5: whisk mixture"
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": {
+    "annotations/91515_MpzxR2_dXLg.csv": [
+     "1,59.81,61.95",
+     "5,70.88,77.23",
+     "4,86.93,99.11",
+     "5,108.11,116.19",
+     "2,120.76,124.87",
+     "5,126.08,132.82",
+     "5,139.66,144.71",
+     "5,152.11,163.76",
+     "3,155.71,159.01",
+     "5,172.18,198.6",
+     "3,182.97,184.8",
+     "5,209.12,212.57",
+     "6,228.05,234.71",
+     "7,242.0,251.0",
+     "8,261.65,264.15",
+     "6,270.48,274.57",
+     "1,59.58,61.79",
+     "5,70.65,76.73",
+     "4,83.83,97.97",
+     "5,107.96,116.7",
+     "2,122.56,125.53",
+     "5,126.05,132.75",
+     "5,139.72,144.21",
+     "4,146.51,151.51",
+     "5,152.08,154.62",
+     "3,156.33,158.62",
+     "5,160.46,163.81",
+     "1,166.13,170.2",
+     "5,171.45,180.49",
+     "3,182.73,184.48",
+     "5,185.93,198.38",
+     "5,208.92,212.29",
+     "6,226.5,234.61",
+     "7,246.86,250.68",
+     "8,261.63,265.71",
+     "6,270.05,274.28",
+     "2,296.29,298.38",
+     "5,299.31,303.19",
+     "5,309.18,312.53",
+     "5,327.42,334.65"
+    ],
+    "tasks_primary.txt block": "91515\nMake Pancakes\nhttp://www.wikihow.com/Make-Pancakes\n8\nadd flour,add sugar,pour milk,pour egg,whisk mixture,pour mixture into pan,flip pancake,take pancake from pan",
+    "videos.csv row": "91515,MpzxR2_dXLg,https://www.youtube.com/watch?v=MpzxR2_dXLg"
+   }
+  }
+ ]
+}

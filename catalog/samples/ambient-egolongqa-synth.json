@@ -1,0 +1,1010 @@
+{
+ "slug": "ambient-egolongqa-synth",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/ambient-intelligence-labs/egoproactive-synth-annotations: egolongqa_dense_annotations.tar.gz (ann_47e8fc6d0e6fe605.json, ann_6b4f03af65f82192.json), egolongqa_rows.jsonl, egolongqa_procedural.json",
+  "https://huggingface.co/datasets/facebook/wearable-ai egolongqa/val/47e8fc6d0e6fe605.mp4, egolongqa/val/6b4f03af65f82192.mp4 (clips)"
+ ],
+ "access_used": "open download",
+ "note": "One example = one ~10 min EgoLongQA validation video with its full machine-generated agent walkthrough (decisions with utterance, visible context, rationale), silent intervals, the LLM procedural-filter verdict, and the derived 8 s binned row whose query is synthesised as 'How do I <task>?'. Labels are LLM/VLM output, not human. The second example shows the agent staying silent through unrelated activity (folding clothes) in a video labelled 'cooking tutorial'. Clips (no audio) are from the CC-BY-NC-4.0 gated wearable-ai videos, click-through access.",
+ "examples": [
+  {
+   "title": "47e8fc6d0e6fe605: Making coffee with AeroPress and frothed milk — 25 agent events (18 intervene, 3 confirm, 2 correct, 1 observe, 1 complete)",
+   "video_ref": "facebook/wearable-ai egolongqa/val/47e8fc6d0e6fe605.mp4",
+   "duration_s": 600.133333,
+   "clip": "samples/media/ambient-egolongqa-synth_1.mp4",
+   "clip_offset_s": 128.0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": null,
+     "lane": "user",
+     "text": "How do I making coffee?"
+    },
+    {
+     "t": 2.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Take the lid off the coffee tin."
+    },
+    {
+     "t": 5.5,
+     "te": null,
+     "lane": "assistant",
+     "text": "Run the can opener around the rim to open it."
+    },
+    {
+     "t": 20.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "[confirm] Good, the lid's off."
+    },
+    {
+     "t": 32.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Scoop some coffee grounds into a bowl."
+    },
+    {
+     "t": 55.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Fill the kettle and set it to boil."
+    },
+    {
+     "t": 62.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Place the glass cup on the scale and tare it."
+    },
+    {
+     "t": 70.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Pour water in until you hit your target weight."
+    },
+    {
+     "t": 105.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Set the AeroPress chamber on the scale and tare it."
+    },
+    {
+     "t": 112.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Add coffee grounds until the scale shows your dose."
+    },
+    {
+     "t": 135.0,
+     "te": null,
+     "lane": "correction",
+     "text": "[correct] That's a bit much—tip some back out."
+    },
+    {
+     "t": 155.0,
+     "te": 204.0,
+     "lane": "silence",
+     "text": "The user is steadily scooping and weighing the coffee dose without needing further guidance."
+    },
+    {
+     "t": 160.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "[confirm] That's the right dose."
+    },
+    {
+     "t": 205.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Set the tin aside so it stays fresh."
+    },
+    {
+     "t": 215.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Grab a mug for your coffee."
+    },
+    {
+     "t": 240.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Pour the hot water into the chamber."
+    },
+    {
+     "t": 255.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Attach the filter cap to the chamber."
+    },
+    {
+     "t": 265.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Set a timer for the steep."
+    },
+    {
+     "t": 300.0,
+     "te": null,
+     "lane": "silence",
+     "text": "[observe] Give the coffee a gentle stir."
+    },
+    {
+     "t": 330.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Press the plunger down slowly and steadily."
+    },
+    {
+     "t": 340.0,
+     "te": 399.0,
+     "lane": "silence",
+     "text": "The coffee is steeping and pressing; the user works through it without intervention."
+    },
+    {
+     "t": 400.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Time to heat some milk for the top."
+    },
+    {
+     "t": 425.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Pour milk into the pitcher."
+    },
+    {
+     "t": 450.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Submerge the wand and start the steam."
+    },
+    {
+     "t": 480.0,
+     "te": null,
+     "lane": "correction",
+     "text": "[correct] Lower the pitcher a bit so it doesn't overflow."
+    },
+    {
+     "t": 505.0,
+     "te": 539.0,
+     "lane": "silence",
+     "text": "The milk finishes frothing on its own and needs no spoken guidance."
+    },
+    {
+     "t": 510.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "[confirm] That milk looks ready."
+    },
+    {
+     "t": 540.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Pour the frothed milk over the coffee."
+    },
+    {
+     "t": 570.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "[complete] There you go—enjoy your coffee."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "egolongqa_dense_annotations.tar.gz: egolongqa_ann/ann_47e8fc6d0e6fe605.json": {
+     "stem": "47e8fc6d0e6fe605",
+     "query": "How do I making coffee?",
+     "dur": 600.133333,
+     "model_used": "deepseek/deepseek-v4-flash-0731",
+     "annotation": {
+      "task_name": "Making coffee with AeroPress and frothed milk",
+      "goal": "Brew a cup of AeroPress coffee and finish it with steamed/frothed milk.",
+      "walkthrough": [
+       {
+        "timestamp": 2.0,
+        "decision": "intervene",
+        "interaction_type": "pre_action_guidance",
+        "visible_context": "A metal tin sits on the stovetop with a yellow lid on top.",
+        "utterance": "Take the lid off the coffee tin.",
+        "timing_rationale": "Setup begins and the first object is the coffee tin in hand.",
+        "confidence": 0.9
+       },
+       {
+        "timestamp": 5.5,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "The lid is sealed and the can opener is nearby.",
+        "utterance": "Run the can opener around the rim to open it.",
+        "timing_rationale": "The lid won't come off by hand, so the can opener is needed now.",
+        "confidence": 0.88
+       },
+       {
+        "timestamp": 20.0,
+        "decision": "confirm",
+        "interaction_type": "progress_confirmation",
+        "visible_context": "The lid has been cut free.",
+        "utterance": "Good, the lid's off.",
+        "timing_rationale": "A short confirmation after a fiddly opening step.",
+        "confidence": 0.85
+       },
+       {
+        "timestamp": 32.0,
+        "decision": "intervene",
+        "interaction_type": "pre_action_guidance",
+        "visible_context": "The tin is open and a black scoop is beside it.",
+        "utterance": "Scoop some coffee grounds into a bowl.",
+        "timing_rationale": "The grounds are now accessible and the scoop is visible.",
+        "confidence": 0.9
+       },
+       {
+        "timestamp": 55.0,
+        "decision": "intervene",
+        "interaction_type": "prerequisite_reminder",
+        "visible_context": "A blue kettle sits on the induction burner and a glass measuring cup is nearby.",
+        "utterance": "Fill the kettle and set it to boil.",
+        "timing_rationale": "Hot water is needed before brewing, so starting it early is useful.",
+        "confidence": 0.85
+       },
+       {
+        "timestamp": 62.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "A glass measuring cup is set on the digital scale.",
+        "utterance": "Place the glass cup on the scale and tare it.",
+        "timing_rationale": "Water is weighed before brewing.",
+        "confidence": 0.86
+       },
+       {
+        "timestamp": 70.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "The scale reads zero on the empty cup.",
+        "utterance": "Pour water in until you hit your target weight.",
+        "timing_rationale": "The container is tared and ready for weighing.",
+        "confidence": 0.84
+       },
+       {
+        "timestamp": 105.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "The AeroPress brewing chamber is in hand.",
+        "utterance": "Set the AeroPress chamber on the scale and tare it.",
+        "timing_rationale": "The coffee dose is weighed in the chamber next.",
+        "confidence": 0.87
+       },
+       {
+        "timestamp": 112.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "The chamber is tared on the scale.",
+        "utterance": "Add coffee grounds until the scale shows your dose.",
+        "timing_rationale": "The dose is measured now before adding water.",
+        "confidence": 0.86
+       },
+       {
+        "timestamp": 135.0,
+        "decision": "correct",
+        "interaction_type": "mid_action_correction",
+        "visible_context": "The user adds grounds and the scale overshoots.",
+        "utterance": "That's a bit much—tip some back out.",
+        "timing_rationale": "The dose overshoot is visible while it can still be corrected.",
+        "confidence": 0.8
+       },
+       {
+        "timestamp": 160.0,
+        "decision": "confirm",
+        "interaction_type": "progress_confirmation",
+        "visible_context": "The coffee dose is now at the target on the scale.",
+        "utterance": "That's the right dose.",
+        "timing_rationale": "A brief confirmation closes the weighing loop.",
+        "confidence": 0.82
+       },
+       {
+        "timestamp": 205.0,
+        "decision": "intervene",
+        "interaction_type": "pre_action_guidance",
+        "visible_context": "The user closes the coffee tin.",
+        "utterance": "Set the tin aside so it stays fresh.",
+        "timing_rationale": "The tin is being closed after use.",
+        "confidence": 0.78
+       },
+       {
+        "timestamp": 215.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "The user looks toward the kitchen cabinet.",
+        "utterance": "Grab a mug for your coffee.",
+        "timing_rationale": "A serving cup is needed before the brew finishes.",
+        "confidence": 0.8
+       },
+       {
+        "timestamp": 240.0,
+        "decision": "intervene",
+        "interaction_type": "pre_action_guidance",
+        "visible_context": "The kettle water is ready and the chamber has coffee.",
+        "utterance": "Pour the hot water into the chamber.",
+        "timing_rationale": "The water is heated and the coffee is dosed, so it's time to brew.",
+        "confidence": 0.87
+       },
+       {
+        "timestamp": 255.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "The water has been added to the chamber.",
+        "utterance": "Attach the filter cap to the chamber.",
+        "timing_rationale": "The cap is needed before plunging.",
+        "confidence": 0.85
+       },
+       {
+        "timestamp": 265.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "The cap is fitted and a phone is on the counter.",
+        "utterance": "Set a timer for the steep.",
+        "timing_rationale": "Proper steeping time matters for extraction.",
+        "confidence": 0.82
+       },
+       {
+        "timestamp": 300.0,
+        "decision": "observe",
+        "interaction_type": "technique_guidance",
+        "visible_context": "The user stirs the coffee in the chamber.",
+        "utterance": "Give the coffee a gentle stir.",
+        "timing_rationale": "Stirring helps even extraction before plunging.",
+        "confidence": 0.8
+       },
+       {
+        "timestamp": 330.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "The timer has finished and the plunger is at hand.",
+        "utterance": "Press the plunger down slowly and steadily.",
+        "timing_rationale": "Steady plunging gives a clean press.",
+        "confidence": 0.88
+       },
+       {
+        "timestamp": 400.0,
+        "decision": "intervene",
+        "interaction_type": "pre_action_guidance",
+        "visible_context": "The user turns toward the Ninja espresso machine and a metal pitcher.",
+        "utterance": "Time to heat some milk for the top.",
+        "timing_rationale": "Milk is added after the coffee is brewed.",
+        "confidence": 0.83
+       },
+       {
+        "timestamp": 425.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "A jug of milk is in the user's hand.",
+        "utterance": "Pour milk into the pitcher.",
+        "timing_rationale": "The pitcher needs milk before steaming.",
+        "confidence": 0.85
+       },
+       {
+        "timestamp": 450.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "The filled pitcher is under the steam wand.",
+        "utterance": "Submerge the wand and start the steam.",
+        "timing_rationale": "The wand must be under the surface before steaming begins.",
+        "confidence": 0.86
+       },
+       {
+        "timestamp": 480.0,
+        "decision": "correct",
+        "interaction_type": "mid_action_correction",
+        "visible_context": "The milk is frothing and rising in the pitcher.",
+        "utterance": "Lower the pitcher a bit so it doesn't overflow.",
+        "timing_rationale": "The froth is visible rising toward the rim.",
+        "confidence": 0.84
+       },
+       {
+        "timestamp": 510.0,
+        "decision": "confirm",
+        "interaction_type": "progress_confirmation",
+        "visible_context": "The milk is hot and well frothed.",
+        "utterance": "That milk looks ready.",
+        "timing_rationale": "A brief confirmation before pouring.",
+        "confidence": 0.78
+       },
+       {
+        "timestamp": 540.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "The user holds the pitcher over the mug of coffee.",
+        "utterance": "Pour the frothed milk over the coffee.",
+        "timing_rationale": "The coffee is brewed and the milk is ready to combine.",
+        "confidence": 0.85
+       },
+       {
+        "timestamp": 570.0,
+        "decision": "complete",
+        "interaction_type": "completion",
+        "visible_context": "The mug is full with coffee and frothed milk.",
+        "utterance": "There you go—enjoy your coffee.",
+        "timing_rationale": "The drink is visibly finished and ready to serve.",
+        "confidence": 0.88
+       }
+      ],
+      "silent_intervals": [
+       {
+        "start_time": 155.0,
+        "end_time": 204.0,
+        "reason": "The user is steadily scooping and weighing the coffee dose without needing further guidance."
+       },
+       {
+        "start_time": 340.0,
+        "end_time": 399.0,
+        "reason": "The coffee is steeping and pressing; the user works through it without intervention."
+       },
+       {
+        "start_time": 505.0,
+        "end_time": 539.0,
+        "reason": "The milk finishes frothing on its own and needs no spoken guidance."
+       }
+      ]
+     }
+    },
+    "egolongqa_procedural.json[47e8fc6d0e6fe605]": {
+     "procedural": true,
+     "task": "making coffee",
+     "why": "Step-by-step coffee preparation with devices."
+    },
+    "egolongqa_rows.jsonl (binned 8 s row)": {
+     "video_path": "47e8fc6d0e6fe605.mp4",
+     "duration_in_sec": 600.133333,
+     "video_intervals": [
+      [
+       0.0,
+       8.0
+      ],
+      [
+       8.0,
+       16.0
+      ],
+      [
+       16.0,
+       24.0
+      ],
+      [
+       24.0,
+       32.0
+      ],
+      [
+       32.0,
+       40.0
+      ],
+      [
+       40.0,
+       48.0
+      ],
+      [
+       48.0,
+       56.0
+      ],
+      [
+       56.0,
+       64.0
+      ],
+      [
+       64.0,
+       72.0
+      ],
+      [
+       72.0,
+       80.0
+      ],
+      [
+       80.0,
+       88.0
+      ],
+      [
+       88.0,
+       96.0
+      ],
+      "…[truncated 64 more items]"
+     ],
+     "query": "How do I making coffee?",
+     "domain": "egolongqa_synth",
+     "task": "making coffee",
+     "answers": [
+      "$interrupt$Take the lid off the coffee tin.",
+      "$silent$",
+      "$interrupt$Good, the lid's off.",
+      "$interrupt$Scoop some coffee grounds into a bowl.",
+      "$silent$",
+      "$silent$",
+      "$interrupt$Fill the kettle and set it to boil.",
+      "$interrupt$Place the glass cup on the scale and tare it.",
+      "$interrupt$Pour water in until you hit your target weight.",
+      "$silent$",
+      "$silent$",
+      "$silent$",
+      "…[truncated 64 more items]"
+     ],
+     "dialog": [
+      [
+       {
+        "role": "user",
+        "text": "How do I making coffee?"
+       }
+      ],
+      [
+       {
+        "role": "user",
+        "text": "How do I making coffee?"
+       },
+       {
+        "role": "assistant",
+        "text": "$interrupt$Take the lid off the coffee tin."
+       }
+      ],
+      "…[truncated 74 more items]"
+     ]
+    }
+   }
+  },
+  {
+   "title": "6b4f03af65f82192: Cook sausages in a frying pan in the kitchen — 18 agent events (14 intervene, 1 silent, 2 observe, 1 confirm)",
+   "video_ref": "facebook/wearable-ai egolongqa/val/6b4f03af65f82192.mp4",
+   "duration_s": 645.2,
+   "clip": "samples/media/ambient-egolongqa-synth_2.mp4",
+   "clip_offset_s": 348.0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": null,
+     "lane": "user",
+     "text": "How do I cooking tutorial?"
+    },
+    {
+     "t": 1.5,
+     "te": null,
+     "lane": "assistant",
+     "text": "Heading to the kitchen to cook? Grab the sausage and oil on your way in."
+    },
+    {
+     "t": 10.0,
+     "te": 60.0,
+     "lane": "silence",
+     "text": "User is folding and arranging clothing in the bedroom; unrelated to cooking."
+    },
+    {
+     "t": 62.0,
+     "te": null,
+     "lane": "silence",
+     "text": "[silent] User folds a garment and places it on the vanity shelf."
+    },
+    {
+     "t": 80.0,
+     "te": 110.0,
+     "lane": "silence",
+     "text": "User walks around the room gathering items; no immediate cooking action needs direction."
+    },
+    {
+     "t": 112.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Before you cook, make sure the kitchen has the sausage, oil, and eggs out."
+    },
+    {
+     "t": 165.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Set your things down and find the frying pan and a pot for the sausages."
+    },
+    {
+     "t": 190.0,
+     "te": null,
+     "lane": "silence",
+     "text": "[observe] User approaches the trash can and discards the hanger."
+    },
+    {
+     "t": 195.0,
+     "te": 220.0,
+     "lane": "silence",
+     "text": "User is locating tools and adjusting in the kitchen; obvious actions need no guidance."
+    },
+    {
+     "t": 225.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Take out the chicken wings and set the eggs and butter on the counter."
+    },
+    {
+     "t": 250.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Fill the kettle with water and put it on to boil for later."
+    },
+    {
+     "t": 275.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Check the pots on the stove so nothing burns while you prep."
+    },
+    {
+     "t": 300.0,
+     "te": 325.0,
+     "lane": "silence",
+     "text": "User moving toward the sink to begin washing; no instruction needed yet."
+    },
+    {
+     "t": 330.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Scrub the pan well so the sausages don't stick."
+    },
+    {
+     "t": 355.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "[confirm] That's the pan cleaned—rinse it and set it aside."
+    },
+    {
+     "t": 380.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Turn the burner up to medium-high to heat the pan while you prep."
+    },
+    {
+     "t": 400.0,
+     "te": null,
+     "lane": "silence",
+     "text": "[observe] User opens a box of cookies at the counter."
+    },
+    {
+     "t": 410.0,
+     "te": 495.0,
+     "lane": "silence",
+     "text": "User handling dishes and checking the stove; repeat cleanup without needing direction."
+    },
+    {
+     "t": 500.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Add a little oil to the pan so the sausages don't stick."
+    },
+    {
+     "t": 545.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Peel the casing off each sausage before it goes in the pan."
+    },
+    {
+     "t": 570.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Lay the sausage into the heated pan now."
+    },
+    {
+     "t": 590.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Let it sit so it gets a good brown crust, then flip it."
+    },
+    {
+     "t": 610.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Keep an eye on the sausage and turn it so it cooks evenly."
+    },
+    {
+     "t": 630.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Rinse the cup and use it to plate the sausage when it's ready."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "egolongqa_dense_annotations.tar.gz: egolongqa_ann/ann_6b4f03af65f82192.json": {
+     "stem": "6b4f03af65f82192",
+     "query": "How do I cooking tutorial?",
+     "dur": 645.2,
+     "model_used": "deepseek/deepseek-v4-flash-0731",
+     "annotation": {
+      "task_name": "Cook sausages in a frying pan in the kitchen",
+      "goal": "Guide the user through preparing and cooking sausages (with the boiling pots and frying pan) to a fully cooked meal.",
+      "walkthrough": [
+       {
+        "timestamp": 1.5,
+        "decision": "intervene",
+        "interaction_type": "task_orientation",
+        "visible_context": "The user is in a bedroom grabbing a folded shirt and preparing to head out.",
+        "utterance": "Heading to the kitchen to cook? Grab the sausage and oil on your way in.",
+        "timing_rationale": "Covers the setup phase from the very start while the user is still gathering and before the main cooking begins.",
+        "confidence": 0.6
+       },
+       {
+        "timestamp": 62.0,
+        "decision": "silent",
+        "interaction_type": "",
+        "visible_context": "User folds a garment and places it on the vanity shelf.",
+        "utterance": "",
+        "timing_rationale": "Non-cooking activity; no guidance needed.",
+        "confidence": 0.5
+       },
+       {
+        "timestamp": 112.0,
+        "decision": "intervene",
+        "interaction_type": "prerequisite_reminder",
+        "visible_context": "User holds a white hanger and checks a timer on the phone.",
+        "utterance": "Before you cook, make sure the kitchen has the sausage, oil, and eggs out.",
+        "timing_rationale": "The user is about to leave the room; a quick reminder of the needed ingredients helps them bring everything along.",
+        "confidence": 0.7
+       },
+       {
+        "timestamp": 165.0,
+        "decision": "intervene",
+        "interaction_type": "phase_transition",
+        "visible_context": "User walks down the stairs and enters the kitchen carrying items.",
+        "utterance": "Set your things down and find the frying pan and a pot for the sausages.",
+        "timing_rationale": "The user has just arrived in the kitchen and is transitioning into the cooking task.",
+        "confidence": 0.85
+       },
+       {
+        "timestamp": 190.0,
+        "decision": "observe",
+        "interaction_type": "observe",
+        "visible_context": "User approaches the trash can and discards the hanger.",
+        "utterance": "",
+        "timing_rationale": "Harmless action; no need to interrupt.",
+        "confidence": 0.6
+       },
+       {
+        "timestamp": 225.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "User opens the refrigerator and pulls open the crisper drawer with chicken wings.",
+        "utterance": "Take out the chicken wings and set the eggs and butter on the counter.",
+        "timing_rationale": "The fridge is open and the ingredients are visible; the user can grab them all now.",
+        "confidence": 0.9
+       },
+       {
+        "timestamp": 250.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "Ingredients laid out on the counter near the sink.",
+        "utterance": "Fill the kettle with water and put it on to boil for later.",
+        "timing_rationale": "The user is at the sink; starting the water now lets it be ready when needed.",
+        "confidence": 0.8
+       },
+       {
+        "timestamp": 275.0,
+        "decision": "intervene",
+        "interaction_type": "pre_action_guidance",
+        "visible_context": "User lifts the lid off a pot on the stove to check food cooking inside.",
+        "utterance": "Check the pots on the stove so nothing burns while you prep.",
+        "timing_rationale": "The user is inspecting the stovetop; ensuring the pots are managed is timely.",
+        "confidence": 0.8
+       },
+       {
+        "timestamp": 330.0,
+        "decision": "intervene",
+        "interaction_type": "pre_action_guidance",
+        "visible_context": "User begins washing a frying pan under running water at the sink.",
+        "utterance": "Scrub the pan well so the sausages don't stick.",
+        "timing_rationale": "The user is cleaning the pan the sausages will be cooked in.",
+        "confidence": 0.85
+       },
+       {
+        "timestamp": 355.0,
+        "decision": "confirm",
+        "interaction_type": "progress_confirmation",
+        "visible_context": "User scrubs the frying pan with a blue sponge under the faucet.",
+        "utterance": "That's the pan cleaned—rinse it and set it aside.",
+        "timing_rationale": "The pan wash is nearly complete; a brief confirmation keeps the flow moving.",
+        "confidence": 0.8
+       },
+       {
+        "timestamp": 380.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "User moves to the stove and begins turning the burner knobs.",
+        "utterance": "Turn the burner up to medium-high to heat the pan while you prep.",
+        "timing_rationale": "The user is at the stove adjusting knobs; getting the correct heat now avoids a cold pan later.",
+        "confidence": 0.85
+       },
+       {
+        "timestamp": 400.0,
+        "decision": "observe",
+        "interaction_type": "observe",
+        "visible_context": "User opens a box of cookies at the counter.",
+        "utterance": "",
+        "timing_rationale": "Incidental snacking; not part of the main cooking flow.",
+        "confidence": 0.5
+       },
+       {
+        "timestamp": 500.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "User stands at the stove with the pan heating and two boiled pots nearby.",
+        "utterance": "Add a little oil to the pan so the sausages don't stick.",
+        "timing_rationale": "The pan is now hot; adding oil before the sausage goes in is the right timing.",
+        "confidence": 0.85
+       },
+       {
+        "timestamp": 545.0,
+        "decision": "intervene",
+        "interaction_type": "pre_action_guidance",
+        "visible_context": "User holds a sausage and begins peeling the casing off with their hands.",
+        "utterance": "Peel the casing off each sausage before it goes in the pan.",
+        "timing_rationale": "The user is starting to peel; the instruction applies to each sausage.",
+        "confidence": 0.9
+       },
+       {
+        "timestamp": 570.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "User finishes peeling a sausage and stands ready at the stove with the pan and oil.",
+        "utterance": "Lay the sausage into the heated pan now.",
+        "timing_rationale": "The pan is hot with oil and the sausage is peeled; it's time to add it.",
+        "confidence": 0.9
+       },
+       {
+        "timestamp": 590.0,
+        "decision": "intervene",
+        "interaction_type": "technique_guidance",
+        "visible_context": "User places the sausage in the frying pan and steps back.",
+        "utterance": "Let it sit so it gets a good brown crust, then flip it.",
+        "timing_rationale": "The sausage is in the pan; guiding browning and flipping avoids undercooking.",
+        "confidence": 0.85
+       },
+       {
+        "timestamp": 610.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "User disposes of the sausage wrapper into the trash bin.",
+        "utterance": "Keep an eye on the sausage and turn it so it cooks evenly.",
+        "timing_rationale": "The user is stepping away; reminding them to watch the pan is useful.",
+        "confidence": 0.8
+       },
+       {
+        "timestamp": 630.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "User rinses a metal cup at the sink and pulls out a phone.",
+        "utterance": "Rinse the cup and use it to plate the sausage when it's ready.",
+        "timing_rationale": "The user is cleaning a cup that can be used for serving.",
+        "confidence": 0.7
+       }
+      ],
+      "silent_intervals": [
+       {
+        "start_time": 10.0,
+        "end_time": 60.0,
+        "reason": "User is folding and arranging clothing in the bedroom; unrelated to cooking."
+       },
+       {
+        "start_time": 80.0,
+        "end_time": 110.0,
+        "reason": "User walks around the room gathering items; no immediate cooking action needs direction."
+       },
+       {
+        "start_time": 195.0,
+        "end_time": 220.0,
+        "reason": "User is locating tools and adjusting in the kitchen; obvious actions need no guidance."
+       },
+       {
+        "start_time": 300.0,
+        "end_time": 325.0,
+        "reason": "User moving toward the sink to begin washing; no instruction needed yet."
+       },
+       {
+        "start_time": 410.0,
+        "end_time": 495.0,
+        "reason": "User handling dishes and checking the stove; repeat cleanup without needing direction."
+       }
+      ],
+      "completion": {
+       "timestamp": 645.0,
+       "outcome": "success",
+       "assistant_utterance": "The sausage is done—plate it and enjoy."
+      }
+     }
+    },
+    "egolongqa_procedural.json[6b4f03af65f82192]": {
+     "procedural": true,
+     "task": "cooking tutorial",
+     "why": "Recording video in kitchen indicates procedural cooking task."
+    },
+    "egolongqa_rows.jsonl (binned 8 s row)": {
+     "video_path": "6b4f03af65f82192.mp4",
+     "duration_in_sec": 645.2,
+     "video_intervals": [
+      [
+       0.0,
+       8.0
+      ],
+      [
+       8.0,
+       16.0
+      ],
+      [
+       16.0,
+       24.0
+      ],
+      [
+       24.0,
+       32.0
+      ],
+      [
+       32.0,
+       40.0
+      ],
+      [
+       40.0,
+       48.0
+      ],
+      [
+       48.0,
+       56.0
+      ],
+      [
+       56.0,
+       64.0
+      ],
+      [
+       64.0,
+       72.0
+      ],
+      [
+       72.0,
+       80.0
+      ],
+      [
+       80.0,
+       88.0
+      ],
+      [
+       88.0,
+       96.0
+      ],
+      "…[truncated 69 more items]"
+     ],
+     "query": "How do I cooking tutorial?",
+     "domain": "egolongqa_synth",
+     "task": "cooking tutorial",
+     "answers": [
+      "$interrupt$Heading to the kitchen to cook? Grab the sausage and oil on your way in.",
+      "$silent$",
+      "$silent$",
+      "$silent$",
+      "$silent$",
+      "$silent$",
+      "$silent$",
+      "$silent$",
+      "$silent$",
+      "$silent$",
+      "$silent$",
+      "$silent$",
+      "…[truncated 69 more items]"
+     ],
+     "dialog": [
+      [
+       {
+        "role": "user",
+        "text": "How do I cooking tutorial?"
+       }
+      ],
+      [
+       {
+        "role": "user",
+        "text": "How do I cooking tutorial?"
+       },
+       {
+        "role": "assistant",
+        "text": "$interrupt$Heading to the kitchen to cook? Grab the sausage and oil on your way in."
+       }
+      ],
+      "…[truncated 79 more items]"
+     ]
+    }
+   }
+  }
+ ]
+}

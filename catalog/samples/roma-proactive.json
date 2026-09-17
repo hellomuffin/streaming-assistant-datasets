@@ -1,0 +1,199 @@
+{
+ "slug": "roma-proactive",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/EurekaTian/ROMA_proactive/blob/main/alert.jsonl (line 16777)",
+  "https://huggingface.co/datasets/EurekaTian/ROMA_proactive/blob/main/narration.jsonl (line 8642)"
+ ],
+ "access_used": "open download",
+ "note": "An example is one jsonl record: a TTS-spoken user query at t=0 and speak-head labels in seconds. Alert records carry only the literal label 'alert' at every positive second (no response text; all other seconds are silent); narration records carry caption text at segment-transition seconds over a directory of 2 fps frames. No clips: the media sit inside 40 GB / 114 GB gzip tarballs that cannot be range-read, and the videos are re-hosted OOPS (YouTube), DiDeMo, Charades and ActivityNet footage. Narration times are seconds of the re-timed record (its frame list starts mid-video and unlabeled gaps were cut), not of the original ActivityNet video.",
+ "examples": [
+  {
+   "title": "OOPS 1200 (dog fails compilation): mishap alert, silent to 5 s then 'alert' every second 6–12 s",
+   "video_ref": "./alert/video/oops/Bark Bark - Dog Fails (August 2018) _ FailArmy13.mp4",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 4.11,
+     "lane": "user",
+     "text": "<video>Once an anomaly is found, immediately describe and advise."
+    },
+    {
+     "t": 6.0,
+     "te": null,
+     "lane": "alert",
+     "text": "alert"
+    },
+    {
+     "t": 7.0,
+     "te": null,
+     "lane": "alert",
+     "text": "alert"
+    },
+    {
+     "t": 8.0,
+     "te": null,
+     "lane": "alert",
+     "text": "alert"
+    },
+    {
+     "t": 9.0,
+     "te": null,
+     "lane": "alert",
+     "text": "alert"
+    },
+    {
+     "t": 10.0,
+     "te": null,
+     "lane": "alert",
+     "text": "alert"
+    },
+    {
+     "t": 11.0,
+     "te": null,
+     "lane": "alert",
+     "text": "alert"
+    },
+    {
+     "t": 12.0,
+     "te": null,
+     "lane": "alert",
+     "text": "alert"
+    }
+   ],
+   "raw_format": "jsonl line",
+   "raw": {
+    "task": "alert",
+    "id": "1200",
+    "ans": [
+     {
+      "text": "alert",
+      "time": 6.0
+     },
+     {
+      "text": "alert",
+      "time": 7.0
+     },
+     {
+      "text": "alert",
+      "time": 8.0
+     },
+     {
+      "text": "alert",
+      "time": 9.0
+     },
+     {
+      "text": "alert",
+      "time": 10.0
+     },
+     {
+      "text": "alert",
+      "time": 11.0
+     },
+     {
+      "text": "alert",
+      "time": 12.0
+     }
+    ],
+    "query": [
+     {
+      "text": "<video>Once an anomaly is found, immediately describe and advise.",
+      "audio": "./alert/audio/oops/1200.wav",
+      "time": 0.0,
+      "duration": 4.11
+     }
+    ],
+    "videos": [
+     [
+      "./alert/video/oops/Bark Bark - Dog Fails (August 2018) _ FailArmy13.mp4"
+     ]
+    ],
+    "images": []
+   }
+  },
+  {
+   "title": "ActivityNet v_v7o9uSu9AVI (record 11608): real-time narration, 4 captions over 54 frames",
+   "video_ref": "./narration/video/anet/v_v7o9uSu9AVI (frame directory; ActivityNet YouTube id v7o9uSu9AVI)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 2.46,
+     "lane": "user",
+     "text": "<video> Describe actions and interactions happening now."
+    },
+    {
+     "t": 6.07,
+     "te": null,
+     "lane": "narration",
+     "text": "He begins to do shrugs on the bars."
+    },
+    {
+     "t": 12.15,
+     "te": null,
+     "lane": "narration",
+     "text": "He then starts to do dips down to his armpits on the parallel bars called Russian Dips, while keeping his legs in the air."
+    },
+    {
+     "t": 21.27,
+     "te": null,
+     "lane": "narration",
+     "text": "He begins to do pushups, with his knees tucked, with the parallel bars."
+    },
+    {
+     "t": 28.37,
+     "te": null,
+     "lane": "narration",
+     "text": "He switches to doing a head stand and holds."
+    }
+   ],
+   "raw_format": "jsonl line",
+   "raw": {
+    "task": "narration",
+    "id": "11608",
+    "videos": [
+     [
+      "./narration/video/anet/v_v7o9uSu9AVI/frame_000031.jpg",
+      "./narration/video/anet/v_v7o9uSu9AVI/frame_000032.jpg",
+      "./narration/video/anet/v_v7o9uSu9AVI/frame_000033.jpg",
+      "…[truncated 51 more items]"
+     ]
+    ],
+    "images": [],
+    "ans": [
+     {
+      "text": "He begins to do shrugs on the bars.",
+      "time": 6.070000648500001
+     },
+     {
+      "text": "He then starts to do dips down to his armpits on the parallel bars called Russian Dips, while keeping his legs in the air.",
+      "time": 12.150002479599992
+     },
+     {
+      "text": "He begins to do pushups, with his knees tucked, with the parallel bars.",
+      "time": 21.2700052262
+     },
+     {
+      "text": "He switches to doing a head stand and holds.",
+      "time": 28.37001132969999
+     }
+    ],
+    "query": [
+     {
+      "text": "<video> Describe actions and interactions happening now.",
+      "audio": "./narration/audio/anet/anet_11608_query.wav",
+      "time": 0.0,
+      "duration": 2.458
+     }
+    ]
+   }
+  }
+ ]
+}

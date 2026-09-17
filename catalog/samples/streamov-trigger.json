@@ -1,0 +1,115 @@
+{
+ "slug": "streamov-trigger",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/PatrickyMing/StreamOV/resolve/main/trigger_input_public.jsonl",
+  "https://huggingface.co/datasets/PatrickyMing/StreamOV/resolve/main/train_trigger.jsonl",
+  "https://huggingface.co/datasets/PatrickyMing/StreamOV/resolve/main/trigger_clips.tar (members trigger_clips/6Mlwg98IPh8_0.00_151.16.mp4 and trigger_clips/2AgB4nPEuKw_0.00_17.182.mp4, read by HTTP range)"
+ ],
+ "access_used": "open download",
+ "note": "One example is one training clip: the video from 0 s up to the trigger time t, with a question asked at the start. The label says whether the assistant should answer at t ('<Yes> …', the asked-about content has just appeared) or stay silent ('<No>', the content never appears). The question is shown at t=0 in the timeline because the model is asked it while the clip plays; the data gives no separate ask time.",
+ "examples": [
+  {
+   "title": "6Mlwg98IPh8: 'Did Brisbane just score?' — positive, answer at 151.16 s",
+   "video_ref": "trigger_clips/6Mlwg98IPh8_0.00_151.16.mp4 (FineVideo YouTube id 6Mlwg98IPh8)",
+   "duration_s": 151.16,
+   "clip": "samples/media/streamov-trigger_1.mp4",
+   "clip_offset_s": 131.16,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": null,
+     "lane": "question",
+     "text": "<video> Did Brisbane just score?"
+    },
+    {
+     "t": 151.16,
+     "te": null,
+     "lane": "answer",
+     "text": "<Yes> Yes, in another shocking turn of events, Jamie Maclaren from Brisbane Roar has scored, tying the game at four-four."
+    }
+   ],
+   "raw_format": "jsonl line",
+   "raw": {
+    "trigger_input_public.jsonl": {
+     "sample_idx": 187,
+     "video_uid": "6Mlwg98IPh8",
+     "label": 1,
+     "t": 151.16,
+     "actual_type": "positive",
+     "messages": [
+      {
+       "role": "user",
+       "content": "<video> Did Brisbane just score?"
+      },
+      {
+       "role": "assistant",
+       "content": "<Yes> Yes, in another shocking turn of events, Jamie Maclaren from Brisbane Roar has scored, tying the game at four-four."
+      }
+     ],
+     "videos": [
+      "trigger_clips/6Mlwg98IPh8_0.00_151.16.mp4"
+     ]
+    },
+    "train_trigger.jsonl": {
+     "sample_idx": 187,
+     "label": 1,
+     "trigger_time": 151.16,
+     "ref_assistant": "<Yes> Yes, in another shocking turn of events, Jamie Maclaren from Brisbane Roar has scored, tying the game at four-four."
+    }
+   }
+  },
+  {
+   "title": "2AgB4nPEuKw: Samsung example question — negative, stay silent (<No>) at 17.18 s",
+   "video_ref": "trigger_clips/2AgB4nPEuKw_0.00_17.182.mp4 (FineVideo YouTube id 2AgB4nPEuKw)",
+   "duration_s": 17.182,
+   "clip": "samples/media/streamov-trigger_2.mp4",
+   "clip_offset_s": 0.0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": null,
+     "lane": "question",
+     "text": "<video> What example is given involving Samsung and their products?"
+    },
+    {
+     "t": 17.182,
+     "te": null,
+     "lane": "silence",
+     "text": "<No>"
+    }
+   ],
+   "raw_format": "jsonl line",
+   "raw": {
+    "trigger_input_public.jsonl": {
+     "sample_idx": 2858,
+     "video_uid": "2AgB4nPEuKw",
+     "label": 0,
+     "t": 17.182,
+     "actual_type": "negative",
+     "messages": [
+      {
+       "role": "user",
+       "content": "<video> What example is given involving Samsung and their products?"
+      },
+      {
+       "role": "assistant",
+       "content": "<No>"
+      }
+     ],
+     "videos": [
+      "trigger_clips/2AgB4nPEuKw_0.00_17.182.mp4"
+     ]
+    },
+    "train_trigger.jsonl": {
+     "sample_idx": 2858,
+     "label": 0,
+     "trigger_time": 17.182,
+     "ref_assistant": "<No>"
+    }
+   }
+  }
+ ]
+}

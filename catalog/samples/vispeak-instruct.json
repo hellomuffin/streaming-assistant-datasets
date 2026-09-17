@@ -1,0 +1,148 @@
+{
+ "slug": "vispeak-instruct",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/fushh7/ViSpeak-Instruct annotations/wake_up_text_training_data_split.json",
+  "https://huggingface.co/datasets/fushh7/ViSpeak-Instruct annotations/interruption_text_training_data.json",
+  "https://huggingface.co/datasets/fushh7/ViSpeak-Instruct self_collected_data/20250211_envideo.zip (members 20250211_envideo/01_0001_woman_35_jilin_1.mp4, 20250211_envideo/03_0001_woman_35_jilin_1.mp4)"
+ ],
+ "access_used": "open download",
+ "note": "An example is one record: a clip of a recruited participant facing the camera plus a conversation list; each turn has a 'time' (s) and, for visually triggered or spoken turns, a 'timespan' [start,end] within which the turn falls. The trigger is the person's visual action (a wave to wake the assistant, a stop gesture to interrupt it); faces are blurred in the released videos. License CC-BY-NC-SA-4.0.",
+ "examples": [
+  {
+   "title": "01_0001 wake-up: participant waves, assistant greets unprompted, answers a spoken question, then closes the chat at ~13.5 s",
+   "video_ref": "20250211_envideo/01_0001_woman_35_jilin_1.mp4",
+   "duration_s": 17.58,
+   "clip": "samples/media/vispeak-instruct_1.mp4",
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 1.66,
+     "te": null,
+     "lane": "assistant",
+     "text": "Welcome! I hope I can help you find what you're looking for."
+    },
+    {
+     "t": 6.1,
+     "te": 7.58,
+     "lane": "user",
+     "text": "What is the capital of France?"
+    },
+    {
+     "t": 7.68,
+     "te": null,
+     "lane": "assistant",
+     "text": "The capital of France is Paris."
+    },
+    {
+     "t": 13.53,
+     "te": null,
+     "lane": "assistant",
+     "text": "Enjoyed our chat, let's do it again sometime!"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "video": "20250211_envideo/01_0001_woman_35_jilin_1.mp4",
+    "proactive": true,
+    "conversations": [
+     {
+      "from": "gpt",
+      "value": "Welcome! I hope I can help you find what you're looking for.",
+      "time": 1.664314000739817,
+      "timespan": [
+       0.0,
+       3.0
+      ]
+     },
+     {
+      "from": "human",
+      "value": "What is the capital of France?",
+      "time": 7.58,
+      "timespan": [
+       6.1,
+       7.58
+      ]
+     },
+     {
+      "from": "gpt",
+      "value": "The capital of France is Paris.",
+      "time": 7.68,
+      "timespan": [
+       7.68,
+       11.0
+      ]
+     },
+     {
+      "from": "gpt",
+      "value": "Enjoyed our chat, let's do it again sometime!",
+      "time": 13.533841265980518,
+      "timespan": [
+       11.1,
+       15.0
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "title": "03_0001 interruption: assistant starts a long list, participant gestures, target 'Stop' inside 7–9 s",
+   "video_ref": "20250211_envideo/03_0001_woman_35_jilin_1.mp4",
+   "duration_s": 10.5,
+   "clip": "samples/media/vispeak-instruct_2.mp4",
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 1.0,
+     "te": 6.2,
+     "lane": "user",
+     "text": "Generate a list of marketing strategies for promoting a new mobile application."
+    },
+    {
+     "t": 6.3,
+     "te": null,
+     "lane": "assistant",
+     "text": "Here is a list of marketing strategies you may consider for promoting a new mobile app:\n\n1. Submit the app to Apple, Android, and other app stores:\nSubmit your app to the major app stores to make it easily searchable and downloadable for users.\n\n2. Use social media to promote the app:\nCreate dedicated pages on social media platforms like Facebook, Twitter, Instagram, etc., to keep users updated with the latest news about the app and to promote the app through sharing.\n\n3. Partnership promotions:\nCollaborate with relevant industries or other apps for promotion, such as embedding ads in other apps or increasing exposure through joint campaigns.\n\n4. Use websites and blogs for promotion:\nPublish content about the app on official websites and blogs to inform users about its details and to attract external traffic.\n\n5. Online advertising:\nRun online ads, using advertising platforms like Google AdWords, Facebook Ads, etc., to promote the app.\n\n6. Organize events and promotional activities:\nHold various events and promotions, such as limited time offers and free giveaways, to attract users to download the app.\n\n7. Leverage media and review sites:\nContact media and review websites to invite them to review your app and promote it in their coverage.\n\n8. Utilize email marketing:\nBuild an email list to regularly send updates and special offers about the app to users, to increase user retention.\n\n9. Data analysis and optimization:\nRegularly analyze user data to understand their needs and preferences, continually optimize the app, and improve the user experience.\n\n10. Recommendation systems:\nSet up in-app re"
+    },
+    {
+     "t": 8.24,
+     "te": null,
+     "lane": "assistant",
+     "text": "Stop"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "video": "20250211_envideo/03_0001_woman_35_jilin_1.mp4",
+    "proactive": true,
+    "conversations": [
+     {
+      "from": "human",
+      "value": "Generate a list of marketing strategies for promoting a new mobile application.",
+      "time": 6.2,
+      "timespan": [
+       1.0,
+       6.2
+      ]
+     },
+     {
+      "from": "gpt",
+      "value": "Here is a list of marketing strategies you may consider for promoting a new mobile app:\n\n1. Submit the app to Apple, Android, and other app stores:\nSubmit your app to the major app stores to make it easily searchable and downloadable for users.\n\n2. Use social media to promote the app:\nCreate dedicated pages on social media platforms like Facebook, Twitter, Instagram, etc., to keep users updated with the latest news about the app and to promote the app through sharing.\n\n3. Partnership promotions:\nCollaborate with relevant industries or other apps for promotion, such as embedding ads in other apps or increasing exposure through joint campaigns.\n\n4. Use websites and blogs for promotion:\nPublish content about the app on official websites and blogs to inform users about its details and to attract external traffic.\n\n5. Online advertising:\nRun online ads, using advertising platforms like Google AdWords, Facebook Ads, etc., to promote the app.\n\n6. Organize events and promotional activities:\nHold various events and promotions, such as limited time offers and free giveaways, to attract users to download the app.\n\n7. Leverage media and review sites:\nContact media and review websites to invite them to review your app and promote it in their coverage.\n\n8. Utilize email marketing:\nBuild an email list to regularly send updates and special offers about the app to users, to increase user retention.\n\n9. Data analysis and optimization:\nRegularly analyze user data to understand their needs and preferences, continually optimize the app, and improve the user experience.\n\n10. Recommendation systems:\nSet up in-app re",
+      "time": 6.3
+     },
+     {
+      "from": "gpt",
+      "value": "Stop",
+      "time": 8.237758724559505,
+      "timespan": [
+       7.0,
+       9.0
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

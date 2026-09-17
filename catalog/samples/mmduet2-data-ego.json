@@ -1,0 +1,1901 @@
+{
+ "slug": "mmduet2-data-ego",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/wangyueqian/MMDuet2-data/resolve/main/sft/egoexo4d-half_multi_half_single_question-2_sec_per_frame-sft.jsonl",
+  "https://huggingface.co/datasets/wangyueqian/MMDuet2-data/resolve/main/sft/egoexolearn-half_multi_half_single_question-2_sec_per_frame-sft.jsonl",
+  "https://huggingface.co/datasets/wangyueqian/MMDuet2-data/resolve/main/rl/live_whisperx-egoexo4d-egoexolearn0913-half_multi_half_single_question-2_sec_per_frame-20s_seg_as_example-0714-max_90_frames-train.parquet"
+ ],
+ "access_used": "open download",
+ "note": "One example = one SFT dialogue on a 180 s segment of an egocentric video (Ego-Exo4D Aria view or EgoExoLearn): questions are asked mid-stream and the assistant either answers with what appeared since its last reply or outputs \"NO REPLY\". SFT records carry no timestamps; each user turn '<image><image>' adds two frames sampled every 2 s, so a turn's time is the second of its last frame, plus the segment start read from the frame path (seconds of the original video). Videos are not in the repo (Ego-Exo4D licence, EgoExoLearn terms), so no clips.",
+ "examples": [
+  {
+   "title": "Ego-Exo4D take 719fe670, 360–540 s: cooking noodles — 3 questions, 7 answers, many NO REPLY turns",
+   "video_ref": "Ego-Exo4D take_uid 719fe670-72a7-4da9-be7d-0bd2afb742ae, segment 360s_540s (Aria ego frames)",
+   "duration_s": 175,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 362,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 366,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 370,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 374,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 378,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 382,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 386,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 390,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 394,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 398,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 402,
+     "te": null,
+     "lane": "question",
+     "text": "What ingredients are added and where?"
+    },
+    {
+     "t": 402,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 406,
+     "te": null,
+     "lane": "answer",
+     "text": "Dried herbs are added to a bowl."
+    },
+    {
+     "t": 410,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 414,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 418,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 422,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 426,
+     "te": null,
+     "lane": "answer",
+     "text": "Turmeric powder is added to a bowl."
+    },
+    {
+     "t": 426,
+     "te": null,
+     "lane": "question",
+     "text": "What cooking tools are used and for what?"
+    },
+    {
+     "t": 426,
+     "te": null,
+     "lane": "answer",
+     "text": "A bowl is used for stirring the mix of ingredients, adding dried herbs, and adding turmeric powder."
+    },
+    {
+     "t": 430,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 434,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 438,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 442,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 446,
+     "te": null,
+     "lane": "answer",
+     "text": "A pot is used for stirring noodles with a spatula."
+    },
+    {
+     "t": 450,
+     "te": null,
+     "lane": "answer",
+     "text": "A skillet is retrieved from the cabinet."
+    },
+    {
+     "t": 454,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 458,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 462,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 466,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 470,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 474,
+     "te": null,
+     "lane": "answer",
+     "text": "A skillet is used for adding oil."
+    },
+    {
+     "t": 478,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 482,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 486,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 490,
+     "te": null,
+     "lane": "question",
+     "text": "What is being stirred and where?"
+    },
+    {
+     "t": 490,
+     "te": null,
+     "lane": "answer",
+     "text": "A mix of ingredients is being stirred in a bowl, and noodles are being stirred in a pot."
+    },
+    {
+     "t": 494,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 498,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 502,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 506,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 510,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 514,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 518,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 522,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 526,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 530,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 534,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    }
+   ],
+   "raw_format": "jsonl line",
+   "raw": {
+    "messages": [
+     {
+      "role": "system",
+      "content": "You are a helpful assistant. Your task is to answer questions based on continuously incoming video frames. Your responses should include information from the video since your last reply (if any). If the information in this segment of the video cannot answer the question, output \"NO REPLY\"."
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>What ingredients are added and where?"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "Dried herbs are added to a bowl."
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "Turmeric powder is added to a bowl."
+     },
+     {
+      "role": "user",
+      "content": "What cooking tools are used and for what?"
+     },
+     {
+      "role": "assistant",
+      "content": "A bowl is used for stirring the mix of ingredients, adding dried herbs, and adding turmeric powder."
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "A pot is used for stirring noodles with a spatula."
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "A skillet is retrieved from the cabinet."
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "A skillet is used for adding oil."
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>What is being stirred and where?"
+     },
+     {
+      "role": "assistant",
+      "content": "A mix of ingredients is being stirred in a bowl, and noodles are being stirred in a pot."
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     }
+    ],
+    "images": [
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000001.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000003.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000005.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000007.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000009.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000011.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000013.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000015.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000017.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000019.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000021.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000023.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000025.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000027.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000029.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000031.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000033.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000035.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000037.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000039.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000041.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000043.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000045.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000047.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000049.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000051.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000053.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000055.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000057.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000059.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000061.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000063.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000065.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000067.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000069.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000071.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000073.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000075.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000077.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000079.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000081.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000083.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000085.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000087.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000089.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000091.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000093.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000095.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000097.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000099.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000101.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000103.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000105.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000107.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000109.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000111.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000113.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000115.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000117.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000119.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000121.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000123.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000125.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000127.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000129.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000131.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000133.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000135.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000137.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000139.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000141.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000143.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000145.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000147.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000149.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000151.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000153.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000155.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000157.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000159.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000161.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000163.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000165.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000167.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000169.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000171.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000173.jpg"
+     },
+     {
+      "path": "./data/datasets/Ego-Exo4D/frames/719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s/000175.jpg"
+     }
+    ],
+    "metadata": {
+     "video_id": "719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s",
+     "question_id": "egoexo4d-719fe670-72a7-4da9-be7d-0bd2afb742ae-360s_540s.mp4"
+    }
+   }
+  },
+  {
+   "title": "EgoExoLearn bee96bd6, 360–540 s: chopping ginger and adding cooking wine — 3 questions, 8 answers",
+   "video_ref": "EgoExoLearn video bee96bd6-ac78-11ee-819f-80615f12b59e, segment 360s_540s",
+   "duration_s": 175,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 362,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 366,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 370,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 374,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 378,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 382,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 386,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 390,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 392,
+     "te": null,
+     "lane": "question",
+     "text": "What actions are taken with ginger?"
+    },
+    {
+     "t": 392,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 396,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 400,
+     "te": null,
+     "lane": "answer",
+     "text": "Pick up ginger pieces."
+    },
+    {
+     "t": 404,
+     "te": null,
+     "lane": "answer",
+     "text": "Place the ginger pieces on the cutting board."
+    },
+    {
+     "t": 408,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 412,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 416,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 420,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 424,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 428,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 432,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 436,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 440,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 444,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 448,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 452,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 456,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 460,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 464,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 466,
+     "te": null,
+     "lane": "question",
+     "text": "What actions are performed with the kitchen knife?"
+    },
+    {
+     "t": 466,
+     "te": null,
+     "lane": "answer",
+     "text": "Pick up a kitchen knife."
+    },
+    {
+     "t": 470,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 474,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 478,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 482,
+     "te": null,
+     "lane": "answer",
+     "text": "Chop the onion, ginger, and garlic onto the cutting board with the kitchen knife."
+    },
+    {
+     "t": 486,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 490,
+     "te": null,
+     "lane": "answer",
+     "text": "Place the knife onto the cutting board."
+    },
+    {
+     "t": 490,
+     "te": null,
+     "lane": "question",
+     "text": "What steps involve cooking wine?"
+    },
+    {
+     "t": 490,
+     "te": null,
+     "lane": "answer",
+     "text": "Put the cooking wine on the table."
+    },
+    {
+     "t": 494,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 498,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 502,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 506,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 510,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 514,
+     "te": null,
+     "lane": "answer",
+     "text": "Pick up the cooking wine bottle and twist off the lid."
+    },
+    {
+     "t": 518,
+     "te": null,
+     "lane": "answer",
+     "text": "Pour an appropriate amount of cooking wine into the pot."
+    },
+    {
+     "t": 522,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 526,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 530,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 534,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    }
+   ],
+   "raw_format": "jsonl line",
+   "raw": {
+    "messages": [
+     {
+      "role": "system",
+      "content": "You are a helpful assistant. Your task is to answer questions based on continuously incoming video frames. Your responses should include information from the video since your last reply (if any). If the information in this segment of the video cannot answer the question, output \"NO REPLY\"."
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image>What actions are taken with ginger?"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "Pick up ginger pieces."
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "Place the ginger pieces on the cutting board."
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image>What actions are performed with the kitchen knife?"
+     },
+     {
+      "role": "assistant",
+      "content": "Pick up a kitchen knife."
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "Chop the onion, ginger, and garlic onto the cutting board with the kitchen knife."
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "Place the knife onto the cutting board."
+     },
+     {
+      "role": "user",
+      "content": "What steps involve cooking wine?"
+     },
+     {
+      "role": "assistant",
+      "content": "Put the cooking wine on the table."
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "Pick up the cooking wine bottle and twist off the lid."
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "Pour an appropriate amount of cooking wine into the pot."
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     }
+    ],
+    "images": [
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000001.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000003.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000005.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000007.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000009.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000011.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000013.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000015.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000017.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000019.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000021.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000023.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000025.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000027.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000029.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000031.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000033.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000035.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000037.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000039.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000041.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000043.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000045.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000047.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000049.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000051.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000053.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000055.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000057.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000059.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000061.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000063.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000065.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000067.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000069.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000071.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000073.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000075.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000077.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000079.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000081.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000083.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000085.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000087.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000089.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000091.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000093.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000095.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000097.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000099.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000101.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000103.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000105.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000107.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000109.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000111.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000113.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000115.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000117.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000119.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000121.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000123.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000125.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000127.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000129.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000131.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000133.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000135.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000137.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000139.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000141.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000143.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000145.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000147.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000149.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000151.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000153.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000155.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000157.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000159.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000161.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000163.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000165.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000167.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000169.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000171.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000173.jpg"
+     },
+     {
+      "path": "./data/datasets/EgoExoLearn/frames/bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s/000175.jpg"
+     }
+    ],
+    "metadata": {
+     "video_id": "bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s",
+     "question_id": "egoexolearn-bee96bd6-ac78-11ee-819f-80615f12b59e-360s_540s.mp4"
+    }
+   }
+  }
+ ]
+}

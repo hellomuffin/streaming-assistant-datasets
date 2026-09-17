@@ -1,0 +1,1165 @@
+{
+ "slug": "coin",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://github.com/coin-dataset/annotations/blob/master/COIN.json"
+ ],
+ "access_used": "open download",
+ "note": "An example is one YouTube video's COIN entry: ordered step segments with free-text step labels (id = global step id), plus the start/end of the task-relevant span. Videos are YouTube (authors' copy needs an emailed licence), so no clip.",
+ "examples": [
+  {
+   "title": "3GKcUMSNMBk: PractiseWeightLift (training) — 51 steps",
+   "video_ref": "https://www.youtube.com/embed/3GKcUMSNMBk",
+   "duration_s": 202.106478,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 3.0,
+     "lane": "step",
+     "text": "lift the barbell directly over the head"
+    },
+    {
+     "t": 4.0,
+     "te": 7.0,
+     "lane": "step",
+     "text": "stand up with straight legs"
+    },
+    {
+     "t": 8.0,
+     "te": 9.0,
+     "lane": "step",
+     "text": "put down the barbell"
+    },
+    {
+     "t": 15.0,
+     "te": 17.0,
+     "lane": "step",
+     "text": "lift the barbell directly over the head"
+    },
+    {
+     "t": 17.0,
+     "te": 18.0,
+     "lane": "step",
+     "text": "stand up with straight legs"
+    },
+    {
+     "t": 19.0,
+     "te": 22.0,
+     "lane": "step",
+     "text": "lift the barbell directly over the head"
+    },
+    {
+     "t": 22.0,
+     "te": 23.0,
+     "lane": "step",
+     "text": "stand up with straight legs"
+    },
+    {
+     "t": 24.0,
+     "te": 27.0,
+     "lane": "step",
+     "text": "lift the barbell directly over the head"
+    },
+    {
+     "t": 29.0,
+     "te": 31.0,
+     "lane": "step",
+     "text": "lift the barbell directly over the head"
+    },
+    {
+     "t": 41.0,
+     "te": 43.0,
+     "lane": "step",
+     "text": "lift the barbell directly over the head"
+    },
+    {
+     "t": 46.0,
+     "te": 48.0,
+     "lane": "step",
+     "text": "lift the barbell directly over the head"
+    },
+    {
+     "t": 49.0,
+     "te": 50.0,
+     "lane": "step",
+     "text": "stand up with straight legs"
+    },
+    {
+     "t": 51.0,
+     "te": 53.0,
+     "lane": "step",
+     "text": "lift the barbell directly over the head"
+    },
+    {
+     "t": 56.0,
+     "te": 57.0,
+     "lane": "step",
+     "text": "put down the barbell"
+    },
+    {
+     "t": 58.0,
+     "te": 59.0,
+     "lane": "step",
+     "text": "squat and hold the barbell"
+    },
+    {
+     "t": 60.0,
+     "te": 62.0,
+     "lane": "step",
+     "text": "lift the barbell directly over the head"
+    },
+    {
+     "t": 62.0,
+     "te": 63.0,
+     "lane": "step",
+     "text": "stand up with straight legs"
+    },
+    {
+     "t": 64.0,
+     "te": 65.0,
+     "lane": "step",
+     "text": "put down the barbell"
+    },
+    {
+     "t": 66.0,
+     "te": 68.0,
+     "lane": "step",
+     "text": "lift the barbell directly over the head"
+    },
+    {
+     "t": 73.0,
+     "te": 75.0,
+     "lane": "step",
+     "text": "lift the barbell directly over the head"
+    },
+    {
+     "t": 75.0,
+     "te": 76.0,
+     "lane": "step",
+     "text": "stand up with straight legs"
+    },
+    {
+     "t": 77.0,
+     "te": 80.0,
+     "lane": "step",
+     "text": "squat and hold the barbell"
+    },
+    {
+     "t": 81.0,
+     "te": 83.0,
+     "lane": "step",
+     "text": "lift the barbell directly over the head"
+    },
+    {
+     "t": 83.0,
+     "te": 84.0,
+     "lane": "step",
+     "text": "put down the barbell"
+    },
+    {
+     "t": 85.0,
+     "te": 87.0,
+     "lane": "step",
+     "text": "pull the barbell to the chin"
+    },
+    {
+     "t": 88.0,
+     "te": 95.0,
+     "lane": "step",
+     "text": "lift the barbell from the chin over the head"
+    },
+    {
+     "t": 96.0,
+     "te": 98.0,
+     "lane": "step",
+     "text": "stand up with straight legs"
+    },
+    {
+     "t": 100.0,
+     "te": 102.0,
+     "lane": "step",
+     "text": "pull the barbell to the chin"
+    },
+    {
+     "t": 106.0,
+     "te": 107.0,
+     "lane": "step",
+     "text": "squat and hold the barbell"
+    },
+    {
+     "t": 108.0,
+     "te": 110.0,
+     "lane": "step",
+     "text": "pull the barbell to the chin"
+    },
+    {
+     "t": 114.0,
+     "te": 118.0,
+     "lane": "step",
+     "text": "squat and hold the barbell"
+    },
+    {
+     "t": 119.0,
+     "te": 122.0,
+     "lane": "step",
+     "text": "pull the barbell to the chin"
+    },
+    {
+     "t": 125.0,
+     "te": 126.0,
+     "lane": "step",
+     "text": "put down the barbell"
+    },
+    {
+     "t": 128.0,
+     "te": 131.0,
+     "lane": "step",
+     "text": "pull the barbell to the chin"
+    },
+    {
+     "t": 132.0,
+     "te": 134.0,
+     "lane": "step",
+     "text": "lift the barbell from the chin over the head"
+    },
+    {
+     "t": 135.0,
+     "te": 140.0,
+     "lane": "step",
+     "text": "lift the barbell directly over the head"
+    },
+    {
+     "t": 143.0,
+     "te": 154.0,
+     "lane": "step",
+     "text": "pull the barbell to the chin"
+    },
+    {
+     "t": 158.0,
+     "te": 163.0,
+     "lane": "step",
+     "text": "pull the barbell to the chin"
+    },
+    {
+     "t": 164.0,
+     "te": 165.0,
+     "lane": "step",
+     "text": "squat and hold the barbell"
+    },
+    {
+     "t": 166.0,
+     "te": 168.0,
+     "lane": "step",
+     "text": "pull the barbell to the chin"
+    },
+    {
+     "t": 169.0,
+     "te": 171.0,
+     "lane": "step",
+     "text": "pull the barbell to the chin"
+    },
+    {
+     "t": 173.0,
+     "te": 174.0,
+     "lane": "step",
+     "text": "put down the barbell"
+    },
+    {
+     "t": 175.0,
+     "te": 177.0,
+     "lane": "step",
+     "text": "squat and hold the barbell"
+    },
+    {
+     "t": 178.0,
+     "te": 180.0,
+     "lane": "step",
+     "text": "pull the barbell to the chin"
+    },
+    {
+     "t": 182.0,
+     "te": 183.0,
+     "lane": "step",
+     "text": "put down the barbell"
+    },
+    {
+     "t": 185.0,
+     "te": 187.0,
+     "lane": "step",
+     "text": "pull the barbell to the chin"
+    },
+    {
+     "t": 188.0,
+     "te": 190.0,
+     "lane": "step",
+     "text": "lift the barbell from the chin over the head"
+    },
+    {
+     "t": 191.0,
+     "te": 193.0,
+     "lane": "step",
+     "text": "pull the barbell to the chin"
+    },
+    {
+     "t": 194.0,
+     "te": 197.0,
+     "lane": "step",
+     "text": "lift the barbell from the chin over the head"
+    },
+    {
+     "t": 198.0,
+     "te": 199.0,
+     "lane": "step",
+     "text": "stand up with straight legs"
+    },
+    {
+     "t": 200.0,
+     "te": 201.0,
+     "lane": "step",
+     "text": "put down the barbell"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "3GKcUMSNMBk": {
+     "recipe_type": 178,
+     "annotation": [
+      {
+       "id": "458",
+       "segment": [
+        0.0,
+        3.0
+       ],
+       "label": "lift the barbell directly over the head"
+      },
+      {
+       "id": "457",
+       "segment": [
+        4.0,
+        7.0
+       ],
+       "label": "stand up with straight legs"
+      },
+      {
+       "id": "459",
+       "segment": [
+        8.0,
+        9.0
+       ],
+       "label": "put down the barbell"
+      },
+      {
+       "id": "458",
+       "segment": [
+        15.0,
+        17.0
+       ],
+       "label": "lift the barbell directly over the head"
+      },
+      {
+       "id": "457",
+       "segment": [
+        17.0,
+        18.0
+       ],
+       "label": "stand up with straight legs"
+      },
+      {
+       "id": "458",
+       "segment": [
+        19.0,
+        22.0
+       ],
+       "label": "lift the barbell directly over the head"
+      },
+      {
+       "id": "457",
+       "segment": [
+        22.0,
+        23.0
+       ],
+       "label": "stand up with straight legs"
+      },
+      {
+       "id": "458",
+       "segment": [
+        24.0,
+        27.0
+       ],
+       "label": "lift the barbell directly over the head"
+      },
+      {
+       "id": "458",
+       "segment": [
+        29.0,
+        31.0
+       ],
+       "label": "lift the barbell directly over the head"
+      },
+      {
+       "id": "458",
+       "segment": [
+        41.0,
+        43.0
+       ],
+       "label": "lift the barbell directly over the head"
+      },
+      {
+       "id": "458",
+       "segment": [
+        46.0,
+        48.0
+       ],
+       "label": "lift the barbell directly over the head"
+      },
+      {
+       "id": "457",
+       "segment": [
+        49.0,
+        50.0
+       ],
+       "label": "stand up with straight legs"
+      },
+      {
+       "id": "458",
+       "segment": [
+        51.0,
+        53.0
+       ],
+       "label": "lift the barbell directly over the head"
+      },
+      {
+       "id": "459",
+       "segment": [
+        56.0,
+        57.0
+       ],
+       "label": "put down the barbell"
+      },
+      {
+       "id": "454",
+       "segment": [
+        58.0,
+        59.0
+       ],
+       "label": "squat and hold the barbell"
+      },
+      {
+       "id": "458",
+       "segment": [
+        60.0,
+        62.0
+       ],
+       "label": "lift the barbell directly over the head"
+      },
+      {
+       "id": "457",
+       "segment": [
+        62.0,
+        63.0
+       ],
+       "label": "stand up with straight legs"
+      },
+      {
+       "id": "459",
+       "segment": [
+        64.0,
+        65.0
+       ],
+       "label": "put down the barbell"
+      },
+      {
+       "id": "458",
+       "segment": [
+        66.0,
+        68.0
+       ],
+       "label": "lift the barbell directly over the head"
+      },
+      {
+       "id": "458",
+       "segment": [
+        73.0,
+        75.0
+       ],
+       "label": "lift the barbell directly over the head"
+      },
+      {
+       "id": "457",
+       "segment": [
+        75.0,
+        76.0
+       ],
+       "label": "stand up with straight legs"
+      },
+      {
+       "id": "454",
+       "segment": [
+        77.0,
+        80.0
+       ],
+       "label": "squat and hold the barbell"
+      },
+      {
+       "id": "458",
+       "segment": [
+        81.0,
+        83.0
+       ],
+       "label": "lift the barbell directly over the head"
+      },
+      {
+       "id": "459",
+       "segment": [
+        83.0,
+        84.0
+       ],
+       "label": "put down the barbell"
+      },
+      {
+       "id": "455",
+       "segment": [
+        85.0,
+        87.0
+       ],
+       "label": "pull the barbell to the chin"
+      },
+      {
+       "id": "456",
+       "segment": [
+        88.0,
+        95.0
+       ],
+       "label": "lift the barbell from the chin over the head"
+      },
+      {
+       "id": "457",
+       "segment": [
+        96.0,
+        98.0
+       ],
+       "label": "stand up with straight legs"
+      },
+      {
+       "id": "455",
+       "segment": [
+        100.0,
+        102.0
+       ],
+       "label": "pull the barbell to the chin"
+      },
+      {
+       "id": "454",
+       "segment": [
+        106.0,
+        107.0
+       ],
+       "label": "squat and hold the barbell"
+      },
+      {
+       "id": "455",
+       "segment": [
+        108.0,
+        110.0
+       ],
+       "label": "pull the barbell to the chin"
+      },
+      {
+       "id": "454",
+       "segment": [
+        114.0,
+        118.0
+       ],
+       "label": "squat and hold the barbell"
+      },
+      {
+       "id": "455",
+       "segment": [
+        119.0,
+        122.0
+       ],
+       "label": "pull the barbell to the chin"
+      },
+      {
+       "id": "459",
+       "segment": [
+        125.0,
+        126.0
+       ],
+       "label": "put down the barbell"
+      },
+      {
+       "id": "455",
+       "segment": [
+        128.0,
+        131.0
+       ],
+       "label": "pull the barbell to the chin"
+      },
+      {
+       "id": "456",
+       "segment": [
+        132.0,
+        134.0
+       ],
+       "label": "lift the barbell from the chin over the head"
+      },
+      {
+       "id": "458",
+       "segment": [
+        135.0,
+        140.0
+       ],
+       "label": "lift the barbell directly over the head"
+      },
+      {
+       "id": "455",
+       "segment": [
+        143.0,
+        154.0
+       ],
+       "label": "pull the barbell to the chin"
+      },
+      {
+       "id": "455",
+       "segment": [
+        158.0,
+        163.0
+       ],
+       "label": "pull the barbell to the chin"
+      },
+      {
+       "id": "454",
+       "segment": [
+        164.0,
+        165.0
+       ],
+       "label": "squat and hold the barbell"
+      },
+      {
+       "id": "455",
+       "segment": [
+        166.0,
+        168.0
+       ],
+       "label": "pull the barbell to the chin"
+      },
+      {
+       "id": "455",
+       "segment": [
+        169.0,
+        171.0
+       ],
+       "label": "pull the barbell to the chin"
+      },
+      {
+       "id": "459",
+       "segment": [
+        173.0,
+        174.0
+       ],
+       "label": "put down the barbell"
+      },
+      {
+       "id": "454",
+       "segment": [
+        175.0,
+        177.0
+       ],
+       "label": "squat and hold the barbell"
+      },
+      {
+       "id": "455",
+       "segment": [
+        178.0,
+        180.0
+       ],
+       "label": "pull the barbell to the chin"
+      },
+      {
+       "id": "459",
+       "segment": [
+        182.0,
+        183.0
+       ],
+       "label": "put down the barbell"
+      },
+      {
+       "id": "455",
+       "segment": [
+        185.0,
+        187.0
+       ],
+       "label": "pull the barbell to the chin"
+      },
+      {
+       "id": "456",
+       "segment": [
+        188.0,
+        190.0
+       ],
+       "label": "lift the barbell from the chin over the head"
+      },
+      {
+       "id": "455",
+       "segment": [
+        191.0,
+        193.0
+       ],
+       "label": "pull the barbell to the chin"
+      },
+      {
+       "id": "456",
+       "segment": [
+        194.0,
+        197.0
+       ],
+       "label": "lift the barbell from the chin over the head"
+      },
+      {
+       "id": "457",
+       "segment": [
+        198.0,
+        199.0
+       ],
+       "label": "stand up with straight legs"
+      },
+      {
+       "id": "459",
+       "segment": [
+        200.0,
+        201.0
+       ],
+       "label": "put down the barbell"
+      }
+     ],
+     "video_url": "https://www.youtube.com/embed/3GKcUMSNMBk",
+     "start": 0,
+     "end": 202.106478,
+     "duration": 202.106478,
+     "class": "PractiseWeightLift",
+     "subset": "training"
+    }
+   }
+  },
+  {
+   "title": "57JC_8siTPw: ThrowHammer (testing) — 28 steps",
+   "video_ref": "https://www.youtube.com/embed/57JC_8siTPw",
+   "duration_s": 144.868333,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 3.0,
+     "lane": "step",
+     "text": "pre-swing"
+    },
+    {
+     "t": 4.0,
+     "te": 6.0,
+     "lane": "step",
+     "text": "rotate body and accelerate the hammer"
+    },
+    {
+     "t": 6.0,
+     "te": 8.0,
+     "lane": "step",
+     "text": "throw the hammer out"
+    },
+    {
+     "t": 16.0,
+     "te": 18.0,
+     "lane": "step",
+     "text": "pre-swing"
+    },
+    {
+     "t": 19.0,
+     "te": 22.0,
+     "lane": "step",
+     "text": "rotate body and accelerate the hammer"
+    },
+    {
+     "t": 22.0,
+     "te": 23.0,
+     "lane": "step",
+     "text": "throw the hammer out"
+    },
+    {
+     "t": 31.0,
+     "te": 37.0,
+     "lane": "step",
+     "text": "rotate body and accelerate the hammer"
+    },
+    {
+     "t": 37.0,
+     "te": 38.0,
+     "lane": "step",
+     "text": "throw the hammer out"
+    },
+    {
+     "t": 44.0,
+     "te": 46.0,
+     "lane": "step",
+     "text": "pre-swing"
+    },
+    {
+     "t": 47.0,
+     "te": 50.0,
+     "lane": "step",
+     "text": "rotate body and accelerate the hammer"
+    },
+    {
+     "t": 59.0,
+     "te": 60.0,
+     "lane": "step",
+     "text": "pre-swing"
+    },
+    {
+     "t": 61.0,
+     "te": 62.0,
+     "lane": "step",
+     "text": "rotate body and accelerate the hammer"
+    },
+    {
+     "t": 62.0,
+     "te": 63.0,
+     "lane": "step",
+     "text": "throw the hammer out"
+    },
+    {
+     "t": 70.0,
+     "te": 74.0,
+     "lane": "step",
+     "text": "pre-swing"
+    },
+    {
+     "t": 75.0,
+     "te": 77.0,
+     "lane": "step",
+     "text": "rotate body and accelerate the hammer"
+    },
+    {
+     "t": 77.0,
+     "te": 78.0,
+     "lane": "step",
+     "text": "throw the hammer out"
+    },
+    {
+     "t": 87.0,
+     "te": 91.0,
+     "lane": "step",
+     "text": "pre-swing"
+    },
+    {
+     "t": 92.0,
+     "te": 94.0,
+     "lane": "step",
+     "text": "rotate body and accelerate the hammer"
+    },
+    {
+     "t": 94.0,
+     "te": 95.0,
+     "lane": "step",
+     "text": "throw the hammer out"
+    },
+    {
+     "t": 103.0,
+     "te": 108.0,
+     "lane": "step",
+     "text": "pre-swing"
+    },
+    {
+     "t": 109.0,
+     "te": 110.0,
+     "lane": "step",
+     "text": "rotate body and accelerate the hammer"
+    },
+    {
+     "t": 110.0,
+     "te": 111.0,
+     "lane": "step",
+     "text": "throw the hammer out"
+    },
+    {
+     "t": 120.0,
+     "te": 122.0,
+     "lane": "step",
+     "text": "pre-swing"
+    },
+    {
+     "t": 123.0,
+     "te": 126.0,
+     "lane": "step",
+     "text": "rotate body and accelerate the hammer"
+    },
+    {
+     "t": 126.0,
+     "te": 127.0,
+     "lane": "step",
+     "text": "throw the hammer out"
+    },
+    {
+     "t": 133.0,
+     "te": 135.0,
+     "lane": "step",
+     "text": "pre-swing"
+    },
+    {
+     "t": 136.0,
+     "te": 138.0,
+     "lane": "step",
+     "text": "rotate body and accelerate the hammer"
+    },
+    {
+     "t": 138.0,
+     "te": 139.0,
+     "lane": "step",
+     "text": "throw the hammer out"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "57JC_8siTPw": {
+     "recipe_type": 38,
+     "annotation": [
+      {
+       "id": "776",
+       "segment": [
+        0.0,
+        3.0
+       ],
+       "label": "pre-swing"
+      },
+      {
+       "id": "777",
+       "segment": [
+        4.0,
+        6.0
+       ],
+       "label": "rotate body and accelerate the hammer"
+      },
+      {
+       "id": "778",
+       "segment": [
+        6.0,
+        8.0
+       ],
+       "label": "throw the hammer out"
+      },
+      {
+       "id": "776",
+       "segment": [
+        16.0,
+        18.0
+       ],
+       "label": "pre-swing"
+      },
+      {
+       "id": "777",
+       "segment": [
+        19.0,
+        22.0
+       ],
+       "label": "rotate body and accelerate the hammer"
+      },
+      {
+       "id": "778",
+       "segment": [
+        22.0,
+        23.0
+       ],
+       "label": "throw the hammer out"
+      },
+      {
+       "id": "777",
+       "segment": [
+        31.0,
+        37.0
+       ],
+       "label": "rotate body and accelerate the hammer"
+      },
+      {
+       "id": "778",
+       "segment": [
+        37.0,
+        38.0
+       ],
+       "label": "throw the hammer out"
+      },
+      {
+       "id": "776",
+       "segment": [
+        44.0,
+        46.0
+       ],
+       "label": "pre-swing"
+      },
+      {
+       "id": "777",
+       "segment": [
+        47.0,
+        50.0
+       ],
+       "label": "rotate body and accelerate the hammer"
+      },
+      {
+       "id": "776",
+       "segment": [
+        59.0,
+        60.0
+       ],
+       "label": "pre-swing"
+      },
+      {
+       "id": "777",
+       "segment": [
+        61.0,
+        62.0
+       ],
+       "label": "rotate body and accelerate the hammer"
+      },
+      {
+       "id": "778",
+       "segment": [
+        62.0,
+        63.0
+       ],
+       "label": "throw the hammer out"
+      },
+      {
+       "id": "776",
+       "segment": [
+        70.0,
+        74.0
+       ],
+       "label": "pre-swing"
+      },
+      {
+       "id": "777",
+       "segment": [
+        75.0,
+        77.0
+       ],
+       "label": "rotate body and accelerate the hammer"
+      },
+      {
+       "id": "778",
+       "segment": [
+        77.0,
+        78.0
+       ],
+       "label": "throw the hammer out"
+      },
+      {
+       "id": "776",
+       "segment": [
+        87.0,
+        91.0
+       ],
+       "label": "pre-swing"
+      },
+      {
+       "id": "777",
+       "segment": [
+        92.0,
+        94.0
+       ],
+       "label": "rotate body and accelerate the hammer"
+      },
+      {
+       "id": "778",
+       "segment": [
+        94.0,
+        95.0
+       ],
+       "label": "throw the hammer out"
+      },
+      {
+       "id": "776",
+       "segment": [
+        103.0,
+        108.0
+       ],
+       "label": "pre-swing"
+      },
+      {
+       "id": "777",
+       "segment": [
+        109.0,
+        110.0
+       ],
+       "label": "rotate body and accelerate the hammer"
+      },
+      {
+       "id": "778",
+       "segment": [
+        110.0,
+        111.0
+       ],
+       "label": "throw the hammer out"
+      },
+      {
+       "id": "776",
+       "segment": [
+        120.0,
+        122.0
+       ],
+       "label": "pre-swing"
+      },
+      {
+       "id": "777",
+       "segment": [
+        123.0,
+        126.0
+       ],
+       "label": "rotate body and accelerate the hammer"
+      },
+      {
+       "id": "778",
+       "segment": [
+        126.0,
+        127.0
+       ],
+       "label": "throw the hammer out"
+      },
+      {
+       "id": "776",
+       "segment": [
+        133.0,
+        135.0
+       ],
+       "label": "pre-swing"
+      },
+      {
+       "id": "777",
+       "segment": [
+        136.0,
+        138.0
+       ],
+       "label": "rotate body and accelerate the hammer"
+      },
+      {
+       "id": "778",
+       "segment": [
+        138.0,
+        139.0
+       ],
+       "label": "throw the hammer out"
+      }
+     ],
+     "video_url": "https://www.youtube.com/embed/57JC_8siTPw",
+     "start": 0,
+     "end": 140.32284942134564,
+     "duration": 144.868333,
+     "class": "ThrowHammer",
+     "subset": "testing"
+    }
+   }
+  }
+ ]
+}

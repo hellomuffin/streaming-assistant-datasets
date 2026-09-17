@@ -1,0 +1,1431 @@
+{
+ "slug": "procel",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://drive.google.com/file/d/1b8PoZlYeNMP3PieJ3_80KkeibaCmmljS/view (ProceL_dataset.zip: make_coffee/, jump_car/ readme.txt + data.mat)"
+ ],
+ "access_used": "open download",
+ "note": "An example is one video of a ProceL task: key_steps_time[j] is the span of grammar[j] (an empty array = step absent), plus ASR-style narration lines with times and superpixel-like segment boundaries. Times in data.mat are relative to the trimmed span given by the readme's start/end columns (segment_time ends at end−start); the timeline adds the start offset to give original-YouTube seconds, and duration_s is the trimmed span. Videos are YouTube-only, so no clip.",
+ "examples": [
+  {
+   "title": "coffee_0001: make coffee — 10 of 12 key steps present, 61 non-empty narration lines",
+   "video_ref": "https://www.youtube.com/watch?v=fRdCic2f7PI",
+   "duration_s": 290.0,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 52.1,
+     "te": 58.38,
+     "lane": "narration",
+     "text": "First thing we're gonna do is take out the filter. set that aside. we're gonna fill up the water."
+    },
+    {
+     "t": 58.38,
+     "te": 62.72,
+     "lane": "narration",
+     "text": "so we are gonna be using three hundred forty milliliters of water"
+    },
+    {
+     "t": 59.27,
+     "te": 66.18,
+     "lane": "step",
+     "text": "FILL WATER"
+    },
+    {
+     "t": 62.72,
+     "te": 66.24,
+     "lane": "narration",
+     "text": "on this particular moka pot. that just comes"
+    },
+    {
+     "t": 66.24,
+     "te": 69.25,
+     "lane": "narration",
+     "text": "right under the released valve"
+    },
+    {
+     "t": 69.25,
+     "te": 75.95,
+     "lane": "narration",
+     "text": "that you kind of see on the outside."
+    },
+    {
+     "t": 75.95,
+     "te": 80.2,
+     "lane": "narration",
+     "text": "now that we have that set,"
+    },
+    {
+     "t": 80.2,
+     "te": 83.48,
+     "lane": "narration",
+     "text": "we are just gonna set that water"
+    },
+    {
+     "t": 83.48,
+     "te": 87.9,
+     "lane": "narration",
+     "text": "that sits at the base aside."
+    },
+    {
+     "t": 87.9,
+     "te": 92.33,
+     "lane": "narration",
+     "text": "now we will prepare the filter. so"
+    },
+    {
+     "t": 92.33,
+     "te": 96.23,
+     "lane": "narration",
+     "text": "to prepare the filter we're going to be using 26 grams of coffee."
+    },
+    {
+     "t": 96.23,
+     "te": 116.85,
+     "lane": "narration",
+     "text": "I'm just gonna lay that out."
+    },
+    {
+     "t": 100.32,
+     "te": 108.4,
+     "lane": "step",
+     "text": "ADD COFFEE"
+    },
+    {
+     "t": 122.21,
+     "te": 127.03,
+     "lane": "narration",
+     "text": "we are going to set our grinder and for the moka pot, I suggest a grind that"
+    },
+    {
+     "t": 127.03,
+     "te": 127.59,
+     "lane": "narration",
+     "text": "is"
+    },
+    {
+     "t": 127.59,
+     "te": 131.84,
+     "lane": "narration",
+     "text": "slightly finer than drip."
+    },
+    {
+     "t": 140.4,
+     "te": 174.04,
+     "lane": "step",
+     "text": "GRIND COFFE"
+    },
+    {
+     "t": 163.16,
+     "te": 164.43,
+     "lane": "narration",
+     "text": "as you'll notice here"
+    },
+    {
+     "t": 164.43,
+     "te": 168.98,
+     "lane": "narration",
+     "text": "I grind directly into the basket. much like you would do for espresso."
+    },
+    {
+     "t": 168.98,
+     "te": 172.74,
+     "lane": "narration",
+     "text": "I'm gridning directly into the portafilter. just be careful how much"
+    },
+    {
+     "t": 172.74,
+     "te": 174.85,
+     "lane": "narration",
+     "text": "you settle"
+    },
+    {
+     "t": 174.54,
+     "te": 177.74,
+     "lane": "step",
+     "text": "EVEN SURFACE"
+    },
+    {
+     "t": 174.85,
+     "te": 179.51,
+     "lane": "narration",
+     "text": "because it can easily fit a lot more than 26 grams in the basket. depends"
+    },
+    {
+     "t": 179.51,
+     "te": 180.74,
+     "lane": "narration",
+     "text": "on how hard you settle."
+    },
+    {
+     "t": 180.74,
+     "te": 184.86,
+     "lane": "narration",
+     "text": "so it may look a little bit deceptively low."
+    },
+    {
+     "t": 184.86,
+     "te": 188.65,
+     "lane": "narration",
+     "text": "an important reminder. although it looks kind of like the"
+    },
+    {
+     "t": 187.52,
+     "te": 189.69,
+     "lane": "step",
+     "text": "PUT FILTER"
+    },
+    {
+     "t": 188.65,
+     "te": 189.33,
+     "lane": "narration",
+     "text": "basket"
+    },
+    {
+     "t": 189.33,
+     "te": 192.9,
+     "lane": "narration",
+     "text": "of an espresso machine, do not tamp it."
+    },
+    {
+     "t": 191.02,
+     "te": 197.76,
+     "lane": "step",
+     "text": "SCREW TOP"
+    },
+    {
+     "t": 192.9,
+     "te": 196.66,
+     "lane": "narration",
+     "text": "a moka pot is not designed to deal with"
+    },
+    {
+     "t": 196.66,
+     "te": 200.79,
+     "lane": "narration",
+     "text": "a pocket that's that dense."
+    },
+    {
+     "t": 200.79,
+     "te": 204.83,
+     "lane": "narration",
+     "text": "if you tamp it has a good chance of popping the release valve."
+    },
+    {
+     "t": 200.8,
+     "te": 203.84,
+     "lane": "step",
+     "text": "PUT STOVE"
+    },
+    {
+     "t": 204.83,
+     "te": 207.89,
+     "lane": "narration",
+     "text": "so now that we have"
+    },
+    {
+     "t": 207.89,
+     "te": 211.73,
+     "lane": "narration",
+     "text": "our coffee all set and we have the moka pot reassembled"
+    },
+    {
+     "t": 211.73,
+     "te": 215.52,
+     "lane": "narration",
+     "text": "we will get ready to set it up."
+    },
+    {
+     "t": 215.52,
+     "te": 222.3,
+     "lane": "narration",
+     "text": "so just turn the heat up to high. if you are using a stovetop burner then"
+    },
+    {
+     "t": 222.3,
+     "te": 227.45,
+     "lane": "narration",
+     "text": "it's probably going to be medium medium-high. we're just gonna hit the clock."
+    },
+    {
+     "t": 227.45,
+     "te": 231.79,
+     "lane": "narration",
+     "text": "okay so now we have a top view. so this total process should take about five"
+    },
+    {
+     "t": 231.79,
+     "te": 232.22,
+     "lane": "narration",
+     "text": "minutes"
+    },
+    {
+     "t": 232.22,
+     "te": 236.14,
+     "lane": "narration",
+     "text": "start to finish depending on how fast takes your water to heat up."
+    },
+    {
+     "t": 236.14,
+     "te": 240.2,
+     "lane": "narration",
+     "text": "so we're actually gonna go ahead and skip"
+    },
+    {
+     "t": 240.2,
+     "te": 244.92,
+     "lane": "narration",
+     "text": "towards the end. so this is about four minutes 45 seconds now into it."
+    },
+    {
+     "t": 244.92,
+     "te": 249.54,
+     "lane": "narration",
+     "text": "we're gonna see that the coffee is beginning to come out. so"
+    },
+    {
+     "t": 246.42,
+     "te": 315.07,
+     "lane": "step",
+     "text": "SEE COFFEE"
+    },
+    {
+     "t": 249.54,
+     "te": 253.67,
+     "lane": "narration",
+     "text": "right as the coffee begins to come out I like to lower the heat to about fifty"
+    },
+    {
+     "t": 253.67,
+     "te": 254.72,
+     "lane": "narration",
+     "text": "percent of what it was."
+    },
+    {
+     "t": 254.72,
+     "te": 259.05,
+     "lane": "narration",
+     "text": "so for me it's lowering it from high to medium. if you are on the stovetop then maybe"
+    },
+    {
+     "t": 259.05,
+     "te": 262.55,
+     "lane": "narration",
+     "text": "from medium-high to medium-low"
+    },
+    {
+     "t": 262.55,
+     "te": 266.12,
+     "lane": "narration",
+     "text": "or something like that. what we are going to do is we are going to wait"
+    },
+    {
+     "t": 266.12,
+     "te": 270.8,
+     "lane": "narration",
+     "text": "as it approaches the"
+    },
+    {
+     "t": 270.8,
+     "te": 276.11,
+     "lane": "narration",
+     "text": "very base of the spout. right as it hits the base of the spout we're gonna turn off"
+    },
+    {
+     "t": 276.11,
+     "te": 283.87,
+     "lane": "narration",
+     "text": "the heat altogether."
+    },
+    {
+     "t": 283.87,
+     "te": 288.89,
+     "lane": "narration",
+     "text": "so it's right about now. right at the beginning of the spout. so"
+    },
+    {
+     "t": 288.89,
+     "te": 293.16,
+     "lane": "narration",
+     "text": "turning off the heat and the residual heat is actually gonna carry this"
+    },
+    {
+     "t": 293.16,
+     "te": 296.79,
+     "lane": "narration",
+     "text": "extraction all the way to the end. the reason to lowering the heat is that we really"
+    },
+    {
+     "t": 296.79,
+     "te": 297.76,
+     "lane": "narration",
+     "text": "don't want"
+    },
+    {
+     "t": 297.76,
+     "te": 302.37,
+     "lane": "narration",
+     "text": "the water to be bursting out at the bottom from start to finish."
+    },
+    {
+     "t": 302.37,
+     "te": 305.84,
+     "lane": "narration",
+     "text": "we really wanna kinda temper that heat and  tempe that pressure because remember"
+    },
+    {
+     "t": 305.84,
+     "te": 310.02,
+     "lane": "narration",
+     "text": "controlling that heat is also controlling the pressure and the rate at which the"
+    },
+    {
+     "t": 310.02,
+     "te": 312.61,
+     "lane": "narration",
+     "text": "water's coming out from the bottom. if the heat is on full blast"
+    },
+    {
+     "t": 312.61,
+     "te": 316.93,
+     "lane": "narration",
+     "text": "the whole way through then it'll definitely be splattering out. so"
+    },
+    {
+     "t": 316.93,
+     "te": 320.3,
+     "lane": "narration",
+     "text": "now that we're finished we're gonna go ahead and"
+    },
+    {
+     "t": 320.3,
+     "te": 323.55,
+     "lane": "narration",
+     "text": "pour the moka pot. so if you're using a stovetop burner"
+    },
+    {
+     "t": 323.55,
+     "te": 327.76,
+     "lane": "narration",
+     "text": "or an electric one you might wanna take it off the actual burner as it"
+    },
+    {
+     "t": 327.76,
+     "te": 329.17,
+     "lane": "narration",
+     "text": "will continue to"
+    },
+    {
+     "t": 329.17,
+     "te": 333.29,
+     "lane": "narration",
+     "text": "heat the moka pot even after. So we're just gonna go ahead and pour."
+    },
+    {
+     "t": 330.22,
+     "te": 331.55,
+     "lane": "step",
+     "text": "WITHDRAW STOVE"
+    },
+    {
+     "t": 331.55,
+     "te": 339.46,
+     "lane": "step",
+     "text": "POUR COFEE"
+    },
+    {
+     "t": 333.29,
+     "te": 336.5,
+     "lane": "narration",
+     "text": "first pour carefully especially if you are pouring from such a high distance."
+    }
+   ],
+   "raw_format": "mat",
+   "raw": {
+    "readme.txt row (tab-separated: URL, clip id, start s, end s)": "https://www.youtube.com/watch?v=fRdCic2f7PI\tcoffee_0001\t50\t340",
+    "data.mat fields for this video (index 0; MATLAB arrays converted to JSON lists)": {
+     "grammar (shared by all videos of the task)": [
+      "ADD COFFEE",
+      "CLEAN POT",
+      "EVEN SURFACE",
+      "FILL WATER",
+      "GRIND COFFE",
+      "POUR COFEE",
+      "PUT FILTER",
+      "PUT STOVE",
+      "SCREW TOP",
+      "SEE COFFEE",
+      "UNSCREW POT",
+      "WITHDRAW STOVE"
+     ],
+     "framerate": 29.97,
+     "key_steps_time": [
+      [
+       50.32,
+       58.4
+      ],
+      [],
+      [
+       124.54,
+       127.74
+      ],
+      [
+       9.27,
+       16.18
+      ],
+      [
+       90.4,
+       124.04
+      ],
+      [
+       281.55,
+       289.46
+      ],
+      [
+       137.52,
+       139.69
+      ],
+      [
+       150.8,
+       153.84
+      ],
+      [
+       141.02,
+       147.76
+      ],
+      [
+       196.42,
+       265.07
+      ],
+      [],
+      [
+       280.22,
+       281.55
+      ]
+     ],
+     "key_steps_frame": [
+      [
+       1509,
+       1750
+      ],
+      [],
+      [
+       3733,
+       3828
+      ],
+      [
+       279,
+       485
+      ],
+      [
+       2710,
+       3717
+      ],
+      [
+       8439,
+       8675
+      ],
+      [
+       4122,
+       4187
+      ],
+      [
+       4520,
+       4611
+      ],
+      [
+       4227,
+       4428
+      ],
+      [
+       5888,
+       7944
+      ],
+      [],
+      [
+       8399,
+       8438
+      ]
+     ],
+     "key_steps_segment": [
+      [
+       28,
+       32
+      ],
+      [],
+      [
+       68,
+       70
+      ],
+      [
+       6,
+       9
+      ],
+      [
+       50,
+       68
+      ],
+      [
+       154,
+       158
+      ],
+      [
+       75,
+       77
+      ],
+      [
+       83,
+       84
+      ],
+      [
+       77,
+       81
+      ],
+      [
+       108,
+       145
+      ],
+      [],
+      [
+       153,
+       154
+      ]
+     ],
+     "caption": [
+      " First thing we're gonna do is take out the filter. set that aside. we're gonna fill up the water.",
+      " so we are gonna be using three hundred forty milliliters of water",
+      " on this particular moka pot. that just comes",
+      " right under the released valve",
+      " that you kind of see on the outside.",
+      " now that we have that set,",
+      " we are just gonna set that water",
+      " that sits at the base aside.",
+      " now we will prepare the filter. so",
+      " to prepare the filter we're going to be using 26 grams of coffee.",
+      " I'm just gonna lay that out.",
+      [],
+      "…[truncated 53 more items]"
+     ],
+     "caption_time": [
+      [
+       2.1,
+       8.38
+      ],
+      [
+       8.38,
+       12.719
+      ],
+      [
+       12.719,
+       16.24
+      ],
+      [
+       16.24,
+       19.25
+      ],
+      [
+       19.25,
+       25.95
+      ],
+      [
+       25.95,
+       30.2
+      ],
+      [
+       30.2,
+       33.479
+      ],
+      [
+       33.479,
+       37.899
+      ],
+      [
+       37.899,
+       42.33
+      ],
+      [
+       42.33,
+       46.229
+      ],
+      [
+       46.229,
+       66.849
+      ],
+      [
+       66.849,
+       72.209
+      ],
+      "…[truncated 53 more items]"
+     ],
+     "caption_frame": [
+      [
+       63,
+       251
+      ],
+      [
+       251,
+       381
+      ],
+      [
+       381,
+       487
+      ],
+      [
+       487,
+       577
+      ],
+      [
+       577,
+       778
+      ],
+      [
+       778,
+       905
+      ],
+      [
+       905,
+       1003
+      ],
+      [
+       1003,
+       1136
+      ],
+      [
+       1136,
+       1269
+      ],
+      [
+       1269,
+       1385
+      ],
+      [
+       1385,
+       2003
+      ],
+      [
+       2003,
+       2164
+      ],
+      "…[truncated 53 more items]"
+     ],
+     "segment_time": [
+      [
+       0.0,
+       1.5348682015348682
+      ],
+      [
+       1.5348682015348682,
+       3.3700367033700367
+      ],
+      [
+       3.3700367033700367,
+       5.638972305638973
+      ],
+      [
+       5.638972305638973,
+       7.540874207540875
+      ],
+      [
+       7.540874207540875,
+       9.142475809142477
+      ],
+      [
+       9.142475809142477,
+       10.643977310643978
+      ],
+      [
+       10.643977310643978,
+       12.512512512512513
+      ],
+      [
+       12.512512512512513,
+       14.614614614614615
+      ],
+      [
+       14.614614614614615,
+       16.316316316316318
+      ],
+      [
+       16.316316316316318,
+       18.651985318651985
+      ],
+      [
+       18.651985318651985,
+       20.487153820487155
+      ],
+      [
+       20.487153820487155,
+       22.32232232232232
+      ],
+      "…[truncated 146 more items]"
+     ],
+     "segment_frame": [
+      [
+       1,
+       46
+      ],
+      [
+       47,
+       101
+      ],
+      [
+       102,
+       169
+      ],
+      [
+       170,
+       226
+      ],
+      [
+       227,
+       274
+      ],
+      [
+       275,
+       319
+      ],
+      [
+       320,
+       375
+      ],
+      [
+       376,
+       438
+      ],
+      [
+       439,
+       489
+      ],
+      [
+       490,
+       559
+      ],
+      [
+       560,
+       614
+      ],
+      [
+       615,
+       669
+      ],
+      "…[truncated 146 more items]"
+     ]
+    }
+   }
+  },
+  {
+   "title": "jump_car_0001: jump car — 10 of 14 key steps present, 27 non-empty narration lines",
+   "video_ref": "https://www.youtube.com/watch?v=wjvZw9jZCaE",
+   "duration_s": 95.0,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 45.01,
+     "te": 49.08,
+     "lane": "narration",
+     "text": "We're going to connect one end of the red jumper cable to the positive terminal on the stalled"
+    },
+    {
+     "t": 46.13,
+     "te": 49.6,
+     "lane": "step",
+     "text": "CONNECT REDEMPTY"
+    },
+    {
+     "t": 49.08,
+     "te": 54.08,
+     "lane": "narration",
+     "text": "battery. red on dead. Now we're going to move up to the good battery and connect the other red"
+    },
+    {
+     "t": 51.4,
+     "te": 54.64,
+     "lane": "step",
+     "text": "CONNECT REDFULL"
+    },
+    {
+     "t": 54.08,
+     "te": 57.89,
+     "lane": "narration",
+     "text": "cable clamp to the positive terminal on the good battery. alright now it's time to"
+    },
+    {
+     "t": 57.89,
+     "te": 59.68,
+     "lane": "narration",
+     "text": "move on to the black jumper cable clamps."
+    },
+    {
+     "t": 59.68,
+     "te": 62.85,
+     "lane": "narration",
+     "text": "we are staying on the good battery the jumper car."
+    },
+    {
+     "t": 60.28,
+     "te": 62.32,
+     "lane": "step",
+     "text": "CONNECT BLACK"
+    },
+    {
+     "t": 62.85,
+     "te": 66.37,
+     "lane": "narration",
+     "text": "as you want to connect one end of the black jumper cable to the negative terminal"
+    },
+    {
+     "t": 66.37,
+     "te": 70.59,
+     "lane": "narration",
+     "text": "on the good battery. now you might be tempted to just connect"
+    },
+    {
+     "t": 70.59,
+     "te": 73.77,
+     "lane": "narration",
+     "text": "the black jumper cable to the negative terminal on the dead battery"
+    },
+    {
+     "t": 73.77,
+     "te": 78.22,
+     "lane": "narration",
+     "text": "but most experts agree to not do this. there's a chance you could cause a spark and an"
+    },
+    {
+     "t": 78.22,
+     "te": 79.26,
+     "lane": "narration",
+     "text": "explosion."
+    },
+    {
+     "t": 79.26,
+     "te": 83.19,
+     "lane": "narration",
+     "text": "probably won't happen but better safe than sorry. so what we want to do instead is"
+    },
+    {
+     "t": 83.19,
+     "te": 87.1,
+     "lane": "narration",
+     "text": "is connect the other black cable to a clean unpainted metal surface under"
+    },
+    {
+     "t": 85.02,
+     "te": 88.29,
+     "lane": "step",
+     "text": "GROUND BLACK"
+    },
+    {
+     "t": 87.1,
+     "te": 88.79,
+     "lane": "narration",
+     "text": "the disabled car's hood."
+    },
+    {
+     "t": 88.79,
+     "te": 92.71,
+     "lane": "narration",
+     "text": "the car's engine block is a good place or somewhere along the frame of"
+    },
+    {
+     "t": 92.71,
+     "te": 95.81,
+     "lane": "narration",
+     "text": "the car which is what I did. now what you wanna do now is"
+    },
+    {
+     "t": 95.81,
+     "te": 99.96,
+     "lane": "narration",
+     "text": "start the car that's doing the jumping and allow it to run for 2-3 minutes before"
+    },
+    {
+     "t": 99.96,
+     "te": 101.31,
+     "lane": "narration",
+     "text": "starting the dead car."
+    },
+    {
+     "t": 101.31,
+     "te": 106.46,
+     "lane": "narration",
+     "text": "basically charging up the dead car's battery. and now"
+    },
+    {
+     "t": 102.28,
+     "te": 105.58,
+     "lane": "step",
+     "text": "START FULLCAR"
+    },
+    {
+     "t": 106.46,
+     "te": 111.52,
+     "lane": "narration",
+     "text": "turn the ignition on the dead car and the car should start. well done."
+    },
+    {
+     "t": 107.02,
+     "te": 108.72,
+     "lane": "step",
+     "text": "START EMPTYCAR"
+    },
+    {
+     "t": 111.52,
+     "te": 116.13,
+     "lane": "narration",
+     "text": "you jump started a car. now what we need to do is remove the cables in reverse"
+    },
+    {
+     "t": 116.13,
+     "te": 116.75,
+     "lane": "narration",
+     "text": "order"
+    },
+    {
+     "t": 116.75,
+     "te": 120.6,
+     "lane": "narration",
+     "text": "of how we connected them. so we start of with the black cable"
+    },
+    {
+     "t": 120.2,
+     "te": 121.5,
+     "lane": "step",
+     "text": "REMOVE GROUND"
+    },
+    {
+     "t": 120.6,
+     "te": 123.61,
+     "lane": "narration",
+     "text": "on the former dead battery's car. remove it from that piece of metal"
+    },
+    {
+     "t": 123.61,
+     "te": 126.94,
+     "lane": "narration",
+     "text": "that you clamped it to. then we move back over to the jumping car."
+    },
+    {
+     "t": 126.91,
+     "te": 128.01,
+     "lane": "step",
+     "text": "REMOVE BLACK"
+    },
+    {
+     "t": 126.94,
+     "te": 130.63,
+     "lane": "narration",
+     "text": "remove the black cable from the negative terminal on the good battery."
+    },
+    {
+     "t": 130.63,
+     "te": 135.14,
+     "lane": "narration",
+     "text": "we go to the red cable on the good car. remove that from that positive terminal."
+    },
+    {
+     "t": 132.38,
+     "te": 133.69,
+     "lane": "step",
+     "text": "DISCONNECT REDFULL"
+    },
+    {
+     "t": 135.14,
+     "te": 138.18,
+     "lane": "narration",
+     "text": "then we go back to our formerly dead car  and remove the red jumper cable from that positive terminal."
+    },
+    {
+     "t": 137.12,
+     "te": 138.16,
+     "lane": "step",
+     "text": "DISCONNECT REDEMPTY"
+    }
+   ],
+   "raw_format": "mat",
+   "raw": {
+    "readme.txt row (tab-separated: URL, clip id, start s, end s)": "https://www.youtube.com/watch?v=wjvZw9jZCaE\tjump_car_0001\t45.0\t140.0",
+    "data.mat fields for this video (index 0; MATLAB arrays converted to JSON lists)": {
+     "grammar (shared by all videos of the task)": [
+      "CONNECT BLACK",
+      "CONNECT REDEMPTY",
+      "CONNECT REDFULL",
+      "DISCONNECT REDEMPTY",
+      "DISCONNECT REDFULL",
+      "GET CAR",
+      "GROUND BLACK",
+      "OPEN HOOD",
+      "READ MANUAL",
+      "REMOVE BLACK",
+      "REMOVE GROUND",
+      "RUN IDLE",
+      "START EMPTYCAR",
+      "START FULLCAR"
+     ],
+     "framerate": 29.97,
+     "key_steps_time": [
+      [
+       15.28,
+       17.32
+      ],
+      [
+       1.13,
+       4.6
+      ],
+      [
+       6.4,
+       9.64
+      ],
+      [
+       92.12,
+       93.16
+      ],
+      [
+       87.38,
+       88.69
+      ],
+      [],
+      [
+       40.02,
+       43.29
+      ],
+      [],
+      [],
+      [
+       81.91,
+       83.01
+      ],
+      [
+       75.2,
+       76.5
+      ],
+      [],
+      [
+       62.02,
+       63.72
+      ],
+      [
+       57.28,
+       60.58
+      ]
+     ],
+     "key_steps_frame": [
+      [
+       459,
+       519
+      ],
+      [
+       35,
+       138
+      ],
+      [
+       193,
+       289
+      ],
+      [
+       2762,
+       2792
+      ],
+      [
+       2620,
+       2658
+      ],
+      [],
+      [
+       1200,
+       1297
+      ],
+      [],
+      [],
+      [
+       2456,
+       2488
+      ],
+      [
+       2255,
+       2293
+      ],
+      [],
+      [
+       1860,
+       1910
+      ],
+      [
+       1718,
+       1816
+      ]
+     ],
+     "key_steps_segment": [
+      [
+       9,
+       10
+      ],
+      [
+       1,
+       3
+      ],
+      [
+       4,
+       6
+      ],
+      [
+       51,
+       51
+      ],
+      [
+       48,
+       49
+      ],
+      [],
+      [
+       22,
+       24
+      ],
+      [],
+      [],
+      [
+       45,
+       46
+      ],
+      [
+       42,
+       42
+      ],
+      [],
+      [
+       34,
+       35
+      ],
+      [
+       32,
+       34
+      ]
+     ],
+     "caption": [
+      " We're going to connect one end of the red jumper cable to the positive terminal on the stalled",
+      " battery. red on dead. Now we're going to move up to the good battery and connect the other red",
+      " cable clamp to the positive terminal on the good battery. alright now it's time to",
+      " move on to the black jumper cable clamps.",
+      " we are staying on the good battery the jumper car.",
+      " as you want to connect one end of the black jumper cable to the negative terminal",
+      " on the good battery. now you might be tempted to just connect",
+      " the black jumper cable to the negative terminal on the dead battery",
+      " but most experts agree to not do this. there's a chance you could cause a spark and an",
+      " explosion.",
+      " probably won't happen but better safe than sorry. so what we want to do instead is",
+      " is connect the other black cable to a clean unpainted metal surface under",
+      "…[truncated 15 more items]"
+     ],
+     "caption_time": [
+      [
+       0.01,
+       4.079
+      ],
+      [
+       4.079,
+       9.079
+      ],
+      [
+       9.079,
+       12.89
+      ],
+      [
+       12.89,
+       14.68
+      ],
+      [
+       14.68,
+       17.85
+      ],
+      [
+       17.85,
+       21.369
+      ],
+      [
+       21.369,
+       25.59
+      ],
+      [
+       25.59,
+       28.77
+      ],
+      [
+       28.77,
+       33.22
+      ],
+      [
+       33.22,
+       34.259
+      ],
+      [
+       34.259,
+       38.189
+      ],
+      [
+       38.189,
+       42.1
+      ],
+      "…[truncated 15 more items]"
+     ],
+     "caption_frame": [
+      [
+       0,
+       122
+      ],
+      [
+       122,
+       272
+      ],
+      [
+       272,
+       386
+      ],
+      [
+       386,
+       440
+      ],
+      [
+       440,
+       535
+      ],
+      [
+       535,
+       640
+      ],
+      [
+       640,
+       767
+      ],
+      [
+       767,
+       862
+      ],
+      [
+       862,
+       996
+      ],
+      [
+       996,
+       1027
+      ],
+      [
+       1027,
+       1145
+      ],
+      [
+       1145,
+       1262
+      ],
+      "…[truncated 15 more items]"
+     ],
+     "segment_time": [
+      [
+       0.0,
+       2.569235902569236
+      ],
+      [
+       2.569235902569236,
+       4.037370704037371
+      ],
+      [
+       4.037370704037371,
+       5.872539205872539
+      ],
+      [
+       5.872539205872539,
+       7.407407407407407
+      ],
+      [
+       7.407407407407407,
+       9.376042709376042
+      ],
+      [
+       9.376042709376042,
+       11.077744411077745
+      ],
+      [
+       11.077744411077745,
+       12.84617951284618
+      ],
+      [
+       12.84617951284618,
+       14.614614614614615
+      ],
+      [
+       14.614614614614615,
+       16.750083416750083
+      ],
+      [
+       16.750083416750083,
+       18.551885218551885
+      ],
+      [
+       18.551885218551885,
+       20.52052052052052
+      ],
+      [
+       20.52052052052052,
+       22.05538872205539
+      ],
+      "…[truncated 40 more items]"
+     ],
+     "segment_frame": [
+      [
+       1,
+       77
+      ],
+      [
+       78,
+       121
+      ],
+      [
+       122,
+       176
+      ],
+      [
+       177,
+       222
+      ],
+      [
+       223,
+       281
+      ],
+      [
+       282,
+       332
+      ],
+      [
+       333,
+       385
+      ],
+      [
+       386,
+       438
+      ],
+      [
+       439,
+       502
+      ],
+      [
+       503,
+       556
+      ],
+      [
+       557,
+       615
+      ],
+      [
+       616,
+       661
+      ],
+      "…[truncated 40 more items]"
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,1046 @@
+{
+ "slug": "ego4d",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://raw.githubusercontent.com/facebookresearch/ego4d-goalstep/main/data/goalstep_train.json (MIT mirror; entry video_uid grp-deea1ad6-01dd-4ea5-b5f0-932b2292bed1)",
+  "https://arxiv.org/abs/2110.07058 (Table 2, narration examples, extracted from ar5iv HTML text)"
+ ],
+ "access_used": "public sample in paper/repo/card only (full data needs Ego4D License Agreement)",
+ "note": "Example 1 is one video's complete Goal-Step record from the MIT-licensed GitHub mirror (goal → steps → nested substeps; timeline lane 'step' = top-level step with its is_relevant tag, lane 'action' = substep). The timestamped narrations (narration.json) are not mirrored publicly, so example 2 is the verbatim narration/summary text of paper Table 2 as extracted from the paper HTML (table cells run together; no times); no clip because videos need the Ego4D license.",
+ "examples": [
+  {
+   "title": "grp-deea1ad6…: make sandwich — 18 steps, 39 substeps",
+   "video_ref": "grp-deea1ad6-01dd-4ea5-b5f0-932b2292bed1",
+   "duration_s": 1003.18,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.042,
+     "te": 1003.175,
+     "lane": "other",
+     "text": "GOAL: make sandwich (COOKING:MAKE_SANDWICH)"
+    },
+    {
+     "t": 4.1414,
+     "te": 135.82306,
+     "lane": "step",
+     "text": "make tea [irrelevant]"
+    },
+    {
+     "t": 5.79064,
+     "te": 7.88,
+     "lane": "action",
+     "text": "substep: Place pan on stove counter"
+    },
+    {
+     "t": 8.0326,
+     "te": 91.1461,
+     "lane": "action",
+     "text": "substep: Add frozen tea to pot "
+    },
+    {
+     "t": 91.36263,
+     "te": 106.57048,
+     "lane": "action",
+     "text": "substep: Return frozen leftover to fridge "
+    },
+    {
+     "t": 106.70233,
+     "te": 135.823,
+     "lane": "action",
+     "text": "substep: Add milk to pot "
+    },
+    {
+     "t": 108.30106,
+     "te": 110.90229,
+     "lane": "action",
+     "text": "substep: Place pan on stovetop "
+    },
+    {
+     "t": 111.06896,
+     "te": 112.30228,
+     "lane": "action",
+     "text": "substep: Turn on heat "
+    },
+    {
+     "t": 118.95082,
+     "te": 120.4769,
+     "lane": "action",
+     "text": "substep: Adjust heat "
+    },
+    {
+     "t": 135.823,
+     "te": 179.512,
+     "lane": "action",
+     "text": "substep: Clean pan "
+    },
+    {
+     "t": 135.82306,
+     "te": 192.4825,
+     "lane": "step",
+     "text": "preheat pan [essential]"
+    },
+    {
+     "t": 179.71225,
+     "te": 182.71052,
+     "lane": "action",
+     "text": "substep: Place pan on stove top "
+    },
+    {
+     "t": 182.91052,
+     "te": 184.385905,
+     "lane": "action",
+     "text": "substep: Turn on heat "
+    },
+    {
+     "t": 184.585905,
+     "te": 187.66,
+     "lane": "action",
+     "text": "substep: Adjust pan on stove top "
+    },
+    {
+     "t": 188.767,
+     "te": 192.667,
+     "lane": "action",
+     "text": "substep: Clean hands "
+    },
+    {
+     "t": 192.68249999999998,
+     "te": 238.14623,
+     "lane": "step",
+     "text": "whisk egg [essential]"
+    },
+    {
+     "t": 238.14623,
+     "te": 243.49587,
+     "lane": "step",
+     "text": "get bread [essential]"
+    },
+    {
+     "t": 243.49587,
+     "te": 269.9437,
+     "lane": "step",
+     "text": "preheat oil [essential]"
+    },
+    {
+     "t": 269.9437,
+     "te": 324.20983,
+     "lane": "step",
+     "text": "spread bread [essential]"
+    },
+    {
+     "t": 324.40983000000006,
+     "te": 348.24082,
+     "lane": "step",
+     "text": "fry egg [essential]"
+    },
+    {
+     "t": 324.56638,
+     "te": 331.37262,
+     "lane": "action",
+     "text": "substep: Add egg mixture to oil in pan "
+    },
+    {
+     "t": 333.39991,
+     "te": 345.008,
+     "lane": "action",
+     "text": "substep: Shake pan "
+    },
+    {
+     "t": 345.04206,
+     "te": 346.07536,
+     "lane": "action",
+     "text": "substep: Adjust heat "
+    },
+    {
+     "t": 348.24082,
+     "te": 362.56564,
+     "lane": "step",
+     "text": "stir tea [irrelevant]"
+    },
+    {
+     "t": 362.56564,
+     "te": 363.86596,
+     "lane": "step",
+     "text": "turn off knob [essential]"
+    },
+    {
+     "t": 363.86596,
+     "te": 489.25186499999995,
+     "lane": "step",
+     "text": "make tea [irrelevant]"
+    },
+    {
+     "t": 365.5331,
+     "te": 416.169,
+     "lane": "action",
+     "text": "substep: Stir tea to taste"
+    },
+    {
+     "t": 416.93094,
+     "te": 435.33471499999996,
+     "lane": "action",
+     "text": "substep: Add Sugar to pot "
+    },
+    {
+     "t": 435.534715,
+     "te": 443.668,
+     "lane": "action",
+     "text": "substep: Add spices to tea pot "
+    },
+    {
+     "t": 444.90368,
+     "te": 456.108665,
+     "lane": "action",
+     "text": "substep: Stir tea to taste"
+    },
+    {
+     "t": 456.308665,
+     "te": 474.01875,
+     "lane": "action",
+     "text": "substep: Add spices to tea"
+    },
+    {
+     "t": 475.02407,
+     "te": 480.1749,
+     "lane": "action",
+     "text": "substep: Add spice to tea"
+    },
+    {
+     "t": 480.71599,
+     "te": 486.616,
+     "lane": "action",
+     "text": "substep: Stir tea to taste "
+    },
+    {
+     "t": 489.451865,
+     "te": 500.60865,
+     "lane": "step",
+     "text": "get tomato [essential]"
+    },
+    {
+     "t": 500.60865,
+     "te": 697.44826,
+     "lane": "step",
+     "text": "prepare sandwich [essential]"
+    },
+    {
+     "t": 500.96746,
+     "te": 529.92814,
+     "lane": "action",
+     "text": "substep: Clean cabbage"
+    },
+    {
+     "t": 530.44706,
+     "te": 548.20528,
+     "lane": "action",
+     "text": "substep: Add cabbage to bread "
+    },
+    {
+     "t": 550.39847,
+     "te": 553.87389,
+     "lane": "action",
+     "text": "substep: Rinse tomato"
+    },
+    {
+     "t": 555.77756,
+     "te": 596.488,
+     "lane": "action",
+     "text": "substep: Add Sliced tomato to bread"
+    },
+    {
+     "t": 600.49692,
+     "te": 610.9527099999999,
+     "lane": "action",
+     "text": "substep: Add fried egg to bread "
+    },
+    {
+     "t": 611.15271,
+     "te": 613.723,
+     "lane": "action",
+     "text": "substep: Add bread to sandwich "
+    },
+    {
+     "t": 613.72327,
+     "te": 648.63708,
+     "lane": "action",
+     "text": "substep: Remove cuff from sandwich "
+    },
+    {
+     "t": 649.10373,
+     "te": 687.64633,
+     "lane": "action",
+     "text": "substep: Serve "
+    },
+    {
+     "t": 687.84633,
+     "te": 697.448,
+     "lane": "action",
+     "text": "substep: Clean hands"
+    },
+    {
+     "t": 697.448,
+     "te": 713.09215,
+     "lane": "action",
+     "text": "substep: serve tea in cup "
+    },
+    {
+     "t": 697.44826,
+     "te": 718.87667,
+     "lane": "step",
+     "text": "serve tea [irrelevant]"
+    },
+    {
+     "t": 715.50213,
+     "te": 864.672,
+     "lane": "action",
+     "text": "substep: Clean hands"
+    },
+    {
+     "t": 718.87667,
+     "te": 864.67286,
+     "lane": "step",
+     "text": "clean utensils [irrelevant]"
+    },
+    {
+     "t": 720.32681,
+     "te": 852.404,
+     "lane": "action",
+     "text": "substep: Clean kitchen utensils"
+    },
+    {
+     "t": 852.40451,
+     "te": 855.30316,
+     "lane": "action",
+     "text": "substep: Trash dirt "
+    },
+    {
+     "t": 858.12847,
+     "te": 863.76728,
+     "lane": "action",
+     "text": "substep: Clean hands "
+    },
+    {
+     "t": 864.67286,
+     "te": 878.84317,
+     "lane": "step",
+     "text": "return ingredients [irrelevant]"
+    },
+    {
+     "t": 878.84317,
+     "te": 934.43267,
+     "lane": "step",
+     "text": "make drink [irrelevant]"
+    },
+    {
+     "t": 934.43267,
+     "te": 972.49162,
+     "lane": "step",
+     "text": "make tea [irrelevant]"
+    },
+    {
+     "t": 939.5,
+     "te": 955.157,
+     "lane": "action",
+     "text": "substep: Add tea to cup "
+    },
+    {
+     "t": 955.3570000000001,
+     "te": 963.7325549999999,
+     "lane": "action",
+     "text": "substep: Add hot water to cup "
+    },
+    {
+     "t": 963.932555,
+     "te": 972.491,
+     "lane": "action",
+     "text": "substep: Add milk to cup "
+    },
+    {
+     "t": 972.49162,
+     "te": 1001.38445,
+     "lane": "step",
+     "text": "serve sandwich [essential]"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "video_uid": "grp-deea1ad6-01dd-4ea5-b5f0-932b2292bed1",
+    "start_time": 0.0419921875,
+    "end_time": 1003.1753255208332,
+    "goal_category": "COOKING:MAKE_SANDWICH",
+    "goal_description": "make sandwich",
+    "goal_wikihow_url": "",
+    "summary": [
+     "taking utensil and tasting recipe",
+     "cutting and braking chocolate",
+     "adding milk,ingredients and stirring recipe",
+     "washing pan and cracking egg in bowl",
+     "pouring oil in pan and puts egg",
+     "spreading sauce on breads and cutting bread",
+     "washing and cutting veggies",
+     "keeps omelette and veggies between breads"
+    ],
+    "is_procedural": true,
+    "segments": [
+     {
+      "start_time": 4.1414,
+      "end_time": 135.82306,
+      "step_category": "Make recipes: Make tea",
+      "step_description": "make tea",
+      "is_continued": false,
+      "is_procedural": true,
+      "is_relevant": "irrelevant",
+      "summary": [
+       "add frozen chocolate",
+       "add milk",
+       "turn on knob"
+      ],
+      "segments": [
+       {
+        "start_time": 5.79064,
+        "end_time": 7.88,
+        "step_category": "Cook on a stovetop: Adjust a pan or pot on the stovetop",
+        "step_description": "Place pan on stove counter",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "optional",
+        "summary": []
+       },
+       {
+        "start_time": 8.0326,
+        "end_time": 91.1461,
+        "step_category": "Make recipes: Add a teabag or tea leaves in boiling water",
+        "step_description": "Add frozen tea to pot ",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 91.36263,
+        "end_time": 106.57048,
+        "step_category": "General cooking activity: Store ingredients in refrigerator or freezer",
+        "step_description": "Return frozen leftover to fridge ",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 106.70233,
+        "end_time": 135.823,
+        "step_category": "Add ingredients to the recipe: Add milk to recipe",
+        "step_description": "Add milk to pot ",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 108.30106,
+        "end_time": 110.90229,
+        "step_category": "Cook on a stovetop: Adjust a pan or pot on the stovetop",
+        "step_description": "Place pan on stovetop ",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 111.06896,
+        "end_time": 112.30228,
+        "step_category": "Cook on a stovetop: Turn on the stovetop",
+        "step_description": "Turn on heat ",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 118.95082,
+        "end_time": 120.4769,
+        "step_category": "Cook on a stovetop: Check and adjust the heat on the stovetop",
+        "step_description": "Adjust heat ",
+        "is_continued": true,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       }
+      ]
+     },
+     {
+      "start_time": 135.82306,
+      "end_time": 192.4825,
+      "step_category": "Cook on a stovetop: Preheat a pan or pot on the stovetop",
+      "step_description": "preheat pan",
+      "is_continued": false,
+      "is_procedural": true,
+      "is_relevant": "essential",
+      "summary": [
+       "clean the pan",
+       "turn the knob",
+       "heat the pan",
+       "clean hands"
+      ],
+      "segments": [
+       {
+        "start_time": 135.823,
+        "end_time": 179.512,
+        "step_category": "Kitchen cleaning activity: Wash pans in kitchen sink",
+        "step_description": "Clean pan ",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 179.71225,
+        "end_time": 182.71052,
+        "step_category": "Cook on a stovetop: Adjust a pan or pot on the stovetop",
+        "step_description": "Place pan on stove top ",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 182.91052,
+        "end_time": 184.385905,
+        "step_category": "Cook on a stovetop: Turn on the stovetop",
+        "step_description": "Turn on heat ",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 184.585905,
+        "end_time": 187.66,
+        "step_category": "Cook on a stovetop: Adjust a pan or pot on the stovetop",
+        "step_description": "Adjust pan on stove top ",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 188.767,
+        "end_time": 192.667,
+        "step_category": "General activity: Wash hands",
+        "step_description": "Clean hands ",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       }
+      ]
+     },
+     {
+      "start_time": 192.68249999999998,
+      "end_time": 238.14623,
+      "step_category": "Make recipes: Beat eggs to create a homogeneous mixture",
+      "step_description": "whisk egg",
+      "is_continued": false,
+      "is_procedural": true,
+      "is_relevant": "essential",
+      "summary": [
+       "break egg",
+       "whisk egg",
+       "clean hand"
+      ],
+      "segments": []
+     },
+     {
+      "start_time": 238.14623,
+      "end_time": 243.49587,
+      "step_category": "Make recipes: Take two slices of bread and put them on a plate",
+      "step_description": "get bread",
+      "is_continued": false,
+      "is_procedural": false,
+      "is_relevant": "essential",
+      "summary": [],
+      "segments": []
+     },
+     {
+      "start_time": 243.49587,
+      "end_time": 269.9437,
+      "step_category": "Add ingredients to the recipe: Add oil to a pan",
+      "step_description": "preheat oil",
+      "is_continued": false,
+      "is_procedural": false,
+      "is_relevant": "essential",
+      "summary": [],
+      "segments": []
+     },
+     {
+      "start_time": 269.9437,
+      "end_time": 324.20983,
+      "step_category": "Make recipes: Spread ingredients on the bread",
+      "step_description": "spread bread",
+      "is_continued": false,
+      "is_procedural": false,
+      "is_relevant": "essential",
+      "summary": [],
+      "segments": []
+     },
+     {
+      "start_time": 324.40983000000006,
+      "end_time": 348.24082,
+      "step_category": "General cooking activity: Fry eggs on a pan until the egg white is set",
+      "step_description": "fry egg",
+      "is_continued": false,
+      "is_procedural": true,
+      "is_relevant": "essential",
+      "summary": [
+       "fry egg",
+       "lower heat"
+      ],
+      "segments": [
+       {
+        "start_time": 324.56638,
+        "end_time": 331.37262,
+        "step_category": "Add ingredients to the recipe: Add egg to recipe",
+        "step_description": "Add egg mixture to oil in pan ",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 333.39991,
+        "end_time": 345.008,
+        "step_category": "Stir and mix ingredients on kitchenware to cook: Stir fry ingredients in a pan",
+        "step_description": "Shake pan ",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 345.04206,
+        "end_time": 346.07536,
+        "step_category": "Cook on a stovetop: Check and adjust the heat on the stovetop",
+        "step_description": "Adjust heat ",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       }
+      ]
+     },
+     {
+      "start_time": 348.24082,
+      "end_time": 362.56564,
+      "step_category": "Stir and mix ingredients on kitchenware to cook: Stir coffee or tea",
+      "step_description": "stir tea",
+      "is_continued": false,
+      "is_procedural": false,
+      "is_relevant": "irrelevant",
+      "summary": [],
+      "segments": []
+     },
+     {
+      "start_time": 362.56564,
+      "end_time": 363.86596,
+      "step_category": "Cook on a stovetop: Turn off the stovetop",
+      "step_description": "turn off knob",
+      "is_continued": true,
+      "is_procedural": false,
+      "is_relevant": "essential",
+      "summary": [],
+      "segments": []
+     },
+     {
+      "start_time": 363.86596,
+      "end_time": 489.25186499999995,
+      "step_category": "Make recipes: Make tea",
+      "step_description": "make tea",
+      "is_continued": true,
+      "is_procedural": true,
+      "is_relevant": "irrelevant",
+      "summary": [
+       "stir tea",
+       "add ingredients\nturn off knob"
+      ],
+      "segments": [
+       {
+        "start_time": 365.5331,
+        "end_time": 416.169,
+        "step_category": "Stir and mix ingredients on kitchenware to cook: Stir coffee or tea",
+        "step_description": "Stir tea to taste",
+        "is_continued": false,
+        "is_procedural": true,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 416.93094,
+        "end_time": 435.33471499999996,
+        "step_category": "Add ingredients to the recipe: Add sweetener to recipe",
+        "step_description": "Add Sugar to pot ",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "optional",
+        "summary": []
+       },
+       {
+        "start_time": 435.534715,
+        "end_time": 443.668,
+        "step_category": "Add ingredients to the recipe: Add spices to recipe",
+        "step_description": "Add spices to tea pot ",
+        "is_continued": false,
+        "is_procedural": true,
+        "is_relevant": "optional",
+        "summary": []
+       },
+       {
+        "start_time": 444.90368,
+        "end_time": 456.108665,
+        "step_category": "Stir and mix ingredients on kitchenware to cook: Stir coffee or tea",
+        "step_description": "Stir tea to taste",
+        "is_continued": true,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 456.308665,
+        "end_time": 474.01875,
+        "step_category": "Add ingredients to the recipe: Add spices to recipe",
+        "step_description": "Add spices to tea",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 475.02407,
+        "end_time": 480.1749,
+        "step_category": "Add ingredients to the recipe: Add spices to recipe",
+        "step_description": "Add spice to tea",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 480.71599,
+        "end_time": 486.616,
+        "step_category": "Stir and mix ingredients on kitchenware to cook: Stir coffee or tea",
+        "step_description": "Stir tea to taste ",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       }
+      ]
+     },
+     {
+      "start_time": 489.451865,
+      "end_time": 500.60865,
+      "step_category": "Make recipes: Add ingredients to sandwich",
+      "step_description": "get tomato",
+      "is_continued": false,
+      "is_procedural": false,
+      "is_relevant": "essential",
+      "summary": [],
+      "segments": []
+     },
+     {
+      "start_time": 500.60865,
+      "end_time": 697.44826,
+      "step_category": "Make recipes: Make sandwich",
+      "step_description": "prepare sandwich",
+      "is_continued": false,
+      "is_procedural": true,
+      "is_relevant": "essential",
+      "summary": [
+       "spread cleaned cabbage",
+       "spread sliced tomato",
+       "spread fried egg",
+       "cut sandwich",
+       "serve sandwich",
+       "clean hands"
+      ],
+      "segments": [
+       {
+        "start_time": 500.96746,
+        "end_time": 529.92814,
+        "step_category": "General cooking activity: Wash lettuce or cabbage in water",
+        "step_description": "Clean cabbage",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 530.44706,
+        "end_time": 548.20528,
+        "step_category": "Make recipes: Add ingredients to sandwich",
+        "step_description": "Add cabbage to bread ",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 550.39847,
+        "end_time": 553.87389,
+        "step_category": "General cooking activity: Wash tomato in water",
+        "step_description": "Rinse tomato",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 555.77756,
+        "end_time": 596.488,
+        "step_category": "Make recipes: Add ingredients to sandwich",
+        "step_description": "Add Sliced tomato to bread",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 600.49692,
+        "end_time": 610.9527099999999,
+        "step_category": "Make recipes: Add toppings on the bread",
+        "step_description": "Add fried egg to bread ",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 611.15271,
+        "end_time": 613.723,
+        "step_category": "Make recipes: Take two slices of bread and put them on a plate",
+        "step_description": "Add bread to sandwich ",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 613.72327,
+        "end_time": 648.63708,
+        "step_category": "Peel and cut ingredients: Cut off rough edges of sandwich",
+        "step_description": "Remove cuff from sandwich ",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 649.10373,
+        "end_time": 687.64633,
+        "step_category": "General kitchen activity: Serve food",
+        "step_description": "Serve ",
+        "is_continued": false,
+        "is_procedural": true,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 687.84633,
+        "end_time": 697.448,
+        "step_category": "General activity: Wash hands",
+        "step_description": "Clean hands",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "optional",
+        "summary": []
+       }
+      ]
+     },
+     {
+      "start_time": 697.44826,
+      "end_time": 718.87667,
+      "step_category": "General kitchen activity: Serve drinks",
+      "step_description": "serve tea",
+      "is_continued": false,
+      "is_procedural": true,
+      "is_relevant": "irrelevant",
+      "summary": [
+       "serve tea",
+       "clean hands"
+      ],
+      "segments": [
+       {
+        "start_time": 697.448,
+        "end_time": 713.09215,
+        "step_category": "General kitchen activity: Serve drinks",
+        "step_description": "serve tea in cup ",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       }
+      ]
+     },
+     {
+      "start_time": 718.87667,
+      "end_time": 864.67286,
+      "step_category": "Kitchen cleaning activity: Wash utensils in kitchen sink",
+      "step_description": "clean utensils",
+      "is_continued": false,
+      "is_procedural": true,
+      "is_relevant": "irrelevant",
+      "summary": [
+       "clean utensils",
+       "move sandwich",
+       "trash nylon"
+      ],
+      "segments": [
+       {
+        "start_time": 715.50213,
+        "end_time": 864.672,
+        "step_category": "General activity: Wash hands",
+        "step_description": "Clean hands",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 720.32681,
+        "end_time": 852.404,
+        "step_category": "Kitchen cleaning activity: Wash utensils in kitchen sink",
+        "step_description": "Clean kitchen utensils",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 852.40451,
+        "end_time": 855.30316,
+        "step_category": "General kitchen activity: Dispose dirt in the trash bin",
+        "step_description": "Trash dirt ",
+        "is_continued": true,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 858.12847,
+        "end_time": 863.76728,
+        "step_category": "General activity: Wash hands",
+        "step_description": "Clean hands ",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "unsure",
+        "summary": []
+       }
+      ]
+     },
+     {
+      "start_time": 864.67286,
+      "end_time": 878.84317,
+      "step_category": "General cooking activity: Return ingredients to pantry or shelf",
+      "step_description": "return ingredients",
+      "is_continued": false,
+      "is_procedural": false,
+      "is_relevant": "irrelevant",
+      "summary": [],
+      "segments": []
+     },
+     {
+      "start_time": 878.84317,
+      "end_time": 934.43267,
+      "step_category": "Make recipes: Make drinks",
+      "step_description": "make drink",
+      "is_continued": false,
+      "is_procedural": true,
+      "is_relevant": "irrelevant",
+      "summary": [
+       "make drink",
+       "dilute drink with water",
+       "add ingredient",
+       "stir drink",
+       "clean hands"
+      ],
+      "segments": []
+     },
+     {
+      "start_time": 934.43267,
+      "end_time": 972.49162,
+      "step_category": "Make recipes: Make tea",
+      "step_description": "make tea",
+      "is_continued": false,
+      "is_procedural": true,
+      "is_relevant": "irrelevant",
+      "summary": [
+       "add tea",
+       "add hot water",
+       "add milk"
+      ],
+      "segments": [
+       {
+        "start_time": 939.5,
+        "end_time": 955.157,
+        "step_category": "Make recipes: Add a teabag or tea leaves in boiling water",
+        "step_description": "Add tea to cup ",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 955.3570000000001,
+        "end_time": 963.7325549999999,
+        "step_category": "Cook in a blender: Add water to the blender",
+        "step_description": "Add hot water to cup ",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "essential",
+        "summary": []
+       },
+       {
+        "start_time": 963.932555,
+        "end_time": 972.491,
+        "step_category": "Add ingredients to the recipe: Add milk to recipe",
+        "step_description": "Add milk to cup ",
+        "is_continued": false,
+        "is_procedural": false,
+        "is_relevant": "unsure",
+        "summary": []
+       }
+      ]
+     },
+     {
+      "start_time": 972.49162,
+      "end_time": 1001.38445,
+      "step_category": "General kitchen activity: Serve bread",
+      "step_description": "serve sandwich",
+      "is_continued": false,
+      "is_procedural": true,
+      "is_relevant": "essential",
+      "summary": [
+       "serve drink",
+       "serve sandwich",
+       "serve drink"
+      ],
+      "segments": []
+     }
+    ]
+   }
+  },
+  {
+   "title": "Narration sentences and 5-min summaries (paper Table 2 text; no timestamps, no video id)",
+   "video_ref": null,
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "txt",
+   "raw": "#c c flips the paper #c c taps a hand on the floor #o a man x moves the legs. #c c cuts a leaf from the plant with his left hand. #c c lifts the t-shirt #c c holds the wheel with his left hand. #o a man y sits on a chair #c c pulls his hand off the chess piece #c c drops the plate #c c puts the brush in the colours. #o a woman x steps forward. #c c holds the knitting needle with the other hand #c c holds the piece of cloth #c c places plastic models kit on the table #o a person x hits the cricket ball #c c opens the screwdriver container with his hands #c c fixes on the model craft #c c arranges the doughs on the tray #o a man y throws the ball towards man x #c c touches the piece of wood with the hand Camera wearer motion Summary narrations #c c raises hands c was in a room,fixed a wood model kit. #summary #c c stands c tightened the motor on the head of the hoe of the lawn mower. c cut grasses on the field with the lawn mower. #summary #c c stands up from the stairs c was in a kitchen, he cut sausages in to pieces with a knife, mixed the sausages and cooked them with a pan. #summary #c c walks around a kitchen c was in the house and she studied #summary #c c sits up c studied in a room. c went through a mobile phone and a mobile tablet while reading in the room. #summary Table 2 : Text examples of narrations. The collected narrations describe diverse aspects of human activity. Summary narrations capture high level descriptions of activities in a 5"
+  }
+ ]
+}

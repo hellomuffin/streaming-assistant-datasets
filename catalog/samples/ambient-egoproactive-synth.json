@@ -1,0 +1,1004 @@
+{
+ "slug": "ambient-egoproactive-synth",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/ambient-intelligence-labs/egoproactive-synth-annotations (agent annotation JSON per video; egoconv_dense_rows.jsonl)",
+  "https://huggingface.co/datasets/facebook/wearable-ai egoconv/val/cd15a4e45de1728b.mp4, egoconv/val/36916ea54b5c1134.mp4 (clips)"
+ ],
+ "access_used": "open download",
+ "note": "One example = one EgoConv validation video with its full machine-generated agent walkthrough (timestamped decisions intervene/confirm/observe/correct/complete with utterance, visible context and rationale, plus silent intervals) and the derived 8 s binned training row ($interrupt$<utterance> or $silent$ per interval). All labels are LLM/VLM-generated (DeepSeek-V4-Flash + Qwen3.6-27B), not human; the user 'query' is just the EgoConv scene tag. Clips are from the CC-BY-NC-4.0 EgoConv videos (no audio).",
+ "examples": [
+  {
+   "title": "cd15a4e45de1728b: Hang besom broom on a wall hook by the door — 20 agent events (16 intervene, 3 correct, 1 complete), 6 silent intervals",
+   "video_ref": "facebook/wearable-ai egoconv/val/cd15a4e45de1728b.mp4",
+   "duration_s": 287.4,
+   "clip": "samples/media/ambient-egoproactive-synth_1.mp4",
+   "clip_offset_s": 158.0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": null,
+     "lane": "user",
+     "text": "HomeDIY"
+    },
+    {
+     "t": 1.5,
+     "te": null,
+     "lane": "assistant",
+     "text": "Let's hang your besom by the door. Grab the broom."
+    },
+    {
+     "t": 8.0,
+     "te": 14.5,
+     "lane": "silence",
+     "text": "The user is moving toward the wall; no instruction is needed yet."
+    },
+    {
+     "t": 16.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Pick a clear spot on the wall next to the door frame."
+    },
+    {
+     "t": 24.0,
+     "te": 30.5,
+     "lane": "silence",
+     "text": "The user surveys the wall and chooses a general area without difficulty."
+    },
+    {
+     "t": 32.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Have a small nail or pin ready for the hook."
+    },
+    {
+     "t": 42.0,
+     "te": 48.5,
+     "lane": "silence",
+     "text": "The user gathers the broom and prepares to test placement."
+    },
+    {
+     "t": 50.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Hold the broom up to test the spot before you nail."
+    },
+    {
+     "t": 62.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Set the top loop where you want it to hang."
+    },
+    {
+     "t": 76.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Tap along the wall to find solid wood first."
+    },
+    {
+     "t": 90.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Drive the nail in straight at your mark."
+    },
+    {
+     "t": 104.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Leave a bit of the nail out so the loop can catch."
+    },
+    {
+     "t": 108.0,
+     "te": 117.0,
+     "lane": "silence",
+     "text": "The nail is fully seated and the user reaches for the broom; no guidance needed."
+    },
+    {
+     "t": 118.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Test the broom against the nail to check alignment."
+    },
+    {
+     "t": 134.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Lift the broom so its top loop sits over the nail."
+    },
+    {
+     "t": 150.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Guide the top loop onto the nail head."
+    },
+    {
+     "t": 166.0,
+     "te": null,
+     "lane": "correction",
+     "text": "[correct] Ease it forward so the loop actually catches."
+    },
+    {
+     "t": 178.0,
+     "te": null,
+     "lane": "correction",
+     "text": "[correct] Straighten it—it's hanging tilted."
+    },
+    {
+     "t": 194.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Tuck the bristles so it hangs plumb."
+    },
+    {
+     "t": 210.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Make sure the top binding holds the nail."
+    },
+    {
+     "t": 224.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Give it a gentle tug to test the hold."
+    },
+    {
+     "t": 232.0,
+     "te": 239.0,
+     "lane": "silence",
+     "text": "The user verifies the hang and begins final adjustments independently."
+    },
+    {
+     "t": 240.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Let it settle flat against the wall."
+    },
+    {
+     "t": 256.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Step back and check it looks straight."
+    },
+    {
+     "t": 270.0,
+     "te": null,
+     "lane": "correction",
+     "text": "[correct] Adjust the lean so it hangs evenly."
+    },
+    {
+     "t": 284.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "[complete] You're set—the broom's hanging securely."
+    },
+    {
+     "t": 285.0,
+     "te": 287.0,
+     "lane": "silence",
+     "text": "Task is complete and the broom hangs securely; no further speech needed."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "agent_annotations/<stem>.json (dense agent annotation)": {
+     "stem": "cd15a4e45de1728b",
+     "query": "HomeDIY",
+     "dur": 287.4,
+     "model_used": "deepseek/deepseek-v4-flash-0731",
+     "annotation": {
+      "task_name": "Hang besom broom on a wall hook by the door",
+      "goal": "Mount a small handmade besom broom securely on a nail/hook beside the door frame so it hangs straight and stable.",
+      "walkthrough": [
+       {
+        "timestamp": 1.5,
+        "decision": "intervene",
+        "interaction_type": "task_orientation",
+        "visible_context": "The person is at the door, the wall beside the door frame is in view and the work area is empty.",
+        "utterance": "Let's hang your besom by the door. Grab the broom.",
+        "timing_rationale": "This is the very start of the task, before any work is done, so it orients the user to the goal while they still have the whole task ahead.",
+        "confidence": 0.9
+       },
+       {
+        "timestamp": 16.0,
+        "decision": "intervene",
+        "interaction_type": "pre_action_guidance",
+        "visible_context": "The person is facing the wall and the short corner of the door frame with some scuff marks.",
+        "utterance": "Pick a clear spot on the wall next to the door frame.",
+        "timing_rationale": "The user has begun surveying the wall but has not committed to a location yet, so guidance now prevents a poorly placed hook.",
+        "confidence": 0.82
+       },
+       {
+        "timestamp": 32.0,
+        "decision": "intervene",
+        "interaction_type": "prerequisite_reminder",
+        "visible_context": "The person's hands are at their sides near the wall with no hardware in frame yet.",
+        "utterance": "Have a small nail or pin ready for the hook.",
+        "timing_rationale": "The user is about to transition from choosing a spot to mounting hardware, so making sure the nail is on hand is helpful before the motion begins.",
+        "confidence": 0.78
+       },
+       {
+        "timestamp": 50.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "The arm holds the bundle of twigs up against the wall next to the door frame to test placement.",
+        "utterance": "Hold the broom up to test the spot before you nail.",
+        "timing_rationale": "The broom is now in hand and held to the wall, so the placement test is beginning and this check is still actionable.",
+        "confidence": 0.85
+       },
+       {
+        "timestamp": 62.0,
+        "decision": "intervene",
+        "interaction_type": "technique_guidance",
+        "visible_context": "The broom is lifted higher near the top corner of the door frame where the hang point will go.",
+        "utterance": "Set the top loop where you want it to hang.",
+        "timing_rationale": "The height is being established at the top corner, so guiding the loop position now sets the correct hang point before nailing.",
+        "confidence": 0.8
+       },
+       {
+        "timestamp": 76.0,
+        "decision": "intervene",
+        "interaction_type": "preventive_warning",
+        "visible_context": "The fingers press and tap against the wall to find a solid spot near the top corner.",
+        "utterance": "Tap along the wall to find solid wood first.",
+        "timing_rationale": "The user is about to insert the nail but has not started, so checking for a solid anchor is still preventive.",
+        "confidence": 0.84
+       },
+       {
+        "timestamp": 90.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "The hand holds a small pin against the wall at the chosen top-corner location.",
+        "utterance": "Drive the nail in straight at your mark.",
+        "timing_rationale": "The nail is now positioned but not yet driven, so this is the last useful moment to guide the insertion.",
+        "confidence": 0.87
+       },
+       {
+        "timestamp": 104.0,
+        "decision": "intervene",
+        "interaction_type": "technique_guidance",
+        "visible_context": "The nail is going into the wall and the hand is pressing it deeper.",
+        "utterance": "Leave a bit of the nail out so the loop can catch.",
+        "timing_rationale": "The nail is being sunk now, so telling them to stop short while it is still adjustable prevents an unusable flush mount.",
+        "confidence": 0.83
+       },
+       {
+        "timestamp": 118.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "The broom bundle is brought back up and held near the newly placed nail.",
+        "utterance": "Test the broom against the nail to check alignment.",
+        "timing_rationale": "The nail is in place and the broom is being raised to it, so a quick alignment check is the appropriate next step.",
+        "confidence": 0.82
+       },
+       {
+        "timestamp": 134.0,
+        "decision": "intervene",
+        "interaction_type": "pre_action_guidance",
+        "visible_context": "The arm raises the broom toward the nail at the top corner of the frame.",
+        "utterance": "Lift the broom so its top loop sits over the nail.",
+        "timing_rationale": "The user is lifting the broom to the hang point but has not engaged the loop yet, so guiding the approach is timely.",
+        "confidence": 0.84
+       },
+       {
+        "timestamp": 150.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "The broom's top loop is near the nail head but not yet seated.",
+        "utterance": "Guide the top loop onto the nail head.",
+        "timing_rationale": "The loop is aligned with the nail but not seated, so direct guidance here improves the chance of a clean catch.",
+        "confidence": 0.83
+       },
+       {
+        "timestamp": 166.0,
+        "decision": "correct",
+        "interaction_type": "mid_action_correction",
+        "visible_context": "The user removes and re-positions the loop several times as it fails to catch on the nail.",
+        "utterance": "Ease it forward so the loop actually catches.",
+        "timing_rationale": "The user is visibly struggling to seat the loop, so this correction addresses the specific sticking point while they keep working.",
+        "confidence": 0.88
+       },
+       {
+        "timestamp": 178.0,
+        "decision": "correct",
+        "interaction_type": "technique_guidance",
+        "visible_context": "The broom is now on the nail but hangs at a slight angle.",
+        "utterance": "Straighten it—it's hanging tilted.",
+        "timing_rationale": "The loop has caught but the broom is angled, so correcting orientation now avoids leaving it crooked.",
+        "confidence": 0.86
+       },
+       {
+        "timestamp": 194.0,
+        "decision": "intervene",
+        "interaction_type": "technique_guidance",
+        "visible_context": "The broom is vertical but the bristles brush against the wall.",
+        "utterance": "Tuck the bristles so it hangs plumb.",
+        "timing_rationale": "The broom is nearly set but the bristles touch the wall, so a small alignment fix completes a clean hang.",
+        "confidence": 0.79
+       },
+       {
+        "timestamp": 210.0,
+        "decision": "intervene",
+        "interaction_type": "technique_guidance",
+        "visible_context": "The hand examines the leather bindings near the top of the handle.",
+        "utterance": "Make sure the top binding holds the nail.",
+        "timing_rationale": "The user is inspecting the upper area, so confirming the hang point is sound is a natural, useful check.",
+        "confidence": 0.8
+       },
+       {
+        "timestamp": 224.0,
+        "decision": "intervene",
+        "interaction_type": "technique_guidance",
+        "visible_context": "The broom hangs on the wall and the user's hand is near it.",
+        "utterance": "Give it a gentle tug to test the hold.",
+        "timing_rationale": "The broom is mounted, so a quick stability test is the obvious next safeguard before finishing.",
+        "confidence": 0.82
+       },
+       {
+        "timestamp": 240.0,
+        "decision": "intervene",
+        "interaction_type": "technique_guidance",
+        "visible_context": "The hand holds the top of the broom against the upper door-frame corner after the tug.",
+        "utterance": "Let it settle flat against the wall.",
+        "timing_rationale": "The broom is being adjusted to rest flush, so guiding it to settle settles the final position.",
+        "confidence": 0.78
+       },
+       {
+        "timestamp": 256.0,
+        "decision": "intervene",
+        "interaction_type": "phase_transition",
+        "visible_context": "The camera steps back and the broom hangs against the wall beside the door.",
+        "utterance": "Step back and check it looks straight.",
+        "timing_rationale": "The broom is mounted and the viewpoint widens, so a visual check from a short distance is the last meaningful step.",
+        "confidence": 0.8
+       },
+       {
+        "timestamp": 270.0,
+        "decision": "correct",
+        "interaction_type": "mid_action_correction",
+        "visible_context": "The user's hand reaches in to nudge the broom and adjust its lean beside the frame.",
+        "utterance": "Adjust the lean so it hangs evenly.",
+        "timing_rationale": "The user is fine-tuning the tilt, so a concise cue supports the correction while it is underway.",
+        "confidence": 0.8
+       },
+       {
+        "timestamp": 284.0,
+        "decision": "complete",
+        "interaction_type": "completion",
+        "visible_context": "The broom hangs vertically and stable in the corner beside the door, and the view shows it fully mounted.",
+        "utterance": "You're set—the broom's hanging securely.",
+        "timing_rationale": "The broom is visibly mounted and stable, so a brief closing confirmation marks the task as complete.",
+        "confidence": 0.9
+       }
+      ],
+      "silent_intervals": [
+       {
+        "start_time": 8.0,
+        "end_time": 14.5,
+        "reason": "The user is moving toward the wall; no instruction is needed yet."
+       },
+       {
+        "start_time": 24.0,
+        "end_time": 30.5,
+        "reason": "The user surveys the wall and chooses a general area without difficulty."
+       },
+       {
+        "start_time": 42.0,
+        "end_time": 48.5,
+        "reason": "The user gathers the broom and prepares to test placement."
+       },
+       {
+        "start_time": 108.0,
+        "end_time": 117.0,
+        "reason": "The nail is fully seated and the user reaches for the broom; no guidance needed."
+       },
+       {
+        "start_time": 232.0,
+        "end_time": 239.0,
+        "reason": "The user verifies the hang and begins final adjustments independently."
+       },
+       {
+        "start_time": 285.0,
+        "end_time": 287.0,
+        "reason": "Task is complete and the broom hangs securely; no further speech needed."
+       }
+      ]
+     }
+    },
+    "egoconv_dense_rows.jsonl (binned 8 s row for the same video)": {
+     "video_path": "cd15a4e45de1728b.mp4",
+     "duration_in_sec": 287.4,
+     "video_intervals": [
+      [
+       0.0,
+       8.0
+      ],
+      [
+       8.0,
+       16.0
+      ],
+      [
+       16.0,
+       24.0
+      ],
+      [
+       24.0,
+       32.0
+      ],
+      [
+       32.0,
+       40.0
+      ],
+      [
+       40.0,
+       48.0
+      ],
+      [
+       48.0,
+       56.0
+      ],
+      [
+       56.0,
+       64.0
+      ],
+      [
+       64.0,
+       72.0
+      ],
+      [
+       72.0,
+       80.0
+      ],
+      [
+       80.0,
+       88.0
+      ],
+      [
+       88.0,
+       96.0
+      ],
+      "…[truncated 24 more items]"
+     ],
+     "query": "HomeDIY",
+     "domain": "egoconv_synth",
+     "task": "HomeDIY",
+     "answers": [
+      "$interrupt$Let's hang your besom by the door. Grab the broom.",
+      "$interrupt$Pick a clear spot on the wall next to the door frame.",
+      "$silent$",
+      "$interrupt$Have a small nail or pin ready for the hook.",
+      "$silent$",
+      "$silent$",
+      "$interrupt$Hold the broom up to test the spot before you nail.",
+      "$interrupt$Set the top loop where you want it to hang.",
+      "$silent$",
+      "$interrupt$Tap along the wall to find solid wood first.",
+      "$silent$",
+      "$interrupt$Drive the nail in straight at your mark.",
+      "…[truncated 24 more items]"
+     ],
+     "dialog": [
+      [
+       {
+        "role": "user",
+        "text": "HomeDIY"
+       }
+      ],
+      [
+       {
+        "role": "user",
+        "text": "HomeDIY"
+       },
+       {
+        "role": "assistant",
+        "text": "$interrupt$Let's hang your besom by the door. Grab the broom."
+       }
+      ],
+      "…[truncated 34 more items]"
+     ],
+     "task_name": "Hang besom broom on a wall hook by the door"
+    }
+   }
+  },
+  {
+   "title": "36916ea54b5c1134: Origami heart & message (HomeDIY gift) — 22 agent events (19 intervene, 1 confirm, 1 observe, 1 complete), 4 silent intervals",
+   "video_ref": "facebook/wearable-ai egoconv/val/36916ea54b5c1134.mp4",
+   "duration_s": 306.333333,
+   "clip": "samples/media/ambient-egoproactive-synth_2.mp4",
+   "clip_offset_s": 0.0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": null,
+     "lane": "user",
+     "text": "HomeDIY"
+    },
+    {
+     "t": 1.5,
+     "te": null,
+     "lane": "assistant",
+     "text": "Lay the yellow paper flat and square with one corner pointing at you."
+    },
+    {
+     "t": 16.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Fold the bottom corner up to meet the top corner, making a triangle."
+    },
+    {
+     "t": 30.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Crease that diagonal fold firmly with your thumb."
+    },
+    {
+     "t": 45.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Fold the bottom-left corner up toward the top point."
+    },
+    {
+     "t": 59.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Now fold the bottom-right corner up to match the left."
+    },
+    {
+     "t": 60.0,
+     "te": 72.0,
+     "lane": "silence",
+     "text": "The user is smoothly creasing the matched side folds without needing guidance."
+    },
+    {
+     "t": 73.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Press both side creases flat so they stay in place."
+    },
+    {
+     "t": 87.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Turn the paper over so the folds face the table."
+    },
+    {
+     "t": 101.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Fold the top points down toward the center line."
+    },
+    {
+     "t": 115.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Fold in the two side corners to taper the bottom of the heart."
+    },
+    {
+     "t": 116.0,
+     "te": 128.0,
+     "lane": "silence",
+     "text": "The user is executing the symmetric taper folds correctly and steadily."
+    },
+    {
+     "t": 129.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Fold the whole shape in half along the middle."
+    },
+    {
+     "t": 143.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Pinch the center crease to make it sharp."
+    },
+    {
+     "t": 157.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Gently open the top to separate the heart's two peaks."
+    },
+    {
+     "t": 171.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Shape the two top points so they're even."
+    },
+    {
+     "t": 185.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Press the whole heart flat to lock in the folds."
+    },
+    {
+     "t": 186.0,
+     "te": 198.0,
+     "lane": "silence",
+     "text": "The user is carefully pressing the heart flat, a self-correcting action."
+    },
+    {
+     "t": 199.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Narrow the bottom tip just a little for a cleaner point."
+    },
+    {
+     "t": 213.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "[confirm] That's it — that's your heart."
+    },
+    {
+     "t": 227.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Pick up the black marker to write your message."
+    },
+    {
+     "t": 241.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Write your message in the center of the heart."
+    },
+    {
+     "t": 255.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Hold the heart flat with your other hand while you write."
+    },
+    {
+     "t": 269.0,
+     "te": null,
+     "lane": "silence",
+     "text": "[observe] Take your time — there's no rush finishing the last word."
+    },
+    {
+     "t": 283.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Let the ink dry for a second before you fold it away."
+    },
+    {
+     "t": 284.0,
+     "te": 299.0,
+     "lane": "silence",
+     "text": "The user finishes the message and sets the marker down without further help needed."
+    },
+    {
+     "t": 300.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "[complete] All done — your heart and message are ready."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "agent_annotations/<stem>.json (dense agent annotation)": {
+     "stem": "36916ea54b5c1134",
+     "query": "HomeDIY",
+     "dur": 306.333333,
+     "model_used": "deepseek/deepseek-v4-flash-0731",
+     "annotation": {
+      "task_name": "Origami heart & message (HomeDIY gift)",
+      "goal": "Fold a yellow square sheet into an origami heart, then write a short message on it with a black marker.",
+      "walkthrough": [
+       {
+        "timestamp": 1.5,
+        "decision": "intervene",
+        "interaction_type": "pre_action_guidance",
+        "visible_context": "A yellow square sheet of paper lies flat on the wooden table in front of the user.",
+        "utterance": "Lay the yellow paper flat and square with one corner pointing at you.",
+        "timing_rationale": "Setup begins now; orienting the paper correctly makes the diagonal folds clean.",
+        "confidence": 0.9
+       },
+       {
+        "timestamp": 16.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "The user's hands have entered the frame and are about to pick up the paper.",
+        "utterance": "Fold the bottom corner up to meet the top corner, making a triangle.",
+        "timing_rationale": "The first fold is about to begin; the user is on the corner of the sheet.",
+        "confidence": 0.88
+       },
+       {
+        "timestamp": 30.0,
+        "decision": "intervene",
+        "interaction_type": "technique_guidance",
+        "visible_context": "The paper has been folded into a triangle and the user is pressing along the fold.",
+        "utterance": "Crease that diagonal fold firmly with your thumb.",
+        "timing_rationale": "A sharp crease is needed before the next folds; the user is mid-crease.",
+        "confidence": 0.85
+       },
+       {
+        "timestamp": 45.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "The triangle is flat and the user is shifting to work on the lower corners.",
+        "utterance": "Fold the bottom-left corner up toward the top point.",
+        "timing_rationale": "The user is beginning the corner folds that build the heart's upper lobes.",
+        "confidence": 0.86
+       },
+       {
+        "timestamp": 59.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "The left corner fold is pressed in place; the right corner remains loose.",
+        "utterance": "Now fold the bottom-right corner up to match the left.",
+        "timing_rationale": "Symmetry matters for the heart; the left side is done, the right is next.",
+        "confidence": 0.87
+       },
+       {
+        "timestamp": 73.0,
+        "decision": "intervene",
+        "interaction_type": "technique_guidance",
+        "visible_context": "Both corners are folded; the user is creasing the new edges.",
+        "utterance": "Press both side creases flat so they stay in place.",
+        "timing_rationale": "Clean side creases keep the heart symmetrical before the paper is turned over.",
+        "confidence": 0.8
+       },
+       {
+        "timestamp": 87.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "The piece resembles a diamond; the user is about to rotate it.",
+        "utterance": "Turn the paper over so the folds face the table.",
+        "timing_rationale": "The paper must be flipped before the top corners are tucked down.",
+        "confidence": 0.84
+       },
+       {
+        "timestamp": 101.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "The flipped paper sits with the open edges toward the user.",
+        "utterance": "Fold the top points down toward the center line.",
+        "timing_rationale": "This starts forming the heart's rounded top; the user is at the top of the paper.",
+        "confidence": 0.86
+       },
+       {
+        "timestamp": 115.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "The top points are folded down; the paper is roughly a smaller square.",
+        "utterance": "Fold in the two side corners to taper the bottom of the heart.",
+        "timing_rationale": "Tapering the side corners gives the heart its pointed bottom.",
+        "confidence": 0.83
+       },
+       {
+        "timestamp": 129.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "The piece is now compact; the user is about to fold it along the vertical center.",
+        "utterance": "Fold the whole shape in half along the middle.",
+        "timing_rationale": "The vertical center fold is needed to form the heart's two lobes.",
+        "confidence": 0.85
+       },
+       {
+        "timestamp": 143.0,
+        "decision": "intervene",
+        "interaction_type": "technique_guidance",
+        "visible_context": "The paper is folded in half; the user is pressing down the center spine.",
+        "utterance": "Pinch the center crease to make it sharp.",
+        "timing_rationale": "A defined spine helps the heart hold its shape when opened.",
+        "confidence": 0.82
+       },
+       {
+        "timestamp": 157.0,
+        "decision": "intervene",
+        "interaction_type": "pre_action_guidance",
+        "visible_context": "The folded packet is in hand; the user hesitates before opening it.",
+        "utterance": "Gently open the top to separate the heart's two peaks.",
+        "timing_rationale": "The user pauses here; opening correctly sets the final shape.",
+        "confidence": 0.8
+       },
+       {
+        "timestamp": 171.0,
+        "decision": "intervene",
+        "interaction_type": "technique_guidance",
+        "visible_context": "The paper is opening into a heart silhouette with two lobes at the top.",
+        "utterance": "Shape the two top points so they're even.",
+        "timing_rationale": "The top lobes are now visible; evening them defines the heart outline.",
+        "confidence": 0.86
+       },
+       {
+        "timestamp": 185.0,
+        "decision": "intervene",
+        "interaction_type": "technique_guidance",
+        "visible_context": "The heart silhouette is formed but the folds are loose.",
+        "utterance": "Press the whole heart flat to lock in the folds.",
+        "timing_rationale": "Flattening solidifies the heart shape before any further adjustment.",
+        "confidence": 0.84
+       },
+       {
+        "timestamp": 199.0,
+        "decision": "intervene",
+        "interaction_type": "technique_guidance",
+        "visible_context": "The heart is flat; the bottom point looks a little wide.",
+        "utterance": "Narrow the bottom tip just a little for a cleaner point.",
+        "timing_rationale": "Refining the bottom tip improves the heart's look before it's finished.",
+        "confidence": 0.78
+       },
+       {
+        "timestamp": 213.0,
+        "decision": "confirm",
+        "interaction_type": "progress_confirmation",
+        "visible_context": "The heart is complete and evenly shaped on the table.",
+        "utterance": "That's it — that's your heart.",
+        "timing_rationale": "The fold is finished and clearly recognizable; a brief confirmation closes the folding phase.",
+        "confidence": 0.93
+       },
+       {
+        "timestamp": 227.0,
+        "decision": "intervene",
+        "interaction_type": "task_orientation",
+        "visible_context": "The heart rests on the table; a black marker is beside it and the user reaches for it.",
+        "utterance": "Pick up the black marker to write your message.",
+        "timing_rationale": "The folding is done and writing is the next phase; the user is reaching for the marker.",
+        "confidence": 0.88
+       },
+       {
+        "timestamp": 241.0,
+        "decision": "intervene",
+        "interaction_type": "pre_action_guidance",
+        "visible_context": "The user holds the marker over the heart and looks for a spot to write.",
+        "utterance": "Write your message in the center of the heart.",
+        "timing_rationale": "Centering the message keeps it readable; the user hasn't started writing yet.",
+        "confidence": 0.85
+       },
+       {
+        "timestamp": 255.0,
+        "decision": "intervene",
+        "interaction_type": "technique_guidance",
+        "visible_context": "The user begins writing on the heart with the marker.",
+        "utterance": "Hold the heart flat with your other hand while you write.",
+        "timing_rationale": "Stabilizing the paper mid-write prevents the marker from smudging.",
+        "confidence": 0.82
+       },
+       {
+        "timestamp": 269.0,
+        "decision": "observe",
+        "interaction_type": "technique_guidance",
+        "visible_context": "The user is writing, keeping the marker on the paper.",
+        "utterance": "Take your time — there's no rush finishing the last word.",
+        "timing_rationale": "The writing is going well; a light reassurance keeps it neat without interrupting.",
+        "confidence": 0.7
+       },
+       {
+        "timestamp": 283.0,
+        "decision": "intervene",
+        "interaction_type": "just_in_time_instruction",
+        "visible_context": "The user is finishing the final letter and the message is nearly done.",
+        "utterance": "Let the ink dry for a second before you fold it away.",
+        "timing_rationale": "Preventing a smudge on the finished message as the user prepares to set the marker down.",
+        "confidence": 0.86
+       },
+       {
+        "timestamp": 300.0,
+        "decision": "complete",
+        "interaction_type": "completion",
+        "visible_context": "The marker is set down and the finished heart with the message is resting on the table.",
+        "utterance": "All done — your heart and message are ready.",
+        "timing_rationale": "The task is visibly complete; a short closing message is appropriate.",
+        "confidence": 0.95
+       }
+      ],
+      "silent_intervals": [
+       {
+        "start_time": 60.0,
+        "end_time": 72.0,
+        "reason": "The user is smoothly creasing the matched side folds without needing guidance."
+       },
+       {
+        "start_time": 116.0,
+        "end_time": 128.0,
+        "reason": "The user is executing the symmetric taper folds correctly and steadily."
+       },
+       {
+        "start_time": 186.0,
+        "end_time": 198.0,
+        "reason": "The user is carefully pressing the heart flat, a self-correcting action."
+       },
+       {
+        "start_time": 284.0,
+        "end_time": 299.0,
+        "reason": "The user finishes the message and sets the marker down without further help needed."
+       }
+      ]
+     }
+    },
+    "egoconv_dense_rows.jsonl (binned 8 s row for the same video)": {
+     "video_path": "36916ea54b5c1134.mp4",
+     "duration_in_sec": 306.333333,
+     "video_intervals": [
+      [
+       0.0,
+       8.0
+      ],
+      [
+       8.0,
+       16.0
+      ],
+      [
+       16.0,
+       24.0
+      ],
+      [
+       24.0,
+       32.0
+      ],
+      [
+       32.0,
+       40.0
+      ],
+      [
+       40.0,
+       48.0
+      ],
+      [
+       48.0,
+       56.0
+      ],
+      [
+       56.0,
+       64.0
+      ],
+      [
+       64.0,
+       72.0
+      ],
+      [
+       72.0,
+       80.0
+      ],
+      [
+       80.0,
+       88.0
+      ],
+      [
+       88.0,
+       96.0
+      ],
+      "…[truncated 27 more items]"
+     ],
+     "query": "HomeDIY",
+     "domain": "egoconv_synth",
+     "task": "HomeDIY",
+     "answers": [
+      "$interrupt$Lay the yellow paper flat and square with one corner pointing at you.",
+      "$interrupt$Fold the bottom corner up to meet the top corner, making a triangle.",
+      "$silent$",
+      "$interrupt$Crease that diagonal fold firmly with your thumb.",
+      "$silent$",
+      "$interrupt$Fold the bottom-left corner up toward the top point.",
+      "$silent$",
+      "$interrupt$Now fold the bottom-right corner up to match the left.",
+      "$silent$",
+      "$interrupt$Press both side creases flat so they stay in place.",
+      "$interrupt$Turn the paper over so the folds face the table.",
+      "$silent$",
+      "…[truncated 27 more items]"
+     ],
+     "dialog": [
+      [
+       {
+        "role": "user",
+        "text": "HomeDIY"
+       }
+      ],
+      [
+       {
+        "role": "user",
+        "text": "HomeDIY"
+       },
+       {
+        "role": "assistant",
+        "text": "$interrupt$Lay the yellow paper flat and square with one corner pointing at you."
+       }
+      ],
+      "…[truncated 37 more items]"
+     ],
+     "task_name": "Origami heart & message (HomeDIY gift)"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,992 @@
+{
+ "slug": "mmduet2-data",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/wangyueqian/MMDuet2-data/resolve/main/sft/live_whisperx-half_multi_half_single_question-2_sec_per_frame-max_180s-sft-h5_images.jsonl",
+  "https://huggingface.co/datasets/wangyueqian/MMDuet2-data/resolve/main/rl/live_whisperx-egoexo4d-egoexolearn0913-half_multi_half_single_question-2_sec_per_frame-20s_seg_as_example-0714-max_90_frames-train.parquet"
+ ],
+ "access_used": "open download",
+ "note": "Examples show the web (Live-WhisperX-526K YouTube) part of the full mix; the ego part is shown under mmduet2-data-ego. Example 1 is an SFT dialogue. SFT records carry no timestamps; each user turn '<image><image>' adds two frames sampled every 2 s, so a turn's time is the second of its last frame, plus the segment start read from the frame path (seconds of the original video). Example 2 is an RL row whose reward_model.ground_truth gives reply_timespan windows [start, end] in seconds; its timeline shows the NO REPLY context turns given before the rollout window and the target spans (the questions are in the ground_truth records). Videos are YouTube (not in the repo), so no clips.",
+ "examples": [
+  {
+   "title": "YouTube poJkhlxBViE (0.58–124.20 s): unboxing a Canon speed light — 3 questions, 12 answers",
+   "video_ref": "YouTube poJkhlxBViE, clip 0.58–124.20 s of the source video (Live-WhisperX-526K, 2.0 fps hdf5)",
+   "duration_s": 123,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 2.58,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 6.58,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 10.58,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 14.58,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 18.58,
+     "te": null,
+     "lane": "question",
+     "text": "What steps are involved in unpacking the Canon 320EX speed light packaging?"
+    },
+    {
+     "t": 18.58,
+     "te": null,
+     "lane": "answer",
+     "text": "First, hold the white box with red and black accents to start the unboxing process, then pull open a flap on the box to reveal the inner cardboard structure."
+    },
+    {
+     "t": 22.58,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 26.58,
+     "te": null,
+     "lane": "answer",
+     "text": "One hand removes a piece of cardboard from the box, partially exposing the speed light wrapped in bubble-wrap inside."
+    },
+    {
+     "t": 30.58,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 34.58,
+     "te": null,
+     "lane": "answer",
+     "text": "Hands examine the instruction manual, which has an image of the speed light on its cover and contains text and diagrams inside, while the bubble-wrapped speed light and box remain nearby."
+    },
+    {
+     "t": 38.58,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 42.58,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 46.58,
+     "te": null,
+     "lane": "answer",
+     "text": "Hands handle a small piece of paper, with the instruction manual and bubble-wrapped speed light remaining on the table."
+    },
+    {
+     "t": 50.58,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 54.58,
+     "te": null,
+     "lane": "answer",
+     "text": "Hands peel back the bubble-wrap layer by layer from the item."
+    },
+    {
+     "t": 58.58,
+     "te": null,
+     "lane": "answer",
+     "text": "After removing the bubble-wrap, hands pick up and examine a black Canon-branded case."
+    },
+    {
+     "t": 62.58,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 66.58,
+     "te": null,
+     "lane": "answer",
+     "text": "Hands reach inside the black Canon-branded case, pull out a white tissue-like material, and closely examine the nylon-made case."
+    },
+    {
+     "t": 68.58,
+     "te": null,
+     "lane": "question",
+     "text": "What features of the Godox device are examined?"
+    },
+    {
+     "t": 68.58,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 72.58,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 76.58,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 80.58,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 84.58,
+     "te": null,
+     "lane": "answer",
+     "text": "Hands examine the controls on the back side of the black Godox device."
+    },
+    {
+     "t": 88.58,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 92.58,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 96.58,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 100.58,
+     "te": null,
+     "lane": "answer",
+     "text": "They point out the traditional flash on and off switch at the bottom and demonstrate the adjustable angle-setting mechanism of the traditional flash portion."
+    },
+    {
+     "t": 100.58,
+     "te": null,
+     "lane": "question",
+     "text": "What aspects of the Canon flash device's controls and setup are demonstrated?"
+    },
+    {
+     "t": 100.58,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 104.58,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 108.58,
+     "te": null,
+     "lane": "answer",
+     "text": "Hands showcase the front with the flash head and the back side with a control panel."
+    },
+    {
+     "t": 112.58,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 116.58,
+     "te": null,
+     "lane": "answer",
+     "text": "They point out the mount on the bottom for the camera's hot shoe, open the battery compartment, and insert rechargeable batteries."
+    },
+    {
+     "t": 120.58,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 122.58,
+     "te": null,
+     "lane": "answer",
+     "text": "They point to and manipulate various buttons and switches, including the group (Gr.) selector, channel (CH.) options, and settings for the tele-function, slave mode, and LED light."
+    }
+   ],
+   "raw_format": "jsonl line",
+   "raw": {
+    "messages": [
+     {
+      "role": "system",
+      "content": "You are a helpful assistant. Your task is to answer questions based on continuously incoming video frames. Your responses should include information from the video since your last reply (if any). If the information in this segment of the video cannot answer the question, output \"NO REPLY\"."
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>What steps are involved in unpacking the Canon 320EX speed light packaging?"
+     },
+     {
+      "role": "assistant",
+      "content": "First, hold the white box with red and black accents to start the unboxing process, then pull open a flap on the box to reveal the inner cardboard structure."
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "One hand removes a piece of cardboard from the box, partially exposing the speed light wrapped in bubble-wrap inside."
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "Hands examine the instruction manual, which has an image of the speed light on its cover and contains text and diagrams inside, while the bubble-wrapped speed light and box remain nearby."
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "Hands handle a small piece of paper, with the instruction manual and bubble-wrapped speed light remaining on the table."
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "Hands peel back the bubble-wrap layer by layer from the item."
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "After removing the bubble-wrap, hands pick up and examine a black Canon-branded case."
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "Hands reach inside the black Canon-branded case, pull out a white tissue-like material, and closely examine the nylon-made case."
+     },
+     {
+      "role": "user",
+      "content": "<image>What features of the Godox device are examined?"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "Hands examine the controls on the back side of the black Godox device."
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "They point out the traditional flash on and off switch at the bottom and demonstrate the adjustable angle-setting mechanism of the traditional flash portion."
+     },
+     {
+      "role": "user",
+      "content": "What aspects of the Canon flash device's controls and setup are demonstrated?"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "Hands showcase the front with the flash head and the back side with a control panel."
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "They point out the mount on the bottom for the camera's hot shoe, open the battery compartment, and insert rechargeable batteries."
+     },
+     {
+      "role": "user",
+      "content": "<image><image>"
+     },
+     {
+      "role": "assistant",
+      "content": "NO REPLY"
+     },
+     {
+      "role": "user",
+      "content": "<image>"
+     },
+     {
+      "role": "assistant",
+      "content": "They point to and manipulate various buttons and switches, including the group (Gr.) selector, channel (CH.) options, and settings for the tele-function, slave mode, and LED light."
+     }
+    ],
+    "images": [
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::0"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::2"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::4"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::6"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::8"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::10"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::12"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::14"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::16"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::18"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::20"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::22"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::24"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::26"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::28"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::30"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::32"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::34"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::36"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::38"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::40"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::42"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::44"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::46"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::48"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::50"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::52"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::54"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::56"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::58"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::60"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::62"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::64"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::66"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::68"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::70"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::72"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::74"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::76"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::78"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::80"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::82"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::84"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::86"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::88"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::90"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::92"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::94"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::96"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::98"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::100"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::102"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::104"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::106"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::108"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::110"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::112"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::114"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::116"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::118"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::120"
+     },
+     {
+      "path": "./data/datasets/Live-WhisperX-526K/hdf5_files/videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps.hdf5:::122"
+     }
+    ],
+    "metadata": {
+     "video_id": "videos_range2-3_chunk2000-4000/poJkhlxBViE_0.58-124.20_2.0fps",
+     "question_id": "live_whisperx-45871"
+    }
+   }
+  },
+  {
+   "title": "RL row, YouTube YEc88uyXru4 (8.02–129.38 s): Shearwater Perdix dive computer — 2 target reply spans after 8 NO REPLY context turns",
+   "video_ref": "YouTube YEc88uyXru4, clip 8.02–129.38 s of the source video (Live-WhisperX-526K frames at 2.0 fps)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 12.02,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 16.02,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 20.02,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 24.02,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 28.02,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 32.02,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 36.02,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 40.02,
+     "te": null,
+     "lane": "silence",
+     "text": "NO REPLY"
+    },
+    {
+     "t": 47.92,
+     "te": 48.12,
+     "lane": "answer",
+     "text": "It is accompanied by a long coiled black strap, a ruler parallel to the strap on the left, a small card-like item in a transparent cover below it, and a black, multi-strapped object (possibly a watch or dive-related accessory) on the right side."
+    },
+    {
+     "t": 73.92,
+     "te": 74.12,
+     "lane": "answer",
+     "text": "Hands hold a black, two-clasped device in an inset image, reach towards a card-like item, pick up the Shearwater Perdix device to show its underside with features and holes, and continue turning it to display different angles of the underside with holes and textured surfaces."
+    }
+   ],
+   "raw_format": "parquet row",
+   "raw": {
+    "data_source": "live_whisperx-half_multi_half_single_question-rl2",
+    "prompt": [
+     {
+      "content": "You are a helpful assistant. Your task is to answer questions based on continuously incoming video frames. Your responses should include information from the video since your last reply (if any). If the information in this segment of the video cannot answer the question, output \"NO REPLY\".",
+      "last_image_time": 0,
+      "role": "system"
+     },
+     {
+      "content": "<image><image>",
+      "last_image_time": 4,
+      "role": "user"
+     },
+     {
+      "content": "NO REPLY",
+      "last_image_time": 4,
+      "role": "assistant"
+     },
+     {
+      "content": "<image><image>",
+      "last_image_time": 8,
+      "role": "user"
+     },
+     {
+      "content": "NO REPLY",
+      "last_image_time": 8,
+      "role": "assistant"
+     },
+     {
+      "content": "<image><image>",
+      "last_image_time": 12,
+      "role": "user"
+     },
+     {
+      "content": "NO REPLY",
+      "last_image_time": 12,
+      "role": "assistant"
+     },
+     {
+      "content": "<image><image>",
+      "last_image_time": 16,
+      "role": "user"
+     },
+     {
+      "content": "NO REPLY",
+      "last_image_time": 16,
+      "role": "assistant"
+     },
+     {
+      "content": "<image><image>",
+      "last_image_time": 20,
+      "role": "user"
+     },
+     {
+      "content": "NO REPLY",
+      "last_image_time": 20,
+      "role": "assistant"
+     },
+     {
+      "content": "<image><image>",
+      "last_image_time": 24,
+      "role": "user"
+     },
+     {
+      "content": "NO REPLY",
+      "last_image_time": 24,
+      "role": "assistant"
+     },
+     {
+      "content": "<image><image>",
+      "last_image_time": 28,
+      "role": "user"
+     },
+     {
+      "content": "NO REPLY",
+      "last_image_time": 28,
+      "role": "assistant"
+     },
+     {
+      "content": "<image><image>",
+      "last_image_time": 32,
+      "role": "user"
+     },
+     {
+      "content": "NO REPLY",
+      "last_image_time": 32,
+      "role": "assistant"
+     },
+     {
+      "content": "<image><image>",
+      "last_image_time": 36,
+      "role": "user"
+     }
+    ],
+    "images": [
+     {
+      "image": "./data/datasets/Live-WhisperX-526K/frames/videos_range1-3_chunk98000-100000/YEc88uyXru4_8.02-129.38_2.0fps/000001.jpg",
+      "type": "image"
+     },
+     {
+      "image": "./data/datasets/Live-WhisperX-526K/frames/videos_range1-3_chunk98000-100000/YEc88uyXru4_8.02-129.38_2.0fps/000003.jpg",
+      "type": "image"
+     },
+     {
+      "image": "./data/datasets/Live-WhisperX-526K/frames/videos_range1-3_chunk98000-100000/YEc88uyXru4_8.02-129.38_2.0fps/000005.jpg",
+      "type": "image"
+     },
+     {
+      "image": "./data/datasets/Live-WhisperX-526K/frames/videos_range1-3_chunk98000-100000/YEc88uyXru4_8.02-129.38_2.0fps/000007.jpg",
+      "type": "image"
+     },
+     {
+      "image": "./data/datasets/Live-WhisperX-526K/frames/videos_range1-3_chunk98000-100000/YEc88uyXru4_8.02-129.38_2.0fps/000009.jpg",
+      "type": "image"
+     },
+     {
+      "image": "./data/datasets/Live-WhisperX-526K/frames/videos_range1-3_chunk98000-100000/YEc88uyXru4_8.02-129.38_2.0fps/000011.jpg",
+      "type": "image"
+     },
+     {
+      "image": "./data/datasets/Live-WhisperX-526K/frames/videos_range1-3_chunk98000-100000/YEc88uyXru4_8.02-129.38_2.0fps/000013.jpg",
+      "type": "image"
+     },
+     {
+      "image": "./data/datasets/Live-WhisperX-526K/frames/videos_range1-3_chunk98000-100000/YEc88uyXru4_8.02-129.38_2.0fps/000015.jpg",
+      "type": "image"
+     },
+     {
+      "image": "./data/datasets/Live-WhisperX-526K/frames/videos_range1-3_chunk98000-100000/YEc88uyXru4_8.02-129.38_2.0fps/000017.jpg",
+      "type": "image"
+     },
+     {
+      "image": "./data/datasets/Live-WhisperX-526K/frames/videos_range1-3_chunk98000-100000/YEc88uyXru4_8.02-129.38_2.0fps/000019.jpg",
+      "type": "image"
+     },
+     {
+      "image": "./data/datasets/Live-WhisperX-526K/frames/videos_range1-3_chunk98000-100000/YEc88uyXru4_8.02-129.38_2.0fps/000021.jpg",
+      "type": "image"
+     },
+     {
+      "image": "./data/datasets/Live-WhisperX-526K/frames/videos_range1-3_chunk98000-100000/YEc88uyXru4_8.02-129.38_2.0fps/000023.jpg",
+      "type": "image"
+     },
+     {
+      "image": "./data/datasets/Live-WhisperX-526K/frames/videos_range1-3_chunk98000-100000/YEc88uyXru4_8.02-129.38_2.0fps/000025.jpg",
+      "type": "image"
+     },
+     {
+      "image": "./data/datasets/Live-WhisperX-526K/frames/videos_range1-3_chunk98000-100000/YEc88uyXru4_8.02-129.38_2.0fps/000027.jpg",
+      "type": "image"
+     },
+     {
+      "image": "./data/datasets/Live-WhisperX-526K/frames/videos_range1-3_chunk98000-100000/YEc88uyXru4_8.02-129.38_2.0fps/000029.jpg",
+      "type": "image"
+     },
+     {
+      "image": "./data/datasets/Live-WhisperX-526K/frames/videos_range1-3_chunk98000-100000/YEc88uyXru4_8.02-129.38_2.0fps/000031.jpg",
+      "type": "image"
+     },
+     {
+      "image": "./data/datasets/Live-WhisperX-526K/frames/videos_range1-3_chunk98000-100000/YEc88uyXru4_8.02-129.38_2.0fps/000033.jpg",
+      "type": "image"
+     },
+     {
+      "image": "./data/datasets/Live-WhisperX-526K/frames/videos_range1-3_chunk98000-100000/YEc88uyXru4_8.02-129.38_2.0fps/000035.jpg",
+      "type": "image"
+     }
+    ],
+    "ability": "proactive",
+    "reward_model": {
+     "ground_truth": {
+      "answer": [
+       {
+        "content": "It is accompanied by a long coiled black strap, a ruler parallel to the strap on the left, a small card-like item in a transparent cover below it, and a black, multi-strapped object (possibly a watch or dive-related accessory) on the right side.",
+        "question": "What items are accompanying the Shearwater Perdix computer?",
+        "reply_timespan": [
+         39.9,
+         40.1
+        ],
+        "role": "assistant"
+       },
+       {
+        "content": "Hands hold a black, two-clasped device in an inset image, reach towards a card-like item, pick up the Shearwater Perdix device to show its underside with features and holes, and continue turning it to display different angles of the underside with holes and textured surfaces.",
+        "question": "What do the hands do when interacting with the Shearwater Perdix computer and related items?",
+        "reply_timespan": [
+         65.9,
+         66.1
+        ],
+        "role": "assistant"
+       }
+      ],
+      "model_pred_timestamps": [
+       36,
+       40,
+       44,
+       48,
+       52,
+       56,
+       60,
+       64,
+       66
+      ],
+      "question_id": "videos_range1-3_chunk98000-100000/YEc88uyXru4_8.02-129.38_2.0fps.mp4-gtspans_0_1"
+     },
+     "prev_assistant_replies": [],
+     "style": "rule"
+    },
+    "extra_info": {
+     "num_images": 30.066,
+     "tools_kwargs": {
+      "online_video_provider": {
+       "execute_kwargs": {
+        "question_id": "videos_range1-3_chunk98000-100000/YEc88uyXru4_8.02-129.38_2.0fps.mp4-gtspans_0_1"
+       }
+      }
+     }
+    }
+   }
+  }
+ ]
+}

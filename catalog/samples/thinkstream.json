@@ -1,0 +1,493 @@
+{
+ "slug": "thinkstream",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/CASIA-IVA-Lab/ThinkStream/resolve/main/streaming_cot_cold_processed_5_20.jsonl (lines 302 and 1554)",
+  "https://huggingface.co/datasets/lmms-lab/LLaVA-Video-178K/resolve/main/0_30_s_youtube_v0_1/0_30_s_youtube_v0_1_videos_1.tar.gz (first 400 MB, members ytb_PecHShfxR88.mp4 and ytb_0skTdOWLcnI.mp4)"
+ ],
+ "access_used": "open download",
+ "note": "One example is one cold-start record: a user request, timestamped assistant replies (often split into short fragments at 1 s steps), and a separate stream of timestamped internal 'thoughts' (lane 'other' in the timeline). The videos are not in the ThinkStream repo; the clips were cut from the LLaVA-Video-178K copies the records point to.",
+ "examples": [
+  {
+   "title": "ytb_PecHShfxR88: Event Trigger — alert when the man in black fakes surrender (2 replies, 12 thoughts)",
+   "video_ref": "./datasets/LLaVA-Video-178K/0_30_s_youtube_v0_1/data/liwei_youtube_videos/videos/youtube_video_2024/ytb_PecHShfxR88.mp4",
+   "duration_s": 18.67,
+   "clip": "samples/media/thinkstream_1.mp4",
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 1.5,
+     "te": null,
+     "lane": "user",
+     "text": "Alert me when the man in black starts pretending to surrender after the fight."
+    },
+    {
+     "t": 1.5,
+     "te": null,
+     "lane": "other",
+     "text": "Alert received: user wants to know when the man in black pretends to surrender. Monitoring current actions for signs of feigned defeat or dramatic collapse."
+    },
+    {
+     "t": 2.0,
+     "te": null,
+     "lane": "other",
+     "text": "The man in black starts with exaggerated movements, approaching theatrically. The man in yellow watches"
+    },
+    {
+     "t": 3.0,
+     "te": null,
+     "lane": "other",
+     "text": "calmly, ready to respond. Their playful dynamic suggests a choreographed skit rather than real conflict."
+    },
+    {
+     "t": 6.0,
+     "te": null,
+     "lane": "other",
+     "text": "The mock fight escalates as they lock hands, exchanging dramatic expressions. The man in black"
+    },
+    {
+     "t": 7.0,
+     "te": null,
+     "lane": "other",
+     "text": "feigns distress while the other maintains composure. This is clearly a performance with comedic intent."
+    },
+    {
+     "t": 10.0,
+     "te": null,
+     "lane": "other",
+     "text": "The man in black ducks under the arm and crouches low, taunting playfully. The man"
+    },
+    {
+     "t": 11.0,
+     "te": null,
+     "lane": "other",
+     "text": "in yellow stays upright, arm raised. Their movements are synchronized, enhancing the humorous tension."
+    },
+    {
+     "t": 14.0,
+     "te": null,
+     "lane": "other",
+     "text": "They tumble to the floor, rolling and laughing. The playful wrestling confirms the lighthearted nature"
+    },
+    {
+     "t": 15.0,
+     "te": null,
+     "lane": "other",
+     "text": "of their interaction. Background elements like the ping pong table reinforce the casual home setting."
+    },
+    {
+     "t": 16.0,
+     "te": null,
+     "lane": "other",
+     "text": "The man in black springs up dramatically, posing toward the camera. His expressive gesture suggests a performative climax. The man in yellow remains offscreen, likely still on the floor."
+    },
+    {
+     "t": 17.8,
+     "te": null,
+     "lane": "assistant",
+     "text": "He's feigning exhaustion now, arms"
+    },
+    {
+     "t": 17.8,
+     "te": null,
+     "lane": "other",
+     "text": "The man in black collapses onto the carpet, arms out, eyes closed—clearly feigning"
+    },
+    {
+     "t": 18.8,
+     "te": null,
+     "lane": "assistant",
+     "text": "outstretched on the carpet."
+    },
+    {
+     "t": 18.8,
+     "te": null,
+     "lane": "other",
+     "text": "defeat. This matches the user’s request. The theatrical surrender concludes the skit."
+    }
+   ],
+   "raw_format": "jsonl line",
+   "raw": {
+    "video_path": "./datasets/LLaVA-Video-178K/0_30_s_youtube_v0_1/data/liwei_youtube_videos/videos/youtube_video_2024/ytb_PecHShfxR88.mp4",
+    "interaction_mode": "Event Trigger",
+    "content_dimension": "Action & Activity Semantics",
+    "temporal_scope": "Current",
+    "response_format": "Open-ended",
+    "conversations": [
+     {
+      "role": "user",
+      "content": "Alert me when the man in black starts pretending to surrender after the fight.",
+      "timestamp": 1.5
+     },
+     {
+      "role": "assistant",
+      "content": "He's feigning exhaustion now, arms",
+      "timestamp": 17.8
+     },
+     {
+      "role": "assistant",
+      "content": "outstretched on the carpet.",
+      "timestamp": 18.8
+     }
+    ],
+    "thoughts": [
+     {
+      "think": "Alert received: user wants to know when the man in black pretends to surrender. Monitoring current actions for signs of feigned defeat or dramatic collapse.",
+      "timestamp": 1.5
+     },
+     {
+      "think": "The man in black starts with exaggerated movements, approaching theatrically. The man in yellow watches",
+      "timestamp": 2.0
+     },
+     {
+      "think": "calmly, ready to respond. Their playful dynamic suggests a choreographed skit rather than real conflict.",
+      "timestamp": 3.0
+     },
+     {
+      "think": "The mock fight escalates as they lock hands, exchanging dramatic expressions. The man in black",
+      "timestamp": 6.0
+     },
+     {
+      "think": "feigns distress while the other maintains composure. This is clearly a performance with comedic intent.",
+      "timestamp": 7.0
+     },
+     {
+      "think": "The man in black ducks under the arm and crouches low, taunting playfully. The man",
+      "timestamp": 10.0
+     },
+     {
+      "think": "in yellow stays upright, arm raised. Their movements are synchronized, enhancing the humorous tension.",
+      "timestamp": 11.0
+     },
+     {
+      "think": "They tumble to the floor, rolling and laughing. The playful wrestling confirms the lighthearted nature",
+      "timestamp": 14.0
+     },
+     {
+      "think": "of their interaction. Background elements like the ping pong table reinforce the casual home setting.",
+      "timestamp": 15.0
+     },
+     {
+      "think": "The man in black springs up dramatically, posing toward the camera. His expressive gesture suggests a performative climax. The man in yellow remains offscreen, likely still on the floor.",
+      "timestamp": 16.0
+     },
+     {
+      "think": "The man in black collapses onto the carpet, arms out, eyes closed—clearly feigning",
+      "timestamp": 17.8
+     },
+     {
+      "think": "defeat. This matches the user’s request. The theatrical surrender concludes the skit.",
+      "timestamp": 18.8
+     }
+    ]
+   }
+  },
+  {
+   "title": "ytb_0skTdOWLcnI: Continuous Output — narrate the mosquito-release video (13 reply fragments, 13 thoughts)",
+   "video_ref": "./datasets/LLaVA-Video-178K/0_30_s_youtube_v0_1/data/liwei_youtube_videos/videos/youtube_video_2024/ytb_0skTdOWLcnI.mp4",
+   "duration_s": 28.44,
+   "clip": "samples/media/thinkstream_2.mp4",
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.5,
+     "te": null,
+     "lane": "user",
+     "text": "Describe what happens when the title card appears and the person releases the mosquitoes."
+    },
+    {
+     "t": 0.5,
+     "te": null,
+     "lane": "other",
+     "text": "Title card sets a vintage tone with '世界之最' and red text emphasizing an extreme mosquito-killing method."
+    },
+    {
+     "t": 0.5,
+     "te": null,
+     "lane": "other",
+     "text": "User asks about title card and mosquito release; must describe both elements clearly."
+    },
+    {
+     "t": 1.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "A stylized title card"
+    },
+    {
+     "t": 2.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "appears with '世界之最' on"
+    },
+    {
+     "t": 2.0,
+     "te": null,
+     "lane": "other",
+     "text": "Parchment background and bold Chinese text create a documentary-style anticipation for the content."
+    },
+    {
+     "t": 3.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "a parchment background."
+    },
+    {
+     "t": 4.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "The red text '最霸气的灭蚊方法'"
+    },
+    {
+     "t": 4.0,
+     "te": null,
+     "lane": "other",
+     "text": "Red caption '最霸气的灭蚊方法' suggests hyperbolic, dramatic framing—likely ironic or humorous intent."
+    },
+    {
+     "t": 5.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "highlights the theme of"
+    },
+    {
+     "t": 6.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "an extreme mosquito-killing method."
+    },
+    {
+     "t": 7.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "The Guangzhou skyline appears at"
+    },
+    {
+     "t": 7.0,
+     "te": null,
+     "lane": "other",
+     "text": "Guangzhou skyline at bottom ties the theme to a real location with cultural specificity."
+    },
+    {
+     "t": 8.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "the bottom, anchoring the location."
+    },
+    {
+     "t": 10.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "A person in a"
+    },
+    {
+     "t": 10.0,
+     "te": null,
+     "lane": "other",
+     "text": "Person in teal shirt releases mosquitoes—seemingly counterintuitive but part of a scientific strategy."
+    },
+    {
+     "t": 11.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "teal shirt opens a"
+    },
+    {
+     "t": 12.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "container, releasing lab-bred mosquitoes."
+    },
+    {
+     "t": 13.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "The released mosquitoes are male"
+    },
+    {
+     "t": 13.0,
+     "te": null,
+     "lane": "other",
+     "text": "Mosquitoes are lab-bred males with Wolbachia, designed to reduce populations through sterile mating."
+    },
+    {
+     "t": 14.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "and infected with Wolbachia bacteria."
+    },
+    {
+     "t": 16.0,
+     "te": null,
+     "lane": "other",
+     "text": "Lab workers in protective gear indicate controlled breeding, reinforcing scientific credibility of the method."
+    },
+    {
+     "t": 18.0,
+     "te": null,
+     "lane": "other",
+     "text": "Close-ups show mosquitoes landing on skin, demonstrating integration into real-world environments."
+    },
+    {
+     "t": 20.0,
+     "te": null,
+     "lane": "other",
+     "text": "Text overlays confirm eggs won't hatch—highlighting biological precision of Wolbachia-based control."
+    },
+    {
+     "t": 22.0,
+     "te": null,
+     "lane": "other",
+     "text": "Method's success in Guangzhou suggests scalability for other urban mosquito-prone regions."
+    },
+    {
+     "t": 26.9,
+     "te": null,
+     "lane": "other",
+     "text": "Fan in lab chamber may test airflow impact on mosquito movement or trapping mechanisms."
+    },
+    {
+     "t": 28.37,
+     "te": null,
+     "lane": "other",
+     "text": "Humorous subtitle implies mosquitoes are nearly eradicated—underscoring program's high efficacy."
+    }
+   ],
+   "raw_format": "jsonl line",
+   "raw": {
+    "video_path": "./datasets/LLaVA-Video-178K/0_30_s_youtube_v0_1/data/liwei_youtube_videos/videos/youtube_video_2024/ytb_0skTdOWLcnI.mp4",
+    "interaction_mode": "Continuous Output",
+    "content_dimension": "Entity & Attribute Perception",
+    "temporal_scope": "Current",
+    "response_format": "Open-ended",
+    "conversations": [
+     {
+      "role": "user",
+      "content": "Describe what happens when the title card appears and the person releases the mosquitoes.",
+      "timestamp": 0.5
+     },
+     {
+      "role": "assistant",
+      "content": "A stylized title card",
+      "timestamp": 1.0
+     },
+     {
+      "role": "assistant",
+      "content": "appears with '世界之最' on",
+      "timestamp": 2.0
+     },
+     {
+      "role": "assistant",
+      "content": "a parchment background.",
+      "timestamp": 3.0
+     },
+     {
+      "role": "assistant",
+      "content": "The red text '最霸气的灭蚊方法'",
+      "timestamp": 4.0
+     },
+     {
+      "role": "assistant",
+      "content": "highlights the theme of",
+      "timestamp": 5.0
+     },
+     {
+      "role": "assistant",
+      "content": "an extreme mosquito-killing method.",
+      "timestamp": 6.0
+     },
+     {
+      "role": "assistant",
+      "content": "The Guangzhou skyline appears at",
+      "timestamp": 7.0
+     },
+     {
+      "role": "assistant",
+      "content": "the bottom, anchoring the location.",
+      "timestamp": 8.0
+     },
+     {
+      "role": "assistant",
+      "content": "A person in a",
+      "timestamp": 10.0
+     },
+     {
+      "role": "assistant",
+      "content": "teal shirt opens a",
+      "timestamp": 11.0
+     },
+     {
+      "role": "assistant",
+      "content": "container, releasing lab-bred mosquitoes.",
+      "timestamp": 12.0
+     },
+     {
+      "role": "assistant",
+      "content": "The released mosquitoes are male",
+      "timestamp": 13.0
+     },
+     {
+      "role": "assistant",
+      "content": "and infected with Wolbachia bacteria.",
+      "timestamp": 14.0
+     }
+    ],
+    "thoughts": [
+     {
+      "think": "Title card sets a vintage tone with '世界之最' and red text emphasizing an extreme mosquito-killing method.",
+      "timestamp": 0.5
+     },
+     {
+      "think": "User asks about title card and mosquito release; must describe both elements clearly.",
+      "timestamp": 0.5
+     },
+     {
+      "think": "Parchment background and bold Chinese text create a documentary-style anticipation for the content.",
+      "timestamp": 2.0
+     },
+     {
+      "think": "Red caption '最霸气的灭蚊方法' suggests hyperbolic, dramatic framing—likely ironic or humorous intent.",
+      "timestamp": 4.0
+     },
+     {
+      "think": "Guangzhou skyline at bottom ties the theme to a real location with cultural specificity.",
+      "timestamp": 7.0
+     },
+     {
+      "think": "Person in teal shirt releases mosquitoes—seemingly counterintuitive but part of a scientific strategy.",
+      "timestamp": 10.0
+     },
+     {
+      "think": "Mosquitoes are lab-bred males with Wolbachia, designed to reduce populations through sterile mating.",
+      "timestamp": 13.0
+     },
+     {
+      "think": "Lab workers in protective gear indicate controlled breeding, reinforcing scientific credibility of the method.",
+      "timestamp": 16.0
+     },
+     {
+      "think": "Close-ups show mosquitoes landing on skin, demonstrating integration into real-world environments.",
+      "timestamp": 18.0
+     },
+     {
+      "think": "Text overlays confirm eggs won't hatch—highlighting biological precision of Wolbachia-based control.",
+      "timestamp": 20.0
+     },
+     {
+      "think": "Method's success in Guangzhou suggests scalability for other urban mosquito-prone regions.",
+      "timestamp": 22.0
+     },
+     {
+      "think": "Fan in lab chamber may test airflow impact on mosquito movement or trapping mechanisms.",
+      "timestamp": 26.9
+     },
+     {
+      "think": "Humorous subtitle implies mosquitoes are nearly eradicated—underscoring program's high efficacy.",
+      "timestamp": 28.37
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,486 @@
+{
+ "slug": "mmduetit",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/wangyueqian/MMDuetIT/resolve/main/shot2story/annotations/magqa_train-0.25_0.5-earlier.json",
+  "https://huggingface.co/datasets/wangyueqian/MMDuetIT/resolve/main/coin/annotations/train-0.25_0.5_earlier-120s_240s.json"
+ ],
+ "access_used": "open download",
+ "note": "Example 1 is one Shot2Story-MAGQA record (GPT-4o question with several time-grounded answers); example 2 is one COIN video's dense step list. In both, \"timespan\" is the source segment and \"time\" is where the reply is placed in the stream (a random point 0.25–0.5 into the segment, per the file name); the timeline shows each answer or step over its segment (t–te), and the exact reply point is the \"time\" field in raw. Videos are YouTube-sourced and not in the repo, so no clips.",
+ "examples": [
+  {
+   "title": "Shot2Story 1NdWaO32pIA.2: \"What activities are the people engaging in?\" — 8 grounded answers",
+   "video_ref": "1NdWaO32pIA.2.mp4 (Shot2Story clip 2 of YouTube 1NdWaO32pIA)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 1.1761484275896734,
+     "te": null,
+     "lane": "question",
+     "text": "What activities are the people engaging in?"
+    },
+    {
+     "t": 0.0,
+     "te": 3.545208333333333,
+     "lane": "answer",
+     "text": "Traveling in a car and talking. "
+    },
+    {
+     "t": 3.5869166666666663,
+     "te": 9.551208333333333,
+     "lane": "answer",
+     "text": "Gathering in a meadow."
+    },
+    {
+     "t": 9.592916666666666,
+     "te": 12.679333333333332,
+     "lane": "answer",
+     "text": "Holding a microphone and dancing on stage."
+    },
+    {
+     "t": 12.721041666666666,
+     "te": 15.598916666666666,
+     "lane": "answer",
+     "text": "Standing with a woman embracing from behind."
+    },
+    {
+     "t": 15.640624999999998,
+     "te": 22.647624999999998,
+     "lane": "answer",
+     "text": "Walking slowly onto the stage."
+    },
+    {
+     "t": 22.68933333333333,
+     "te": 25.233541666666664,
+     "lane": "answer",
+     "text": "Singing and dancing in front of a microphone."
+    },
+    {
+     "t": 25.27525,
+     "te": 26.818458333333332,
+     "lane": "answer",
+     "text": "Shouting from behind prison bars."
+    },
+    {
+     "t": 26.860166666666665,
+     "te": 33.57520833333333,
+     "lane": "answer",
+     "text": "Sitting, looking helpless, and then walking away."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "video_uid": "1NdWaO32pIA.2.mp4",
+    "question_id": "1NdWaO32pIA.2.mp4",
+    "conversation": [
+     {
+      "role": "user",
+      "content": "What activities are the people engaging in?",
+      "time": 1.1761484275896734
+     },
+     {
+      "role": "assistant",
+      "content": "Traveling in a car and talking. ",
+      "time": 1.8665427308868279,
+      "timespan": [
+       0.0,
+       3.545208333333333
+      ]
+     },
+     {
+      "role": "assistant",
+      "content": "Gathering in a meadow.",
+      "time": 8.003002013505355,
+      "timespan": [
+       3.5869166666666663,
+       9.551208333333333
+      ]
+     },
+     {
+      "role": "assistant",
+      "content": "Holding a microphone and dancing on stage.",
+      "time": 11.618320071074379,
+      "timespan": [
+       9.592916666666666,
+       12.679333333333332
+      ]
+     },
+     {
+      "role": "assistant",
+      "content": "Standing with a woman embracing from behind.",
+      "time": 14.65532052206502,
+      "timespan": [
+       12.721041666666666,
+       15.598916666666666
+      ]
+     },
+     {
+      "role": "assistant",
+      "content": "Walking slowly onto the stage.",
+      "time": 19.686394529916434,
+      "timespan": [
+       15.640624999999998,
+       22.647624999999998
+      ]
+     },
+     {
+      "role": "assistant",
+      "content": "Singing and dancing in front of a microphone.",
+      "time": 24.365830498092524,
+      "timespan": [
+       22.68933333333333,
+       25.233541666666664
+      ]
+     },
+     {
+      "role": "assistant",
+      "content": "Shouting from behind prison bars.",
+      "time": 26.305450923909824,
+      "timespan": [
+       25.27525,
+       26.818458333333332
+      ]
+     },
+     {
+      "role": "assistant",
+      "content": "Sitting, looking helpless, and then walking away.",
+      "time": 31.336992184222815,
+      "timespan": [
+       26.860166666666665,
+       33.57520833333333
+      ]
+     }
+    ],
+    "video_start_time": 0.0
+   }
+  },
+  {
+   "title": "COIN yznPu6MlW5I: ironing clothes — repeated 3-step cycle, 22 step segments",
+   "video_ref": "yznPu6MlW5I.mp4 (COIN, YouTube yznPu6MlW5I)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 14.0,
+     "te": 19.0,
+     "lane": "step",
+     "text": "iron the cloths with the iron"
+    },
+    {
+     "t": 20.0,
+     "te": 26.0,
+     "lane": "step",
+     "text": "flip the clothes repeatly"
+    },
+    {
+     "t": 27.0,
+     "te": 28.0,
+     "lane": "step",
+     "text": "put the clothes neatly on a ironing table"
+    },
+    {
+     "t": 30.0,
+     "te": 34.0,
+     "lane": "step",
+     "text": "iron the cloths with the iron"
+    },
+    {
+     "t": 35.0,
+     "te": 37.0,
+     "lane": "step",
+     "text": "flip the clothes repeatly"
+    },
+    {
+     "t": 38.0,
+     "te": 43.0,
+     "lane": "step",
+     "text": "put the clothes neatly on a ironing table"
+    },
+    {
+     "t": 44.0,
+     "te": 50.5,
+     "lane": "step",
+     "text": "iron the cloths with the iron"
+    },
+    {
+     "t": 51.0,
+     "te": 55.0,
+     "lane": "step",
+     "text": "put the clothes neatly on a ironing table"
+    },
+    {
+     "t": 56.0,
+     "te": 61.0,
+     "lane": "step",
+     "text": "iron the cloths with the iron"
+    },
+    {
+     "t": 62.0,
+     "te": 71.0,
+     "lane": "step",
+     "text": "flip the clothes repeatly"
+    },
+    {
+     "t": 72.0,
+     "te": 84.0,
+     "lane": "step",
+     "text": "put the clothes neatly on a ironing table"
+    },
+    {
+     "t": 85.0,
+     "te": 95.0,
+     "lane": "step",
+     "text": "iron the cloths with the iron"
+    },
+    {
+     "t": 96.0,
+     "te": 106.0,
+     "lane": "step",
+     "text": "flip the clothes repeatly"
+    },
+    {
+     "t": 107.0,
+     "te": 118.0,
+     "lane": "step",
+     "text": "put the clothes neatly on a ironing table"
+    },
+    {
+     "t": 119.0,
+     "te": 129.0,
+     "lane": "step",
+     "text": "iron the cloths with the iron"
+    },
+    {
+     "t": 130.0,
+     "te": 133.0,
+     "lane": "step",
+     "text": "put the clothes neatly on a ironing table"
+    },
+    {
+     "t": 134.0,
+     "te": 137.0,
+     "lane": "step",
+     "text": "iron the cloths with the iron"
+    },
+    {
+     "t": 138.0,
+     "te": 145.0,
+     "lane": "step",
+     "text": "put the clothes neatly on a ironing table"
+    },
+    {
+     "t": 146.0,
+     "te": 151.0,
+     "lane": "step",
+     "text": "iron the cloths with the iron"
+    },
+    {
+     "t": 152.0,
+     "te": 156.0,
+     "lane": "step",
+     "text": "put the clothes neatly on a ironing table"
+    },
+    {
+     "t": 157.0,
+     "te": 161.0,
+     "lane": "step",
+     "text": "iron the cloths with the iron"
+    },
+    {
+     "t": 168.0,
+     "te": 172.0,
+     "lane": "step",
+     "text": "hang the ironed clothes"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "yznPu6MlW5I.mp4": {
+     "0": [
+      {
+       "time": 16.71347410764007,
+       "text": "iron the cloths with the iron",
+       "timespan": [
+        14.0,
+        19.0
+       ]
+      },
+      {
+       "time": 24.05671064897875,
+       "text": "flip the clothes repeatly",
+       "timespan": [
+        20.0,
+        26.0
+       ]
+      },
+      {
+       "time": 27.531066631292205,
+       "text": "put the clothes neatly on a ironing table",
+       "timespan": [
+        27.0,
+        28.0
+       ]
+      },
+      {
+       "time": 32.2969163035,
+       "text": "iron the cloths with the iron",
+       "timespan": [
+        30.0,
+        34.0
+       ]
+      },
+      {
+       "time": 36.45916198756833,
+       "text": "flip the clothes repeatly",
+       "timespan": [
+        35.0,
+        37.0
+       ]
+      },
+      {
+       "time": 41.72212994358211,
+       "text": "put the clothes neatly on a ironing table",
+       "timespan": [
+        38.0,
+        43.0
+       ]
+      },
+      {
+       "time": 47.472968535812086,
+       "text": "iron the cloths with the iron",
+       "timespan": [
+        44.0,
+        50.5
+       ]
+      },
+      {
+       "time": 53.12893958355405,
+       "text": "put the clothes neatly on a ironing table",
+       "timespan": [
+        51.0,
+        55.0
+       ]
+      },
+      {
+       "time": 59.30771959549167,
+       "text": "iron the cloths with the iron",
+       "timespan": [
+        56.0,
+        61.0
+       ]
+      },
+      {
+       "time": 68.16486255645435,
+       "text": "flip the clothes repeatly",
+       "timespan": [
+        62.0,
+        71.0
+       ]
+      },
+      {
+       "time": 78.17469684790821,
+       "text": "put the clothes neatly on a ironing table",
+       "timespan": [
+        72.0,
+        84.0
+       ]
+      },
+      {
+       "time": 90.26208664886532,
+       "text": "iron the cloths with the iron",
+       "timespan": [
+        85.0,
+        95.0
+       ]
+      },
+      {
+       "time": 101.73503932397412,
+       "text": "flip the clothes repeatly",
+       "timespan": [
+        96.0,
+        106.0
+       ]
+      },
+      {
+       "time": 113.50359111965504,
+       "text": "put the clothes neatly on a ironing table",
+       "timespan": [
+        107.0,
+        118.0
+       ]
+      },
+      {
+       "time": 124.44270231263167,
+       "text": "iron the cloths with the iron",
+       "timespan": [
+        119.0,
+        129.0
+       ]
+      },
+      {
+       "time": 131.67625451739272,
+       "text": "put the clothes neatly on a ironing table",
+       "timespan": [
+        130.0,
+        133.0
+       ]
+      },
+      {
+       "time": 136.18842562885484,
+       "text": "iron the cloths with the iron",
+       "timespan": [
+        134.0,
+        137.0
+       ]
+      },
+      {
+       "time": 141.94986440519455,
+       "text": "put the clothes neatly on a ironing table",
+       "timespan": [
+        138.0,
+        145.0
+       ]
+      },
+      {
+       "time": 149.02351876055604,
+       "text": "iron the cloths with the iron",
+       "timespan": [
+        146.0,
+        151.0
+       ]
+      },
+      {
+       "time": 154.972666318766,
+       "text": "put the clothes neatly on a ironing table",
+       "timespan": [
+        152.0,
+        156.0
+       ]
+      },
+      {
+       "time": 159.59999347511416,
+       "text": "iron the cloths with the iron",
+       "timespan": [
+        157.0,
+        161.0
+       ]
+      },
+      {
+       "time": 170.6750932547956,
+       "text": "hang the ironed clothes",
+       "timespan": [
+        168.0,
+        172.0
+       ]
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,144 @@
+{
+ "slug": "music-avqa",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://raw.githubusercontent.com/GeWu-Lab/MUSIC-AVQA/main/data/json/avqa-train.json",
+  "https://huggingface.co/datasets/Night-Quiet/Music-avqa-video (MUSIC-AVQA-videos-Real.zip members 00003828.mp4, 00005709.mp4, range-read)"
+ ],
+ "access_used": "open download",
+ "note": "An example is every train-split QA record for one real performance video (60 s). Questions are templates: <Object>, <LR>, <FL> etc. are filled from templ_values; the answer field is spelled 'anser' in the original. No timestamps; clips are the first 20 s of the video.",
+ "examples": [
+  {
+   "title": "00003828: clarinet (left) and acoustic guitar (right) duet — 6 templated QA",
+   "video_ref": "MUSIC-AVQA-videos-Real/00003828.mp4",
+   "duration_s": 60.0,
+   "clip": "samples/media/music-avqa_1.mp4",
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "json",
+   "raw": [
+    {
+     "video_id": "00003828",
+     "question_id": 8048,
+     "type": "[\"Audio-Visual\", \"Location\"]",
+     "question_content": "Which is the musical instrument that sounds at the same time as the <Object>?",
+     "templ_values": "[\"clarinet\"]",
+     "question_deleted": 0,
+     "anser": "acoustic_guitar"
+    },
+    {
+     "video_id": "00003828",
+     "question_id": 19881,
+     "type": "[\"Audio-Visual\", \"Existential\"]",
+     "question_content": "Is there a voiceover?",
+     "templ_values": "[]",
+     "question_deleted": 0,
+     "anser": "no"
+    },
+    {
+     "video_id": "00003828",
+     "question_id": 35968,
+     "type": "[\"Audio\", \"Counting\"]",
+     "question_content": "How many musical instruments were heard throughout the video?",
+     "templ_values": "[]",
+     "question_deleted": 0,
+     "anser": "two"
+    },
+    {
+     "video_id": "00003828",
+     "question_id": 39008,
+     "type": "[\"Visual\", \"Counting\"]",
+     "question_content": "How many types of musical instruments appeared in the entire video?",
+     "templ_values": "[]",
+     "question_deleted": 0,
+     "anser": "two"
+    },
+    {
+     "video_id": "00003828",
+     "question_id": 47511,
+     "type": "[\"Audio-Visual\", \"Comparative\"]",
+     "question_content": "Is the <Object> on the <LR> louder than the <Object> on the <LR>?",
+     "templ_values": "[\"clarinet\", \"left\", \"acoustic_guitar\", \"right\"]",
+     "question_deleted": 0,
+     "anser": "yes"
+    },
+    {
+     "video_id": "00003828",
+     "question_id": 47513,
+     "type": "[\"Audio-Visual\", \"Temporal\"]",
+     "question_content": "Where is the <FL> sounding instrument?",
+     "templ_values": "[\"first\"]",
+     "question_deleted": 0,
+     "anser": "right"
+    }
+   ]
+  },
+  {
+   "title": "00005709: three-instrument ensemble on stage (piano, cello visible) — 6 templated QA",
+   "video_ref": "MUSIC-AVQA-videos-Real/00005709.mp4",
+   "duration_s": 60.0,
+   "clip": "samples/media/music-avqa_2.mp4",
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "json",
+   "raw": [
+    {
+     "video_id": "00005709",
+     "question_id": 3329,
+     "type": "[\"Audio-Visual\", \"Counting\"]",
+     "question_content": "How many types of musical instruments sound in the video?",
+     "templ_values": "[]",
+     "question_deleted": 0,
+     "anser": "three"
+    },
+    {
+     "video_id": "00005709",
+     "question_id": 13186,
+     "type": "[\"Visual\", \"Counting\"]",
+     "question_content": "Are there <Object> and <Object> instruments in the video?",
+     "templ_values": "[\"flute\", \"piano\"]",
+     "question_deleted": 0,
+     "anser": "yes"
+    },
+    {
+     "video_id": "00005709",
+     "question_id": 29702,
+     "type": "[\"Visual\", \"Location\"]",
+     "question_content": "Where is the performance?",
+     "templ_values": "[]",
+     "question_deleted": 0,
+     "anser": "indoor"
+    },
+    {
+     "video_id": "00005709",
+     "question_id": 37980,
+     "type": "[\"Audio\", \"Counting\"]",
+     "question_content": "How many musical instruments were heard throughout the video?",
+     "templ_values": "[]",
+     "question_deleted": 0,
+     "anser": "three"
+    },
+    {
+     "video_id": "00005709",
+     "question_id": 43535,
+     "type": "[\"Audio-Visual\", \"Temporal\"]",
+     "question_content": "Which <Object> makes the sound <FL>?",
+     "templ_values": "[\"pipa\", \"first\"]",
+     "question_deleted": 0,
+     "anser": "simultaneously"
+    },
+    {
+     "video_id": "00005709",
+     "question_id": 43536,
+     "type": "[\"Audio\", \"Comparative\"]",
+     "question_content": "Is the <Object> louder than the <Object>?",
+     "templ_values": "[\"cello\", \"piano\"]",
+     "question_deleted": 0,
+     "anser": "no"
+    }
+   ]
+  }
+ ]
+}

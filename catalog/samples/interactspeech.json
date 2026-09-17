@@ -1,0 +1,1296 @@
+{
+ "slug": "interactspeech",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/1f/interactspeech/blob/main/data/train-00000.parquet (rows 690 and 280)"
+ ],
+ "access_used": "open download",
+ "note": "One example is one text-and-timeline dialogue (one parquet row whose record_json is shown parsed). There is no audio or video: user turns are TTS recipes placed on a global millisecond timeline, so overlaps between the 'user' and 'assistant' lanes are the barge-ins and backchannels; 'turns' is the trimmed training timeline and 'source_record.turns' the original one (scene/topic labels are Chinese in the release).",
+ "examples": [
+  {
+   "title": "Wildlife-survey sign-up (topic 野生动植物研究): user barges in, later backchannels 'yeah' — 6 turns, 13 s",
+   "video_ref": "interactspeech-sample-a9cff9d278dabf4dc6a693ed0192977a0e32adc9c7d1f450c3a95a8d97f7f709",
+   "duration_s": 13.0,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 4.08,
+     "lane": "user",
+     "text": "I want to join the Friday wildlife survey. I just show up, right?"
+    },
+    {
+     "t": 5.0,
+     "te": 8.0,
+     "lane": "assistant",
+     "text": "[interrupted; unspoken tail 54 chars] Actually, you need to reserve a specific grid to prevent overcrowding the sensitive animal habitats."
+    },
+    {
+     "t": 6.0,
+     "te": 9.48,
+     "lane": "user",
+     "text": "[competitive_interruption] I know how it works, just assign me grid seven."
+    },
+    {
+     "t": 10.377,
+     "te": 12.0,
+     "lane": "assistant",
+     "text": "I can help with that. First, I need your researcher ID number to"
+    },
+    {
+     "t": 11.896,
+     "te": 12.816,
+     "lane": "user",
+     "text": "[supportive_backchannel] yeah"
+    },
+    {
+     "t": 12.104,
+     "te": 13.0,
+     "lane": "assistant",
+     "text": "process your grid request in the system."
+    }
+   ],
+   "raw_format": "parquet row",
+   "raw": {
+    "id": "interactspeech-sample-a9cff9d278dabf4dc6a693ed0192977a0e32adc9c7d1f450c3a95a8d97f7f709",
+    "view": "interactspeech",
+    "category": "interaction_speech/english",
+    "record_json (parsed)": {
+     "id": "interactspeech-sample-a9cff9d278dabf4dc6a693ed0192977a0e32adc9c7d1f450c3a95a8d97f7f709",
+     "turns": [
+      {
+       "role": "user",
+       "start_ms": 0,
+       "end_ms": 4080,
+       "shared_complete": true,
+       "text": null,
+       "audio_in": {
+        "path": null,
+        "sample_rate": 24000,
+        "start_ms": 0,
+        "end_ms": 4080,
+        "source": {
+         "kind": "tts_recipe",
+         "transcript": "I want to join the Friday wildlife survey. I just show up, right?",
+         "reference_duration_ms": 4080,
+         "synthesis": {
+          "required": true,
+          "utterance_id": "utterance-733e11c31edd43ff150a4f7a",
+          "voice_key": "voice-a8bb01e1e15b646c447b5271",
+          "timing_policy": "fit_to_reference_duration",
+          "preserve_training_timeline": true
+         }
+        }
+       },
+       "turn_state": "complete",
+       "meta": {
+        "source_turn_index": 0,
+        "source_turn_indices": [
+         0
+        ],
+        "source_start_ms": 0,
+        "source_end_ms": 4080,
+        "source_reference_gap_ms": 0,
+        "event_type": "full_turn",
+        "intent": null,
+        "source_overlap_with_assistant_ms": 0,
+        "target_overlap_with_assistant_ms": 0,
+        "source_reactive_event_progress": null,
+        "snr_db": null,
+        "audio_variant": "clean",
+        "transcript": "I want to join the Friday wildlife survey. I just show up, right?"
+       }
+      },
+      {
+       "role": "assistant",
+       "start_ms": 5000,
+       "end_ms": 8000,
+       "shared_complete": true,
+       "text": "Actually, you need to reserve a specific grid to prevent overcrowding the sensitive animal habitats.",
+       "audio_in": null,
+       "turn_state": "incomplete",
+       "meta": {
+        "source_turn_index": 1,
+        "source_turn_indices": [
+         1
+        ],
+        "source_start_ms": 4652,
+        "source_end_ms": 11695,
+        "source_reference_gap_ms": 572,
+        "event_type": "full_turn",
+        "text_only": true,
+        "is_interrupted": true,
+        "continues_after_supportive_backchannel": false,
+        "source_visible_text_chars": 45,
+        "source_hidden_continuation_chars": 54,
+        "source_visible_text_tokens": 9,
+        "source_hidden_continuation_tokens": 9
+       }
+      },
+      {
+       "role": "user",
+       "start_ms": 6000,
+       "end_ms": 9480,
+       "shared_complete": true,
+       "text": null,
+       "audio_in": {
+        "path": null,
+        "sample_rate": 24000,
+        "start_ms": 0,
+        "end_ms": 3480,
+        "source": {
+         "kind": "tts_recipe",
+         "transcript": "I know how it works, just assign me grid seven.",
+         "reference_duration_ms": 3480,
+         "synthesis": {
+          "required": true,
+          "utterance_id": "utterance-d00715d1273d4da057c6ebf2",
+          "voice_key": "voice-a8bb01e1e15b646c447b5271",
+          "timing_policy": "fit_to_reference_duration",
+          "preserve_training_timeline": true
+         }
+        }
+       },
+       "turn_state": "complete",
+       "meta": {
+        "source_turn_index": 2,
+        "source_turn_indices": [
+         2
+        ],
+        "source_start_ms": 7695,
+        "source_end_ms": 11175,
+        "source_reference_gap_ms": -4000,
+        "event_type": "competitive_interruption",
+        "intent": "take_floor",
+        "source_overlap_with_assistant_ms": 3480,
+        "target_overlap_with_assistant_ms": 377,
+        "source_reactive_event_progress": null,
+        "snr_db": null,
+        "audio_variant": "clean",
+        "transcript": "I know how it works, just assign me grid seven."
+       }
+      },
+      {
+       "role": "assistant",
+       "start_ms": 10377,
+       "end_ms": 12000,
+       "shared_complete": true,
+       "text": "I can help with that. First, I need your researcher ID number to",
+       "audio_in": null,
+       "turn_state": "incomplete",
+       "meta": {
+        "source_turn_index": 3,
+        "source_turn_indices": [
+         3
+        ],
+        "source_start_ms": 12031,
+        "source_end_ms": 16602,
+        "source_reference_gap_ms": 856,
+        "event_type": "full_turn",
+        "text_only": true,
+        "is_interrupted": false,
+        "continues_after_supportive_backchannel": true,
+        "source_visible_text_chars": 64,
+        "source_hidden_continuation_chars": 0,
+        "source_visible_text_tokens": 15,
+        "source_hidden_continuation_tokens": 0
+       }
+      },
+      {
+       "role": "user",
+       "start_ms": 11896,
+       "end_ms": 12816,
+       "shared_complete": true,
+       "text": null,
+       "audio_in": {
+        "path": null,
+        "sample_rate": 24000,
+        "start_ms": 0,
+        "end_ms": 920,
+        "source": {
+         "kind": "tts_recipe",
+         "transcript": "yeah",
+         "reference_duration_ms": 920,
+         "synthesis": {
+          "required": true,
+          "utterance_id": "utterance-3613dfa1bc468c4be64ea508",
+          "voice_key": "voice-a8bb01e1e15b646c447b5271",
+          "timing_policy": "fit_to_reference_duration",
+          "preserve_training_timeline": true
+         }
+        }
+       },
+       "turn_state": "complete",
+       "meta": {
+        "source_turn_index": 4,
+        "source_turn_indices": [
+         4
+        ],
+        "source_start_ms": 16364,
+        "source_end_ms": 17284,
+        "source_reference_gap_ms": -238,
+        "event_type": "supportive_backchannel",
+        "intent": "acknowledge",
+        "source_overlap_with_assistant_ms": 920,
+        "target_overlap_with_assistant_ms": 208,
+        "source_reactive_event_progress": 0.9479326186830015,
+        "snr_db": null,
+        "audio_variant": "clean",
+        "transcript": "yeah"
+       }
+      },
+      {
+       "role": "assistant",
+       "start_ms": 12104,
+       "end_ms": 13000,
+       "shared_complete": true,
+       "text": "process your grid request in the system.",
+       "audio_in": null,
+       "turn_state": "complete",
+       "meta": {
+        "source_turn_index": 5,
+        "source_turn_indices": [
+         5
+        ],
+        "source_start_ms": 16602,
+        "source_end_ms": 19459,
+        "source_reference_gap_ms": -682,
+        "event_type": "full_turn",
+        "text_only": true,
+        "is_interrupted": false,
+        "continues_after_supportive_backchannel": false,
+        "source_visible_text_chars": 40,
+        "source_hidden_continuation_chars": 0,
+        "source_visible_text_tokens": 8,
+        "source_hidden_continuation_tokens": 0
+       }
+      }
+     ],
+     "caps": {
+      "has_audio_in": true,
+      "has_text_out": true,
+      "has_speech_out": false,
+      "has_timestamps": true,
+      "multichannel": false,
+      "has_vision": false,
+      "has_omniflow": true,
+      "has_backbrain": false
+     },
+     "meta": {
+      "language": "en",
+      "audio_variant": "clean",
+      "split": "train",
+      "split_seed": 42,
+      "scene": "户外活动类",
+      "topic": "野生动植物研究",
+      "user_speaker": "voice-a8bb01e1e15b646c447b5271",
+      "source_truncated": true,
+      "source_truncated_top_level": false,
+      "source_truncated_nested": true,
+      "source_prefix_trimmed": false,
+      "source_prefix_turns_removed": 0,
+      "source_tail_trimmed": false,
+      "source_tail_turns_removed": 0,
+      "source_terminal_unclosed_assistant": false,
+      "source_num_interruptions": 1,
+      "source_num_backchannels": 1,
+      "num_interruptions": 1,
+      "num_backchannels": 1,
+      "source_total_timeline_sec": 19.459,
+      "source_retained_timeline_sec": 19.459,
+      "total_timeline_sec": 13.0
+     },
+     "release": {
+      "schema": "interactspeech_text_timeline_v1",
+      "audio_waveforms_bundled": false,
+      "derived_frames_bundled": false,
+      "requires_tts_for_speech_modalities": true,
+      "intended_caps": {
+       "has_audio_in": true,
+       "has_text_out": true,
+       "has_speech_out": false,
+       "has_timestamps": true,
+       "multichannel": false,
+       "has_vision": false,
+       "has_omniflow": true,
+       "has_backbrain": false
+      }
+     },
+     "source_record": {
+      "dialogue_id": "source-id-6f2f63da157dc9375c7415b3",
+      "source_type": "synthetic_dialogue",
+      "language": "en",
+      "scene": "户外活动类",
+      "topic": "野生动植物研究",
+      "sample_rate": 24000,
+      "total_duration": 19.459,
+      "num_turns": 6,
+      "num_user_turns": 3,
+      "num_interruptions": 1,
+      "num_backchannels": 1,
+      "turns": [
+       {
+        "turn_index": 0,
+        "speaker": "USER",
+        "event_type": "full_turn",
+        "modality": "audio",
+        "text": "I want to join the Friday wildlife survey. I just show up, right?",
+        "start_time": 0.0,
+        "end_time": 4.08,
+        "duration": 4.08,
+        "silence_before_sec": 0.0,
+        "audio_file": {
+         "bundled": false,
+         "name": "user_000_full_turn.wav"
+        },
+        "asr_qc": {
+         "wer": 0.0,
+         "asr_hyp": "I want to join the Friday wildlife survey. I just show up, right?",
+         "is_interrupted": false
+        }
+       },
+       {
+        "turn_index": 1,
+        "speaker": "ASSISTANT",
+        "event_type": "full_turn",
+        "modality": "text",
+        "text": "Actually, you need to reserve a specific grid",
+        "start_time": 4.652,
+        "end_time": 11.695,
+        "duration": 7.043,
+        "silence_before_sec": 0.572,
+        "text_only": true,
+        "is_interrupted": true,
+        "interrupt_onset": 7.695,
+        "release_offset": 11.695,
+        "natural_end_time": 11.723,
+        "release_tail_sec": 4.0,
+        "interrupted_by": "USER",
+        "hidden_continuation": "to prevent overcrowding the sensitive animal habitats.",
+        "interrupted_ratio": 0.9468,
+        "truncated_unspoken_sec": 0.028,
+        "floor_yielded": true,
+        "yield_latency_sec": 4.0
+       },
+       {
+        "turn_index": 2,
+        "speaker": "USER",
+        "event_type": "competitive_interruption",
+        "modality": "audio",
+        "text": "I know how it works, just assign me grid seven.",
+        "start_time": 7.695,
+        "end_time": 11.175,
+        "duration": 3.48,
+        "silence_before_sec": 0.0,
+        "intent": "take_floor",
+        "audio_file": {
+         "bundled": false,
+         "name": "user_002_competitive_interruption.wav"
+        },
+        "overlap_with_assistant_sec": 3.48,
+        "interrupts_previous": true,
+        "floor_transfer_time": 11.695,
+        "asr_qc": {
+         "wer": 0.0,
+         "asr_hyp": "I know how it works. Just assign me grid seven.",
+         "is_interrupted": false
+        }
+       },
+       {
+        "turn_index": 3,
+        "speaker": "ASSISTANT",
+        "event_type": "full_turn",
+        "modality": "text",
+        "text": "I can help with that. First, I need your researcher ID number to",
+        "start_time": 12.031,
+        "end_time": 16.602,
+        "duration": 4.571,
+        "silence_before_sec": 0.336,
+        "text_only": true
+       },
+       {
+        "turn_index": 4,
+        "speaker": "USER",
+        "event_type": "supportive_backchannel",
+        "modality": "audio",
+        "text": "yeah",
+        "start_time": 16.364,
+        "end_time": 17.284,
+        "duration": 0.92,
+        "silence_before_sec": 0.0,
+        "intent": "acknowledge",
+        "audio_file": {
+         "bundled": false,
+         "name": "user_004_supportive_backchannel.wav"
+        },
+        "overlap_with_assistant_sec": 0.92,
+        "embedded_in_speaker": "ASSISTANT"
+       },
+       {
+        "turn_index": 5,
+        "speaker": "ASSISTANT",
+        "event_type": "full_turn",
+        "modality": "text",
+        "text": "process your grid request in the system.",
+        "start_time": 16.602,
+        "end_time": 19.459,
+        "duration": 2.857,
+        "silence_before_sec": 0.0,
+        "text_only": true
+       }
+      ],
+      "events": [
+       {
+        "type": "interruption",
+        "interrupted_turn": 1,
+        "interrupter_turn": 2,
+        "interrupt_onset": 7.695,
+        "release_offset": 11.695,
+        "natural_end_time": 11.723,
+        "release_tail_sec": 4.0,
+        "interrupted_ratio": 0.9468,
+        "truncated_unspoken_sec": 0.028,
+        "yield_latency_sec": 4.0,
+        "hidden_continuation": "to prevent overcrowding the sensitive animal habitats.",
+        "overlap_start": 7.695,
+        "overlap_end": 11.175,
+        "overlap_duration": 3.48
+       },
+       {
+        "type": "backchannel",
+        "turn": 4,
+        "text": "yeah",
+        "intent": "acknowledge",
+        "embedded_in_speaker": "ASSISTANT",
+        "start_time": 16.364,
+        "end_time": 17.284,
+        "overlap_start": 16.364,
+        "overlap_end": 17.284,
+        "overlap_duration": 0.92
+       }
+      ],
+      "user_audio": [
+       {
+        "turn_index": 0,
+        "event_type": "full_turn",
+        "start_time": 0.0,
+        "end_time": 4.08,
+        "duration": 4.08,
+        "text": "I want to join the Friday wildlife survey. I just show up, right?",
+        "audio_file": {
+         "bundled": false,
+         "name": "user_000_full_turn.wav"
+        },
+        "overlap_with_assistant_sec": 0.0
+       },
+       {
+        "turn_index": 2,
+        "event_type": "competitive_interruption",
+        "start_time": 7.695,
+        "end_time": 11.175,
+        "duration": 3.48,
+        "text": "I know how it works, just assign me grid seven.",
+        "audio_file": {
+         "bundled": false,
+         "name": "user_002_competitive_interruption.wav"
+        },
+        "overlap_with_assistant_sec": 3.48
+       },
+       {
+        "turn_index": 4,
+        "event_type": "supportive_backchannel",
+        "start_time": 16.364,
+        "end_time": 17.284,
+        "duration": 0.92,
+        "text": "yeah",
+        "audio_file": {
+         "bundled": false,
+         "name": "user_004_supportive_backchannel.wav"
+        },
+        "overlap_with_assistant_sec": 0.92
+       }
+      ],
+      "overlap_regions": [
+       {
+        "type": "interruption",
+        "start_time": 7.695,
+        "end_time": 11.175,
+        "duration": 3.48,
+        "user_turn": 2,
+        "assistant_turn": 1
+       },
+       {
+        "type": "backchannel",
+        "start_time": 16.364,
+        "end_time": 16.602,
+        "duration": 0.238,
+        "user_turn": 4,
+        "assistant_turn": 3
+       },
+       {
+        "type": "backchannel",
+        "start_time": 16.602,
+        "end_time": 17.284,
+        "duration": 0.682,
+        "user_turn": 4,
+        "assistant_turn": 5
+       }
+      ],
+      "transcript_timed": [
+       "[00:00.00-00:04.08] USER: I want to join the Friday wildlife survey. I just show up, right?",
+       "[00:04.65-00:11.70] ASSISTANT (text): Actually, you need to reserve a specific grid",
+       "[00:07.70-00:11.18] USER: I know how it works, just assign me grid seven.",
+       "[00:12.03-00:16.60] ASSISTANT (text): I can help with that. First, I need your researcher ID number to",
+       "[00:16.36-00:17.28] USER: yeah",
+       "[00:16.60-00:19.46] ASSISTANT (text): process your grid request in the system."
+      ],
+      "diversity_plan": {
+       "language": "en",
+       "user_persona": "an experienced skeptic who questions and pushes back",
+       "assistant_style": "warm and patient, guides step by step",
+       "tone": "transactional",
+       "tone_desc": "getting something done / process / booking",
+       "opening": "the user opens with a wrong assumption (corrected or self-corrected later)",
+       "target_turns": 17,
+       "max_total_sec": 96.0,
+       "text_budget": 224,
+       "budget_unit": "words",
+       "interrupt_mode": "few",
+       "num_interrupt": 2,
+       "has_interrupt": true,
+       "interrupt_motives": [
+        [
+         "redirect the topic",
+         "the user pulls the topic to a different point",
+         "Hang on, forget that, let me ask something first"
+        ],
+        [
+         "take over the floor",
+         "the user thinks they already get it and takes over",
+         "I know, don't we have to do that part first?"
+        ]
+       ],
+       "num_backchannel": 1,
+       "assistant_backchannel": false,
+       "backchannel_candidates": [
+        "uh-huh",
+        "agreed",
+        "sure",
+        "ah",
+        "for sure",
+        "no doubt",
+        "yeah",
+        "alright",
+        "totally",
+        "uh huh",
+        "let's do it",
+        "got it"
+       ]
+      },
+      "est_total_duration_sec": 61.942,
+      "user_speaker": "voice-a8bb01e1e15b646c447b5271",
+      "quality": {
+       "n_scored": 2,
+       "avg_wer": 0.0,
+       "max_wer": 0.0,
+       "high_wer_count": 0,
+       "n_backchannel": 1,
+       "n_backchannel_resynth": 0,
+       "n_backchannel_asr_ok": 0
+      },
+      "truncation": {
+       "truncated": true,
+       "cut_at_turn_index": 6,
+       "orig_num_turns": 14,
+       "kept_num_turns": 6,
+       "wer_threshold": 0.1
+      },
+      "schema": "interactspeech_source_record_v1",
+      "training_source_turn_map": [
+       {
+        "training_turn_index": 0,
+        "source_turn_indices": [
+         0
+        ]
+       },
+       {
+        "training_turn_index": 1,
+        "source_turn_indices": [
+         1
+        ]
+       },
+       {
+        "training_turn_index": 2,
+        "source_turn_indices": [
+         2
+        ]
+       },
+       {
+        "training_turn_index": 3,
+        "source_turn_indices": [
+         3
+        ]
+       },
+       {
+        "training_turn_index": 4,
+        "source_turn_indices": [
+         4
+        ]
+       },
+       {
+        "training_turn_index": 5,
+        "source_turn_indices": [
+         5
+        ]
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "title": "Package-locker pickup (topic 领取包裹): user interrupts, backchannels 'alright' — 6 turns, 16 s",
+   "video_ref": "interactspeech-sample-d9211286049ca8d7d11b66a80dda88b6cbe0b4f22af729e0897a0ea14dd74ba9",
+   "duration_s": 16.0,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 5.96,
+     "lane": "user",
+     "text": "Hey, it is pouring outside today. Anyway, I need to pick up a package from the lobby locker."
+    },
+    {
+     "t": 7.0,
+     "te": 10.0,
+     "lane": "assistant",
+     "text": "[interrupted; unspoken tail 41 chars] To open the locker, you'll need the six-digit pickup code sent to your phone via SMS earlier today."
+    },
+    {
+     "t": 8.0,
+     "te": 11.52,
+     "lane": "user",
+     "text": "[competitive_interruption] Actually, I didn't get any text message about it."
+    },
+    {
+     "t": 12.875,
+     "te": 14.0,
+     "lane": "assistant",
+     "text": "In that case, you just open your delivery app"
+    },
+    {
+     "t": 13.769,
+     "te": 15.169,
+     "lane": "user",
+     "text": "[supportive_backchannel] alright"
+    },
+    {
+     "t": 14.115,
+     "te": 16.0,
+     "lane": "assistant",
+     "text": "to scan the QR code directly on the locker screen."
+    }
+   ],
+   "raw_format": "parquet row",
+   "raw": {
+    "id": "interactspeech-sample-d9211286049ca8d7d11b66a80dda88b6cbe0b4f22af729e0897a0ea14dd74ba9",
+    "view": "interactspeech",
+    "category": "interaction_speech/english",
+    "record_json (parsed)": {
+     "id": "interactspeech-sample-d9211286049ca8d7d11b66a80dda88b6cbe0b4f22af729e0897a0ea14dd74ba9",
+     "turns": [
+      {
+       "role": "user",
+       "start_ms": 0,
+       "end_ms": 5960,
+       "shared_complete": true,
+       "text": null,
+       "audio_in": {
+        "path": null,
+        "sample_rate": 24000,
+        "start_ms": 0,
+        "end_ms": 5960,
+        "source": {
+         "kind": "tts_recipe",
+         "transcript": "Hey, it is pouring outside today. Anyway, I need to pick up a package from the lobby locker.",
+         "reference_duration_ms": 5960,
+         "synthesis": {
+          "required": true,
+          "utterance_id": "utterance-38e05f45fb3cf6173c6fd426",
+          "voice_key": "voice-09392d774912c6c647911969",
+          "timing_policy": "fit_to_reference_duration",
+          "preserve_training_timeline": true
+         }
+        }
+       },
+       "turn_state": "complete",
+       "meta": {
+        "source_turn_index": 0,
+        "source_turn_indices": [
+         0
+        ],
+        "source_start_ms": 0,
+        "source_end_ms": 5960,
+        "source_reference_gap_ms": 0,
+        "event_type": "full_turn",
+        "intent": null,
+        "source_overlap_with_assistant_ms": 0,
+        "target_overlap_with_assistant_ms": 0,
+        "source_reactive_event_progress": null,
+        "snr_db": null,
+        "audio_variant": "clean",
+        "transcript": "Hey, it is pouring outside today. Anyway, I need to pick up a package from the lobby locker."
+       }
+      },
+      {
+       "role": "assistant",
+       "start_ms": 7000,
+       "end_ms": 10000,
+       "shared_complete": true,
+       "text": "To open the locker, you'll need the six-digit pickup code sent to your phone via SMS earlier today.",
+       "audio_in": null,
+       "turn_state": "incomplete",
+       "meta": {
+        "source_turn_index": 1,
+        "source_turn_indices": [
+         1
+        ],
+        "source_start_ms": 6386,
+        "source_end_ms": 13386,
+        "source_reference_gap_ms": 426,
+        "event_type": "full_turn",
+        "text_only": true,
+        "is_interrupted": true,
+        "continues_after_supportive_backchannel": false,
+        "source_visible_text_chars": 57,
+        "source_hidden_continuation_chars": 41,
+        "source_visible_text_tokens": 13,
+        "source_hidden_continuation_tokens": 9
+       }
+      },
+      {
+       "role": "user",
+       "start_ms": 8000,
+       "end_ms": 11520,
+       "shared_complete": true,
+       "text": null,
+       "audio_in": {
+        "path": null,
+        "sample_rate": 24000,
+        "start_ms": 0,
+        "end_ms": 3520,
+        "source": {
+         "kind": "tts_recipe",
+         "transcript": "Actually, I didn't get any text message about it.",
+         "reference_duration_ms": 3520,
+         "synthesis": {
+          "required": true,
+          "utterance_id": "utterance-7663b7611dc410a04236f6f7",
+          "voice_key": "voice-09392d774912c6c647911969",
+          "timing_policy": "fit_to_reference_duration",
+          "preserve_training_timeline": true
+         }
+        }
+       },
+       "turn_state": "complete",
+       "meta": {
+        "source_turn_index": 2,
+        "source_turn_indices": [
+         2
+        ],
+        "source_start_ms": 10421,
+        "source_end_ms": 13941,
+        "source_reference_gap_ms": -2965,
+        "event_type": "competitive_interruption",
+        "intent": "take_floor",
+        "source_overlap_with_assistant_ms": 2965,
+        "target_overlap_with_assistant_ms": 875,
+        "source_reactive_event_progress": null,
+        "snr_db": null,
+        "audio_variant": "clean",
+        "transcript": "Actually, I didn't get any text message about it."
+       }
+      },
+      {
+       "role": "assistant",
+       "start_ms": 12875,
+       "end_ms": 14000,
+       "shared_complete": true,
+       "text": "In that case, you just open your delivery app",
+       "audio_in": null,
+       "turn_state": "incomplete",
+       "meta": {
+        "source_turn_index": 3,
+        "source_turn_indices": [
+         3
+        ],
+        "source_start_ms": 14377,
+        "source_end_ms": 17591,
+        "source_reference_gap_ms": 436,
+        "event_type": "full_turn",
+        "text_only": true,
+        "is_interrupted": false,
+        "continues_after_supportive_backchannel": true,
+        "source_visible_text_chars": 45,
+        "source_hidden_continuation_chars": 0,
+        "source_visible_text_tokens": 10,
+        "source_hidden_continuation_tokens": 0
+       }
+      },
+      {
+       "role": "user",
+       "start_ms": 13769,
+       "end_ms": 15169,
+       "shared_complete": true,
+       "text": null,
+       "audio_in": {
+        "path": null,
+        "sample_rate": 24000,
+        "start_ms": 0,
+        "end_ms": 1400,
+        "source": {
+         "kind": "tts_recipe",
+         "transcript": "alright",
+         "reference_duration_ms": 1400,
+         "synthesis": {
+          "required": true,
+          "utterance_id": "utterance-cc244ea7a9397527487fc4d9",
+          "voice_key": "voice-09392d774912c6c647911969",
+          "timing_policy": "fit_to_reference_duration",
+          "preserve_training_timeline": true
+         }
+        }
+       },
+       "turn_state": "complete",
+       "meta": {
+        "source_turn_index": 4,
+        "source_turn_indices": [
+         4
+        ],
+        "source_start_ms": 17220,
+        "source_end_ms": 18620,
+        "source_reference_gap_ms": -371,
+        "event_type": "supportive_backchannel",
+        "intent": "acknowledge",
+        "source_overlap_with_assistant_ms": 1400,
+        "target_overlap_with_assistant_ms": 346,
+        "source_reactive_event_progress": 0.8845675171126323,
+        "snr_db": null,
+        "audio_variant": "clean",
+        "transcript": "alright"
+       }
+      },
+      {
+       "role": "assistant",
+       "start_ms": 14115,
+       "end_ms": 16000,
+       "shared_complete": true,
+       "text": "to scan the QR code directly on the locker screen.",
+       "audio_in": null,
+       "turn_state": "complete",
+       "meta": {
+        "source_turn_index": 5,
+        "source_turn_indices": [
+         5
+        ],
+        "source_start_ms": 17591,
+        "source_end_ms": 21162,
+        "source_reference_gap_ms": -1029,
+        "event_type": "full_turn",
+        "text_only": true,
+        "is_interrupted": false,
+        "continues_after_supportive_backchannel": false,
+        "source_visible_text_chars": 50,
+        "source_hidden_continuation_chars": 0,
+        "source_visible_text_tokens": 11,
+        "source_hidden_continuation_tokens": 0
+       }
+      }
+     ],
+     "caps": {
+      "has_audio_in": true,
+      "has_text_out": true,
+      "has_speech_out": false,
+      "has_timestamps": true,
+      "multichannel": false,
+      "has_vision": false,
+      "has_omniflow": true,
+      "has_backbrain": false
+     },
+     "meta": {
+      "language": "en",
+      "audio_variant": "clean",
+      "split": "train",
+      "split_seed": 42,
+      "scene": "日常生活主题",
+      "topic": "领取包裹",
+      "user_speaker": "voice-09392d774912c6c647911969",
+      "source_truncated": true,
+      "source_truncated_top_level": false,
+      "source_truncated_nested": true,
+      "source_prefix_trimmed": false,
+      "source_prefix_turns_removed": 0,
+      "source_tail_trimmed": false,
+      "source_tail_turns_removed": 0,
+      "source_terminal_unclosed_assistant": false,
+      "source_num_interruptions": 1,
+      "source_num_backchannels": 1,
+      "num_interruptions": 1,
+      "num_backchannels": 1,
+      "source_total_timeline_sec": 21.162,
+      "source_retained_timeline_sec": 21.162,
+      "total_timeline_sec": 16.0
+     },
+     "release": {
+      "schema": "interactspeech_text_timeline_v1",
+      "audio_waveforms_bundled": false,
+      "derived_frames_bundled": false,
+      "requires_tts_for_speech_modalities": true,
+      "intended_caps": {
+       "has_audio_in": true,
+       "has_text_out": true,
+       "has_speech_out": false,
+       "has_timestamps": true,
+       "multichannel": false,
+       "has_vision": false,
+       "has_omniflow": true,
+       "has_backbrain": false
+      }
+     },
+     "source_record": {
+      "dialogue_id": "source-id-bc09bdaf22044a21a2a13a38",
+      "source_type": "synthetic_dialogue",
+      "language": "en",
+      "scene": "日常生活主题",
+      "topic": "领取包裹",
+      "sample_rate": 24000,
+      "total_duration": 21.162,
+      "num_turns": 6,
+      "num_user_turns": 3,
+      "num_interruptions": 1,
+      "num_backchannels": 1,
+      "turns": [
+       {
+        "turn_index": 0,
+        "speaker": "USER",
+        "event_type": "full_turn",
+        "modality": "audio",
+        "text": "Hey, it is pouring outside today. Anyway, I need to pick up a package from the lobby locker.",
+        "start_time": 0.0,
+        "end_time": 5.96,
+        "duration": 5.96,
+        "silence_before_sec": 0.0,
+        "audio_file": {
+         "bundled": false,
+         "name": "user_000_full_turn.wav"
+        },
+        "asr_qc": {
+         "wer": 0.0,
+         "asr_hyp": "Hey, it is pouring outside today. Anyway, I need to pick up a package from the lobby locker.",
+         "is_interrupted": false
+        }
+       },
+       {
+        "turn_index": 1,
+        "speaker": "ASSISTANT",
+        "event_type": "full_turn",
+        "modality": "text",
+        "text": "To open the locker, you'll need the six-digit pickup code",
+        "start_time": 6.386,
+        "end_time": 13.386,
+        "duration": 7.0,
+        "silence_before_sec": 0.426,
+        "text_only": true,
+        "is_interrupted": true,
+        "interrupt_onset": 10.421,
+        "release_offset": 13.386,
+        "natural_end_time": 13.386,
+        "release_tail_sec": 2.965,
+        "interrupted_by": "USER",
+        "hidden_continuation": "sent to your phone via SMS earlier today.",
+        "interrupted_ratio": 0.9912,
+        "truncated_unspoken_sec": 0.0,
+        "floor_yielded": true,
+        "yield_latency_sec": 2.965
+       },
+       {
+        "turn_index": 2,
+        "speaker": "USER",
+        "event_type": "competitive_interruption",
+        "modality": "audio",
+        "text": "Actually, I didn't get any text message about it.",
+        "start_time": 10.421,
+        "end_time": 13.941,
+        "duration": 3.52,
+        "silence_before_sec": 0.0,
+        "intent": "take_floor",
+        "audio_file": {
+         "bundled": false,
+         "name": "user_002_competitive_interruption.wav"
+        },
+        "overlap_with_assistant_sec": 2.965,
+        "interrupts_previous": true,
+        "floor_transfer_time": 13.386,
+        "asr_qc": {
+         "wer": 0.0,
+         "asr_hyp": "Actually, I didn't get any text message about it.",
+         "is_interrupted": false
+        }
+       },
+       {
+        "turn_index": 3,
+        "speaker": "ASSISTANT",
+        "event_type": "full_turn",
+        "modality": "text",
+        "text": "In that case, you just open your delivery app",
+        "start_time": 14.377,
+        "end_time": 17.591,
+        "duration": 3.214,
+        "silence_before_sec": 0.435,
+        "text_only": true
+       },
+       {
+        "turn_index": 4,
+        "speaker": "USER",
+        "event_type": "supportive_backchannel",
+        "modality": "audio",
+        "text": "alright",
+        "start_time": 17.22,
+        "end_time": 18.62,
+        "duration": 1.4,
+        "silence_before_sec": 0.0,
+        "intent": "acknowledge",
+        "audio_file": {
+         "bundled": false,
+         "name": "user_004_supportive_backchannel.wav"
+        },
+        "overlap_with_assistant_sec": 1.4,
+        "embedded_in_speaker": "ASSISTANT"
+       },
+       {
+        "turn_index": 5,
+        "speaker": "ASSISTANT",
+        "event_type": "full_turn",
+        "modality": "text",
+        "text": "to scan the QR code directly on the locker screen.",
+        "start_time": 17.591,
+        "end_time": 21.162,
+        "duration": 3.571,
+        "silence_before_sec": 0.0,
+        "text_only": true
+       }
+      ],
+      "events": [
+       {
+        "type": "interruption",
+        "interrupted_turn": 1,
+        "interrupter_turn": 2,
+        "interrupt_onset": 10.421,
+        "release_offset": 13.386,
+        "natural_end_time": 13.386,
+        "release_tail_sec": 2.965,
+        "interrupted_ratio": 0.9912,
+        "truncated_unspoken_sec": 0.0,
+        "yield_latency_sec": 2.965,
+        "hidden_continuation": "sent to your phone via SMS earlier today.",
+        "overlap_start": 10.421,
+        "overlap_end": 13.386,
+        "overlap_duration": 2.965
+       },
+       {
+        "type": "backchannel",
+        "turn": 4,
+        "text": "alright",
+        "intent": "acknowledge",
+        "embedded_in_speaker": "ASSISTANT",
+        "start_time": 17.22,
+        "end_time": 18.62,
+        "overlap_start": 17.22,
+        "overlap_end": 18.62,
+        "overlap_duration": 1.4
+       }
+      ],
+      "user_audio": [
+       {
+        "turn_index": 0,
+        "event_type": "full_turn",
+        "start_time": 0.0,
+        "end_time": 5.96,
+        "duration": 5.96,
+        "text": "Hey, it is pouring outside today. Anyway, I need to pick up a package from the lobby locker.",
+        "audio_file": {
+         "bundled": false,
+         "name": "user_000_full_turn.wav"
+        },
+        "overlap_with_assistant_sec": 0.0
+       },
+       {
+        "turn_index": 2,
+        "event_type": "competitive_interruption",
+        "start_time": 10.421,
+        "end_time": 13.941,
+        "duration": 3.52,
+        "text": "Actually, I didn't get any text message about it.",
+        "audio_file": {
+         "bundled": false,
+         "name": "user_002_competitive_interruption.wav"
+        },
+        "overlap_with_assistant_sec": 2.965
+       },
+       {
+        "turn_index": 4,
+        "event_type": "supportive_backchannel",
+        "start_time": 17.22,
+        "end_time": 18.62,
+        "duration": 1.4,
+        "text": "alright",
+        "audio_file": {
+         "bundled": false,
+         "name": "user_004_supportive_backchannel.wav"
+        },
+        "overlap_with_assistant_sec": 1.4
+       }
+      ],
+      "overlap_regions": [
+       {
+        "type": "interruption",
+        "start_time": 10.421,
+        "end_time": 13.386,
+        "duration": 2.965,
+        "user_turn": 2,
+        "assistant_turn": 1
+       },
+       {
+        "type": "backchannel",
+        "start_time": 17.22,
+        "end_time": 17.591,
+        "duration": 0.371,
+        "user_turn": 4,
+        "assistant_turn": 3
+       },
+       {
+        "type": "backchannel",
+        "start_time": 17.591,
+        "end_time": 18.62,
+        "duration": 1.029,
+        "user_turn": 4,
+        "assistant_turn": 5
+       }
+      ],
+      "transcript_timed": [
+       "[00:00.00-00:05.96] USER: Hey, it is pouring outside today. Anyway, I need to pick up a package from the lobby locker.",
+       "[00:06.39-00:13.39] ASSISTANT (text): To open the locker, you'll need the six-digit pickup code",
+       "[00:10.42-00:13.94] USER: Actually, I didn't get any text message about it.",
+       "[00:14.38-00:17.59] ASSISTANT (text): In that case, you just open your delivery app",
+       "[00:17.22-00:18.62] USER: alright",
+       "[00:17.59-00:21.16] ASSISTANT (text): to scan the QR code directly on the locker screen."
+      ],
+      "diversity_plan": {
+       "language": "en",
+       "user_persona": "a pragmatic user who just wants the conclusion and the steps",
+       "assistant_style": "professional and concise, gets straight to the point",
+       "tone": "transactional",
+       "tone_desc": "getting something done / process / booking",
+       "opening": "the user makes small talk before cutting to the topic",
+       "target_turns": 13,
+       "max_total_sec": 96.0,
+       "text_budget": 224,
+       "budget_unit": "words",
+       "interrupt_mode": "few",
+       "num_interrupt": 2,
+       "has_interrupt": true,
+       "interrupt_motives": [
+        [
+         "confirm a worry",
+         "the user rushes to confirm a risk/consequence they worry about",
+         "Wait, wouldn't that cause a problem?"
+        ],
+        [
+         "reject the premise",
+         "the user disagrees with the premise the assistant just assumed",
+         "No, that's not really the problem here"
+        ]
+       ],
+       "num_backchannel": 1,
+       "assistant_backchannel": false,
+       "backchannel_candidates": [
+        "alright",
+        "sure",
+        "sure thing",
+        "yeah yeah",
+        "no doubt",
+        "right on",
+        "totally",
+        "works for me",
+        "fine by me",
+        "right",
+        "precisely"
+       ]
+      },
+      "est_total_duration_sec": 56.856,
+      "user_speaker": "voice-09392d774912c6c647911969",
+      "quality": {
+       "n_scored": 2,
+       "avg_wer": 0.0,
+       "max_wer": 0.0,
+       "high_wer_count": 0,
+       "n_backchannel": 1,
+       "n_backchannel_resynth": 0,
+       "n_backchannel_asr_ok": 0
+      },
+      "truncation": {
+       "truncated": true,
+       "cut_at_turn_index": 6,
+       "orig_num_turns": 12,
+       "kept_num_turns": 6,
+       "wer_threshold": 0.1
+      },
+      "schema": "interactspeech_source_record_v1",
+      "training_source_turn_map": [
+       {
+        "training_turn_index": 0,
+        "source_turn_indices": [
+         0
+        ]
+       },
+       {
+        "training_turn_index": 1,
+        "source_turn_indices": [
+         1
+        ]
+       },
+       {
+        "training_turn_index": 2,
+        "source_turn_indices": [
+         2
+        ]
+       },
+       {
+        "training_turn_index": 3,
+        "source_turn_indices": [
+         3
+        ]
+       },
+       {
+        "training_turn_index": 4,
+        "source_turn_indices": [
+         4
+        ]
+       },
+       {
+        "training_turn_index": 5,
+        "source_turn_indices": [
+         5
+        ]
+       }
+      ]
+     }
+    }
+   }
+  }
+ ]
+}

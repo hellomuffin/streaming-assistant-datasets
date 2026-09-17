@@ -1,0 +1,308 @@
+{
+ "slug": "omnistar-rng",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/yzy666/OmniStar-RNG/resolve/main/RNG_task_train.jsonl (lines id 0 and 2)",
+  "https://huggingface.co/datasets/yzy666/OmniStar-RNG/resolve/main/RNG_task_all.txt",
+  "videos/9Uly5zVvl3Q.mp4",
+  "videos/34sJU2adbPs.mp4"
+ ],
+ "access_used": "open download",
+ "note": "One example = one short clip's real-time narration: the jsonl turn list feeds one frame every 25 video frames and the model repeats the previous caption until something new happens; the timeline collapses those repeats into spans (t = (frame-1)*25/fps). The companion RNG_task_all.txt stamps each caption with the index of the last frame of its span read as seconds (1 frame = 1 s), so its times drift from real time on non-25-fps videos.",
+ "examples": [
+  {
+   "title": "9Uly5zVvl3Q: animated bear-and-girl trailer — 20 frames, 4 distinct narration captions",
+   "video_ref": "videos/9Uly5zVvl3Q.mp4 (YouTube id 9Uly5zVvl3Q)",
+   "duration_s": 19.55,
+   "clip": "samples/media/omnistar-rng_1.mp4",
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 1.0,
+     "lane": "narration",
+     "text": "The screen shows a pink dividing line with black above and below."
+    },
+    {
+     "t": 1.0,
+     "te": 7.0,
+     "lane": "narration",
+     "text": "Then, the upper and lower frames are the same. In a forest at night, a brown bear is walking on a country road with a lantern and basket. The camera zooms out to show a table covered with a tablecloth. The table is filled with jams and teacups, and a little girl in a purple dress is standing next to it."
+    },
+    {
+     "t": 7.0,
+     "te": 13.0,
+     "lane": "narration",
+     "text": "Then, the little girl is standing next to a golden teapot, pouring water into a teacup, steam rising from the hot water. As the brown bear walks up to the table, the little girl pushes it towards him. The brown bear looks down at it, and the frame cuts to the jams on the table: carrot jam, cucumber jam, cherry jam, and tomato jam."
+    },
+    {
+     "t": 13.0,
+     "te": 19.55,
+     "lane": "narration",
+     "text": "The little girl then pours a jar of red jam into a large bowl filled with pine nuts. The picture switches back to the frowning brown bear, head lowered. The background turns white and shows the words \"COMING ON MAY 17!\"."
+    }
+   ],
+   "raw_format": "jsonl line + txt block",
+   "raw": {
+    "RNG_task_train.jsonl line": {
+     "id": 0,
+     "image": [
+      "data/video_frames/9Uly5zVvl3Q/9Uly5zVvl3Q_0000.jpg",
+      "data/video_frames/9Uly5zVvl3Q/9Uly5zVvl3Q_0025.jpg",
+      "data/video_frames/9Uly5zVvl3Q/9Uly5zVvl3Q_0050.jpg",
+      "…[truncated 17 more items]"
+     ],
+     "height_list": [
+      1920,
+      1920,
+      1920,
+      "…[truncated 17 more items]"
+     ],
+     "width_list": [
+      1080,
+      1080,
+      1080,
+      "…[truncated 17 more items]"
+     ],
+     "conversations": [
+      {
+       "from": "human",
+       "value": "You are an expert in real-time streaming video description. I will provide video frames sequentially, and you need to comprehend each frame's content in real-time while dynamically generating concise descriptions. Use transitional phrases to maintain textual coherence and avoid repeating already described content.\nFrame-1: <image>\n"
+      },
+      {
+       "from": "gpt",
+       "value": "The screen shows a pink dividing line with black above and below."
+      },
+      {
+       "from": "human",
+       "value": "Frame-2: <image>\n"
+      },
+      {
+       "from": "gpt",
+       "value": "Then, the upper and lower frames are the same. In a forest at night, a brown bear is walking on a country road with a lantern and basket. The camera zooms out to show a table covered with a tablecloth. The table is filled with jams and teacups, and a little girl in a purple dress is standing next to it."
+      },
+      {
+       "from": "human",
+       "value": "Frame-3: <image>\n"
+      },
+      {
+       "from": "gpt",
+       "value": "Then, the upper and lower frames are the same. In a forest at night, a brown bear is walking on a country road with a lantern and basket. The camera zooms out to show a table covered with a tablecloth. The table is filled with jams and teacups, and a little girl in a purple dress is standing next to it."
+      },
+      {
+       "from": "human",
+       "value": "Frame-4: <image>\n"
+      },
+      {
+       "from": "gpt",
+       "value": "Then, the upper and lower frames are the same. In a forest at night, a brown bear is walking on a country road with a lantern and basket. The camera zooms out to show a table covered with a tablecloth. The table is filled with jams and teacups, and a little girl in a purple dress is standing next to it."
+      },
+      {
+       "from": "human",
+       "value": "Frame-5: <image>\n"
+      },
+      {
+       "from": "gpt",
+       "value": "Then, the upper and lower frames are the same. In a forest at night, a brown bear is walking on a country road with a lantern and basket. The camera zooms out to show a table covered with a tablecloth. The table is filled with jams and teacups, and a little girl in a purple dress is standing next to it."
+      },
+      {
+       "from": "human",
+       "value": "Frame-6: <image>\n"
+      },
+      {
+       "from": "gpt",
+       "value": "Then, the upper and lower frames are the same. In a forest at night, a brown bear is walking on a country road with a lantern and basket. The camera zooms out to show a table covered with a tablecloth. The table is filled with jams and teacups, and a little girl in a purple dress is standing next to it."
+      },
+      {
+       "from": "human",
+       "value": "Frame-7: <image>\n"
+      },
+      {
+       "from": "gpt",
+       "value": "Then, the upper and lower frames are the same. In a forest at night, a brown bear is walking on a country road with a lantern and basket. The camera zooms out to show a table covered with a tablecloth. The table is filled with jams and teacups, and a little girl in a purple dress is standing next to it."
+      },
+      {
+       "from": "human",
+       "value": "Frame-8: <image>\n"
+      },
+      {
+       "from": "gpt",
+       "value": "Then, the little girl is standing next to a golden teapot, pouring water into a teacup, steam rising from the hot water. As the brown bear walks up to the table, the little girl pushes it towards him. The brown bear looks down at it, and the frame cuts to the jams on the table: carrot jam, cucumber jam, cherry jam, and tomato jam."
+      },
+      "…[truncated 24 more items]"
+     ]
+    },
+    "RNG_task_all.txt block": "data/caption_videos/9Uly5zVvl3Q.mp4\nTimestamp: 00:00:00 Caption: The screen shows a pink dividing line with black above and below.\nTimestamp: 00:00:06 Caption: Then, the upper and lower frames are the same. In a forest at night, a brown bear is walking on a country road with a lantern and basket. The camera zooms out to show a table covered with a tablecloth. The table is filled with jams and teacups, and a little girl in a purple dress is standing next to it.\nTimestamp: 00:00:12 Caption: Then, the little girl is standing next to a golden teapot, pouring water into a teacup, steam rising from the hot water. As the brown bear walks up to the table, the little girl pushes it towards him. The brown bear looks down at it, and the frame cuts to the jams on the table: carrot jam, cucumber jam, cherry jam, and tomato jam.\nTimestamp: 00:00:19 Caption: The little girl then pours a jar of red jam into a large bowl filled with pine nuts. The picture switches back to the frowning brown bear, head lowered. The background turns white and shows the words \"COMING ON MAY 17!\". "
+   }
+  },
+  {
+   "title": "34sJU2adbPs: cooking meat on a go-kart exhaust — 49 frames, 11 distinct narration captions",
+   "video_ref": "videos/34sJU2adbPs.mp4 (YouTube id 34sJU2adbPs)",
+   "duration_s": 48.97,
+   "clip": "samples/media/omnistar-rng_2.mp4",
+   "clip_offset_s": 8,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 0.83,
+     "lane": "narration",
+     "text": "On a go-kart track, a right hand holding a piece of meat extends forward. A colorful go-kart is parked on the gray track ahead. In the distance, there is green vegetation, black fences, and some buildings."
+    },
+    {
+     "t": 0.83,
+     "te": 4.17,
+     "lane": "narration",
+     "text": "Then the right hand holding the meat moves towards the left side of the go-kart and places the meat on the silver exhaust pipe of the go-kart. White smoke comes out."
+    },
+    {
+     "t": 4.17,
+     "te": 9.18,
+     "lane": "narration",
+     "text": "Immediately afterward, the scene switches to a racer wearing a racing suit and helmet standing on the left side. He reaches out his right hand and takes some items from the white object in the hand of the person on his left, sprinkles the items on the meat, then takes a white bottle and twists it with both hands to sprinkle more items on the meat."
+    },
+    {
+     "t": 9.18,
+     "te": 12.51,
+     "lane": "narration",
+     "text": "Then a man in blue clothes ties the meat on the exhaust pipe with two springs, then steps on the rear wheel of the go-kart with his right foot and moves forward. The go-kart quickly drives to the right."
+    },
+    {
+     "t": 12.51,
+     "te": 14.18,
+     "lane": "narration",
+     "text": "Afterward, the scene zooms in on the meat tied to the exhaust pipe of the go-kart. As the go-kart is moving at high speed, the meat on the exhaust pipe is shaking."
+    },
+    {
+     "t": 14.18,
+     "te": 19.19,
+     "lane": "narration",
+     "text": "Then the picture switches to a man wearing a green shirt and a black hat squatting in front of the go-kart's exhaust pipe. He first unties the spring tied to the meat, then turns the meat over, white smoke comes out, and then uses the spring again Tighten the meat."
+    },
+    {
+     "t": 19.19,
+     "te": 21.69,
+     "lane": "narration",
+     "text": "Then the go-kart continues to drive at high speed, and the meat on the exhaust pipe shakes."
+    },
+    {
+     "t": 21.69,
+     "te": 25.03,
+     "lane": "narration",
+     "text": "Afterwards, the screen switches to the front of the go-kart, the go-kart continues to drive, and then stops in front of three people with their backs to us. The man in blue on the left is sitting on a green chair, the middle one is wearing a racing suit and helmet, and the right one is wearing a green shirt and black hat, there is a yellow table in front of them."
+    },
+    {
+     "t": 25.03,
+     "te": 31.7,
+     "lane": "narration",
+     "text": "Then, the man in the green shirt walked to the back of the go-kart, took the meat from the exhaust pipe, white smoke came out, and there were traces of meat on the exhaust pipe, then he held the meat with both hands and put it on the yellow table. The man in blue sitting down watched with a serious face."
+    },
+    {
+     "t": 31.7,
+     "te": 36.7,
+     "lane": "narration",
+     "text": "Then the man in blue stretched out his right hand wearing gloves, picked up the meat, put it to his mouth and took a bite with a smile."
+    },
+    {
+     "t": 36.7,
+     "te": 40.87,
+     "lane": "narration",
+     "text": "Then he smiled as he ate, and supported the meat with his left hand, then he held the meat with his right hand, turned to the right, and handed the meat to the person wearing the racing suit on the right. The person wearing the racing suit lifted his helmet cover, smiled and held up the meat."
+    }
+   ],
+   "raw_format": "jsonl line + txt block",
+   "raw": {
+    "RNG_task_train.jsonl line": {
+     "id": 2,
+     "image": [
+      "data/video_frames/34sJU2adbPs/34sJU2adbPs_0000.jpg",
+      "data/video_frames/34sJU2adbPs/34sJU2adbPs_0030.jpg",
+      "data/video_frames/34sJU2adbPs/34sJU2adbPs_0060.jpg",
+      "…[truncated 46 more items]"
+     ],
+     "height_list": [
+      1280,
+      1280,
+      1280,
+      "…[truncated 46 more items]"
+     ],
+     "width_list": [
+      720,
+      720,
+      720,
+      "…[truncated 46 more items]"
+     ],
+     "conversations": [
+      {
+       "from": "human",
+       "value": "You are an expert in real-time streaming video description. I will provide video frames sequentially, and you need to comprehend each frame's content in real-time while dynamically generating concise descriptions. Use transitional phrases to maintain textual coherence and avoid repeating already described content.\nFrame-1: <image>\n"
+      },
+      {
+       "from": "gpt",
+       "value": "On a go-kart track, a right hand holding a piece of meat extends forward. A colorful go-kart is parked on the gray track ahead. In the distance, there is green vegetation, black fences, and some buildings."
+      },
+      {
+       "from": "human",
+       "value": "Frame-2: <image>\n"
+      },
+      {
+       "from": "gpt",
+       "value": "Then the right hand holding the meat moves towards the left side of the go-kart and places the meat on the silver exhaust pipe of the go-kart. White smoke comes out."
+      },
+      {
+       "from": "human",
+       "value": "Frame-3: <image>\n"
+      },
+      {
+       "from": "gpt",
+       "value": "Then the right hand holding the meat moves towards the left side of the go-kart and places the meat on the silver exhaust pipe of the go-kart. White smoke comes out."
+      },
+      {
+       "from": "human",
+       "value": "Frame-4: <image>\n"
+      },
+      {
+       "from": "gpt",
+       "value": "Then the right hand holding the meat moves towards the left side of the go-kart and places the meat on the silver exhaust pipe of the go-kart. White smoke comes out."
+      },
+      {
+       "from": "human",
+       "value": "Frame-5: <image>\n"
+      },
+      {
+       "from": "gpt",
+       "value": "Then the right hand holding the meat moves towards the left side of the go-kart and places the meat on the silver exhaust pipe of the go-kart. White smoke comes out."
+      },
+      {
+       "from": "human",
+       "value": "Frame-6: <image>\n"
+      },
+      {
+       "from": "gpt",
+       "value": "Immediately afterward, the scene switches to a racer wearing a racing suit and helmet standing on the left side. He reaches out his right hand and takes some items from the white object in the hand of the person on his left, sprinkles the items on the meat, then takes a white bottle and twists it with both hands to sprinkle more items on the meat."
+      },
+      {
+       "from": "human",
+       "value": "Frame-7: <image>\n"
+      },
+      {
+       "from": "gpt",
+       "value": "Immediately afterward, the scene switches to a racer wearing a racing suit and helmet standing on the left side. He reaches out his right hand and takes some items from the white object in the hand of the person on his left, sprinkles the items on the meat, then takes a white bottle and twists it with both hands to sprinkle more items on the meat."
+      },
+      {
+       "from": "human",
+       "value": "Frame-8: <image>\n"
+      },
+      {
+       "from": "gpt",
+       "value": "Immediately afterward, the scene switches to a racer wearing a racing suit and helmet standing on the left side. He reaches out his right hand and takes some items from the white object in the hand of the person on his left, sprinkles the items on the meat, then takes a white bottle and twists it with both hands to sprinkle more items on the meat."
+      },
+      "…[truncated 82 more items]"
+     ]
+    },
+    "RNG_task_all.txt block": "data/caption_videos/34sJU2adbPs.mp4\nTimestamp: 00:00:00 Caption: On a go-kart track, a right hand holding a piece of meat extends forward. A colorful go-kart is parked on the gray track ahead. In the distance, there is green vegetation, black fences, and some buildings. \nTimestamp: 00:00:04 Caption: Then the right hand holding the meat moves towards the left side of the go-kart and places the meat on the silver exhaust pipe of the go-kart. White smoke comes out.\nTimestamp: 00:00:10 Caption: Immediately afterward, the scene switches to a racer wearing a racing suit and helmet standing on the left side. He reaches out his right hand and takes some items from the white object in the hand of the person on his left, sprinkles the items on the meat, then takes a white bottle and twists it with both hands to sprinkle more items on the meat.\nTimestamp: 00:00:14 Caption: Then a man in blue clothes ties the meat on the exhaust pipe with two springs, then steps on the rear wheel of the go-kart with his right foot and moves forward. The go-kart quickly drives to the right.\nTimestamp: 00:00:16 Caption: Afterward, the scene zooms in on the meat tied to the exhaust pipe of the go-kart. As the go-kart is moving at high speed, the meat on the exhaust pipe is shaking.\nTimestamp: 00:00:22 Caption: Then the picture switches to a man wearing a green shirt and a black hat squatting in front of the go-kart's exhaust pipe. He first unties the spring tied to the meat, then turns the meat over, white smoke comes out, and then uses the spring again Tighten the meat. \nTimestamp: 00:00:25 Caption: Then the go-kart continues to drive at high speed, and the meat on the exhaust pipe shakes.\nTimestamp: 00:00:29 Caption: Afterwards, the screen switches to the front of the go-kart, the go-kart continues to drive, and then stops in front of three people with their backs to us. The man in blue on the left is sitting on a green chair, the middle one is wearing a racing suit and helmet, and the right one is wearing a green shirt and black hat, there is a yellow table in front of them.\nTimestamp: 00:00:37 Caption: Then, the man in the green shirt walked to the back of the go-kart, took the meat from the exhaust pipe, white smoke came out, and there were traces of meat on the exhaust pipe, then he held the meat with both hands and put it on the yellow table. The man in blue sitting down watched with a serious face.\nTimestamp: 00:00:43 Caption: Then the man in blue stretched out his right hand wearing gloves, picked up the meat, put it to his mouth and took a bite with a smile.\nTimestamp: 00:00:48 Caption: Then he smiled as he ate, and supported the meat with his left hand, then he held the meat with his right hand, turned to the right, and handed the meat to the person wearing the racing suit on the right. The person wearing the racing suit lifted his helmet cover, smiled and held up the meat. "
+   }
+  }
+ ]
+}

@@ -1,0 +1,125 @@
+{
+ "slug": "avsd",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "valid_set4DSTC7-AVSD.json (Google Drive OfficialData folder https://drive.google.com/drive/folders/1SlZTySJAk_2tiMG5F8ivxCfOl_OWwd_Q, file id 1QqY-0_kMNi5hMiCvs8mPVEE0lNCwL0nA)"
+ ],
+ "access_used": "open download",
+ "note": "An example is one Charades video's full AVSD record from the DSTC7 validation file: 10 questioner/answerer turns, the questioner's summary and the Charades caption. There are no timestamps (turn-based chat about the whole clip); videos are Charades (AI2 licence), so no clip is included.",
+ "examples": [
+  {
+   "title": "3MSZA: woman by the front door with snacks, off-screen man talking — 10 QA + summary + caption",
+   "video_ref": "Charades video id 3MSZA",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "json",
+   "raw": {
+    "image_id": "3MSZA",
+    "summary": "a young woman with long brown hair is standing inside a house next to the front door . she 's discussing whether or not to go to an event with another person . she 's holding some food in her hands .",
+    "dialog": [
+     {
+      "answer": "the person visable in the video is a woman , but it sounds as though there is a man having a conversation with her .",
+      "question": "is the person a man ?"
+     },
+     {
+      "answer": "yes her hair is past her shoulders and appears to be light brown .",
+      "question": "does she have long hair ?"
+     },
+     {
+      "answer": "it is a container of snacks that might be potato chips .",
+      "question": "what is she holding ?"
+     },
+     {
+      "answer": "there are a few things including a lamp and a pumpkin",
+      "question": "what 's on the table next to her ?"
+     },
+     {
+      "answer": "she is inside , but i can see some white that is probably snow through the door .",
+      "question": "is there snow on the ground ?"
+     },
+     {
+      "answer": "no i don 't see any animals",
+      "question": "can you see any animals ?"
+     },
+     {
+      "answer": "she is wearing a sweatshirt",
+      "question": "is she wearing a jacket ?"
+     },
+     {
+      "answer": "they are discussing whether one or both of them will attend an event .",
+      "question": "can you tell what they 're saying ?"
+     },
+     {
+      "answer": "i would guess late twenties .",
+      "question": "how old would you say she is ?"
+     },
+     {
+      "answer": "no , they are quite serious .",
+      "question": "do either of them laugh ?"
+     }
+    ],
+    "caption": "a person is eating in the doorway . the person then is playing with the switch for the light ."
+   }
+  },
+  {
+   "title": "UNWMJ: woman hangs up jacket, then phone call — 10 QA + summary + caption",
+   "video_ref": "Charades video id UNWMJ",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "json",
+   "raw": {
+    "image_id": "UNWMJ",
+    "summary": "a lady sets her phone down on a staircase . she takes off her jacket and puts it in the closet . she comes out of the closet and talks to someone on her cellphone . she hangs up and turns off the camera .",
+    "dialog": [
+     {
+      "answer": "yes one person is in the video",
+      "question": "is there a perosn in the video ?"
+     },
+     {
+      "answer": "no she was the only one",
+      "question": "does anyone else show up later in the video ?"
+     },
+     {
+      "answer": "yes she put her phone on it",
+      "question": "is there a staircase in the video ?"
+     },
+     {
+      "answer": "she put her phone down on the staircase",
+      "question": "how does the video begin ?"
+     },
+     {
+      "answer": "she took off her sweatshirt and put it in the closet",
+      "question": "what does she do after putting her phone down ?"
+     },
+     {
+      "answer": "it was already open she put the sweatshirt on th e floor",
+      "question": "did she open the door or was it already open ?"
+     },
+     {
+      "answer": "no she then picked up her phone and started talking to someone .",
+      "question": "did the video end after this ?"
+     },
+     {
+      "answer": "yes i can hear her talking",
+      "question": "did you hear her talking ?"
+     },
+     {
+      "answer": "yes just before the video was over",
+      "question": "does she hang up the phone eventually ?"
+     },
+     {
+      "answer": "then she went close to the camera i think she turn it off",
+      "question": "is there anything else i should know ?"
+     }
+    ],
+    "caption": "the person was undressing by the wardrobe . and the person was walking while talking on the phone ."
+   }
+  }
+ ]
+}

@@ -1,0 +1,546 @@
+{
+ "slug": "breakfast-actions",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "segmentation_coarse.tar.gz (Google Drive id 1R3z_CkO1uIOhu4y2Nh0pCHjQQ2l-Ab9E): segmentation_coarse/pancake/P48_cam01_P48_pancake.txt, segmentation_coarse/scrambledegg/P48_cam01_P48_scrambledegg.txt",
+  "segmentation_fine.tar.gz (Google Drive id 1Alg_xjefEFOOpO_6_RnelWiNqbJlKhVF): segmentation_fine/scrambledegg/P48_cam01_P48_scrambledegg.txt",
+  "BreakfastII_15fps_qvga_sync.tar.gz (Google Drive id 1jgSoof1AatiDRpGY091qd4TEKF-BUt6I, first 250 MB range-read): P48/cam01/P48_pancake.avi, P48/cam01/P48_scrambledegg.avi"
+ ],
+ "access_used": "open download",
+ "note": "One example is one camera view of one breakfast session: plain-text rows 'startFrame-endFrame label' at 15 fps (timeline converts with t=(start-1)/15). Coarse files give verb_object action units with SIL for background; fine files give sub-actions with 'garbage' for unlabelled spans. Clips are upscaled from the original 320x240.",
+ "examples": [
+  {
+   "title": "P48 cam01: pancake — 10 coarse action units (incl. SIL)",
+   "video_ref": "BreakfastII_15fps_qvga_sync/P48/cam01/P48_pancake.avi",
+   "duration_s": 269.27,
+   "clip": "samples/media/breakfast-actions_1.mp4",
+   "clip_offset_s": 118,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 0.07,
+     "lane": "step",
+     "text": "SIL"
+    },
+    {
+     "t": 0.07,
+     "te": 31.33,
+     "lane": "step",
+     "text": "crack_egg"
+    },
+    {
+     "t": 31.33,
+     "te": 60.27,
+     "lane": "step",
+     "text": "spoon_flour"
+    },
+    {
+     "t": 60.27,
+     "te": 75.73,
+     "lane": "step",
+     "text": "pour_milk"
+    },
+    {
+     "t": 75.73,
+     "te": 122.73,
+     "lane": "step",
+     "text": "stir_dough"
+    },
+    {
+     "t": 122.73,
+     "te": 134.47,
+     "lane": "step",
+     "text": "pour_dough2pan"
+    },
+    {
+     "t": 134.47,
+     "te": 245.13,
+     "lane": "step",
+     "text": "fry_pancake"
+    },
+    {
+     "t": 245.13,
+     "te": 256.67,
+     "lane": "step",
+     "text": "take_plate"
+    },
+    {
+     "t": 256.67,
+     "te": 267.6,
+     "lane": "step",
+     "text": "put_pancake2plate"
+    },
+    {
+     "t": 267.6,
+     "te": 269.27,
+     "lane": "step",
+     "text": "SIL"
+    }
+   ],
+   "raw_format": "txt",
+   "raw": {
+    "segmentation_coarse/pancake/P48_cam01_P48_pancake.txt": "1-1 SIL  \n2-470 crack_egg  \n471-904 spoon_flour  \n905-1136 pour_milk  \n1137-1841 stir_dough  \n1842-2017 pour_dough2pan  \n2018-3677 fry_pancake  \n3678-3850 take_plate  \n3851-4014 put_pancake2plate  \n4015-4039 SIL  \n"
+   }
+  },
+  {
+   "title": "P48 cam01: scrambled egg — 9 coarse units + 65 fine sub-actions",
+   "video_ref": "BreakfastII_15fps_qvga_sync/P48/cam01/P48_scrambledegg.avi",
+   "duration_s": 231.0,
+   "clip": "samples/media/breakfast-actions_2.mp4",
+   "clip_offset_s": 122,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 0.07,
+     "lane": "step",
+     "text": "SIL"
+    },
+    {
+     "t": 0.0,
+     "te": 2.33,
+     "lane": "action",
+     "text": "garbage"
+    },
+    {
+     "t": 0.07,
+     "te": 46.47,
+     "lane": "step",
+     "text": "butter_pan"
+    },
+    {
+     "t": 2.33,
+     "te": 4.6,
+     "lane": "action",
+     "text": "carry_pan"
+    },
+    {
+     "t": 4.6,
+     "te": 5.93,
+     "lane": "action",
+     "text": "reach_stove"
+    },
+    {
+     "t": 5.93,
+     "te": 6.53,
+     "lane": "action",
+     "text": "turnonOff_stove"
+    },
+    {
+     "t": 6.53,
+     "te": 6.93,
+     "lane": "action",
+     "text": "move"
+    },
+    {
+     "t": 6.93,
+     "te": 7.47,
+     "lane": "action",
+     "text": "reach_stove"
+    },
+    {
+     "t": 7.47,
+     "te": 8.07,
+     "lane": "action",
+     "text": "turnonOff_stove"
+    },
+    {
+     "t": 8.07,
+     "te": 8.53,
+     "lane": "action",
+     "text": "move"
+    },
+    {
+     "t": 8.53,
+     "te": 11.47,
+     "lane": "action",
+     "text": "reach_butter"
+    },
+    {
+     "t": 11.47,
+     "te": 12.53,
+     "lane": "action",
+     "text": "carry_butter"
+    },
+    {
+     "t": 12.53,
+     "te": 20.6,
+     "lane": "action",
+     "text": "liftopen_lidButter"
+    },
+    {
+     "t": 20.6,
+     "te": 20.93,
+     "lane": "action",
+     "text": "carry_lidButter"
+    },
+    {
+     "t": 20.93,
+     "te": 21.27,
+     "lane": "action",
+     "text": "reach_butter"
+    },
+    {
+     "t": 21.27,
+     "te": 22.0,
+     "lane": "action",
+     "text": "reach_knife"
+    },
+    {
+     "t": 22.0,
+     "te": 31.73,
+     "lane": "action",
+     "text": "carry_knife"
+    },
+    {
+     "t": 31.73,
+     "te": 32.07,
+     "lane": "action",
+     "text": "reach_lidButter"
+    },
+    {
+     "t": 32.07,
+     "te": 33.87,
+     "lane": "action",
+     "text": "carry_lidButter"
+    },
+    {
+     "t": 33.87,
+     "te": 36.07,
+     "lane": "action",
+     "text": "pressclose_lidButter"
+    },
+    {
+     "t": 36.07,
+     "te": 43.33,
+     "lane": "action",
+     "text": "move"
+    },
+    {
+     "t": 43.33,
+     "te": 43.67,
+     "lane": "action",
+     "text": "reach_spatula"
+    },
+    {
+     "t": 43.67,
+     "te": 46.47,
+     "lane": "action",
+     "text": "melt_butter"
+    },
+    {
+     "t": 46.47,
+     "te": 93.53,
+     "lane": "step",
+     "text": "crack_egg"
+    },
+    {
+     "t": 46.47,
+     "te": 48.73,
+     "lane": "action",
+     "text": "reach_eggcarton"
+    },
+    {
+     "t": 48.73,
+     "te": 50.47,
+     "lane": "action",
+     "text": "liftopen_eggcarton"
+    },
+    {
+     "t": 50.47,
+     "te": 51.27,
+     "lane": "action",
+     "text": "reach_egg"
+    },
+    {
+     "t": 51.27,
+     "te": 52.0,
+     "lane": "action",
+     "text": "carry_egg"
+    },
+    {
+     "t": 52.0,
+     "te": 52.53,
+     "lane": "action",
+     "text": "reach_egg"
+    },
+    {
+     "t": 52.53,
+     "te": 54.73,
+     "lane": "action",
+     "text": "carry_egg"
+    },
+    {
+     "t": 54.73,
+     "te": 55.53,
+     "lane": "action",
+     "text": "reach_egg"
+    },
+    {
+     "t": 55.53,
+     "te": 60.13,
+     "lane": "action",
+     "text": "carry_egg"
+    },
+    {
+     "t": 60.13,
+     "te": 60.73,
+     "lane": "action",
+     "text": "reach_spatula"
+    },
+    {
+     "t": 60.73,
+     "te": 67.53,
+     "lane": "action",
+     "text": "melt_butter"
+    },
+    {
+     "t": 67.53,
+     "te": 71.53,
+     "lane": "action",
+     "text": "garbage"
+    },
+    {
+     "t": 71.53,
+     "te": 74.07,
+     "lane": "action",
+     "text": "melt_butter"
+    },
+    {
+     "t": 74.07,
+     "te": 75.4,
+     "lane": "action",
+     "text": "reach_knife"
+    },
+    {
+     "t": 75.4,
+     "te": 81.67,
+     "lane": "action",
+     "text": "carry_knife"
+    },
+    {
+     "t": 81.67,
+     "te": 82.47,
+     "lane": "action",
+     "text": "reach_egg"
+    },
+    {
+     "t": 82.47,
+     "te": 84.13,
+     "lane": "action",
+     "text": "carry_egg"
+    },
+    {
+     "t": 84.13,
+     "te": 86.73,
+     "lane": "action",
+     "text": "transfer_egg2pan"
+    },
+    {
+     "t": 86.73,
+     "te": 87.73,
+     "lane": "action",
+     "text": "carry_egg"
+    },
+    {
+     "t": 87.73,
+     "te": 88.8,
+     "lane": "action",
+     "text": "reach_cabinet"
+    },
+    {
+     "t": 88.8,
+     "te": 90.6,
+     "lane": "action",
+     "text": "open_cabinet"
+    },
+    {
+     "t": 90.6,
+     "te": 92.47,
+     "lane": "action",
+     "text": "move"
+    },
+    {
+     "t": 92.47,
+     "te": 93.67,
+     "lane": "action",
+     "text": "reach_spatula"
+    },
+    {
+     "t": 93.53,
+     "te": 123.53,
+     "lane": "step",
+     "text": "stirfry_egg"
+    },
+    {
+     "t": 93.67,
+     "te": 122.53,
+     "lane": "action",
+     "text": "scramble_egg"
+    },
+    {
+     "t": 122.53,
+     "te": 124.4,
+     "lane": "action",
+     "text": "reach_pepper"
+    },
+    {
+     "t": 123.53,
+     "te": 147.47,
+     "lane": "step",
+     "text": "add_saltnpepper"
+    },
+    {
+     "t": 124.4,
+     "te": 127.07,
+     "lane": "action",
+     "text": "carry_pepper"
+    },
+    {
+     "t": 127.07,
+     "te": 139.27,
+     "lane": "action",
+     "text": "grind_pepper"
+    },
+    {
+     "t": 139.27,
+     "te": 141.4,
+     "lane": "action",
+     "text": "carry_pepper"
+    },
+    {
+     "t": 141.4,
+     "te": 141.93,
+     "lane": "action",
+     "text": "reach_salt"
+    },
+    {
+     "t": 142.0,
+     "te": 142.73,
+     "lane": "action",
+     "text": "carry_salt"
+    },
+    {
+     "t": 142.73,
+     "te": 145.87,
+     "lane": "action",
+     "text": "pour_salt"
+    },
+    {
+     "t": 145.93,
+     "te": 146.27,
+     "lane": "action",
+     "text": "reach_salt"
+    },
+    {
+     "t": 146.33,
+     "te": 147.2,
+     "lane": "action",
+     "text": "reach_spatula"
+    },
+    {
+     "t": 147.2,
+     "te": 148.13,
+     "lane": "action",
+     "text": "reach_pan"
+    },
+    {
+     "t": 147.47,
+     "te": 201.13,
+     "lane": "step",
+     "text": "stirfry_egg"
+    },
+    {
+     "t": 148.13,
+     "te": 201.07,
+     "lane": "action",
+     "text": "fry_egg"
+    },
+    {
+     "t": 201.07,
+     "te": 201.8,
+     "lane": "action",
+     "text": "reach_cabinet"
+    },
+    {
+     "t": 201.13,
+     "te": 211.13,
+     "lane": "step",
+     "text": "take_plate"
+    },
+    {
+     "t": 201.8,
+     "te": 202.53,
+     "lane": "action",
+     "text": "open_cabinet"
+    },
+    {
+     "t": 202.53,
+     "te": 203.33,
+     "lane": "action",
+     "text": "reach_plate"
+    },
+    {
+     "t": 203.33,
+     "te": 207.2,
+     "lane": "action",
+     "text": "close_cabinet"
+    },
+    {
+     "t": 207.2,
+     "te": 208.47,
+     "lane": "action",
+     "text": "reach_spatula"
+    },
+    {
+     "t": 208.47,
+     "te": 210.67,
+     "lane": "action",
+     "text": "carry_plate"
+    },
+    {
+     "t": 210.67,
+     "te": 211.93,
+     "lane": "action",
+     "text": "reach_spatula"
+    },
+    {
+     "t": 211.13,
+     "te": 227.8,
+     "lane": "step",
+     "text": "put_egg2plate"
+    },
+    {
+     "t": 211.93,
+     "te": 228.13,
+     "lane": "action",
+     "text": "carry_spatula"
+    },
+    {
+     "t": 227.8,
+     "te": 231.0,
+     "lane": "step",
+     "text": "SIL"
+    },
+    {
+     "t": 228.13,
+     "te": 229.93,
+     "lane": "action",
+     "text": "shift"
+    },
+    {
+     "t": 229.93,
+     "te": 231.0,
+     "lane": "action",
+     "text": "garbage"
+    }
+   ],
+   "raw_format": "txt",
+   "raw": {
+    "segmentation_coarse/scrambledegg/P48_cam01_P48_scrambledegg.txt": "1-1 SIL  \n2-697 butter_pan  \n698-1403 crack_egg  \n1404-1853 stirfry_egg  \n1854-2212 add_saltnpepper  \n2213-3017 stirfry_egg  \n3018-3167 take_plate  \n3168-3417 put_egg2plate  \n3418-3465 SIL  \n",
+    "segmentation_fine/scrambledegg/P48_cam01_P48_scrambledegg.txt": "1-35 garbage  \n36-69 carry_pan  \n70-89 reach_stove  \n90-98 turnonOff_stove  \n99-104 move  \n105-112 reach_stove  \n113-121 turnonOff_stove  \n122-128 move  \n129-172 reach_butter  \n173-188 carry_butter  \n189-309 liftopen_lidButter  \n310-314 carry_lidButter  \n315-319 reach_butter  \n320-330 reach_knife  \n331-476 carry_knife  \n477-481 reach_lidButter  \n482-508 carry_lidButter  \n509-541 pressclose_lidButter  \n542-650 move  \n651-655 reach_spatula  \n656-697 melt_butter  \n698-731 reach_eggcarton  \n732-757 liftopen_eggcarton  \n758-769 reach_egg  \n770-780 carry_egg  \n781-788 reach_egg  \n789-821 carry_egg  \n822-833 reach_egg  \n834-902 carry_egg  \n903-911 reach_spatula  \n912-1013 melt_butter  \n1014-1073 garbage  \n1074-1111 melt_butter  \n1112-1131 reach_knife  \n1132-1225 carry_knife  \n1226-1237 reach_egg  \n1238-1262 carry_egg  \n1263-1301 transfer_egg2pan  \n1302-1316 carry_egg  \n1317-1332 reach_cabinet  \n1333-1359 open_cabinet  \n1360-1387 move  \n1388-1405 reach_spatula  \n1406-1838 scramble_egg  \n1839-1866 reach_pepper  \n1867-1906 carry_pepper  \n1907-2089 grind_pepper  \n2090-2121 carry_pepper  \n2122-2129 reach_salt  \n2131-2141 carry_salt  \n2142-2188 pour_salt  \n2190-2194 reach_salt  \n2196-2208 reach_spatula  \n2209-2222 reach_pan  \n2223-3016 fry_egg  \n3017-3027 reach_cabinet  \n3028-3038 open_cabinet  \n3039-3050 reach_plate  \n3051-3108 close_cabinet  \n3109-3127 reach_spatula  \n3128-3160 carry_plate  \n3161-3179 reach_spatula  \n3180-3422 carry_spatula  \n3423-3449 shift  \n3450-3465 garbage  \n"
+   }
+  }
+ ]
+}

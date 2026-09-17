@@ -1,0 +1,698 @@
+{
+ "slug": "multidialog",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/IVLLab/MultiDialog/blob/main/metadata/test_freq/test_freq_metadata_0000.jsonl",
+  "Google Drive folder 1RPMwVHU34yX0R_HbxAWmxF2EHy961HA3: test_freq/test_freq_chunks_0000.tar.gz (first ~250 MB streamed; per-utterance mp4s of the two conversations)"
+ ],
+ "access_used": "open download",
+ "note": "An example is one TopicalChat conversation acted by two actors: 22 metadata lines, one per utterance, each with its own wav and its own face-camera mp4 (the letter after the utterance index, e.g. _0i / _1f, is the actor). The release has no shared timeline, so the timeline here simply places the per-utterance video files end to end in utterance order (times are cumulative file durations, not recorded conversation timing; there are no overlaps or backchannels by construction). The clip concatenates the first utterance videos in the same way.",
+ "examples": [
+  {
+   "title": "t_c0f787a2: football, the yellow first-down line and cat mayors — 22 utterances, 2 actors",
+   "video_ref": "test_freq/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_<utterance_id><actor>.mp4 (22 per-utterance files)",
+   "duration_s": 158.11,
+   "clip": "samples/media/multidialog_1.mp4",
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0,
+     "te": 2.7,
+     "lane": "user",
+     "text": "[actor i, human, emotion=Curious to dive deeper] Hi are you a football fan?"
+    },
+    {
+     "t": 2.7,
+     "te": 5.63,
+     "lane": "assistant",
+     "text": "[actor f, gpt, emotion=Neutral] Hi, no not really.  Are you?"
+    },
+    {
+     "t": 5.63,
+     "te": 12.3,
+     "lane": "user",
+     "text": "[actor i, human, emotion=Happy] I watch it during the season because I don't have anything better to do.  Especially for the Monday and Thursday night games."
+    },
+    {
+     "t": 12.3,
+     "te": 19.6,
+     "lane": "assistant",
+     "text": "[actor f, gpt, emotion=Surprised] I get that, especially when there is only 11 minutes of action in a game.  I guess the rest is commercials?"
+    },
+    {
+     "t": 19.6,
+     "te": 25.0,
+     "lane": "user",
+     "text": "[actor i, human, emotion=Happy] Isn't that crazy that it's such a short amount of time for something they drag out of 3 hours?"
+    },
+    {
+     "t": 25.0,
+     "te": 29.47,
+     "lane": "assistant",
+     "text": "[actor f, gpt, emotion=Surprised] I know! They sure do milk it for all its worth."
+    },
+    {
+     "t": 29.47,
+     "te": 37.47,
+     "lane": "user",
+     "text": "[actor i, human, emotion=Happy] ESPN won an emmy for creating the superimposed yellow first down line on tv.  That has been a good addition to watching games."
+    },
+    {
+     "t": 37.47,
+     "te": 44.6,
+     "lane": "assistant",
+     "text": "[actor f, gpt, emotion=Surprised] Yeah, that was a good addition. Can't believe that Benjarvus Green-Ellis never fumbled.  Amazing!"
+    },
+    {
+     "t": 44.6,
+     "te": 55.77,
+     "lane": "user",
+     "text": "[actor i, human, emotion=Happy] That's an incredible stat to have!  The average lifetime earnings of an engineer is higher than the average lifetime earnings of an NFL or MLB player.  Probably due to having longer careers."
+    },
+    {
+     "t": 55.77,
+     "te": 67.87,
+     "lane": "assistant",
+     "text": "[actor f, gpt, emotion=Curious to dive deeper] Yeah, that's what I would think.  NFL careers are probably pretty short on average due to injury, and it is really hard to get to the majors and stick there long enough to make any serious money"
+    },
+    {
+     "t": 67.87,
+     "te": 75.83,
+     "lane": "user",
+     "text": "[actor i, human, emotion=Happy] Yes.  Did you know that there is no written rule that prevents females from playing in the NFL?  Maybe we'll see on soon?"
+    },
+    {
+     "t": 75.83,
+     "te": 87.4,
+     "lane": "assistant",
+     "text": "[actor f, gpt, emotion=Surprised] Maybe we will!  That would help boost ratings, I would think.  Maybe then they'll start letting the Saint's cheerleaders eat in the same restaurants as the players.  What a stupid rule!"
+    },
+    {
+     "t": 87.4,
+     "te": 91.6,
+     "lane": "user",
+     "text": "[actor i, human, emotion=Happy] That is an odd rule for sure!  Kind of dumb."
+    },
+    {
+     "t": 91.6,
+     "te": 100.23,
+     "lane": "assistant",
+     "text": "[actor f, gpt, emotion=Surprised] Do you a cat?  They are amazing creatures.  One is a mayor in Alaska!"
+    },
+    {
+     "t": 100.23,
+     "te": 108.17,
+     "lane": "user",
+     "text": "[actor i, human, emotion=Happy] I have one outside.  Yes they are.  I would like to see the cat cafes they have in Japan.  Do you know how those work?"
+    },
+    {
+     "t": 108.17,
+     "te": 115.03,
+     "lane": "assistant",
+     "text": "[actor f, gpt, emotion=Happy] Yes!  They can pay by the hour to play with cats and have drinks. Seems like a cool place!"
+    },
+    {
+     "t": 115.03,
+     "te": 122.07,
+     "lane": "user",
+     "text": "[actor i, human, emotion=Happy] I agree!  When a cat reaches the age of 15 they have usually spent 10 of those years sleeping!"
+    },
+    {
+     "t": 122.07,
+     "te": 129.37,
+     "lane": "assistant",
+     "text": "[actor f, gpt, emotion=Happy] That's a life well lived lol.  Cats can also co-author physics papers!"
+    },
+    {
+     "t": 129.37,
+     "te": 139.77,
+     "lane": "user",
+     "text": "[actor i, human, emotion=Happy] What?  That is crazy!  lol  There is a cat named Stubbs who is the mayor of a town called Talkeetna in Alaska!  How does that work?  lol"
+    },
+    {
+     "t": 139.77,
+     "te": 147.9,
+     "lane": "assistant",
+     "text": "[actor f, gpt, emotion=Happy] I wonder who that cat ran against?  It would've been funny if the other candidate was a dog!"
+    },
+    {
+     "t": 147.9,
+     "te": 152.33,
+     "lane": "user",
+     "text": "[actor i, human, emotion=Happy] Hahah Yes it would be!  I've had a good time chatting with you!"
+    },
+    {
+     "t": 152.33,
+     "te": 158.11,
+     "lane": "assistant",
+     "text": "[actor f, gpt, emotion=Happy] Me too.  Have a great day!"
+    }
+   ],
+   "raw_format": "jsonl line",
+   "raw": [
+    {
+     "file_name": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_0i.wav",
+     "conv_id": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8",
+     "utterance_id": 0,
+     "from": "human",
+     "value": "Hi are you a football fan?",
+     "emotion": "Curious to dive deeper",
+     "audpath": "test_freq/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_0i.wav"
+    },
+    {
+     "file_name": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_1f.wav",
+     "conv_id": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8",
+     "utterance_id": 1,
+     "from": "gpt",
+     "value": "Hi, no not really.  Are you?",
+     "emotion": "Neutral",
+     "audpath": "test_freq/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_1f.wav"
+    },
+    {
+     "file_name": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_2i.wav",
+     "conv_id": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8",
+     "utterance_id": 2,
+     "from": "human",
+     "value": "I watch it during the season because I don't have anything better to do.  Especially for the Monday and Thursday night games.",
+     "emotion": "Happy",
+     "audpath": "test_freq/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_2i.wav"
+    },
+    {
+     "file_name": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_3f.wav",
+     "conv_id": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8",
+     "utterance_id": 3,
+     "from": "gpt",
+     "value": "I get that, especially when there is only 11 minutes of action in a game.  I guess the rest is commercials?",
+     "emotion": "Surprised",
+     "audpath": "test_freq/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_3f.wav"
+    },
+    {
+     "file_name": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_4i.wav",
+     "conv_id": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8",
+     "utterance_id": 4,
+     "from": "human",
+     "value": "Isn't that crazy that it's such a short amount of time for something they drag out of 3 hours?",
+     "emotion": "Happy",
+     "audpath": "test_freq/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_4i.wav"
+    },
+    {
+     "file_name": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_5f.wav",
+     "conv_id": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8",
+     "utterance_id": 5,
+     "from": "gpt",
+     "value": "I know! They sure do milk it for all its worth.  ",
+     "emotion": "Surprised",
+     "audpath": "test_freq/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_5f.wav"
+    },
+    {
+     "file_name": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_6i.wav",
+     "conv_id": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8",
+     "utterance_id": 6,
+     "from": "human",
+     "value": "ESPN won an emmy for creating the superimposed yellow first down line on tv.  That has been a good addition to watching games.",
+     "emotion": "Happy",
+     "audpath": "test_freq/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_6i.wav"
+    },
+    {
+     "file_name": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_7f.wav",
+     "conv_id": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8",
+     "utterance_id": 7,
+     "from": "gpt",
+     "value": "Yeah, that was a good addition. Can't believe that Benjarvus Green-Ellis never fumbled.  Amazing!",
+     "emotion": "Surprised",
+     "audpath": "test_freq/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_7f.wav"
+    },
+    {
+     "file_name": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_8i.wav",
+     "conv_id": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8",
+     "utterance_id": 8,
+     "from": "human",
+     "value": "That's an incredible stat to have!  The average lifetime earnings of an engineer is higher than the average lifetime earnings of an NFL or MLB player.  Probably due to having longer careers.",
+     "emotion": "Happy",
+     "audpath": "test_freq/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_8i.wav"
+    },
+    {
+     "file_name": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_9f.wav",
+     "conv_id": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8",
+     "utterance_id": 9,
+     "from": "gpt",
+     "value": "Yeah, that's what I would think.  NFL careers are probably pretty short on average due to injury, and it is really hard to get to the majors and stick there long enough to make any serious money",
+     "emotion": "Curious to dive deeper",
+     "audpath": "test_freq/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_9f.wav"
+    },
+    {
+     "file_name": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_10i.wav",
+     "conv_id": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8",
+     "utterance_id": 10,
+     "from": "human",
+     "value": "Yes.  Did you know that there is no written rule that prevents females from playing in the NFL?  Maybe we'll see on soon?",
+     "emotion": "Happy",
+     "audpath": "test_freq/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_10i.wav"
+    },
+    {
+     "file_name": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_11f.wav",
+     "conv_id": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8",
+     "utterance_id": 11,
+     "from": "gpt",
+     "value": "Maybe we will!  That would help boost ratings, I would think.  Maybe then they'll start letting the Saint's cheerleaders eat in the same restaurants as the players.  What a stupid rule!",
+     "emotion": "Surprised",
+     "audpath": "test_freq/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_11f.wav"
+    },
+    {
+     "file_name": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_12i.wav",
+     "conv_id": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8",
+     "utterance_id": 12,
+     "from": "human",
+     "value": "That is an odd rule for sure!  Kind of dumb.",
+     "emotion": "Happy",
+     "audpath": "test_freq/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_12i.wav"
+    },
+    {
+     "file_name": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_13f.wav",
+     "conv_id": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8",
+     "utterance_id": 13,
+     "from": "gpt",
+     "value": "Do you a cat?  They are amazing creatures.  One is a mayor in Alaska!",
+     "emotion": "Surprised",
+     "audpath": "test_freq/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_13f.wav"
+    },
+    {
+     "file_name": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_14i.wav",
+     "conv_id": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8",
+     "utterance_id": 14,
+     "from": "human",
+     "value": "I have one outside.  Yes they are.  I would like to see the cat cafes they have in Japan.  Do you know how those work?",
+     "emotion": "Happy",
+     "audpath": "test_freq/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_14i.wav"
+    },
+    {
+     "file_name": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_15f.wav",
+     "conv_id": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8",
+     "utterance_id": 15,
+     "from": "gpt",
+     "value": "Yes!  They can pay by the hour to play with cats and have drinks. Seems like a cool place!",
+     "emotion": "Happy",
+     "audpath": "test_freq/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_15f.wav"
+    },
+    {
+     "file_name": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_16i.wav",
+     "conv_id": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8",
+     "utterance_id": 16,
+     "from": "human",
+     "value": "I agree!  When a cat reaches the age of 15 they have usually spent 10 of those years sleeping!",
+     "emotion": "Happy",
+     "audpath": "test_freq/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_16i.wav"
+    },
+    {
+     "file_name": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_17f.wav",
+     "conv_id": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8",
+     "utterance_id": 17,
+     "from": "gpt",
+     "value": "That's a life well lived lol.  Cats can also co-author physics papers!",
+     "emotion": "Happy",
+     "audpath": "test_freq/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_17f.wav"
+    },
+    {
+     "file_name": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_18i.wav",
+     "conv_id": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8",
+     "utterance_id": 18,
+     "from": "human",
+     "value": "What?  That is crazy!  lol  There is a cat named Stubbs who is the mayor of a town called Talkeetna in Alaska!  How does that work?  lol",
+     "emotion": "Happy",
+     "audpath": "test_freq/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_18i.wav"
+    },
+    {
+     "file_name": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_19f.wav",
+     "conv_id": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8",
+     "utterance_id": 19,
+     "from": "gpt",
+     "value": "I wonder who that cat ran against?  It would've been funny if the other candidate was a dog!",
+     "emotion": "Happy",
+     "audpath": "test_freq/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_19f.wav"
+    },
+    {
+     "file_name": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_20i.wav",
+     "conv_id": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8",
+     "utterance_id": 20,
+     "from": "human",
+     "value": "Hahah Yes it would be!  I've had a good time chatting with you!",
+     "emotion": "Happy",
+     "audpath": "test_freq/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_20i.wav"
+    },
+    {
+     "file_name": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_21f.wav",
+     "conv_id": "t_c0f787a2-1a4a-47c3-95aa-50b5567504e8",
+     "utterance_id": 21,
+     "from": "gpt",
+     "value": "Me too.  Have a great day!",
+     "emotion": "Happy",
+     "audpath": "test_freq/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8/t_c0f787a2-1a4a-47c3-95aa-50b5567504e8_21f.wav"
+    }
+   ]
+  },
+  {
+   "title": "t_ddb49766: Tom Brady's book, bowling pay and female kickers — 22 utterances, 2 actors",
+   "video_ref": "test_freq/t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_<utterance_id><actor>.mp4 (22 per-utterance files)",
+   "duration_s": 167.06,
+   "clip": "samples/media/multidialog_2.mp4",
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0,
+     "te": 8.23,
+     "lane": "user",
+     "text": "[actor j, human, emotion=Curious to dive deeper] hey would you read a book by Tom Brady? I want to read his new one The TB12 method"
+    },
+    {
+     "t": 8.23,
+     "te": 11.67,
+     "lane": "assistant",
+     "text": "[actor h, gpt, emotion=Curious to dive deeper] I find it unlikely. What is his new book about?"
+    },
+    {
+     "t": 11.67,
+     "te": 21.4,
+     "lane": "user",
+     "text": "[actor j, human, emotion=Happy] its basically his strategy for how he became successful, I think its worth a read, can't believe hes 40 and is tied for the superbowl record"
+    },
+    {
+     "t": 21.4,
+     "te": 24.13,
+     "lane": "assistant",
+     "text": "[actor h, gpt, emotion=Curious to dive deeper] That is pretty amazing. Are you a fan of football?"
+    },
+    {
+     "t": 24.13,
+     "te": 29.47,
+     "lane": "user",
+     "text": "[actor j, human, emotion=Curious to dive deeper] ya I think football is ok, I like the big games but don't follow a team or anything, you?"
+    },
+    {
+     "t": 29.47,
+     "te": 39.47,
+     "lane": "assistant",
+     "text": "[actor h, gpt, emotion=Curious to dive deeper] I am. I'm a Bears fan. Were you aware that ESPN won an Emmy for creating the yellow line that marks the first down position? I can't imagine watching a game without that."
+    },
+    {
+     "t": 39.47,
+     "te": 49.77,
+     "lane": "user",
+     "text": "[actor j, human, emotion=Curious to dive deeper] no that was a great inventino! definitely worth it, I also love how a team painted the other sides locker room pink, I wonder if their record improved after that"
+    },
+    {
+     "t": 49.77,
+     "te": 54.27,
+     "lane": "assistant",
+     "text": "[actor h, gpt, emotion=Curious to dive deeper] I had heard about that. What a mind game. Was that the University of Iowa?"
+    },
+    {
+     "t": 54.27,
+     "te": 61.03,
+     "lane": "user",
+     "text": "[actor j, human, emotion=Surprised] haha ya it was, I wonder if they have a player that has never fubmled the ball like benjarvus Green-ellis"
+    },
+    {
+     "t": 61.03,
+     "te": 68.77,
+     "lane": "assistant",
+     "text": "[actor h, gpt, emotion=Curious to dive deeper] I was not aware that a player had never fumbled a ball. That's amazing! I don't recognize the name. What team did he play for?"
+    },
+    {
+     "t": 68.77,
+     "te": 75.33,
+     "lane": "user",
+     "text": "[actor j, human, emotion=Curious to dive deeper] ya it was the patriots, he's super good, did you know that bowling was super popular in the 60s?"
+    },
+    {
+     "t": 75.33,
+     "te": 82.07,
+     "lane": "assistant",
+     "text": "[actor h, gpt, emotion=Neutral] I did not. I remember it being more popular than it is now but I did not know that it was actually popular."
+    },
+    {
+     "t": 82.07,
+     "te": 90.07,
+     "lane": "user",
+     "text": "[actor j, human, emotion=Surprised] yup they even made twice as much as football players back then, thats nuts!"
+    },
+    {
+     "t": 90.07,
+     "te": 97.27,
+     "lane": "assistant",
+     "text": "[actor h, gpt, emotion=Curious to dive deeper] Wow! That would never happen now. Did you know that there are no written rules against female players in the NFL?"
+    },
+    {
+     "t": 97.27,
+     "te": 105.0,
+     "lane": "user",
+     "text": "[actor j, human, emotion=Curious to dive deeper] no thats interesting, I think we coul dhave a female kicker or something, I just don't know if they could run quick enough, women do have lower muscle mass"
+    },
+    {
+     "t": 105.0,
+     "te": 116.4,
+     "lane": "assistant",
+     "text": "[actor h, gpt, emotion=Curious to dive deeper] I think kicker would be good. I think they could run fast enough. They would still have to pass requirements and with those men being so huge I don't think they would be able to play any other position."
+    },
+    {
+     "t": 116.4,
+     "te": 128.5,
+     "lane": "user",
+     "text": "[actor j, human, emotion=Neutral] ya if they cna pass the requirements then I dont see any problems, I jsut know that, for instance, top womens tennis players were beaten by high school students, that is why olympic games separate the mens and womens divisions"
+    },
+    {
+     "t": 128.5,
+     "te": 135.63,
+     "lane": "assistant",
+     "text": "[actor h, gpt, emotion=Curious to dive deeper] I did not know that. Did you know that there are tracking chips in players shoulder pads and in the footballs in the NFL?"
+    },
+    {
+     "t": 135.63,
+     "te": 145.87,
+     "lane": "user",
+     "text": "[actor j, human, emotion=Neutral] ya I did know about that, it can track all kinds of stats like speed, directino, acceleration and rotation, I hope they can use that information to help prevent concussions"
+    },
+    {
+     "t": 145.87,
+     "te": 153.0,
+     "lane": "assistant",
+     "text": "[actor h, gpt, emotion=Curious to dive deeper] I hope so too. I wonder why they are not using that data to help make calls rather than just relying on reviews?"
+    },
+    {
+     "t": 153.0,
+     "te": 160.03,
+     "lane": "user",
+     "text": "[actor j, human, emotion=Curious to dive deeper] ya I agree, I think refs should be more impartial and use the chips to track that stuff, what do you think about the bible btw?"
+    },
+    {
+     "t": 160.03,
+     "te": 167.06,
+     "lane": "assistant",
+     "text": "[actor h, gpt, emotion=Neutral] I do not have any real opinion one or another. I see good and bad in it."
+    }
+   ],
+   "raw_format": "jsonl line",
+   "raw": [
+    {
+     "file_name": "t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_0j.wav",
+     "conv_id": "t_ddb49766-028c-4232-a171-ef1b56044b21",
+     "utterance_id": 0,
+     "from": "human",
+     "value": "hey would you read a book by Tom Brady? I want to read his new one The TB12 method",
+     "emotion": "Curious to dive deeper",
+     "audpath": "test_freq/t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_0j.wav"
+    },
+    {
+     "file_name": "t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_1h.wav",
+     "conv_id": "t_ddb49766-028c-4232-a171-ef1b56044b21",
+     "utterance_id": 1,
+     "from": "gpt",
+     "value": "I find it unlikely. What is his new book about?",
+     "emotion": "Curious to dive deeper",
+     "audpath": "test_freq/t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_1h.wav"
+    },
+    {
+     "file_name": "t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_2j.wav",
+     "conv_id": "t_ddb49766-028c-4232-a171-ef1b56044b21",
+     "utterance_id": 2,
+     "from": "human",
+     "value": "its basically his strategy for how he became successful, I think its worth a read, can't believe hes 40 and is tied for the superbowl record",
+     "emotion": "Happy",
+     "audpath": "test_freq/t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_2j.wav"
+    },
+    {
+     "file_name": "t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_3h.wav",
+     "conv_id": "t_ddb49766-028c-4232-a171-ef1b56044b21",
+     "utterance_id": 3,
+     "from": "gpt",
+     "value": "That is pretty amazing. Are you a fan of football?",
+     "emotion": "Curious to dive deeper",
+     "audpath": "test_freq/t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_3h.wav"
+    },
+    {
+     "file_name": "t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_4j.wav",
+     "conv_id": "t_ddb49766-028c-4232-a171-ef1b56044b21",
+     "utterance_id": 4,
+     "from": "human",
+     "value": "ya I think football is ok, I like the big games but don't follow a team or anything, you?",
+     "emotion": "Curious to dive deeper",
+     "audpath": "test_freq/t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_4j.wav"
+    },
+    {
+     "file_name": "t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_5h.wav",
+     "conv_id": "t_ddb49766-028c-4232-a171-ef1b56044b21",
+     "utterance_id": 5,
+     "from": "gpt",
+     "value": "I am. I'm a Bears fan. Were you aware that ESPN won an Emmy for creating the yellow line that marks the first down position? I can't imagine watching a game without that. ",
+     "emotion": "Curious to dive deeper",
+     "audpath": "test_freq/t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_5h.wav"
+    },
+    {
+     "file_name": "t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_6j.wav",
+     "conv_id": "t_ddb49766-028c-4232-a171-ef1b56044b21",
+     "utterance_id": 6,
+     "from": "human",
+     "value": "no that was a great inventino! definitely worth it, I also love how a team painted the other sides locker room pink, I wonder if their record improved after that",
+     "emotion": "Curious to dive deeper",
+     "audpath": "test_freq/t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_6j.wav"
+    },
+    {
+     "file_name": "t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_7h.wav",
+     "conv_id": "t_ddb49766-028c-4232-a171-ef1b56044b21",
+     "utterance_id": 7,
+     "from": "gpt",
+     "value": "I had heard about that. What a mind game. Was that the University of Iowa?",
+     "emotion": "Curious to dive deeper",
+     "audpath": "test_freq/t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_7h.wav"
+    },
+    {
+     "file_name": "t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_8j.wav",
+     "conv_id": "t_ddb49766-028c-4232-a171-ef1b56044b21",
+     "utterance_id": 8,
+     "from": "human",
+     "value": "haha ya it was, I wonder if they have a player that has never fubmled the ball like benjarvus Green-ellis",
+     "emotion": "Surprised",
+     "audpath": "test_freq/t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_8j.wav"
+    },
+    {
+     "file_name": "t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_9h.wav",
+     "conv_id": "t_ddb49766-028c-4232-a171-ef1b56044b21",
+     "utterance_id": 9,
+     "from": "gpt",
+     "value": "I was not aware that a player had never fumbled a ball. That's amazing! I don't recognize the name. What team did he play for?",
+     "emotion": "Curious to dive deeper",
+     "audpath": "test_freq/t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_9h.wav"
+    },
+    {
+     "file_name": "t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_10j.wav",
+     "conv_id": "t_ddb49766-028c-4232-a171-ef1b56044b21",
+     "utterance_id": 10,
+     "from": "human",
+     "value": "ya it was the patriots, he's super good, did you know that bowling was super popular in the 60s?",
+     "emotion": "Curious to dive deeper",
+     "audpath": "test_freq/t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_10j.wav"
+    },
+    {
+     "file_name": "t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_11h.wav",
+     "conv_id": "t_ddb49766-028c-4232-a171-ef1b56044b21",
+     "utterance_id": 11,
+     "from": "gpt",
+     "value": "I did not. I remember it being more popular than it is now but I did not know that it was actually popular. ",
+     "emotion": "Neutral",
+     "audpath": "test_freq/t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_11h.wav"
+    },
+    {
+     "file_name": "t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_12j.wav",
+     "conv_id": "t_ddb49766-028c-4232-a171-ef1b56044b21",
+     "utterance_id": 12,
+     "from": "human",
+     "value": "yup they even made twice as much as football players back then, thats nuts!",
+     "emotion": "Surprised",
+     "audpath": "test_freq/t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_12j.wav"
+    },
+    {
+     "file_name": "t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_13h.wav",
+     "conv_id": "t_ddb49766-028c-4232-a171-ef1b56044b21",
+     "utterance_id": 13,
+     "from": "gpt",
+     "value": "Wow! That would never happen now. Did you know that there are no written rules against female players in the NFL?",
+     "emotion": "Curious to dive deeper",
+     "audpath": "test_freq/t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_13h.wav"
+    },
+    {
+     "file_name": "t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_14j.wav",
+     "conv_id": "t_ddb49766-028c-4232-a171-ef1b56044b21",
+     "utterance_id": 14,
+     "from": "human",
+     "value": "no thats interesting, I think we coul dhave a female kicker or something, I just don't know if they could run quick enough, women do have lower muscle mass",
+     "emotion": "Curious to dive deeper",
+     "audpath": "test_freq/t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_14j.wav"
+    },
+    {
+     "file_name": "t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_15h.wav",
+     "conv_id": "t_ddb49766-028c-4232-a171-ef1b56044b21",
+     "utterance_id": 15,
+     "from": "gpt",
+     "value": "I think kicker would be good. I think they could run fast enough. They would still have to pass requirements and with those men being so huge I don't think they would be able to play any other position. ",
+     "emotion": "Curious to dive deeper",
+     "audpath": "test_freq/t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_15h.wav"
+    },
+    {
+     "file_name": "t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_16j.wav",
+     "conv_id": "t_ddb49766-028c-4232-a171-ef1b56044b21",
+     "utterance_id": 16,
+     "from": "human",
+     "value": "ya if they cna pass the requirements then I dont see any problems, I jsut know that, for instance, top womens tennis players were beaten by high school students, that is why olympic games separate the mens and womens divisions",
+     "emotion": "Neutral",
+     "audpath": "test_freq/t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_16j.wav"
+    },
+    {
+     "file_name": "t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_17h.wav",
+     "conv_id": "t_ddb49766-028c-4232-a171-ef1b56044b21",
+     "utterance_id": 17,
+     "from": "gpt",
+     "value": "I did not know that. Did you know that there are tracking chips in players shoulder pads and in the footballs in the NFL?",
+     "emotion": "Curious to dive deeper",
+     "audpath": "test_freq/t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_17h.wav"
+    },
+    {
+     "file_name": "t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_18j.wav",
+     "conv_id": "t_ddb49766-028c-4232-a171-ef1b56044b21",
+     "utterance_id": 18,
+     "from": "human",
+     "value": "ya I did know about that, it can track all kinds of stats like speed, directino, acceleration and rotation, I hope they can use that information to help prevent concussions",
+     "emotion": "Neutral",
+     "audpath": "test_freq/t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_18j.wav"
+    },
+    {
+     "file_name": "t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_19h.wav",
+     "conv_id": "t_ddb49766-028c-4232-a171-ef1b56044b21",
+     "utterance_id": 19,
+     "from": "gpt",
+     "value": "I hope so too. I wonder why they are not using that data to help make calls rather than just relying on reviews?",
+     "emotion": "Curious to dive deeper",
+     "audpath": "test_freq/t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_19h.wav"
+    },
+    {
+     "file_name": "t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_20j.wav",
+     "conv_id": "t_ddb49766-028c-4232-a171-ef1b56044b21",
+     "utterance_id": 20,
+     "from": "human",
+     "value": "ya I agree, I think refs should be more impartial and use the chips to track that stuff, what do you think about the bible btw?",
+     "emotion": "Curious to dive deeper",
+     "audpath": "test_freq/t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_20j.wav"
+    },
+    {
+     "file_name": "t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_21h.wav",
+     "conv_id": "t_ddb49766-028c-4232-a171-ef1b56044b21",
+     "utterance_id": 21,
+     "from": "gpt",
+     "value": "I do not have any real opinion one or another. I see good and bad in it. ",
+     "emotion": "Neutral",
+     "audpath": "test_freq/t_ddb49766-028c-4232-a171-ef1b56044b21/t_ddb49766-028c-4232-a171-ef1b56044b21_21h.wav"
+    }
+   ]
+  }
+ ]
+}

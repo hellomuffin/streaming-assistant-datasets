@@ -1,0 +1,246 @@
+{
+ "slug": "joyai-vl-interaction",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/jdopensource/JoyAI-VL-Interaction chat/chat_shard_03.json (record 28681)",
+  "https://huggingface.co/datasets/jdopensource/JoyAI-VL-Interaction chat/chat_shard_01.json (record 588247)",
+  "video: HF ONE-Lab/GUI-World software/4197.mp4",
+  "video: https://www.bilibili.com/video/BV12W4y1o72M section 24.033-159.9 s"
+ ],
+ "access_used": "open download",
+ "note": "An example is one training record: a user question list and time-stamped assistant responses on one clip; times are integer seconds (stored as strings) from the clip start, and every second with no listed turn is implicit silence. The release ships annotations only; the clips here were fetched from the named sources (GUI-World on HF, Bilibili), and 'video_name' for Bilibili records is the section of the source video.",
+ "examples": [
+  {
+   "title": "GUI-World 4197: Teams announcement steps, answered forward as they appear on screen (zh)",
+   "video_ref": "GUI-World software/4197.mp4 (record video_name 4197.mp4)",
+   "duration_s": 13.767,
+   "clip": "samples/media/joyai-vl-interaction_1.mp4",
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 9.0,
+     "te": null,
+     "lane": "user",
+     "text": "用户在 Microsoft Teams 应用中采取了哪些操作步骤来创建新的社区公告？"
+    },
+    {
+     "t": 10.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "用户首先导航到左侧边栏的“社区”部分。"
+    },
+    {
+     "t": 11.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "然后他们点击选择了“Apex Legends”社区。"
+    },
+    {
+     "t": 12.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "进入社区后，他们点击了“公告”按钮，打开了一个带有编辑区域的新界面。"
+    },
+    {
+     "t": 13.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "接着用户点击主标题编辑区域，输入“Introduction”来设置公告的标题。"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "video_name": "4197.mp4",
+    "task_type": "chat",
+    "source": "gui_world",
+    "question": [
+     {
+      "content": "用户在 Microsoft Teams 应用中采取了哪些操作步骤来创建新的社区公告？",
+      "time": "9"
+     }
+    ],
+    "response": [
+     {
+      "content": "用户首先导航到左侧边栏的“社区”部分。",
+      "time": "10"
+     },
+     {
+      "content": "然后他们点击选择了“Apex Legends”社区。",
+      "time": "11"
+     },
+     {
+      "content": "进入社区后，他们点击了“公告”按钮，打开了一个带有编辑区域的新界面。",
+      "time": "12"
+     },
+     {
+      "content": "接着用户点击主标题编辑区域，输入“Introduction”来设置公告的标题。",
+      "time": "13"
+     }
+    ]
+   }
+  },
+  {
+   "title": "Bilibili BV12W4y1o72M street walk: a 54-second rapid-fire Q&A window with a closing turn (en)",
+   "video_ref": "https://www.bilibili.com/video/BV12W4y1o72M section 24.033-159.9 s (record video_name 24.033-159.9.mp4)",
+   "duration_s": 135.867,
+   "clip": "samples/media/joyai-vl-interaction_2.mp4",
+   "clip_offset_s": 79,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 9.0,
+     "te": null,
+     "lane": "user",
+     "text": "What kind of area does this look like?"
+    },
+    {
+     "t": 9.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Looks like a busy shopping district with a big sporting goods store and lots of pedestrians walking by."
+    },
+    {
+     "t": 17.0,
+     "te": null,
+     "lane": "user",
+     "text": "What's that person in light blue doing?"
+    },
+    {
+     "t": 17.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Looks like they're jogging or running past the storefront."
+    },
+    {
+     "t": 43.0,
+     "te": null,
+     "lane": "user",
+     "text": "For the next 54 seconds, play rapid-fire Q&A with me about what we see."
+    },
+    {
+     "t": 43.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Got it. I'll answer during the next 54 seconds."
+    },
+    {
+     "t": 46.0,
+     "te": null,
+     "lane": "user",
+     "text": "What's happening near that subway entrance?"
+    },
+    {
+     "t": 46.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "A couple people are heading down the stairs, and there's a guy in a yellow safety vest walking toward it too."
+    },
+    {
+     "t": 79.0,
+     "te": null,
+     "lane": "user",
+     "text": "What color is the crosswalk they're walking on?"
+    },
+    {
+     "t": 79.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "It's a reddish-brown color with white stripes."
+    },
+    {
+     "t": 89.0,
+     "te": null,
+     "lane": "user",
+     "text": "What are people doing at this crosswalk?"
+    },
+    {
+     "t": 89.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "They're walking across a wide pedestrian crossing in an urban area. Some are heading toward the buildings with shops and restaurants on the left side."
+    },
+    {
+     "t": 97.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "The timer is done, so this Q&A round is over. What else do you want to discuss?"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "video_name": "24.033-159.9.mp4",
+    "task_type": "chat",
+    "source": "https://www.bilibili.com/video/BV12W4y1o72M",
+    "question": [
+     {
+      "content": "What kind of area does this look like?",
+      "time": "9"
+     },
+     {
+      "content": "What's that person in light blue doing?",
+      "time": "17"
+     },
+     {
+      "content": "For the next 54 seconds, play rapid-fire Q&A with me about what we see.",
+      "time": "43"
+     },
+     {
+      "content": "What's happening near that subway entrance?",
+      "time": "46"
+     },
+     {
+      "content": "What color is the crosswalk they're walking on?",
+      "time": "79"
+     },
+     {
+      "content": "What are people doing at this crosswalk?",
+      "time": "89"
+     }
+    ],
+    "response": [
+     [
+      {
+       "content": "Looks like a busy shopping district with a big sporting goods store and lots of pedestrians walking by.",
+       "time": "9"
+      }
+     ],
+     [
+      {
+       "content": "Looks like they're jogging or running past the storefront.",
+       "time": "17"
+      }
+     ],
+     [
+      {
+       "content": "Got it. I'll answer during the next 54 seconds.",
+       "time": "43"
+      }
+     ],
+     [
+      {
+       "content": "A couple people are heading down the stairs, and there's a guy in a yellow safety vest walking toward it too.",
+       "time": "46"
+      }
+     ],
+     [
+      {
+       "content": "It's a reddish-brown color with white stripes.",
+       "time": "79"
+      }
+     ],
+     [
+      {
+       "content": "They're walking across a wide pedestrian crossing in an urban area. Some are heading toward the buildings with shops and restaurants on the left side.",
+       "time": "89"
+      },
+      {
+       "content": "The timer is done, so this Q&A round is over. What else do you want to discuss?",
+       "time": "97"
+      }
+     ]
+    ]
+   }
+  }
+ ]
+}

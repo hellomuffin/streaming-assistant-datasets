@@ -1,0 +1,1300 @@
+{
+ "slug": "seamless-interaction",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/facebook/seamless-interaction improvised/dev/0000/0000.tar → V00_S0809_I00000309_P0947.json/.mp4",
+  "https://huggingface.co/datasets/facebook/seamless-interaction improvised/dev/0000/0040.tar → V00_S0809_I00000309_P0383.json/.mp4 (HTTP range read of the two members only)",
+  "https://raw.githubusercontent.com/facebookresearch/seamless_interaction/main/assets/filelist.csv"
+ ],
+ "access_used": "open download",
+ "note": "Both examples come from ONE interaction pair (session V00_S0809, interaction I00000309, 166 s): each participant has their own frontal video, audio and JSON with a word-timed transcript and VAD segments on a shared clock. Lane 'user' = participant P0947 (left in clip), lane 'instructor' = participant P0383 (right); these are just two people chatting, neither is an assistant, and raw keeps only the utterances overlapping the example window with word lists shortened.",
+ "examples": [
+  {
+   "title": "Opening compliment: 'Thank you' / 'Yeah' backchannels and overlapping turns (0–50 s)",
+   "video_ref": "V00_S0809_I00000309_P0947 + V00_S0809_I00000309_P0383 (improvised/dev/0000/0000.tar, 0040.tar)",
+   "duration_s": 166.0,
+   "clip": "samples/media/seamless-interaction_2.mp4",
+   "clip_offset_s": 14,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.36,
+     "te": 7.45,
+     "lane": "user",
+     "text": "P0947: You know something Sean, I really have been enjoying your eagerness to want to like engage."
+    },
+    {
+     "t": 8.27,
+     "te": 16.92,
+     "lane": "user",
+     "text": "P0947: Most people, they struggle with like genuine eye contact and like receiving and also being received by someone."
+    },
+    {
+     "t": 17.92,
+     "te": 18.41,
+     "lane": "instructor",
+     "text": "P0383: Thank you."
+    },
+    {
+     "t": 19.08,
+     "te": 19.26,
+     "lane": "user",
+     "text": "P0947: Yeah."
+    },
+    {
+     "t": 19.53,
+     "te": 21.61,
+     "lane": "instructor",
+     "text": "P0383: Yeah, thanks for saying that."
+    },
+    {
+     "t": 21.9,
+     "te": 22.86,
+     "lane": "user",
+     "text": "P0947: Yeah, I mean it."
+    },
+    {
+     "t": 22.88,
+     "te": 24.24,
+     "lane": "user",
+     "text": "P0947: Yeah."
+    },
+    {
+     "t": 22.91,
+     "te": 23.69,
+     "lane": "instructor",
+     "text": "P0383: That's awesome, man."
+    },
+    {
+     "t": 25.39,
+     "te": 27.05,
+     "lane": "instructor",
+     "text": "P0383: I wish that like, I don't know."
+    },
+    {
+     "t": 27.07,
+     "te": 29.99,
+     "lane": "instructor",
+     "text": "P0383: Yeah, it makes me feel really good that you said that."
+    },
+    {
+     "t": 30.19,
+     "te": 34.93,
+     "lane": "instructor",
+     "text": "P0383: I think that, I feel like people should give compliments more, you know?"
+    },
+    {
+     "t": 34.43,
+     "te": 41.77,
+     "lane": "user",
+     "text": "P0947: Do you feel like you receive enough compliments or by the people you would like to be acknowledged by?"
+    },
+    {
+     "t": 42.11,
+     "te": 43.33,
+     "lane": "instructor",
+     "text": "P0383: I think that's a good point."
+    },
+    {
+     "t": 44.39,
+     "te": 49.05,
+     "lane": "instructor",
+     "text": "P0383: I think it almost means more by someone who's really close to you."
+    },
+    {
+     "t": 49.59,
+     "te": 59.61,
+     "lane": "user",
+     "text": "P0947: Someone who's probably seen your journey and can recognize where you have worked really hard or where things have probably been really easy throughout life."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "V00_S0809_I00000309_P0947.json": {
+     "id": "V00_S0809_I00000309_P0947",
+     "metadata:transcript": [
+      {
+       "words": [
+        {
+         "word": "You",
+         "start": 0.3589999999999236,
+         "end": 0.45899999999983265,
+         "score": 0.843
+        },
+        {
+         "word": "know",
+         "start": 0.47899999999981446,
+         "end": 0.6190000000001419,
+         "score": 0.827
+        },
+        {
+         "word": "something",
+         "start": 0.6590000000001055,
+         "end": 0.9200000000000728,
+         "score": 0.418
+        },
+        {
+         "word": "Sean,",
+         "start": 0.9400000000000546,
+         "end": 1.1399999999998727,
+         "score": 0.524
+        },
+        "…[truncated 12 more items]"
+       ],
+       "start": 0.3589999999999236,
+       "end": 7.445999999999913,
+       "transcript": "You know something Sean, I really have been enjoying your eagerness to want to like engage."
+      },
+      {
+       "words": [
+        {
+         "word": "Most",
+         "start": 8.266999999999825,
+         "end": 8.48700000000008,
+         "score": 0.928
+        },
+        {
+         "word": "people,",
+         "start": 8.547000000000025,
+         "end": 8.907999999999902,
+         "score": 0.825
+        },
+        {
+         "word": "they",
+         "start": 9.367999999999938,
+         "end": 9.50799999999981,
+         "score": 0.619
+        },
+        {
+         "word": "struggle",
+         "start": 9.568000000000211,
+         "end": 9.989000000000033,
+         "score": 0.821
+        },
+        "…[truncated 14 more items]"
+       ],
+       "start": 8.266999999999825,
+       "end": 16.916000000000167,
+       "transcript": "Most people, they struggle with like genuine eye contact and like receiving and also being received by someone."
+      },
+      {
+       "words": [
+        {
+         "word": "Yeah.",
+         "start": 19.077999999999975,
+         "end": 19.25799999999981,
+         "score": 0.452
+        }
+       ],
+       "start": 19.077999999999975,
+       "end": 19.25799999999981,
+       "transcript": "Yeah."
+      },
+      {
+       "words": [
+        {
+         "word": "Yeah,",
+         "start": 21.90099999999984,
+         "end": 22.08100000000013,
+         "score": 0.453
+        },
+        {
+         "word": "I",
+         "start": 22.521000000000186,
+         "end": 22.58100000000013,
+         "score": 0.677
+        },
+        {
+         "word": "mean",
+         "start": 22.621000000000095,
+         "end": 22.80099999999993,
+         "score": 0.814
+        },
+        {
+         "word": "it.",
+         "start": 22.820999999999913,
+         "end": 22.86200000000008,
+         "score": 0.895
+        }
+       ],
+       "start": 21.90099999999984,
+       "end": 22.86200000000008,
+       "transcript": "Yeah, I mean it."
+      },
+      {
+       "words": [
+        {
+         "word": "Yeah.",
+         "start": 22.882000000000062,
+         "end": 24.242999999999938,
+         "score": 0.413
+        }
+       ],
+       "start": 22.882000000000062,
+       "end": 24.242999999999938,
+       "transcript": "Yeah."
+      },
+      {
+       "words": [
+        {
+         "word": "Do",
+         "start": 34.427000000000135,
+         "end": 34.56700000000001,
+         "score": 0.995
+        },
+        {
+         "word": "you",
+         "start": 34.58699999999999,
+         "end": 34.72699999999986,
+         "score": 0.906
+        },
+        {
+         "word": "feel",
+         "start": 34.746999999999844,
+         "end": 34.90700000000015,
+         "score": 0.407
+        },
+        {
+         "word": "like",
+         "start": 34.927000000000135,
+         "end": 35.146999999999935,
+         "score": 0.856
+        },
+        "…[truncated 15 more items]"
+       ],
+       "start": 34.427000000000135,
+       "end": 41.76899999999978,
+       "transcript": "Do you feel like you receive enough compliments or by the people you would like to be acknowledged by?"
+      },
+      {
+       "words": [
+        {
+         "word": "Someone",
+         "start": 49.590999999999894,
+         "end": 49.871000000000095,
+         "score": 0.894
+        },
+        {
+         "word": "who's",
+         "start": 49.891000000000076,
+         "end": 50.07099999999991,
+         "score": 0.687
+        },
+        {
+         "word": "probably",
+         "start": 50.090999999999894,
+         "end": 50.391000000000076,
+         "score": 0.907
+        },
+        {
+         "word": "seen",
+         "start": 50.43100000000004,
+         "end": 50.610999999999876,
+         "score": 0.83
+        },
+        "…[truncated 21 more items]"
+       ],
+       "start": 49.590999999999894,
+       "end": 59.61400000000003,
+       "transcript": "Someone who's probably seen your journey and can recognize where you have worked really hard or where things have probably been really easy throughout life."
+      }
+     ],
+     "metadata:vad": [
+      {
+       "start": 0.2739999999998872,
+       "end": 3.181999999999789
+      },
+      {
+       "start": 3.538000000000011,
+       "end": 5.101999999999862
+      },
+      {
+       "start": 5.554000000000087,
+       "end": 7.630000000000109
+      },
+      {
+       "start": 8.210000000000036,
+       "end": 9.197999999999865
+      },
+      {
+       "start": 9.329999999999927,
+       "end": 10.414000000000215
+      },
+      {
+       "start": 10.865999999999985,
+       "end": 13.773999999999887
+      },
+      {
+       "start": 14.226000000000113,
+       "end": 17.03800000000001
+      },
+      {
+       "start": 21.8420000000001,
+       "end": 22.253999999999905
+      },
+      {
+       "start": 22.449999999999818,
+       "end": 22.98999999999978
+      },
+      {
+       "start": 34.41800000000012,
+       "end": 35.3420000000001
+      },
+      {
+       "start": 35.47400000000016,
+       "end": 36.141999999999825
+      },
+      {
+       "start": 36.6579999999999,
+       "end": 38.541999999999916
+      },
+      {
+       "start": 38.70600000000013,
+       "end": 39.822000000000116
+      },
+      {
+       "start": 40.27399999999989,
+       "end": 41.965999999999894
+      },
+      {
+       "start": 49.585999999999785,
+       "end": 51.5659999999998
+      }
+     ],
+     "_excerpt": "only utterances/VAD segments overlapping 0-50 s kept (file has 13 utterances, 34 VAD segments)"
+    },
+    "V00_S0809_I00000309_P0383.json": {
+     "id": "V00_S0809_I00000309_P0383",
+     "metadata:transcript": [
+      {
+       "words": [
+        {
+         "word": "Thank",
+         "start": 17.923999999999978,
+         "end": 18.164999999999964,
+         "score": 0.882
+        },
+        {
+         "word": "you.",
+         "start": 18.204999999999927,
+         "end": 18.4050000000002,
+         "score": 0.847
+        }
+       ],
+       "start": 17.923999999999978,
+       "end": 18.4050000000002,
+       "transcript": "Thank you."
+      },
+      {
+       "words": [
+        {
+         "word": "Yeah,",
+         "start": 19.52500000000009,
+         "end": 19.88500000000022,
+         "score": 0.596
+        },
+        {
+         "word": "thanks",
+         "start": 19.945000000000164,
+         "end": 20.885999999999967,
+         "score": 0.766
+        },
+        {
+         "word": "for",
+         "start": 20.90599999999995,
+         "end": 21.065999999999804,
+         "score": 0.712
+        },
+        {
+         "word": "saying",
+         "start": 21.085999999999785,
+         "end": 21.326000000000022,
+         "score": 0.894
+        },
+        "…[truncated 1 more items]"
+       ],
+       "start": 19.52500000000009,
+       "end": 21.606000000000222,
+       "transcript": "Yeah, thanks for saying that."
+      },
+      {
+       "words": [
+        {
+         "word": "That's",
+         "start": 22.907000000000153,
+         "end": 23.10699999999997,
+         "score": 0.88
+        },
+        {
+         "word": "awesome,",
+         "start": 23.146999999999935,
+         "end": 23.4670000000001,
+         "score": 0.674
+        },
+        {
+         "word": "man.",
+         "start": 23.507000000000062,
+         "end": 23.686999999999898,
+         "score": 0.545
+        }
+       ],
+       "start": 22.907000000000153,
+       "end": 23.686999999999898,
+       "transcript": "That's awesome, man."
+      },
+      {
+       "words": [
+        {
+         "word": "I",
+         "start": 25.38799999999992,
+         "end": 25.447999999999865,
+         "score": 0.7
+        },
+        {
+         "word": "wish",
+         "start": 25.467999999999847,
+         "end": 25.608000000000175,
+         "score": 0.948
+        },
+        {
+         "word": "that",
+         "start": 25.64800000000014,
+         "end": 25.807999999999993,
+         "score": 0.597
+        },
+        {
+         "word": "like,",
+         "start": 25.827999999999975,
+         "end": 26.00799999999981,
+         "score": 0.868
+        },
+        "…[truncated 3 more items]"
+       ],
+       "start": 25.38799999999992,
+       "end": 27.048999999999978,
+       "transcript": "I wish that like, I don't know."
+      },
+      {
+       "words": [
+        {
+         "word": "Yeah,",
+         "start": 27.06899999999996,
+         "end": 27.929000000000087,
+         "score": 0.716
+        },
+        {
+         "word": "it",
+         "start": 28.25,
+         "end": 28.309999999999945,
+         "score": 0.883
+        },
+        {
+         "word": "makes",
+         "start": 28.34999999999991,
+         "end": 28.5300000000002,
+         "score": 0.825
+        },
+        {
+         "word": "me",
+         "start": 28.570000000000164,
+         "end": 28.65000000000009,
+         "score": 0.997
+        },
+        "…[truncated 7 more items]"
+       ],
+       "start": 27.06899999999996,
+       "end": 29.98999999999978,
+       "transcript": "Yeah, it makes me feel really good that you said that."
+      },
+      {
+       "words": [
+        {
+         "word": "I",
+         "start": 30.190999999999804,
+         "end": 30.251000000000204,
+         "score": 0.869
+        },
+        {
+         "word": "think",
+         "start": 30.291000000000167,
+         "end": 30.490999999999985,
+         "score": 0.818
+        },
+        {
+         "word": "that,",
+         "start": 30.53099999999995,
+         "end": 30.771000000000186,
+         "score": 0.922
+        },
+        {
+         "word": "I",
+         "start": 30.891000000000076,
+         "end": 31.03099999999995,
+         "score": 0.556
+        },
+        "…[truncated 9 more items]"
+       ],
+       "start": 30.190999999999804,
+       "end": 34.93299999999999,
+       "transcript": "I think that, I feel like people should give compliments more, you know?"
+      },
+      {
+       "words": [
+        {
+         "word": "I",
+         "start": 42.10500000000002,
+         "end": 42.184999999999945,
+         "score": 0.922
+        },
+        {
+         "word": "think",
+         "start": 42.24499999999989,
+         "end": 42.4050000000002,
+         "score": 0.984
+        },
+        {
+         "word": "that's",
+         "start": 42.42500000000018,
+         "end": 42.625,
+         "score": 0.779
+        },
+        {
+         "word": "a",
+         "start": 42.664999999999964,
+         "end": 42.70499999999993,
+         "score": 0.501
+        },
+        "…[truncated 2 more items]"
+       ],
+       "start": 42.10500000000002,
+       "end": 43.32600000000002,
+       "transcript": "I think that's a good point."
+      },
+      {
+       "words": [
+        {
+         "word": "I",
+         "start": 44.38700000000017,
+         "end": 44.4670000000001,
+         "score": 0.994
+        },
+        {
+         "word": "think",
+         "start": 44.527000000000044,
+         "end": 44.72699999999986,
+         "score": 0.905
+        },
+        {
+         "word": "it",
+         "start": 45.166999999999916,
+         "end": 45.22699999999986,
+         "score": 0.994
+        },
+        {
+         "word": "almost",
+         "start": 45.547000000000025,
+         "end": 45.78800000000001,
+         "score": 0.828
+        },
+        "…[truncated 9 more items]"
+       ],
+       "start": 44.38700000000017,
+       "end": 49.05000000000018,
+       "transcript": "I think it almost means more by someone who's really close to you."
+      }
+     ],
+     "metadata:vad": [
+      {
+       "start": 18.13000000000011,
+       "end": 18.63799999999992
+      },
+      {
+       "start": 19.53800000000001,
+       "end": 20.621999999999844
+      },
+      {
+       "start": 20.753999999999905,
+       "end": 21.773999999999887
+      },
+      {
+       "start": 22.96199999999999,
+       "end": 23.91800000000012
+      },
+      {
+       "start": 24.626000000000204,
+       "end": 26.126000000000204
+      },
+      {
+       "start": 26.73799999999983,
+       "end": 31.277999999999793
+      },
+      {
+       "start": 31.79399999999987,
+       "end": 33.646000000000186
+      },
+      {
+       "start": 34.641999999999825,
+       "end": 35.27799999999979
+      },
+      {
+       "start": 42.097999999999956,
+       "end": 43.4699999999998
+      },
+      {
+       "start": 43.79399999999987,
+       "end": 48.429999999999836
+      },
+      {
+       "start": 48.753999999999905,
+       "end": 49.26200000000017
+      }
+     ],
+     "_excerpt": "only utterances/VAD segments overlapping 0-50 s kept (file has 26 utterances, 43 VAD segments)"
+    }
+   }
+  },
+  {
+   "title": "'A can of paint' idiom: overlapping talk, 'Is it?' / 'Okay' backchannels, 23 s long turn with listener 'Yeah' (100–150 s)",
+   "video_ref": "V00_S0809_I00000309_P0947 + V00_S0809_I00000309_P0383 (improvised/dev/0000/0000.tar, 0040.tar)",
+   "duration_s": 166.0,
+   "clip": "samples/media/seamless-interaction_1.mp4",
+   "clip_offset_s": 100,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 90.96,
+     "te": 103.87,
+     "lane": "instructor",
+     "text": "P0383: When it comes from him and he, like, sees me out and it's, like, in him acknowledging that, like, you know, you're so nice to, like, different, in different, like, social interactions, I just feel, I was like, man, I, like, actually, like, believe it from you."
+    },
+    {
+     "t": 103.72,
+     "te": 110.1,
+     "lane": "user",
+     "text": "P0947: no yeah you should i mean i don't know you from a can of paint but oh"
+    },
+    {
+     "t": 104.05,
+     "te": 105.27,
+     "lane": "instructor",
+     "text": "P0383: And it, like, hits harder, I think."
+    },
+    {
+     "t": 105.83,
+     "te": 106.15,
+     "lane": "instructor",
+     "text": "P0383: You know?"
+    },
+    {
+     "t": 109.19,
+     "te": 109.55,
+     "lane": "instructor",
+     "text": "P0383: Yeah."
+    },
+    {
+     "t": 110.49,
+     "te": 111.81,
+     "lane": "instructor",
+     "text": "P0383: I don't know that expression."
+    },
+    {
+     "t": 111.83,
+     "te": 114.53,
+     "lane": "instructor",
+     "text": "P0383: Is that a Missouri thing?"
+    },
+    {
+     "t": 115.13,
+     "te": 117.81,
+     "lane": "user",
+     "text": "P0947: Yes, apparently, because that's where I've heard it."
+    },
+    {
+     "t": 115.91,
+     "te": 116.17,
+     "lane": "instructor",
+     "text": "P0383: Is it?"
+    },
+    {
+     "t": 116.35,
+     "te": 116.63,
+     "lane": "instructor",
+     "text": "P0383: Okay."
+    },
+    {
+     "t": 118.05,
+     "te": 118.29,
+     "lane": "instructor",
+     "text": "P0383: Yeah."
+    },
+    {
+     "t": 121.09,
+     "te": 128.78,
+     "lane": "user",
+     "text": "P0947: Yeah, so it's something that I had noticed from early on, the moment you just kind of carry."
+    },
+    {
+     "t": 126.28,
+     "te": 149.42,
+     "lane": "instructor",
+     "text": "P0383: yeah well you're so open and like easy to engage with I feel like you know and I'm like just very quickly I've noticed just how easy you are to talk to I think so you make it easy to want to engage with you and you have great eye contact as well yeah it's just been really nice and you've been I feel like you're like a very open honest person"
+    },
+    {
+     "t": 133.26,
+     "te": 133.56,
+     "lane": "user",
+     "text": "P0947: Thank you."
+    },
+    {
+     "t": 138.7,
+     "te": 138.92,
+     "lane": "user",
+     "text": "P0947: Yeah."
+    },
+    {
+     "t": 141.46,
+     "te": 141.92,
+     "lane": "user",
+     "text": "P0947: Oh, that's good."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "V00_S0809_I00000309_P0947.json": {
+     "id": "V00_S0809_I00000309_P0947",
+     "metadata:transcript": [
+      {
+       "words": [
+        {
+         "word": "no",
+         "start": 103.71900000000005,
+         "end": 103.97899999999981,
+         "score": 0.906
+        },
+        {
+         "word": "yeah",
+         "start": 105.52100000000019,
+         "end": 105.78099999999995,
+         "score": 0.61
+        },
+        {
+         "word": "you",
+         "start": 106.26099999999997,
+         "end": 106.40099999999984,
+         "score": 0.742
+        },
+        {
+         "word": "should",
+         "start": 106.4409999999998,
+         "end": 106.70200000000023,
+         "score": 0.841
+        },
+        "…[truncated 13 more items]"
+       ],
+       "start": 103.71900000000005,
+       "end": 110.10399999999981,
+       "transcript": "no yeah you should i mean i don't know you from a can of paint but oh"
+      },
+      {
+       "words": [
+        {
+         "word": "Yes,",
+         "start": 115.1289999999999,
+         "end": 115.46900000000005,
+         "score": 0.803
+        },
+        {
+         "word": "apparently,",
+         "start": 115.58899999999994,
+         "end": 116.19000000000005,
+         "score": 0.912
+        },
+        {
+         "word": "because",
+         "start": 116.21000000000004,
+         "end": 116.88999999999987,
+         "score": 0.529
+        },
+        {
+         "word": "that's",
+         "start": 116.90999999999985,
+         "end": 117.09000000000015,
+         "score": 0.884
+        },
+        "…[truncated 4 more items]"
+       ],
+       "start": 115.1289999999999,
+       "end": 117.80999999999995,
+       "transcript": "Yes, apparently, because that's where I've heard it."
+      },
+      {
+       "words": [
+        {
+         "word": "Yeah,",
+         "start": 121.0920000000001,
+         "end": 121.77199999999993,
+         "score": 0.616
+        },
+        {
+         "word": "so",
+         "start": 122.83300000000008,
+         "end": 123.17299999999977,
+         "score": 0.132
+        },
+        {
+         "word": "it's",
+         "start": 123.25300000000016,
+         "end": 123.35300000000007,
+         "score": 0.918
+        },
+        {
+         "word": "something",
+         "start": 123.39300000000003,
+         "end": 123.63299999999981,
+         "score": 0.935
+        },
+        "…[truncated 14 more items]"
+       ],
+       "start": 121.0920000000001,
+       "end": 128.77599999999984,
+       "transcript": "Yeah, so it's something that I had noticed from early on, the moment you just kind of carry."
+      },
+      {
+       "words": [
+        {
+         "word": "Thank",
+         "start": 133.2579999999998,
+         "end": 133.41899999999987,
+         "score": 0.983
+        },
+        {
+         "word": "you.",
+         "start": 133.43899999999985,
+         "end": 133.5590000000002,
+         "score": 0.931
+        }
+       ],
+       "start": 133.2579999999998,
+       "end": 133.5590000000002,
+       "transcript": "Thank you."
+      },
+      {
+       "words": [
+        {
+         "word": "Yeah.",
+         "start": 138.70100000000002,
+         "end": 138.92099999999982,
+         "score": 0.697
+        }
+       ],
+       "start": 138.70100000000002,
+       "end": 138.92099999999982,
+       "transcript": "Yeah."
+      },
+      {
+       "words": [
+        {
+         "word": "Oh,",
+         "start": 141.4630000000002,
+         "end": 141.54300000000012,
+         "score": 0.473
+        },
+        {
+         "word": "that's",
+         "start": 141.5630000000001,
+         "end": 141.72299999999996,
+         "score": 0.099
+        },
+        {
+         "word": "good.",
+         "start": 141.74299999999994,
+         "end": 141.92299999999977,
+         "score": 0.338
+        }
+       ],
+       "start": 141.4630000000002,
+       "end": 141.92299999999977,
+       "transcript": "Oh, that's good."
+      }
+     ],
+     "metadata:vad": [
+      {
+       "start": 105.45800000000008,
+       "end": 108.846
+      },
+      {
+       "start": 109.68199999999979,
+       "end": 110.28600000000006
+      },
+      {
+       "start": 112.05000000000018,
+       "end": 112.62199999999984
+      },
+      {
+       "start": 112.84999999999991,
+       "end": 113.71000000000004
+      },
+      {
+       "start": 115.09000000000015,
+       "end": 116.42999999999984
+      },
+      {
+       "start": 116.7539999999999,
+       "end": 119.21399999999994
+      },
+      {
+       "start": 119.47400000000016,
+       "end": 120.20600000000013
+      },
+      {
+       "start": 121.01000000000022,
+       "end": 121.9340000000002
+      },
+      {
+       "start": 122.19399999999996,
+       "end": 122.54199999999992
+      },
+      {
+       "start": 122.67399999999998,
+       "end": 124.62199999999984
+      },
+      {
+       "start": 124.7539999999999,
+       "end": 125.23000000000002
+      },
+      {
+       "start": 125.36200000000008,
+       "end": 125.9659999999999
+      },
+      {
+       "start": 126.09799999999996,
+       "end": 127.50199999999995
+      },
+      {
+       "start": 127.79399999999987,
+       "end": 128.97400000000016
+      },
+      {
+       "start": 133.26600000000008,
+       "end": 133.80600000000004
+      },
+      {
+       "start": 141.52199999999993,
+       "end": 142.1579999999999
+      }
+     ],
+     "_excerpt": "only utterances/VAD segments overlapping 100-150 s kept (file has 13 utterances, 34 VAD segments)"
+    },
+    "V00_S0809_I00000309_P0383.json": {
+     "id": "V00_S0809_I00000309_P0383",
+     "metadata:transcript": [
+      {
+       "words": [
+        {
+         "word": "When",
+         "start": 90.95800000000008,
+         "end": 91.09799999999996,
+         "score": 0.788
+        },
+        {
+         "word": "it",
+         "start": 91.13799999999992,
+         "end": 91.21799999999985,
+         "score": 0.7
+        },
+        {
+         "word": "comes",
+         "start": 91.27799999999979,
+         "end": 91.49800000000005,
+         "score": 0.749
+        },
+        {
+         "word": "from",
+         "start": 91.5590000000002,
+         "end": 91.71900000000005,
+         "score": 0.833
+        },
+        "…[truncated 43 more items]"
+       ],
+       "start": 90.95800000000008,
+       "end": 103.86599999999999,
+       "transcript": "When it comes from him and he, like, sees me out and it's, like, in him acknowledging that, like, you know, you're so nice to, like, different, in different, like, social interactions, I just feel, I was like, man, I, like, actually, like, believe it from you."
+      },
+      {
+       "words": [
+        {
+         "word": "And",
+         "start": 104.04599999999982,
+         "end": 104.1260000000002,
+         "score": 0.794
+        },
+        {
+         "word": "it,",
+         "start": 104.14600000000019,
+         "end": 104.22600000000011,
+         "score": 0.677
+        },
+        {
+         "word": "like,",
+         "start": 104.2460000000001,
+         "end": 104.38599999999997,
+         "score": 0.766
+        },
+        {
+         "word": "hits",
+         "start": 104.42599999999993,
+         "end": 104.60600000000022,
+         "score": 0.928
+        },
+        "…[truncated 3 more items]"
+       ],
+       "start": 104.04599999999982,
+       "end": 105.26600000000008,
+       "transcript": "And it, like, hits harder, I think."
+      },
+      {
+       "words": [
+        {
+         "word": "You",
+         "start": 105.82700000000023,
+         "end": 105.92700000000013,
+         "score": 0.983
+        },
+        {
+         "word": "know?",
+         "start": 105.9670000000001,
+         "end": 106.14699999999993,
+         "score": 0.757
+        }
+       ],
+       "start": 105.82700000000023,
+       "end": 106.14699999999993,
+       "transcript": "You know?"
+      },
+      {
+       "words": [
+        {
+         "word": "Yeah.",
+         "start": 109.18899999999985,
+         "end": 109.54899999999998,
+         "score": 0.422
+        }
+       ],
+       "start": 109.18899999999985,
+       "end": 109.54899999999998,
+       "transcript": "Yeah."
+      },
+      {
+       "words": [
+        {
+         "word": "I",
+         "start": 110.48900000000003,
+         "end": 110.54899999999998,
+         "score": 0.68
+        },
+        {
+         "word": "don't",
+         "start": 110.56899999999996,
+         "end": 110.7489999999998,
+         "score": 0.751
+        },
+        {
+         "word": "know",
+         "start": 110.78900000000021,
+         "end": 110.92999999999984,
+         "score": 0.781
+        },
+        {
+         "word": "that",
+         "start": 110.98999999999978,
+         "end": 111.15000000000009,
+         "score": 0.908
+        },
+        "…[truncated 1 more items]"
+       ],
+       "start": 110.48900000000003,
+       "end": 111.80999999999995,
+       "transcript": "I don't know that expression."
+      },
+      {
+       "words": [
+        {
+         "word": "Is",
+         "start": 111.82999999999993,
+         "end": 111.86999999999989,
+         "score": 0.0
+        },
+        {
+         "word": "that",
+         "start": 113.6909999999998,
+         "end": 113.85100000000011,
+         "score": 0.248
+        },
+        {
+         "word": "a",
+         "start": 113.89100000000008,
+         "end": 113.93100000000004,
+         "score": 0.326
+        },
+        {
+         "word": "Missouri",
+         "start": 113.95100000000002,
+         "end": 114.29100000000017,
+         "score": 0.542
+        },
+        "…[truncated 1 more items]"
+       ],
+       "start": 111.82999999999993,
+       "end": 114.53200000000015,
+       "transcript": "Is that a Missouri thing?"
+      },
+      {
+       "words": [
+        {
+         "word": "Is",
+         "start": 115.91199999999981,
+         "end": 116.01200000000017,
+         "score": 0.716
+        },
+        {
+         "word": "it?",
+         "start": 116.09299999999985,
+         "end": 116.17299999999977,
+         "score": 0.62
+        }
+       ],
+       "start": 115.91199999999981,
+       "end": 116.17299999999977,
+       "transcript": "Is it?"
+      },
+      {
+       "words": [
+        {
+         "word": "Okay.",
+         "start": 116.35300000000007,
+         "end": 116.63299999999981,
+         "score": 0.658
+        }
+       ],
+       "start": 116.35300000000007,
+       "end": 116.63299999999981,
+       "transcript": "Okay."
+      },
+      {
+       "words": [
+        {
+         "word": "Yeah.",
+         "start": 118.05400000000009,
+         "end": 118.29399999999987,
+         "score": 0.626
+        }
+       ],
+       "start": 118.05400000000009,
+       "end": 118.29399999999987,
+       "transcript": "Yeah."
+      },
+      {
+       "words": [
+        {
+         "word": "yeah",
+         "start": 126.2800000000002,
+         "end": 126.51999999999998,
+         "score": 0.689
+        },
+        {
+         "word": "well",
+         "start": 129.0619999999999,
+         "end": 129.2220000000002,
+         "score": 0.701
+        },
+        {
+         "word": "you're",
+         "start": 129.2420000000002,
+         "end": 129.462,
+         "score": 0.849
+        },
+        {
+         "word": "so",
+         "start": 129.52199999999993,
+         "end": 129.76299999999992,
+         "score": 0.883
+        },
+        "…[truncated 68 more items]"
+       ],
+       "start": 126.2800000000002,
+       "end": 149.41699999999992,
+       "transcript": "yeah well you're so open and like easy to engage with I feel like you know and I'm like just very quickly I've noticed just how easy you are to talk to I think so you make it easy to want to engage with you and you have great eye contact as well yeah it's just been really nice and you've been I feel like you're like a very open honest person"
+      }
+     ],
+     "metadata:vad": [
+      {
+       "start": 98.13000000000011,
+       "end": 103.15000000000009
+      },
+      {
+       "start": 103.57000000000016,
+       "end": 105.42200000000003
+      },
+      {
+       "start": 105.80999999999995,
+       "end": 106.38200000000006
+      },
+      {
+       "start": 109.10600000000022,
+       "end": 109.71000000000004
+      },
+      {
+       "start": 110.54599999999982,
+       "end": 112.07799999999997
+      },
+      {
+       "start": 113.7460000000001,
+       "end": 114.76600000000008
+      },
+      {
+       "start": 115.82600000000002,
+       "end": 116.81399999999985
+      },
+      {
+       "start": 118.00199999999995,
+       "end": 118.63799999999992
+      },
+      {
+       "start": 126.22600000000011,
+       "end": 126.63799999999992
+      },
+      {
+       "start": 129.04199999999992,
+       "end": 133.23000000000002
+      },
+      {
+       "start": 133.48999999999978,
+       "end": 138.67000000000007
+      },
+      {
+       "start": 139.09000000000015,
+       "end": 141.23000000000002
+      },
+      {
+       "start": 141.6500000000001,
+       "end": 143.5659999999998
+      },
+      {
+       "start": 143.98599999999988,
+       "end": 146.73399999999992
+      },
+      {
+       "start": 147.09000000000015,
+       "end": 148.20600000000013
+      },
+      {
+       "start": 148.3699999999999,
+       "end": 149.51800000000003
+      }
+     ],
+     "_excerpt": "only utterances/VAD segments overlapping 100-150 s kept (file has 26 utterances, 43 VAD segments)"
+    }
+   }
+  }
+ ]
+}

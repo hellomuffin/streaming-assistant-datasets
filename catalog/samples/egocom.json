@@ -1,0 +1,2687 @@
+{
+ "slug": "egocom",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://raw.githubusercontent.com/facebookresearch/EgoCom-Dataset/main/egocom_dataset/ground_truth_transcriptions.csv",
+  "https://raw.githubusercontent.com/facebookresearch/EgoCom-Dataset/main/egocom_dataset/video_info.csv",
+  "https://github.com/facebookresearch/EgoCom-Dataset/releases/download/v1.0/egocom240p.tar.gz.aa (members EGOCOM/240p/20min/vid_165__day_6__con_3__person_2.MP4, vid_146__day_5__con_5__person_1.MP4)"
+ ],
+ "access_used": "open download",
+ "note": "Each example is an 18–20 s window of one full conversation: every word row of the human transcript (speaker_id 1–3 within the conversation; names from video_info.csv), with video from one wearer's camera. Timeline lanes are speaker names, consecutive words by one speaker merged into a turn; the transcript is serialised word by word, so simultaneous speech appears only as alternating turns or a \"crosstalk\" token. Source is 240p, upscaled to 360p for the clip.",
+ "examples": [
+  {
+   "title": "day_6__con_3 (Amr's glasses): forehead word-guessing game, three speakers trade short turns",
+   "video_ref": "vid_165__day_6__con_3__person_2.MP4 (240p release, 20min/ folder)",
+   "duration_s": 1566.0,
+   "clip": "samples/media/egocom_1.mp4",
+   "clip_offset_s": 195,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 195.26,
+     "te": 195.66,
+     "lane": "curtis",
+     "text": "word means?"
+    },
+    {
+     "t": 197.3,
+     "te": 197.34,
+     "lane": "ruth",
+     "text": "( laughs )"
+    },
+    {
+     "t": 197.34,
+     "te": 197.78,
+     "lane": "curtis",
+     "text": "What, are you serious?"
+    },
+    {
+     "t": 197.84,
+     "te": 198.06,
+     "lane": "amr",
+     "text": "No."
+    },
+    {
+     "t": 198.06,
+     "te": 199.24,
+     "lane": "curtis",
+     "text": "It's four - it's four letters, man."
+    },
+    {
+     "t": 199.32,
+     "te": 199.96,
+     "lane": "amr",
+     "text": "I know, but it's - ( laughs )"
+    },
+    {
+     "t": 199.96,
+     "te": 201.09,
+     "lane": "ruth",
+     "text": "Well, don't tell me it's four letters, now you have to do a new one. ( laughs )"
+    },
+    {
+     "t": 203.26,
+     "te": 203.92,
+     "lane": "curtis",
+     "text": "No no, I'm using this one."
+    },
+    {
+     "t": 204.14,
+     "te": 204.64,
+     "lane": "ruth",
+     "text": "You could whisper."
+    },
+    {
+     "t": 204.84,
+     "te": 204.94,
+     "lane": "amr",
+     "text": "You can even describe it to me."
+    },
+    {
+     "t": 205.62,
+     "te": 206.97,
+     "lane": "ruth",
+     "text": "Just whisper what it is. I'll go over here."
+    },
+    {
+     "t": 206.97,
+     "te": 207.27,
+     "lane": "amr",
+     "text": "You can crosstalk"
+    },
+    {
+     "t": 207.27,
+     "te": 209.47,
+     "lane": "curtis",
+     "text": "What do you mean whisper? Are you serious?"
+    },
+    {
+     "t": 209.63,
+     "te": 210.76,
+     "lane": "ruth",
+     "text": "I'll go over here and look at objects."
+    },
+    {
+     "t": 211.32,
+     "te": 211.95,
+     "lane": "curtis",
+     "text": "What do you call what you blow out of your"
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": {
+    "ground_truth_transcriptions.csv (consecutive rows for this window, incl. blank-time punctuation rows)": [
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "195.47",
+      "speaker_id": "1",
+      "startTime": "195.26",
+      "word": "word"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "195.66",
+      "speaker_id": "1",
+      "startTime": "195.47",
+      "word": "means"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "?"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": "("
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "197.34",
+      "speaker_id": "3",
+      "startTime": "197.3",
+      "word": "laughs"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": ")"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": "Yeah"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": ","
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": "you"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": "can"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": "describe"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": "it"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": "to"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": "-"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "What"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": ","
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "are"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "197.36",
+      "speaker_id": "1",
+      "startTime": "197.34",
+      "word": "you"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "197.78",
+      "speaker_id": "1",
+      "startTime": "197.36",
+      "word": "serious"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "?"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "198.06",
+      "speaker_id": "2",
+      "startTime": "197.84",
+      "word": "No"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": "."
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "198.24",
+      "speaker_id": "1",
+      "startTime": "198.06",
+      "word": "It"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "198.24",
+      "speaker_id": "1",
+      "startTime": "198.06",
+      "word": "'"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "198.24",
+      "speaker_id": "1",
+      "startTime": "198.06",
+      "word": "s"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "198.47",
+      "speaker_id": "1",
+      "startTime": "198.24",
+      "word": "four"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "-"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "it"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "'"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "s"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "198.78",
+      "speaker_id": "1",
+      "startTime": "198.73",
+      "word": "four"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "199.05",
+      "speaker_id": "1",
+      "startTime": "198.78",
+      "word": "letters"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": ","
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "199.24",
+      "speaker_id": "1",
+      "startTime": "199.05",
+      "word": "man"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "."
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "199.41",
+      "speaker_id": "2",
+      "startTime": "199.32",
+      "word": "I"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "199.68",
+      "speaker_id": "2",
+      "startTime": "199.41",
+      "word": "know"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": ","
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "199.8",
+      "speaker_id": "2",
+      "startTime": "199.68",
+      "word": "but"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "199.92",
+      "speaker_id": "2",
+      "startTime": "199.89",
+      "word": "it"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "199.92",
+      "speaker_id": "2",
+      "startTime": "199.89",
+      "word": "'"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "199.92",
+      "speaker_id": "2",
+      "startTime": "199.89",
+      "word": "s"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": "-"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": "("
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "199.96",
+      "speaker_id": "2",
+      "startTime": "199.92",
+      "word": "laughs"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": ")"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "200",
+      "speaker_id": "3",
+      "startTime": "199.96",
+      "word": "Well"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": ","
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "200.03",
+      "speaker_id": "3",
+      "startTime": "200",
+      "word": "don"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "200.03",
+      "speaker_id": "3",
+      "startTime": "200",
+      "word": "'"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "200.03",
+      "speaker_id": "3",
+      "startTime": "200",
+      "word": "t"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "200.06",
+      "speaker_id": "3",
+      "startTime": "200.03",
+      "word": "tell"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "200.08",
+      "speaker_id": "3",
+      "startTime": "200.06",
+      "word": "me"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "200.53",
+      "speaker_id": "3",
+      "startTime": "200.46",
+      "word": "it"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "200.53",
+      "speaker_id": "3",
+      "startTime": "200.46",
+      "word": "'"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "200.53",
+      "speaker_id": "3",
+      "startTime": "200.46",
+      "word": "s"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "200.7",
+      "speaker_id": "3",
+      "startTime": "200.53",
+      "word": "four"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "201.03",
+      "speaker_id": "3",
+      "startTime": "200.7",
+      "word": "letters"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": ","
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "201.07",
+      "speaker_id": "3",
+      "startTime": "201.03",
+      "word": "now"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "201.09",
+      "speaker_id": "3",
+      "startTime": "201.07",
+      "word": "you"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": "have"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": "to"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": "do"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": "a"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": "new"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": "one"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": "."
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": "("
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": "laughs"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": ")"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "No"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "no"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": ","
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "203.38",
+      "speaker_id": "1",
+      "startTime": "203.26",
+      "word": "I"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "203.38",
+      "speaker_id": "1",
+      "startTime": "203.26",
+      "word": "'"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "203.38",
+      "speaker_id": "1",
+      "startTime": "203.26",
+      "word": "m"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "203.7",
+      "speaker_id": "1",
+      "startTime": "203.38",
+      "word": "using"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "203.89",
+      "speaker_id": "1",
+      "startTime": "203.7",
+      "word": "this"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "203.92",
+      "speaker_id": "1",
+      "startTime": "203.89",
+      "word": "one"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "."
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": "You"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "204.17",
+      "speaker_id": "3",
+      "startTime": "204.14",
+      "word": "could"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "204.64",
+      "speaker_id": "3",
+      "startTime": "204.17",
+      "word": "whisper"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": "."
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "204.94",
+      "speaker_id": "2",
+      "startTime": "204.84",
+      "word": "You"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": "can"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": "even"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": "describe"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": "it"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": "to"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": "me"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": "."
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": "Just"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "205.9",
+      "speaker_id": "3",
+      "startTime": "205.62",
+      "word": "whisper"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "206.06",
+      "speaker_id": "3",
+      "startTime": "205.9",
+      "word": "what"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "206.15",
+      "speaker_id": "3",
+      "startTime": "206.06",
+      "word": "it"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "206.33",
+      "speaker_id": "3",
+      "startTime": "206.15",
+      "word": "is"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": "."
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "206.49",
+      "speaker_id": "3",
+      "startTime": "206.37",
+      "word": "I"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "206.49",
+      "speaker_id": "3",
+      "startTime": "206.37",
+      "word": "'"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "206.49",
+      "speaker_id": "3",
+      "startTime": "206.37",
+      "word": "ll"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "206.55",
+      "speaker_id": "3",
+      "startTime": "206.49",
+      "word": "go"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "206.72",
+      "speaker_id": "3",
+      "startTime": "206.55",
+      "word": "over"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "206.97",
+      "speaker_id": "3",
+      "startTime": "206.72",
+      "word": "here"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": "."
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "207.18",
+      "speaker_id": "2",
+      "startTime": "206.97",
+      "word": "You"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "207.27",
+      "speaker_id": "2",
+      "startTime": "207.18",
+      "word": "can"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "207",
+      "word": "crosstalk"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "207.3",
+      "speaker_id": "1",
+      "startTime": "207.27",
+      "word": "What"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "207.32",
+      "speaker_id": "1",
+      "startTime": "207.3",
+      "word": "do"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "208.06",
+      "speaker_id": "1",
+      "startTime": "208.04",
+      "word": "you"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "208.11",
+      "speaker_id": "1",
+      "startTime": "208.06",
+      "word": "mean"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "208.51",
+      "speaker_id": "1",
+      "startTime": "208.11",
+      "word": "whisper"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "?"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "208.99",
+      "speaker_id": "1",
+      "startTime": "208.9",
+      "word": "Are"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "209.06",
+      "speaker_id": "1",
+      "startTime": "208.99",
+      "word": "you"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "209.47",
+      "speaker_id": "1",
+      "startTime": "209.06",
+      "word": "serious"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "?"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "209.81",
+      "speaker_id": "3",
+      "startTime": "209.63",
+      "word": "I"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "209.81",
+      "speaker_id": "3",
+      "startTime": "209.63",
+      "word": "'"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "209.81",
+      "speaker_id": "3",
+      "startTime": "209.63",
+      "word": "ll"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "209.86",
+      "speaker_id": "3",
+      "startTime": "209.81",
+      "word": "go"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "210.01",
+      "speaker_id": "3",
+      "startTime": "209.86",
+      "word": "over"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "210.14",
+      "speaker_id": "3",
+      "startTime": "210.01",
+      "word": "here"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "210.18",
+      "speaker_id": "3",
+      "startTime": "210.14",
+      "word": "and"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "210.35",
+      "speaker_id": "3",
+      "startTime": "210.21",
+      "word": "look"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "210.42",
+      "speaker_id": "3",
+      "startTime": "210.35",
+      "word": "at"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "210.76",
+      "speaker_id": "3",
+      "startTime": "210.42",
+      "word": "objects"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": "."
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "211.47",
+      "speaker_id": "1",
+      "startTime": "211.32",
+      "word": "What"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "do"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "211.58",
+      "speaker_id": "1",
+      "startTime": "211.47",
+      "word": "you"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "call"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "what"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "you"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "211.78",
+      "speaker_id": "1",
+      "startTime": "211.58",
+      "word": "blow"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "211.88",
+      "speaker_id": "1",
+      "startTime": "211.78",
+      "word": "out"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "211.92",
+      "speaker_id": "1",
+      "startTime": "211.88",
+      "word": "of"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "211.95",
+      "speaker_id": "1",
+      "startTime": "211.92",
+      "word": "your"
+     },
+     {
+      "conversation_id": "day_6__con_3",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     }
+    ],
+    "video_info.csv (rows for this conversation)": [
+     {
+      "video_id": "164",
+      "conversation_id": "day_6__con_3",
+      "video_speaker_id": "1",
+      "num_speakers": "3",
+      "speaker_name": "curtis",
+      "speaker_gender": "male",
+      "duration_seconds": "1566",
+      "word_count": "2079",
+      "speaker_is_host": "True",
+      "tokenized_words": "Okay We re gonna play a game It …[truncated 2071 more words]",
+      "native_speaker": "True",
+      "video_name": "vid_164__day_6__con_3__person_1",
+      "background_fan": "False",
+      "background_music": "False",
+      "cid": "day_6__con_3",
+      "train": "True",
+      "val": "False",
+      "test": "False"
+     },
+     {
+      "video_id": "165",
+      "conversation_id": "day_6__con_3",
+      "video_speaker_id": "2",
+      "num_speakers": "3",
+      "speaker_name": "amr",
+      "speaker_gender": "male",
+      "duration_seconds": "1566",
+      "word_count": "834",
+      "speaker_is_host": "False",
+      "tokenized_words": "Ooooh So what will we do Because I …[truncated 826 more words]",
+      "native_speaker": "False",
+      "video_name": "vid_165__day_6__con_3__person_2",
+      "background_fan": "False",
+      "background_music": "False",
+      "cid": "day_6__con_3",
+      "train": "True",
+      "val": "False",
+      "test": "False"
+     },
+     {
+      "video_id": "166",
+      "conversation_id": "day_6__con_3",
+      "video_speaker_id": "3",
+      "num_speakers": "3",
+      "speaker_name": "ruth",
+      "speaker_gender": "female",
+      "duration_seconds": "1566",
+      "word_count": "2218",
+      "speaker_is_host": "False",
+      "tokenized_words": "Sweet It should Oh okay Oh without your …[truncated 2210 more words]",
+      "native_speaker": "True",
+      "video_name": "vid_166__day_6__con_3__person_3",
+      "background_fan": "False",
+      "background_music": "False",
+      "cid": "day_6__con_3",
+      "train": "True",
+      "val": "False",
+      "test": "False"
+     }
+    ]
+   }
+  },
+  {
+   "title": "day_5__con_5 (Curtis's glasses): naming the TV and speakers, one-word answers from two listeners",
+   "video_ref": "vid_146__day_5__con_5__person_1.MP4 (240p release, 20min/ folder)",
+   "duration_s": 1687.0,
+   "clip": "samples/media/egocom_2.mp4",
+   "clip_offset_s": 165,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 165.07,
+     "te": 168.3,
+     "lane": "curtis",
+     "text": "is that says, that has like a map of the world?"
+    },
+    {
+     "t": 169.0,
+     "te": 169.53,
+     "lane": "amr",
+     "text": "It's a T. V."
+    },
+    {
+     "t": 170.04,
+     "te": 170.33,
+     "lane": "suzannah",
+     "text": "T. V."
+    },
+    {
+     "t": 170.71,
+     "te": 172.91,
+     "lane": "curtis",
+     "text": "So, it's a T. V. and what color is the T. V.?"
+    },
+    {
+     "t": 173.38,
+     "te": 173.78,
+     "lane": "suzannah",
+     "text": "Black."
+    },
+    {
+     "t": 174.58,
+     "te": 178.68,
+     "lane": "curtis",
+     "text": "What are these two panels, what's this on the right side?"
+    },
+    {
+     "t": 178.75,
+     "te": 178.95,
+     "lane": "suzannah",
+     "text": "Probably a speakers."
+    },
+    {
+     "t": 179.36,
+     "te": 179.72,
+     "lane": "amr",
+     "text": "Speakers."
+    },
+    {
+     "t": 180.25,
+     "te": 181.08,
+     "lane": "curtis",
+     "text": "And this on the left?"
+    },
+    {
+     "t": 181.71,
+     "te": 182.16,
+     "lane": "amr",
+     "text": "Two speakers."
+    },
+    {
+     "t": 182.33,
+     "te": 182.68,
+     "lane": "suzannah",
+     "text": "Probably speakers."
+    },
+    {
+     "t": 182.91,
+     "te": 183.28,
+     "lane": "curtis",
+     "text": "Yeah, is that which,"
+    },
+    {
+     "t": 183.94,
+     "te": 184.63,
+     "lane": "suzannah",
+     "text": "They're music notes."
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": {
+    "ground_truth_transcriptions.csv (consecutive rows for this window, incl. blank-time punctuation rows)": [
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "165.31",
+      "speaker_id": "1",
+      "startTime": "165.07",
+      "word": "is"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "165.49",
+      "speaker_id": "1",
+      "startTime": "165.31",
+      "word": "that"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "166.04",
+      "speaker_id": "1",
+      "startTime": "165.49",
+      "word": "says"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": ","
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "167.09",
+      "speaker_id": "1",
+      "startTime": "166.97",
+      "word": "that"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "167.29",
+      "speaker_id": "1",
+      "startTime": "167.09",
+      "word": "has"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "167.43",
+      "speaker_id": "1",
+      "startTime": "167.29",
+      "word": "like"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "167.5",
+      "speaker_id": "1",
+      "startTime": "167.43",
+      "word": "a"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "167.75",
+      "speaker_id": "1",
+      "startTime": "167.5",
+      "word": "map"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "167.86",
+      "speaker_id": "1",
+      "startTime": "167.75",
+      "word": "of"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "167.94",
+      "speaker_id": "1",
+      "startTime": "167.86",
+      "word": "the"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "168.3",
+      "speaker_id": "1",
+      "startTime": "167.94",
+      "word": "world"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "?"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "169.09",
+      "speaker_id": "2",
+      "startTime": "169",
+      "word": "It"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "169.09",
+      "speaker_id": "2",
+      "startTime": "169",
+      "word": "'"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "169.09",
+      "speaker_id": "2",
+      "startTime": "169",
+      "word": "s"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "169.16",
+      "speaker_id": "2",
+      "startTime": "169.09",
+      "word": "a"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "169.3",
+      "speaker_id": "2",
+      "startTime": "169.16",
+      "word": "T"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": "."
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "169.53",
+      "speaker_id": "2",
+      "startTime": "169.3",
+      "word": "V"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": "."
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "170.23",
+      "speaker_id": "3",
+      "startTime": "170.04",
+      "word": "T"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": "."
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "170.33",
+      "speaker_id": "3",
+      "startTime": "170.23",
+      "word": "V"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": "."
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "So"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": ","
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "it"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "'"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "s"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "a"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "170.93",
+      "speaker_id": "1",
+      "startTime": "170.71",
+      "word": "T"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "."
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "171.04",
+      "speaker_id": "1",
+      "startTime": "170.93",
+      "word": "V"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "."
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "171.77",
+      "speaker_id": "1",
+      "startTime": "171.44",
+      "word": "and"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "171.97",
+      "speaker_id": "1",
+      "startTime": "171.77",
+      "word": "what"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "172.27",
+      "speaker_id": "1",
+      "startTime": "171.97",
+      "word": "color"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "172.37",
+      "speaker_id": "1",
+      "startTime": "172.27",
+      "word": "is"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "172.46",
+      "speaker_id": "1",
+      "startTime": "172.37",
+      "word": "the"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "172.65",
+      "speaker_id": "1",
+      "startTime": "172.46",
+      "word": "T"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "."
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "172.91",
+      "speaker_id": "1",
+      "startTime": "172.65",
+      "word": "V"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "."
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "?"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "173.78",
+      "speaker_id": "3",
+      "startTime": "173.38",
+      "word": "Black"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": "."
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "174.77",
+      "speaker_id": "1",
+      "startTime": "174.58",
+      "word": "What"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "175.25",
+      "speaker_id": "1",
+      "startTime": "174.77",
+      "word": "are"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "175.72",
+      "speaker_id": "1",
+      "startTime": "175.4",
+      "word": "these"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "176.06",
+      "speaker_id": "1",
+      "startTime": "175.72",
+      "word": "two"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "176.9",
+      "speaker_id": "1",
+      "startTime": "176.06",
+      "word": "panels"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": ","
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "177.5",
+      "speaker_id": "1",
+      "startTime": "177.27",
+      "word": "what"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "177.5",
+      "speaker_id": "1",
+      "startTime": "177.27",
+      "word": "'"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "177.5",
+      "speaker_id": "1",
+      "startTime": "177.27",
+      "word": "s"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "177.82",
+      "speaker_id": "1",
+      "startTime": "177.5",
+      "word": "this"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "177.99",
+      "speaker_id": "1",
+      "startTime": "177.82",
+      "word": "on"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "178.06",
+      "speaker_id": "1",
+      "startTime": "177.99",
+      "word": "the"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "178.3",
+      "speaker_id": "1",
+      "startTime": "178.06",
+      "word": "right"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "178.68",
+      "speaker_id": "1",
+      "startTime": "178.3",
+      "word": "side"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "?"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "178.95",
+      "speaker_id": "3",
+      "startTime": "178.75",
+      "word": "Probably"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": "a"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": "speakers"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": "."
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "179.72",
+      "speaker_id": "2",
+      "startTime": "179.36",
+      "word": "Speakers"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": "."
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "180.33",
+      "speaker_id": "1",
+      "startTime": "180.25",
+      "word": "And"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "180.5",
+      "speaker_id": "1",
+      "startTime": "180.33",
+      "word": "this"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "180.61",
+      "speaker_id": "1",
+      "startTime": "180.5",
+      "word": "on"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "180.7",
+      "speaker_id": "1",
+      "startTime": "180.68",
+      "word": "the"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "181.08",
+      "speaker_id": "1",
+      "startTime": "180.7",
+      "word": "left"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "?"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "181.83",
+      "speaker_id": "2",
+      "startTime": "181.71",
+      "word": "Two"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "182.16",
+      "speaker_id": "2",
+      "startTime": "181.83",
+      "word": "speakers"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "2",
+      "startTime": "",
+      "word": "."
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": "Probably"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "182.68",
+      "speaker_id": "3",
+      "startTime": "182.33",
+      "word": "speakers"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": "."
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "183.28",
+      "speaker_id": "1",
+      "startTime": "182.91",
+      "word": "Yeah"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": ","
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "is"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "that"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": "which"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": ","
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "1",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "183.97",
+      "speaker_id": "3",
+      "startTime": "183.94",
+      "word": "They"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "183.97",
+      "speaker_id": "3",
+      "startTime": "183.94",
+      "word": "'"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "183.97",
+      "speaker_id": "3",
+      "startTime": "183.94",
+      "word": "re"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "184.24",
+      "speaker_id": "3",
+      "startTime": "183.97",
+      "word": "music"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": " "
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "184.63",
+      "speaker_id": "3",
+      "startTime": "184.24",
+      "word": "notes"
+     },
+     {
+      "conversation_id": "day_5__con_5",
+      "endTime": "",
+      "speaker_id": "3",
+      "startTime": "",
+      "word": "."
+     }
+    ],
+    "video_info.csv (rows for this conversation)": [
+     {
+      "video_id": "146",
+      "conversation_id": "day_5__con_5",
+      "video_speaker_id": "1",
+      "num_speakers": "3",
+      "speaker_name": "curtis",
+      "speaker_gender": "male",
+      "duration_seconds": "1687",
+      "word_count": "2910",
+      "speaker_is_host": "True",
+      "tokenized_words": "And it s t shirt and it s …[truncated 2902 more words]",
+      "native_speaker": "True",
+      "video_name": "vid_146__day_5__con_5__person_1",
+      "background_fan": "False",
+      "background_music": "False",
+      "cid": "day_5__con_5",
+      "train": "False",
+      "val": "True",
+      "test": "False"
+     },
+     {
+      "video_id": "147",
+      "conversation_id": "day_5__con_5",
+      "video_speaker_id": "2",
+      "num_speakers": "3",
+      "speaker_name": "amr",
+      "speaker_gender": "male",
+      "duration_seconds": "1687",
+      "word_count": "804",
+      "speaker_is_host": "False",
+      "tokenized_words": "So I don t have my glasses is …[truncated 796 more words]",
+      "native_speaker": "False",
+      "video_name": "vid_147__day_5__con_5__person_2",
+      "background_fan": "False",
+      "background_music": "False",
+      "cid": "day_5__con_5",
+      "train": "False",
+      "val": "True",
+      "test": "False"
+     },
+     {
+      "video_id": "148",
+      "conversation_id": "day_5__con_5",
+      "video_speaker_id": "3",
+      "num_speakers": "3",
+      "speaker_name": "suzannah",
+      "speaker_gender": "female",
+      "duration_seconds": "1687",
+      "word_count": "1240",
+      "speaker_is_host": "False",
+      "tokenized_words": "You are wearing a salmon button up with …[truncated 1232 more words]",
+      "native_speaker": "True",
+      "video_name": "vid_148__day_5__con_5__person_3",
+      "background_fan": "False",
+      "background_music": "False",
+      "cid": "day_5__con_5",
+      "train": "False",
+      "val": "True",
+      "test": "False"
+     }
+    ]
+   }
+  }
+ ]
+}

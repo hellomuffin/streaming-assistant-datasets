@@ -1,0 +1,1977 @@
+{
+ "slug": "svbench-train",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/yzy666/SVBench/resolve/main/Meta/Meta_EN/meta_train.csv",
+  "Dialogue/Dialogue_EN/2Ihlw5FFrx4.json",
+  "Con/Con_EN/2Ihlw5FFrx4.json",
+  "Video/2Ihlw5FFrx4.mp4",
+  "Dialogue/Dialogue_EN/100686429862004723.json",
+  "Con/Con_EN/100686429862004723.json",
+  "Video/100686429862004723.mp4"
+ ],
+ "access_used": "open download",
+ "note": "One example = one train-split video's English QA chains: each chain is a short multi-turn dialogue tied to one scene segment [qac_timestamps_start, qac_timestamps_end] in seconds, and the Con file links consecutive chains by a shared object/person/event ('relationship'). Questions are asked about a segment after it has played; there is no per-turn timestamp or speak/silence label. Chinese versions sit in the *_ZH folders.",
+ "examples": [
+  {
+   "title": "2Ihlw5FFrx4 (YouCook2): TV cooking show, bacon-tomato sandwich — 15 QA chains, 56 QA pairs",
+   "video_ref": "Video/2Ihlw5FFrx4.mp4 (YouCook2)",
+   "duration_s": 214.423,
+   "clip": "samples/media/svbench-train_1.mp4",
+   "clip_offset_s": 18,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0,
+     "te": 20,
+     "lane": "question",
+     "text": "What are the clothing styles of the two women in the video?"
+    },
+    {
+     "t": 0,
+     "te": 20,
+     "lane": "answer",
+     "text": "The woman on the left with short hair is wearing big earrings and dressed in a peacock blue short sleeve. The woman on the right has long curly hair and is dressed in a dark green dress. Both have microphones clipped near their neckline."
+    },
+    {
+     "t": 0,
+     "te": 20,
+     "lane": "question",
+     "text": "What are the two women doing in the video?"
+    },
+    {
+     "t": 0,
+     "te": 20,
+     "lane": "answer",
+     "text": "The two women are recording a cooking show in the studio."
+    },
+    {
+     "t": 0,
+     "te": 20,
+     "lane": "question",
+     "text": "What is the environment of the studio like?"
+    },
+    {
+     "t": 0,
+     "te": 20,
+     "lane": "answer",
+     "text": "The studio has a big screen, the overall color is pink, and there are some ingredients on the host table."
+    },
+    {
+     "t": 0,
+     "te": 20,
+     "lane": "question",
+     "text": "What topic are the women discussing?"
+    },
+    {
+     "t": 0,
+     "te": 20,
+     "lane": "answer",
+     "text": "They are discussing how to make cream bread."
+    },
+    {
+     "t": 0,
+     "te": 20,
+     "lane": "question",
+     "text": "What are the main ingredients of the cream bread?"
+    },
+    {
+     "t": 0,
+     "te": 20,
+     "lane": "answer",
+     "text": "The main ingredients include bacon, tomatoes, lettuce, and feta cheese."
+    },
+    {
+     "t": 0,
+     "te": 20,
+     "lane": "question",
+     "text": "What are the steps for making cream bread they are demonstrating?"
+    },
+    {
+     "t": 0,
+     "te": 20,
+     "lane": "answer",
+     "text": "First, they presented the main ingredients required, then began to explain how to combine these ingredients to make the bread."
+    },
+    {
+     "t": 20,
+     "te": 32,
+     "lane": "question",
+     "text": "What main ingredients are shown in the video?"
+    },
+    {
+     "t": 20,
+     "te": 32,
+     "lane": "answer",
+     "text": "The video shows thick-cut bacon, thick slices of ripe red tomatoes, goat cheese, cream cheese, lettuce, multigrain bread, salt, and pepper."
+    },
+    {
+     "t": 20,
+     "te": 32,
+     "lane": "question",
+     "text": "What are these raw materials used to make?"
+    },
+    {
+     "t": 20,
+     "te": 32,
+     "lane": "answer",
+     "text": "These ingredients are used to make a sandwich."
+    },
+    {
+     "t": 20,
+     "te": 32,
+     "lane": "question",
+     "text": "How are these raw materials processed during the making process?"
+    },
+    {
+     "t": 20,
+     "te": 32,
+     "lane": "answer",
+     "text": "The thick-cut bacon needs to be fried until cooked, the tomatoes are sliced thickly, the lettuce is washed and prepared, the cream cheese and goat cheese are mixed evenly, and the bread is prepared and ready to use."
+    },
+    {
+     "t": 20,
+     "te": 32,
+     "lane": "question",
+     "text": "What information is played in the video when showing these raw materials?"
+    },
+    {
+     "t": 20,
+     "te": 32,
+     "lane": "answer",
+     "text": "When displaying these raw materials, the video shows the name of each ingredient in a list format."
+    },
+    {
+     "t": 20,
+     "te": 32,
+     "lane": "question",
+     "text": "What other steps does the main character in the video take while making these preparations?"
+    },
+    {
+     "t": 20,
+     "te": 32,
+     "lane": "answer",
+     "text": "During the preparation of these ingredients, the main character in the video also shows how to layer them in the sandwich."
+    },
+    {
+     "t": 32,
+     "te": 43,
+     "lane": "question",
+     "text": "What ingredients are needed to make a sandwich?"
+    },
+    {
+     "t": 32,
+     "te": 43,
+     "lane": "answer",
+     "text": "Bacon slices, tomato slices, lettuce, cream cheese, goat cheese, and bread."
+    },
+    {
+     "t": 32,
+     "te": 43,
+     "lane": "question",
+     "text": "How is cheese incorporated into the sandwich?"
+    },
+    {
+     "t": 32,
+     "te": 43,
+     "lane": "answer",
+     "text": "The chef evenly spreads the cheese on the toasted bread with a knife."
+    },
+    {
+     "t": 32,
+     "te": 43,
+     "lane": "question",
+     "text": "What issues did they discuss while preparing the food?"
+    },
+    {
+     "t": 32,
+     "te": 43,
+     "lane": "answer",
+     "text": "They discussed the specific steps for making sandwiches and some suggestions on healthy eating."
+    },
+    {
+     "t": 32,
+     "te": 43,
+     "lane": "question",
+     "text": "What is the first step demonstrated by the woman on the left?"
+    },
+    {
+     "t": 32,
+     "te": 43,
+     "lane": "answer",
+     "text": "The first step is to neatly arrange the toasted bread slices and spread cream cheese on them with a knife."
+    },
+    {
+     "t": 43,
+     "te": 56,
+     "lane": "question",
+     "text": "What is the first step in making a sandwich?"
+    },
+    {
+     "t": 43,
+     "te": 56,
+     "lane": "answer",
+     "text": "The first step in the video is to toast slices of bread."
+    },
+    {
+     "t": 43,
+     "te": 56,
+     "lane": "question",
+     "text": "What impact does cream cheese have on the final product?"
+    },
+    {
+     "t": 43,
+     "te": 56,
+     "lane": "answer",
+     "text": "The cream cheese mixture enhances the texture and flavor of the sandwich."
+    },
+    {
+     "t": 43,
+     "te": 56,
+     "lane": "question",
+     "text": "How is the cream cheese mixture made?"
+    },
+    {
+     "t": 43,
+     "te": 56,
+     "lane": "answer",
+     "text": "The cream cheese mixture is made by combining feta cheese and cream cheese."
+    },
+    {
+     "t": 43,
+     "te": 56,
+     "lane": "question",
+     "text": "What is the next step after completing the spreading step?"
+    },
+    {
+     "t": 43,
+     "te": 56,
+     "lane": "answer",
+     "text": "After completing the spreading step, the next step is to add other ingredients."
+    },
+    {
+     "t": 56,
+     "te": 77,
+     "lane": "question",
+     "text": "What is the first step in making a sandwich?"
+    },
+    {
+     "t": 56,
+     "te": 77,
+     "lane": "answer",
+     "text": "The first step is to spread a mixture of feta cheese and cream cheese evenly on the bread."
+    },
+    {
+     "t": 56,
+     "te": 77,
+     "lane": "question",
+     "text": "Are there any other ingredients on the sandwich besides cheese?"
+    },
+    {
+     "t": 56,
+     "te": 77,
+     "lane": "answer",
+     "text": "There are also sliced tomatoes added to the bread with cheese."
+    },
+    {
+     "t": 56,
+     "te": 77,
+     "lane": "question",
+     "text": "Why did they choose these ingredients?"
+    },
+    {
+     "t": 56,
+     "te": 77,
+     "lane": "answer",
+     "text": "These ingredients are both healthy and delicious. The feta cheese provides a savory taste, while the vegetables add freshness and nutrition."
+    },
+    {
+     "t": 77,
+     "te": 89,
+     "lane": "question",
+     "text": "How does the chef make the sandwich?"
+    },
+    {
+     "t": 77,
+     "te": 89,
+     "lane": "answer",
+     "text": "She first spreads a cheese mixture on the bread slices, then adds some tomato slices."
+    },
+    {
+     "t": 77,
+     "te": 89,
+     "lane": "question",
+     "text": "What is the next step after adding the tomatoes?"
+    },
+    {
+     "t": 77,
+     "te": 89,
+     "lane": "answer",
+     "text": "The next step might be to add other vegetables or seasonings."
+    },
+    {
+     "t": 89,
+     "te": 94,
+     "lane": "question",
+     "text": "What food are they discussing?"
+    },
+    {
+     "t": 89,
+     "te": 94,
+     "lane": "answer",
+     "text": "They are discussing how to make a special sandwich."
+    },
+    {
+     "t": 89,
+     "te": 94,
+     "lane": "question",
+     "text": "Besides tomatoes, what other vegetables or seasonings does the chef add?"
+    },
+    {
+     "t": 89,
+     "te": 94,
+     "lane": "answer",
+     "text": "She places grilled bacon slices on top of the sandwich."
+    },
+    {
+     "t": 89,
+     "te": 94,
+     "lane": "question",
+     "text": "What does the bacon look like?"
+    },
+    {
+     "t": 89,
+     "te": 94,
+     "lane": "answer",
+     "text": "The bacon, after being grilled, has a browned surface, making it look very delicious."
+    },
+    {
+     "t": 94,
+     "te": 106,
+     "lane": "question",
+     "text": "What are the steps of making the special sandwich in the video?"
+    },
+    {
+     "t": 94,
+     "te": 106,
+     "lane": "answer",
+     "text": "First, a sauce mixed with feta cheese and cream cheese is spread on the bread, then tomato slices and bacon slices are added."
+    },
+    {
+     "t": 94,
+     "te": 106,
+     "lane": "question",
+     "text": "Besides bacon slices, what else is on the sandwich?"
+    },
+    {
+     "t": 94,
+     "te": 106,
+     "lane": "answer",
+     "text": "The sandwich also has cheese and tomato slices."
+    },
+    {
+     "t": 94,
+     "te": 106,
+     "lane": "question",
+     "text": "What is the specialty of this sandwich?"
+    },
+    {
+     "t": 94,
+     "te": 106,
+     "lane": "answer",
+     "text": "The specialty of this sandwich is the sauce mixed with feta cheese and cream cheese, along with the rich taste brought by fresh tomatoes and bacon."
+    },
+    {
+     "t": 106,
+     "te": 117,
+     "lane": "question",
+     "text": "What are the steps for making a sandwich?"
+    },
+    {
+     "t": 106,
+     "te": 117,
+     "lane": "answer",
+     "text": "First, spread the feta and cream cheese mixture on the bread; then, add tomato slices and bacon."
+    },
+    {
+     "t": 106,
+     "te": 117,
+     "lane": "question",
+     "text": "What did the woman say when she was laying the bacon?"
+    },
+    {
+     "t": 106,
+     "te": 117,
+     "lane": "answer",
+     "text": "Yes, she mentioned using fresh tomatoes and crispy bacon to enhance the texture."
+    },
+    {
+     "t": 106,
+     "te": 117,
+     "lane": "question",
+     "text": "How is the atmosphere between the two people in the picture?"
+    },
+    {
+     "t": 106,
+     "te": 117,
+     "lane": "answer",
+     "text": "The atmosphere is very harmonious, as the woman on the right is always laughing heartily."
+    },
+    {
+     "t": 117,
+     "te": 129,
+     "lane": "question",
+     "text": "What is the first step in making the sandwich?"
+    },
+    {
+     "t": 117,
+     "te": 129,
+     "lane": "answer",
+     "text": "The first step is to mix cheese and cream cheese and spread it on slices of bread."
+    },
+    {
+     "t": 117,
+     "te": 129,
+     "lane": "question",
+     "text": "What ingredients are added afterwards?"
+    },
+    {
+     "t": 117,
+     "te": 129,
+     "lane": "answer",
+     "text": "Tomatoes, bacon, and lettuce are added."
+    },
+    {
+     "t": 117,
+     "te": 129,
+     "lane": "question",
+     "text": "Why is lettuce used?"
+    },
+    {
+     "t": 117,
+     "te": 129,
+     "lane": "answer",
+     "text": "Lettuce adds a fresh taste and nutrition to the sandwich."
+    },
+    {
+     "t": 117,
+     "te": 129,
+     "lane": "question",
+     "text": "What effect does bacon have on the sandwich?"
+    },
+    {
+     "t": 117,
+     "te": 129,
+     "lane": "answer",
+     "text": "Bacon adds saltiness and a crispy texture to the sandwich."
+    },
+    {
+     "t": 117,
+     "te": 129,
+     "lane": "question",
+     "text": "How do they introduce the nutritional value of the sandwich?"
+    },
+    {
+     "t": 117,
+     "te": 129,
+     "lane": "answer",
+     "text": "They mention that the sandwich contains plenty of proteins and vegetables, making it a balanced dietary choice."
+    },
+    {
+     "t": 129,
+     "te": 139,
+     "lane": "question",
+     "text": "Apart from tomatoes, bacon, and lettuce, what else is in the sandwich?"
+    },
+    {
+     "t": 129,
+     "te": 139,
+     "lane": "answer",
+     "text": "The sandwich also has a special sauce."
+    },
+    {
+     "t": 129,
+     "te": 139,
+     "lane": "question",
+     "text": "Did they use any special sauce?"
+    },
+    {
+     "t": 129,
+     "te": 139,
+     "lane": "answer",
+     "text": "Yes, they used a sauce when spreading the cheese and the lettuce."
+    },
+    {
+     "t": 129,
+     "te": 139,
+     "lane": "question",
+     "text": "What are the features of this sandwich?"
+    },
+    {
+     "t": 129,
+     "te": 139,
+     "lane": "answer",
+     "text": "The feature of this sandwich lies in the combination of cheese, a variety of vegetables, and bacon, making it nutritionally rich."
+    },
+    {
+     "t": 139,
+     "te": 158,
+     "lane": "question",
+     "text": "What food is shown in the video?"
+    },
+    {
+     "t": 139,
+     "te": 158,
+     "lane": "answer",
+     "text": "The video shows a special kind of sandwich."
+    },
+    {
+     "t": 139,
+     "te": 158,
+     "lane": "question",
+     "text": "What did the person on the left do?"
+    },
+    {
+     "t": 139,
+     "te": 158,
+     "lane": "answer",
+     "text": "She placed a slice of bread on top of the ingredients and pressed down lightly."
+    },
+    {
+     "t": 139,
+     "te": 158,
+     "lane": "question",
+     "text": "After making the sandwich, what did the chef do?"
+    },
+    {
+     "t": 139,
+     "te": 158,
+     "lane": "answer",
+     "text": "Finally, she cut the assembled sandwich in half, ready to be eaten."
+    },
+    {
+     "t": 139,
+     "te": 158,
+     "lane": "question",
+     "text": "What is the woman on the right's attitude towards the sandwich?"
+    },
+    {
+     "t": 139,
+     "te": 158,
+     "lane": "answer",
+     "text": "She has a positive attitude towards the sandwich, showing that she really likes it."
+    },
+    {
+     "t": 158,
+     "te": 177,
+     "lane": "question",
+     "text": "What did the woman on the left do to the sandwich after pressing it together?"
+    },
+    {
+     "t": 158,
+     "te": 177,
+     "lane": "answer",
+     "text": "She cut the sandwich in half with a knife."
+    },
+    {
+     "t": 158,
+     "te": 177,
+     "lane": "question",
+     "text": "What did she do then?"
+    },
+    {
+     "t": 158,
+     "te": 177,
+     "lane": "answer",
+     "text": "She picked up one of the halves of the sandwich and handed it to the woman next to her to taste."
+    },
+    {
+     "t": 158,
+     "te": 177,
+     "lane": "question",
+     "text": "What comment did the taster make about the taste of the food?"
+    },
+    {
+     "t": 158,
+     "te": 177,
+     "lane": "answer",
+     "text": "The taster took a bite of the sandwich, and she seemed to enjoy the taste."
+    },
+    {
+     "t": 158,
+     "te": 177,
+     "lane": "question",
+     "text": "What does the finished sandwich look like?"
+    },
+    {
+     "t": 158,
+     "te": 177,
+     "lane": "answer",
+     "text": "The sandwich has vibrant color combinations, a mix of meat and vegetables, and is nutritious, healthy, and delicious."
+    },
+    {
+     "t": 177,
+     "te": 180,
+     "lane": "question",
+     "text": "What does a well-made sandwich look like?"
+    },
+    {
+     "t": 177,
+     "te": 180,
+     "lane": "answer",
+     "text": "The well-made sandwich looks very delicious, with lettuce, tomato, and bacon sandwiched between two slices of whole wheat bread."
+    },
+    {
+     "t": 177,
+     "te": 180,
+     "lane": "question",
+     "text": "What feedback does the woman give after tasting the sandwich?"
+    },
+    {
+     "t": 177,
+     "te": 180,
+     "lane": "answer",
+     "text": "After tasting it, she says that the sandwich is very delicious and the flavors complement each other well."
+    },
+    {
+     "t": 180,
+     "te": 214,
+     "lane": "question",
+     "text": "What are they doing in the video?"
+    },
+    {
+     "t": 180,
+     "te": 214,
+     "lane": "answer",
+     "text": "They are making a BLT sandwich."
+    },
+    {
+     "t": 180,
+     "te": 214,
+     "lane": "question",
+     "text": "What are the steps in making a sandwich?"
+    },
+    {
+     "t": 180,
+     "te": 214,
+     "lane": "answer",
+     "text": "The steps include preparing bagel cream cheese, bacon, lettuce, and tomato, and then combining these ingredients together."
+    },
+    {
+     "t": 180,
+     "te": 214,
+     "lane": "question",
+     "text": "What ingredients are used in the process?"
+    },
+    {
+     "t": 180,
+     "te": 214,
+     "lane": "answer",
+     "text": "Ingredients include bagel cream cheese, bacon, lettuce, and tomato."
+    },
+    {
+     "t": 180,
+     "te": 214,
+     "lane": "question",
+     "text": "What characterizes the BLT sandwich?"
+    },
+    {
+     "t": 180,
+     "te": 214,
+     "lane": "answer",
+     "text": "The characteristic of this BLT sandwich is that it uses bagel cream cheese and fresh vegetables and bacon."
+    },
+    {
+     "t": 180,
+     "te": 214,
+     "lane": "question",
+     "text": "How does she rate the finished sandwich?"
+    },
+    {
+     "t": 180,
+     "te": 214,
+     "lane": "answer",
+     "text": "She rates the BLT sandwich very highly, finding it to be very tasty."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "Meta/Meta_EN/meta_train.csv row": {
+     "Video_Name": "2Ihlw5FFrx4",
+     "Sort_of_Set": "Train",
+     "Path_of_QandA": "SVBench/Dialogue/Dialogue_EN/2Ihlw5FFrx4.json",
+     "Path_of_Con": "SVBench/Con/Con_EN/2Ihlw5FFrx4.json",
+     "Path_of_StreamingPathData": "SVBench/Streaming/Streaming_EN/2Ihlw5FFrx4.json",
+     "Path_of_Dialogue": "SVBench/Dialogue/Dialogue_EN/2Ihlw5FFrx4.json",
+     "Path_of_Streaming": "SVBench/Path/2Ihlw5FFrx4.json",
+     "Path_of_Video": "SVBench/Video/2Ihlw5FFrx4.mp4",
+     "Video_Duration": "214.423",
+     "Source_of_Dataset": "YouCook2"
+    },
+    "Dialogue/Dialogue_EN/2Ihlw5FFrx4.json": [
+     {
+      "chain": {
+       "questions": [
+        "What are the clothing styles of the two women in the video?",
+        "What are the two women doing in the video?",
+        "What is the environment of the studio like?",
+        "What topic are the women discussing?",
+        "What are the main ingredients of the cream bread?",
+        "What are the steps for making cream bread they are demonstrating?"
+       ],
+       "answers": [
+        "The woman on the left with short hair is wearing big earrings and dressed in a peacock blue short sleeve. The woman on the right has long curly hair and is dressed in a dark green dress. Both have microphones clipped near their neckline.",
+        "The two women are recording a cooking show in the studio.",
+        "The studio has a big screen, the overall color is pink, and there are some ingredients on the host table.",
+        "They are discussing how to make cream bread.",
+        "The main ingredients include bacon, tomatoes, lettuce, and feta cheese.",
+        "First, they presented the main ingredients required, then began to explain how to combine these ingredients to make the bread."
+       ]
+      },
+      "qac_timestamps_start": 0,
+      "qac_timestamps_end": 20
+     },
+     {
+      "chain": {
+       "questions": [
+        "What main ingredients are shown in the video?",
+        "What are these raw materials used to make?",
+        "How are these raw materials processed during the making process?",
+        "What information is played in the video when showing these raw materials?",
+        "What other steps does the main character in the video take while making these preparations?"
+       ],
+       "answers": [
+        "The video shows thick-cut bacon, thick slices of ripe red tomatoes, goat cheese, cream cheese, lettuce, multigrain bread, salt, and pepper.",
+        "These ingredients are used to make a sandwich.",
+        "The thick-cut bacon needs to be fried until cooked, the tomatoes are sliced thickly, the lettuce is washed and prepared, the cream cheese and goat cheese are mixed evenly, and the bread is prepared and ready to use.",
+        "When displaying these raw materials, the video shows the name of each ingredient in a list format.",
+        "During the preparation of these ingredients, the main character in the video also shows how to layer them in the sandwich."
+       ]
+      },
+      "qac_timestamps_start": 20,
+      "qac_timestamps_end": 32
+     },
+     {
+      "chain": {
+       "questions": [
+        "What ingredients are needed to make a sandwich?",
+        "How is cheese incorporated into the sandwich?",
+        "What issues did they discuss while preparing the food?",
+        "What is the first step demonstrated by the woman on the left?"
+       ],
+       "answers": [
+        "Bacon slices, tomato slices, lettuce, cream cheese, goat cheese, and bread.",
+        "The chef evenly spreads the cheese on the toasted bread with a knife.",
+        "They discussed the specific steps for making sandwiches and some suggestions on healthy eating.",
+        "The first step is to neatly arrange the toasted bread slices and spread cream cheese on them with a knife."
+       ]
+      },
+      "qac_timestamps_start": 32,
+      "qac_timestamps_end": 43
+     },
+     {
+      "chain": {
+       "questions": [
+        "What is the first step in making a sandwich?",
+        "What impact does cream cheese have on the final product?",
+        "How is the cream cheese mixture made?",
+        "What is the next step after completing the spreading step?"
+       ],
+       "answers": [
+        "The first step in the video is to toast slices of bread.",
+        "The cream cheese mixture enhances the texture and flavor of the sandwich.",
+        "The cream cheese mixture is made by combining feta cheese and cream cheese.",
+        "After completing the spreading step, the next step is to add other ingredients."
+       ]
+      },
+      "qac_timestamps_start": 43,
+      "qac_timestamps_end": 56
+     },
+     {
+      "chain": {
+       "questions": [
+        "What is the first step in making a sandwich?",
+        "Are there any other ingredients on the sandwich besides cheese?",
+        "Why did they choose these ingredients?"
+       ],
+       "answers": [
+        "The first step is to spread a mixture of feta cheese and cream cheese evenly on the bread.",
+        "There are also sliced tomatoes added to the bread with cheese.",
+        "These ingredients are both healthy and delicious. The feta cheese provides a savory taste, while the vegetables add freshness and nutrition."
+       ]
+      },
+      "qac_timestamps_start": 56,
+      "qac_timestamps_end": 77
+     },
+     {
+      "chain": {
+       "questions": [
+        "How does the chef make the sandwich?",
+        "What is the next step after adding the tomatoes?"
+       ],
+       "answers": [
+        "She first spreads a cheese mixture on the bread slices, then adds some tomato slices.",
+        "The next step might be to add other vegetables or seasonings."
+       ]
+      },
+      "qac_timestamps_start": 77,
+      "qac_timestamps_end": 89
+     },
+     {
+      "chain": {
+       "questions": [
+        "What food are they discussing?",
+        "Besides tomatoes, what other vegetables or seasonings does the chef add?",
+        "What does the bacon look like?"
+       ],
+       "answers": [
+        "They are discussing how to make a special sandwich.",
+        "She places grilled bacon slices on top of the sandwich.",
+        "The bacon, after being grilled, has a browned surface, making it look very delicious."
+       ]
+      },
+      "qac_timestamps_start": 89,
+      "qac_timestamps_end": 94
+     },
+     {
+      "chain": {
+       "questions": [
+        "What are the steps of making the special sandwich in the video?",
+        "Besides bacon slices, what else is on the sandwich?",
+        "What is the specialty of this sandwich?"
+       ],
+       "answers": [
+        "First, a sauce mixed with feta cheese and cream cheese is spread on the bread, then tomato slices and bacon slices are added.",
+        "The sandwich also has cheese and tomato slices.",
+        "The specialty of this sandwich is the sauce mixed with feta cheese and cream cheese, along with the rich taste brought by fresh tomatoes and bacon."
+       ]
+      },
+      "qac_timestamps_start": 94,
+      "qac_timestamps_end": 106
+     },
+     {
+      "chain": {
+       "questions": [
+        "What are the steps for making a sandwich?",
+        "What did the woman say when she was laying the bacon?",
+        "How is the atmosphere between the two people in the picture?"
+       ],
+       "answers": [
+        "First, spread the feta and cream cheese mixture on the bread; then, add tomato slices and bacon.",
+        "Yes, she mentioned using fresh tomatoes and crispy bacon to enhance the texture.",
+        "The atmosphere is very harmonious, as the woman on the right is always laughing heartily."
+       ]
+      },
+      "qac_timestamps_start": 106,
+      "qac_timestamps_end": 117
+     },
+     {
+      "chain": {
+       "questions": [
+        "What is the first step in making the sandwich?",
+        "What ingredients are added afterwards?",
+        "Why is lettuce used?",
+        "What effect does bacon have on the sandwich?",
+        "How do they introduce the nutritional value of the sandwich?"
+       ],
+       "answers": [
+        "The first step is to mix cheese and cream cheese and spread it on slices of bread.",
+        "Tomatoes, bacon, and lettuce are added.",
+        "Lettuce adds a fresh taste and nutrition to the sandwich.",
+        "Bacon adds saltiness and a crispy texture to the sandwich.",
+        "They mention that the sandwich contains plenty of proteins and vegetables, making it a balanced dietary choice."
+       ]
+      },
+      "qac_timestamps_start": 117,
+      "qac_timestamps_end": 129
+     },
+     {
+      "chain": {
+       "questions": [
+        "Apart from tomatoes, bacon, and lettuce, what else is in the sandwich?",
+        "Did they use any special sauce?",
+        "What are the features of this sandwich?"
+       ],
+       "answers": [
+        "The sandwich also has a special sauce.",
+        "Yes, they used a sauce when spreading the cheese and the lettuce.",
+        "The feature of this sandwich lies in the combination of cheese, a variety of vegetables, and bacon, making it nutritionally rich."
+       ]
+      },
+      "qac_timestamps_start": 129,
+      "qac_timestamps_end": 139
+     },
+     {
+      "chain": {
+       "questions": [
+        "What food is shown in the video?",
+        "What did the person on the left do?",
+        "After making the sandwich, what did the chef do?",
+        "What is the woman on the right's attitude towards the sandwich?"
+       ],
+       "answers": [
+        "The video shows a special kind of sandwich.",
+        "She placed a slice of bread on top of the ingredients and pressed down lightly.",
+        "Finally, she cut the assembled sandwich in half, ready to be eaten.",
+        "She has a positive attitude towards the sandwich, showing that she really likes it."
+       ]
+      },
+      "qac_timestamps_start": 139,
+      "qac_timestamps_end": 158
+     },
+     {
+      "chain": {
+       "questions": [
+        "What did the woman on the left do to the sandwich after pressing it together?",
+        "What did she do then?",
+        "What comment did the taster make about the taste of the food?",
+        "What does the finished sandwich look like?"
+       ],
+       "answers": [
+        "She cut the sandwich in half with a knife.",
+        "She picked up one of the halves of the sandwich and handed it to the woman next to her to taste.",
+        "The taster took a bite of the sandwich, and she seemed to enjoy the taste.",
+        "The sandwich has vibrant color combinations, a mix of meat and vegetables, and is nutritious, healthy, and delicious."
+       ]
+      },
+      "qac_timestamps_start": 158,
+      "qac_timestamps_end": 177
+     },
+     {
+      "chain": {
+       "questions": [
+        "What does a well-made sandwich look like?",
+        "What feedback does the woman give after tasting the sandwich?"
+       ],
+       "answers": [
+        "The well-made sandwich looks very delicious, with lettuce, tomato, and bacon sandwiched between two slices of whole wheat bread.",
+        "After tasting it, she says that the sandwich is very delicious and the flavors complement each other well."
+       ]
+      },
+      "qac_timestamps_start": 177,
+      "qac_timestamps_end": 180
+     },
+     {
+      "chain": {
+       "questions": [
+        "What are they doing in the video?",
+        "What are the steps in making a sandwich?",
+        "What ingredients are used in the process?",
+        "What characterizes the BLT sandwich?",
+        "How does she rate the finished sandwich?"
+       ],
+       "answers": [
+        "They are making a BLT sandwich.",
+        "The steps include preparing bagel cream cheese, bacon, lettuce, and tomato, and then combining these ingredients together.",
+        "Ingredients include bagel cream cheese, bacon, lettuce, and tomato.",
+        "The characteristic of this BLT sandwich is that it uses bagel cream cheese and fresh vegetables and bacon.",
+        "She rates the BLT sandwich very highly, finding it to be very tasty."
+       ]
+      },
+      "qac_timestamps_start": 180,
+      "qac_timestamps_end": 214
+     }
+    ],
+    "Con/Con_EN/2Ihlw5FFrx4.json (relationship entries only; chain_1/chain_2 repeat the Dialogue chains)": [
+     {
+      "relationship": {
+       "chainBefore": [
+        5
+       ],
+       "chainAfter": [
+        0
+       ],
+       "relationship": [
+        "Object: Main material"
+       ]
+      }
+     },
+     {
+      "relationship": {
+       "chainBefore": [
+        1,
+        4
+       ],
+       "chainAfter": [
+        0,
+        1
+       ],
+       "relationship": [
+        "Object: Raw materials, a sandwich",
+        "Action: Combination"
+       ]
+      }
+     },
+     {
+      "relationship": {
+       "chainBefore": [
+        0,
+        1,
+        3
+       ],
+       "chainAfter": [
+        0,
+        1,
+        1
+       ],
+       "relationship": [
+        "Event: Making a sandwich",
+        "Object: Cream cheese",
+        "Object: Cream cheese"
+       ]
+      }
+     },
+     {
+      "relationship": {
+       "chainBefore": [
+        3
+       ],
+       "chainAfter": [
+        1
+       ],
+       "relationship": [
+        "Object: Other ingredients"
+       ]
+      }
+     },
+     {
+      "relationship": {
+       "chainBefore": [
+        1
+       ],
+       "chainAfter": [
+        1
+       ],
+       "relationship": [
+        "Action: Add tomatoes"
+       ]
+      }
+     },
+     {
+      "relationship": {
+       "chainBefore": [
+        1
+       ],
+       "chainAfter": [
+        1
+       ],
+       "relationship": [
+        "Object: Tomato"
+       ]
+      }
+     },
+     "…[truncated 8 more items]"
+    ]
+   }
+  },
+  {
+   "title": "100686429862004723 (YT-Temporal-1B): split-screen TV interview and dance show — 10 chains",
+   "video_ref": "Video/100686429862004723.mp4 (YT-Temporal-1B)",
+   "duration_s": 64.04,
+   "clip": "samples/media/svbench-train_2.mp4",
+   "clip_offset_s": 22,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0,
+     "te": 22,
+     "lane": "question",
+     "text": "What is in the scene?"
+    },
+    {
+     "t": 0,
+     "te": 22,
+     "lane": "answer",
+     "text": "On the left side of the scene is a host in a suit recording a program in the studio, with a man in red and a blonde woman in white on the right."
+    },
+    {
+     "t": 0,
+     "te": 22,
+     "lane": "question",
+     "text": "What topic is the woman discussing while being interviewed?"
+    },
+    {
+     "t": 0,
+     "te": 22,
+     "lane": "answer",
+     "text": "She is discussing her relationship with Fede Hoppe during the interview."
+    },
+    {
+     "t": 0,
+     "te": 22,
+     "lane": "question",
+     "text": "How does she describe her relationship with Fede Hoppe?"
+    },
+    {
+     "t": 0,
+     "te": 22,
+     "lane": "answer",
+     "text": "She describes her relationship with Fede Hoppe as very close and full of love."
+    },
+    {
+     "t": 0,
+     "te": 22,
+     "lane": "question",
+     "text": "She mentioned wanting to become a mother, what does this mean to her?"
+    },
+    {
+     "t": 0,
+     "te": 22,
+     "lane": "answer",
+     "text": "She mentioned that wanting to become a mother is a very important dream and goal for her."
+    },
+    {
+     "t": 0,
+     "te": 22,
+     "lane": "question",
+     "text": "What is her current professional status and how does she balance work and personal life?"
+    },
+    {
+     "t": 0,
+     "te": 22,
+     "lane": "answer",
+     "text": "She is currently very busy professionally, but she strives to find a balance between work and personal life."
+    },
+    {
+     "t": 0,
+     "te": 22,
+     "lane": "question",
+     "text": "Does she convey any special message to the audience during her talk?"
+    },
+    {
+     "t": 0,
+     "te": 22,
+     "lane": "answer",
+     "text": "In her talk, she conveys her expectations for the future and the importance she places on family."
+    },
+    {
+     "t": 22,
+     "te": 25,
+     "lane": "question",
+     "text": "What topic are the man and woman discussing?"
+    },
+    {
+     "t": 22,
+     "te": 25,
+     "lane": "answer",
+     "text": "They are discussing the topic of becoming a mother."
+    },
+    {
+     "t": 22,
+     "te": 25,
+     "lane": "question",
+     "text": "How does the lady respond to this topic?"
+    },
+    {
+     "t": 22,
+     "te": 25,
+     "lane": "answer",
+     "text": "The lady expresses her strong desire to become a mother."
+    },
+    {
+     "t": 22,
+     "te": 25,
+     "lane": "question",
+     "text": "What reaction does her response provoke?"
+    },
+    {
+     "t": 22,
+     "te": 25,
+     "lane": "answer",
+     "text": "Her response elicits applause and approval from others."
+    },
+    {
+     "t": 22,
+     "te": 25,
+     "lane": "question",
+     "text": "What happens during the interaction between these two people?"
+    },
+    {
+     "t": 22,
+     "te": 25,
+     "lane": "answer",
+     "text": "A man comforts and hugs the lady."
+    },
+    {
+     "t": 22,
+     "te": 25,
+     "lane": "question",
+     "text": "What is the emotional state of the other lady?"
+    },
+    {
+     "t": 22,
+     "te": 25,
+     "lane": "answer",
+     "text": "The other lady appears to be very moved."
+    },
+    {
+     "t": 25,
+     "te": 28,
+     "lane": "question",
+     "text": "What type of program is the one on the left?"
+    },
+    {
+     "t": 25,
+     "te": 28,
+     "lane": "answer",
+     "text": "The program is a dance show."
+    },
+    {
+     "t": 25,
+     "te": 28,
+     "lane": "question",
+     "text": "What is the lady in red doing?"
+    },
+    {
+     "t": 25,
+     "te": 28,
+     "lane": "answer",
+     "text": "She is standing in front of a male wearing black."
+    },
+    {
+     "t": 25,
+     "te": 28,
+     "lane": "question",
+     "text": "What interesting thing happened at the program site?"
+    },
+    {
+     "t": 25,
+     "te": 28,
+     "lane": "answer",
+     "text": "While performers were dancing on stage, there were some interactions and communications, which looked very interesting."
+    },
+    {
+     "t": 25,
+     "te": 28,
+     "lane": "question",
+     "text": "What topic is being discussed in the interview on the other side?"
+    },
+    {
+     "t": 25,
+     "te": 28,
+     "lane": "answer",
+     "text": "The interview is discussing topics related to the content of the program, involving experiences and emotions of the people in the program."
+    },
+    {
+     "t": 25,
+     "te": 28,
+     "lane": "question",
+     "text": "What reactions do people in the interview have?"
+    },
+    {
+     "t": 25,
+     "te": 28,
+     "lane": "answer",
+     "text": "People in the interview show an interested and serious attitude towards the discussion."
+    },
+    {
+     "t": 28,
+     "te": 31,
+     "lane": "question",
+     "text": "What did the woman in red and the man in white do on stage?"
+    },
+    {
+     "t": 28,
+     "te": 31,
+     "lane": "answer",
+     "text": "They were dancing and communicating on stage."
+    },
+    {
+     "t": 28,
+     "te": 31,
+     "lane": "question",
+     "text": "What are the man and woman on the right talking about?"
+    },
+    {
+     "t": 28,
+     "te": 31,
+     "lane": "answer",
+     "text": "The woman talked about her desire to become a mother."
+    },
+    {
+     "t": 28,
+     "te": 31,
+     "lane": "question",
+     "text": "What did the host do on the stage?"
+    },
+    {
+     "t": 28,
+     "te": 31,
+     "lane": "answer",
+     "text": "The host was moderating and interacting on stage."
+    },
+    {
+     "t": 28,
+     "te": 31,
+     "lane": "question",
+     "text": "How do they express their emotions?"
+    },
+    {
+     "t": 28,
+     "te": 31,
+     "lane": "answer",
+     "text": "They expressed deep emotional bonds through dancing and communication."
+    },
+    {
+     "t": 31,
+     "te": 44,
+     "lane": "question",
+     "text": "What did the woman in red and the man in white do besides kissing?"
+    },
+    {
+     "t": 31,
+     "te": 44,
+     "lane": "answer",
+     "text": "They were kissing and being interviewed."
+    },
+    {
+     "t": 31,
+     "te": 44,
+     "lane": "question",
+     "text": "Why is this kiss particularly important?"
+    },
+    {
+     "t": 31,
+     "te": 44,
+     "lane": "answer",
+     "text": "This kiss symbolizes their romantic relationship and deep affection."
+    },
+    {
+     "t": 31,
+     "te": 44,
+     "lane": "question",
+     "text": "What is being discussed in the conversation on the right?"
+    },
+    {
+     "t": 31,
+     "te": 44,
+     "lane": "answer",
+     "text": "The conversation mentioned Maca Rinaldi expressing her strong desire to become a mother."
+    },
+    {
+     "t": 31,
+     "te": 44,
+     "lane": "question",
+     "text": "Why does he want to share this content?"
+    },
+    {
+     "t": 31,
+     "te": 44,
+     "lane": "answer",
+     "text": "Because this is one of her important wishes, which may have a significant meaning to her personal life."
+    },
+    {
+     "t": 31,
+     "te": 44,
+     "lane": "question",
+     "text": "What is the relationship between her and the man beside her?"
+    },
+    {
+     "t": 31,
+     "te": 44,
+     "lane": "answer",
+     "text": "They are in a romantic relationship."
+    },
+    {
+     "t": 44,
+     "te": 48,
+     "lane": "question",
+     "text": "How does the interview part on the right side of the video unfold?"
+    },
+    {
+     "t": 44,
+     "te": 48,
+     "lane": "answer",
+     "text": "In the interview part, the man in red and the woman in white are sitting together for an interview, sharing their experiences."
+    },
+    {
+     "t": 44,
+     "te": 48,
+     "lane": "question",
+     "text": "What are they talking about?"
+    },
+    {
+     "t": 44,
+     "te": 48,
+     "lane": "answer",
+     "text": "They are talking about their feelings for each other."
+    },
+    {
+     "t": 44,
+     "te": 48,
+     "lane": "question",
+     "text": "How does the interview section in the video unfold?"
+    },
+    {
+     "t": 44,
+     "te": 48,
+     "lane": "answer",
+     "text": "In the interview section, the two sit together for an interview, sharing their experiences."
+    },
+    {
+     "t": 44,
+     "te": 48,
+     "lane": "question",
+     "text": "What content did they discuss?"
+    },
+    {
+     "t": 44,
+     "te": 48,
+     "lane": "answer",
+     "text": "They discussed their emotional stories and future plans."
+    },
+    {
+     "t": 44,
+     "te": 48,
+     "lane": "question",
+     "text": "What is the reaction of the live audience and the hosts?"
+    },
+    {
+     "t": 44,
+     "te": 48,
+     "lane": "answer",
+     "text": "The live audience and hosts seem very interested in the couple's story and react enthusiastically."
+    },
+    {
+     "t": 48,
+     "te": 52,
+     "lane": "question",
+     "text": "What is one female host's opinion on this?"
+    },
+    {
+     "t": 48,
+     "te": 52,
+     "lane": "answer",
+     "text": "She supports her dream and shared her own parenting experience."
+    },
+    {
+     "t": 48,
+     "te": 52,
+     "lane": "question",
+     "text": "What question did the host ask the guest?"
+    },
+    {
+     "t": 48,
+     "te": 52,
+     "lane": "answer",
+     "text": "The host asked the guest what is the one thing she most wants to accomplish at the moment."
+    },
+    {
+     "t": 48,
+     "te": 52,
+     "lane": "question",
+     "text": "How did the guest answer this question?"
+    },
+    {
+     "t": 48,
+     "te": 52,
+     "lane": "answer",
+     "text": "The guest answered that she most wants to become a mother."
+    },
+    {
+     "t": 48,
+     "te": 52,
+     "lane": "question",
+     "text": "What reaction did the guest's answer provoke?"
+    },
+    {
+     "t": 48,
+     "te": 52,
+     "lane": "answer",
+     "text": "The guest's answer resonated with the audience and other guests, sparking a lively discussion."
+    },
+    {
+     "t": 48,
+     "te": 52,
+     "lane": "question",
+     "text": "What is the other guest's opinion on this?"
+    },
+    {
+     "t": 48,
+     "te": 52,
+     "lane": "answer",
+     "text": "The other guest expressed support for her dream and shared her own parenting experience."
+    },
+    {
+     "t": 52,
+     "te": 55,
+     "lane": "question",
+     "text": "What does the scene they are discussing look like?"
+    },
+    {
+     "t": 52,
+     "te": 55,
+     "lane": "answer",
+     "text": "The scene of the discussion is inside a studio, with a large screen displaying related information in the background."
+    },
+    {
+     "t": 52,
+     "te": 55,
+     "lane": "question",
+     "text": "Why does the woman mention that becoming a mother is the thing she wants to do the most?"
+    },
+    {
+     "t": 52,
+     "te": 55,
+     "lane": "answer",
+     "text": "She mentions this because it is an important goal in her life."
+    },
+    {
+     "t": 52,
+     "te": 55,
+     "lane": "question",
+     "text": "How do the others react in the discussion?"
+    },
+    {
+     "t": 52,
+     "te": 55,
+     "lane": "answer",
+     "text": "Others in the discussion express their support and share their own opinions."
+    },
+    {
+     "t": 52,
+     "te": 55,
+     "lane": "question",
+     "text": "What does the scene of the discussion look like?"
+    },
+    {
+     "t": 52,
+     "te": 55,
+     "lane": "answer",
+     "text": "The scene of the discussion is inside a studio, with a large screen displaying related information in the background."
+    },
+    {
+     "t": 52,
+     "te": 55,
+     "lane": "question",
+     "text": "Do the emotions of all participants change at different stages of the discussion?"
+    },
+    {
+     "t": 52,
+     "te": 55,
+     "lane": "answer",
+     "text": "At different stages of the discussion, the emotions of all participants change, for example, sometimes appearing very emotional and warm."
+    },
+    {
+     "t": 55,
+     "te": 59,
+     "lane": "question",
+     "text": "What content is displayed in the studio on the right side of the screen?"
+    },
+    {
+     "t": 55,
+     "te": 59,
+     "lane": "answer",
+     "text": "The right side of the screen shows a man and a woman."
+    },
+    {
+     "t": 55,
+     "te": 59,
+     "lane": "question",
+     "text": "Who is this topic related to?"
+    },
+    {
+     "t": 55,
+     "te": 59,
+     "lane": "answer",
+     "text": "This topic is related to the woman sitting in the middle, who wishes to become a mother."
+    },
+    {
+     "t": 55,
+     "te": 59,
+     "lane": "question",
+     "text": "Why does she want to become a mother?"
+    },
+    {
+     "t": 55,
+     "te": 59,
+     "lane": "answer",
+     "text": "She feels that being a mother is her greatest desire and responsibility."
+    },
+    {
+     "t": 55,
+     "te": 59,
+     "lane": "question",
+     "text": "What reaction did her speech elicit?"
+    },
+    {
+     "t": 55,
+     "te": 59,
+     "lane": "answer",
+     "text": "Her speech drew attention and discussion from others present."
+    },
+    {
+     "t": 55,
+     "te": 59,
+     "lane": "question",
+     "text": "How do others view her perspective?"
+    },
+    {
+     "t": 55,
+     "te": 59,
+     "lane": "answer",
+     "text": "Others think her viewpoint is sincere, and they expressed support and understanding towards her."
+    },
+    {
+     "t": 59,
+     "te": 62,
+     "lane": "question",
+     "text": "What topic are people discussing?"
+    },
+    {
+     "t": 59,
+     "te": 62,
+     "lane": "answer",
+     "text": "They are discussing the topic of Mother's Day and family."
+    },
+    {
+     "t": 59,
+     "te": 62,
+     "lane": "question",
+     "text": "How far has the conversation gone?"
+    },
+    {
+     "t": 59,
+     "te": 62,
+     "lane": "answer",
+     "text": "The conversation is delving into the importance of Mother's Day to the family."
+    },
+    {
+     "t": 59,
+     "te": 62,
+     "lane": "question",
+     "text": "What is the atmosphere like onsite?"
+    },
+    {
+     "t": 59,
+     "te": 62,
+     "lane": "answer",
+     "text": "The onsite atmosphere is harmonious and warm."
+    },
+    {
+     "t": 59,
+     "te": 62,
+     "lane": "question",
+     "text": "What action does the male on the right side of the video make at the end of the clip?"
+    },
+    {
+     "t": 59,
+     "te": 62,
+     "lane": "answer",
+     "text": "He makes a gesture resembling a handgun."
+    },
+    {
+     "t": 59,
+     "te": 62,
+     "lane": "question",
+     "text": "What is the man's reaction?"
+    },
+    {
+     "t": 59,
+     "te": 62,
+     "lane": "answer",
+     "text": "The man responds with a smile, indicating understanding and support."
+    },
+    {
+     "t": 59,
+     "te": 62,
+     "lane": "question",
+     "text": "What topic do they seem to be preparing to discuss next?"
+    },
+    {
+     "t": 59,
+     "te": 62,
+     "lane": "answer",
+     "text": "It appears they are preparing to discuss some details about children and family life."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "Meta/Meta_EN/meta_train.csv row": {
+     "Video_Name": "100686429862004723",
+     "Sort_of_Set": "Train",
+     "Path_of_QandA": "SVBench/Dialogue/Dialogue_EN/100686429862004723.json",
+     "Path_of_Con": "SVBench/Con/Con_EN/100686429862004723.json",
+     "Path_of_StreamingPathData": "SVBench/Streaming/Streaming_EN/100686429862004723.json",
+     "Path_of_Dialogue": "SVBench/Dialogue/Dialogue_EN/100686429862004723.json",
+     "Path_of_Streaming": "SVBench/Path/100686429862004723.json",
+     "Path_of_Video": "SVBench/Video/100686429862004723.mp4",
+     "Video_Duration": "64.04",
+     "Source_of_Dataset": "YT-Temporal-1B"
+    },
+    "Dialogue/Dialogue_EN/100686429862004723.json": [
+     {
+      "chain": {
+       "questions": [
+        "What is in the scene?",
+        "What topic is the woman discussing while being interviewed?",
+        "How does she describe her relationship with Fede Hoppe?",
+        "She mentioned wanting to become a mother, what does this mean to her?",
+        "What is her current professional status and how does she balance work and personal life?",
+        "Does she convey any special message to the audience during her talk?"
+       ],
+       "answers": [
+        "On the left side of the scene is a host in a suit recording a program in the studio, with a man in red and a blonde woman in white on the right.",
+        "She is discussing her relationship with Fede Hoppe during the interview.",
+        "She describes her relationship with Fede Hoppe as very close and full of love.",
+        "She mentioned that wanting to become a mother is a very important dream and goal for her.",
+        "She is currently very busy professionally, but she strives to find a balance between work and personal life.",
+        "In her talk, she conveys her expectations for the future and the importance she places on family."
+       ]
+      },
+      "qac_timestamps_start": 0,
+      "qac_timestamps_end": 22
+     },
+     {
+      "chain": {
+       "questions": [
+        "What topic are the man and woman discussing?",
+        "How does the lady respond to this topic?",
+        "What reaction does her response provoke?",
+        "What happens during the interaction between these two people?",
+        "What is the emotional state of the other lady?"
+       ],
+       "answers": [
+        "They are discussing the topic of becoming a mother.",
+        "The lady expresses her strong desire to become a mother.",
+        "Her response elicits applause and approval from others.",
+        "A man comforts and hugs the lady.",
+        "The other lady appears to be very moved."
+       ]
+      },
+      "qac_timestamps_start": 22,
+      "qac_timestamps_end": 25
+     },
+     {
+      "chain": {
+       "questions": [
+        "What type of program is the one on the left?",
+        "What is the lady in red doing?",
+        "What interesting thing happened at the program site?",
+        "What topic is being discussed in the interview on the other side?",
+        "What reactions do people in the interview have?"
+       ],
+       "answers": [
+        "The program is a dance show.",
+        "She is standing in front of a male wearing black.",
+        "While performers were dancing on stage, there were some interactions and communications, which looked very interesting.",
+        "The interview is discussing topics related to the content of the program, involving experiences and emotions of the people in the program.",
+        "People in the interview show an interested and serious attitude towards the discussion."
+       ]
+      },
+      "qac_timestamps_start": 25,
+      "qac_timestamps_end": 28
+     },
+     {
+      "chain": {
+       "questions": [
+        "What did the woman in red and the man in white do on stage?",
+        "What are the man and woman on the right talking about?",
+        "What did the host do on the stage?",
+        "How do they express their emotions?"
+       ],
+       "answers": [
+        "They were dancing and communicating on stage.",
+        "The woman talked about her desire to become a mother.",
+        "The host was moderating and interacting on stage.",
+        "They expressed deep emotional bonds through dancing and communication."
+       ]
+      },
+      "qac_timestamps_start": 28,
+      "qac_timestamps_end": 31
+     },
+     {
+      "chain": {
+       "questions": [
+        "What did the woman in red and the man in white do besides kissing?",
+        "Why is this kiss particularly important?",
+        "What is being discussed in the conversation on the right?",
+        "Why does he want to share this content?",
+        "What is the relationship between her and the man beside her?"
+       ],
+       "answers": [
+        "They were kissing and being interviewed.",
+        "This kiss symbolizes their romantic relationship and deep affection.",
+        "The conversation mentioned Maca Rinaldi expressing her strong desire to become a mother.",
+        "Because this is one of her important wishes, which may have a significant meaning to her personal life.",
+        "They are in a romantic relationship."
+       ]
+      },
+      "qac_timestamps_start": 31,
+      "qac_timestamps_end": 44
+     },
+     {
+      "chain": {
+       "questions": [
+        "How does the interview part on the right side of the video unfold?",
+        "What are they talking about?",
+        "How does the interview section in the video unfold?",
+        "What content did they discuss?",
+        "What is the reaction of the live audience and the hosts?"
+       ],
+       "answers": [
+        "In the interview part, the man in red and the woman in white are sitting together for an interview, sharing their experiences.",
+        "They are talking about their feelings for each other.",
+        "In the interview section, the two sit together for an interview, sharing their experiences.",
+        "They discussed their emotional stories and future plans.",
+        "The live audience and hosts seem very interested in the couple's story and react enthusiastically."
+       ]
+      },
+      "qac_timestamps_start": 44,
+      "qac_timestamps_end": 48
+     },
+     {
+      "chain": {
+       "questions": [
+        "What is one female host's opinion on this?",
+        "What question did the host ask the guest?",
+        "How did the guest answer this question?",
+        "What reaction did the guest's answer provoke?",
+        "What is the other guest's opinion on this?"
+       ],
+       "answers": [
+        "She supports her dream and shared her own parenting experience.",
+        "The host asked the guest what is the one thing she most wants to accomplish at the moment.",
+        "The guest answered that she most wants to become a mother.",
+        "The guest's answer resonated with the audience and other guests, sparking a lively discussion.",
+        "The other guest expressed support for her dream and shared her own parenting experience."
+       ]
+      },
+      "qac_timestamps_start": 48,
+      "qac_timestamps_end": 52
+     },
+     {
+      "chain": {
+       "questions": [
+        "What does the scene they are discussing look like?",
+        "Why does the woman mention that becoming a mother is the thing she wants to do the most?",
+        "How do the others react in the discussion?",
+        "What does the scene of the discussion look like?",
+        "Do the emotions of all participants change at different stages of the discussion?"
+       ],
+       "answers": [
+        "The scene of the discussion is inside a studio, with a large screen displaying related information in the background.",
+        "She mentions this because it is an important goal in her life.",
+        "Others in the discussion express their support and share their own opinions.",
+        "The scene of the discussion is inside a studio, with a large screen displaying related information in the background.",
+        "At different stages of the discussion, the emotions of all participants change, for example, sometimes appearing very emotional and warm."
+       ]
+      },
+      "qac_timestamps_start": 52,
+      "qac_timestamps_end": 55
+     },
+     {
+      "chain": {
+       "questions": [
+        "What content is displayed in the studio on the right side of the screen?",
+        "Who is this topic related to?",
+        "Why does she want to become a mother?",
+        "What reaction did her speech elicit?",
+        "How do others view her perspective?"
+       ],
+       "answers": [
+        "The right side of the screen shows a man and a woman.",
+        "This topic is related to the woman sitting in the middle, who wishes to become a mother.",
+        "She feels that being a mother is her greatest desire and responsibility.",
+        "Her speech drew attention and discussion from others present.",
+        "Others think her viewpoint is sincere, and they expressed support and understanding towards her."
+       ]
+      },
+      "qac_timestamps_start": 55,
+      "qac_timestamps_end": 59
+     },
+     {
+      "chain": {
+       "questions": [
+        "What topic are people discussing?",
+        "How far has the conversation gone?",
+        "What is the atmosphere like onsite?",
+        "What action does the male on the right side of the video make at the end of the clip?",
+        "What is the man's reaction?",
+        "What topic do they seem to be preparing to discuss next?"
+       ],
+       "answers": [
+        "They are discussing the topic of Mother's Day and family.",
+        "The conversation is delving into the importance of Mother's Day to the family.",
+        "The onsite atmosphere is harmonious and warm.",
+        "He makes a gesture resembling a handgun.",
+        "The man responds with a smile, indicating understanding and support.",
+        "It appears they are preparing to discuss some details about children and family life."
+       ]
+      },
+      "qac_timestamps_start": 59,
+      "qac_timestamps_end": 62
+     }
+    ],
+    "Con/Con_EN/100686429862004723.json (relationship entries only; chain_1/chain_2 repeat the Dialogue chains)": [
+     {
+      "relationship": {
+       "chainBefore": [
+        0
+       ],
+       "chainAfter": [
+        1
+       ],
+       "relationship": [
+        "Person: A woman wearing a white striped dress"
+       ]
+      }
+     },
+     {
+      "relationship": {
+       "chainBefore": [
+        2
+       ],
+       "chainAfter": [
+        1
+       ],
+       "relationship": [
+        "Person: A lady wearing red clothes"
+       ]
+      }
+     },
+     {
+      "relationship": {
+       "chainBefore": [
+        0
+       ],
+       "chainAfter": [
+        0
+       ],
+       "relationship": [
+        "Person: A woman in red and a man in white"
+       ]
+      }
+     },
+     {
+      "relationship": {
+       "chainBefore": [
+        2
+       ],
+       "chainAfter": [
+        0
+       ],
+       "relationship": [
+        "Person: A host"
+       ]
+      }
+     },
+     {
+      "relationship": {
+       "chainBefore": [
+        1
+       ],
+       "chainAfter": [
+        0
+       ],
+       "relationship": [
+        "Environment: A studio"
+       ]
+      }
+     },
+     "…[truncated 4 more items]"
+    ]
+   }
+  }
+ ]
+}
