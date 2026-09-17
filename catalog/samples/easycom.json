@@ -1,0 +1,1496 @@
+{
+ "slug": "easycom",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://github.com/facebookresearch/EasyComDataset/blob/main/Main/Speech_Transcriptions/Session_12/03-00-314.json",
+  "https://github.com/facebookresearch/EasyComDataset/blob/main/Main/Speech_Transcriptions/Session_4/22-00-570.json",
+  "Main/Video_Compressed/Session_12/03-00-314.mp4 and Main/Video_Compressed/Session_4/22-00-570.mp4 (Git LFS via media.githubusercontent.com)",
+  "https://github.com/facebookresearch/EasyComDataset/blob/main/Main/Metadata/Session_4.txt (20 fps)"
+ ],
+ "access_used": "open download",
+ "note": "An example is one 1-minute segment of a table conversation filmed from the AR glasses: the full Speech_Transcriptions file, one record per utterance with Start_Frame/End_Frame at 20 fps (t = (frame-1)/20), speaker Participant_ID and Target_of_Speech (a participant ID, 'Group' or 'None'). Participant 2 is the glasses wearer and 1 the restaurant server (neither has a close mic); the video's left strip shows participant headshots by ID. Codes: [L] laughter, [H] hesitation, [U] unintelligible, [X] (unexplained in README; appears where speech is cut at the segment start), '-' interruption. Timeline lanes are speakers, so overlaps and one-word backchannels show directly; the addressee is appended in brackets. Files were loaded as latin-1 because some contain non-UTF-8 bytes.",
+ "examples": [
+  {
+   "title": "Session_12 minute 03: the server takes drink orders — 43 utterances, 4 speakers, overlapping",
+   "video_ref": "Main/Video_Compressed/Session_12/03-00-314.mp4",
+   "duration_s": 60.0,
+   "clip": "samples/media/easycom_1.mp4",
+   "clip_offset_s": 21.5,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.05,
+     "te": 1.7,
+     "lane": "P1 (server)",
+     "text": "[X] there guys. How's it going?  [to: Group]"
+    },
+    {
+     "t": 0.55,
+     "te": 1.35,
+     "lane": "P2 (glasses wearer)",
+     "text": "[L]  [to: None]"
+    },
+    {
+     "t": 1.45,
+     "te": 2.7,
+     "lane": "P6",
+     "text": "Hey. We're doing well.  [to: P1]"
+    },
+    {
+     "t": 2.0,
+     "te": 3.1,
+     "lane": "P4",
+     "text": "Good. How bout you?  [to: P1]"
+    },
+    {
+     "t": 2.4,
+     "te": 7.25,
+     "lane": "P1 (server)",
+     "text": "Welcome to Prexy. I'll be your waiter here this evening. Gonna pass out these menus.  [to: Group]"
+    },
+    {
+     "t": 4.0,
+     "te": 4.6,
+     "lane": "P2 (glasses wearer)",
+     "text": "Thank you.  [to: P1]"
+    },
+    {
+     "t": 5.95,
+     "te": 6.85,
+     "lane": "P6",
+     "text": "Great.  [to: P1]"
+    },
+    {
+     "t": 7.2,
+     "te": 11.0,
+     "lane": "P2 (glasses wearer)",
+     "text": "Oh. They do have burgers! [L] That's good!  [to: Group]"
+    },
+    {
+     "t": 8.75,
+     "te": 10.7,
+     "lane": "P6",
+     "text": "Sure. [L]  [to: Group]"
+    },
+    {
+     "t": 8.9,
+     "te": 9.75,
+     "lane": "P4",
+     "text": "Huge burger.  [to: P2]"
+    },
+    {
+     "t": 9.6,
+     "te": 17.25,
+     "lane": "P1 (server)",
+     "text": "Freestyle menu. [H] You get one food item, one drink item. Feel free to look that over. Give me a holler whenever you guys are ready and I'll take your order.  [to: Group]"
+    },
+    {
+     "t": 13.3,
+     "te": 14.05,
+     "lane": "P6",
+     "text": "Okay.  [to: P1]"
+    },
+    {
+     "t": 13.5,
+     "te": 13.95,
+     "lane": "P2 (glasses wearer)",
+     "text": "Great.  [to: P1]"
+    },
+    {
+     "t": 17.25,
+     "te": 18.5,
+     "lane": "P6",
+     "text": "Great. Thanks.  [to: P1]"
+    },
+    {
+     "t": 17.5,
+     "te": 18.65,
+     "lane": "P2 (glasses wearer)",
+     "text": "Thank you [U].  [to: P1]"
+    },
+    {
+     "t": 17.9,
+     "te": 18.85,
+     "lane": "P4",
+     "text": "Will do. Thank you.  [to: P1]"
+    },
+    {
+     "t": 19.65,
+     "te": 21.15,
+     "lane": "P2 (glasses wearer)",
+     "text": "[L]  [to: None]"
+    },
+    {
+     "t": 21.55,
+     "te": 23.15,
+     "lane": "P6",
+     "text": "What looks good to you guys?  [to: Group]"
+    },
+    {
+     "t": 21.75,
+     "te": 24.1,
+     "lane": "P4",
+     "text": "Can we get some water to start with please?  [to: P1]"
+    },
+    {
+     "t": 23.7,
+     "te": 25.05,
+     "lane": "P1 (server)",
+     "text": "Sure. Water. Absolutely.  [to: P4]"
+    },
+    {
+     "t": 25.2,
+     "te": 26.35,
+     "lane": "P6",
+     "text": "Yeah. Water would be great.  [to: P1]"
+    },
+    {
+     "t": 26.15,
+     "te": 26.65,
+     "lane": "P2 (glasses wearer)",
+     "text": "Yeah.  [to: P1]"
+    },
+    {
+     "t": 26.2,
+     "te": 33.95,
+     "lane": "P1 (server)",
+     "text": "Water? Alright. You guys want ice in that water? Tepid water? Hot water? Ice? No ice. Hot water. Okay.  [to: Group]"
+    },
+    {
+     "t": 29.65,
+     "te": 30.4,
+     "lane": "P4",
+     "text": "Ice please.  [to: P1]"
+    },
+    {
+     "t": 30.5,
+     "te": 31.85,
+     "lane": "P6",
+     "text": "And no ice for me, please.  [to: P1]"
+    },
+    {
+     "t": 30.5,
+     "te": 35.9,
+     "lane": "P2 (glasses wearer)",
+     "text": "I'll take- I'll take hot! Yeah. Yeah. [L]  [to: P1]"
+    },
+    {
+     "t": 33.2,
+     "te": 34.3,
+     "lane": "P6",
+     "text": "Aw, there you go.  [to: P2]"
+    },
+    {
+     "t": 34.35,
+     "te": 35.5,
+     "lane": "P1 (server)",
+     "text": "One of each.  [to: Group]"
+    },
+    {
+     "t": 35.65,
+     "te": 37.3,
+     "lane": "P6",
+     "text": "[L] There you go.  [to: None]"
+    },
+    {
+     "t": 36.7,
+     "te": 38.3,
+     "lane": "P2 (glasses wearer)",
+     "text": "Thanks. Can I get a beer?  [to: P1]"
+    },
+    {
+     "t": 38.5,
+     "te": 40.25,
+     "lane": "P1 (server)",
+     "text": "Beer? Yeah. Absolutely.  [to: P2]"
+    },
+    {
+     "t": 39.15,
+     "te": 47.7,
+     "lane": "P2 (glasses wearer)",
+     "text": "Yeah. You ne- need to have a beer while you're driving. [L] You know?  [L] No, I- I-  [to: Group]"
+    },
+    {
+     "t": 41.4,
+     "te": 42.4,
+     "lane": "P1 (server)",
+     "text": "Yeah. [U]  [to: P2]"
+    },
+    {
+     "t": 41.45,
+     "te": 44.3,
+     "lane": "P6",
+     "text": "[L]  [to: None]"
+    },
+    {
+     "t": 41.45,
+     "te": 45.95,
+     "lane": "P4",
+     "text": "Yeah, I was gonna say. I mean, I don't wanna step on any toes here, but.  [to: Group]"
+    },
+    {
+     "t": 45.2,
+     "te": 46.95,
+     "lane": "P1 (server)",
+     "text": "Remember, no judgment here.  [to: P2]"
+    },
+    {
+     "t": 46.65,
+     "te": 47.9,
+     "lane": "P6",
+     "text": "[L] There you go.  [to: Group]"
+    },
+    {
+     "t": 47.55,
+     "te": 50.8,
+     "lane": "P1 (server)",
+     "text": "And for beer we have IPA, double IPA, and triple IPA.  [to: P2]"
+    },
+    {
+     "t": 51.0,
+     "te": 57.2,
+     "lane": "P2 (glasses wearer)",
+     "text": "[L] [H] Are we in the northwest? Yeah. I think I'll have a, a regular IPA, please. Thank you.  [to: P1]"
+    },
+    {
+     "t": 51.15,
+     "te": 51.85,
+     "lane": "P6",
+     "text": "Oh wow.  [to: None]"
+    },
+    {
+     "t": 53.65,
+     "te": 54.65,
+     "lane": "P6",
+     "text": "[L]  [to: None]"
+    },
+    {
+     "t": 56.85,
+     "te": 59.2,
+     "lane": "P1 (server)",
+     "text": "Alright. A regular IPA and a hot water.  [to: P2]"
+    },
+    {
+     "t": 58.4,
+     "te": 59.95,
+     "lane": "P2 (glasses wearer)",
+     "text": "Yeah. [L]  [to: P1]"
+    }
+   ],
+   "raw_format": "json",
+   "raw": [
+    {
+     "Start_Frame": 2,
+     "End_Frame": 35,
+     "Participant_ID": 1,
+     "Transcription": "[X] there guys. How's it going?",
+     "Target_of_Speech": [
+      "Group"
+     ]
+    },
+    {
+     "Start_Frame": 49,
+     "End_Frame": 146,
+     "Participant_ID": 1,
+     "Transcription": "Welcome to Prexy. I'll be your waiter here this evening. Gonna pass out these menus.",
+     "Target_of_Speech": [
+      "Group"
+     ]
+    },
+    {
+     "Start_Frame": 193,
+     "End_Frame": 346,
+     "Participant_ID": 1,
+     "Transcription": "Freestyle menu. [H] You get one food item, one drink item. Feel free to look that over. Give me a holler whenever you guys are ready and I'll take your order.",
+     "Target_of_Speech": [
+      "Group"
+     ]
+    },
+    {
+     "Start_Frame": 475,
+     "End_Frame": 502,
+     "Participant_ID": 1,
+     "Transcription": "Sure. Water. Absolutely.",
+     "Target_of_Speech": [
+      4
+     ]
+    },
+    {
+     "Start_Frame": 525,
+     "End_Frame": 680,
+     "Participant_ID": 1,
+     "Transcription": "Water? Alright. You guys want ice in that water? Tepid water? Hot water? Ice? No ice. Hot water. Okay.",
+     "Target_of_Speech": [
+      "Group"
+     ]
+    },
+    {
+     "Start_Frame": 688,
+     "End_Frame": 711,
+     "Participant_ID": 1,
+     "Transcription": "One of each.",
+     "Target_of_Speech": [
+      "Group"
+     ]
+    },
+    {
+     "Start_Frame": 771,
+     "End_Frame": 806,
+     "Participant_ID": 1,
+     "Transcription": "Beer? Yeah. Absolutely.",
+     "Target_of_Speech": [
+      2
+     ]
+    },
+    {
+     "Start_Frame": 829,
+     "End_Frame": 849,
+     "Participant_ID": 1,
+     "Transcription": "Yeah. [U]",
+     "Target_of_Speech": [
+      2
+     ]
+    },
+    {
+     "Start_Frame": 905,
+     "End_Frame": 940,
+     "Participant_ID": 1,
+     "Transcription": "Remember, no judgment here.",
+     "Target_of_Speech": [
+      2
+     ]
+    },
+    {
+     "Start_Frame": 952,
+     "End_Frame": 1017,
+     "Participant_ID": 1,
+     "Transcription": "And for beer we have IPA, double IPA, and triple IPA.",
+     "Target_of_Speech": [
+      2
+     ]
+    },
+    {
+     "Start_Frame": 1138,
+     "End_Frame": 1185,
+     "Participant_ID": 1,
+     "Transcription": "Alright. A regular IPA and a hot water.",
+     "Target_of_Speech": [
+      2
+     ]
+    },
+    {
+     "Start_Frame": 30,
+     "End_Frame": 55,
+     "Participant_ID": 6,
+     "Transcription": "Hey. We're doing well.",
+     "Target_of_Speech": [
+      1
+     ]
+    },
+    {
+     "Start_Frame": 120,
+     "End_Frame": 138,
+     "Participant_ID": 6,
+     "Transcription": "Great.",
+     "Target_of_Speech": [
+      1
+     ]
+    },
+    {
+     "Start_Frame": 176,
+     "End_Frame": 215,
+     "Participant_ID": 6,
+     "Transcription": "Sure. [L]",
+     "Target_of_Speech": [
+      "Group"
+     ]
+    },
+    {
+     "Start_Frame": 267,
+     "End_Frame": 282,
+     "Participant_ID": 6,
+     "Transcription": "Okay.",
+     "Target_of_Speech": [
+      1
+     ]
+    },
+    {
+     "Start_Frame": 346,
+     "End_Frame": 371,
+     "Participant_ID": 6,
+     "Transcription": "Great. Thanks.",
+     "Target_of_Speech": [
+      1
+     ]
+    },
+    {
+     "Start_Frame": 432,
+     "End_Frame": 464,
+     "Participant_ID": 6,
+     "Transcription": "What looks good to you guys?",
+     "Target_of_Speech": [
+      "Group"
+     ]
+    },
+    {
+     "Start_Frame": 505,
+     "End_Frame": 528,
+     "Participant_ID": 6,
+     "Transcription": "Yeah. Water would be great.",
+     "Target_of_Speech": [
+      1
+     ]
+    },
+    {
+     "Start_Frame": 611,
+     "End_Frame": 638,
+     "Participant_ID": 6,
+     "Transcription": "And no ice for me, please.",
+     "Target_of_Speech": [
+      1
+     ]
+    },
+    {
+     "Start_Frame": 665,
+     "End_Frame": 687,
+     "Participant_ID": 6,
+     "Transcription": "Aw, there you go.",
+     "Target_of_Speech": [
+      2
+     ]
+    },
+    {
+     "Start_Frame": 714,
+     "End_Frame": 747,
+     "Participant_ID": 6,
+     "Transcription": "[L] There you go.",
+     "Target_of_Speech": [
+      "None"
+     ]
+    },
+    {
+     "Start_Frame": 830,
+     "End_Frame": 887,
+     "Participant_ID": 6,
+     "Transcription": "[L]",
+     "Target_of_Speech": [
+      "None"
+     ]
+    },
+    {
+     "Start_Frame": 934,
+     "End_Frame": 959,
+     "Participant_ID": 6,
+     "Transcription": "[L] There you go.",
+     "Target_of_Speech": [
+      "Group"
+     ]
+    },
+    {
+     "Start_Frame": 1024,
+     "End_Frame": 1038,
+     "Participant_ID": 6,
+     "Transcription": "Oh wow.",
+     "Target_of_Speech": [
+      "None"
+     ]
+    },
+    {
+     "Start_Frame": 1074,
+     "End_Frame": 1094,
+     "Participant_ID": 6,
+     "Transcription": "[L]",
+     "Target_of_Speech": [
+      "None"
+     ]
+    },
+    {
+     "Start_Frame": 12,
+     "End_Frame": 28,
+     "Participant_ID": 2,
+     "Transcription": "[L]",
+     "Target_of_Speech": [
+      "None"
+     ]
+    },
+    {
+     "Start_Frame": 81,
+     "End_Frame": 93,
+     "Participant_ID": 2,
+     "Transcription": "Thank you.",
+     "Target_of_Speech": [
+      1
+     ]
+    },
+    {
+     "Start_Frame": 145,
+     "End_Frame": 221,
+     "Participant_ID": 2,
+     "Transcription": "Oh. They do have burgers! [L] That's good!",
+     "Target_of_Speech": [
+      "Group"
+     ]
+    },
+    {
+     "Start_Frame": 271,
+     "End_Frame": 280,
+     "Participant_ID": 2,
+     "Transcription": "Great.",
+     "Target_of_Speech": [
+      1
+     ]
+    },
+    {
+     "Start_Frame": 351,
+     "End_Frame": 374,
+     "Participant_ID": 2,
+     "Transcription": "Thank you [U].",
+     "Target_of_Speech": [
+      1
+     ]
+    },
+    {
+     "Start_Frame": 394,
+     "End_Frame": 424,
+     "Participant_ID": 2,
+     "Transcription": "[L]",
+     "Target_of_Speech": [
+      "None"
+     ]
+    },
+    {
+     "Start_Frame": 524,
+     "End_Frame": 534,
+     "Participant_ID": 2,
+     "Transcription": "Yeah.",
+     "Target_of_Speech": [
+      1
+     ]
+    },
+    {
+     "Start_Frame": 611,
+     "End_Frame": 719,
+     "Participant_ID": 2,
+     "Transcription": "I'll take- I'll take hot! Yeah. Yeah. [L]",
+     "Target_of_Speech": [
+      1
+     ]
+    },
+    {
+     "Start_Frame": 735,
+     "End_Frame": 767,
+     "Participant_ID": 2,
+     "Transcription": "Thanks. Can I get a beer?",
+     "Target_of_Speech": [
+      1
+     ]
+    },
+    {
+     "Start_Frame": 784,
+     "End_Frame": 955,
+     "Participant_ID": 2,
+     "Transcription": "Yeah. You ne- need to have a beer while you're driving. [L] You know?  [L] No, I- I-",
+     "Target_of_Speech": [
+      "Group"
+     ]
+    },
+    {
+     "Start_Frame": 1021,
+     "End_Frame": 1145,
+     "Participant_ID": 2,
+     "Transcription": "[L] [H] Are we in the northwest? Yeah. I think I'll have a, a regular IPA, please. Thank you.",
+     "Target_of_Speech": [
+      1
+     ]
+    },
+    {
+     "Start_Frame": 1169,
+     "End_Frame": 1200,
+     "Participant_ID": 2,
+     "Transcription": "Yeah. [L]",
+     "Target_of_Speech": [
+      1
+     ]
+    },
+    {
+     "Start_Frame": 41,
+     "End_Frame": 63,
+     "Participant_ID": 4,
+     "Transcription": "Good. How bout you?",
+     "Target_of_Speech": [
+      1
+     ]
+    },
+    {
+     "Start_Frame": 179,
+     "End_Frame": 196,
+     "Participant_ID": 4,
+     "Transcription": "Huge burger.",
+     "Target_of_Speech": [
+      2
+     ]
+    },
+    {
+     "Start_Frame": 359,
+     "End_Frame": 378,
+     "Participant_ID": 4,
+     "Transcription": "Will do. Thank you.",
+     "Target_of_Speech": [
+      1
+     ]
+    },
+    {
+     "Start_Frame": 436,
+     "End_Frame": 483,
+     "Participant_ID": 4,
+     "Transcription": "Can we get some water to start with please?",
+     "Target_of_Speech": [
+      1
+     ]
+    },
+    {
+     "Start_Frame": 594,
+     "End_Frame": 609,
+     "Participant_ID": 4,
+     "Transcription": "Ice please.",
+     "Target_of_Speech": [
+      1
+     ]
+    },
+    {
+     "Start_Frame": 830,
+     "End_Frame": 920,
+     "Participant_ID": 4,
+     "Transcription": "Yeah, I was gonna say. I mean, I don't wanna step on any toes here, but.",
+     "Target_of_Speech": [
+      "Group"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Session_4 minute 22: \"I spy\" game — 54 utterances, 5 speakers, one-word replies and interruptions",
+   "video_ref": "Main/Video_Compressed/Session_4/22-00-570.mp4",
+   "duration_s": 60.0,
+   "clip": "samples/media/easycom_2.mp4",
+   "clip_offset_s": 28.0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 2.25,
+     "lane": "P7",
+     "text": "[X] angle, I can only see it. Well, maybe a couple people.  [to: Group]"
+    },
+    {
+     "t": 3.1,
+     "te": 5.0,
+     "lane": "P4",
+     "text": "Is it a part of the TV?  [to: P7]"
+    },
+    {
+     "t": 5.1,
+     "te": 7.4,
+     "lane": "P7",
+     "text": "[H] No, but it's nearby.  [to: P4]"
+    },
+    {
+     "t": 6.75,
+     "te": 8.85,
+     "lane": "P3",
+     "text": "I- is it attached to the roof?  [to: P7]"
+    },
+    {
+     "t": 9.35,
+     "te": 10.1,
+     "lane": "P7",
+     "text": "No.  [to: P3]"
+    },
+    {
+     "t": 10.3,
+     "te": 10.9,
+     "lane": "P3",
+     "text": "No.  [to: None]"
+    },
+    {
+     "t": 10.9,
+     "te": 11.9,
+     "lane": "P2 (glasses wearer)",
+     "text": "Is it the water bottle?  [to: P7]"
+    },
+    {
+     "t": 12.0,
+     "te": 12.45,
+     "lane": "P7",
+     "text": "Yeah.  [to: P2]"
+    },
+    {
+     "t": 12.85,
+     "te": 13.75,
+     "lane": "P3",
+     "text": "What did you say?  [to: P2]"
+    },
+    {
+     "t": 13.9,
+     "te": 14.75,
+     "lane": "P2 (glasses wearer)",
+     "text": "The water bottle.  [to: P3]"
+    },
+    {
+     "t": 14.95,
+     "te": 18.15,
+     "lane": "P3",
+     "text": "Oh. Water bottle.  [to: Group]"
+    },
+    {
+     "t": 16.0,
+     "te": 17.75,
+     "lane": "P6",
+     "text": "Alright. Alright. That's pretty good.  [to: Group]"
+    },
+    {
+     "t": 16.85,
+     "te": 18.15,
+     "lane": "P4",
+     "text": "I don't even see a water bottle.  [to: Group]"
+    },
+    {
+     "t": 19.0,
+     "te": 20.25,
+     "lane": "P4",
+     "text": "Oh it wa- it was beh-  [to: Group]"
+    },
+    {
+     "t": 19.15,
+     "te": 21.35,
+     "lane": "P6",
+     "text": "Alright. Alright mister software engineer.  [to: P2]"
+    },
+    {
+     "t": 20.2,
+     "te": 21.65,
+     "lane": "P7",
+     "text": "[L]  [to: None]"
+    },
+    {
+     "t": 21.6,
+     "te": 24.35,
+     "lane": "P2 (glasses wearer)",
+     "text": "I spy something blue.  [to: Group]"
+    },
+    {
+     "t": 21.95,
+     "te": 23.0,
+     "lane": "P4",
+     "text": "I couldn't even see it.  [to: Group]"
+    },
+    {
+     "t": 25.1,
+     "te": 25.95,
+     "lane": "P7",
+     "text": "Trash can.  [to: P2]"
+    },
+    {
+     "t": 26.4,
+     "te": 27.1,
+     "lane": "P2 (glasses wearer)",
+     "text": "Huh?  [to: P7]"
+    },
+    {
+     "t": 27.0,
+     "te": 27.7,
+     "lane": "P7",
+     "text": "Trash can?  [to: P2]"
+    },
+    {
+     "t": 28.0,
+     "te": 28.35,
+     "lane": "P2 (glasses wearer)",
+     "text": "No.  [to: P7]"
+    },
+    {
+     "t": 28.4,
+     "te": 29.7,
+     "lane": "P4",
+     "text": "The goo on the tape?  [to: P2]"
+    },
+    {
+     "t": 28.65,
+     "te": 29.4,
+     "lane": "P6",
+     "text": "[H]  [to: None]"
+    },
+    {
+     "t": 30.45,
+     "te": 31.8,
+     "lane": "P3",
+     "text": "Is it inside this room?  [to: P2]"
+    },
+    {
+     "t": 30.6,
+     "te": 31.15,
+     "lane": "P6",
+     "text": "The-  [to: P2]"
+    },
+    {
+     "t": 32.0,
+     "te": 34.8,
+     "lane": "P6",
+     "text": "The little blue circles on the- no?  [to: P2]"
+    },
+    {
+     "t": 32.25,
+     "te": 32.75,
+     "lane": "P2 (glasses wearer)",
+     "text": "Yes.  [to: P3]"
+    },
+    {
+     "t": 34.15,
+     "te": 34.65,
+     "lane": "P2 (glasses wearer)",
+     "text": "No.  [to: P6]"
+    },
+    {
+     "t": 34.45,
+     "te": 35.25,
+     "lane": "P4",
+     "text": "Is this blue?  [to: P2]"
+    },
+    {
+     "t": 36.0,
+     "te": 36.55,
+     "lane": "P2 (glasses wearer)",
+     "text": "No.  [to: P3]"
+    },
+    {
+     "t": 36.25,
+     "te": 38.75,
+     "lane": "P6",
+     "text": "That would be teal. [L]  [to: P4]"
+    },
+    {
+     "t": 36.8,
+     "te": 38.0,
+     "lane": "P7",
+     "text": "The blue on the tape?  [to: P2]"
+    },
+    {
+     "t": 37.3,
+     "te": 38.0,
+     "lane": "P2 (glasses wearer)",
+     "text": "Yeah.  [to: P6]"
+    },
+    {
+     "t": 37.55,
+     "te": 39.6,
+     "lane": "P4",
+     "text": "[H] You never know. His vest?  [to: P6, P2]"
+    },
+    {
+     "t": 39.05,
+     "te": 39.5,
+     "lane": "P2 (glasses wearer)",
+     "text": "The what?  [to: P7]"
+    },
+    {
+     "t": 39.5,
+     "te": 42.45,
+     "lane": "P7",
+     "text": "The blue on the tape, or? I don't know what-  [to: P2]"
+    },
+    {
+     "t": 41.65,
+     "te": 42.3,
+     "lane": "P4",
+     "text": "Yeah.  [to: Group]"
+    },
+    {
+     "t": 42.5,
+     "te": 43.25,
+     "lane": "P2 (glasses wearer)",
+     "text": "Nope.  [to: P7]"
+    },
+    {
+     "t": 42.5,
+     "te": 43.25,
+     "lane": "P6",
+     "text": "My vest?  [to: P2]"
+    },
+    {
+     "t": 44.05,
+     "te": 45.2,
+     "lane": "P3",
+     "text": "Is it on the TV?  [to: P2]"
+    },
+    {
+     "t": 44.4,
+     "te": 44.85,
+     "lane": "P2 (glasses wearer)",
+     "text": "No.  [to: P6]"
+    },
+    {
+     "t": 45.45,
+     "te": 46.0,
+     "lane": "P2 (glasses wearer)",
+     "text": "Yes.  [to: P3]"
+    },
+    {
+     "t": 46.7,
+     "te": 48.7,
+     "lane": "P3",
+     "text": "The blue lettering on the TV? Okay.  [to: P2]"
+    },
+    {
+     "t": 46.7,
+     "te": 47.4,
+     "lane": "P6",
+     "text": "Oh.  [to: None]"
+    },
+    {
+     "t": 47.8,
+     "te": 48.35,
+     "lane": "P2 (glasses wearer)",
+     "text": "Yeah.  [to: P3]"
+    },
+    {
+     "t": 48.75,
+     "te": 50.05,
+     "lane": "P6",
+     "text": "Alright. There you go.  [to: Group]"
+    },
+    {
+     "t": 50.75,
+     "te": 54.2,
+     "lane": "P3",
+     "text": "Alright. I spy something gray.  [to: Group]"
+    },
+    {
+     "t": 54.3,
+     "te": 55.25,
+     "lane": "P4",
+     "text": "[H]  [to: None]"
+    },
+    {
+     "t": 55.25,
+     "te": 56.35,
+     "lane": "P3",
+     "text": "[L]  [to: None]"
+    },
+    {
+     "t": 55.3,
+     "te": 55.9,
+     "lane": "P7",
+     "text": "The wall?  [to: P3]"
+    },
+    {
+     "t": 57.5,
+     "te": 58.35,
+     "lane": "P6",
+     "text": "The blinds?  [to: P3]"
+    },
+    {
+     "t": 58.65,
+     "te": 59.25,
+     "lane": "P2 (glasses wearer)",
+     "text": "His jacket?  [to: P3]"
+    },
+    {
+     "t": 59.2,
+     "te": 59.9,
+     "lane": "P3",
+     "text": "He got it.  [to: Group]"
+    }
+   ],
+   "raw_format": "json",
+   "raw": [
+    {
+     "Start_Frame": 219,
+     "End_Frame": 239,
+     "Participant_ID": 2,
+     "Transcription": "Is it the water bottle?",
+     "Target_of_Speech": [
+      7
+     ]
+    },
+    {
+     "Start_Frame": 279,
+     "End_Frame": 296,
+     "Participant_ID": 2,
+     "Transcription": "The water bottle.",
+     "Target_of_Speech": [
+      3
+     ]
+    },
+    {
+     "Start_Frame": 433,
+     "End_Frame": 488,
+     "Participant_ID": 2,
+     "Transcription": "I spy something blue.",
+     "Target_of_Speech": [
+      "Group"
+     ]
+    },
+    {
+     "Start_Frame": 529,
+     "End_Frame": 543,
+     "Participant_ID": 2,
+     "Transcription": "Huh?",
+     "Target_of_Speech": [
+      7
+     ]
+    },
+    {
+     "Start_Frame": 561,
+     "End_Frame": 568,
+     "Participant_ID": 2,
+     "Transcription": "No.",
+     "Target_of_Speech": [
+      7
+     ]
+    },
+    {
+     "Start_Frame": 646,
+     "End_Frame": 656,
+     "Participant_ID": 2,
+     "Transcription": "Yes.",
+     "Target_of_Speech": [
+      3
+     ]
+    },
+    {
+     "Start_Frame": 684,
+     "End_Frame": 694,
+     "Participant_ID": 2,
+     "Transcription": "No.",
+     "Target_of_Speech": [
+      6
+     ]
+    },
+    {
+     "Start_Frame": 721,
+     "End_Frame": 732,
+     "Participant_ID": 2,
+     "Transcription": "No.",
+     "Target_of_Speech": [
+      3
+     ]
+    },
+    {
+     "Start_Frame": 747,
+     "End_Frame": 761,
+     "Participant_ID": 2,
+     "Transcription": "Yeah.",
+     "Target_of_Speech": [
+      6
+     ]
+    },
+    {
+     "Start_Frame": 782,
+     "End_Frame": 791,
+     "Participant_ID": 2,
+     "Transcription": "The what?",
+     "Target_of_Speech": [
+      7
+     ]
+    },
+    {
+     "Start_Frame": 851,
+     "End_Frame": 866,
+     "Participant_ID": 2,
+     "Transcription": "Nope.",
+     "Target_of_Speech": [
+      7
+     ]
+    },
+    {
+     "Start_Frame": 910,
+     "End_Frame": 921,
+     "Participant_ID": 2,
+     "Transcription": "Yes.",
+     "Target_of_Speech": [
+      3
+     ]
+    },
+    {
+     "Start_Frame": 957,
+     "End_Frame": 968,
+     "Participant_ID": 2,
+     "Transcription": "Yeah.",
+     "Target_of_Speech": [
+      3
+     ]
+    },
+    {
+     "Start_Frame": 1174,
+     "End_Frame": 1186,
+     "Participant_ID": 2,
+     "Transcription": "His jacket?",
+     "Target_of_Speech": [
+      3
+     ]
+    },
+    {
+     "Start_Frame": 136,
+     "End_Frame": 178,
+     "Participant_ID": 3,
+     "Transcription": "I- is it attached to the roof?",
+     "Target_of_Speech": [
+      7
+     ]
+    },
+    {
+     "Start_Frame": 207,
+     "End_Frame": 219,
+     "Participant_ID": 3,
+     "Transcription": "No.",
+     "Target_of_Speech": [
+      "None"
+     ]
+    },
+    {
+     "Start_Frame": 258,
+     "End_Frame": 276,
+     "Participant_ID": 3,
+     "Transcription": "What did you say?",
+     "Target_of_Speech": [
+      2
+     ]
+    },
+    {
+     "Start_Frame": 300,
+     "End_Frame": 364,
+     "Participant_ID": 3,
+     "Transcription": "Oh. Water bottle.",
+     "Target_of_Speech": [
+      "Group"
+     ]
+    },
+    {
+     "Start_Frame": 610,
+     "End_Frame": 637,
+     "Participant_ID": 3,
+     "Transcription": "Is it inside this room?",
+     "Target_of_Speech": [
+      2
+     ]
+    },
+    {
+     "Start_Frame": 882,
+     "End_Frame": 905,
+     "Participant_ID": 3,
+     "Transcription": "Is it on the TV?",
+     "Target_of_Speech": [
+      2
+     ]
+    },
+    {
+     "Start_Frame": 935,
+     "End_Frame": 975,
+     "Participant_ID": 3,
+     "Transcription": "The blue lettering on the TV? Okay.",
+     "Target_of_Speech": [
+      2
+     ]
+    },
+    {
+     "Start_Frame": 1016,
+     "End_Frame": 1085,
+     "Participant_ID": 3,
+     "Transcription": "Alright. I spy something gray. ",
+     "Target_of_Speech": [
+      "Group"
+     ]
+    },
+    {
+     "Start_Frame": 1106,
+     "End_Frame": 1128,
+     "Participant_ID": 3,
+     "Transcription": "[L]",
+     "Target_of_Speech": [
+      "None"
+     ]
+    },
+    {
+     "Start_Frame": 1185,
+     "End_Frame": 1199,
+     "Participant_ID": 3,
+     "Transcription": "He got it.",
+     "Target_of_Speech": [
+      "Group"
+     ]
+    },
+    {
+     "Start_Frame": 63,
+     "End_Frame": 101,
+     "Participant_ID": 4,
+     "Transcription": "Is it a part of the TV?",
+     "Target_of_Speech": [
+      7
+     ]
+    },
+    {
+     "Start_Frame": 338,
+     "End_Frame": 364,
+     "Participant_ID": 4,
+     "Transcription": "I don't even see a water bottle. ",
+     "Target_of_Speech": [
+      "Group"
+     ]
+    },
+    {
+     "Start_Frame": 381,
+     "End_Frame": 406,
+     "Participant_ID": 4,
+     "Transcription": "Oh it wa- it was beh-",
+     "Target_of_Speech": [
+      "Group"
+     ]
+    },
+    {
+     "Start_Frame": 440,
+     "End_Frame": 461,
+     "Participant_ID": 4,
+     "Transcription": "I couldn't even see it.",
+     "Target_of_Speech": [
+      "Group"
+     ]
+    },
+    {
+     "Start_Frame": 569,
+     "End_Frame": 595,
+     "Participant_ID": 4,
+     "Transcription": "The goo on the tape?",
+     "Target_of_Speech": [
+      2
+     ]
+    },
+    {
+     "Start_Frame": 690,
+     "End_Frame": 706,
+     "Participant_ID": 4,
+     "Transcription": "Is this blue?",
+     "Target_of_Speech": [
+      2
+     ]
+    },
+    {
+     "Start_Frame": 752,
+     "End_Frame": 793,
+     "Participant_ID": 4,
+     "Transcription": "[H] You never know. His vest?",
+     "Target_of_Speech": [
+      6,
+      2
+     ]
+    },
+    {
+     "Start_Frame": 834,
+     "End_Frame": 847,
+     "Participant_ID": 4,
+     "Transcription": "Yeah.",
+     "Target_of_Speech": [
+      "Group"
+     ]
+    },
+    {
+     "Start_Frame": 1087,
+     "End_Frame": 1106,
+     "Participant_ID": 4,
+     "Transcription": "[H]",
+     "Target_of_Speech": [
+      "None"
+     ]
+    },
+    {
+     "Start_Frame": 321,
+     "End_Frame": 356,
+     "Participant_ID": 6,
+     "Transcription": "Alright. Alright. That's pretty good. ",
+     "Target_of_Speech": [
+      "Group"
+     ]
+    },
+    {
+     "Start_Frame": 384,
+     "End_Frame": 428,
+     "Participant_ID": 6,
+     "Transcription": "Alright. Alright mister software engineer. ",
+     "Target_of_Speech": [
+      2
+     ]
+    },
+    {
+     "Start_Frame": 574,
+     "End_Frame": 589,
+     "Participant_ID": 6,
+     "Transcription": "[H]",
+     "Target_of_Speech": [
+      "None"
+     ]
+    },
+    {
+     "Start_Frame": 613,
+     "End_Frame": 624,
+     "Participant_ID": 6,
+     "Transcription": "The-",
+     "Target_of_Speech": [
+      2
+     ]
+    },
+    {
+     "Start_Frame": 641,
+     "End_Frame": 697,
+     "Participant_ID": 6,
+     "Transcription": "The little blue circles on the- no?",
+     "Target_of_Speech": [
+      2
+     ]
+    },
+    {
+     "Start_Frame": 726,
+     "End_Frame": 776,
+     "Participant_ID": 6,
+     "Transcription": "That would be teal. [L]",
+     "Target_of_Speech": [
+      4
+     ]
+    },
+    {
+     "Start_Frame": 851,
+     "End_Frame": 866,
+     "Participant_ID": 6,
+     "Transcription": "My vest?",
+     "Target_of_Speech": [
+      2
+     ]
+    },
+    {
+     "Start_Frame": 935,
+     "End_Frame": 949,
+     "Participant_ID": 6,
+     "Transcription": "Oh.",
+     "Target_of_Speech": [
+      "None"
+     ]
+    },
+    {
+     "Start_Frame": 976,
+     "End_Frame": 1002,
+     "Participant_ID": 6,
+     "Transcription": "Alright. There you go.",
+     "Target_of_Speech": [
+      "Group"
+     ]
+    },
+    {
+     "Start_Frame": 1151,
+     "End_Frame": 1168,
+     "Participant_ID": 6,
+     "Transcription": "The blinds?",
+     "Target_of_Speech": [
+      3
+     ]
+    },
+    {
+     "Start_Frame": 1,
+     "End_Frame": 46,
+     "Participant_ID": 7,
+     "Transcription": "[X] angle, I can only see it. Well, maybe a couple people.",
+     "Target_of_Speech": [
+      "Group"
+     ]
+    },
+    {
+     "Start_Frame": 103,
+     "End_Frame": 149,
+     "Participant_ID": 7,
+     "Transcription": "[H] No, but it's nearby.",
+     "Target_of_Speech": [
+      4
+     ]
+    },
+    {
+     "Start_Frame": 188,
+     "End_Frame": 203,
+     "Participant_ID": 7,
+     "Transcription": "No.",
+     "Target_of_Speech": [
+      3
+     ]
+    },
+    {
+     "Start_Frame": 241,
+     "End_Frame": 250,
+     "Participant_ID": 7,
+     "Transcription": "Yeah.",
+     "Target_of_Speech": [
+      2
+     ]
+    },
+    {
+     "Start_Frame": 405,
+     "End_Frame": 434,
+     "Participant_ID": 7,
+     "Transcription": "[L]",
+     "Target_of_Speech": [
+      "None"
+     ]
+    },
+    {
+     "Start_Frame": 503,
+     "End_Frame": 520,
+     "Participant_ID": 7,
+     "Transcription": "Trash can.",
+     "Target_of_Speech": [
+      2
+     ]
+    },
+    {
+     "Start_Frame": 541,
+     "End_Frame": 555,
+     "Participant_ID": 7,
+     "Transcription": "Trash can?",
+     "Target_of_Speech": [
+      2
+     ]
+    },
+    {
+     "Start_Frame": 737,
+     "End_Frame": 761,
+     "Participant_ID": 7,
+     "Transcription": "The blue on the tape?",
+     "Target_of_Speech": [
+      2
+     ]
+    },
+    {
+     "Start_Frame": 791,
+     "End_Frame": 850,
+     "Participant_ID": 7,
+     "Transcription": "The blue on the tape, or? I don't know what-",
+     "Target_of_Speech": [
+      2
+     ]
+    },
+    {
+     "Start_Frame": 1107,
+     "End_Frame": 1119,
+     "Participant_ID": 7,
+     "Transcription": "The wall?",
+     "Target_of_Speech": [
+      3
+     ]
+    },
+    {
+     "Start_Frame": 889,
+     "End_Frame": 898,
+     "Participant_ID": 2,
+     "Transcription": "No.",
+     "Target_of_Speech": [
+      6
+     ]
+    }
+   ]
+  }
+ ]
+}

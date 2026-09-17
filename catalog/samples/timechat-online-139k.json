@@ -1,0 +1,371 @@
+{
+ "slug": "timechat-online-139k",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/yaolily/TimeChat-Online-139K/resolve/main/time_chat_online_139k_train_flt.jsonl (HTTP range reads at byte offsets 0, 150M, 350M, 520M)",
+  "https://huggingface.co/datasets/yaolily/TimeChat-Online-139K/resolve/main/LICENSE"
+ ],
+ "access_used": "open download",
+ "note": "An example is every QA line in our byte-range reads of the training jsonl for one video. Each line is one question over the frame window [start_time, end_time] (seconds), with up to 64 sampled 1 fps frame paths (truncated here to 3). Answers of 'No, I can't respond for now.' teach the model to wait when the frames seen so far cannot answer. In the timeline the question spans the window and the answer is placed at end_time, which is our reading, not a field. No media: the LICENSE forbids redistribution, and the release has only 1 fps frames, no videos.",
+ "examples": [
+  {
+   "title": "YouMakeup pcmbmC9cUUY: makeup vlog, 4 multiple-choice questions, 2 answered \"can't respond for now\"",
+   "video_ref": "YouMakeup/pcmbmC9cUUY",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 518.2,
+     "te": 605.9,
+     "lane": "question",
+     "text": "Did the yellow shopping bag appear in the background when the person was applying contour?\nOptions: A. Yes\nB. Unable to determine\nC. It was partially visible\nD. No"
+    },
+    {
+     "t": 605.9,
+     "te": null,
+     "lane": "answer",
+     "text": "A. Yes"
+    },
+    {
+     "t": 848.2,
+     "te": 866.5,
+     "lane": "question",
+     "text": "What action was performed immediately before applying the false eyelashes?\nOptions: A. Blending eyeshadow\nB. Curling the eyelashes\nC. Applying eyeliner\nD. Applying foundation"
+    },
+    {
+     "t": 866.5,
+     "te": null,
+     "lane": "answer",
+     "text": "B. Curling the eyelashes"
+    },
+    {
+     "t": 1288.5,
+     "te": 1290.0,
+     "lane": "question",
+     "text": "Before the person started applying lipstick with a brush, what was prominently featured in the upper corners of the frame?\nOptions: A. Branding elements 'Pony the Globetrotter' and 'PONY SYNDROME'\nB. A decorative background\nC. The person's eyes\nD. The person's hand If you believe the video content so far can answer this question, please provide the answer directly. Otherwise, reply with 'No, I can't respond for now.'"
+    },
+    {
+     "t": 1290.0,
+     "te": null,
+     "lane": "answer",
+     "text": "No, I can't respond for now."
+    },
+    {
+     "t": 1511.8,
+     "te": 1521.4,
+     "lane": "question",
+     "text": "After the person walked through the bustling urban environment, what might they do next based on the context?\nOptions: A. Board a tram\nB. Take a photo of a landmark\nC. Visit a souvenir shop\nD. Enter a café If you believe the video content so far can answer this question, please provide the answer directly. Otherwise, reply with 'No, I can't respond for now.'"
+    },
+    {
+     "t": 1521.4,
+     "te": null,
+     "lane": "answer",
+     "text": "No, I can't respond for now."
+    }
+   ],
+   "raw_format": "jsonl line",
+   "raw": [
+    {
+     "messages": [
+      {
+       "role": "user",
+       "content": "<video>\nDid the yellow shopping bag appear in the background when the person was applying contour?\nOptions: A. Yes\nB. Unable to determine\nC. It was partially visible\nD. No"
+      },
+      {
+       "role": "assistant",
+       "content": "A. Yes"
+      }
+     ],
+     "videos": [
+      [
+       "timechatonline/timeit-v2/frames/YouMakeup/pcmbmC9cUUY/000518.jpg",
+       "timechatonline/timeit-v2/frames/YouMakeup/pcmbmC9cUUY/000519.jpg",
+       "timechatonline/timeit-v2/frames/YouMakeup/pcmbmC9cUUY/000520.jpg",
+       "…[truncated 61 more items]"
+      ]
+     ],
+     "metadata": {
+      "video_id": "YouMakeup/pcmbmC9cUUY",
+      "start_time": 518.2,
+      "end_time": 605.9
+     }
+    },
+    {
+     "messages": [
+      {
+       "role": "user",
+       "content": "<video>\nWhat action was performed immediately before applying the false eyelashes?\nOptions: A. Blending eyeshadow\nB. Curling the eyelashes\nC. Applying eyeliner\nD. Applying foundation"
+      },
+      {
+       "role": "assistant",
+       "content": "B. Curling the eyelashes"
+      }
+     ],
+     "videos": [
+      [
+       "timechatonline/timeit-v2/frames/YouMakeup/pcmbmC9cUUY/000848.jpg",
+       "timechatonline/timeit-v2/frames/YouMakeup/pcmbmC9cUUY/000849.jpg",
+       "timechatonline/timeit-v2/frames/YouMakeup/pcmbmC9cUUY/000850.jpg",
+       "…[truncated 16 more items]"
+      ]
+     ],
+     "metadata": {
+      "video_id": "YouMakeup/pcmbmC9cUUY",
+      "start_time": 848.2,
+      "end_time": 866.5
+     }
+    },
+    {
+     "messages": [
+      {
+       "role": "user",
+       "content": "<video>\nBefore the person started applying lipstick with a brush, what was prominently featured in the upper corners of the frame?\nOptions: A. Branding elements 'Pony the Globetrotter' and 'PONY SYNDROME'\nB. A decorative background\nC. The person's eyes\nD. The person's hand If you believe the video content so far can answer this question, please provide the answer directly. Otherwise, reply with 'No, I can't respond for now.'"
+      },
+      {
+       "role": "assistant",
+       "content": "No, I can't respond for now."
+      }
+     ],
+     "videos": [
+      [
+       "timechatonline/timeit-v2/frames/YouMakeup/pcmbmC9cUUY/000001.jpg",
+       "timechatonline/timeit-v2/frames/YouMakeup/pcmbmC9cUUY/000020.jpg",
+       "timechatonline/timeit-v2/frames/YouMakeup/pcmbmC9cUUY/000039.jpg",
+       "…[truncated 61 more items]"
+      ]
+     ],
+     "metadata": {
+      "video_id": "YouMakeup/pcmbmC9cUUY",
+      "start_time": 1288.5,
+      "end_time": 1290.0
+     }
+    },
+    {
+     "messages": [
+      {
+       "role": "user",
+       "content": "<video>\nAfter the person walked through the bustling urban environment, what might they do next based on the context?\nOptions: A. Board a tram\nB. Take a photo of a landmark\nC. Visit a souvenir shop\nD. Enter a café If you believe the video content so far can answer this question, please provide the answer directly. Otherwise, reply with 'No, I can't respond for now.'"
+      },
+      {
+       "role": "assistant",
+       "content": "No, I can't respond for now."
+      }
+     ],
+     "videos": [
+      [
+       "timechatonline/timeit-v2/frames/YouMakeup/pcmbmC9cUUY/000001.jpg",
+       "timechatonline/timeit-v2/frames/YouMakeup/pcmbmC9cUUY/000024.jpg",
+       "timechatonline/timeit-v2/frames/YouMakeup/pcmbmC9cUUY/000047.jpg",
+       "…[truncated 61 more items]"
+      ]
+     ],
+     "metadata": {
+      "video_id": "YouMakeup/pcmbmC9cUUY",
+      "start_time": 1511.8,
+      "end_time": 1521.4
+     }
+    }
+   ]
+  },
+  {
+   "title": "videoic 13816168: poison dart frog documentary, 5 open questions about change over time",
+   "video_ref": "videoic/13816168",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 72.5,
+     "te": 112.2,
+     "lane": "question",
+     "text": "What change in the poison dart frog's appearance is highlighted between the first and second frames?"
+    },
+    {
+     "t": 112.2,
+     "te": null,
+     "lane": "answer",
+     "text": "The color pattern shifts from vivid red and white to bright yellow and black."
+    },
+    {
+     "t": 72.5,
+     "te": 432.8,
+     "lane": "question",
+     "text": "What visual continuity can be observed from the first to the last frame regarding the camera work?"
+    },
+    {
+     "t": 432.8,
+     "te": null,
+     "lane": "answer",
+     "text": "The camera remains steady and maintains a close-up focus on the frogs."
+    },
+    {
+     "t": 112.2,
+     "te": 310.9,
+     "lane": "question",
+     "text": "How does the environmental context shift from the second to the fifth frame?"
+    },
+    {
+     "t": 310.9,
+     "te": null,
+     "lane": "answer",
+     "text": "The environment transitions from a humid rainforest backdrop to a more neutral, brown-toned setting."
+    },
+    {
+     "t": 139.2,
+     "te": 220.8,
+     "lane": "question",
+     "text": "What event occurs immediately after the frog is shown on the leaf in the third frame?"
+    },
+    {
+     "t": 220.8,
+     "te": null,
+     "lane": "answer",
+     "text": "The frog is noted for its ability to communicate information about its environment."
+    },
+    {
+     "t": 310.9,
+     "te": 432.8,
+     "lane": "question",
+     "text": "In the final frames, what key aspect is discussed regarding the poison dart frogs?"
+    },
+    {
+     "t": 432.8,
+     "te": null,
+     "lane": "answer",
+     "text": "Their dietary habits and safety measures for human interaction."
+    }
+   ],
+   "raw_format": "jsonl line",
+   "raw": [
+    {
+     "messages": [
+      {
+       "role": "user",
+       "content": "<video>\nWhat change in the poison dart frog's appearance is highlighted between the first and second frames?"
+      },
+      {
+       "role": "assistant",
+       "content": "The color pattern shifts from vivid red and white to bright yellow and black."
+      }
+     ],
+     "videos": [
+      [
+       "timechatonline/timeit-v2/frames/videoic/13816168/000072.jpg",
+       "timechatonline/timeit-v2/frames/videoic/13816168/000072.jpg",
+       "timechatonline/timeit-v2/frames/videoic/13816168/000073.jpg",
+       "…[truncated 61 more items]"
+      ]
+     ],
+     "metadata": {
+      "video_id": "videoic/13816168",
+      "start_time": 72.5,
+      "end_time": 112.2
+     }
+    },
+    {
+     "messages": [
+      {
+       "role": "user",
+       "content": "<video>\nWhat visual continuity can be observed from the first to the last frame regarding the camera work?"
+      },
+      {
+       "role": "assistant",
+       "content": "The camera remains steady and maintains a close-up focus on the frogs."
+      }
+     ],
+     "videos": [
+      [
+       "timechatonline/timeit-v2/frames/videoic/13816168/000072.jpg",
+       "timechatonline/timeit-v2/frames/videoic/13816168/000078.jpg",
+       "timechatonline/timeit-v2/frames/videoic/13816168/000083.jpg",
+       "…[truncated 61 more items]"
+      ]
+     ],
+     "metadata": {
+      "video_id": "videoic/13816168",
+      "start_time": 72.5,
+      "end_time": 432.8
+     }
+    },
+    {
+     "messages": [
+      {
+       "role": "user",
+       "content": "<video>\nHow does the environmental context shift from the second to the fifth frame?"
+      },
+      {
+       "role": "assistant",
+       "content": "The environment transitions from a humid rainforest backdrop to a more neutral, brown-toned setting."
+      }
+     ],
+     "videos": [
+      [
+       "timechatonline/timeit-v2/frames/videoic/13816168/000112.jpg",
+       "timechatonline/timeit-v2/frames/videoic/13816168/000115.jpg",
+       "timechatonline/timeit-v2/frames/videoic/13816168/000118.jpg",
+       "…[truncated 61 more items]"
+      ]
+     ],
+     "metadata": {
+      "video_id": "videoic/13816168",
+      "start_time": 112.2,
+      "end_time": 310.9
+     }
+    },
+    {
+     "messages": [
+      {
+       "role": "user",
+       "content": "<video>\nWhat event occurs immediately after the frog is shown on the leaf in the third frame?"
+      },
+      {
+       "role": "assistant",
+       "content": "The frog is noted for its ability to communicate information about its environment."
+      }
+     ],
+     "videos": [
+      [
+       "timechatonline/timeit-v2/frames/videoic/13816168/000139.jpg",
+       "timechatonline/timeit-v2/frames/videoic/13816168/000140.jpg",
+       "timechatonline/timeit-v2/frames/videoic/13816168/000141.jpg",
+       "…[truncated 61 more items]"
+      ]
+     ],
+     "metadata": {
+      "video_id": "videoic/13816168",
+      "start_time": 139.2,
+      "end_time": 220.8
+     }
+    },
+    {
+     "messages": [
+      {
+       "role": "user",
+       "content": "<video>\nIn the final frames, what key aspect is discussed regarding the poison dart frogs?"
+      },
+      {
+       "role": "assistant",
+       "content": "Their dietary habits and safety measures for human interaction."
+      }
+     ],
+     "videos": [
+      [
+       "timechatonline/timeit-v2/frames/videoic/13816168/000310.jpg",
+       "timechatonline/timeit-v2/frames/videoic/13816168/000312.jpg",
+       "timechatonline/timeit-v2/frames/videoic/13816168/000314.jpg",
+       "…[truncated 61 more items]"
+      ]
+     ],
+     "metadata": {
+      "video_id": "videoic/13816168",
+      "start_time": 310.9,
+      "end_time": 432.8
+     }
+    }
+   ]
+  }
+ ]
+}

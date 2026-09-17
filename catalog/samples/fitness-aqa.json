@@ -1,0 +1,27 @@
+{
+ "slug": "fitness-aqa",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://github.com/ParitoshParmar/Fitness-AQA (README.md, repo tree: no annotation files)",
+  "https://arxiv.org/pdf/2202.14019 (Fig. 2 and Sec. 4 text)",
+  "https://forms.gle/PbPTX1eVxGpa3QG88 (request form, not submitted)"
+ ],
+ "access_used": "public sample in paper/repo/card only (full data needs a Google-form request and acceptance of fitness_aqa_dataset_license.pdf, non-commercial)",
+ "note": "No per-clip record could be obtained: the videos and labels are released only after a Google-form request, and neither the GitHub repo nor Hugging Face holds any annotation file. The only published verbatim material is the label hierarchy in the paper's Fig. 2 (the PDF text layer scrambles the figure order, so the pairing of ratios to error types is ambiguous) and the paper's description of the labels: one binary expert form-error label per single-repetition clip or image, with no timestamps.",
+ "examples": [
+  {
+   "title": "Paper Fig. 2: label hierarchy (exercise → dataset type → error type, with non-error:error ratios)",
+   "video_ref": null,
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "txt",
+   "raw": {
+    "arXiv 2202.14019 PDF text layer, Fig. 2 (verbatim, extraction order)": "Fitness-AQA Dataset\nBackSquat\nUnlabeled\nLabeled\nKIE\nKFE\nSS\nImg\nBarbellRow\nLabeled\nLumbar\nTorsoAngle\nImg\nOverheadPress\nUnlabeled\nLabeled\nElbow\nKnees\nVid\nExercises\nErrors\nModel\ntypes\nDataset\ntypes\nKIE,KFE: 1623 V     SS:3611 V\n2260 V\n6490 I\n3300 V\n4000 V\n1486:774\n1686:574\n5900:590\n5408:1082\n1543:2068\n1387:236\n515:1108\nI, V\nI, V\nI\nI, V\nI, V\nI\nI\nFig. 2. Fitness-AQA\ndataset\nhi-\nerarchy. Numbers below the dataset\ntype indicate dataset size; and those\nunder the errors indicate the ratio of\nnon-erroneous:erroneous samples. I, V\nindicate if the error detection is static\nimage- or multiframe (video)-based.\n2\nRelated Work\nAction Quality Assessment (AQA)/Skills Assessment (SA). Our work can be\nclassified under AQA/SA, which involve the computer vision-based quantifica-\ntion of the quality of movements and actions. Works in AQA/SA have mainly",
+    "Sec. 4 and Sec. 5 excerpts on the labels (verbatim)": "Annotations by Expert Trainers. We employed two professional gym trainers to\nannotate our dataset for error labels. Due to this, even very subtle errors are\ncaught and annotated accordingly. Errors range from very subtle to very severe.\n[…]\n– Real-world videos. Unlike the existing dataset [27], we collected our dataset\nfrom actual real-world videos in actual gyms recorded by the people without\nany scripts. Due to this, the videos are naturally recorded from a wide range\nof azimuthal angles, inclination angles, and distances. Our samples were au-\ntomatically processed to contain a single repetition.\n– People making errors under the impact of actual weights. In the ex-\nisting dataset [27], people are instructed to make deliberate exercise mistakes\nwithout being under the influence of actual weights. Our dataset, on the other\nhand, captures cases where people are naturally making mistakes (without any\ninstructions), under the influence of actually heavy weights. Due to this, we\nbelieve that there is no bias towards exaggerated errors, and contains natural,\nsubtler error cases.\n[…]\nthe class size. Note that the labeled dataset contains only the exercise error as\nground-truth annotation and no information related to human pose. As such,\nour models did not use any pose-related ground-truth."
+   }
+  }
+ ]
+}

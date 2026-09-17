@@ -1,0 +1,147 @@
+{
+ "slug": "molmo2-videocapqa",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/allenai/Molmo2-VideoCapQA/resolve/main/data/CapQA-00000-of-00001.parquet",
+  "https://huggingface.co/datasets/allenai/Molmo2-VideoCapQA/resolve/main/data/LongCapQA-00000-of-00001.parquet",
+  "https://huggingface.co/datasets/allenai/Molmo2-VideoCapQA/resolve/main/youtube_id_to_urls_mapping.json",
+  "https://storage.googleapis.com/molmo2-youtube-cc-videos/youtube-cc-temporal/zzoaCmVGiPs/zzoaCmVGiPs.mp4",
+  "https://storage.googleapis.com/molmo2-youtube-cc-videos/youtube-cc-exist/kTqdF6dn5n0/kTqdF6dn5n0.mp4"
+ ],
+ "access_used": "open download",
+ "note": "An example is all multiple-choice QA rows for one video: CapQA stores one row per question (about 5 per video), LongCapQA stores one row per video with a qa_list. There are no timestamps, so the timeline is empty; clips come from Ai2's CC-BY GCS mirror (a requester-pays bucket, so a billing project is needed) and were cut at an arbitrary informative moment, not at a labelled time.",
+ "examples": [
+  {
+   "title": "zzoaCmVGiPs (CapQA): bamboo laptop case demo, 5 multiple-choice questions",
+   "video_ref": "zzoaCmVGiPs",
+   "duration_s": 94.8,
+   "clip": "samples/media/molmo2-videocapqa_1.mp4",
+   "clip_offset_s": 40,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "parquet row",
+   "raw": [
+    {
+     "video_id": "zzoaCmVGiPs",
+     "Answer": "Red",
+     "Category": "human appearance",
+     "NegativeAnswers": [
+      "Blue",
+      "White",
+      "Yellow"
+     ],
+     "Question": "What color is the shirt worn by the man demonstrating the wooden laptop case?"
+    },
+    {
+     "video_id": "zzoaCmVGiPs",
+     "Answer": "HP",
+     "Category": "object recognition",
+     "NegativeAnswers": [
+      "Dell",
+      "Lenovo",
+      "Acer"
+     ],
+     "Question": "Which brand logo is on the laptop inside the wooden case?"
+    },
+    {
+     "video_id": "zzoaCmVGiPs",
+     "Answer": "In a small compartment on the inside of the lid",
+     "Category": "spatial relationship",
+     "NegativeAnswers": [
+      "Clipped to the exterior handle",
+      "In an outside side pocket",
+      "Under the laptop keyboard"
+     ],
+     "Question": "Where is the black pen with a blue cap positioned in the wooden case?"
+    },
+    {
+     "video_id": "zzoaCmVGiPs",
+     "Answer": "He points at the laptop keyboard",
+     "Category": "action sequence",
+     "NegativeAnswers": [
+      "He starts typing on the laptop",
+      "He plugs in a cable",
+      "He immediately closes the case without pointing"
+     ],
+     "Question": "After the wooden case is opened to reveal the laptop, what does the man do next?"
+    },
+    {
+     "video_id": "zzoaCmVGiPs",
+     "Answer": "Red",
+     "Category": "object properties",
+     "NegativeAnswers": [
+      "Blue",
+      "Green",
+      "Black"
+     ],
+     "Question": "What is the color of the interior lining of the wooden laptop case?"
+    }
+   ]
+  },
+  {
+   "title": "kTqdF6dn5n0 (LongCapQA): 7-minute DIY room-decor video, 5 questions in one qa_list",
+   "video_ref": "kTqdF6dn5n0",
+   "duration_s": 420.4,
+   "clip": "samples/media/molmo2-videocapqa_2.mp4",
+   "clip_offset_s": 140,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "parquet row",
+   "raw": {
+    "video_id": "kTqdF6dn5n0",
+    "qa_list": [
+     {
+      "Answer": "Creating DIY Ikea-inspired room decor projects",
+      "Category": "video topic",
+      "NegativeAnswers": [
+       "Cooking and recipe tutorials",
+       "A makeup and beauty routine",
+       "Learning a dance choreography"
+      ],
+      "Question": "What is the main activity demonstrated throughout the video?"
+     },
+     {
+      "Answer": "By cutting magazine images and labels and gluing them into a collage",
+      "Category": "process description",
+      "NegativeAnswers": [
+       "By spray-painting it a single solid color",
+       "By covering it with fabric and sewing the edges",
+       "By carving patterns into the wood with a knife"
+      ],
+      "Question": "How is the wooden tray decorated during the project?"
+     },
+     {
+      "Answer": "DISCLAIMER",
+      "Category": "text recognition",
+      "NegativeAnswers": [
+       "WARNING",
+       "SUBSCRIBE",
+       "TUTORIAL"
+      ],
+      "Question": "What word appears large and centered on a plain, pastel-colored screen between segments?"
+     },
+     {
+      "Answer": "Gold-colored",
+      "Category": "object properties",
+      "NegativeAnswers": [
+       "Silver",
+       "Black",
+       "Blue"
+      ],
+      "Question": "After its makeover, what color is the power strip’s outer body?"
+     },
+     {
+      "Answer": "Two silver necklaces",
+      "Category": "human appearance",
+      "NegativeAnswers": [
+       "A red scarf",
+       "Headphones",
+       "A single gold chain"
+      ],
+      "Question": "What is the presenter wearing around his neck while speaking to the camera?"
+     }
+    ]
+   }
+  }
+ ]
+}

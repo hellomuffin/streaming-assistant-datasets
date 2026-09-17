@@ -1,0 +1,457 @@
+{
+ "slug": "streambridge-stream-it",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://ml-site.cdn-apple.com/datasets/streambridge/qa_groups.json",
+  "clip sources: https://huggingface.co/datasets/WHB139426/Grounded-VideoLLM panda70m_2m/chunk_{12,13,19}.zip and internvid/chunk_{4,5,6,7,8,9}.zip (zip members clips/<id>.mp4, the mirror named in the StreamBridge README)"
+ ],
+ "access_used": "open download",
+ "note": "One example is one training 'long video': 10 consecutive rows of the similarity-ordered qa_groups.json (the README's GROUP_LEN=10 grouping), each row one short clip with a GPT-4o caption, one QA, 5 options and a type (OP object, AR action, SA spatial/attribute, CR causal, EU event, UEH unexpected event, OCR, SR sequence). The file has no timestamps; for example 1 we downloaded all 10 clips, concatenated them in group order and took t/te from the measured clip durations, so those times are our reconstruction, not dataset fields.",
+ "examples": [
+  {
+   "title": "Group 89463: museum ruins → Korean ceiling collapse, 10 clips, 8 question types incl. unexpected event (UEH)",
+   "video_ref": "qa_groups.json rows 894630–894639 (GROUP_LEN=10): panda70m_703k/clips/z_PnGUsNN2E.mp4, panda70m_703k/clips/JK07yI3-3fc.mp4, panda70m_703k/clips/rT3E0mhxSws.mp4, internvid_354k/clips/hAxOxhKfJ2U.mp4, internvid_354k/clips/1OHENa-rzE0.mp4, internvid_354k/clips/wAYhflky064.mp4, internvid_354k/clips/gGN5zfDp0-g.mp4, internvid_354k/clips/Nmc0-pOuM9Q.mp4, internvid_354k/clips/n3hOigb1jHk.mp4, internvid_354k/clips/_Rw1aD4OKRo.mp4",
+   "duration_s": 147.14,
+   "clip": "samples/media/streambridge-stream-it_1.mp4",
+   "clip_offset_s": 72.7,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0,
+     "te": 14.28,
+     "lane": "question",
+     "text": "[OP] What is one of the exhibits on display in the museum?"
+    },
+    {
+     "t": 0,
+     "te": 14.28,
+     "lane": "answer",
+     "text": "A model of the ancient city of China."
+    },
+    {
+     "t": 14.28,
+     "te": 29.9,
+     "lane": "question",
+     "text": "[OP] What is being shown in the view?"
+    },
+    {
+     "t": 14.28,
+     "te": 29.9,
+     "lane": "answer",
+     "text": "The ruins of an ancient city."
+    },
+    {
+     "t": 29.9,
+     "te": 53.95,
+     "lane": "question",
+     "text": "[SA] What are the tourists walking on in front of the ancient temple?"
+    },
+    {
+     "t": 29.9,
+     "te": 53.95,
+     "lane": "answer",
+     "text": "A red carpet"
+    },
+    {
+     "t": 53.95,
+     "te": 69.77,
+     "lane": "question",
+     "text": "[CR] What has caused the damage to the wall in South Korea?"
+    },
+    {
+     "t": 53.95,
+     "te": 69.77,
+     "lane": "answer",
+     "text": "A collapse has caused the damage to the wall in South Korea."
+    },
+    {
+     "t": 69.77,
+     "te": 82.72,
+     "lane": "question",
+     "text": "[EU] What is happening in the bedroom?"
+    },
+    {
+     "t": 69.77,
+     "te": 82.72,
+     "lane": "answer",
+     "text": "There is a fire in the bedroom."
+    },
+    {
+     "t": 82.72,
+     "te": 95.5,
+     "lane": "question",
+     "text": "[UEH] What happened to the ceiling tiles in the Korean kitchen?"
+    },
+    {
+     "t": 82.72,
+     "te": 95.5,
+     "lane": "answer",
+     "text": "Two ceiling tiles collapsed on the shop floor."
+    },
+    {
+     "t": 95.5,
+     "te": 113.88,
+     "lane": "question",
+     "text": "[OP] What type of product is featured in the video?"
+    },
+    {
+     "t": 95.5,
+     "te": 113.88,
+     "lane": "answer",
+     "text": "Emax security door latch"
+    },
+    {
+     "t": 113.88,
+     "te": 126.46,
+     "lane": "question",
+     "text": "[OCR] What language is displayed inside the car?"
+    },
+    {
+     "t": 113.88,
+     "te": 126.46,
+     "lane": "answer",
+     "text": "Korean"
+    },
+    {
+     "t": 126.46,
+     "te": 137.06,
+     "lane": "question",
+     "text": "[SR] What do the Japanese school students do after watching the scary ghost swat video?"
+    },
+    {
+     "t": 126.46,
+     "te": 137.06,
+     "lane": "answer",
+     "text": "They take on ghost-horror."
+    },
+    {
+     "t": 137.06,
+     "te": 147.14,
+     "lane": "question",
+     "text": "[AR] What is the tool being used for in the room?"
+    },
+    {
+     "t": 137.06,
+     "te": 147.14,
+     "lane": "answer",
+     "text": "To break the ceiling."
+    }
+   ],
+   "raw_format": "json",
+   "raw": [
+    {
+     "video_id": "z_PnGUsNN2E",
+     "video_file": "panda70m_703k/clips/z_PnGUsNN2E.mp4",
+     "caption": "There is a museum with various exhibits on display, including a model of the ancient city of china.",
+     "question": "What is one of the exhibits on display in the museum?",
+     "answer": "A model of the ancient city of China.",
+     "type": "OP",
+     "options": [
+      "A model of the ancient city of China.",
+      "Several paintings.",
+      "A white robot with a screen.",
+      "Various artifacts.",
+      "An antique vase."
+     ]
+    },
+    {
+     "video_id": "JK07yI3-3fc",
+     "video_file": "panda70m_703k/clips/JK07yI3-3fc.mp4",
+     "caption": "A view of the ruins of an ancient city.",
+     "question": "What is being shown in the view?",
+     "answer": "The ruins of an ancient city.",
+     "type": "OP",
+     "options": [
+      "The interior of an Audi car.",
+      "The underside of a truck on a dirt road.",
+      "The ruins of an ancient city.",
+      "The interior of a vehicle.",
+      "A city and a body of water."
+     ]
+    },
+    {
+     "video_id": "rT3E0mhxSws",
+     "video_file": "panda70m_703k/clips/rT3E0mhxSws.mp4",
+     "caption": "There are tourists walking on a red carpet in front of an ancient temple.",
+     "question": "What are the tourists walking on in front of the ancient temple?",
+     "answer": "A red carpet",
+     "type": "SA",
+     "options": [
+      "He is looking at its construction.",
+      "On the floors of a spacious shopping and entertainment center.",
+      "The gate of Fuzimiao",
+      "A red carpet",
+      "The tourists are walking to the main hall of Ryoanji Temple."
+     ]
+    },
+    {
+     "video_id": "hAxOxhKfJ2U",
+     "video_file": "internvid_354k/clips/hAxOxhKfJ2U.mp4",
+     "caption": "A wall has been damaged by a collapse in south korea.",
+     "question": "What has caused the damage to the wall in South Korea?",
+     "answer": "A collapse has caused the damage to the wall in South Korea.",
+     "type": "CR",
+     "options": [
+      "An explosion causes the wall to be destroyed.",
+      "A huge dome.",
+      "A collapse has caused the damage to the wall in South Korea.",
+      "The South Korean government blames the Korean driver.",
+      "The building in Karnataka was damaged by the fire."
+     ]
+    },
+    {
+     "video_id": "1OHENa-rzE0",
+     "video_file": "internvid_354k/clips/1OHENa-rzE0.mp4",
+     "caption": "Fire in the bedroom korean caption.",
+     "question": "What is happening in the bedroom?",
+     "answer": "There is a fire in the bedroom.",
+     "type": "EU",
+     "options": [
+      "She is reading a book.",
+      "She is folding a blanket on a bed.",
+      "There is a fire in the bedroom.",
+      "She is opening a white blanket on a bed.",
+      "There is a fire in the room."
+     ]
+    },
+    {
+     "video_id": "wAYhflky064",
+     "video_file": "internvid_354k/clips/wAYhflky064.mp4",
+     "caption": "Two ceiling tiles collapsed on a shop floor in a korean kitchen.",
+     "question": "What happened to the ceiling tiles in the Korean kitchen?",
+     "answer": "Two ceiling tiles collapsed on the shop floor.",
+     "type": "UEH",
+     "options": [
+      "A wooden broom.",
+      "Three people",
+      "A pair of pipes.",
+      "Two ceiling tiles collapsed on the shop floor.",
+      "A dirty towel."
+     ]
+    },
+    {
+     "video_id": "gGN5zfDp0-g",
+     "video_file": "internvid_354k/clips/gGN5zfDp0-g.mp4",
+     "caption": "Emax security door latch korea video.",
+     "question": "What type of product is featured in the video?",
+     "answer": "Emax security door latch",
+     "type": "OP",
+     "options": [
+      "Emax security door latch",
+      "Hydroxcut Hardcore Elite",
+      "The golden pavilion in Kyoto.",
+      "A package of a kitchen aid baking pan.",
+      "The iPhone SE 2."
+     ]
+    },
+    {
+     "video_id": "Nmc0-pOuM9Q",
+     "video_file": "internvid_354k/clips/Nmc0-pOuM9Q.mp4",
+     "caption": "A photo showing the inside of a car in korean.",
+     "question": "What language is displayed inside the car?",
+     "answer": "Korean",
+     "type": "OCR",
+     "options": [
+      "Russian",
+      "Korean",
+      "English and Japanese.",
+      "Japanese",
+      "Chinese and English."
+     ]
+    },
+    {
+     "video_id": "n3hOigb1jHk",
+     "video_file": "internvid_354k/clips/n3hOigb1jHk.mp4",
+     "caption": " japanese school students take on ghost-horror after seeing scary ghost swat video.",
+     "question": "What do the Japanese school students do after watching the scary ghost swat video?",
+     "answer": "They take on ghost-horror.",
+     "type": "SR",
+     "options": [
+      "The destruction caused by the Taiwan quake.",
+      "They are working in a nuclear reactor.",
+      "They are running.",
+      "They take on ghost-horror.",
+      "The Japanese teacher is drawing."
+     ]
+    },
+    {
+     "video_id": "_Rw1aD4OKRo",
+     "video_file": "internvid_354k/clips/_Rw1aD4OKRo.mp4",
+     "caption": "The tool is being used to break the ceiling in a room.",
+     "question": "What is the tool being used for in the room?",
+     "answer": "To break the ceiling.",
+     "type": "AR",
+     "options": [
+      "The person is using the tool to tighten a rusted wheel.",
+      "The UI color picker.",
+      "An electric drill.",
+      "To break the ceiling.",
+      "The person is using the tool to remove a part of a computer's cooling system."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Group 0 (first rows): 10 WebVid timelapses — the same 'Dubai Marina 3 km' question repeats across near-duplicate clips",
+   "video_ref": "qa_groups.json rows 0–9 (GROUP_LEN=10): webvid_229k/videos/034101_034150/1012406735.mp4, webvid_229k/videos/021201_021250/1024585310.mp4, webvid_229k/videos/022351_022400/23584036.mp4, webvid_229k/videos/015701_015750/20447026.mp4, webvid_229k/videos/036651_036700/25792973.mp4, webvid_229k/videos/146801_146850/24206005.mp4, webvid_229k/videos/055101_055150/23584051.mp4, webvid_229k/videos/011151_011200/20596666.mp4, webvid_229k/videos/006151_006200/24206011.mp4, webvid_229k/videos/008801_008850/17407501.mp4",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "json",
+   "raw": [
+    {
+     "video_id": "034101_034150/1012406735",
+     "video_file": "webvid_229k/videos/034101_034150/1012406735.mp4",
+     "caption": "Putrajaya, malaysia, may 25 2018 : time lapse of pedestrian walk to putrajaya memorial tower during sunset. destinations if visiting for tourists. the history of malaysia is recorded here. 4k ",
+     "question": "What is the destination that tourists visit in Putrajaya during sunset?",
+     "answer": "Putrajaya Memorial Tower",
+     "type": "SA",
+     "options": [
+      "At the beach in Labuan Bajo, Flores, Indonesia, Komodo National Park.",
+      "At the ocean coast of Carrick Island, Antrim County, Northern Ireland, United Kingdom.",
+      "The tourist is drinking hot tea.",
+      "Putrajaya Memorial Tower",
+      "On the beach in Glowe, Ruegen Island, Mecklenburg-Western Pomerania, Europe."
+     ]
+    },
+    {
+     "video_id": "021201_021250/1024585310",
+     "video_file": "webvid_229k/videos/021201_021250/1024585310.mp4",
+     "caption": "Stock video\nmelaka, malaysia, february 15 2019 : time lapse of tourists taking the cruise to exploring the malacca river. malacca has been listed as a unesco world heritage site 2008. slide down",
+     "question": "What are the tourists doing to explore the Malacca River?",
+     "answer": "The tourists are taking a cruise to explore the Malacca River.",
+     "type": "AR",
+     "options": [
+      "The tourists are taking a cruise to explore the Malacca River.",
+      "They are helping tourists descend from a volcano on a makeshift trolley.",
+      "The tourists are walking on the ice of the lake.",
+      "She is typing a text message in an app on her mobile phone.",
+      "They are walking around the territory of the Taj Mahal."
+     ]
+    },
+    {
+     "video_id": "022351_022400/23584036",
+     "video_file": "webvid_229k/videos/022351_022400/23584036.mp4",
+     "caption": "4k dubai marina night time lapse, united arab emirates. dubai marina - the largest man-made marina in the world. dubai marina is a canal city, carved along a 3 km stretch of persian gulf shoreline",
+     "question": "What is the length of the stretch along which Dubai Marina is carved?",
+     "answer": "3 km",
+     "type": "SA",
+     "options": [
+      "Dubai Marina is the largest man-made marina in the world.",
+      "Burj Khalifa",
+      "3 km",
+      "The transition from night to day.",
+      "North Cove Marina"
+     ]
+    },
+    {
+     "video_id": "015701_015750/20447026",
+     "video_file": "webvid_229k/videos/015701_015750/20447026.mp4",
+     "caption": "5k dubai marina night time lapse, united arab emirates. dubai marina - the largest man-made marina in the world. dubai marina is a canal city, carved along a 3 km stretch of persian gulf shoreline",
+     "question": "What is the length of the stretch along which Dubai Marina is carved?",
+     "answer": "3 km",
+     "type": "SA",
+     "options": [
+      "Motorboats and traditional ships.",
+      "Al Garhoud Bridge",
+      "Yachts",
+      "3 km",
+      "20 million square feet"
+     ]
+    },
+    {
+     "video_id": "036651_036700/25792973",
+     "video_file": "webvid_229k/videos/036651_036700/25792973.mp4",
+     "caption": "Uhd 4k dubai marina night time lapse, united arab emirates. dubai marina - the largest man-made marina in the world. dubai marina is a canal city, carved along a 3 km stretch of persian gulf shoreline",
+     "question": "What is the length of the stretch along which Dubai Marina is carved?",
+     "answer": "3 km",
+     "type": "SA",
+     "options": [
+      "Dubai Marina.",
+      "A city and mountains.",
+      "1014 feet",
+      "3 km",
+      "828 meters"
+     ]
+    },
+    {
+     "video_id": "146801_146850/24206005",
+     "video_file": "webvid_229k/videos/146801_146850/24206005.mp4",
+     "caption": "Uhd 4k dubai marina night time lapse, united arab emirates. dubai marina - the largest man-made marina in the world. dubai marina is a canal city, carved along a 3 km stretch of persian gulf shoreline",
+     "question": "What is the length of the stretch along which Dubai Marina is carved?",
+     "answer": "3 km",
+     "type": "OP",
+     "options": [
+      "Boats and yachts.",
+      "Al Garhoud Bridge",
+      "3 km",
+      "Cars are driving over a bridge.",
+      "The transition from day to night."
+     ]
+    },
+    {
+     "video_id": "055101_055150/23584051",
+     "video_file": "webvid_229k/videos/055101_055150/23584051.mp4",
+     "caption": "4k dubai marina night time lapse, united arab emirates. dubai marina - the largest man-made marina in the world. dubai marina is a canal city, carved along a 3 km stretch of persian gulf shoreline",
+     "question": "What is the length of the stretch along which Dubai Marina is carved?",
+     "answer": "3 km",
+     "type": "OCR",
+     "options": [
+      "Two miles (3 km)",
+      "The promenade and canal have floating yachts and boats after sunset.",
+      "Motorboats and traditional ships.",
+      "The view of Dubai Marina at night is colourful, with a skyline featuring skyscrapers and highways.",
+      "3 km"
+     ]
+    },
+    {
+     "video_id": "011151_011200/20596666",
+     "video_file": "webvid_229k/videos/011151_011200/20596666.mp4",
+     "caption": "Dubai marina night time lapse, united arab emirates. dubai marina - the largest man-made marina in the world. dubai marina is a canal city, carved along a 3 km stretch of persian gulf shoreline, uae",
+     "question": "What is the length of the Dubai Marina along the Persian Gulf shoreline?",
+     "answer": "3 km",
+     "type": "SA",
+     "options": [
+      "Burj Khalifa",
+      "The busiest highway near the Dubai skyline at night is not specified in the caption.",
+      "The Mediterranean Sea.",
+      "A golf course.",
+      "3 km"
+     ]
+    },
+    {
+     "video_id": "006151_006200/24206011",
+     "video_file": "webvid_229k/videos/006151_006200/24206011.mp4",
+     "caption": "Uhd 4k dubai marina night time lapse, united arab emirates. dubai marina - the largest man-made marina in the world. dubai marina is a canal city, carved along a 3 km stretch of persian gulf shoreline",
+     "question": "What is the length of the Dubai Marina canal city along the Persian Gulf shoreline?",
+     "answer": "3 km",
+     "type": "OCR",
+     "options": [
+      "3 km",
+      "Small and luxury houses and skyscrapers.",
+      "Burj Khalifa",
+      "14,000 ships use the canal annually.",
+      "2,745 feet (836.68 m)"
+     ]
+    },
+    {
+     "video_id": "008801_008850/17407501",
+     "video_file": "webvid_229k/videos/008801_008850/17407501.mp4",
+     "caption": "Dubai marina night time lapse, united arab emirates. dubai marina - the largest man-made marina in the world. dubai marina is a canal city, carved along a 3 km stretch of persian gulf shoreline, uae",
+     "question": "What is the largest man-made marina in the world?",
+     "answer": "Dubai Marina",
+     "type": "OP",
+     "options": [
+      "Dubai Marina",
+      "A yellow shirt.",
+      "A large shark.",
+      "The sky is cloudy.",
+      "A beautiful forested mountain landscape."
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1176 @@
+{
+ "slug": "proassist",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/SitongGong/ProAssist (byte-identical mirror of 594zyc/ProAssist-Dataset) processed_data/wtag/generated_dialogs.zip → generated_dialogs/train_filtered.json",
+  "https://huggingface.co/datasets/SitongGong/ProAssist (byte-identical mirror of 594zyc/ProAssist-Dataset) processed_data/assembly101/generated_dialogs.zip → generated_dialogs/val_filtered.json",
+  "https://www.dropbox.com/scl/fo/rri8hdi1b6xlxude1zv28/h/T24/Video/Video.mpeg?rlkey=xtx9v386hhsqk4ct6ix8kw53u&dl=1 (WTaG source video for the clip)"
+ ],
+ "access_used": "open download",
+ "note": "One example is one video record of generated_dialogs/*.json: an inferred goal/recipe, 20 LLM-generated dialogues (10 per user type x2 in the filtered file; only one kept here and cut after the shown time) and the parsed source annotations with mistake labels. Times are seconds of the source video; WTaG utterance times are the midpoints of the human WTaG utterances. The clip is from the WTaG Dropbox video (silent); Assembly101 video needs its own request, so no clip.",
+ "examples": [
+  {
+   "title": "WTaG T24 (mug cake), talk_some user — LLM dialogue with early \"parchment paper, not the ziploc bag\" corrections",
+   "video_ref": "wtag: T24",
+   "duration_s": 1086.4,
+   "clip": "samples/media/proassist_1.mp4",
+   "clip_offset_s": 26,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 13.4,
+     "te": null,
+     "lane": "user",
+     "text": "I want to make a mug cake. What's the first step?"
+    },
+    {
+     "t": 13.4,
+     "te": 26.9,
+     "lane": "step",
+     "text": "- [13.4s] start"
+    },
+    {
+     "t": 14.4,
+     "te": null,
+     "lane": "assistant",
+     "text": "Great choice! To make a mug cake, we'll start by assembling the cake liner. Can you see the parchment paper on your right side?  [initiative|instruction]"
+    },
+    {
+     "t": 26.9,
+     "te": null,
+     "lane": "assistant",
+     "text": "Take one out and place it inside the mug.  [responsive|instruction]"
+    },
+    {
+     "t": 26.9,
+     "te": 117.4,
+     "lane": "step",
+     "text": "Place cake liner"
+    },
+    {
+     "t": 30.5,
+     "te": null,
+     "lane": "user",
+     "text": "So Emily, what does it mean to assemble the cake liner?"
+    },
+    {
+     "t": 31.5,
+     "te": null,
+     "lane": "assistant",
+     "text": "Yeah, so there's a parchment paper on your right side...take one out. It's sitting above the ziploc bag.  [responsive|info_sharing]"
+    },
+    {
+     "t": 35.9,
+     "te": null,
+     "lane": "correction",
+     "text": "Nonono, parchment paper, not the ziploc bag.  [responsive|correction]"
+    },
+    {
+     "t": 37.4,
+     "te": null,
+     "lane": "user",
+     "text": "Uh huh, alright."
+    },
+    {
+     "t": 40.4,
+     "te": null,
+     "lane": "assistant",
+     "text": "Make sure to take the parchment paper, it's the one on the left, left of the microwave, right next to the mug.  [responsive|instruction]"
+    },
+    {
+     "t": 45.8,
+     "te": null,
+     "lane": "user",
+     "text": "This one?"
+    },
+    {
+     "t": 46.8,
+     "te": null,
+     "lane": "correction",
+     "text": "No, the one on the left. Yes, that's the parchment paper.  [responsive|correction]"
+    },
+    {
+     "t": 52.3,
+     "te": null,
+     "lane": "user",
+     "text": "Next to the mug?"
+    },
+    {
+     "t": 53.3,
+     "te": null,
+     "lane": "assistant",
+     "text": "Yes, that's correct! Now, place it inside the mug.  [responsive|instruction]"
+    },
+    {
+     "t": 59.6,
+     "te": null,
+     "lane": "user",
+     "text": "Ohh, this one?"
+    },
+    {
+     "t": 60.6,
+     "te": null,
+     "lane": "correction",
+     "text": "Nononono, the first thing you grabbed was the parchment paper. Place it inside the mug.  [responsive|correction]"
+    },
+    {
+     "t": 64.7,
+     "te": null,
+     "lane": "user",
+     "text": "Okay, parchment paper."
+    },
+    {
+     "t": 74.8,
+     "te": null,
+     "lane": "assistant",
+     "text": "And then place it inside the mug. Make sure to have everything inside the box so that I can see what you're seeing.  [responsive|instruction]"
+    },
+    {
+     "t": 90.2,
+     "te": null,
+     "lane": "assistant",
+     "text": "Now that we have the cake liner assembled, let's move on to the dry ingredients. Can you see the flour?  [initiative|instruction]"
+    },
+    {
+     "t": 117.5,
+     "te": null,
+     "lane": "assistant",
+     "text": "We'll start by measuring out the flour. We need two tablespoons of flour. Use the biggest spoon for that.  [responsive|instruction]"
+    },
+    {
+     "t": 117.5,
+     "te": 417.5,
+     "lane": "step",
+     "text": "Dry ingredients"
+    },
+    {
+     "t": 121.5,
+     "te": null,
+     "lane": "user",
+     "text": "So this is what's called assemble cake liner, right? So the next step is to combine the ingredients."
+    },
+    {
+     "t": 122.5,
+     "te": null,
+     "lane": "assistant",
+     "text": "That's correct! Now, let's measure out the flour. We need two tablespoons of flour. Use the biggest spoon for that.  [responsive|instruction,info_sharing]"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "video_uid": "T24",
+    "inferred_goal": "Make mug cake",
+    "inferred_knowledge": "Mug Cake\n\nIngredients\n2 Tablespoons all-purpose flour\n1.5 Tablespoons granulated sugar\n1/4 teaspoon baking powder\nPinch salt\n2 teaspoons canola or vegetable oil\n2 Tablespoons water\n1/4 teaspoon vanilla extract\nContainer of chocolate frosting (premade)\n\nTools and Utensils\nmeasuring spoons small mixing bowl whisk\npaper cupcake liner 12-ounce coffee mug plate\nmicrowave\nzip-top bag, snack or sandwich size scissors\nspoon\ntoothpick\n\nSteps\n1. Place the paper cupcake liner inside the mug. Set aside.\n2. Measure and add the flour, sugar, baking powder, and salt to the mixing bowl.\n3. Whisk to combine.\n4. Measure and add the oil, water, and vanilla to the bowl.\n5. Whisk batter until no lumps remain.\n6. Pour batter into prepared mug.\n7. Microwave the mug and batter on high power for 60 seconds.\n8. Check if the cake is done by inserting and toothpick into the center of the cake and then\nremoving. If wet batter clings to the toothpick, microwave for an additional 5 seconds. If the\ntoothpick comes out clean, continue.\n9. Invert the mug to release the cake onto a plate. Allow to cool until it is no longer hot to the\ntouch, then carefully remove paper liner.\n10. While the cake is cooling, prepare t…[truncated 353 more chars]",
+    "video_labels": {},
+    "conversations": [
+     {
+      "conversation": [
+       {
+        "role": "user",
+        "time": 13.4,
+        "content": "I want to make a mug cake. What's the first step?",
+        "labels": ""
+       },
+       {
+        "role": "assistant",
+        "time": 14.4,
+        "content": "Great choice! To make a mug cake, we'll start by assembling the cake liner. Can you see the parchment paper on your right side?",
+        "labels": "initiative|instruction",
+        "progress": "The time elapsed since the start of the task is 14.4 seconds. The user wants to make a mug cake, and the assistant has instructed them to start by assembling the cake liner, but no action has been taken yet, and no other topics have been mentioned."
+       },
+       {
+        "role": "assistant",
+        "time": 26.9,
+        "content": "Take one out and place it inside the mug.",
+        "labels": "responsive|instruction",
+        "progress": "The time elapsed since the start of the task is 26.9 seconds. The user wants to make a mug cake, no progress has been made by the user, no other topics have been mentioned, and the assistant has instructed the user to place a parchment paper inside the mug as the first step."
+       },
+       {
+        "role": "user",
+        "time": 30.5,
+        "content": "So Emily, what does it mean to assemble the cake liner?",
+        "labels": ""
+       },
+       {
+        "role": "assistant",
+        "time": 31.5,
+        "content": "Yeah, so there's a parchment paper on your right side...take one out. It's sitting above the ziploc bag.",
+        "labels": "responsive|info_sharing",
+        "progress": "The time elapsed since the start of the task is 31.5 seconds. The user wants to make a mug cake, and so far, the assistant has instructed them to assemble the cake liner by taking a parchment paper from their right side and placing it inside the mug, but the user has expressed confusion about what assembling the cake liner means, and the task is currently stuck at this step."
+       },
+       {
+        "role": "assistant",
+        "time": 35.9,
+        "content": "Nonono, parchment paper, not the ziploc bag.",
+        "labels": "responsive|correction",
+        "progress": "The time elapsed since the start of the task is 35.9 seconds. The user wants to make a mug cake, and has been instructed to assemble the cake liner by taking a parchment paper and placing it inside the mug, but has not yet completed this step due to a brief clarification on what constitutes the cake liner, with no other topics mentioned beyond the task at hand."
+       },
+       {
+        "role": "user",
+        "time": 37.4,
+        "content": "Uh huh, alright.",
+        "labels": ""
+       },
+       {
+        "role": "assistant",
+        "time": 40.4,
+        "content": "Make sure to take the parchment paper, it's the one on the left, left of the microwave, right next to the mug.",
+        "labels": "responsive|instruction",
+        "progress": "The time elapsed since the start of the task is 40.4 seconds. The user's task goal is to make a mug cake, and they have been instructed to assemble the cake liner by placing a parchment paper inside the mug, although they haven't confirmed completing this step yet, and there have been some clarifications about the location of the parchment paper, with no other topics mentioned besides the task."
+       },
+       {
+        "role": "user",
+        "time": 45.8,
+        "content": "This one?",
+        "labels": ""
+       },
+       {
+        "role": "assistant",
+        "time": 46.8,
+        "content": "No, the one on the left. Yes, that's the parchment paper.",
+        "labels": "responsive|correction",
+        "progress": "The time elapsed since the start of the task is 46.8 seconds. The task goal is to make a mug cake; so far, the user has been instructed to assemble the cake liner by taking a parchment paper and placing it inside the mug, but the user has not yet completed this step due to some clarification needed on locating the parchment paper; no other topics have been mentioned by the user besides the mug cake; the current state is that the user has identified the parchment paper with the assistant's guidance and is presumably about to place it in the mug."
+       },
+       {
+        "role": "user",
+        "time": 52.3,
+        "content": "Next to the mug?",
+        "labels": ""
+       },
+       {
+        "role": "assistant",
+        "time": 53.3,
+        "content": "Yes, that's correct! Now, place it inside the mug.",
+        "labels": "responsive|instruction",
+        "progress": "The time elapsed since the start of the task is 53.3 seconds. The user wants to make a mug cake, and so far, they have been instructed to assemble the cake liner by taking a parchment paper (located next to the mug) and placing it inside the mug, although they initially had trouble locating the parchment paper, mistaking it for a ziploc bag, but with the assistant's guidance, they have now correctly identified and are about to place the parchment paper in the mug."
+       },
+       {
+        "role": "user",
+        "time": 59.6,
+        "content": "Ohh, this one?",
+        "labels": ""
+       },
+       {
+        "role": "assistant",
+        "time": 60.6,
+        "content": "Nononono, the first thing you grabbed was the parchment paper. Place it inside the mug.",
+        "labels": "responsive|correction",
+        "progress": "The time elapsed since the start of the task is 60.6 seconds. The task goal is to make a mug cake, the user has been instructed to assemble the cake liner by placing a parchment paper inside the mug, but has not yet successfully completed this step due to initial confusion about which item to use, and is currently attempting to place the correct parchment paper inside the mug."
+       },
+       {
+        "role": "user",
+        "time": 64.7,
+        "content": "Okay, parchment paper.",
+        "labels": ""
+       },
+       {
+        "role": "assistant",
+        "time": 74.8,
+        "content": "And then place it inside the mug. Make sure to have everything inside the box so that I can see what you're seeing.",
+        "labels": "responsive|instruction",
+        "progress": "The time elapsed since the start of the task is 74.8 seconds. The user wants to make a mug cake, and so far, they have been instructed to assemble the cake liner by taking a parchment paper and placing it inside the mug, but there has been some confusion about locating the parchment paper, which has now been clarified, and the user is currently in the process of placing the parchment paper inside the mug."
+       },
+       {
+        "role": "assistant",
+        "time": 90.2,
+        "content": "Now that we have the cake liner assembled, let's move on to the dry ingredients. Can you see the flour?",
+        "labels": "initiative|instruction",
+        "progress": "The time elapsed since the start of the task is 90.2 seconds. The user wants to make a mug cake, has successfully assembled the cake liner by placing a parchment paper inside the mug after clarifying its location, and is now ready to move on to the next step of gathering dry ingredients, starting with flour."
+       },
+       {
+        "role": "assistant",
+        "time": 117.5,
+        "content": "We'll start by measuring out the flour. We need two tablespoons of flour. Use the biggest spoon for that.",
+        "labels": "responsive|instruction",
+        "progress": "The time elapsed since the start of the task is 117.5 seconds. The task goal is to make a mug cake, the user has assembled the cake liner by placing a parchment paper inside the mug with some clarification and guidance from the assistant, no other topics were mentioned by the user, and the current state is that the cake liner is assembled and the task is moving on to measuring out the dry ingredients, specifically two tablespoons of flour."
+       },
+       {
+        "role": "user",
+        "time": 121.5,
+        "content": "So this is what's called assemble cake liner, right? So the next step is to combine the ingredients.",
+        "labels": ""
+       },
+       {
+        "role": "assistant",
+        "time": 122.5,
+        "content": "That's correct! Now, let's measure out the flour. We need two tablespoons of flour. Use the biggest spoon for that.",
+        "labels": "responsive|instruction,info_sharing",
+        "progress": "The time elapsed since the start of the task is 122.5 seconds. The user's task goal is to make a mug cake, they have assembled the cake liner by placing a parchment paper inside the mug with some initial confusion about locating the parchment paper, no other topics were mentioned, and they are currently at the step of measuring out the dry ingredients, specifically two tablespoons of flour using the biggest spoon."
+       },
+       "…[truncated 138 more items]"
+      ],
+      "user_type": "talk_some",
+      "auto_quality_eval": {
+       "avg_time_diff_p": 0.3151898734177205,
+       "avg_time_diff_r": 1.5175438596491237,
+       "no_resp_penalty": 0.0,
+       "no_resp_user_turns": 0,
+       "final_score": 8.167266266933156
+      }
+     },
+     "…[truncated 19 more items; shown item is conversations[5]]"
+    ],
+    "parsed_video_anns": {
+     "dataset": "wtag",
+     "domain": "cooking",
+     "knowedge_type": "cooking recipe",
+     "video_uid": "T24",
+     "goal_description": "",
+     "all_step_descriptions": "- [13.4s] start\n[26.9s-117.4s] Place cake liner\n- [30.5s] user: \"so emily what does it mean to assemble cake liner?\"\n- [35.9s] assistant: \"yeah so there's a parchment paper on your right side...take one out\"\n- [37.4s] user: \"uh huh alright\"\n- [40.4s] assistant: \"nonono parchment paper\"\n- [42.6s] user: \"parchment paper\"\n- [45.8s] assistant: \"so it's sitting above the ziploc bag\"\n- [48.8s] user: \"this one?\"\n- [52.3s] assistant: \"no on the left, left of the microwave, right next to the mug\"\n- [56.5s] user: \"next to the mug\"\n- [58.3s] assistant: \"yes that's parchment paper\"\n- [59.6s] user: \"ohh this one\"\n- [61.5s] assistant: \"nononono the first thing you grabbed was the parchment paper\"\n- [64.7s] user: \"ok parchment paper\"\n- [74.8s] assistant: \"and then place it inside the mug\"\n- [77.2s] user: \"place it INSIDE the mug?\"\n- [78.7s] assistant: \"yes mmhmm\"\n- [90.2s] assistant: \"make sure to have everything inside the box so that i can see what you're seeing\"\n[117.5s-417.5s] Dry ingredients\n- [121.5s] user: \"so this is what's called assemble cake liner right? so the next step is to combine the ingredients\"\n- [135.6s] user: \"so basically from my understanding just like put all the ingredients into the mug into like the paper and in the next step pour it into ohhh i see so basically i need to first like compile these ingredients into this bowl and then put ingredients into the mug\"\n- [145.1s] assistant: \"yep yep\"\n- [154.9s] assistant: \"um you should measure the flour\"\n- [160.5s] user: \"…[truncated 7112 more chars]",
+     "clips": [
+      "…[truncated 2 more items]"
+     ],
+     "duration": 1086.3720064,
+     "ann_ratio": 0.9296420633542569,
+     "num_steps": 14,
+     "video_start_time": 0.0,
+     "has_mistake": false,
+     "num_substeps": null,
+     "fps": null,
+     "original_ann": {
+      "video_uid": "T24",
+      "duration": 1086.3720064,
+      "ann_ratio": 0.9296420633542569,
+      "steps": [
+       {
+        "start": 13.4301376,
+        "end": 26.8602752,
+        "step": "- [13.4s] start",
+        "substeps": []
+       },
+       {
+        "start": 26.8940416,
+        "end": 117.3811968,
+        "narration": "Place cake liner",
+        "step": "[26.9s-117.4s] Place cake liner",
+        "substeps": [
+         "- [30.5s] user: \"so emily what does it mean to assemble cake liner?\"",
+         "- [35.9s] assistant: \"yeah so there's a parchment paper on your right side...take one out\"",
+         "- [37.4s] user: \"uh huh alright\"",
+         "- [40.4s] assistant: \"nonono parchment paper\"",
+         "- [42.6s] user: \"parchment paper\"",
+         "- [45.8s] assistant: \"so it's sitting above the ziploc bag\"",
+         "- [48.8s] user: \"this one?\"",
+         "- [52.3s] assistant: \"no on the left, left of the microwave, right next to the mug\"",
+         "- [56.5s] user: \"next to the mug\"",
+         "- [58.3s] assistant: \"yes that's parchment paper\"",
+         "- [59.6s] user: \"ohh this one\"",
+         "- [61.5s] assistant: \"nononono the first thing you grabbed was the parchment paper\"",
+         "- [64.7s] user: \"ok parchment paper\"",
+         "- [74.8s] assistant: \"and then place it inside the mug\"",
+         "- [77.2s] user: \"place it INSIDE the mug?\"",
+         "- [78.7s] assistant: \"yes mmhmm\"",
+         "- [90.2s] assistant: \"make sure to have everything inside the box so that i can see what you're seeing\""
+        ]
+       },
+       {
+        "start": 117.5033984,
+        "end": 417.4614784,
+        "narration": "Dry ingredients",
+        "step": "[117.5s-417.5s] Dry ingredients",
+        "substeps": [
+         "- [121.5s] user: \"so this is what's called assemble cake liner right? so the next step is to combine the ingredients\"",
+         "- [135.6s] user: \"so basically from my understanding just like put all the ingredients into the mug into like the paper and in the next step pour it into ohhh i see so basically i need to first like compile these ingredients into this bowl and then put ingredients into the mug\"",
+         "- [145.1s] assistant: \"yep yep\"",
+         "- [154.9s] assistant: \"um you should measure the flour\"",
+         "- [160.5s] user: \"ohh and here's the flour oh you mean by the spoon? but liek how much volume do i need?\"",
+         "- [166.3s] assistant: \"it will be two tablespoons of flour\"",
+         "- [200.4s] assistant: \"and then 1.5 tablespoons of sugar\"",
+         "- [203.1s] user: \"alright that's a lot\"",
+         "- [205.2s] assistant: \"1.5 tablespoons\"",
+         "- [206.8s] user: \"1.5 right\"",
+         "- [220.0s] assistant: \"is that a teaspoon or tablespoons\"",
+         "- [224.1s] user: \"teaspoon is is not capitalized TSP\"",
+         "- [227.7s] assistant: \"it should be a tablespoon the biggest one\"",
+         "- [229.7s] user: \"ok the biggest one\"",
+         "- [232.2s] assistant: \"did you use that for flour as well?\"",
+         "- [233.9s] user: \"yes\"",
+         "- [235.1s] assistant: \"can we restart\"",
+         "- [241.2s] assistant: \"you can put the flour back to where it was and just remeasure it\"",
+         "- [251.0s] user: \"so the teaspoon is the smaller one?\"",
+         "- [254.2s] assistant: \"if it says tsp then it means it's a teaspoon\"",
+         "- [258.2s] user: \"if it's a capitalized T\"",
+         "- [259.9s] assistant: \"that's the tablespoon yeah\"",
+         "- [261.3s] user: \"cool\"",
+         "- [263.6s] user: \"sorry about that\"",
+         "- [264.9s] assistant: \"no no you're good\"",
+         "- [266.1s] user: \"so should i like just reset everything?\"",
+         "- [268.9s] assistant: \"no that's fine you can just start from remeasuring all the ingredients\"",
+         "- [271.1s] user: \"alright\"",
+         "- [273.6s] user: \"so the first one\"",
+         "- [275.3s] assistant: \"two tablespoons of lour\"",
+         "- [276.7s] user: \"two tablespoons ok\"",
+         "- [279.1s] assistant: \"is that a teaspoon\"",
+         "- [280.8s] user: \"TSP right\"",
+         "- [282.5s] assistant: \"yea we need a tablespoon\"",
+         "- [285.6s] user: \"we need two tablespoons\"",
+         "- [287.4s] assistant: \"two tablespoons of flour\"",
+         "- [295.5s] assistant: \"it's the biggest\"",
+         "- [297.9s] user: \"the biggest one for the flour right\"",
+         "- [318.6s] user: \"and then it's 1.5 tsp that's tablespoon tsp\"",
+         "- [322.3s] assistant: \"no the biggest one\"",
+         "- [324.0s] user: \"still the biggest one?\"",
+         "- [325.1s] assistant: \"yes tablespoon\"",
+         "- [339.9s] assistant: \"1.5 tablespoon\"",
+         "- [345.2s] user: \"and then baking soda\"",
+         "- [346.9s] assistant: \"baking powder a quarter tsp\"",
+         "- [349.2s] user: \"a quarter tsp\"",
+         "- [354.4s] assistant: \"there should be a tsp that says a quarter tsp\"",
+         "- [356.8s] user: \"oh thank you\"",
+         "- [365.7s] user: \"i see .....baking powder\"",
+         "- [398.7s] user: \"how much salt do i need?\"",
+         "- [400.3s] assistant: \"just a pinch of salt\"",
+         "- [402.1s] user: \"alright\"",
+         "- [416.2s] user: \"and then the oil\""
+        ]
+       },
+       "…[truncated 11 more items]"
+      ]
+     }
+    },
+    "gen_args": {
+     "llm": "neuralmagic/Meta-Llama-3.1-70B-Instruct-FP8-dynamic",
+     "user_types": "no_talk@2,talk_some@4,talk_more@4",
+     "num_repeats": 10,
+     "sampling_params": {
+      "n": 1,
+      "temperature": 0.5,
+      "top_p": 0.95,
+      "max_tokens": 131072
+     }
+    }
+   }
+  },
+  {
+   "title": "Assembly101 9054-c11a (toy car), talk_some user — dialogue over real wrong-order mistakes",
+   "video_ref": "assembly101: assembly_nusar-2021_action_both_9054-c11a_9054_user_id_2021-02-08_162610__HMC_21110305_mono10bit",
+   "duration_s": 591.2,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 162.5,
+     "te": null,
+     "lane": "user",
+     "text": "I want to assemble a toy car with a chassis, body, and accessories."
+    },
+    {
+     "t": 162.5,
+     "te": null,
+     "lane": "assistant",
+     "text": "Great! Let's get started. First, we need to attach the roof to the body. Please take the roof and align it with the body, then gently press it into place.  [initiative|instruction]"
+    },
+    {
+     "t": 162.5,
+     "te": 174.9,
+     "lane": "step",
+     "text": "attach roof to body"
+    },
+    {
+     "t": 174.9,
+     "te": null,
+     "lane": "correction",
+     "text": "Now that the roof is attached, let's move on to attaching the body to the chassis. However, it looks like you're trying to attach the body to the chassis in the wrong order. Let's correct that. First, we need to attach the interior to the body.  [initiative|instruction,correction]"
+    },
+    {
+     "t": 174.9,
+     "te": 198.9,
+     "lane": "mistake",
+     "text": "attach body to chassis (mistake: wrong order)"
+    },
+    {
+     "t": 198.9,
+     "te": null,
+     "lane": "user",
+     "text": "Wait, what's going on? I thought I was supposed to attach the body to the chassis."
+    },
+    {
+     "t": 198.9,
+     "te": null,
+     "lane": "correction",
+     "text": "I apologize for the confusion. You were trying to attach the body to the chassis, but that's not the correct order. Instead, let's detach the body from the chassis and start again from the correct step. Please detach the body from the chassis.  [responsive|instruction,correction]"
+    },
+    {
+     "t": 198.9,
+     "te": 202.0,
+     "lane": "correction",
+     "text": "detach body from chassis (correction of \"attach body to chassis\")"
+    },
+    {
+     "t": 202.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Now that we've corrected the mistake, let's move on to attaching the interior to the body. Please take the interior and align it with the body, then gently press it into place.  [initiative|instruction]"
+    },
+    {
+     "t": 202.0,
+     "te": 214.5,
+     "lane": "step",
+     "text": "attach interior to body"
+    },
+    {
+     "t": 214.5,
+     "te": null,
+     "lane": "assistant",
+     "text": "Great job! Now that the interior is attached to the body, let's attach it to the chassis. Please take the interior and align it with the chassis, then gently press it into place.  [initiative|instruction,feedback]"
+    },
+    {
+     "t": 214.5,
+     "te": 240.8,
+     "lane": "step",
+     "text": "attach interior to chassis"
+    },
+    {
+     "t": 224.1,
+     "te": null,
+     "lane": "assistant",
+     "text": "Now, use the screwdriver to screw the body into place. Make sure it's secure.  [initiative|instruction]"
+    },
+    {
+     "t": 232.4,
+     "te": null,
+     "lane": "assistant",
+     "text": "Good job! Now, just to double-check, please use the screwdriver to screw the body into place one more time.  [initiative|instruction,feedback]"
+    },
+    {
+     "t": 240.8,
+     "te": null,
+     "lane": "assistant",
+     "text": "Now that the body is securely attached, let's move on to attaching the wheels to the chassis. Please take the first wheel and align it with the chassis, then use the screwdriver to screw it into place.  [initiative|instruction]"
+    },
+    {
+     "t": 240.8,
+     "te": 281.1,
+     "lane": "step",
+     "text": "attach wheel to chassis"
+    },
+    {
+     "t": 251.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Great job! Now, move on to the second wheel. Please take it and align it with the chassis, then use the screwdriver to screw it into place.  [initiative|instruction,feedback]"
+    },
+    {
+     "t": 255.4,
+     "te": null,
+     "lane": "assistant",
+     "text": "Now, let's attach the third wheel. Please take it and align it with the chassis, then use the screwdriver to screw it into place.  [initiative|instruction]"
+    },
+    {
+     "t": 266.0,
+     "te": null,
+     "lane": "assistant",
+     "text": "Good job! Now, move on to the fourth wheel. Please take it and align it with the chassis, then use the screwdriver to screw it into place.  [initiative|instruction,feedback]"
+    },
+    {
+     "t": 273.7,
+     "te": null,
+     "lane": "assistant",
+     "text": "Now that all the wheels are attached, let's inspect the toy to make sure everything is in place.  [initiative|instruction]"
+    },
+    {
+     "t": 281.1,
+     "te": null,
+     "lane": "assistant",
+     "text": "Great job! The toy is looking good. Let's move on to the next step.  [initiative|feedback]"
+    },
+    {
+     "t": 281.1,
+     "te": 288.5,
+     "lane": "step",
+     "text": "inspect toy"
+    },
+    {
+     "t": 282.1,
+     "te": null,
+     "lane": "user",
+     "text": "What's the next step?"
+    },
+    {
+     "t": 282.1,
+     "te": null,
+     "lane": "assistant",
+     "text": "Actually, we've already completed the assembly. Let's just do a final inspection to make sure everything is in place.  [responsive|info_sharing]"
+    },
+    {
+     "t": 288.5,
+     "te": null,
+     "lane": "assistant",
+     "text": "Now that we've inspected the toy, let's move on to attaching the rear bumper to the body. Please take the rear bumper and align it with the body, then gently press it into place.  [initiative|instruction]"
+    },
+    {
+     "t": 288.5,
+     "te": 312.9,
+     "lane": "mistake",
+     "text": "attach rear bumper to body (mistake: wrong order)"
+    },
+    {
+     "t": 312.9,
+     "te": null,
+     "lane": "correction",
+     "text": "It looks like you're trying to attach the rear bumper to the body in the wrong order. Let's correct that. First, we need to attach the bumper to the chassis. Please take the bumper and align it with the chassis, then use the screwdriver to screw it into place.  [initiative|instruction,correction]"
+    },
+    {
+     "t": 312.9,
+     "te": 316.9,
+     "lane": "step",
+     "text": "attempt to attach nut"
+    },
+    {
+     "t": 316.9,
+     "te": null,
+     "lane": "user",
+     "text": "Wait, I thought I was supposed to attach the rear bumper to the body?"
+    },
+    {
+     "t": 316.9,
+     "te": null,
+     "lane": "correction",
+     "text": "I apologize for the confusion. You were on the right track, but we need to attach the bumper to the chassis first. Then, we can attach it to the body.  [responsive|correction,info_sharing]"
+    },
+    {
+     "t": 316.9,
+     "te": 325.8,
+     "lane": "step",
+     "text": "attempt to attach bumper"
+    },
+    {
+     "t": 325.8,
+     "te": null,
+     "lane": "assistant",
+     "text": "Great job attaching the bumper to the chassis! Now, let's attach the rear bumper to the body. Please take the rear bumper and align it with the body, then gently press it into place.  [initiative|instruction,feedback]"
+    },
+    {
+     "t": 325.8,
+     "te": 342.6,
+     "lane": "step",
+     "text": "attach rear bumper to body"
+    },
+    {
+     "t": 342.6,
+     "te": null,
+     "lane": "assistant",
+     "text": "Good job! Now, let's inspect the toy again to make sure everything is in place.  [initiative|instruction,feedback]"
+    },
+    {
+     "t": 342.6,
+     "te": 351.8,
+     "lane": "step",
+     "text": "inspect toy"
+    },
+    {
+     "t": 351.8,
+     "te": null,
+     "lane": "correction",
+     "text": "It looks like you're trying to reattach the bumper to the body, but we've already done that. Let's move on to the next step. Please detach the bumper from the body.  [initiative|instruction,correction]"
+    },
+    {
+     "t": 351.8,
+     "te": 422.2,
+     "lane": "mistake",
+     "text": "attach bumper to body (mistake: wrong order)"
+    },
+    {
+     "t": 422.2,
+     "te": 439.3,
+     "lane": "correction",
+     "text": "detach bumper from body (correction of \"attach bumper to body\")"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "video_uid": "assembly_nusar-2021_action_both_9054-c11a_9054_user_id_2021-02-08_162610__HMC_21110305_mono10bit",
+    "inferred_goal": "Assembling a Toy Car with Chassis, Body, and Accessories",
+    "inferred_knowledge": "Assembling a Toy Car with Chassis, Body, and Accessories\n1. Attach the roof to the body.\n2. Assemble the interior and attach it to the body.\n3. Attach the body to the chassis.\n4. Attach the wheels to the chassis.\n5. Attach the rear bumper to the body.\n6. Attach the bumper to the body.\n7. Finalize the assembly and demonstrate functionality.",
+    "video_labels": {},
+    "conversations": [
+     {
+      "conversation": [
+       {
+        "role": "user",
+        "time": 162.5,
+        "content": "I want to assemble a toy car with a chassis, body, and accessories.",
+        "labels": ""
+       },
+       {
+        "role": "assistant",
+        "time": 162.5,
+        "content": "Great! Let's get started. First, we need to attach the roof to the body. Please take the roof and align it with the body, then gently press it into place.",
+        "labels": "initiative|instruction",
+        "progress": "The time elapsed since the start of the task is 162.5 seconds. The user wants to assemble a toy car with a chassis, body, and accessories; so far, the assistant has instructed the user to attach the roof to the body, but no action has been taken yet; no other topics have been mentioned; the current step is to align and attach the roof to the body."
+       },
+       {
+        "role": "assistant",
+        "time": 174.9,
+        "content": "Now that the roof is attached, let's move on to attaching the body to the chassis. However, it looks like you're trying to attach the body to the chassis in the wrong order. Let's correct that. First, we need to attach the interior to the body.",
+        "labels": "initiative|instruction,correction",
+        "progress": "The time elapsed since the start of the task is 174.9 seconds. The user wants to assemble a toy car with a chassis, body, and accessories, they have attached the roof to the body, but incorrectly attempted to attach the body to the chassis, and the current step is to attach the interior to the body before proceeding."
+       },
+       {
+        "role": "user",
+        "time": 198.9,
+        "content": "Wait, what's going on? I thought I was supposed to attach the body to the chassis.",
+        "labels": ""
+       },
+       {
+        "role": "assistant",
+        "time": 198.9,
+        "content": "I apologize for the confusion. You were trying to attach the body to the chassis, but that's not the correct order. Instead, let's detach the body from the chassis and start again from the correct step. Please detach the body from the chassis.",
+        "labels": "responsive|instruction,correction",
+        "progress": "The time elapsed since the start of the task is 198.9 seconds. The task goal is to assemble a toy car with a chassis, body, and accessories; so far, the roof has been attached to the body, but the user incorrectly attempted to attach the body to the chassis, which was corrected by detaching the body from the chassis, and the current step is to attach the interior to the body before proceeding with the chassis attachment; no other topics were mentioned by the user besides the task."
+       },
+       {
+        "role": "assistant",
+        "time": 202.0,
+        "content": "Now that we've corrected the mistake, let's move on to attaching the interior to the body. Please take the interior and align it with the body, then gently press it into place.",
+        "labels": "initiative|instruction",
+        "progress": "The time elapsed since the start of the task is 202.0 seconds. The task goal is to assemble a toy car with a chassis, body, and accessories; the user has successfully attached the roof to the body, but then incorrectly attempted to attach the body to the chassis, which was corrected by detaching the body and now the current step is to attach the interior to the body; no other topics were mentioned by the user."
+       },
+       {
+        "role": "assistant",
+        "time": 214.5,
+        "content": "Great job! Now that the interior is attached to the body, let's attach it to the chassis. Please take the interior and align it with the chassis, then gently press it into place.",
+        "labels": "initiative|instruction,feedback",
+        "progress": "The time elapsed since the start of the task is 214.5 seconds. The user's task goal is to assemble a toy car with a chassis, body, and accessories; so far, the roof has been attached to the body, a mistake was made while trying to attach the body to the chassis, and the interior has been attached to the body and then to the chassis; no other topics were mentioned by the user; the current state is that the interior is attached to the chassis, but the body is not yet attached to the chassis."
+       },
+       {
+        "role": "assistant",
+        "time": 224.1,
+        "content": "Now, use the screwdriver to screw the body into place. Make sure it's secure.",
+        "labels": "initiative|instruction",
+        "progress": "The time elapsed since the start of the task is 224.1 seconds. The task goal is to assemble a toy car with a chassis, body, and accessories; the roof has been attached to the body, a mistake was made while trying to attach the body to the chassis, but it was corrected, and now the interior is attached to the body and the body is attached to the chassis, with the current step being to secure the body in place using a screwdriver."
+       },
+       {
+        "role": "assistant",
+        "time": 232.4,
+        "content": "Good job! Now, just to double-check, please use the screwdriver to screw the body into place one more time.",
+        "labels": "initiative|instruction,feedback",
+        "progress": "The time elapsed since the start of the task is 232.4 seconds. The user wants to assemble a toy car with a chassis, body, and accessories; so far, the roof has been attached to the body, a mistake was made and corrected by detaching the body from the chassis, the interior has been attached to the body and then to the chassis, and the body has been screwed into place; no other topics were mentioned by the user; the current step is to finalize the attachment of the body to the chassis by screwing it into place again."
+       },
+       {
+        "role": "assistant",
+        "time": 240.8,
+        "content": "Now that the body is securely attached, let's move on to attaching the wheels to the chassis. Please take the first wheel and align it with the chassis, then use the screwdriver to screw it into place.",
+        "labels": "initiative|instruction",
+        "progress": "The time elapsed since the start of the task is 240.8 seconds. The user wants to assemble a toy car with a chassis, body, and accessories; so far, the roof has been attached to the body, a mistake was corrected where the body was detached from the chassis, the interior was attached to the body, and then the body was attached to the chassis and secured with screws; no other topics were mentioned by the user; the current state is that the body is securely attached to the chassis, and the next step is to attach the wheels to the chassis."
+       },
+       {
+        "role": "assistant",
+        "time": 251.0,
+        "content": "Great job! Now, move on to the second wheel. Please take it and align it with the chassis, then use the screwdriver to screw it into place.",
+        "labels": "initiative|instruction,feedback",
+        "progress": "The time elapsed since the start of the task is 251.0 seconds. The user wants to assemble a toy car with a chassis, body, and accessories; so far, the roof has been attached to the body, the interior has been attached to the body and then to the chassis, the body has been securely screwed into place, and one wheel has been attached to the chassis; no other topics have been mentioned by the user; the current step is to attach the second wheel to the chassis."
+       },
+       {
+        "role": "assistant",
+        "time": 255.4,
+        "content": "Now, let's attach the third wheel. Please take it and align it with the chassis, then use the screwdriver to screw it into place.",
+        "labels": "initiative|instruction",
+        "progress": "The time elapsed since the start of the task is 255.4 seconds. The user's task goal is to assemble a toy car with a chassis, body, and accessories; so far, the roof has been attached to the body, the interior has been attached to the body, the body has been attached to the chassis and secured with screws, and three wheels have been attached to the chassis; no other topics have been mentioned by the user; the current state is that the user has completed the attachment of wheels and is likely to proceed with adding accessories or finalizing the assembly."
+       },
+       {
+        "role": "assistant",
+        "time": 266.0,
+        "content": "Good job! Now, move on to the fourth wheel. Please take it and align it with the chassis, then use the screwdriver to screw it into place.",
+        "labels": "initiative|instruction,feedback",
+        "progress": "The time elapsed since the start of the task is 266.0 seconds. The user's task goal is to assemble a toy car with a chassis, body, and accessories; so far, the roof has been attached to the body, the interior has been attached to the body, the body has been attached to the chassis and secured with screws, and all four wheels have been attached to the chassis; no other topics have been mentioned by the user; the task is currently complete with all major components assembled."
+       },
+       {
+        "role": "assistant",
+        "time": 273.7,
+        "content": "Now that all the wheels are attached, let's inspect the toy to make sure everything is in place.",
+        "labels": "initiative|instruction",
+        "progress": "The time elapsed since the start of the task is 273.7 seconds. The user's task goal is to assemble a toy car with a chassis, body, and accessories; so far, the roof has been attached to the body, the interior has been attached to the body, the body has been attached to the chassis and secured with screws, and all four wheels have been attached to the chassis; there were no other topics mentioned by the user besides clarifying the assembly steps; the current state is that the toy car assembly is nearly complete, with a final inspection pending to ensure everything is in place."
+       },
+       {
+        "role": "assistant",
+        "time": 281.1,
+        "content": "Great job! The toy is looking good. Let's move on to the next step.",
+        "labels": "initiative|feedback",
+        "progress": "The time elapsed since the start of the task is 281.1 seconds. The user's task goal is to assemble a toy car with a chassis, body, and accessories; so far, the roof has been attached to the body, the interior has been attached to the body, the body has been attached to the chassis, and all four wheels have been attached to the chassis; no other topics were mentioned by the user; the current state of the task is that the toy car is mostly assembled and the assistant is about to guide the user through the next step, having just inspected the toy to ensure everything is in place."
+       },
+       {
+        "role": "user",
+        "time": 282.1,
+        "content": "What's the next step?",
+        "labels": ""
+       },
+       {
+        "role": "assistant",
+        "time": 282.1,
+        "content": "Actually, we've already completed the assembly. Let's just do a final inspection to make sure everything is in place.",
+        "labels": "responsive|info_sharing",
+        "progress": "The time elapsed since the start of the task is 282.1 seconds. The user's task goal is to assemble a toy car with a chassis, body, and accessories. So far, the roof has been attached to the body, the interior has been attached to the body, the body has been attached to the chassis and secured with screws, and all four wheels have been attached to the chassis. There were no other topics mentioned by the user besides clarifying the assembly steps. The current state is that the assembly is complete, and a final inspection is being performed to ensure everything is in place."
+       },
+       {
+        "role": "assistant",
+        "time": 288.5,
+        "content": "Now that we've inspected the toy, let's move on to attaching the rear bumper to the body. Please take the rear bumper and align it with the body, then gently press it into place.",
+        "labels": "initiative|instruction",
+        "progress": "The time elapsed since the start of the task is 288.5 seconds. The user's task goal is to assemble a toy car with a chassis, body, and accessories; so far, the roof has been attached to the body, the interior has been attached to the body and then to the chassis, the body has been screwed into place, and all four wheels have been attached to the chassis; no other topics have been mentioned by the user; the current state is that the assembly is almost complete, with a final inspection done, and the assistant is now moving on to attaching the rear bumper to the body."
+       },
+       {
+        "role": "assistant",
+        "time": 312.9,
+        "content": "It looks like you're trying to attach the rear bumper to the body in the wrong order. Let's correct that. First, we need to attach the bumper to the chassis. Please take the bumper and align it with the chassis, then use the screwdriver to screw it into place.",
+        "labels": "initiative|instruction,correction",
+        "progress": "The time elapsed since the start of the task is 312.9 seconds. The user wants to assemble a toy car with a chassis, body, and accessories; so far, the roof has been attached to the body, the interior has been attached to the body, the body has been attached to the chassis, and all four wheels have been attached to the chassis; no other topics have been mentioned by the user; currently, the task appears to be almost complete, but there seems to be some confusion, as the assistant initially stated that the task was complete, but then instructed the user to attach the rear bumper to the chassis, indicating that there is still at least one more step to complete."
+       },
+       {
+        "role": "user",
+        "time": 316.9,
+        "content": "Wait, I thought I was supposed to attach the rear bumper to the body?",
+        "labels": ""
+       },
+       {
+        "role": "assistant",
+        "time": 316.9,
+        "content": "I apologize for the confusion. You were on the right track, but we need to attach the bumper to the chassis first. Then, we can attach it to the body.",
+        "labels": "responsive|correction,info_sharing",
+        "progress": "The time elapsed since the start of the task is 316.9 seconds. The user's task goal is to assemble a toy car with a chassis, body, and accessories; so far, the roof has been attached to the body, the interior has been attached to the body and then to the chassis, the body has been secured to the chassis, and all four wheels have been attached to the chassis; no other topics have been mentioned by the user; currently, the task is at the step of attaching the rear bumper, with the assistant correcting the user's mistake of trying to attach it to the body before attaching it to the chassis."
+       },
+       {
+        "role": "assistant",
+        "time": 325.8,
+        "content": "Great job attaching the bumper to the chassis! Now, let's attach the rear bumper to the body. Please take the rear bumper and align it with the body, then gently press it into place.",
+        "labels": "initiative|instruction,feedback",
+        "progress": "The time elapsed since the start of the task is 325.8 seconds. The task goal is to assemble a toy car with a chassis, body, and accessories; the user has attached the roof to the body, attached the interior to the body, attached the body to the chassis, attached four wheels to the chassis, and completed a final inspection, but encountered two instances of confusion and correction regarding the order of attachment for the body and rear bumper; the user has not mentioned any other topics besides the assembly process; the current state is that the user has attached the rear bumper to the chassis and is now being instructed to attach it to the body."
+       },
+       {
+        "role": "assistant",
+        "time": 342.6,
+        "content": "Good job! Now, let's inspect the toy again to make sure everything is in place.",
+        "labels": "initiative|instruction,feedback",
+        "progress": "The time elapsed since the start of the task is 342.6 seconds. The user wants to assemble a toy car with a chassis, body, and accessories; so far, the roof has been attached to the body, the interior has been attached to the body and then the body to the chassis, the wheels have been attached to the chassis, and a final inspection has been done, but there was confusion and corrections needed for attaching the body to the chassis and the rear bumper to the body/chassis, and currently, the task is at the step of attaching accessories, specifically the rear bumper, with the user having just successfully attached it to the body after first attaching it to the chassis."
+       },
+       {
+        "role": "assistant",
+        "time": 351.8,
+        "content": "It looks like you're trying to reattach the bumper to the body, but we've already done that. Let's move on to the next step. Please detach the bumper from the body.",
+        "labels": "initiative|instruction,correction",
+        "progress": "The time elapsed since the start of the task is 351.8 seconds. The user's task goal is to assemble a toy car with a chassis, body, and accessories; so far, the roof has been attached to the body, the interior has been attached to the body, the body has been attached to the chassis, the wheels have been attached to the chassis, and a final inspection has been done, but there was confusion and corrections were made along the way, including reattaching the body to the chassis and reattaching the rear bumper to the chassis and then to the body; no other topics were mentioned by the user; the current state is that the task is almost complete, but the user was just asked to detach the bumper from the body, suggesting that the task may not be entirely finished."
+       },
+       "…[truncated 33 more items]"
+      ],
+      "user_type": "talk_some",
+      "auto_quality_eval": {
+       "avg_time_diff_p": 0.07017543859649122,
+       "avg_time_diff_r": 0.17346938775510087,
+       "no_resp_penalty": 0.0,
+       "no_resp_user_turns": 0,
+       "final_score": 9.756355173648409
+      }
+     },
+     "…[truncated 2 more items; shown item is conversations[1]]"
+    ],
+    "parsed_video_anns": {
+     "dataset": "assembly101",
+     "domain": "assembly/disassembly",
+     "knowedge_type": "assembly steps",
+     "video_uid": "assembly_nusar-2021_action_both_9054-c11a_9054_user_id_2021-02-08_162610__HMC_21110305_mono10bit",
+     "goal_description": "assemble toy car",
+     "all_step_descriptions": "[162.5s-174.9s] attach roof to body\n[174.9s-198.9s] attach body to chassis (mistake: wrong order)\n[198.9s-202.0s] detach body from chassis (correction of \"attach body to chassis\")\n[202.0s-214.5s] attach interior to body\n[214.5s-240.8s] attach interior to chassis\n - [224.1s] screw body with screwdriver\n - [232.4s] screw body with screwdriver\n - [237.5s] screw body with screwdriver\n[240.8s-281.1s] attach wheel to chassis\n - [247.5s] screw first wheel with screwdriver\n - [251.0s] screw first wheel with screwdriver\n - [255.4s] screw second wheel with screwdriver\n - [266.0s] screw third wheel with screwdriver\n - [273.7s] screw fourth wheel with screwdriver\n[281.1s-288.5s] inspect toy\n[288.5s-312.9s] attach rear bumper to body (mistake: wrong order)\n[312.9s-316.9s] attempt to attach nut\n[316.9s-325.8s] attempt to attach bumper\n[325.8s-342.6s] attach rear bumper to body\n[342.6s-351.8s] inspect toy\n[351.8s-422.2s] attach bumper to body (mistake: wrong order)\n[422.2s-439.3s] detach bumper from body (correction of \"attach bumper to body\")\n[439.3s-466.6s] attempt to attach nut\n[466.6s-478.8s] inspect toy\n[478.8s-487.5s] attach bumper to body (mistake: wrong order)\n[487.5s-501.8s] attempt to attach nut\n[501.8s-511.3s] attach bumper to body (mistake: wrong order)\n[511.3s-526.9s] inspect toy\n[526.9s-536.3s] detach bumper from body (correction of \"attach bumper to body\")\n[536.3s-539.8s] inspect toy\n[539.8s-569.1s] attempt to attach nut\n[569.1s-581.1s] unscrew body\n - [570.8s] unscrew body w…[truncated 759 more chars]",
+     "clips": [
+      "…[truncated 6 more items]"
+     ],
+     "duration": 591.1666666666667,
+     "ann_ratio": 1.0,
+     "num_steps": 36,
+     "video_start_time": 160.53333333333333,
+     "has_mistake": true,
+     "num_substeps": 30,
+     "fps": null,
+     "original_ann": {
+      "seq_id": "nusar-2021_action_both_9054-c11a_9054_user_id_2021-02-08_162610",
+      "split": "val",
+      "substeps": [
+       {
+        "start": 4.533333333333333,
+        "end": 5.333333333333333,
+        "narration": "clap hand"
+       },
+       {
+        "start": 6.966666666666667,
+        "end": 7.4,
+        "narration": "pick up screwdriver"
+       },
+       {
+        "start": 11.433333333333334,
+        "end": 12.9,
+        "narration": "attempt to unscrew body"
+       },
+       {
+        "start": 13.0,
+        "end": 14.9,
+        "narration": "tilt up finished toy"
+       },
+       {
+        "start": 15.533333333333333,
+        "end": 21.566666666666666,
+        "narration": "unscrew front bumper with screwdriver"
+       },
+       {
+        "start": 21.566666666666666,
+        "end": 22.266666666666666,
+        "narration": "remove screw"
+       },
+       {
+        "start": 22.566666666666666,
+        "end": 23.033333333333335,
+        "narration": "put down screw"
+       },
+       {
+        "start": 23.566666666666666,
+        "end": 25.666666666666668,
+        "narration": "tilt down partial toy"
+       },
+       {
+        "start": 23.966666666666665,
+        "end": 24.566666666666666,
+        "narration": "remove front bumper"
+       },
+       {
+        "start": 24.833333333333332,
+        "end": 25.666666666666668,
+        "narration": "put down front bumper"
+       },
+       {
+        "start": 26.0,
+        "end": 27.5,
+        "narration": "rotate partial toy"
+       },
+       {
+        "start": 28.466666666666665,
+        "end": 29.366666666666667,
+        "narration": "rotate partial toy"
+       },
+       "…[truncated 416 more items]"
+      ],
+      "toy_name": "car",
+      "task_id": "assembly_nusar-2021_action_both_9054-c11a_9054_user_id_2021-02-08_162610",
+      "task": "assemble toy car",
+      "steps": [
+       {
+        "start": 162.53333333333333,
+        "end": 174.86666666666667,
+        "narration": "attach roof to body",
+        "mistake": "",
+        "substeps": []
+       },
+       {
+        "start": 174.86666666666667,
+        "end": 198.9,
+        "narration": "attach body to chassis",
+        "mistake": "mistake: wrong order",
+        "substeps": [
+         {
+          "start": 186.06666666666666,
+          "end": 192.83333333333334,
+          "narration": "screw body with screwdriver"
+         },
+         {
+          "start": 193.3,
+          "end": 197.3,
+          "narration": "screw body with screwdriver"
+         },
+         {
+          "start": 198.9,
+          "end": 200.93333333333334,
+          "narration": "unscrew body with hand"
+         }
+        ]
+       },
+       {
+        "start": 198.9,
+        "end": 202.0,
+        "narration": "detach body from chassis",
+        "mistake": "correction of \"attach body to chassis\"",
+        "substeps": [
+         {
+          "start": 198.9,
+          "end": 200.93333333333334,
+          "narration": "unscrew body with hand"
+         }
+        ]
+       },
+       {
+        "start": 202.0,
+        "end": 214.5,
+        "narration": "attach interior to body",
+        "mistake": "",
+        "substeps": []
+       },
+       {
+        "start": 214.5,
+        "end": 240.76666666666668,
+        "narration": "attach interior to chassis",
+        "mistake": "",
+        "substeps": [
+         {
+          "start": 224.13333333333333,
+          "end": 228.63333333333333,
+          "narration": "screw body with screwdriver"
+         },
+         {
+          "start": 232.4,
+          "end": 235.53333333333333,
+          "narration": "screw body with screwdriver"
+         },
+         {
+          "start": 237.5,
+          "end": 240.5,
+          "narration": "screw body with screwdriver"
+         }
+        ]
+       },
+       {
+        "start": 240.76666666666668,
+        "end": 281.1,
+        "narration": "attach wheel to chassis",
+        "mistake": "",
+        "substeps": [
+         {
+          "start": 247.5,
+          "end": 251.83333333333334,
+          "narration": "screw first wheel with screwdriver"
+         },
+         {
+          "start": 250.96666666666667,
+          "end": 251.8,
+          "narration": "screw first wheel with screwdriver"
+         },
+         {
+          "start": 255.4,
+          "end": 260.06666666666666,
+          "narration": "screw second wheel with screwdriver"
+         },
+         {
+          "start": 265.96666666666664,
+          "end": 270.1,
+          "narration": "screw third wheel with screwdriver"
+         },
+         {
+          "start": 273.7,
+          "end": 278.6333333333333,
+          "narration": "screw fourth wheel with screwdriver"
+         }
+        ]
+       },
+       {
+        "start": 281.1,
+        "end": 288.53333333333336,
+        "narration": "inspect toy",
+        "mistake": "",
+        "substeps": []
+       },
+       {
+        "start": 288.53333333333336,
+        "end": 312.9,
+        "narration": "attach rear bumper to body",
+        "mistake": "mistake: wrong order",
+        "substeps": [
+         {
+          "start": 300.1,
+          "end": 306.53333333333336,
+          "narration": "screw front bumper with screwdriver"
+         }
+        ]
+       },
+       {
+        "start": 312.9,
+        "end": 316.9,
+        "narration": "attempt to attach nut",
+        "mistake": "",
+        "substeps": []
+       },
+       {
+        "start": 316.9,
+        "end": 325.8,
+        "narration": "attempt to attach bumper",
+        "mistake": "",
+        "substeps": []
+       },
+       {
+        "start": 325.8,
+        "end": 342.56666666666666,
+        "narration": "attach rear bumper to body",
+        "mistake": "",
+        "substeps": [
+         {
+          "start": 337.46666666666664,
+          "end": 342.56666666666666,
+          "narration": "screw rear bumper with screwdriver"
+         }
+        ]
+       },
+       {
+        "start": 342.56666666666666,
+        "end": 351.8333333333333,
+        "narration": "inspect toy",
+        "mistake": "",
+        "substeps": []
+       },
+       {
+        "start": 351.8333333333333,
+        "end": 422.23333333333335,
+        "narration": "attach bumper to body",
+        "mistake": "mistake: wrong order",
+        "substeps": [
+         {
+          "start": 375.3666666666667,
+          "end": 376.43333333333334,
+          "narration": "screw front bumper with hand"
+         },
+         {
+          "start": 386.6,
+          "end": 388.93333333333334,
+          "narration": "unscrew front bumper with hand"
+         },
+         {
+          "start": 391.1666666666667,
+          "end": 396.3666666666667,
+          "narration": "screw front bumper with hand"
+         },
+         {
+          "start": 399.1,
+          "end": 402.6,
+          "narration": "unscrew front bumper with hand"
+         },
+         {
+          "start": 406.3,
+          "end": 416.8666666666667,
+          "narration": "screw front bumper with screwdriver"
+         }
+        ]
+       },
+       {
+        "start": 422.23333333333335,
+        "end": 439.26666666666665,
+        "narration": "detach bumper from body",
+        "mistake": "correction of \"attach bumper to body\"",
+        "substeps": []
+       },
+       "…[truncated 22 more items]"
+      ],
+      "has_mistake": true,
+      "video_start_time": 160.53333333333333,
+      "duration": 591.1666666666667,
+      "video_uid": "assembly_nusar-2021_action_both_9054-c11a_9054_user_id_2021-02-08_162610__HMC_21110305_mono10bit"
+     }
+    },
+    "gen_args": {
+     "llm": "neuralmagic/Meta-Llama-3.1-70B-Instruct-FP8-dynamic",
+     "user_types": "no_talk@2,talk_some@4,talk_more@4",
+     "num_repeats": 10,
+     "sampling_params": {
+      "n": 1,
+      "temperature": 0.5,
+      "top_p": 0.95,
+      "max_tokens": 131072
+     }
+    }
+   }
+  }
+ ]
+}

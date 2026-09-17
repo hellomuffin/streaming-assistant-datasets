@@ -1,0 +1,1995 @@
+{
+ "slug": "soccernet-echoes",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/SoccerNet/SN-echoes  whisper_v2/1.0.0/soccer_net_echoes_hf_dataset-train.arrow",
+  "whisper_v3/1.0.0/soccer_net_echoes_hf_dataset-train.arrow",
+  "whisper_v3_en/1.0.0/soccer_net_echoes_hf_dataset-train.arrow"
+ ],
+ "access_used": "open download",
+ "note": "One example = the ASR rows of one broadcast half inside a 2–3 minute window (rows overlapping the window kept). start_time/end_time are seconds of the SoccerNet half video; gaps between rows are commentator silence. Whisper outputs can repeat or mishear names (e.g. \"Bayern\", \"His base is rare\"). Same games/windows as the soccernet-caption and matchtime samples, so the ASR can be compared with the live-text. Videos are SoccerNet NDA, so no clip.",
+ "examples": [
+  {
+   "title": "Arsenal 3–4 Liverpool, 2nd half 16:30–19:30 — English TV commentary around two goals (Whisper v2)",
+   "video_ref": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 983.0,
+     "te": 995.0,
+     "lane": "commentary",
+     "text": "I think Arsenal just need a period in the game of stability, of nothing."
+    },
+    {
+     "t": 995.0,
+     "te": 999.0,
+     "lane": "commentary",
+     "text": "At the moment, Liverpool are still confident,"
+    },
+    {
+     "t": 999.0,
+     "te": 1002.0,
+     "lane": "commentary",
+     "text": "most fans in that corner, where that corner's going to be taken,"
+    },
+    {
+     "t": 1002.0,
+     "te": 1004.0,
+     "lane": "commentary",
+     "text": "by Jordan Henderson."
+    },
+    {
+     "t": 1004.0,
+     "te": 1007.0,
+     "lane": "commentary",
+     "text": "We need to settle them down, the Arsenal team,"
+    },
+    {
+     "t": 1007.0,
+     "te": 1010.0,
+     "lane": "commentary",
+     "text": "so we can get the Arsenal fans back in the game."
+    },
+    {
+     "t": 1010.0,
+     "te": 1012.0,
+     "lane": "commentary",
+     "text": "Because they've switched off."
+    },
+    {
+     "t": 1012.0,
+     "te": 1014.0,
+     "lane": "commentary",
+     "text": "Liverpool fans delighted with what they're seeing."
+    },
+    {
+     "t": 1031.0,
+     "te": 1034.0,
+     "lane": "commentary",
+     "text": "Just look out there at that Arsenal team,"
+    },
+    {
+     "t": 1034.0,
+     "te": 1036.0,
+     "lane": "commentary",
+     "text": "there isn't a great deal of..."
+    },
+    {
+     "t": 1037.0,
+     "te": 1040.0,
+     "lane": "commentary",
+     "text": "I suppose Sanchez, you'd say, has got a big personality and character,"
+    },
+    {
+     "t": 1040.0,
+     "te": 1045.0,
+     "lane": "commentary",
+     "text": "but the big leaders who you think would potentially get a grip of this for them,"
+    },
+    {
+     "t": 1045.0,
+     "te": 1046.0,
+     "lane": "commentary",
+     "text": "aren't really there."
+    },
+    {
+     "t": 1046.0,
+     "te": 1048.0,
+     "lane": "commentary",
+     "text": "Here's Mane, had to run Chambers."
+    },
+    {
+     "t": 1049.0,
+     "te": 1052.0,
+     "lane": "commentary",
+     "text": "He's doing just that, Sadio Mane wanting a goal for himself,"
+    },
+    {
+     "t": 1052.0,
+     "te": 1054.0,
+     "lane": "commentary",
+     "text": "and what a glorious goal he's got."
+    },
+    {
+     "t": 1055.0,
+     "te": 1056.0,
+     "lane": "commentary",
+     "text": "That is game over."
+    },
+    {
+     "t": 1059.0,
+     "te": 1061.0,
+     "lane": "commentary",
+     "text": "Liverpool ripping Arsenal to shreds here."
+    },
+    {
+     "t": 1061.0,
+     "te": 1064.0,
+     "lane": "commentary",
+     "text": "Almost disbelief in both dugouts."
+    },
+    {
+     "t": 1076.0,
+     "te": 1083.0,
+     "lane": "commentary",
+     "text": "This is a sorry story for Arsenal, but you have seen four absolutely fantastic Liverpool goals."
+    },
+    {
+     "t": 1083.0,
+     "te": 1085.0,
+     "lane": "commentary",
+     "text": "And this is individual brilliance."
+    },
+    {
+     "t": 1085.0,
+     "te": 1090.0,
+     "lane": "commentary",
+     "text": "The pace initially, then the skill, and can he finish?"
+    },
+    {
+     "t": 1090.0,
+     "te": 1092.0,
+     "lane": "commentary",
+     "text": "He's an absolutely incredible finish."
+    },
+    {
+     "t": 1094.0,
+     "te": 1097.0,
+     "lane": "commentary",
+     "text": "Everything you see there from Mane, the strength, the power, the skill,"
+    },
+    {
+     "t": 1097.0,
+     "te": 1100.0,
+     "lane": "commentary",
+     "text": "and then the technique to control with his left foot,"
+    },
+    {
+     "t": 1100.0,
+     "te": 1102.0,
+     "lane": "commentary",
+     "text": "and put that ball into the top corner."
+    },
+    {
+     "t": 1102.0,
+     "te": 1106.0,
+     "lane": "commentary",
+     "text": "It sums up this last 15-20 minutes for Liverpool."
+    },
+    {
+     "t": 1106.0,
+     "te": 1108.0,
+     "lane": "commentary",
+     "text": "Absolutely brilliant."
+    },
+    {
+     "t": 1108.0,
+     "te": 1110.0,
+     "lane": "commentary",
+     "text": "And he goes and celebrates with his manager."
+    },
+    {
+     "t": 1113.0,
+     "te": 1116.0,
+     "lane": "commentary",
+     "text": "We saw glimpses of it from Liverpool last season,"
+    },
+    {
+     "t": 1116.0,
+     "te": 1120.0,
+     "lane": "commentary",
+     "text": "when they won the sixth one at Southampton in the League Cup."
+    },
+    {
+     "t": 1121.0,
+     "te": 1124.0,
+     "lane": "commentary",
+     "text": "Here's Oxlade-Chamberlain, gets one back."
+    },
+    {
+     "t": 1125.0,
+     "te": 1126.0,
+     "lane": "commentary",
+     "text": "By a deflection."
+    },
+    {
+     "t": 1127.0,
+     "te": 1131.0,
+     "lane": "commentary",
+     "text": "Arsenal 2-4 Liverpool, maybe not game over."
+    },
+    {
+     "t": 1134.0,
+     "te": 1136.0,
+     "lane": "commentary",
+     "text": "Well, his Arsenal fans needed that."
+    },
+    {
+     "t": 1136.0,
+     "te": 1140.0,
+     "lane": "commentary",
+     "text": "I was just about to say, it could become a very difficult and awkward last 25 minutes."
+    },
+    {
+     "t": 1141.0,
+     "te": 1143.0,
+     "lane": "commentary",
+     "text": "We've just seen some brilliance at the other end,"
+    },
+    {
+     "t": 1143.0,
+     "te": 1148.0,
+     "lane": "commentary",
+     "text": "Oxlade-Chamberlain, there's that gap he doesn't like between full-back and wide player when he's defending."
+    },
+    {
+     "t": 1149.0,
+     "te": 1152.0,
+     "lane": "commentary",
+     "text": "He skips between it, it's Klein and Lallana,"
+    },
+    {
+     "t": 1152.0,
+     "te": 1156.0,
+     "lane": "commentary",
+     "text": "just jumps through that gap and powers into the box, through Jordan Henderson."
+    },
+    {
+     "t": 1156.0,
+     "te": 1158.0,
+     "lane": "commentary",
+     "text": "And he's unsighted, Mane."
+    },
+    {
+     "t": 1160.0,
+     "te": 1161.0,
+     "lane": "commentary",
+     "text": "Deflection, I think."
+    },
+    {
+     "t": 1162.0,
+     "te": 1164.0,
+     "lane": "commentary",
+     "text": "Hoffman-Alder goes in at the near post."
+    },
+    {
+     "t": 1164.0,
+     "te": 1165.0,
+     "lane": "commentary",
+     "text": "FULL-BACK WHISTLE"
+    }
+   ],
+   "raw_format": "parquet row",
+   "raw": {
+    "whisper_v2": [
+     {
+      "segment_index": 247,
+      "start_time": 983.0,
+      "end_time": 995.0,
+      "text": "I think Arsenal just need a period in the game of stability, of nothing.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 248,
+      "start_time": 995.0,
+      "end_time": 999.0,
+      "text": "At the moment, Liverpool are still confident,",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 249,
+      "start_time": 999.0,
+      "end_time": 1002.0,
+      "text": "most fans in that corner, where that corner's going to be taken,",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 250,
+      "start_time": 1002.0,
+      "end_time": 1004.0,
+      "text": "by Jordan Henderson.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 251,
+      "start_time": 1004.0,
+      "end_time": 1007.0,
+      "text": "We need to settle them down, the Arsenal team,",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 252,
+      "start_time": 1007.0,
+      "end_time": 1010.0,
+      "text": "so we can get the Arsenal fans back in the game.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 253,
+      "start_time": 1010.0,
+      "end_time": 1012.0,
+      "text": "Because they've switched off.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 254,
+      "start_time": 1012.0,
+      "end_time": 1014.0,
+      "text": "Liverpool fans delighted with what they're seeing.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 255,
+      "start_time": 1031.0,
+      "end_time": 1034.0,
+      "text": "Just look out there at that Arsenal team,",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 256,
+      "start_time": 1034.0,
+      "end_time": 1036.0,
+      "text": "there isn't a great deal of...",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 257,
+      "start_time": 1037.0,
+      "end_time": 1040.0,
+      "text": "I suppose Sanchez, you'd say, has got a big personality and character,",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 258,
+      "start_time": 1040.0,
+      "end_time": 1045.0,
+      "text": "but the big leaders who you think would potentially get a grip of this for them,",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 259,
+      "start_time": 1045.0,
+      "end_time": 1046.0,
+      "text": "aren't really there.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 260,
+      "start_time": 1046.0,
+      "end_time": 1048.0,
+      "text": "Here's Mane, had to run Chambers.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 261,
+      "start_time": 1049.0,
+      "end_time": 1052.0,
+      "text": "He's doing just that, Sadio Mane wanting a goal for himself,",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 262,
+      "start_time": 1052.0,
+      "end_time": 1054.0,
+      "text": "and what a glorious goal he's got.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 263,
+      "start_time": 1055.0,
+      "end_time": 1056.0,
+      "text": "That is game over.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 264,
+      "start_time": 1059.0,
+      "end_time": 1061.0,
+      "text": "Liverpool ripping Arsenal to shreds here.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 265,
+      "start_time": 1061.0,
+      "end_time": 1064.0,
+      "text": "Almost disbelief in both dugouts.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 266,
+      "start_time": 1076.0,
+      "end_time": 1083.0,
+      "text": "This is a sorry story for Arsenal, but you have seen four absolutely fantastic Liverpool goals.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 267,
+      "start_time": 1083.0,
+      "end_time": 1085.0,
+      "text": "And this is individual brilliance.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 268,
+      "start_time": 1085.0,
+      "end_time": 1090.0,
+      "text": "The pace initially, then the skill, and can he finish?",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 269,
+      "start_time": 1090.0,
+      "end_time": 1092.0,
+      "text": "He's an absolutely incredible finish.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 270,
+      "start_time": 1094.0,
+      "end_time": 1097.0,
+      "text": "Everything you see there from Mane, the strength, the power, the skill,",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 271,
+      "start_time": 1097.0,
+      "end_time": 1100.0,
+      "text": "and then the technique to control with his left foot,",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 272,
+      "start_time": 1100.0,
+      "end_time": 1102.0,
+      "text": "and put that ball into the top corner.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 273,
+      "start_time": 1102.0,
+      "end_time": 1106.0,
+      "text": "It sums up this last 15-20 minutes for Liverpool.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 274,
+      "start_time": 1106.0,
+      "end_time": 1108.0,
+      "text": "Absolutely brilliant.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 275,
+      "start_time": 1108.0,
+      "end_time": 1110.0,
+      "text": "And he goes and celebrates with his manager.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 276,
+      "start_time": 1113.0,
+      "end_time": 1116.0,
+      "text": "We saw glimpses of it from Liverpool last season,",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 277,
+      "start_time": 1116.0,
+      "end_time": 1120.0,
+      "text": "when they won the sixth one at Southampton in the League Cup.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 278,
+      "start_time": 1121.0,
+      "end_time": 1124.0,
+      "text": "Here's Oxlade-Chamberlain, gets one back.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 279,
+      "start_time": 1125.0,
+      "end_time": 1126.0,
+      "text": "By a deflection.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 280,
+      "start_time": 1127.0,
+      "end_time": 1131.0,
+      "text": "Arsenal 2-4 Liverpool, maybe not game over.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 281,
+      "start_time": 1134.0,
+      "end_time": 1136.0,
+      "text": "Well, his Arsenal fans needed that.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 282,
+      "start_time": 1136.0,
+      "end_time": 1140.0,
+      "text": "I was just about to say, it could become a very difficult and awkward last 25 minutes.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 283,
+      "start_time": 1141.0,
+      "end_time": 1143.0,
+      "text": "We've just seen some brilliance at the other end,",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 284,
+      "start_time": 1143.0,
+      "end_time": 1148.0,
+      "text": "Oxlade-Chamberlain, there's that gap he doesn't like between full-back and wide player when he's defending.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 285,
+      "start_time": 1149.0,
+      "end_time": 1152.0,
+      "text": "He skips between it, it's Klein and Lallana,",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 286,
+      "start_time": 1152.0,
+      "end_time": 1156.0,
+      "text": "just jumps through that gap and powers into the box, through Jordan Henderson.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 287,
+      "start_time": 1156.0,
+      "end_time": 1158.0,
+      "text": "And he's unsighted, Mane.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 288,
+      "start_time": 1160.0,
+      "end_time": 1161.0,
+      "text": "Deflection, I think.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 289,
+      "start_time": 1162.0,
+      "end_time": 1164.0,
+      "text": "Hoffman-Alder goes in at the near post.",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     },
+     {
+      "segment_index": 290,
+      "start_time": 1164.0,
+      "end_time": 1165.0,
+      "text": "FULL-BACK WHISTLE",
+      "game": "england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/2"
+     }
+    ]
+   }
+  },
+  {
+   "title": "Chelsea 1–1 Burnley, 1st half 13:00–14:45 — Spanish commentary around the 13:36 goal, with the English translation (Whisper v3 + v3_en)",
+   "video_ref": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 779.72,
+     "te": 782.36,
+     "lane": "commentary",
+     "text": "se le marchó muchísimo, sigue peleando"
+    },
+    {
+     "t": 782.36,
+     "te": 784.14,
+     "lane": "commentary",
+     "text": "ahí el suramericano que roba"
+    },
+    {
+     "t": 784.14,
+     "te": 786.3,
+     "lane": "commentary",
+     "text": "definitivamente ese balón, juega de nuevo"
+    },
+    {
+     "t": 786.3,
+     "te": 788.36,
+     "lane": "commentary",
+     "text": "para Hazard, ya dentro del área"
+    },
+    {
+     "t": 788.36,
+     "te": 790.58,
+     "lane": "commentary",
+     "text": "que maniobra fantástica la del Belga"
+    },
+    {
+     "t": 790.58,
+     "te": 792.84,
+     "lane": "commentary",
+     "text": "Ivanovic, vuelve a marcar Ivanovic"
+    },
+    {
+     "t": 792.84,
+     "te": 794.28,
+     "lane": "commentary",
+     "text": "pues vuelve a marcar"
+    },
+    {
+     "t": 794.28,
+     "te": 796.06,
+     "lane": "commentary",
+     "text": "Ivanovic aunque el jugadón"
+    },
+    {
+     "t": 796.06,
+     "te": 798.38,
+     "lane": "commentary",
+     "text": "es de Eden Hazard"
+    },
+    {
+     "t": 798.38,
+     "te": 800.28,
+     "lane": "commentary",
+     "text": "minuto 14 de juego de la primera"
+    },
+    {
+     "t": 800.28,
+     "te": 802.06,
+     "lane": "commentary",
+     "text": "parte, quizá demasiado"
+    },
+    {
+     "t": 802.06,
+     "te": 803.94,
+     "lane": "commentary",
+     "text": "blando en defensa el Barley pero"
+    },
+    {
+     "t": 803.94,
+     "te": 806.1,
+     "lane": "commentary",
+     "text": "gran acción individual de Hazard"
+    },
+    {
+     "t": 806.1,
+     "te": 808.16,
+     "lane": "commentary",
+     "text": "e Ivanovic de nuevo fiel"
+    },
+    {
+     "t": 808.16,
+     "te": 809.52,
+     "lane": "commentary",
+     "text": "a su cita con el gol"
+    },
+    {
+     "t": 809.52,
+     "te": 811.86,
+     "lane": "commentary",
+     "text": "marca el primero del Chelsea 1-0"
+    },
+    {
+     "t": 811.86,
+     "te": 814.3,
+     "lane": "commentary",
+     "text": "Sí, aquí va a estar blando"
+    },
+    {
+     "t": 814.3,
+     "te": 816.42,
+     "lane": "commentary",
+     "text": "ya el Barley, con esa pérdida de balón"
+    },
+    {
+     "t": 816.42,
+     "te": 817.88,
+     "lane": "commentary",
+     "text": "excesivamente fácil, luego"
+    },
+    {
+     "t": 817.88,
+     "te": 820.56,
+     "lane": "commentary",
+     "text": "lo de Hazard es impresionante"
+    },
+    {
+     "t": 820.56,
+     "te": 822.14,
+     "lane": "commentary",
+     "text": "la acción de Hazard es"
+    },
+    {
+     "t": 822.14,
+     "te": 824.16,
+     "lane": "commentary",
+     "text": "bueno, es Hazard en estado puro"
+    },
+    {
+     "t": 824.16,
+     "te": 826.34,
+     "lane": "commentary",
+     "text": "la acción individual, la arrancada"
+    },
+    {
+     "t": 826.34,
+     "te": 828.04,
+     "lane": "commentary",
+     "text": "los distintos cambios de velocidad"
+    },
+    {
+     "t": 828.04,
+     "te": 830.38,
+     "lane": "commentary",
+     "text": "los quiebros y luego el pase perfecto"
+    },
+    {
+     "t": 830.38,
+     "te": 831.74,
+     "lane": "commentary",
+     "text": "porque Ivanovic se cuela"
+    },
+    {
+     "t": 831.74,
+     "te": 833.76,
+     "lane": "commentary",
+     "text": "nadie le marca y Hazard"
+    },
+    {
+     "t": 833.94,
+     "te": 835.2,
+     "lane": "commentary",
+     "text": "con su"
+    },
+    {
+     "t": 835.2,
+     "te": 838.26,
+     "lane": "commentary",
+     "text": "el ojo que tiene en la nuca le ve perfectamente"
+    },
+    {
+     "t": 838.26,
+     "te": 839.8,
+     "lane": "commentary",
+     "text": "y le asiste"
+    },
+    {
+     "t": 839.8,
+     "te": 841.88,
+     "lane": "commentary",
+     "text": "estando totalmente"
+    },
+    {
+     "t": 841.88,
+     "te": 843.76,
+     "lane": "commentary",
+     "text": "atareado y ajetreado en quiebros"
+    },
+    {
+     "t": 843.76,
+     "te": 845.7,
+     "lane": "commentary",
+     "text": "parece mentira que Hazard pueda tener"
+    },
+    {
+     "t": 845.7,
+     "te": 847.74,
+     "lane": "commentary",
+     "text": "la frialdad y la visión para saber"
+    },
+    {
+     "t": 847.74,
+     "te": 849.9,
+     "lane": "commentary",
+     "text": "dónde estaba su compañero y no sólo"
+    },
+    {
+     "t": 849.9,
+     "te": 851.86,
+     "lane": "commentary",
+     "text": "lo sabía sino que le puso un balón perfecto"
+    },
+    {
+     "t": 851.86,
+     "te": 853.94,
+     "lane": "commentary",
+     "text": "bueno, el Chelsea no había hecho gran"
+    },
+    {
+     "t": 853.94,
+     "te": 855.84,
+     "lane": "commentary",
+     "text": "cosa la verdad, había tenido una ocasión por un"
+    },
+    {
+     "t": 855.84,
+     "te": 857.64,
+     "lane": "commentary",
+     "text": "gran centro lateral de Felipe Luis"
+    },
+    {
+     "t": 857.64,
+     "te": 859.3,
+     "lane": "commentary",
+     "text": "pero esta era la primera llegada seria"
+    },
+    {
+     "t": 859.3,
+     "te": 861.9,
+     "lane": "commentary",
+     "text": "y ha marcado, esto puede"
+    },
+    {
+     "t": 861.9,
+     "te": 862.9,
+     "lane": "commentary",
+     "text": "marcar mucho el partido"
+    },
+    {
+     "t": 863.94,
+     "te": 866.4,
+     "lane": "commentary",
+     "text": "ha recuperado el Chelsea otra vez en el último tercio"
+    },
+    {
+     "t": 866.4,
+     "te": 868.74,
+     "lane": "commentary",
+     "text": "el pase de Hazard para Oscar, lanzamiento de Oscar"
+    },
+    {
+     "t": 868.74,
+     "te": 870.62,
+     "lane": "commentary",
+     "text": "no atrapa el guardameta y es"
+    },
+    {
+     "t": 870.62,
+     "te": 872.48,
+     "lane": "commentary",
+     "text": "el lateral Ben Mee"
+    },
+    {
+     "t": 872.48,
+     "te": 874.76,
+     "lane": "commentary",
+     "text": "el que termina alejando el peligro"
+    },
+    {
+     "t": 874.76,
+     "te": 875.98,
+     "lane": "commentary",
+     "text": "no atrapó Heaton"
+    },
+    {
+     "t": 875.98,
+     "te": 878.48,
+     "lane": "commentary",
+     "text": "tras ese remate de Oscar"
+    },
+    {
+     "t": 878.48,
+     "te": 880.58,
+     "lane": "commentary",
+     "text": "en el minuto 15 de juego"
+    },
+    {
+     "t": 880.58,
+     "te": 881.64,
+     "lane": "commentary",
+     "text": "de este primer tiempo"
+    },
+    {
+     "t": 881.64,
+     "te": 884.58,
+     "lane": "commentary",
+     "text": "en cuanto el Chelsea aprieta y aumenta"
+    },
+    {
+     "t": 884.58,
+     "te": 887.04,
+     "lane": "commentary",
+     "text": "el ritmo, el Van Lee cruje claramente"
+    },
+    {
+     "t": 779.72,
+     "te": 782.36,
+     "lane": "other",
+     "text": "[EN translation] He left a lot, he keeps fighting"
+    },
+    {
+     "t": 782.36,
+     "te": 784.14,
+     "lane": "other",
+     "text": "[EN translation] there the South American who steals"
+    },
+    {
+     "t": 784.14,
+     "te": 786.3,
+     "lane": "other",
+     "text": "[EN translation] definitely that ball, play again"
+    },
+    {
+     "t": 786.3,
+     "te": 788.36,
+     "lane": "other",
+     "text": "[EN translation] for Hazard, already inside the area"
+    },
+    {
+     "t": 788.36,
+     "te": 790.58,
+     "lane": "other",
+     "text": "[EN translation] What a fantastic maneuver by the Belgian"
+    },
+    {
+     "t": 790.58,
+     "te": 792.84,
+     "lane": "other",
+     "text": "[EN translation] Ivanovic, Ivanovic scores again"
+    },
+    {
+     "t": 792.84,
+     "te": 794.28,
+     "lane": "other",
+     "text": "[EN translation] then dial again"
+    },
+    {
+     "t": 794.28,
+     "te": 796.06,
+     "lane": "other",
+     "text": "[EN translation] Ivanovic although the player"
+    },
+    {
+     "t": 796.06,
+     "te": 798.38,
+     "lane": "other",
+     "text": "[EN translation] It's from Eden Hazard"
+    },
+    {
+     "t": 798.38,
+     "te": 800.28,
+     "lane": "other",
+     "text": "[EN translation] 14th minute of play in the first"
+    },
+    {
+     "t": 800.28,
+     "te": 802.06,
+     "lane": "other",
+     "text": "[EN translation] part, perhaps too much"
+    },
+    {
+     "t": 802.06,
+     "te": 803.94,
+     "lane": "other",
+     "text": "[EN translation] Barley is soft in defense but"
+    },
+    {
+     "t": 803.94,
+     "te": 806.1,
+     "lane": "other",
+     "text": "[EN translation] great individual action from Hazard"
+    },
+    {
+     "t": 806.1,
+     "te": 808.16,
+     "lane": "other",
+     "text": "[EN translation] and Ivanovic once again faithful"
+    },
+    {
+     "t": 808.16,
+     "te": 809.52,
+     "lane": "other",
+     "text": "[EN translation] to his date with the goal"
+    },
+    {
+     "t": 809.52,
+     "te": 811.86,
+     "lane": "other",
+     "text": "[EN translation] marks the first for Chelsea 1-0"
+    },
+    {
+     "t": 811.86,
+     "te": 814.3,
+     "lane": "other",
+     "text": "[EN translation] Yes, it's going to be soft here"
+    },
+    {
+     "t": 814.3,
+     "te": 816.42,
+     "lane": "other",
+     "text": "[EN translation] and Barley, with that loss of ball"
+    },
+    {
+     "t": 816.42,
+     "te": 817.88,
+     "lane": "other",
+     "text": "[EN translation] too easy, then"
+    },
+    {
+     "t": 817.88,
+     "te": 820.56,
+     "lane": "other",
+     "text": "[EN translation] Hazard is impressive"
+    },
+    {
+     "t": 820.56,
+     "te": 822.14,
+     "lane": "other",
+     "text": "[EN translation] Hazard's action is"
+    },
+    {
+     "t": 822.14,
+     "te": 824.16,
+     "lane": "other",
+     "text": "[EN translation] well, it's Hazard in its purest form"
+    },
+    {
+     "t": 824.16,
+     "te": 826.34,
+     "lane": "other",
+     "text": "[EN translation] the individual action, the snatch"
+    },
+    {
+     "t": 826.34,
+     "te": 828.04,
+     "lane": "other",
+     "text": "[EN translation] the different speed changes"
+    },
+    {
+     "t": 828.04,
+     "te": 830.38,
+     "lane": "other",
+     "text": "[EN translation] the breaks and then the perfect pass"
+    },
+    {
+     "t": 830.38,
+     "te": 831.74,
+     "lane": "other",
+     "text": "[EN translation] because Ivanovic sneaks in"
+    },
+    {
+     "t": 831.74,
+     "te": 833.76,
+     "lane": "other",
+     "text": "[EN translation] nobody marks him and Hazard"
+    },
+    {
+     "t": 833.94,
+     "te": 835.2,
+     "lane": "other",
+     "text": "[EN translation] with his"
+    },
+    {
+     "t": 835.2,
+     "te": 838.26,
+     "lane": "other",
+     "text": "[EN translation] the eye on the back of his head sees him perfectly"
+    },
+    {
+     "t": 838.26,
+     "te": 839.8,
+     "lane": "other",
+     "text": "[EN translation] and assists him"
+    },
+    {
+     "t": 839.8,
+     "te": 841.88,
+     "lane": "other",
+     "text": "[EN translation] being totally"
+    },
+    {
+     "t": 841.88,
+     "te": 843.76,
+     "lane": "other",
+     "text": "[EN translation] busy and busy in business"
+    },
+    {
+     "t": 843.76,
+     "te": 845.7,
+     "lane": "other",
+     "text": "[EN translation] It seems unbelievable that Hazard could have"
+    },
+    {
+     "t": 845.7,
+     "te": 847.74,
+     "lane": "other",
+     "text": "[EN translation] coldness and vision to know"
+    },
+    {
+     "t": 847.74,
+     "te": 849.9,
+     "lane": "other",
+     "text": "[EN translation] where was his companion and not only"
+    },
+    {
+     "t": 849.9,
+     "te": 851.86,
+     "lane": "other",
+     "text": "[EN translation] he didn't know it but he put a perfect ball on it"
+    },
+    {
+     "t": 851.86,
+     "te": 853.94,
+     "lane": "other",
+     "text": "[EN translation] well, Chelsea had not done much"
+    },
+    {
+     "t": 853.94,
+     "te": 855.84,
+     "lane": "other",
+     "text": "[EN translation] truth be told, I had had an opportunity for a"
+    },
+    {
+     "t": 855.84,
+     "te": 857.64,
+     "lane": "other",
+     "text": "[EN translation] great lateral center from Felipe Luis"
+    },
+    {
+     "t": 857.64,
+     "te": 859.3,
+     "lane": "other",
+     "text": "[EN translation] but this was the first serious arrival"
+    },
+    {
+     "t": 859.3,
+     "te": 861.9,
+     "lane": "other",
+     "text": "[EN translation] and has marked, this can"
+    },
+    {
+     "t": 861.9,
+     "te": 862.9,
+     "lane": "other",
+     "text": "[EN translation] score the game a lot"
+    },
+    {
+     "t": 863.94,
+     "te": 866.4,
+     "lane": "other",
+     "text": "[EN translation] Chelsea has recovered again in the final third"
+    },
+    {
+     "t": 866.4,
+     "te": 868.74,
+     "lane": "other",
+     "text": "[EN translation] Hazard's pass for Oscar, Oscar's launch"
+    },
+    {
+     "t": 868.74,
+     "te": 870.62,
+     "lane": "other",
+     "text": "[EN translation] the goalkeeper doesn't catch it and it's"
+    },
+    {
+     "t": 870.62,
+     "te": 872.48,
+     "lane": "other",
+     "text": "[EN translation] winger Ben Mee"
+    },
+    {
+     "t": 872.48,
+     "te": 874.76,
+     "lane": "other",
+     "text": "[EN translation] the one who ends up removing the danger"
+    },
+    {
+     "t": 874.76,
+     "te": 875.98,
+     "lane": "other",
+     "text": "[EN translation] Didn't catch Heaton"
+    },
+    {
+     "t": 875.98,
+     "te": 878.48,
+     "lane": "other",
+     "text": "[EN translation] after that Oscar shot"
+    },
+    {
+     "t": 878.48,
+     "te": 880.58,
+     "lane": "other",
+     "text": "[EN translation] in the 15th minute of play"
+    },
+    {
+     "t": 880.58,
+     "te": 881.64,
+     "lane": "other",
+     "text": "[EN translation] of this first time"
+    },
+    {
+     "t": 881.64,
+     "te": 884.58,
+     "lane": "other",
+     "text": "[EN translation] as soon as Chelsea presses and increases"
+    },
+    {
+     "t": 884.58,
+     "te": 887.04,
+     "lane": "other",
+     "text": "[EN translation] the rhythm, the Van Lee crunches clearly"
+    }
+   ],
+   "raw_format": "parquet row",
+   "raw": {
+    "whisper_v3": [
+     {
+      "segment_index": 178,
+      "start_time": 779.72,
+      "end_time": 782.36,
+      "text": "se le marchó muchísimo, sigue peleando",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 179,
+      "start_time": 782.36,
+      "end_time": 784.14,
+      "text": "ahí el suramericano que roba",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 180,
+      "start_time": 784.14,
+      "end_time": 786.3,
+      "text": "definitivamente ese balón, juega de nuevo",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 181,
+      "start_time": 786.3,
+      "end_time": 788.36,
+      "text": "para Hazard, ya dentro del área",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 182,
+      "start_time": 788.36,
+      "end_time": 790.58,
+      "text": "que maniobra fantástica la del Belga",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 183,
+      "start_time": 790.58,
+      "end_time": 792.84,
+      "text": "Ivanovic, vuelve a marcar Ivanovic",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 184,
+      "start_time": 792.84,
+      "end_time": 794.28,
+      "text": "pues vuelve a marcar",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 185,
+      "start_time": 794.28,
+      "end_time": 796.06,
+      "text": "Ivanovic aunque el jugadón",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 186,
+      "start_time": 796.06,
+      "end_time": 798.38,
+      "text": "es de Eden Hazard",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 187,
+      "start_time": 798.38,
+      "end_time": 800.28,
+      "text": "minuto 14 de juego de la primera",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 188,
+      "start_time": 800.28,
+      "end_time": 802.06,
+      "text": "parte, quizá demasiado",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 189,
+      "start_time": 802.06,
+      "end_time": 803.94,
+      "text": "blando en defensa el Barley pero",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 190,
+      "start_time": 803.94,
+      "end_time": 806.1,
+      "text": "gran acción individual de Hazard",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 191,
+      "start_time": 806.1,
+      "end_time": 808.16,
+      "text": "e Ivanovic de nuevo fiel",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 192,
+      "start_time": 808.16,
+      "end_time": 809.52,
+      "text": "a su cita con el gol",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 193,
+      "start_time": 809.52,
+      "end_time": 811.86,
+      "text": "marca el primero del Chelsea 1-0",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 194,
+      "start_time": 811.86,
+      "end_time": 814.3,
+      "text": "Sí, aquí va a estar blando",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 195,
+      "start_time": 814.3,
+      "end_time": 816.42,
+      "text": "ya el Barley, con esa pérdida de balón",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 196,
+      "start_time": 816.42,
+      "end_time": 817.88,
+      "text": "excesivamente fácil, luego",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 197,
+      "start_time": 817.88,
+      "end_time": 820.56,
+      "text": "lo de Hazard es impresionante",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 198,
+      "start_time": 820.56,
+      "end_time": 822.14,
+      "text": "la acción de Hazard es",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 199,
+      "start_time": 822.14,
+      "end_time": 824.16,
+      "text": "bueno, es Hazard en estado puro",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 200,
+      "start_time": 824.16,
+      "end_time": 826.34,
+      "text": "la acción individual, la arrancada",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 201,
+      "start_time": 826.34,
+      "end_time": 828.04,
+      "text": "los distintos cambios de velocidad",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 202,
+      "start_time": 828.04,
+      "end_time": 830.38,
+      "text": "los quiebros y luego el pase perfecto",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 203,
+      "start_time": 830.38,
+      "end_time": 831.74,
+      "text": "porque Ivanovic se cuela",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 204,
+      "start_time": 831.74,
+      "end_time": 833.76,
+      "text": "nadie le marca y Hazard",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 205,
+      "start_time": 833.94,
+      "end_time": 835.2,
+      "text": "con su",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 206,
+      "start_time": 835.2,
+      "end_time": 838.26,
+      "text": "el ojo que tiene en la nuca le ve perfectamente",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 207,
+      "start_time": 838.26,
+      "end_time": 839.8,
+      "text": "y le asiste",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 208,
+      "start_time": 839.8,
+      "end_time": 841.88,
+      "text": "estando totalmente",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 209,
+      "start_time": 841.88,
+      "end_time": 843.76,
+      "text": "atareado y ajetreado en quiebros",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 210,
+      "start_time": 843.76,
+      "end_time": 845.7,
+      "text": "parece mentira que Hazard pueda tener",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 211,
+      "start_time": 845.7,
+      "end_time": 847.74,
+      "text": "la frialdad y la visión para saber",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 212,
+      "start_time": 847.74,
+      "end_time": 849.9,
+      "text": "dónde estaba su compañero y no sólo",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 213,
+      "start_time": 849.9,
+      "end_time": 851.86,
+      "text": "lo sabía sino que le puso un balón perfecto",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 214,
+      "start_time": 851.86,
+      "end_time": 853.94,
+      "text": "bueno, el Chelsea no había hecho gran",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 215,
+      "start_time": 853.94,
+      "end_time": 855.84,
+      "text": "cosa la verdad, había tenido una ocasión por un",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 216,
+      "start_time": 855.84,
+      "end_time": 857.64,
+      "text": "gran centro lateral de Felipe Luis",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 217,
+      "start_time": 857.64,
+      "end_time": 859.3,
+      "text": "pero esta era la primera llegada seria",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 218,
+      "start_time": 859.3,
+      "end_time": 861.9,
+      "text": "y ha marcado, esto puede",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 219,
+      "start_time": 861.9,
+      "end_time": 862.9,
+      "text": "marcar mucho el partido",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 220,
+      "start_time": 863.94,
+      "end_time": 866.4,
+      "text": "ha recuperado el Chelsea otra vez en el último tercio",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 221,
+      "start_time": 866.4,
+      "end_time": 868.74,
+      "text": "el pase de Hazard para Oscar, lanzamiento de Oscar",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 222,
+      "start_time": 868.74,
+      "end_time": 870.62,
+      "text": "no atrapa el guardameta y es",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 223,
+      "start_time": 870.62,
+      "end_time": 872.48,
+      "text": "el lateral Ben Mee",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 224,
+      "start_time": 872.48,
+      "end_time": 874.76,
+      "text": "el que termina alejando el peligro",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 225,
+      "start_time": 874.76,
+      "end_time": 875.98,
+      "text": "no atrapó Heaton",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 226,
+      "start_time": 875.98,
+      "end_time": 878.48,
+      "text": "tras ese remate de Oscar",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 227,
+      "start_time": 878.48,
+      "end_time": 880.58,
+      "text": "en el minuto 15 de juego",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 228,
+      "start_time": 880.58,
+      "end_time": 881.64,
+      "text": "de este primer tiempo",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 229,
+      "start_time": 881.64,
+      "end_time": 884.58,
+      "text": "en cuanto el Chelsea aprieta y aumenta",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 230,
+      "start_time": 884.58,
+      "end_time": 887.04,
+      "text": "el ritmo, el Van Lee cruje claramente",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     }
+    ],
+    "whisper_v3_en": [
+     {
+      "segment_index": 178,
+      "start_time": 779.72,
+      "end_time": 782.36,
+      "text": "He left a lot, he keeps fighting",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 179,
+      "start_time": 782.36,
+      "end_time": 784.14,
+      "text": "there the South American who steals",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 180,
+      "start_time": 784.14,
+      "end_time": 786.3,
+      "text": "definitely that ball, play again",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 181,
+      "start_time": 786.3,
+      "end_time": 788.36,
+      "text": "for Hazard, already inside the area",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 182,
+      "start_time": 788.36,
+      "end_time": 790.58,
+      "text": "What a fantastic maneuver by the Belgian",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 183,
+      "start_time": 790.58,
+      "end_time": 792.84,
+      "text": "Ivanovic, Ivanovic scores again",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 184,
+      "start_time": 792.84,
+      "end_time": 794.28,
+      "text": "then dial again",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 185,
+      "start_time": 794.28,
+      "end_time": 796.06,
+      "text": "Ivanovic although the player",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 186,
+      "start_time": 796.06,
+      "end_time": 798.38,
+      "text": "It's from Eden Hazard",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 187,
+      "start_time": 798.38,
+      "end_time": 800.28,
+      "text": "14th minute of play in the first",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 188,
+      "start_time": 800.28,
+      "end_time": 802.06,
+      "text": "part, perhaps too much",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 189,
+      "start_time": 802.06,
+      "end_time": 803.94,
+      "text": "Barley is soft in defense but",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 190,
+      "start_time": 803.94,
+      "end_time": 806.1,
+      "text": "great individual action from Hazard",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 191,
+      "start_time": 806.1,
+      "end_time": 808.16,
+      "text": "and Ivanovic once again faithful",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 192,
+      "start_time": 808.16,
+      "end_time": 809.52,
+      "text": "to his date with the goal",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 193,
+      "start_time": 809.52,
+      "end_time": 811.86,
+      "text": "marks the first for Chelsea 1-0",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 194,
+      "start_time": 811.86,
+      "end_time": 814.3,
+      "text": "Yes, it's going to be soft here",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 195,
+      "start_time": 814.3,
+      "end_time": 816.42,
+      "text": "and Barley, with that loss of ball",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 196,
+      "start_time": 816.42,
+      "end_time": 817.88,
+      "text": "too easy, then",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 197,
+      "start_time": 817.88,
+      "end_time": 820.56,
+      "text": "Hazard is impressive",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 198,
+      "start_time": 820.56,
+      "end_time": 822.14,
+      "text": "Hazard's action is",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 199,
+      "start_time": 822.14,
+      "end_time": 824.16,
+      "text": "well, it's Hazard in its purest form",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 200,
+      "start_time": 824.16,
+      "end_time": 826.34,
+      "text": "the individual action, the snatch",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 201,
+      "start_time": 826.34,
+      "end_time": 828.04,
+      "text": "the different speed changes",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 202,
+      "start_time": 828.04,
+      "end_time": 830.38,
+      "text": "the breaks and then the perfect pass",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 203,
+      "start_time": 830.38,
+      "end_time": 831.74,
+      "text": "because Ivanovic sneaks in",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 204,
+      "start_time": 831.74,
+      "end_time": 833.76,
+      "text": "nobody marks him and Hazard",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 205,
+      "start_time": 833.94,
+      "end_time": 835.2,
+      "text": "with his",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 206,
+      "start_time": 835.2,
+      "end_time": 838.26,
+      "text": "the eye on the back of his head sees him perfectly",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 207,
+      "start_time": 838.26,
+      "end_time": 839.8,
+      "text": "and assists him",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 208,
+      "start_time": 839.8,
+      "end_time": 841.88,
+      "text": "being totally",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 209,
+      "start_time": 841.88,
+      "end_time": 843.76,
+      "text": "busy and busy in business",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 210,
+      "start_time": 843.76,
+      "end_time": 845.7,
+      "text": "It seems unbelievable that Hazard could have",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 211,
+      "start_time": 845.7,
+      "end_time": 847.74,
+      "text": "coldness and vision to know",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 212,
+      "start_time": 847.74,
+      "end_time": 849.9,
+      "text": "where was his companion and not only",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 213,
+      "start_time": 849.9,
+      "end_time": 851.86,
+      "text": "he didn't know it but he put a perfect ball on it",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 214,
+      "start_time": 851.86,
+      "end_time": 853.94,
+      "text": "well, Chelsea had not done much",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 215,
+      "start_time": 853.94,
+      "end_time": 855.84,
+      "text": "truth be told, I had had an opportunity for a",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 216,
+      "start_time": 855.84,
+      "end_time": 857.64,
+      "text": "great lateral center from Felipe Luis",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 217,
+      "start_time": 857.64,
+      "end_time": 859.3,
+      "text": "but this was the first serious arrival",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 218,
+      "start_time": 859.3,
+      "end_time": 861.9,
+      "text": "and has marked, this can",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 219,
+      "start_time": 861.9,
+      "end_time": 862.9,
+      "text": "score the game a lot",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 220,
+      "start_time": 863.94,
+      "end_time": 866.4,
+      "text": "Chelsea has recovered again in the final third",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 221,
+      "start_time": 866.4,
+      "end_time": 868.74,
+      "text": "Hazard's pass for Oscar, Oscar's launch",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 222,
+      "start_time": 868.74,
+      "end_time": 870.62,
+      "text": "the goalkeeper doesn't catch it and it's",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 223,
+      "start_time": 870.62,
+      "end_time": 872.48,
+      "text": "winger Ben Mee",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 224,
+      "start_time": 872.48,
+      "end_time": 874.76,
+      "text": "the one who ends up removing the danger",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 225,
+      "start_time": 874.76,
+      "end_time": 875.98,
+      "text": "Didn't catch Heaton",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 226,
+      "start_time": 875.98,
+      "end_time": 878.48,
+      "text": "after that Oscar shot",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 227,
+      "start_time": 878.48,
+      "end_time": 880.58,
+      "text": "in the 15th minute of play",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 228,
+      "start_time": 880.58,
+      "end_time": 881.64,
+      "text": "of this first time",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 229,
+      "start_time": 881.64,
+      "end_time": 884.58,
+      "text": "as soon as Chelsea presses and increases",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     },
+     {
+      "segment_index": 230,
+      "start_time": 884.58,
+      "end_time": 887.04,
+      "text": "the rhythm, the Van Lee crunches clearly",
+      "game": "england_epl/2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/1"
+     }
+    ]
+   }
+  }
+ ]
+}

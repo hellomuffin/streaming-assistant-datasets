@@ -1,0 +1,3418 @@
+{
+ "slug": "boxcomm",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/gouba2333/BoxComm-Dataset eval/asr/478.json, eval/asr/482.json",
+  "archives/eval_events.tar members eval/events/478_…/video_event_inference_3.json and 482_… (HTTP range reads)",
+  "metadata/timestamp_processed.csv",
+  "metadata/source_urls.csv"
+ ],
+ "access_used": "open download",
+ "note": "One example = a 2–3 minute window of one bout: sentence-level commentary ASR with word times and a 3-way class (1 play-by-play, 2 tactical, 3 contextual, per the repo training script), plus automatically detected punch events (frames at 30 fps) and the round boundaries (column names in Chinese: 第一回合开始 = round 1 start, etc.). The timeline shows only effective punches and fouls; the raw keeps up to 30 events of every kind. Videos are Eurovision Sport broadcasts not redistributed, so no clip.",
+ "examples": [
+  {
+   "title": "478 Women's 48kg final, MINAKSHI (IND) v LUTSAIKHAN (MGL), 1:00–3:00 — backhand knockdown and standing count, punch events",
+   "video_ref": "478_LUTSAIKHAN-Altantsetseg_MINAKSHI-Minakshi.mp4 (World Boxing Championships Liverpool 2025, Eurovision Sport replay)",
+   "duration_s": 660.0,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 59.586,
+     "te": 66.633,
+     "lane": "commentary",
+     "text": "[class 3 contextual] Like we said, what's been fascinating throughout this week is seeing boxers approach, you know, a single bout in one way,"
+    },
+    {
+     "t": 66.793,
+     "te": 72.438,
+     "lane": "commentary",
+     "text": "[class 3 contextual] and then they might box a very different way or a slightly different way, depending on the opponent in front of them."
+    },
+    {
+     "t": 72.458,
+     "te": 75.801,
+     "lane": "commentary",
+     "text": "[class 3 contextual] And, you know, success in these tournaments is being able to adapt."
+    },
+    {
+     "t": 76.0,
+     "te": 76.23,
+     "lane": "event",
+     "text": "punching blue rstraight → head (effective)"
+    },
+    {
+     "t": 76.842,
+     "te": 78.044,
+     "lane": "commentary",
+     "text": "[class 1 play-by-play] Oh, that's a really good backhand."
+    },
+    {
+     "t": 76.93,
+     "te": 77.13,
+     "lane": "event",
+     "text": "punching blue rstraight → abdomen (effective)"
+    },
+    {
+     "t": 78.804,
+     "te": 79.165,
+     "lane": "commentary",
+     "text": "[class 1 play-by-play] What a shot."
+    },
+    {
+     "t": 80.246,
+     "te": 88.293,
+     "lane": "commentary",
+     "text": "[class 2 tactical] And that's that aggression we didn't see from the match yesterday, but she's really brought that front foot pressure and got that power, got real leverage on that backhand."
+    },
+    {
+     "t": 88.313,
+     "te": 88.914,
+     "lane": "commentary",
+     "text": "[class 3 contextual] Then it was a..."
+    },
+    {
+     "t": 89.154,
+     "te": 91.698,
+     "lane": "commentary",
+     "text": "[class 2 tactical] A great shot and what a start for the Indian boxer."
+    },
+    {
+     "t": 91.53,
+     "te": 91.87,
+     "lane": "event",
+     "text": "punching red lstraight → head (effective)"
+    },
+    {
+     "t": 91.718,
+     "te": 93.361,
+     "lane": "commentary",
+     "text": "[class 2 tactical] This is really impressive stuff."
+    },
+    {
+     "t": 91.83,
+     "te": 92.13,
+     "lane": "event",
+     "text": "punching blue lhook → head (effective)"
+    },
+    {
+     "t": 92.07,
+     "te": 92.4,
+     "lane": "event",
+     "text": "punching blue rstraight → head (effective)"
+    },
+    {
+     "t": 93.581,
+     "te": 99.53,
+     "lane": "commentary",
+     "text": "[class 1 play-by-play] Halfway through the first round, standing count with that backhand that put, let's say, Khan down onto the canvas."
+    },
+    {
+     "t": 99.75,
+     "te": 100.832,
+     "lane": "commentary",
+     "text": "[class 2 tactical] So this is really good work."
+    },
+    {
+     "t": 101.193,
+     "te": 103.997,
+     "lane": "commentary",
+     "text": "[class 2 tactical] Normally very aggressive Mongolian just can't get her work off here at the moment."
+    },
+    {
+     "t": 104.037,
+     "te": 105.358,
+     "lane": "commentary",
+     "text": "[class 2 tactical] It's all Munaxi."
+    },
+    {
+     "t": 104.87,
+     "te": 105.27,
+     "lane": "event",
+     "text": "punching blue rstraight → head (effective)"
+    },
+    {
+     "t": 105.74,
+     "te": 114.253,
+     "lane": "commentary",
+     "text": "[class 2 tactical] And what's difficult for Lisa Khan now is that she's having to go after her and by chasing, Munaxi's just able to adjust her feet, take a little step back and catch her coming in."
+    },
+    {
+     "t": 114.273,
+     "te": 114.994,
+     "lane": "commentary",
+     "text": "[class 3 contextual] So..."
+    },
+    {
+     "t": 116.002,
+     "te": 119.186,
+     "lane": "commentary",
+     "text": "[class 2 tactical] aggression sometimes can work against you unless it's intelligent pressure"
+    },
+    {
+     "t": 116.03,
+     "te": 116.3,
+     "lane": "event",
+     "text": "punching blue lhook → head (effective)"
+    },
+    {
+     "t": 125.053,
+     "te": 126.835,
+     "lane": "commentary",
+     "text": "[class 2 tactical] she's coming to this competition in good form"
+    },
+    {
+     "t": 126.876,
+     "te": 131.842,
+     "lane": "commentary",
+     "text": "[class 3 contextual] the indian silver medalist in the recent world boxing cup in astana"
+    },
+    {
+     "t": 129.03,
+     "te": 129.4,
+     "lane": "event",
+     "text": "punching blue lstraight → head (effective)"
+    },
+    {
+     "t": 130.17,
+     "te": 130.37,
+     "lane": "event",
+     "text": "punching blue rstraight → head (effective)"
+    },
+    {
+     "t": 130.23,
+     "te": 130.63,
+     "lane": "event",
+     "text": "punching red lstraight → head (effective)"
+    },
+    {
+     "t": 130.37,
+     "te": 130.73,
+     "lane": "event",
+     "text": "punching blue lhook → chest (effective)"
+    },
+    {
+     "t": 130.6,
+     "te": 130.97,
+     "lane": "event",
+     "text": "punching blue rhook → chest (effective)"
+    },
+    {
+     "t": 131.882,
+     "te": 134.465,
+     "lane": "commentary",
+     "text": "[class 3 contextual] she beat that's another well i think she just lost her feet"
+    },
+    {
+     "t": 134.505,
+     "te": 134.825,
+     "lane": "commentary",
+     "text": "[class 1 play-by-play] that was a"
+    },
+    {
+     "t": 134.845,
+     "te": 139.371,
+     "lane": "commentary",
+     "text": "[class 1 play-by-play] slip the referee yeah she beat the world"
+    },
+    {
+     "t": 139.391,
+     "te": 142.074,
+     "lane": "commentary",
+     "text": "[class 1 play-by-play] champion back home before"
+    },
+    {
+     "t": 141.6,
+     "te": 141.9,
+     "lane": "event",
+     "text": "punching blue luppercut → abdomen (effective)"
+    },
+    {
+     "t": 141.67,
+     "te": 141.97,
+     "lane": "event",
+     "text": "punching red lhook → head (effective)"
+    },
+    {
+     "t": 141.77,
+     "te": 142.13,
+     "lane": "event",
+     "text": "punching blue ruppercut → head (effective)"
+    },
+    {
+     "t": 143.957,
+     "te": 144.658,
+     "lane": "commentary",
+     "text": "[class 3 contextual] setting sail for"
+    },
+    {
+     "t": 144.47,
+     "te": 144.87,
+     "lane": "event",
+     "text": "punching blue rhook → head (effective)"
+    },
+    {
+     "t": 144.698,
+     "te": 148.488,
+     "lane": "commentary",
+     "text": "[class 3 contextual] these This tournament here in Liverpool."
+    },
+    {
+     "t": 146.17,
+     "te": 146.67,
+     "lane": "event",
+     "text": "punching blue rhook → head (effective)"
+    },
+    {
+     "t": 148.508,
+     "te": 151.931,
+     "lane": "commentary",
+     "text": "[class 2 tactical] What will be interesting here is if Minapsi can maintain this pace,"
+    },
+    {
+     "t": 149.7,
+     "te": 149.93,
+     "lane": "event",
+     "text": "punching blue lhook → chest (effective)"
+    },
+    {
+     "t": 151.951,
+     "te": 157.016,
+     "lane": "commentary",
+     "text": "[class 2 tactical] because she's set a pretty intense pace and been really aggressive."
+    },
+    {
+     "t": 156.87,
+     "te": 157.13,
+     "lane": "event",
+     "text": "punching blue ruppercut → abdomen (effective)"
+    },
+    {
+     "t": 157.036,
+     "te": 160.72,
+     "lane": "commentary",
+     "text": "[class 2 tactical] And it's if Luce Khan can come on strong down the straight."
+    },
+    {
+     "t": 162.242,
+     "te": 164.003,
+     "lane": "commentary",
+     "text": "[class 1 play-by-play] Both on the deck this time."
+    },
+    {
+     "t": 164.023,
+     "te": 167.447,
+     "lane": "commentary",
+     "text": "[class 3 contextual] And the noise in the arena is all the Mongolian."
+    },
+    {
+     "t": 167.887,
+     "te": 174.834,
+     "lane": "commentary",
+     "text": "[class 3 contextual] Plenty of Mongolian flags in the top tier here at the arena in the early backing with Sae Khan, but you have to say this has been..."
+    },
+    {
+     "t": 175.106,
+     "te": 176.948,
+     "lane": "commentary",
+     "text": "[class 2 tactical] fantastic opening round from the Indian in red."
+    },
+    {
+     "t": 176.37,
+     "te": 176.73,
+     "lane": "event",
+     "text": "punching blue lstraight → head (effective)"
+    },
+    {
+     "t": 176.47,
+     "te": 176.9,
+     "lane": "event",
+     "text": "punching red rhook → head (effective)"
+    },
+    {
+     "t": 178.43,
+     "te": 181.014,
+     "lane": "commentary",
+     "text": "[class 1 play-by-play] It was a good backhand from Lutsakan there though,"
+    },
+    {
+     "t": 179.53,
+     "te": 179.87,
+     "lane": "event",
+     "text": "punching blue rstraight → head (effective)"
+    },
+    {
+     "t": 179.77,
+     "te": 180.17,
+     "lane": "event",
+     "text": "punching red lstraight → head (effective)"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "eval/asr/478.json": {
+     "video_id": "478_LUTSAIKHAN-Altantsetseg_MINAKSHI-Minakshi",
+     "fps": 30.0,
+     "total_frames": 19800,
+     "language": "en",
+     "classified_segments": [
+      {
+       "text": "Like we said, what's been fascinating throughout this week is seeing boxers approach, you know, a single bout in one way,",
+       "start_frame": 1788,
+       "end_frame": 1999,
+       "start_time": 59.586,
+       "end_time": 66.633,
+       "class": 3,
+       "words": [
+        {
+         "word": "Like",
+         "start_time": 59.586,
+         "end_time": 59.746,
+         "score": 0.28
+        },
+        {
+         "word": "we",
+         "start_time": 59.766,
+         "end_time": 59.866,
+         "score": 0.389
+        },
+        "…[truncated 19 more items]"
+       ]
+      },
+      {
+       "text": "and then they might box a very different way or a slightly different way, depending on the opponent in front of them.",
+       "start_frame": 2004,
+       "end_frame": 2173,
+       "start_time": 66.793,
+       "end_time": 72.438,
+       "class": 3,
+       "words": [
+        {
+         "word": "and",
+         "start_time": 66.793,
+         "end_time": 66.853,
+         "score": 0.404
+        },
+        {
+         "word": "then",
+         "start_time": 66.873,
+         "end_time": 66.953,
+         "score": 0.017
+        },
+        "…[truncated 20 more items]"
+       ]
+      },
+      {
+       "text": "And, you know, success in these tournaments is being able to adapt.",
+       "start_frame": 2174,
+       "end_frame": 2274,
+       "start_time": 72.458,
+       "end_time": 75.801,
+       "class": 3,
+       "words": [
+        {
+         "word": "And,",
+         "start_time": 72.458,
+         "end_time": 72.558,
+         "score": 0.84
+        },
+        {
+         "word": "you",
+         "start_time": 73.279,
+         "end_time": 73.339,
+         "score": 0.265
+        },
+        "…[truncated 10 more items]"
+       ]
+      },
+      {
+       "text": "Oh, that's a really good backhand.",
+       "start_frame": 2305,
+       "end_frame": 2341,
+       "start_time": 76.842,
+       "end_time": 78.044,
+       "class": 1,
+       "words": [
+        {
+         "word": "Oh,",
+         "start_time": 76.842,
+         "end_time": 76.903,
+         "score": 0.238
+        },
+        {
+         "word": "that's",
+         "start_time": 76.923,
+         "end_time": 77.043,
+         "score": 0.187
+        },
+        "…[truncated 4 more items]"
+       ]
+      },
+      {
+       "text": "What a shot.",
+       "start_frame": 2364,
+       "end_frame": 2375,
+       "start_time": 78.804,
+       "end_time": 79.165,
+       "class": 1,
+       "words": [
+        {
+         "word": "What",
+         "start_time": 78.804,
+         "end_time": 78.884,
+         "score": 0.094
+        },
+        {
+         "word": "a",
+         "start_time": 78.904,
+         "end_time": 78.924,
+         "score": 0.004
+        },
+        "…[truncated 1 more items]"
+       ]
+      },
+      {
+       "text": "And that's that aggression we didn't see from the match yesterday, but she's really brought that front foot pressure and got that power, got real leverage on that backhand.",
+       "start_frame": 2407,
+       "end_frame": 2649,
+       "start_time": 80.246,
+       "end_time": 88.293,
+       "class": 2,
+       "words": [
+        {
+         "word": "And",
+         "start_time": 80.246,
+         "end_time": 80.326,
+         "score": 0.429
+        },
+        {
+         "word": "that's",
+         "start_time": 80.366,
+         "end_time": 80.486,
+         "score": 0.175
+        },
+        "…[truncated 27 more items]"
+       ]
+      },
+      {
+       "text": "Then it was a...",
+       "start_frame": 2649,
+       "end_frame": 2667,
+       "start_time": 88.313,
+       "end_time": 88.914,
+       "class": 3,
+       "words": [
+        {
+         "word": "Then",
+         "start_time": 88.313,
+         "end_time": 88.434,
+         "score": 0.403
+        },
+        {
+         "word": "it",
+         "start_time": 88.514,
+         "end_time": 88.634,
+         "score": 0.298
+        },
+        "…[truncated 2 more items]"
+       ]
+      },
+      {
+       "text": "A great shot and what a start for the Indian boxer.",
+       "start_frame": 2675,
+       "end_frame": 2751,
+       "start_time": 89.154,
+       "end_time": 91.698,
+       "class": 2,
+       "words": [
+        {
+         "word": "A",
+         "start_time": 89.154,
+         "end_time": 89.274,
+         "score": 0.624
+        },
+        {
+         "word": "great",
+         "start_time": 89.294,
+         "end_time": 89.515,
+         "score": 0.941
+        },
+        "…[truncated 9 more items]"
+       ]
+      },
+      {
+       "text": "This is really impressive stuff.",
+       "start_frame": 2752,
+       "end_frame": 2801,
+       "start_time": 91.718,
+       "end_time": 93.361,
+       "class": 2,
+       "words": [
+        {
+         "word": "This",
+         "start_time": 91.718,
+         "end_time": 91.838,
+         "score": 0.681
+        },
+        {
+         "word": "is",
+         "start_time": 91.898,
+         "end_time": 91.958,
+         "score": 0.76
+        },
+        "…[truncated 3 more items]"
+       ]
+      },
+      {
+       "text": "Halfway through the first round, standing count with that backhand that put, let's say, Khan down onto the canvas.",
+       "start_frame": 2807,
+       "end_frame": 2986,
+       "start_time": 93.581,
+       "end_time": 99.53,
+       "class": 1,
+       "words": [
+        {
+         "word": "Halfway",
+         "start_time": 93.581,
+         "end_time": 93.881,
+         "score": 0.885
+        },
+        {
+         "word": "through",
+         "start_time": 93.921,
+         "end_time": 94.082,
+         "score": 0.806
+        },
+        "…[truncated 17 more items]"
+       ]
+      },
+      {
+       "text": "So this is really good work.",
+       "start_frame": 2992,
+       "end_frame": 3025,
+       "start_time": 99.75,
+       "end_time": 100.832,
+       "class": 2,
+       "words": [
+        {
+         "word": "So",
+         "start_time": 99.75,
+         "end_time": 99.891,
+         "score": 0.66
+        },
+        {
+         "word": "this",
+         "start_time": 99.911,
+         "end_time": 100.031,
+         "score": 0.795
+        },
+        "…[truncated 4 more items]"
+       ]
+      },
+      {
+       "text": "Normally very aggressive Mongolian just can't get her work off here at the moment.",
+       "start_frame": 3036,
+       "end_frame": 3120,
+       "start_time": 101.193,
+       "end_time": 103.997,
+       "class": 2,
+       "words": [
+        {
+         "word": "Normally",
+         "start_time": 101.193,
+         "end_time": 101.393,
+         "score": 0.216
+        },
+        {
+         "word": "very",
+         "start_time": 101.433,
+         "end_time": 101.613,
+         "score": 0.837
+        },
+        "…[truncated 12 more items]"
+       ]
+      },
+      {
+       "text": "It's all Munaxi.",
+       "start_frame": 3121,
+       "end_frame": 3161,
+       "start_time": 104.037,
+       "end_time": 105.358,
+       "class": 2,
+       "words": [
+        {
+         "word": "It's",
+         "start_time": 104.037,
+         "end_time": 104.157,
+         "score": 0.557
+        },
+        {
+         "word": "all",
+         "start_time": 104.217,
+         "end_time": 104.338,
+         "score": 0.693
+        },
+        "…[truncated 1 more items]"
+       ]
+      },
+      {
+       "text": "And what's difficult for Lisa Khan now is that she's having to go after her and by chasing, Munaxi's just able to adjust her feet, take a little step back and catch her coming in.",
+       "start_frame": 3172,
+       "end_frame": 3428,
+       "start_time": 105.74,
+       "end_time": 114.253,
+       "class": 2,
+       "words": [
+        {
+         "word": "And",
+         "start_time": 105.74,
+         "end_time": 105.84,
+         "score": 0.497
+        },
+        {
+         "word": "what's",
+         "start_time": 105.86,
+         "end_time": 106.02,
+         "score": 0.332
+        },
+        "…[truncated 33 more items]"
+       ]
+      },
+      {
+       "text": "So...",
+       "start_frame": 3428,
+       "end_frame": 3450,
+       "start_time": 114.273,
+       "end_time": 114.994,
+       "class": 3,
+       "words": [
+        {
+         "word": "So...",
+         "start_time": 114.273,
+         "end_time": 114.994,
+         "score": 0.756
+        }
+       ]
+      },
+      {
+       "text": "aggression sometimes can work against you unless it's intelligent pressure",
+       "start_frame": 3480,
+       "end_frame": 3576,
+       "start_time": 116.002,
+       "end_time": 119.186,
+       "class": 2,
+       "words": [
+        {
+         "word": "aggression",
+         "start_time": 116.002,
+         "end_time": 116.643,
+         "score": 0.488
+        },
+        {
+         "word": "sometimes",
+         "start_time": 116.683,
+         "end_time": 117.063,
+         "score": 0.535
+        },
+        "…[truncated 8 more items]"
+       ]
+      },
+      {
+       "text": "she's coming to this competition in good form",
+       "start_frame": 3752,
+       "end_frame": 3805,
+       "start_time": 125.053,
+       "end_time": 126.835,
+       "class": 2,
+       "words": [
+        {
+         "word": "she's",
+         "start_time": 125.053,
+         "end_time": 125.193,
+         "score": 0.352
+        },
+        {
+         "word": "coming",
+         "start_time": 125.213,
+         "end_time": 125.414,
+         "score": 0.272
+        },
+        "…[truncated 6 more items]"
+       ]
+      },
+      {
+       "text": "the indian silver medalist in the recent world boxing cup in astana",
+       "start_frame": 3806,
+       "end_frame": 3955,
+       "start_time": 126.876,
+       "end_time": 131.842,
+       "class": 3,
+       "words": [
+        {
+         "word": "the",
+         "start_time": 126.876,
+         "end_time": 127.236,
+         "score": 0.837
+        },
+        {
+         "word": "indian",
+         "start_time": 127.356,
+         "end_time": 127.636,
+         "score": 0.922
+        },
+        "…[truncated 10 more items]"
+       ]
+      },
+      {
+       "text": "she beat that's another well i think she just lost her feet",
+       "start_frame": 3956,
+       "end_frame": 4034,
+       "start_time": 131.882,
+       "end_time": 134.465,
+       "class": 3,
+       "words": [
+        {
+         "word": "she",
+         "start_time": 131.882,
+         "end_time": 132.002,
+         "score": 0.589
+        },
+        {
+         "word": "beat",
+         "start_time": 132.042,
+         "end_time": 132.142,
+         "score": 0.353
+        },
+        "…[truncated 10 more items]"
+       ]
+      },
+      {
+       "text": "that was a",
+       "start_frame": 4035,
+       "end_frame": 4045,
+       "start_time": 134.505,
+       "end_time": 134.825,
+       "class": 1,
+       "words": [
+        {
+         "word": "that",
+         "start_time": 134.505,
+         "end_time": 134.685,
+         "score": 0.232
+        },
+        {
+         "word": "was",
+         "start_time": 134.705,
+         "end_time": 134.765,
+         "score": 0.008
+        },
+        "…[truncated 1 more items]"
+       ]
+      },
+      {
+       "text": "slip the referee yeah she beat the world",
+       "start_frame": 4045,
+       "end_frame": 4181,
+       "start_time": 134.845,
+       "end_time": 139.371,
+       "class": 1,
+       "words": [
+        {
+         "word": "slip",
+         "start_time": 134.845,
+         "end_time": 135.086,
+         "score": 0.583
+        },
+        {
+         "word": "the",
+         "start_time": 135.126,
+         "end_time": 135.246,
+         "score": 0.476
+        },
+        "…[truncated 6 more items]"
+       ]
+      },
+      {
+       "text": "champion back home before",
+       "start_frame": 4182,
+       "end_frame": 4262,
+       "start_time": 139.391,
+       "end_time": 142.074,
+       "class": 1,
+       "words": [
+        {
+         "word": "champion",
+         "start_time": 139.391,
+         "end_time": 139.932,
+         "score": 0.477
+        },
+        {
+         "word": "back",
+         "start_time": 141.374,
+         "end_time": 141.514,
+         "score": 0.352
+        },
+        "…[truncated 2 more items]"
+       ]
+      },
+      {
+       "text": "setting sail for",
+       "start_frame": 4319,
+       "end_frame": 4340,
+       "start_time": 143.957,
+       "end_time": 144.658,
+       "class": 3,
+       "words": [
+        {
+         "word": "setting",
+         "start_time": 143.957,
+         "end_time": 144.337,
+         "score": 0.417
+        },
+        {
+         "word": "sail",
+         "start_time": 144.357,
+         "end_time": 144.558,
+         "score": 0.525
+        },
+        "…[truncated 1 more items]"
+       ]
+      },
+      {
+       "text": "these This tournament here in Liverpool.",
+       "start_frame": 4341,
+       "end_frame": 4455,
+       "start_time": 144.698,
+       "end_time": 148.488,
+       "class": 3,
+       "words": [
+        {
+         "word": "these",
+         "start_time": 144.698,
+         "end_time": 144.978,
+         "score": 0.876
+        },
+        {
+         "word": "This",
+         "start_time": 146.466,
+         "end_time": 146.766,
+         "score": 0.384
+        },
+        "…[truncated 4 more items]"
+       ]
+      },
+      {
+       "text": "What will be interesting here is if Minapsi can maintain this pace,",
+       "start_frame": 4455,
+       "end_frame": 4558,
+       "start_time": 148.508,
+       "end_time": 151.931,
+       "class": 2,
+       "words": [
+        {
+         "word": "What",
+         "start_time": 148.508,
+         "end_time": 148.588,
+         "score": 0.001
+        },
+        {
+         "word": "will",
+         "start_time": 148.608,
+         "end_time": 148.688,
+         "score": 0.116
+        },
+        "…[truncated 10 more items]"
+       ]
+      },
+      {
+       "text": "because she's set a pretty intense pace and been really aggressive.",
+       "start_frame": 4559,
+       "end_frame": 4710,
+       "start_time": 151.951,
+       "end_time": 157.016,
+       "class": 2,
+       "words": [
+        {
+         "word": "because",
+         "start_time": 151.951,
+         "end_time": 152.312,
+         "score": 0.239
+        },
+        {
+         "word": "she's",
+         "start_time": 152.332,
+         "end_time": 152.472,
+         "score": 0.468
+        },
+        "…[truncated 9 more items]"
+       ]
+      },
+      {
+       "text": "And it's if Luce Khan can come on strong down the straight.",
+       "start_frame": 4711,
+       "end_frame": 4822,
+       "start_time": 157.036,
+       "end_time": 160.72,
+       "class": 2,
+       "words": [
+        {
+         "word": "And",
+         "start_time": 157.036,
+         "end_time": 157.177,
+         "score": 0.191
+        },
+        {
+         "word": "it's",
+         "start_time": 157.197,
+         "end_time": 157.277,
+         "score": 0.002
+        },
+        "…[truncated 10 more items]"
+       ]
+      },
+      {
+       "text": "Both on the deck this time.",
+       "start_frame": 4867,
+       "end_frame": 4920,
+       "start_time": 162.242,
+       "end_time": 164.003,
+       "class": 1,
+       "words": [
+        {
+         "word": "Both",
+         "start_time": 162.242,
+         "end_time": 162.402,
+         "score": 0.624
+        },
+        {
+         "word": "on",
+         "start_time": 162.462,
+         "end_time": 162.542,
+         "score": 0.588
+        },
+        "…[truncated 4 more items]"
+       ]
+      },
+      {
+       "text": "And the noise in the arena is all the Mongolian.",
+       "start_frame": 4921,
+       "end_frame": 5023,
+       "start_time": 164.023,
+       "end_time": 167.447,
+       "class": 3,
+       "words": [
+        {
+         "word": "And",
+         "start_time": 164.023,
+         "end_time": 164.083,
+         "score": 0.221
+        },
+        {
+         "word": "the",
+         "start_time": 165.024,
+         "end_time": 165.104,
+         "score": 0.986
+        },
+        "…[truncated 8 more items]"
+       ]
+      },
+      {
+       "text": "Plenty of Mongolian flags in the top tier here at the arena in the early backing with Sae Khan, but you have to say this has been...",
+       "start_frame": 5037,
+       "end_frame": 5245,
+       "start_time": 167.887,
+       "end_time": 174.834,
+       "class": 3,
+       "words": [
+        {
+         "word": "Plenty",
+         "start_time": 167.887,
+         "end_time": 168.087,
+         "score": 0.858
+        },
+        {
+         "word": "of",
+         "start_time": 168.107,
+         "end_time": 168.167,
+         "score": 0.508
+        },
+        "…[truncated 25 more items]"
+       ]
+      },
+      {
+       "text": "fantastic opening round from the Indian in red.",
+       "start_frame": 5253,
+       "end_frame": 5308,
+       "start_time": 175.106,
+       "end_time": 176.948,
+       "class": 2,
+       "words": [
+        {
+         "word": "fantastic",
+         "start_time": 175.106,
+         "end_time": 175.587,
+         "score": 0.697
+        },
+        {
+         "word": "opening",
+         "start_time": 175.647,
+         "end_time": 175.867,
+         "score": 0.903
+        },
+        "…[truncated 6 more items]"
+       ]
+      },
+      {
+       "text": "It was a good backhand from Lutsakan there though,",
+       "start_frame": 5353,
+       "end_frame": 5430,
+       "start_time": 178.43,
+       "end_time": 181.014,
+       "class": 1,
+       "words": [
+        {
+         "word": "It",
+         "start_time": 178.43,
+         "end_time": 179.051,
+         "score": 0.644
+        },
+        {
+         "word": "was",
+         "start_time": 179.071,
+         "end_time": 179.271,
+         "score": 0.581
+        },
+        "…[truncated 7 more items]"
+       ]
+      }
+     ],
+     "_note": "segments overlapping 60-180 s only (of 139); each words array cut to 2 items"
+    },
+    "eval/events/478_LUTSAIKHAN-Altantsetseg_MINAKSHI-Minakshi/video_event_inference_3.json": [
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "1965",
+      "frame_end": "1974",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "rstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.027
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "1984",
+      "frame_end": "1994",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "rstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.042
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2004",
+      "frame_end": "2011",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "rstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.115
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2055",
+      "frame_end": "2062",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "rstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.055
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2076",
+      "frame_end": "2084",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "lstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.066
+     },
+     {
+      "distance": "medium",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2079",
+      "frame_end": "2085",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "rstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.091
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2081",
+      "frame_end": "2094",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "rstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.235
+     },
+     {
+      "distance": "medium",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2084",
+      "frame_end": "2094",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "rstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.343
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2091",
+      "frame_end": "2098",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "lstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.079
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2095",
+      "frame_end": "2105",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "rstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.083
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2103",
+      "frame_end": "2114",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "lstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.055
+     },
+     {
+      "distance": "medium",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2213",
+      "frame_end": "2219",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "lstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.034
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2272",
+      "frame_end": "2282",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "rhook",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.047
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2274",
+      "frame_end": "2284",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "lstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.28
+     },
+     {
+      "distance": "medium",
+      "effect": "effective",
+      "foul": false,
+      "frame_begin": "2280",
+      "frame_end": "2287",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "rstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.68
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2280",
+      "frame_end": "2293",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "rhook",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.186
+     },
+     {
+      "distance": "medium",
+      "effect": "effective",
+      "foul": false,
+      "frame_begin": "2308",
+      "frame_end": "2314",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "abdomen",
+      "technique": "rstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.645
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2430",
+      "frame_end": "2440",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "lhook",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.028
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2655",
+      "frame_end": "2665",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "lstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.077
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2655",
+      "frame_end": "2665",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "rstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.168
+     },
+     {
+      "distance": "medium",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2663",
+      "frame_end": "2674",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "chest",
+      "technique": "luppercut",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.471
+     },
+     {
+      "distance": "medium",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2747",
+      "frame_end": "2755",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "rhook",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.418
+     },
+     {
+      "distance": "close",
+      "effect": "effective",
+      "foul": false,
+      "frame_begin": "2746",
+      "frame_end": "2756",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "lstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.656
+     },
+     {
+      "distance": "medium",
+      "effect": "effective",
+      "foul": false,
+      "frame_begin": "2755",
+      "frame_end": "2764",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "lhook",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.716
+     },
+     {
+      "distance": "close",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2752",
+      "frame_end": "2765",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "rhook",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.307
+     },
+     {
+      "distance": "close",
+      "effect": "effective",
+      "foul": false,
+      "frame_begin": "2762",
+      "frame_end": "2772",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "rstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.67
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2774",
+      "frame_end": "2785",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "rhook",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.146
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2775",
+      "frame_end": "2786",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "rstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.109
+     },
+     {
+      "distance": "medium",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2881",
+      "frame_end": "2888",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "lstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.053
+     },
+     {
+      "distance": "medium",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2884",
+      "frame_end": "2895",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "rstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.112
+     },
+     "…[truncated 85 more items]"
+    ],
+    "metadata/timestamp_processed.csv row": "video_id,第一回合开始,第一回合结束,第二回合开始,第二回合结束,第三回合开始,第三回合结束\n478,0,180,240,420,480,660"
+   }
+  },
+  {
+   "title": "482 Women's 75kg final, O'ROURKE (IRL) v WANG (CHN), 1:25–4:10 — point deduction, end of round 1, the break, round 2 start",
+   "video_ref": "482_O'ROURKE-Aoife_WANG-Lina.mp4 (World Boxing Championships Liverpool 2025, Eurovision Sport replay)",
+   "duration_s": 664.8,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 85.442,
+     "te": 90.488,
+     "lane": "commentary",
+     "text": "[class 3 contextual] Again, that sheer physical presence, like you saw at times in the prior contest."
+    },
+    {
+     "t": 90.728,
+     "te": 91.569,
+     "lane": "commentary",
+     "text": "[class 1 play-by-play] Is this a point?"
+    },
+    {
+     "t": 91.589,
+     "te": 92.47,
+     "lane": "commentary",
+     "text": "[class 1 play-by-play] Oh, indeed it is."
+    },
+    {
+     "t": 92.49,
+     "te": 93.211,
+     "lane": "commentary",
+     "text": "[class 2 tactical] That's early, isn't it?"
+    },
+    {
+     "t": 93.351,
+     "te": 95.834,
+     "lane": "commentary",
+     "text": "[class 2 tactical] That's a real boost for O'Rourke, a great boost for Ireland."
+    },
+    {
+     "t": 98.577,
+     "te": 99.478,
+     "lane": "commentary",
+     "text": "[class 3 contextual] I think you make the point, Stacey,"
+    },
+    {
+     "t": 99.498,
+     "te": 104.104,
+     "lane": "commentary",
+     "text": "[class 3 contextual] you never really like to see it, if it's going to disrupt the flow or thwart the dreams of a fighter,"
+    },
+    {
+     "t": 102.3,
+     "te": 102.63,
+     "lane": "event",
+     "text": "punching blue lhook → head (effective)"
+    },
+    {
+     "t": 104.324,
+     "te": 109.029,
+     "lane": "commentary",
+     "text": "[class 2 tactical] and something fairly unobvious, but that is, regardless, great for Ireland."
+    },
+    {
+     "t": 104.93,
+     "te": 105.3,
+     "lane": "event",
+     "text": "punching blue lhook → head (effective)"
+    },
+    {
+     "t": 105.03,
+     "te": 105.4,
+     "lane": "event",
+     "text": "punching red rhook → head (effective)"
+    },
+    {
+     "t": 109.049,
+     "te": 113.074,
+     "lane": "commentary",
+     "text": "[class 2 tactical] They've both got to be really careful, because if that's the sort of..."
+    },
+    {
+     "t": 113.538,
+     "te": 116.281,
+     "lane": "commentary",
+     "text": "[class 2 tactical] side of things to come, you've got to be really careful, haven't you?"
+    },
+    {
+     "t": 116.401,
+     "te": 119.464,
+     "lane": "commentary",
+     "text": "[class 2 tactical] Any infringements are obviously going to be picked up on."
+    },
+    {
+     "t": 117.03,
+     "te": 117.37,
+     "lane": "event",
+     "text": "punching red lstraight → head (effective)"
+    },
+    {
+     "t": 117.03,
+     "te": 117.4,
+     "lane": "event",
+     "text": "punching blue lstraight → head (effective)"
+    },
+    {
+     "t": 119.484,
+     "te": 121.465,
+     "lane": "commentary",
+     "text": "[class 3 contextual] But yeah, it's very early that."
+    },
+    {
+     "t": 119.8,
+     "te": 120.0,
+     "lane": "event",
+     "text": "punching blue ruppercut → chest (effective)"
+    },
+    {
+     "t": 121.966,
+     "te": 130.495,
+     "lane": "commentary",
+     "text": "[class 2 tactical] So O'Rourke, who's been doing very well in this first round anyway, has the advantage of a point deduction for Wang of China."
+    },
+    {
+     "t": 126.27,
+     "te": 126.5,
+     "lane": "event",
+     "text": "punching red lstraight → chest (effective)"
+    },
+    {
+     "t": 127.83,
+     "te": 128.27,
+     "lane": "event",
+     "text": "punching blue lstraight → head (effective)"
+    },
+    {
+     "t": 131.035,
+     "te": 132.657,
+     "lane": "commentary",
+     "text": "[class 2 tactical] She's boxing really well here, O'Rourke,"
+    },
+    {
+     "t": 132.677,
+     "te": 136.06,
+     "lane": "commentary",
+     "text": "[class 2 tactical] and she's come out with a clear plan to, you know, push her opponent back,"
+    },
+    {
+     "t": 137.001,
+     "te": 140.925,
+     "lane": "commentary",
+     "text": "[class 2 tactical] that aggressive jump-up pressure from her, and she's barely taking a step back."
+    },
+    {
+     "t": 139.3,
+     "te": 139.6,
+     "lane": "event",
+     "text": "punching red lstraight → head (effective)"
+    },
+    {
+     "t": 139.33,
+     "te": 139.83,
+     "lane": "event",
+     "text": "punching blue lstraight → head (effective)"
+    },
+    {
+     "t": 140.93,
+     "te": 141.3,
+     "lane": "event",
+     "text": "punching red rstraight → head (effective)"
+    },
+    {
+     "t": 140.985,
+     "te": 141.586,
+     "lane": "commentary",
+     "text": "[class 3 contextual] It's, um,"
+    },
+    {
+     "t": 141.89,
+     "te": 143.612,
+     "lane": "commentary",
+     "text": "[class 2 tactical] But she's landed quality shots as well."
+    },
+    {
+     "t": 143.893,
+     "te": 145.635,
+     "lane": "commentary",
+     "text": "[class 2 tactical] Of course, it can't just be about pressure alone."
+    },
+    {
+     "t": 144.47,
+     "te": 144.7,
+     "lane": "event",
+     "text": "punching blue lstraight → head (effective)"
+    },
+    {
+     "t": 144.5,
+     "te": 144.87,
+     "lane": "event",
+     "text": "punching red lhook → head (effective)"
+    },
+    {
+     "t": 146.856,
+     "te": 147.717,
+     "lane": "commentary",
+     "text": "[class 1 play-by-play] She's landed clean."
+    },
+    {
+     "t": 147.998,
+     "te": 150.059,
+     "lane": "commentary",
+     "text": "[class 2 tactical] Really good work from O'Rourke."
+    },
+    {
+     "t": 150.6,
+     "te": 151.03,
+     "lane": "event",
+     "text": "punching red rstraight → head (effective)"
+    },
+    {
+     "t": 150.73,
+     "te": 150.93,
+     "lane": "event",
+     "text": "punching blue lstraight → head (effective)"
+    },
+    {
+     "t": 150.93,
+     "te": 151.37,
+     "lane": "event",
+     "text": "punching red lhook → head (effective)"
+    },
+    {
+     "t": 151.442,
+     "te": 154.767,
+     "lane": "commentary",
+     "text": "[class 2 tactical] One thing about O'Rourke, anyway, you always know the engine's going to be good."
+    },
+    {
+     "t": 154.787,
+     "te": 162.176,
+     "lane": "commentary",
+     "text": "[class 3 contextual] She's a phenomenally fit athlete, a CrossFit champion as well as everything else, and she can keep this pace up throughout the three three-minute rounds, no danger."
+    },
+    {
+     "t": 159.63,
+     "te": 159.87,
+     "lane": "event",
+     "text": "punching blue ruppercut → head (effective)"
+    },
+    {
+     "t": 159.8,
+     "te": 160.1,
+     "lane": "event",
+     "text": "punching blue rstraight → head (effective)"
+    },
+    {
+     "t": 162.717,
+     "te": 167.503,
+     "lane": "commentary",
+     "text": "[class 2 tactical] What she's done is she's nullified Wang in the sense that Wang likes to get that rhythm."
+    },
+    {
+     "t": 164.03,
+     "te": 164.47,
+     "lane": "event",
+     "text": "punching blue rstraight → head (effective)"
+    },
+    {
+     "t": 167.723,
+     "te": 169.906,
+     "lane": "commentary",
+     "text": "[class 2 tactical] She likes to get that pattern and that fluid movement."
+    },
+    {
+     "t": 170.082,
+     "te": 171.084,
+     "lane": "commentary",
+     "text": "[class 2 tactical] She's not allowed it at all."
+    },
+    {
+     "t": 171.07,
+     "te": 171.4,
+     "lane": "event",
+     "text": "punching red lstraight → head (effective)"
+    },
+    {
+     "t": 171.07,
+     "te": 171.43,
+     "lane": "event",
+     "text": "punching blue lstraight → head (effective)"
+    },
+    {
+     "t": 171.224,
+     "te": 172.066,
+     "lane": "commentary",
+     "text": "[class 2 tactical] She's taken that away from him."
+    },
+    {
+     "t": 171.67,
+     "te": 172.07,
+     "lane": "event",
+     "text": "punching red lstraight → head (effective)"
+    },
+    {
+     "t": 172.086,
+     "te": 177.337,
+     "lane": "commentary",
+     "text": "[class 2 tactical] It's made it really difficult for Ran to have the space with which she usually likes to work."
+    },
+    {
+     "t": 173.63,
+     "te": 174.0,
+     "lane": "event",
+     "text": "punching blue lstraight → head (effective)"
+    },
+    {
+     "t": 179.701,
+     "te": 186.034,
+     "lane": "commentary",
+     "text": "[class 3 contextual] And it's still an awful progression from the Roscommon woman who hit the top of the gloves at the end of the round and goes back to that blue corner."
+    },
+    {
+     "t": 180.0,
+     "te": null,
+     "lane": "event",
+     "text": "第一回合结束 (round 1 end)"
+    },
+    {
+     "t": 180.03,
+     "te": 180.5,
+     "lane": "event",
+     "text": "punching red lstraight → head (effective)"
+    },
+    {
+     "t": 197.346,
+     "te": 201.214,
+     "lane": "commentary",
+     "text": "[class 2 tactical] We'll have to see how the judges have it, but I think that was a really strong round for O'Rourke."
+    },
+    {
+     "t": 201.234,
+     "te": 202.898,
+     "lane": "commentary",
+     "text": "[class 2 tactical] I think, you know, she was on the front foot,"
+    },
+    {
+     "t": 201.5,
+     "te": 202.17,
+     "lane": "event",
+     "text": "punching blue lstraight → head (effective)"
+    },
+    {
+     "t": 202.998,
+     "te": 206.625,
+     "lane": "commentary",
+     "text": "[class 2 tactical] she was landing clean, bringing all that power to Wang"
+    },
+    {
+     "t": 204.93,
+     "te": 205.47,
+     "lane": "event",
+     "text": "punching blue lstraight → head (effective)"
+    },
+    {
+     "t": 205.73,
+     "te": 206.07,
+     "lane": "event",
+     "text": "punching blue luppercut → abdomen (effective)"
+    },
+    {
+     "t": 206.645,
+     "te": 215.524,
+     "lane": "commentary",
+     "text": "[class 2 tactical] and just, like I say, didn't give Wang the opportunity to get into that rhythm and that flow that she usually enjoys. So let's"
+    },
+    {
+     "t": 215.564,
+     "te": 216.466,
+     "lane": "commentary",
+     "text": "[class 3 contextual] see how they've got it."
+    },
+    {
+     "t": 220.93,
+     "te": 223.032,
+     "lane": "commentary",
+     "text": "[class 3 contextual] Five judges ringside."
+    },
+    {
+     "t": 223.092,
+     "te": 233.022,
+     "lane": "commentary",
+     "text": "[class 3 contextual] Well, three have gone for Wang, Argentina, France, and India, whereas the other judges from Ecuador and Egypt prefer O'Rourke's busy listen."
+    },
+    {
+     "t": 233.302,
+     "te": 235.044,
+     "lane": "commentary",
+     "text": "[class 3 contextual] Well, I'm surprised at that, to be honest."
+    },
+    {
+     "t": 235.064,
+     "te": 238.487,
+     "lane": "commentary",
+     "text": "[class 2 tactical] I mean, I just thought O'Rourke had a really, really strong round."
+    },
+    {
+     "t": 238.507,
+     "te": 244.713,
+     "lane": "commentary",
+     "text": "[class 3 contextual] Obviously, the point reduction will skew those scorecards from that first round,"
+    },
+    {
+     "t": 240.0,
+     "te": null,
+     "lane": "event",
+     "text": "第二回合开始 (round 2 start)"
+    },
+    {
+     "t": 244.813,
+     "te": 249.778,
+     "lane": "commentary",
+     "text": "[class 3 contextual] but aside from that, I just don't know how you couldn't give that to O'Rourke."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "eval/asr/482.json": {
+     "video_id": "482_O'ROURKE-Aoife_WANG-Lina",
+     "fps": 30.0,
+     "total_frames": 19944,
+     "language": "en",
+     "classified_segments": [
+      {
+       "text": "Again, that sheer physical presence, like you saw at times in the prior contest.",
+       "start_frame": 2563,
+       "end_frame": 2715,
+       "start_time": 85.442,
+       "end_time": 90.488,
+       "class": 3,
+       "words": [
+        {
+         "word": "Again,",
+         "start_time": 85.442,
+         "end_time": 85.742,
+         "score": 0.765
+        },
+        {
+         "word": "that",
+         "start_time": 85.762,
+         "end_time": 85.903,
+         "score": 0.509
+        },
+        "…[truncated 12 more items]"
+       ]
+      },
+      {
+       "text": "Is this a point?",
+       "start_frame": 2722,
+       "end_frame": 2747,
+       "start_time": 90.728,
+       "end_time": 91.569,
+       "class": 1,
+       "words": [
+        {
+         "word": "Is",
+         "start_time": 90.728,
+         "end_time": 90.788,
+         "score": 0.3
+        },
+        {
+         "word": "this",
+         "start_time": 90.808,
+         "end_time": 91.129,
+         "score": 0.383
+        },
+        "…[truncated 2 more items]"
+       ]
+      },
+      {
+       "text": "Oh, indeed it is.",
+       "start_frame": 2748,
+       "end_frame": 2774,
+       "start_time": 91.589,
+       "end_time": 92.47,
+       "class": 1,
+       "words": [
+        {
+         "word": "Oh,",
+         "start_time": 91.589,
+         "end_time": 91.729,
+         "score": 0.64
+        },
+        {
+         "word": "indeed",
+         "start_time": 91.869,
+         "end_time": 92.01,
+         "score": 0.222
+        },
+        "…[truncated 2 more items]"
+       ]
+      },
+      {
+       "text": "That's early, isn't it?",
+       "start_frame": 2775,
+       "end_frame": 2796,
+       "start_time": 92.49,
+       "end_time": 93.211,
+       "class": 2,
+       "words": [
+        {
+         "word": "That's",
+         "start_time": 92.49,
+         "end_time": 92.75,
+         "score": 0.169
+        },
+        {
+         "word": "early,",
+         "start_time": 92.77,
+         "end_time": 92.931,
+         "score": 0.158
+        },
+        "…[truncated 2 more items]"
+       ]
+      },
+      {
+       "text": "That's a real boost for O'Rourke, a great boost for Ireland.",
+       "start_frame": 2801,
+       "end_frame": 2875,
+       "start_time": 93.351,
+       "end_time": 95.834,
+       "class": 2,
+       "words": [
+        {
+         "word": "That's",
+         "start_time": 93.351,
+         "end_time": 93.511,
+         "score": 0.304
+        },
+        {
+         "word": "a",
+         "start_time": 93.571,
+         "end_time": 93.591,
+         "score": 0.139
+        },
+        "…[truncated 9 more items]"
+       ]
+      },
+      {
+       "text": "I think you make the point, Stacey,",
+       "start_frame": 2957,
+       "end_frame": 2984,
+       "start_time": 98.577,
+       "end_time": 99.478,
+       "class": 3,
+       "words": [
+        {
+         "word": "I",
+         "start_time": 98.577,
+         "end_time": 98.597,
+         "score": 0.279
+        },
+        {
+         "word": "think",
+         "start_time": 98.617,
+         "end_time": 98.757,
+         "score": 0.444
+        },
+        "…[truncated 5 more items]"
+       ]
+      },
+      {
+       "text": "you never really like to see it, if it's going to disrupt the flow or thwart the dreams of a fighter,",
+       "start_frame": 2985,
+       "end_frame": 3123,
+       "start_time": 99.498,
+       "end_time": 104.104,
+       "class": 3,
+       "words": [
+        {
+         "word": "you",
+         "start_time": 99.498,
+         "end_time": 99.558,
+         "score": 0.198
+        },
+        {
+         "word": "never",
+         "start_time": 99.598,
+         "end_time": 99.799,
+         "score": 0.83
+        },
+        "…[truncated 19 more items]"
+       ]
+      },
+      {
+       "text": "and something fairly unobvious, but that is, regardless, great for Ireland.",
+       "start_frame": 3130,
+       "end_frame": 3271,
+       "start_time": 104.324,
+       "end_time": 109.029,
+       "class": 2,
+       "words": [
+        {
+         "word": "and",
+         "start_time": 104.324,
+         "end_time": 104.404,
+         "score": 0.341
+        },
+        {
+         "word": "something",
+         "start_time": 104.464,
+         "end_time": 104.985,
+         "score": 0.393
+        },
+        "…[truncated 9 more items]"
+       ]
+      },
+      {
+       "text": "They've both got to be really careful, because if that's the sort of...",
+       "start_frame": 3271,
+       "end_frame": 3392,
+       "start_time": 109.049,
+       "end_time": 113.074,
+       "class": 2,
+       "words": [
+        {
+         "word": "They've",
+         "start_time": 109.049,
+         "end_time": 109.31,
+         "score": 0.333
+        },
+        {
+         "word": "both",
+         "start_time": 109.35,
+         "end_time": 109.61,
+         "score": 0.686
+        },
+        "…[truncated 11 more items]"
+       ]
+      },
+      {
+       "text": "side of things to come, you've got to be really careful, haven't you?",
+       "start_frame": 3406,
+       "end_frame": 3488,
+       "start_time": 113.538,
+       "end_time": 116.281,
+       "class": 2,
+       "words": [
+        {
+         "word": "side",
+         "start_time": 113.538,
+         "end_time": 113.958,
+         "score": 0.417
+        },
+        {
+         "word": "of",
+         "start_time": 113.978,
+         "end_time": 114.038,
+         "score": 0.476
+        },
+        "…[truncated 11 more items]"
+       ]
+      },
+      {
+       "text": "Any infringements are obviously going to be picked up on.",
+       "start_frame": 3492,
+       "end_frame": 3584,
+       "start_time": 116.401,
+       "end_time": 119.464,
+       "class": 2,
+       "words": [
+        {
+         "word": "Any",
+         "start_time": 116.401,
+         "end_time": 116.501,
+         "score": 0.608
+        },
+        {
+         "word": "infringements",
+         "start_time": 116.681,
+         "end_time": 117.082,
+         "score": 0.071
+        },
+        "…[truncated 8 more items]"
+       ]
+      },
+      {
+       "text": "But yeah, it's very early that.",
+       "start_frame": 3585,
+       "end_frame": 3644,
+       "start_time": 119.484,
+       "end_time": 121.465,
+       "class": 3,
+       "words": [
+        {
+         "word": "But",
+         "start_time": 119.484,
+         "end_time": 119.564,
+         "score": 0.36
+        },
+        {
+         "word": "yeah,",
+         "start_time": 119.584,
+         "end_time": 119.784,
+         "score": 0.548
+        },
+        "…[truncated 4 more items]"
+       ]
+      },
+      {
+       "text": "So O'Rourke, who's been doing very well in this first round anyway, has the advantage of a point deduction for Wang of China.",
+       "start_frame": 3659,
+       "end_frame": 3915,
+       "start_time": 121.966,
+       "end_time": 130.495,
+       "class": 2,
+       "words": [
+        {
+         "word": "So",
+         "start_time": 121.966,
+         "end_time": 122.147,
+         "score": 0.936
+        },
+        {
+         "word": "O'Rourke,",
+         "start_time": 122.267,
+         "end_time": 122.467,
+         "score": 0.178
+        },
+        "…[truncated 21 more items]"
+       ]
+      },
+      {
+       "text": "She's boxing really well here, O'Rourke,",
+       "start_frame": 3931,
+       "end_frame": 3980,
+       "start_time": 131.035,
+       "end_time": 132.657,
+       "class": 2,
+       "words": [
+        {
+         "word": "She's",
+         "start_time": 131.035,
+         "end_time": 131.136,
+         "score": 0.159
+        },
+        {
+         "word": "boxing",
+         "start_time": 131.176,
+         "end_time": 131.516,
+         "score": 0.715
+        },
+        "…[truncated 4 more items]"
+       ]
+      },
+      {
+       "text": "and she's come out with a clear plan to, you know, push her opponent back,",
+       "start_frame": 3980,
+       "end_frame": 4082,
+       "start_time": 132.677,
+       "end_time": 136.06,
+       "class": 2,
+       "words": [
+        {
+         "word": "and",
+         "start_time": 132.677,
+         "end_time": 132.757,
+         "score": 0.772
+        },
+        {
+         "word": "she's",
+         "start_time": 132.777,
+         "end_time": 132.917,
+         "score": 0.589
+        },
+        "…[truncated 13 more items]"
+       ]
+      },
+      {
+       "text": "that aggressive jump-up pressure from her, and she's barely taking a step back.",
+       "start_frame": 4110,
+       "end_frame": 4228,
+       "start_time": 137.001,
+       "end_time": 140.925,
+       "class": 2,
+       "words": [
+        {
+         "word": "that",
+         "start_time": 137.001,
+         "end_time": 137.082,
+         "score": 0.149
+        },
+        {
+         "word": "aggressive",
+         "start_time": 137.162,
+         "end_time": 138.103,
+         "score": 0.467
+        },
+        "…[truncated 11 more items]"
+       ]
+      },
+      {
+       "text": "It's, um,",
+       "start_frame": 4230,
+       "end_frame": 4248,
+       "start_time": 140.985,
+       "end_time": 141.586,
+       "class": 3,
+       "words": [
+        {
+         "word": "It's,",
+         "start_time": 140.985,
+         "end_time": 141.446,
+         "score": 0.548
+        },
+        {
+         "word": "um,",
+         "start_time": 141.526,
+         "end_time": 141.586,
+         "score": 0.333
+        }
+       ]
+      },
+      {
+       "text": "But she's landed quality shots as well.",
+       "start_frame": 4257,
+       "end_frame": 4308,
+       "start_time": 141.89,
+       "end_time": 143.612,
+       "class": 2,
+       "words": [
+        {
+         "word": "But",
+         "start_time": 141.89,
+         "end_time": 142.19,
+         "score": 0.466
+        },
+        {
+         "word": "she's",
+         "start_time": 142.23,
+         "end_time": 142.531,
+         "score": 0.29
+        },
+        "…[truncated 5 more items]"
+       ]
+      },
+      {
+       "text": "Of course, it can't just be about pressure alone.",
+       "start_frame": 4317,
+       "end_frame": 4369,
+       "start_time": 143.893,
+       "end_time": 145.635,
+       "class": 2,
+       "words": [
+        {
+         "word": "Of",
+         "start_time": 143.893,
+         "end_time": 143.933,
+         "score": 0.036
+        },
+        {
+         "word": "course,",
+         "start_time": 143.953,
+         "end_time": 144.153,
+         "score": 0.237
+        },
+        "…[truncated 7 more items]"
+       ]
+      },
+      {
+       "text": "She's landed clean.",
+       "start_frame": 4406,
+       "end_frame": 4432,
+       "start_time": 146.856,
+       "end_time": 147.717,
+       "class": 1,
+       "words": [
+        {
+         "word": "She's",
+         "start_time": 146.856,
+         "end_time": 147.017,
+         "score": 0.279
+        },
+        {
+         "word": "landed",
+         "start_time": 147.097,
+         "end_time": 147.397,
+         "score": 0.419
+        },
+        "…[truncated 1 more items]"
+       ]
+      },
+      {
+       "text": "Really good work from O'Rourke.",
+       "start_frame": 4440,
+       "end_frame": 4502,
+       "start_time": 147.998,
+       "end_time": 150.059,
+       "class": 2,
+       "words": [
+        {
+         "word": "Really",
+         "start_time": 147.998,
+         "end_time": 148.258,
+         "score": 0.481
+        },
+        {
+         "word": "good",
+         "start_time": 148.318,
+         "end_time": 148.418,
+         "score": 0.331
+        },
+        "…[truncated 3 more items]"
+       ]
+      },
+      {
+       "text": "One thing about O'Rourke, anyway, you always know the engine's going to be good.",
+       "start_frame": 4543,
+       "end_frame": 4643,
+       "start_time": 151.442,
+       "end_time": 154.767,
+       "class": 2,
+       "words": [
+        {
+         "word": "One",
+         "start_time": 151.442,
+         "end_time": 151.522,
+         "score": 0.272
+        },
+        {
+         "word": "thing",
+         "start_time": 151.623,
+         "end_time": 151.723,
+         "score": 0.129
+        },
+        "…[truncated 12 more items]"
+       ]
+      },
+      {
+       "text": "She's a phenomenally fit athlete, a CrossFit champion as well as everything else, and she can keep this pace up throughout the three three-minute rounds, no danger.",
+       "start_frame": 4644,
+       "end_frame": 4865,
+       "start_time": 154.787,
+       "end_time": 162.176,
+       "class": 3,
+       "words": [
+        {
+         "word": "She's",
+         "start_time": 154.787,
+         "end_time": 154.987,
+         "score": 0.159
+        },
+        {
+         "word": "a",
+         "start_time": 155.007,
+         "end_time": 155.027,
+         "score": 0.027
+        },
+        "…[truncated 25 more items]"
+       ]
+      },
+      {
+       "text": "What she's done is she's nullified Wang in the sense that Wang likes to get that rhythm.",
+       "start_frame": 4882,
+       "end_frame": 5025,
+       "start_time": 162.717,
+       "end_time": 167.503,
+       "class": 2,
+       "words": [
+        {
+         "word": "What",
+         "start_time": 162.717,
+         "end_time": 162.837,
+         "score": 0.854
+        },
+        {
+         "word": "she's",
+         "start_time": 162.877,
+         "end_time": 163.017,
+         "score": 0.712
+        },
+        "…[truncated 15 more items]"
+       ]
+      },
+      {
+       "text": "She likes to get that pattern and that fluid movement.",
+       "start_frame": 5032,
+       "end_frame": 5097,
+       "start_time": 167.723,
+       "end_time": 169.906,
+       "class": 2,
+       "words": [
+        {
+         "word": "She",
+         "start_time": 167.723,
+         "end_time": 167.863,
+         "score": 0.518
+        },
+        {
+         "word": "likes",
+         "start_time": 167.883,
+         "end_time": 168.004,
+         "score": 0.533
+        },
+        "…[truncated 8 more items]"
+       ]
+      },
+      {
+       "text": "She's not allowed it at all.",
+       "start_frame": 5102,
+       "end_frame": 5133,
+       "start_time": 170.082,
+       "end_time": 171.084,
+       "class": 2,
+       "words": [
+        {
+         "word": "She's",
+         "start_time": 170.082,
+         "end_time": 170.262,
+         "score": 0.359
+        },
+        {
+         "word": "not",
+         "start_time": 170.302,
+         "end_time": 170.403,
+         "score": 0.948
+        },
+        "…[truncated 4 more items]"
+       ]
+      },
+      {
+       "text": "She's taken that away from him.",
+       "start_frame": 5137,
+       "end_frame": 5162,
+       "start_time": 171.224,
+       "end_time": 172.066,
+       "class": 2,
+       "words": [
+        {
+         "word": "She's",
+         "start_time": 171.224,
+         "end_time": 171.425,
+         "score": 0.147
+        },
+        {
+         "word": "taken",
+         "start_time": 171.445,
+         "end_time": 171.605,
+         "score": 0.202
+        },
+        "…[truncated 4 more items]"
+       ]
+      },
+      {
+       "text": "It's made it really difficult for Ran to have the space with which she usually likes to work.",
+       "start_frame": 5163,
+       "end_frame": 5320,
+       "start_time": 172.086,
+       "end_time": 177.337,
+       "class": 2,
+       "words": [
+        {
+         "word": "It's",
+         "start_time": 172.086,
+         "end_time": 172.166,
+         "score": 0.172
+        },
+        {
+         "word": "made",
+         "start_time": 172.246,
+         "end_time": 172.427,
+         "score": 0.548
+        },
+        "…[truncated 16 more items]"
+       ]
+      },
+      {
+       "text": "And it's still an awful progression from the Roscommon woman who hit the top of the gloves at the end of the round and goes back to that blue corner.",
+       "start_frame": 5391,
+       "end_frame": 5581,
+       "start_time": 179.701,
+       "end_time": 186.034,
+       "class": 3,
+       "words": [
+        {
+         "word": "And",
+         "start_time": 179.701,
+         "end_time": 180.042,
+         "score": 0.656
+        },
+        {
+         "word": "it's",
+         "start_time": 180.623,
+         "end_time": 180.723,
+         "score": 0.224
+        },
+        "…[truncated 28 more items]"
+       ]
+      },
+      {
+       "text": "We'll have to see how the judges have it, but I think that was a really strong round for O'Rourke.",
+       "start_frame": 5920,
+       "end_frame": 6036,
+       "start_time": 197.346,
+       "end_time": 201.214,
+       "class": 2,
+       "words": [
+        {
+         "word": "We'll",
+         "start_time": 197.346,
+         "end_time": 197.506,
+         "score": 0.583
+        },
+        {
+         "word": "have",
+         "start_time": 197.587,
+         "end_time": 197.927,
+         "score": 0.467
+        },
+        "…[truncated 18 more items]"
+       ]
+      },
+      {
+       "text": "I think, you know, she was on the front foot,",
+       "start_frame": 6037,
+       "end_frame": 6087,
+       "start_time": 201.234,
+       "end_time": 202.898,
+       "class": 2,
+       "words": [
+        {
+         "word": "I",
+         "start_time": 201.234,
+         "end_time": 201.254,
+         "score": 0.005
+        },
+        {
+         "word": "think,",
+         "start_time": 201.274,
+         "end_time": 201.415,
+         "score": 0.662
+        },
+        "…[truncated 8 more items]"
+       ]
+      },
+      {
+       "text": "she was landing clean, bringing all that power to Wang",
+       "start_frame": 6090,
+       "end_frame": 6199,
+       "start_time": 202.998,
+       "end_time": 206.625,
+       "class": 2,
+       "words": [
+        {
+         "word": "she",
+         "start_time": 202.998,
+         "end_time": 203.078,
+         "score": 0.815
+        },
+        {
+         "word": "was",
+         "start_time": 203.118,
+         "end_time": 203.178,
+         "score": 0.688
+        },
+        "…[truncated 8 more items]"
+       ]
+      },
+      {
+       "text": "and just, like I say, didn't give Wang the opportunity to get into that rhythm and that flow that she usually enjoys. So let's",
+       "start_frame": 6199,
+       "end_frame": 6466,
+       "start_time": 206.645,
+       "end_time": 215.524,
+       "class": 2,
+       "words": [
+        {
+         "word": "and",
+         "start_time": 206.645,
+         "end_time": 206.726,
+         "score": 0.644
+        },
+        {
+         "word": "just,",
+         "start_time": 206.746,
+         "end_time": 207.147,
+         "score": 0.853
+        },
+        "…[truncated 22 more items]"
+       ]
+      },
+      {
+       "text": "see how they've got it.",
+       "start_frame": 6467,
+       "end_frame": 6494,
+       "start_time": 215.564,
+       "end_time": 216.466,
+       "class": 3,
+       "words": [
+        {
+         "word": "see",
+         "start_time": 215.564,
+         "end_time": 215.724,
+         "score": 0.787
+        },
+        {
+         "word": "how",
+         "start_time": 215.765,
+         "end_time": 215.825,
+         "score": 0.917
+        },
+        "…[truncated 3 more items]"
+       ]
+      },
+      {
+       "text": "Five judges ringside.",
+       "start_frame": 6628,
+       "end_frame": 6691,
+       "start_time": 220.93,
+       "end_time": 223.032,
+       "class": 3,
+       "words": [
+        {
+         "word": "Five",
+         "start_time": 220.93,
+         "end_time": 221.711,
+         "score": 0.749
+        },
+        {
+         "word": "judges",
+         "start_time": 221.911,
+         "end_time": 222.231,
+         "score": 0.906
+        },
+        "…[truncated 1 more items]"
+       ]
+      },
+      {
+       "text": "Well, three have gone for Wang, Argentina, France, and India, whereas the other judges from Ecuador and Egypt prefer O'Rourke's busy listen.",
+       "start_frame": 6693,
+       "end_frame": 6991,
+       "start_time": 223.092,
+       "end_time": 233.022,
+       "class": 3,
+       "words": [
+        {
+         "word": "Well,",
+         "start_time": 223.092,
+         "end_time": 223.673,
+         "score": 0.927
+        },
+        {
+         "word": "three",
+         "start_time": 223.693,
+         "end_time": 224.013,
+         "score": 0.858
+        },
+        "…[truncated 20 more items]"
+       ]
+      },
+      {
+       "text": "Well, I'm surprised at that, to be honest.",
+       "start_frame": 6999,
+       "end_frame": 7051,
+       "start_time": 233.302,
+       "end_time": 235.044,
+       "class": 3,
+       "words": [
+        {
+         "word": "Well,",
+         "start_time": 233.302,
+         "end_time": 233.402,
+         "score": 0.101
+        },
+        {
+         "word": "I'm",
+         "start_time": 233.422,
+         "end_time": 233.502,
+         "score": 0.45
+        },
+        "…[truncated 6 more items]"
+       ]
+      },
+      {
+       "text": "I mean, I just thought O'Rourke had a really, really strong round.",
+       "start_frame": 7052,
+       "end_frame": 7155,
+       "start_time": 235.064,
+       "end_time": 238.487,
+       "class": 2,
+       "words": [
+        {
+         "word": "I",
+         "start_time": 235.064,
+         "end_time": 235.084,
+         "score": 0.169
+        },
+        {
+         "word": "mean,",
+         "start_time": 235.104,
+         "end_time": 235.364,
+         "score": 0.445
+        },
+        "…[truncated 10 more items]"
+       ]
+      },
+      {
+       "text": "Obviously, the point reduction will skew those scorecards from that first round,",
+       "start_frame": 7155,
+       "end_frame": 7341,
+       "start_time": 238.507,
+       "end_time": 244.713,
+       "class": 3,
+       "words": [
+        {
+         "word": "Obviously,",
+         "start_time": 238.507,
+         "end_time": 238.807,
+         "score": 0.224
+        },
+        {
+         "word": "the",
+         "start_time": 238.827,
+         "end_time": 238.948,
+         "score": 0.727
+        },
+        "…[truncated 10 more items]"
+       ]
+      },
+      {
+       "text": "but aside from that, I just don't know how you couldn't give that to O'Rourke.",
+       "start_frame": 7344,
+       "end_frame": 7493,
+       "start_time": 244.813,
+       "end_time": 249.778,
+       "class": 3,
+       "words": [
+        {
+         "word": "but",
+         "start_time": 244.813,
+         "end_time": 244.933,
+         "score": 0.453
+        },
+        {
+         "word": "aside",
+         "start_time": 245.434,
+         "end_time": 245.814,
+         "score": 0.83
+        },
+        "…[truncated 13 more items]"
+       ]
+      }
+     ],
+     "_note": "segments overlapping 85-250 s only (of 136); each words array cut to 2 items"
+    },
+    "eval/events/482_O'ROURKE-Aoife_WANG-Lina/video_event_inference_3.json": [
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2895",
+      "frame_end": "2912",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "lstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.119
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2937",
+      "frame_end": "2948",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "lstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.149
+     },
+     {
+      "distance": "medium",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2944",
+      "frame_end": "2957",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "lhook",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.067
+     },
+     {
+      "distance": "medium",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2944",
+      "frame_end": "2959",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "rstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.361
+     },
+     {
+      "distance": "medium",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2953",
+      "frame_end": "2960",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "lhook",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.22
+     },
+     {
+      "distance": "medium",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "2956",
+      "frame_end": "2970",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "lhook",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.105
+     },
+     {
+      "distance": "medium",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "3008",
+      "frame_end": "3018",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "lstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.405
+     },
+     {
+      "distance": "medium",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "3009",
+      "frame_end": "3020",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "lstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.224
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "3014",
+      "frame_end": "3027",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "rstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.046
+     },
+     {
+      "distance": "medium",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "3061",
+      "frame_end": "3071",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "rstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.177
+     },
+     {
+      "distance": "medium",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "3059",
+      "frame_end": "3071",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "rstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.051
+     },
+     {
+      "distance": "close",
+      "effect": "effective",
+      "foul": false,
+      "frame_begin": "3069",
+      "frame_end": "3079",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "lhook",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.597
+     },
+     {
+      "distance": "close",
+      "effect": "touch",
+      "foul": false,
+      "frame_begin": "3073",
+      "frame_end": "3081",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "lstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.509
+     },
+     {
+      "distance": "medium",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "3081",
+      "frame_end": "3093",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "rhook",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.133
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "3100",
+      "frame_end": "3110",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "lstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.065
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "3108",
+      "frame_end": "3121",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "rstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.092
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "3109",
+      "frame_end": "3122",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "lstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.054
+     },
+     {
+      "distance": "medium",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "3116",
+      "frame_end": "3124",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "chest",
+      "technique": "rstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.095
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "3121",
+      "frame_end": "3127",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "lstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.116
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "3123",
+      "frame_end": "3132",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "lstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.063
+     },
+     {
+      "distance": "close",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "3149",
+      "frame_end": "3155",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "lhook",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.234
+     },
+     {
+      "distance": "medium",
+      "effect": "effective",
+      "foul": false,
+      "frame_begin": "3148",
+      "frame_end": "3159",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "lhook",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.604
+     },
+     {
+      "distance": "close",
+      "effect": "effective",
+      "foul": false,
+      "frame_begin": "3151",
+      "frame_end": "3162",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "rhook",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.707
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "3159",
+      "frame_end": "3173",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "lhook",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.074
+     },
+     {
+      "distance": "medium",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "3199",
+      "frame_end": "3207",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "lstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.242
+     },
+     {
+      "distance": "medium",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "3204",
+      "frame_end": "3217",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "rhook",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.178
+     },
+     {
+      "distance": "medium",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "3203",
+      "frame_end": "3220",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "lhook",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.3
+     },
+     {
+      "distance": "medium",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "3235",
+      "frame_end": "3246",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "rstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.118
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "3332",
+      "frame_end": "3344",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "blue",
+      "target": "head",
+      "technique": "lstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.135
+     },
+     {
+      "distance": "long",
+      "effect": "ineffective",
+      "foul": false,
+      "frame_begin": "3395",
+      "frame_end": "3407",
+      "left": "",
+      "name": "punching",
+      "right": "",
+      "side": "red",
+      "target": "head",
+      "technique": "lstraight",
+      "type": 1,
+      "video_index": "",
+      "confidence_eff": 0.22
+     },
+     "…[truncated 144 more items]"
+    ],
+    "metadata/timestamp_processed.csv row": "video_id,第一回合开始,第一回合结束,第二回合开始,第二回合结束,第三回合开始,第三回合结束\n482,0,180,240,420,478,665"
+   }
+  }
+ ]
+}

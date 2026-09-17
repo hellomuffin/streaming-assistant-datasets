@@ -1,0 +1,261 @@
+{
+ "slug": "sharegpt4video",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/ShareGPT4Video/ShareGPT4Video/blob/main/sharegpt4video_40k.jsonl",
+  "zip_folder/pixabay/pixabay_videos_9.zip (member 08d1313f…6795.mp4)",
+  "zip_folder/mixit/mixkit_videos.zip (member mixkit-airplane-taking-off-2626.mp4)"
+ ],
+ "access_used": "open download",
+ "note": "An example is one short stock clip with GPT-4V \"differential\" captions: one caption per keyframe (every 2 s, each describing what changed since the previous keyframe) followed by one whole-clip summary caption, which the timeline puts in the \"other\" lane spanning the clip. Clips are re-encoded 360p from the Pixabay/Mixkit files re-hosted in the repo (no audio track in the sources).",
+ "examples": [
+  {
+   "title": "Pixabay woodpecker pecking a tree trunk — 8 keyframe captions + 1 whole-clip summary",
+   "video_ref": "pixabay/08d1313fad6e7f635a55291a9e1569f9d58e2f808377f7770c1ef7557a626795.mp4 (in pixabay_videos_9.zip)",
+   "duration_s": 14.0,
+   "clip": "samples/media/sharegpt4video_1.mp4",
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 2.0,
+     "lane": "caption",
+     "text": "The frame displays a woodpecker, showcasing black and white plumage with a streak of red on the nape, clinging to the side of a thick tree trunk sprawled diagonally across the image. The tree's bark is rugged, and the branch lies against a backdrop littered with various shades of brown leaf litter and sporadic dry grass. The woodpecker's position indicates active engagement, possibly pecking at the tree's bark."
+    },
+    {
+     "t": 2.0,
+     "te": 4.0,
+     "lane": "caption",
+     "text": "In this frame, the woodpecker maintains its position on the tree trunk, which is still laid out against the same leaf-littered ground. The background appears largely unchanged. The woodpecker's head is turned slightly, indicating ongoing movement, and its beak seems to be closer to the tree bark compared to the previous frame, suggesting continued pecking activity. The lighting and the position of the woodpecker relative to its environment appear consistent with the earlier frame."
+    },
+    {
+     "t": 4.0,
+     "te": 6.0,
+     "lane": "caption",
+     "text": "In this frame, the woodpecker's behavior appears to have progressed; it has shifted ever so slightly, with more of its body visible as it turns further towards the tree trunk. Its beak is now making firm contact with the bark, indicative of active pecking. The background remains unchanged, providing a consistent setting for the bird's activity. There is no significant movement or change in the camera's perspective; it remains steady, capturing the woodpecker's actions in clear, stable shots."
+    },
+    {
+     "t": 6.0,
+     "te": 8.0,
+     "lane": "caption",
+     "text": "In this frame, the woodpecker has paused its pecking activity and is now in an upright position on the tree trunk. It is facing slightly to the right with its head turned towards the camera, giving a fuller view of its facial features and plumage detail. The background continues to be static with no noticeable alterations, maintaining a natural woodland floor setting. The camera still holds a steady view, focusing on the woodpecker without any apparent movement, ensuring the bird remains the focal point of the scene."
+    },
+    {
+     "t": 8.0,
+     "te": 10.0,
+     "lane": "caption",
+     "text": "In this subsequent frame, the woodpecker remains perched on the tree trunk. Its position appears largely unchanged with only subtle differences in its posture, possibly indicating slight movement. The background has not altered between these frames, still depicting the forest floor with leaf litter and fallen branches. The camera continues to hold its position steadily, centering the woodpecker in the frame without any dynamic changes in angle or zoom."
+    },
+    {
+     "t": 10.0,
+     "te": 12.0,
+     "lane": "caption",
+     "text": "In the frame, the woodpecker is now seen in a different position on the tree trunk, indicating movement. Its head is turned downward with its beak closer to the tree, suggesting pecking behavior. The environment around the bird continues to exhibit no substantial change, presenting the natural forest setting consistently. The camera appears to maintain its stationary position and focus on the bird without any detectable motion."
+    },
+    {
+     "t": 12.0,
+     "te": 14.0,
+     "lane": "caption",
+     "text": "In this frame, the woodpecker's head is raised slightly compared to the previous position, possibly indicating a momentary pause in its pecking activity. The background remains unaltered, featuring the unobtrusive forest floor and sparse vegetation. The camera's perspective is unchanged, continuing to offer a clear and unwavering view of the woodpecker on the tree trunk."
+    },
+    {
+     "t": 14.0,
+     "te": null,
+     "lane": "caption",
+     "text": "The woodpecker is now in a different posture, having extended its beak closer to the tree trunk, indicating the resumption of pecking. The environment and backdrop show no significant changes, maintaining a consistent setting with the previous frame. The camera remains stationary, affording an unimpeded and focused view of the bird on the tree."
+    },
+    {
+     "t": 0.0,
+     "te": 14.0,
+     "lane": "other",
+     "text": "The video captures a black and white woodpecker with a streak of red on its nape, engaging in pecking behavior while clinging to a thick tree trunk that sprawls diagonally across the frame. Initially, the bird appears actively engaging with the tree's rugged bark, positioned against a backdrop of brown leaf litter and sparse dry grass. As the video progresses, the woodpecker maintains its position on the trunk, with slight shifts in posture and head positioning indicating ongoing pecking activity. For a moment, the bird pauses, adopting an upright position and facing slightly to the right, allowing a clear view of its facial features and plumage detail. The scene remains consistent without any apparent changes in the woodland floor background or movements from the camera’s perspective. Eventually, the woodpecker alters its position, demonstrating movement along the trunk, and resumes pecking with its beak closer to the tree, interspersed with brief pauses. Throughout, the environment and the camera's stationary focus on the bird remain unchanged, highlighting the woodpecker's behavior within a natural forest setting."
+    }
+   ],
+   "raw_format": "jsonl line",
+   "raw": {
+    "video_id": "08d1313fad6e7f635a55291a9e1569f9d58e2f808377f7770c1ef7557a626795",
+    "video_path": "pixabay/08d1313fad6e7f635a55291a9e1569f9d58e2f808377f7770c1ef7557a626795.mp4",
+    "timestamp": [
+     "00:00:00.000",
+     "00:00:14.000"
+    ],
+    "keyframe": [
+     0.0,
+     2.0,
+     4.0,
+     6.0,
+     8.0,
+     10.0,
+     12.0,
+     14.0
+    ],
+    "captions": [
+     {
+      "idx": "1",
+      "content": "The frame displays a woodpecker, showcasing black and white plumage with a streak of red on the nape, clinging to the side of a thick tree trunk sprawled diagonally across the image. The tree's bark is rugged, and the branch lies against a backdrop littered with various shades of brown leaf litter and sporadic dry grass. The woodpecker's position indicates active engagement, possibly pecking at the tree's bark.",
+      "time_stamp": "0.00"
+     },
+     {
+      "idx": "2",
+      "content": "In this frame, the woodpecker maintains its position on the tree trunk, which is still laid out against the same leaf-littered ground. The background appears largely unchanged. The woodpecker's head is turned slightly, indicating ongoing movement, and its beak seems to be closer to the tree bark compared to the previous frame, suggesting continued pecking activity. The lighting and the position of the woodpecker relative to its environment appear consistent with the earlier frame.",
+      "time_stamp": "2.00"
+     },
+     {
+      "idx": "3",
+      "content": "In this frame, the woodpecker's behavior appears to have progressed; it has shifted ever so slightly, with more of its body visible as it turns further towards the tree trunk. Its beak is now making firm contact with the bark, indicative of active pecking. The background remains unchanged, providing a consistent setting for the bird's activity. There is no significant movement or change in the camera's perspective; it remains steady, capturing the woodpecker's actions in clear, stable shots.",
+      "time_stamp": "4.00"
+     },
+     {
+      "idx": "4",
+      "content": "In this frame, the woodpecker has paused its pecking activity and is now in an upright position on the tree trunk. It is facing slightly to the right with its head turned towards the camera, giving a fuller view of its facial features and plumage detail. The background continues to be static with no noticeable alterations, maintaining a natural woodland floor setting. The camera still holds a steady view, focusing on the woodpecker without any apparent movement, ensuring the bird remains the focal point of the scene.",
+      "time_stamp": "6.00"
+     },
+     {
+      "idx": "5",
+      "content": "In this subsequent frame, the woodpecker remains perched on the tree trunk. Its position appears largely unchanged with only subtle differences in its posture, possibly indicating slight movement. The background has not altered between these frames, still depicting the forest floor with leaf litter and fallen branches. The camera continues to hold its position steadily, centering the woodpecker in the frame without any dynamic changes in angle or zoom.",
+      "time_stamp": "8.00"
+     },
+     {
+      "idx": "6",
+      "content": "In the frame, the woodpecker is now seen in a different position on the tree trunk, indicating movement. Its head is turned downward with its beak closer to the tree, suggesting pecking behavior. The environment around the bird continues to exhibit no substantial change, presenting the natural forest setting consistently. The camera appears to maintain its stationary position and focus on the bird without any detectable motion.",
+      "time_stamp": "10.00"
+     },
+     {
+      "idx": "7",
+      "content": "In this frame, the woodpecker's head is raised slightly compared to the previous position, possibly indicating a momentary pause in its pecking activity. The background remains unaltered, featuring the unobtrusive forest floor and sparse vegetation. The camera's perspective is unchanged, continuing to offer a clear and unwavering view of the woodpecker on the tree trunk.",
+      "time_stamp": "12.00"
+     },
+     {
+      "idx": "8",
+      "content": "The woodpecker is now in a different posture, having extended its beak closer to the tree trunk, indicating the resumption of pecking. The environment and backdrop show no significant changes, maintaining a consistent setting with the previous frame. The camera remains stationary, affording an unimpeded and focused view of the bird on the tree.",
+      "time_stamp": "14.00"
+     },
+     {
+      "idx": "-1",
+      "content": "The video captures a black and white woodpecker with a streak of red on its nape, engaging in pecking behavior while clinging to a thick tree trunk that sprawls diagonally across the frame. Initially, the bird appears actively engaging with the tree's rugged bark, positioned against a backdrop of brown leaf litter and sparse dry grass. As the video progresses, the woodpecker maintains its position on the trunk, with slight shifts in posture and head positioning indicating ongoing pecking activity. For a moment, the bird pauses, adopting an upright position and facing slightly to the right, allowing a clear view of its facial features and plumage detail. The scene remains consistent without any apparent changes in the woodland floor background or movements from the camera’s perspective. Eventually, the woodpecker alters its position, demonstrating movement along the trunk, and resumes pecking with its beak closer to the tree, interspersed with brief pauses. Throughout, the environment and the camera's stationary focus on the bird remain unchanged, highlighting the woodpecker's behavior within a natural forest setting."
+     }
+    ],
+    "zip_folder": "pixabay_videos_9.zip"
+   }
+  },
+  {
+   "title": "Mixkit coastal town with an airplane taking off — 7 keyframe captions + 1 whole-clip summary",
+   "video_ref": "mixkit/mixkit-airplane-taking-off-2626.mp4 (in mixkit_videos.zip)",
+   "duration_s": 12.0,
+   "clip": "samples/media/sharegpt4video_2.mp4",
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 2.0,
+     "lane": "caption",
+     "text": "This frame depicts a scenic, elevated view overlooking a coastal area. The foreground consists of greenery in the form of trees and shrubs. The middle ground reveals a small town or settlement nestled along the coastline, with various buildings and structures visible. The background showcases a rugged mountainous terrain, with multiple peaks extending across the horizon. The sea or ocean stretches out, its turquoise hue contrasting with the earthy tones of the landscape. Power lines or cables can be seen stretching across the frame, likely carrying electricity to the coastal community below. The overall scene conveys a panoramic vista of a rural, picturesque coastal region."
+    },
+    {
+     "t": 2.0,
+     "te": 4.0,
+     "lane": "caption",
+     "text": "Compared to the previous frame, there are no noticeable changes or movements observed in this frame. The scene appears to be the same panoramic vista overlooking the coastal town and mountainous landscape. The position and composition of the elements within the frame, including the foreground greenery, the town and structures in the middle ground, the rugged mountain peaks in the background, the turquoise sea, and the power lines stretching across, remain unchanged. The frame appears to be a static shot, maintaining the same perspective and framing as the initial frame. No variations in the actions, behaviors, or states of the objects within the scene can be discerned between these two adjacent frames."
+    },
+    {
+     "t": 4.0,
+     "te": 6.0,
+     "lane": "caption",
+     "text": "Similar to the previous frames, this frame continues to depict the same scenic vista with no discernible changes observable. The panoramic view remains static, showcasing the coastal town nestled between the rugged mountainous terrain and the tranquil turquoise sea. The foreground vegetation, the winding dirt path with overhead power lines, the clusters of buildings in the town, and the prominent mountain peaks on the horizon appear unchanged from the prior frames. The framing, composition, and perspective of the shot remain consistent, with no apparent camera movements or alterations to the scene's elements. As in the preceding frames, there are no noticeable variations in the actions, behaviors, or states of the objects within the frame, maintaining an overall static and unchanging visual representation."
+    },
+    {
+     "t": 6.0,
+     "te": 8.0,
+     "lane": "caption",
+     "text": "The current frame presents an unchanged vista compared to the previous ones. The picturesque coastal town remains visible between the mountains and the sea, with no noticeable alterations occurring. The foreground vegetation, the winding dirt path with power lines overhead, the clustered buildings within the town, and the prominent mountain peaks on the horizon maintain their static appearance. The framing and composition of the shot are consistent with no discernible camera movements or changes to the scene's elements. There are no observable variations in the actions, behaviors, or states of objects within this frame when compared to the preceding frames. The overall scene remains visually static and unchanging, preserving the same scenic representation as before."
+    },
+    {
+     "t": 8.0,
+     "te": 10.0,
+     "lane": "caption",
+     "text": "The scene remains visually unchanged from the previous frame. The coastal town nestled between the mountains and the sea maintains its picturesque appearance, with no alterations observable in the environment or background. The foreground vegetation, dirt path with overhead power lines, clustered buildings within the town, and prominent mountain peaks in the distance exhibit no discernible changes in their states or attributes. The framing and composition of the shot are consistent, suggesting no camera movements have occurred. There are no noticeable variations in the actions or behaviors of any elements within the scene compared to the preceding frame. Overall, the image portrays a static, unchanging vista, preserving the same scenic representation as the previous frame, without any detectable alterations or transitions taking place."
+    },
+    {
+     "t": 10.0,
+     "te": 12.0,
+     "lane": "caption",
+     "text": "The scene remains static and unchanged compared to the previous frame. The coastal town nestled between the mountains and the sea is portrayed identically, with no observable variations in the environment, background elements, or the state of any objects within the frame. The vegetation in the foreground, the dirt path with overhead power lines, the clustered buildings, and the prominent mountain peaks all maintain their previous appearances and positions. No alterations in actions, behaviors, or attributes of any elements are discernible. Additionally, the framing and composition of the shot suggest no camera movement has occurred between the two frames. Overall, the image presents an unchanging, frozen moment, preserving the exact same scenic vista as the preceding frame, without any transitions or updates taking place."
+    },
+    {
+     "t": 12.0,
+     "te": null,
+     "lane": "caption",
+     "text": "As with the previous frame, no discernible changes or updates are observed within the scene. The scenic vista of the coastal town amidst the mountains remains frozen in time, portraying an unchanging composition across all elements. The foreground vegetation, the dirt path flanked by power lines, the scattered buildings in the distance, the blue expanse of the sea, and the silhouettes of the mountain peaks all maintain their identical appearances and positions from the preceding frame. No alterations in actions, behaviors, states, or attributes of any objects are evident. Furthermore, the camera perspective and framing suggest a lack of movement or repositioning between the two frames. The overall scene remains static and unaltered, preserving the same tranquil, picturesque moment as illustrated in the previous image."
+    },
+    {
+     "t": 0.0,
+     "te": 12.0,
+     "lane": "other",
+     "text": "The video presents a continuous and unchanged view of a picturesque coastal town, situated in a rural setting, surrounded by rugged mountain peaks and overlooking the turquoise sea. Through its duration, the scene remains static, depicting the town nestled among greenery, with various buildings and structures apparent. A winding dirt path, accompanied by overhead power lines, traverses the landscape, leading into the town. The foreground showcases lush vegetation, while the background highlights the mountainous terrain extending across the horizon. Throughout the video, there is no camera movement, nor are there any changes in the composition or positioning of elements within the scene. The overall representation maintains a tranquil and scenic vista, with no variations observed in the environment, objects' states or behaviors, suggesting a moment frozen in time."
+    }
+   ],
+   "raw_format": "jsonl line",
+   "raw": {
+    "video_id": "mixkit-airplane-taking-off-2626",
+    "video_path": "mixkit/mixkit-airplane-taking-off-2626.mp4",
+    "timestamp": [
+     "00:00:00.000",
+     "00:00:12.000"
+    ],
+    "keyframe": [
+     0.0,
+     2.0,
+     4.0,
+     6.0,
+     8.0,
+     10.0,
+     12.0
+    ],
+    "captions": [
+     {
+      "idx": "1",
+      "content": "This frame depicts a scenic, elevated view overlooking a coastal area. The foreground consists of greenery in the form of trees and shrubs. The middle ground reveals a small town or settlement nestled along the coastline, with various buildings and structures visible. The background showcases a rugged mountainous terrain, with multiple peaks extending across the horizon. The sea or ocean stretches out, its turquoise hue contrasting with the earthy tones of the landscape. Power lines or cables can be seen stretching across the frame, likely carrying electricity to the coastal community below. The overall scene conveys a panoramic vista of a rural, picturesque coastal region.",
+      "time_stamp": "0.00"
+     },
+     {
+      "idx": "2",
+      "content": "Compared to the previous frame, there are no noticeable changes or movements observed in this frame. The scene appears to be the same panoramic vista overlooking the coastal town and mountainous landscape. The position and composition of the elements within the frame, including the foreground greenery, the town and structures in the middle ground, the rugged mountain peaks in the background, the turquoise sea, and the power lines stretching across, remain unchanged. The frame appears to be a static shot, maintaining the same perspective and framing as the initial frame. No variations in the actions, behaviors, or states of the objects within the scene can be discerned between these two adjacent frames.",
+      "time_stamp": "2.00"
+     },
+     {
+      "idx": "3",
+      "content": "Similar to the previous frames, this frame continues to depict the same scenic vista with no discernible changes observable. The panoramic view remains static, showcasing the coastal town nestled between the rugged mountainous terrain and the tranquil turquoise sea. The foreground vegetation, the winding dirt path with overhead power lines, the clusters of buildings in the town, and the prominent mountain peaks on the horizon appear unchanged from the prior frames. The framing, composition, and perspective of the shot remain consistent, with no apparent camera movements or alterations to the scene's elements. As in the preceding frames, there are no noticeable variations in the actions, behaviors, or states of the objects within the frame, maintaining an overall static and unchanging visual representation.",
+      "time_stamp": "4.00"
+     },
+     {
+      "idx": "4",
+      "content": "The current frame presents an unchanged vista compared to the previous ones. The picturesque coastal town remains visible between the mountains and the sea, with no noticeable alterations occurring. The foreground vegetation, the winding dirt path with power lines overhead, the clustered buildings within the town, and the prominent mountain peaks on the horizon maintain their static appearance. The framing and composition of the shot are consistent with no discernible camera movements or changes to the scene's elements. There are no observable variations in the actions, behaviors, or states of objects within this frame when compared to the preceding frames. The overall scene remains visually static and unchanging, preserving the same scenic representation as before.",
+      "time_stamp": "6.00"
+     },
+     {
+      "idx": "5",
+      "content": "The scene remains visually unchanged from the previous frame. The coastal town nestled between the mountains and the sea maintains its picturesque appearance, with no alterations observable in the environment or background. The foreground vegetation, dirt path with overhead power lines, clustered buildings within the town, and prominent mountain peaks in the distance exhibit no discernible changes in their states or attributes. The framing and composition of the shot are consistent, suggesting no camera movements have occurred. There are no noticeable variations in the actions or behaviors of any elements within the scene compared to the preceding frame. Overall, the image portrays a static, unchanging vista, preserving the same scenic representation as the previous frame, without any detectable alterations or transitions taking place.",
+      "time_stamp": "8.00"
+     },
+     {
+      "idx": "6",
+      "content": "The scene remains static and unchanged compared to the previous frame. The coastal town nestled between the mountains and the sea is portrayed identically, with no observable variations in the environment, background elements, or the state of any objects within the frame. The vegetation in the foreground, the dirt path with overhead power lines, the clustered buildings, and the prominent mountain peaks all maintain their previous appearances and positions. No alterations in actions, behaviors, or attributes of any elements are discernible. Additionally, the framing and composition of the shot suggest no camera movement has occurred between the two frames. Overall, the image presents an unchanging, frozen moment, preserving the exact same scenic vista as the preceding frame, without any transitions or updates taking place.",
+      "time_stamp": "10.00"
+     },
+     {
+      "idx": "7",
+      "content": "As with the previous frame, no discernible changes or updates are observed within the scene. The scenic vista of the coastal town amidst the mountains remains frozen in time, portraying an unchanging composition across all elements. The foreground vegetation, the dirt path flanked by power lines, the scattered buildings in the distance, the blue expanse of the sea, and the silhouettes of the mountain peaks all maintain their identical appearances and positions from the preceding frame. No alterations in actions, behaviors, states, or attributes of any objects are evident. Furthermore, the camera perspective and framing suggest a lack of movement or repositioning between the two frames. The overall scene remains static and unaltered, preserving the same tranquil, picturesque moment as illustrated in the previous image.",
+      "time_stamp": "12.00"
+     },
+     {
+      "idx": "-1",
+      "content": "The video presents a continuous and unchanged view of a picturesque coastal town, situated in a rural setting, surrounded by rugged mountain peaks and overlooking the turquoise sea. Through its duration, the scene remains static, depicting the town nestled among greenery, with various buildings and structures apparent. A winding dirt path, accompanied by overhead power lines, traverses the landscape, leading into the town. The foreground showcases lush vegetation, while the background highlights the mountainous terrain extending across the horizon. Throughout the video, there is no camera movement, nor are there any changes in the composition or positioning of elements within the scene. The overall representation maintains a tranquil and scenic vista, with no variations observed in the environment, objects' states or behaviors, suggesting a moment frozen in time."
+     }
+    ],
+    "zip_folder": "mixkit_videos.zip"
+   }
+  }
+ ]
+}

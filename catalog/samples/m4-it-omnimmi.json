@@ -1,0 +1,162 @@
+{
+ "slug": "m4-it-omnimmi",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/ColorfulAI/M4-IT/blob/main/m4-it-qwen.json",
+  "https://huggingface.co/datasets/ColorfulAI/M4-IT/blob/main/m4-it-qwen-audio.json",
+  "https://huggingface.co/datasets/bigai-nlco/OmniMMI/blob/main/proactive_alerting.json",
+  "https://huggingface.co/datasets/bigai-nlco/OmniMMI/blob/main/videos/x4kKIm8WWOA_360.0_510.0.mp4"
+ ],
+ "access_used": "open download",
+ "note": "Example 1 is one M4-IT training record: an image chat in which one user turn is a noise statement (also copied to the \"noise\" field) and the target reply is the bare token <|im_start|>, i.e. stay silent; it has no time axis. Example 2 is one OmniMMI evaluation item: the query is posed at the start of the 150 s video (placed at t=0 here, the file carries no query time) and \"answer\" is the interval in video seconds in which the model should raise the alert.",
+ "examples": [
+  {
+   "title": "M4-IT 2340482: cockpit image chat with one noise statement the assistant must not answer",
+   "video_ref": "2340482.jpg (still image, no video)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "json",
+   "raw": {
+    "m4-it-qwen.json record": {
+     "id": "2340482",
+     "image": "2340482.jpg",
+     "conversations": [
+      {
+       "from": "human",
+       "value": "<image>\nWhat is the seat on?\nAnswer the question using a single word or phrase."
+      },
+      {
+       "from": "gpt",
+       "value": "Cockpit"
+      },
+      {
+       "from": "human",
+       "value": "Are there both a window and a door in the photo?"
+      },
+      {
+       "from": "gpt",
+       "value": "Yes"
+      },
+      {
+       "from": "human",
+       "value": "There’s a cockpit with a seat, and both a window and a door can be spotted in the photo."
+      },
+      {
+       "from": "gpt",
+       "value": "<|im_start|>"
+      },
+      {
+       "from": "human",
+       "value": "What is on the cockpit?"
+      },
+      {
+       "from": "gpt",
+       "value": "Seat"
+      },
+      {
+       "from": "human",
+       "value": "What's on the cockpit?"
+      },
+      {
+       "from": "gpt",
+       "value": "Seat"
+      }
+     ],
+     "noise": "There’s a cockpit with a seat, and both a window and a door can be spotted in the photo."
+    },
+    "m4-it-qwen-audio.json record (same id; user turns replaced by <speech> wav files)": {
+     "id": "2340482",
+     "image": "2340482.jpg",
+     "conversations": [
+      {
+       "from": "human",
+       "value": "<image>\n"
+      },
+      {
+       "from": "human",
+       "value": "<speech>\n"
+      },
+      {
+       "from": "gpt",
+       "value": "Cockpit"
+      },
+      {
+       "from": "human",
+       "value": "<speech>\n"
+      },
+      {
+       "from": "gpt",
+       "value": "Yes"
+      },
+      {
+       "from": "human",
+       "value": "<speech>\n"
+      },
+      {
+       "from": "gpt",
+       "value": "<|im_start|>"
+      },
+      {
+       "from": "human",
+       "value": "<speech>\n"
+      },
+      {
+       "from": "gpt",
+       "value": "Seat"
+      },
+      {
+       "from": "human",
+       "value": "<speech>\n"
+      },
+      {
+       "from": "gpt",
+       "value": "Seat"
+      }
+     ],
+     "noise": "There’s a cockpit with a seat, and both a window and a door can be spotted in the photo.",
+     "speech": [
+      "2340482_0.wav",
+      "2340482_1.wav",
+      "2340482_2.wav",
+      "2340482_3.wav",
+      "2340482_4.wav"
+     ]
+    }
+   }
+  },
+  {
+   "title": "OmniMMI proactive alerting x4kKIm8WWOA_360.0_510.0: alert when the woman in a black coat grooms a horse (124–150 s)",
+   "video_ref": "videos/x4kKIm8WWOA_360.0_510.0.mp4 (150 s cut of YouTube x4kKIm8WWOA, 360–510 s)",
+   "duration_s": 150.0,
+   "clip": "samples/media/m4-it-omnimmi_1.mp4",
+   "clip_offset_s": 118,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0,
+     "te": null,
+     "lane": "user",
+     "text": "Signal me when the video shows the woman in a black coat grooming a horse."
+    },
+    {
+     "t": 124,
+     "te": 150,
+     "lane": "alert",
+     "text": "answer window [124, 150]"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "video": "x4kKIm8WWOA_360.0_510.0.mp4",
+    "question": "Signal me when the video shows the woman in a black coat grooming a horse.",
+    "answer": [
+     124,
+     150
+    ]
+   }
+  }
+ ]
+}

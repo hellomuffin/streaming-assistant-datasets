@@ -1,0 +1,34 @@
+{
+ "slug": "scbench-commentaryset",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://arxiv.org/pdf/2412.17637v1 (Figure 1 text layer; Appendix D.1 File Structure)",
+  "https://huggingface.co/datasets/SCBench/CommentarySet_full_data (gated: 403, our token is not on the authorized list)"
+ ],
+ "access_used": "public sample in paper/repo/card only (full data needs the HF access request: contact information, academic research only, CC BY-NC-ND 4.0)",
+ "note": "Our HF token has no access to CommentarySet_full_data (auto-approval gate, not accepted on the user's behalf), so no JSON record or clip was read. The only verbatim ground-truth text is the six GT commentaries in the paper's Figure 1, one per SCORES dimension, each from a different clip (sports not stated per quote), plus the field list of *_final.json in Appendix D.1. Each real record is one clip (mean 14.5 s) with one merged commentary passage, so there is no within-clip timeline.",
+ "examples": [
+  {
+   "title": "Paper Figure 1: six ground-truth commentaries, one per commentary dimension",
+   "video_ref": null,
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "txt",
+   "raw": "① Key Events:\nGT Commentary: \"And Carescus makes the first free throw.  And the second.\"\n② Technical Detail\nGT Commentary: \"The more horizontal the bat is when it comes into contact with the ball, the more side spin.\"\n③ Background Info\nGT Commentary: \"Well, this woman leads the world this year with a 493 vault earlier in the week.\"\n④ Tactical Analysis\nGT Commentary: \"hey're in the same team, and different roles. They haven't always been two strikers in a 4-4-2.\"\n⑤ Match Situation\nGT Commentary: \"First time, really,  they've been able to find their centre forward in the box.\"\n⑥ Emotional Expression\nGT Commentary: \"These players are so super fit they could play all afternoon.\"\n"
+  },
+  {
+   "title": "Paper Appendix D.1: fields of each record in <sport>_final.json",
+   "video_ref": "e.g. athletics clip \"003-992\" → video/athletics/003/992.mp4",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "txt",
+   "raw": "id : The id of the clip, where each clip has a unique id. The structure is \"video_id\" + \"-\" + \"clip_id\" . For example, the clip with the id \"003-992\" in athletics_final.json represents clip 992 of video 003 in athletics.\ncategory : The sports category to which the video in the clip belongs.\ntimestamp ( start_time & end_time ): The start and end timestamps of the clip in the original video.\ntext : The ground truth commentary corresponding to the clip.\nlabel : The six-dimensional label corresponding to the clip."
+  }
+ ]
+}

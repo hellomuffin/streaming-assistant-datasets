@@ -1,0 +1,24 @@
+{
+ "slug": "proactvl-game-commentary-sft",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/oaaoaa/game_commentary_sft (DATA/anns/*_final_train.jsonl, *_final_val.jsonl; HTTP 403)",
+  "https://huggingface.co/datasets/oaaoaa/proactvl_results (results/anns/*.jsonl; HTTP 403)",
+  "https://github.com/microsoft/AnthropomorphicIntelligence/blob/main/Proact-VL/proactvl/data/preprocess/prepare_for_training.py (format docstring)"
+ ],
+ "access_used": "public sample in paper/repo/card only (full data needs accepting the HF click-through gate: CC BY-NC 4.0, academic research only, no redistribution; our token got HTTP 403)",
+ "note": "No real record could be read: the SFT jsonl, the LiveGamingBenchmark jsonl and the proactvl_results label files all sit behind the same click-through gate, and neither the paper, project page nor repo quotes an annotation record. The only published example is the record schema below (field names, no values): one ~36 s clip of a game video with the active speaker's persona and time-stamped utterances (assistant = active caster; user = co-caster or player query).",
+ "examples": [
+  {
+   "title": "Record schema only (repo docstring, no data values)",
+   "video_ref": null,
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "txt",
+   "raw": "The final annotation format is:\n{\n    \"video_path\": str,\n    \"video_begin\": int,\n    \"video_end\": int,\n    \"video_duration\": int,\n    \"active_speaker\": {\n        speaker_name: \"\",\n        \"persona\": list[str],\n    },\n    \"metadata\": {\n        \"tag\": str,\n        \"dataset_name\": str,\n    },\n    \"annotations\": [\n        # solo commentary and commentary from active speaker in multi-speaker discussion\n        {\n            \"role\": assistant,\n            \"speaker\": str,\n            \"start\": int,\n            \"end\": int,\n            \"text\": str,\n        },\n        # commentary from other speakers in multi-speaker discussion\n        {\n            \"role\": user,\n            \"speaker\": str,\n            \"start\": int,\n            \"end\": int,\n            \"text\": str,\n        },\n        # user query in Q&A\n        {\n            \"role\": user,\n            \"speaker\": 'user',\n            \"start\": int,\n            \"end\": int,\n            \"query\": str,\n        },\n    ]\n}"
+  }
+ ]
+}

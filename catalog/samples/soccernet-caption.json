@@ -1,0 +1,251 @@
+{
+ "slug": "soccernet-caption",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/Homie0609/MatchTime  SN-Caption/train/england_epl_2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley/Labels-caption.json",
+  "SN-Caption/train/england_epl_2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool/Labels-caption.json (identical to SoccerNet SN-Labels Labels-caption.json)"
+ ],
+ "access_used": "open download",
+ "note": "One example = a 3-minute window of one half's Labels-caption.json (flashscore live-text commentary). t = seconds of the half from \"gameTime\" (\"half - mm:ss\"); \"position\" is the same time in ms. The timestamps are when the text was published and can be tens of seconds off the video. Broadcast videos need the SoccerNet NDA, so no clip. Label in [brackets] in the timeline is the \"label\" field; match metadata truncated.",
+ "examples": [
+  {
+   "title": "Chelsea 1–1 Burnley (EPL 2015-02-21), 1st half 11:00–14:00 — 4 live-text commentaries incl. corner and goal",
+   "video_ref": "SoccerNet england_epl_2014-2015/2015-02-21 - 18-00 Chelsea 1 - 1 Burnley / 1_224p.mkv (half 1)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 661,
+     "te": null,
+     "lane": "commentary",
+     "text": "Diego Costa (Chelsea) slaloms his way past challenges, but an opposing player does well to get the ball away. The ball goes behind for a corner. Chelsea will have an opportunity to threaten the opposition's goal."
+    },
+    {
+     "t": 679,
+     "te": null,
+     "lane": "commentary",
+     "text": "[corner] Cesc Fabregas (Chelsea) works the corner short."
+    },
+    {
+     "t": 694,
+     "te": null,
+     "lane": "commentary",
+     "text": "Cesc Fabregas (Chelsea) whips a promising cross into the box, but the opposition's defence intercepts the ball."
+    },
+    {
+     "t": 816,
+     "te": null,
+     "lane": "commentary",
+     "text": "[soccer-ball] Goal! Eden Hazard provides Branislav Ivanovic (Chelsea) with a nice pass inside the box. It allows him to finish with a precise effort into the bottom right corner. 1:0."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "timestamp": "1424530800",
+    "score": "1 - 1",
+    "round": "26",
+    "teams": [
+     "Chelsea",
+     "Burnley"
+    ],
+    "lineup": "…[truncated: home/away tactic + player lists]",
+    "referee": [
+     "Atkinson M."
+    ],
+    "venue": [
+     "Stamford Bridge (London)"
+    ],
+    "attendance": [
+     "41 629"
+    ],
+    "referee_matched": [
+     "Martin Atkinson"
+    ],
+    "referee_found": [
+     "Martin Atkinson"
+    ],
+    "coach_matched": [
+     "Sean Dyche",
+     "Jose Mourinho"
+    ],
+    "gameHomeTeam": "Chelsea",
+    "home": "…[truncated]",
+    "gameAwayTeam": "Burnley",
+    "away": "…[truncated]",
+    "gameDate": "21/02/2015 - 16:00",
+    "annotations": [
+     {
+      "important": false,
+      "gameTime": "1 - 11:01",
+      "label": "",
+      "description": "Diego Costa (Chelsea) slaloms his way past challenges, but an opposing player does well to get the ball away. The ball goes behind for a corner. Chelsea will have an opportunity to threaten the opposition's goal.",
+      "identified": "[PLAYER_vBw5nir8] ([TEAM_]) slaloms his way past challenges, but an opposing player does well to get the ball away. The ball goes behind for a corner. [TEAM_] will have an opportunity to threaten the opposition's goal.",
+      "anonymized": "[PLAYER] ([TEAM]) slaloms his way past challenges, but an opposing player does well to get the ball away. The ball goes behind for a corner. [TEAM] will have an opportunity to threaten the opposition's goal.",
+      "visibility": "shown",
+      "position": "661000"
+     },
+     {
+      "important": false,
+      "gameTime": "1 - 11:19",
+      "label": "corner",
+      "description": "Cesc Fabregas (Chelsea) works the corner short.",
+      "identified": "[PLAYER_YXIDwoe5] ([TEAM_]) works the corner short.",
+      "anonymized": "[PLAYER] ([TEAM]) works the corner short.",
+      "visibility": "shown",
+      "position": "679000"
+     },
+     {
+      "important": false,
+      "gameTime": "1 - 11:34",
+      "label": "",
+      "description": "Cesc Fabregas (Chelsea) whips a promising cross into the box, but the opposition's defence intercepts the ball.",
+      "identified": "[PLAYER_YXIDwoe5] ([TEAM_]) whips a promising cross into the box, but the opposition's defence intercepts the ball.",
+      "anonymized": "[PLAYER] ([TEAM]) whips a promising cross into the box, but the opposition's defence intercepts the ball.",
+      "visibility": "shown",
+      "position": "694000"
+     },
+     {
+      "important": true,
+      "gameTime": "1 - 13:36",
+      "label": "soccer-ball",
+      "description": "Goal! Eden Hazard provides Branislav Ivanovic (Chelsea) with a nice pass inside the box. It allows him to finish with a precise effort into the bottom right corner. 1:0.",
+      "identified": "Goal! [PLAYER_QH2of5sJ] provides [PLAYER_Qe3xUmHo] ([TEAM_]) with a nice pass inside the box. It allows him to finish with a precise effort into the bottom right corner. 1:0.",
+      "anonymized": "Goal! [PLAYER] provides [PLAYER] ([TEAM]) with a nice pass inside the box. It allows him to finish with a precise effort into the bottom right corner. 1:0.",
+      "visibility": "shown",
+      "position": "816000"
+     }
+    ],
+    "_window_note": "only annotations with gameTime in half 1, 660-840 s kept (of 78)"
+   }
+  },
+  {
+   "title": "Arsenal 3–4 Liverpool (EPL 2016-08-14), 2nd half 16:30–19:30 — corner, two goals 34 s apart",
+   "video_ref": "SoccerNet england_epl_2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool / 2_224p.mkv (half 2)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 1012,
+     "te": null,
+     "lane": "commentary",
+     "text": "Philippe Coutinho (Liverpool) tries to send the ball in front of the goal, but the opposition's defence averts the threat. The ball goes out of play. Liverpool are awarded a corner kick."
+    },
+    {
+     "t": 1021,
+     "te": null,
+     "lane": "commentary",
+     "text": "[corner] Jordan Henderson (Liverpool) takes a short corner kick."
+    },
+    {
+     "t": 1079,
+     "te": null,
+     "lane": "commentary",
+     "text": "[soccer-ball] Sadio Mane (Liverpool) finishes his beautiful individual effort with a superb strike from inside the box. Petr Cech is just a bystander as the ball flies into the top left corner. The score is 1:4."
+    },
+    {
+     "t": 1112,
+     "te": null,
+     "lane": "commentary",
+     "text": "Arsenal hold possession of the ball and display neat passing from player to player. They are waiting for the right moment to open up the opposition's defence to hit them swiftly on the break."
+    },
+    {
+     "t": 1113,
+     "te": null,
+     "lane": "commentary",
+     "text": "[soccer-ball] It's a goal! Alex Oxlade-Chamberlain (Arsenal) displays superb quick feet and dribbling as he jinks his way through multiple challenges and takes a shot from inside the box, which is deflected and goes past stranded Simon Mignolet. 2:4."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "timestamp": "1471186800",
+    "score": "3 - 4",
+    "round": "1",
+    "teams": [
+     "Arsenal",
+     "Liverpool"
+    ],
+    "lineup": "…[truncated: home/away tactic + player lists]",
+    "referee": [
+     "Oliver M."
+    ],
+    "venue": [
+     "Emirates Stadium (London)"
+    ],
+    "attendance": [
+     "60 033"
+    ],
+    "referee_matched": [
+     "Michael Oliver"
+    ],
+    "referee_found": [
+     "Michael Oliver"
+    ],
+    "coach_matched": [
+     "Jurgen Klopp"
+    ],
+    "gameHomeTeam": "Arsenal",
+    "home": "…[truncated]",
+    "gameAwayTeam": "Liverpool",
+    "away": "…[truncated]",
+    "gameDate": "14/08/2016 - 17:00",
+    "annotations": [
+     {
+      "important": false,
+      "gameTime": "2 - 16:52",
+      "label": "",
+      "description": "Philippe Coutinho (Liverpool) tries to send the ball in front of the goal, but the opposition's defence averts the threat. The ball goes out of play. Liverpool are awarded a corner kick.",
+      "identified": "[PLAYER_QP6r8H7O] ([TEAM_]) tries to send the ball in front of the goal, but the opposition's defence averts the threat. The ball goes out of play. [TEAM_] are awarded a corner kick.",
+      "anonymized": "[PLAYER] ([TEAM]) tries to send the ball in front of the goal, but the opposition's defence averts the threat. The ball goes out of play. [TEAM] are awarded a corner kick.",
+      "visibility": "shown",
+      "position": "1012000"
+     },
+     {
+      "important": false,
+      "gameTime": "2 - 17:01",
+      "label": "corner",
+      "description": "Jordan Henderson (Liverpool) takes a short corner kick.",
+      "identified": "[PLAYER_UFMlUD6r] ([TEAM_]) takes a short corner kick.",
+      "anonymized": "[PLAYER] ([TEAM]) takes a short corner kick.",
+      "visibility": "shown",
+      "position": "1021000"
+     },
+     {
+      "important": true,
+      "gameTime": "2 - 17:59",
+      "label": "soccer-ball",
+      "description": "Sadio Mane (Liverpool) finishes his beautiful individual effort with a superb strike from inside the box. Petr Cech is just a bystander as the ball flies into the top left corner. The score is 1:4.",
+      "identified": "[PLAYER_xxskxOU0] ([TEAM_]) finishes his beautiful individual effort with a superb strike from inside the box. [PLAYER_fTjQ34vo] is just a bystander as the ball flies into the top left corner. The score is 1:4.",
+      "anonymized": "[PLAYER] ([TEAM]) finishes his beautiful individual effort with a superb strike from inside the box. [PLAYER] is just a bystander as the ball flies into the top left corner. The score is 1:4.",
+      "visibility": "shown",
+      "position": "1079000"
+     },
+     {
+      "important": false,
+      "gameTime": "2 - 18:32",
+      "label": "",
+      "description": "Arsenal hold possession of the ball and display neat passing from player to player. They are waiting for the right moment to open up the opposition's defence to hit them swiftly on the break.",
+      "identified": "[TEAM_] hold possession of the ball and display neat passing from player to player. They are waiting for the right moment to open up the opposition's defence to hit them swiftly on the break.",
+      "anonymized": "[TEAM] hold possession of the ball and display neat passing from player to player. They are waiting for the right moment to open up the opposition's defence to hit them swiftly on the break.",
+      "visibility": "shown",
+      "position": "1112000"
+     },
+     {
+      "important": true,
+      "gameTime": "2 - 18:33",
+      "label": "soccer-ball",
+      "description": "It's a goal! Alex Oxlade-Chamberlain (Arsenal) displays superb quick feet and dribbling as he jinks his way through multiple challenges and takes a shot from inside the box, which is deflected and goes past stranded Simon Mignolet. 2:4.",
+      "identified": "It's a goal! [PLAYER_WzNLf7VR] ([TEAM_]) displays superb quick feet and dribbling as he jinks his way through multiple challenges and takes a shot from inside the box, which is deflected and goes past stranded [PLAYER_YVcnMAp6]. 2:4.",
+      "anonymized": "It's a goal! [PLAYER] ([TEAM]) displays superb quick feet and dribbling as he jinks his way through multiple challenges and takes a shot from inside the box, which is deflected and goes past stranded [PLAYER]. 2:4.",
+      "visibility": "shown",
+      "position": "1113000"
+     }
+    ],
+    "_window_note": "only annotations with gameTime in half 2, 990-1170 s kept (of 69)"
+   }
+  }
+ ]
+}

@@ -1,0 +1,288 @@
+{
+ "slug": "videochatonline-it",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/MCG-NJU/VideoChatOnline-IT/resolve/main/dense_video_captioning/youcook2.json",
+  "https://huggingface.co/datasets/MCG-NJU/VideoChatOnline-IT/resolve/main/temporal_grounding/didemo.json",
+  "clip video: TencentARC/TimeLens-100K video_shards/didemo/didemo_shard_01.tar.gz member didemo/11054484@N04_4414894720_6360297860.mp4 (Flickr re-host)"
+ ],
+ "access_used": "open download",
+ "note": "Annotations only (videos come from the source datasets). Dense-captioning records put templated queries at a timestamp and answer with the source events that ended before it (lane 'step' re-plots those spans); DiDeMo grounding records hold one query each, so example 2 gathers every record for one video. Some query timestamps lie past the video's end (e.g. 1305, 1005.1), apparently a sentinel for 'end of video'; DiDeMo spans are the source's 5-s chunks within the first 30 s. The clip is from TimeLens-100K's re-host of the same Flickr video.",
+ "examples": [
+  {
+   "title": "YouCook2 103/H_9oM1Y60lU: burgers with cheese sauce — 4 online 'events finished so far' queries",
+   "video_ref": "103/H_9oM1Y60lU.mp4 (YouCook2, YouTube id H_9oM1Y60lU)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 67.0,
+     "te": 102.0,
+     "lane": "step",
+     "text": "grill the  patties"
+    },
+    {
+     "t": 107.8,
+     "te": null,
+     "lane": "answer",
+     "text": "67s - 102s (duration: 35.0 seconds), grill the  patties"
+    },
+    {
+     "t": 107.8,
+     "te": null,
+     "lane": "question",
+     "text": "Please list all the events that have fully concluded up to this point and have not been previously reported. For each event, provide the start time, end time, and duration. Format your response as: <start time> - <end time> (duration: <x> seconds), <description>."
+    },
+    {
+     "t": 129.0,
+     "te": 157.0,
+     "lane": "step",
+     "text": "chop some roasted pepper and season with salt and pepper"
+    },
+    {
+     "t": 198.8,
+     "te": null,
+     "lane": "answer",
+     "text": "129s - 157s (duration: 28.0 seconds), chop some roasted pepper and season with salt and pepper"
+    },
+    {
+     "t": 198.8,
+     "te": null,
+     "lane": "question",
+     "text": "Please list all the events that have fully concluded up to this point and have not been previously reported. For each event, provide the start time, end time, and duration. Format your response as: <start time> - <end time> (duration: <x> seconds), <description>."
+    },
+    {
+     "t": 202.0,
+     "te": 222.0,
+     "lane": "step",
+     "text": "add butter flour and hot milk to a sauce pan and whisk"
+    },
+    {
+     "t": 229.0,
+     "te": 239.0,
+     "lane": "step",
+     "text": "add some parmesan cheese and salt to pot"
+    },
+    {
+     "t": 264.0,
+     "te": 305.0,
+     "lane": "step",
+     "text": "put the patties cheese sauce and vegetables in buns"
+    },
+    {
+     "t": 267.3,
+     "te": null,
+     "lane": "answer",
+     "text": "202s - 222s (duration: 20.0 seconds), add butter flour and hot milk to a sauce pan and whisk\n229s - 239s (duration: 10.0 seconds), add some parmesan cheese and salt to pot"
+    },
+    {
+     "t": 267.3,
+     "te": null,
+     "lane": "question",
+     "text": "Provide a chronological description of each new event that has finished by this point and was not previously described. Include the duration along with the start time and description, formatted as: <start time> - <end time> (duration: <x> seconds), <description>."
+    },
+    {
+     "t": 1305,
+     "te": null,
+     "lane": "answer",
+     "text": "264s - 305s (duration: 41.0 seconds), put the patties cheese sauce and vegetables in buns"
+    },
+    {
+     "t": 1305,
+     "te": null,
+     "lane": "question",
+     "text": "Based on the current observation, list the events that concluded up to the current frame and were not reported in earlier outputs. Ensure your response follows the format: <start time> - <end time> (duration: <x> seconds), <description>."
+    }
+   ],
+   "raw_format": "json",
+   "raw": [
+    {
+     "video": "103/H_9oM1Y60lU.mp4",
+     "conversations": [
+      {
+       "from": "human",
+       "timestamps": 107.8,
+       "value": "<video>\nPlease list all the events that have fully concluded up to this point and have not been previously reported. For each event, provide the start time, end time, and duration. Format your response as: <start time> - <end time> (duration: <x> seconds), <description>."
+      },
+      {
+       "from": "gpt",
+       "value": "67s - 102s (duration: 35.0 seconds), grill the  patties"
+      },
+      {
+       "from": "human",
+       "timestamps": 198.8,
+       "value": "<video>\nPlease list all the events that have fully concluded up to this point and have not been previously reported. For each event, provide the start time, end time, and duration. Format your response as: <start time> - <end time> (duration: <x> seconds), <description>."
+      },
+      {
+       "from": "gpt",
+       "value": "129s - 157s (duration: 28.0 seconds), chop some roasted pepper and season with salt and pepper"
+      },
+      {
+       "from": "human",
+       "timestamps": 267.3,
+       "value": "<video>\nProvide a chronological description of each new event that has finished by this point and was not previously described. Include the duration along with the start time and description, formatted as: <start time> - <end time> (duration: <x> seconds), <description>."
+      },
+      {
+       "from": "gpt",
+       "value": "202s - 222s (duration: 20.0 seconds), add butter flour and hot milk to a sauce pan and whisk\n229s - 239s (duration: 10.0 seconds), add some parmesan cheese and salt to pot"
+      },
+      {
+       "from": "human",
+       "timestamps": 1305,
+       "value": "<video>\nBased on the current observation, list the events that concluded up to the current frame and were not reported in earlier outputs. Ensure your response follows the format: <start time> - <end time> (duration: <x> seconds), <description>."
+      },
+      {
+       "from": "gpt",
+       "value": "264s - 305s (duration: 41.0 seconds), put the patties cheese sauce and vegetables in buns"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "DiDeMo 11054484@N04_4414894720: woman making popcorn — all 5 'still ongoing?' records for this video",
+   "video_ref": "11054484@N04_4414894720_6360297860.mov (DiDeMo / Flickr)",
+   "duration_s": 87.82,
+   "clip": "samples/media/videochatonline-it_2.mp4",
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 1.4,
+     "te": null,
+     "lane": "answer",
+     "text": "The event happens from 0.0s to now (duration: 1.4 seconds)."
+    },
+    {
+     "t": 1.4,
+     "te": null,
+     "lane": "question",
+     "text": "Has the event 'you can see the butt of this woman' been completed or is it still in progress? If still ongoing, format as: <start time> - now (duration: <x> seconds). If completed, use: <start time> - <end time> (duration: <x> seconds)."
+    },
+    {
+     "t": 16.2,
+     "te": null,
+     "lane": "answer",
+     "text": "The event happens from 15.0s to now (duration: 1.2 seconds)."
+    },
+    {
+     "t": 16.2,
+     "te": null,
+     "lane": "question",
+     "text": "Is the event 'shake the pan on the stove' still happening or has it concluded? If ongoing, provide: <start time> - now (duration: <x> seconds). If finished, provide: <start time> - <end time> (duration: <x> seconds)."
+    },
+    {
+     "t": 17.3,
+     "te": null,
+     "lane": "answer",
+     "text": "The event happens from 15.0s to now (duration: 2.3 seconds)."
+    },
+    {
+     "t": 17.3,
+     "te": null,
+     "lane": "question",
+     "text": "Has the event 'someone shakes a pan that' ended, or is it still ongoing? If it's ongoing, format the response as: <start time> - now (duration: <x> seconds). If it's over, format it as: <start time> - <end time> (duration: <x> seconds)."
+    },
+    {
+     "t": 167.5,
+     "te": null,
+     "lane": "answer",
+     "text": "The event happens from 15.0s to 20.0s (duration: 5.0 seconds)."
+    },
+    {
+     "t": 167.5,
+     "te": null,
+     "lane": "question",
+     "text": "Can you confirm if the event 'woman shakes pan back and forth' is still happening or has ended? If ongoing, format as: <start time> - now (duration: <x> seconds). If it has ended, provide: <start time> - <end time> (duration: <x> seconds)."
+    },
+    {
+     "t": 1005.1,
+     "te": null,
+     "lane": "answer",
+     "text": "The event happens from 0.0s to 10.0s (duration: 10.0 seconds)."
+    },
+    {
+     "t": 1005.1,
+     "te": null,
+     "lane": "question",
+     "text": "Has the event 'A woman in green t-shirt cooks in the kitchen.' been completed or is it still in progress? If still ongoing, format as: <start time> - now (duration: <x> seconds). If completed, use: <start time> - <end time> (duration: <x> seconds)."
+    }
+   ],
+   "raw_format": "json",
+   "raw": [
+    {
+     "video": "11054484@N04_4414894720_6360297860.mov",
+     "conversations": [
+      {
+       "from": "human",
+       "timestamps": 1.4,
+       "value": "<video>\nHas the event 'you can see the butt of this woman' been completed or is it still in progress? If still ongoing, format as: <start time> - now (duration: <x> seconds). If completed, use: <start time> - <end time> (duration: <x> seconds)."
+      },
+      {
+       "from": "gpt",
+       "value": "The event happens from 0.0s to now (duration: 1.4 seconds)."
+      }
+     ]
+    },
+    {
+     "video": "11054484@N04_4414894720_6360297860.mov",
+     "conversations": [
+      {
+       "from": "human",
+       "timestamps": 1005.1,
+       "value": "<video>\nHas the event 'A woman in green t-shirt cooks in the kitchen.' been completed or is it still in progress? If still ongoing, format as: <start time> - now (duration: <x> seconds). If completed, use: <start time> - <end time> (duration: <x> seconds)."
+      },
+      {
+       "from": "gpt",
+       "value": "The event happens from 0.0s to 10.0s (duration: 10.0 seconds)."
+      }
+     ]
+    },
+    {
+     "video": "11054484@N04_4414894720_6360297860.mov",
+     "conversations": [
+      {
+       "from": "human",
+       "timestamps": 17.3,
+       "value": "<video>\nHas the event 'someone shakes a pan that' ended, or is it still ongoing? If it's ongoing, format the response as: <start time> - now (duration: <x> seconds). If it's over, format it as: <start time> - <end time> (duration: <x> seconds)."
+      },
+      {
+       "from": "gpt",
+       "value": "The event happens from 15.0s to now (duration: 2.3 seconds)."
+      }
+     ]
+    },
+    {
+     "video": "11054484@N04_4414894720_6360297860.mov",
+     "conversations": [
+      {
+       "from": "human",
+       "timestamps": 16.2,
+       "value": "<video>\nIs the event 'shake the pan on the stove' still happening or has it concluded? If ongoing, provide: <start time> - now (duration: <x> seconds). If finished, provide: <start time> - <end time> (duration: <x> seconds)."
+      },
+      {
+       "from": "gpt",
+       "value": "The event happens from 15.0s to now (duration: 1.2 seconds)."
+      }
+     ]
+    },
+    {
+     "video": "11054484@N04_4414894720_6360297860.mov",
+     "conversations": [
+      {
+       "from": "human",
+       "timestamps": 167.5,
+       "value": "<video>\nCan you confirm if the event 'woman shakes pan back and forth' is still happening or has ended? If ongoing, format as: <start time> - now (duration: <x> seconds). If it has ended, provide: <start time> - <end time> (duration: <x> seconds)."
+      },
+      {
+       "from": "gpt",
+       "value": "The event happens from 15.0s to 20.0s (duration: 5.0 seconds)."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2911 @@
+{
+ "slug": "ego-extra",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "transcript/eng/01/01_001_transcript.txt and transcript/eng/02/02_001_transcript.txt (official transcript.zip; same files on huggingface.co/datasets/SitongGong/EgoExtra)",
+  "https://huggingface.co/datasets/SitongGong/EgoExtra final_questions/01_keep_with_timestamp_filtered.json, final_questions/02_keep_with_timestamp_filtered.json",
+  "https://huggingface.co/datasets/SitongGong/EgoExtra video_clip_final/01/01_001/30s/01_001_9.mp4, video_clip_final/02/02_001/30s/02_001_21.mp4 (clip sources)"
+ ],
+ "access_used": "open download",
+ "note": "One example = the opening of one expert–trainee session: the transcript lines verbatim (E = remote expert, A = trainee wearing Aria glasses; SRT-style times in raw-video seconds; the English is an LLM translation from Italian, hence the odd wording) plus the multiple-choice VQA sets built from those lines (question, 5 options, correct answer, involved line ids). The raw is cut to the first lines and questions. Clips are cut from the dataset's own 30 s question clips, taken from the third-party HF mirror, because the official server lists no per-video files. The clips have no audio. They end at the question end time, so clip_offset_s is inferred from that (about ±0.1 s). The release readme forbids commercial use.",
+ "examples": [
+  {
+   "title": "01_001 (bike workshop): trainee mounts a bicycle on the repair stand while the expert guides and corrects — first 40 of 653 transcript lines, 12 of 135 VQA sets",
+   "video_ref": "Ego-EXTRA video 01_001 (scenario 01)",
+   "duration_s": null,
+   "clip": "samples/media/ego-extra_1.mp4",
+   "clip_offset_s": 24.96,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 2.0,
+     "te": 2.56,
+     "lane": "instructor",
+     "text": "At that time,"
+    },
+    {
+     "t": 2.0,
+     "te": 12.48,
+     "lane": "question",
+     "text": "[VQA 01_001_1] What object is in front of me? → An orange bicycle"
+    },
+    {
+     "t": 3.66,
+     "te": 5.62,
+     "lane": "instructor",
+     "text": "In front of you there is an orange bicycle,"
+    },
+    {
+     "t": 6.02,
+     "te": 9.6,
+     "lane": "instructor",
+     "text": "you have to take that bike that is located after the orange bicycle,"
+    },
+    {
+     "t": 10.5,
+     "te": 12.48,
+     "lane": "user",
+     "text": "Ok, this here?"
+    },
+    {
+     "t": 12.86,
+     "te": 12.94,
+     "lane": "instructor",
+     "text": "Exactly,"
+    },
+    {
+     "t": 12.86,
+     "te": 15.34,
+     "lane": "question",
+     "text": "[VQA 01_001_2] Am I correct to assume that the bike I need to take is the one after the orange bike? → Yes"
+    },
+    {
+     "t": 14.14,
+     "te": 15.34,
+     "lane": "user",
+     "text": "All right."
+    },
+    {
+     "t": 14.98,
+     "te": 16.08,
+     "lane": "instructor",
+     "text": "parade it from the bra,"
+    },
+    {
+     "t": 14.98,
+     "te": 22.18,
+     "lane": "question",
+     "text": "[VQA 01_001_3] What is the color of the column with the clamp that I need to approach? → Black and Blue"
+    },
+    {
+     "t": 16.74,
+     "te": 20.16,
+     "lane": "instructor",
+     "text": "you approach the stand with the morsa,"
+    },
+    {
+     "t": 20.74,
+     "te": 21.58,
+     "lane": "instructor",
+     "text": "black and blue,"
+    },
+    {
+     "t": 21.78,
+     "te": 22.18,
+     "lane": "user",
+     "text": "Column,"
+    },
+    {
+     "t": 22.12,
+     "te": 23.5,
+     "lane": "instructor",
+     "text": "This here is in front of you,"
+    },
+    {
+     "t": 22.12,
+     "te": 23.2,
+     "lane": "question",
+     "text": "[VQA 01_001_4] What is the object in front of me that I need to focus on? → Bicycle"
+    },
+    {
+     "t": 22.379,
+     "te": 23.2,
+     "lane": "user",
+     "text": "stand."
+    },
+    {
+     "t": 24.02,
+     "te": 24.28,
+     "lane": "instructor",
+     "text": "Exactly,"
+    },
+    {
+     "t": 24.86,
+     "te": 25.68,
+     "lane": "user",
+     "text": "OK perfect."
+    },
+    {
+     "t": 24.95,
+     "te": 25.32,
+     "lane": "instructor",
+     "text": "ok"
+    },
+    {
+     "t": 25.86,
+     "te": 26.28,
+     "lane": "user",
+     "text": "What do I do?"
+    },
+    {
+     "t": 25.98,
+     "te": 31.69,
+     "lane": "instructor",
+     "text": "You have to lift the bicycle and the tube holding the saddle you have to insert it between the grip,"
+    },
+    {
+     "t": 28.28,
+     "te": 36.66,
+     "lane": "user",
+     "text": "Yes? So in this way?"
+    },
+    {
+     "t": 33.56,
+     "te": 34.299,
+     "lane": "instructor",
+     "text": "ok"
+    },
+    {
+     "t": 33.56,
+     "te": 43.279,
+     "lane": "question",
+     "text": "[VQA 01_001_7] What should I do with the lever? → Tighten it"
+    },
+    {
+     "t": 34.9,
+     "te": 35.439,
+     "lane": "instructor",
+     "text": "Perfect,"
+    },
+    {
+     "t": 36.52,
+     "te": 38.56,
+     "lane": "instructor",
+     "text": "perfect, and with that lever I hold it,"
+    },
+    {
+     "t": 40.32,
+     "te": 41.88,
+     "lane": "instructor",
+     "text": "clockwise made,"
+    },
+    {
+     "t": 41.84,
+     "te": 43.279,
+     "lane": "user",
+     "text": "Higher,"
+    },
+    {
+     "t": 42.68,
+     "te": 42.86,
+     "lane": "instructor",
+     "text": "Perfect"
+    },
+    {
+     "t": 42.68,
+     "te": 44.18,
+     "lane": "question",
+     "text": "[VQA 01_001_8] Should I move the lever up or down? → down"
+    },
+    {
+     "t": 43.599,
+     "te": 44.18,
+     "lane": "user",
+     "text": "lower,"
+    },
+    {
+     "t": 43.759,
+     "te": 49.2,
+     "lane": "instructor",
+     "text": "no you can also go down a little in such a way that it must be knocked down,"
+    },
+    {
+     "t": 43.759,
+     "te": 44.959,
+     "lane": "question",
+     "text": "[VQA 01_001_9] Should I lower it a bit so it can be folded? → Yes"
+    },
+    {
+     "t": 44.32,
+     "te": 44.959,
+     "lane": "user",
+     "text": "Is that okay?"
+    },
+    {
+     "t": 47.24,
+     "te": 48.18,
+     "lane": "user",
+     "text": "Yes?"
+    },
+    {
+     "t": 49.639,
+     "te": 50.06,
+     "lane": "instructor",
+     "text": "Perfect"
+    },
+    {
+     "t": 50.22,
+     "te": 54.84,
+     "lane": "instructor",
+     "text": "that's okay, that's okay,"
+    },
+    {
+     "t": 51.4,
+     "te": 51.959,
+     "lane": "user",
+     "text": "Ok."
+    },
+    {
+     "t": 55.259,
+     "te": 56.2,
+     "lane": "user",
+     "text": "Ok."
+    },
+    {
+     "t": 55.259,
+     "te": 56.919,
+     "lane": "question",
+     "text": "[VQA 01_001_12] Has the task been completed correctly? → Yes"
+    },
+    {
+     "t": 56.599,
+     "te": 56.919,
+     "lane": "instructor",
+     "text": "Very well,"
+    },
+    {
+     "t": 56.68,
+     "te": 57.139,
+     "lane": "user",
+     "text": "Perfect."
+    },
+    {
+     "t": 56.68,
+     "te": 61.72,
+     "lane": "question",
+     "text": "[VQA 01_001_13] What is the next step in the procedure? → Collecting necessary tools"
+    },
+    {
+     "t": 57.599,
+     "te": 61.72,
+     "lane": "instructor",
+     "text": "then now let's make the collection of tools that are necessary for"
+    },
+    {
+     "t": 62.16,
+     "te": 63.84,
+     "lane": "instructor",
+     "text": "the operation,"
+    },
+    {
+     "t": 65.019,
+     "te": 66.139,
+     "lane": "user",
+     "text": "Ok,"
+    },
+    {
+     "t": 65.019,
+     "te": 68.76,
+     "lane": "instructor",
+     "text": "Dirrigi towards the black and orange chest of drawers,"
+    },
+    {
+     "t": 65.019,
+     "te": 72.019,
+     "lane": "question",
+     "text": "[VQA 01_001_14] Where should I head to now? → The black and orange dresser"
+    },
+    {
+     "t": 70.04,
+     "te": 71.36,
+     "lane": "instructor",
+     "text": "Yes,"
+    },
+    {
+     "t": 71.3,
+     "te": 72.019,
+     "lane": "user",
+     "text": "There are."
+    },
+    {
+     "t": 72.019,
+     "te": 73.3,
+     "lane": "question",
+     "text": "[VQA 01_001_15] What should I take from the black and orange dresser? → The first drawer"
+    },
+    {
+     "t": 73.54,
+     "te": 76.379,
+     "lane": "question",
+     "text": "[VQA 01_001_16] Which drawer should I open? → First drawer"
+    }
+   ],
+   "raw_format": "txt",
+   "raw": {
+    "transcript/eng/01/01_001_transcript.txt": [
+     "1 [00:00:02,000 --> 00:00:02,560] E: At that time,",
+     "2 [00:00:03,660 --> 00:00:05,620] E: In front of you there is an orange bicycle,",
+     "3 [00:00:06,020 --> 00:00:09,600] E: you have to take that bike that is located after the orange bicycle,",
+     "4 [00:00:10,500 --> 00:00:12,480] A: Ok, this here?",
+     "5 [00:00:12,860 --> 00:00:12,940] E: Exactly,",
+     "6 [00:00:14,140 --> 00:00:15,340] A: All right.",
+     "7 [00:00:14,980 --> 00:00:16,080] E: parade it from the bra,",
+     "8 [00:00:16,740 --> 00:00:20,160] E: you approach the stand with the morsa,",
+     "9 [00:00:20,740 --> 00:00:21,580] E: black and blue,",
+     "10 [00:00:21,780 --> 00:00:22,180] A: Column,",
+     "11 [00:00:22,120 --> 00:00:23,500] E: This here is in front of you,",
+     "12 [00:00:22,379 --> 00:00:23,200] A: stand.",
+     "13 [00:00:24,020 --> 00:00:24,280] E: Exactly,",
+     "14 [00:00:24,860 --> 00:00:25,680] A: OK perfect.",
+     "15 [00:00:24,950 --> 00:00:25,320] E: ok",
+     "16 [00:00:25,860 --> 00:00:26,280] A: What do I do?",
+     "17 [00:00:25,980 --> 00:00:31,690] E: You have to lift the bicycle and the tube holding the saddle you have to insert it between the grip,",
+     "18 [00:00:28,280 --> 00:00:36,660] A: Yes? So in this way?",
+     "19 [00:00:33,560 --> 00:00:34,299] E: ok",
+     "20 [00:00:34,900 --> 00:00:35,439] E: Perfect,",
+     "21 [00:00:36,520 --> 00:00:38,560] E: perfect, and with that lever I hold it,",
+     "22 [00:00:40,320 --> 00:00:41,880] E: clockwise made,",
+     "23 [00:00:41,840 --> 00:00:43,279] A: Higher,",
+     "24 [00:00:42,680 --> 00:00:42,860] E: Perfect",
+     "25 [00:00:43,599 --> 00:00:44,180] A: lower,",
+     "26 [00:00:43,759 --> 00:00:49,200] E: no you can also go down a little in such a way that it must be knocked down,",
+     "27 [00:00:44,320 --> 00:00:44,959] A: Is that okay?",
+     "28 [00:00:47,240 --> 00:00:48,180] A: Yes?",
+     "29 [00:00:49,639 --> 00:00:50,060] E: Perfect",
+     "30 [00:00:50,220 --> 00:00:54,840] E: that's okay, that's okay,",
+     "31 [00:00:51,400 --> 00:00:51,959] A: Ok.",
+     "32 [00:00:55,259 --> 00:00:56,200] A: Ok.",
+     "33 [00:00:56,599 --> 00:00:56,919] E: Very well,",
+     "34 [00:00:56,680 --> 00:00:57,139] A: Perfect.",
+     "35 [00:00:57,599 --> 00:01:01,720] E: then now let's make the collection of tools that are necessary for",
+     "36 [00:01:02,160 --> 00:01:03,840] E: the operation,",
+     "37 [00:01:05,019 --> 00:01:06,139] A: Ok,",
+     "38 [00:01:05,019 --> 00:01:08,760] E: Dirrigi towards the black and orange chest of drawers,",
+     "39 [00:01:10,040 --> 00:01:11,360] E: Yes,",
+     "40 [00:01:11,300 --> 00:01:12,019] A: There are.",
+     "…[truncated 613 more items]"
+    ],
+    "final_questions/01_keep_with_timestamp_filtered.json (records for this video; 02_001 keeps sets 1–5 and 19–21)": [
+     {
+      "conversation_turn": [
+       "E: then,",
+       "E: In front of you there is an orange bicycle,",
+       "E: You have to take that bike that is located after the orange bicycle,",
+       "A: ok, this here?"
+      ],
+      "context_previous": [
+       {
+        "speaker": "E",
+        "text": "No previous context available.",
+        "line_id": null
+       }
+      ],
+      "context_after": [
+       {
+        "speaker": "E",
+        "text": "In front of you there is an orange bicycle,",
+        "line_id": 2
+       },
+       {
+        "speaker": "E",
+        "text": "you have to take that bike that is located after the orange bicycle,",
+        "line_id": 3
+       },
+       {
+        "speaker": "A",
+        "text": "Ok, this here?",
+        "line_id": 4
+       },
+       {
+        "speaker": "E",
+        "text": "Exactly,",
+        "line_id": 5
+       }
+      ],
+      "generated_question": "What object is in front of me?",
+      "options": [
+       "An orange bicycle",
+       "A chair",
+       "A table",
+       "A bookshelf",
+       "A desk"
+      ],
+      "correct_answer": "An orange bicycle",
+      "questions_involved_id": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "univoc_id": "01_001_1",
+      "question_start_time": "00:00:02,000",
+      "question_end_time": "00:00:12,480"
+     },
+     {
+      "conversation_turn": [
+       "E: exactly,",
+       "A: Okay."
+      ],
+      "context_previous": [
+       {
+        "speaker": "E",
+        "text": "At that time,",
+        "line_id": 1
+       },
+       {
+        "speaker": "E",
+        "text": "In front of you there is an orange bicycle,",
+        "line_id": 2
+       },
+       {
+        "speaker": "E",
+        "text": "you have to take that bike that is located after the orange bicycle,",
+        "line_id": 3
+       },
+       {
+        "speaker": "A",
+        "text": "Ok, this here?",
+        "line_id": 4
+       }
+      ],
+      "context_after": [
+       {
+        "speaker": "A",
+        "text": "All right.",
+        "line_id": 6
+       },
+       {
+        "speaker": "E",
+        "text": "parade it from the bra,",
+        "line_id": 7
+       },
+       {
+        "speaker": "E",
+        "text": "you approach the stand with the morsa,",
+        "line_id": 8
+       },
+       {
+        "speaker": "E",
+        "text": "black and blue,",
+        "line_id": 9
+       }
+      ],
+      "generated_question": "Am I correct to assume that the bike I need to take is the one after the orange bike?",
+      "options": [
+       "Yes",
+       "No, it's the orange bike",
+       "No, it's the bike before the orange bike",
+       "No, it's a different bike altogether",
+       "I'm not sure"
+      ],
+      "correct_answer": [
+       "Yes"
+      ],
+      "questions_involved_id": [
+       5,
+       6
+      ],
+      "univoc_id": "01_001_2",
+      "question_start_time": "00:00:12,860",
+      "question_end_time": "00:00:15,340"
+     },
+     {
+      "conversation_turn": [
+       "E: parades it from the bra,",
+       "E: You approach the stand with the grip with the grip,",
+       "E: black and blue,",
+       "A: column,"
+      ],
+      "context_previous": [
+       {
+        "speaker": "E",
+        "text": "At that time,",
+        "line_id": 1
+       },
+       {
+        "speaker": "E",
+        "text": "In front of you there is an orange bicycle,",
+        "line_id": 2
+       },
+       {
+        "speaker": "E",
+        "text": "you have to take that bike that is located after the orange bicycle,",
+        "line_id": 3
+       },
+       {
+        "speaker": "A",
+        "text": "Ok, this here?",
+        "line_id": 4
+       },
+       {
+        "speaker": "E",
+        "text": "Exactly,",
+        "line_id": 5
+       },
+       {
+        "speaker": "A",
+        "text": "All right.",
+        "line_id": 6
+       }
+      ],
+      "context_after": [
+       {
+        "speaker": "E",
+        "text": "you approach the stand with the morsa,",
+        "line_id": 8
+       },
+       {
+        "speaker": "E",
+        "text": "black and blue,",
+        "line_id": 9
+       },
+       {
+        "speaker": "A",
+        "text": "Column,",
+        "line_id": 10
+       },
+       {
+        "speaker": "E",
+        "text": "This here is in front of you,",
+        "line_id": 11
+       }
+      ],
+      "generated_question": "What is the color of the column with the clamp that I need to approach?",
+      "options": [
+       "Black and Blue",
+       "Red and White",
+       "Yellow and Green",
+       "Orange and Purple",
+       "Grey and Brown"
+      ],
+      "correct_answer": [
+       "Black and Blue"
+      ],
+      "questions_involved_id": [
+       7,
+       8,
+       9,
+       10
+      ],
+      "univoc_id": "01_001_3",
+      "question_start_time": "00:00:14,980",
+      "question_end_time": "00:00:22,180"
+     },
+     {
+      "conversation_turn": [
+       "E: This here is in front of you,",
+       "A: stand."
+      ],
+      "context_previous": [
+       {
+        "speaker": "E",
+        "text": "At that time,",
+        "line_id": 1
+       },
+       {
+        "speaker": "E",
+        "text": "In front of you there is an orange bicycle,",
+        "line_id": 2
+       },
+       {
+        "speaker": "E",
+        "text": "you have to take that bike that is located after the orange bicycle,",
+        "line_id": 3
+       },
+       {
+        "speaker": "A",
+        "text": "Ok, this here?",
+        "line_id": 4
+       },
+       {
+        "speaker": "E",
+        "text": "Exactly,",
+        "line_id": 5
+       },
+       {
+        "speaker": "A",
+        "text": "All right.",
+        "line_id": 6
+       },
+       {
+        "speaker": "E",
+        "text": "parade it from the bra,",
+        "line_id": 7
+       },
+       {
+        "speaker": "E",
+        "text": "you approach the stand with the morsa,",
+        "line_id": 8
+       },
+       {
+        "speaker": "E",
+        "text": "black and blue,",
+        "line_id": 9
+       },
+       {
+        "speaker": "A",
+        "text": "Column,",
+        "line_id": 10
+       }
+      ],
+      "context_after": [
+       {
+        "speaker": "A",
+        "text": "stand.",
+        "line_id": 12
+       },
+       {
+        "speaker": "E",
+        "text": "Exactly,",
+        "line_id": 13
+       },
+       {
+        "speaker": "A",
+        "text": "OK perfect.",
+        "line_id": 14
+       },
+       {
+        "speaker": "E",
+        "text": "ok",
+        "line_id": 15
+       }
+      ],
+      "generated_question": "What is the object in front of me that I need to focus on?",
+      "options": [
+       "Bicycle",
+       "Workbench",
+       " Toolbox",
+       " Chair",
+       "Bike rack"
+      ],
+      "correct_answer": "Bicycle",
+      "questions_involved_id": [
+       11,
+       12
+      ],
+      "univoc_id": "01_001_4",
+      "question_start_time": "00:00:22,120",
+      "question_end_time": "00:00:23,200"
+     },
+     {
+      "conversation_turn": [
+       "E: OK",
+       "E: perfect,",
+       "E: perfect, and with that lever I hold it,",
+       "E: clockwise commensurate,",
+       "A: higher, higher,"
+      ],
+      "context_previous": [
+       {
+        "speaker": "A",
+        "text": "Ok, this here?",
+        "line_id": 4
+       },
+       {
+        "speaker": "E",
+        "text": "Exactly,",
+        "line_id": 5
+       },
+       {
+        "speaker": "A",
+        "text": "All right.",
+        "line_id": 6
+       },
+       {
+        "speaker": "E",
+        "text": "parade it from the bra,",
+        "line_id": 7
+       },
+       {
+        "speaker": "E",
+        "text": "you approach the stand with the morsa,",
+        "line_id": 8
+       },
+       {
+        "speaker": "E",
+        "text": "black and blue,",
+        "line_id": 9
+       },
+       {
+        "speaker": "A",
+        "text": "Column,",
+        "line_id": 10
+       },
+       {
+        "speaker": "E",
+        "text": "This here is in front of you,",
+        "line_id": 11
+       },
+       {
+        "speaker": "A",
+        "text": "stand.",
+        "line_id": 12
+       },
+       {
+        "speaker": "E",
+        "text": "Exactly,",
+        "line_id": 13
+       },
+       {
+        "speaker": "A",
+        "text": "OK perfect.",
+        "line_id": 14
+       },
+       {
+        "speaker": "E",
+        "text": "ok",
+        "line_id": 15
+       },
+       {
+        "speaker": "A",
+        "text": "What do I do?",
+        "line_id": 16
+       },
+       {
+        "speaker": "E",
+        "text": "You have to lift the bicycle and the tube holding the saddle you have to insert it between the grip,",
+        "line_id": 17
+       },
+       {
+        "speaker": "A",
+        "text": "Yes? So in this way?",
+        "line_id": 18
+       }
+      ],
+      "context_after": [
+       {
+        "speaker": "E",
+        "text": "Perfect,",
+        "line_id": 20
+       },
+       {
+        "speaker": "E",
+        "text": "perfect, and with that lever I hold it,",
+        "line_id": 21
+       },
+       {
+        "speaker": "E",
+        "text": "clockwise made,",
+        "line_id": 22
+       },
+       {
+        "speaker": "A",
+        "text": "Higher,",
+        "line_id": 23
+       }
+      ],
+      "generated_question": "What should I do with the lever?",
+      "options": [
+       "Tighten it",
+       "Loosen it",
+       "Move it up",
+       "Move it down",
+       "Release it"
+      ],
+      "correct_answer": "Tighten it",
+      "questions_involved_id": [
+       19,
+       20,
+       21,
+       22,
+       23
+      ],
+      "univoc_id": "01_001_7",
+      "question_start_time": "00:00:33,560",
+      "question_end_time": "00:00:43,279"
+     },
+     {
+      "conversation_turn": [
+       "E: perfect",
+       "A: lower,"
+      ],
+      "context_previous": [
+       {
+        "speaker": "E",
+        "text": "black and blue,",
+        "line_id": 9
+       },
+       {
+        "speaker": "A",
+        "text": "Column,",
+        "line_id": 10
+       },
+       {
+        "speaker": "E",
+        "text": "This here is in front of you,",
+        "line_id": 11
+       },
+       {
+        "speaker": "A",
+        "text": "stand.",
+        "line_id": 12
+       },
+       {
+        "speaker": "E",
+        "text": "Exactly,",
+        "line_id": 13
+       },
+       {
+        "speaker": "A",
+        "text": "OK perfect.",
+        "line_id": 14
+       },
+       {
+        "speaker": "E",
+        "text": "ok",
+        "line_id": 15
+       },
+       {
+        "speaker": "A",
+        "text": "What do I do?",
+        "line_id": 16
+       },
+       {
+        "speaker": "E",
+        "text": "You have to lift the bicycle and the tube holding the saddle you have to insert it between the grip,",
+        "line_id": 17
+       },
+       {
+        "speaker": "A",
+        "text": "Yes? So in this way?",
+        "line_id": 18
+       },
+       {
+        "speaker": "E",
+        "text": "ok",
+        "line_id": 19
+       },
+       {
+        "speaker": "E",
+        "text": "Perfect,",
+        "line_id": 20
+       },
+       {
+        "speaker": "E",
+        "text": "perfect, and with that lever I hold it,",
+        "line_id": 21
+       },
+       {
+        "speaker": "E",
+        "text": "clockwise made,",
+        "line_id": 22
+       },
+       {
+        "speaker": "A",
+        "text": "Higher,",
+        "line_id": 23
+       }
+      ],
+      "context_after": [
+       {
+        "speaker": "A",
+        "text": "lower,",
+        "line_id": 25
+       },
+       {
+        "speaker": "E",
+        "text": "no you can also go down a little in such a way that it must be knocked down,",
+        "line_id": 26
+       },
+       {
+        "speaker": "A",
+        "text": "Is that okay?",
+        "line_id": 27
+       },
+       {
+        "speaker": "A",
+        "text": "Yes?",
+        "line_id": 28
+       }
+      ],
+      "generated_question": "Should I move the lever up or down?",
+      "options": [
+       "down",
+       "up",
+       "left",
+       "right",
+       "stay still"
+      ],
+      "correct_answer": "down",
+      "questions_involved_id": [
+       24,
+       25
+      ],
+      "univoc_id": "01_001_8",
+      "question_start_time": "00:00:42,680",
+      "question_end_time": "00:00:44,180"
+     },
+     {
+      "conversation_turn": [
+       "E: No you can also descend it a little in such a way that it must be knocked down,",
+       "A: is that okay?"
+      ],
+      "context_previous": [
+       {
+        "speaker": "E",
+        "text": "This here is in front of you,",
+        "line_id": 11
+       },
+       {
+        "speaker": "A",
+        "text": "stand.",
+        "line_id": 12
+       },
+       {
+        "speaker": "E",
+        "text": "Exactly,",
+        "line_id": 13
+       },
+       {
+        "speaker": "A",
+        "text": "OK perfect.",
+        "line_id": 14
+       },
+       {
+        "speaker": "E",
+        "text": "ok",
+        "line_id": 15
+       },
+       {
+        "speaker": "A",
+        "text": "What do I do?",
+        "line_id": 16
+       },
+       {
+        "speaker": "E",
+        "text": "You have to lift the bicycle and the tube holding the saddle you have to insert it between the grip,",
+        "line_id": 17
+       },
+       {
+        "speaker": "A",
+        "text": "Yes? So in this way?",
+        "line_id": 18
+       },
+       {
+        "speaker": "E",
+        "text": "ok",
+        "line_id": 19
+       },
+       {
+        "speaker": "E",
+        "text": "Perfect,",
+        "line_id": 20
+       },
+       {
+        "speaker": "E",
+        "text": "perfect, and with that lever I hold it,",
+        "line_id": 21
+       },
+       {
+        "speaker": "E",
+        "text": "clockwise made,",
+        "line_id": 22
+       },
+       {
+        "speaker": "A",
+        "text": "Higher,",
+        "line_id": 23
+       },
+       {
+        "speaker": "E",
+        "text": "Perfect",
+        "line_id": 24
+       },
+       {
+        "speaker": "A",
+        "text": "lower,",
+        "line_id": 25
+       }
+      ],
+      "context_after": [
+       {
+        "speaker": "A",
+        "text": "Is that okay?",
+        "line_id": 27
+       },
+       {
+        "speaker": "A",
+        "text": "Yes?",
+        "line_id": 28
+       },
+       {
+        "speaker": "E",
+        "text": "Perfect",
+        "line_id": 29
+       },
+       {
+        "speaker": "E",
+        "text": "that's okay, that's okay,",
+        "line_id": 30
+       }
+      ],
+      "generated_question": "Should I lower it a bit so it can be folded?",
+      "options": [
+       "Yes",
+       "No, raise it",
+       "No, leave it as it is",
+       "No, turn it around",
+       "No, remove it"
+      ],
+      "correct_answer": "Yes",
+      "questions_involved_id": [
+       26,
+       27
+      ],
+      "univoc_id": "01_001_9",
+      "question_start_time": "00:00:43,759",
+      "question_end_time": "00:00:44,959"
+     },
+     {
+      "conversation_turn": [
+       "A: Ok.",
+       "E: Very well,"
+      ],
+      "context_previous": [
+       {
+        "speaker": "E",
+        "text": "You have to lift the bicycle and the tube holding the saddle you have to insert it between the grip,",
+        "line_id": 17
+       },
+       {
+        "speaker": "A",
+        "text": "Yes? So in this way?",
+        "line_id": 18
+       },
+       {
+        "speaker": "E",
+        "text": "ok",
+        "line_id": 19
+       },
+       {
+        "speaker": "E",
+        "text": "Perfect,",
+        "line_id": 20
+       },
+       {
+        "speaker": "E",
+        "text": "perfect, and with that lever I hold it,",
+        "line_id": 21
+       },
+       {
+        "speaker": "E",
+        "text": "clockwise made,",
+        "line_id": 22
+       },
+       {
+        "speaker": "A",
+        "text": "Higher,",
+        "line_id": 23
+       },
+       {
+        "speaker": "E",
+        "text": "Perfect",
+        "line_id": 24
+       },
+       {
+        "speaker": "A",
+        "text": "lower,",
+        "line_id": 25
+       },
+       {
+        "speaker": "E",
+        "text": "no you can also go down a little in such a way that it must be knocked down,",
+        "line_id": 26
+       },
+       {
+        "speaker": "A",
+        "text": "Is that okay?",
+        "line_id": 27
+       },
+       {
+        "speaker": "A",
+        "text": "Yes?",
+        "line_id": 28
+       },
+       {
+        "speaker": "E",
+        "text": "Perfect",
+        "line_id": 29
+       },
+       {
+        "speaker": "E",
+        "text": "that's okay, that's okay,",
+        "line_id": 30
+       },
+       {
+        "speaker": "A",
+        "text": "Ok.",
+        "line_id": 31
+       }
+      ],
+      "context_after": [
+       {
+        "speaker": "E",
+        "text": "Very well,",
+        "line_id": 33
+       },
+       {
+        "speaker": "A",
+        "text": "Perfect.",
+        "line_id": 34
+       },
+       {
+        "speaker": "E",
+        "text": "then now let's make the collection of tools that are necessary for",
+        "line_id": 35
+       },
+       {
+        "speaker": "E",
+        "text": "the operation,",
+        "line_id": 36
+       }
+      ],
+      "generated_question": "Has the task been completed correctly?",
+      "options": [
+       "Yes",
+       "No",
+       "Almost",
+       "Not sure",
+       "Need to restart"
+      ],
+      "correct_answer": [
+       "Yes"
+      ],
+      "questions_involved_id": [
+       32,
+       33
+      ],
+      "univoc_id": "01_001_12",
+      "question_start_time": "00:00:55,259",
+      "question_end_time": "00:00:56,919"
+     },
+     {
+      "conversation_turn": [
+       "A: Perfect.",
+       "E: then now let's do the collection of tools that are needed for"
+      ],
+      "context_previous": [
+       {
+        "speaker": "E",
+        "text": "ok",
+        "line_id": 19
+       },
+       {
+        "speaker": "E",
+        "text": "Perfect,",
+        "line_id": 20
+       },
+       {
+        "speaker": "E",
+        "text": "perfect, and with that lever I hold it,",
+        "line_id": 21
+       },
+       {
+        "speaker": "E",
+        "text": "clockwise made,",
+        "line_id": 22
+       },
+       {
+        "speaker": "A",
+        "text": "Higher,",
+        "line_id": 23
+       },
+       {
+        "speaker": "E",
+        "text": "Perfect",
+        "line_id": 24
+       },
+       {
+        "speaker": "A",
+        "text": "lower,",
+        "line_id": 25
+       },
+       {
+        "speaker": "E",
+        "text": "no you can also go down a little in such a way that it must be knocked down,",
+        "line_id": 26
+       },
+       {
+        "speaker": "A",
+        "text": "Is that okay?",
+        "line_id": 27
+       },
+       {
+        "speaker": "A",
+        "text": "Yes?",
+        "line_id": 28
+       },
+       {
+        "speaker": "E",
+        "text": "Perfect",
+        "line_id": 29
+       },
+       {
+        "speaker": "E",
+        "text": "that's okay, that's okay,",
+        "line_id": 30
+       },
+       {
+        "speaker": "A",
+        "text": "Ok.",
+        "line_id": 31
+       },
+       {
+        "speaker": "A",
+        "text": "Ok.",
+        "line_id": 32
+       },
+       {
+        "speaker": "E",
+        "text": "Very well,",
+        "line_id": 33
+       }
+      ],
+      "context_after": [
+       {
+        "speaker": "E",
+        "text": "then now let's make the collection of tools that are necessary for",
+        "line_id": 35
+       },
+       {
+        "speaker": "E",
+        "text": "the operation,",
+        "line_id": 36
+       },
+       {
+        "speaker": "A",
+        "text": "Ok,",
+        "line_id": 37
+       },
+       {
+        "speaker": "E",
+        "text": "Dirrigi towards the black and orange chest of drawers,",
+        "line_id": 38
+       }
+      ],
+      "generated_question": "What is the next step in the procedure?",
+      "options": [
+       "Collecting necessary tools",
+       "Assembling the furniture",
+       "Disassembling the furniture",
+       "Taking a break",
+       "Inspecting the work"
+      ],
+      "correct_answer": [
+       "Collecting necessary tools"
+      ],
+      "questions_involved_id": [
+       34,
+       35
+      ],
+      "univoc_id": "01_001_13",
+      "question_start_time": "00:00:56,680",
+      "question_end_time": "00:01:01,720"
+     },
+     {
+      "conversation_turn": [
+       "E: Dirigi towards the black and orange chest of drawers,",
+       "Well yes,",
+       "A: There are."
+      ],
+      "context_previous": [
+       {
+        "speaker": "A",
+        "text": "Higher,",
+        "line_id": 23
+       },
+       {
+        "speaker": "E",
+        "text": "Perfect",
+        "line_id": 24
+       },
+       {
+        "speaker": "A",
+        "text": "lower,",
+        "line_id": 25
+       },
+       {
+        "speaker": "E",
+        "text": "no you can also go down a little in such a way that it must be knocked down,",
+        "line_id": 26
+       },
+       {
+        "speaker": "A",
+        "text": "Is that okay?",
+        "line_id": 27
+       },
+       {
+        "speaker": "A",
+        "text": "Yes?",
+        "line_id": 28
+       },
+       {
+        "speaker": "E",
+        "text": "Perfect",
+        "line_id": 29
+       },
+       {
+        "speaker": "E",
+        "text": "that's okay, that's okay,",
+        "line_id": 30
+       },
+       {
+        "speaker": "A",
+        "text": "Ok.",
+        "line_id": 31
+       },
+       {
+        "speaker": "A",
+        "text": "Ok.",
+        "line_id": 32
+       },
+       {
+        "speaker": "E",
+        "text": "Very well,",
+        "line_id": 33
+       },
+       {
+        "speaker": "A",
+        "text": "Perfect.",
+        "line_id": 34
+       },
+       {
+        "speaker": "E",
+        "text": "then now let's make the collection of tools that are necessary for",
+        "line_id": 35
+       },
+       {
+        "speaker": "E",
+        "text": "the operation,",
+        "line_id": 36
+       },
+       {
+        "speaker": "A",
+        "text": "Ok,",
+        "line_id": 37
+       }
+      ],
+      "context_after": [
+       {
+        "speaker": "E",
+        "text": "Yes,",
+        "line_id": 39
+       },
+       {
+        "speaker": "A",
+        "text": "There are.",
+        "line_id": 40
+       },
+       {
+        "speaker": "E",
+        "text": "At that time",
+        "line_id": 41
+       },
+       {
+        "speaker": "A",
+        "text": "What should I take?",
+        "line_id": 42
+       }
+      ],
+      "generated_question": "Where should I head to now?",
+      "options": [
+       "The black and orange dresser",
+       "The toolbox",
+       "The workbench",
+       "The storage room",
+       "The exit"
+      ],
+      "correct_answer": "The black and orange dresser",
+      "questions_involved_id": [
+       38,
+       39,
+       40
+      ],
+      "univoc_id": "01_001_14",
+      "question_start_time": "00:01:05,019",
+      "question_end_time": "00:01:12,019"
+     },
+     {
+      "conversation_turn": [
+       "E: then",
+       "A: What should I take?"
+      ],
+      "context_previous": [
+       {
+        "speaker": "E",
+        "text": "no you can also go down a little in such a way that it must be knocked down,",
+        "line_id": 26
+       },
+       {
+        "speaker": "A",
+        "text": "Is that okay?",
+        "line_id": 27
+       },
+       {
+        "speaker": "A",
+        "text": "Yes?",
+        "line_id": 28
+       },
+       {
+        "speaker": "E",
+        "text": "Perfect",
+        "line_id": 29
+       },
+       {
+        "speaker": "E",
+        "text": "that's okay, that's okay,",
+        "line_id": 30
+       },
+       {
+        "speaker": "A",
+        "text": "Ok.",
+        "line_id": 31
+       },
+       {
+        "speaker": "A",
+        "text": "Ok.",
+        "line_id": 32
+       },
+       {
+        "speaker": "E",
+        "text": "Very well,",
+        "line_id": 33
+       },
+       {
+        "speaker": "A",
+        "text": "Perfect.",
+        "line_id": 34
+       },
+       {
+        "speaker": "E",
+        "text": "then now let's make the collection of tools that are necessary for",
+        "line_id": 35
+       },
+       {
+        "speaker": "E",
+        "text": "the operation,",
+        "line_id": 36
+       },
+       {
+        "speaker": "A",
+        "text": "Ok,",
+        "line_id": 37
+       },
+       {
+        "speaker": "E",
+        "text": "Dirrigi towards the black and orange chest of drawers,",
+        "line_id": 38
+       },
+       {
+        "speaker": "E",
+        "text": "Yes,",
+        "line_id": 39
+       },
+       {
+        "speaker": "A",
+        "text": "There are.",
+        "line_id": 40
+       }
+      ],
+      "context_after": [
+       {
+        "speaker": "A",
+        "text": "What should I take?",
+        "line_id": 42
+       },
+       {
+        "speaker": "E",
+        "text": "first drawer,",
+        "line_id": 43
+       },
+       {
+        "speaker": "A",
+        "text": "First drawer.",
+        "line_id": 44
+       },
+       {
+        "speaker": "E",
+        "text": "there are keys, star,",
+        "line_id": 45
+       }
+      ],
+      "generated_question": "What should I take from the black and orange dresser?",
+      "options": [
+       "A screwdriver",
+       "The first drawer",
+       "A hammer",
+       "The entire dresser",
+       "Nothing"
+      ],
+      "correct_answer": [
+       "The first drawer"
+      ],
+      "questions_involved_id": [
+       41,
+       42
+      ],
+      "univoc_id": "01_001_15",
+      "question_start_time": "00:01:12,019",
+      "question_end_time": "00:01:13,300"
+     },
+     {
+      "conversation_turn": [
+       "E: first drawer,",
+       "A: First drawer."
+      ],
+      "context_previous": [
+       {
+        "speaker": "A",
+        "text": "Yes?",
+        "line_id": 28
+       },
+       {
+        "speaker": "E",
+        "text": "Perfect",
+        "line_id": 29
+       },
+       {
+        "speaker": "E",
+        "text": "that's okay, that's okay,",
+        "line_id": 30
+       },
+       {
+        "speaker": "A",
+        "text": "Ok.",
+        "line_id": 31
+       },
+       {
+        "speaker": "A",
+        "text": "Ok.",
+        "line_id": 32
+       },
+       {
+        "speaker": "E",
+        "text": "Very well,",
+        "line_id": 33
+       },
+       {
+        "speaker": "A",
+        "text": "Perfect.",
+        "line_id": 34
+       },
+       {
+        "speaker": "E",
+        "text": "then now let's make the collection of tools that are necessary for",
+        "line_id": 35
+       },
+       {
+        "speaker": "E",
+        "text": "the operation,",
+        "line_id": 36
+       },
+       {
+        "speaker": "A",
+        "text": "Ok,",
+        "line_id": 37
+       },
+       {
+        "speaker": "E",
+        "text": "Dirrigi towards the black and orange chest of drawers,",
+        "line_id": 38
+       },
+       {
+        "speaker": "E",
+        "text": "Yes,",
+        "line_id": 39
+       },
+       {
+        "speaker": "A",
+        "text": "There are.",
+        "line_id": 40
+       },
+       {
+        "speaker": "E",
+        "text": "At that time",
+        "line_id": 41
+       },
+       {
+        "speaker": "A",
+        "text": "What should I take?",
+        "line_id": 42
+       }
+      ],
+      "context_after": [
+       {
+        "speaker": "A",
+        "text": "First drawer.",
+        "line_id": 44
+       },
+       {
+        "speaker": "E",
+        "text": "there are keys, star,",
+        "line_id": 45
+       },
+       {
+        "speaker": "E",
+        "text": "I'm three keys, you have it in front of you on the left,",
+        "line_id": 46
+       },
+       {
+        "speaker": "A",
+        "text": "A moment.",
+        "line_id": 47
+       }
+      ],
+      "generated_question": "Which drawer should I open?",
+      "options": [
+       "First drawer",
+       "Second drawer",
+       "Third drawer",
+       "The black and orange cabinet",
+       "The toolbox"
+      ],
+      "correct_answer": [
+       "First drawer"
+      ],
+      "questions_involved_id": [
+       43,
+       44
+      ],
+      "univoc_id": "01_001_16",
+      "question_start_time": "00:01:13,540",
+      "question_end_time": "00:01:16,379"
+     },
+     "…[truncated 123 more items]"
+    ]
+   }
+  },
+  {
+   "title": "02_001 (bakery): setting up a planetary mixer; the expert rejects the wrong hook ('No, the other') — first 70 of 656 transcript lines, 7 of 156 VQA sets",
+   "video_ref": "Ego-EXTRA video 02_001 (scenario 02)",
+   "duration_s": null,
+   "clip": "samples/media/ego-extra_2.mp4",
+   "clip_offset_s": 130.07,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 1.18,
+     "te": 1.82,
+     "lane": "instructor",
+     "text": "At that time,"
+    },
+    {
+     "t": 1.18,
+     "te": 8.46,
+     "lane": "question",
+     "text": "[VQA 02_001_1] Which bowl should I take from the ones in front of me? → The stainless steel bowl"
+    },
+    {
+     "t": 2.66,
+     "te": 7.14,
+     "lane": "instructor",
+     "text": "In front of you see, various bowls, some of which in plastic and one in steel,"
+    },
+    {
+     "t": 7.28,
+     "te": 8.54,
+     "lane": "instructor",
+     "text": "Take the one in steel,"
+    },
+    {
+     "t": 7.66,
+     "te": 8.46,
+     "lane": "user",
+     "text": "Yes"
+    },
+    {
+     "t": 10.72,
+     "te": 15.5,
+     "lane": "instructor",
+     "text": "You turn to the right and hook it into the planetary mixer you see,"
+    },
+    {
+     "t": 10.72,
+     "te": 15.64,
+     "lane": "question",
+     "text": "[VQA 02_001_2] What should I do with the steel bowl? → Turn to the right and hook it into the planetary mixer"
+    },
+    {
+     "t": 14.06,
+     "te": 15.64,
+     "lane": "user",
+     "text": "What is this?"
+    },
+    {
+     "t": 16.26,
+     "te": 16.68,
+     "lane": "instructor",
+     "text": "Exactly,"
+    },
+    {
+     "t": 17.0,
+     "te": 17.84,
+     "lane": "user",
+     "text": "Is the hook finished?"
+    },
+    {
+     "t": 17.08,
+     "te": 18.82,
+     "lane": "instructor",
+     "text": "you have to hear a click"
+    },
+    {
+     "t": 17.08,
+     "te": 20.78,
+     "lane": "question",
+     "text": "[VQA 02_001_4] What sound should I hear when turning the bowl right and left to ensure it is properly attached to the mixer? → A click"
+    },
+    {
+     "t": 19.52,
+     "te": 22.139,
+     "lane": "instructor",
+     "text": "Turn right and left and hear click,"
+    },
+    {
+     "t": 19.98,
+     "te": 20.78,
+     "lane": "user",
+     "text": "Ok"
+    },
+    {
+     "t": 23.719,
+     "te": 24.4,
+     "lane": "instructor",
+     "text": "Sense?"
+    },
+    {
+     "t": 23.719,
+     "te": 26.6,
+     "lane": "question",
+     "text": "[VQA 02_001_5] Did I hear the click when turning the bowl right and left? → No, I did not hear the click"
+    },
+    {
+     "t": 24.459,
+     "te": 26.6,
+     "lane": "user",
+     "text": "The click no"
+    },
+    {
+     "t": 25.32,
+     "te": 26.2,
+     "lane": "instructor",
+     "text": "Try to release her,"
+    },
+    {
+     "t": 28.58,
+     "te": 29.26,
+     "lane": "instructor",
+     "text": "Ok,"
+    },
+    {
+     "t": 30.42,
+     "te": 30.959,
+     "lane": "instructor",
+     "text": "Do you release?"
+    },
+    {
+     "t": 31.66,
+     "te": 32.779,
+     "lane": "user",
+     "text": "Oh well yes"
+    },
+    {
+     "t": 31.719,
+     "te": 34.0,
+     "lane": "instructor",
+     "text": "Perfect, then it's perfect mass, ok,"
+    },
+    {
+     "t": 34.459,
+     "te": 38.799,
+     "lane": "instructor",
+     "text": "Now turn around and in front of you there is the flour below,"
+    },
+    {
+     "t": 39.419,
+     "te": 40.54,
+     "lane": "user",
+     "text": "Yes, yes,"
+    },
+    {
+     "t": 39.9,
+     "te": 40.58,
+     "lane": "instructor",
+     "text": "Perfect,"
+    },
+    {
+     "t": 40.86,
+     "te": 43.08,
+     "lane": "instructor",
+     "text": "you have to weigh a kilo and a half of flour"
+    },
+    {
+     "t": 42.88,
+     "te": 47.72,
+     "lane": "user",
+     "text": "Ok so I put it inside one of these and I support it here above ok"
+    },
+    {
+     "t": 45.04,
+     "te": 46.82,
+     "lane": "instructor",
+     "text": "Within one of these bowls,"
+    },
+    {
+     "t": 47.38,
+     "te": 49.389,
+     "lane": "instructor",
+     "text": "Poggi in the scale and press tara"
+    },
+    {
+     "t": 51.34,
+     "te": 52.18,
+     "lane": "user",
+     "text": "Ok"
+    },
+    {
+     "t": 51.459,
+     "te": 55.439,
+     "lane": "instructor",
+     "text": "View the screen and faces that the weight above was below,"
+    },
+    {
+     "t": 56.06,
+     "te": 56.9,
+     "lane": "user",
+     "text": "All right"
+    },
+    {
+     "t": 56.439,
+     "te": 57.099,
+     "lane": "instructor",
+     "text": "Perfect,"
+    },
+    {
+     "t": 57.48,
+     "te": 60.72,
+     "lane": "instructor",
+     "text": "ok, a kilo and a half,"
+    },
+    {
+     "t": 59.139,
+     "te": 61.459,
+     "lane": "user",
+     "text": "I close the vehicle"
+    },
+    {
+     "t": 62.86,
+     "te": 65.059,
+     "lane": "user",
+     "text": "But if I take it away I lose the tara?"
+    },
+    {
+     "t": 64.18,
+     "te": 64.839,
+     "lane": "instructor",
+     "text": "No"
+    },
+    {
+     "t": 65.16,
+     "te": 65.62,
+     "lane": "instructor",
+     "text": "Don't remove,"
+    },
+    {
+     "t": 65.839,
+     "te": 66.919,
+     "lane": "instructor",
+     "text": "Don't remove, the bowl,"
+    },
+    {
+     "t": 66.139,
+     "te": 67.139,
+     "lane": "user",
+     "text": "Ah"
+    },
+    {
+     "t": 67.16,
+     "te": 74.16,
+     "lane": "instructor",
+     "text": "Do you bring it with, exactly, how time is it now?"
+    },
+    {
+     "t": 67.379,
+     "te": 68.18,
+     "lane": "user",
+     "text": "Here is this"
+    },
+    {
+     "t": 70.839,
+     "te": 72.04,
+     "lane": "user",
+     "text": "This is this"
+    },
+    {
+     "t": 79.239,
+     "te": 82.0,
+     "lane": "instructor",
+     "text": "Let me see the scale that I don't see it like that, ok,"
+    },
+    {
+     "t": 85.62,
+     "te": 87.12,
+     "lane": "user",
+     "text": "I close here"
+    },
+    {
+     "t": 97.739,
+     "te": 98.08,
+     "lane": "instructor",
+     "text": "Perfect"
+    },
+    {
+     "t": 98.739,
+     "te": 99.18,
+     "lane": "instructor",
+     "text": "Ora"
+    },
+    {
+     "t": 99.5,
+     "te": 101.0,
+     "lane": "instructor",
+     "text": "before putting it in the planetary mixer,"
+    },
+    {
+     "t": 101.18,
+     "te": 101.559,
+     "lane": "instructor",
+     "text": "All right,"
+    },
+    {
+     "t": 101.76,
+     "te": 112.279,
+     "lane": "instructor",
+     "text": "It does nothing if there are 20 grams, do you see that the planetary mixer has on a plastic? Do you have to release this plastic? To make you put the ingredients while in motion, you can pull it,"
+    },
+    {
+     "t": 106.239,
+     "te": 107.04,
+     "lane": "user",
+     "text": "This?"
+    },
+    {
+     "t": 110.58,
+     "te": 112.4,
+     "lane": "user",
+     "text": "I have to release it"
+    },
+    {
+     "t": 112.82,
+     "te": 113.44,
+     "lane": "user",
+     "text": "The shot"
+    },
+    {
+     "t": 112.86,
+     "te": 115.76,
+     "lane": "instructor",
+     "text": "Yes you are careful that you drop you, yes yes"
+    },
+    {
+     "t": 114.099,
+     "te": 114.3,
+     "lane": "user",
+     "text": "tirandola"
+    },
+    {
+     "t": 114.639,
+     "te": 115.44,
+     "lane": "user",
+     "text": "Ok"
+    },
+    {
+     "t": 115.599,
+     "te": 116.18,
+     "lane": "user",
+     "text": "yes yes yes"
+    },
+    {
+     "t": 116.22,
+     "te": 117.36,
+     "lane": "instructor",
+     "text": "You can release it,"
+    },
+    {
+     "t": 117.839,
+     "te": 117.9,
+     "lane": "instructor",
+     "text": "Perfect,"
+    },
+    {
+     "t": 118.139,
+     "te": 119.82,
+     "lane": "instructor",
+     "text": "Put the flour inside the planetary mixer,"
+    },
+    {
+     "t": 122.86,
+     "te": 124.099,
+     "lane": "instructor",
+     "text": "You can put it"
+    },
+    {
+     "t": 129.52,
+     "te": 130.919,
+     "lane": "user",
+     "text": "Ok"
+    },
+    {
+     "t": 130.039,
+     "te": 133.619,
+     "lane": "instructor",
+     "text": "Ok, turn to the left and you have to find,"
+    },
+    {
+     "t": 130.039,
+     "te": 136.479,
+     "lane": "question",
+     "text": "[VQA 02_001_19] What should I do after turning to the left? → Find the three hooks"
+    },
+    {
+     "t": 134.38,
+     "te": 135.559,
+     "lane": "instructor",
+     "text": "there are three hooks,"
+    },
+    {
+     "t": 135.779,
+     "te": 136.479,
+     "lane": "user",
+     "text": "Yes"
+    },
+    {
+     "t": 135.94,
+     "te": 136.779,
+     "lane": "instructor",
+     "text": "three types of hooks,"
+    },
+    {
+     "t": 135.94,
+     "te": 138.039,
+     "lane": "question",
+     "text": "[VQA 02_001_20] Which type of hook should be used for this task? → The crochet hook"
+    },
+    {
+     "t": 137.119,
+     "te": 139.5,
+     "lane": "instructor",
+     "text": "Do we have to use the one of crochet?"
+    },
+    {
+     "t": 137.179,
+     "te": 138.039,
+     "lane": "user",
+     "text": "Yes"
+    },
+    {
+     "t": 139.94,
+     "te": 141.339,
+     "lane": "user",
+     "text": "This?"
+    },
+    {
+     "t": 141.02,
+     "te": 142.16,
+     "lane": "instructor",
+     "text": "Do you have crochet?"
+    },
+    {
+     "t": 142.24,
+     "te": 143.039,
+     "lane": "user",
+     "text": "There is a knetto"
+    },
+    {
+     "t": 142.419,
+     "te": 146.139,
+     "lane": "instructor",
+     "text": "No, the other, ok, agancia the planetary mixer,"
+    },
+    {
+     "t": 143.199,
+     "te": 143.399,
+     "lane": "user",
+     "text": "ok"
+    },
+    {
+     "t": 143.199,
+     "te": 152.559,
+     "lane": "question",
+     "text": "[VQA 02_001_21] Which side should the hook be attached to on the planetary mixer? → The side that looks bigger"
+    },
+    {
+     "t": 147.22,
+     "te": 152.559,
+     "lane": "instructor",
+     "text": "Always you have to put it on the side you see bigger and then when the hooks must go to the small one,"
+    }
+   ],
+   "raw_format": "txt",
+   "raw": {
+    "transcript/eng/02/02_001_transcript.txt": [
+     "1 [00:00:01,180 --> 00:00:01,820] E: At that time,",
+     "2 [00:00:02,660 --> 00:00:07,140] E: In front of you see, various bowls, some of which in plastic and one in steel,",
+     "3 [00:00:07,280 --> 00:00:08,540] E: Take the one in steel,",
+     "4 [00:00:07,660 --> 00:00:08,460] A: Yes",
+     "5 [00:00:10,720 --> 00:00:15,500] E: You turn to the right and hook it into the planetary mixer you see,",
+     "6 [00:00:14,060 --> 00:00:15,640] A: What is this?",
+     "7 [00:00:16,260 --> 00:00:16,680] E: Exactly,",
+     "8 [00:00:17,000 --> 00:00:17,840] A: Is the hook finished?",
+     "9 [00:00:17,080 --> 00:00:18,820] E: you have to hear a click",
+     "10 [00:00:19,520 --> 00:00:22,139] E: Turn right and left and hear click,",
+     "11 [00:00:19,980 --> 00:00:20,780] A: Ok",
+     "12 [00:00:23,719 --> 00:00:24,400] E: Sense?",
+     "13 [00:00:24,459 --> 00:00:26,600] A: The click no",
+     "14 [00:00:25,320 --> 00:00:26,200] E: Try to release her,",
+     "15 [00:00:28,580 --> 00:00:29,260] E: Ok,",
+     "16 [00:00:30,420 --> 00:00:30,959] E: Do you release?",
+     "17 [00:00:31,660 --> 00:00:32,779] A: Oh well yes",
+     "18 [00:00:31,719 --> 00:00:34,000] E: Perfect, then it's perfect mass, ok,",
+     "19 [00:00:34,459 --> 00:00:38,799] E: Now turn around and in front of you there is the flour below,",
+     "20 [00:00:39,419 --> 00:00:40,540] A: Yes, yes,",
+     "21 [00:00:39,900 --> 00:00:40,580] E: Perfect,",
+     "22 [00:00:40,860 --> 00:00:43,080] E: you have to weigh a kilo and a half of flour",
+     "23 [00:00:42,880 --> 00:00:47,720] A: Ok so I put it inside one of these and I support it here above ok",
+     "24 [00:00:45,040 --> 00:00:46,820] E: Within one of these bowls,",
+     "25 [00:00:47,380 --> 00:00:49,389] E: Poggi in the scale and press tara",
+     "26 [00:00:51,340 --> 00:00:52,180] A: Ok",
+     "27 [00:00:51,459 --> 00:00:55,439] E: View the screen and faces that the weight above was below,",
+     "28 [00:00:56,060 --> 00:00:56,900] A: All right",
+     "29 [00:00:56,439 --> 00:00:57,099] E: Perfect,",
+     "30 [00:00:57,480 --> 00:01:00,720] E: ok, a kilo and a half,",
+     "31 [00:00:59,139 --> 00:01:01,459] A: I close the vehicle",
+     "32 [00:01:02,860 --> 00:01:05,059] A: But if I take it away I lose the tara?",
+     "33 [00:01:04,180 --> 00:01:04,839] E: No",
+     "34 [00:01:05,160 --> 00:01:05,620] E: Don't remove,",
+     "35 [00:01:05,839 --> 00:01:06,919] E: Don't remove, the bowl,",
+     "36 [00:01:06,139 --> 00:01:07,139] A: Ah",
+     "37 [00:01:07,160 --> 00:01:14,160] E: Do you bring it with, exactly, how time is it now?",
+     "38 [00:01:07,379 --> 00:01:08,180] A: Here is this",
+     "39 [00:01:10,839 --> 00:01:12,040] A: This is this",
+     "40 [00:01:19,239 --> 00:01:22,000] E: Let me see the scale that I don't see it like that, ok,",
+     "41 [00:01:25,620 --> 00:01:27,120] A: I close here",
+     "42 [00:01:37,739 --> 00:01:38,080] E: Perfect",
+     "43 [00:01:38,739 --> 00:01:39,180] E: Ora",
+     "44 [00:01:39,500 --> 00:01:41,000] E: before putting it in the planetary mixer,",
+     "45 [00:01:41,180 --> 00:01:41,559] E: All right,",
+     "46 [00:01:41,760 --> 00:01:52,279] E: It does nothing if there are 20 grams, do you see that the planetary mixer has on a plastic? Do you have to release this plastic? To make you put the ingredients while in motion, you can pull it,",
+     "47 [00:01:46,239 --> 00:01:47,040] A: This?",
+     "48 [00:01:50,580 --> 00:01:52,400] A: I have to release it",
+     "49 [00:01:52,820 --> 00:01:53,440] A: The shot",
+     "50 [00:01:52,860 --> 00:01:55,760] E: Yes you are careful that you drop you, yes yes",
+     "51 [00:01:54,099 --> 00:01:54,300] A: tirandola",
+     "52 [00:01:54,639 --> 00:01:55,440] A: Ok",
+     "53 [00:01:55,599 --> 00:01:56,180] A: yes yes yes",
+     "54 [00:01:56,220 --> 00:01:57,360] E: You can release it,",
+     "55 [00:01:57,839 --> 00:01:57,900] E: Perfect,",
+     "56 [00:01:58,139 --> 00:01:59,820] E: Put the flour inside the planetary mixer,",
+     "57 [00:02:02,860 --> 00:02:04,099] E: You can put it",
+     "58 [00:02:09,520 --> 00:02:10,919] A: Ok",
+     "59 [00:02:10,039 --> 00:02:13,619] E: Ok, turn to the left and you have to find,",
+     "60 [00:02:14,380 --> 00:02:15,559] E: there are three hooks,",
+     "61 [00:02:15,779 --> 00:02:16,479] A: Yes",
+     "62 [00:02:15,940 --> 00:02:16,779] E: three types of hooks,",
+     "63 [00:02:17,119 --> 00:02:19,500] E: Do we have to use the one of crochet?",
+     "64 [00:02:17,179 --> 00:02:18,039] A: Yes",
+     "65 [00:02:19,940 --> 00:02:21,339] A: This?",
+     "66 [00:02:21,020 --> 00:02:22,160] E: Do you have crochet?",
+     "67 [00:02:22,240 --> 00:02:23,039] A: There is a knetto",
+     "68 [00:02:22,419 --> 00:02:26,139] E: No, the other, ok, agancia the planetary mixer,",
+     "69 [00:02:23,199 --> 00:02:23,399] A: ok",
+     "70 [00:02:27,220 --> 00:02:32,559] E: Always you have to put it on the side you see bigger and then when the hooks must go to the small one,",
+     "…[truncated 586 more items]"
+    ],
+    "final_questions/02_keep_with_timestamp_filtered.json (records for this video; 02_001 keeps sets 1–5 and 19–21)": [
+     {
+      "conversation_turn": [
+       "E: then,",
+       "E: In front of you see, various bowls, some of which in plastic and one in steel,",
+       "E: take the one in steel,",
+       "A: Yes"
+      ],
+      "context_previous": [
+       {
+        "speaker": "E",
+        "text": "No previous context available.",
+        "line_id": null
+       }
+      ],
+      "context_after": [
+       {
+        "speaker": "E",
+        "text": "In front of you see, various bowls, some of which in plastic and one in steel,",
+        "line_id": 2
+       },
+       {
+        "speaker": "E",
+        "text": "Take the one in steel,",
+        "line_id": 3
+       },
+       {
+        "speaker": "A",
+        "text": "Yes",
+        "line_id": 4
+       },
+       {
+        "speaker": "E",
+        "text": "You turn to the right and hook it into the planetary mixer you see,",
+        "line_id": 5
+       }
+      ],
+      "generated_question": "Which bowl should I take from the ones in front of me?",
+      "options": [
+       "The stainless steel bowl",
+       "The plastic bowl",
+       "The wooden bowl",
+       "The glass bowl",
+       "Any bowl"
+      ],
+      "correct_answer": [
+       "The stainless steel bowl"
+      ],
+      "questions_involved_id": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "univoc_id": "02_001_1",
+      "question_start_time": "00:00:01,180",
+      "question_end_time": "00:00:08,460"
+     },
+     {
+      "conversation_turn": [
+       "E: You turn to the right and hook it into the planetary mixer you see,",
+       "A: What is this?"
+      ],
+      "context_previous": [
+       {
+        "speaker": "E",
+        "text": "At that time,",
+        "line_id": 1
+       },
+       {
+        "speaker": "E",
+        "text": "In front of you see, various bowls, some of which in plastic and one in steel,",
+        "line_id": 2
+       },
+       {
+        "speaker": "E",
+        "text": "Take the one in steel,",
+        "line_id": 3
+       },
+       {
+        "speaker": "A",
+        "text": "Yes",
+        "line_id": 4
+       }
+      ],
+      "context_after": [
+       {
+        "speaker": "A",
+        "text": "What is this?",
+        "line_id": 6
+       },
+       {
+        "speaker": "E",
+        "text": "Exactly,",
+        "line_id": 7
+       },
+       {
+        "speaker": "A",
+        "text": "Is the hook finished?",
+        "line_id": 8
+       },
+       {
+        "speaker": "E",
+        "text": "you have to hear a click",
+        "line_id": 9
+       }
+      ],
+      "generated_question": "What should I do with the steel bowl?",
+      "options": [
+       "Turn to the right and hook it into the planetary mixer",
+       "Place it on the counter",
+       "Fill it with ingredients",
+       "Put it in the sink",
+       "Leave it where it is"
+      ],
+      "correct_answer": [
+       "Turn to the right and hook it into the planetary mixer"
+      ],
+      "questions_involved_id": [
+       5,
+       6
+      ],
+      "univoc_id": "02_001_2",
+      "question_start_time": "00:00:10,720",
+      "question_end_time": "00:00:15,640"
+     },
+     {
+      "conversation_turn": [
+       "E: you have to hear a click",
+       "E: Turn right and left and hear click,",
+       "A: Ok"
+      ],
+      "context_previous": [
+       {
+        "speaker": "E",
+        "text": "At that time,",
+        "line_id": 1
+       },
+       {
+        "speaker": "E",
+        "text": "In front of you see, various bowls, some of which in plastic and one in steel,",
+        "line_id": 2
+       },
+       {
+        "speaker": "E",
+        "text": "Take the one in steel,",
+        "line_id": 3
+       },
+       {
+        "speaker": "A",
+        "text": "Yes",
+        "line_id": 4
+       },
+       {
+        "speaker": "E",
+        "text": "You turn to the right and hook it into the planetary mixer you see,",
+        "line_id": 5
+       },
+       {
+        "speaker": "A",
+        "text": "What is this?",
+        "line_id": 6
+       },
+       {
+        "speaker": "E",
+        "text": "Exactly,",
+        "line_id": 7
+       },
+       {
+        "speaker": "A",
+        "text": "Is the hook finished?",
+        "line_id": 8
+       }
+      ],
+      "context_after": [
+       {
+        "speaker": "E",
+        "text": "Turn right and left and hear click,",
+        "line_id": 10
+       },
+       {
+        "speaker": "A",
+        "text": "Ok",
+        "line_id": 11
+       },
+       {
+        "speaker": "E",
+        "text": "Sense?",
+        "line_id": 12
+       },
+       {
+        "speaker": "A",
+        "text": "The click no",
+        "line_id": 13
+       }
+      ],
+      "generated_question": "What sound should I hear when turning the bowl right and left to ensure it is properly attached to the mixer?",
+      "options": [
+       "A click",
+       "A beep",
+       "A buzzing noise",
+       "A whirring sound",
+       "No sound, just a smooth rotation"
+      ],
+      "correct_answer": [
+       "A click"
+      ],
+      "questions_involved_id": [
+       9,
+       10,
+       11
+      ],
+      "univoc_id": "02_001_4",
+      "question_start_time": "00:00:17,080",
+      "question_end_time": "00:00:20,780"
+     },
+     {
+      "conversation_turn": [
+       "E: Sense?",
+       "A: The click no"
+      ],
+      "context_previous": [
+       {
+        "speaker": "E",
+        "text": "At that time,",
+        "line_id": 1
+       },
+       {
+        "speaker": "E",
+        "text": "In front of you see, various bowls, some of which in plastic and one in steel,",
+        "line_id": 2
+       },
+       {
+        "speaker": "E",
+        "text": "Take the one in steel,",
+        "line_id": 3
+       },
+       {
+        "speaker": "A",
+        "text": "Yes",
+        "line_id": 4
+       },
+       {
+        "speaker": "E",
+        "text": "You turn to the right and hook it into the planetary mixer you see,",
+        "line_id": 5
+       },
+       {
+        "speaker": "A",
+        "text": "What is this?",
+        "line_id": 6
+       },
+       {
+        "speaker": "E",
+        "text": "Exactly,",
+        "line_id": 7
+       },
+       {
+        "speaker": "A",
+        "text": "Is the hook finished?",
+        "line_id": 8
+       },
+       {
+        "speaker": "E",
+        "text": "you have to hear a click",
+        "line_id": 9
+       },
+       {
+        "speaker": "E",
+        "text": "Turn right and left and hear click,",
+        "line_id": 10
+       },
+       {
+        "speaker": "A",
+        "text": "Ok",
+        "line_id": 11
+       }
+      ],
+      "context_after": [
+       {
+        "speaker": "A",
+        "text": "The click no",
+        "line_id": 13
+       },
+       {
+        "speaker": "E",
+        "text": "Try to release her,",
+        "line_id": 14
+       },
+       {
+        "speaker": "E",
+        "text": "Ok,",
+        "line_id": 15
+       },
+       {
+        "speaker": "E",
+        "text": "Do you release?",
+        "line_id": 16
+       }
+      ],
+      "generated_question": "Did I hear the click when turning the bowl right and left?",
+      "options": [
+       "No, I did not hear the click",
+       "Yes, I heard the click",
+       "I'm not sure if I heard the click",
+       "I didn't turn the bowl",
+       "The bowl is not attached to the mixer"
+      ],
+      "correct_answer": [
+       "No, I did not hear the click"
+      ],
+      "questions_involved_id": [
+       12,
+       13
+      ],
+      "univoc_id": "02_001_5",
+      "question_start_time": "00:00:23,719",
+      "question_end_time": "00:00:26,600"
+     },
+     {
+      "conversation_turn": [
+       "E: Ok, turn to the left and you have to find,",
+       "E: There are three hooks,",
+       "A: Yes"
+      ],
+      "context_previous": [
+       {
+        "speaker": "E",
+        "text": "before putting it in the planetary mixer,",
+        "line_id": 44
+       },
+       {
+        "speaker": "E",
+        "text": "All right,",
+        "line_id": 45
+       },
+       {
+        "speaker": "E",
+        "text": "It does nothing if there are 20 grams, do you see that the planetary mixer has on a plastic? Do you have to release this plastic? To make you put the ingredients while in motion, you can pull it,",
+        "line_id": 46
+       },
+       {
+        "speaker": "A",
+        "text": "This?",
+        "line_id": 47
+       },
+       {
+        "speaker": "A",
+        "text": "I have to release it",
+        "line_id": 48
+       },
+       {
+        "speaker": "A",
+        "text": "The shot",
+        "line_id": 49
+       },
+       {
+        "speaker": "E",
+        "text": "Yes you are careful that you drop you, yes yes",
+        "line_id": 50
+       },
+       {
+        "speaker": "A",
+        "text": "tirandola",
+        "line_id": 51
+       },
+       {
+        "speaker": "A",
+        "text": "Ok",
+        "line_id": 52
+       },
+       {
+        "speaker": "A",
+        "text": "yes yes yes",
+        "line_id": 53
+       },
+       {
+        "speaker": "E",
+        "text": "You can release it,",
+        "line_id": 54
+       },
+       {
+        "speaker": "E",
+        "text": "Perfect,",
+        "line_id": 55
+       },
+       {
+        "speaker": "E",
+        "text": "Put the flour inside the planetary mixer,",
+        "line_id": 56
+       },
+       {
+        "speaker": "E",
+        "text": "You can put it",
+        "line_id": 57
+       },
+       {
+        "speaker": "A",
+        "text": "Ok",
+        "line_id": 58
+       }
+      ],
+      "context_after": [
+       {
+        "speaker": "E",
+        "text": "there are three hooks,",
+        "line_id": 60
+       },
+       {
+        "speaker": "A",
+        "text": "Yes",
+        "line_id": 61
+       },
+       {
+        "speaker": "E",
+        "text": "three types of hooks,",
+        "line_id": 62
+       },
+       {
+        "speaker": "E",
+        "text": "Do we have to use the one of crochet?",
+        "line_id": 63
+       }
+      ],
+      "generated_question": "What should I do after turning to the left?",
+      "options": [
+       "Find the three hooks",
+       "Release the plastic",
+       "Put the flour in the planetary mixer",
+       "Turn on the planetary mixer",
+       "Pull the shot"
+      ],
+      "correct_answer": [
+       "Find the three hooks"
+      ],
+      "questions_involved_id": [
+       59,
+       60,
+       61
+      ],
+      "univoc_id": "02_001_19",
+      "question_start_time": "00:02:10,039",
+      "question_end_time": "00:02:16,479"
+     },
+     {
+      "conversation_turn": [
+       "E: three types of hooks,",
+       "E: Do we have to use the one of crochet?",
+       "A: Yes"
+      ],
+      "context_previous": [
+       {
+        "speaker": "A",
+        "text": "This?",
+        "line_id": 47
+       },
+       {
+        "speaker": "A",
+        "text": "I have to release it",
+        "line_id": 48
+       },
+       {
+        "speaker": "A",
+        "text": "The shot",
+        "line_id": 49
+       },
+       {
+        "speaker": "E",
+        "text": "Yes you are careful that you drop you, yes yes",
+        "line_id": 50
+       },
+       {
+        "speaker": "A",
+        "text": "tirandola",
+        "line_id": 51
+       },
+       {
+        "speaker": "A",
+        "text": "Ok",
+        "line_id": 52
+       },
+       {
+        "speaker": "A",
+        "text": "yes yes yes",
+        "line_id": 53
+       },
+       {
+        "speaker": "E",
+        "text": "You can release it,",
+        "line_id": 54
+       },
+       {
+        "speaker": "E",
+        "text": "Perfect,",
+        "line_id": 55
+       },
+       {
+        "speaker": "E",
+        "text": "Put the flour inside the planetary mixer,",
+        "line_id": 56
+       },
+       {
+        "speaker": "E",
+        "text": "You can put it",
+        "line_id": 57
+       },
+       {
+        "speaker": "A",
+        "text": "Ok",
+        "line_id": 58
+       },
+       {
+        "speaker": "E",
+        "text": "Ok, turn to the left and you have to find,",
+        "line_id": 59
+       },
+       {
+        "speaker": "E",
+        "text": "there are three hooks,",
+        "line_id": 60
+       },
+       {
+        "speaker": "A",
+        "text": "Yes",
+        "line_id": 61
+       }
+      ],
+      "context_after": [
+       {
+        "speaker": "E",
+        "text": "Do we have to use the one of crochet?",
+        "line_id": 63
+       },
+       {
+        "speaker": "A",
+        "text": "Yes",
+        "line_id": 64
+       },
+       {
+        "speaker": "A",
+        "text": "This?",
+        "line_id": 65
+       },
+       {
+        "speaker": "E",
+        "text": "Do you have crochet?",
+        "line_id": 66
+       }
+      ],
+      "generated_question": "Which type of hook should be used for this task?",
+      "options": [
+       "The crochet hook",
+       "The dough hook",
+       "The whisk attachment",
+       "The paddle attachment",
+       "The blender blade"
+      ],
+      "correct_answer": [
+       "The crochet hook"
+      ],
+      "questions_involved_id": [
+       62,
+       63,
+       64
+      ],
+      "univoc_id": "02_001_20",
+      "question_start_time": "00:02:15,940",
+      "question_end_time": "00:02:18,039"
+     },
+     {
+      "conversation_turn": [
+       "A: ok",
+       "E: Always you have to put it on the side you see bigger and then when the hooks must go to the small one,"
+      ],
+      "context_previous": [
+       {
+        "speaker": "E",
+        "text": "You can release it,",
+        "line_id": 54
+       },
+       {
+        "speaker": "E",
+        "text": "Perfect,",
+        "line_id": 55
+       },
+       {
+        "speaker": "E",
+        "text": "Put the flour inside the planetary mixer,",
+        "line_id": 56
+       },
+       {
+        "speaker": "E",
+        "text": "You can put it",
+        "line_id": 57
+       },
+       {
+        "speaker": "A",
+        "text": "Ok",
+        "line_id": 58
+       },
+       {
+        "speaker": "E",
+        "text": "Ok, turn to the left and you have to find,",
+        "line_id": 59
+       },
+       {
+        "speaker": "E",
+        "text": "there are three hooks,",
+        "line_id": 60
+       },
+       {
+        "speaker": "A",
+        "text": "Yes",
+        "line_id": 61
+       },
+       {
+        "speaker": "E",
+        "text": "three types of hooks,",
+        "line_id": 62
+       },
+       {
+        "speaker": "E",
+        "text": "Do we have to use the one of crochet?",
+        "line_id": 63
+       },
+       {
+        "speaker": "A",
+        "text": "Yes",
+        "line_id": 64
+       },
+       {
+        "speaker": "A",
+        "text": "This?",
+        "line_id": 65
+       },
+       {
+        "speaker": "E",
+        "text": "Do you have crochet?",
+        "line_id": 66
+       },
+       {
+        "speaker": "A",
+        "text": "There is a knetto",
+        "line_id": 67
+       },
+       {
+        "speaker": "E",
+        "text": "No, the other, ok, agancia the planetary mixer,",
+        "line_id": 68
+       }
+      ],
+      "context_after": [
+       {
+        "speaker": "E",
+        "text": "Always you have to put it on the side you see bigger and then when the hooks must go to the small one,",
+        "line_id": 70
+       },
+       {
+        "speaker": "E",
+        "text": "Perfect,",
+        "line_id": 71
+       },
+       {
+        "speaker": "E",
+        "text": "it must be so that it does not detach,",
+        "line_id": 72
+       },
+       {
+        "speaker": "E",
+        "text": "Always test, first",
+        "line_id": 73
+       }
+      ],
+      "generated_question": "Which side should the hook be attached to on the planetary mixer?",
+      "options": [
+       "The side that looks bigger",
+       "The side that looks smaller",
+       "The side closest to you",
+       "The side farthest from you",
+       "It doesn't matter which side"
+      ],
+      "correct_answer": [
+       "The side that looks bigger"
+      ],
+      "questions_involved_id": [
+       69,
+       70
+      ],
+      "univoc_id": "02_001_21",
+      "question_start_time": "00:02:23,199",
+      "question_end_time": "00:02:32,559"
+     },
+     "…[truncated 149 more items]"
+    ]
+   }
+  }
+ ]
+}

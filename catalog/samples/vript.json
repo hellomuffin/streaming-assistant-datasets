@@ -1,0 +1,953 @@
+{
+ "slug": "vript",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/Mutonix/Vript/blob/main/vript_captions/vript_long_videos_captions.jsonl",
+  "https://huggingface.co/datasets/Mutonix/Vript/blob/main/vript_long_videos_clips/clips_1000_of_1095.zip (members */*_cut_meta.json, read by HTTP range)",
+  "vript_meta/vript_long_videos_meta.json (duration)"
+ ],
+ "access_used": "open download",
+ "note": "An example is one long YouTube video: every detected scene gets one caption record (shot type, camera movement, ~130-word content, scene title) plus the Whisper voice-over heard in that scene. Scene start/end times are not in the caption JSONL; they come from the per-video *_cut_meta.json inside the clip zips, joined here on clip_id. In the timeline the caption text is \"scene_title — content\". No clip: the card licence says academic use only / no distribution.",
+ "examples": [
+  {
+   "title": "4gqhVWfvoWE: Hunger Games: Mockingjay Part 2 behind-the-scenes, tunnel scene — 9 scenes",
+   "video_ref": "YouTube 4gqhVWfvoWE",
+   "duration_s": 72,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 8.217,
+     "lane": "caption",
+     "text": "Tense Tunnel Infiltration Coordination — The voice-over suggests the director, Francis, aims to create a suspenseful atmosphere rather than a grand action sequence. The first frame shows a character crawling through a tight, dimly lit space, suggesting a tense stealth scenario, likely part of an infiltration or escape scene. The environment is claustrophobic, the light source is minimal and directional, highlighting dust and creating deep shadows that enhance the eerie mood. The subsequent frames show someone overseeing the production with monitors in front of them, displaying the live footage from the cameras capturing the scene. The room is dark to maintain focus on the brightly lit screens showing the high-angle shot of the action. The equipment is professional-grade, indicating a high-production value. The colors are muted with blue and grey tones dominating the setting, reflecting a somber and intense narrative moment."
+    },
+    {
+     "t": 0.0,
+     "te": 8.217,
+     "lane": "narration",
+     "text": "More than a big broad action sequence Francis wanted to be scary"
+    },
+    {
+     "t": 8.217,
+     "te": 19.937,
+     "lane": "caption",
+     "text": "Intense Underground Tunnel Filming — The clip depicts a dimly lit, moist underground tunnel scene. Crew members are operating an ARRI ALEXA digital camera to capture footage of a character navigating through the challenging environment. The character is equipped with a headlamp that casts a focused beam of light, adding dramatic shadows and enhancing the tense atmosphere. The tunnel is cramped and rugged, reinforcing a sense of claustrophobia and danger. Water can be seen flowing around the character’s feet, reflecting the limited light and contributing to the scene's gritty realism. Camera operators are shown in medium shots, focusing intently on capturing the action while the camera is being handheld or supported by a rig. The color palette is dominated by dark blues and greys, with splashes of light highlighting the water and the actor’s movements."
+    },
+    {
+     "t": 8.217,
+     "te": 19.937,
+     "lane": "narration",
+     "text": "And one of the reasons we decided to choose the Alexa in the first place was because we knew we had a bunch of stuff  You know underground whether it was 13 or the sewers and all of that and that we could use a lot of"
+    },
+    {
+     "t": 19.937,
+     "te": 25.192,
+     "lane": "caption",
+     "text": "Tense Tunnel Standoff in Mockingjay Part 2 — The clip is a behind-the-scenes look at a tense moment from 'The Hunger Games: Mockingjay - Part 2.' The setting appears to be a cramped, underground tunnel bathed in a cold blue light, creating a claustrophobic and dangerous atmosphere. The practical lights mentioned are likely the dim, artificial sources within the scene, such as gun-mounted flashlights or minimal ambient lighting that casts deep shadows and highlights the grim nature of the environment. There is minimal movement, hinting at a stealthy or suspenseful action sequence. Characters are not clearly visible, but their presence is implied by the weaponry and the confined space they inhabit. The overall mood is one of anticipation and dread, likely preceding an action-heavy sequence or a moment of high tension within the narrative."
+    },
+    {
+     "t": 19.937,
+     "te": 25.192,
+     "lane": "narration",
+     "text": "practical lights like lights on guns or lights, you know, sconces on walls and things like that."
+    },
+    {
+     "t": 25.192,
+     "te": 30.155,
+     "lane": "caption",
+     "text": "Preparation for Intense Tunnel Conflict — The scene opens with a close-up, transitioning to a medium shot of a clapperboard indicating a scene from 'The Hunger Games: Mockingjay - Part 2'. The background is indistinct due to the rapid movement and focus on the clapperboard. The setting quickly shifts to a dark, murky tunnel environment where characters dressed in white military-like uniforms are seen preparing for an intense action sequence. Red light dots, possibly laser sights from weapons or surveillance devices, scan the area and the characters. The ambient lighting is low, primarily highlighting the characters and their immediate surroundings while keeping the broader environment shadowed to emphasize suspense. The uniforms are detailed with protective gear elements, signifying readiness for combat. The action is fast-paced with an emphasis on impending conflict or a strategic operation underway."
+    },
+    {
+     "t": 25.192,
+     "te": 30.155,
+     "lane": "narration",
+     "text": "keep things, you know, very minimal."
+    },
+    {
+     "t": 30.155,
+     "te": 39.122,
+     "lane": "caption",
+     "text": "Tense Tunnel Infiltration Operation — The frames depict a tense, action-packed sequence in a dimly lit, enclosed tunnel-like environment reminiscent of the 'Alien' franchise atmosphere. Characters dressed in white protective suits are crawling through the cramped space, suggesting a stealthy or urgent mission. Their suits are detailed with various textures and protective gear, indicating a hazardous situation. The environment is dank and metallic, with rough textures that give a claustrophobic feel. The lighting is minimal, casting harsh shadows and creating an ominous mood. In the control room, monitors display the progress of the characters in the tunnel. The room is organized with various equipment and screens, providing a stark contrast to the dark, confined space of the tunnel. The setup suggests a carefully planned operation with oversight from a command center."
+    },
+    {
+     "t": 30.155,
+     "te": 39.122,
+     "lane": "narration",
+     "text": "action and we were originally very inspired by alien the Ridley Scott"
+    },
+    {
+     "t": 39.122,
+     "te": 48.257,
+     "lane": "caption",
+     "text": "Claustrophobic Tunnel Navigation Scene — The clip showcases a behind-the-scenes look at a tense scene set in a narrow, dimly lit tunnel, filled with water and atmospheric haze. The characters, likely part of the ensemble cast from 'The Hunger Games: Mockingjay - Part 2', are seen navigating through this claustrophobic environment, cautiously moving forward as they are lit primarily by practical lights attached within the set that cast harsh shadows and create a foreboding mood. Their faces show concentration and alertness to potential dangers in the tunnel. The environment is wet and muddy, and the color palette is dominated by dark tones with spots of white light reflecting off the water. The camera follows them closely, capturing the intensity and confinement of the space. Various pipes and structural elements suggest an industrial setting."
+    },
+    {
+     "t": 39.122,
+     "te": 48.257,
+     "lane": "narration",
+     "text": "movie which is another very claustrophobic movie the way they used  practicals and the way they used like the lighting in the spaceship to light"
+    },
+    {
+     "t": 48.257,
+     "te": 61.103,
+     "lane": "caption",
+     "text": "Discussing Lighting Techniques in Action Scene — The video features a voice-over discussing the creative approach to a scene's lighting and character positioning, emphasizing silhouetted figures against lit walls. The visual part transitions from an environment shot showcasing a dimly lit, gritty tunnel with water flowing through it, to a sequence of shots of the speaker, using hand gestures to emphasize points about the discussed lighting techniques. The tunnel is industrial and damp, with pipes and rough textures, while the environment where the speaker is seems neutral and nondescript. There is a focus on contrasting light and shadow to create atmosphere and depth. The video appears to be a behind-the-scenes explanation of the cinematic technique for creating tension and mood through lighting in an action movie scenario."
+    },
+    {
+     "t": 48.257,
+     "te": 61.103,
+     "lane": "narration",
+     "text": "people and they just existed in its environment and sometimes you just saw walls lit but then  the people would be in silhouette and you know, we talked about a lot of that stuff  and we showed it to Phil and he was like, okay, I see what you guys are going for and  then..."
+    },
+    {
+     "t": 61.103,
+     "te": 69.486,
+     "lane": "caption",
+     "text": "Tense Underground Tunnel Fight Sequence — The scene is set in a dimly lit underground water tunnel with a rustic, metallic ambiance. The lighting is warm and ambient, emanating from wall-mounted lights that give off an eerie glow reflecting on the water. Two characters, likely protagonists, are engaged in an intense fight sequence against an unseen adversary. Splashes of water accompany their movements, indicating the struggle's ferocity. The production team, including the camera operator and boom mic holder, are visible around the characters, capturing the scene from different angles. Amidst this chaos, the actors perform a choreographed combat sequence, wielding what appears to be weapons. The color palette is dominated by browns and oranges, contributing to the scene's gritty and tense atmosphere. This environment suggests a pivotal plot moment where characters confront danger within a claustrophobic setting."
+    },
+    {
+     "t": 61.103,
+     "te": 69.486,
+     "lane": "narration",
+     "text": "and, you know, he did a lot of the lighting design in the rooms, and...  That's a great thing to have as a production designer, to create these worlds."
+    },
+    {
+     "t": 69.486,
+     "te": 72.322,
+     "lane": "caption",
+     "text": "Behind-the-Scenes Film Production Control Room — The clip is set in a dimly lit control room, likely part of a film production environment. There are multiple computer monitors, one showing a perspective from a camera feed, suggesting a live film or rehearsal is occurring off-screen. The room is filled with equipment and cables, indicative of a behind-the-scenes setting. Individuals are focused on the monitors and their tasks. The man in the foreground is partially turned away from the camera, concentrating on a laptop screen with an intent gaze. He wears a red and blue shirt and has dark hair and a beard. The atmosphere is one of concentration and professionalism, with the crew likely reviewing footage or preparing for the next scene to be filmed. The environment has an ad-hoc, functional setup typical of on-set production spaces, with practicality taking precedence over aesthetics."
+    },
+    {
+     "t": 69.486,
+     "te": 72.322,
+     "lane": "narration",
+     "text": "to help me out."
+    }
+   ],
+   "raw_format": "jsonl line",
+   "raw": {
+    "vript_captions/vript_long_videos_captions.jsonl (lines for this video)": [
+     {
+      "meta": {
+       "video_id": "4gqhVWfvoWE",
+       "video_title": "The Hunger Games: Mockingjay - Part 2 Behind the Scenes - Tunnel Scene (2015) - Action Movie HD",
+       "num_clips": 9,
+       "integrity": true
+      },
+      "clip_id": "4gqhVWfvoWE-Scene-001",
+      "caption": {
+       "shot_type": "The sequence includes a high-angle shot, a medium close-up, and monitors showing the action.",
+       "camera_movement": "There's limited camera movement; mainly static shots focusing on monitors and an individual's actions.",
+       "content": "The voice-over suggests the director, Francis, aims to create a suspenseful atmosphere rather than a grand action sequence. The first frame shows a character crawling through a tight, dimly lit space, suggesting a tense stealth scenario, likely part of an infiltration or escape scene. The environment is claustrophobic, the light source is minimal and directional, highlighting dust and creating deep shadows that enhance the eerie mood. The subsequent frames show someone overseeing the production with monitors in front of them, displaying the live footage from the cameras capturing the scene. The room is dark to maintain focus on the brightly lit screens showing the high-angle shot of the action. The equipment is professional-grade, indicating a high-production value. The colors are muted with blue and grey tones dominating the setting, reflecting a somber and intense narrative moment.",
+       "scene_title": "Tense Tunnel Infiltration Coordination"
+      },
+      "voiceover": "More than a big broad action sequence Francis wanted to be scary"
+     },
+     {
+      "meta": {
+       "video_id": "4gqhVWfvoWE",
+       "video_title": "The Hunger Games: Mockingjay - Part 2 Behind the Scenes - Tunnel Scene (2015) - Action Movie HD",
+       "num_clips": 9,
+       "integrity": true
+      },
+      "clip_id": "4gqhVWfvoWE-Scene-002",
+      "caption": {
+       "shot_type": "Medium shots in dimly lit underground setting.",
+       "camera_movement": "Steady, with slight movements following the subject's action.",
+       "content": "The clip depicts a dimly lit, moist underground tunnel scene. Crew members are operating an ARRI ALEXA digital camera to capture footage of a character navigating through the challenging environment. The character is equipped with a headlamp that casts a focused beam of light, adding dramatic shadows and enhancing the tense atmosphere. The tunnel is cramped and rugged, reinforcing a sense of claustrophobia and danger. Water can be seen flowing around the character’s feet, reflecting the limited light and contributing to the scene's gritty realism. Camera operators are shown in medium shots, focusing intently on capturing the action while the camera is being handheld or supported by a rig. The color palette is dominated by dark blues and greys, with splashes of light highlighting the water and the actor’s movements.",
+       "scene_title": "Intense Underground Tunnel Filming"
+      },
+      "voiceover": "And one of the reasons we decided to choose the Alexa in the first place was because we knew we had a bunch of stuff  You know underground whether it was 13 or the sewers and all of that and that we could use a lot of"
+     },
+     {
+      "meta": {
+       "video_id": "4gqhVWfvoWE",
+       "video_title": "The Hunger Games: Mockingjay - Part 2 Behind the Scenes - Tunnel Scene (2015) - Action Movie HD",
+       "num_clips": 9,
+       "integrity": true
+      },
+      "clip_id": "4gqhVWfvoWE-Scene-003",
+      "caption": {
+       "shot_type": "A dark, moody, low-key lit close-up in a tight space.",
+       "camera_movement": "Steady camera, slight movement suggesting tension and focus on subject.",
+       "content": "The clip is a behind-the-scenes look at a tense moment from 'The Hunger Games: Mockingjay - Part 2.' The setting appears to be a cramped, underground tunnel bathed in a cold blue light, creating a claustrophobic and dangerous atmosphere. The practical lights mentioned are likely the dim, artificial sources within the scene, such as gun-mounted flashlights or minimal ambient lighting that casts deep shadows and highlights the grim nature of the environment. There is minimal movement, hinting at a stealthy or suspenseful action sequence. Characters are not clearly visible, but their presence is implied by the weaponry and the confined space they inhabit. The overall mood is one of anticipation and dread, likely preceding an action-heavy sequence or a moment of high tension within the narrative.",
+       "scene_title": "Tense Tunnel Standoff in Mockingjay Part 2"
+      },
+      "voiceover": "practical lights like lights on guns or lights, you know, sconces on walls and things like that."
+     },
+     {
+      "meta": {
+       "video_id": "4gqhVWfvoWE",
+       "video_title": "The Hunger Games: Mockingjay - Part 2 Behind the Scenes - Tunnel Scene (2015) - Action Movie HD",
+       "num_clips": 9,
+       "integrity": true
+      },
+      "clip_id": "4gqhVWfvoWE-Scene-004",
+      "caption": {
+       "shot_type": "Close-up, medium shot, and action sequence shots.",
+       "camera_movement": "Static close-up, handheld shaky movement in action scenes.",
+       "content": "The scene opens with a close-up, transitioning to a medium shot of a clapperboard indicating a scene from 'The Hunger Games: Mockingjay - Part 2'. The background is indistinct due to the rapid movement and focus on the clapperboard. The setting quickly shifts to a dark, murky tunnel environment where characters dressed in white military-like uniforms are seen preparing for an intense action sequence. Red light dots, possibly laser sights from weapons or surveillance devices, scan the area and the characters. The ambient lighting is low, primarily highlighting the characters and their immediate surroundings while keeping the broader environment shadowed to emphasize suspense. The uniforms are detailed with protective gear elements, signifying readiness for combat. The action is fast-paced with an emphasis on impending conflict or a strategic operation underway.",
+       "scene_title": "Preparation for Intense Tunnel Conflict"
+      },
+      "voiceover": "keep things, you know, very minimal."
+     },
+     {
+      "meta": {
+       "video_id": "4gqhVWfvoWE",
+       "video_title": "The Hunger Games: Mockingjay - Part 2 Behind the Scenes - Tunnel Scene (2015) - Action Movie HD",
+       "num_clips": 9,
+       "integrity": true
+      },
+      "clip_id": "4gqhVWfvoWE-Scene-005",
+      "caption": {
+       "shot_type": "The shot type is a mid-shot and over-the-shoulder shot.",
+       "camera_movement": "The camera is static with no discernible movement in the frames.",
+       "content": "The frames depict a tense, action-packed sequence in a dimly lit, enclosed tunnel-like environment reminiscent of the 'Alien' franchise atmosphere. Characters dressed in white protective suits are crawling through the cramped space, suggesting a stealthy or urgent mission. Their suits are detailed with various textures and protective gear, indicating a hazardous situation. The environment is dank and metallic, with rough textures that give a claustrophobic feel. The lighting is minimal, casting harsh shadows and creating an ominous mood. In the control room, monitors display the progress of the characters in the tunnel. The room is organized with various equipment and screens, providing a stark contrast to the dark, confined space of the tunnel. The setup suggests a carefully planned operation with oversight from a command center.",
+       "scene_title": "Tense Tunnel Infiltration Operation"
+      },
+      "voiceover": "action and we were originally very inspired by alien the Ridley Scott"
+     },
+     {
+      "meta": {
+       "video_id": "4gqhVWfvoWE",
+       "video_title": "The Hunger Games: Mockingjay - Part 2 Behind the Scenes - Tunnel Scene (2015) - Action Movie HD",
+       "num_clips": 9,
+       "integrity": true
+      },
+      "clip_id": "4gqhVWfvoWE-Scene-006",
+      "caption": {
+       "shot_type": "Close-up and medium shots in a tight, enclosed space.",
+       "camera_movement": "Steadicam tracking characters' movement through a dark, cramped tunnel.",
+       "content": "The clip showcases a behind-the-scenes look at a tense scene set in a narrow, dimly lit tunnel, filled with water and atmospheric haze. The characters, likely part of the ensemble cast from 'The Hunger Games: Mockingjay - Part 2', are seen navigating through this claustrophobic environment, cautiously moving forward as they are lit primarily by practical lights attached within the set that cast harsh shadows and create a foreboding mood. Their faces show concentration and alertness to potential dangers in the tunnel. The environment is wet and muddy, and the color palette is dominated by dark tones with spots of white light reflecting off the water. The camera follows them closely, capturing the intensity and confinement of the space. Various pipes and structural elements suggest an industrial setting.",
+       "scene_title": "Claustrophobic Tunnel Navigation Scene"
+      },
+      "voiceover": "movie which is another very claustrophobic movie the way they used  practicals and the way they used like the lighting in the spaceship to light"
+     },
+     {
+      "meta": {
+       "video_id": "4gqhVWfvoWE",
+       "video_title": "The Hunger Games: Mockingjay - Part 2 Behind the Scenes - Tunnel Scene (2015) - Action Movie HD",
+       "num_clips": 9,
+       "integrity": true
+      },
+      "clip_id": "4gqhVWfvoWE-Scene-007",
+      "caption": {
+       "shot_type": "Medium close-up to a medium shot transition.",
+       "camera_movement": "Static camera with no discernible movement in the frames.",
+       "content": "The video features a voice-over discussing the creative approach to a scene's lighting and character positioning, emphasizing silhouetted figures against lit walls. The visual part transitions from an environment shot showcasing a dimly lit, gritty tunnel with water flowing through it, to a sequence of shots of the speaker, using hand gestures to emphasize points about the discussed lighting techniques. The tunnel is industrial and damp, with pipes and rough textures, while the environment where the speaker is seems neutral and nondescript. There is a focus on contrasting light and shadow to create atmosphere and depth. The video appears to be a behind-the-scenes explanation of the cinematic technique for creating tension and mood through lighting in an action movie scenario.",
+       "scene_title": "Discussing Lighting Techniques in Action Scene"
+      },
+      "voiceover": "people and they just existed in its environment and sometimes you just saw walls lit but then  the people would be in silhouette and you know, we talked about a lot of that stuff  and we showed it to Phil and he was like, okay, I see what you guys are going for and  then..."
+     },
+     {
+      "meta": {
+       "video_id": "4gqhVWfvoWE",
+       "video_title": "The Hunger Games: Mockingjay - Part 2 Behind the Scenes - Tunnel Scene (2015) - Action Movie HD",
+       "num_clips": 9,
+       "integrity": true
+      },
+      "clip_id": "4gqhVWfvoWE-Scene-008",
+      "caption": {
+       "shot_type": "Medium and close-up shots in a confined space.",
+       "camera_movement": "Camera pans and tracks the action, with some handheld instability.",
+       "content": "The scene is set in a dimly lit underground water tunnel with a rustic, metallic ambiance. The lighting is warm and ambient, emanating from wall-mounted lights that give off an eerie glow reflecting on the water. Two characters, likely protagonists, are engaged in an intense fight sequence against an unseen adversary. Splashes of water accompany their movements, indicating the struggle's ferocity. The production team, including the camera operator and boom mic holder, are visible around the characters, capturing the scene from different angles. Amidst this chaos, the actors perform a choreographed combat sequence, wielding what appears to be weapons. The color palette is dominated by browns and oranges, contributing to the scene's gritty and tense atmosphere. This environment suggests a pivotal plot moment where characters confront danger within a claustrophobic setting.",
+       "scene_title": "Tense Underground Tunnel Fight Sequence"
+      },
+      "voiceover": "and, you know, he did a lot of the lighting design in the rooms, and...  That's a great thing to have as a production designer, to create these worlds."
+     },
+     {
+      "meta": {
+       "video_id": "4gqhVWfvoWE",
+       "video_title": "The Hunger Games: Mockingjay - Part 2 Behind the Scenes - Tunnel Scene (2015) - Action Movie HD",
+       "num_clips": 9,
+       "integrity": true
+      },
+      "clip_id": "4gqhVWfvoWE-Scene-009",
+      "caption": {
+       "shot_type": "Medium shot of a group in a control room.",
+       "camera_movement": "Static, no discernible camera movement in the frames.",
+       "content": "The clip is set in a dimly lit control room, likely part of a film production environment. There are multiple computer monitors, one showing a perspective from a camera feed, suggesting a live film or rehearsal is occurring off-screen. The room is filled with equipment and cables, indicative of a behind-the-scenes setting. Individuals are focused on the monitors and their tasks. The man in the foreground is partially turned away from the camera, concentrating on a laptop screen with an intent gaze. He wears a red and blue shirt and has dark hair and a beard. The atmosphere is one of concentration and professionalism, with the crew likely reviewing footage or preparing for the next scene to be filmed. The environment has an ad-hoc, functional setup typical of on-set production spaces, with practicality taking precedence over aesthetics.",
+       "scene_title": "Behind-the-Scenes Film Production Control Room"
+      },
+      "voiceover": "to help me out."
+     }
+    ],
+    "vript_long_videos_clips/clips_1000_of_1095.zip :: 4gqhVWfvoWE/4gqhVWfvoWE_cut_meta.json": {
+     "video_id": "4gqhVWfvoWE",
+     "clips": [
+      {
+       "clip_id": "4gqhVWfvoWE-Scene-001.mp4",
+       "span": [
+        "00:00:00.000",
+        "00:00:08.217"
+       ],
+       "duration": "8.217"
+      },
+      {
+       "clip_id": "4gqhVWfvoWE-Scene-002.mp4",
+       "span": [
+        "00:00:08.217",
+        "00:00:19.937"
+       ],
+       "duration": "11.72"
+      },
+      {
+       "clip_id": "4gqhVWfvoWE-Scene-003.mp4",
+       "span": [
+        "00:00:19.937",
+        "00:00:25.192"
+       ],
+       "duration": "5.255"
+      },
+      {
+       "clip_id": "4gqhVWfvoWE-Scene-004.mp4",
+       "span": [
+        "00:00:25.192",
+        "00:00:30.155"
+       ],
+       "duration": "4.963"
+      },
+      {
+       "clip_id": "4gqhVWfvoWE-Scene-005.mp4",
+       "span": [
+        "00:00:30.155",
+        "00:00:39.122"
+       ],
+       "duration": "8.967"
+      },
+      {
+       "clip_id": "4gqhVWfvoWE-Scene-006.mp4",
+       "span": [
+        "00:00:39.122",
+        "00:00:48.257"
+       ],
+       "duration": "9.135"
+      },
+      {
+       "clip_id": "4gqhVWfvoWE-Scene-007.mp4",
+       "span": [
+        "00:00:48.257",
+        "00:01:01.103"
+       ],
+       "duration": "12.846"
+      },
+      {
+       "clip_id": "4gqhVWfvoWE-Scene-008.mp4",
+       "span": [
+        "00:01:01.103",
+        "00:01:09.486"
+       ],
+       "duration": "8.383"
+      },
+      {
+       "clip_id": "4gqhVWfvoWE-Scene-009.mp4",
+       "span": [
+        "00:01:09.486",
+        "00:01:12.322"
+       ],
+       "duration": "2.836"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "4JIr5aWKkbA: Local news: crews trying to prevent flooding — 16 scenes",
+   "video_ref": "YouTube 4JIr5aWKkbA",
+   "duration_s": 123,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 4.571,
+     "lane": "caption",
+     "text": "News Report on Pre-Flood Control Measures — In the video, the larger frame shows a newscaster wearing a salmon-colored top against a studio backdrop with graphic elements displaying temperature and time. The smaller inset picture showcases a water body, potentially a river or canal, where water levels are visibly high, flowing vigorously over a barrier or weir structure. This footage suggests preparations for flood control. The water cascades down with force, indicating a significant volume and current. There's a clear contrast between the calm studio environment and the dynamic natural scene. The colors are vivid with the blue of the water, greenery surrounding the water body, and the vibrant attire of the newscaster. The environmental conditions suggest urgency and potential threat from nature."
+    },
+    {
+     "t": 0.0,
+     "te": 4.571,
+     "lane": "narration",
+     "text": "It is not just the wind, but potential storm surge that has many cities planning"
+    },
+    {
+     "t": 4.571,
+     "te": 9.276,
+     "lane": "caption",
+     "text": "Live Flood Prevention Efforts Analysis — The video features a split-screen layout typical for news broadcasts. On the left, a news anchor, dressed in pink, appears against a blue background, though her face is not visible. The right side shows footage of an area at night where flood prevention efforts seem to be taking place. A hand appears pointing to specific areas on the right screen, probably to highlight regions of interest regarding the flooding situation. This side has an overlay with the time '6:02' and temperature '87°', indicating live reporting conditions. The environment looks like a waterfront with artificial lighting reflecting off the water's surface, suggesting it might be a critical infrastructure spot such as a dam or water containment area. The overall tone of the clip suggests an urgent response to a natural disaster situation."
+    },
+    {
+     "t": 4.571,
+     "te": 9.276,
+     "lane": "narration",
+     "text": "for possible impact. WPTV"
+    },
+    {
+     "t": 9.276,
+     "te": 27.661,
+     "lane": "caption",
+     "text": "Live Update on Storm Preparedness — The scene features a reporter standing outdoors, presumably in a city setting, as indicated by the 'LIVE' broadcast caption and timestamp suggesting it's an on-location news report. The reporter, wearing a professional outfit with a tie, is positioned in front of a closed gate with foliage around, suggesting a suburban location. There's a stop sign visible to the reporter's right side. The sky is overcast, and the light is even, indicating an overcast day or possibly approaching bad weather. The video frames are visually similar, with minor changes in the reporter's posture and facial expression. Graphics overlay includes information such as 'TRACKING DORIAN', the reporter's name, and social media handle, which indicate that the report is about storm preparations."
+    },
+    {
+     "t": 9.276,
+     "te": 27.661,
+     "lane": "narration",
+     "text": "Lucy, where crews are already putting in some long hours. John. Well,  Kelly, that's right. Last night, some crews were working until about 11 in  the evening. They are taking lessons from a storm that hit here more than a  decade ago, and that storm has changed the way this city operates."
+    },
+    {
+     "t": 27.661,
+     "te": 31.665,
+     "lane": "caption",
+     "text": "Residential Area Flooded by Tropical Storm — The video showcases a suburban neighborhood deluged by floodwaters, presumably from Tropical Storm Faye. The streets are transformed into rivers, with murky, brown water reaching the doors of single-story homes. The first frame shows a person paddling a small boat down what was once a street, navigating past partially submerged vehicles. The overcast sky suggests ongoing bad weather. In the subsequent frames, we see more of the flooded neighborhood, with no people in sight, implying evacuation or sheltering indoors. The lawns are indistinguishable from the waterways due to the extensive flooding. The water's surface is rippled by rain, and debris can be glimpsed floating past. The homes appear dated with faded paint, and their driveways are now waterways. The scene conveys a sense of urgency and the scale of the storm's impact on this community."
+    },
+    {
+     "t": 27.661,
+     "te": 31.665,
+     "lane": "narration",
+     "text": "Tropical storm Faye in the summer of 2008.  Dump more than a foot of rain."
+    },
+    {
+     "t": 31.665,
+     "te": 35.869,
+     "lane": "caption",
+     "text": "Severe Flooding Engulfs Port St. Lucy Neighborhood — The video features wide shots of a residential neighborhood in Port St. Lucy submerged in deep floodwaters. The water levels are high enough to engulf the wheels and lower body of cars. Palm trees and street signs partially sway in the storm's wind. Houses are seen with water reaching their entryways, suggesting severe flooding. The sky is overcast, with grey clouds indicating stormy weather. The colors are muted with the dominating grays of the sky and the murky brown-green of the floodwater. No people are visible in the shots, implying possible evacuation or sheltering indoors. The environment looks chaotic, with nature's forces overwhelming a normally quiet street. The time stamp '2008' in the first frame suggests this footage is from past coverage of a similar event, possibly for comparison with current efforts to prevent flooding."
+    },
+    {
+     "t": 31.665,
+     "te": 35.869,
+     "lane": "narration",
+     "text": "over the eastern part of Port St.  Lucy, trapping some people in their homes for days."
+    },
+    {
+     "t": 35.869,
+     "te": 41.174,
+     "lane": "caption",
+     "text": "Map Illustration of Stormwater System Efficiency — The video displays a graphical overlay of a map showing the infrastructure of Port St. Lucie, with emphasis on its stormwater system. The map is detailed, with various colored lines indicating roads or waterways, and it appears to be a segment from a news broadcast discussing preparations for Hurricane Dorian. It's shown on a screen during a weather report, as evidenced by the weather icon and temperature indicator in the top right corner. There is a hand pointing at various features on the map, presumably belonging to the presenter or meteorologist. The overall lighting is consistent with indoor studio lighting, bright and clear, ensuring the map is easily legible. The dominant colors are blues and purples with white text overlaid for clarity."
+    },
+    {
+     "t": 35.869,
+     "te": 41.174,
+     "lane": "narration",
+     "text": "The ponds that were created as part of that stormwater improvement, which has worked out  very well so far."
+    },
+    {
+     "t": 41.174,
+     "te": 45.178,
+     "lane": "caption",
+     "text": "Planning Flood Prevention for Hurricane Dorian — In the office, a man, presumed to be Deputy Public Works Director John Dunton, is seated facing a computer screen, displaying a map. The map seems to be of a coastal area, possibly showing the Eastern watershed mentioned in the voice-over. The office environment looks typical with white walls and standard office furniture; a chair and some personal items like fruits are visible on the desk. The man wears a short-sleeved shirt and has a watch on his left wrist. He appears to be explaining something, likely related to flood prevention efforts in anticipation of Hurricane Dorian's impact on Port St. Lucie, as suggested by the video title. The room is well-lit by indoor lighting, and there's no movement or action other than the man's hand gestures towards the screen."
+    },
+    {
+     "t": 41.174,
+     "te": 45.178,
+     "lane": "narration",
+     "text": "Deputy Public Works director John Dunton shows where the Eastern watershed  imp..."
+    },
+    {
+     "t": 45.178,
+     "te": 51.285,
+     "lane": "caption",
+     "text": "Efforts to Avert Flooding in Port St. Lucie — The video features a series of stationary shots with no characters in action, highlighting efforts to prevent flooding in Port St. Lucie. The first frame showcases a water control structure, possibly a dam or sluice, with calm water in the foreground and lush greenery around. The weather seems overcast. In the second and third frames, we see water vigorously flowing through what appears to be a small opening in a fence, suggesting controlled water release to manage levels. The fence is chain-linked, and the water is murky. In the fourth frame, we observe a wide body of water surrounded by dense vegetation and residential buildings in the background. The sky is cloudy, indicating potential rain, which could exacerbate flooding concerns. The colors are mostly green and blue with overtones of gray from the overcast sky."
+    },
+    {
+     "t": 45.178,
+     "te": 51.285,
+     "lane": "narration",
+     "text": "The $34 million project was completed in 2012."
+    },
+    {
+     "t": 51.285,
+     "te": 55.422,
+     "lane": "caption",
+     "text": "Port St. Lucie Braces for Hurricane Dorian — The video shows an area at risk of flooding, likely due to an approaching hurricane named Dorian, as suggested by the overlay text. The shots are daytime exterior scenes. There are glimpses of green vegetation partly submerged, indicating high water levels. The sky is overcast, and the environment appears calm but tense in anticipation of the storm. A duck swims across the water in one frame, adding life to the scene. The water's surface is rippled but not turbulent, suggesting that the storm has not yet hit the location. The color palette is muted with dominant greys and greens, reflecting an overcast weather condition. Overlay text indicates the location as Port St. Lucie and the time as 6:03, with a temperature of 87°F."
+    },
+    {
+     "t": 51.285,
+     "te": 55.422,
+     "lane": "narration",
+     "text": "and the city has not had a major flooding event since, however."
+    },
+    {
+     "t": 55.422,
+     "te": 61.562,
+     "lane": "caption",
+     "text": "Deputy Director Discusses Flood Prevention — The clip features an interior view of a moving vehicle with the focus on a person in the driver's seat, presumably John Dunton, identified as Port St. Lucie Deputy Public Works Director. He is dressed in a dark-colored uniform with visible insignia and is wearing a seat belt. His left hand is on the steering wheel, and his right hand gestures occasionally as he speaks. The vehicle's dashboard is visible, and the windshield shows a suburban road environment outside with trees and a cloudy sky, indicating overcast weather conditions likely due to Hurricane Dorian. There are no other notable objects or passengers in the vehicle. The lighting within the car appears natural, suggesting daytime. The exterior lighting is muted with grey tones, likely due to storm clouds."
+    },
+    {
+     "t": 55.422,
+     "te": 61.562,
+     "lane": "narration",
+     "text": "Six inches green in an hour,  five inches rain an hour.  Beth, all bets are off.  Dunton takes us out to where city."
+    },
+    {
+     "t": 61.562,
+     "te": 71.171,
+     "lane": "caption",
+     "text": "Excavator Clears Debris to Combat Flooding — The video depicts a bright, sunny day in Port St. Lucie with clear blue skies and some clouds, indicating good weather conditions despite the hurricane preparation efforts. Crews are using a large, blue and yellow excavator to remove debris to prevent flooding. The machinery is heavy-duty, equipped with a hydraulic arm and a large bucket attachment for digging and moving materials. The excavator digs into a pile of debris consisting of branches, leaves, and other natural materials. The equipment's movement is precise and controlled as it picks up the debris, showcasing the effort to clear the area efficiently. The focus remains on the machine's operation against the backdrop of lush greenery and a residential neighborhood. There are no people visible in the frames, emphasizing the machine's role in the task."
+    },
+    {
+     "t": 61.562,
+     "te": 71.171,
+     "lane": "narration",
+     "text": "crews are clearing debris  along Ross or boulevard t  flow. Usually it takes us  the system where we could"
+    },
+    {
+     "t": 71.171,
+     "te": 77.477,
+     "lane": "caption",
+     "text": "Excavator Clears Canal to Mitigate Flood Risk — In a sunny suburban environment, a yellow mechanical excavator with blue undercarriage is featured adjacent to a roadside canal, surrounded by lush greenery. The sky is partially clouded. In the sequence, the excavator's arm moves up and down, demonstrating the removal of muddy debris from the canal to prevent potential flooding. The machine's bucket is filled with wet earth and plant matter, highlighting pre-emptive flood management efforts. The excavator is positioned on a grassy area with a clear view of the blue sky, showcasing the contrast of nature and machinery at work. The video frames show no people, focusing solely on the machine's operation amidst occasional shadows cast by clouds overhead."
+    },
+    {
+     "t": 71.171,
+     "te": 77.477,
+     "lane": "narration",
+     "text": "8 to 10 inch shot of rain  While this work has to be"
+    },
+    {
+     "t": 77.477,
+     "te": 83.016,
+     "lane": "caption",
+     "text": "Emergency Response to Flood Threat — The video shows a static wide shot of a water control structure during dusk or dawn, judging by the light's quality. Water is overflowing from a weir, indicating heavy rainfall or flood conditions. The scene is likely from a surveillance camera given the timestamp and camera information overlay. The surrounding environment appears to be a blend of man-made structures and natural foliage, hinting at an urban area near a body of water. The overflowing water suggests an emergency situation, possibly due to Hurricane Dorian as indicated by the 'TRACKING DORIAN' subtitle. The color scheme is dominated by dark and muted tones, with the water reflecting the minimal available light. No human activity is visible, implying either evacuation or remote operation. The water's smooth flow contrasts with the potential danger it represents."
+    },
+    {
+     "t": 77.477,
+     "te": 83.016,
+     "lane": "narration",
+     "text": "can manually take over the operation of any of the dozens of city water control structures."
+    },
+    {
+     "t": 83.016,
+     "te": 88.121,
+     "lane": "caption",
+     "text": "Emergency Water Pumping During Hurricane Dorian — The video clip appears to be captured from a news broadcast, with the title 'TRACKING DORIAN' suggesting coverage of hurricane efforts. There's a focus on an LCD monitor showing live footage of water gushing out from multiple pipes into what seems to be a body of water, possibly a river or canal. In the background, there are trees and a faint structure that may be part of the pumping station. The scene is likely filmed during the day given the natural light reflecting off the water. A person's arm is briefly visible, likely an operator or reporter gesturing towards the screen. The colors are predominantly blue and green, typical of outdoor water-related scenarios. The overflowing water suggests an emergency response to prevent flooding in the wake of Hurricane Dorian."
+    },
+    {
+     "t": 83.016,
+     "te": 88.121,
+     "lane": "narration",
+     "text": "It's hard to see, but there's water pumping out of those pipes."
+    },
+    {
+     "t": 88.121,
+     "te": 96.129,
+     "lane": "caption",
+     "text": "Crews clearing drainage system to prevent flooding — The video shows crews working to clear debris and blockages from a drainage system in preparation for potential flooding. The first two frames depict a flooded street or area with water covering the ground. The next two frames show a crew member operating a excavator or backhoe to dig into the ground near a drainage area surrounded by vegetation. The drainage system appears to be clogged or obstructed, and the crew is working to clear it to prevent further flooding."
+    },
+    {
+     "t": 88.121,
+     "te": 96.129,
+     "lane": "narration",
+     "text": "Dunson says the last three days of heavy rain have not been helpful, but  they're preparing as best they can for any potential storm impacts."
+    },
+    {
+     "t": 96.129,
+     "te": 122.489,
+     "lane": "caption",
+     "text": "Live Hurricane Dorian Flood Risk Report — The scene opens with a reporter standing live on location with a microphone in hand, delivering a news report. Behind him is a street corner with lush green trees and a white fence bordering what appears to be a utility or industrial facility. There is also a stop sign on the right side of the frame. The sky is overcast, suggesting cloudy weather, possibly related to the hurricane mentioned in the voice-over. The reporter is professionally dressed in a suit and tie, indicating the formality of the news segment. The overlay graphics indicate that this is a live broadcast, tracking Hurricane Dorian at 6:04 PM with the temperature at 87 degrees. The color palette consists of greens from the trees, the white fence, and the reporter's dark suit contrasted against the grey sky."
+    },
+    {
+     "t": 96.129,
+     "te": 122.489,
+     "lane": "narration",
+     "text": "Dunton says one inch of rain equates to four inches in the stormwater system  and scientists with the U.S. Geological Survey say that one inch of rain puts  down 17.3 million gallons of water in one square mile. The city of Port St  Lucie is 120 square miles. That's an awful lot of water. We're live tonight  in Port St. Lucie. John shaman WPTV News Channel five."
+    }
+   ],
+   "raw_format": "jsonl line",
+   "raw": {
+    "vript_captions/vript_long_videos_captions.jsonl (lines for this video)": [
+     {
+      "meta": {
+       "video_id": "4JIr5aWKkbA",
+       "video_title": "Crews trying to prevent flooding",
+       "num_clips": 16,
+       "integrity": true
+      },
+      "clip_id": "4JIr5aWKkbA-Scene-001",
+      "caption": {
+       "shot_type": "The clip uses a picture-in-picture shot type.",
+       "camera_movement": "There's no camera movement; both frames are static.",
+       "content": "In the video, the larger frame shows a newscaster wearing a salmon-colored top against a studio backdrop with graphic elements displaying temperature and time. The smaller inset picture showcases a water body, potentially a river or canal, where water levels are visibly high, flowing vigorously over a barrier or weir structure. This footage suggests preparations for flood control. The water cascades down with force, indicating a significant volume and current. There's a clear contrast between the calm studio environment and the dynamic natural scene. The colors are vivid with the blue of the water, greenery surrounding the water body, and the vibrant attire of the newscaster. The environmental conditions suggest urgency and potential threat from nature.",
+       "scene_title": "News Report on Pre-Flood Control Measures"
+      },
+      "voiceover": "It is not just the wind, but potential storm surge that has many cities planning"
+     },
+     {
+      "meta": {
+       "video_id": "4JIr5aWKkbA",
+       "video_title": "Crews trying to prevent flooding",
+       "num_clips": 16,
+       "integrity": true
+      },
+      "clip_id": "4JIr5aWKkbA-Scene-002",
+      "caption": {
+       "shot_type": "This is a split-screen news broadcast shot.",
+       "camera_movement": "There is no camera movement; both screens are static.",
+       "content": "The video features a split-screen layout typical for news broadcasts. On the left, a news anchor, dressed in pink, appears against a blue background, though her face is not visible. The right side shows footage of an area at night where flood prevention efforts seem to be taking place. A hand appears pointing to specific areas on the right screen, probably to highlight regions of interest regarding the flooding situation. This side has an overlay with the time '6:02' and temperature '87°', indicating live reporting conditions. The environment looks like a waterfront with artificial lighting reflecting off the water's surface, suggesting it might be a critical infrastructure spot such as a dam or water containment area. The overall tone of the clip suggests an urgent response to a natural disaster situation.",
+       "scene_title": "Live Flood Prevention Efforts Analysis"
+      },
+      "voiceover": "for possible impact. WPTV"
+     },
+     {
+      "meta": {
+       "video_id": "4JIr5aWKkbA",
+       "video_title": "Crews trying to prevent flooding",
+       "num_clips": 16,
+       "integrity": true
+      },
+      "clip_id": "4JIr5aWKkbA-Scene-003",
+      "caption": {
+       "shot_type": "A static medium shot of a reporter.",
+       "camera_movement": "The camera remains stationary with no movement.",
+       "content": "The scene features a reporter standing outdoors, presumably in a city setting, as indicated by the 'LIVE' broadcast caption and timestamp suggesting it's an on-location news report. The reporter, wearing a professional outfit with a tie, is positioned in front of a closed gate with foliage around, suggesting a suburban location. There's a stop sign visible to the reporter's right side. The sky is overcast, and the light is even, indicating an overcast day or possibly approaching bad weather. The video frames are visually similar, with minor changes in the reporter's posture and facial expression. Graphics overlay includes information such as 'TRACKING DORIAN', the reporter's name, and social media handle, which indicate that the report is about storm preparations.",
+       "scene_title": "Live Update on Storm Preparedness"
+      },
+      "voiceover": "Lucy, where crews are already putting in some long hours. John. Well,  Kelly, that's right. Last night, some crews were working until about 11 in  the evening. They are taking lessons from a storm that hit here more than a  decade ago, and that storm has changed the way this city operates."
+     },
+     {
+      "meta": {
+       "video_id": "4JIr5aWKkbA",
+       "video_title": "Crews trying to prevent flooding",
+       "num_clips": 16,
+       "integrity": true
+      },
+      "clip_id": "4JIr5aWKkbA-Scene-004",
+      "caption": {
+       "shot_type": "These are medium shots showing extensive flooding in a residential area.",
+       "camera_movement": "The camera is mostly static with slight movements reflecting the water's ripple.",
+       "content": "The video showcases a suburban neighborhood deluged by floodwaters, presumably from Tropical Storm Faye. The streets are transformed into rivers, with murky, brown water reaching the doors of single-story homes. The first frame shows a person paddling a small boat down what was once a street, navigating past partially submerged vehicles. The overcast sky suggests ongoing bad weather. In the subsequent frames, we see more of the flooded neighborhood, with no people in sight, implying evacuation or sheltering indoors. The lawns are indistinguishable from the waterways due to the extensive flooding. The water's surface is rippled by rain, and debris can be glimpsed floating past. The homes appear dated with faded paint, and their driveways are now waterways. The scene conveys a sense of urgency and the scale of the storm's impact on this community.",
+       "scene_title": "Residential Area Flooded by Tropical Storm"
+      },
+      "voiceover": "Tropical storm Faye in the summer of 2008.  Dump more than a foot of rain."
+     },
+     {
+      "meta": {
+       "video_id": "4JIr5aWKkbA",
+       "video_title": "Crews trying to prevent flooding",
+       "num_clips": 16,
+       "integrity": true
+      },
+      "clip_id": "4JIr5aWKkbA-Scene-005",
+      "caption": {
+       "shot_type": "Wide shots, exterior, daytime, showing extensive flooding in a residential area.",
+       "camera_movement": "Static shots from within a vehicle slowly moving through the flooded streets.",
+       "content": "The video features wide shots of a residential neighborhood in Port St. Lucy submerged in deep floodwaters. The water levels are high enough to engulf the wheels and lower body of cars. Palm trees and street signs partially sway in the storm's wind. Houses are seen with water reaching their entryways, suggesting severe flooding. The sky is overcast, with grey clouds indicating stormy weather. The colors are muted with the dominating grays of the sky and the murky brown-green of the floodwater. No people are visible in the shots, implying possible evacuation or sheltering indoors. The environment looks chaotic, with nature's forces overwhelming a normally quiet street. The time stamp '2008' in the first frame suggests this footage is from past coverage of a similar event, possibly for comparison with current efforts to prevent flooding.",
+       "scene_title": "Severe Flooding Engulfs Port St. Lucy Neighborhood"
+      },
+      "voiceover": "over the eastern part of Port St.  Lucy, trapping some people in their homes for days."
+     },
+     {
+      "meta": {
+       "video_id": "4JIr5aWKkbA",
+       "video_title": "Crews trying to prevent flooding",
+       "num_clips": 16,
+       "integrity": true
+      },
+      "clip_id": "4JIr5aWKkbA-Scene-006",
+      "caption": {
+       "shot_type": "Static full-screen graphic overlay map shot.",
+       "camera_movement": "No camera movement, the map remains static throughout the frames.",
+       "content": "The video displays a graphical overlay of a map showing the infrastructure of Port St. Lucie, with emphasis on its stormwater system. The map is detailed, with various colored lines indicating roads or waterways, and it appears to be a segment from a news broadcast discussing preparations for Hurricane Dorian. It's shown on a screen during a weather report, as evidenced by the weather icon and temperature indicator in the top right corner. There is a hand pointing at various features on the map, presumably belonging to the presenter or meteorologist. The overall lighting is consistent with indoor studio lighting, bright and clear, ensuring the map is easily legible. The dominant colors are blues and purples with white text overlaid for clarity.",
+       "scene_title": "Map Illustration of Stormwater System Efficiency"
+      },
+      "voiceover": "The ponds that were created as part of that stormwater improvement, which has worked out  very well so far."
+     },
+     {
+      "meta": {
+       "video_id": "4JIr5aWKkbA",
+       "video_title": "Crews trying to prevent flooding",
+       "num_clips": 16,
+       "integrity": true
+      },
+      "clip_id": "4JIr5aWKkbA-Scene-007",
+      "caption": {
+       "shot_type": "The shot type is a medium shot of an individual.",
+       "camera_movement": "There appears to be no camera movement in these frames.",
+       "content": "In the office, a man, presumed to be Deputy Public Works Director John Dunton, is seated facing a computer screen, displaying a map. The map seems to be of a coastal area, possibly showing the Eastern watershed mentioned in the voice-over. The office environment looks typical with white walls and standard office furniture; a chair and some personal items like fruits are visible on the desk. The man wears a short-sleeved shirt and has a watch on his left wrist. He appears to be explaining something, likely related to flood prevention efforts in anticipation of Hurricane Dorian's impact on Port St. Lucie, as suggested by the video title. The room is well-lit by indoor lighting, and there's no movement or action other than the man's hand gestures towards the screen.",
+       "scene_title": "Planning Flood Prevention for Hurricane Dorian"
+      },
+      "voiceover": "Deputy Public Works director John Dunton shows where the Eastern watershed  imp..."
+     },
+     {
+      "meta": {
+       "video_id": "4JIr5aWKkbA",
+       "video_title": "Crews trying to prevent flooding",
+       "num_clips": 16,
+       "integrity": true
+      },
+      "clip_id": "4JIr5aWKkbA-Scene-008",
+      "caption": {
+       "shot_type": "Stationary medium and wide shots of waterways.",
+       "camera_movement": "No camera movement, fixed shots on various scenes.",
+       "content": "The video features a series of stationary shots with no characters in action, highlighting efforts to prevent flooding in Port St. Lucie. The first frame showcases a water control structure, possibly a dam or sluice, with calm water in the foreground and lush greenery around. The weather seems overcast. In the second and third frames, we see water vigorously flowing through what appears to be a small opening in a fence, suggesting controlled water release to manage levels. The fence is chain-linked, and the water is murky. In the fourth frame, we observe a wide body of water surrounded by dense vegetation and residential buildings in the background. The sky is cloudy, indicating potential rain, which could exacerbate flooding concerns. The colors are mostly green and blue with overtones of gray from the overcast sky.",
+       "scene_title": "Efforts to Avert Flooding in Port St. Lucie"
+      },
+      "voiceover": "The $34 million project was completed in 2012."
+     },
+     {
+      "meta": {
+       "video_id": "4JIr5aWKkbA",
+       "video_title": "Crews trying to prevent flooding",
+       "num_clips": 16,
+       "integrity": true
+      },
+      "clip_id": "4JIr5aWKkbA-Scene-009",
+      "caption": {
+       "shot_type": "A static medium long shot of a water body.",
+       "camera_movement": "No discernible camera movement; steady shots with slight zoom in effect.",
+       "content": "The video shows an area at risk of flooding, likely due to an approaching hurricane named Dorian, as suggested by the overlay text. The shots are daytime exterior scenes. There are glimpses of green vegetation partly submerged, indicating high water levels. The sky is overcast, and the environment appears calm but tense in anticipation of the storm. A duck swims across the water in one frame, adding life to the scene. The water's surface is rippled but not turbulent, suggesting that the storm has not yet hit the location. The color palette is muted with dominant greys and greens, reflecting an overcast weather condition. Overlay text indicates the location as Port St. Lucie and the time as 6:03, with a temperature of 87°F.",
+       "scene_title": "Port St. Lucie Braces for Hurricane Dorian"
+      },
+      "voiceover": "and the city has not had a major flooding event since, however."
+     },
+     {
+      "meta": {
+       "video_id": "4JIr5aWKkbA",
+       "video_title": "Crews trying to prevent flooding",
+       "num_clips": 16,
+       "integrity": true
+      },
+      "clip_id": "4JIr5aWKkbA-Scene-010",
+      "caption": {
+       "shot_type": "The shot is a medium close-up inside a vehicle.",
+       "camera_movement": "There is no camera movement; it's a stationary shot.",
+       "content": "The clip features an interior view of a moving vehicle with the focus on a person in the driver's seat, presumably John Dunton, identified as Port St. Lucie Deputy Public Works Director. He is dressed in a dark-colored uniform with visible insignia and is wearing a seat belt. His left hand is on the steering wheel, and his right hand gestures occasionally as he speaks. The vehicle's dashboard is visible, and the windshield shows a suburban road environment outside with trees and a cloudy sky, indicating overcast weather conditions likely due to Hurricane Dorian. There are no other notable objects or passengers in the vehicle. The lighting within the car appears natural, suggesting daytime. The exterior lighting is muted with grey tones, likely due to storm clouds.",
+       "scene_title": "Deputy Director Discusses Flood Prevention"
+      },
+      "voiceover": "Six inches green in an hour,  five inches rain an hour.  Beth, all bets are off.  Dunton takes us out to where city."
+     },
+     {
+      "meta": {
+       "video_id": "4JIr5aWKkbA",
+       "video_title": "Crews trying to prevent flooding",
+       "num_clips": 16,
+       "integrity": true
+      },
+      "clip_id": "4JIr5aWKkbA-Scene-011",
+      "caption": {
+       "shot_type": "Medium close-up shots of mechanical excavation equipment",
+       "camera_movement": "Static shots with no camera movement observed",
+       "content": "The video depicts a bright, sunny day in Port St. Lucie with clear blue skies and some clouds, indicating good weather conditions despite the hurricane preparation efforts. Crews are using a large, blue and yellow excavator to remove debris to prevent flooding. The machinery is heavy-duty, equipped with a hydraulic arm and a large bucket attachment for digging and moving materials. The excavator digs into a pile of debris consisting of branches, leaves, and other natural materials. The equipment's movement is precise and controlled as it picks up the debris, showcasing the effort to clear the area efficiently. The focus remains on the machine's operation against the backdrop of lush greenery and a residential neighborhood. There are no people visible in the frames, emphasizing the machine's role in the task.",
+       "scene_title": "Excavator Clears Debris to Combat Flooding"
+      },
+      "voiceover": "crews are clearing debris  along Ross or boulevard t  flow. Usually it takes us  the system where we could"
+     },
+     {
+      "meta": {
+       "video_id": "4JIr5aWKkbA",
+       "video_title": "Crews trying to prevent flooding",
+       "num_clips": 16,
+       "integrity": true
+      },
+      "clip_id": "4JIr5aWKkbA-Scene-012",
+      "caption": {
+       "shot_type": "Medium long shot of a yellow mechanical excavator.",
+       "camera_movement": "Static, with slight zoom in on the excavator.",
+       "content": "In a sunny suburban environment, a yellow mechanical excavator with blue undercarriage is featured adjacent to a roadside canal, surrounded by lush greenery. The sky is partially clouded. In the sequence, the excavator's arm moves up and down, demonstrating the removal of muddy debris from the canal to prevent potential flooding. The machine's bucket is filled with wet earth and plant matter, highlighting pre-emptive flood management efforts. The excavator is positioned on a grassy area with a clear view of the blue sky, showcasing the contrast of nature and machinery at work. The video frames show no people, focusing solely on the machine's operation amidst occasional shadows cast by clouds overhead.",
+       "scene_title": "Excavator Clears Canal to Mitigate Flood Risk"
+      },
+      "voiceover": "8 to 10 inch shot of rain  While this work has to be"
+     },
+     {
+      "meta": {
+       "video_id": "4JIr5aWKkbA",
+       "video_title": "Crews trying to prevent flooding",
+       "num_clips": 16,
+       "integrity": true
+      },
+      "clip_id": "4JIr5aWKkbA-Scene-013",
+      "caption": {
+       "shot_type": "A static wide shot capturing a water control structure.",
+       "camera_movement": "No camera movement, the frame remains steady throughout the clip.",
+       "content": "The video shows a static wide shot of a water control structure during dusk or dawn, judging by the light's quality. Water is overflowing from a weir, indicating heavy rainfall or flood conditions. The scene is likely from a surveillance camera given the timestamp and camera information overlay. The surrounding environment appears to be a blend of man-made structures and natural foliage, hinting at an urban area near a body of water. The overflowing water suggests an emergency situation, possibly due to Hurricane Dorian as indicated by the 'TRACKING DORIAN' subtitle. The color scheme is dominated by dark and muted tones, with the water reflecting the minimal available light. No human activity is visible, implying either evacuation or remote operation. The water's smooth flow contrasts with the potential danger it represents.",
+       "scene_title": "Emergency Response to Flood Threat"
+      },
+      "voiceover": "can manually take over the operation of any of the dozens of city water control structures."
+     },
+     {
+      "meta": {
+       "video_id": "4JIr5aWKkbA",
+       "video_title": "Crews trying to prevent flooding",
+       "num_clips": 16,
+       "integrity": true
+      },
+      "clip_id": "4JIr5aWKkbA-Scene-014",
+      "caption": {
+       "shot_type": "The shot is a close-up on a monitor displaying footage.",
+       "camera_movement": "There is a slow zoom in towards the screen showing the pipes.",
+       "content": "The video clip appears to be captured from a news broadcast, with the title 'TRACKING DORIAN' suggesting coverage of hurricane efforts. There's a focus on an LCD monitor showing live footage of water gushing out from multiple pipes into what seems to be a body of water, possibly a river or canal. In the background, there are trees and a faint structure that may be part of the pumping station. The scene is likely filmed during the day given the natural light reflecting off the water. A person's arm is briefly visible, likely an operator or reporter gesturing towards the screen. The colors are predominantly blue and green, typical of outdoor water-related scenarios. The overflowing water suggests an emergency response to prevent flooding in the wake of Hurricane Dorian.",
+       "scene_title": "Emergency Water Pumping During Hurricane Dorian"
+      },
+      "voiceover": "It's hard to see, but there's water pumping out of those pipes."
+     },
+     {
+      "meta": {
+       "video_id": "4JIr5aWKkbA",
+       "video_title": "Crews trying to prevent flooding",
+       "num_clips": 16,
+       "integrity": true
+      },
+      "clip_id": "4JIr5aWKkbA-Scene-015",
+      "caption": {
+       "shot_type": "The shots appear to be exterior shots.",
+       "camera_movement": "The camera is static, with no apparent movement.",
+       "content": "The video shows crews working to clear debris and blockages from a drainage system in preparation for potential flooding. The first two frames depict a flooded street or area with water covering the ground. The next two frames show a crew member operating a excavator or backhoe to dig into the ground near a drainage area surrounded by vegetation. The drainage system appears to be clogged or obstructed, and the crew is working to clear it to prevent further flooding.",
+       "scene_title": "Crews clearing drainage system to prevent flooding"
+      },
+      "voiceover": "Dunson says the last three days of heavy rain have not been helpful, but  they're preparing as best they can for any potential storm impacts."
+     },
+     {
+      "meta": {
+       "video_id": "4JIr5aWKkbA",
+       "video_title": "Crews trying to prevent flooding",
+       "num_clips": 16,
+       "integrity": true
+      },
+      "clip_id": "4JIr5aWKkbA-Scene-016",
+      "caption": {
+       "shot_type": "Medium close-up shot of a reporter",
+       "camera_movement": "Static, with no noticeable movement",
+       "content": "The scene opens with a reporter standing live on location with a microphone in hand, delivering a news report. Behind him is a street corner with lush green trees and a white fence bordering what appears to be a utility or industrial facility. There is also a stop sign on the right side of the frame. The sky is overcast, suggesting cloudy weather, possibly related to the hurricane mentioned in the voice-over. The reporter is professionally dressed in a suit and tie, indicating the formality of the news segment. The overlay graphics indicate that this is a live broadcast, tracking Hurricane Dorian at 6:04 PM with the temperature at 87 degrees. The color palette consists of greens from the trees, the white fence, and the reporter's dark suit contrasted against the grey sky.",
+       "scene_title": "Live Hurricane Dorian Flood Risk Report"
+      },
+      "voiceover": "Dunton says one inch of rain equates to four inches in the stormwater system  and scientists with the U.S. Geological Survey say that one inch of rain puts  down 17.3 million gallons of water in one square mile. The city of Port St  Lucie is 120 square miles. That's an awful lot of water. We're live tonight  in Port St. Lucie. John shaman WPTV News Channel five."
+     }
+    ],
+    "vript_long_videos_clips/clips_1000_of_1095.zip :: 4JIr5aWKkbA/4JIr5aWKkbA_cut_meta.json": {
+     "video_id": "4JIr5aWKkbA",
+     "clips": [
+      {
+       "clip_id": "4JIr5aWKkbA-Scene-001.mp4",
+       "span": [
+        "00:00:00.000",
+        "00:00:04.571"
+       ],
+       "duration": "4.571"
+      },
+      {
+       "clip_id": "4JIr5aWKkbA-Scene-002.mp4",
+       "span": [
+        "00:00:04.571",
+        "00:00:09.276"
+       ],
+       "duration": "4.705"
+      },
+      {
+       "clip_id": "4JIr5aWKkbA-Scene-003.mp4",
+       "span": [
+        "00:00:09.276",
+        "00:00:27.661"
+       ],
+       "duration": "18.385"
+      },
+      {
+       "clip_id": "4JIr5aWKkbA-Scene-004.mp4",
+       "span": [
+        "00:00:27.661",
+        "00:00:31.665"
+       ],
+       "duration": "4.004"
+      },
+      {
+       "clip_id": "4JIr5aWKkbA-Scene-005.mp4",
+       "span": [
+        "00:00:31.665",
+        "00:00:35.869"
+       ],
+       "duration": "4.204"
+      },
+      {
+       "clip_id": "4JIr5aWKkbA-Scene-006.mp4",
+       "span": [
+        "00:00:35.869",
+        "00:00:41.174"
+       ],
+       "duration": "5.305"
+      },
+      {
+       "clip_id": "4JIr5aWKkbA-Scene-007.mp4",
+       "span": [
+        "00:00:41.174",
+        "00:00:45.178"
+       ],
+       "duration": "4.004"
+      },
+      {
+       "clip_id": "4JIr5aWKkbA-Scene-008.mp4",
+       "span": [
+        "00:00:45.178",
+        "00:00:51.285"
+       ],
+       "duration": "6.107"
+      },
+      {
+       "clip_id": "4JIr5aWKkbA-Scene-009.mp4",
+       "span": [
+        "00:00:51.285",
+        "00:00:55.422"
+       ],
+       "duration": "4.137"
+      },
+      {
+       "clip_id": "4JIr5aWKkbA-Scene-010.mp4",
+       "span": [
+        "00:00:55.422",
+        "00:01:01.562"
+       ],
+       "duration": "6.14"
+      },
+      {
+       "clip_id": "4JIr5aWKkbA-Scene-011.mp4",
+       "span": [
+        "00:01:01.562",
+        "00:01:11.171"
+       ],
+       "duration": "9.609"
+      },
+      {
+       "clip_id": "4JIr5aWKkbA-Scene-012.mp4",
+       "span": [
+        "00:01:11.171",
+        "00:01:17.477"
+       ],
+       "duration": "6.306"
+      },
+      {
+       "clip_id": "4JIr5aWKkbA-Scene-013.mp4",
+       "span": [
+        "00:01:17.477",
+        "00:01:23.016"
+       ],
+       "duration": "5.539"
+      },
+      {
+       "clip_id": "4JIr5aWKkbA-Scene-014.mp4",
+       "span": [
+        "00:01:23.016",
+        "00:01:28.121"
+       ],
+       "duration": "5.105"
+      },
+      {
+       "clip_id": "4JIr5aWKkbA-Scene-015.mp4",
+       "span": [
+        "00:01:28.121",
+        "00:01:36.129"
+       ],
+       "duration": "8.008"
+      },
+      {
+       "clip_id": "4JIr5aWKkbA-Scene-016.mp4",
+       "span": [
+        "00:01:36.129",
+        "00:02:02.489"
+       ],
+       "duration": "26.36"
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

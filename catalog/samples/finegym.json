@@ -1,0 +1,252 @@
+{
+ "slug": "finegym",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://sdolivia.github.io/FineGym/resources/dataset/finegym_annotation_info_v1.1.json",
+  "gym99_train_element_v1.1.txt, gym99_val_element.txt, gym288_train_element_v1.1.txt, gym288_val_element.txt",
+  "https://sdolivia.github.io/FineGym/resources/dataset/gym288_categories.txt"
+ ],
+ "access_used": "open download",
+ "note": "One example is one competition routine inside a YouTube broadcast: the routine's absolute [start,end] in seconds, its sub-action (element) segments with times relative to the routine start, and the element class from the Gym288/Gym99 split files. The timeline adds the routine start so all times are in broadcast seconds. The JSON gives events only as numbers; the element names (UB, VT) show which apparatus each one is. Videos are YouTube-only, so there is no clip.",
+ "examples": [
+  {
+   "title": "0LtLS9wROrk E_002407_002435: uneven-bars routine, 7 timed elements",
+   "video_ref": "YouTube 0LtLS9wROrk (https://www.youtube.com/watch?v=0LtLS9wROrk), routine E_002407_002435",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 2407.04,
+     "te": 2435.28,
+     "lane": "event",
+     "text": "routine E_002407_002435 (event 4)"
+    },
+    {
+     "t": 2410.49,
+     "te": 2412.68,
+     "lane": "action",
+     "text": "(UB) giant circle backward with 0.5 turn to handstand"
+    },
+    {
+     "t": 2413.79,
+     "te": 2415.43,
+     "lane": "action",
+     "text": "(UB) (swing backward or front support) salto forward straddled to hang on high bar"
+    },
+    {
+     "t": 2419.3,
+     "te": 2420.23,
+     "lane": "action",
+     "text": "(UB) transition flight from high bar to low bar"
+    },
+    {
+     "t": 2422.63,
+     "te": 2424.31,
+     "lane": "action",
+     "text": "(UB) transition flight from low bar to high bar"
+    },
+    {
+     "t": 2426.78,
+     "te": 2428.54,
+     "lane": "action",
+     "text": "(UB) giant circle backward"
+    },
+    {
+     "t": 2428.58,
+     "te": 2430.21,
+     "lane": "action",
+     "text": "(UB) giant circle backward"
+    },
+    {
+     "t": 2431.0,
+     "te": 2435.26,
+     "lane": "action",
+     "text": "(UB) (swing forward) double salto backward stretched"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "finegym_annotation_info_v1.1.json": {
+     "0LtLS9wROrk": {
+      "E_002407_002435": {
+       "event": 4,
+       "segments": {
+        "A_0003_0005": {
+         "stages": 1,
+         "timestamps": [
+          [
+           3.45,
+           5.64
+          ]
+         ]
+        },
+        "A_0006_0008": {
+         "stages": 1,
+         "timestamps": [
+          [
+           6.75,
+           8.39
+          ]
+         ]
+        },
+        "A_0012_0013": {
+         "stages": 1,
+         "timestamps": [
+          [
+           12.26,
+           13.19
+          ]
+         ]
+        },
+        "A_0015_0017": {
+         "stages": 1,
+         "timestamps": [
+          [
+           15.59,
+           17.27
+          ]
+         ]
+        },
+        "A_0019_0021": {
+         "stages": 1,
+         "timestamps": [
+          [
+           19.74,
+           21.5
+          ]
+         ]
+        },
+        "A_0021_0023": {
+         "stages": 1,
+         "timestamps": [
+          [
+           21.54,
+           23.17
+          ]
+         ]
+        },
+        "A_0023_0028": {
+         "stages": 1,
+         "timestamps": [
+          [
+           23.96,
+           28.22
+          ]
+         ]
+        }
+       },
+       "timestamps": [
+        [
+         2407.04,
+         2435.28
+        ]
+       ]
+      }
+     }
+    },
+    "element split rows": [
+     "gym288_val_element.txt: 0LtLS9wROrk_E_002407_002435_A_0003_0005 240",
+     "gym99_val_element.txt: 0LtLS9wROrk_E_002407_002435_A_0003_0005 78",
+     "gym288_val_element.txt: 0LtLS9wROrk_E_002407_002435_A_0006_0008 266",
+     "gym99_val_element.txt: 0LtLS9wROrk_E_002407_002435_A_0006_0008 91",
+     "gym288_val_element.txt: 0LtLS9wROrk_E_002407_002435_A_0012_0013 271",
+     "gym99_val_element.txt: 0LtLS9wROrk_E_002407_002435_A_0012_0013 94",
+     "gym288_val_element.txt: 0LtLS9wROrk_E_002407_002435_A_0015_0017 272",
+     "gym99_val_element.txt: 0LtLS9wROrk_E_002407_002435_A_0015_0017 95",
+     "gym288_val_element.txt: 0LtLS9wROrk_E_002407_002435_A_0019_0021 241",
+     "gym99_val_element.txt: 0LtLS9wROrk_E_002407_002435_A_0019_0021 79",
+     "gym288_val_element.txt: 0LtLS9wROrk_E_002407_002435_A_0021_0023 241",
+     "gym99_val_element.txt: 0LtLS9wROrk_E_002407_002435_A_0021_0023 79",
+     "gym288_val_element.txt: 0LtLS9wROrk_E_002407_002435_A_0023_0028 285",
+     "gym99_val_element.txt: 0LtLS9wROrk_E_002407_002435_A_0023_0028 98"
+    ],
+    "category rows": [
+     "gym288_categories.txt: Clabel: 240; set: 41; Glabel: 413; (UB) giant circle backward with 0.5 turn to handstand",
+     "gym288_categories.txt: Clabel: 241; set: 41; Glabel: 416; (UB) giant circle backward",
+     "gym288_categories.txt: Clabel: 266; set: 42; Glabel: 462; (UB) (swing backward or front support) salto forward straddled to hang on high bar",
+     "gym288_categories.txt: Clabel: 271; set: 43; Glabel: 471; (UB) transition flight from high bar to low bar",
+     "gym288_categories.txt: Clabel: 272; set: 43; Glabel: 472; (UB) transition flight from low bar to high bar",
+     "gym288_categories.txt: Clabel: 285; set: 44; Glabel: 516; (UB) (swing forward) double salto backward stretched"
+    ]
+   }
+  },
+  {
+   "title": "0LtLS9wROrk E_002373_002379: one vault split into 3 stages",
+   "video_ref": "YouTube 0LtLS9wROrk (https://www.youtube.com/watch?v=0LtLS9wROrk), routine E_002373_002379",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 2373.12,
+     "te": 2379.72,
+     "lane": "event",
+     "text": "routine E_002373_002379 (event 1)"
+    },
+    {
+     "t": 2373.64,
+     "te": 2376.49,
+     "lane": "action",
+     "text": "(VT) round-off, flic-flac on, stretched salto backward with 1 turn off [stage 1/3]"
+    },
+    {
+     "t": 2376.49,
+     "te": 2377.84,
+     "lane": "action",
+     "text": "(VT) round-off, flic-flac on, stretched salto backward with 1 turn off [stage 2/3]"
+    },
+    {
+     "t": 2377.84,
+     "te": 2379.69,
+     "lane": "action",
+     "text": "(VT) round-off, flic-flac on, stretched salto backward with 1 turn off [stage 3/3]"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "finegym_annotation_info_v1.1.json": {
+     "0LtLS9wROrk": {
+      "E_002373_002379": {
+       "event": 1,
+       "segments": {
+        "A_0000_0006": {
+         "stages": 3,
+         "timestamps": [
+          [
+           0.52,
+           3.37
+          ],
+          [
+           3.37,
+           4.72
+          ],
+          [
+           4.72,
+           6.57
+          ]
+         ]
+        }
+       },
+       "timestamps": [
+        [
+         2373.12,
+         2379.72
+        ]
+       ]
+      }
+     }
+    },
+    "element split rows": [
+     "gym288_train_element_v1.1.txt: 0LtLS9wROrk_E_002373_002379_A_0000_0006 11",
+     "gym99_train_element_v1.1.txt: 0LtLS9wROrk_E_002373_002379_A_0000_0006 2"
+    ],
+    "category rows": [
+     "gym288_categories.txt: Clabel:  11; set:  1; Glabel:  20; (VT) round-off, flic-flac on, stretched salto backward with 1 turn off"
+    ]
+   }
+  }
+ ]
+}

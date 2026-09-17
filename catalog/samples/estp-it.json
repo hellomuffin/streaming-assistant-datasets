@@ -1,0 +1,607 @@
+{
+ "slug": "estp-it",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://github.com/SooLab/EyeWO/blob/master/estp_gen/contextual_qa/group_qas.json",
+  "https://github.com/SooLab/EyeWO/blob/master/estp_gen/contextual_qa/temp.txt (first record: ec41b9e1-dbf9-45c3-bf88-4b250873cad0_d596bc4d-d149-4ca4-8671-630d6303d4de_0.json)"
+ ],
+ "access_used": "public sample in paper/repo/card only (full data needs a logged-in ModelScope account; anonymous file download of zhangyl9/ESTP-IT returns HTTP 401)",
+ "note": "The released ESTP-IT archive (5 split parts, ~105 GB) could not be downloaded anonymously, so both examples are generation-pipeline files the authors committed to the official EyeWO repo in the same format: (1) one Ego4D 5-minute clip's grouped single-question QAs, where each question is answered repeatedly at every valid interval [start_time,end_time]; (2) one contextual multi-turn conversation in which four user questions (task_id 0–3) are interleaved and the assistant answers each one whenever evidence appears. Times are seconds in the full Ego4D video; Ego4D video cannot be redistributed, so no clip.",
+ "examples": [
+  {
+   "title": "Ego4D ffb6dfc1 clip 9355b245: 5 proactive questions about a mat, answered at 23 valid moments",
+   "video_ref": "Ego4D video_uid ffb6dfc1-d2f9-45b1-8e25-2c7d0f32d635, clip 9355b245-6cd8-4c68-96d4-878fa25b35ff (539.997–839.997 s)",
+   "duration_s": 300.0,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 539.82,
+     "te": 540.59,
+     "lane": "answer",
+     "text": "[Attribute Perception] Q: Can you remind me of the color of the mat when I sprinkle water on it? → The mat is black when you sprinkle water on it."
+    },
+    {
+     "t": 539.82,
+     "te": 540.59,
+     "lane": "answer",
+     "text": "[Action Recognition] Q: Can you remind me when I sprinkle water on the mat? → You sprinkle water on the mat."
+    },
+    {
+     "t": 540.44,
+     "te": 541.21,
+     "lane": "answer",
+     "text": "[Ego Object Localization] Q: Where is the mat positioned relative to me when I turn it? → The mat is on the ground in front of you when you turn it."
+    },
+    {
+     "t": 540.78,
+     "te": 541.55,
+     "lane": "answer",
+     "text": "[Attribute Perception] Q: Can you remind me of the color of the mat when I sprinkle water on it? → The mat is black when you sprinkle water on it."
+    },
+    {
+     "t": 540.78,
+     "te": 541.55,
+     "lane": "answer",
+     "text": "[Action Recognition] Q: Can you remind me when I sprinkle water on the mat? → You sprinkle water on the mat."
+    },
+    {
+     "t": 546.63,
+     "te": 547.4,
+     "lane": "answer",
+     "text": "[Ego Object State Change Recognition] Q: Can you remind me how the mat changes position when I shake off the water? → When you shake off the water, the mat is vigorously shaken, causing water droplets to scatter in different directions."
+    },
+    {
+     "t": 548.68,
+     "te": 549.45,
+     "lane": "answer",
+     "text": "[Action Recognition] Q: I want to know when I hit the mat on the trolley. Could you let me know? → You hit the mat on the trolley."
+    },
+    {
+     "t": 552.19,
+     "te": 552.96,
+     "lane": "answer",
+     "text": "[Action Recognition] Q: I want to know when I hit the mat on the trolley. Could you let me know? → You hit the mat on the trolley."
+    },
+    {
+     "t": 559.68,
+     "te": 560.45,
+     "lane": "answer",
+     "text": "[Attribute Perception] Q: Can you remind me of the color of the mat when I sprinkle water on it? → The mat is black when you sprinkle water on it."
+    },
+    {
+     "t": 559.68,
+     "te": 560.45,
+     "lane": "answer",
+     "text": "[Action Recognition] Q: Can you remind me when I sprinkle water on the mat? → You sprinkle water on the mat."
+    },
+    {
+     "t": 564.93,
+     "te": 565.69,
+     "lane": "answer",
+     "text": "[Ego Object Localization] Q: Where is the mat positioned relative to me when I turn it? → The mat is on the ground in front of you when you turn it."
+    },
+    {
+     "t": 565.27,
+     "te": 566.03,
+     "lane": "answer",
+     "text": "[Attribute Perception] Q: Can you remind me of the color of the mat when I sprinkle water on it? → The mat is black when you sprinkle water on it."
+    },
+    {
+     "t": 565.27,
+     "te": 566.03,
+     "lane": "answer",
+     "text": "[Action Recognition] Q: Can you remind me when I sprinkle water on the mat? → You sprinkle water on the mat."
+    },
+    {
+     "t": 573.44,
+     "te": 574.2,
+     "lane": "answer",
+     "text": "[Ego Object State Change Recognition] Q: Can you remind me how the mat changes position when I shake off the water? → When you shake off the water, the mat is shaken vigorously, releasing excess moisture and creating a wet surface that contrasts with the dry surroundings."
+    },
+    {
+     "t": 575.44,
+     "te": 576.21,
+     "lane": "answer",
+     "text": "[Action Recognition] Q: I want to know when I hit the mat on the trolley. Could you let me know? → You hit the mat on the trolley."
+    },
+    {
+     "t": 592.31,
+     "te": 593.08,
+     "lane": "answer",
+     "text": "[Attribute Perception] Q: Can you remind me of the color of the mat when I sprinkle water on it? → The mat is black when you sprinkle water on it."
+    },
+    {
+     "t": 592.31,
+     "te": 593.08,
+     "lane": "answer",
+     "text": "[Action Recognition] Q: Can you remind me when I sprinkle water on the mat? → You sprinkle water on the mat."
+    },
+    {
+     "t": 597.71,
+     "te": 598.48,
+     "lane": "answer",
+     "text": "[Ego Object Localization] Q: Where is the mat positioned relative to me when I turn it? → The mat is on the ground in front of you when you turn it."
+    },
+    {
+     "t": 597.9,
+     "te": 598.67,
+     "lane": "answer",
+     "text": "[Attribute Perception] Q: Can you remind me of the color of the mat when I sprinkle water on it? → The mat is black when you sprinkle water on it."
+    },
+    {
+     "t": 597.9,
+     "te": 598.67,
+     "lane": "answer",
+     "text": "[Action Recognition] Q: Can you remind me when I sprinkle water on the mat? → You sprinkle water on the mat."
+    },
+    {
+     "t": 607.91,
+     "te": 608.68,
+     "lane": "answer",
+     "text": "[Action Recognition] Q: I want to know when I hit the mat on the trolley. Could you let me know? → You hit the mat on the trolley."
+    },
+    {
+     "t": 610.75,
+     "te": 611.52,
+     "lane": "answer",
+     "text": "[Action Recognition] Q: I want to know when I hit the mat on the trolley. Could you let me know? → You hit the mat on the trolley."
+    },
+    {
+     "t": 615.22,
+     "te": 615.99,
+     "lane": "answer",
+     "text": "[Action Recognition] Q: I want to know when I hit the mat on the trolley. Could you let me know? → You hit the mat on the trolley."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "ffb6dfc1-d2f9-45b1-8e25-2c7d0f32d635": {
+     "9355b245-6cd8-4c68-96d4-878fa25b35ff": [
+      {
+       "reason": "These questions are related to the mat, focusing on its color, position relative to the observer, state changes when shaken, and actions involving the mat such as sprinkling water and hitting it on the trolley.",
+       "qas": [
+        {
+         "Task Type": " Attribute Perception",
+         "question": "Can you remind me of the color of the mat when I sprinkle water on it?",
+         "conversation": [
+          {
+           "role": "assistant",
+           "content": "The mat is black when you sprinkle water on it.",
+           "time": 540.2008233333333,
+           "start_time": 539.8163211822026,
+           "end_time": 540.5853254844641
+          },
+          {
+           "role": "assistant",
+           "content": "The mat is black when you sprinkle water on it.",
+           "time": 541.1643033333334,
+           "start_time": 540.7798011822026,
+           "end_time": 541.5488054844641
+          },
+          {
+           "role": "assistant",
+           "content": "The mat is black when you sprinkle water on it.",
+           "time": 560.0617933333333,
+           "start_time": 559.6772911822026,
+           "end_time": 560.446295484464
+          },
+          {
+           "role": "assistant",
+           "content": "The mat is black when you sprinkle water on it.",
+           "time": 565.6495033333333,
+           "start_time": 565.2650011822026,
+           "end_time": 566.034005484464
+          },
+          {
+           "role": "assistant",
+           "content": "The mat is black when you sprinkle water on it.",
+           "time": 592.6967833333333,
+           "start_time": 592.3122811822026,
+           "end_time": 593.081285484464
+          },
+          {
+           "role": "assistant",
+           "content": "The mat is black when you sprinkle water on it.",
+           "time": 598.2850933333333,
+           "start_time": 597.9005911822026,
+           "end_time": 598.669595484464
+          }
+         ],
+         "clip_start_time": 539.9966666666667,
+         "clip_end_time": 839.9966666666667
+        },
+        {
+         "Task Type": " Ego Object Localization",
+         "question": "Where is the mat positioned relative to me when I turn it?",
+         "conversation": [
+          {
+           "role": "assistant",
+           "content": "The mat is on the ground in front of you when you turn it.",
+           "time": 540.8248633333334,
+           "start_time": 540.4403611822027,
+           "end_time": 541.2093654844641
+          },
+          {
+           "role": "assistant",
+           "content": "The mat is on the ground in front of you when you turn it.",
+           "time": 565.3095133333334,
+           "start_time": 564.9250111822026,
+           "end_time": 565.6940154844641
+          },
+          {
+           "role": "assistant",
+           "content": "The mat is on the ground in front of you when you turn it.",
+           "time": 598.0964133333333,
+           "start_time": 597.7119111822026,
+           "end_time": 598.480915484464
+          }
+         ],
+         "clip_start_time": 539.9966666666667,
+         "clip_end_time": 839.9966666666667
+        },
+        {
+         "Task Type": " Ego Object State Change Recognition",
+         "question": "Can you remind me how the mat changes position when I shake off the water?",
+         "conversation": [
+          {
+           "role": "assistant",
+           "content": "When you shake off the water, the mat is vigorously shaken, causing water droplets to scatter in different directions.",
+           "time": 547.0158433333334,
+           "start_time": 546.6313411822026,
+           "end_time": 547.4003454844641
+          },
+          {
+           "role": "assistant",
+           "content": "When you shake off the water, the mat is shaken vigorously, releasing excess moisture and creating a wet surface that contrasts with the dry surroundings.",
+           "time": 573.8201933333333,
+           "start_time": 573.4356911822026,
+           "end_time": 574.2046954844641
+          }
+         ],
+         "clip_start_time": 539.9966666666667,
+         "clip_end_time": 839.9966666666667
+        },
+        {
+         "question": "Can you remind me when I sprinkle water on the mat?",
+         "time": [
+          540.2008233333333,
+          541.1643033333334,
+          560.0617933333333,
+          565.6495033333333,
+          592.6967833333333,
+          598.2850933333333
+         ],
+         "clip_start_time": 539.9966666666667,
+         "clip_end_time": 839.9966666666667,
+         "Task Type": "Action Recognition",
+         "conversation": [
+          {
+           "role": "assistant",
+           "content": "You sprinkle water on the mat.",
+           "time": 540.2008233333333,
+           "start_time": 539.8163211822026,
+           "end_time": 540.5853254844641
+          },
+          {
+           "role": "assistant",
+           "content": "You sprinkle water on the mat.",
+           "time": 541.1643033333334,
+           "start_time": 540.7798011822026,
+           "end_time": 541.5488054844641
+          },
+          {
+           "role": "assistant",
+           "content": "You sprinkle water on the mat.",
+           "time": 560.0617933333333,
+           "start_time": 559.6772911822026,
+           "end_time": 560.446295484464
+          },
+          {
+           "role": "assistant",
+           "content": "You sprinkle water on the mat.",
+           "time": 565.6495033333333,
+           "start_time": 565.2650011822026,
+           "end_time": 566.034005484464
+          },
+          {
+           "role": "assistant",
+           "content": "You sprinkle water on the mat.",
+           "time": 592.6967833333333,
+           "start_time": 592.3122811822026,
+           "end_time": 593.081285484464
+          },
+          {
+           "role": "assistant",
+           "content": "You sprinkle water on the mat.",
+           "time": 598.2850933333333,
+           "start_time": 597.9005911822026,
+           "end_time": 598.669595484464
+          }
+         ]
+        },
+        {
+         "question": "I want to know when I hit the mat on the trolley. Could you let me know?",
+         "time": [
+          549.0640333333333,
+          552.5791433333334,
+          575.8232133333333,
+          608.2938233333333,
+          611.1321733333333,
+          615.6081833333334
+         ],
+         "clip_start_time": 539.9966666666667,
+         "clip_end_time": 839.9966666666667,
+         "Task Type": "Action Recognition",
+         "conversation": [
+          {
+           "role": "assistant",
+           "content": "You hit the mat on the trolley.",
+           "time": 549.0640333333333,
+           "start_time": 548.6795311822026,
+           "end_time": 549.4485354844641
+          },
+          {
+           "role": "assistant",
+           "content": "You hit the mat on the trolley.",
+           "time": 552.5791433333334,
+           "start_time": 552.1946411822026,
+           "end_time": 552.9636454844641
+          },
+          {
+           "role": "assistant",
+           "content": "You hit the mat on the trolley.",
+           "time": 575.8232133333333,
+           "start_time": 575.4387111822026,
+           "end_time": 576.2077154844641
+          },
+          {
+           "role": "assistant",
+           "content": "You hit the mat on the trolley.",
+           "time": 608.2938233333333,
+           "start_time": 607.9093211822026,
+           "end_time": 608.678325484464
+          },
+          {
+           "role": "assistant",
+           "content": "You hit the mat on the trolley.",
+           "time": 611.1321733333333,
+           "start_time": 610.7476711822026,
+           "end_time": 611.516675484464
+          },
+          {
+           "role": "assistant",
+           "content": "You hit the mat on the trolley.",
+           "time": 615.6081833333334,
+           "start_time": 615.2236811822027,
+           "end_time": 615.9926854844641
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "Ego4D ec41b9e1: contextual multi-turn — 4 interleaved questions, 11 timed assistant replies",
+   "video_ref": "Ego4D video_uid ec41b9e1-dbf9-45c3-bf88-4b250873cad0 (clip d596bc4d-d149-4ca4-8671-630d6303d4de)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 2162.15,
+     "te": null,
+     "lane": "user",
+     "text": "How far is the teal-colored object from me when I adjust it?"
+    },
+    {
+     "t": 2160.5,
+     "te": 2168.0,
+     "lane": "assistant",
+     "text": "The teal-colored object is within arm's reach when you adjust it."
+    },
+    {
+     "t": 2174.49,
+     "te": null,
+     "lane": "user",
+     "text": "Where is it positioned relative to me when I drop it on the table?"
+    },
+    {
+     "t": 2175.4,
+     "te": 2177.07,
+     "lane": "assistant",
+     "text": "It is positioned in front of you, on the table, as you drop it gently onto the surface."
+    },
+    {
+     "t": 2180.43,
+     "te": null,
+     "lane": "user",
+     "text": "When do I handle or place it on the table?"
+    },
+    {
+     "t": 2202.56,
+     "te": 2204.23,
+     "lane": "assistant",
+     "text": "You place it on the table."
+    },
+    {
+     "t": 2215.66,
+     "te": 2217.33,
+     "lane": "assistant",
+     "text": "You drop it on the table."
+    },
+    {
+     "t": 2332.55,
+     "te": 2334.22,
+     "lane": "assistant",
+     "text": "You take it."
+    },
+    {
+     "t": 2338.18,
+     "te": null,
+     "lane": "user",
+     "text": "At what points do I move around during the activity?"
+    },
+    {
+     "t": 2360.07,
+     "te": 2361.75,
+     "lane": "assistant",
+     "text": "You move around."
+    },
+    {
+     "t": 2380.05,
+     "te": 2381.72,
+     "lane": "assistant",
+     "text": "You move around."
+    },
+    {
+     "t": 2416.64,
+     "te": 2418.31,
+     "lane": "assistant",
+     "text": "You move around."
+    },
+    {
+     "t": 2426.12,
+     "te": 2427.8,
+     "lane": "assistant",
+     "text": "You move."
+    },
+    {
+     "t": 2444.84,
+     "te": 2446.52,
+     "lane": "assistant",
+     "text": "You walk around."
+    },
+    {
+     "t": 2457.56,
+     "te": 2459.23,
+     "lane": "assistant",
+     "text": "You move around."
+    }
+   ],
+   "raw_format": "json",
+   "raw": [
+    {
+     "role": "user",
+     "content": "How far is the teal-colored object from me when I adjust it?",
+     "time": 2162.1472225467164,
+     "task_id": 0
+    },
+    {
+     "role": "assistant",
+     "caption": "The video begins with a first-person perspective inside a room, capturing a dynamic scene where the camera moves rapidly. Initially, the viewer sees a bright blue decorative item hanging on the wall to the right and a large window revealing greenery outside. The environment suggests a domestic interior space, possibly a kitchen or dining area given the presence of what looks like a stove or oven in the background.\n\nAs the camera moves, it reveals more of the room's details: a white wall to the left, part of a metal rack or shelf with various objects on it, including a plate, and a glimpse of a hand reaching out towards the metallic surface. This hand is seen interacting with the turquoise decoration, pulling or adjusting it against the wall. The movement of the camera is swift and somewhat erratic, creating a sense of hurried activity.\n\nThroughout the sequence, the hand continues its interaction with the turquoise decoration, sometimes grasping it firmly and other times pulling it away from the wall. There are moments where the camera focuses closely on the hands and the decoration, blurring the background slightly due to the motion. At one point, the camera angle shifts to show the arm and wrist of the person holding the turquoise decoration, indicating a closer inspection or adjustment action.\n\nThe background remains consistent with natural light coming through the window, suggesting daytime. The position of the turquoise decoration relative to the camera varies as it is moved and adjusted by the hand, which becomes more visible and detailed in some frames. The camera's rapid movements and focus changes create a sense of urgency or purposeful action within the scene.\n\nIn summary, the video depicts an individual actively engaging with a turquoise decorative item in a home setting, characterized by quick movements and interactions that suggest either preparation for an event or a routine task involving the decoration.",
+     "content": "The teal-colored object is within arm's reach when you adjust it.",
+     "reason": "The caption describes a scene where a hand interacts with a turquoise (teal-colored) decoration, adjusting it against the wall. The distance is not explicitly mentioned, but the interaction suggests it is within arm's reach.",
+     "start_time": 2160.5,
+     "end_time": 2168.0,
+     "stamp_time": 2164.25,
+     "time": 2162.5888172000004,
+     "task_id": 0
+    },
+    {
+     "role": "user",
+     "content": "Where is it positioned relative to me when I drop it on the table?",
+     "time": 2174.49137067941,
+     "task_id": 1
+    },
+    {
+     "role": "assistant",
+     "content": "It is positioned in front of you, on the table, as you drop it gently onto the surface.",
+     "time": 2176.2360672000004,
+     "start_time": 2175.3976107374156,
+     "end_time": 2177.0745236625853,
+     "task_id": 1
+    },
+    {
+     "role": "user",
+     "content": "When do I handle or place it on the table?",
+     "time": 2180.429989848923,
+     "task_id": 2
+    },
+    {
+     "role": "assistant",
+     "content": "You place it on the table.",
+     "time": 2203.3947272000005,
+     "start_time": 2202.5562707374156,
+     "end_time": 2204.2331836625854,
+     "task_id": 2
+    },
+    {
+     "role": "assistant",
+     "content": "You drop it on the table.",
+     "time": 2216.4963172000002,
+     "start_time": 2215.6578607374154,
+     "end_time": 2217.334773662585,
+     "task_id": 2
+    },
+    {
+     "role": "assistant",
+     "content": "You take it.",
+     "time": 2333.3862772,
+     "start_time": 2332.5478207374153,
+     "end_time": 2334.224733662585,
+     "task_id": 2
+    },
+    {
+     "role": "user",
+     "content": "At what points do I move around during the activity?",
+     "time": 2338.175682730055,
+     "task_id": 3
+    },
+    {
+     "role": "assistant",
+     "content": "You move around.",
+     "time": 2360.9068272000004,
+     "start_time": 2360.0683707374155,
+     "end_time": 2361.7452836625853,
+     "task_id": 3
+    },
+    {
+     "role": "assistant",
+     "content": "You move around.",
+     "time": 2380.8852472000003,
+     "start_time": 2380.0467907374154,
+     "end_time": 2381.723703662585,
+     "task_id": 3
+    },
+    {
+     "role": "assistant",
+     "content": "You move around.",
+     "time": 2417.4743972,
+     "start_time": 2416.6359407374152,
+     "end_time": 2418.312853662585,
+     "task_id": 3
+    },
+    {
+     "role": "assistant",
+     "content": "You move.",
+     "time": 2426.9633372000003,
+     "start_time": 2426.1248807374154,
+     "end_time": 2427.801793662585,
+     "task_id": 3
+    },
+    {
+     "role": "assistant",
+     "content": "You walk around.",
+     "time": 2445.6821472,
+     "start_time": 2444.8436907374153,
+     "end_time": 2446.520603662585,
+     "task_id": 3
+    },
+    {
+     "role": "assistant",
+     "content": "You move around.",
+     "time": 2458.3962572,
+     "start_time": 2457.557800737415,
+     "end_time": 2459.234713662585,
+     "task_id": 3
+    }
+   ]
+  }
+ ]
+}

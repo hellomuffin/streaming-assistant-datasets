@@ -1,0 +1,1974 @@
+{
+ "slug": "wtag",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://www.dropbox.com/scl/fo/rri8hdi1b6xlxude1zv28/h/T24/Video/VideoMpegTiming.txt?rlkey=xtx9v386hhsqk4ct6ix8kw53u&dl=1",
+  "https://www.dropbox.com/scl/fo/rri8hdi1b6xlxude1zv28/h/T24/StepDetection/StepDetection.txt?rlkey=xtx9v386hhsqk4ct6ix8kw53u&dl=1",
+  "https://www.dropbox.com/scl/fo/rri8hdi1b6xlxude1zv28/h/T24/TextASR/InstructorAnnotations_intent.txt?rlkey=xtx9v386hhsqk4ct6ix8kw53u&dl=1",
+  "https://www.dropbox.com/scl/fo/rri8hdi1b6xlxude1zv28/h/T24/TextASR/UserAnnotations_intent.txt?rlkey=xtx9v386hhsqk4ct6ix8kw53u&dl=1",
+  "https://www.dropbox.com/scl/fo/rri8hdi1b6xlxude1zv28/h/T24/Video/Video.mpeg?rlkey=xtx9v386hhsqk4ct6ix8kw53u&dl=1",
+  "https://www.dropbox.com/scl/fo/rri8hdi1b6xlxude1zv28/h/T29/Video/VideoMpegTiming.txt?rlkey=xtx9v386hhsqk4ct6ix8kw53u&dl=1",
+  "https://www.dropbox.com/scl/fo/rri8hdi1b6xlxude1zv28/h/T29/StepDetection/StepDetection.txt?rlkey=xtx9v386hhsqk4ct6ix8kw53u&dl=1",
+  "https://www.dropbox.com/scl/fo/rri8hdi1b6xlxude1zv28/h/T29/TextASR/InstructorAnnotations_intent.txt?rlkey=xtx9v386hhsqk4ct6ix8kw53u&dl=1",
+  "https://www.dropbox.com/scl/fo/rri8hdi1b6xlxude1zv28/h/T29/TextASR/UserAnnotations_intent.txt?rlkey=xtx9v386hhsqk4ct6ix8kw53u&dl=1",
+  "https://www.dropbox.com/scl/fo/rri8hdi1b6xlxude1zv28/h/T29/Video/Video.mpeg?rlkey=xtx9v386hhsqk4ct6ix8kw53u&dl=1"
+ ],
+ "access_used": "open download",
+ "note": "One example is one session folder: the 4 annotation text files verbatim (tab-separated; times are Windows ticks of 100 ns). Timeline seconds = (tick − first value of VideoMpegTiming.txt) / 1e7; instructor lines whose sub-label starts with \"wrong\" are shown in the correction lane. Clips come from the regular Dropbox Video.mpeg, which has no audio track (audio needs a separate signed agreement).",
+ "examples": [
+  {
+   "title": "T24: mug cake — teaspoon/tablespoon mix-up, restart, 4 kinds of mistake correction",
+   "video_ref": "T24/Video/Video.mpeg",
+   "duration_s": 1086.4,
+   "clip": "samples/media/wtag_1.mp4",
+   "clip_offset_s": 226,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.3,
+     "te": 26.9,
+     "lane": "step",
+     "text": "Start"
+    },
+    {
+     "t": 26.9,
+     "te": 117.4,
+     "lane": "step",
+     "text": "Place cake liner"
+    },
+    {
+     "t": 28.0,
+     "te": 33.0,
+     "lane": "user",
+     "text": "so emily what does it mean to assemble cake liner?  [Question]"
+    },
+    {
+     "t": 33.1,
+     "te": 38.8,
+     "lane": "instructor",
+     "text": "yeah so there's a parchment paper on your right side...take one out  [Answer]"
+    },
+    {
+     "t": 36.7,
+     "te": 38.0,
+     "lane": "user",
+     "text": "uh huh alright  [Other]"
+    },
+    {
+     "t": 39.5,
+     "te": 41.3,
+     "lane": "correction",
+     "text": "nonono parchment paper  [Instruction / wrong object]"
+    },
+    {
+     "t": 41.9,
+     "te": 43.3,
+     "lane": "user",
+     "text": "parchment paper  [Other]"
+    },
+    {
+     "t": 43.6,
+     "te": 47.9,
+     "lane": "instructor",
+     "text": "so it's sitting above the ziploc bag  [Instruction / detailed]"
+    },
+    {
+     "t": 48.2,
+     "te": 49.4,
+     "lane": "user",
+     "text": "this one?  [Question]"
+    },
+    {
+     "t": 49.5,
+     "te": 55.1,
+     "lane": "instructor",
+     "text": "no on the left, left of the microwave, right next to the mug  [Instruction / detailed]"
+    },
+    {
+     "t": 55.7,
+     "te": 57.3,
+     "lane": "user",
+     "text": "next to the mug  [Other]"
+    },
+    {
+     "t": 57.4,
+     "te": 59.2,
+     "lane": "instructor",
+     "text": "yes that's parchment paper  [Confirmation]"
+    },
+    {
+     "t": 59.1,
+     "te": 60.2,
+     "lane": "user",
+     "text": "ohh this one  [Question]"
+    },
+    {
+     "t": 60.2,
+     "te": 62.9,
+     "lane": "correction",
+     "text": "nononono the first thing you grabbed was the parchment paper  [Instruction / wrong state]"
+    },
+    {
+     "t": 62.8,
+     "te": 66.5,
+     "lane": "user",
+     "text": "ok parchment paper  [Other]"
+    },
+    {
+     "t": 73.4,
+     "te": 76.1,
+     "lane": "instructor",
+     "text": "and then place it inside the mug  [Instruction / detailed]"
+    },
+    {
+     "t": 76.5,
+     "te": 77.8,
+     "lane": "user",
+     "text": "place it INSIDE the mug?  [Question]"
+    },
+    {
+     "t": 78.0,
+     "te": 79.4,
+     "lane": "instructor",
+     "text": "yes mmhmm  [Confirmation]"
+    },
+    {
+     "t": 88.0,
+     "te": 92.4,
+     "lane": "instructor",
+     "text": "make sure to have everything inside the box so that i can see what you're seeing  [Other]"
+    },
+    {
+     "t": 117.5,
+     "te": 417.5,
+     "lane": "step",
+     "text": "Dry ingredients"
+    },
+    {
+     "t": 117.6,
+     "te": 125.4,
+     "lane": "user",
+     "text": "so this is what's called assemble cake liner right? so the next step is to combine the ingredients  [Question]"
+    },
+    {
+     "t": 126.9,
+     "te": 144.3,
+     "lane": "user",
+     "text": "so basically from my understanding just like put all the ingredients into the mug into like the paper and in the next step pour it into ohhh i see so basically i need to first like compile these ingredients into this bowl and then put ingredients into the mug  [Question]"
+    },
+    {
+     "t": 144.6,
+     "te": 145.7,
+     "lane": "instructor",
+     "text": "yep yep  [Confirmation]"
+    },
+    {
+     "t": 153.7,
+     "te": 156.1,
+     "lane": "instructor",
+     "text": "um you should measure the flour  [Answer]"
+    },
+    {
+     "t": 156.6,
+     "te": 164.4,
+     "lane": "user",
+     "text": "ohh and here's the flour oh you mean by the spoon? but liek how much volume do i need?  [Question]"
+    },
+    {
+     "t": 164.7,
+     "te": 167.9,
+     "lane": "instructor",
+     "text": "it will be two tablespoons of flour  [Answer]"
+    },
+    {
+     "t": 198.7,
+     "te": 202.1,
+     "lane": "instructor",
+     "text": "and then 1.5 tablespoons of sugar  [Answer]"
+    },
+    {
+     "t": 202.3,
+     "te": 203.9,
+     "lane": "user",
+     "text": "alright that's a lot  [Other]"
+    },
+    {
+     "t": 204.3,
+     "te": 206.2,
+     "lane": "instructor",
+     "text": "1.5 tablespoons  [Answer]"
+    },
+    {
+     "t": 206.1,
+     "te": 207.6,
+     "lane": "user",
+     "text": "1.5 right  [Question]"
+    },
+    {
+     "t": 218.8,
+     "te": 221.3,
+     "lane": "instructor",
+     "text": "is that a teaspoon or tablespoons  [Question]"
+    },
+    {
+     "t": 221.8,
+     "te": 226.3,
+     "lane": "user",
+     "text": "teaspoon is is not capitalized TSP  [Question]"
+    },
+    {
+     "t": 226.5,
+     "te": 228.9,
+     "lane": "instructor",
+     "text": "it should be a tablespoon the biggest one  [Answer]"
+    },
+    {
+     "t": 228.9,
+     "te": 230.5,
+     "lane": "user",
+     "text": "ok the biggest one  [Confirmation]"
+    },
+    {
+     "t": 230.9,
+     "te": 233.5,
+     "lane": "instructor",
+     "text": "did you use that for flour as well?  [Question]"
+    },
+    {
+     "t": 233.4,
+     "te": 234.4,
+     "lane": "user",
+     "text": "yes  [Confirmation]"
+    },
+    {
+     "t": 234.4,
+     "te": 235.9,
+     "lane": "instructor",
+     "text": "can we restart  [Question]"
+    },
+    {
+     "t": 239.0,
+     "te": 243.3,
+     "lane": "correction",
+     "text": "you can put the flour back to where it was and just remeasure it  [Instruction / wrong state]"
+    },
+    {
+     "t": 249.5,
+     "te": 252.5,
+     "lane": "user",
+     "text": "so the teaspoon is the smaller one?  [Question]"
+    },
+    {
+     "t": 252.9,
+     "te": 255.6,
+     "lane": "instructor",
+     "text": "if it says tsp then it means it's a teaspoon  [Instruction / detailed]"
+    },
+    {
+     "t": 256.9,
+     "te": 259.4,
+     "lane": "user",
+     "text": "if it's a capitalized T  [Other]"
+    },
+    {
+     "t": 259.6,
+     "te": 260.2,
+     "lane": "instructor",
+     "text": "that's the tablespoon yeah  [Answer]"
+    },
+    {
+     "t": 261.0,
+     "te": 261.6,
+     "lane": "user",
+     "text": "cool  [Confirmation]"
+    },
+    {
+     "t": 262.8,
+     "te": 264.5,
+     "lane": "user",
+     "text": "sorry about that  [Other]"
+    },
+    {
+     "t": 264.5,
+     "te": 265.3,
+     "lane": "instructor",
+     "text": "no no you're good  [Other]"
+    },
+    {
+     "t": 265.5,
+     "te": 266.8,
+     "lane": "user",
+     "text": "so should i like just reset everything?  [Question]"
+    },
+    {
+     "t": 267.1,
+     "te": 270.7,
+     "lane": "instructor",
+     "text": "no that's fine you can just start from remeasuring all the ingredients  [Instruction / detailed]"
+    },
+    {
+     "t": 270.8,
+     "te": 271.5,
+     "lane": "user",
+     "text": "alright  [Confirmation]"
+    },
+    {
+     "t": 272.4,
+     "te": 274.7,
+     "lane": "user",
+     "text": "so the first one  [Question]"
+    },
+    {
+     "t": 274.6,
+     "te": 275.9,
+     "lane": "instructor",
+     "text": "two tablespoons of lour  [Instruction / detailed]"
+    },
+    {
+     "t": 276.2,
+     "te": 277.2,
+     "lane": "user",
+     "text": "two tablespoons ok  [Confirmation]"
+    },
+    {
+     "t": 278.3,
+     "te": 279.8,
+     "lane": "instructor",
+     "text": "is that a teaspoon  [Question]"
+    },
+    {
+     "t": 280.0,
+     "te": 281.7,
+     "lane": "user",
+     "text": "TSP right  [Question]"
+    },
+    {
+     "t": 281.7,
+     "te": 283.4,
+     "lane": "correction",
+     "text": "yea we need a tablespoon  [Instruction / wrong object]"
+    },
+    {
+     "t": 284.3,
+     "te": 287.0,
+     "lane": "user",
+     "text": "we need two tablespoons  [Other]"
+    },
+    {
+     "t": 286.6,
+     "te": 288.3,
+     "lane": "instructor",
+     "text": "two tablespoons of flour  [Instruction / detailed]"
+    },
+    {
+     "t": 294.0,
+     "te": 297.1,
+     "lane": "instructor",
+     "text": "it's the biggest  [Instruction / detailed]"
+    },
+    {
+     "t": 297.1,
+     "te": 298.7,
+     "lane": "user",
+     "text": "the biggest one for the flour right  [Question]"
+    },
+    {
+     "t": 315.5,
+     "te": 321.7,
+     "lane": "user",
+     "text": "and then it's 1.5 tsp that's tablespoon tsp  [Question]"
+    },
+    {
+     "t": 321.5,
+     "te": 323.2,
+     "lane": "correction",
+     "text": "no the biggest one  [Instruction / wrong state]"
+    },
+    {
+     "t": 323.6,
+     "te": 324.5,
+     "lane": "user",
+     "text": "still the biggest one?  [Question]"
+    },
+    {
+     "t": 324.5,
+     "te": 325.7,
+     "lane": "instructor",
+     "text": "yes tablespoon  [Confirmation]"
+    },
+    {
+     "t": 338.9,
+     "te": 341.0,
+     "lane": "instructor",
+     "text": "1.5 tablespoon  [Answer]"
+    },
+    {
+     "t": 344.6,
+     "te": 345.8,
+     "lane": "user",
+     "text": "and then baking soda  [Question]"
+    },
+    {
+     "t": 346.1,
+     "te": 347.7,
+     "lane": "instructor",
+     "text": "baking powder a quarter tsp  [Answer]"
+    },
+    {
+     "t": 348.3,
+     "te": 350.1,
+     "lane": "user",
+     "text": "a quarter tsp  [Other]"
+    },
+    {
+     "t": 352.5,
+     "te": 356.3,
+     "lane": "instructor",
+     "text": "there should be a tsp that says a quarter tsp  [Answer]"
+    },
+    {
+     "t": 356.5,
+     "te": 357.2,
+     "lane": "user",
+     "text": "oh thank you  [Other]"
+    },
+    {
+     "t": 363.4,
+     "te": 368.0,
+     "lane": "user",
+     "text": "i see .....baking powder  [Other]"
+    },
+    {
+     "t": 397.7,
+     "te": 399.6,
+     "lane": "user",
+     "text": "how much salt do i need?  [Question]"
+    },
+    {
+     "t": 399.8,
+     "te": 400.8,
+     "lane": "instructor",
+     "text": "just a pinch of salt  [Answer]"
+    },
+    {
+     "t": 401.5,
+     "te": 402.7,
+     "lane": "user",
+     "text": "alright  [Confirmation]"
+    },
+    {
+     "t": 415.4,
+     "te": 417.0,
+     "lane": "user",
+     "text": "and then the oil  [Other]"
+    },
+    {
+     "t": 417.4,
+     "te": 421.3,
+     "lane": "correction",
+     "text": "let's whisk combine first before we add the wet ingredients  [Instruction / wrong action]"
+    },
+    {
+     "t": 417.8,
+     "te": 446.8,
+     "lane": "step",
+     "text": "Combine"
+    },
+    {
+     "t": 422.3,
+     "te": 426.1,
+     "lane": "user",
+     "text": "so should i use this spoon to whisk them  [Question]"
+    },
+    {
+     "t": 426.1,
+     "te": 427.3,
+     "lane": "instructor",
+     "text": "uh you can use the whisk  [Answer]"
+    },
+    {
+     "t": 427.9,
+     "te": 430.4,
+     "lane": "user",
+     "text": "uh what is the whisk this one?  [Question]"
+    },
+    {
+     "t": 430.3,
+     "te": 431.1,
+     "lane": "instructor",
+     "text": "yes  [Confirmation]"
+    },
+    {
+     "t": 431.3,
+     "te": 432.4,
+     "lane": "user",
+     "text": "this one? ok thank you  [Question]"
+    },
+    {
+     "t": 438.7,
+     "te": 439.7,
+     "lane": "instructor",
+     "text": "that's good  [Confirmation]"
+    },
+    {
+     "t": 446.9,
+     "te": 557.1,
+     "lane": "step",
+     "text": "Wet ingredients"
+    },
+    {
+     "t": 447.3,
+     "te": 449.7,
+     "lane": "user",
+     "text": "so the next step would be adding the oil right?  [Question]"
+    },
+    {
+     "t": 449.9,
+     "te": 453.5,
+     "lane": "instructor",
+     "text": "yeah this will be two teaspoon of oil  [Confirmation]"
+    },
+    {
+     "t": 453.6,
+     "te": 456.4,
+     "lane": "user",
+     "text": "teaspoon so that's the medium size one  [Question]"
+    },
+    {
+     "t": 456.6,
+     "te": 458.3,
+     "lane": "instructor",
+     "text": "it says tsp  [Other]"
+    },
+    {
+     "t": 458.5,
+     "te": 460.1,
+     "lane": "user",
+     "text": "ok tsp  [Confirmation]"
+    },
+    {
+     "t": 466.4,
+     "te": 468.9,
+     "lane": "user",
+     "text": "oh sorry how much do i need  [Question]"
+    },
+    {
+     "t": 469.2,
+     "te": 470.3,
+     "lane": "instructor",
+     "text": "two teaspoons  [Instruction / detailed]"
+    },
+    {
+     "t": 470.8,
+     "te": 472.0,
+     "lane": "user",
+     "text": "two teaspoons  [Other]"
+    },
+    {
+     "t": 496.2,
+     "te": 500.5,
+     "lane": "user",
+     "text": "so next step would be adding the water  [Question]"
+    },
+    {
+     "t": 500.8,
+     "te": 502.7,
+     "lane": "instructor",
+     "text": "yeah two tablespoons of water  [Confirmation]"
+    },
+    {
+     "t": 502.8,
+     "te": 504.5,
+     "lane": "user",
+     "text": "tablespoon is the largest one?  [Question]"
+    },
+    {
+     "t": 504.6,
+     "te": 505.1,
+     "lane": "instructor",
+     "text": "yes  [Confirmation]"
+    },
+    {
+     "t": 505.2,
+     "te": 505.7,
+     "lane": "user",
+     "text": "ok  [Confirmation]"
+    },
+    {
+     "t": 527.8,
+     "te": 532.3,
+     "lane": "user",
+     "text": "and the last thing is to add the vanilla  [Other]"
+    },
+    {
+     "t": 532.8,
+     "te": 534.1,
+     "lane": "instructor",
+     "text": "yes  [Confirmation]"
+    },
+    {
+     "t": 534.2,
+     "te": 535.9,
+     "lane": "user",
+     "text": "uh so how much do i need  [Question]"
+    },
+    {
+     "t": 535.7,
+     "te": 537.2,
+     "lane": "instructor",
+     "text": "a quarter teaspoon of vanilla extract  [Answer]"
+    },
+    {
+     "t": 537.6,
+     "te": 538.6,
+     "lane": "user",
+     "text": "a quarter ok  [Confirmation]"
+    },
+    {
+     "t": 553.0,
+     "te": 554.2,
+     "lane": "user",
+     "text": "i think that's everything right?  [Question]"
+    },
+    {
+     "t": 554.3,
+     "te": 554.9,
+     "lane": "instructor",
+     "text": "mmhmm  [Confirmation]"
+    },
+    {
+     "t": 557.2,
+     "te": 594.3,
+     "lane": "step",
+     "text": "Combine"
+    },
+    {
+     "t": 563.0,
+     "te": 564.3,
+     "lane": "user",
+     "text": "so should i mix them again  [Question]"
+    },
+    {
+     "t": 564.3,
+     "te": 564.8,
+     "lane": "instructor",
+     "text": "yeah  [Confirmation]"
+    },
+    {
+     "t": 594.6,
+     "te": 656.0,
+     "lane": "step",
+     "text": "Pour batter"
+    },
+    {
+     "t": 596.0,
+     "te": 599.4,
+     "lane": "user",
+     "text": "so the nexr step would be put all the ingredients into the mug right?  [Question]"
+    },
+    {
+     "t": 599.4,
+     "te": 600.0,
+     "lane": "instructor",
+     "text": "yeah  [Confirmation]"
+    },
+    {
+     "t": 656.2,
+     "te": 747.3,
+     "lane": "step",
+     "text": "Microwave"
+    },
+    {
+     "t": 656.2,
+     "te": 663.0,
+     "lane": "user",
+     "text": "so i need to put it into the microwave and how much time i mean which mode should i  [Question]"
+    },
+    {
+     "t": 663.6,
+     "te": 666.2,
+     "lane": "instructor",
+     "text": "thirty seconds regular  [Answer]"
+    },
+    {
+     "t": 666.3,
+     "te": 667.4,
+     "lane": "user",
+     "text": "30 seconds  [Question]"
+    },
+    {
+     "t": 667.5,
+     "te": 669.0,
+     "lane": "instructor",
+     "text": "60 seconds sorry  [Instruction / detailed]"
+    },
+    {
+     "t": 669.4,
+     "te": 672.2,
+     "lane": "user",
+     "text": "ok 60 seconds uh just the default mode right  [Question]"
+    },
+    {
+     "t": 672.4,
+     "te": 673.2,
+     "lane": "instructor",
+     "text": "mmhmm  [Confirmation]"
+    },
+    {
+     "t": 673.3,
+     "te": 673.9,
+     "lane": "user",
+     "text": "ok  [Confirmation]"
+    },
+    {
+     "t": 747.6,
+     "te": 771.0,
+     "lane": "step",
+     "text": "Check cake"
+    },
+    {
+     "t": 749.0,
+     "te": 754.4,
+     "lane": "user",
+     "text": "so should i just directly put the mug onto the plate  [Question]"
+    },
+    {
+     "t": 754.6,
+     "te": 758.7,
+     "lane": "instructor",
+     "text": "you can check if the cake is done by inserting a toothpick into the center of the cake  [Instruction / detailed]"
+    },
+    {
+     "t": 759.2,
+     "te": 760.0,
+     "lane": "user",
+     "text": "mmhmm  [Confirmation]"
+    },
+    {
+     "t": 760.4,
+     "te": 763.9,
+     "lane": "instructor",
+     "text": "and then see if there's any batter clinging to the toothpick  [Instruction / detailed]"
+    },
+    {
+     "t": 768.8,
+     "te": 770.7,
+     "lane": "user",
+     "text": "and it seems like it looks good  [Other]"
+    },
+    {
+     "t": 770.7,
+     "te": 775.5,
+     "lane": "instructor",
+     "text": "yeah ok great then you could invert the mug and release the cake onto a plate  [Instruction / current step]"
+    },
+    {
+     "t": 771.3,
+     "te": 781.8,
+     "lane": "step",
+     "text": "Invert cake"
+    },
+    {
+     "t": 781.5,
+     "te": 786.1,
+     "lane": "user",
+     "text": "so the last step would be like to put into the refrigerator  [Question]"
+    },
+    {
+     "t": 782.2,
+     "te": 957.1,
+     "lane": "step",
+     "text": "Prepare frosting"
+    },
+    {
+     "t": 786.3,
+     "te": 787.4,
+     "lane": "instructor",
+     "text": "no  [Answer]"
+    },
+    {
+     "t": 787.6,
+     "te": 789.4,
+     "lane": "user",
+     "text": "to frost it says  [Other]"
+    },
+    {
+     "t": 791.4,
+     "te": 794.3,
+     "lane": "user",
+     "text": "it's just adding sugar i guess ohh  [Other]"
+    },
+    {
+     "t": 794.4,
+     "te": 797.4,
+     "lane": "instructor",
+     "text": "there is chocolate frosting right there right next to vanilla extract  [Answer]"
+    },
+    {
+     "t": 797.5,
+     "te": 798.2,
+     "lane": "user",
+     "text": "ok  [Confirmation]"
+    },
+    {
+     "t": 799.3,
+     "te": 801.3,
+     "lane": "user",
+     "text": "on this one right  [Question]"
+    },
+    {
+     "t": 802.9,
+     "te": 804.9,
+     "lane": "user",
+     "text": "so how much should i put  [Question]"
+    },
+    {
+     "t": 805.5,
+     "te": 809.0,
+     "lane": "instructor",
+     "text": "so you'll be using a ziptop bag  [Answer]"
+    },
+    {
+     "t": 809.2,
+     "te": 811.0,
+     "lane": "user",
+     "text": "ziptop bag ohh i see  [Other]"
+    },
+    {
+     "t": 817.6,
+     "te": 825.0,
+     "lane": "instructor",
+     "text": "scoop four spoonfuls of chocolate frosting into the zip bag and seal removing as much air as possible  [Instruction / current step]"
+    },
+    {
+     "t": 825.1,
+     "te": 828.1,
+     "lane": "user",
+     "text": "could you repeat that  [Question]"
+    },
+    {
+     "t": 828.4,
+     "te": 833.6,
+     "lane": "instructor",
+     "text": "yeah so scoop four spoons of chocolate frosting into that  [Instruction / current step]"
+    },
+    {
+     "t": 835.4,
+     "te": 838.8,
+     "lane": "user",
+     "text": "so the tablespoon or the tsp  [Question]"
+    },
+    {
+     "t": 839.3,
+     "te": 841.0,
+     "lane": "instructor",
+     "text": "just the regular spoon  [Instruction / detailed]"
+    },
+    {
+     "t": 841.3,
+     "te": 844.4,
+     "lane": "user",
+     "text": "oh it's a regular spoon ok alright  [Confirmation]"
+    },
+    {
+     "t": 844.6,
+     "te": 846.0,
+     "lane": "user",
+     "text": "so four  [Question]"
+    },
+    {
+     "t": 846.2,
+     "te": 846.6,
+     "lane": "instructor",
+     "text": "yes  [Confirmation]"
+    },
+    {
+     "t": 846.7,
+     "te": 847.4,
+     "lane": "user",
+     "text": "alright  [Confirmation]"
+    },
+    {
+     "t": 849.2,
+     "te": 851.6,
+     "lane": "user",
+     "text": "into the ziploc bag right?  [Question]"
+    },
+    {
+     "t": 851.9,
+     "te": 852.7,
+     "lane": "instructor",
+     "text": "yes  [Confirmation]"
+    },
+    {
+     "t": 885.0,
+     "te": 886.3,
+     "lane": "user",
+     "text": "is that enough  [Question]"
+    },
+    {
+     "t": 886.3,
+     "te": 886.8,
+     "lane": "instructor",
+     "text": "mmhmm  [Confirmation]"
+    },
+    {
+     "t": 889.9,
+     "te": 891.6,
+     "lane": "user",
+     "text": "what next should i do  [Question]"
+    },
+    {
+     "t": 891.7,
+     "te": 895.0,
+     "lane": "instructor",
+     "text": "seal it up and remove as much air as possible  [Answer]"
+    },
+    {
+     "t": 895.2,
+     "te": 896.1,
+     "lane": "user",
+     "text": "alright  [Confirmation]"
+    },
+    {
+     "t": 914.0,
+     "te": 919.9,
+     "lane": "instructor",
+     "text": "you could squeeze all the chocolate frosting into a corner of the ziploc bag  [Instruction / current step]"
+    },
+    {
+     "t": 919.9,
+     "te": 920.7,
+     "lane": "user",
+     "text": "ok  [Confirmation]"
+    },
+    {
+     "t": 939.0,
+     "te": 943.0,
+     "lane": "correction",
+     "text": "ohh you want to squeeze them into one of the bottom corner  [Instruction / wrong action]"
+    },
+    {
+     "t": 943.1,
+     "te": 944.6,
+     "lane": "user",
+     "text": "ok gotcha  [Confirmation]"
+    },
+    {
+     "t": 955.2,
+     "te": 963.5,
+     "lane": "instructor",
+     "text": "yep just like that and then use scissors to cut the corner um with about a quarter inch in diameter  [Instruction / next step]"
+    },
+    {
+     "t": 957.4,
+     "te": 977.0,
+     "lane": "step",
+     "text": "Cut bag"
+    },
+    {
+     "t": 972.2,
+     "te": 973.5,
+     "lane": "user",
+     "text": "is this good  [Question]"
+    },
+    {
+     "t": 973.5,
+     "te": 973.9,
+     "lane": "instructor",
+     "text": "yeah  [Confirmation]"
+    },
+    {
+     "t": 977.2,
+     "te": 1033.6,
+     "lane": "step",
+     "text": "Apply frosting"
+    },
+    {
+     "t": 977.3,
+     "te": 979.1,
+     "lane": "user",
+     "text": "so what's the next step  [Question]"
+    },
+    {
+     "t": 979.5,
+     "te": 987.9,
+     "lane": "instructor",
+     "text": "now squeeze the frosting using the opening to apply small dollops of frosting to the plate in a circle around the base of the cake  [Answer]"
+    },
+    {
+     "t": 988.1,
+     "te": 991.9,
+     "lane": "user",
+     "text": "i'm sorry should i like do it around the cake or on the cake  [Question]"
+    },
+    {
+     "t": 992.0,
+     "te": 992.6,
+     "lane": "instructor",
+     "text": "around  [Answer]"
+    },
+    {
+     "t": 992.7,
+     "te": 998.2,
+     "lane": "user",
+     "text": "ok so like basically doing it in a circle like what i'm showing right now  [Question]"
+    },
+    {
+     "t": 1005.5,
+     "te": 1008.4,
+     "lane": "correction",
+     "text": "and you should be applying small dollops  [Instruction / wrong action]"
+    },
+    {
+     "t": 1008.5,
+     "te": 1009.2,
+     "lane": "user",
+     "text": "ok  [Confirmation]"
+    },
+    {
+     "t": 1009.5,
+     "te": 1010.8,
+     "lane": "instructor",
+     "text": "yeah like that  [Confirmation]"
+    },
+    {
+     "t": 1033.8,
+     "te": 1039.8,
+     "lane": "step",
+     "text": "Done"
+    },
+    {
+     "t": 1033.8,
+     "te": 1035.2,
+     "lane": "user",
+     "text": "does this look good to you  [Question]"
+    },
+    {
+     "t": 1038.7,
+     "te": 1039.5,
+     "lane": "user",
+     "text": "thank you ok  [Confirmation]"
+    }
+   ],
+   "raw_format": "txt",
+   "raw": {
+    "Video/VideoMpegTiming.txt": "638126104364282417\n638126115228002417\n",
+    "StepDetection/StepDetection.txt": "638126104367583136\t638126104632885169\tStart\n638126104633222846\t638126105538094317\tPlace cake liner\n638126105539316399\t638126108538897184\tDry ingredients\n638126108541910831\t638126108832537930\tCombine\n638126108833584276\t638126109934954283\tWet ingredients\n638126109936270971\t638126110307409811\tCombine\n638126110310027559\t638126110924311342\tPour batter\n638126110926667315\t638126111837297829\tMicrowave\n638126111839915577\t638126112073827900\tCheck cake\n638126112077230971\t638126112182577529\tInvert cake\n638126112185980600\t638126113934816503\tPrepare frosting\n638126113938743124\t638126114134027074\tCut bag\n638126114136485069\t638126114700290112\tApply frosting\n638126114702122535\t638126114761807174\tDone\n",
+    "TextASR/InstructorAnnotations_intent.txt": "638126104694913303\t638126104752241969\tyeah so there's a parchment paper on your right side...take one out\tAnswer\n638126104758786337\t638126104777533498\tnonono parchment paper\tInstruction\twrong object\n638126104800307900\t638126104843762505\tso it's sitting above the ziploc bag\tInstruction\tdetailed\n638126104859207214\t638126104915554246\tno on the left, left of the microwave, right next to the mug\tInstruction\tdetailed\n638126104938066873\t638126104956391105\tyes that's parchment paper\tConfirmation\n638126104965814995\t638126104993301342\tnononono the first thing you grabbed was the parchment paper\tInstruction\twrong state\n638126105098697148\t638126105125062612\tand then place it inside the mug\tInstruction\tdetailed\n638126105144433942\t638126105157784454\tyes mmhmm\tConfirmation\n638126105244782408\t638126105287975239\tmake sure to have everything inside the box so that i can see what you're seeing\tOther\n638126105810128100\t638126105821384413\tyep yep\tConfirmation\n638126105901177388\t638126105925260664\tum you should measure the flour\tAnswer\n638126106011384551\t638126106042797518\tit will be two tablespoons of flour\tAnswer\n638126106351465817\t638126106385234758\tand then 1.5 tablespoons of sugar\tAnswer\n638126106407223835\t638126106426071616\t1.5 tablespoons\tAnswer\n638126106551946944\t638126106577003535\tis that a teaspoon or tablespoons\tQuestion\n638126106629358481\t638126106653179982\tit should be a tablespoon the biggest one\tAnswer\n638126106673598411\t638126106699252335\tdid you use that for flour as well?\tQuestion\n638126106708414450\t638126106722812061\tcan we restart\tQuestion\n638126106754674795\t638126106797082301\tyou can put the flour back to where it was and just remeasure it\tInstruction\twrong state\n638126106892959504\t638126106920445851\tif it says tsp then it means it's a teaspoon\tInstruction\tdetailed\n638126106959900052\t638126106966182646\tthat's the tablespoon yeah\tAnswer\n638126107009530189\t638126107017383431\tno no you're good\tOther\n638126107035184113\t638126107071570801\tno that's fine you can just start from remeasuring all the ingredients\tInstruction\tdetailed\n638126107110751041\t638126107123578003\ttwo tablespoons of lour\tInstruction\tdetailed\n638126107147137729\t638126107162582438\tis that a teaspoon\tQuestion\n638126107181191723\t638126107197945306\tyea we need a tablespoon\tInstruction\twrong object\n638126107230405373\t638126107246897181\ttwo tablespoons of flour\tInstruction\tdetailed\n638126107303912475\t638126107335325443\tit's the biggest\tInstruction\tdetailed\n638126107579127555\t638126107596404688\tno the biggest one\tInstruction\twrong state\n638126107609493424\t638126107621273287\tyes tablespoon\tConfirmation\n638126107752844969\t638126107774310497\t1.5 tablespoon\tAnswer\n638126107825652716\t638126107841620975\tbaking powder a quarter tsp\tAnswer\n638126107889263976\t638126107927113157\tthere should be a tsp that says a quarter tsp\tAnswer\n638126108361977970\t638126108372187184\tjust a pinch of salt\tAnswer\n638126108538373635\t638126108577639845\tlet's whisk combine first before we add the wet ingredients\tInstruction\twrong action\n638126108625592271\t638126108637633909\tuh you can use the whisk\tAnswer\n638126108667476229\t638126108674805921\tyes\tConfirmation\n638126108751422134\t638126108761369574\tthat's good\tConfirmation\n638126108862818922\t638126108899205610\tyeah this will be two teaspoon of oil\tConfirmation\n638126108929833254\t638126108946848611\tit says tsp\tOther\n638126109056625339\t638126109067096329\ttwo teaspoons\tInstruction\tdetailed\n638126109372494246\t638126109390818478\tyeah two tablespoons of water\tConfirmation\n638126109410189808\t638126109415425303\tyes\tConfirmation\n638126109692163805\t638126109704990767\tyes\tConfirmation\n638126109721482575\t638126109736403735\ta quarter teaspoon of vanilla extract\tAnswer\n638126109906944387\t638126109912965206\tmmhmm\tConfirmation\n638126110007204109\t638126110012701379\tyeah\tConfirmation\n638126110358659434\t638126110363894928\tyeah\tConfirmation\n638126111000205440\t638126111026644688\tthirty seconds regular\tAnswer\n638126111039540393\t638126111054723327\t60 seconds sorry\tInstruction\tdetailed\n638126111088492268\t638126111095821960\tmmhmm\tConfirmation\n638126111909797011\t638126111950895643\tyou can check if the cake is done by inserting a toothpick into the center of the cake\tInstruction\tdetailed\n638126111968132271\t638126112003733635\tand then see if there's any batter clinging to the toothpick\tInstruction\tdetailed\n638126112070902679\t638126112119592779\tyeah ok great then you could invert the mug and release the cake onto a plate\tInstruction\tcurrent step\n638126112227260938\t638126112238517251\tno\tAnswer\n638126112308672880\t638126112337991650\tthere is chocolate frosting right there right next to vanilla extract\tAnswer\n638126112419107729\t638126112454185543\tso you'll be using a ziptop bag\tAnswer\n638126112540402205\t638126112614222679\tscoop four spoonfuls of chocolate frosting into the zip bag and seal removing as much air as possible\tInstruction\tcurrent step\n638126112647991620\t638126112699823017\tyeah so scoop four spoons of chocolate frosting into that\tInstruction\tcurrent step\n638126112756948652\t638126112774749333\tjust the regular spoon\tInstruction\tdetailed\n638126112826483668\t638126112829886740\tyes\tConfirmation\n638126112883596025\t638126112890925717\tyes\tConfirmation\n638126113227044898\t638126113232280393\tmmhmm\tConfirmation\n638126113281755817\t638126113314477659\tseal it up and remove as much air as possible\tAnswer\n638126113504236021\t638126113563397111\tyou could squeeze all the chocolate frosting into a corner of the ziploc bag\tInstruction\tcurrent step\n638126113754652338\t638126113794442097\tohh you want to squeeze them into one of the bottom corner\tInstruction\twrong action\n638126113916236091\t638126113999480456\tyep just like that and then use scissors to cut the corner um with about a quarter inch in diameter\tInstruction\tnext step\n638126114099570426\t638126114103497047\tyeah\tConfirmation\n638126114159778615\t638126114243546529\tnow squeeze the frosting using the opening to apply small dollops of frosting to the plate in a circle around the base of the cake\tAnswer\n638126114284561379\t638126114290320423\taround\tAnswer\n638126114418977118\t638126114448034113\tand you should be applying small dollops\tInstruction\twrong action\n638126114459290426\t638126114471855614\tyeah like that\tConfirmation\n",
+    "TextASR/UserAnnotations_intent.txt": "638126104644139618\t638126104694270309\tso emily what does it mean to assemble cake liner?\tQuestion\n638126104731038216\t638126104744650502\tuh huh alright\tOther\n638126104783554317\t638126104796904828\tparchment paper\tOther\n638126104846118478\t638126104857898341\tthis one?\tQuestion\n638126104920789741\t638126104937019775\tnext to the mug\tOther\n638126104955082231\t638126104966076770\tohh this one\tQuestion\n638126104992516018\t638126105029688030\tok parchment paper\tOther\n638126105129774557\t638126105141816195\tplace it INSIDE the mug?\tQuestion\n638126105539926740\t638126105617935610\tso this is what's called assemble cake liner right? so the next step is to combine the ingredients\tQuestion\n638126105633500660\t638126105807510353\tso basically from my understanding just like put all the ingredients into the mug into like the paper and in the next step pour it into ohhh i see so basically i need to first like compile these ingredients into this bowl and then put ingredients into the mug\tQuestion\n638126105930496158\t638126106008766803\tohh and here's the flour oh you mean by the spoon? but liek how much volume do i need?\tQuestion\n638126106387328956\t638126106403297214\talright that's a lot\tOther\n638126106425548067\t638126106439945677\t1.5 right\tQuestion\n638126106582762579\t638126106627264283\tteaspoon is is not capitalized TSP\tQuestion\n638126106653179982\t638126106669410015\tok the biggest one\tConfirmation\n638126106697943461\t638126106707890901\tyes\tConfirmation\n638126106859190563\t638126106889556432\tso the teaspoon is the smaller one?\tQuestion\n638126106933534587\t638126106958329404\tif it's a capitalized T\tOther\n638126106974035888\t638126106980580256\tcool\tConfirmation\n638126106991991282\t638126107009006640\tsorry about that\tOther\n638126107018954079\t638126107032566366\tso should i like just reset everything?\tQuestion\n638126107072617900\t638126107078900493\talright\tConfirmation\n638126107088586158\t638126107111012816\tso the first one\tQuestion\n638126107126457525\t638126107136404965\ttwo tablespoons ok\tConfirmation\n638126107164438140\t638126107180929948\tTSP right\tQuestion\n638126107206845647\t638126107234593769\twe need two tablespoons\tOther\n638126107335063668\t638126107351293702\tthe biggest one for the flour right\tQuestion\n638126107518919367\t638126107581745303\tand then it's 1.5 tsp that's tablespoon tsp\tQuestion\n638126107599807759\t638126107609493424\tstill the biggest one?\tQuestion\n638126107810469781\t638126107822249644\tand then baking soda\tQuestion\n638126107847380019\t638126107865180700\ta quarter tsp\tOther\n638126107928945580\t638126107936013498\toh thank you\tOther\n638126107998315884\t638126108044019400\ti see .....baking powder\tOther\n638126108341559541\t638126108360407321\thow much salt do i need?\tQuestion\n638126108379516877\t638126108391296740\talright\tConfirmation\n638126108518216981\t638126108534185239\tand then the oil\tOther\n638126108587316603\t638126108625330497\tso should i use this spoon to whisk them\tQuestion\n638126108643131178\t638126108668523327\tuh what is the whisk this one?\tQuestion\n638126108677423668\t638126108688679982\tthis one? ok thank you\tQuestion\n638126108836903224\t638126108860986499\tso the next step would be adding the oil right?\tQuestion\n638126108900514484\t638126108928000831\tteaspoon so that's the medium size one\tQuestion\n638126108948942809\t638126108965172843\tok tsp\tConfirmation\n638126109028165677\t638126109053745817\toh sorry how much do i need\tQuestion\n638126109072070049\t638126109084373461\ttwo teaspoons\tOther\n638126109326421894\t638126109369352950\tso next step would be adding the water\tQuestion\n638126109392389126\t638126109409666258\ttablespoon is the largest one?\tQuestion\n638126109415948852\t638126109421446121\tok\tConfirmation\n638126109642688381\t638126109687713635\tand the last thing is to add the vanilla\tOther\n638126109706299641\t638126109723053224\tuh so how much do i need\tQuestion\n638126109739806807\t638126109750539571\ta quarter ok\tConfirmation\n638126109894640975\t638126109906682612\ti think that's everything right?\tQuestion\n638126109994638922\t638126110006942335\tso should i mix them again\tQuestion\n638126110324105169\t638126110358659434\tso the nexr step would be put all the ingredients into the mug right?\tQuestion\n638126110926646740\t638126110994446396\tso i need to put it into the microwave and how much time i mean which mode should i\tQuestion\n638126111026975206\t638126111038493294\t30 seconds\tQuestion\n638126111058126399\t638126111085874521\tok 60 seconds uh just the default mode right\tQuestion\n638126111097392609\t638126111103151653\tok\tConfirmation\n638126111854038993\t638126111908226362\tso should i just directly put the mug onto the plate\tQuestion\n638126111955869363\t638126111963943876\tmmhmm\tConfirmation\n638126112052685510\t638126112071164454\tand it seems like it looks good\tOther\n638126112179617936\t638126112225428515\tso the last step would be like to put into the refrigerator\tQuestion\n638126112240087900\t638126112258150356\tto frost it says\tOther\n638126112278045236\t638126112307364006\tit's just adding sugar i guess ohh\tOther\n638126112339300523\t638126112346106666\tok\tConfirmation\n638126112357067118\t638126112377747321\ton this one right\tQuestion\n638126112393715580\t638126112413348685\tso how much should i put\tQuestion\n638126112456541516\t638126112474080423\tziptop bag ohh i see\tOther\n638126112615008003\t638126112645635647\tcould you repeat that\tQuestion\n638126112718729541\t638126112752498481\tso the tablespoon or the tsp\tQuestion\n638126112777628855\t638126112808256499\toh it's a regular spoon ok alright\tConfirmation\n638126112810777184\t638126112823865921\tso four\tQuestion\n638126112831457388\t638126112838001757\talright\tConfirmation\n638126112856587763\t638126112880192953\tinto the ziploc bag right?\tQuestion\n638126113213956162\t638126113227306673\tis that enough\tQuestion\n638126113263169811\t638126113280708718\twhat next should i do\tQuestion\n638126113316571857\t638126113325733972\talright\tConfirmation\n638126113562873561\t638126113571250353\tok\tConfirmation\n638126113795227422\t638126113810148581\tok gotcha\tConfirmation\n638126114086481690\t638126114099046877\tis this good\tQuestion\n638126114137265988\t638126114155328444\tso what's the next step\tQuestion\n638126114245556944\t638126114283776055\ti'm sorry should i like do it around the cake or on the cake\tQuestion\n638126114291629297\t638126114346340216\tok so like basically doing it in a circle like what i'm showing right now\tQuestion\n638126114449342987\t638126114456672679\tok\tConfirmation\n638126114702122535\t638126114716781920\tdoes this look good to you\tQuestion\n638126114750812635\t638126114759712976\tthank you ok\tConfirmation\n"
+   }
+  },
+  {
+   "title": "T29: mug cake — instructor corrects \"whisk before adding oil\" (wrong action)",
+   "video_ref": "T29/Video/Video.mpeg",
+   "duration_s": 913.2,
+   "clip": "samples/media/wtag_2.mp4",
+   "clip_offset_s": 268,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": -0.8,
+     "te": 18.1,
+     "lane": "step",
+     "text": "Start"
+    },
+    {
+     "t": -0.7,
+     "te": 0.5,
+     "lane": "instructor",
+     "text": "now it's connecting  [Other]"
+    },
+    {
+     "t": 5.2,
+     "te": 8.9,
+     "lane": "instructor",
+     "text": "ok cool you can go ahead and start the experiment  [Instruction / next step]"
+    },
+    {
+     "t": 18.2,
+     "te": 89.2,
+     "lane": "step",
+     "text": "Place cake liner"
+    },
+    {
+     "t": 21.1,
+     "te": 22.6,
+     "lane": "user",
+     "text": "do you know where's the cake liner  [Question]"
+    },
+    {
+     "t": 22.9,
+     "te": 24.2,
+     "lane": "instructor",
+     "text": "what does it say  [Question]"
+    },
+    {
+     "t": 24.1,
+     "te": 28.0,
+     "lane": "user",
+     "text": "assemble the cake linear ah liner sorry  [Other]"
+    },
+    {
+     "t": 27.3,
+     "te": 30.9,
+     "lane": "instructor",
+     "text": "right so you should put a cupcake liner in the mug  [Answer]"
+    },
+    {
+     "t": 35.0,
+     "te": 37.9,
+     "lane": "user",
+     "text": "where's the cupcake liner ah  [Question]"
+    },
+    {
+     "t": 41.8,
+     "te": 44.0,
+     "lane": "user",
+     "text": "what's the cupcake liner sorry  [Question]"
+    },
+    {
+     "t": 44.0,
+     "te": 54.4,
+     "lane": "instructor",
+     "text": "um in that green box back there like near the frosting to the right of that there's the cupcake liner  [Instruction / detailed]"
+    },
+    {
+     "t": 52.4,
+     "te": 54.4,
+     "lane": "user",
+     "text": "oh  [Other]"
+    },
+    {
+     "t": 69.3,
+     "te": 71.1,
+     "lane": "instructor",
+     "text": "you want to put it inside the mug  [Instruction / detailed]"
+    },
+    {
+     "t": 74.4,
+     "te": 75.5,
+     "lane": "user",
+     "text": "inside this  [Question]"
+    },
+    {
+     "t": 75.6,
+     "te": 77.4,
+     "lane": "correction",
+     "text": "no no in the cup  [Instruction / wrong action]"
+    },
+    {
+     "t": 77.8,
+     "te": 79.5,
+     "lane": "user",
+     "text": "uh where's the cup  [Question]"
+    },
+    {
+     "t": 79.6,
+     "te": 80.9,
+     "lane": "user",
+     "text": "ah this one  [Other]"
+    },
+    {
+     "t": 80.7,
+     "te": 81.4,
+     "lane": "instructor",
+     "text": "yeah  [Confirmation]"
+    },
+    {
+     "t": 89.3,
+     "te": 279.7,
+     "lane": "step",
+     "text": "Dry ingredients"
+    },
+    {
+     "t": 96.2,
+     "te": 98.8,
+     "lane": "user",
+     "text": "combine ingredients  [Other]"
+    },
+    {
+     "t": 99.5,
+     "te": 103.9,
+     "lane": "user",
+     "text": "so how many flour and sugar I need  [Question]"
+    },
+    {
+     "t": 103.9,
+     "te": 107.2,
+     "lane": "instructor",
+     "text": "for flour you should add two tablespoons  [Answer]"
+    },
+    {
+     "t": 109.5,
+     "te": 111.0,
+     "lane": "user",
+     "text": "two tablespoons  [Other]"
+    },
+    {
+     "t": 118.4,
+     "te": 121.4,
+     "lane": "instructor",
+     "text": "and you should add it to the mixing bowl  [Instruction / detailed]"
+    },
+    {
+     "t": 124.6,
+     "te": 125.9,
+     "lane": "instructor",
+     "text": "yeah that bowl  [Confirmation]"
+    },
+    {
+     "t": 147.8,
+     "te": 152.5,
+     "lane": "user",
+     "text": "and how much sugar I need  [Question]"
+    },
+    {
+     "t": 152.8,
+     "te": 154.9,
+     "lane": "instructor",
+     "text": "one and a half tablespoons  [Answer]"
+    },
+    {
+     "t": 164.5,
+     "te": 165.3,
+     "lane": "user",
+     "text": "this one's sugar  [Other]"
+    },
+    {
+     "t": 165.5,
+     "te": 166.4,
+     "lane": "instructor",
+     "text": "yeah  [Confirmation]"
+    },
+    {
+     "t": 191.7,
+     "te": 196.8,
+     "lane": "instructor",
+     "text": "there isn't a half tablespoon so you're just gonna have to use the one tablespoon  [Instruction / details]"
+    },
+    {
+     "t": 197.3,
+     "te": 198.4,
+     "lane": "user",
+     "text": "oh ok  [Confirmation]"
+    },
+    {
+     "t": 211.1,
+     "te": 215.2,
+     "lane": "user",
+     "text": "oh do you think it's enough  [Question]"
+    },
+    {
+     "t": 215.2,
+     "te": 216.4,
+     "lane": "instructor",
+     "text": "uh yeah that's fine  [Confirmation]"
+    },
+    {
+     "t": 216.4,
+     "te": 217.0,
+     "lane": "user",
+     "text": "ok  [Confirmation]"
+    },
+    {
+     "t": 217.5,
+     "te": 219.5,
+     "lane": "user",
+     "text": "so how much baking powder I need  [Question]"
+    },
+    {
+     "t": 219.5,
+     "te": 223.4,
+     "lane": "instructor",
+     "text": "uh for baking powder you're gonna need a quarter teaspoon  [Answer]"
+    },
+    {
+     "t": 249.6,
+     "te": 252.5,
+     "lane": "user",
+     "text": "uh how much salt I need  [Question]"
+    },
+    {
+     "t": 253.2,
+     "te": 254.6,
+     "lane": "instructor",
+     "text": "a pinch of salt  [Answer]"
+    },
+    {
+     "t": 256.7,
+     "te": 258.2,
+     "lane": "user",
+     "text": "oh what is that  [Question]"
+    },
+    {
+     "t": 258.6,
+     "te": 262.2,
+     "lane": "instructor",
+     "text": "a pinch so like just a  [Instruction / detailed]"
+    },
+    {
+     "t": 261.9,
+     "te": 262.6,
+     "lane": "user",
+     "text": "oh just  [Other]"
+    },
+    {
+     "t": 263.4,
+     "te": 264.9,
+     "lane": "instructor",
+     "text": "it's a small amount  [Instruction / detailed]"
+    },
+    {
+     "t": 266.0,
+     "te": 267.0,
+     "lane": "user",
+     "text": "but this one  [Other]"
+    },
+    {
+     "t": 267.0,
+     "te": 269.6,
+     "lane": "instructor",
+     "text": "no no no it's just like  [Other]"
+    },
+    {
+     "t": 270.3,
+     "te": 271.3,
+     "lane": "user",
+     "text": "just add a little  [Question]"
+    },
+    {
+     "t": 271.3,
+     "te": 273.0,
+     "lane": "instructor",
+     "text": "yeah like a sprinkle basically  [Instruction / detailed]"
+    },
+    {
+     "t": 273.5,
+     "te": 275.2,
+     "lane": "instructor",
+     "text": "yeah like that that's good  [Confirmation]"
+    },
+    {
+     "t": 279.3,
+     "te": 281.7,
+     "lane": "user",
+     "text": "and how much oil  [Question]"
+    },
+    {
+     "t": 279.8,
+     "te": 313.5,
+     "lane": "step",
+     "text": "Combine"
+    },
+    {
+     "t": 283.1,
+     "te": 289.3,
+     "lane": "correction",
+     "text": "um you should first before adding the oil you should whisk them together using the whisk  [Instruction / wrong action]"
+    },
+    {
+     "t": 289.6,
+     "te": 290.6,
+     "lane": "user",
+     "text": "oh ok  [Confirmation]"
+    },
+    {
+     "t": 290.6,
+     "te": 291.4,
+     "lane": "instructor",
+     "text": "yeah  [Confirmation]"
+    },
+    {
+     "t": 309.3,
+     "te": 311.1,
+     "lane": "instructor",
+     "text": "ok that should be good  [Confirmation]"
+    },
+    {
+     "t": 310.6,
+     "te": 311.5,
+     "lane": "user",
+     "text": "ok  [Confirmation]"
+    },
+    {
+     "t": 312.0,
+     "te": 315.4,
+     "lane": "instructor",
+     "text": "now you can add the oil the water and the vanilla  [Instruction / current step]"
+    },
+    {
+     "t": 313.6,
+     "te": 404.1,
+     "lane": "step",
+     "text": "Wet ingredients"
+    },
+    {
+     "t": 316.5,
+     "te": 318.4,
+     "lane": "user",
+     "text": "uh how much oil I need  [Question]"
+    },
+    {
+     "t": 318.8,
+     "te": 323.8,
+     "lane": "instructor",
+     "text": "um you're gonna want two teaspoons of oil  [Answer]"
+    },
+    {
+     "t": 351.1,
+     "te": 353.2,
+     "lane": "user",
+     "text": "how much water I need  [Question]"
+    },
+    {
+     "t": 354.0,
+     "te": 356.6,
+     "lane": "instructor",
+     "text": "two tablespoons of water  [Answer]"
+    },
+    {
+     "t": 373.0,
+     "te": 375.5,
+     "lane": "instructor",
+     "text": "and a quarter teaspoon of vanilla  [Answer]"
+    },
+    {
+     "t": 375.5,
+     "te": 376.0,
+     "lane": "user",
+     "text": "ok  [Confirmation]"
+    },
+    {
+     "t": 383.2,
+     "te": 384.5,
+     "lane": "user",
+     "text": "uh one quarter  [Other]"
+    },
+    {
+     "t": 384.6,
+     "te": 385.1,
+     "lane": "instructor",
+     "text": "yep  [Confirmation]"
+    },
+    {
+     "t": 402.9,
+     "te": 405.6,
+     "lane": "user",
+     "text": "so I have to mix them again  [Question]"
+    },
+    {
+     "t": 404.3,
+     "te": 440.2,
+     "lane": "step",
+     "text": "Combine"
+    },
+    {
+     "t": 405.7,
+     "te": 406.3,
+     "lane": "instructor",
+     "text": "yeah  [Confirmation]"
+    },
+    {
+     "t": 411.6,
+     "te": 414.9,
+     "lane": "instructor",
+     "text": "you should keep mixing until there are no lumps remaining  [Instruction / detailed]"
+    },
+    {
+     "t": 416.1,
+     "te": 416.6,
+     "lane": "user",
+     "text": "ok  [Confirmation]"
+    },
+    {
+     "t": 431.6,
+     "te": 432.5,
+     "lane": "user",
+     "text": "like this  [Question]"
+    },
+    {
+     "t": 432.5,
+     "te": 433.0,
+     "lane": "instructor",
+     "text": "yeah  [Confirmation]"
+    },
+    {
+     "t": 433.2,
+     "te": 433.9,
+     "lane": "user",
+     "text": "ok  [Confirmation]"
+    },
+    {
+     "t": 439.7,
+     "te": 441.1,
+     "lane": "user",
+     "text": "so I have to froze that  [Question]"
+    },
+    {
+     "t": 440.3,
+     "te": 493.6,
+     "lane": "step",
+     "text": "Pour batter"
+    },
+    {
+     "t": 443.0,
+     "te": 445.2,
+     "lane": "instructor",
+     "text": "um so now  [Other]"
+    },
+    {
+     "t": 444.5,
+     "te": 448.6,
+     "lane": "user",
+     "text": "oh oops so I have to pour them into the mug  [Question]"
+    },
+    {
+     "t": 448.6,
+     "te": 449.5,
+     "lane": "instructor",
+     "text": "yeah  [Confirmation]"
+    },
+    {
+     "t": 493.8,
+     "te": 597.9,
+     "lane": "step",
+     "text": "Microwave"
+    },
+    {
+     "t": 501.6,
+     "te": 503.8,
+     "lane": "user",
+     "text": "uh so how long I should  [Question]"
+    },
+    {
+     "t": 504.8,
+     "te": 506.8,
+     "lane": "instructor",
+     "text": "for sixty seconds  [Answer]"
+    },
+    {
+     "t": 506.3,
+     "te": 506.8,
+     "lane": "user",
+     "text": "ok  [Confirmation]"
+    },
+    {
+     "t": 593.8,
+     "te": 595.3,
+     "lane": "user",
+     "text": "uhhh  [Hesitation]"
+    },
+    {
+     "t": 596.5,
+     "te": 601.4,
+     "lane": "instructor",
+     "text": "yes so you can check if it's been cooked  enough by inserting a toothpick  [Answer]"
+    },
+    {
+     "t": 597.9,
+     "te": 679.7,
+     "lane": "step",
+     "text": "Check cake"
+    },
+    {
+     "t": 604.3,
+     "te": 610.9,
+     "lane": "instructor",
+     "text": "if it comes out with batter stuck to it then you're going to need to put it in for another five seconds  [Instruction / current step]"
+    },
+    {
+     "t": 612.9,
+     "te": 616.3,
+     "lane": "user",
+     "text": "uh so how ah how do we  [Question]"
+    },
+    {
+     "t": 616.8,
+     "te": 619.5,
+     "lane": "instructor",
+     "text": "yes so like stick it in and then pull it out  [Instruction / detailed]"
+    },
+    {
+     "t": 620.2,
+     "te": 622.6,
+     "lane": "instructor",
+     "text": "is there any batter stuck to it  [Question]"
+    },
+    {
+     "t": 625.9,
+     "te": 627.5,
+     "lane": "user",
+     "text": "I think no  [Other]"
+    },
+    {
+     "t": 627.5,
+     "te": 629.5,
+     "lane": "instructor",
+     "text": "not really ok it should be good then  [Confirmation]"
+    },
+    {
+     "t": 629.8,
+     "te": 630.6,
+     "lane": "user",
+     "text": "ok  [Confirmation]"
+    },
+    {
+     "t": 633.7,
+     "te": 653.0,
+     "lane": "step",
+     "text": "Invert cake"
+    },
+    {
+     "t": 633.7,
+     "te": 636.2,
+     "lane": "user",
+     "text": "uh so I should put that on a plate  [Question]"
+    },
+    {
+     "t": 636.3,
+     "te": 637.6,
+     "lane": "instructor",
+     "text": "yeah  [Confirmation]"
+    },
+    {
+     "t": 650.1,
+     "te": 651.2,
+     "lane": "instructor",
+     "text": "that's fine  [Confirmation]"
+    },
+    {
+     "t": 658.7,
+     "te": 661.7,
+     "lane": "user",
+     "text": "uh so now we have to frost that  [Question]"
+    },
+    {
+     "t": 663.3,
+     "te": 668.2,
+     "lane": "instructor",
+     "text": "uh yeas so first off you should invert it when you put it on the plate  [Answer]"
+    },
+    {
+     "t": 671.5,
+     "te": 673.7,
+     "lane": "instructor",
+     "text": "just like place it upside down  [Instruction / detailed]"
+    },
+    {
+     "t": 673.7,
+     "te": 674.2,
+     "lane": "user",
+     "text": "ok  [Confirmation]"
+    },
+    {
+     "t": 677.8,
+     "te": 680.6,
+     "lane": "instructor",
+     "text": "ok and now you can start making the forsting  [Instruction / next step]"
+    },
+    {
+     "t": 679.8,
+     "te": 833.7,
+     "lane": "step",
+     "text": "Prepare frosting"
+    },
+    {
+     "t": 681.4,
+     "te": 683.7,
+     "lane": "user",
+     "text": "how do you make the frost  [Question]"
+    },
+    {
+     "t": 683.9,
+     "te": 686.7,
+     "lane": "instructor",
+     "text": "uh so you get a ziploc bag  [Answer]"
+    },
+    {
+     "t": 686.6,
+     "te": 687.1,
+     "lane": "user",
+     "text": "yeah  [Confirmation]"
+    },
+    {
+     "t": 688.1,
+     "te": 695.1,
+     "lane": "instructor",
+     "text": "and then put four spoonfuls of that of frosing into the bag  [Instruction / current step]"
+    },
+    {
+     "t": 698.5,
+     "te": 701.3,
+     "lane": "user",
+     "text": "wait which one is the frosting  [Question]"
+    },
+    {
+     "t": 701.6,
+     "te": 703.7,
+     "lane": "instructor",
+     "text": "the frosting is the one with the blue lid  [Answer]"
+    },
+    {
+     "t": 708.0,
+     "te": 709.1,
+     "lane": "user",
+     "text": "but how much  [Question]"
+    },
+    {
+     "t": 709.1,
+     "te": 710.6,
+     "lane": "instructor",
+     "text": "four spoonfuls  [Answer]"
+    },
+    {
+     "t": 710.7,
+     "te": 711.6,
+     "lane": "user",
+     "text": "four teaspoon  [Question]"
+    },
+    {
+     "t": 711.7,
+     "te": 712.1,
+     "lane": "instructor",
+     "text": "no  [Answer]"
+    },
+    {
+     "t": 712.1,
+     "te": 713.2,
+     "lane": "user",
+     "text": "four table spoon  [Other]"
+    },
+    {
+     "t": 712.9,
+     "te": 714.6,
+     "lane": "correction",
+     "text": "four normal spoons  [Instruction / wrong state]"
+    },
+    {
+     "t": 714.6,
+     "te": 715.4,
+     "lane": "user",
+     "text": "this one  [Question]"
+    },
+    {
+     "t": 715.9,
+     "te": 718.1,
+     "lane": "user",
+     "text": "or or  [Other]"
+    },
+    {
+     "t": 718.0,
+     "te": 718.5,
+     "lane": "instructor",
+     "text": "yeah  [Confirmation]"
+    },
+    {
+     "t": 719.0,
+     "te": 720.7,
+     "lane": "user",
+     "text": "yeah this one okay  [Other]"
+    },
+    {
+     "t": 726.5,
+     "te": 727.5,
+     "lane": "user",
+     "text": "four  [Question]"
+    },
+    {
+     "t": 727.5,
+     "te": 727.9,
+     "lane": "instructor",
+     "text": "yep  [Confirmation]"
+    },
+    {
+     "t": 765.3,
+     "te": 766.8,
+     "lane": "user",
+     "text": "uh  [Hesitation]"
+    },
+    {
+     "t": 768.4,
+     "te": 769.7,
+     "lane": "user",
+     "text": "and then  [Question]"
+    },
+    {
+     "t": 770.2,
+     "te": 773.0,
+     "lane": "instructor",
+     "text": "ok yes so go ahead and close the bag  [Answer]"
+    },
+    {
+     "t": 774.4,
+     "te": 775.5,
+     "lane": "instructor",
+     "text": "um  [Other]"
+    },
+    {
+     "t": 804.2,
+     "te": 815.1,
+     "lane": "instructor",
+     "text": "ok and then from here you're gonna wanna cut a quarter inch hole in a corner of the bag  [Answer]"
+    },
+    {
+     "t": 823.6,
+     "te": 826.0,
+     "lane": "user",
+     "text": "ah cut it a quarter inch  [Question]"
+    },
+    {
+     "t": 826.0,
+     "te": 828.3,
+     "lane": "instructor",
+     "text": "yea cut it with the scissors  [Answer]"
+    },
+    {
+     "t": 828.0,
+     "te": 828.7,
+     "lane": "user",
+     "text": "ok  [Confirmation]"
+    },
+    {
+     "t": 831.0,
+     "te": 832.9,
+     "lane": "correction",
+     "text": "you don't have to shake it  [Instruction / wrong action]"
+    },
+    {
+     "t": 833.7,
+     "te": 840.5,
+     "lane": "step",
+     "text": "Cut bag"
+    },
+    {
+     "t": 836.6,
+     "te": 837.6,
+     "lane": "user",
+     "text": "this large  [Question]"
+    },
+    {
+     "t": 837.6,
+     "te": 838.2,
+     "lane": "instructor",
+     "text": "yeah  [Confirmation]"
+    },
+    {
+     "t": 840.6,
+     "te": 898.7,
+     "lane": "step",
+     "text": "Apply frosting"
+    },
+    {
+     "t": 841.0,
+     "te": 842.0,
+     "lane": "user",
+     "text": "I'm done  [Self Description]"
+    },
+    {
+     "t": 844.7,
+     "te": 850.0,
+     "lane": "instructor",
+     "text": "ok so now that the cake is cool go ahead and remove the liner from it  [Instruction / detailed]"
+    },
+    {
+     "t": 850.3,
+     "te": 852.2,
+     "lane": "user",
+     "text": "oh I think the liner is not on it  [Self Description]"
+    },
+    {
+     "t": 852.2,
+     "te": 866.1,
+     "lane": "instructor",
+     "text": "ohh ok um yes no you can pour now you can um squeeze small dollops of frosting in a circle around the base of the cake  [Answer]"
+    },
+    {
+     "t": 867.0,
+     "te": 868.5,
+     "lane": "user",
+     "text": "uh around the cake  [Other]"
+    },
+    {
+     "t": 868.2,
+     "te": 869.0,
+     "lane": "instructor",
+     "text": "yeah  [Confirmation]"
+    },
+    {
+     "t": 881.9,
+     "te": 882.8,
+     "lane": "user",
+     "text": "like this  [Question]"
+    },
+    {
+     "t": 882.7,
+     "te": 883.4,
+     "lane": "instructor",
+     "text": "yeah  [Confirmation]"
+    },
+    {
+     "t": 886.4,
+     "te": 889.7,
+     "lane": "instructor",
+     "text": "in small dollops just like circles  [Answer]"
+    },
+    {
+     "t": 890.6,
+     "te": 891.4,
+     "lane": "user",
+     "text": "like this  [Question]"
+    },
+    {
+     "t": 891.3,
+     "te": 892.1,
+     "lane": "instructor",
+     "text": "yeah like that  [Confirmation]"
+    },
+    {
+     "t": 898.7,
+     "te": 914.0,
+     "lane": "step",
+     "text": "Done"
+    },
+    {
+     "t": 898.8,
+     "te": 900.9,
+     "lane": "instructor",
+     "text": "alright yeah that should be it then  [Confirmation]"
+    },
+    {
+     "t": 900.8,
+     "te": 901.4,
+     "lane": "user",
+     "text": "ok  [Confirmation]"
+    },
+    {
+     "t": 901.4,
+     "te": 902.8,
+     "lane": "instructor",
+     "text": "you're all good  [Confirmation]"
+    },
+    {
+     "t": 904.1,
+     "te": 906.1,
+     "lane": "instructor",
+     "text": "so now you can stop the recording  [Instruction / current step]"
+    },
+    {
+     "t": 906.2,
+     "te": 906.8,
+     "lane": "user",
+     "text": "ok  [Confirmation]"
+    }
+   ],
+   "raw_format": "txt",
+   "raw": {
+    "Video/VideoMpegTiming.txt": "638126159655685361\n638126168787445361\n",
+    "StepDetection/StepDetection.txt": "638126159648182710\t638126159837037808\tStart\n638126159838067524\t638126160547671322\tPlace cake liner\n638126160548948024\t638126162452504154\tDry ingredients\n638126162453674584\t638126162790790675\tCombine\n638126162791570962\t638126163697028849\tWet ingredients\n638126163698199280\t638126164057229671\tCombine\n638126164058400101\t638126164591545546\tPour batter\n638126164593415947\t638126165634328115\tMicrowave\n638126165634489066\t638126166452624113\tCheck cake\n638126165992411914\t638126166185838208\tInvert cake\n638126166453549539\t638126167992891636\tPrepare frosting\n638126167992891636\t638126168060506987\tCut bag\n638126168061677517\t638126168642994968\tApply frosting\n638126168642994968\t638126168795586430\tDone\n",
+    "TextASR/InstructorAnnotations_intent.txt": "638126159648532193\t638126159661051020\tnow it's connecting\tOther\n638126159708109739\t638126159744459584\tok cool you can go ahead and start the experiment\tInstruction\tnext step\n638126159885053700\t638126159897417714\twhat does it say\tQuestion\n638126159928945949\t638126159965015951\tright so you should put a cupcake liner in the mug\tAnswer\n638126160096074497\t638126160199314012\tum in that green box back there like near the frosting to the right of that there's the cupcake liner\tInstruction\tdetailed\n638126160348522929\t638126160366327109\tyou want to put it inside the mug\tInstruction\tdetailed\n638126160411801952\t638126160429606131\tno no in the cup\tInstruction\twrong action\n638126160462721906\t638126160469843578\tyeah\tConfirmation\n638126160694731733\t638126160727206556\tfor flour you should add two tablespoons\tAnswer\n638126160839193422\t638126160869959045\tand you should add it to the mixing bowl\tInstruction\tdetailed\n638126160901750188\t638126160915081958\tyeah that bowl\tConfirmation\n638126161183286356\t638126161205164132\tone and a half tablespoons\tAnswer\n638126161310792770\t638126161319338776\tyeah\tConfirmation\n638126161572781248\t638126161623373605\tthere isn't a half tablespoon so you're just gonna have to use the one tablespoon\tInstruction\tdetails\n638126161807871625\t638126161819466846\tuh yeah that's fine\tConfirmation\n638126161850752066\t638126161889694507\tuh for baking powder you're gonna need a quarter teaspoon\tAnswer\n638126162188070260\t638126162202072036\ta pinch of salt\tAnswer\n638126162241452033\t638126162277550363\ta pinch so like just a\tInstruction\tdetailed\n638126162290020695\t638126162304897583\tit's a small amount\tInstruction\tdetailed\n638126162325681470\t638126162351934801\tno no no it's just like\tOther\n638126162368343133\t638126162385626576\tyeah like a sprinkle basically\tInstruction\tdetailed\n638126162390658464\t638126162408160685\tyeah like that that's good\tConfirmation\n638126162486360918\t638126162548931357\tum you should first before adding the oil you should whisk them together using the whisk\tInstruction\twrong action\n638126162562058022\t638126162569934021\tyeah\tConfirmation\n638126162748809045\t638126162766967599\tok that should be good\tConfirmation\n638126162775718710\t638126162809629262\tnow you can add the oil the water and the vanilla\tInstruction\tcurrent step\n638126162844032477\t638126162893913806\tum you're gonna want two teaspoons of oil\tAnswer\n638126163195788618\t638126163221604394\ttwo tablespoons of water\tAnswer\n638126163385368926\t638126163410309590\tand a quarter teaspoon of vanilla\tAnswer\n638126163501539916\t638126163506790582\tyep\tConfirmation\n638126163712965427\t638126163718216093\tyeah\tConfirmation\n638126163772035422\t638126163804414530\tyou should keep mixing until there are no lumps remaining\tInstruction\tdetailed\n638126163980859985\t638126163985454318\tyeah\tConfirmation\n638126164085435754\t638126164107969863\tum so now\tOther\n638126164141880416\t638126164150631526\tyeah\tConfirmation\n638126164704068142\t638126164723976919\tfor sixty seconds\tAnswer\n638126165620489468\t638126165670152019\tyes so you can check if it's been cooked  enough by inserting a toothpick\tAnswer\n638126165698581918\t638126165764652801\tif it comes out with batter stuck to it then you're going to need to put it in for another five seconds\tInstruction\tcurrent step\n638126165823277588\t638126165850406030\tyes so like stick it in and then pull it out\tInstruction\tdetailed\n638126165857844474\t638126165882128805\tis there any batter stuck to it\tQuestion\n638126165931135023\t638126165950825022\tnot really ok it should be good then\tConfirmation\n638126166018669024\t638126166031358134\tyeah\tConfirmation\n638126166156976317\t638126166167696427\tthat's fine\tConfirmation\n638126166289118083\t638126166337905523\tuh yeas so first off you should invert it when you put it on the plate\tAnswer\n638126166371147807\t638126166392369249\tjust like place it upside down\tInstruction\tdetailed\n638126166433718246\t638126166461503021\tok and now you can start making the forsting\tInstruction\tnext step\n638126166494251360\t638126166523130024\tuh so you get a ziploc bag\tAnswer\n638126166536913023\t638126166607001589\tand then put four spoonfuls of that of frosing into the bag\tInstruction\tcurrent step\n638126166671541026\t638126166692762469\tthe frosting is the one with the blue lid\tAnswer\n638126166746800575\t638126166761896241\tfour spoonfuls\tAnswer\n638126166772553364\t638126166776491363\tno\tAnswer\n638126166784367363\t638126166801432028\tfour normal spoons\tInstruction\twrong state\n638126166835561358\t638126166840593247\tyeah\tConfirmation\n638126166930247919\t638126166935061029\tyep\tConfirmation\n638126167357985696\t638126167385332916\tok yes so go ahead and close the bag\tAnswer\n638126167399772248\t638126167411148692\tum\tOther\n638126167697186273\t638126167806633799\tok and then from here you're gonna wanna cut a quarter inch hole in a corner of the bag\tAnswer\n638126167915603579\t638126167938575244\tyea cut it with the scissors\tAnswer\n638126167965352475\t638126167984386140\tyou don't have to shake it\tInstruction\twrong action\n638126168031204580\t638126168037767912\tyeah\tConfirmation\n638126168103103804\t638126168156048022\tok so now that the cake is cool go ahead and remove the liner from it\tInstruction\tdetailed\n638126168177707020\t638126168316499361\tohh ok um yes no you can pour now you can um squeeze small dollops of frosting in a circle around the base of the cake\tAnswer\n638126168337502026\t638126168345596803\tyeah\tConfirmation\n638126168482849649\t638126168489194204\tyeah\tConfirmation\n638126168520041868\t638126168553077310\tin small dollops just like circles\tAnswer\n638126168569048086\t638126168576267752\tyeah like that\tConfirmation\n638126168643651302\t638126168665091522\talright yeah that should be it then\tConfirmation\n638126168669685855\t638126168683687632\tyou're all good\tConfirmation\n638126168696882607\t638126168717045166\tso now you can stop the recording\tInstruction\tcurrent step\n",
+    "TextASR/UserAnnotations_intent.txt": "638126159866816780\t638126159881962697\tdo you know where's the cake liner\tQuestion\n638126159896799513\t638126159935746157\tassemble the cake linear ah liner sorry\tOther\n638126160005508096\t638126160034872629\twhere's the cupcake liner ah\tQuestion\n638126160073510172\t638126160095456296\twhat's the cupcake liner sorry\tQuestion\n638126160179531590\t638126160199190371\toh\tOther\n638126160399695109\t638126160410377617\tinside this\tQuestion\n638126160433879134\t638126160450258980\tuh where's the cup\tQuestion\n638126160452039398\t638126160464502324\tah this one\tOther\n638126160617831919\t638126160643826022\tcombine ingredients\tOther\n638126160650235526\t638126160695102059\tso how many flour and sugar I need\tQuestion\n638126160750656798\t638126160765355928\ttwo tablespoons\tOther\n638126161134061360\t638126161180209794\tand how much sugar I need\tQuestion\n638126161300879402\t638126161308399888\tthis one's sugar\tOther\n638126161628843049\t638126161639781937\toh ok\tConfirmation\n638126161766604670\t638126161807283659\toh do you think it's enough\tQuestion\n638126161819248069\t638126161825373846\tok\tConfirmation\n638126161830624512\t638126161850533288\tso how much baking powder I need\tQuestion\n638126162151286876\t638126162180384318\tuh how much salt I need\tQuestion\n638126162222637146\t638126162237514033\toh what is that\tQuestion\n638126162274487475\t638126162281488363\toh just\tOther\n638126162315398915\t638126162325900248\tbut this one\tOther\n638126162358279356\t638126162368561911\tjust add a little\tQuestion\n638126162449168699\t638126162473015474\tand how much oil\tQuestion\n638126162551337912\t638126162562058022\toh ok\tConfirmation\n638126162761279378\t638126162770249266\tok\tConfirmation\n638126162821060812\t638126162839875700\tuh how much oil I need\tQuestion\n638126163166341132\t638126163187343797\thow much water I need\tQuestion\n638126163410965923\t638126163415341479\tok\tConfirmation\n638126163487538139\t638126163500446027\tuh one quarter\tOther\n638126163684524318\t638126163712090316\tso I have to mix them again\tQuestion\n638126163816228529\t638126163822135528\tok\tConfirmation\n638126163971890097\t638126163980203652\tlike this\tQuestion\n638126163988079652\t638126163994424207\tok\tConfirmation\n638126164052400313\t638126164066839645\tso I have to froze that\tQuestion\n638126164100968975\t638126164141224083\toh oops so I have to pour them into the mug\tQuestion\n638126164671907812\t638126164694004366\tuh so how long I should\tQuestion\n638126164718288697\t638126164723758141\tok\tConfirmation\n638126165593579804\t638126165608894247\tuhhh\tHesitation\n638126165784991480\t638126165818464477\tuh so how ah how do we\tQuestion\n638126165914507914\t638126165930916245\tI think no\tOther\n638126165953910807\t638126165961349251\tok\tConfirmation\n638126165992196915\t638126166017793913\tuh so I should put that on a plate\tQuestion\n638126166242737198\t638126166273147306\tuh so now we have to frost that\tQuestion\n638126166392806805\t638126166397619916\tok\tConfirmation\n638126166469816576\t638126166492788241\thow do you make the frost\tQuestion\n638126166521598580\t638126166526630468\tyeah\tConfirmation\n638126166641130918\t638126166668478138\twait which one is the frosting\tQuestion\n638126166735861687\t638126166746581798\tbut how much\tQuestion\n638126166762708365\t638126166772115808\tfour teaspoon\tQuestion\n638126166776272586\t638126166787430251\tfour table spoon\tOther\n638126166801432028\t638126166809745583\tthis one\tQuestion\n638126166814558693\t638126166836217692\tor or\tOther\n638126166845625135\t638126166862471023\tyeah this one okay\tOther\n638126166920840475\t638126166930247919\tfour\tQuestion\n638126167308856342\t638126167323295675\tuh\tHesitation\n638126167340141562\t638126167353049450\tand then\tQuestion\n638126167891975581\t638126167915822357\tah cut it a quarter inch\tQuestion\n638126167935731133\t638126167942294466\tok\tConfirmation\n638126168022015914\t638126168032079691\tthis large\tQuestion\n638126168065692808\t638126168075537807\tI'm done\tSelf Description\n638126168159110911\t638126168177707020\toh I think the liner is not on it\tSelf Description\n638126168325688027\t638126168340783693\tuh around the cake\tOther\n638126168474754872\t638126168484162316\tlike this\tQuestion\n638126168561390864\t638126168569704419\tlike this\tQuestion\n638126168663560078\t638126168669685855\tok\tConfirmation\n638126168717675245\t638126168723345965\tok\tConfirmation\n"
+   }
+  }
+ ]
+}

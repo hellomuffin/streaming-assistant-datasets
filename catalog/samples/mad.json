@@ -1,0 +1,36 @@
+{
+ "slug": "mad",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://arxiv.org/abs/2112.00431 (Figure 2)",
+  "https://github.com/Soldelli/MAD (README, doc/README.md)"
+ ],
+ "access_used": "public sample in paper/repo/card only (full data needs the MAD request form + signed NDA)",
+ "note": "Annotations and CLIP features are released only after a Google form and a signed NDA, and the movies are never released, so no real annotation file was retrieved. The one example is the verbatim pair of grounded audio-description sentences the paper prints for \"A Quiet Place\" (Figure 2); the file format (one JSON per split) is described in the repo but not shown.",
+ "examples": [
+  {
+   "title": "A Quiet Place: two audio-description sentences grounded in the full movie (paper Figure 2)",
+   "video_ref": "A Quiet Place (2018), full movie",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 559,
+     "te": 567,
+     "lane": "narration",
+     "text": "Bearded dad is carrying his other sick son. Mum seems alone with her thoughts and the daughter is in complete silence."
+    },
+    {
+     "t": 2316,
+     "te": 2322,
+     "lane": "narration",
+     "text": "Mum hangs up the laundry outside the farmhouse."
+    }
+   ],
+   "raw_format": "txt",
+   "raw": "Figure 2 (MAD, arXiv 2112.00431v2), timeline 0:10:00 … 0:40:00 … 1:30:00, \"Audio Descriptions\" -> \"Temporal Grounding\":\n00:09:19 00:09:27 \"Bearded dad is carrying his other sick son. Mum seems alone with her thoughts and the daughter is in complete silence.\"\n00:38:36 00:38:42 \"Mum hangs up the laundry outside the farmhouse.\"\nCaption: Example from our MAD dataset. We select the movie \"A quiet place\" as representative for our dataset. As shown in the figure, the movie contains a large number of densely distributed temporally grounded sentences."
+  }
+ ]
+}

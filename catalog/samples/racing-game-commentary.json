@@ -1,0 +1,34 @@
+{
+ "slug": "racing-game-commentary",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://aclanthology.org/2021.inlg-1.11.pdf (Ishigaki et al., INLG 2021; Table 2, Table 3, Sections 1 and 3)",
+  "https://kirt.airc.aist.go.jp/corpus/en/RacingCommentary (application form; no sample records shown)"
+ ],
+ "access_used": "public sample in paper/repo/card only (full data needs an application to AIST; research use, no redistribution)",
+ "note": "The corpus (≈700 GB: MP4 video, MP3 commentary, SRT subtitles, Assetto Corsa telemetry) is released only after an application to AIST, and neither the dataset page nor the Video2Text repo shows a record. The verbatim examples below are English translations printed in the paper (the utterances are originally Japanese); no timestamps are given, so the timeline is empty. Figure 1 of the paper shows timed examples only as an image.",
+ "examples": [
+  {
+   "title": "Paper Table 3: label scheme with one example utterance per sub-label",
+   "video_ref": null,
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "txt",
+   "raw": "Table 3: List of sub-labels and example utterances. A label assigned to an utterance is defined as a pair of Target and Content sub-labels.\nTarget labels | Example utterances\nplayer's car | This was a very elegant overtake by the player.\nother cars | The car behind just overtook the player.\nall cars | All the cars has now started.\ncircuit | Laguna Seca is well known for its very long strait.\nnone | Ah!\nContent labels | Example utterances\nrelative position | The player is now at the second making the distance close to the first.\nlocation on map | The blue car is approaching Turn2 and others follow.\nlap time | The player now crossed the finish line at the time 3.15\nprevious event | Maybe this mistake might cause big impact on the time\nfuture event | Can the player successfully pass the difficult Turn 15?\nmovement | The player overtook the red car on this long straight.\nstable race | All cars are stable without any problems.\nfeatures | All the cars are the same, Porsche Macan.\ngreetings | Ok, now I start my commentary on this race.\nreaction | Oh!\nothers | —"
+  },
+  {
+   "title": "Paper text: further quoted utterances and the silence statistic",
+   "video_ref": null,
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "txt",
+   "raw": "\"We are approaching the final long straight. I wonder who is going to win!\" (Section 1, example of racing game commentary)\n\"All the cars now start\" → all cars; \"The player is now approaching Turn15\" → player's car:movement (Section 3, label explanation)\nTable 2: ... avg. length of silence 3.46s"
+  }
+ ]
+}

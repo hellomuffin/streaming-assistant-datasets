@@ -1,0 +1,183 @@
+{
+ "slug": "molmo2-askmodelanything",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/allenai/Molmo2-AskModelAnything/resolve/main/data/HumanQA-00000-of-00001.parquet",
+  "https://huggingface.co/datasets/allenai/Molmo2-AskModelAnything/resolve/main/youtube_id_to_urls_mapping.json",
+  "https://storage.googleapis.com/molmo2-youtube-cc-videos/youtube-cc-temporal/WOHdoZhEsmY/WOHdoZhEsmY.mp4",
+  "https://storage.googleapis.com/molmo2-youtube-cc-videos/youtube-cc-kw/5YOQLzNGRaE/5YOQLzNGRaE.mp4"
+ ],
+ "access_used": "open download",
+ "note": "An example is every HumanQA row for one video: a crowdworker-written question (typos kept) with a long answer drafted by an LLM and edited by a human. There are no timestamps, so the timeline is empty; clips come from Ai2's CC-BY GCS mirror (requester-pays) and were cut at an informative moment, not at a labelled time.",
+ "examples": [
+  {
+   "title": "WOHdoZhEsmY: 'Bears Throughout Time' animation, 3 open questions",
+   "video_ref": "WOHdoZhEsmY",
+   "duration_s": 159.5,
+   "clip": "samples/media/molmo2-askmodelanything_1.mp4",
+   "clip_offset_s": 40,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "parquet row",
+   "raw": [
+    {
+     "video_id": "WOHdoZhEsmY",
+     "answer": "Looking at the three map sequences and the cultural context provided in the video:\n\nThe first marker appears on a sepia world map early in the sequence. This comes after imagery showing ancient mountain architecture with a domed building topped by a spire with a yellow star, followed by classical figures wearing togas and leaf wreaths, and a decorated ancient vase with Greek-style patterns. These elements point to ancient Greek or Mediterranean culture, placing the first marker in Europe, specifically in the region of Greece.\n\nThe second marker highlights a large region on the left side of the map in white with a red pin, placing it in the Americas. This is accompanied by imagery of a bear wearing an elaborate feathered headdress and words reading \"Power, Strength, Love,\" along with a portrait of a person with braided hair decorated with beads and feathers, suggesting indigenous North American culture.\n\nThe third marker specifically indicates a large country on the far right side of the globe in East Asia, which is Asia. This is followed by imagery of a white bear cub (likely a panda) chewing bamboo and figures in robes near bamboo plants, pointing to China.\n\nSo the three markers fell on continents: Europe (Greece), North America (Americas), and Asia (China).",
+     "question": "what country did the marker fall on when the map was presented"
+    },
+    {
+     "video_id": "WOHdoZhEsmY",
+     "answer": "The constellation shown is Ursa Major, the Great Bear. In the night sky scene, you can see a bear's outline traced among the stars, with the constellation's points connected by fine lines within the shape. The bear appears in a walking or moving position, with its head angled to the right, tail to the left, and front right paw lifted, while the other legs are positioned lower as if bracing.",
+     "question": "what star constellation is shown as they are wrapping up the section about greece"
+    },
+    {
+     "video_id": "WOHdoZhEsmY",
+     "answer": "The bear in the last scene is a panda. You can see two black-and-white bears with their distinctive coloring sitting together among green bamboo leaves and shoots, which is the signature habitat and food source for pandas.",
+     "question": "what is the bear type shown in the last scene"
+    }
+   ]
+  },
+  {
+   "title": "5YOQLzNGRaE: hospital lobby, 26 questions from several askers (answers sometimes disagree)",
+   "video_ref": "5YOQLzNGRaE",
+   "duration_s": 53.7,
+   "clip": "samples/media/molmo2-askmodelanything_2.mp4",
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "parquet row",
+   "raw": [
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "No, this is not a market setting. This is a hospital lobby and waiting area. The space features a large sign with a red cross and a prominently displayed contact number (975-244-7834), which are clear identifiers of a medical facility. The environment consists of a spacious waiting area with benches and chairs where visitors can sit, fluorescent lighting throughout, white walls and pillars, and booths that appear to serve administrative or informational purposes.\n\nWhile you may not see hospital beds or medical equipment, this is because the view shows only the public reception and waiting areas of the hospital—the lobby and seating zones where visitors wait before being directed to treatment areas. The clinical atmosphere, the medical signage with the red cross, and the overall institutional layout are all consistent with a hospital's public entrance and waiting space rather than a market setting.",
+     "question": "what is this, a amrket setting"
+    },
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "The dark element on the pillar appears to be a fixture or base attached to it. It could be serving a protective or functional purpose – perhaps it's a bumper guard or protective wrapping to prevent damage to the pillar from carts, wheelchairs, or other equipment that frequently moves through the hospital lobby. \n\nIt might also be covering utility connections, electrical outlets, or mounting hardware for equipment. In high-traffic hospital environments, it's common to see such protective coverings on pillars and columns at lower heights where they're most likely to be bumped or scraped by moving equipment or foot traffic.",
+     "question": "why is the post wrapped in black, what is that"
+    },
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "Looking at the phone number format displayed in the video (975-244-7834), this appears to be from Bhutan. The country code +975 is uniquely assigned to Bhutan, which strongly indicates this hospital is located there.\n\nThe video shows what appears to be a public hospital with typical South Asian architectural and design elements - the spacious layout, the style of furnishings, and the overall aesthetic are consistent with hospitals in the Himalayan region.\n\nAs for language, Bhutan's official language is Dzongkha, though English is also widely used in official settings and signage. Without being able to clearly read the text on the hospital signs beyond the phone number, the signage likely includes Dzongkha script, English, or both, which is common practice in Bhutanese public institutions.",
+     "question": "can you tell which country or language this is"
+    },
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "At the start of the video, the point of view is positioned inside a lobby, looking across the waiting area. Immediately in front of the camera are several white wooden benches with chipped and weathered paint, situated near a prominent white pillar. The gray tiled floor stretches ahead, and a red pipe is visible running along the ceiling above.",
+     "question": "Can you describe the point of view and what we see immediately in front of the camera at the start of the video?"
+    },
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "Looking at the railed balcony on the second floor at the top of the video, there is a large sign with colored lettering and a red cross visible on the back wall in that upper area. The sign appears to have green text along with the red cross symbol.",
+     "question": "What is on the sign on the railed balcony?"
+    },
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "Throughout the video, people in the background are engaged in various activities: standing near the second-floor railing and looking down into the lobby, sitting on chairs in the waiting area (including a woman walking with a blue box, a man carrying a red box), walking through the space in different directions, and working at a service counter with red-and-white striping.",
+     "question": "What are people in the background doing?"
+    },
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "The floor is made of gray tiles",
+     "question": "What is the floor made of?\n"
+    },
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "The phone number seen on the sign is 975-244-7834.",
+     "question": "What phone number is seen on the sign?"
+    },
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "The building is a hospital. You can see the large hospital signage with a red cross symbol displayed prominently on the wall, along with a contact number. The interior features typical hospital elements like a spacious lobby with waiting areas, benches and chairs for patients and visitors, service booths, and multiple floors. The functional, utilitarian design with bright fluorescent lighting and the presence of medical staff in white coats further confirm this is a hospital facility.",
+     "question": "What is the building we are looking at?"
+    },
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "Yes, this is definitely a hospital area. The video shows a large hospital lobby and waiting area with hospital signage displaying a red cross symbol on the back wall. The space features typical hospital infrastructure including waiting benches and chairs, reception booths, and people in white coats moving through the facility. The overall layout and design is characteristic of a hospital's public spaces.",
+     "question": "Is this a hospital area?"
+    },
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "On the left side of the hospital lobby, there is a help desk with a yellow booth and red sign.",
+     "question": "What is in the yellow booth on left side of the building shown?"
+    },
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "A woman wearing a yellow saree with an orange blouse and headscarf was carrying a blue tub as she walked through the middle of the hospital lobby. She passed through the waiting area where the worn white benches and white pillar are located.",
+     "question": "Who carried blue tub in the middle?"
+    },
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "The English letters NABH appear on the green and white sign seen first in the video.",
+     "question": "What English letters appear on the green and white sign first seen in the video?"
+    },
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "The sign displays a red cross, which is a prominent feature visible throughout the hospital lobby scenes.",
+     "question": "What shapes appear in red on the sign?"
+    },
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "In the foreground, there are several white wooden benches with visibly chipped and weathered paint. These benches are positioned near a prominent white pillar. The benches show signs of wear with their scuffed edges and deteriorating paint finish, and they're placed on the gray tiled floor of the hospital lobby.",
+     "question": "What objects are in the foreground?"
+    },
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "The text painted on the wall directly next to the red arrow pointing left says \"ICU\".",
+     "question": "What text is painted on the wall directly next to the red arrow pointing left?"
+    },
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "The woman dressed in brown (wearing a long dress and headscarf) is carrying a large blue container.",
+     "question": "What colour is the large container that is being carried by the woman dressed in brown?"
+    },
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "The white wooden benches with chipped and weathered paint are directly in front of the person filming, positioned near a prominent white pillar. These benches appear throughout the video as a central feature in the foreground of the shots.",
+     "question": "what is directly in front of the person filming?"
+    },
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "I can see a large sign with colored lettering and a red cross that displays the contact number 975-244-7834. The last number on this sign is 4.",
+     "question": "what is the last number on the sign with a green background?"
+    },
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "The final person passes the benches in front of the column from the right of the screen to the left, and turns to her left, walking towards the camera before disappearing from view.",
+     "question": "the final person who passes the benches walks in what direction?"
+    },
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "The sign has numbers that read \"07272-482500, 9752467451, 9752447834\"",
+     "question": "what is the text along the bottom of the green and white banner with red text"
+    },
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "The benches are white wooden benches with chipped and weathered paint.",
+     "question": "what colour are the benches"
+    },
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "Looking at the person who enters from the right side of the frame and walks toward the left and into the background, I can see someone carrying a red box on their shoulder",
+     "question": "what is the person carrying on their shoulder than comes from the right towards the left and walks towards the background"
+    },
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "Looking at the banner visible in the video, the text appears to be in Arabic script. ",
+     "question": "what language is written on the banner seen at the top of the screen?"
+    },
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "The phone number written on the banner is 975-244-7834. ",
+     "question": "what is the phone number written on the banner that can be seen on the right side of the screen?"
+    },
+    {
+     "video_id": "5YOQLzNGRaE",
+     "answer": "The benches in the video are made of white painted wood. You can see that the paint on them is visibly chipped and weathered, showing their age and heavy use in the hospital lobby.",
+     "question": "what are the benches in the video made out of?"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,410 @@
+{
+ "slug": "streamforest-onlineit",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/MCG-NJU/StreamForest-Annodata/resolve/main/train/onlineit-drive/static/Memory_of_past_traffic_information.json (all 11 items with video TS_Retrieval/train_video/03ogUsNXOoNBKZ.mp4)",
+  "https://huggingface.co/datasets/MCG-NJU/StreamForest-Annodata/resolve/main/train/onlineit-general/event/coin_event_9026.json (first item)"
+ ],
+ "access_used": "open download",
+ "note": "Annotations are one question per item. For the drive set, 'end' is the moment in the video when the question is asked (the model sees frames up to it); the timeline shows the question and its answer both at 'end', and box coordinates are normalised [x1, y1, x2, y2]. The general event items have no 'end' and ask for all steps at once, so the question is placed at t=0 and the steps come from parsing the answer text. No clip: the driving videos sit in gated Kefan22 HF repos that our token could not open (HTTP 403), and the COIN video is YouTube-only.",
+ "examples": [
+  {
+   "title": "TS_Retrieval 03ogUsNXOoNBKZ (driving): 11 'what was there N seconds ago' traffic-sign/light queries at 19.5–31.0 s",
+   "video_ref": "TS_Retrieval/train_video/03ogUsNXOoNBKZ.mp4",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 19.48,
+     "te": null,
+     "lane": "question",
+     "text": "What were the position coordinates of the traffic sign indicating \"Other Prohibition Signs\" in the scene 1 seconds ago? \nPlease select one from the following option list. \n Option list:[\"[0.32, 0.34, 0.36, 0.40].\", \"[0.58, 0.58, 0.84, 0.81].\", \"[0.43, 0.54, 0.73, 0.85].\", \"[0.66, 0.42, 0.86, 0.65].\""
+    },
+    {
+     "t": 19.48,
+     "te": null,
+     "lane": "answer",
+     "text": "[0.32, 0.34, 0.36, 0.40]."
+    },
+    {
+     "t": 19.96,
+     "te": null,
+     "lane": "question",
+     "text": "What was the color of the traffic light at the [0.29, 0.14, 0.33, 0.37] in the scene 1 seconds ago?"
+    },
+    {
+     "t": 19.96,
+     "te": null,
+     "lane": "answer",
+     "text": "Green."
+    },
+    {
+     "t": 21.12,
+     "te": null,
+     "lane": "question",
+     "text": "What was the color of the traffic light at the [0.27, 0.10, 0.32, 0.35] in the scene 2 seconds ago? \nPlease select one from the following option list. \n Option list:[\"Yellow.\", \"Unable to say.\", \"Red.\", \"Green.\"]"
+    },
+    {
+     "t": 21.12,
+     "te": null,
+     "lane": "answer",
+     "text": "Green."
+    },
+    {
+     "t": 21.28,
+     "te": null,
+     "lane": "question",
+     "text": "What was the meaning of the traffic sign at the [0.26, 0.23, 0.31, 0.32] in the scene 2 seconds ago?"
+    },
+    {
+     "t": 21.28,
+     "te": null,
+     "lane": "answer",
+     "text": "Other Prohibition Signs."
+    },
+    {
+     "t": 21.56,
+     "te": null,
+     "lane": "question",
+     "text": "What was the meaning of the traffic sign at the [0.32, 0.26, 0.35, 0.33] in the scene 3 seconds ago?"
+    },
+    {
+     "t": 21.56,
+     "te": null,
+     "lane": "answer",
+     "text": "No Parking."
+    },
+    {
+     "t": 22.0,
+     "te": null,
+     "lane": "question",
+     "text": "What was the color of the traffic light at the [0.28, 0.13, 0.33, 0.36] in the scene 3 seconds ago?"
+    },
+    {
+     "t": 22.0,
+     "te": null,
+     "lane": "answer",
+     "text": "Green."
+    },
+    {
+     "t": 22.32,
+     "te": null,
+     "lane": "question",
+     "text": "What was the meaning of the traffic sign at the [0.25, 0.22, 0.30, 0.31] in the scene 3 seconds ago? \nPlease select one from the following option list. \n Option list:[\"Bus Lane.\", \"Non-Motorized Vehicle Traffic on Left.\", \"Other Prohibition Signs.\", \"Pedestrian Crossing.\"]"
+    },
+    {
+     "t": 22.32,
+     "te": null,
+     "lane": "answer",
+     "text": "Other Prohibition Signs."
+    },
+    {
+     "t": 29.88,
+     "te": null,
+     "lane": "question",
+     "text": "What were the position coordinates of the traffic sign indicating \"No Parking\" in the scene 2 seconds ago? \nPlease select one from the following option list. \n Option list:[\"[0.05, 0.44, 0.09, 0.86].\", \"[0.68, 0.67, 0.84, 0.95].\", \"[0.61, 0.23, 0.64, 0.28].\", \"[0.44, 0.85, 0.86, 0.90].\""
+    },
+    {
+     "t": 29.88,
+     "te": null,
+     "lane": "answer",
+     "text": "[0.61, 0.23, 0.64, 0.28]."
+    },
+    {
+     "t": 30.08,
+     "te": null,
+     "lane": "question",
+     "text": "What were the position coordinates of the traffic sign indicating \"Zone Speed Limit 40\" in the scene 1 seconds ago?"
+    },
+    {
+     "t": 30.08,
+     "te": null,
+     "lane": "answer",
+     "text": "[0.69, 0.00, 0.74, 0.05]."
+    },
+    {
+     "t": 30.08,
+     "te": null,
+     "lane": "question",
+     "text": "What were the position coordinates of the traffic sign indicating \"Zone Speed Limit 40\" in the scene 1 seconds ago? \nPlease select one from the following option list. \n Option list:[\"[0.90, 0.23, 0.94, 0.38].\", \"[0.69, 0.00, 0.74, 0.05].\", \"[0.31, 0.55, 0.78, 0.63].\", \"[0.67, 0.33, 0.85, 0.83].\""
+    },
+    {
+     "t": 30.08,
+     "te": null,
+     "lane": "answer",
+     "text": "[0.69, 0.00, 0.74, 0.05]."
+    },
+    {
+     "t": 31.04,
+     "te": null,
+     "lane": "question",
+     "text": "What was the meaning of the traffic sign at the [0.68, 0.00, 0.73, 0.06] in the scene 2 seconds ago?"
+    },
+    {
+     "t": 31.04,
+     "te": null,
+     "lane": "answer",
+     "text": "Zone Speed Limit 40."
+    }
+   ],
+   "raw_format": "json",
+   "raw": [
+    {
+     "id": 18,
+     "video": "TS_Retrieval/train_video/03ogUsNXOoNBKZ.mp4",
+     "end": 21.56,
+     "conversations": [
+      {
+       "from": "human",
+       "value": "<image>\nWhat was the meaning of the traffic sign at the [0.32, 0.26, 0.35, 0.33] in the scene 3 seconds ago?"
+      },
+      {
+       "from": "gpt",
+       "value": "No Parking."
+      }
+     ],
+     "task_type": "Targeting single static objects",
+     "sub_task_type": "Memory of past traffic information",
+     "start": 0.0
+    },
+    {
+     "id": 19,
+     "video": "TS_Retrieval/train_video/03ogUsNXOoNBKZ.mp4",
+     "end": 30.08,
+     "conversations": [
+      {
+       "from": "human",
+       "value": "<image>\nWhat were the position coordinates of the traffic sign indicating \"Zone Speed Limit 40\" in the scene 1 seconds ago?"
+      },
+      {
+       "from": "gpt",
+       "value": "[0.69, 0.00, 0.74, 0.05]."
+      }
+     ],
+     "task_type": "Targeting single static objects",
+     "sub_task_type": "Memory of past traffic information",
+     "start": 0.0
+    },
+    {
+     "id": 20,
+     "video": "TS_Retrieval/train_video/03ogUsNXOoNBKZ.mp4",
+     "end": 30.08,
+     "conversations": [
+      {
+       "from": "human",
+       "value": "<image>\nWhat were the position coordinates of the traffic sign indicating \"Zone Speed Limit 40\" in the scene 1 seconds ago? \nPlease select one from the following option list. \n Option list:[\"[0.90, 0.23, 0.94, 0.38].\", \"[0.69, 0.00, 0.74, 0.05].\", \"[0.31, 0.55, 0.78, 0.63].\", \"[0.67, 0.33, 0.85, 0.83].\""
+      },
+      {
+       "from": "gpt",
+       "value": "[0.69, 0.00, 0.74, 0.05]."
+      }
+     ],
+     "task_type": "Targeting single static objects",
+     "sub_task_type": "Memory of past traffic information",
+     "start": 0.0
+    },
+    {
+     "id": 21,
+     "video": "TS_Retrieval/train_video/03ogUsNXOoNBKZ.mp4",
+     "end": 21.12,
+     "conversations": [
+      {
+       "from": "human",
+       "value": "<image>\nWhat was the color of the traffic light at the [0.27, 0.10, 0.32, 0.35] in the scene 2 seconds ago? \nPlease select one from the following option list. \n Option list:[\"Yellow.\", \"Unable to say.\", \"Red.\", \"Green.\"]"
+      },
+      {
+       "from": "gpt",
+       "value": "Green."
+      }
+     ],
+     "task_type": "Targeting single static objects",
+     "sub_task_type": "Memory of past traffic information",
+     "start": 0.0
+    },
+    {
+     "id": 22,
+     "video": "TS_Retrieval/train_video/03ogUsNXOoNBKZ.mp4",
+     "end": 29.88,
+     "conversations": [
+      {
+       "from": "human",
+       "value": "<image>\nWhat were the position coordinates of the traffic sign indicating \"No Parking\" in the scene 2 seconds ago? \nPlease select one from the following option list. \n Option list:[\"[0.05, 0.44, 0.09, 0.86].\", \"[0.68, 0.67, 0.84, 0.95].\", \"[0.61, 0.23, 0.64, 0.28].\", \"[0.44, 0.85, 0.86, 0.90].\""
+      },
+      {
+       "from": "gpt",
+       "value": "[0.61, 0.23, 0.64, 0.28]."
+      }
+     ],
+     "task_type": "Targeting single static objects",
+     "sub_task_type": "Memory of past traffic information",
+     "start": 0.0
+    },
+    {
+     "id": 23,
+     "video": "TS_Retrieval/train_video/03ogUsNXOoNBKZ.mp4",
+     "end": 21.28,
+     "conversations": [
+      {
+       "from": "human",
+       "value": "<image>\nWhat was the meaning of the traffic sign at the [0.26, 0.23, 0.31, 0.32] in the scene 2 seconds ago?"
+      },
+      {
+       "from": "gpt",
+       "value": "Other Prohibition Signs."
+      }
+     ],
+     "task_type": "Targeting single static objects",
+     "sub_task_type": "Memory of past traffic information",
+     "start": 0.0
+    },
+    {
+     "id": 24,
+     "video": "TS_Retrieval/train_video/03ogUsNXOoNBKZ.mp4",
+     "end": 22.32,
+     "conversations": [
+      {
+       "from": "human",
+       "value": "<image>\nWhat was the meaning of the traffic sign at the [0.25, 0.22, 0.30, 0.31] in the scene 3 seconds ago? \nPlease select one from the following option list. \n Option list:[\"Bus Lane.\", \"Non-Motorized Vehicle Traffic on Left.\", \"Other Prohibition Signs.\", \"Pedestrian Crossing.\"]"
+      },
+      {
+       "from": "gpt",
+       "value": "Other Prohibition Signs."
+      }
+     ],
+     "task_type": "Targeting single static objects",
+     "sub_task_type": "Memory of past traffic information",
+     "start": 0.0
+    },
+    {
+     "id": 25,
+     "video": "TS_Retrieval/train_video/03ogUsNXOoNBKZ.mp4",
+     "end": 19.96,
+     "conversations": [
+      {
+       "from": "human",
+       "value": "<image>\nWhat was the color of the traffic light at the [0.29, 0.14, 0.33, 0.37] in the scene 1 seconds ago?"
+      },
+      {
+       "from": "gpt",
+       "value": "Green."
+      }
+     ],
+     "task_type": "Targeting single static objects",
+     "sub_task_type": "Memory of past traffic information",
+     "start": 0.0
+    },
+    {
+     "id": 26,
+     "video": "TS_Retrieval/train_video/03ogUsNXOoNBKZ.mp4",
+     "end": 19.48,
+     "conversations": [
+      {
+       "from": "human",
+       "value": "<image>\nWhat were the position coordinates of the traffic sign indicating \"Other Prohibition Signs\" in the scene 1 seconds ago? \nPlease select one from the following option list. \n Option list:[\"[0.32, 0.34, 0.36, 0.40].\", \"[0.58, 0.58, 0.84, 0.81].\", \"[0.43, 0.54, 0.73, 0.85].\", \"[0.66, 0.42, 0.86, 0.65].\""
+      },
+      {
+       "from": "gpt",
+       "value": "[0.32, 0.34, 0.36, 0.40]."
+      }
+     ],
+     "task_type": "Targeting single static objects",
+     "sub_task_type": "Memory of past traffic information",
+     "start": 0.0
+    },
+    {
+     "id": 27,
+     "video": "TS_Retrieval/train_video/03ogUsNXOoNBKZ.mp4",
+     "end": 22.0,
+     "conversations": [
+      {
+       "from": "human",
+       "value": "<image>\nWhat was the color of the traffic light at the [0.28, 0.13, 0.33, 0.36] in the scene 3 seconds ago?"
+      },
+      {
+       "from": "gpt",
+       "value": "Green."
+      }
+     ],
+     "task_type": "Targeting single static objects",
+     "sub_task_type": "Memory of past traffic information",
+     "start": 0.0
+    },
+    {
+     "id": 28,
+     "video": "TS_Retrieval/train_video/03ogUsNXOoNBKZ.mp4",
+     "end": 31.04,
+     "conversations": [
+      {
+       "from": "human",
+       "value": "<image>\nWhat was the meaning of the traffic sign at the [0.68, 0.00, 0.73, 0.06] in the scene 2 seconds ago?"
+      },
+      {
+       "from": "gpt",
+       "value": "Zone Speed Limit 40."
+      }
+     ],
+     "task_type": "Targeting single static objects",
+     "sub_task_type": "Memory of past traffic information",
+     "start": 0.0
+    }
+   ]
+  },
+  {
+   "title": "COIN ugQ5GI9I-QI: event localisation — 4 timed steps (take out the shell … fit on the shell)",
+   "video_ref": "130_139/137/ugQ5GI9I-QI.mp4 (COIN, YouTube id ugQ5GI9I-QI)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": null,
+     "lane": "question",
+     "text": "Based on the video content: Identify and localize a series of steps or actions occurring in the video, providing start and end timestamps and related descriptions."
+    },
+    {
+     "t": 27.0,
+     "te": 52.0,
+     "lane": "step",
+     "text": "take out the shell."
+    },
+    {
+     "t": 53.0,
+     "te": 66.0,
+     "lane": "step",
+     "text": "take out the filter."
+    },
+    {
+     "t": 67.0,
+     "te": 89.0,
+     "lane": "step",
+     "text": "fit on the filter."
+    },
+    {
+     "t": 90.0,
+     "te": 113.0,
+     "lane": "step",
+     "text": "fit on the shell."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "id": "130_139-137-ugQ5GI9I-QI",
+    "video": "130_139/137/ugQ5GI9I-QI.mp4",
+    "conversations": [
+     {
+      "from": "human",
+      "value": "<image>\nBased on the video content: Identify and localize a series of steps or actions occurring in the video, providing start and end timestamps and related descriptions."
+     },
+     {
+      "from": "gpt",
+      "value": "27.0 - 52.0 seconds, take out the shell.  53.0 - 66.0 seconds, take out the filter.  67.0 - 89.0 seconds, fit on the filter.  90.0 - 113.0 seconds, fit on the shell."
+     }
+    ]
+   }
+  }
+ ]
+}

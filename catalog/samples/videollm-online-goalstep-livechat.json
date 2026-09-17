@@ -1,0 +1,11 @@
+{
+ "slug": "videollm-online-goalstep-livechat",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/chenjoya/videollm-online-chat-ego4d-134k/blob/main/goalstep_livechat_trainval_filtered_21k.json (403, not retrieved)",
+  "https://github.com/showlab/videollm-online/blob/main/data/livechat/ego4d_goalstep_livechat_generation.py"
+ ],
+ "access_used": "public sample in paper/repo/card only (full data needs approval on the gated HF repo chenjoya/videollm-online-chat-ego4d-134k; our token is not on the authorised list)",
+ "note": "No record could be downloaded, and neither the paper (Figure 3 is an image), the HF card, the repo README nor its issues print a verbatim GoalStep live-chat dialogue. The generation script shows the record shape only: {'video_uid', 'conversation': [{'role': 'user'|'assistant', 'content', 'time'}]}, with up to 3 templated user queries at random times and assistant turns at GoalStep step start/end timestamps. Examples are therefore empty.",
+ "examples": []
+}

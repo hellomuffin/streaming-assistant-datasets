@@ -1,0 +1,199 @@
+{
+ "slug": "timelens-100k",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/TencentARC/TimeLens-100K/resolve/main/timelens-100k.jsonl",
+  "video_shards/cosmo_cap/cosmo_cap_shard_01.tar.gz (member cosmo_cap/-JM_ZV7Az6s.mp4, via range read)",
+  "video_shards/didemo/didemo_shard_01.tar.gz (member didemo/10563005@N06_3240556832_d8c6140c05.mp4, via range read)"
+ ],
+ "access_used": "open download",
+ "note": "One example = one video's jsonl line: about five natural-language queries, each with one or more [start,end] spans in seconds, written by Gemini-2.5-Pro. It is offline temporal grounding: queries are not tied to when they would be asked, and the timeline lane 'question' simply places each query on its answer span.",
+ "examples": [
+  {
+   "title": "cosmo_cap/-JM_ZV7Az6s: making cucumber-lemon water — 5 grounding queries",
+   "video_ref": "cosmo_cap/-JM_ZV7Az6s.mp4",
+   "duration_s": 109.74,
+   "clip": "samples/media/timelens-100k_1.mp4",
+   "clip_offset_s": 53,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 33.0,
+     "te": 38.0,
+     "lane": "question",
+     "text": "Show the part where the girl is rubbing the end of the cucumber to remove the bitterness."
+    },
+    {
+     "t": 54.0,
+     "te": 59.0,
+     "lane": "question",
+     "text": "At what point is the girl slicing the cucumber into rounds?"
+    },
+    {
+     "t": 68.0,
+     "te": 72.0,
+     "lane": "question",
+     "text": "When does she cut the lemon?"
+    },
+    {
+     "t": 76.0,
+     "te": 81.0,
+     "lane": "question",
+     "text": "Locate the segment where the lemon and cucumber slices are being placed into the glass carafe."
+    },
+    {
+     "t": 84.0,
+     "te": 87.0,
+     "lane": "question",
+     "text": "Pinpoint the moment when water is being poured into the carafe."
+    }
+   ],
+   "raw_format": "jsonl line",
+   "raw": {
+    "source": "cosmo_cap",
+    "video_path": "cosmo_cap/-JM_ZV7Az6s.mp4",
+    "duration": 109.74296666666667,
+    "events": [
+     {
+      "query": "Show the part where the girl is rubbing the end of the cucumber to remove the bitterness.",
+      "span": [
+       [
+        33.0,
+        38.0
+       ]
+      ]
+     },
+     {
+      "query": "At what point is the girl slicing the cucumber into rounds?",
+      "span": [
+       [
+        54.0,
+        59.0
+       ]
+      ]
+     },
+     {
+      "query": "When does she cut the lemon?",
+      "span": [
+       [
+        68.0,
+        72.0
+       ]
+      ]
+     },
+     {
+      "query": "Locate the segment where the lemon and cucumber slices are being placed into the glass carafe.",
+      "span": [
+       [
+        76.0,
+        81.0
+       ]
+      ]
+     },
+     {
+      "query": "Pinpoint the moment when water is being poured into the carafe.",
+      "span": [
+       [
+        84.0,
+        87.0
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "title": "didemo 10563005@N06_3240556832: child rolls down a snowbank — 5 grounding queries incl. a speech moment",
+   "video_ref": "didemo/10563005@N06_3240556832_d8c6140c05.mp4",
+   "duration_s": 26.74,
+   "clip": "samples/media/timelens-100k_2.mp4",
+   "clip_offset_s": 2,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 3.0,
+     "lane": "question",
+     "text": "When does the child roll down the snowbank?"
+    },
+    {
+     "t": 3.0,
+     "te": 5.0,
+     "lane": "question",
+     "text": "When can we see the shovel stuck in the snow?"
+    },
+    {
+     "t": 4.0,
+     "te": 12.0,
+     "lane": "question",
+     "text": "Identify the time frame where the child is lying on the ground, but before the camera zooms in."
+    },
+    {
+     "t": 14.0,
+     "te": 21.0,
+     "lane": "question",
+     "text": "Show me the close-up shot of the child's face with snow on their hat."
+    },
+    {
+     "t": 21.0,
+     "te": 22.0,
+     "lane": "question",
+     "text": "At what point does a person ask 'Are you dead?'"
+    }
+   ],
+   "raw_format": "jsonl line",
+   "raw": {
+    "source": "didemo",
+    "video_path": "didemo/10563005@N06_3240556832_d8c6140c05.mp4",
+    "duration": 26.735041666666664,
+    "events": [
+     {
+      "query": "When does the child roll down the snowbank?",
+      "span": [
+       [
+        0.0,
+        3.0
+       ]
+      ]
+     },
+     {
+      "query": "Identify the time frame where the child is lying on the ground, but before the camera zooms in.",
+      "span": [
+       [
+        4.0,
+        12.0
+       ]
+      ]
+     },
+     {
+      "query": "Show me the close-up shot of the child's face with snow on their hat.",
+      "span": [
+       [
+        14.0,
+        21.0
+       ]
+      ]
+     },
+     {
+      "query": "At what point does a person ask 'Are you dead?'",
+      "span": [
+       [
+        21.0,
+        22.0
+       ]
+      ]
+     },
+     {
+      "query": "When can we see the shovel stuck in the snow?",
+      "span": [
+       [
+        3.0,
+        5.0
+       ]
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

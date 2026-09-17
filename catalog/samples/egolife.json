@@ -1,0 +1,499 @@
+{
+ "slug": "egolife",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/lmms-lab/EgoLife/resolve/main/A1_JAKE/DAY1/DAY1_A1_JAKE_11150000.mp4",
+  "https://huggingface.co/datasets/lmms-lab/EgoLife/resolve/main/A1_JAKE/DAY1/DAY1_A1_JAKE_11190000.mp4",
+  "EgoLifeCap/DenseCaption/A1_JAKE/DAY1/A1_JAKE_DAY1_11000000.srt",
+  "EgoLifeCap/Transcript/A1_JAKE/DAY1/A1_JAKE_DAY1_11000000.srt",
+  "EgoLifeQA/EgoLifeQA_A1_JAKE.json"
+ ],
+ "access_used": "open download",
+ "note": "Each example is one 30-s EgoLife video file with the lines of the hour-long DenseCaption SRT (Chinese first-person narration; lane 'narration') and Transcript SRT (speaker-tagged Chinese + English; lane 'user') that fall inside it, plus the EgoLifeQA item whose evidence target_time lies in the clip. SRT times count from the top of the hour (11:00:00); timeline times were shifted to seconds of the 30-s file, and QA times are HHMMSS+frame (20 fps).",
+ "examples": [
+  {
+   "title": "A1_JAKE DAY1 11:15:00–11:15:30: tripod set-up, dense first-person captions + bilingual dialogue + QA target",
+   "video_ref": "A1_JAKE/DAY1/DAY1_A1_JAKE_11150000.mp4",
+   "duration_s": 30.04,
+   "clip": "samples/media/egolife_1.mp4",
+   "clip_offset_s": 8,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.533,
+     "te": 1.866,
+     "lane": "narration",
+     "text": "我看了Shure"
+    },
+    {
+     "t": 1.333,
+     "te": 2.933,
+     "lane": "user",
+     "text": "Jake: 哦哦没有 / Jake: Oh, no."
+    },
+    {
+     "t": 2.4,
+     "te": 3.466,
+     "lane": "narration",
+     "text": "我继续向前走"
+    },
+    {
+     "t": 3.466,
+     "te": 5.0,
+     "lane": "narration",
+     "text": "Katrina走向窗台"
+    },
+    {
+     "t": 3.7,
+     "te": 4.9,
+     "lane": "user",
+     "text": "Jake: 还没那么有钱 / Jake: We're not that rich yet."
+    },
+    {
+     "t": 5.366,
+     "te": 6.6,
+     "lane": "narration",
+     "text": "我继续向前走"
+    },
+    {
+     "t": 5.866,
+     "te": 7.766,
+     "lane": "user",
+     "text": "Jake: 我们只能相信这个别墅 / Jake: We can only rely on this villa."
+    },
+    {
+     "t": 6.6,
+     "te": 8.366,
+     "lane": "narration",
+     "text": "我右手扶着小三脚架"
+    },
+    {
+     "t": 8.0,
+     "te": 9.766,
+     "lane": "user",
+     "text": "Jake: 或者相信北京电力吧 / Jake: Or trust Beijing Electric."
+    },
+    {
+     "t": 8.7,
+     "te": 10.333,
+     "lane": "narration",
+     "text": "我向小三脚架向后拿"
+    },
+    {
+     "t": 10.333,
+     "te": 11.533,
+     "lane": "narration",
+     "text": "我继续向前走"
+    },
+    {
+     "t": 11.366,
+     "te": 12.166,
+     "lane": "user",
+     "text": "Jake: 对 / Jake: Right."
+    },
+    {
+     "t": 11.533,
+     "te": 12.866,
+     "lane": "narration",
+     "text": "把小三脚架放到前面"
+    },
+    {
+     "t": 13.1,
+     "te": 14.333,
+     "lane": "narration",
+     "text": "我右向前走"
+    },
+    {
+     "t": 14.133,
+     "te": 14.933,
+     "lane": "user",
+     "text": "Shure:  感谢 / Shure: Thank you."
+    },
+    {
+     "t": 14.566,
+     "te": 16.0,
+     "lane": "narration",
+     "text": "我在桌前站住"
+    },
+    {
+     "t": 15.8,
+     "te": 17.333,
+     "lane": "user",
+     "text": "Jake: 好你们都开始装了 / Jake: Alright, you guys start installing."
+    },
+    {
+     "t": 16.0,
+     "te": 17.133,
+     "lane": "narration",
+     "text": "我右手扶着小三脚架"
+    },
+    {
+     "t": 17.133,
+     "te": 18.666,
+     "lane": "narration",
+     "text": "我向右挪了一下"
+    },
+    {
+     "t": 18.066,
+     "te": 21.1,
+     "lane": "user",
+     "text": "Shure:  我们我们可以 / Shure: We, we can..."
+    },
+    {
+     "t": 19.133,
+     "te": 20.133,
+     "lane": "narration",
+     "text": "我向后退了一步"
+    },
+    {
+     "t": 20.133,
+     "te": 21.966,
+     "lane": "narration",
+     "text": "我拿着小三脚架向后退了一步"
+    },
+    {
+     "t": 21.9,
+     "te": 23.033,
+     "lane": "user",
+     "text": "Jake: 可以边聊边装吧 / Jake: You can chat while installing."
+    },
+    {
+     "t": 22.133,
+     "te": 23.3,
+     "lane": "narration",
+     "text": "我向右转"
+    },
+    {
+     "t": 23.033,
+     "te": 23.3,
+     "lane": "user",
+     "text": " 俢硕：对 / Shure: Right."
+    },
+    {
+     "t": 23.7,
+     "te": 24.933,
+     "lane": "narration",
+     "text": "我看见大家说话"
+    },
+    {
+     "t": 23.9,
+     "te": 26.666,
+     "lane": "user",
+     "text": "Jake: 嗯或者说你们先带你们带点什么吧 / Jake: Hmm, or you guys can bring something first."
+    },
+    {
+     "t": 24.4,
+     "te": null,
+     "lane": "answer",
+     "text": "EgoLifeQA target for Q1 \"Who used the screwdriver first?\" (asked at DAY1 11210217) → Alice: Saw Alice tightening screws with a screwdriver"
+    },
+    {
+     "t": 24.933,
+     "te": 26.466,
+     "lane": "narration",
+     "text": "我向右挪了一下"
+    },
+    {
+     "t": 26.766,
+     "te": 28.0,
+     "lane": "narration",
+     "text": "我向左右挪动"
+    },
+    {
+     "t": 27.366,
+     "te": 28.733,
+     "lane": "user",
+     "text": "Jake: 你们带点什么 / Jake: What will you bring?"
+    },
+    {
+     "t": 28.0,
+     "te": 29.866,
+     "lane": "narration",
+     "text": "我把小三脚架拿到左边"
+    },
+    {
+     "t": 28.733,
+     "te": 31.2,
+     "lane": "user",
+     "text": "Jake: 哎这个这个眼镜你得带好 / Jake: Hey, these glasses, you need to wear them properly."
+    }
+   ],
+   "raw_format": "srt",
+   "raw": {
+    "EgoLifeCap/DenseCaption/A1_JAKE/DAY1/A1_JAKE_DAY1_11000000.srt (blocks in window)": "164\n00:15:00,533 --> 00:15:01,866\n我看了Shure\n\n165\n00:15:02,400 --> 00:15:03,466\n我继续向前走\n\n166\n00:15:03,466 --> 00:15:05,000\nKatrina走向窗台\n\n167\n00:15:05,366 --> 00:15:06,600\n我继续向前走\n\n168\n00:15:06,600 --> 00:15:08,366\n我右手扶着小三脚架\n\n169\n00:15:08,700 --> 00:15:10,333\n我向小三脚架向后拿\n\n170\n00:15:10,333 --> 00:15:11,533\n我继续向前走\n\n171\n00:15:11,533 --> 00:15:12,866\n把小三脚架放到前面\n\n172\n00:15:13,100 --> 00:15:14,333\n我右向前走\n\n173\n00:15:14,566 --> 00:15:16,000\n我在桌前站住\n\n174\n00:15:16,000 --> 00:15:17,133\n我右手扶着小三脚架\n\n175\n00:15:17,133 --> 00:15:18,666\n我向右挪了一下\n\n176\n00:15:19,133 --> 00:15:20,133\n我向后退了一步\n\n177\n00:15:20,133 --> 00:15:21,966\n我拿着小三脚架向后退了一步\n\n178\n00:15:22,133 --> 00:15:23,300\n我向右转\n\n179\n00:15:23,700 --> 00:15:24,933\n我看见大家说话\n\n180\n00:15:24,933 --> 00:15:26,466\n我向右挪了一下\n\n181\n00:15:26,766 --> 00:15:28,000\n我向左右挪动\n\n182\n00:15:28,000 --> 00:15:29,866\n我把小三脚架拿到左边",
+    "EgoLifeCap/Transcript/A1_JAKE/DAY1/A1_JAKE_DAY1_11000000.srt (blocks in window)": "112\n00:15:01,333 --> 00:15:02,933\nJake: 哦哦没有\nJake: Oh, no.\n\n113\n00:15:03,700 --> 00:15:04,900\nJake: 还没那么有钱\nJake: We're not that rich yet.\n\n114\n00:15:05,866 --> 00:15:07,766\nJake: 我们只能相信这个别墅\nJake: We can only rely on this villa.\n\n115\n00:15:08,000 --> 00:15:09,766\nJake: 或者相信北京电力吧\nJake: Or trust Beijing Electric.\n\n116\n00:15:11,366 --> 00:15:12,166\nJake: 对\nJake: Right.\n\n117\n00:15:14,133 --> 00:15:14,933\nShure:  感谢\nShure: Thank you.\n\n118\n00:15:15,800 --> 00:15:17,333\nJake: 好你们都开始装了\nJake: Alright, you guys start installing.\n\n119\n00:15:18,066 --> 00:15:21,100\nShure:  我们我们可以\nShure: We, we can...\n\n120\n00:15:21,900 --> 00:15:23,033\nJake: 可以边聊边装吧\nJake: You can chat while installing.\n\n121\n00:15:23,033 --> 00:15:23,300\n 俢硕：对\nShure: Right.\n\n122\n00:15:23,900 --> 00:15:26,666\nJake: 嗯或者说你们先带你们带点什么吧\nJake: Hmm, or you guys can bring something first.\n\n123\n00:15:27,366 --> 00:15:28,733\nJake: 你们带点什么\nJake: What will you bring?\n\n124\n00:15:28,733 --> 00:15:31,200\nJake: 哎这个这个眼镜你得带好\nJake: Hey, these glasses, you need to wear them properly.",
+    "EgoLifeQA/EgoLifeQA_A1_JAKE.json (item)": {
+     "ID": "1",
+     "query_time": {
+      "date": "DAY1",
+      "time": "11210217"
+     },
+     "type": "EntityLog",
+     "type_chinese": "实体日志",
+     "need_audio": false,
+     "need_name": true,
+     "last_time": false,
+     "trigger": "The table was filled with various tools and parts",
+     "trigger_chinese": "桌上摆满了各种工具和零件",
+     "question": "Who used the screwdriver first?",
+     "question_chinese": "谁最先使用过螺丝刀？",
+     "choice_a": "Tasha",
+     "choice_a_chinese": "Tasha",
+     "choice_b": "Alice",
+     "choice_b_chinese": "Alice",
+     "choice_c": "Shure",
+     "choice_c_chinese": "Shure",
+     "choice_d": "Lucia",
+     "choice_d_chinese": "Lucia",
+     "answer": "B",
+     "target_time": {
+      "date": "DAY1",
+      "time": "11152408"
+     },
+     "keywords": "use screwdriver",
+     "reason": "Saw Alice tightening screws with a screwdriver",
+     "reason_chinese": "看见Alice用螺丝刀紧螺丝"
+    }
+   }
+  },
+  {
+   "title": "A1_JAKE DAY1 11:19:00–11:19:30: music and dance suggestion while assembling, captions + dialogue + QA target",
+   "video_ref": "A1_JAKE/DAY1/DAY1_A1_JAKE_11190000.mp4",
+   "duration_s": 30.04,
+   "clip": "samples/media/egolife_2.mp4",
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.166,
+     "te": 2.933,
+     "lane": "narration",
+     "text": "我点头我又向左转头"
+    },
+    {
+     "t": 0.266,
+     "te": 1.833,
+     "lane": "user",
+     "text": "Alice: 给大家一个比较干劲的 / Alice: Let's play something energetic for everyone."
+    },
+    {
+     "t": 3.533,
+     "te": 5.533,
+     "lane": "narration",
+     "text": "我继续看着大家修东西"
+    },
+    {
+     "t": 3.733,
+     "te": 4.166,
+     "lane": "user",
+     "text": "Jake: 好 / Jake: Okay."
+    },
+    {
+     "t": 4.033,
+     "te": 6.066,
+     "lane": "user",
+     "text": "Katrina:  那个东北雨姐的BGM / Katrina: How about some upbeat music from Northeast China?"
+    },
+    {
+     "t": 5.8,
+     "te": 6.6,
+     "lane": "narration",
+     "text": "我又转头"
+    },
+    {
+     "t": 6.6,
+     "te": 8.866,
+     "lane": "narration",
+     "text": "头转到中间响起音乐"
+    },
+    {
+     "t": 6.966,
+     "te": 10.5,
+     "lane": "user",
+     "text": "Shure:  哈哈哈哈哈ok / Shure: Hahaha, okay."
+    },
+    {
+     "t": 7.1,
+     "te": 9.133,
+     "lane": "user",
+     "text": "Jake:哈哈哈 / Jake: Hahaha."
+    },
+    {
+     "t": 8.866,
+     "te": 11.333,
+     "lane": "narration",
+     "text": "我笑了大家都在笑"
+    },
+    {
+     "t": 9.466,
+     "te": 10.266,
+     "lane": "user",
+     "text": "Jake:可以可以 / Jake: Okay, okay."
+    },
+    {
+     "t": 10.266,
+     "te": 12.366,
+     "lane": "user",
+     "text": " Jake:来自东方的小小震撼 / Jake: A little shock from the East."
+    },
+    {
+     "t": 11.333,
+     "te": 12.7,
+     "lane": "narration",
+     "text": "我左右转头"
+    },
+    {
+     "t": 11.966,
+     "te": 13.9,
+     "lane": "user",
+     "text": "Alice:笑死我了贼有劲 / Alice: I'm dying of laughter, it's so powerful."
+    },
+    {
+     "t": 13.333,
+     "te": 14.4,
+     "lane": "narration",
+     "text": "我又向左转头"
+    },
+    {
+     "t": 14.333,
+     "te": 14.8,
+     "lane": "user",
+     "text": "Jake: 对 / Jake: Yeah."
+    },
+    {
+     "t": 14.4,
+     "te": 16.3,
+     "lane": "narration",
+     "text": "我和大家一起说话"
+    },
+    {
+     "t": 15.633,
+     "te": 16.066,
+     "lane": "user",
+     "text": "Shure: 来 / Shure: Come on."
+    },
+    {
+     "t": 16.3,
+     "te": 17.366,
+     "lane": "user",
+     "text": "Jake: 跳吧要不然 / Jake: Jump then, or else..."
+    },
+    {
+     "t": 16.8,
+     "te": 18.066,
+     "lane": "narration",
+     "text": "我又向右转头"
+    },
+    {
+     "t": 17.4,
+     "te": null,
+     "lane": "answer",
+     "text": "EgoLifeQA target for Q5 \"Katrina is now suggesting dancing, what other activities has she suggested before?\" (asked at DAY1 11563003) → Suggested collecting leaves to make bookmarks: Katrina suggested collecting leaves to make bookmarks"
+    },
+    {
+     "t": 18.066,
+     "te": 19.466,
+     "lane": "narration",
+     "text": "我向大家提议跳舞"
+    },
+    {
+     "t": 18.966,
+     "te": 20.466,
+     "lane": "user",
+     "text": "Shure:  我想扛起来了 / Shure: I want to lift it up."
+    },
+    {
+     "t": 19.466,
+     "te": 20.666,
+     "lane": "narration",
+     "text": "我又转回头来"
+    },
+    {
+     "t": 20.8,
+     "te": 22.1,
+     "lane": "narration",
+     "text": "我又向右转头"
+    },
+    {
+     "t": 21.1,
+     "te": 21.766,
+     "lane": "user",
+     "text": "Katrina: 扛起来 / Katrina: Lift it up."
+    },
+    {
+     "t": 22.733,
+     "te": 25.1,
+     "lane": "narration",
+     "text": "我坐在原地笑发笑"
+    },
+    {
+     "t": 26.0,
+     "te": 28.0,
+     "lane": "user",
+     "text": "Shure:  这个半嵌入就行是吧 / Shure: Just embed this halfway, right?"
+    },
+    {
+     "t": 26.6,
+     "te": 28.7,
+     "lane": "narration",
+     "text": "我听见音乐向右看"
+    },
+    {
+     "t": 28.0,
+     "te": 28.466,
+     "lane": "user",
+     "text": "Shure:  这样 / Shure: Like this."
+    },
+    {
+     "t": 28.633,
+     "te": 30.233,
+     "lane": "user",
+     "text": "Jake: 对对固定就行 / Jake: Yeah, just fix it."
+    },
+    {
+     "t": 29.666,
+     "te": 30.666,
+     "lane": "narration",
+     "text": "我点头"
+    }
+   ],
+   "raw_format": "srt",
+   "raw": {
+    "EgoLifeCap/DenseCaption/A1_JAKE/DAY1/A1_JAKE_DAY1_11000000.srt (blocks in window)": "286\n00:19:00,166 --> 00:19:02,933\n我点头我又向左转头\n\n287\n00:19:03,533 --> 00:19:05,533\n我继续看着大家修东西\n\n288\n00:19:05,800 --> 00:19:06,600\n我又转头\n\n289\n00:19:06,600 --> 00:19:08,866\n头转到中间响起音乐\n\n290\n00:19:08,866 --> 00:19:11,333\n我笑了大家都在笑\n\n291\n00:19:11,333 --> 00:19:12,700\n我左右转头\n\n292\n00:19:13,333 --> 00:19:14,400\n我又向左转头\n\n293\n00:19:14,400 --> 00:19:16,300\n我和大家一起说话\n\n294\n00:19:16,800 --> 00:19:18,066\n我又向右转头\n\n295\n00:19:18,066 --> 00:19:19,466\n我向大家提议跳舞\n\n296\n00:19:19,466 --> 00:19:20,666\n我又转回头来\n\n297\n00:19:20,800 --> 00:19:22,100\n我又向右转头\n\n298\n00:19:22,733 --> 00:19:25,100\n我坐在原地笑发笑\n\n299\n00:19:26,600 --> 00:19:28,700\n我听见音乐向右看\n\n300\n00:19:29,666 --> 00:19:30,666\n我点头",
+    "EgoLifeCap/Transcript/A1_JAKE/DAY1/A1_JAKE_DAY1_11000000.srt (blocks in window)": "235\n00:19:00,266 --> 00:19:01,833\nAlice: 给大家一个比较干劲的\nAlice: Let's play something energetic for everyone.\n\n236\n00:19:03,733 --> 00:19:04,166\nJake: 好\nJake: Okay.\n\n237\n00:19:04,033 --> 00:19:06,066\nKatrina:  那个东北雨姐的BGM\nKatrina: How about some upbeat music from Northeast China?\n\n238\n00:19:06,966 --> 00:19:10,500\nShure:  哈哈哈哈哈ok\nShure: Hahaha, okay.\n\n239\n00:19:07,100 --> 00:19:09,133\nJake:哈哈哈\nJake: Hahaha.\n\n240\n00:19:09,466 --> 00:19:10,266\nJake:可以可以\nJake: Okay, okay.\n\n241\n00:19:10,266 --> 00:19:12,366\n Jake:来自东方的小小震撼\nJake: A little shock from the East.\n\n242\n00:19:11,966 --> 00:19:13,900\nAlice:笑死我了贼有劲\nAlice: I'm dying of laughter, it's so powerful.\n\n243\n00:19:14,333 --> 00:19:14,800\nJake: 对\nJake: Yeah.\n\n244\n00:19:15,633 --> 00:19:16,066\nShure: 来\nShure: Come on.\n\n245\n00:19:16,300 --> 00:19:17,366\nJake: 跳吧要不然\nJake: Jump then, or else...\n\n246\n00:19:18,966 --> 00:19:20,466\nShure:  我想扛起来了\nShure: I want to lift it up.\n\n247\n00:19:21,100 --> 00:19:21,766\nKatrina: 扛起来\nKatrina: Lift it up.\n\n248\n00:19:26,000 --> 00:19:28,000\nShure:  这个半嵌入就行是吧\nShure: Just embed this halfway, right?\n\n249\n00:19:28,000 --> 00:19:28,466\nShure:  这样\nShure: Like this.\n\n250\n00:19:28,633 --> 00:19:30,233\nJake: 对对固定就行\nJake: Yeah, just fix it.",
+    "EgoLifeQA/EgoLifeQA_A1_JAKE.json (item)": {
+     "ID": "5",
+     "query_time": {
+      "date": "DAY1",
+      "time": "11563003"
+     },
+     "type": "EventRecall",
+     "type_chinese": "事件回忆",
+     "need_audio": true,
+     "need_name": true,
+     "last_time": false,
+     "trigger": "Katrina suggested dancing",
+     "trigger_chinese": "Katrina提议跳舞",
+     "question": "Katrina is now suggesting dancing, what other activities has she suggested before?",
+     "question_chinese": "Katrina现在提议跳舞，她之前提议过什么其他活动？",
+     "choice_a": "Pressed flowers",
+     "choice_a_chinese": "压花",
+     "choice_b": "Suggested collecting leaves to make bookmarks",
+     "choice_b_chinese": "提议捡叶子做书签",
+     "choice_c": "Made food",
+     "choice_c_chinese": "做美食",
+     "choice_d": "Made paper puppies",
+     "choice_d_chinese": "做纸小狗",
+     "answer": "B",
+     "target_time": {
+      "date": "DAY1",
+      "time": "11191708"
+     },
+     "keywords": "Katrina suggest activities",
+     "reason": "Katrina suggested collecting leaves to make bookmarks",
+     "reason_chinese": "Katrina提议捡叶子做书签"
+    }
+   }
+  }
+ ]
+}

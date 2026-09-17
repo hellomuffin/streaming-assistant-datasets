@@ -1,0 +1,716 @@
+{
+ "slug": "inf-streams-train",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/mit-han-lab/Inf-Stream-Train/resolve/main/train_s12w24_with_seeks.jsonl (record 0 and record 150374, located with train_s12w24_seeks.jsonl byte offsets)",
+  "https://huggingface.co/datasets/mit-han-lab/Inf-Stream-Train/resolve/main/Baidu_NHL/NHL_11 02 2013 Philadelphia - Toronto - YouTube-04.mp4",
+  "https://huggingface.co/datasets/mit-han-lab/Inf-Stream-Train/resolve/main/Baidu_NBA_EN/4月29日 第七场 全场 英语.mp4"
+ ],
+ "access_used": "open download",
+ "note": "One example is one SFT chunk: a 24 s window [video_start, video_end] of a full broadcast game, the fixed prompt 'Commentate on this match' with the preceding commentary in 'previous', and the target commentary as per-word [time, time, word] triples. In this file many word pairs are reversed (first time > second), so the timeline groups words into sentences and uses the min/max of the times; the raw keeps the original order. Footage is broadcaster-owned and hosted in the HF repo without a stated license.",
+ "examples": [
+  {
+   "title": "NHL Philadelphia at Toronto (2 Nov 2013), 63.15–87.15 s: pre-game commentary, 6 sentences with silent gaps",
+   "video_ref": "Baidu_NHL/NHL_11 02 2013 Philadelphia - Toronto - YouTube-04.mp4 [63.15–87.15 s]",
+   "duration_s": 6818.92,
+   "clip": "samples/media/inf-streams-train_1.mp4",
+   "clip_offset_s": 64.0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 63.15,
+     "te": 87.15,
+     "lane": "user",
+     "text": "Commentate on this match"
+    },
+    {
+     "t": 63.17,
+     "te": 65.69,
+     "lane": "commentary",
+     "text": "Greg Leafs and the Flyers on Sports in Ontario."
+    },
+    {
+     "t": 66.91,
+     "te": 71.33,
+     "lane": "commentary",
+     "text": "Thank you very much, Darren, and welcome to the Air Canada Center."
+    },
+    {
+     "t": 72.73,
+     "te": 73.13,
+     "lane": "commentary",
+     "text": "The Leafs return home after a 3-0 road trip."
+    },
+    {
+     "t": 79.71,
+     "te": 81.49,
+     "lane": "commentary",
+     "text": "James Reimer is 1-2-0 lifetime against the Flyers with a 3.05 goals-against average."
+    },
+    {
+     "t": 83.01,
+     "te": 87.01,
+     "lane": "commentary",
+     "text": "Ilya Bryzgalov, a perfect 5-0 against the Leafs."
+    }
+   ],
+   "raw_format": "jsonl line",
+   "raw": [
+    {
+     "role": "user",
+     "content": [
+      {
+       "type": "video",
+       "video": "Baidu_NHL/NHL_11 02 2013 Philadelphia - Toronto - YouTube-04.mp4",
+       "video_start": 63.15,
+       "video_end": 87.15
+      },
+      {
+       "type": "text",
+       "text": "Commentate on this match",
+       "previous": "Philadelphia Flyers have won three of their last four. Joe Bowen, Millen,",
+       "title": "NHL_11 02 2013 Philadelphia - Toronto - YouTube-04",
+       "category": null
+      }
+     ]
+    },
+    {
+     "role": "assistant",
+     "content": [
+      {
+       "type": "text_stream",
+       "text_stream": [
+        [
+         65.05,
+         63.31,
+         "Greg"
+        ],
+        [
+         65.69,
+         65.38,
+         "Leafs"
+        ],
+        [
+         65.38,
+         65.06,
+         "and"
+        ],
+        [
+         65.06,
+         64.75,
+         "the"
+        ],
+        [
+         64.75,
+         64.43,
+         "Flyers"
+        ],
+        [
+         64.43,
+         64.11,
+         "on"
+        ],
+        [
+         64.11,
+         63.8,
+         "Sports"
+        ],
+        [
+         63.8,
+         63.48,
+         "in"
+        ],
+        [
+         63.48,
+         63.17,
+         "Ontario."
+        ],
+        [
+         69.77,
+         69.05,
+         "Thank"
+        ],
+        [
+         69.05,
+         68.34,
+         "you"
+        ],
+        [
+         68.34,
+         67.62,
+         "very"
+        ],
+        [
+         67.62,
+         66.91,
+         "much,"
+        ],
+        [
+         71.05,
+         67.19,
+         "Darren,"
+        ],
+        [
+         71.33,
+         70.99,
+         "and"
+        ],
+        [
+         70.99,
+         70.64,
+         "welcome"
+        ],
+        [
+         70.64,
+         70.3,
+         "to"
+        ],
+        [
+         70.3,
+         69.96,
+         "the"
+        ],
+        [
+         69.96,
+         69.62,
+         "Air"
+        ],
+        [
+         69.62,
+         69.27,
+         "Canada"
+        ],
+        [
+         69.27,
+         68.93,
+         "Center."
+        ],
+        [
+         73.13,
+         73.09,
+         "The"
+        ],
+        [
+         73.09,
+         73.04,
+         "Leafs"
+        ],
+        [
+         73.04,
+         73.0,
+         "return"
+        ],
+        [
+         73.0,
+         72.95,
+         "home"
+        ],
+        [
+         72.95,
+         72.91,
+         "after"
+        ],
+        [
+         72.91,
+         72.86,
+         "a"
+        ],
+        [
+         72.86,
+         72.82,
+         "3-0"
+        ],
+        [
+         72.82,
+         72.77,
+         "road"
+        ],
+        [
+         72.77,
+         72.73,
+         "trip."
+        ],
+        [
+         79.71,
+         79.85,
+         "James"
+        ],
+        [
+         79.85,
+         79.98,
+         "Reimer"
+        ],
+        [
+         79.98,
+         80.12,
+         "is"
+        ],
+        [
+         80.12,
+         80.26,
+         "1-2-0"
+        ],
+        [
+         80.26,
+         80.39,
+         "lifetime"
+        ],
+        [
+         80.39,
+         80.53,
+         "against"
+        ],
+        [
+         80.53,
+         80.67,
+         "the"
+        ],
+        [
+         80.67,
+         80.81,
+         "Flyers"
+        ],
+        [
+         80.81,
+         80.94,
+         "with"
+        ],
+        [
+         80.94,
+         81.08,
+         "a"
+        ],
+        [
+         81.08,
+         81.22,
+         "3.05"
+        ],
+        [
+         81.22,
+         81.35,
+         "goals-against"
+        ],
+        [
+         81.35,
+         81.49,
+         "average."
+        ],
+        [
+         85.95,
+         84.48,
+         "Ilya"
+        ],
+        [
+         84.48,
+         83.01,
+         "Bryzgalov,"
+        ],
+        [
+         87.01,
+         86.69,
+         "a"
+        ],
+        [
+         86.69,
+         86.36,
+         "perfect"
+        ],
+        [
+         86.36,
+         86.04,
+         "5-0"
+        ],
+        [
+         86.04,
+         85.72,
+         "against"
+        ],
+        [
+         85.72,
+         85.39,
+         "the"
+        ],
+        [
+         85.39,
+         85.07,
+         "Leafs."
+        ]
+       ],
+       "qa_stream": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "NBA playoffs Game 7, Bucks at Celtics, 49.3–73.3 s: lineup commentary",
+   "video_ref": "Baidu_NBA_EN/4月29日 第七场 全场 英语.mp4 [49.3–73.3 s]",
+   "duration_s": 6277.88,
+   "clip": "samples/media/inf-streams-train_2.mp4",
+   "clip_offset_s": 52.0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 49.3,
+     "te": 73.3,
+     "lane": "user",
+     "text": "Commentate on this match"
+    },
+    {
+     "t": 29.9,
+     "te": 54.58,
+     "lane": "commentary",
+     "text": "wins, 6 in Milwaukee."
+    },
+    {
+     "t": 55.06,
+     "te": 57.25,
+     "lane": "commentary",
+     "text": "Bledsoe's got to keep on grinding, Gus."
+    },
+    {
+     "t": 57.25,
+     "te": 61.56,
+     "lane": "commentary",
+     "text": "Don Maker continue with the rim protection, Stretching out the defense."
+    },
+    {
+     "t": 61.96,
+     "te": 63.04,
+     "lane": "commentary",
+     "text": "And, of course, Chris and Giannis."
+    },
+    {
+     "t": 63.36,
+     "te": 64.36,
+     "lane": "commentary",
+     "text": "Just beat Chris and Giannis."
+    },
+    {
+     "t": 65.42,
+     "te": 68.99,
+     "lane": "commentary",
+     "text": "Each team has won all of their games at home."
+    },
+    {
+     "t": 69.17,
+     "te": 73.23,
+     "lane": "commentary",
+     "text": "So for Boston, they'll send out this lineup and the young guys have"
+    }
+   ],
+   "raw_format": "jsonl line",
+   "raw": [
+    {
+     "role": "user",
+     "content": [
+      {
+       "type": "video",
+       "video": "Baidu_NBA_EN/4月29日 第七场 全场 英语.mp4",
+       "video_start": 49.3,
+       "video_end": 73.3
+      },
+      {
+       "type": "text",
+       "text": "Commentate on this match",
+       "previous": "This is a presentation of Fox Sports. We are Fox Sports. 86",
+       "title": "4月29日 第七场 全场 英语",
+       "category": null
+      }
+     ]
+    },
+    {
+     "role": "assistant",
+     "content": [
+      {
+       "type": "text_stream",
+       "text_stream": [
+        [
+         29.9,
+         52.46,
+         "wins,"
+        ],
+        [
+         53.64,
+         53.95,
+         "6"
+        ],
+        [
+         53.95,
+         54.27,
+         "in"
+        ],
+        [
+         54.27,
+         54.58,
+         "Milwaukee."
+        ],
+        [
+         55.06,
+         55.32,
+         "Bledsoe's"
+        ],
+        [
+         55.32,
+         55.57,
+         "got"
+        ],
+        [
+         55.57,
+         55.83,
+         "to"
+        ],
+        [
+         55.83,
+         56.09,
+         "keep"
+        ],
+        [
+         56.09,
+         56.34,
+         "on"
+        ],
+        [
+         56.34,
+         56.6,
+         "grinding,"
+        ],
+        [
+         56.84,
+         57.25,
+         "Gus."
+        ],
+        [
+         57.25,
+         57.67,
+         "Don"
+        ],
+        [
+         57.67,
+         58.08,
+         "Maker"
+        ],
+        [
+         58.08,
+         58.49,
+         "continue"
+        ],
+        [
+         58.49,
+         58.9,
+         "with"
+        ],
+        [
+         58.9,
+         59.31,
+         "the"
+        ],
+        [
+         59.31,
+         59.73,
+         "rim"
+        ],
+        [
+         59.73,
+         60.14,
+         "protection,"
+        ],
+        [
+         60.44,
+         60.72,
+         "Stretching"
+        ],
+        [
+         60.72,
+         61.0,
+         "out"
+        ],
+        [
+         61.0,
+         61.28,
+         "the"
+        ],
+        [
+         61.28,
+         61.56,
+         "defense."
+        ],
+        [
+         61.96,
+         62.0,
+         "And,"
+        ],
+        [
+         62.08,
+         62.2,
+         "of"
+        ],
+        [
+         62.2,
+         62.32,
+         "course,"
+        ],
+        [
+         62.42,
+         62.63,
+         "Chris"
+        ],
+        [
+         62.63,
+         62.83,
+         "and"
+        ],
+        [
+         62.83,
+         63.04,
+         "Giannis."
+        ],
+        [
+         63.36,
+         63.56,
+         "Just"
+        ],
+        [
+         63.56,
+         63.76,
+         "beat"
+        ],
+        [
+         63.76,
+         63.96,
+         "Chris"
+        ],
+        [
+         63.96,
+         64.16,
+         "and"
+        ],
+        [
+         64.16,
+         64.36,
+         "Giannis."
+        ],
+        [
+         65.42,
+         65.78,
+         "Each"
+        ],
+        [
+         65.78,
+         66.13,
+         "team"
+        ],
+        [
+         66.13,
+         66.49,
+         "has"
+        ],
+        [
+         66.49,
+         66.85,
+         "won"
+        ],
+        [
+         66.85,
+         67.2,
+         "all"
+        ],
+        [
+         67.2,
+         67.56,
+         "of"
+        ],
+        [
+         67.56,
+         67.92,
+         "their"
+        ],
+        [
+         67.92,
+         68.28,
+         "games"
+        ],
+        [
+         68.28,
+         68.63,
+         "at"
+        ],
+        [
+         68.63,
+         68.99,
+         "home."
+        ],
+        [
+         69.17,
+         69.43,
+         "So"
+        ],
+        [
+         69.43,
+         69.69,
+         "for"
+        ],
+        [
+         69.69,
+         69.95,
+         "Boston,"
+        ],
+        [
+         70.23,
+         70.53,
+         "they'll"
+        ],
+        [
+         70.53,
+         70.83,
+         "send"
+        ],
+        [
+         70.83,
+         71.13,
+         "out"
+        ],
+        [
+         71.13,
+         71.43,
+         "this"
+        ],
+        [
+         71.43,
+         71.73,
+         "lineup"
+        ],
+        [
+         71.73,
+         72.03,
+         "and"
+        ],
+        [
+         72.03,
+         72.33,
+         "the"
+        ],
+        [
+         72.33,
+         72.63,
+         "young"
+        ],
+        [
+         72.63,
+         72.93,
+         "guys"
+        ],
+        [
+         72.93,
+         73.23,
+         "have"
+        ]
+       ],
+       "qa_stream": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

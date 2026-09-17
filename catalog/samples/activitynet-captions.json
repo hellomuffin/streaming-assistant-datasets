@@ -1,0 +1,304 @@
+{
+ "slug": "activitynet-captions",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://cs.stanford.edu/people/ranjaykrishna/densevid/captions.zip :: val_1.json, val_2.json"
+ ],
+ "access_used": "open download",
+ "note": "An example is one validation video annotated twice by independent annotators: val_1.json (timeline lane \"caption\") and val_2.json (lane \"other\"). Each sentence has its own [start, end] in seconds; segments may overlap and may leave uncaptioned gaps. Sentences keep their original leading spaces. Videos are YouTube, so no clip.",
+ "examples": [
+  {
+   "title": "v_EvJqfGXb5Fo: Children raking leaves in a yard, dog runs in — val_1 7 vs val_2 5 sentences",
+   "video_ref": "YouTube EvJqfGXb5Fo (id in file: v_EvJqfGXb5Fo)",
+   "duration_s": 158.18,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0,
+     "te": 12.65,
+     "lane": "caption",
+     "text": "We see a girl raking leaves in a yard."
+    },
+    {
+     "t": 0,
+     "te": 34.01,
+     "lane": "other",
+     "text": "A young girl is outside raking a leaves out of the back yard."
+    },
+    {
+     "t": 14.24,
+     "te": 21.35,
+     "lane": "caption",
+     "text": " We then see a  boy with a rake point to a tree."
+    },
+    {
+     "t": 34.01,
+     "te": 64.06,
+     "lane": "other",
+     "text": "The camera then comes along and shows her working hard and then stopping to take a break."
+    },
+    {
+     "t": 48.24,
+     "te": 51.41,
+     "lane": "caption",
+     "text": " A large brown dog enters the room."
+    },
+    {
+     "t": 64.85,
+     "te": 97.28,
+     "lane": "other",
+     "text": "A small young boy is also outside and he begins smiling because his section of leaves are in a pile while the girl is still working."
+    },
+    {
+     "t": 87.79,
+     "te": 93.32,
+     "lane": "caption",
+     "text": " A woman walks down the street."
+    },
+    {
+     "t": 97.28,
+     "te": 142.36,
+     "lane": "other",
+     "text": "The boy then takes his rake and runs across the yard with it as the dog comes running out of nowhere."
+    },
+    {
+     "t": 116.26,
+     "te": 123.38,
+     "lane": "caption",
+     "text": " The boy scratches his chin."
+    },
+    {
+     "t": 140.78,
+     "te": 146.31,
+     "lane": "caption",
+     "text": " The boy is playing with his rake."
+    },
+    {
+     "t": 142.36,
+     "te": 158.18,
+     "lane": "other",
+     "text": "While this is taking place,the girl continues to work hard to get her portion done as the boy laughs and plays."
+    },
+    {
+     "t": 153.43,
+     "te": 158.18,
+     "lane": "caption",
+     "text": " We see the dog run towards the camera."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "val_1.json": {
+     "v_EvJqfGXb5Fo": {
+      "duration": 158.18,
+      "timestamps": [
+       [
+        0,
+        12.65
+       ],
+       [
+        14.24,
+        21.35
+       ],
+       [
+        48.24,
+        51.41
+       ],
+       [
+        87.79,
+        93.32
+       ],
+       [
+        116.26,
+        123.38
+       ],
+       [
+        140.78,
+        146.31
+       ],
+       [
+        153.43,
+        158.18
+       ]
+      ],
+      "sentences": [
+       "We see a girl raking leaves in a yard.",
+       " We then see a  boy with a rake point to a tree.",
+       " A large brown dog enters the room.",
+       " A woman walks down the street.",
+       " The boy scratches his chin.",
+       " The boy is playing with his rake.",
+       " We see the dog run towards the camera."
+      ]
+     }
+    },
+    "val_2.json": {
+     "v_EvJqfGXb5Fo": {
+      "duration": 158.18,
+      "timestamps": [
+       [
+        0,
+        34.01
+       ],
+       [
+        34.01,
+        64.06
+       ],
+       [
+        64.85,
+        97.28
+       ],
+       [
+        97.28,
+        142.36
+       ],
+       [
+        142.36,
+        158.18
+       ]
+      ],
+      "sentences": [
+       "A young girl is outside raking a leaves out of the back yard.",
+       "The camera then comes along and shows her working hard and then stopping to take a break.",
+       "A small young boy is also outside and he begins smiling because his section of leaves are in a pile while the girl is still working.",
+       "The boy then takes his rake and runs across the yard with it as the dog comes running out of nowhere.",
+       "While this is taking place,the girl continues to work hard to get her portion done as the boy laughs and plays."
+      ]
+     }
+    }
+   }
+  },
+  {
+   "title": "v_u8ykXBc2Efs: Two children washing dishes, mother steps in — val_1 5 vs val_2 4 sentences",
+   "video_ref": "YouTube u8ykXBc2Efs (id in file: v_u8ykXBc2Efs)",
+   "duration_s": 104.85,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0,
+     "te": 104.85,
+     "lane": "caption",
+     "text": "A young girl and boy are washing dishes in a kitchen."
+    },
+    {
+     "t": 0,
+     "te": 104.85,
+     "lane": "other",
+     "text": "A boy and girl are standing in front of a kitchen sink."
+    },
+    {
+     "t": 0,
+     "te": 43.51,
+     "lane": "other",
+     "text": " They are doing the dishes in the sink."
+    },
+    {
+     "t": 19.92,
+     "te": 35.65,
+     "lane": "caption",
+     "text": " The camera moves to in front of the kids and their mom enters the room."
+    },
+    {
+     "t": 35.65,
+     "te": 43.51,
+     "lane": "other",
+     "text": " A woman walks behind them and open opens the refrigerator."
+    },
+    {
+     "t": 36.17,
+     "te": 59.77,
+     "lane": "caption",
+     "text": " The mom adds something to the fridge and puts something in a cabinet."
+    },
+    {
+     "t": 58.19,
+     "te": 61.86,
+     "lane": "caption",
+     "text": " The mother leaves the room."
+    },
+    {
+     "t": 80.74,
+     "te": 104.85,
+     "lane": "caption",
+     "text": " the mother enters and adds some dishes from the rack back into the sink to be rinsed again and shows the boy what was wrong with the pot."
+    },
+    {
+     "t": 84.93,
+     "te": 104.85,
+     "lane": "other",
+     "text": " She then starts helping them rinse the dishes."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "val_1.json": {
+     "v_u8ykXBc2Efs": {
+      "duration": 104.85,
+      "timestamps": [
+       [
+        0,
+        104.85
+       ],
+       [
+        19.92,
+        35.65
+       ],
+       [
+        36.17,
+        59.77
+       ],
+       [
+        58.19,
+        61.86
+       ],
+       [
+        80.74,
+        104.85
+       ]
+      ],
+      "sentences": [
+       "A young girl and boy are washing dishes in a kitchen.",
+       " The camera moves to in front of the kids and their mom enters the room.",
+       " The mom adds something to the fridge and puts something in a cabinet.",
+       " The mother leaves the room.",
+       " the mother enters and adds some dishes from the rack back into the sink to be rinsed again and shows the boy what was wrong with the pot."
+      ]
+     }
+    },
+    "val_2.json": {
+     "v_u8ykXBc2Efs": {
+      "duration": 104.85,
+      "timestamps": [
+       [
+        0,
+        104.85
+       ],
+       [
+        0,
+        43.51
+       ],
+       [
+        35.65,
+        43.51
+       ],
+       [
+        84.93,
+        104.85
+       ]
+      ],
+      "sentences": [
+       "A boy and girl are standing in front of a kitchen sink.",
+       " They are doing the dishes in the sink.",
+       " A woman walks behind them and open opens the refrigerator.",
+       " She then starts helping them rinse the dishes."
+      ]
+     }
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,546 @@
+{
+ "slug": "lol-v2t",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://esslab.jp/~tanaka/dataset/lol-v2t/annotations/annotations.tar.gz -> annotations/validation.json"
+ ],
+ "access_used": "open download",
+ "note": "One example = one clip record: the ASR of the English Worlds casters cut into sentences with [start,end] seconds. Times are relative to the clip start, not to the full YouTube match video (the clip offsets are only in the authors' create-lol-v2t tool). Videos are YouTube (Riot policy), so no clip. In these files consecutive sentences share boundaries (end = next start), so caster pauses are not visible as gaps.",
+ "examples": [
+  {
+   "title": "044_jsjcmOKtVqs-098: 126 s clip, 24 caster sentences",
+   "video_ref": "YouTube jsjcmOKtVqs (clip 098 of match video 044)",
+   "duration_s": 126.19,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 3.19,
+     "lane": "commentary",
+     "text": "minutes into the game they take 4 seconds five turrets so they're out"
+    },
+    {
+     "t": 3.19,
+     "te": 7.47,
+     "lane": "commentary",
+     "text": "Baron his life which means every single time spent scaring his bottom Lane"
+    },
+    {
+     "t": 7.47,
+     "te": 8.3,
+     "lane": "commentary",
+     "text": "that's a chance"
+    },
+    {
+     "t": 8.3,
+     "te": 15.79,
+     "lane": "commentary",
+     "text": "I need to start the Baron and they will be able to force you 910 to t-pin with your guard and fight for versus 5 in a teamfight"
+    },
+    {
+     "t": 15.79,
+     "te": 25.98,
+     "lane": "commentary",
+     "text": "and that's obviously not gonna work if you are c9 so now the most annoying objective is actually alive if you are trying to play split push let's see if they can get down at least a turret karna"
+    },
+    {
+     "t": 25.98,
+     "te": 37.97,
+     "lane": "commentary",
+     "text": "sitting with zero and they need gold so desperately they certainly do a multiple members none more so than sneaky short of a second item this far and look at the goal date here"
+    },
+    {
+     "t": 37.97,
+     "te": 49.2,
+     "lane": "commentary",
+     "text": "3500 order five god bless that is a massive deficit to have to recover from easy to items fully completed on top of having the cue ball well and Faisal is gone"
+    },
+    {
+     "t": 49.2,
+     "te": 52.06,
+     "lane": "commentary",
+     "text": "Carson makes sure he gets that one the teepee has to be canceled there"
+    },
+    {
+     "t": 52.06,
+     "te": 54.49,
+     "lane": "commentary",
+     "text": "there's no way you can go through with that one"
+    },
+    {
+     "t": 54.49,
+     "te": 63.76,
+     "lane": "commentary",
+     "text": "if your cloud 9 tier 2 turret under siege here in the top side and with this being taken down orangy has now taken everything from cloud 9 outside of their base"
+    },
+    {
+     "t": 63.76,
+     "te": 65.63,
+     "lane": "commentary",
+     "text": "the base siege becomes tougher"
+    },
+    {
+     "t": 65.63,
+     "te": 69.65,
+     "lane": "commentary",
+     "text": "but when you're this far ahead they might just be able to brute force it down"
+    },
+    {
+     "t": 69.65,
+     "te": 73.6,
+     "lane": "commentary",
+     "text": "The Weavers wall comes out and RNG will rapidly put damage into this tier three turrets fence"
+    },
+    {
+     "t": 73.6,
+     "te": 81.47,
+     "lane": "commentary",
+     "text": "Karen coming around from the flanks seeing if you can find something Xiao who's gonna be ready though with the Gallio ulti to come in and keep these guys saved"
+    },
+    {
+     "t": 81.47,
+     "te": 82.23,
+     "lane": "commentary",
+     "text": "you've gone the taunt"
+    },
+    {
+     "t": 82.23,
+     "te": 89.21,
+     "lane": "commentary",
+     "text": "OHHS is gonna be locked up on that one fits care enough to get himself away heroic entrance still looking to keep Uzi alive"
+    },
+    {
+     "t": 89.21,
+     "te": 91.2,
+     "lane": "commentary",
+     "text": "they take down Sejal head RNG hasn't lost a man"
+    },
+    {
+     "t": 91.2,
+     "te": 93.91,
+     "lane": "commentary",
+     "text": "Jensen's gonna be next to the chopping block Chow"
+    },
+    {
+     "t": 93.91,
+     "te": 95.0,
+     "lane": "commentary",
+     "text": "who goes into the CC"
+    },
+    {
+     "t": 95.0,
+     "te": 106.17,
+     "lane": "commentary",
+     "text": "Archangel will not be enough to keep him alive today and Uzi goes on a killing spree as RNG has 7 kills now pushing even further into the base inhibitor"
+    },
+    {
+     "t": 106.17,
+     "te": 117.14,
+     "lane": "commentary",
+     "text": "number one gone as cloud 9 can do nothing looking off sneaky chunked out as that started meant that even though say so got backline access there was no damage to register any kills"
+    },
+    {
+     "t": 117.14,
+     "te": 118.89,
+     "lane": "commentary",
+     "text": "we saw a frico go down to the high"
+    },
+    {
+     "t": 118.89,
+     "te": 123.97,
+     "lane": "commentary",
+     "text": "Medina they weren't anticipating you can't expect orangey to have been thinking about an Evelyn"
+    },
+    {
+     "t": 123.97,
+     "te": 126.2,
+     "lane": "commentary",
+     "text": "but they've made the game about what"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "044_jsjcmOKtVqs-098": {
+     "duration": 126.19273333333334,
+     "timestamps": [
+      [
+       0.0,
+       3.1906506024096664
+      ],
+      [
+       3.1906506024096664,
+       7.473770407472555
+      ],
+      [
+       7.473770407472555,
+       8.302761337484727
+      ],
+      [
+       8.302761337484727,
+       15.785346642054815
+      ],
+      [
+       15.785346642054815,
+       25.977710723567633
+      ],
+      [
+       25.977710723567633,
+       37.968164178017844
+      ],
+      [
+       37.968164178017844,
+       49.20399999999995
+      ],
+      [
+       49.20399999999995,
+       52.055809523809515
+      ],
+      [
+       52.055809523809515,
+       54.49199999999996
+      ],
+      [
+       54.49199999999996,
+       63.76367088607609
+      ],
+      [
+       63.76367088607609,
+       65.63237974683562
+      ],
+      [
+       65.63237974683562,
+       69.6503928006331
+      ],
+      [
+       69.6503928006331,
+       73.60065560013575
+      ],
+      [
+       73.60065560013575,
+       81.46810797392195
+      ],
+      [
+       81.46810797392195,
+       82.22753708500507
+      ],
+      [
+       82.22753708500507,
+       89.2113907337613
+      ],
+      [
+       89.2113907337613,
+       91.19749941711083
+      ],
+      [
+       91.19749941711083,
+       93.91315192893055
+      ],
+      [
+       93.91315192893055,
+       94.99941293365843
+      ],
+      [
+       94.99941293365843,
+       106.17485564807029
+      ],
+      [
+       106.17485564807029,
+       117.13909363466001
+      ],
+      [
+       117.13909363466001,
+       118.89212262537926
+      ],
+      [
+       118.89212262537926,
+       123.96506935941369
+      ],
+      [
+       123.96506935941369,
+       126.20399999999995
+      ]
+     ],
+     "sentences": [
+      "minutes into the game they take 4 seconds five turrets so they're out",
+      "Baron his life which means every single time spent scaring his bottom Lane",
+      "that's a chance",
+      "I need to start the Baron and they will be able to force you 910 to t-pin with your guard and fight for versus 5 in a teamfight",
+      "and that's obviously not gonna work if you are c9 so now the most annoying objective is actually alive if you are trying to play split push let's see if they can get down at least a turret karna",
+      "sitting with zero and they need gold so desperately they certainly do a multiple members none more so than sneaky short of a second item this far and look at the goal date here",
+      "3500 order five god bless that is a massive deficit to have to recover from easy to items fully completed on top of having the cue ball well and Faisal is gone",
+      "Carson makes sure he gets that one the teepee has to be canceled there",
+      "there's no way you can go through with that one",
+      "if your cloud 9 tier 2 turret under siege here in the top side and with this being taken down orangy has now taken everything from cloud 9 outside of their base",
+      "the base siege becomes tougher",
+      "but when you're this far ahead they might just be able to brute force it down",
+      "The Weavers wall comes out and RNG will rapidly put damage into this tier three turrets fence",
+      "Karen coming around from the flanks seeing if you can find something Xiao who's gonna be ready though with the Gallio ulti to come in and keep these guys saved",
+      "you've gone the taunt",
+      "OHHS is gonna be locked up on that one fits care enough to get himself away heroic entrance still looking to keep Uzi alive",
+      "they take down Sejal head RNG hasn't lost a man",
+      "Jensen's gonna be next to the chopping block Chow",
+      "who goes into the CC",
+      "Archangel will not be enough to keep him alive today and Uzi goes on a killing spree as RNG has 7 kills now pushing even further into the base inhibitor",
+      "number one gone as cloud 9 can do nothing looking off sneaky chunked out as that started meant that even though say so got backline access there was no damage to register any kills",
+      "we saw a frico go down to the high",
+      "Medina they weren't anticipating you can't expect orangey to have been thinking about an Evelyn",
+      "but they've made the game about what"
+     ]
+    }
+   }
+  },
+  {
+   "title": "047_-MmuOimrgmw-051: 69 s clip, 21 caster sentences",
+   "video_ref": "YouTube -MmuOimrgmw (clip 051 of match video 047)",
+   "duration_s": 68.64,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 1.92,
+     "lane": "commentary",
+     "text": "of that burst damage"
+    },
+    {
+     "t": 1.92,
+     "te": 7.12,
+     "lane": "commentary",
+     "text": "it does feel bad but maybe that would block enough damage to save his jungler regardless that's gonna have to do with his"
+    },
+    {
+     "t": 7.12,
+     "te": 7.94,
+     "lane": "commentary",
+     "text": "OE red buff here"
+    },
+    {
+     "t": 7.94,
+     "te": 9.01,
+     "lane": "commentary",
+     "text": "we go though top lane"
+    },
+    {
+     "t": 9.01,
+     "te": 11.77,
+     "lane": "commentary",
+     "text": "he's back out on the map and already wants to make up for it"
+    },
+    {
+     "t": 11.77,
+     "te": 14.03,
+     "lane": "commentary",
+     "text": "alright so this is the Haro we somewhat expected"
+    },
+    {
+     "t": 14.03,
+     "te": 15.14,
+     "lane": "commentary",
+     "text": "let's be proactive"
+    },
+    {
+     "t": 15.14,
+     "te": 16.68,
+     "lane": "commentary",
+     "text": "likes to look for options"
+    },
+    {
+     "t": 16.68,
+     "te": 20.66,
+     "lane": "commentary",
+     "text": "ray has access to that call of the forge garden has thrown it down"
+    },
+    {
+     "t": 20.66,
+     "te": 23.81,
+     "lane": "commentary",
+     "text": "Liang's rough just gonna get taken away from it"
+    },
+    {
+     "t": 23.81,
+     "te": 26.05,
+     "lane": "commentary",
+     "text": "this is just a fairly easy kill from"
+    },
+    {
+     "t": 26.05,
+     "te": 27.73,
+     "lane": "commentary",
+     "text": "Haro jumping on Taliah"
+    },
+    {
+     "t": 27.73,
+     "te": 28.7,
+     "lane": "commentary",
+     "text": "yeah at first"
+    },
+    {
+     "t": 28.7,
+     "te": 32.15,
+     "lane": "commentary",
+     "text": "you don't succeed just gank again ro uses predator this time around"
+    },
+    {
+     "t": 32.15,
+     "te": 37.82,
+     "lane": "commentary",
+     "text": "who's nobody had his purchase off and finds the kill in the top lane for former"
+    },
+    {
+     "t": 37.82,
+     "te": 39.8,
+     "lane": "commentary",
+     "text": "North American LCS player"
+    },
+    {
+     "t": 39.8,
+     "te": 42.85,
+     "lane": "commentary",
+     "text": "Ray Dave for the teams are going up we actually talked about"
+    },
+    {
+     "t": 42.85,
+     "te": 45.64,
+     "lane": "commentary",
+     "text": "Edie jeez you know strong early game during picks and bans"
+    },
+    {
+     "t": 45.64,
+     "te": 57.21,
+     "lane": "commentary",
+     "text": "Kobe and I've got some stats that I want to throw go away taking a look at some of their to caddy a sitting at around for their goal difference at 15 over the course of the summer split"
+    },
+    {
+     "t": 57.21,
+     "te": 64.86,
+     "lane": "commentary",
+     "text": "averages 773 and one of the big reasons one of the big you know strengths in that early game is high rope and his impact in the early game"
+    },
+    {
+     "t": 64.86,
+     "te": 68.53,
+     "lane": "commentary",
+     "text": "we get to the moment as in if they comes down to K but there isn't enough damage"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "047_-MmuOimrgmw-051": {
+     "duration": 68.63523333333333,
+     "timestamps": [
+      [
+       0.0,
+       1.9209999999999565
+      ],
+      [
+       1.9209999999999565,
+       7.12451456310689
+      ],
+      [
+       7.12451456310689,
+       7.943311856428408
+      ],
+      [
+       7.943311856428408,
+       9.01404677846424
+      ],
+      [
+       9.01404677846424,
+       11.769700656443035
+      ],
+      [
+       11.769700656443035,
+       14.033439216057829
+      ],
+      [
+       14.033439216057829,
+       15.135193363727861
+      ],
+      [
+       15.135193363727861,
+       16.677649170465905
+      ],
+      [
+       16.677649170465905,
+       20.664533451173796
+      ],
+      [
+       20.664533451173796,
+       23.805384138207
+      ],
+      [
+       23.805384138207,
+       26.046834440994783
+      ],
+      [
+       26.046834440994783,
+       27.727566126482575
+      ],
+      [
+       27.727566126482575,
+       28.70062131281761
+      ],
+      [
+       28.70062131281761,
+       32.15300000000002
+      ],
+      [
+       32.15300000000002,
+       37.81942045454545
+      ],
+      [
+       37.81942045454545,
+       39.79817045454544
+      ],
+      [
+       39.79817045454544,
+       42.84675870028407
+      ],
+      [
+       42.84675870028407,
+       45.644000000000005
+      ],
+      [
+       45.644000000000005,
+       57.20667857142863
+      ],
+      [
+       57.20667857142863,
+       64.86083354591837
+      ],
+      [
+       64.86083354591837,
+       68.52500000000009
+      ]
+     ],
+     "sentences": [
+      "of that burst damage",
+      "it does feel bad but maybe that would block enough damage to save his jungler regardless that's gonna have to do with his",
+      "OE red buff here",
+      "we go though top lane",
+      "he's back out on the map and already wants to make up for it",
+      "alright so this is the Haro we somewhat expected",
+      "let's be proactive",
+      "likes to look for options",
+      "ray has access to that call of the forge garden has thrown it down",
+      "Liang's rough just gonna get taken away from it",
+      "this is just a fairly easy kill from",
+      "Haro jumping on Taliah",
+      "yeah at first",
+      "you don't succeed just gank again ro uses predator this time around",
+      "who's nobody had his purchase off and finds the kill in the top lane for former",
+      "North American LCS player",
+      "Ray Dave for the teams are going up we actually talked about",
+      "Edie jeez you know strong early game during picks and bans",
+      "Kobe and I've got some stats that I want to throw go away taking a look at some of their to caddy a sitting at around for their goal difference at 15 over the course of the summer split",
+      "averages 773 and one of the big reasons one of the big you know strengths in that early game is high rope and his impact in the early game",
+      "we get to the moment as in if they comes down to K but there isn't enough damage"
+     ]
+    }
+   }
+  }
+ ]
+}

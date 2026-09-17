@@ -1,0 +1,36 @@
+{
+ "slug": "soccerreplay-1988",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://arxiv.org/html/2412.01820 (Appendix A.1 Dataset Format)",
+  "https://huggingface.co/datasets/Homie0609/SoccerReplay-1988 (gated; our token is not on the authorized list: 403)"
+ ],
+ "access_used": "public sample in paper/repo/card only (full data needs the SoccerReplay-1988 NDA form, non-commercial, manual approval)",
+ "note": "The HF annotation files are manually gated behind an NDA form and our token was refused, so the only verbatim record is the single event entry printed in the paper appendix, itself truncated with \"...\" as printed. Each match JSON holds match information plus a list of such event entries (24 event classes, second-level time within a half).",
+ "examples": [
+  {
+   "title": "Paper Appendix A.1: one event entry (Brighton match, 1st half 00:16, shot off target)",
+   "video_ref": null,
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 16,
+     "te": null,
+     "lane": "commentary",
+     "text": "[shot off target] A mistake by Leandro Trossard (Brighton)..."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "half": 1,
+    "time_stamp": "00:16",
+    "comments_type": "shot off target",
+    "comments_text": "A mistake by Leandro Trossard (Brighton)...",
+    "comments_text_anonymized": "A mistake by [PLAYER]([TEAM])..."
+   }
+  }
+ ]
+}

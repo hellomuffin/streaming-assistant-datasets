@@ -1,0 +1,1197 @@
+{
+ "slug": "cogstream",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/SII-KYW/CogStream/resolve/main/Train_dataset/VQA_Dataset/Q9ecZm1VIOo.json",
+  "https://huggingface.co/datasets/SII-KYW/CogStream/resolve/main/Train_dataset/QA_Dataset/v_22n4w0uferc.json",
+  "https://huggingface.co/datasets/SII-KYW/CogStream/resolve/main/Meta/train.csv",
+  "https://huggingface.co/datasets/SII-KYW/CogStream/resolve/main/Train_dataset/event_segments/Q9ecZm1VIOo/Q9ecZm1VIOo_segment_1.mp4",
+  "https://huggingface.co/datasets/SII-KYW/CogStream/resolve/main/Train_dataset/event_segments/Q9ecZm1VIOo/Q9ecZm1VIOo_segment_2.mp4",
+  "https://huggingface.co/datasets/SII-KYW/CogStream/resolve/main/Train_dataset/event_segments/v_22n4w0uferc/v_22n4w0uferc_segment_1.mp4",
+  "https://huggingface.co/datasets/SII-KYW/CogStream/resolve/main/Train_dataset/event_segments/v_22n4w0uferc/v_22n4w0uferc_segment_2.mp4"
+ ],
+ "access_used": "open download",
+ "note": "Each video has three QA chains (seq_info 1/3, 2/3, 3/3) that ask questions at the end of each event segment. An example is one full chain: example 1 uses the VQA_Dataset format (label, is_visual, COR = ids of earlier QAs needed as context), and example 2 uses the simpler QA_Dataset training format. Times are event_timestamp / T in seconds of the original video; the segments are consecutive cuts, so the clips (segments 1+2 joined, first 20 s) share the original timeline.",
+ "examples": [
+  {
+   "title": "Q9ecZm1VIOo chain 1/3: CPR on a manikin, 23 QAs over 5 events, incl. dialogue recall",
+   "video_ref": "Q9ecZm1VIOo",
+   "duration_s": 79.3,
+   "clip": "samples/media/cogstream_1.mp4",
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 11.74,
+     "te": null,
+     "lane": "question",
+     "text": "What is the woman doing to the dummy?"
+    },
+    {
+     "t": 11.74,
+     "te": null,
+     "lane": "answer",
+     "text": "She is leaning down and placing her ear close to the dummy's mouth to check for breathing."
+    },
+    {
+     "t": 11.74,
+     "te": null,
+     "lane": "question",
+     "text": "What color shirt is the woman wearing?"
+    },
+    {
+     "t": 11.74,
+     "te": null,
+     "lane": "answer",
+     "text": "The woman is wearing a blue shirt."
+    },
+    {
+     "t": 11.74,
+     "te": null,
+     "lane": "question",
+     "text": "Why is the manikin placed on a mat?"
+    },
+    {
+     "t": 11.74,
+     "te": null,
+     "lane": "answer",
+     "text": "The mat provides a stable and clean surface for practicing CPR on the manikin, ensuring sanitary conditions."
+    },
+    {
+     "t": 11.74,
+     "te": null,
+     "lane": "question",
+     "text": "What does the woman do after checking the manikin?"
+    },
+    {
+     "t": 11.74,
+     "te": null,
+     "lane": "answer",
+     "text": "After checking for breathing and a pulse, the woman prepares to administer chest compressions."
+    },
+    {
+     "t": 11.74,
+     "te": null,
+     "lane": "question",
+     "text": "What steps have been demonstrated in the CPR process so far?"
+    },
+    {
+     "t": 11.74,
+     "te": null,
+     "lane": "answer",
+     "text": "Checking for responsiveness, checking breathing."
+    },
+    {
+     "t": 47.49,
+     "te": null,
+     "lane": "question",
+     "text": "When did the dummy first appear?"
+    },
+    {
+     "t": 47.49,
+     "te": null,
+     "lane": "answer",
+     "text": "The dummy first appeared at 0.21s."
+    },
+    {
+     "t": 47.49,
+     "te": null,
+     "lane": "question",
+     "text": "What is the environment where the CPR training is taking place?"
+    },
+    {
+     "t": 47.49,
+     "te": null,
+     "lane": "answer",
+     "text": "The CPR training is taking place indoors on a wooden floor with blue and green mats."
+    },
+    {
+     "t": 47.49,
+     "te": null,
+     "lane": "question",
+     "text": "What is the purpose of the blue and green mat under the mannequin?"
+    },
+    {
+     "t": 47.49,
+     "te": null,
+     "lane": "answer",
+     "text": "The mat provides a stable and clean surface for practicing CPR, ensuring sanitary conditions."
+    },
+    {
+     "t": 47.49,
+     "te": null,
+     "lane": "question",
+     "text": "What did the woman do first before starting chest compressions?"
+    },
+    {
+     "t": 47.49,
+     "te": null,
+     "lane": "answer",
+     "text": "The woman first assessed the mannequin by positioning herself beside it, listening for breathing, and checking for a pulse."
+    },
+    {
+     "t": 57.16,
+     "te": null,
+     "lane": "question",
+     "text": "What did I ask about the manikin's skin color, and what was your answer?"
+    },
+    {
+     "t": 57.16,
+     "te": null,
+     "lane": "answer",
+     "text": "You asked, 'What is the color of the manikin's skin?', and I answered, 'The manikin's skin is tan.'"
+    },
+    {
+     "t": 57.16,
+     "te": null,
+     "lane": "question",
+     "text": "What word is printed on the manikin's face?"
+    },
+    {
+     "t": 57.16,
+     "te": null,
+     "lane": "answer",
+     "text": "The word printed on the manikin's face is 'ADULT'."
+    },
+    {
+     "t": 57.16,
+     "te": null,
+     "lane": "question",
+     "text": "What purpose does the mat serve during the training?"
+    },
+    {
+     "t": 57.16,
+     "te": null,
+     "lane": "answer",
+     "text": "The mat provides a stable and clean surface for practicing, ensuring sanitary conditions."
+    },
+    {
+     "t": 57.16,
+     "te": null,
+     "lane": "question",
+     "text": "What is the order of actions the woman performs?"
+    },
+    {
+     "t": 57.16,
+     "te": null,
+     "lane": "answer",
+     "text": "The woman assesses, then performs chest compressions, and then administers mouth-to-mouth resuscitation."
+    },
+    {
+     "t": 57.16,
+     "te": null,
+     "lane": "question",
+     "text": "What steps have been demonstrated in the CPR process so far?"
+    },
+    {
+     "t": 57.16,
+     "te": null,
+     "lane": "answer",
+     "text": "Checking for responsiveness, checking breathing, starting chest compressions, and giving rescue breaths."
+    },
+    {
+     "t": 69.78,
+     "te": null,
+     "lane": "question",
+     "text": "What is the color of the mannequin's head?"
+    },
+    {
+     "t": 69.78,
+     "te": null,
+     "lane": "answer",
+     "text": "The mannequin's head is tan."
+    },
+    {
+     "t": 69.78,
+     "te": null,
+     "lane": "question",
+     "text": "What is the complete order of actions the woman takes?"
+    },
+    {
+     "t": 69.78,
+     "te": null,
+     "lane": "answer",
+     "text": "The woman first assesses by checking for breathing and pulse, then she performs chest compressions, and finally she demonstrates mouth-to-mouth resuscitation."
+    },
+    {
+     "t": 69.78,
+     "te": null,
+     "lane": "question",
+     "text": "Why is it marked 'ADULT'?"
+    },
+    {
+     "t": 69.78,
+     "te": null,
+     "lane": "answer",
+     "text": "It is marked 'ADULT' to indicate it is designed for practicing techniques on adults, and the training is intended for adult procedures."
+    },
+    {
+     "t": 79.17,
+     "te": null,
+     "lane": "question",
+     "text": " What is the person doing between 12s and 46s?"
+    },
+    {
+     "t": 79.17,
+     "te": null,
+     "lane": "answer",
+     "text": "The person is doing CPR on the manikin."
+    },
+    {
+     "t": 79.17,
+     "te": null,
+     "lane": "question",
+     "text": "What color is the mat underneath the dummy?"
+    },
+    {
+     "t": 79.17,
+     "te": null,
+     "lane": "answer",
+     "text": "The mat underneath the dummy is blue and green."
+    },
+    {
+     "t": 79.17,
+     "te": null,
+     "lane": "question",
+     "text": "Based on the previous clips, what does the 'ADULT' marking on the manikin indicate?"
+    },
+    {
+     "t": 79.17,
+     "te": null,
+     "lane": "answer",
+     "text": "The 'ADULT' marking indicates that the manikin is designed for practicing CPR techniques on adults."
+    },
+    {
+     "t": 79.17,
+     "te": null,
+     "lane": "question",
+     "text": "What key features are present that create a safe and effective learning environment for CPR training?"
+    },
+    {
+     "t": 79.17,
+     "te": null,
+     "lane": "answer",
+     "text": "The consistent use of a blue and green mat for a stable and clean surface, and a clear plastic barrier on the manikin to protect the CPR administrator from contamination are the key features."
+    },
+    {
+     "t": 79.17,
+     "te": null,
+     "lane": "question",
+     "text": "From the beginning to the current point, what are the key steps the woman performs on the mannequin, and what protective measures are in place?"
+    },
+    {
+     "t": 79.17,
+     "te": null,
+     "lane": "answer",
+     "text": "The woman first assesses the mannequin by checking for breathing and pulse. Then, she performs chest compressions followed by mouth-to-mouth resuscitation. A clear plastic barrier on the mannequin protects the CPR administrator from contamination, and the mannequin is placed on a blue and green mat to provide a stable and clean surface."
+    },
+    {
+     "t": 79.17,
+     "te": null,
+     "lane": "question",
+     "text": "Summarize the purpose of the equipment and the position of the woman performing CPR on the mannequin."
+    },
+    {
+     "t": 79.17,
+     "te": null,
+     "lane": "answer",
+     "text": "The woman kneels to be at the same level as the mannequin. The blue and green mat provides a stable and clean surface, and the clear plastic barrier on the mannequin protects the person performing CPR from contamination. The 'ADULT' marking on the manikin indicates it is designed for practicing techniques on adults."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "video_name": "Q9ecZm1VIOo",
+    "seq_info": "1/3",
+    "Data": [
+     {
+      "segment_path": "./Train_dataset/event_segments/Q9ecZm1VIOo/Q9ecZm1VIOo_segment_1.mp4",
+      "segment_timestamp": 11.74,
+      "event_timestamp": 11.74,
+      "label": "Streaming/Object Tracking",
+      "is_visual": true,
+      "QA_pairs": {
+       "Q": "What is the woman doing to the dummy?",
+       "A": "She is leaning down and placing her ear close to the dummy's mouth to check for breathing."
+      },
+      "ID": 0,
+      "COR": "[]",
+      "relevance": "[]"
+     },
+     {
+      "segment_path": "./Train_dataset/event_segments/Q9ecZm1VIOo/Q9ecZm1VIOo_segment_1.mp4",
+      "segment_timestamp": 11.74,
+      "event_timestamp": 11.74,
+      "label": "Basic/Attributes",
+      "is_visual": true,
+      "QA_pairs": {
+       "Q": "What color shirt is the woman wearing?",
+       "A": "The woman is wearing a blue shirt."
+      },
+      "ID": 1,
+      "COR": "[]",
+      "relevance": "[0]"
+     },
+     {
+      "segment_path": "./Train_dataset/event_segments/Q9ecZm1VIOo/Q9ecZm1VIOo_segment_1.mp4",
+      "segment_timestamp": 11.74,
+      "event_timestamp": 11.74,
+      "label": "Streaming/Causal Reasoning",
+      "is_visual": true,
+      "QA_pairs": {
+       "Q": "Why is the manikin placed on a mat?",
+       "A": "The mat provides a stable and clean surface for practicing CPR on the manikin, ensuring sanitary conditions."
+      },
+      "ID": 2,
+      "COR": "[]",
+      "relevance": "[0, 0]"
+     },
+     {
+      "segment_path": "./Train_dataset/event_segments/Q9ecZm1VIOo/Q9ecZm1VIOo_segment_1.mp4",
+      "segment_timestamp": 11.74,
+      "event_timestamp": 11.74,
+      "label": "Streaming/Sequence Perception",
+      "is_visual": true,
+      "QA_pairs": {
+       "Q": "What does the woman do after checking the manikin?",
+       "A": "After checking for breathing and a pulse, the woman prepares to administer chest compressions."
+      },
+      "ID": 3,
+      "COR": "[]",
+      "relevance": "[0, 0, 0]"
+     },
+     {
+      "segment_path": "./Train_dataset/event_segments/Q9ecZm1VIOo/Q9ecZm1VIOo_segment_2.mp4",
+      "segment_timestamp": 47.49,
+      "event_timestamp": 11.74,
+      "label": "Streaming/Dynamic Updating",
+      "is_visual": true,
+      "QA_pairs": {
+       "Q": "What steps have been demonstrated in the CPR process so far?",
+       "A": "Checking for responsiveness, checking breathing."
+      },
+      "ID": 4,
+      "COR": "[]",
+      "relevance": "[0, 0, 0, 0]"
+     },
+     {
+      "segment_path": "./Train_dataset/event_segments/Q9ecZm1VIOo/Q9ecZm1VIOo_segment_2.mp4",
+      "segment_timestamp": 47.49,
+      "event_timestamp": 47.49,
+      "label": "Streaming/Object Tracking",
+      "is_visual": true,
+      "QA_pairs": {
+       "Q": "When did the dummy first appear?",
+       "A": "The dummy first appeared at 0.21s."
+      },
+      "ID": 5,
+      "COR": "[0]",
+      "relevance": "[1, 0, 0, 0, 0]"
+     },
+     {
+      "segment_path": "./Train_dataset/event_segments/Q9ecZm1VIOo/Q9ecZm1VIOo_segment_2.mp4",
+      "segment_timestamp": 47.49,
+      "event_timestamp": 47.49,
+      "label": "Basic/Attributes",
+      "is_visual": true,
+      "QA_pairs": {
+       "Q": "What is the environment where the CPR training is taking place?",
+       "A": "The CPR training is taking place indoors on a wooden floor with blue and green mats."
+      },
+      "ID": 6,
+      "COR": "[]",
+      "relevance": "[0, 0, 0, 0, 0, 0]"
+     },
+     {
+      "segment_path": "./Train_dataset/event_segments/Q9ecZm1VIOo/Q9ecZm1VIOo_segment_2.mp4",
+      "segment_timestamp": 47.49,
+      "event_timestamp": 47.49,
+      "label": "Streaming/Causal Reasoning",
+      "is_visual": true,
+      "QA_pairs": {
+       "Q": "What is the purpose of the blue and green mat under the mannequin?",
+       "A": "The mat provides a stable and clean surface for practicing CPR, ensuring sanitary conditions."
+      },
+      "ID": 7,
+      "COR": "[2, 6]",
+      "relevance": "[0, 0, 1, 0, 0, 0, 1]"
+     },
+     {
+      "segment_path": "./Train_dataset/event_segments/Q9ecZm1VIOo/Q9ecZm1VIOo_segment_2.mp4",
+      "segment_timestamp": 47.49,
+      "event_timestamp": 47.49,
+      "label": "Streaming/Sequence Perception",
+      "is_visual": true,
+      "QA_pairs": {
+       "Q": "What did the woman do first before starting chest compressions?",
+       "A": "The woman first assessed the mannequin by positioning herself beside it, listening for breathing, and checking for a pulse."
+      },
+      "ID": 8,
+      "COR": "[3]",
+      "relevance": "[0, 0, 0, 1, 0, 0, 0, 0]"
+     },
+     {
+      "segment_path": "./Train_dataset/event_segments/Q9ecZm1VIOo/Q9ecZm1VIOo_segment_3.mp4",
+      "segment_timestamp": 57.16,
+      "event_timestamp": 57.16,
+      "label": "Streaming/Dialogue Recalling",
+      "is_visual": false,
+      "QA_pairs": {
+       "Q": "What did I ask about the manikin's skin color, and what was your answer?",
+       "A": "You asked, 'What is the color of the manikin's skin?', and I answered, 'The manikin's skin is tan.'"
+      },
+      "ID": 9,
+      "COR": "[]",
+      "relevance": "[0, 0, 0, 0, 0, 0, 0, 0, 0]"
+     },
+     {
+      "segment_path": "./Train_dataset/event_segments/Q9ecZm1VIOo/Q9ecZm1VIOo_segment_3.mp4",
+      "segment_timestamp": 57.16,
+      "event_timestamp": 57.16,
+      "label": "Basic/Object",
+      "is_visual": true,
+      "QA_pairs": {
+       "Q": "What word is printed on the manikin's face?",
+       "A": "The word printed on the manikin's face is 'ADULT'."
+      },
+      "ID": 10,
+      "COR": "[]",
+      "relevance": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+     },
+     {
+      "segment_path": "./Train_dataset/event_segments/Q9ecZm1VIOo/Q9ecZm1VIOo_segment_3.mp4",
+      "segment_timestamp": 57.16,
+      "event_timestamp": 57.16,
+      "label": "Streaming/Causal Reasoning",
+      "is_visual": true,
+      "QA_pairs": {
+       "Q": "What purpose does the mat serve during the training?",
+       "A": "The mat provides a stable and clean surface for practicing, ensuring sanitary conditions."
+      },
+      "ID": 11,
+      "COR": "[2, 7, 6]",
+      "relevance": "[0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0]"
+     },
+     {
+      "segment_path": "./Train_dataset/event_segments/Q9ecZm1VIOo/Q9ecZm1VIOo_segment_3.mp4",
+      "segment_timestamp": 57.16,
+      "event_timestamp": 57.16,
+      "label": "Streaming/Sequence Perception",
+      "is_visual": true,
+      "QA_pairs": {
+       "Q": "What is the order of actions the woman performs?",
+       "A": "The woman assesses, then performs chest compressions, and then administers mouth-to-mouth resuscitation."
+      },
+      "ID": 12,
+      "COR": "[8, 3]",
+      "relevance": "[0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0]"
+     },
+     {
+      "segment_path": "./Train_dataset/event_segments/Q9ecZm1VIOo/Q9ecZm1VIOo_segment_4.mp4",
+      "segment_timestamp": 69.78,
+      "event_timestamp": 57.16,
+      "label": "Streaming/Dynamic Updating",
+      "is_visual": true,
+      "QA_pairs": {
+       "Q": "What steps have been demonstrated in the CPR process so far?",
+       "A": "Checking for responsiveness, checking breathing, starting chest compressions, and giving rescue breaths."
+      },
+      "ID": 13,
+      "COR": "[4]",
+      "relevance": "[0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]"
+     },
+     {
+      "segment_path": "./Train_dataset/event_segments/Q9ecZm1VIOo/Q9ecZm1VIOo_segment_4.mp4",
+      "segment_timestamp": 69.78,
+      "event_timestamp": 69.78,
+      "label": "Basic/Object",
+      "is_visual": true,
+      "QA_pairs": {
+       "Q": "What is the color of the mannequin's head?",
+       "A": "The mannequin's head is tan."
+      },
+      "ID": 14,
+      "COR": "[]",
+      "relevance": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+     },
+     {
+      "segment_path": "./Train_dataset/event_segments/Q9ecZm1VIOo/Q9ecZm1VIOo_segment_4.mp4",
+      "segment_timestamp": 69.78,
+      "event_timestamp": 69.78,
+      "label": "Streaming/Sequence Perception",
+      "is_visual": true,
+      "QA_pairs": {
+       "Q": "What is the complete order of actions the woman takes?",
+       "A": "The woman first assesses by checking for breathing and pulse, then she performs chest compressions, and finally she demonstrates mouth-to-mouth resuscitation."
+      },
+      "ID": 15,
+      "COR": "[12, 3, 8]",
+      "relevance": "[0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0]"
+     },
+     {
+      "segment_path": "./Train_dataset/event_segments/Q9ecZm1VIOo/Q9ecZm1VIOo_segment_4.mp4",
+      "segment_timestamp": 69.78,
+      "event_timestamp": 69.78,
+      "label": "Streaming/Causal Reasoning",
+      "is_visual": true,
+      "QA_pairs": {
+       "Q": "Why is it marked 'ADULT'?",
+       "A": "It is marked 'ADULT' to indicate it is designed for practicing techniques on adults, and the training is intended for adult procedures."
+      },
+      "ID": 16,
+      "COR": "[10]",
+      "relevance": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]"
+     },
+     {
+      "segment_path": "./Train_dataset/event_segments/Q9ecZm1VIOo/Q9ecZm1VIOo_segment_5.mp4",
+      "segment_timestamp": 79.17,
+      "event_timestamp": 79.17,
+      "label": "Streaming/Sequence Perception",
+      "is_visual": true,
+      "QA_pairs": {
+       "Q": " What is the person doing between 12s and 46s?",
+       "A": "The person is doing CPR on the manikin."
+      },
+      "ID": 17,
+      "COR": "[]",
+      "relevance": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+     },
+     {
+      "segment_path": "./Train_dataset/event_segments/Q9ecZm1VIOo/Q9ecZm1VIOo_segment_5.mp4",
+      "segment_timestamp": 79.17,
+      "event_timestamp": 79.17,
+      "label": "Basic/Object",
+      "is_visual": true,
+      "QA_pairs": {
+       "Q": "What color is the mat underneath the dummy?",
+       "A": "The mat underneath the dummy is blue and green."
+      },
+      "ID": 18,
+      "COR": "[]",
+      "relevance": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+     },
+     {
+      "segment_path": "./Train_dataset/event_segments/Q9ecZm1VIOo/Q9ecZm1VIOo_segment_5.mp4",
+      "segment_timestamp": 79.17,
+      "event_timestamp": 79.17,
+      "label": "Streaming/Causal Reasoning",
+      "is_visual": true,
+      "QA_pairs": {
+       "Q": "Based on the previous clips, what does the 'ADULT' marking on the manikin indicate?",
+       "A": "The 'ADULT' marking indicates that the manikin is designed for practicing CPR techniques on adults."
+      },
+      "ID": 19,
+      "COR": "[10, 16]",
+      "relevance": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0]"
+     },
+     {
+      "segment_path": "./Train_dataset/event_segments/Q9ecZm1VIOo/Q9ecZm1VIOo_segment_5.mp4",
+      "segment_timestamp": 79.17,
+      "event_timestamp": 79.17,
+      "label": "Streaming/Causal Reasoning",
+      "is_visual": true,
+      "QA_pairs": {
+       "Q": "What key features are present that create a safe and effective learning environment for CPR training?",
+       "A": "The consistent use of a blue and green mat for a stable and clean surface, and a clear plastic barrier on the manikin to protect the CPR administrator from contamination are the key features."
+      },
+      "ID": 20,
+      "COR": "[7, 2, 11, 18, 6]",
+      "relevance": "[0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0]"
+     },
+     {
+      "segment_path": "./Train_dataset/event_segments/Q9ecZm1VIOo/Q9ecZm1VIOo_segment_5.mp4",
+      "segment_timestamp": 79.17,
+      "event_timestamp": 79.17,
+      "label": "Global/Global Analysis",
+      "is_visual": true,
+      "QA_pairs": {
+       "Q": "From the beginning to the current point, what are the key steps the woman performs on the mannequin, and what protective measures are in place?",
+       "A": "The woman first assesses the mannequin by checking for breathing and pulse. Then, she performs chest compressions followed by mouth-to-mouth resuscitation. A clear plastic barrier on the mannequin protects the CPR administrator from contamination, and the mannequin is placed on a blue and green mat to provide a stable and clean surface."
+      },
+      "ID": 21,
+      "COR": "[3, 12, 15, 8, 20, 2, 6, 7, 11, 18]",
+      "relevance": "[0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1]"
+     },
+     {
+      "segment_path": "./Train_dataset/event_segments/Q9ecZm1VIOo/Q9ecZm1VIOo_segment_5.mp4",
+      "segment_timestamp": 79.17,
+      "event_timestamp": 79.17,
+      "label": "Global/Overall Summary",
+      "is_visual": true,
+      "QA_pairs": {
+       "Q": "Summarize the purpose of the equipment and the position of the woman performing CPR on the mannequin.",
+       "A": "The woman kneels to be at the same level as the mannequin. The blue and green mat provides a stable and clean surface, and the clear plastic barrier on the mannequin protects the person performing CPR from contamination. The 'ADULT' marking on the manikin indicates it is designed for practicing techniques on adults."
+      },
+      "ID": 22,
+      "COR": "[16, 19, 2, 6, 7, 10, 11, 20, 18]",
+      "relevance": "[0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0]"
+     }
+    ]
+   }
+  },
+  {
+   "title": "v_22n4w0uferc chain 1: waxing skis, QA training chain with a recall question",
+   "video_ref": "v_22n4w0uferc",
+   "duration_s": 189.5,
+   "clip": "samples/media/cogstream_2.mp4",
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 14.55,
+     "te": null,
+     "lane": "question",
+     "text": "What brand name is visible on the skis?"
+    },
+    {
+     "t": 14.55,
+     "te": null,
+     "lane": "answer",
+     "text": "Dynastar."
+    },
+    {
+     "t": 14.55,
+     "te": null,
+     "lane": "question",
+     "text": "What is the next step after supporting skis or snowboards without clamping?"
+    },
+    {
+     "t": 14.55,
+     "te": null,
+     "lane": "answer",
+     "text": "After supporting skis or snowboards, the next step is to use the 'Crayoning' method to apply wax."
+    },
+    {
+     "t": 14.55,
+     "te": null,
+     "lane": "question",
+     "text": "What kind of tool is used to support skis or snowboards?"
+    },
+    {
+     "t": 14.55,
+     "te": null,
+     "lane": "answer",
+     "text": "Tools4Boards Cinch or Tuning Vises with friction pads are used to support skis or snowboards without clamping."
+    },
+    {
+     "t": 54.24,
+     "te": null,
+     "lane": "question",
+     "text": "What does the person do with the iron?"
+    },
+    {
+     "t": 54.24,
+     "te": null,
+     "lane": "answer",
+     "text": "The person moves the iron back and forth on the skis."
+    },
+    {
+     "t": 54.24,
+     "te": null,
+     "lane": "question",
+     "text": "What is he trying to accomplish with it?"
+    },
+    {
+     "t": 54.24,
+     "te": null,
+     "lane": "answer",
+     "text": "To liquefy the wax, even it out and work it into the base of the skis."
+    },
+    {
+     "t": 54.24,
+     "te": null,
+     "lane": "question",
+     "text": "What is the next step after applying wax to skis with a crayon?"
+    },
+    {
+     "t": 54.24,
+     "te": null,
+     "lane": "answer",
+     "text": "After applying the wax with a crayon, the next step involves using an iron to liquefy, even out, and work the wax into the base of the skis."
+    },
+    {
+     "t": 54.24,
+     "te": null,
+     "lane": "question",
+     "text": "Why is it important to keep the iron moving when applying wax to skis?"
+    },
+    {
+     "t": 54.24,
+     "te": null,
+     "lane": "answer",
+     "text": "Keeping the iron moving is important to liquefy the wax, even it out, and work it into the base of the skis effectively."
+    },
+    {
+     "t": 123.31,
+     "te": null,
+     "lane": "question",
+     "text": "What action is the person performing on the skis?"
+    },
+    {
+     "t": 123.31,
+     "te": null,
+     "lane": "answer",
+     "text": "The person is applying wax to the base of the skis."
+    },
+    {
+     "t": 123.31,
+     "te": null,
+     "lane": "question",
+     "text": "How is he doing it?"
+    },
+    {
+     "t": 123.31,
+     "te": null,
+     "lane": "answer",
+     "text": "He is applying wax to the skis with an iron."
+    },
+    {
+     "t": 123.31,
+     "te": null,
+     "lane": "question",
+     "text": "What tools are used for supporting skis during the waxing process, and what is their purpose?"
+    },
+    {
+     "t": 123.31,
+     "te": null,
+     "lane": "answer",
+     "text": "Tools4Boards Cinch or Tuning Vises with friction pads are used to support the skis during the waxing process. Their purpose is to avoid clamping the skis directly."
+    },
+    {
+     "t": 123.31,
+     "te": null,
+     "lane": "question",
+     "text": "Why is it important to keep the iron moving when applying wax to skis?"
+    },
+    {
+     "t": 123.31,
+     "te": null,
+     "lane": "answer",
+     "text": "Keeping the iron moving is crucial to ensure even distribution of the wax across the ski base."
+    },
+    {
+     "t": 123.31,
+     "te": null,
+     "lane": "question",
+     "text": " What is the person doing to the skis at 8s?"
+    },
+    {
+     "t": 123.31,
+     "te": null,
+     "lane": "answer",
+     "text": "Applying wax with a crayon."
+    },
+    {
+     "t": 134.09,
+     "te": null,
+     "lane": "question",
+     "text": "So far, What tools are used during the waxing process? Please simply list the tools."
+    },
+    {
+     "t": 134.09,
+     "te": null,
+     "lane": "answer",
+     "text": "Crayon and iron."
+    },
+    {
+     "t": 134.09,
+     "te": null,
+     "lane": "question",
+     "text": "So far, What tools are used during the waxing process?"
+    },
+    {
+     "t": 134.09,
+     "te": null,
+     "lane": "answer",
+     "text": "Crayon, iron, scraper, and coarse file."
+    },
+    {
+     "t": 134.09,
+     "te": null,
+     "lane": "question",
+     "text": "What else is on the table besides the skis and the tool?"
+    },
+    {
+     "t": 134.09,
+     "te": null,
+     "lane": "answer",
+     "text": "There are two brush-like objects and some bottles on the table."
+    },
+    {
+     "t": 134.09,
+     "te": null,
+     "lane": "question",
+     "text": "What happens if the iron is not moved constantly during the ski waxing process?"
+    },
+    {
+     "t": 134.09,
+     "te": null,
+     "lane": "answer",
+     "text": "If the iron is not moved constantly during the ski waxing process, the wax will not be distributed evenly across the ski base."
+    },
+    {
+     "t": 134.09,
+     "te": null,
+     "lane": "question",
+     "text": "After applying wax to skis using the crayon method, what is the next step?"
+    },
+    {
+     "t": 134.09,
+     "te": null,
+     "lane": "answer",
+     "text": "After applying wax to skis using the crayon method, the next step involves using an iron to liquefy and distribute the wax evenly across the ski base."
+    },
+    {
+     "t": 134.09,
+     "te": null,
+     "lane": "question",
+     "text": " What is the person doing from 77s to 83s?"
+    },
+    {
+     "t": 134.09,
+     "te": null,
+     "lane": "answer",
+     "text": "The person is applying wax with an iron to the ski."
+    },
+    {
+     "t": 189.47,
+     "te": null,
+     "lane": "question",
+     "text": "What item does the person hold in a plastic bag at [145s]?"
+    },
+    {
+     "t": 189.47,
+     "te": null,
+     "lane": "answer",
+     "text": "The person holds a white, chalk-like substance in a plastic bag."
+    },
+    {
+     "t": 189.47,
+     "te": null,
+     "lane": "question",
+     "text": "Why is it important to keep the iron moving when applying wax?"
+    },
+    {
+     "t": 189.47,
+     "te": null,
+     "lane": "answer",
+     "text": "Keeping the iron moving ensures even distribution of the wax across the ski base."
+    },
+    {
+     "t": 189.47,
+     "te": null,
+     "lane": "question",
+     "text": "What are the steps to prepare skis?"
+    },
+    {
+     "t": 189.47,
+     "te": null,
+     "lane": "answer",
+     "text": "The process starts with applying wax. Then, an iron is used to melt and distribute the wax evenly. Finally, excess wax is removed to ensure a smooth surface."
+    },
+    {
+     "t": 189.47,
+     "te": null,
+     "lane": "question",
+     "text": ": What are the key steps demonstrated for preparing skis for optimal performance?"
+    },
+    {
+     "t": 189.47,
+     "te": null,
+     "lane": "answer",
+     "text": "The key steps demonstrated include: applying wax to the ski base, using a tool to melt and evenly distribute the wax, sharpening the ski edges, and removing excess wax from the ski base."
+    },
+    {
+     "t": 189.47,
+     "te": null,
+     "lane": "question",
+     "text": ": What are the advantages and disadvantages of each waxing method shown in terms of wax consumption, scraping, and mess?"
+    },
+    {
+     "t": 189.47,
+     "te": null,
+     "lane": "answer",
+     "text": "The video demonstrates three ski waxing methods: 'Crayoning', 'Hot Smearing' and 'Classic Drip and Iron'. The 'Crayoning' method is the most efficient, with the least wax consumption, scraping, and mess. The 'Hot Smearing' method melts the wax bar for easier application and may be preferred for harder waxes. The 'Classic Drip and Iron' method consumes the most wax."
+    }
+   ],
+   "raw_format": "json",
+   "raw": [
+    {
+     "Q": "What brand name is visible on the skis?",
+     "A": "Dynastar.",
+     "T": 14.55,
+     "info": {
+      "is_visual": true,
+      "Event_Time": 14.55,
+      "ID": 0,
+      "COR": "[]",
+      "relevance": "[]"
+     }
+    },
+    {
+     "Q": "What is the next step after supporting skis or snowboards without clamping?",
+     "A": "After supporting skis or snowboards, the next step is to use the 'Crayoning' method to apply wax.",
+     "T": 14.55,
+     "info": {
+      "is_visual": true,
+      "Event_Time": 14.55,
+      "ID": 1,
+      "COR": "[]",
+      "relevance": "[0]"
+     }
+    },
+    {
+     "Q": "What kind of tool is used to support skis or snowboards?",
+     "A": "Tools4Boards Cinch or Tuning Vises with friction pads are used to support skis or snowboards without clamping.",
+     "T": 14.55,
+     "info": {
+      "is_visual": true,
+      "Event_Time": 14.55,
+      "ID": 2,
+      "COR": "[1]",
+      "relevance": "[0, 1]"
+     }
+    },
+    {
+     "Q": "What does the person do with the iron?",
+     "A": "The person moves the iron back and forth on the skis.",
+     "T": 54.24,
+     "info": {
+      "is_visual": true,
+      "Event_Time": 54.24,
+      "ID": 3,
+      "COR": "[]",
+      "relevance": "[0, 0, 0]"
+     }
+    },
+    {
+     "Q": "What is he trying to accomplish with it?",
+     "A": "To liquefy the wax, even it out and work it into the base of the skis.",
+     "T": 54.24,
+     "info": {
+      "is_visual": true,
+      "Event_Time": 54.24,
+      "ID": 4,
+      "COR": "[3]",
+      "relevance": "[0, 0, 0, 1]"
+     }
+    },
+    {
+     "Q": "What is the next step after applying wax to skis with a crayon?",
+     "A": "After applying the wax with a crayon, the next step involves using an iron to liquefy, even out, and work the wax into the base of the skis.",
+     "T": 54.24,
+     "info": {
+      "is_visual": true,
+      "Event_Time": 54.24,
+      "ID": 5,
+      "COR": "[1]",
+      "relevance": "[0, 1, 0, 0, 0]"
+     }
+    },
+    {
+     "Q": "Why is it important to keep the iron moving when applying wax to skis?",
+     "A": "Keeping the iron moving is important to liquefy the wax, even it out, and work it into the base of the skis effectively.",
+     "T": 54.24,
+     "info": {
+      "is_visual": true,
+      "Event_Time": 54.24,
+      "ID": 6,
+      "COR": "[3]",
+      "relevance": "[0, 0, 0, 1, 0, 0]"
+     }
+    },
+    {
+     "Q": "What action is the person performing on the skis?",
+     "A": "The person is applying wax to the base of the skis.",
+     "T": 123.31,
+     "info": {
+      "is_visual": true,
+      "Event_Time": 123.31,
+      "ID": 7,
+      "COR": "[]",
+      "relevance": "[0, 0, 0, 0, 0, 0, 0]"
+     }
+    },
+    {
+     "Q": "How is he doing it?",
+     "A": "He is applying wax to the skis with an iron.",
+     "T": 123.31,
+     "info": {
+      "is_visual": true,
+      "Event_Time": 123.31,
+      "ID": 8,
+      "COR": "[7]",
+      "relevance": "[0, 0, 0, 0, 0, 0, 0, 1]"
+     }
+    },
+    {
+     "Q": "What tools are used for supporting skis during the waxing process, and what is their purpose?",
+     "A": "Tools4Boards Cinch or Tuning Vises with friction pads are used to support the skis during the waxing process. Their purpose is to avoid clamping the skis directly.",
+     "T": 123.31,
+     "info": {
+      "is_visual": true,
+      "Event_Time": 123.31,
+      "ID": 9,
+      "COR": "[2, 1]",
+      "relevance": "[0, 1, 1, 0, 0, 0, 0, 0, 0]"
+     }
+    },
+    {
+     "Q": "Why is it important to keep the iron moving when applying wax to skis?",
+     "A": "Keeping the iron moving is crucial to ensure even distribution of the wax across the ski base.",
+     "T": 123.31,
+     "info": {
+      "is_visual": true,
+      "Event_Time": 123.31,
+      "ID": 10,
+      "COR": "[6, 3, 5]",
+      "relevance": "[0, 0, 0, 1, 0, 1, 1, 0, 0, 0]"
+     }
+    },
+    {
+     "Q": " What is the person doing to the skis at 8s?",
+     "A": "Applying wax with a crayon.",
+     "T": 123.31,
+     "info": {
+      "is_visual": true,
+      "Event_Time": 123.31,
+      "ID": 11,
+      "COR": "[]",
+      "relevance": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+     }
+    },
+    {
+     "Q": "So far, What tools are used during the waxing process? Please simply list the tools.",
+     "A": "Crayon and iron.",
+     "T": 134.09,
+     "info": {
+      "is_visual": true,
+      "Event_Time": 123.31,
+      "ID": 12,
+      "COR": "[]",
+      "relevance": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+     }
+    },
+    {
+     "Q": "So far, What tools are used during the waxing process?",
+     "A": "Crayon, iron, scraper, and coarse file.",
+     "T": 134.09,
+     "info": {
+      "is_visual": true,
+      "Event_Time": 134.09,
+      "ID": 13,
+      "COR": "[12]",
+      "relevance": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]"
+     }
+    },
+    {
+     "Q": "What else is on the table besides the skis and the tool?",
+     "A": "There are two brush-like objects and some bottles on the table.",
+     "T": 134.09,
+     "info": {
+      "is_visual": true,
+      "Event_Time": 134.09,
+      "ID": 14,
+      "COR": "[]",
+      "relevance": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+     }
+    },
+    {
+     "Q": "What happens if the iron is not moved constantly during the ski waxing process?",
+     "A": "If the iron is not moved constantly during the ski waxing process, the wax will not be distributed evenly across the ski base.",
+     "T": 134.09,
+     "info": {
+      "is_visual": true,
+      "Event_Time": 134.09,
+      "ID": 15,
+      "COR": "[10, 6, 7]",
+      "relevance": "[0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0]"
+     }
+    },
+    {
+     "Q": "After applying wax to skis using the crayon method, what is the next step?",
+     "A": "After applying wax to skis using the crayon method, the next step involves using an iron to liquefy and distribute the wax evenly across the ski base.",
+     "T": 134.09,
+     "info": {
+      "is_visual": true,
+      "Event_Time": 134.09,
+      "ID": 16,
+      "COR": "[5, 1, 7]",
+      "relevance": "[0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]"
+     }
+    },
+    {
+     "Q": " What is the person doing from 77s to 83s?",
+     "A": "The person is applying wax with an iron to the ski.",
+     "T": 134.09,
+     "info": {
+      "is_visual": true,
+      "Event_Time": 134.09,
+      "ID": 17,
+      "COR": "[]",
+      "relevance": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+     }
+    },
+    {
+     "Q": "What item does the person hold in a plastic bag at [145s]?",
+     "A": "The person holds a white, chalk-like substance in a plastic bag.",
+     "T": 189.47,
+     "info": {
+      "is_visual": true,
+      "Event_Time": 189.47,
+      "ID": 18,
+      "COR": "[]",
+      "relevance": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+     }
+    },
+    {
+     "Q": "Why is it important to keep the iron moving when applying wax?",
+     "A": "Keeping the iron moving ensures even distribution of the wax across the ski base.",
+     "T": 189.47,
+     "info": {
+      "is_visual": true,
+      "Event_Time": 189.47,
+      "ID": 19,
+      "COR": "[6, 10, 15, 3, 5]",
+      "relevance": "[0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0]"
+     }
+    },
+    {
+     "Q": "What are the steps to prepare skis?",
+     "A": "The process starts with applying wax. Then, an iron is used to melt and distribute the wax evenly. Finally, excess wax is removed to ensure a smooth surface.",
+     "T": 189.47,
+     "info": {
+      "is_visual": true,
+      "Event_Time": 189.47,
+      "ID": 20,
+      "COR": "[7]",
+      "relevance": "[0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+     }
+    },
+    {
+     "Q": ": What are the key steps demonstrated for preparing skis for optimal performance?",
+     "A": "The key steps demonstrated include: applying wax to the ski base, using a tool to melt and evenly distribute the wax, sharpening the ski edges, and removing excess wax from the ski base.",
+     "T": 189.47,
+     "info": {
+      "is_visual": true,
+      "Event_Time": 189.47,
+      "ID": 21,
+      "COR": "[5, 7, 16, 20, 3, 10, 15]",
+      "relevance": "[0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1]"
+     }
+    },
+    {
+     "Q": ": What are the advantages and disadvantages of each waxing method shown in terms of wax consumption, scraping, and mess?",
+     "A": "The video demonstrates three ski waxing methods: 'Crayoning', 'Hot Smearing' and 'Classic Drip and Iron'. The 'Crayoning' method is the most efficient, with the least wax consumption, scraping, and mess. The 'Hot Smearing' method melts the wax bar for easier application and may be preferred for harder waxes. The 'Classic Drip and Iron' method consumes the most wax.",
+     "T": 189.47,
+     "info": {
+      "is_visual": true,
+      "Event_Time": 189.47,
+      "ID": 22,
+      "COR": "[3, 7, 20]",
+      "relevance": "[0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]"
+     }
+    }
+   ]
+  }
+ ]
+}

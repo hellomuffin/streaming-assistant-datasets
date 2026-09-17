@@ -1,0 +1,13 @@
+{
+ "slug": "mmcsg",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://www.chimechallenge.org/challenges/chime8/task3/data",
+  "https://ai.meta.com/datasets/mmcsg-dataset/",
+  "https://github.com/facebookresearch/MMCSG",
+  "https://www.isca-archive.org/chime_2024/zmolikova24_chime.pdf"
+ ],
+ "access_used": "public sample in paper/repo/card only (full data needs Meta MMCSG Data License registration)",
+ "note": "No examples: transcripts, RTTM and videos are only distributed after registering for the Meta MMCSG Data License, and no public mirror exists (HF search for mmcsg/chime8 empty). The CHiME page, the paper and the baseline repo (facebookresearch/MMCSG) give only the format, not real rows: one .tsv per recording with \"<start-of-word>\\t<end-of-word>\\t<word>\\t<speaker>\", speaker 0=SELF (glasses wearer) and 1=OTHER (partner), plus RTTM \"SPEAKER <recording-id> 1 <start> <duration> <NA> <NA> <0 or 1> <NA> <NA>\" and metadata JSON {self_speaker, other_speaker, noise_category}. The repo lists dev recording ids such as 1044912663445633_0001_3225_21325 (data/perturbation_test_dev) but no transcript text.",
+ "examples": []
+}

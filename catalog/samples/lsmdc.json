@@ -1,0 +1,70 @@
+{
+ "slug": "lsmdc",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://arxiv.org/abs/1605.03705 (Figures 1 and 7)",
+  "https://sites.google.com/site/describingmovies/download (annotation zips under datasets.d2.mpi-inf.mpg.de/movieDescription/protected/, HTTP 401 without credentials)"
+ ],
+ "access_used": "public sample in paper/repo/card only (full data needs the MPII-MD registration username/password)",
+ "note": "The annotation CSVs and clips sit behind a username/password issued after registering at moviedescreg.mpi-inf.mpg.de (our request returned 401), so no real annotation rows were retrieved. The examples are verbatim sentences printed in the IJCV paper: an audio-description (AD) passage next to the script passage for the same shot, and three SOMEONE-anonymised reference sentences from the MPII-MD test set. The paper gives no clip times, so the timelines are empty.",
+ "examples": [
+  {
+   "title": "Ugly Truth: audio description vs. movie script for the same shots (paper Figure 1)",
+   "video_ref": "Ugly Truth (2009)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "txt",
+   "raw": {
+    "AD": [
+     "Abby gets in the basket.",
+     "Mike leans over and sees how high they are.",
+     "Abby clasps her hands around his face and kisses him passionately."
+    ],
+    "Script": [
+     "After a moment a frazzled Abby pops up in his place.",
+     "Mike looks down to see – they are now fifteen feet above the ground.",
+     "For the first time in her life, she stops thinking and grabs Mike and kisses the hell out of him."
+    ],
+    "caption": "Figure 1 Audio description (AD) and movie script samples from the movie \"Ugly Truth\"."
+   }
+  },
+  {
+   "title": "MPII-MD test clips: three reference descriptions with names replaced by \"Someone\" (paper Figure 7)",
+   "video_ref": "MPII-MD test set clips (movie names not given)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "txt",
+   "raw": {
+    "Reference": [
+     "Someone, back in elf guise, is trying to calm the kids.",
+     "They cross the quadrangle below and run along the cloister.",
+     "Someone grabs a vodka bottle standing open on the counter and liberally pours some on the hand."
+    ],
+    "model outputs shown for the same clips (SMT-Best / S2VT / Visual-Labels)": [
+     [
+      "Someone is a man, someone is a man.",
+      "Someone looks at him, someone turns to someone.",
+      "Someone is standing in the crowd, a little man with a little smile."
+     ],
+     [
+      "The car is a water of the water.",
+      "On the door, opens the door opens.",
+      "The fellowship are in the courtyard."
+     ],
+     [
+      "Someone is down the door, someone is a back of the door, and someone is a door.",
+      "Someone shakes his head and looks at someone.",
+      "Someone takes a drink and pours it into the water."
+     ]
+    ],
+    "caption": "Figure 7 Qualitative comparison of our proposed methods to prior work: S2VT (Venugopalan et al. 2015a). Examples from the test set of MPII-MD."
+   }
+  }
+ ]
+}

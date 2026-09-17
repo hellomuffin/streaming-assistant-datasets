@@ -1,0 +1,265 @@
+{
+ "slug": "egoit-99k",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/lmms-lab/EgoIT-99K (parquet/, main EgoIT parquet)",
+  "https://huggingface.co/datasets/lmms-lab/EgoIT-99K/resolve/main/HoloAssist/video/z153-aug-25-22-rashult_assemble.mp4",
+  "https://huggingface.co/datasets/lmms-lab/EgoIT-99K/resolve/main/IndustReal/video/02_assy_0_1.mp4"
+ ],
+ "access_used": "open download",
+ "note": "An example is one parquet row: a short clip window [start_time,end_time] (SRT-style hh:mm:ss,ms) of a re-hosted source video plus a multi-turn first-person QA conversation about that window; all turns share the window, so timeline entries carry the window, not per-turn times. Clips are cut from the videos re-hosted in the repo (HoloAssist, IndustReal); the card states no license, so source terms apply.",
+ "examples": [
+  {
+   "title": "HoloAssist z153 (RÅSHULT cart assembly): screw insertion — 5 QA pairs incl. 'wrong hole?'",
+   "video_ref": "data/HoloAssist/video/z153-aug-25-22-rashult_assemble.mp4",
+   "duration_s": null,
+   "clip": "samples/media/egoit-99k_1.mp4",
+   "clip_offset_s": 251,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 253.2,
+     "te": 267.7,
+     "lane": "question",
+     "text": "What am I inserting into the frame?"
+    },
+    {
+     "t": 253.2,
+     "te": 267.7,
+     "lane": "answer",
+     "text": "A new screw."
+    },
+    {
+     "t": 253.2,
+     "te": 267.7,
+     "lane": "question",
+     "text": "What is my intent with this action?"
+    },
+    {
+     "t": 253.2,
+     "te": 267.7,
+     "lane": "answer",
+     "text": "To prepare it for tightening with the screwdriver."
+    },
+    {
+     "t": 253.2,
+     "te": 267.7,
+     "lane": "question",
+     "text": "What might be my next step?"
+    },
+    {
+     "t": 253.2,
+     "te": 267.7,
+     "lane": "answer",
+     "text": "To place the screwdriver on the screw head to begin tightening it."
+    },
+    {
+     "t": 253.2,
+     "te": 267.7,
+     "lane": "question",
+     "text": "How am I positioning the screw?"
+    },
+    {
+     "t": 253.2,
+     "te": 267.7,
+     "lane": "answer",
+     "text": "Carefully to ensure it is correctly aligned with the hole in the frame."
+    },
+    {
+     "t": 253.2,
+     "te": 267.7,
+     "lane": "question",
+     "text": "Is the screw being inserted into the wrong hole?"
+    },
+    {
+     "t": 253.2,
+     "te": 267.7,
+     "lane": "answer",
+     "text": "No."
+    }
+   ],
+   "raw_format": "parquet row",
+   "raw": {
+    "image": null,
+    "conversations": [
+     {
+      "from": "human",
+      "value": "What am I inserting into the frame?<image>\n"
+     },
+     {
+      "from": "gpt",
+      "value": "A new screw."
+     },
+     {
+      "from": "human",
+      "value": "What is my intent with this action?"
+     },
+     {
+      "from": "gpt",
+      "value": "To prepare it for tightening with the screwdriver."
+     },
+     {
+      "from": "human",
+      "value": "What might be my next step?"
+     },
+     {
+      "from": "gpt",
+      "value": "To place the screwdriver on the screw head to begin tightening it."
+     },
+     {
+      "from": "human",
+      "value": "How am I positioning the screw?"
+     },
+     {
+      "from": "gpt",
+      "value": "Carefully to ensure it is correctly aligned with the hole in the frame."
+     },
+     {
+      "from": "human",
+      "value": "Is the screw being inserted into the wrong hole?"
+     },
+     {
+      "from": "gpt",
+      "value": "No."
+     }
+    ],
+    "end_frame": 7935.0,
+    "video": "data/HoloAssist/video/z153-aug-25-22-rashult_assemble.mp4",
+    "audio": null,
+    "current_observation_frame": null,
+    "end_time": "00:04:27,700",
+    "fps": 29.642548409405254,
+    "start_time": "00:04:13,200",
+    "dimensions": null,
+    "start_frame": 7505.0,
+    "id": "z153-aug-25-22-rashult_assemble_short_107_0"
+   }
+  },
+  {
+   "title": "IndustReal 02_assy_0_1 (toy-car assembly): checking the manual to avoid mistakes — 5 QA pairs",
+   "video_ref": "data/IndustReal/video/02_assy_0_1.mp4",
+   "duration_s": null,
+   "clip": "samples/media/egoit-99k_2.mp4",
+   "clip_offset_s": 276,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 278.9,
+     "te": 288.9,
+     "lane": "question",
+     "text": "What do I check to ensure I am following the correct steps?"
+    },
+    {
+     "t": 278.9,
+     "te": 288.9,
+     "lane": "answer",
+     "text": "The instruction manual."
+    },
+    {
+     "t": 278.9,
+     "te": 288.9,
+     "lane": "question",
+     "text": "What is my intent while checking the instruction manual?"
+    },
+    {
+     "t": 278.9,
+     "te": 288.9,
+     "lane": "answer",
+     "text": "To avoid any mistakes during the assembly process."
+    },
+    {
+     "t": 278.9,
+     "te": 288.9,
+     "lane": "question",
+     "text": "What might be my next step after checking the manual?"
+    },
+    {
+     "t": 278.9,
+     "te": 288.9,
+     "lane": "answer",
+     "text": "To gather the necessary components for the next part of the build."
+    },
+    {
+     "t": 278.9,
+     "te": 288.9,
+     "lane": "question",
+     "text": "Are the manual and parts clearly visible?"
+    },
+    {
+     "t": 278.9,
+     "te": 288.9,
+     "lane": "answer",
+     "text": "Yes."
+    },
+    {
+     "t": 278.9,
+     "te": 288.9,
+     "lane": "question",
+     "text": "Am I assembling electronic components?"
+    },
+    {
+     "t": 278.9,
+     "te": 288.9,
+     "lane": "answer",
+     "text": "No."
+    }
+   ],
+   "raw_format": "parquet row",
+   "raw": {
+    "image": null,
+    "conversations": [
+     {
+      "from": "human",
+      "value": "What do I check to ensure I am following the correct steps?<image>\n"
+     },
+     {
+      "from": "gpt",
+      "value": "The instruction manual."
+     },
+     {
+      "from": "human",
+      "value": "What is my intent while checking the instruction manual?"
+     },
+     {
+      "from": "gpt",
+      "value": "To avoid any mistakes during the assembly process."
+     },
+     {
+      "from": "human",
+      "value": "What might be my next step after checking the manual?"
+     },
+     {
+      "from": "gpt",
+      "value": "To gather the necessary components for the next part of the build."
+     },
+     {
+      "from": "human",
+      "value": "Are the manual and parts clearly visible?"
+     },
+     {
+      "from": "gpt",
+      "value": "Yes."
+     },
+     {
+      "from": "human",
+      "value": "Am I assembling electronic components?"
+     },
+     {
+      "from": "gpt",
+      "value": "No."
+     }
+    ],
+    "end_frame": 2889.0,
+    "video": "data/IndustReal/video/02_assy_0_1.mp4",
+    "audio": null,
+    "current_observation_frame": null,
+    "end_time": "00:04:48,900",
+    "fps": 10.0,
+    "start_time": "00:04:38,900",
+    "dimensions": null,
+    "start_frame": 2789.0,
+    "id": "02_assy_0_1_long_52_0"
+   }
+  }
+ ]
+}

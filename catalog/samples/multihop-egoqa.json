@@ -1,0 +1,647 @@
+{
+ "slug": "multihop-egoqa",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/SurplusDeficit/MultiHop-EgoQA train_annotations.json (segment 540c91d9-37a9-4148-bf24-3418feb7e212_720_900)",
+  "https://huggingface.co/datasets/SurplusDeficit/MultiHop-EgoQA MultiHop-EgoQA.json (test set; the 6 records of segment 96e231f7-fa0b-4c98-99c8-3edfbe765cb3_0_180)"
+ ],
+ "access_used": "open download",
+ "note": "One example = one 180 s Ego4D segment and all its questions. Answers mark evidence phrases with <T1>…</T1> tags; T and Evidence give one or more [start,end] spans in seconds from the segment start (the timeline adds segment_in_video_start to give full-video seconds). 'When did I…' answers are just '<T1></T1>.', so the spans are the answer. Train QA are LLM-generated from narrations; the test set is human-annotated and has a question category. No clip: Ego4D videos (license agreement).",
+ "examples": [
+  {
+   "title": "Train segment 540c91d9…_720_900: ruling lines and erasing in a book — 6 multi-span QA",
+   "video_ref": "Ego4D video_uid 540c91d9-37a9-4148-bf24-3418feb7e212, segment 720–900 s",
+   "duration_s": 180,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 743,
+     "te": null,
+     "lane": "question",
+     "text": "When did I place the ruler on the book with my left hand?"
+    },
+    {
+     "t": 743,
+     "te": 745,
+     "lane": "answer",
+     "text": "<T1> (answer is the time span itself) — for: When did I place the ruler on the book with my left hand?"
+    },
+    {
+     "t": 745,
+     "te": null,
+     "lane": "question",
+     "text": "When did I rule a line on the book with the pencil in my right hand?"
+    },
+    {
+     "t": 745,
+     "te": 750,
+     "lane": "answer",
+     "text": "<T1> (answer is the time span itself) — for: When did I rule a line on the book with the pencil in my right hand?"
+    },
+    {
+     "t": 758,
+     "te": null,
+     "lane": "question",
+     "text": "What do I use to clean the page?"
+    },
+    {
+     "t": 758,
+     "te": 761,
+     "lane": "answer",
+     "text": "<T1> use the eraser — for: What do I use to clean the page?"
+    },
+    {
+     "t": 761,
+     "te": null,
+     "lane": "question",
+     "text": "Where did I drop the eraser with my right hand?"
+    },
+    {
+     "t": 761,
+     "te": 762,
+     "lane": "answer",
+     "text": "<T1> dropped the eraser on the table — for: Where did I drop the eraser with my right hand?"
+    },
+    {
+     "t": 762,
+     "te": null,
+     "lane": "question",
+     "text": "When did I dust the page with my right hand?"
+    },
+    {
+     "t": 762,
+     "te": 764,
+     "lane": "answer",
+     "text": "<T1> (answer is the time span itself) — for: When did I dust the page with my right hand?"
+    },
+    {
+     "t": 765,
+     "te": 767,
+     "lane": "answer",
+     "text": "<T1> (answer is the time span itself) — for: When did I place the ruler on the book with my left hand?"
+    },
+    {
+     "t": 767,
+     "te": 773,
+     "lane": "answer",
+     "text": "<T1> (answer is the time span itself) — for: When did I rule a line on the book with the pencil in my right hand?"
+    },
+    {
+     "t": 787,
+     "te": 802,
+     "lane": "answer",
+     "text": "<T1> use the eraser — for: What do I use to clean the page?"
+    },
+    {
+     "t": 794,
+     "te": 803,
+     "lane": "answer",
+     "text": "<T1> (answer is the time span itself) — for: When did I dust the page with my right hand?"
+    },
+    {
+     "t": 802,
+     "te": 802,
+     "lane": "answer",
+     "text": "<T1> dropped the eraser on the table — for: Where did I drop the eraser with my right hand?"
+    },
+    {
+     "t": 836,
+     "te": null,
+     "lane": "question",
+     "text": "When did I flip the pages of the book with my right hand?"
+    },
+    {
+     "t": 836,
+     "te": 848,
+     "lane": "answer",
+     "text": "<T1> (answer is the time span itself) — for: When did I flip the pages of the book with my right hand?"
+    },
+    {
+     "t": 875,
+     "te": 883,
+     "lane": "answer",
+     "text": "<T1> (answer is the time span itself) — for: When did I flip the pages of the book with my right hand?"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "video_uid": "540c91d9-37a9-4148-bf24-3418feb7e212",
+    "segment_in_video_start": 720,
+    "segment_in_video_end": 900,
+    "pass_idx": "narration_pass_1",
+    "segment_id": "540c91d9-37a9-4148-bf24-3418feb7e212_720_900",
+    "annotated_QA": [
+     {
+      "sample_id": "540c91d9-37a9-4148-bf24-3418feb7e212_720_900_0",
+      "Q": "When did I flip the pages of the book with my right hand?",
+      "A": "<T1></T1>.",
+      "T": [
+       [
+        116,
+        128
+       ],
+       [
+        155,
+        163
+       ]
+      ],
+      "Evidence": {
+       "<T1>": [
+        [
+         116,
+         128
+        ],
+        [
+         155,
+         163
+        ]
+       ]
+      }
+     },
+     {
+      "sample_id": "540c91d9-37a9-4148-bf24-3418feb7e212_720_900_1",
+      "Q": "When did I place the ruler on the book with my left hand?",
+      "A": "<T1></T1>.",
+      "T": [
+       [
+        23,
+        25
+       ],
+       [
+        45,
+        47
+       ]
+      ],
+      "Evidence": {
+       "<T1>": [
+        [
+         23,
+         25
+        ],
+        [
+         45,
+         47
+        ]
+       ]
+      }
+     },
+     {
+      "sample_id": "540c91d9-37a9-4148-bf24-3418feb7e212_720_900_2",
+      "Q": "When did I rule a line on the book with the pencil in my right hand?",
+      "A": "<T1></T1>.",
+      "T": [
+       [
+        25,
+        30
+       ],
+       [
+        47,
+        53
+       ]
+      ],
+      "Evidence": {
+       "<T1>": [
+        [
+         25,
+         30
+        ],
+        [
+         47,
+         53
+        ]
+       ]
+      }
+     },
+     {
+      "sample_id": "540c91d9-37a9-4148-bf24-3418feb7e212_720_900_3",
+      "Q": "What do I use to clean the page?",
+      "A": "You <T1>use the eraser</T1> in your right hand to clean the page.",
+      "T": [
+       [
+        38,
+        41
+       ],
+       [
+        67,
+        82
+       ]
+      ],
+      "Evidence": {
+       "<T1>": [
+        [
+         38,
+         41
+        ],
+        [
+         67,
+         82
+        ]
+       ]
+      }
+     },
+     {
+      "sample_id": "540c91d9-37a9-4148-bf24-3418feb7e212_720_900_4",
+      "Q": "When did I dust the page with my right hand?",
+      "A": "<T1></T1>.",
+      "T": [
+       [
+        42,
+        44
+       ],
+       [
+        74,
+        83
+       ]
+      ],
+      "Evidence": {
+       "<T1>": [
+        [
+         42,
+         44
+        ],
+        [
+         74,
+         83
+        ]
+       ]
+      }
+     },
+     {
+      "sample_id": "540c91d9-37a9-4148-bf24-3418feb7e212_720_900_5",
+      "Q": "Where did I drop the eraser with my right hand?",
+      "A": "You <T1>dropped the eraser on the table</T1> with your right hand.",
+      "T": [
+       [
+        41,
+        42
+       ],
+       [
+        82,
+        82
+       ]
+      ],
+      "Evidence": {
+       "<T1>": [
+        [
+         41,
+         42
+        ],
+        [
+         82,
+         82
+        ]
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "title": "Test segment 96e231f7…_0_180: washing and cutting onion and potato — 6 human-annotated QA (categories A, B, C)",
+   "video_ref": "Ego4D video_uid 96e231f7-fa0b-4c98-99c8-3edfbe765cb3, segment 0–180 s",
+   "duration_s": 180,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0,
+     "te": null,
+     "lane": "question",
+     "text": "What ingredients did I cut with the knife in my right hand? [category C]"
+    },
+    {
+     "t": 0,
+     "te": 13,
+     "lane": "answer",
+     "text": "<T1> cut onion — for: What ingredients did I cut with the knife in my right hand?"
+    },
+    {
+     "t": 26,
+     "te": 32,
+     "lane": "answer",
+     "text": "<T1> cut onion — for: What ingredients did I cut with the knife in my right hand?"
+    },
+    {
+     "t": 32,
+     "te": null,
+     "lane": "question",
+     "text": "What did I do with the dirt from the onion? [category B]"
+    },
+    {
+     "t": 32,
+     "te": 38,
+     "lane": "answer",
+     "text": "<T1> removed and dropped dirt from the onion into the wash sink — for: What did I do with the dirt from the onion?"
+    },
+    {
+     "t": 41,
+     "te": null,
+     "lane": "question",
+     "text": "When did I open the tap with my left hand? [category A]"
+    },
+    {
+     "t": 41,
+     "te": null,
+     "lane": "question",
+     "text": "When did I rinse the knife in the sink? [category A]"
+    },
+    {
+     "t": 41,
+     "te": null,
+     "lane": "question",
+     "text": "When did I open the tap with my left hand? [category A]"
+    },
+    {
+     "t": 41,
+     "te": 43,
+     "lane": "answer",
+     "text": "<T1> (answer is the time span itself) — for: When did I open the tap with my left hand?"
+    },
+    {
+     "t": 41,
+     "te": 42,
+     "lane": "answer",
+     "text": "<T1> (answer is the time span itself) — for: When did I rinse the knife in the sink?"
+    },
+    {
+     "t": 41,
+     "te": 41,
+     "lane": "answer",
+     "text": "<T1> (answer is the time span itself) — for: When did I open the tap with my left hand?"
+    },
+    {
+     "t": 44,
+     "te": 55,
+     "lane": "answer",
+     "text": "<T1> cut onion — for: What ingredients did I cut with the knife in my right hand?"
+    },
+    {
+     "t": 64,
+     "te": 67,
+     "lane": "answer",
+     "text": "<T2> picked dirt from the cutting mat and dropped it into the wash sink — for: What did I do with the dirt from the onion?"
+    },
+    {
+     "t": 75,
+     "te": 77,
+     "lane": "answer",
+     "text": "<T1> (answer is the time span itself) — for: When did I open the tap with my left hand?"
+    },
+    {
+     "t": 75,
+     "te": 76,
+     "lane": "answer",
+     "text": "<T1> (answer is the time span itself) — for: When did I rinse the knife in the sink?"
+    },
+    {
+     "t": 75,
+     "te": 75,
+     "lane": "answer",
+     "text": "<T1> (answer is the time span itself) — for: When did I open the tap with my left hand?"
+    },
+    {
+     "t": 78,
+     "te": null,
+     "lane": "question",
+     "text": "What items did I peel in the video? [category A]"
+    },
+    {
+     "t": 78,
+     "te": 145,
+     "lane": "answer",
+     "text": "<T1> peeled the potato with the knife in your right hand — for: What items did I peel in the video?"
+    },
+    {
+     "t": 131,
+     "te": 131,
+     "lane": "answer",
+     "text": "<T1> (answer is the time span itself) — for: When did I open the tap with my left hand?"
+    },
+    {
+     "t": 131,
+     "te": 135,
+     "lane": "answer",
+     "text": "<T1> (answer is the time span itself) — for: When did I rinse the knife in the sink?"
+    },
+    {
+     "t": 131,
+     "te": 131,
+     "lane": "answer",
+     "text": "<T1> (answer is the time span itself) — for: When did I open the tap with my left hand?"
+    },
+    {
+     "t": 145,
+     "te": 168,
+     "lane": "answer",
+     "text": "<T2> potato on the cutting mat — for: What ingredients did I cut with the knife in my right hand?"
+    }
+   ],
+   "raw_format": "json",
+   "raw": [
+    {
+     "segment_id": "96e231f7-fa0b-4c98-99c8-3edfbe765cb3_0_180",
+     "sample_id": "96e231f7-fa0b-4c98-99c8-3edfbe765cb3_0_180_1",
+     "category": "A",
+     "Q": "When did I open the tap with my left hand?",
+     "A": "<T1></T1>.",
+     "T": [
+      [
+       41,
+       43
+      ],
+      [
+       75,
+       77
+      ],
+      [
+       131,
+       131
+      ]
+     ],
+     "Evidence": {
+      "<T1>": [
+       [
+        41,
+        43
+       ],
+       [
+        75,
+        77
+       ],
+       [
+        131,
+        131
+       ]
+      ]
+     }
+    },
+    {
+     "segment_id": "96e231f7-fa0b-4c98-99c8-3edfbe765cb3_0_180",
+     "sample_id": "96e231f7-fa0b-4c98-99c8-3edfbe765cb3_0_180_2",
+     "category": "C",
+     "Q": "What ingredients did I cut with the knife in my right hand?",
+     "A": "You <T1>cut onion</T1> and <T2>potato on the cutting mat</T2> with the knife in your right hand.",
+     "T": [
+      [
+       0,
+       13
+      ],
+      [
+       26,
+       32
+      ],
+      [
+       44,
+       55
+      ],
+      [
+       145,
+       168
+      ]
+     ],
+     "Evidence": {
+      "<T1>": [
+       [
+        0,
+        13
+       ],
+       [
+        26,
+        32
+       ],
+       [
+        44,
+        55
+       ]
+      ],
+      "<T2>": [
+       145,
+       168
+      ]
+     }
+    },
+    {
+     "segment_id": "96e231f7-fa0b-4c98-99c8-3edfbe765cb3_0_180",
+     "sample_id": "96e231f7-fa0b-4c98-99c8-3edfbe765cb3_0_180_3",
+     "category": "A",
+     "Q": "When did I rinse the knife in the sink?",
+     "A": "<T1></T1>.",
+     "T": [
+      [
+       41,
+       42
+      ],
+      [
+       75,
+       76
+      ],
+      [
+       131,
+       135
+      ]
+     ],
+     "Evidence": {
+      "<T1>": [
+       [
+        41,
+        42
+       ],
+       [
+        75,
+        76
+       ],
+       [
+        131,
+        135
+       ]
+      ]
+     }
+    },
+    {
+     "segment_id": "96e231f7-fa0b-4c98-99c8-3edfbe765cb3_0_180",
+     "sample_id": "96e231f7-fa0b-4c98-99c8-3edfbe765cb3_0_180_4",
+     "category": "A",
+     "Q": "When did I open the tap with my left hand?",
+     "A": "<T1></T1>.",
+     "T": [
+      [
+       41,
+       41
+      ],
+      [
+       75,
+       75
+      ],
+      [
+       131,
+       131
+      ]
+     ],
+     "Evidence": {
+      "<T1>": [
+       [
+        41,
+        41
+       ],
+       [
+        75,
+        75
+       ],
+       [
+        131,
+        131
+       ]
+      ]
+     }
+    },
+    {
+     "segment_id": "96e231f7-fa0b-4c98-99c8-3edfbe765cb3_0_180",
+     "sample_id": "96e231f7-fa0b-4c98-99c8-3edfbe765cb3_0_180_5",
+     "category": "B",
+     "Q": "What did I do with the dirt from the onion?",
+     "A": "You <T1>removed and dropped dirt from the onion into the wash sink</T1> and also <T2>picked dirt from the cutting mat and dropped it into the wash sink</T2>.",
+     "T": [
+      [
+       32,
+       38
+      ],
+      [
+       64,
+       67
+      ]
+     ],
+     "Evidence": {
+      "<T1>": [
+       32,
+       38
+      ],
+      "<T2>": [
+       64,
+       67
+      ]
+     }
+    },
+    {
+     "segment_id": "96e231f7-fa0b-4c98-99c8-3edfbe765cb3_0_180",
+     "sample_id": "96e231f7-fa0b-4c98-99c8-3edfbe765cb3_0_180_6",
+     "category": "A",
+     "Q": "What items did I peel in the video?",
+     "A": "You <T1>peeled the potato with the knife in your right hand</T1>.",
+     "T": [
+      78,
+      145
+     ],
+     "Evidence": {
+      "<T1>": [
+       78,
+       145
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

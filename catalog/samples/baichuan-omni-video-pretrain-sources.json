@@ -1,0 +1,170 @@
+{
+ "slug": "baichuan-omni-video-pretrain-sources",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/Koala-36M/Koala-36M-v1/resolve/main/Koala_36M_1.csv (HTTP range read of the first 40 KB; row 2)",
+  "https://huggingface.co/datasets/ShareGPT4Video/ShareGPT4Video/resolve/main/sharegpt4video_40k.jsonl (range read; record video_id 000e1972a681865851082e2f397dde43f8b9b989edfd7454d949c9924c72a841)",
+  "https://huggingface.co/datasets/ShareGPT4Video/ShareGPT4Video zip_folder/pexels/pexels_videos_1.zip (member 000e1972a681865851082e2f397dde43f8b9b989edfd7454d949c9924c72a841.mp4)"
+ ],
+ "access_used": "open download",
+ "note": "These are offline caption corpora, not streaming data: a Koala-36M example is one CSV row (a YouTube clip window with one long generated caption and quality scores), and a ShareGPT4Video example is one jsonl record (keyframe-by-keyframe GPT-4V captions every 2 s plus an idx '-1' whole-video summary). Baichuan-Omni-1.5 reports using Koala (30M) and ShareGemini; ShareGPT4Video is shown as the openly hosted caption source in this family. Koala videos are YouTube-only, so only the ShareGPT4Video (Pexels) example has a clip; both corpora are non-commercial.",
+ "examples": [
+  {
+   "title": "Koala-36M D03BQb0sEqw_10: one 17 s window of a YouTube video, one dense caption + 4 quality scores",
+   "video_ref": "https://www.youtube.com/watch?v=D03BQb0sEqw (videoID D03BQb0sEqw_10)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 347.08,
+     "te": 364.297,
+     "lane": "caption",
+     "text": "A young woman is sitting on a bed in a bedroom, engrossed in her phone. She is wearing a black top and jeans, with a red pillow behind her. A man enters the room, wearing a red cap, a burgundy shirt, and jeans. He approaches the bed and sits down, engaging in a conversation with the woman. The room is well-lit with a ceiling fan and a large window, and there are framed pictures on the wall. The main subjects are a young woman and a man. The woman is sitting on the bed, holding a phone, and wearing a black top and jeans. She has long hair tied back. The man enters the room, wearing a red cap, burgundy shirt, and jeans. He sits down on the bed and engages in a conversation with the woman. The woman remains mostly stationary, focused on her phone, while the man moves to sit beside her and begins to talk. The man's movements are slow and deliberate as he approaches the bed, sits down, and engages in conversation with the woman. The woman's movements are minimal, primarily involving her hands as she interacts with her phone. The background remains static, with no significant changes or movements. The camera is stationary, providing a wide view of the bedroom scene, capturing both the subjects and the background in a single, stable shot."
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": {
+    "videoID": "D03BQb0sEqw_10",
+    "url": "https://www.youtube.com/watch?v=D03BQb0sEqw",
+    "timestamp": "['0:05:47.080', '0:06:04.297']",
+    "caption": "A young woman is sitting on a bed in a bedroom, engrossed in her phone. She is wearing a black top and jeans, with a red pillow behind her. A man enters the room, wearing a red cap, a burgundy shirt, and jeans. He approaches the bed and sits down, engaging in a conversation with the woman. The room is well-lit with a ceiling fan and a large window, and there are framed pictures on the wall. The main subjects are a young woman and a man. The woman is sitting on the bed, holding a phone, and wearing a black top and jeans. She has long hair tied back. The man enters the room, wearing a red cap, burgundy shirt, and jeans. He sits down on the bed and engages in a conversation with the woman. The woman remains mostly stationary, focused on her phone, while the man moves to sit beside her and begins to talk. The man's movements are slow and deliberate as he approaches the bed, sits down, and engages in conversation with the woman. The woman's movements are minimal, primarily involving her hands as she interacts with her phone. The background remains static, with no significant changes or movements. The camera is stationary, providing a wide view of the bedroom scene, capturing both the subjects and the background in a single, stable shot.",
+    "clarity_score": "0.9101866036653519",
+    "aesthetic_score": "4.571975",
+    "motion_score": "0.8466646671295166",
+    "video_training_suitability_score": "4.318729414555831"
+   }
+  },
+  {
+   "title": "ShareGPT4Video pexels/000e1972…: woman adjusting cap and jacket — 8 keyframe captions (every 2 s) + summary",
+   "video_ref": "pexels/000e1972a681865851082e2f397dde43f8b9b989edfd7454d949c9924c72a841.mp4",
+   "duration_s": 13.47,
+   "clip": "samples/media/baichuan-omni-video-pretrain-sources_1.mp4",
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": null,
+     "lane": "caption",
+     "text": "The image shows a person against a patterned background adorned with black spiral designs on a pink base. The individual is pulling at the two ends of a multi-colored zipper on a jacket. The jacket exhibits bold vertical sections of color: red, white, purple, and other colors partially visible at the edges. They wear a yellow top underneath, revealed slightly by the partly zipped down jacket. The person's long black braids, adorned with green and orange yarn, fall over the shoulders and onto the chest. The hands are visible, with one grasping the zipper's handle, indicating a paused action of zipping or unzipping the jacket. The lighting is bright and even, casting soft shadows, suggesting an outdoor setting or a well-lit indoor space."
+    },
+    {
+     "t": 2.0,
+     "te": null,
+     "lane": "caption",
+     "text": "In the second frame, a shift in the individual's position is noticeable. The person now holds their arm across the torso, with the hand resting just below the jacket's collar on the opposite side, suggesting a pose or a mid-movement snapshot. The jacket is still partially zipped open, revealing the same yellow top underneath. The background reveals more of the environment, including an ornate frame with a green border showcasing an artwork, enhancing the sense of a decorated space. The background maintains the continuity of patterned spirals and the pink hue. The lighting remains consistent with the previous frame, suggesting no significant time lapse or change in the setting."
+    },
+    {
+     "t": 4.0,
+     "te": null,
+     "lane": "caption",
+     "text": "In the third frame captured at the four-second mark, the subject's arm is now raised higher with their hand positioned near the right side of the head, suggesting a wave or an adjustment of the cap. The vibrant, multi-colored cap continues to rest atop the subject's head, unchanged in position. The brightly hued jacket remains only partly zipped, revealing the same yellow garment beneath as in the earlier frames.\n\nThe background continues to display the ornate green frame containing an artwork, indicative of a consistent location. The intricately designed pattern on the pink wall is partially obscured by the subject's raised arm, emphasizing the interaction with the surrounding environment. The lighting within the scene persists uniformly, offering a steady and uninterrupted viewpoint of the video's setting."
+    },
+    {
+     "t": 6.0,
+     "te": null,
+     "lane": "caption",
+     "text": "In this fourth frame at the six-second mark, the subject's hands have shifted to grasp the rim of the colorful cap, seemingly in a motion to adjust its position on the head. The cap itself, with its vivid hues, remains a focal point as the subject handles it deliberately. \n\nThe individual's attire has not changed, with the multi-colored jacket partially zipped, showing the yellow inner garment. The braided hairstyle, cascading down from beneath the cap, retains its previous neat alignment.\n\nThe ornate green frame and the artwork it houses persist in the background, with the pink wall and its decorative patterns now more visible as the subject's arms are raised higher, altering the composition of the frame slightly. The overall ambient lighting remains steady, maintaining a clear visual on the movements of the subject within the consistent interior setting."
+    },
+    {
+     "t": 8.0,
+     "te": null,
+     "lane": "caption",
+     "text": "In the subsequent frame at the eight-second juncture, the individual's hands continue to secure the rim of the cap, with the fingers outstretched, indicating the completion or continuation of the cap-adjusting action. The cap clung to by those hands still exhibits its vivid coloration and remains atop the head in a presumed newly adjusted position. \n\nThe multi-colored jacket and the underlying yellow garment are now more distinctly visible as the jacket is further unzipped, suggesting a casual, relaxed stance. The entirety of the braids falls naturally, framing the colorful attire and creating a congruent aesthetic with the vivid attire.\n\nThe backdrop, with its ornate elements, is still identifiable, though the subject's upward and outward arm movement slightly obscures the view of the artwork. The maintained ambient lighting continues to cast consistent illumination over the scene, accentuating the bright colors worn by the subject and the vibrant interior around them."
+    },
+    {
+     "t": 10.0,
+     "te": null,
+     "lane": "caption",
+     "text": "In this frame, captured two seconds later at the ten-second mark, there’s a notable alteration in the individual's arms’ position which are no longer visible in the frame. This suggests they may have lowered their arms. The individual's attire, comprising the multi-colored jacket and yellow undergarment, remains largely unchanged in its appearance from the previous frame, with the jacket yet unzipped to a similar degree, conveying a continuity in the subject's casual demeanor.\n\nThe colorful braids continue to cascade down, reflecting an unchanged hairstyle from the earlier snapshot. The ornate background elements, coupled with the vibrant colors of the jacket, contribute to an undisturbed lively setting, with the artwork slightly more visible now that the arms are lowered, affording an unobstructed view.\n\nThe lighting stays consistent, casting steady light across the scene, highlighting the play of colors and textures, from the braids to the fabric of the clothing and the intricate backdrop."
+    },
+    {
+     "t": 12.0,
+     "te": null,
+     "lane": "caption",
+     "text": "In this frame, captured at the twelve-second mark, the individual's hands appear slightly raised compared to the previous image, suggesting an upward motion. This changing gesture signifies a dynamic sequence of movements. The attire remains constant, with the colorful jacket still presenting its vibrant pattern, although the lower positioning of the arms might indicate a different stance or the beginning of a particular action.\n\nThe background remains visually consistent, with the ornate designs on the wall enduring unaltered, serving as a static backdrop to the scene. The ensemble of the setting, with its rich color palette, stays in harmony, allowing the focus to remain on the subject's evolving actions. The lighting continues to be steady, maintaining the ambiance captured in the earlier frame."
+    },
+    {
+     "t": 14.0,
+     "te": null,
+     "lane": "caption",
+     "text": "In the video's progression to the fourteen-second mark, the individual's attire is more prominently displayed. The vibrant jacket is now shown with an opened zipper, revealing more of the garment underneath, suggesting a recent action of unzipping. The subject's posture appears more relaxed as compared to the previous frame, with the subtle shift in clothing and body stance marking the most noticeable change.\n\nThe surrounding environment offers no significant variance; the same patterned wallpaper frames the scene, undisturbed by any new elements. Arresting in its consistency, the ambiance of the setting remains much the same. The framing of the shot does not suggest any noticeable camera movement, offering a steady continuation from the moment captured two seconds prior."
+    },
+    {
+     "t": 0.0,
+     "te": 14.0,
+     "lane": "caption",
+     "text": "The video features an individual against a patterned background with black spiral designs on a pink base, adorned by an ornate frame showcasing artwork. Initially, the person is seen interacting with the zipper of a multi-colored jacket, which covers a yellow top beneath. Their long black braids, accented with green and orange yarn, add color to the scene. As the video progresses, the individual shifts their arm across the torso, and later, raises their arm near the head, suggesting a wave or an adjustment to the vividly colored cap they're wearing.\n\nFurther into the video, the subject is observed handling the rim of the cap, possibly adjusting its position, while the jacket remains partly unzipped, revealing more of the yellow garment underneath. The movement culminates in a relaxed posture, with the arms eventually lowered and the jacket unzipped slightly more than at the beginning, suggesting a casual, relaxed demeanor throughout.\n\nThe background's ornate elements and the vibrant color palette of the subject's attire and environment remain consistent, offering a visually stimulating scene. The lighting stays steady, ensuring clear visibility of the subject's movements and the surrounding details."
+    }
+   ],
+   "raw_format": "jsonl line",
+   "raw": {
+    "video_id": "000e1972a681865851082e2f397dde43f8b9b989edfd7454d949c9924c72a841",
+    "video_path": "pexels/000e1972a681865851082e2f397dde43f8b9b989edfd7454d949c9924c72a841.mp4",
+    "timestamp": [
+     "00:00:00.000",
+     "00:00:14.000"
+    ],
+    "keyframe": [
+     0.0,
+     2.0,
+     4.0,
+     6.0,
+     8.0,
+     10.0,
+     12.0,
+     14.0
+    ],
+    "captions": [
+     {
+      "idx": "1",
+      "content": "The image shows a person against a patterned background adorned with black spiral designs on a pink base. The individual is pulling at the two ends of a multi-colored zipper on a jacket. The jacket exhibits bold vertical sections of color: red, white, purple, and other colors partially visible at the edges. They wear a yellow top underneath, revealed slightly by the partly zipped down jacket. The person's long black braids, adorned with green and orange yarn, fall over the shoulders and onto the chest. The hands are visible, with one grasping the zipper's handle, indicating a paused action of zipping or unzipping the jacket. The lighting is bright and even, casting soft shadows, suggesting an outdoor setting or a well-lit indoor space.",
+      "time_stamp": "0.00"
+     },
+     {
+      "idx": "2",
+      "content": "In the second frame, a shift in the individual's position is noticeable. The person now holds their arm across the torso, with the hand resting just below the jacket's collar on the opposite side, suggesting a pose or a mid-movement snapshot. The jacket is still partially zipped open, revealing the same yellow top underneath. The background reveals more of the environment, including an ornate frame with a green border showcasing an artwork, enhancing the sense of a decorated space. The background maintains the continuity of patterned spirals and the pink hue. The lighting remains consistent with the previous frame, suggesting no significant time lapse or change in the setting.",
+      "time_stamp": "2.00"
+     },
+     {
+      "idx": "3",
+      "content": "In the third frame captured at the four-second mark, the subject's arm is now raised higher with their hand positioned near the right side of the head, suggesting a wave or an adjustment of the cap. The vibrant, multi-colored cap continues to rest atop the subject's head, unchanged in position. The brightly hued jacket remains only partly zipped, revealing the same yellow garment beneath as in the earlier frames.\n\nThe background continues to display the ornate green frame containing an artwork, indicative of a consistent location. The intricately designed pattern on the pink wall is partially obscured by the subject's raised arm, emphasizing the interaction with the surrounding environment. The lighting within the scene persists uniformly, offering a steady and uninterrupted viewpoint of the video's setting.",
+      "time_stamp": "4.00"
+     },
+     {
+      "idx": "4",
+      "content": "In this fourth frame at the six-second mark, the subject's hands have shifted to grasp the rim of the colorful cap, seemingly in a motion to adjust its position on the head. The cap itself, with its vivid hues, remains a focal point as the subject handles it deliberately. \n\nThe individual's attire has not changed, with the multi-colored jacket partially zipped, showing the yellow inner garment. The braided hairstyle, cascading down from beneath the cap, retains its previous neat alignment.\n\nThe ornate green frame and the artwork it houses persist in the background, with the pink wall and its decorative patterns now more visible as the subject's arms are raised higher, altering the composition of the frame slightly. The overall ambient lighting remains steady, maintaining a clear visual on the movements of the subject within the consistent interior setting.",
+      "time_stamp": "6.00"
+     },
+     {
+      "idx": "5",
+      "content": "In the subsequent frame at the eight-second juncture, the individual's hands continue to secure the rim of the cap, with the fingers outstretched, indicating the completion or continuation of the cap-adjusting action. The cap clung to by those hands still exhibits its vivid coloration and remains atop the head in a presumed newly adjusted position. \n\nThe multi-colored jacket and the underlying yellow garment are now more distinctly visible as the jacket is further unzipped, suggesting a casual, relaxed stance. The entirety of the braids falls naturally, framing the colorful attire and creating a congruent aesthetic with the vivid attire.\n\nThe backdrop, with its ornate elements, is still identifiable, though the subject's upward and outward arm movement slightly obscures the view of the artwork. The maintained ambient lighting continues to cast consistent illumination over the scene, accentuating the bright colors worn by the subject and the vibrant interior around them.",
+      "time_stamp": "8.00"
+     },
+     {
+      "idx": "6",
+      "content": "In this frame, captured two seconds later at the ten-second mark, there’s a notable alteration in the individual's arms’ position which are no longer visible in the frame. This suggests they may have lowered their arms. The individual's attire, comprising the multi-colored jacket and yellow undergarment, remains largely unchanged in its appearance from the previous frame, with the jacket yet unzipped to a similar degree, conveying a continuity in the subject's casual demeanor.\n\nThe colorful braids continue to cascade down, reflecting an unchanged hairstyle from the earlier snapshot. The ornate background elements, coupled with the vibrant colors of the jacket, contribute to an undisturbed lively setting, with the artwork slightly more visible now that the arms are lowered, affording an unobstructed view.\n\nThe lighting stays consistent, casting steady light across the scene, highlighting the play of colors and textures, from the braids to the fabric of the clothing and the intricate backdrop.",
+      "time_stamp": "10.00"
+     },
+     {
+      "idx": "7",
+      "content": "In this frame, captured at the twelve-second mark, the individual's hands appear slightly raised compared to the previous image, suggesting an upward motion. This changing gesture signifies a dynamic sequence of movements. The attire remains constant, with the colorful jacket still presenting its vibrant pattern, although the lower positioning of the arms might indicate a different stance or the beginning of a particular action.\n\nThe background remains visually consistent, with the ornate designs on the wall enduring unaltered, serving as a static backdrop to the scene. The ensemble of the setting, with its rich color palette, stays in harmony, allowing the focus to remain on the subject's evolving actions. The lighting continues to be steady, maintaining the ambiance captured in the earlier frame.",
+      "time_stamp": "12.00"
+     },
+     {
+      "idx": "8",
+      "content": "In the video's progression to the fourteen-second mark, the individual's attire is more prominently displayed. The vibrant jacket is now shown with an opened zipper, revealing more of the garment underneath, suggesting a recent action of unzipping. The subject's posture appears more relaxed as compared to the previous frame, with the subtle shift in clothing and body stance marking the most noticeable change.\n\nThe surrounding environment offers no significant variance; the same patterned wallpaper frames the scene, undisturbed by any new elements. Arresting in its consistency, the ambiance of the setting remains much the same. The framing of the shot does not suggest any noticeable camera movement, offering a steady continuation from the moment captured two seconds prior.",
+      "time_stamp": "14.00"
+     },
+     {
+      "idx": "-1",
+      "content": "The video features an individual against a patterned background with black spiral designs on a pink base, adorned by an ornate frame showcasing artwork. Initially, the person is seen interacting with the zipper of a multi-colored jacket, which covers a yellow top beneath. Their long black braids, accented with green and orange yarn, add color to the scene. As the video progresses, the individual shifts their arm across the torso, and later, raises their arm near the head, suggesting a wave or an adjustment to the vividly colored cap they're wearing.\n\nFurther into the video, the subject is observed handling the rim of the cap, possibly adjusting its position, while the jacket remains partly unzipped, revealing more of the yellow garment underneath. The movement culminates in a relaxed posture, with the arms eventually lowered and the jacket unzipped slightly more than at the beginning, suggesting a casual, relaxed demeanor throughout.\n\nThe background's ornate elements and the vibrant color palette of the subject's attire and environment remain consistent, offering a visually stimulating scene. The lighting stays steady, ensuring clear visibility of the subject's movements and the surrounding details."
+     }
+    ],
+    "zip_folder": "pexels_videos_1.zip"
+   }
+  }
+ ]
+}

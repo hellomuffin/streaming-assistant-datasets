@@ -1,0 +1,34 @@
+{
+ "slug": "videollm-online-narration-stream",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://arxiv.org/abs/2406.11816 (HTML appendix, 'Ego4D Narration Dialogue Stream Example')",
+  "https://github.com/showlab/videollm-online/blob/main/data/preprocess/ego4d_narration_refinement.py"
+ ],
+ "access_used": "public sample in paper/repo/card only (full data needs approval on the gated HF repo chenjoya/videollm-online-chat-ego4d-134k; our token is not on the authorised list, HTTP 403 on refined_narration_stream_val.json)",
+ "note": "No record could be downloaded. The only verbatim published samples are the paper's schematic stream (each [F] is one 2 fps frame; the model emits a narration turn only on some frames and stays silent otherwise) and the refinement few-shot pairs that turn Ego4D 'C …' narrations into the released second-person text. No timestamps are published, so timelines are empty.",
+ "examples": [
+  {
+   "title": "Paper appendix: narration dialogue stream (schematic, frames as [F])",
+   "video_ref": null,
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "txt",
+   "raw": "• Ego4D Narration Dialogue Stream Example: [System] User: Please watch the video and narrate the video in real-time. [F] [F] Assistant: C walks around a room. [F][F] [F] Assistant: C picks up a wire from the floor. [F][F][F] [F] Assistant: C pulls out a wire from a wall. [F][F][F][F] [F] Assistant: C looks around a room. [F][F] …"
+  },
+  {
+   "title": "Refinement few-shot pairs: 'C looks around.' → 'You look around.'",
+   "video_ref": null,
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "txt",
+   "raw": "(\"Please help me to refine the text, e.g., [C looks around.] -> [You look around.]\"\n\"In the text, There are many uppercase letters to denote persons. Rewrite the sentence to avoid these uppercase letters, improve the text quality, make the text clear and concise. \"\n\"For example:\\n[C looks around.] -> [You look around.]\\n[A man X watches the phone.] -> [A man watches the phone.]\\n\"\nf\"[C plays a piano, and a woman O comes to him.] -> [You play a piano, and a woman comes to you.]\\n[Man A approaches C] -> [A man approaches you.]\\n\\nNow, please refine [{narration['text']}] -> ?, make the answer in [].\")"
+  }
+ ]
+}

@@ -1,0 +1,1112 @@
+{
+ "slug": "egotimeqa",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/Becomebright/GroundVQA/resolve/main/data.zip → data/unified/annotations.EgoTimeQA.json"
+ ],
+ "access_used": "open download",
+ "note": "One example = all EgoTimeQA records for one Ego4D video (the file is a flat list; records are grouped here by video_id). Each record is a Llama-2-generated question and answer built from Ego4D narrations, three wrong answers for close-ended QA, and an answer window in moment_start_frame/moment_end_frame. These are 30 fps frame indices of the full Ego4D video (the GroundVQA code divides by 30); the timeline shows them in seconds. No clip: the videos are Ego4D (license agreement).",
+ "examples": [
+  {
+   "title": "Ego4D video 16fc2d81… — 16 generated QA pairs with answer windows",
+   "video_ref": "Ego4D video_uid 16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 13.56,
+     "te": 15.94,
+     "lane": "question",
+     "text": "Who adjusted the camera for me?"
+    },
+    {
+     "t": 13.56,
+     "te": 15.94,
+     "lane": "answer",
+     "text": "man X  (wrong answers: woman Y; child Z; machine A)"
+    },
+    {
+     "t": 14.65,
+     "te": 18.41,
+     "lane": "question",
+     "text": "What did Person A pick up?"
+    },
+    {
+     "t": 14.65,
+     "te": 18.41,
+     "lane": "answer",
+     "text": "a paper  (wrong answers: a pen; a book; a phone)"
+    },
+    {
+     "t": 31.73,
+     "te": 33.64,
+     "lane": "question",
+     "text": "What did man X pick up?"
+    },
+    {
+     "t": 31.73,
+     "te": 33.64,
+     "lane": "answer",
+     "text": "a paper  (wrong answers: a pen; a book; a phone)"
+    },
+    {
+     "t": 45.62,
+     "te": 47.41,
+     "lane": "question",
+     "text": "Who was walking around the room?"
+    },
+    {
+     "t": 45.62,
+     "te": 47.41,
+     "lane": "answer",
+     "text": "Person A  (wrong answers: Person B; Person C; the cat)"
+    },
+    {
+     "t": 62.6,
+     "te": 66.43,
+     "lane": "question",
+     "text": "Where did I go?"
+    },
+    {
+     "t": 62.6,
+     "te": 66.43,
+     "lane": "answer",
+     "text": "outside  (wrong answers: to the kitchen; upstairs; into the backyard)"
+    },
+    {
+     "t": 73.04,
+     "te": 75.39,
+     "lane": "question",
+     "text": "Who did I shake hands with?"
+    },
+    {
+     "t": 73.04,
+     "te": 75.39,
+     "lane": "answer",
+     "text": "Person B  (wrong answers: Person A; Person C; Person D)"
+    },
+    {
+     "t": 87.36,
+     "te": 89.21,
+     "lane": "question",
+     "text": "Who did I interact with?"
+    },
+    {
+     "t": 87.36,
+     "te": 89.21,
+     "lane": "answer",
+     "text": "man Y  (wrong answers: woman X; child Z; dog B)"
+    },
+    {
+     "t": 120.05,
+     "te": 128.59,
+     "lane": "question",
+     "text": "What did I do with the coffee?"
+    },
+    {
+     "t": 120.05,
+     "te": 128.59,
+     "lane": "answer",
+     "text": "gave it to Person B  (wrong answers: drank it myself; left it on the table; spilled it on the floor)"
+    },
+    {
+     "t": 176.93,
+     "te": 177.57,
+     "lane": "question",
+     "text": "Is Person B drinking soda?"
+    },
+    {
+     "t": 176.93,
+     "te": 177.57,
+     "lane": "answer",
+     "text": "yes  (wrong answers: no; maybe; I don't know)"
+    },
+    {
+     "t": 195.51,
+     "te": 198.79,
+     "lane": "question",
+     "text": "What did I look at on the shelf?"
+    },
+    {
+     "t": 195.51,
+     "te": 198.79,
+     "lane": "answer",
+     "text": "books  (wrong answers: a mirror; a picture frame; a vase)"
+    },
+    {
+     "t": 206.54,
+     "te": 218.16,
+     "lane": "question",
+     "text": "What did I do after interacting with man Y?"
+    },
+    {
+     "t": 206.54,
+     "te": 218.16,
+     "lane": "answer",
+     "text": "looked around and looked at the picture paintings  (wrong answers: went to the restroom; called my mom; checked my phone)"
+    },
+    {
+     "t": 250.63,
+     "te": 255.07,
+     "lane": "question",
+     "text": "What did Person B say to me?"
+    },
+    {
+     "t": 250.63,
+     "te": 255.07,
+     "lane": "answer",
+     "text": "something  (wrong answers: nothing; everything; something else)"
+    },
+    {
+     "t": 287.17,
+     "te": 287.33,
+     "lane": "question",
+     "text": "Who did I speak to?"
+    },
+    {
+     "t": 287.17,
+     "te": 287.33,
+     "lane": "answer",
+     "text": "Person A  (wrong answers: Person B; Person C; Person D)"
+    },
+    {
+     "t": 287.26,
+     "te": 287.54,
+     "lane": "question",
+     "text": "Who did I interact with?"
+    },
+    {
+     "t": 287.26,
+     "te": 287.54,
+     "lane": "answer",
+     "text": "man X  (wrong answers: man Y; woman Z; child A)"
+    },
+    {
+     "t": 292.84,
+     "te": 292.99,
+     "lane": "question",
+     "text": "What am I looking for?"
+    },
+    {
+     "t": 292.84,
+     "te": 292.99,
+     "lane": "answer",
+     "text": "something in the room  (wrong answers: the fridge; the TV; the window)"
+    },
+    {
+     "t": 296.84,
+     "te": 297.13,
+     "lane": "question",
+     "text": "What am I looking at?"
+    },
+    {
+     "t": 296.84,
+     "te": 297.13,
+     "lane": "answer",
+     "text": "pictures on the wall  (wrong answers: a mirror; a window; a blank wall)"
+    }
+   ],
+   "raw_format": "json",
+   "raw": [
+    {
+     "video_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "sample_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "answer": "a paper",
+     "question": "What did Person A pick up?",
+     "moment_start_frame": 439.55793648760795,
+     "moment_end_frame": 552.4420635123922,
+     "wrong_answers": [
+      "a pen",
+      "a book",
+      "a phone"
+     ]
+    },
+    {
+     "video_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "sample_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "answer": "Person A",
+     "question": "Who was walking around the room?",
+     "moment_start_frame": 1368.5876047970146,
+     "moment_end_frame": 1422.4123952029854,
+     "wrong_answers": [
+      "Person B",
+      "Person C",
+      "the cat"
+     ]
+    },
+    {
+     "video_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "sample_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "answer": "Person B",
+     "question": "Who did I shake hands with?",
+     "moment_start_frame": 2191.1668130633107,
+     "moment_end_frame": 2261.8331869366893,
+     "wrong_answers": [
+      "Person A",
+      "Person C",
+      "Person D"
+     ]
+    },
+    {
+     "video_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "sample_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "answer": "gave it to Person B",
+     "question": "What did I do with the coffee?",
+     "moment_start_frame": 3601.4243095096826,
+     "moment_end_frame": 3857.5756904903174,
+     "wrong_answers": [
+      "drank it myself",
+      "left it on the table",
+      "spilled it on the floor"
+     ]
+    },
+    {
+     "video_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "sample_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "answer": "yes",
+     "question": "Is Person B drinking soda?",
+     "moment_start_frame": 5307.884366195974,
+     "moment_end_frame": 5327.115633804026,
+     "wrong_answers": [
+      "no",
+      "maybe",
+      "I don't know"
+     ]
+    },
+    {
+     "video_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "sample_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "answer": "books",
+     "question": "What did I look at on the shelf?",
+     "moment_start_frame": 5865.1700916681,
+     "moment_end_frame": 5963.829908331899,
+     "wrong_answers": [
+      "a mirror",
+      "a picture frame",
+      "a vase"
+     ]
+    },
+    {
+     "video_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "sample_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "answer": "something",
+     "question": "What did Person B say to me?",
+     "moment_start_frame": 7518.98712475203,
+     "moment_end_frame": 7652.01287524797,
+     "wrong_answers": [
+      "nothing",
+      "everything",
+      "something else"
+     ]
+    },
+    {
+     "video_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "sample_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "answer": "Person A",
+     "question": "Who did I speak to?",
+     "moment_start_frame": 8615.167213100798,
+     "moment_end_frame": 8619.832786899202,
+     "wrong_answers": [
+      "Person B",
+      "Person C",
+      "Person D"
+     ]
+    },
+    {
+     "video_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "sample_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "answer": "something in the room",
+     "question": "What am I looking for?",
+     "moment_start_frame": 8785.1672131008,
+     "moment_end_frame": 8789.832786899202,
+     "wrong_answers": [
+      "the fridge",
+      "the TV",
+      "the window"
+     ]
+    },
+    {
+     "video_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "sample_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "answer": "man X",
+     "question": "Who adjusted the camera for me?",
+     "moment_start_frame": 406.9392240975352,
+     "moment_end_frame": 478.0607759024648,
+     "wrong_answers": [
+      "woman Y",
+      "child Z",
+      "machine A"
+     ]
+    },
+    {
+     "video_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "sample_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "answer": "a paper",
+     "question": "What did man X pick up?",
+     "moment_start_frame": 951.7668930708085,
+     "moment_end_frame": 1009.2331069291918,
+     "wrong_answers": [
+      "a pen",
+      "a book",
+      "a phone"
+     ]
+    },
+    {
+     "video_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "sample_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "answer": "outside",
+     "question": "Where did I go?",
+     "moment_start_frame": 1878.0906833830607,
+     "moment_end_frame": 1992.9093166169391,
+     "wrong_answers": [
+      "to the kitchen",
+      "upstairs",
+      "into the backyard"
+     ]
+    },
+    {
+     "video_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "sample_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "answer": "man Y",
+     "question": "Who did I interact with?",
+     "moment_start_frame": 2620.6772489339114,
+     "moment_end_frame": 2676.3227510660886,
+     "wrong_answers": [
+      "woman X",
+      "child Z",
+      "dog B"
+     ]
+    },
+    {
+     "video_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "sample_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "answer": "looked around and looked at the picture paintings",
+     "question": "What did I do after interacting with man Y?",
+     "moment_start_frame": 6196.109954974313,
+     "moment_end_frame": 6544.890045025688,
+     "wrong_answers": [
+      "went to the restroom",
+      "called my mom",
+      "checked my phone"
+     ]
+    },
+    {
+     "video_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "sample_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "answer": "man X",
+     "question": "Who did I interact with?",
+     "moment_start_frame": 8617.789604133148,
+     "moment_end_frame": 8626.210395866852,
+     "wrong_answers": [
+      "man Y",
+      "woman Z",
+      "child A"
+     ]
+    },
+    {
+     "video_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "sample_id": "16fc2d81-e55c-4a3b-a298-b9d0272e9815",
+     "answer": "pictures on the wall",
+     "question": "What am I looking at?",
+     "moment_start_frame": 8905.232706891704,
+     "moment_end_frame": 8913.767293108296,
+     "wrong_answers": [
+      "a mirror",
+      "a window",
+      "a blank wall"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Ego4D video 6ad45dbc… — 27 generated QA pairs with answer windows",
+   "video_ref": "Ego4D video_uid 6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 12.29,
+     "te": 12.71,
+     "lane": "question",
+     "text": "What am I doing now?"
+    },
+    {
+     "t": 12.29,
+     "te": 12.71,
+     "lane": "answer",
+     "text": "looking around and moving towards the cooker  (wrong answers: making breakfast; reading a book; watching TV)"
+    },
+    {
+     "t": 22.4,
+     "te": 27.63,
+     "lane": "question",
+     "text": "What did I do with the rope?"
+    },
+    {
+     "t": 22.4,
+     "te": 27.63,
+     "lane": "answer",
+     "text": "I moved it on the pan handle  (wrong answers: I tied it to the chair leg; I wrapped it around the mug; I hung it on the hook)"
+    },
+    {
+     "t": 48.71,
+     "te": 56.99,
+     "lane": "question",
+     "text": "What did I tie the rope to?"
+    },
+    {
+     "t": 48.71,
+     "te": 56.99,
+     "lane": "answer",
+     "text": "the cooking pan  (wrong answers: the kitchen sink; the refrigerator door; the kitchen table leg)"
+    },
+    {
+     "t": 74.28,
+     "te": 78.99,
+     "lane": "question",
+     "text": "What did I do with the pan?"
+    },
+    {
+     "t": 74.28,
+     "te": 78.99,
+     "lane": "answer",
+     "text": "tied the rope on it  (wrong answers: put it in the oven; left it on the stove; hanged it on the wall)"
+    },
+    {
+     "t": 97.34,
+     "te": 97.46,
+     "lane": "question",
+     "text": "What did I tie the rope to?"
+    },
+    {
+     "t": 97.34,
+     "te": 97.46,
+     "lane": "answer",
+     "text": "the pan handle  (wrong answers: the table leg; the chair; the oven)"
+    },
+    {
+     "t": 134.46,
+     "te": 140.01,
+     "lane": "question",
+     "text": "What am I doing with the rope?"
+    },
+    {
+     "t": 134.46,
+     "te": 140.01,
+     "lane": "answer",
+     "text": "tying it to the cooking pan  (wrong answers: tying it to the chair; using it to climb the mountain; wrapping it around the cat)"
+    },
+    {
+     "t": 162.01,
+     "te": 168.29,
+     "lane": "question",
+     "text": "What did I do with the rope?"
+    },
+    {
+     "t": 162.01,
+     "te": 168.29,
+     "lane": "answer",
+     "text": "tied it on the pan handle  (wrong answers: wrapped it around the mug; tied it to the oven door; used it to tie up the kite)"
+    },
+    {
+     "t": 204.61,
+     "te": 206.86,
+     "lane": "question",
+     "text": "Where am I going?"
+    },
+    {
+     "t": 204.61,
+     "te": 206.86,
+     "lane": "answer",
+     "text": "forward  (wrong answers: backward; sideways; upward)"
+    },
+    {
+     "t": 209.93,
+     "te": 211.47,
+     "lane": "question",
+     "text": "Where did I go in the apartment?"
+    },
+    {
+     "t": 209.93,
+     "te": 211.47,
+     "lane": "answer",
+     "text": "to the kitchen  (wrong answers: to the bedroom; to the living room; to the bathroom)"
+    },
+    {
+     "t": 221.35,
+     "te": 222.75,
+     "lane": "question",
+     "text": "Where am I moving?"
+    },
+    {
+     "t": 221.35,
+     "te": 222.75,
+     "lane": "answer",
+     "text": "forward  (wrong answers: backward; sideways; upward)"
+    },
+    {
+     "t": 225.32,
+     "te": 225.58,
+     "lane": "question",
+     "text": "Where did I go?"
+    },
+    {
+     "t": 225.32,
+     "te": 225.58,
+     "lane": "answer",
+     "text": "to the table  (wrong answers: to the kitchen; to the living room; to the bedroom)"
+    },
+    {
+     "t": 229.38,
+     "te": 229.79,
+     "lane": "question",
+     "text": "What did I do?"
+    },
+    {
+     "t": 229.38,
+     "te": 229.79,
+     "lane": "answer",
+     "text": "looked around and stepped forward  (wrong answers: looked behind; stepped back; stayed still)"
+    },
+    {
+     "t": 229.93,
+     "te": 230.47,
+     "lane": "question",
+     "text": "Where did I go in the apartment?"
+    },
+    {
+     "t": 229.93,
+     "te": 230.47,
+     "lane": "answer",
+     "text": "to the kitchen and then to the table  (wrong answers: to the living room; to the bedroom; to the bathroom)"
+    },
+    {
+     "t": 233.82,
+     "te": 234.08,
+     "lane": "question",
+     "text": "What did I do with the rope?"
+    },
+    {
+     "t": 233.82,
+     "te": 234.08,
+     "lane": "answer",
+     "text": "stretched it  (wrong answers: tied it to the chair; coiled it on the floor; threw it in the fire)"
+    },
+    {
+     "t": 235.49,
+     "te": 236.61,
+     "lane": "question",
+     "text": "What did I do with the rope?"
+    },
+    {
+     "t": 235.49,
+     "te": 236.61,
+     "lane": "answer",
+     "text": "I pulled it  (wrong answers: I tied it; I cut it; I threw it)"
+    },
+    {
+     "t": 255.19,
+     "te": 257.38,
+     "lane": "question",
+     "text": "What did I do with the rope?"
+    },
+    {
+     "t": 255.19,
+     "te": 257.38,
+     "lane": "answer",
+     "text": "I straightened it  (wrong answers: I tied it in a knot; I coiled it; I threw it away)"
+    },
+    {
+     "t": 256.97,
+     "te": 259.96,
+     "lane": "question",
+     "text": "What did I do with the rope?"
+    },
+    {
+     "t": 256.97,
+     "te": 259.96,
+     "lane": "answer",
+     "text": "took it to the table  (wrong answers: tied it to the chair; hung it on the wall; left it on the floor)"
+    },
+    {
+     "t": 286.14,
+     "te": 290.59,
+     "lane": "question",
+     "text": "What did I look at next?"
+    },
+    {
+     "t": 286.14,
+     "te": 290.59,
+     "lane": "answer",
+     "text": "the cooker  (wrong answers: the fridge; the sink; the oven)"
+    },
+    {
+     "t": 375.66,
+     "te": 379.31,
+     "lane": "question",
+     "text": "What am I doing now?"
+    },
+    {
+     "t": 375.66,
+     "te": 379.31,
+     "lane": "answer",
+     "text": "looking at the frying pan  (wrong answers: stirring the soup; washing the dishes; reading a book)"
+    },
+    {
+     "t": 393.46,
+     "te": 393.61,
+     "lane": "question",
+     "text": "What did I tie the rope to?"
+    },
+    {
+     "t": 393.46,
+     "te": 393.61,
+     "lane": "answer",
+     "text": "the pan handle  (wrong answers: the table leg; the chair; the oven rack)"
+    },
+    {
+     "t": 432.26,
+     "te": 434.91,
+     "lane": "question",
+     "text": "Where did I hang the frying pan?"
+    },
+    {
+     "t": 432.26,
+     "te": 434.91,
+     "lane": "answer",
+     "text": "on the cabinet hook  (wrong answers: on the wall; in the drawer; under the sink)"
+    },
+    {
+     "t": 439.74,
+     "te": 440.33,
+     "lane": "question",
+     "text": "What did I do with the cooking pan?"
+    },
+    {
+     "t": 439.74,
+     "te": 440.33,
+     "lane": "answer",
+     "text": "hung it on a cabinet  (wrong answers: put it in the dishwasher; left it on the stove; placed it in the fridge)"
+    },
+    {
+     "t": 450.87,
+     "te": 451.8,
+     "lane": "question",
+     "text": "What did I hang in the cupboard?"
+    },
+    {
+     "t": 450.87,
+     "te": 451.8,
+     "lane": "answer",
+     "text": "the hanger  (wrong answers: the coat; the key; the picture)"
+    },
+    {
+     "t": 454.01,
+     "te": 455.79,
+     "lane": "question",
+     "text": "What did I hang on the cabinet door?"
+    },
+    {
+     "t": 454.01,
+     "te": 455.79,
+     "lane": "answer",
+     "text": "a cabinet door hook  (wrong answers: a picture frame; a kitchen utensil holder; a magnet)"
+    },
+    {
+     "t": 457.14,
+     "te": 457.39,
+     "lane": "question",
+     "text": "What did I close?"
+    },
+    {
+     "t": 457.14,
+     "te": 457.39,
+     "lane": "answer",
+     "text": "the cupboard door  (wrong answers: the fridge door; the oven door; the window)"
+    },
+    {
+     "t": 466.31,
+     "te": 467.39,
+     "lane": "question",
+     "text": "What did I take down from the hanger?"
+    },
+    {
+     "t": 466.31,
+     "te": 467.39,
+     "lane": "answer",
+     "text": "the cooking pan  (wrong answers: the kitchen knife; the mixing bowl; the oven mitt)"
+    },
+    {
+     "t": 470.52,
+     "te": 471.51,
+     "lane": "question",
+     "text": "What did I take down from the cabinet?"
+    },
+    {
+     "t": 470.52,
+     "te": 471.51,
+     "lane": "answer",
+     "text": "frying pan  (wrong answers: kitchen knife; baking dish; toaster)"
+    }
+   ],
+   "raw_format": "json",
+   "raw": [
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "looking around and moving towards the cooker",
+     "question": "What am I doing now?",
+     "moment_start_frame": 368.6275089582783,
+     "moment_end_frame": 381.3724910417217,
+     "wrong_answers": [
+      "making breakfast",
+      "reading a book",
+      "watching TV"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "the cooking pan",
+     "question": "What did I tie the rope to?",
+     "moment_start_frame": 1461.179527444983,
+     "moment_end_frame": 1709.820472555017,
+     "wrong_answers": [
+      "the kitchen sink",
+      "the refrigerator door",
+      "the kitchen table leg"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "tying it to the cooking pan",
+     "question": "What am I doing with the rope?",
+     "moment_start_frame": 4033.702438526066,
+     "moment_end_frame": 4200.2975614739335,
+     "wrong_answers": [
+      "tying it to the chair",
+      "using it to climb the mountain",
+      "wrapping it around the cat"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "to the kitchen",
+     "question": "Where did I go in the apartment?",
+     "moment_start_frame": 6297.899719973759,
+     "moment_end_frame": 6344.10028002624,
+     "wrong_answers": [
+      "to the bedroom",
+      "to the living room",
+      "to the bathroom"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "to the table",
+     "question": "Where did I go?",
+     "moment_start_frame": 6759.687884823255,
+     "moment_end_frame": 6767.312115176745,
+     "wrong_answers": [
+      "to the kitchen",
+      "to the living room",
+      "to the bedroom"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "to the kitchen and then to the table",
+     "question": "Where did I go in the apartment?",
+     "moment_start_frame": 6897.92059171496,
+     "moment_end_frame": 6914.07940828504,
+     "wrong_answers": [
+      "to the living room",
+      "to the bedroom",
+      "to the bathroom"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "stretched it",
+     "question": "What did I do with the rope?",
+     "moment_start_frame": 7014.687884823255,
+     "moment_end_frame": 7022.312115176745,
+     "wrong_answers": [
+      "tied it to the chair",
+      "coiled it on the floor",
+      "threw it in the fire"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "took it to the table",
+     "question": "What did I do with the rope?",
+     "moment_start_frame": 7709.051179259286,
+     "moment_end_frame": 7798.948820740716,
+     "wrong_answers": [
+      "tied it to the chair",
+      "hung it on the wall",
+      "left it on the floor"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "hung it on a cabinet",
+     "question": "What did I do with the cooking pan?",
+     "moment_start_frame": 13192.237824817632,
+     "moment_end_frame": 13209.762175182366,
+     "wrong_answers": [
+      "put it in the dishwasher",
+      "left it on the stove",
+      "placed it in the fridge"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "the hanger",
+     "question": "What did I hang in the cupboard?",
+     "moment_start_frame": 13526.003278604792,
+     "moment_end_frame": 13553.996721395211,
+     "wrong_answers": [
+      "the coat",
+      "the key",
+      "the picture"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "the cupboard door",
+     "question": "What did I close?",
+     "moment_start_frame": 13714.2447820647,
+     "moment_end_frame": 13721.7552179353,
+     "wrong_answers": [
+      "the fridge door",
+      "the oven door",
+      "the window"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "the cooking pan",
+     "question": "What did I take down from the hanger?",
+     "moment_start_frame": 13989.284286188476,
+     "moment_end_frame": 14021.715713811524,
+     "wrong_answers": [
+      "the kitchen knife",
+      "the mixing bowl",
+      "the oven mitt"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "I moved it on the pan handle",
+     "question": "What did I do with the rope?",
+     "moment_start_frame": 672.0387040488016,
+     "moment_end_frame": 828.9612959511984,
+     "wrong_answers": [
+      "I tied it to the chair leg",
+      "I wrapped it around the mug",
+      "I hung it on the hook"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "tied the rope on it",
+     "question": "What did I do with the pan?",
+     "moment_start_frame": 2228.4474206095097,
+     "moment_end_frame": 2369.55257939049,
+     "wrong_answers": [
+      "put it in the oven",
+      "left it on the stove",
+      "hanged it on the wall"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "the pan handle",
+     "question": "What did I tie the rope to?",
+     "moment_start_frame": 2920.1792882737936,
+     "moment_end_frame": 2923.8207117262064,
+     "wrong_answers": [
+      "the table leg",
+      "the chair",
+      "the oven"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "tied it on the pan handle",
+     "question": "What did I do with the rope?",
+     "moment_start_frame": 4860.335065410272,
+     "moment_end_frame": 5048.664934589726,
+     "wrong_answers": [
+      "wrapped it around the mug",
+      "tied it to the oven door",
+      "used it to tie up the kite"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "forward",
+     "question": "Where am I going?",
+     "moment_start_frame": 6138.203038582298,
+     "moment_end_frame": 6205.796961417703,
+     "wrong_answers": [
+      "backward",
+      "sideways",
+      "upward"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "forward",
+     "question": "Where am I moving?",
+     "moment_start_frame": 6640.391123424297,
+     "moment_end_frame": 6682.608876575703,
+     "wrong_answers": [
+      "backward",
+      "sideways",
+      "upward"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "looked around and stepped forward",
+     "question": "What did I do?",
+     "moment_start_frame": 6881.2982006826105,
+     "moment_end_frame": 6893.7017993173895,
+     "wrong_answers": [
+      "looked behind",
+      "stepped back",
+      "stayed still"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "I pulled it",
+     "question": "What did I do with the rope?",
+     "moment_start_frame": 7064.715313774037,
+     "moment_end_frame": 7098.284686225964,
+     "wrong_answers": [
+      "I tied it",
+      "I cut it",
+      "I threw it"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "I straightened it",
+     "question": "What did I do with the rope?",
+     "moment_start_frame": 7655.556497203956,
+     "moment_end_frame": 7721.443502796043,
+     "wrong_answers": [
+      "I tied it in a knot",
+      "I coiled it",
+      "I threw it away"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "the cooker",
+     "question": "What did I look at next?",
+     "moment_start_frame": 8584.3164330277,
+     "moment_end_frame": 8717.683566972302,
+     "wrong_answers": [
+      "the fridge",
+      "the sink",
+      "the oven"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "looking at the frying pan",
+     "question": "What am I doing now?",
+     "moment_start_frame": 11269.707956489483,
+     "moment_end_frame": 11379.292043510519,
+     "wrong_answers": [
+      "stirring the soup",
+      "washing the dishes",
+      "reading a book"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "the pan handle",
+     "question": "What did I tie the rope to?",
+     "moment_start_frame": 11803.837904825128,
+     "moment_end_frame": 11808.16209517487,
+     "wrong_answers": [
+      "the table leg",
+      "the chair",
+      "the oven rack"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "on the cabinet hook",
+     "question": "Where did I hang the frying pan?",
+     "moment_start_frame": 12967.728828230684,
+     "moment_end_frame": 13047.271171769318,
+     "wrong_answers": [
+      "on the wall",
+      "in the drawer",
+      "under the sink"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "a cabinet door hook",
+     "question": "What did I hang on the cabinet door?",
+     "moment_start_frame": 13620.372091004234,
+     "moment_end_frame": 13673.627908995764,
+     "wrong_answers": [
+      "a picture frame",
+      "a kitchen utensil holder",
+      "a magnet"
+     ]
+    },
+    {
+     "video_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "sample_id": "6ad45dbc-c6d9-470b-a2c0-c1c8fa91e37b",
+     "answer": "frying pan",
+     "question": "What did I take down from the cabinet?",
+     "moment_start_frame": 14115.649819983131,
+     "moment_end_frame": 14145.350180016869,
+     "wrong_answers": [
+      "kitchen knife",
+      "baking dish",
+      "toaster"
+     ]
+    }
+   ]
+  }
+ ]
+}

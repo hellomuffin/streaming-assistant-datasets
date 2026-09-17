@@ -1,0 +1,1862 @@
+{
+ "slug": "qevd-fitcoach",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/Voxel51/qualcomm-exercise-video-dataset-benchmark/blob/main/samples.json (FiftyOne export of the 74-session QEVD-FIT-COACH benchmark)"
+ ],
+ "access_used": "public sample in paper/repo/card only (full data needs Qualcomm Dataset Research License, signed; examples taken from the ungated Voxel51 FiftyOne mirror on HF, whose card names that same license)",
+ "note": "One example = one ~2.7 min third-person workout session: every live coach utterance (form corrections, encouragement, rep counts) and exercise-transition announcement as a temporal detection whose support is [start_frame, end_frame] at 30 fps (timeline divides by fps). This is Voxel51's re-packaging: the official release stores a per-frame feedback array plus UNIX timestamps, not these detections. Lane 'step' = is_transition, 'instructor' = other coach feedback. No clip: the videos require the signed Qualcomm research license.",
+ "examples": [
+  {
+   "title": "Session 0033: good morning beginner, jumping jacks, squat jumps, squat kicks, armcrosschest right, armcrosschest left — 35 coach feedbacks, 7 exercise transitions",
+   "video_ref": "QEVD-FIT-COACH benchmark 0033 (Voxel51 mirror data/0033.mp4)",
+   "duration_s": 158.366667,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 9.5,
+     "te": 11.57,
+     "lane": "step",
+     "text": "First up are good morning beginner!"
+    },
+    {
+     "t": 12.7,
+     "te": 14.73,
+     "lane": "instructor",
+     "text": "It's time for good mornings!"
+    },
+    {
+     "t": 15.57,
+     "te": 17.67,
+     "lane": "instructor",
+     "text": "Time is passing you by!"
+    },
+    {
+     "t": 18.87,
+     "te": 20.77,
+     "lane": "instructor",
+     "text": "Try to bend your upper body forward!"
+    },
+    {
+     "t": 22.33,
+     "te": 24.27,
+     "lane": "instructor",
+     "text": "Hmm that's not it!"
+    },
+    {
+     "t": 28.83,
+     "te": 31.3,
+     "lane": "instructor",
+     "text": "Try to improve next time!"
+    },
+    {
+     "t": 32.73,
+     "te": 34.73,
+     "lane": "step",
+     "text": "Moving on to jumping jacks!"
+    },
+    {
+     "t": 34.77,
+     "te": 37.3,
+     "lane": "instructor",
+     "text": "Don't let the time pass by!"
+    },
+    {
+     "t": 37.53,
+     "te": 40.07,
+     "lane": "instructor",
+     "text": "Let's get skipping!"
+    },
+    {
+     "t": 43.07,
+     "te": 45.5,
+     "lane": "instructor",
+     "text": "Yes, good job jumping. But don't forget to move those legs!"
+    },
+    {
+     "t": 47.4,
+     "te": 49.87,
+     "lane": "instructor",
+     "text": "Come on! Move those arms too!"
+    },
+    {
+     "t": 51.2,
+     "te": 53.6,
+     "lane": "instructor",
+     "text": "You gotta work your whole body."
+    },
+    {
+     "t": 54.17,
+     "te": 56.63,
+     "lane": "instructor",
+     "text": "Don't stop skipping!"
+    },
+    {
+     "t": 57.27,
+     "te": 59.23,
+     "lane": "instructor",
+     "text": "Let's try to move both your arms and legs next time!"
+    },
+    {
+     "t": 59.27,
+     "te": 60.77,
+     "lane": "step",
+     "text": "Moving on to squat jumps!"
+    },
+    {
+     "t": 60.8,
+     "te": 62.9,
+     "lane": "instructor",
+     "text": "It's time for squat jumps!"
+    },
+    {
+     "t": 64.67,
+     "te": 66.77,
+     "lane": "instructor",
+     "text": "Hey c'mon, don't leave me hangin'!"
+    },
+    {
+     "t": 68.3,
+     "te": 69.73,
+     "lane": "instructor",
+     "text": "Try to go deeper into the squats and jump higher!"
+    },
+    {
+     "t": 69.77,
+     "te": 71.9,
+     "lane": "instructor",
+     "text": "Yes! That a good jump! Now try to squat deeper with a wider stance."
+    },
+    {
+     "t": 72.7,
+     "te": 74.7,
+     "lane": "instructor",
+     "text": "Keep squatting and jumping, don't stop!"
+    },
+    {
+     "t": 74.73,
+     "te": 76.83,
+     "lane": "instructor",
+     "text": "You are not really squatting! Come on!"
+    },
+    {
+     "t": 78.77,
+     "te": 80.87,
+     "lane": "instructor",
+     "text": "We need to work harder next time."
+    },
+    {
+     "t": 81.6,
+     "te": 83.7,
+     "lane": "step",
+     "text": "Moving on to squat kicks!"
+    },
+    {
+     "t": 84.53,
+     "te": 86.57,
+     "lane": "instructor",
+     "text": "Let's get squatting!"
+    },
+    {
+     "t": 88.37,
+     "te": 90.03,
+     "lane": "instructor",
+     "text": "Don't forget the kicks!"
+    },
+    {
+     "t": 90.07,
+     "te": 92.1,
+     "lane": "instructor",
+     "text": "Squat kick left squat kick right you got this"
+    },
+    {
+     "t": 94.73,
+     "te": 96.63,
+     "lane": "instructor",
+     "text": "Waiting for you to start kicking!"
+    },
+    {
+     "t": 97.9,
+     "te": 99.77,
+     "lane": "instructor",
+     "text": "Its a squat followed by two kicks! Don't forget the squats."
+    },
+    {
+     "t": 102.73,
+     "te": 104.27,
+     "lane": "step",
+     "text": "Moving on to armcrosschest right!"
+    },
+    {
+     "t": 104.3,
+     "te": 106.83,
+     "lane": "instructor",
+     "text": "It's time to stretch that arm!"
+    },
+    {
+     "t": 106.87,
+     "te": 109.17,
+     "lane": "instructor",
+     "text": "Let's do the arm stretch!"
+    },
+    {
+     "t": 109.2,
+     "te": 111.7,
+     "lane": "instructor",
+     "text": "Wrong arm! Stretch the right arm!"
+    },
+    {
+     "t": 111.8,
+     "te": 114.27,
+     "lane": "instructor",
+     "text": "Yes! Now pull your arm across. "
+    },
+    {
+     "t": 115.63,
+     "te": 118.17,
+     "lane": "instructor",
+     "text": "Don't keep on switching arms! Stretch each arm for at least 20 seconds."
+    },
+    {
+     "t": 121.17,
+     "te": 123.57,
+     "lane": "instructor",
+     "text": "Hmm I am not sure what you are doing!"
+    },
+    {
+     "t": 124.6,
+     "te": 127.0,
+     "lane": "step",
+     "text": "Moving on to armcrosschest left!"
+    },
+    {
+     "t": 131.53,
+     "te": 134.0,
+     "lane": "instructor",
+     "text": "Let's go! This is your time!"
+    },
+    {
+     "t": 134.9,
+     "te": 136.8,
+     "lane": "instructor",
+     "text": "Let's get started!"
+    },
+    {
+     "t": 136.83,
+     "te": 138.9,
+     "lane": "instructor",
+     "text": "That's the wrong arm! Stretch your left arm."
+    },
+    {
+     "t": 140.73,
+     "te": 142.87,
+     "lane": "instructor",
+     "text": "I am still waiting! Let's stretch that left arm!"
+    },
+    {
+     "t": 143.67,
+     "te": 145.8,
+     "lane": "instructor",
+     "text": "That's the wrong arm!"
+    },
+    {
+     "t": 149.0,
+     "te": 151.1,
+     "lane": "step",
+     "text": "That's the end of the session."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "_id": {
+     "$oid": "693c48183023e8d82605c5c3"
+    },
+    "filepath": "data/0033.mp4",
+    "tags": [],
+    "metadata": {
+     "_cls": "VideoMetadata",
+     "size_bytes": 9293379,
+     "mime_type": "video/mp4",
+     "frame_width": 640,
+     "frame_height": 360,
+     "frame_rate": 30.0,
+     "total_frame_count": 4751,
+     "duration": 158.366667,
+     "encoding_str": "avc1"
+    },
+    "_media_type": "video",
+    "_rand": 0.9993355849758205,
+    "feedback_events": {
+     "_cls": "TemporalDetections",
+     "detections": [
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bebc"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "It's time for good mornings!",
+       "support": [
+        381,
+        442
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bebd"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Time is passing you by!",
+       "support": [
+        467,
+        530
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bebe"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Try to bend your upper body forward!",
+       "support": [
+        566,
+        623
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bebf"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Hmm that's not it!",
+       "support": [
+        670,
+        728
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bec0"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Try to improve next time!",
+       "support": [
+        865,
+        939
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bec2"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Don't let the time pass by!",
+       "support": [
+        1043,
+        1119
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bec3"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Let's get skipping!",
+       "support": [
+        1126,
+        1202
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bec4"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Yes, good job jumping. But don't forget to move those legs!",
+       "support": [
+        1292,
+        1365
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bec5"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Come on! Move those arms too!",
+       "support": [
+        1422,
+        1496
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bec6"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "You gotta work your whole body.",
+       "support": [
+        1536,
+        1608
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bec7"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Don't stop skipping!",
+       "support": [
+        1625,
+        1699
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bec8"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Let's try to move both your arms and legs next time!",
+       "support": [
+        1718,
+        1777
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605beca"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "It's time for squat jumps!",
+       "support": [
+        1824,
+        1887
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605becb"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Hey c'mon, don't leave me hangin'!",
+       "support": [
+        1940,
+        2003
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605becc"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Try to go deeper into the squats and jump higher!",
+       "support": [
+        2049,
+        2092
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605becd"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Yes! That a good jump! Now try to squat deeper with a wider stance.",
+       "support": [
+        2093,
+        2157
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bece"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Keep squatting and jumping, don't stop!",
+       "support": [
+        2181,
+        2241
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605becf"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "You are not really squatting! Come on!",
+       "support": [
+        2242,
+        2305
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bed0"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "We need to work harder next time.",
+       "support": [
+        2363,
+        2426
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bed2"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Let's get squatting!",
+       "support": [
+        2536,
+        2597
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bed3"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Don't forget the kicks!",
+       "support": [
+        2651,
+        2701
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bed4"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Squat kick left squat kick right you got this",
+       "support": [
+        2702,
+        2763
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bed5"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Waiting for you to start kicking!",
+       "support": [
+        2842,
+        2899
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bed6"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Its a squat followed by two kicks! Don't forget the squats.",
+       "support": [
+        2937,
+        2993
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bed8"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "It's time to stretch that arm!",
+       "support": [
+        3129,
+        3205
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bed9"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Let's do the arm stretch!",
+       "support": [
+        3206,
+        3275
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605beda"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Wrong arm! Stretch the right arm!",
+       "support": [
+        3276,
+        3351
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bedb"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Yes! Now pull your arm across. ",
+       "support": [
+        3354,
+        3428
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bedc"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Don't keep on switching arms! Stretch each arm for at least 20 seconds.",
+       "support": [
+        3469,
+        3545
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bedd"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Hmm I am not sure what you are doing!",
+       "support": [
+        3635,
+        3707
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bedf"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Let's go! This is your time!",
+       "support": [
+        3946,
+        4020
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bee0"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Let's get started!",
+       "support": [
+        4047,
+        4104
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bee1"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "That's the wrong arm! Stretch your left arm.",
+       "support": [
+        4105,
+        4167
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bee2"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "I am still waiting! Let's stretch that left arm!",
+       "support": [
+        4222,
+        4286
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bee3"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "That's the wrong arm!",
+       "support": [
+        4310,
+        4374
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bebb"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "First up are good morning beginner!",
+       "support": [
+        285,
+        347
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bec1"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Moving on to jumping jacks!",
+       "support": [
+        982,
+        1042
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bec9"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Moving on to squat jumps!",
+       "support": [
+        1778,
+        1823
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bed1"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Moving on to squat kicks!",
+       "support": [
+        2448,
+        2511
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bed7"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Moving on to armcrosschest right!",
+       "support": [
+        3082,
+        3128
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bede"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Moving on to armcrosschest left!",
+       "support": [
+        3738,
+        3810
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bee4"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "That's the end of the session.",
+       "support": [
+        4470,
+        4533
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      }
+     ]
+    },
+    "transitions": {
+     "_cls": "TemporalDetections",
+     "detections": [
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bebb"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "First up are good morning beginner!",
+       "support": [
+        285,
+        347
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bec1"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Moving on to jumping jacks!",
+       "support": [
+        982,
+        1042
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bec9"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Moving on to squat jumps!",
+       "support": [
+        1778,
+        1823
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bed1"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Moving on to squat kicks!",
+       "support": [
+        2448,
+        2511
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bed7"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Moving on to armcrosschest right!",
+       "support": [
+        3082,
+        3128
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bede"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Moving on to armcrosschest left!",
+       "support": [
+        3738,
+        3810
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      },
+      {
+       "_id": {
+        "$oid": "693c48163023e8d82605bee4"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "That's the end of the session.",
+       "support": [
+        4470,
+        4533
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      }
+     ]
+    },
+    "video_id": "0033",
+    "num_feedback_events": 42,
+    "num_transitions": 7,
+    "num_feedbacks": 35,
+    "_dataset_id": {
+     "$oid": "693c48143023e8d82605bbdd"
+    },
+    "created_at": {
+     "$date": "2025-12-12T16:51:36.744Z"
+    },
+    "last_modified_at": {
+     "$date": "2025-12-12T16:51:36.744Z"
+    }
+   }
+  },
+  {
+   "title": "Session 0014: high knees, jumping jacks, squats, pushups, quad stretch left, quad stretch right — 24 coach feedbacks, 7 exercise transitions",
+   "video_ref": "QEVD-FIT-COACH benchmark 0014 (Voxel51 mirror data/0014.mp4)",
+   "duration_s": 159.533333,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 13.37,
+     "te": 14.7,
+     "lane": "step",
+     "text": "First up are high knees!"
+    },
+    {
+     "t": 14.73,
+     "te": 17.27,
+     "lane": "instructor",
+     "text": "Keep your knees straight as you pull them up!"
+    },
+    {
+     "t": 18.6,
+     "te": 21.07,
+     "lane": "instructor",
+     "text": "Keep your knees straight and pick up the pace!"
+    },
+    {
+     "t": 23.5,
+     "te": 25.9,
+     "lane": "instructor",
+     "text": "Ok! Now speed it up! Let's bounce!"
+    },
+    {
+     "t": 28.63,
+     "te": 30.87,
+     "lane": "instructor",
+     "text": "Don't stop! You are too slow as it is."
+    },
+    {
+     "t": 34.97,
+     "te": 37.0,
+     "lane": "instructor",
+     "text": "Put in more effort next time!"
+    },
+    {
+     "t": 38.47,
+     "te": 40.33,
+     "lane": "step",
+     "text": "Moving on to jumping jacks!"
+    },
+    {
+     "t": 40.37,
+     "te": 42.5,
+     "lane": "instructor",
+     "text": "Let's get up and bounce!"
+    },
+    {
+     "t": 44.57,
+     "te": 46.7,
+     "lane": "instructor",
+     "text": "It's time to get jumping! You are only moving your arms."
+    },
+    {
+     "t": 47.17,
+     "te": 49.27,
+     "lane": "instructor",
+     "text": "I wanna see you jumping! Let's go!"
+    },
+    {
+     "t": 52.67,
+     "te": 54.63,
+     "lane": "instructor",
+     "text": "Hey! Don' leave! Let's do some jumping jacks!"
+    },
+    {
+     "t": 58.57,
+     "te": 60.53,
+     "lane": "instructor",
+     "text": "Welcome back!"
+    },
+    {
+     "t": 61.27,
+     "te": 62.67,
+     "lane": "step",
+     "text": "Moving on to squats!"
+    },
+    {
+     "t": 62.7,
+     "te": 64.77,
+     "lane": "instructor",
+     "text": "It's time for squats!"
+    },
+    {
+     "t": 65.87,
+     "te": 67.77,
+     "lane": "instructor",
+     "text": "Let's squat!"
+    },
+    {
+     "t": 68.0,
+     "te": 69.9,
+     "lane": "instructor",
+     "text": "Hey! Your stance is too narrow and squats are too shallow!"
+    },
+    {
+     "t": 70.7,
+     "te": 72.6,
+     "lane": "instructor",
+     "text": "Let's get your stance wider!"
+    },
+    {
+     "t": 73.87,
+     "te": 76.4,
+     "lane": "instructor",
+     "text": "Let's pick up the pace!"
+    },
+    {
+     "t": 81.37,
+     "te": 83.87,
+     "lane": "instructor",
+     "text": "Try harder next time!"
+    },
+    {
+     "t": 84.4,
+     "te": 86.57,
+     "lane": "step",
+     "text": "Moving on to pushups!"
+    },
+    {
+     "t": 109.17,
+     "te": 110.3,
+     "lane": "step",
+     "text": "Moving on to quad stretch left!"
+    },
+    {
+     "t": 110.33,
+     "te": 112.43,
+     "lane": "instructor",
+     "text": "Wrong leg! It's your other left."
+    },
+    {
+     "t": 112.47,
+     "te": 114.57,
+     "lane": "instructor",
+     "text": "This is your right leg, we're stretching the left right now."
+    },
+    {
+     "t": 114.83,
+     "te": 116.93,
+     "lane": "instructor",
+     "text": "Yep! Now stretch out that quad!"
+    },
+    {
+     "t": 118.17,
+     "te": 120.3,
+     "lane": "instructor",
+     "text": "Balance! First try to maintain your balance! Don't want you getting hurt."
+    },
+    {
+     "t": 123.43,
+     "te": 125.47,
+     "lane": "instructor",
+     "text": "Don't stop! Keep going!"
+    },
+    {
+     "t": 125.87,
+     "te": 127.93,
+     "lane": "instructor",
+     "text": "You still have time! Get back at it!"
+    },
+    {
+     "t": 128.67,
+     "te": 130.77,
+     "lane": "step",
+     "text": "Moving on to quad stretch right!"
+    },
+    {
+     "t": 132.57,
+     "te": 134.63,
+     "lane": "instructor",
+     "text": "That's it!"
+    },
+    {
+     "t": 134.67,
+     "te": 136.77,
+     "lane": "instructor",
+     "text": "Keep your core tight so you don't lose your balance."
+    },
+    {
+     "t": 150.53,
+     "te": 153.0,
+     "lane": "step",
+     "text": "That's the end of the session."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "_id": {
+     "$oid": "693c48183023e8d82605c5b3"
+    },
+    "filepath": "data/0014.mp4",
+    "tags": [],
+    "metadata": {
+     "_cls": "VideoMetadata",
+     "size_bytes": 9794139,
+     "mime_type": "video/mp4",
+     "frame_width": 640,
+     "frame_height": 360,
+     "frame_rate": 30.0,
+     "total_frame_count": 4786,
+     "duration": 159.533333,
+     "encoding_str": "avc1"
+    },
+    "_media_type": "video",
+    "_rand": 0.999514614939756,
+    "feedback_events": {
+     "_cls": "TemporalDetections",
+     "detections": [
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcb5"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Keep your knees straight as you pull them up!",
+       "support": [
+        442,
+        518
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcb6"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Keep your knees straight and pick up the pace!",
+       "support": [
+        558,
+        632
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcb7"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Ok! Now speed it up! Let's bounce!",
+       "support": [
+        705,
+        777
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcb8"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Don't stop! You are too slow as it is.",
+       "support": [
+        859,
+        926
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcb9"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Put in more effort next time!",
+       "support": [
+        1049,
+        1110
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcbb"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Let's get up and bounce!",
+       "support": [
+        1211,
+        1275
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcbc"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "It's time to get jumping! You are only moving your arms.",
+       "support": [
+        1337,
+        1401
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcbd"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "I wanna see you jumping! Let's go!",
+       "support": [
+        1415,
+        1478
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcbe"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Hey! Don' leave! Let's do some jumping jacks!",
+       "support": [
+        1580,
+        1639
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcbf"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Welcome back!",
+       "support": [
+        1757,
+        1816
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcc1"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "It's time for squats!",
+       "support": [
+        1881,
+        1943
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcc2"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Let's squat!",
+       "support": [
+        1976,
+        2033
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcc3"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Hey! Your stance is too narrow and squats are too shallow!",
+       "support": [
+        2040,
+        2097
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcc4"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Let's get your stance wider!",
+       "support": [
+        2121,
+        2178
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcc5"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Let's pick up the pace!",
+       "support": [
+        2216,
+        2292
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcc6"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Try harder next time!",
+       "support": [
+        2441,
+        2516
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcc9"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Wrong leg! It's your other left.",
+       "support": [
+        3310,
+        3373
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcca"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "This is your right leg, we're stretching the left right now.",
+       "support": [
+        3374,
+        3437
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bccb"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Yep! Now stretch out that quad!",
+       "support": [
+        3445,
+        3508
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bccc"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Balance! First try to maintain your balance! Don't want you getting hurt.",
+       "support": [
+        3545,
+        3609
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bccd"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Don't stop! Keep going!",
+       "support": [
+        3703,
+        3764
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcce"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "You still have time! Get back at it!",
+       "support": [
+        3776,
+        3838
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcd0"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "That's it!",
+       "support": [
+        3977,
+        4039
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcd1"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Keep your core tight so you don't lose your balance.",
+       "support": [
+        4040,
+        4103
+       ],
+       "confidence": 1.0,
+       "is_transition": false,
+       "feedback_type": "feedback"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcb4"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "First up are high knees!",
+       "support": [
+        401,
+        441
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcba"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Moving on to jumping jacks!",
+       "support": [
+        1154,
+        1210
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcc0"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Moving on to squats!",
+       "support": [
+        1838,
+        1880
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcc7"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Moving on to pushups!",
+       "support": [
+        2532,
+        2597
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcc8"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Moving on to quad stretch left!",
+       "support": [
+        3275,
+        3309
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bccf"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Moving on to quad stretch right!",
+       "support": [
+        3860,
+        3923
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcd2"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "That's the end of the session.",
+       "support": [
+        4516,
+        4590
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      }
+     ]
+    },
+    "transitions": {
+     "_cls": "TemporalDetections",
+     "detections": [
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcb4"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "First up are high knees!",
+       "support": [
+        401,
+        441
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcba"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Moving on to jumping jacks!",
+       "support": [
+        1154,
+        1210
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcc0"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Moving on to squats!",
+       "support": [
+        1838,
+        1880
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcc7"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Moving on to pushups!",
+       "support": [
+        2532,
+        2597
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcc8"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Moving on to quad stretch left!",
+       "support": [
+        3275,
+        3309
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bccf"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "Moving on to quad stretch right!",
+       "support": [
+        3860,
+        3923
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      },
+      {
+       "_id": {
+        "$oid": "693c48153023e8d82605bcd2"
+       },
+       "_cls": "TemporalDetection",
+       "tags": [],
+       "label": "That's the end of the session.",
+       "support": [
+        4516,
+        4590
+       ],
+       "confidence": 1.0,
+       "is_transition": true,
+       "feedback_type": "transition"
+      }
+     ]
+    },
+    "video_id": "0014",
+    "num_feedback_events": 31,
+    "num_transitions": 7,
+    "num_feedbacks": 24,
+    "_dataset_id": {
+     "$oid": "693c48143023e8d82605bbdd"
+    },
+    "created_at": {
+     "$date": "2025-12-12T16:51:36.705Z"
+    },
+    "last_modified_at": {
+     "$date": "2025-12-12T16:51:36.705Z"
+    }
+   }
+  }
+ ]
+}

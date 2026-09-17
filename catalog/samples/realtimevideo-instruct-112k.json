@@ -1,0 +1,458 @@
+{
+ "slug": "realtimevideo-instruct-112k",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/zeyun-zhong/RealTimeVideo-Instruct-112K/blob/main/LLaVA-Video-178K/llava_realtime_perception_processed.json",
+  "clip source: https://huggingface.co/datasets/lmms-lab/LLaVA-Video-178K 30_60_s_academic_v0_1/30_60_s_academic_v0_1_videos_10.tar.gz member academic_source/NextQA/1023/4423747522.mp4"
+ ],
+ "access_used": "open download",
+ "note": "Each record is a single-turn QA in LLaVA format; rt_time is the query time (the model sees video only up to it), and proact_time is the earlier Streamo query time that was relocated to rt_time. An example here is every record for one video (1 for the NextQA clip, 11 for the ActivityNet video).",
+ "examples": [
+  {
+   "title": "NextQA 4423747522: child stumbles — 1 multiple-choice QA asked at 50 s (Streamo had it at 20 s)",
+   "video_ref": "academic_source/NextQA/1023/4423747522.mp4",
+   "duration_s": 59.03,
+   "clip": "samples/media/realtimevideo-instruct-112k_1.mp4",
+   "clip_offset_s": 36,
+   "thumb": "samples/media/realtimevideo-instruct-112k_1.jpg",
+   "timeline": [
+    {
+     "t": 20.0,
+     "te": null,
+     "lane": "event",
+     "text": "proact_time (original Streamo query time) for: What is the camera focusing on when the child stumbles and falls?"
+    },
+    {
+     "t": 50.0,
+     "te": null,
+     "lane": "question",
+     "text": "What is the camera focusing on when the child stumbles and falls?\nA. The background elements\nB. The child's actions and the container\nC. The adult's face\nD. The child's face\nPlease provide your answer by stating the letter followed by the full option."
+    },
+    {
+     "t": 50.0,
+     "te": null,
+     "lane": "answer",
+     "text": "B. The child's actions and the container."
+    }
+   ],
+   "raw_format": "json",
+   "raw": [
+    {
+     "id": "4423747522",
+     "conversations": [
+      {
+       "from": "human",
+       "value": "<image>\nWhat is the camera focusing on when the child stumbles and falls?\nA. The background elements\nB. The child's actions and the container\nC. The adult's face\nD. The child's face\nPlease provide your answer by stating the letter followed by the full option."
+      },
+      {
+       "from": "gpt",
+       "value": "B. The child's actions and the container."
+      }
+     ],
+     "proact_time": "20",
+     "rt_time": 50.0,
+     "data_source": "30_60_s_academic_v0_1",
+     "video": "academic_source/NextQA/1023/4423747522.mp4"
+    }
+   ]
+  },
+  {
+   "title": "ActivityNet v_im-nQ-KEzaQ: window cleaning with vinegar — 11 QAs at 75–130 s",
+   "video_ref": "academic_source/activitynet/v_im-nQ-KEzaQ.mp4",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 14.0,
+     "te": null,
+     "lane": "event",
+     "text": "proact_time (original Streamo query time) for: How does the camera focus on the person cleaning the window?"
+    },
+    {
+     "t": 25.0,
+     "te": null,
+     "lane": "event",
+     "text": "proact_time (original Streamo query time) for: How does the person clean the window in terms of speed?"
+    },
+    {
+     "t": 25.0,
+     "te": null,
+     "lane": "event",
+     "text": "proact_time (original Streamo query time) for: How does the person demonstrate the effectiveness of the vinegar solution for window cleaning?"
+    },
+    {
+     "t": 32.0,
+     "te": null,
+     "lane": "event",
+     "text": "proact_time (original Streamo query time) for: What is the main focus of the video?"
+    },
+    {
+     "t": 39.0,
+     "te": null,
+     "lane": "event",
+     "text": "proact_time (original Streamo query time) for: What change occurs to the window as the person cleans it?"
+    },
+    {
+     "t": 49.0,
+     "te": null,
+     "lane": "event",
+     "text": "proact_time (original Streamo query time) for: Which direction does the person spray the vinegar solution onto the window?"
+    },
+    {
+     "t": 49.0,
+     "te": null,
+     "lane": "event",
+     "text": "proact_time (original Streamo query time) for: Where does the person stand while cleaning the window?"
+    },
+    {
+     "t": 50.0,
+     "te": null,
+     "lane": "event",
+     "text": "proact_time (original Streamo query time) for: Does the camera move closer to the person while they are cleaning the window?"
+    },
+    {
+     "t": 58.0,
+     "te": null,
+     "lane": "event",
+     "text": "proact_time (original Streamo query time) for: Does the person clean the window quickly or slowly?"
+    },
+    {
+     "t": 65.0,
+     "te": null,
+     "lane": "event",
+     "text": "proact_time (original Streamo query time) for: What is the person wearing while cleaning the window?"
+    },
+    {
+     "t": 75.0,
+     "te": null,
+     "lane": "question",
+     "text": "How does the person clean the window in terms of speed?\nA. Slowly and thoroughly\nB. Very quickly\nC. In a rushed manner\nD. Sporadically\nPlease provide your answer by stating the letter followed by the full option."
+    },
+    {
+     "t": 75.0,
+     "te": null,
+     "lane": "answer",
+     "text": "A. Slowly and thoroughly."
+    },
+    {
+     "t": 75.0,
+     "te": null,
+     "lane": "question",
+     "text": "Does the person clean the window quickly or slowly?"
+    },
+    {
+     "t": 75.0,
+     "te": null,
+     "lane": "answer",
+     "text": "The person cleans the window at a steady pace, demonstrating thoroughness."
+    },
+    {
+     "t": 75.0,
+     "te": null,
+     "lane": "question",
+     "text": "How does the person demonstrate the effectiveness of the vinegar solution for window cleaning?"
+    },
+    {
+     "t": 75.0,
+     "te": null,
+     "lane": "answer",
+     "text": "The person sprays the vinegar solution onto the window and uses a crumpled newspaper to wipe it clean, demonstrating the effectiveness of the vinegar solution and newspaper for window cleaning."
+    },
+    {
+     "t": 75.0,
+     "te": null,
+     "lane": "question",
+     "text": "Which direction does the person spray the vinegar solution onto the window?\nA. Sideways\nB. Downwards\nC. Directly onto the window\nD. Upwards\nPlease respond with only the letter of the correct answer."
+    },
+    {
+     "t": 75.0,
+     "te": null,
+     "lane": "answer",
+     "text": "C."
+    },
+    {
+     "t": 75.0,
+     "te": null,
+     "lane": "question",
+     "text": "Where does the person stand while cleaning the window?"
+    },
+    {
+     "t": 75.0,
+     "te": null,
+     "lane": "answer",
+     "text": "The person stands in front of a window."
+    },
+    {
+     "t": 75.0,
+     "te": null,
+     "lane": "question",
+     "text": "What is the person wearing while cleaning the window?\nA. A red dress\nB. A white shirt and an apron with a green heart\nC. A black suit\nD. A blue shirt and jeans\nPlease respond with only the letter of the correct answer."
+    },
+    {
+     "t": 75.0,
+     "te": null,
+     "lane": "answer",
+     "text": "B."
+    },
+    {
+     "t": 80.0,
+     "te": null,
+     "lane": "question",
+     "text": "What change occurs to the window as the person cleans it?\nA. The window fogs up\nB. The window cracks\nC. The window becomes dirtier\nD. The window becomes spotless\nPlease respond with only the letter of the correct answer."
+    },
+    {
+     "t": 80.0,
+     "te": null,
+     "lane": "answer",
+     "text": "D."
+    },
+    {
+     "t": 80.0,
+     "te": null,
+     "lane": "question",
+     "text": "What is the main focus of the video?\nA. Preparing for a party\nB. Cleaning a microwave\nC. Advertising cleaning products\nD. Cleaning a window with vinegar and newspaper\nPlease provide your answer by stating the letter followed by the full option."
+    },
+    {
+     "t": 80.0,
+     "te": null,
+     "lane": "answer",
+     "text": "D. Cleaning a window with vinegar and newspaper."
+    },
+    {
+     "t": 124.0,
+     "te": null,
+     "lane": "event",
+     "text": "proact_time (original Streamo query time) for: How does the video conclude?"
+    },
+    {
+     "t": 125.0,
+     "te": null,
+     "lane": "question",
+     "text": "How does the camera focus on the person cleaning the window?\nA. The camera zooms in\nB. The camera zooms out\nC. The camera stays still\nD. The camera moves to the side\nPlease respond with only the letter of the correct answer."
+    },
+    {
+     "t": 125.0,
+     "te": null,
+     "lane": "answer",
+     "text": "A."
+    },
+    {
+     "t": 125.0,
+     "te": null,
+     "lane": "question",
+     "text": "Does the camera move closer to the person while they are cleaning the window?"
+    },
+    {
+     "t": 125.0,
+     "te": null,
+     "lane": "answer",
+     "text": "No, the camera remains stationary while the person cleans the window."
+    },
+    {
+     "t": 130.0,
+     "te": null,
+     "lane": "question",
+     "text": "How does the video conclude?"
+    },
+    {
+     "t": 130.0,
+     "te": null,
+     "lane": "answer",
+     "text": "The video concludes with the person appearing satisfied with the cleaning results, followed by colorful vertical stripes, the 'videojug' logo, the text 'get good at life,' and a disclaimer about the content of the video."
+    }
+   ],
+   "raw_format": "json",
+   "raw": [
+    {
+     "id": "v_im-nQ-KEzaQ",
+     "conversations": [
+      {
+       "from": "human",
+       "value": "<image>\nHow does the person clean the window in terms of speed?\nA. Slowly and thoroughly\nB. Very quickly\nC. In a rushed manner\nD. Sporadically\nPlease provide your answer by stating the letter followed by the full option."
+      },
+      {
+       "from": "gpt",
+       "value": "A. Slowly and thoroughly."
+      }
+     ],
+     "proact_time": "25",
+     "rt_time": 75.0,
+     "data_source": "2_3_m_academic_v0_1",
+     "video": "academic_source/activitynet/v_im-nQ-KEzaQ.mp4"
+    },
+    {
+     "id": "v_im-nQ-KEzaQ",
+     "conversations": [
+      {
+       "from": "human",
+       "value": "<image>\nWhat change occurs to the window as the person cleans it?\nA. The window fogs up\nB. The window cracks\nC. The window becomes dirtier\nD. The window becomes spotless\nPlease respond with only the letter of the correct answer."
+      },
+      {
+       "from": "gpt",
+       "value": "D."
+      }
+     ],
+     "proact_time": "39",
+     "rt_time": 80.0,
+     "data_source": "2_3_m_academic_v0_1",
+     "video": "academic_source/activitynet/v_im-nQ-KEzaQ.mp4"
+    },
+    {
+     "id": "v_im-nQ-KEzaQ",
+     "conversations": [
+      {
+       "from": "human",
+       "value": "<image>\nDoes the person clean the window quickly or slowly?"
+      },
+      {
+       "from": "gpt",
+       "value": "The person cleans the window at a steady pace, demonstrating thoroughness."
+      }
+     ],
+     "proact_time": "58",
+     "rt_time": 75.0,
+     "data_source": "2_3_m_academic_v0_1",
+     "video": "academic_source/activitynet/v_im-nQ-KEzaQ.mp4"
+    },
+    {
+     "id": "v_im-nQ-KEzaQ",
+     "conversations": [
+      {
+       "from": "human",
+       "value": "<image>\nHow does the camera focus on the person cleaning the window?\nA. The camera zooms in\nB. The camera zooms out\nC. The camera stays still\nD. The camera moves to the side\nPlease respond with only the letter of the correct answer."
+      },
+      {
+       "from": "gpt",
+       "value": "A."
+      }
+     ],
+     "proact_time": "14",
+     "rt_time": 125.0,
+     "data_source": "2_3_m_academic_v0_1",
+     "video": "academic_source/activitynet/v_im-nQ-KEzaQ.mp4"
+    },
+    {
+     "id": "v_im-nQ-KEzaQ",
+     "conversations": [
+      {
+       "from": "human",
+       "value": "<image>\nHow does the person demonstrate the effectiveness of the vinegar solution for window cleaning?"
+      },
+      {
+       "from": "gpt",
+       "value": "The person sprays the vinegar solution onto the window and uses a crumpled newspaper to wipe it clean, demonstrating the effectiveness of the vinegar solution and newspaper for window cleaning."
+      }
+     ],
+     "proact_time": "25",
+     "rt_time": 75.0,
+     "data_source": "2_3_m_academic_v0_1",
+     "video": "academic_source/activitynet/v_im-nQ-KEzaQ.mp4"
+    },
+    {
+     "id": "v_im-nQ-KEzaQ",
+     "conversations": [
+      {
+       "from": "human",
+       "value": "<image>\nWhich direction does the person spray the vinegar solution onto the window?\nA. Sideways\nB. Downwards\nC. Directly onto the window\nD. Upwards\nPlease respond with only the letter of the correct answer."
+      },
+      {
+       "from": "gpt",
+       "value": "C."
+      }
+     ],
+     "proact_time": "49",
+     "rt_time": 75.0,
+     "data_source": "2_3_m_academic_v0_1",
+     "video": "academic_source/activitynet/v_im-nQ-KEzaQ.mp4"
+    },
+    {
+     "id": "v_im-nQ-KEzaQ",
+     "conversations": [
+      {
+       "from": "human",
+       "value": "<image>\nDoes the camera move closer to the person while they are cleaning the window?"
+      },
+      {
+       "from": "gpt",
+       "value": "No, the camera remains stationary while the person cleans the window."
+      }
+     ],
+     "proact_time": "50",
+     "rt_time": 125.0,
+     "data_source": "2_3_m_academic_v0_1",
+     "video": "academic_source/activitynet/v_im-nQ-KEzaQ.mp4"
+    },
+    {
+     "id": "v_im-nQ-KEzaQ",
+     "conversations": [
+      {
+       "from": "human",
+       "value": "<image>\nWhere does the person stand while cleaning the window?"
+      },
+      {
+       "from": "gpt",
+       "value": "The person stands in front of a window."
+      }
+     ],
+     "proact_time": "49",
+     "rt_time": 75.0,
+     "data_source": "2_3_m_academic_v0_1",
+     "video": "academic_source/activitynet/v_im-nQ-KEzaQ.mp4"
+    },
+    {
+     "id": "v_im-nQ-KEzaQ",
+     "conversations": [
+      {
+       "from": "human",
+       "value": "<image>\nWhat is the person wearing while cleaning the window?\nA. A red dress\nB. A white shirt and an apron with a green heart\nC. A black suit\nD. A blue shirt and jeans\nPlease respond with only the letter of the correct answer."
+      },
+      {
+       "from": "gpt",
+       "value": "B."
+      }
+     ],
+     "proact_time": "65",
+     "rt_time": 75.0,
+     "data_source": "2_3_m_academic_v0_1",
+     "video": "academic_source/activitynet/v_im-nQ-KEzaQ.mp4"
+    },
+    {
+     "id": "v_im-nQ-KEzaQ",
+     "conversations": [
+      {
+       "from": "human",
+       "value": "<image>\nWhat is the main focus of the video?\nA. Preparing for a party\nB. Cleaning a microwave\nC. Advertising cleaning products\nD. Cleaning a window with vinegar and newspaper\nPlease provide your answer by stating the letter followed by the full option."
+      },
+      {
+       "from": "gpt",
+       "value": "D. Cleaning a window with vinegar and newspaper."
+      }
+     ],
+     "proact_time": "32",
+     "rt_time": 80.0,
+     "data_source": "2_3_m_academic_v0_1",
+     "video": "academic_source/activitynet/v_im-nQ-KEzaQ.mp4"
+    },
+    {
+     "id": "v_im-nQ-KEzaQ",
+     "conversations": [
+      {
+       "from": "human",
+       "value": "<image>\nHow does the video conclude?"
+      },
+      {
+       "from": "gpt",
+       "value": "The video concludes with the person appearing satisfied with the cleaning results, followed by colorful vertical stripes, the 'videojug' logo, the text 'get good at life,' and a disclaimer about the content of the video."
+      }
+     ],
+     "proact_time": "124",
+     "rt_time": 130.0,
+     "data_source": "2_3_m_academic_v0_1",
+     "video": "academic_source/activitynet/v_im-nQ-KEzaQ.mp4"
+    }
+   ]
+  }
+ ]
+}

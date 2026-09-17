@@ -1,0 +1,382 @@
+{
+ "slug": "egoblind",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://raw.githubusercontent.com/doc-doc/EgoBlind/main/finetune/train.csv",
+  "https://huggingface.co/datasets/DogNeverSleep/EgoBlind/resolve/main/Video/video_part_aa (zip members 00000.mp4, 00002.mp4, stream-inflated from the first ~110 MB)"
+ ],
+ "access_used": "open download",
+ "note": "An example is one clip filmed by a blind creator with all its train.csv rows: each row is a question the wearer needs answered at 'start-time/s' (only video before that moment may be used), 1-4 human reference answers, and a question type. Timeline shows each question (type in brackets) followed by its reference answers at the same timestamp; answers are alternatives, not a dialogue. Video 0's clip covers 36.0-54.3 s; its tool-use question at 6.99 s and 22.98 s fall outside the clip.",
+ "examples": [
+  {
+   "title": "Video 0: blind passenger in a car's back seat — 5 questions (tool use, navigation, safety)",
+   "video_ref": "video_name=0 (Video/video_part_aa zip member 00000.mp4)",
+   "duration_s": 54.3,
+   "clip": "samples/media/egoblind_1.mp4",
+   "clip_offset_s": 36.0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 6.99,
+     "te": null,
+     "lane": "question",
+     "text": "[tool use] How do I adjust the seatbelt?"
+    },
+    {
+     "t": 6.99,
+     "te": null,
+     "lane": "answer",
+     "text": "You need to pull the belt from the side of your seat and click it into the buckle."
+    },
+    {
+     "t": 6.99,
+     "te": null,
+     "lane": "answer",
+     "text": "It's on the buttom left or right of where you are sitting."
+    },
+    {
+     "t": 6.99,
+     "te": null,
+     "lane": "answer",
+     "text": "The seat belt may be on your upper left, you can pull it to the lower right and insert it into the buckle."
+    },
+    {
+     "t": 22.98,
+     "te": null,
+     "lane": "question",
+     "text": "[tool use] How do I lower or raise the window?"
+    },
+    {
+     "t": 22.98,
+     "te": null,
+     "lane": "answer",
+     "text": "Use the window control button on the car door."
+    },
+    {
+     "t": 22.98,
+     "te": null,
+     "lane": "answer",
+     "text": "The door on your left has a press or rocker operation."
+    },
+    {
+     "t": 22.98,
+     "te": null,
+     "lane": "answer",
+     "text": "You can ask the driver for help."
+    },
+    {
+     "t": 40.98,
+     "te": null,
+     "lane": "question",
+     "text": "[communication and interaction] Is the driver looking at me or facing forward?"
+    },
+    {
+     "t": 40.98,
+     "te": null,
+     "lane": "answer",
+     "text": "The driver is facing forward."
+    },
+    {
+     "t": 40.98,
+     "te": null,
+     "lane": "answer",
+     "text": "Facing forward."
+    },
+    {
+     "t": 40.98,
+     "te": null,
+     "lane": "answer",
+     "text": "He is facing forward."
+    },
+    {
+     "t": 46.98,
+     "te": null,
+     "lane": "question",
+     "text": "[local navigation and positioning] Which direction will I need to move to exit the vehicle?"
+    },
+    {
+     "t": 46.98,
+     "te": null,
+     "lane": "answer",
+     "text": "Left."
+    },
+    {
+     "t": 46.98,
+     "te": null,
+     "lane": "answer",
+     "text": "Usually you can't open the door on the left, you you have to try the left first, then the right."
+    },
+    {
+     "t": 46.98,
+     "te": null,
+     "lane": "answer",
+     "text": "You're closer to the left door, but it will be safer if you exit from the right door."
+    },
+    {
+     "t": 54.0,
+     "te": null,
+     "lane": "question",
+     "text": "[safety warnings] Is everything secure inside the car?"
+    },
+    {
+     "t": 54.0,
+     "te": null,
+     "lane": "answer",
+     "text": "Yes."
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": [
+    {
+     "question_id": "v_00000_1",
+     "video_name": "0",
+     "question": "Is the driver looking at me or facing forward?",
+     "answer0": "The driver is facing forward.",
+     "answer1": "Facing forward.",
+     "answer2": "He is facing forward.",
+     "answer3": "",
+     "type": "communication and interaction",
+     "start-time/s": "40.98"
+    },
+    {
+     "question_id": "v_00000_2",
+     "video_name": "0",
+     "question": "Is everything secure inside the car?",
+     "answer0": "Yes.",
+     "answer1": "",
+     "answer2": "",
+     "answer3": "",
+     "type": "safety warnings",
+     "start-time/s": "54.0"
+    },
+    {
+     "question_id": "v_00000_3",
+     "video_name": "0",
+     "question": "How do I lower or raise the window?",
+     "answer0": "Use the window control button on the car door.",
+     "answer1": "The door on your left has a press or rocker operation.",
+     "answer2": "You can ask the driver for help.",
+     "answer3": "",
+     "type": "tool use",
+     "start-time/s": "22.98"
+    },
+    {
+     "question_id": "v_00000_4",
+     "video_name": "0",
+     "question": "Which direction will I need to move to exit the vehicle?",
+     "answer0": "Left.",
+     "answer1": "Usually you can't open the door on the left, you you have to try the left first, then the right.",
+     "answer2": "You're closer to the left door, but it will be safer if you exit from the right door.",
+     "answer3": "",
+     "type": "local navigation and positioning",
+     "start-time/s": "46.98"
+    },
+    {
+     "question_id": "v_00000_5",
+     "video_name": "0",
+     "question": "How do I adjust the seatbelt?",
+     "answer0": "You need to pull the belt from the side of your seat and click it into the buckle.",
+     "answer1": "It's on the buttom left or right of where you are sitting.",
+     "answer2": "The seat belt may be on your upper left, you can pull it to the lower right and insert it into the buckle.",
+     "answer3": "",
+     "type": "tool use",
+     "start-time/s": "6.99"
+    }
+   ]
+  },
+  {
+   "title": "Video 2: crossing a street between parked bikes — 5 questions incl. 'Is it safe to cross the street now?'",
+   "video_ref": "video_name=2 (Video/video_part_aa zip member 00002.mp4)",
+   "duration_s": 9.93,
+   "clip": "samples/media/egoblind_2.mp4",
+   "clip_offset_s": 0.0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 3.0,
+     "te": null,
+     "lane": "question",
+     "text": "[information reading] Are there any obstacles on the path ahead?"
+    },
+    {
+     "t": 3.0,
+     "te": null,
+     "lane": "answer",
+     "text": "There are bicycles parked along the path."
+    },
+    {
+     "t": 3.0,
+     "te": null,
+     "lane": "answer",
+     "text": "Yes, there are bicycles and motorcycles parked on both sides of you."
+    },
+    {
+     "t": 3.0,
+     "te": null,
+     "lane": "answer",
+     "text": "Bicycles and electric bikes are crowded on both sides."
+    },
+    {
+     "t": 3.0,
+     "te": null,
+     "lane": "answer",
+     "text": "Yes, there are parked bicycles and stone pillars ahead."
+    },
+    {
+     "t": 3.99,
+     "te": null,
+     "lane": "question",
+     "text": "[resource acquisition and others] How can I avoid the bicycles ahead?"
+    },
+    {
+     "t": 3.99,
+     "te": null,
+     "lane": "answer",
+     "text": "Step carefully to your left to go around them."
+    },
+    {
+     "t": 3.99,
+     "te": null,
+     "lane": "answer",
+     "text": "Walk slower, the width a person can walk is only the width of their shoulders."
+    },
+    {
+     "t": 3.99,
+     "te": null,
+     "lane": "answer",
+     "text": "Walk a little to the right."
+    },
+    {
+     "t": 3.99,
+     "te": null,
+     "lane": "answer",
+     "text": "Walk slowly and pay attention to the vehicles parked on both sides."
+    },
+    {
+     "t": 6.99,
+     "te": null,
+     "lane": "question",
+     "text": "[safety warnings] Is it safe to cross the street now?"
+    },
+    {
+     "t": 6.99,
+     "te": null,
+     "lane": "answer",
+     "text": "Yes."
+    },
+    {
+     "t": 6.99,
+     "te": null,
+     "lane": "answer",
+     "text": "Yes, but there may be vehicles coming and going on both sides."
+    },
+    {
+     "t": 6.99,
+     "te": null,
+     "lane": "answer",
+     "text": "I don't know, there may be vehicles passing through the intersection."
+    },
+    {
+     "t": 9.0,
+     "te": null,
+     "lane": "question",
+     "text": "[resource acquisition and others] Am I facing the crosswalk now?"
+    },
+    {
+     "t": 9.0,
+     "te": null,
+     "lane": "answer",
+     "text": "Yes."
+    },
+    {
+     "t": 9.0,
+     "te": null,
+     "lane": "question",
+     "text": "[local navigation and positioning] How can I get to the crosswalk from here?"
+    },
+    {
+     "t": 9.0,
+     "te": null,
+     "lane": "answer",
+     "text": "Move ahead a few steps."
+    },
+    {
+     "t": 9.0,
+     "te": null,
+     "lane": "answer",
+     "text": "Walking forward, there are several cylinders half a meter high at the beginning of the sidewalk."
+    },
+    {
+     "t": 9.0,
+     "te": null,
+     "lane": "answer",
+     "text": "Go straight ahead."
+    },
+    {
+     "t": 9.0,
+     "te": null,
+     "lane": "answer",
+     "text": "Walk forward with the help of the person next to you."
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": [
+    {
+     "question_id": "v_00002_1",
+     "video_name": "2",
+     "question": "How can I avoid the bicycles ahead?",
+     "answer0": "Step carefully to your left to go around them.",
+     "answer1": "Walk slower, the width a person can walk is only the width of their shoulders.",
+     "answer2": "Walk a little to the right.",
+     "answer3": "Walk slowly and pay attention to the vehicles parked on both sides.",
+     "type": "resource acquisition and others",
+     "start-time/s": "3.99"
+    },
+    {
+     "question_id": "v_00002_2",
+     "video_name": "2",
+     "question": "Am I facing the crosswalk now?",
+     "answer0": "Yes.",
+     "answer1": "",
+     "answer2": "",
+     "answer3": "",
+     "type": "resource acquisition and others",
+     "start-time/s": "9.0"
+    },
+    {
+     "question_id": "v_00002_3",
+     "video_name": "2",
+     "question": "Is it safe to cross the street now?",
+     "answer0": "Yes.",
+     "answer1": "Yes, but there may be vehicles coming and going on both sides.",
+     "answer2": "",
+     "answer3": "I don't know, there may be vehicles passing through the intersection.",
+     "type": "safety warnings",
+     "start-time/s": "6.99"
+    },
+    {
+     "question_id": "v_00002_4",
+     "video_name": "2",
+     "question": "How can I get to the crosswalk from here?",
+     "answer0": "Move ahead a few steps.",
+     "answer1": "Walking forward, there are several cylinders half a meter high at the beginning of the sidewalk.",
+     "answer2": "Go straight ahead.",
+     "answer3": "Walk forward with the help of the person next to you.",
+     "type": "local navigation and positioning",
+     "start-time/s": "9.0"
+    },
+    {
+     "question_id": "v_00002_5",
+     "video_name": "2",
+     "question": "Are there any obstacles on the path ahead?",
+     "answer0": "There are bicycles parked along the path.",
+     "answer1": "Yes, there are bicycles and motorcycles parked on both sides of you.",
+     "answer2": "Bicycles and electric bikes are crowded on both sides.",
+     "answer3": "Yes, there are parked bicycles and stone pillars ahead.",
+     "type": "information reading",
+     "start-time/s": "3.0"
+    }
+   ]
+  }
+ ]
+}

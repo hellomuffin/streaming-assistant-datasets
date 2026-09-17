@@ -1,0 +1,217 @@
+{
+ "slug": "candor",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://arxiv.org/pdf/2203.00674 (Figures 3 and 4, pp. 27 and 30)",
+  "https://betterup-data-requests.herokuapp.com/ (access form; not used)",
+  "https://huggingface.co/datasets/hiraki/candor-turntaking-annotations data/train-00000-of-00001.parquet (inspected, not used)"
+ ],
+ "access_used": "public sample in paper/repo/card only (full data needs BetterUp registration form; download links are emailed)",
+ "note": "CANDOR media and transcripts are released only after a reviewed registration with emailed links, so these are the two transcript excerpts printed in the paper's figures; they show the same speech segmented by the corpus's turn models (Audiophile = raw speaker changes, Cliffhanger = sentence-bounded, Backbiter = back-channels moved to a side registry). The figures carry no timestamps, so timeline is empty. The unofficial HF derivative (hiraki/candor-turntaking-annotations) was checked and not used: its label columns are all empty and the transcripts in the sampled conversation are ASR hallucinations (e.g. 'wait, wait, wait…' repeated), not CANDOR's AWS transcripts.",
+ "examples": [
+  {
+   "title": "Figure 4: 'My name is Chris … Wichita Kansas' — 26 Audiophile turns collapse to 2 Backbiter turns plus back-channel registry",
+   "video_ref": "conversation id not given in the paper",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "txt",
+   "raw": {
+    "source": "arXiv 2203.00674 v1 PDF p.30, Figure 4 (text transcribed from the figure image, order and punctuation kept)",
+    "Audiophile Transcript": [
+     {
+      "speaker": "Speaker 1",
+      "turn": "I'm doing good, good, good. This is the first time that I've done this, so I'm not sure exactly what we're supposed to be talking about or"
+     },
+     {
+      "speaker": "Speaker 2",
+      "turn": "Yeah."
+     },
+     {
+      "speaker": "Speaker 1",
+      "turn": "any type of thing we're supposed to be going on. So I'll let you go ahead and"
+     },
+     {
+      "speaker": "Speaker 2",
+      "turn": "Uh,"
+     },
+     {
+      "speaker": "Speaker 1",
+      "turn": "start"
+     },
+     {
+      "speaker": "Speaker 2",
+      "turn": "huh."
+     },
+     {
+      "speaker": "Speaker 1",
+      "turn": "to have something you want to say. Then I'll"
+     },
+     {
+      "speaker": "Speaker 2",
+      "turn": "Yeah."
+     },
+     {
+      "speaker": "Speaker 1",
+      "turn": "introduce myself first. My name is Chris"
+     },
+     {
+      "speaker": "Speaker 2",
+      "turn": "Mhm"
+     },
+     {
+      "speaker": "Speaker 1",
+      "turn": "and I live"
+     },
+     {
+      "speaker": "Speaker 2",
+      "turn": "Yeah."
+     },
+     {
+      "speaker": "Speaker 1",
+      "turn": "here in Wichita"
+     },
+     {
+      "speaker": "Speaker 2",
+      "turn": "Yeah."
+     },
+     {
+      "speaker": "Speaker 1",
+      "turn": "Kansas"
+     },
+     {
+      "speaker": "Speaker 2",
+      "turn": "Mm"
+     },
+     {
+      "speaker": "Speaker 1",
+      "turn": "and"
+     },
+     {
+      "speaker": "Speaker 2",
+      "turn": "hmm."
+     },
+     {
+      "speaker": "Speaker 1",
+      "turn": "I work at"
+     },
+     {
+      "speaker": "Speaker 2",
+      "turn": "Yeah."
+     },
+     {
+      "speaker": "Speaker 1",
+      "turn": "a construction supply"
+     },
+     {
+      "speaker": "Speaker 2",
+      "turn": "Yeah."
+     },
+     {
+      "speaker": "Speaker 1",
+      "turn": "company here."
+     },
+     {
+      "speaker": "Speaker 2",
+      "turn": "Okay. My name is Ireland."
+     },
+     {
+      "speaker": "Speaker 1",
+      "turn": "Mhm."
+     },
+     {
+      "speaker": "Speaker 2",
+      "turn": "which is a super weird name. I live in Oklahoma."
+     }
+    ],
+    "Backbiter Transcript": [
+     {
+      "speaker": "Speaker 1",
+      "turn": "I'm doing good, good, good. This is the first time that I've done this, so I'm not sure exactly what we're supposed to be talking about or any type of thing we're supposed to be going on. So I'll let you go ahead and start to have something you want to say. Then I'll introduce myself first. My name is Chris and I live here in Wichita Kansas and I work at a construction supply company here.",
+      "back_channel (Speaker 2)": "Yeah. Uh, huh. Yeah. Mhm Yeah. Yeah.  Mm hmm. Yeah. Yeah."
+     },
+     {
+      "speaker": "Speaker 2",
+      "turn": "Okay. My name is Ireland which is a super weird name. I live in Oklahoma.",
+      "back_channel (Speaker 1)": "Mhm"
+     }
+    ]
+   }
+  },
+  {
+   "title": "Figure 3: 'Hello, my name is Fatima. I'm from Egypt.' — word stream split by Audiophile vs Cliffhanger",
+   "video_ref": "illustrative exchange in the paper (no conversation id)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "txt",
+   "raw": {
+    "source": "arXiv 2203.00674 v1 PDF p.27, Figure 3 (text transcribed from the figure image)",
+    "word stream": {
+     "FATIMA": [
+      "Hello,",
+      "my",
+      "name",
+      "is",
+      "Fatima.",
+      "I'm",
+      "from",
+      "Egypt."
+     ],
+     "EDUARDO": [
+      "Hi.",
+      "Nice",
+      "to",
+      "meet",
+      "you."
+     ]
+    },
+    "Audiophile": [
+     {
+      "FATIMA": "Hello,"
+     },
+     {
+      "EDUARDO": "Hi."
+     },
+     {
+      "FATIMA": "my name is Fatima. I'm"
+     },
+     {
+      "EDUARDO": "Nice"
+     },
+     {
+      "FATIMA": "from"
+     },
+     {
+      "EDUARDO": "to"
+     },
+     {
+      "FATIMA": "Egypt."
+     },
+     {
+      "EDUARDO": "meet you."
+     }
+    ],
+    "Cliffhanger": [
+     {
+      "FATIMA": "Hello, my name is Fatima."
+     },
+     {
+      "EDUARDO": "Hi."
+     },
+     {
+      "FATIMA": "I'm from Egypt."
+     },
+     {
+      "EDUARDO": "Nice to meet you."
+     }
+    ],
+    "Backbiter rule (paper text p.30)": "(1) a back-channel turn must be three words or fewer; (2) a back-channel turn must contain >50% back-channel words (e.g., “yeah,” mhm,” “exactly”); and finally (3) a back-channel turn must not start with a prohibited word, such as “I'm…”."
+   }
+  }
+ ]
+}

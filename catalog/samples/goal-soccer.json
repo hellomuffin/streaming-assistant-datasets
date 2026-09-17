@@ -1,0 +1,634 @@
+{
+ "slug": "goal-soccer",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://cloud.tsinghua.edu.cn/f/7d5ba8b55a724b15a1e9/?dl=1 (commentaries.tar.gz) -> england_epl__2016-2017__2016-08-14_-_18-00_Arsenal_3_-_4_Liverpool_2.json",
+  "https://cloud.tsinghua.edu.cn/f/451ccb1fd1f34ac48a2d/?dl=1 (captions.tar.gz) -> {train,val,test}.caption_coco_format.json"
+ ],
+ "access_used": "open download",
+ "note": "One example = the proofread transcript of the English TV commentary for a 3-minute window of one half. offset/duration are seconds in the SoccerNet half video; \"entity\" marks [player]/[team] mentions; \"class\" is the per-sentence type (the paper names three: scene description, background introduction, comment; the numeric mapping is not documented), several sentences merged give \"1/1/1\". \"clip\" names the segment clip used by the COCO-format captions. Videos are SoccerNet NDA, so no clip.",
+ "examples": [
+  {
+   "title": "Arsenal 3–4 Liverpool, 2nd half 16:30–19:30 — proofread commentary with entity tags and sentence classes",
+   "video_ref": "SoccerNet england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool / 2_224p.mkv",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 991.56,
+     "te": 1009.91,
+     "lane": "commentary",
+     "text": "[commentor] I think Arsenal just need a period in the game? The stability of nothing at the moment in the pool, still confident those fans in that corner where the corner is gonna be taken by Jordan Henderson. We need to settle them down. The Arsenal fans first, the Arsenal team first so we can get the Arsenal fans back in the game."
+    },
+    {
+     "t": 1010.48,
+     "te": 1014.05,
+     "lane": "commentary",
+     "text": "Because they switched off, [commentor] Liverpool fans delighted with what they're seeing."
+    },
+    {
+     "t": 1031.87,
+     "te": 1035.17,
+     "lane": "commentary",
+     "text": "Just look out there at the Arsenal team. There isn't a great deal of."
+    },
+    {
+     "t": 1037.1,
+     "te": 1056.89,
+     "lane": "commentary",
+     "text": "Suppose Sanchez. You'd say he's got a big personality and character, but the big leaders who you think would potentially get a grip of this for them aren't really there. [commentor] there's Mignolet to run the Chambers. He's doing just that. Sadio Mané wanting a goal for himself. Yeah, what a glorious goal he's got that is game over."
+    },
+    {
+     "t": 1059.03,
+     "te": 1061.43,
+     "lane": "commentary",
+     "text": "Liverpool ripping Arsenal to shreds here."
+    },
+    {
+     "t": 1069.62,
+     "te": 1072.81,
+     "lane": "commentary",
+     "text": "Almost disbelief. In both dugouts."
+    },
+    {
+     "t": 1075.85,
+     "te": 1083.21,
+     "lane": "commentary",
+     "text": "[commentor] This is sorry story for Arsenal, but you have seen four absolutely fantastic Liverpool goals."
+    },
+    {
+     "t": 1083.98,
+     "te": 1088.98,
+     "lane": "commentary",
+     "text": "And this is individual brilliance. The pace initially. Then the skill."
+    },
+    {
+     "t": 1089.62,
+     "te": 1092.68,
+     "lane": "commentary",
+     "text": "And can he finish? It's an absolutely incredible finish."
+    },
+    {
+     "t": 1094.27,
+     "te": 1106.14,
+     "lane": "commentary",
+     "text": "Everything you see there, from Mane, the strength, the power, the skill and then the technique to control with his left foot and put that ball into the top corner, it sums up this last 15-20 minutes from Liverpool."
+    },
+    {
+     "t": 1106.98,
+     "te": 1110.1,
+     "lane": "commentary",
+     "text": "Absolutely brilliant. And he celebrates with his manager."
+    },
+    {
+     "t": 1113.35,
+     "te": 1120.66,
+     "lane": "commentary",
+     "text": "[commentor] Well, we saw glimpses of it from Liverpool last season and we when they won the six one at Southampton in the League Cup."
+    },
+    {
+     "t": 1121.47,
+     "te": 1126.76,
+     "lane": "commentary",
+     "text": "That's off, Chamberlain. That's one back by deflection."
+    },
+    {
+     "t": 1128.01,
+     "te": 1131.94,
+     "lane": "commentary",
+     "text": "Arsenal 2, Liverpool 4 maybe not game over. [commentor] Well."
+    },
+    {
+     "t": 1134.38,
+     "te": 1140.68,
+     "lane": "commentary",
+     "text": "Arsenal. Fans needed that I was just about to say, could become a very difficult and awkward last 25 minutes."
+    },
+    {
+     "t": 1141.6,
+     "te": 1148.6,
+     "lane": "commentary",
+     "text": "We've just seen some brilliance at the other end, Oxlade-Chamberlain, there's that gap that you don't like between fullback of wide play when defending."
+    },
+    {
+     "t": 1149.6,
+     "te": 1161.29,
+     "lane": "commentary",
+     "text": "They skipped between it. It's Clyne and Lallana just jumps through that gap and then powers into the box through Jordon Henderson. And he's inside to Mignolet . Deflection, I think."
+    },
+    {
+     "t": 1162.01,
+     "te": 1164.09,
+     "lane": "commentary",
+     "text": "up and out and goes into their goal post."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "commentaries/england_epl__2016-2017__2016-08-14_-_18-00_Arsenal_3_-_4_Liverpool_2.json (window items)": [
+     {
+      "offset": 991.56,
+      "duration": 18.350000000000104,
+      "commentary": "[commentor] I think Arsenal just need a period in the game? The stability of nothing at the moment in the pool, still confident those fans in that corner where the corner is gonna be taken by Jordan Henderson. We need to settle them down. The Arsenal fans first, the Arsenal team first so we can get the Arsenal fans back in the game.",
+      "entity": "[commentor] I think [team]Arsenal[team] just need a period in the game? The stability of nothing at the moment in the pool, still confident those fans in that corner where the corner is gonna be taken by Jordan [player]Henderson [player]. We need to settle them down. The [team]Arsenal[team] fans first, the [team]Arsenal[team] team first so we can get the [team]Arsenal[team] fans back in the game.",
+      "class": "2/2",
+      "clip": "146.avi"
+     },
+     {
+      "offset": 1010.48,
+      "duration": 3.57,
+      "commentary": "Because they switched off, [commentor] Liverpool fans delighted with what they're seeing.",
+      "entity": "Because they switched off, [commentor] [team]Liverpool[team] fans delighted with what they're seeing.",
+      "class": 2,
+      "clip": "147.avi"
+     },
+     {
+      "offset": 1031.87,
+      "duration": 3.3,
+      "commentary": "Just look out there at the Arsenal team. There isn't a great deal of.",
+      "entity": "Just look out there at the [team]Arsenal[team] team. There isn't a great deal of.",
+      "class": 2,
+      "clip": "148.avi"
+     },
+     {
+      "offset": 1037.1,
+      "duration": 19.79,
+      "commentary": "Suppose Sanchez. You'd say he's got a big personality and character, but the big leaders who you think would potentially get a grip of this for them aren't really there. [commentor] there's Mignolet to run the Chambers. He's doing just that. Sadio Mané wanting a goal for himself. Yeah, what a glorious goal he's got that is game over.",
+      "entity": "Suppose [player]Sanchez[player]. You'd say he's got a big personality and character, but the big leaders who you think would potentially get a grip of this for them aren't really there. [commentor] there's [player]Mignolet [player]to run the Chambers. He's doing just that. Sadio Mané wanting a goal for himself. Yeah, what a glorious goal he's got that is game over.",
+      "class": "1,2",
+      "clip": "149.avi"
+     },
+     {
+      "offset": 1059.03,
+      "duration": 2.4,
+      "commentary": "Liverpool ripping Arsenal to shreds here.",
+      "entity": "[team]Liverpool[team] ripping [team]Arsenal[team] to shreds here.",
+      "class": 1,
+      "clip": "150.avi"
+     },
+     {
+      "offset": 1069.62,
+      "duration": 3.1900000000000364,
+      "commentary": "Almost disbelief. In both dugouts.",
+      "entity": "Almost disbelief. In both dugouts.",
+      "class": "1/1",
+      "clip": "152.avi"
+     },
+     {
+      "offset": 1075.85,
+      "duration": 7.36,
+      "commentary": "[commentor] This is sorry story for Arsenal, but you have seen four absolutely fantastic Liverpool goals.",
+      "entity": "[commentor] This is sorry story for [team]Arsenal[team], but you have seen four absolutely fantastic [team]Liverpool[team] goals.",
+      "class": 1,
+      "clip": "153.avi"
+     },
+     {
+      "offset": 1083.98,
+      "duration": 4.999999999999991,
+      "commentary": "And this is individual brilliance. The pace initially. Then the skill.",
+      "entity": "And this is individual brilliance. The pace initially. Then the skill.",
+      "class": "1/1",
+      "clip": "155.avi"
+     },
+     {
+      "offset": 1089.62,
+      "duration": 3.06,
+      "commentary": "And can he finish? It's an absolutely incredible finish.",
+      "entity": "And can he finish? It's an absolutely incredible finish.",
+      "class": "2,3",
+      "clip": "156.avi"
+     },
+     {
+      "offset": 1094.27,
+      "duration": 11.87,
+      "commentary": "Everything you see there, from Mane, the strength, the power, the skill and then the technique to control with his left foot and put that ball into the top corner, it sums up this last 15-20 minutes from Liverpool.",
+      "entity": "Everything you see there, from [player]Mane[player], the strength, the power, the skill and then the technique to control with his left foot and put that ball into the top corner, it sums up this last 15-20 minutes from [team]Liverpool[team].",
+      "class": 1,
+      "clip": "157.avi"
+     },
+     {
+      "offset": 1106.98,
+      "duration": 3.12,
+      "commentary": "Absolutely brilliant. And he celebrates with his manager.",
+      "entity": "Absolutely brilliant. And he celebrates with his manager.",
+      "class": 3,
+      "clip": "158.avi"
+     },
+     {
+      "offset": 1113.35,
+      "duration": 7.31,
+      "commentary": "[commentor] Well, we saw glimpses of it from Liverpool last season and we when they won the six one at Southampton in the League Cup.",
+      "entity": "[commentor] Well, we saw glimpses of it from [team]Liverpool[team] last season and we when they won the six one at Southampton in the League Cup.",
+      "class": 2,
+      "clip": "159.avi"
+     },
+     {
+      "offset": 1121.47,
+      "duration": 5.29,
+      "commentary": "That's off, Chamberlain. That's one back by deflection.",
+      "entity": "That's off, Chamberlain. That's one back by deflection.",
+      "class": 3,
+      "clip": "160.avi"
+     },
+     {
+      "offset": 1128.01,
+      "duration": 3.93,
+      "commentary": "Arsenal 2, Liverpool 4 maybe not game over. [commentor] Well.",
+      "entity": "[team]Arsenal[team] 2, [team]Liverpool[team] 4 maybe not game over. [commentor] Well.",
+      "class": 2,
+      "clip": "161.avi"
+     },
+     {
+      "offset": 1134.38,
+      "duration": 6.3,
+      "commentary": "Arsenal. Fans needed that I was just about to say, could become a very difficult and awkward last 25 minutes.",
+      "entity": "[team]Arsenal[team]. Fans needed that I was just about to say, could become a very difficult and awkward last 25 minutes.",
+      "class": "1,2",
+      "clip": "162.avi"
+     },
+     {
+      "offset": 1141.6,
+      "duration": 7.0,
+      "commentary": "We've just seen some brilliance at the other end, Oxlade-Chamberlain, there's that gap that you don't like between fullback of wide play when defending.",
+      "entity": "We've just seen some brilliance at the other end, [player]Oxlade-Chamberlain[player], there's that gap that you don't like between fullback of wide play when defending.",
+      "class": 1,
+      "clip": "163.avi"
+     },
+     {
+      "offset": 1149.6,
+      "duration": 11.690000000000008,
+      "commentary": "They skipped between it. It's Clyne and Lallana just jumps through that gap and then powers into the box through Jordon Henderson. And he's inside to Mignolet . Deflection, I think.",
+      "entity": "They skipped between it. It's [player]Clyne[player] and [player]Lallana[player] just jumps through that gap and then powers into the box through Jordon [player]Henderson [player]. And he's inside to [player]Mignolet [player]. Deflection, I think.",
+      "class": "1/2/2",
+      "clip": "166.avi"
+     },
+     {
+      "offset": 1162.01,
+      "duration": 2.08,
+      "commentary": "up and out and goes into their goal post.",
+      "entity": "up and out and goes into their goal post.",
+      "class": 2,
+      "clip": "167.avi"
+     }
+    ],
+    "captions/*.caption_coco_format.json annotations for the same clips": [
+     {
+      "image_id": "/data/qiji/DATA/soccernet/clips_v5/england_epl__2016-2017__2016-08-14_-_18-00_Arsenal_3_-_4_Liverpool_2/166.avi",
+      "caption": "They skipped between it. It's Clyne and Lallana just jumps through that gap and then powers into the box through Jordon Henderson. And he's inside to Mignolet . Deflection, I think.",
+      "id": 7222
+     },
+     {
+      "image_id": "/data/qiji/DATA/soccernet/clips_v5/england_epl__2016-2017__2016-08-14_-_18-00_Arsenal_3_-_4_Liverpool_2/155.avi",
+      "caption": "And this is individual brilliance. The pace initially. Then the skill.",
+      "id": 7213
+     },
+     {
+      "image_id": "/data/qiji/DATA/soccernet/clips_v5/england_epl__2016-2017__2016-08-14_-_18-00_Arsenal_3_-_4_Liverpool_2/147.avi",
+      "caption": "Because they switched off, [commentor] Liverpool fans delighted with what they're seeing.",
+      "id": 7207
+     },
+     {
+      "image_id": "/data/qiji/DATA/soccernet/clips_v5/england_epl__2016-2017__2016-08-14_-_18-00_Arsenal_3_-_4_Liverpool_2/167.avi",
+      "caption": "up and out and goes into their goal post.",
+      "id": 7223
+     },
+     {
+      "image_id": "/data/qiji/DATA/soccernet/clips_v5/england_epl__2016-2017__2016-08-14_-_18-00_Arsenal_3_-_4_Liverpool_2/148.avi",
+      "caption": "Just look out there at the Arsenal team. There isn't a great deal of.",
+      "id": 7208
+     },
+     {
+      "image_id": "/data/qiji/DATA/soccernet/clips_v5/england_epl__2016-2017__2016-08-14_-_18-00_Arsenal_3_-_4_Liverpool_2/159.avi",
+      "caption": "[commentor] Well, we saw glimpses of it from Liverpool last season and we when they won the six one at Southampton in the League Cup.",
+      "id": 7217
+     },
+     {
+      "image_id": "/data/qiji/DATA/soccernet/clips_v5/england_epl__2016-2017__2016-08-14_-_18-00_Arsenal_3_-_4_Liverpool_2/150.avi",
+      "caption": "Liverpool ripping Arsenal to shreds here.",
+      "id": 7210
+     },
+     {
+      "image_id": "/data/qiji/DATA/soccernet/clips_v5/england_epl__2016-2017__2016-08-14_-_18-00_Arsenal_3_-_4_Liverpool_2/156.avi",
+      "caption": "And can he finish? It's an absolutely incredible finish.",
+      "id": 7214
+     },
+     {
+      "image_id": "/data/qiji/DATA/soccernet/clips_v5/england_epl__2016-2017__2016-08-14_-_18-00_Arsenal_3_-_4_Liverpool_2/163.avi",
+      "caption": "We've just seen some brilliance at the other end, Oxlade-Chamberlain, there's that gap that you don't like between fullback of wide play when defending.",
+      "id": 7221
+     },
+     {
+      "image_id": "/data/qiji/DATA/soccernet/clips_v5/england_epl__2016-2017__2016-08-14_-_18-00_Arsenal_3_-_4_Liverpool_2/153.avi",
+      "caption": "[commentor] This is sorry story for Arsenal, but you have seen four absolutely fantastic Liverpool goals.",
+      "id": 7212
+     },
+     {
+      "image_id": "/data/qiji/DATA/soccernet/clips_v5/england_epl__2016-2017__2016-08-14_-_18-00_Arsenal_3_-_4_Liverpool_2/152.avi",
+      "caption": "Almost disbelief. In both dugouts.",
+      "id": 7211
+     },
+     {
+      "image_id": "/data/qiji/DATA/soccernet/clips_v5/england_epl__2016-2017__2016-08-14_-_18-00_Arsenal_3_-_4_Liverpool_2/157.avi",
+      "caption": "Everything you see there, from Mane, the strength, the power, the skill and then the technique to control with his left foot and put that ball into the top corner, it sums up this last 15-20 minutes from Liverpool.",
+      "id": 7215
+     }
+    ]
+   }
+  },
+  {
+   "title": "Arsenal 3–4 Liverpool, 2nd half 0:00–3:00 — background talk before and after the restart, then play-by-play",
+   "video_ref": "SoccerNet england_epl/2016-2017/2016-08-14 - 18-00 Arsenal 3 - 4 Liverpool / 2_224p.mkv",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.4,
+     "te": 7.22,
+     "lane": "commentary",
+     "text": "Consecutive home game as a first fixture nill nil. Sunderland lost three, one to Villa. They did beat Crystal Palace 21."
+    },
+    {
+     "t": 9.49,
+     "te": 13.8,
+     "lane": "commentary",
+     "text": "Lost 2 nil a year ago to West Ham. They were one nil up and failed."
+    },
+    {
+     "t": 14.85,
+     "te": 24.41,
+     "lane": "commentary",
+     "text": "From the penalty spot until the dying embers of the first half and Coutinho. Struck a splendid equaliser. Liverpool in contrast to"
+    },
+    {
+     "t": 26.25,
+     "te": 32.54,
+     "lane": "commentary",
+     "text": "that have won their last three first fixtures in the Premier League. Ramsey down."
+    },
+    {
+     "t": 38.14,
+     "te": 42.74,
+     "lane": "commentary",
+     "text": "Ramsey 2:45 by excellent contribution in Euro 2016."
+    },
+    {
+     "t": 44.47,
+     "te": 46.67,
+     "lane": "commentary",
+     "text": "The Wonderful Wales team under Chris Coleman."
+    },
+    {
+     "t": 49.76,
+     "te": 53.98,
+     "lane": "commentary",
+     "text": "He was suspended for the semifinal when that adventure came to an end."
+    },
+    {
+     "t": 63.37,
+     "te": 75.15,
+     "lane": "commentary",
+     "text": "Chambers. Clubside, it's very hard to be realistic about what the target is for Liverpool this season in the Premier League."
+    },
+    {
+     "t": 77.5,
+     "te": 81.63,
+     "lane": "commentary",
+     "text": "Talk about top four finishes, but a lot of talk coming from a lot of clubs."
+    },
+    {
+     "t": 83.35,
+     "te": 87.29,
+     "lane": "commentary",
+     "text": "[commentor] States of the league, I think anybody says they know what's going to happen. And why."
+    },
+    {
+     "t": 92.11,
+     "te": 98.81,
+     "lane": "commentary",
+     "text": "And what he will want, though they happy at half time that he's able to give his team a G up from a position where they're not losing."
+    },
+    {
+     "t": 99.6,
+     "te": 102.3,
+     "lane": "commentary",
+     "text": "And want more confidence in the second half better passing."
+    },
+    {
+     "t": 103.67,
+     "te": 109.39,
+     "lane": "commentary",
+     "text": "More on the front foot is what you expect from your own clock teams. [commentor]Iwobi"
+    },
+    {
+     "t": 110.62,
+     "te": 119.0,
+     "lane": "commentary",
+     "text": "It is very warm afternoon. In north London. Shadow starting to lengthen."
+    },
+    {
+     "t": 126.0,
+     "te": 128.71,
+     "lane": "commentary",
+     "text": "Fine with a throw. Firmino."
+    },
+    {
+     "t": 130.43,
+     "te": 144.72,
+     "lane": "commentary",
+     "text": "Wijnaldum, get it through to Lallana, almost a similar situation to the one that got to Moreno into trouble. Part of the pitch [commentor]Just got more composed of him on really stayed on his feet. He commits himself."
+    },
+    {
+     "t": 146.83,
+     "te": 153.26,
+     "lane": "commentary",
+     "text": "[commentor]Ramsey got another clattering as the ball rolled loose. Lallana back."
+    },
+    {
+     "t": 154.2,
+     "te": 165.83,
+     "lane": "commentary",
+     "text": "Alexis Sanchez takes over and Coquelin takes it away from him and then he's fouled. Another side really to be able able to get a period of controlled possession going at the start of the second half."
+    },
+    {
+     "t": 167.56,
+     "te": 176.11,
+     "lane": "commentary",
+     "text": "[commentor]A credit to both teams, in some ways that in the field is. Very short of space. Particularly for Liverpool."
+    },
+    {
+     "t": 178.66,
+     "te": 182.59,
+     "lane": "commentary",
+     "text": "[commentor]Liverpool , starting with their away form, certainly put to the test because of the."
+    }
+   ],
+   "raw_format": "json",
+   "raw": [
+    {
+     "offset": 0.4,
+     "duration": 6.82,
+     "commentary": "Consecutive home game as a first fixture nill nil. Sunderland lost three, one to Villa. They did beat Crystal Palace 21.",
+     "entity": "Consecutive home game as a first fixture nill nil. [team]Sunderland[team] lost three, one to [team]Villa[team]. They did beat [team]Crystal Palace[team] 21.",
+     "class": 1,
+     "clip": "0.avi"
+    },
+    {
+     "offset": 9.49,
+     "duration": 4.31,
+     "commentary": "Lost 2 nil a year ago to West Ham. They were one nil up and failed.",
+     "entity": "Lost 2 nil a year ago to [team]West Ham[team]. They were one nil up and failed.",
+     "class": 1,
+     "clip": "1.avi"
+    },
+    {
+     "offset": 14.85,
+     "duration": 9.559999999999999,
+     "commentary": "From the penalty spot until the dying embers of the first half and Coutinho. Struck a splendid equaliser. Liverpool in contrast to",
+     "entity": "From the penalty spot until the dying embers of the first half and [player]Coutinho[player]. Struck a splendid equaliser. [team]Liverpool[team] in contrast to",
+     "class": "1/1/1",
+     "clip": "4.avi"
+    },
+    {
+     "offset": 26.25,
+     "duration": 6.290000000000001,
+     "commentary": "that have won their last three first fixtures in the Premier League. Ramsey down.",
+     "entity": "that have won their last three first fixtures in the Premier League. [player]Ramsey[player] down.",
+     "class": "1/1",
+     "clip": "6.avi"
+    },
+    {
+     "offset": 38.14,
+     "duration": 4.6,
+     "commentary": "Ramsey 2:45 by excellent contribution in Euro 2016.",
+     "entity": "[player]Ramsey[player] 2:45 by excellent contribution in Euro 2016.",
+     "class": 1,
+     "clip": "7.avi"
+    },
+    {
+     "offset": 44.47,
+     "duration": 2.2,
+     "commentary": "The Wonderful Wales team under Chris Coleman.",
+     "entity": "The Wonderful Wales team under Chris [player]Coleman[player].",
+     "class": 1,
+     "clip": "8.avi"
+    },
+    {
+     "offset": 49.76,
+     "duration": 4.22,
+     "commentary": "He was suspended for the semifinal when that adventure came to an end.",
+     "entity": "He was suspended for the semifinal when that adventure came to an end.",
+     "class": 1,
+     "clip": "9.avi"
+    },
+    {
+     "offset": 63.37,
+     "duration": 11.780000000000008,
+     "commentary": "Chambers. Clubside, it's very hard to be realistic about what the target is for Liverpool this season in the Premier League.",
+     "entity": "[player]Chambers[player]. Clubside, it's very hard to be realistic about what the target is for [team]Liverpool[team] this season in the Premier League.",
+     "class": "3/2",
+     "clip": "11.avi"
+    },
+    {
+     "offset": 77.5,
+     "duration": 4.13,
+     "commentary": "Talk about top four finishes, but a lot of talk coming from a lot of clubs.",
+     "entity": "Talk about top four finishes, but a lot of talk coming from a lot of clubs.",
+     "class": 2,
+     "clip": "12.avi"
+    },
+    {
+     "offset": 83.35,
+     "duration": 3.9400000000000097,
+     "commentary": "[commentor] States of the league, I think anybody says they know what's going to happen. And why.",
+     "entity": "[commentor] States of the league, I think anybody says they know what's going to happen. And why.",
+     "class": "2/2",
+     "clip": "14.avi"
+    },
+    {
+     "offset": 92.11,
+     "duration": 6.7,
+     "commentary": "And what he will want, though they happy at half time that he's able to give his team a G up from a position where they're not losing.",
+     "entity": "And what he will want, though they happy at half time that he's able to give his team a G up from a position where they're not losing.",
+     "class": 2,
+     "clip": "15.avi"
+    },
+    {
+     "offset": 99.6,
+     "duration": 2.7,
+     "commentary": "And want more confidence in the second half better passing.",
+     "entity": "And want more confidence in the second half better passing.",
+     "class": 2,
+     "clip": "16.avi"
+    },
+    {
+     "offset": 103.67,
+     "duration": 5.720000000000004,
+     "commentary": "More on the front foot is what you expect from your own clock teams. [commentor]Iwobi",
+     "entity": "More on the front foot is what you expect from your own clock teams. [commentor][player]Iwobi[player]",
+     "class": "2/3",
+     "clip": "18.avi"
+    },
+    {
+     "offset": 110.62,
+     "duration": 8.379999999999994,
+     "commentary": "It is very warm afternoon. In north London. Shadow starting to lengthen.",
+     "entity": "It is very warm afternoon. In north London. Shadow starting to lengthen.",
+     "class": "1/1/1",
+     "clip": "21.avi"
+    },
+    {
+     "offset": 126.0,
+     "duration": 2.7100000000000044,
+     "commentary": "Fine with a throw. Firmino.",
+     "entity": "Fine with a throw. [player]Firmino[player].",
+     "class": "1/1",
+     "clip": "23.avi"
+    },
+    {
+     "offset": 130.43,
+     "duration": 14.29,
+     "commentary": "Wijnaldum, get it through to Lallana, almost a similar situation to the one that got to Moreno into trouble. Part of the pitch [commentor]Just got more composed of him on really stayed on his feet. He commits himself.",
+     "entity": "[player]Wijnaldum[player], get it through to [player]Lallana[player], almost a similar situation to the one that got to Moreno into trouble. Part of the pitch [commentor]Just got more composed of him on really stayed on his feet. He commits himself.",
+     "class": "1,3",
+     "clip": "24.avi"
+    },
+    {
+     "offset": 146.83,
+     "duration": 6.4300000000000015,
+     "commentary": "[commentor]Ramsey got another clattering as the ball rolled loose. Lallana back.",
+     "entity": "[commentor][player][player]Ramsey[player][player] got another clattering as the ball rolled loose. [player]Lallana[player] back.",
+     "class": "3/3",
+     "clip": "26.avi"
+    },
+    {
+     "offset": 154.2,
+     "duration": 11.63,
+     "commentary": "Alexis Sanchez takes over and Coquelin takes it away from him and then he's fouled. Another side really to be able able to get a period of controlled possession going at the start of the second half.",
+     "entity": "Alexis [player]Sanchez[player] takes over and [player]Coquelin[player] takes it away from him and then he's fouled. Another side really to be able able to get a period of controlled possession going at the start of the second half.",
+     "class": "2,3",
+     "clip": "27.avi"
+    },
+    {
+     "offset": 167.56,
+     "duration": 8.549999999999986,
+     "commentary": "[commentor]A credit to both teams, in some ways that in the field is. Very short of space. Particularly for Liverpool.",
+     "entity": "[commentor]A credit to both teams, in some ways that in the field is. Very short of space. Particularly for [team]Liverpool[team].",
+     "class": "2/2/2",
+     "clip": "30.avi"
+    },
+    {
+     "offset": 178.66,
+     "duration": 3.93,
+     "commentary": "[commentor]Liverpool , starting with their away form, certainly put to the test because of the.",
+     "entity": "[commentor]Liverpool poor, starting with their away form, certainly put to the test because of the.",
+     "class": 2,
+     "clip": "31.avi"
+    }
+   ]
+  }
+ ]
+}

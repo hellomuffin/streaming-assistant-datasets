@@ -1,0 +1,114 @@
+{
+ "slug": "project-aria-nymeria-aea-adt",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://arxiv.org/html/2406.09905 (Nymeria paper, Figure 6 caption)",
+  "https://raw.githubusercontent.com/facebookresearch/projectaria_tools/main/data/gen1/aria_everyday_activities_test_data/speech.csv",
+  "https://raw.githubusercontent.com/facebookresearch/projectaria_tools/main/data/gen1/aria_everyday_activities_test_data/metadata.json"
+ ],
+ "access_used": "public sample in paper/repo/card only (full data needs the Nymeria CC BY-NC click-through / AEA and ADT license acceptance with email)",
+ "note": "Nymeria narration CSVs come only after the email-and-accept download form (the nymeria_dataset repo's NarrationLoader is still a stub), so example 1 is the paper's own Figure 6 example of the three description levels (no timestamps, no clip id). Example 2 is the real AEA speech.csv shipped as unit-test data in the Apache-2.0 projectaria_tools repo: one row per ASR word with device-clock start/end in nanoseconds (converted to seconds in the timeline) and a confidence. ADT has no language annotations. No clip (AEA license forbids redistribution).",
+ "examples": [
+  {
+   "title": "Nymeria: three annotation levels (motion narration, atomic action, 30-s summary) — paper Figure 6",
+   "video_ref": null,
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "txt",
+   "raw": "Figure 6 : Hierarchical narration example. (left) motion narration of 5s clip – “C straightens the body to receive a badminton racket from his peer. C extends the right arms towards the bat, with the left arm slightly bent. C takes a step forward with the left foot. C focuses on the racket.” (middle) Atomic action of 5s clip – “C lifts the right leg to kick a soccer ball in front of a building.” (right) Activity summarization of 30s clip – “C bikes on the road with a peer.”"
+  },
+  {
+   "title": "AEA test recording (loc1_script1_seq1_rec1): word-level ASR speech.csv, 13 words",
+   "video_ref": "projectaria_tools data/gen1/aria_everyday_activities_test_data/recording.vrs (AEA_2024 location 1, script 1, sequence 1, recording 1)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 101.217,
+     "te": 102.217,
+     "lane": "user",
+     "text": "and"
+    },
+    {
+     "t": 128.657,
+     "te": 129.657,
+     "lane": "user",
+     "text": "what"
+    },
+    {
+     "t": 129.657,
+     "te": 129.817,
+     "lane": "user",
+     "text": "is"
+    },
+    {
+     "t": 129.817,
+     "te": 129.977,
+     "lane": "user",
+     "text": "there"
+    },
+    {
+     "t": 129.977,
+     "te": 130.217,
+     "lane": "user",
+     "text": "like"
+    },
+    {
+     "t": 130.217,
+     "te": 130.377,
+     "lane": "user",
+     "text": "looking"
+    },
+    {
+     "t": 130.377,
+     "te": 131.017,
+     "lane": "user",
+     "text": "at?"
+    },
+    {
+     "t": 196.337,
+     "te": 197.337,
+     "lane": "user",
+     "text": "I'm"
+    },
+    {
+     "t": 197.337,
+     "te": 197.497,
+     "lane": "user",
+     "text": "in"
+    },
+    {
+     "t": 197.497,
+     "te": 197.657,
+     "lane": "user",
+     "text": "the"
+    },
+    {
+     "t": 197.657,
+     "te": 198.217,
+     "lane": "user",
+     "text": "masters,"
+    },
+    {
+     "t": 198.217,
+     "te": 198.377,
+     "lane": "user",
+     "text": "right"
+    },
+    {
+     "t": 198.377,
+     "te": 198.937,
+     "lane": "user",
+     "text": "now."
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": "startTime_ns,endTime_ns,written,confidence\n101217000000,102217000000,and,0.02034984529018402\n128657000000,129657000000,what,0.9076764583587646\n129657000000,129817000000,is,0.7982936501502991\n129817000000,129977000000,there,0.5227599740028381\n129977000000,130217000000,like,0.29444828629493713\n130217000000,130377000000,looking,0.8249902129173279\n130377000000,131017000000,at?,0.2817775011062622\n196337000000,197337000000,I'm,0.4370386600494385\n197337000000,197497000000,in,0.9991657733917236\n197497000000,197657000000,the,0.9989742040634155\n197657000000,198217000000,\"masters,\",0.8848406672477722\n198217000000,198377000000,right,0.9999663829803467\n198377000000,198937000000,now.,0.5471218824386597\n"
+  }
+ ]
+}

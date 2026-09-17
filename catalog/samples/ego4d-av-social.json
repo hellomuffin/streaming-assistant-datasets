@@ -1,0 +1,475 @@
+{
+ "slug": "ego4d-av-social",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://raw.githubusercontent.com/EGO4D/audio-visual/main/diarization/audio-only/example/submission_format_example.json (MIT repo; first of 3 videos)",
+  "https://raw.githubusercontent.com/EGO4D/docs/main/docs/benchmarks/social.md (av_<set>.json schema)"
+ ],
+ "access_used": "public sample in paper/repo/card only (full data needs Ego4D License Agreement)",
+ "note": "The ground-truth av_train/av_val.json (voice segments, transcriptions, social_segments_talking/looking with is_at_me) is only distributed under the Ego4D License, which we did not use, and no official public copy exists. Example 1 is the official diarization submission-format example from the MIT-licensed EGO4D/audio-visual repo: per-person voice_segments for one 5-minute validation clip (it shows the real clip id and segment layout, but it is a format example and may be system output, not human labels; it has no transcripts or Talking-to-Me flags). Example 2 is the documented av_<set>.json schema verbatim, which is where the transcription and is_at_me fields live. No clip or frames: Ego4D video requires the license.",
+ "examples": [
+  {
+   "title": "6edb7036: 5-minute clip, 4 speakers, 37 voice segments (submission-format example)",
+   "video_ref": "6edb7036-3369-4c03-8e3a-439ffbeb4724",
+   "duration_s": 300.0,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 11.44,
+     "te": 12.48,
+     "lane": "person 20",
+     "text": "voice segment (person 20)"
+    },
+    {
+     "t": 22.04,
+     "te": 22.88,
+     "lane": "person 20",
+     "text": "voice segment (person 20)"
+    },
+    {
+     "t": 24.73,
+     "te": 26.11,
+     "lane": "person 20",
+     "text": "voice segment (person 20)"
+    },
+    {
+     "t": 28.05,
+     "te": 28.86,
+     "lane": "person 20",
+     "text": "voice segment (person 20)"
+    },
+    {
+     "t": 38.23,
+     "te": 39.09,
+     "lane": "person 20",
+     "text": "voice segment (person 20)"
+    },
+    {
+     "t": 42.19,
+     "te": 42.97,
+     "lane": "person 20",
+     "text": "voice segment (person 20)"
+    },
+    {
+     "t": 43.85,
+     "te": 44.55,
+     "lane": "person 20",
+     "text": "voice segment (person 20)"
+    },
+    {
+     "t": 46.48,
+     "te": 47.49,
+     "lane": "person 15",
+     "text": "voice segment (person 15)"
+    },
+    {
+     "t": 47.8,
+     "te": 50.56,
+     "lane": "person 22",
+     "text": "voice segment (person 22)"
+    },
+    {
+     "t": 50.56,
+     "te": 51.25,
+     "lane": "person 11",
+     "text": "voice segment (person 11)"
+    },
+    {
+     "t": 52.22,
+     "te": 53.5,
+     "lane": "person 15",
+     "text": "voice segment (person 15)"
+    },
+    {
+     "t": 60.4,
+     "te": 64.41,
+     "lane": "person 15",
+     "text": "voice segment (person 15)"
+    },
+    {
+     "t": 76.26,
+     "te": 78.54,
+     "lane": "person 11",
+     "text": "voice segment (person 11)"
+    },
+    {
+     "t": 79.3,
+     "te": 80.45,
+     "lane": "person 20",
+     "text": "voice segment (person 20)"
+    },
+    {
+     "t": 81.34,
+     "te": 83.65,
+     "lane": "person 11",
+     "text": "voice segment (person 11)"
+    },
+    {
+     "t": 84.39,
+     "te": 91.5,
+     "lane": "person 11",
+     "text": "voice segment (person 11)"
+    },
+    {
+     "t": 94.25,
+     "te": 99.19,
+     "lane": "person 11",
+     "text": "voice segment (person 11)"
+    },
+    {
+     "t": 102.08,
+     "te": 103.04,
+     "lane": "person 11",
+     "text": "voice segment (person 11)"
+    },
+    {
+     "t": 119.6,
+     "te": 120.33,
+     "lane": "person 11",
+     "text": "voice segment (person 11)"
+    },
+    {
+     "t": 126.72,
+     "te": 127.83,
+     "lane": "person 20",
+     "text": "voice segment (person 20)"
+    },
+    {
+     "t": 128.32,
+     "te": 129.4,
+     "lane": "person 11",
+     "text": "voice segment (person 11)"
+    },
+    {
+     "t": 129.4,
+     "te": 130.28,
+     "lane": "person 20",
+     "text": "voice segment (person 20)"
+    },
+    {
+     "t": 138.85,
+     "te": 139.7,
+     "lane": "person 11",
+     "text": "voice segment (person 11)"
+    },
+    {
+     "t": 142.26,
+     "te": 145.08,
+     "lane": "person 11",
+     "text": "voice segment (person 11)"
+    },
+    {
+     "t": 145.97,
+     "te": 149.9,
+     "lane": "person 11",
+     "text": "voice segment (person 11)"
+    },
+    {
+     "t": 155.28,
+     "te": 155.98,
+     "lane": "person 20",
+     "text": "voice segment (person 20)"
+    },
+    {
+     "t": 159.18,
+     "te": 161.18,
+     "lane": "person 11",
+     "text": "voice segment (person 11)"
+    },
+    {
+     "t": 162.94,
+     "te": 164.86,
+     "lane": "person 11",
+     "text": "voice segment (person 11)"
+    },
+    {
+     "t": 165.03,
+     "te": 166.03,
+     "lane": "person 11",
+     "text": "voice segment (person 11)"
+    },
+    {
+     "t": 173.26,
+     "te": 176.93,
+     "lane": "person 11",
+     "text": "voice segment (person 11)"
+    },
+    {
+     "t": 177.56,
+     "te": 178.72,
+     "lane": "person 11",
+     "text": "voice segment (person 11)"
+    },
+    {
+     "t": 179.52,
+     "te": 181.26,
+     "lane": "person 11",
+     "text": "voice segment (person 11)"
+    },
+    {
+     "t": 266.53,
+     "te": 268.71,
+     "lane": "person 11",
+     "text": "voice segment (person 11)"
+    },
+    {
+     "t": 272.43,
+     "te": 274.66,
+     "lane": "person 11",
+     "text": "voice segment (person 11)"
+    },
+    {
+     "t": 276.6,
+     "te": 278.76,
+     "lane": "person 11",
+     "text": "voice segment (person 11)"
+    },
+    {
+     "t": 280.23,
+     "te": 282.11,
+     "lane": "person 11",
+     "text": "voice segment (person 11)"
+    },
+    {
+     "t": 288.2,
+     "te": 288.94,
+     "lane": "person 20",
+     "text": "voice segment (person 20)"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "videos": [
+     {
+      "video_uid": "6edb7036-3369-4c03-8e3a-439ffbeb4724",
+      "clips": [
+       {
+        "clip_uid": "6edb7036-3369-4c03-8e3a-439ffbeb4724",
+        "persons": [
+         {
+          "person_id": "11",
+          "voice_segments": [
+           {
+            "start_time": 50.56,
+            "end_time": 51.25,
+            "person": "11"
+           },
+           {
+            "start_time": 76.26,
+            "end_time": 78.54,
+            "person": "11"
+           },
+           {
+            "start_time": 81.34,
+            "end_time": 83.65,
+            "person": "11"
+           },
+           {
+            "start_time": 84.39,
+            "end_time": 91.5,
+            "person": "11"
+           },
+           {
+            "start_time": 94.25,
+            "end_time": 99.19,
+            "person": "11"
+           },
+           {
+            "start_time": 102.08,
+            "end_time": 103.03999999999999,
+            "person": "11"
+           },
+           {
+            "start_time": 119.6,
+            "end_time": 120.33,
+            "person": "11"
+           },
+           {
+            "start_time": 128.32,
+            "end_time": 129.4,
+            "person": "11"
+           },
+           {
+            "start_time": 138.85,
+            "end_time": 139.7,
+            "person": "11"
+           },
+           {
+            "start_time": 142.26,
+            "end_time": 145.07999999999998,
+            "person": "11"
+           },
+           {
+            "start_time": 145.97,
+            "end_time": 149.9,
+            "person": "11"
+           },
+           {
+            "start_time": 159.18,
+            "end_time": 161.18,
+            "person": "11"
+           },
+           {
+            "start_time": 162.94,
+            "end_time": 164.85999999999999,
+            "person": "11"
+           },
+           {
+            "start_time": 165.03,
+            "end_time": 166.03,
+            "person": "11"
+           },
+           {
+            "start_time": 173.26,
+            "end_time": 176.92999999999998,
+            "person": "11"
+           },
+           {
+            "start_time": 177.56,
+            "end_time": 178.72,
+            "person": "11"
+           },
+           {
+            "start_time": 179.52,
+            "end_time": 181.26000000000002,
+            "person": "11"
+           },
+           {
+            "start_time": 266.53,
+            "end_time": 268.71,
+            "person": "11"
+           },
+           {
+            "start_time": 272.43,
+            "end_time": 274.66,
+            "person": "11"
+           },
+           {
+            "start_time": 276.6,
+            "end_time": 278.76000000000005,
+            "person": "11"
+           },
+           {
+            "start_time": 280.23,
+            "end_time": 282.11,
+            "person": "11"
+           }
+          ]
+         },
+         {
+          "person_id": "15",
+          "voice_segments": [
+           {
+            "start_time": 46.48,
+            "end_time": 47.489999999999995,
+            "person": "15"
+           },
+           {
+            "start_time": 52.22,
+            "end_time": 53.5,
+            "person": "15"
+           },
+           {
+            "start_time": 60.4,
+            "end_time": 64.41,
+            "person": "15"
+           }
+          ]
+         },
+         {
+          "person_id": "20",
+          "voice_segments": [
+           {
+            "start_time": 11.44,
+            "end_time": 12.48,
+            "person": "20"
+           },
+           {
+            "start_time": 22.04,
+            "end_time": 22.88,
+            "person": "20"
+           },
+           {
+            "start_time": 24.73,
+            "end_time": 26.11,
+            "person": "20"
+           },
+           {
+            "start_time": 28.05,
+            "end_time": 28.86,
+            "person": "20"
+           },
+           {
+            "start_time": 38.23,
+            "end_time": 39.089999999999996,
+            "person": "20"
+           },
+           {
+            "start_time": 42.19,
+            "end_time": 42.97,
+            "person": "20"
+           },
+           {
+            "start_time": 43.85,
+            "end_time": 44.550000000000004,
+            "person": "20"
+           },
+           {
+            "start_time": 79.3,
+            "end_time": 80.45,
+            "person": "20"
+           },
+           {
+            "start_time": 126.72,
+            "end_time": 127.83,
+            "person": "20"
+           },
+           {
+            "start_time": 129.4,
+            "end_time": 130.28,
+            "person": "20"
+           },
+           {
+            "start_time": 155.28,
+            "end_time": 155.98,
+            "person": "20"
+           },
+           {
+            "start_time": 288.2,
+            "end_time": 288.94,
+            "person": "20"
+           }
+          ]
+         },
+         {
+          "person_id": "22",
+          "voice_segments": [
+           {
+            "start_time": 47.8,
+            "end_time": 50.559999999999995,
+            "person": "22"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "title": "av_<set>.json schema: voice segments, transcriptions, Talking-to-Me and Looking-at-Me segments",
+   "video_ref": null,
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "txt",
+   "raw": "<details>\n  <summary>Audio-Visual Diarization - av_&lt;set>.json</summary>\n\n  - **`date`** *(string)*\n  - **`version`** *(string)*\n  - **`description`** *(string)*\n  - **`videos`** *(array)*\n    - **Items** *(object)*\n      - **`video_uid`** *(string)*\n      - **`split`** *(string)*\n      - **`clips`** *(array)*\n        - **Items** *(object)*\n          - **`clip_uid`** *(string)*\n          - **`source_clip_uid`** *(string)*\n          - **`video_uid`** *(string)*\n          - **`video_start_sec`** *(number)*\n          - **`video_end_sec`** *(number)*\n          - **`video_start_frame`** *(integer)*\n          - **`video_end_frame`** *(integer)*\n          - **`clip_start_sec`** *(integer)*\n          - **`clip_end_sec`** *(number)*\n          - **`clip_start_frame`** *(integer)*\n          - **`clip_end_frame`** *(integer)*\n          - **`valid`** *(boolean)*\n          - **`camera_wearer`** *(object)*\n            - **`person_id`** *(string)*\n            - **`camera_wearer`** *(boolean)*\n            - **`tracking_paths`** *(array)*\n            - **`voice_segments`** *(array)*\n              - **Items** *(object)*\n                - **`start_time`** *(number)*\n                - **`end_time`** *(number)*\n                - **`start_frame`** *(integer)*\n                - **`end_frame`** *(integer)*\n                - **`video_start_time`** *(number)*\n                - **`video_end_time`** *(number)*\n                - **`video_start_frame`** *(integer)*\n                - **`video_end_frame`** *(integer)*\n                - **`person`** *(string)*\n          - **`persons`** *(array)*\n            - **Items** *(object)*\n              - **`person_id`** *(string)*\n              - **`camera_wearer`** *(boolean)*\n              - **`tracking_paths`** *(array)*\n                - **Items** *(object)*\n                  - **`track_id`** *(string)*\n                  - **`track`** *(array)*\n                    - **Items** *(object)*\n                      - **`x`** *(number)*\n                      - **`y`** *(number)*\n                      - **`width`** *(number)*\n                      - **`height`** *(number)*\n                      - **`frame`** *(integer)*\n                      - **`video_frame`** *(integer)*\n                      - **`clip_frame`** *(null)*\n                  - **`suspect`** *(boolean)*\n                  - **`unmapped_frames_count`** *(integer)*\n                  - **`unmapped_frames`** *(array)*\n                    - **Items** *(integer)*\n              - **`voice_segments`** *(array)*\n                - **Items** *(object)*\n                  - **`start_time`** *(number)*\n                  - **`end_time`** *(number)*\n                  - **`start_frame`** *(integer)*\n                  - **`end_frame`** *(integer)*\n                  - **`video_start_time`** *(number)*\n                  - **`video_end_time`** *(number)*\n                  - **`video_start_frame`** *(integer)*\n                  - **`video_end_frame`** *(integer)*\n                  - **`person`** *(string)*\n          - **`missing_voice_segments`** *(array)*\n          - **`transcriptions`** *(array)*\n            - **Items** *(object)*\n              - **`transcription`** *(string)*\n              - **`start_time_sec`** *(number)*\n              - **`end_time_sec`** *(number)*\n              - **`person_id`** *(string)*\n              - **`video_start_time`** *(number)*\n              - **`video_start_frame`** *(integer)*\n              - **`video_end_time`** *(number)*\n              - **`video_end_frame`** *(integer)*\n          - **`social_segments_talking`** *(array)*\n            - **Items** *(object)*\n              - **`start_time`** *(number)*\n              - **`end_time`** *(number)*\n              - **`start_frame`** *(integer)*\n              - **`end_frame`** *(integer)*\n              - **`video_start_time`** *(number)*\n              - **`video_end_time`** *(number)*\n              - **`video_start_frame`** *(integer)*\n              - **`video_end_frame`** *(integer)*\n              - **`person`** *(string)*\n              - **`target`** *(['null', 'string'])*\n              - **`is_at_me`** *(boolean)*\n          - **`social_segments_looking`** *(array)*\n            - **Items** *(object)*\n              - **`start_time`** *(number)*\n              - **`end_time`** *(number)*\n              - **`start_frame`** *(integer)*\n              - **`end_frame`** *(integer)*\n              - **`video_start_time`** *(number)*\n              - **`video_end_time`** *(number)*\n              - **`video_start_frame`** *(integer)*\n              - **`video_end_frame`** *(integer)*\n              - **`person`** *(string)*\n              - **`target`** *(null)*\n              - **`is_at_me`** *(boolean)*\n\n</details>"
+  }
+ ]
+}
