@@ -1,0 +1,1225 @@
+{
+ "slug": "htm-aa-htm-370k",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://www.robots.ox.ac.uk/~htd/tan/sentencified_htm_370k.json (first 60 MB, HTTP range)",
+  "https://www.robots.ox.ac.uk/~htd/tan/htm_aa_v1.csv"
+ ],
+ "access_used": "open download",
+ "note": "An example is one HowTo100M video in both releases: Sentencified HTM-370K (the YouTube ASR re-punctuated into sentences, each with start/end; timeline lane \"narration\") and HTM-AA v1 (the subset of sentences the TAN model judged visually alignable, each moved to a single aligned timestamp; lane \"caption\"). The timeline shows a 3-minute window; raw keeps the whole video. HTM-AA text is not always identical to the 370K sentence (e.g. \"valentine's\" vs \"valentines\"). No clip: YouTube only; video duration is not stored.",
+ "examples": [
+  {
+   "title": "6xlbuJzlZgE: Candy-melt heart cupcake toppers (Sweet Art Made Simple) — 78 ASR sentences, 10 HTM-AA aligned sentences (timeline 0–180 s)",
+   "video_ref": "YouTube 6xlbuJzlZgE (HowTo100M)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 15.04,
+     "te": 17.31,
+     "lane": "narration",
+     "text": "hi welcome to sweet art"
+    },
+    {
+     "t": 17.31,
+     "te": 18.23,
+     "lane": "narration",
+     "text": "made simple"
+    },
+    {
+     "t": 18.23,
+     "te": 23.76,
+     "lane": "narration",
+     "text": "i'm jill and today all you need is one ingredient to create these cupcakes"
+    },
+    {
+     "t": 23.76,
+     "te": 25.31,
+     "lane": "narration",
+     "text": "it's just those candy melts"
+    },
+    {
+     "t": 25.31,
+     "te": 30.22,
+     "lane": "narration",
+     "text": "you just melt them in the microwave put them in a ziploc bag and you can draw anything you want"
+    },
+    {
+     "t": 30.22,
+     "te": 36.59,
+     "lane": "narration",
+     "text": "they just take a few minutes to harden in the freezer or the refrigerator and then you just pop them onto a cupcake"
+    },
+    {
+     "t": 36.59,
+     "te": 42.3,
+     "lane": "narration",
+     "text": "today my theme is weddings so i'm doing little hearts and some monograms and the word love"
+    },
+    {
+     "t": 41.0,
+     "te": null,
+     "lane": "caption",
+     "text": "i'm going to make love and a heart"
+    },
+    {
+     "t": 42.3,
+     "te": 44.26,
+     "lane": "narration",
+     "text": "it's kind of fun"
+    },
+    {
+     "t": 43.0,
+     "te": null,
+     "lane": "caption",
+     "text": "anyway let's get started to create our candy melts hearts or valentine's"
+    },
+    {
+     "t": 44.26,
+     "te": 49.71,
+     "lane": "narration",
+     "text": "anyway let's get started to create our candy melts hearts or valentines"
+    },
+    {
+     "t": 49.71,
+     "te": 51.91,
+     "lane": "narration",
+     "text": "or actually you can put any message on there"
+    },
+    {
+     "t": 51.91,
+     "te": 53.49,
+     "lane": "narration",
+     "text": "you just need some candy melts"
+    },
+    {
+     "t": 53.49,
+     "te": 60.09,
+     "lane": "narration",
+     "text": "i'm using dark chocolate today and i'm going to use some pink icing for the icing on the cupcakes"
+    },
+    {
+     "t": 60.09,
+     "te": 62.15,
+     "lane": "narration",
+     "text": "i'm using parchment paper and with a permanent marker"
+    },
+    {
+     "t": 62.15,
+     "te": 65.19,
+     "lane": "narration",
+     "text": "i just made the different things that i'm going to make"
+    },
+    {
+     "t": 63.0,
+     "te": null,
+     "lane": "caption",
+     "text": "i'm using dark chocolate today and i'm going to use some pink icing for the icing on the cupcakes"
+    },
+    {
+     "t": 65.2,
+     "te": 66.79,
+     "lane": "narration",
+     "text": "i'm going to make love and a heart"
+    },
+    {
+     "t": 66.79,
+     "te": 69.58,
+     "lane": "narration",
+     "text": "you can see the ones that i've already created"
+    },
+    {
+     "t": 69.58,
+     "te": 71.76,
+     "lane": "narration",
+     "text": "i made some hearts and some love and x and o"
+    },
+    {
+     "t": 71.76,
+     "te": 72.07,
+     "lane": "narration",
+     "text": "'s"
+    },
+    {
+     "t": 72.07,
+     "te": 75.4,
+     "lane": "narration",
+     "text": "and then you just need a ziploc bag and a scissors and you can get started"
+    },
+    {
+     "t": 75.4,
+     "te": 77.3,
+     "lane": "narration",
+     "text": "let's do it all right"
+    },
+    {
+     "t": 77.3,
+     "te": 79.54,
+     "lane": "narration",
+     "text": "i went ahead and melted"
+    },
+    {
+     "t": 79.0,
+     "te": null,
+     "lane": "caption",
+     "text": "and then you just need a ziploc bag in the scissors and you can get started"
+    },
+    {
+     "t": 79.54,
+     "te": 81.36,
+     "lane": "narration",
+     "text": "the chocolate melts"
+    },
+    {
+     "t": 81.36,
+     "te": 88.1,
+     "lane": "narration",
+     "text": "you can see that i put it in a ziploc bag and i just microwave it at 30 second intervals"
+    },
+    {
+     "t": 86.0,
+     "te": null,
+     "lane": "caption",
+     "text": "i'm using parchment paper and with a permanent marker"
+    },
+    {
+     "t": 88.1,
+     "te": 94.9,
+     "lane": "narration",
+     "text": "stir it microwave stir it and then when you do take it out just keep stirring it until you get the consistency where it's pretty melted"
+    },
+    {
+     "t": 94.9,
+     "te": 99.24,
+     "lane": "narration",
+     "text": "i never put it in the bag right away because it's still pretty warm"
+    },
+    {
+     "t": 97.0,
+     "te": null,
+     "lane": "caption",
+     "text": "alright you can just do all kinds of designs you can see"
+    },
+    {
+     "t": 99.24,
+     "te": 101.91,
+     "lane": "narration",
+     "text": "so i let it cool off just slightly and just until it's warm to the touch"
+    },
+    {
+     "t": 101.92,
+     "te": 111.24,
+     "lane": "narration",
+     "text": "and then you're just going to very carefully make a little snip and then i'm just going to test it here to see if that's the considering"
+    },
+    {
+     "t": 111.24,
+     "te": 112.41,
+     "lane": "narration",
+     "text": "that is exactly what i want"
+    },
+    {
+     "t": 112.41,
+     "te": 123.75,
+     "lane": "narration",
+     "text": "so i if you can see i made a heart on some parchment paper and i'm just going to go around"
+    },
+    {
+     "t": 123.76,
+     "te": 126.74,
+     "lane": "narration",
+     "text": "now if you're super artistic you don't even need to draw"
+    },
+    {
+     "t": 126.74,
+     "te": 128.46,
+     "lane": "narration",
+     "text": "i know some people are like that"
+    },
+    {
+     "t": 128.46,
+     "te": 140.44,
+     "lane": "narration",
+     "text": "i'm just going to go across touching both ends so that it dries and these candy melts only take probably about an hour to dry"
+    },
+    {
+     "t": 140.44,
+     "te": 144.31,
+     "lane": "narration",
+     "text": "but if you want to zap it and do a little quicker you can put in the refrigerator"
+    },
+    {
+     "t": 144.32,
+     "te": 151.27,
+     "lane": "narration",
+     "text": "i would not put it in the freezer because it can actually crack and i don't like that"
+    },
+    {
+     "t": 151.28,
+     "te": 154.31,
+     "lane": "narration",
+     "text": "now do you see how i'm connecting the o with the l"
+    },
+    {
+     "t": 154.32,
+     "te": 157.43,
+     "lane": "narration",
+     "text": "that way it'll come off a little bit easier"
+    },
+    {
+     "t": 157.44,
+     "te": 157.99,
+     "lane": "narration",
+     "text": "all right"
+    },
+    {
+     "t": 157.99,
+     "te": 161.15,
+     "lane": "narration",
+     "text": "you can just do all kinds of designs you can see"
+    },
+    {
+     "t": 161.0,
+     "te": null,
+     "lane": "caption",
+     "text": "of course you can do all kinds of designs use your favorite icing all right"
+    },
+    {
+     "t": 161.15,
+     "te": 162.68,
+     "lane": "narration",
+     "text": "i did a monogram"
+    },
+    {
+     "t": 162.68,
+     "te": 163.91,
+     "lane": "narration",
+     "text": "i made an m"
+    },
+    {
+     "t": 163.92,
+     "te": 170.93,
+     "lane": "narration",
+     "text": "they're doing a wedding do the last name and then you're just going to let that dry"
+    },
+    {
+     "t": 170.93,
+     "te": 174.48,
+     "lane": "narration",
+     "text": "okay so i'm gonna set that off to the side"
+    },
+    {
+     "t": 174.48,
+     "te": 174.79,
+     "lane": "narration",
+     "text": "goodbye"
+    },
+    {
+     "t": 174.8,
+     "te": 178.07,
+     "lane": "narration",
+     "text": "and then these are the ones instant"
+    },
+    {
+     "t": 178.08,
+     "te": 179.89,
+     "lane": "narration",
+     "text": "so i made these actually last night"
+    },
+    {
+     "t": 179.89,
+     "te": 181.79,
+     "lane": "narration",
+     "text": "and i did love and x and o's"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "sentencified_htm_370k.json": {
+     "6xlbuJzlZgE": {
+      "text": [
+       "hi welcome to sweet art",
+       "made simple",
+       "i'm jill and today all you need is one ingredient to create these cupcakes",
+       "it's just those candy melts",
+       "you just melt them in the microwave put them in a ziploc bag and you can draw anything you want",
+       "they just take a few minutes to harden in the freezer or the refrigerator and then you just pop them onto a cupcake",
+       "today my theme is weddings so i'm doing little hearts and some monograms and the word love",
+       "it's kind of fun",
+       "anyway let's get started to create our candy melts hearts or valentines",
+       "or actually you can put any message on there",
+       "you just need some candy melts",
+       "i'm using dark chocolate today and i'm going to use some pink icing for the icing on the cupcakes",
+       "i'm using parchment paper and with a permanent marker",
+       "i just made the different things that i'm going to make",
+       "i'm going to make love and a heart",
+       "you can see the ones that i've already created",
+       "i made some hearts and some love and x and o",
+       "'s",
+       "and then you just need a ziploc bag and a scissors and you can get started",
+       "let's do it all right",
+       "i went ahead and melted",
+       "the chocolate melts",
+       "you can see that i put it in a ziploc bag and i just microwave it at 30 second intervals",
+       "stir it microwave stir it and then when you do take it out just keep stirring it until you get the consistency where it's pretty melted",
+       "i never put it in the bag right away because it's still pretty warm",
+       "so i let it cool off just slightly and just until it's warm to the touch",
+       "and then you're just going to very carefully make a little snip and then i'm just going to test it here to see if that's the considering",
+       "that is exactly what i want",
+       "so i if you can see i made a heart on some parchment paper and i'm just going to go around",
+       "now if you're super artistic you don't even need to draw",
+       "i know some people are like that",
+       "i'm just going to go across touching both ends so that it dries and these candy melts only take probably about an hour to dry",
+       "but if you want to zap it and do a little quicker you can put in the refrigerator",
+       "i would not put it in the freezer because it can actually crack and i don't like that",
+       "now do you see how i'm connecting the o with the l",
+       "that way it'll come off a little bit easier",
+       "all right",
+       "you can just do all kinds of designs you can see",
+       "i did a monogram",
+       "i made an m",
+       "they're doing a wedding do the last name and then you're just going to let that dry",
+       "okay so i'm gonna set that off to the side",
+       "goodbye",
+       "and then these are the ones instant",
+       "so i made these actually last night",
+       "and i did love and x and o's",
+       "and the monogram and some hearts",
+       "and then i'm just going to take some cupcakes",
+       "yum yum",
+       "and i just got some pink icing",
+       "of course you can use whatever color icing that you want and you can do different swirls",
+       "i'm going to do just a flat swirl here piping it out",
+       "of course you can use different tips",
+       "this is a number",
+       "i",
+       "no this is actually a 12",
+       "this is a 12",
+       "now",
+       "you can do it where it's more propped up so that you can actually lean your thing",
+       "or you can go back and forth",
+       "of course you can do all kinds of designs",
+       "here's your favorite icing all right",
+       "so let's stick these on",
+       "so let's do the monogram kind of sticking up",
+       "let's do the hearts and let's do love",
+       "wouldn't that be so neat for a wedding just doing all different types of different designs",
+       "love the monogram",
+       "hope joy",
+       "uh you could actually do the date of the wedding",
+       "you could do a happy anniversary",
+       "or you could make this like a birthday party and do the person's name or their age",
+       "all the things that you want to do",
+       "and it's so simple",
+       "just buy some candy melts some cupcakes and some frosting",
+       "you're done",
+       "i hope you have fun today",
+       "we'll see you next time",
+       "bye"
+      ],
+      "start": [
+       15.04,
+       17.314999999999998,
+       18.225,
+       23.761,
+       25.31375,
+       30.218625,
+       36.595,
+       42.29818181818182,
+       44.263000000000005,
+       49.714,
+       51.913375,
+       53.48844444444445,
+       60.093,
+       62.1545,
+       65.199,
+       66.79081818181818,
+       69.578625,
+       71.756,
+       72.0745,
+       75.40470588235294,
+       77.2975,
+       79.54124999999999,
+       81.35666666666667,
+       88.09542857142857,
+       94.90366666666667,
+       99.24333333333333,
+       101.92,
+       111.24,
+       112.412,
+       123.759,
+       126.74222222222222,
+       128.46200000000002,
+       140.435,
+       144.319,
+       151.28,
+       154.31900000000002,
+       157.44,
+       157.98888888888888,
+       161.14769230769232,
+       162.6823076923077,
+       163.92000000000002,
+       170.9330909090909,
+       174.48285714285714,
+       174.8,
+       178.07999999999998,
+       179.890375,
+       181.7871818181818,
+       183.834,
+       186.633,
+       187.2,
+       188.344,
+       194.64,
+       197.93333333333334,
+       201.06333333333333,
+       203.68,
+       203.8318181818182,
+       204.74272727272728,
+       205.36,
+       205.69916666666668,
+       215.7725882352941,
+       217.54770588235294,
+       219.84,
+       224.4452,
+       225.1669,
+       231.04,
+       239.599,
+       247.06333333333333,
+       249.04,
+       249.5375,
+       251.88844444444445,
+       253.30057142857143,
+       259.2067777777778,
+       261.199,
+       262.2016,
+       264.88,
+       265.76,
+       267.08,
+       268.62
+      ],
+      "end": [
+       17.314999999999998,
+       18.225,
+       23.761,
+       25.31375,
+       30.218625,
+       36.595,
+       42.29818181818182,
+       44.263000000000005,
+       49.714,
+       51.913375,
+       53.48844444444445,
+       60.093,
+       62.1545,
+       65.189,
+       66.79081818181818,
+       69.578625,
+       71.756,
+       72.0745,
+       75.40470588235294,
+       77.2975,
+       79.54124999999999,
+       81.35666666666667,
+       88.09542857142857,
+       94.90366666666667,
+       99.24333333333333,
+       101.91,
+       111.24,
+       112.412,
+       123.749,
+       126.74222222222222,
+       128.46200000000002,
+       140.435,
+       144.309,
+       151.27,
+       154.309,
+       157.43,
+       157.98888888888888,
+       161.14769230769232,
+       162.6823076923077,
+       163.91,
+       170.9330909090909,
+       174.48285714285714,
+       174.79,
+       178.07,
+       179.890375,
+       181.7871818181818,
+       183.834,
+       186.633,
+       187.19,
+       188.344,
+       194.63,
+       197.93333333333334,
+       201.06333333333333,
+       203.67000000000002,
+       203.8318181818182,
+       204.74272727272728,
+       205.35,
+       205.69916666666668,
+       215.7725882352941,
+       217.54770588235294,
+       219.82999999999998,
+       224.4452,
+       225.1669,
+       231.03,
+       239.589,
+       247.06333333333333,
+       249.03,
+       249.5375,
+       251.88844444444445,
+       253.30057142857143,
+       259.2067777777778,
+       261.189,
+       262.2016,
+       264.87,
+       265.76,
+       267.08,
+       268.62,
+       268.84
+      ]
+     }
+    },
+    "htm_aa_v1.csv (header vid,timestamp,text)": [
+     [
+      "vid",
+      "timestamp",
+      "text"
+     ],
+     [
+      "6xlbuJzlZgE",
+      "41",
+      "i'm going to make love and a heart"
+     ],
+     [
+      "6xlbuJzlZgE",
+      "43",
+      "anyway let's get started to create our candy melts hearts or valentine's"
+     ],
+     [
+      "6xlbuJzlZgE",
+      "63",
+      "i'm using dark chocolate today and i'm going to use some pink icing for the icing on the cupcakes"
+     ],
+     [
+      "6xlbuJzlZgE",
+      "79",
+      "and then you just need a ziploc bag in the scissors and you can get started"
+     ],
+     [
+      "6xlbuJzlZgE",
+      "86",
+      "i'm using parchment paper and with a permanent marker"
+     ],
+     [
+      "6xlbuJzlZgE",
+      "97",
+      "alright you can just do all kinds of designs you can see"
+     ],
+     [
+      "6xlbuJzlZgE",
+      "161",
+      "of course you can do all kinds of designs use your favorite icing all right"
+     ],
+     [
+      "6xlbuJzlZgE",
+      "193",
+      "also i'm going to do just a flat sortal here piping it out"
+     ],
+     [
+      "6xlbuJzlZgE",
+      "196",
+      "of course you can use whatever color icing that you want and you can do different sort"
+     ],
+     [
+      "6xlbuJzlZgE",
+      "225",
+      "just buy some candy melt some cupcakes and some frosting"
+     ]
+    ]
+   }
+  },
+  {
+   "title": "74vHgn8R-_s: HowTo100M video 74vHgn8R-_s — 85 ASR sentences, 10 HTM-AA aligned sentences (timeline 100–280 s)",
+   "video_ref": "YouTube 74vHgn8R-_s (HowTo100M)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 100.14,
+     "te": 105.32,
+     "lane": "narration",
+     "text": "i'm using a sunflower oil but you could be using that mustard oil or coconut oil if you wanted"
+    },
+    {
+     "t": 102.0,
+     "te": null,
+     "lane": "caption",
+     "text": "i'm using a sunflower oil but you could be using that mustard oil or coconut oil if you wanted and we're just heating that up"
+    },
+    {
+     "t": 105.32,
+     "te": 106.65,
+     "lane": "narration",
+     "text": "and we're just heating that up"
+    },
+    {
+     "t": 106.66,
+     "te": 112.34,
+     "lane": "narration",
+     "text": "and what we're gonna do is we're gonna drop in our whole garam masala"
+    },
+    {
+     "t": 112.34,
+     "te": 116.53,
+     "lane": "narration",
+     "text": "so like i say today i'm using a little bit of cinnamon stick"
+    },
+    {
+     "t": 116.53,
+     "te": 122.34,
+     "lane": "narration",
+     "text": "and then here i've got green cardamom cumin seeds and black mustard seeds"
+    },
+    {
+     "t": 119.0,
+     "te": null,
+     "lane": "caption",
+     "text": "cumin seeds and black mustard seeds"
+    },
+    {
+     "t": 122.34,
+     "te": 123.66,
+     "lane": "narration",
+     "text": "that's the combination i'm using"
+    },
+    {
+     "t": 123.66,
+     "te": 127.59,
+     "lane": "narration",
+     "text": "you could be going for anything else that you like of course"
+    },
+    {
+     "t": 127.59,
+     "te": 132.41,
+     "lane": "narration",
+     "text": "now what we want to do and as always we just want to get them in this hot oil"
+    },
+    {
+     "t": 130.0,
+     "te": null,
+     "lane": "caption",
+     "text": "now what we want to do and as always we just want to get them in this hot oil and what they'll do is infuse the oil"
+    },
+    {
+     "t": 132.41,
+     "te": 133.25,
+     "lane": "narration",
+     "text": "and what they'll do is infuse the oil"
+    },
+    {
+     "t": 133.25,
+     "te": 138.19,
+     "lane": "narration",
+     "text": "so just don't skip this step because it's really important"
+    },
+    {
+     "t": 138.19,
+     "te": 147.99,
+     "lane": "narration",
+     "text": "just a few seconds in the hot oil they're gonna make that oil really delicious"
+    },
+    {
+     "t": 147.99,
+     "te": 150.28,
+     "lane": "narration",
+     "text": "that's great stuff"
+    },
+    {
+     "t": 150.28,
+     "te": 158.13,
+     "lane": "narration",
+     "text": "we're now gonna add our fresh curry leaves and you can get these dried as well if you want"
+    },
+    {
+     "t": 158.13,
+     "te": 161.22,
+     "lane": "narration",
+     "text": "apparently thank us our onion"
+    },
+    {
+     "t": 159.0,
+     "te": null,
+     "lane": "caption",
+     "text": "we're now gonna add our fresh curry leaves and you can get these dried as well if you want apparently thank us our onion"
+    },
+    {
+     "t": 161.22,
+     "te": 165.88,
+     "lane": "narration",
+     "text": "let the saudis in the sliced"
+    },
+    {
+     "t": 165.88,
+     "te": 176.24,
+     "lane": "narration",
+     "text": "i'm in today shopping me a new one so that i'm gonna add our garlic ginger paste"
+    },
+    {
+     "t": 176.24,
+     "te": 180.95,
+     "lane": "narration",
+     "text": "which is a 50 / 50 mix or pureed garlic and ginger"
+    },
+    {
+     "t": 180.95,
+     "te": 183.16,
+     "lane": "narration",
+     "text": "it's a link below"
+    },
+    {
+     "t": 183.16,
+     "te": 192.23,
+     "lane": "narration",
+     "text": "i'll have to make that if you want and then we're gonna go there without potatoes"
+    },
+    {
+     "t": 192.23,
+     "te": 193.42,
+     "lane": "narration",
+     "text": "was i say i"
+    },
+    {
+     "t": 193.42,
+     "te": 193.72,
+     "lane": "narration",
+     "text": "pablo"
+    },
+    {
+     "t": 193.72,
+     "te": 199.29,
+     "lane": "narration",
+     "text": "so you know they're still really quite hard but on their way"
+    },
+    {
+     "t": 199.29,
+     "te": 199.73,
+     "lane": "narration",
+     "text": "mr"
+    },
+    {
+     "t": 199.73,
+     "te": 202.96,
+     "lane": "narration",
+     "text": "demon is really simply on this fairly high heat"
+    },
+    {
+     "t": 202.96,
+     "te": 213.09,
+     "lane": "narration",
+     "text": "there's probably two rounds to like three to four minutes stirring pretty much all the time"
+    },
+    {
+     "t": 213.1,
+     "te": 217.7,
+     "lane": "narration",
+     "text": "okay this is coming together really nicely"
+    },
+    {
+     "t": 217.7,
+     "te": 227.07,
+     "lane": "narration",
+     "text": "at this point we're now gonna add in how cooked spinach or chops cook spinach that it says is a frozen one"
+    },
+    {
+     "t": 227.07,
+     "te": 235.43,
+     "lane": "narration",
+     "text": "if you're using fresh spinach now or palak you need to wash it really well because you obviously it's gonna have some grits and stones in and then you could just pile it in"
+    },
+    {
+     "t": 235.43,
+     "te": 237.03,
+     "lane": "narration",
+     "text": "it'll be really huge then it cooks right down"
+    },
+    {
+     "t": 237.03,
+     "te": 240.54,
+     "lane": "narration",
+     "text": "i mean that that i'm out there would look like that fresh"
+    },
+    {
+     "t": 240.54,
+     "te": 243.35,
+     "lane": "narration",
+     "text": "you know like a huge amount"
+    },
+    {
+     "t": 243.35,
+     "te": 245.1,
+     "lane": "narration",
+     "text": "much more convenient asleep"
+    },
+    {
+     "t": 245.1,
+     "te": 255.38,
+     "lane": "narration",
+     "text": "okay why i'm here let's get some sort in the mix then i'm gonna get my powders in today"
+    },
+    {
+     "t": 255.39,
+     "te": 261.9,
+     "lane": "narration",
+     "text": "like i say i'm using equal parts here of turmeric chilli and coriander powder"
+    },
+    {
+     "t": 257.0,
+     "te": null,
+     "lane": "caption",
+     "text": "chilli and coriander powder"
+    },
+    {
+     "t": 261.9,
+     "te": 271.75,
+     "lane": "narration",
+     "text": "you could of course just be using a curry powder that you know your life will mix you when you have answer that"
+    },
+    {
+     "t": 271.75,
+     "te": 288.14,
+     "lane": "narration",
+     "text": "now we're gonna add some chopped fresh tomatoes chinese a nice juicy one and then i'll press chilli how much you put in entirely up to you"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "sentencified_htm_370k.json": {
+     "74vHgn8R-_s": {
+      "text": [
+       "welcome back once again to how to cook great food",
+       "calm",
+       "if you haven't already please click that button and subscribe to our channel on the moon today",
+       "and as you can see right there and steaming hot just out the pan we're gonna be doing sag aloo",
+       "or palakollu or spinach and potato",
+       "some lovely spices in there",
+       "really quite easy to make vegetarian vegan healthy wonderful",
+       "let's gonna do okay",
+       "let's take a look at what we'd be using today",
+       "i've got some potatoes",
+       "they're peeled cut and i parboiled them so bought them to boil just for like two to three minutes just to help them on their way with some salt water spinach",
+       "now i'm gonna cook spinach",
+       "you could be using a frozen spinach or tinned spinach or fresh of course tomatoes",
+       "about equal parts onions",
+       "i'm slicing mine",
+       "i've got there some curry leaves if you can get fresh ones",
+       "absolutely amazing here without powder",
+       "so we've got a little teaspoon of chili powder turmeric and coriander powder",
+       "i've got there some chopped green fresh chili",
+       "here",
+       "i've got like two teaspoons of garlic ginger paste",
+       "and here i've got our whole garam masala",
+       "our seeds",
+       "i've got some cumin seeds some black mustard seeds a little bit of green cardamom",
+       "and i've got a little bit of cinnamon stick",
+       "that is about it",
+       "let's go over to the cooker",
+       "okay so i've got my trusty pan and i've got some oil in there",
+       "i'm using a sunflower oil but you could be using that mustard oil or coconut oil if you wanted",
+       "and we're just heating that up",
+       "and what we're gonna do is we're gonna drop in our whole garam masala",
+       "so like i say today i'm using a little bit of cinnamon stick",
+       "and then here i've got green cardamom cumin seeds and black mustard seeds",
+       "that's the combination i'm using",
+       "you could be going for anything else that you like of course",
+       "now what we want to do and as always we just want to get them in this hot oil",
+       "and what they'll do is infuse the oil",
+       "so just don't skip this step because it's really important",
+       "just a few seconds in the hot oil they're gonna make that oil really delicious",
+       "that's great stuff",
+       "we're now gonna add our fresh curry leaves and you can get these dried as well if you want",
+       "apparently thank us our onion",
+       "let the saudis in the sliced",
+       "i'm in today shopping me a new one so that i'm gonna add our garlic ginger paste",
+       "which is a 50 / 50 mix or pureed garlic and ginger",
+       "it's a link below",
+       "i'll have to make that if you want and then we're gonna go there without potatoes",
+       "was i say i",
+       "pablo",
+       "so you know they're still really quite hard but on their way",
+       "mr",
+       "demon is really simply on this fairly high heat",
+       "there's probably two rounds to like three to four minutes stirring pretty much all the time",
+       "okay this is coming together really nicely",
+       "at this point we're now gonna add in how cooked spinach or chops cook spinach that it says is a frozen one",
+       "if you're using fresh spinach now or palak you need to wash it really well because you obviously it's gonna have some grits and stones in and then you could just pile it in",
+       "it'll be really huge then it cooks right down",
+       "i mean that that i'm out there would look like that fresh",
+       "you know like a huge amount",
+       "much more convenient asleep",
+       "okay why i'm here let's get some sort in the mix then i'm gonna get my powders in today",
+       "like i say i'm using equal parts here of turmeric chilli and coriander powder",
+       "you could of course just be using a curry powder that you know your life will mix you when you have answer that",
+       "now we're gonna add some chopped fresh tomatoes chinese a nice juicy one and then i'll press chilli how much you put in entirely up to you",
+       "okay okay my stand on this kind of fairly vigorous heat and we're gonna go for about another three or four minutes",
+       "very pretty much sort of sign",
+       "now i think that's looking wonderful",
+       "we don't wanna do not put a little splash of water in not too much half of glass here",
+       "then i want to lower the heat to a medium",
+       "i want to just cook that now until our potatoes are ready",
+       "which in my case is gonna be about four or five minutes",
+       "give it a stir every now and then",
+       "okay i'm super happy with that",
+       "of course the heat just at the end",
+       "i'm just gonna add a little bit here of a garam masala powder",
+       "i still finishing powder that is",
+       "again we've made that on the channel so you can check out if you want",
+       "if you want it now",
+       "some fresh cilantro or coriander in here will be fantastic",
+       "or fresh mint and that's it",
+       "check that for salt but for me that's done",
+       "hope you enjoyed that",
+       "don't forget to subscribe to our channel",
+       "we'll see you soon",
+       "lots of love"
+      ],
+      "start": [
+       13.96,
+       15.791111111111112,
+       15.986666666666666,
+       20.654777777777777,
+       28.117461538461537,
+       31.034166666666668,
+       34.12,
+       38.47,
+       39.895384615384614,
+       42.6975,
+       45.13,
+       53.59,
+       55.78636363636364,
+       63.885,
+       65.25463636363637,
+       65.91872727272728,
+       69.702,
+       71.28777777777778,
+       77.42399999999999,
+       80.13222222222223,
+       80.40777777777778,
+       84.11809090909091,
+       86.87645454545454,
+       87.3439090909091,
+       92.03,
+       94.27142857142857,
+       95.14636363636363,
+       96.94,
+       100.14,
+       105.32455555555555,
+       106.65899999999999,
+       112.34454545454545,
+       116.53444444444443,
+       122.342,
+       123.66414285714286,
+       127.58566666666667,
+       132.41424999999998,
+       133.24983333333336,
+       138.19037500000002,
+       147.988,
+       150.27800000000002,
+       158.13400000000001,
+       161.224,
+       165.8799,
+       176.2352,
+       180.95285714285714,
+       183.1642857142857,
+       192.2288888888889,
+       193.42444444444445,
+       193.72333333333333,
+       199.2925,
+       199.73375,
+       202.95999999999998,
+       213.099,
+       217.7031,
+       227.073,
+       235.4251818181818,
+       237.0273,
+       240.544125,
+       243.349,
+       245.1014705882353,
+       255.39,
+       261.90090909090907,
+       271.7456,
+       288.15,
+       299.355,
+       303.7907142857143,
+       307.52375,
+       317.569,
+       326.09,
+       332.57,
+       339.22875,
+       341.66027272727274,
+       343.6445,
+       345.82909090909095,
+       352.34000000000003,
+       353.4628571428571,
+       357.22360000000003,
+       358.5436363636364,
+       363.175,
+       366.25545454545454,
+       369.4827272727273,
+       370.2754545454545,
+       374.725625,
+       378.021875
+      ],
+      "end": [
+       15.791111111111112,
+       15.986666666666666,
+       20.654777777777777,
+       28.117461538461537,
+       31.034166666666668,
+       34.11,
+       38.47,
+       39.895384615384614,
+       42.6975,
+       45.12,
+       53.58,
+       55.78636363636364,
+       63.885,
+       65.25463636363637,
+       65.91872727272728,
+       69.702,
+       71.28777777777778,
+       77.42399999999999,
+       80.13222222222223,
+       80.40777777777778,
+       84.11809090909091,
+       86.87645454545454,
+       87.3439090909091,
+       92.03,
+       94.27142857142857,
+       95.14636363636363,
+       96.93,
+       100.14,
+       105.32455555555555,
+       106.649,
+       112.34454545454545,
+       116.53444444444443,
+       122.342,
+       123.66414285714286,
+       127.58566666666667,
+       132.41424999999998,
+       133.24983333333336,
+       138.19037500000002,
+       147.988,
+       150.27800000000002,
+       158.13400000000001,
+       161.224,
+       165.8799,
+       176.2352,
+       180.95285714285714,
+       183.1642857142857,
+       192.2288888888889,
+       193.42444444444445,
+       193.72333333333333,
+       199.2925,
+       199.73375,
+       202.95999999999998,
+       213.089,
+       217.7031,
+       227.073,
+       235.4251818181818,
+       237.0273,
+       240.544125,
+       243.349,
+       245.1014705882353,
+       255.38,
+       261.90090909090907,
+       271.7456,
+       288.14,
+       299.355,
+       303.7907142857143,
+       307.52375,
+       317.559,
+       326.08,
+       332.57,
+       339.22875,
+       341.66027272727274,
+       343.6445,
+       345.82909090909095,
+       352.33,
+       353.4628571428571,
+       357.22360000000003,
+       358.5436363636364,
+       363.175,
+       366.25545454545454,
+       369.4827272727273,
+       370.2754545454545,
+       374.725625,
+       378.021875,
+       379.67
+      ]
+     }
+    },
+    "htm_aa_v1.csv (header vid,timestamp,text)": [
+     [
+      "vid",
+      "timestamp",
+      "text"
+     ],
+     [
+      "74vHgn8R-_s",
+      "77",
+      "turmeric and coriander powder"
+     ],
+     [
+      "74vHgn8R-_s",
+      "88",
+      "a little bit of green cardamom and i've got a little bit of cinnamon stick"
+     ],
+     [
+      "74vHgn8R-_s",
+      "89",
+      "i've got some cumin seeds some black mustard seeds"
+     ],
+     [
+      "74vHgn8R-_s",
+      "98",
+      "okay so i've got my trusty pan and i've got some oil in there"
+     ],
+     [
+      "74vHgn8R-_s",
+      "102",
+      "i'm using a sunflower oil but you could be using that mustard oil or coconut oil if you wanted and we're just heating that up"
+     ],
+     [
+      "74vHgn8R-_s",
+      "119",
+      "cumin seeds and black mustard seeds"
+     ],
+     [
+      "74vHgn8R-_s",
+      "130",
+      "now what we want to do and as always we just want to get them in this hot oil and what they'll do is infuse the oil"
+     ],
+     [
+      "74vHgn8R-_s",
+      "159",
+      "we're now gonna add our fresh curry leaves and you can get these dried as well if you want apparently thank us our onion"
+     ],
+     [
+      "74vHgn8R-_s",
+      "257",
+      "chilli and coriander powder"
+     ],
+     [
+      "74vHgn8R-_s",
+      "328",
+      "okay okay my stand on this kind of fairly vigorous heat and we're gonna go for about another three or four minutes"
+     ]
+    ]
+   }
+  }
+ ]
+}

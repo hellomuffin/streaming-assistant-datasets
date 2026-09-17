@@ -1,0 +1,101 @@
+{
+ "slug": "ego4d-narrations",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://ego4d-data.org/docs/data/annotation-guidelines/ (Narrations section)",
+  "https://github.com/showlab/EgoVLP README (printed row of egoclip.csv, derived from narration_pass_1)",
+  "https://github.com/MikeWangWZHL/Paxion/blob/main/dataset_cards/actionbench_ego4d.md (printed record derived from narration_pass_1)",
+  "https://github.com/facebookresearch/Ego4d/blob/main/notebooks/CLEP_Features_Tutorial_CVPR_Presentation.ipynb (printed narration output)"
+ ],
+ "access_used": "public sample in paper/repo/card only (full data needs the Ego4D License Agreement)",
+ "note": "narrations.json is only distributed after signing the Ego4D licence, so no file was downloaded. The examples are narration records printed verbatim in the official guidelines, the official Ego4D notebook, and two public repos that re-package narration_pass_1 (EgoVLP egoclip.csv, Paxion ActionBench). Each narration is one timestamp (not an interval) plus a sentence tagged #C (camera wearer) or #O (someone else); EgoVLP adds a short clip window around the timestamp. Videos are licence-only, so no clip.",
+ "examples": [
+  {
+   "title": "EgoVLP egoclip.csv row 0: \"#C C picks a bag of clothes from the floor\" at 3.34 s",
+   "video_ref": "Ego4D video_uid 001e3e4e-2743-47fc-8564-d5efd11f9e90",
+   "duration_s": 128.033333,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 3.3445,
+     "te": null,
+     "lane": "narration",
+     "text": "#C C picks a bag of clothes from the floor"
+    },
+    {
+     "t": 2.967651,
+     "te": 3.721266,
+     "lane": "other",
+     "text": "EgoVLP clip window around the narration"
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": {
+    "clip_idx": "0",
+    "video_uid": "001e3e4e-2743-47fc-8564-d5efd11f9e90",
+    "video_dur": "128.033333",
+    "narration_source": "narration_pass_1",
+    "narration_ind": "0",
+    "narration_time": "3.3445",
+    "clip_start": "2.967651",
+    "clip_end": "3.721266",
+    "clip_text": "#C C picks a bag of clothes from the floor",
+    "tag_verb": "[93]",
+    "tag_noun": "[192, 115, 12]"
+   }
+  },
+  {
+   "title": "Paxion ActionBench record: \"#C C picks up the knife from the chopping board with her right hand.\" at 592.69 s of a 59.5-min video",
+   "video_ref": "Ego4D video_uid 002d2729-df71-438d-8396-5895b349e8fd",
+   "duration_s": 3571.4333333333334,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 592.6903,
+     "te": null,
+     "lane": "narration",
+     "text": "#C C picks up the knife from the chopping board with her right hand."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "Paxion actionbench_ego4d.md record (verbatim, Python-dict print; keys after clip_uid not shown in the card excerpt)": {
+     "video_uid": "002d2729-df71-438d-8396-5895b349e8fd",
+     "video_dur": 3571.4333333333334,
+     "narration_source": "narration_pass_1",
+     "narration_ind": 229,
+     "narration_time": 592.6903,
+     "clip_start": 592.3519665973915,
+     "clip_end": 593.0286286452686,
+     "clip_text": "#C C picks up the knife from the chopping board with her right hand.",
+     "action_antonym_clip_text": "#C C drops down the knife from the chopping board with her right hand.",
+     "tag_verb": "[17, 93]",
+     "tag_noun": "[321, 268, 573, 105]",
+     "Unnamed: 10": "nan",
+     "clip_uid": "116ec16b-0d76-4e71-b02c-72cb37ebd5c5"
+    },
+    "Ego4D CLEP notebook printed output (one narration)": {
+     "uid": "057bf03d-b337-475c-82a2-79f0b5b6637f",
+     "txt": "#C C opens a door",
+     "ts": 1.2841985999999999,
+     "idx": 0,
+     "pass": 1
+    },
+    "Ego4D annotation guidelines examples": [
+     "\"C is chopping a tomato\"",
+     "#summary C fixed their breakfast, ate it, then got dressed and left the house."
+    ],
+    "Ego4D annotation guidelines tags": {
+     "#unsure": "to denote they are unsure about a specific statement",
+     "#summary": "to denote they are giving the overall video",
+     "#C": "to denote the sentence is an action done by the camera wearer (the person who recorded the video while wearing a camera on their head)",
+     "#O": "to denote that the sentence is an action done by someone other than the camera wearer"
+    }
+   }
+  }
+ ]
+}

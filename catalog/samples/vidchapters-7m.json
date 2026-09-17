@@ -1,0 +1,205 @@
+{
+ "slug": "vidchapters-7m",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "chapters.pkl (VidChapters-7M release, Google Drive link on https://antoyang.github.io/vidchapters.html), entries wdVasngscrM and nTx7Yt7A7eA"
+ ],
+ "access_used": "open download",
+ "note": "An example is one YouTube video: the chapter list the uploader typed into the description (\"(0:45) Title\"), parsed into {label, time in s}, plus title, full description, channel id and view count. A chapter has only a start time; the timeline ends each chapter at the next start (last one at the video duration). The separate 19 GB asr.pkl (WhisperX sentences) was not read. No clip: YouTube only.",
+ "examples": [
+  {
+   "title": "wdVasngscrM: One Room Conversion Part 1: Project Introduction — 8 chapters, 168 s",
+   "video_ref": "YouTube wdVasngscrM",
+   "duration_s": 168,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0,
+     "te": 35,
+     "lane": "step",
+     "text": "Intro"
+    },
+    {
+     "t": 35,
+     "te": 48,
+     "lane": "step",
+     "text": "Concept"
+    },
+    {
+     "t": 48,
+     "te": 64,
+     "lane": "step",
+     "text": "Current 3-BR Layout"
+    },
+    {
+     "t": 64,
+     "te": 89,
+     "lane": "step",
+     "text": "Basic Conversion Plan"
+    },
+    {
+     "t": 89,
+     "te": 102,
+     "lane": "step",
+     "text": "Why do this"
+    },
+    {
+     "t": 102,
+     "te": 130,
+     "lane": "step",
+     "text": "The Challenges"
+    },
+    {
+     "t": 130,
+     "te": 154,
+     "lane": "step",
+     "text": "Long Term Objective"
+    },
+    {
+     "t": 154,
+     "te": 168,
+     "lane": "step",
+     "text": "About Next Episode"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "wdVasngscrM": {
+     "chapters": [
+      {
+       "label": "Intro",
+       "time": 0
+      },
+      {
+       "label": "Concept",
+       "time": 35
+      },
+      {
+       "label": "Current 3-BR Layout",
+       "time": 48
+      },
+      {
+       "label": "Basic Conversion Plan",
+       "time": 64
+      },
+      {
+       "label": "Why do this",
+       "time": 89
+      },
+      {
+       "label": "The Challenges",
+       "time": 102
+      },
+      {
+       "label": "Long Term Objective",
+       "time": 130
+      },
+      {
+       "label": "About Next Episode",
+       "time": 154
+      }
+     ],
+     "duration": 168,
+     "title": "One Room Conversion Part 1: Project Introduction",
+     "description": "Optimize your investment! Part 1 - Concept, plan, challenges, objective. The demand for a three-bedroom apartment in this part of Seoul is not very high. So the plan is to convert a master bedroom in a three-bedroom apartment into a “one-room” apartment – known as a studio apartment where I come from.\nIn this video I cover the original 3-BR layout, the basic concept for the conversion, reason for converting it in the first place, and the big expensive challenges you should tackle now to avoid problems and maximize your value in the future.\n\n00:00 Intro\n00:35 Concept\n00:48 Current 3-BR Layout\n01:04 Basic Conversion Plan\n01:29 Why do this?\n01:42 The Challenges\n02:10 Long Term Objective\n02:34 About Next Episode\n\nLink to episodes\nEpisode 1:  https://youtu.be/wdVasngscrM Concept, plan, challenges, objective.\nEpisode 2: https://youtu.be/XjTEX75Ls0A Preconstruction walkaround planning: Boiler and heating system split, kitchen placement, entry reconfiguration.\nEpisode 3: A closer look at construction and costs. Coming soon. \nEpisode 4: Getting tenants and return on investment. Coming soon.\n\nMany thanks and credit to © OpenStreetMap contributors. My maps in the video came from OpenStreetMap® and is open data, licensed under the Open Data Commons Open Database License (ODbL) by the OpenStreetMap Foundation (OSMF). Using under the Creative Commons Attribution-ShareAlike 2.0 license (CC BY-SA 2.0). The data is available under the Open Database License; please see the link to the copyright page: https://www.openstreetmap.org/copyright",
+     "channel_id": "UCcYv7CEyyByebSUTE3YS5tA",
+     "view_count": 245
+    }
+   }
+  },
+  {
+   "title": "nTx7Yt7A7eA: TAIWANESE FRIED CHICKEN: Mega Crispy Yan Su Ji! — 7 chapters, 336 s",
+   "video_ref": "YouTube nTx7Yt7A7eA",
+   "duration_s": 336,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 32,
+     "te": 75,
+     "lane": "step",
+     "text": "Prepping Chicken"
+    },
+    {
+     "t": 75,
+     "te": 107,
+     "lane": "step",
+     "text": "Marinade"
+    },
+    {
+     "t": 107,
+     "te": 128,
+     "lane": "step",
+     "text": "Pepper/Salt Seaoning"
+    },
+    {
+     "t": 128,
+     "te": 207,
+     "lane": "step",
+     "text": "Dusting Chicken"
+    },
+    {
+     "t": 207,
+     "te": 276,
+     "lane": "step",
+     "text": "Frying Chicken"
+    },
+    {
+     "t": 276,
+     "te": 307,
+     "lane": "step",
+     "text": "Frying Basil"
+    },
+    {
+     "t": 307,
+     "te": 336,
+     "lane": "step",
+     "text": "Sexy Chicken Time"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "nTx7Yt7A7eA": {
+     "chapters": [
+      {
+       "label": "Prepping Chicken",
+       "time": 32
+      },
+      {
+       "label": "Marinade",
+       "time": 75
+      },
+      {
+       "label": "Pepper/Salt Seaoning",
+       "time": 107
+      },
+      {
+       "label": "Dusting Chicken",
+       "time": 128
+      },
+      {
+       "label": "Frying Chicken",
+       "time": 207
+      },
+      {
+       "label": "Frying Basil",
+       "time": 276
+      },
+      {
+       "label": "Sexy Chicken Time",
+       "time": 307
+      }
+     ],
+     "duration": 336,
+     "title": "TAIWANESE FRIED CHICKEN: Mega Crispy Yan Su Ji!",
+     "description": "There's 0% chance this won't be one of the best fried chickens you've had.  It's crispy on the outside, juicy on the inside, perfectly seasoned. I'll show you how you can make it at home! \n\n\nFOLLOW ME\n☞IG: https://www.instagram.com/laurence_louie/\n☞FB: https://www.facebook.com/cheflaurencelouie/\n\nINGREDIENTS\n\nMarinade \n1kg Chicken Thigh (2lbs or 6x Chicken thighs)\n1 Egg White\n2 TBSP Soy\n2 TBSP Chinese Cooking Wine\n2 Garlic crushed\n1 tsp Salt\n1 tsp 5 spice\n3 TBSP cornstarch \n\nDusting\n1 Cup Coarse Sweet Potato Starch\n\nPepper/Salt Seasoning \n1/2 tsp Salt\n1/8 tsp White Pepper\n1/8 tsp Sichuan PepperCorn\n\nGarnish\n1x Bunch Thai Basil\n\n\nTIME\n0:32 - Prepping Chicken\n1:15 - Marinade\n1:47 - Pepper/Salt Seaoning \n2:08 - Dusting Chicken\n3:27 - Frying Chicken \n4:36 - Frying Basil\n5:07 - Sexy Chicken Time!\n\nMUSIC\n\"You\" - Ghokie\n\"Chill Day\" - Lakey Inspired - https://soundcloud.com/lakeyinspired\n\nTHUMBNAIL\nMy Lovely Wife - Rary Ratsifa \n\nComment. Like. Subscribe. Peace. \nMore videos every week!",
+     "channel_id": "UCJEr0IY8zbu6spQcUv_iN1g",
+     "view_count": 246
+    }
+   }
+  }
+ ]
+}

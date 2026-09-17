@@ -1,0 +1,690 @@
+{
+ "slug": "howtocaption",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/CVML-TueAI/HowToCaption (how_to_caption split, parquet shard 0 of 4)"
+ ],
+ "access_used": "open download",
+ "note": "An example is one HowTo100M video: a list of 8-second windows, each with one or more short instructional captions that an LLM (Vicuna) wrote from the ASR and that were then re-aligned and filtered. Windows overlap and leave gaps; the timeline shows a 3-minute window and raw keeps the whole row. No clip: YouTube only.",
+ "examples": [
+  {
+   "title": "74vHgn8R-_s: same video as the HTM-370K example — 31 8-s windows, 35 captions (timeline 100–280 s)",
+   "video_ref": "YouTube 74vHgn8R-_s (HowTo100M)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 104,
+     "te": 112,
+     "lane": "caption",
+     "text": "The speaker is going to drop the whole garam masala into the hot oil"
+    },
+    {
+     "t": 106,
+     "te": 114,
+     "lane": "caption",
+     "text": "The speaker is heating up the oil in a pan"
+    },
+    {
+     "t": 107,
+     "te": 115,
+     "lane": "caption",
+     "text": "The speaker is going to add the whole garam masala to the oil"
+    },
+    {
+     "t": 107,
+     "te": 115,
+     "lane": "caption",
+     "text": "The speaker is heating up the oil in a pan"
+    },
+    {
+     "t": 115,
+     "te": 123,
+     "lane": "caption",
+     "text": "The speaker is using cumin seeds, black mustard seeds, and green cardamom in the garam masala"
+    },
+    {
+     "t": 116,
+     "te": 124,
+     "lane": "caption",
+     "text": "The speaker is going to add the whole garam masala to the oil"
+    },
+    {
+     "t": 117,
+     "te": 125,
+     "lane": "caption",
+     "text": "The speaker wants the ingredients to infuse the oil for a few seconds"
+    },
+    {
+     "t": 122,
+     "te": 130,
+     "lane": "caption",
+     "text": "The speaker will use the infused oil to make the dish delicious"
+    },
+    {
+     "t": 128,
+     "te": 136,
+     "lane": "caption",
+     "text": "The speaker thinks it's important to let the ingredients infuse the oil"
+    },
+    {
+     "t": 169,
+     "te": 177,
+     "lane": "caption",
+     "text": "Let the Saudis in the sliced onion"
+    },
+    {
+     "t": 169,
+     "te": 177,
+     "lane": "caption",
+     "text": "I'm going to buy a new onion to add our garlic ginger paste"
+    },
+    {
+     "t": 222,
+     "te": 230,
+     "lane": "caption",
+     "text": "Now we're going to add cooked spinach or chopped spinach"
+    },
+    {
+     "t": 253,
+     "te": 261,
+     "lane": "caption",
+     "text": "Adding equal parts of turmeric, chilli, and coriander powder"
+    },
+    {
+     "t": 253,
+     "te": 261,
+     "lane": "caption",
+     "text": "Using curry powder instead"
+    },
+    {
+     "t": 270,
+     "te": 278,
+     "lane": "caption",
+     "text": "Adding fresh tomatoes and chopping them"
+    }
+   ],
+   "raw_format": "parquet row",
+   "raw": {
+    "video_id": "74vHgn8R-_s",
+    "description": [
+     {
+      "start": 14,
+      "end": 22,
+      "text": [
+       "Welcome back to \"How to Cook Great Food\""
+      ]
+     },
+     {
+      "start": 23,
+      "end": 31,
+      "text": [
+       "The host adds some spices to the potatoes and spinach"
+      ]
+     },
+     {
+      "start": 25,
+      "end": 33,
+      "text": [
+       "The host starts cooking the dish"
+      ]
+     },
+     {
+      "start": 29,
+      "end": 37,
+      "text": [
+       "The host introduces the dish they will be making, Sag Alu (or Palakollu or Spinach and Potato)"
+      ]
+     },
+     {
+      "start": 30,
+      "end": 38,
+      "text": [
+       "The dish is described as healthy and vegetarian"
+      ]
+     },
+     {
+      "start": 39,
+      "end": 47,
+      "text": [
+       "The host shows the ingredients they will be using"
+      ]
+     },
+     {
+      "start": 60,
+      "end": 68,
+      "text": [
+       "The host lists the spices they will be using"
+      ]
+     },
+     {
+      "start": 62,
+      "end": 70,
+      "text": [
+       "The host adds spinach to the potatoes",
+       "The host adds curry leaves to the dish"
+      ]
+     },
+     {
+      "start": 80,
+      "end": 88,
+      "text": [
+       "The host adds chili powder, turmeric, and coriander powder to the dish"
+      ]
+     },
+     {
+      "start": 83,
+      "end": 91,
+      "text": [
+       "The host adds chopped green chili to the dish"
+      ]
+     },
+     {
+      "start": 84,
+      "end": 92,
+      "text": [
+       "The host adds garlic and ginger paste to the dish"
+      ]
+     },
+     {
+      "start": 85,
+      "end": 93,
+      "text": [
+       "The host adds whole garam masala to the dish"
+      ]
+     },
+     {
+      "start": 95,
+      "end": 103,
+      "text": [
+       "The speaker is going to use sunflower oil to cook with"
+      ]
+     },
+     {
+      "start": 104,
+      "end": 112,
+      "text": [
+       "The speaker is going to drop the whole garam masala into the hot oil"
+      ]
+     },
+     {
+      "start": 106,
+      "end": 114,
+      "text": [
+       "The speaker is heating up the oil in a pan"
+      ]
+     },
+     {
+      "start": 107,
+      "end": 115,
+      "text": [
+       "The speaker is going to add the whole garam masala to the oil",
+       "The speaker is heating up the oil in a pan"
+      ]
+     },
+     {
+      "start": 115,
+      "end": 123,
+      "text": [
+       "The speaker is using cumin seeds, black mustard seeds, and green cardamom in the garam masala"
+      ]
+     },
+     {
+      "start": 116,
+      "end": 124,
+      "text": [
+       "The speaker is going to add the whole garam masala to the oil"
+      ]
+     },
+     {
+      "start": 117,
+      "end": 125,
+      "text": [
+       "The speaker wants the ingredients to infuse the oil for a few seconds"
+      ]
+     },
+     {
+      "start": 122,
+      "end": 130,
+      "text": [
+       "The speaker will use the infused oil to make the dish delicious"
+      ]
+     },
+     {
+      "start": 128,
+      "end": 136,
+      "text": [
+       "The speaker thinks it's important to let the ingredients infuse the oil"
+      ]
+     },
+     {
+      "start": 169,
+      "end": 177,
+      "text": [
+       "Let the Saudis in the sliced onion",
+       "I'm going to buy a new onion to add our garlic ginger paste"
+      ]
+     },
+     {
+      "start": 222,
+      "end": 230,
+      "text": [
+       "Now we're going to add cooked spinach or chopped spinach"
+      ]
+     },
+     {
+      "start": 253,
+      "end": 261,
+      "text": [
+       "Adding equal parts of turmeric, chilli, and coriander powder",
+       "Using curry powder instead"
+      ]
+     },
+     {
+      "start": 270,
+      "end": 278,
+      "text": [
+       "Adding fresh tomatoes and chopping them"
+      ]
+     },
+     {
+      "start": 287,
+      "end": 295,
+      "text": [
+       "Adjusting the heat to a moderate level and cooking for 3-4 minutes"
+      ]
+     },
+     {
+      "start": 293,
+      "end": 301,
+      "text": [
+       "The dish looks beautiful"
+      ]
+     },
+     {
+      "start": 322,
+      "end": 330,
+      "text": [
+       "Cooking the potatoes until they're ready"
+      ]
+     },
+     {
+      "start": 327,
+      "end": 335,
+      "text": [
+       "Stirring the pot every now and then"
+      ]
+     },
+     {
+      "start": 329,
+      "end": 337,
+      "text": [
+       "The dish is ready"
+      ]
+     },
+     {
+      "start": 356,
+      "end": 364,
+      "text": [
+       "Person adds fresh cilantro or coriander to the dish"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "title": "7-cVsWPJC9M: HowTo100M video 7-cVsWPJC9M — 35 8-s windows, 42 captions (timeline 0–180 s)",
+   "video_ref": "YouTube 7-cVsWPJC9M (HowTo100M)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 9,
+     "te": 17,
+     "lane": "caption",
+     "text": "The speaker starts the cooking process by preparing a glass noodle salad"
+    },
+    {
+     "t": 9,
+     "te": 17,
+     "lane": "caption",
+     "text": "The speaker begins the cooking process by introducing the main ingredient, which is glass noodles"
+    },
+    {
+     "t": 44,
+     "te": 52,
+     "lane": "caption",
+     "text": "The speaker starts to prepare the sauce for the salad"
+    },
+    {
+     "t": 44,
+     "te": 52,
+     "lane": "caption",
+     "text": "The speaker confirms that they will be using the sauce in the salad"
+    },
+    {
+     "t": 47,
+     "te": 55,
+     "lane": "caption",
+     "text": "The speaker starts to prepare the squid and prawns for the salad"
+    },
+    {
+     "t": 47,
+     "te": 55,
+     "lane": "caption",
+     "text": "The speaker weighs the squid and prawns and confirms that they are using half of the weight for the salad"
+    },
+    {
+     "t": 82,
+     "te": 90,
+     "lane": "caption",
+     "text": "A person prepares brown mushroom slices"
+    },
+    {
+     "t": 94,
+     "te": 102,
+     "lane": "caption",
+     "text": "A person prepares a dried chili to be roasted"
+    },
+    {
+     "t": 99,
+     "te": 107,
+     "lane": "caption",
+     "text": "Another person prepares peanuts"
+    },
+    {
+     "t": 108,
+     "te": 116,
+     "lane": "caption",
+     "text": "The person warns others to be careful with the ingredients"
+    },
+    {
+     "t": 120,
+     "te": 128,
+     "lane": "caption",
+     "text": "The person prepares a dish for their boyfriend's mother"
+    },
+    {
+     "t": 133,
+     "te": 141,
+     "lane": "caption",
+     "text": "The person chops green onions"
+    },
+    {
+     "t": 170,
+     "te": 178,
+     "lane": "caption",
+     "text": "The person lists the ingredients needed for the sauce"
+    },
+    {
+     "t": 170,
+     "te": 178,
+     "lane": "caption",
+     "text": "The person starts preparing the dish"
+    }
+   ],
+   "raw_format": "parquet row",
+   "raw": {
+    "video_id": "7-cVsWPJC9M",
+    "description": [
+     {
+      "start": 9,
+      "end": 17,
+      "text": [
+       "The speaker starts the cooking process by preparing a glass noodle salad",
+       "The speaker begins the cooking process by introducing the main ingredient, which is glass noodles"
+      ]
+     },
+     {
+      "start": 44,
+      "end": 52,
+      "text": [
+       "The speaker starts to prepare the sauce for the salad",
+       "The speaker confirms that they will be using the sauce in the salad"
+      ]
+     },
+     {
+      "start": 47,
+      "end": 55,
+      "text": [
+       "The speaker starts to prepare the squid and prawns for the salad",
+       "The speaker weighs the squid and prawns and confirms that they are using half of the weight for the salad"
+      ]
+     },
+     {
+      "start": 82,
+      "end": 90,
+      "text": [
+       "A person prepares brown mushroom slices"
+      ]
+     },
+     {
+      "start": 94,
+      "end": 102,
+      "text": [
+       "A person prepares a dried chili to be roasted"
+      ]
+     },
+     {
+      "start": 99,
+      "end": 107,
+      "text": [
+       "Another person prepares peanuts"
+      ]
+     },
+     {
+      "start": 108,
+      "end": 116,
+      "text": [
+       "The person warns others to be careful with the ingredients"
+      ]
+     },
+     {
+      "start": 120,
+      "end": 128,
+      "text": [
+       "The person prepares a dish for their boyfriend's mother"
+      ]
+     },
+     {
+      "start": 133,
+      "end": 141,
+      "text": [
+       "The person chops green onions"
+      ]
+     },
+     {
+      "start": 170,
+      "end": 178,
+      "text": [
+       "The person lists the ingredients needed for the sauce",
+       "The person starts preparing the dish"
+      ]
+     },
+     {
+      "start": 183,
+      "end": 191,
+      "text": [
+       "A person is holding a pan and talking about the pan being hot",
+       "The person mentions that they love the pan"
+      ]
+     },
+     {
+      "start": 185,
+      "end": 193,
+      "text": [
+       "They add a handful of peanuts to the pan"
+      ]
+     },
+     {
+      "start": 193,
+      "end": 201,
+      "text": [
+       "The dish smells good"
+      ]
+     },
+     {
+      "start": 194,
+      "end": 202,
+      "text": [
+       "They cook the dish quickly"
+      ]
+     },
+     {
+      "start": 211,
+      "end": 219,
+      "text": [
+       "The person takes the dish out and mentions that it smells good"
+      ]
+     },
+     {
+      "start": 220,
+      "end": 228,
+      "text": [
+       "They take the dish out of the pan"
+      ]
+     },
+     {
+      "start": 225,
+      "end": 233,
+      "text": [
+       "They remove the dish from the pan"
+      ]
+     },
+     {
+      "start": 259,
+      "end": 267,
+      "text": [
+       "They bring the chicken stock to a boil"
+      ]
+     },
+     {
+      "start": 267,
+      "end": 275,
+      "text": [
+       "They mention that they can see smoke coming from the pan"
+      ]
+     },
+     {
+      "start": 280,
+      "end": 288,
+      "text": [
+       "They are hungry"
+      ]
+     },
+     {
+      "start": 299,
+      "end": 307,
+      "text": [
+       "They will spend time making a young sauce"
+      ]
+     },
+     {
+      "start": 414,
+      "end": 422,
+      "text": [
+       "The speaker gives a tip for making Thai food"
+      ]
+     },
+     {
+      "start": 469,
+      "end": 477,
+      "text": [
+       "They mention cooking and someone knowing"
+      ]
+     },
+     {
+      "start": 482,
+      "end": 490,
+      "text": [
+       "They feel like they're not cooking alone"
+      ]
+     },
+     {
+      "start": 558,
+      "end": 566,
+      "text": [
+       "They put something on top of the moodle and pork"
+      ]
+     },
+     {
+      "start": 562,
+      "end": 570,
+      "text": [
+       "They mention vegetables, onions, green onions, tomatoes, and back for three"
+      ]
+     },
+     {
+      "start": 564,
+      "end": 572,
+      "text": [
+       "They add something to the vegetables"
+      ]
+     },
+     {
+      "start": 576,
+      "end": 584,
+      "text": [
+       "They say the most important part of cooking is taste"
+      ]
+     },
+     {
+      "start": 662,
+      "end": 670,
+      "text": [
+       "another person takes a cucumber and sticks it into a dish of food",
+       "person adjusts the placement of the cucumber in the dish"
+      ]
+     },
+     {
+      "start": 663,
+      "end": 671,
+      "text": [
+       "person picks up a cucumber from a table and places it on a plate"
+      ]
+     },
+     {
+      "start": 707,
+      "end": 715,
+      "text": [
+       "person picks up a piece of food and puts it on the plate"
+      ]
+     },
+     {
+      "start": 710,
+      "end": 718,
+      "text": [
+       "person takes a picture of the plate and shows it to someone"
+      ]
+     },
+     {
+      "start": 720,
+      "end": 728,
+      "text": [
+       "person takes another piece of food and places it on the plate",
+       "person takes a piece of food and puts it on the plate"
+      ]
+     },
+     {
+      "start": 734,
+      "end": 742,
+      "text": [
+       "person puts a piece of food on the plate"
+      ]
+     },
+     {
+      "start": 738,
+      "end": 746,
+      "text": [
+       "person picks up the plate and takes it to a table"
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,2972 @@
+{
+ "slug": "yt-temporal",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/mwxely/yttemporal180m/blob/main/yttemporal180m_000of100.jsonl.gz (first 4 MB, records 2 and 174; unofficial mirror of gs://merlot/yttemporal180m, which returned 403)"
+ ],
+ "access_used": "open download",
+ "note": "An example is one YouTube video record: \"subtitles\" = YouTube ASR words each with one onset time (no end), \"denoised\" = the same transcript as noisy ASR plus a GPT-2-cleaned \"cleanasr\" (no times), and \"info\" = yt-dlp metadata. The timeline joins consecutive words into phrases at pauses > 0.9 s (verbatim, lower-case) and marks pauses ≥ 2 s as silence; phrase ends are the last word onset. In raw, long info fields (thumbnails, caption-track URL lists, description) are truncated. No clip: YouTube only.",
+ "examples": [
+  {
+   "title": "gzDjblPtOzw: Cautious optimism as currency floatation boosts Egyptian economy — 339 timed words, 125 s",
+   "video_ref": "YouTube gzDjblPtOzw",
+   "duration_s": 125,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 0.41,
+     "lane": "narration",
+     "text": "a blessing"
+    },
+    {
+     "t": 1.41,
+     "te": 5.73,
+     "lane": "narration",
+     "text": "in disguise for Egypt with the unpopular move of closing the currency now being"
+    },
+    {
+     "t": 6.0,
+     "te": 10.11,
+     "lane": "narration",
+     "text": "touted as a success but it's still too early to celebrate as it will"
+    },
+    {
+     "t": 10.32,
+     "te": 15.18,
+     "lane": "narration",
+     "text": "take time to revive the budget economy some like Egyptian billionaire semester worries or"
+    },
+    {
+     "t": 15.54,
+     "te": 17.0,
+     "lane": "narration",
+     "text": "however preaching caution whether"
+    },
+    {
+     "t": 18.0,
+     "te": 21.63,
+     "lane": "narration",
+     "text": "it goes down twenty percent o goes up another twenty percent it doesn't matter"
+    },
+    {
+     "t": 21.75,
+     "te": 25.71,
+     "lane": "narration",
+     "text": "but this means there is a market with supply and demand meeting somehow and"
+    },
+    {
+     "t": 25.98,
+     "te": 31.28,
+     "lane": "narration",
+     "text": "that is the crucial point where you say the flotation has been successful modern"
+    },
+    {
+     "t": 32.28,
+     "te": 36.54,
+     "lane": "narration",
+     "text": "six years of political shamu have scared of investors and tourists a major blue"
+    },
+    {
+     "t": 36.81,
+     "te": 41.28,
+     "lane": "narration",
+     "text": "came in 2015 when Islamic state brought down a Russian airliner over the Sinai"
+    },
+    {
+     "t": 41.64,
+     "te": 41.87,
+     "lane": "narration",
+     "text": "Peninsula Russia"
+    },
+    {
+     "t": 42.87,
+     "te": 46.65,
+     "lane": "narration",
+     "text": "suspended all flights to Egypt and if you have to restore them those in"
+    },
+    {
+     "t": 46.77,
+     "te": 51.0,
+     "lane": "narration",
+     "text": "the tourism industry have their opinions as to why so these are political decisions"
+    },
+    {
+     "t": 51.69,
+     "te": 51.98,
+     "lane": "narration",
+     "text": "really packaged"
+    },
+    {
+     "t": 52.98,
+     "te": 57.45,
+     "lane": "narration",
+     "text": "in in other excuses and I think even with the Russians it's a political"
+    },
+    {
+     "t": 57.72,
+     "te": 62.13,
+     "lane": "narration",
+     "text": "decision that needs to be taken so this is a hundred percent up to"
+    },
+    {
+     "t": 62.4,
+     "te": 62.58,
+     "lane": "narration",
+     "text": "the top"
+    },
+    {
+     "t": 63.51,
+     "te": 68.76,
+     "lane": "narration",
+     "text": "price of both countries to iron out whatever differences and get the ball rolling"
+    },
+    {
+     "t": 69.24,
+     "te": 73.53,
+     "lane": "narration",
+     "text": "again because it's a sad situation for us you know but a government and"
+    },
+    {
+     "t": 73.68,
+     "te": 77.19,
+     "lane": "narration",
+     "text": "parties with vested interests have been trying their best to guide the tourism industry"
+    },
+    {
+     "t": 77.28,
+     "te": 77.28,
+     "lane": "narration",
+     "text": "confidence"
+    },
+    {
+     "t": 78.24,
+     "te": 81.15,
+     "lane": "narration",
+     "text": "is really all about marketing that's why I repeated the word three times we"
+    },
+    {
+     "t": 81.54,
+     "te": 83.39,
+     "lane": "narration",
+     "text": "just need to spend a lot"
+    },
+    {
+     "t": 84.39,
+     "te": 84.83,
+     "lane": "narration",
+     "text": "more trying"
+    },
+    {
+     "t": 85.83,
+     "te": 86.21,
+     "lane": "narration",
+     "text": "to initially"
+    },
+    {
+     "t": 87.21,
+     "te": 89.28,
+     "lane": "narration",
+     "text": "this bad image that was falsely"
+    },
+    {
+     "t": 90.53,
+     "te": 90.53,
+     "lane": "narration",
+     "text": "spread"
+    },
+    {
+     "t": 91.53,
+     "te": 94.35,
+     "lane": "narration",
+     "text": "I mean at the end of the day we've had in the last 23"
+    },
+    {
+     "t": 95.19,
+     "te": 95.22,
+     "lane": "narration",
+     "text": "years in"
+    },
+    {
+     "t": 96.5,
+     "te": 96.5,
+     "lane": "narration",
+     "text": "France"
+    },
+    {
+     "t": 97.73,
+     "te": 97.73,
+     "lane": "narration",
+     "text": "more"
+    },
+    {
+     "t": 98.73,
+     "te": 103.17,
+     "lane": "narration",
+     "text": "dead tourists than we've had in 20 years in Egypt and the number of"
+    },
+    {
+     "t": 103.29,
+     "te": 107.01,
+     "lane": "narration",
+     "text": "incidents in Germany in France in Belgium combined are 10"
+    },
+    {
+     "t": 107.97,
+     "te": 111.69,
+     "lane": "narration",
+     "text": "times more than the incidents that have resulted in such a bad image for"
+    },
+    {
+     "t": 112.08,
+     "te": 116.52,
+     "lane": "narration",
+     "text": "Egypt through the media at present surely make supper on three and a half"
+    },
+    {
+     "t": 116.55,
+     "te": 121.31,
+     "lane": "narration",
+     "text": "percent of the country's revenue compared to five percent before the revolution penina"
+    },
+    {
+     "t": 122.31,
+     "te": 122.73,
+     "lane": "narration",
+     "text": "caribe 50"
+    }
+   ],
+   "raw_format": "jsonl line",
+   "raw": {
+    "denoised": [
+     {
+      "noisyasr": "a blessing in disguise for Egypt with the unpopular move of closing the currency now being touted as a success but it's still too early to celebrate as it will take time to revive the budget economy some like Egyptian billionaire semester worries or however preaching caution whether it goes down twenty percent o goes up another twenty percent it doesn't matter but this means there is a market with supply and demand meeting somehow and that is the crucial point where you say the flotation has been successful modern six years of political shamu have scared of investors and tourists a major blue came in 2015 when Islamic state brought down a Russian airliner over the Sinai Peninsula Russia suspended all flights to Egypt and if you have to restore them those in the tourism industry have their opinions as to why so these are political decisions really packaged in in other excuses and I think even with the Russians it's a political decision that needs to be taken so this is a hundred percent up to the top price of both countries to iron out whatever differences and get the ball rolling again because it's a sad situation for us you know but a government and parties with vested interests have been trying their best to guide the tourism industry confidence is really all about marketing that's why I repeated the word three times we just need to spend a lot more trying to initially this bad image that was falsely spread I mean at the end of the day we've had in the last 23 years in France more dead tourists than we've had in 20 years in Egypt and the number of incidents in Germany in France in Belgium combined are 10 times more than the incidents that have resulted in such a bad image for Egypt through the media at present surely make supper on three and a half percent of the country's revenue compared to five percent before the revolution penina caribe 50",
+      "eos_token": 50266,
+      "cleanasr": "A blessing in disguise for Egypt, with the unpopular move of closing the currency now being touted as a success, but it's still too early to celebrate as it will take time to revive the budget economy. Some, like Egyptian billionaire Meri Sor has warned or however preaching caution, whether it goes down, twenty percent or goes up another twenty percent. It doesn't matter. But this means there is a market with supply and demand meeting somehow, and that is the crucial point where you say the flotation has been successful. Modern six years of political instability have scared investors and tourists. A major blue flag came in 2015 when Islamic State brought down a Russian airliner over the Sinai Peninsula. Russia suspended all flights to Egypt, and if you have to restore them, those in the tourism industry have their opinions as to why so. These are political decisions really packaged in in other excuses. And I think even with the Russians it's a political decision that needs to be taken, so this is a hundred percent up to the top price of both countries to iron out whatever differences and get the ball rolling again, because it's a sad situation for us, you know. But a government and parties with vested interests have been trying their best to guide the tourism industry. Confidence is really all about marketing, that's why I repeated the word three times. We just need to spend a lot more trying to prevent this bad image that was falsely spread. At the end of the day we've had in the last 23 years in France more dead tourists than we've had in 20 years in Egypt, and the number of incidents in Germany in France in Belgium combined are 10 times more than the incidents that have resulted in such a bad image for Egypt through the media at present. Surely make supper on three and a half percent of the country's revenue compared to five percent before the revolution. Penina Caribe, 50",
+      "top_p": 0.94,
+      "ctx_ppl": 84.42250061035156,
+      "model_name": "noisifytext_nov17_2020_medium"
+     }
+    ],
+    "info": {
+     "id": "gzDjblPtOzw",
+     "title": "Cautious optimism as currency floatation boosts Egyptian economy",
+     "thumbnails": [
+      {
+       "height": 94,
+       "url": "https://i.ytimg.com/vi/gzDjblPtOzw/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCm-cwDL9SeN4_AX2snF9LirA6wlg",
+       "width": 168,
+       "resolution": "168x94",
+       "id": "0"
+      },
+      "…[truncated 4 more items]"
+     ],
+     "description": "Floating the pound currency can already be declared a success, but it will take time for investment flows to return and revive its battered economy. This according to Egyptian construction tycoon and billionaire Samih Sawiris",
+     "upload_date": "20170225",
+     "uploader": "CGTN Africa",
+     "uploader_id": "CCTVAFRICALIVE",
+     "uploader_url": "http://www.youtube.com/user/CCTVAFRICALIVE",
+     "channel_id": "UCMeYPU1YfXjxsUa6QXWsfjg",
+     "channel_url": "https://www.youtube.com/channel/UCMeYPU1YfXjxsUa6QXWsfjg",
+     "duration": 125,
+     "view_count": 80,
+     "average_rating": 0.0,
+     "age_limit": 0,
+     "webpage_url": "https://www.youtube.com/watch?v=gzDjblPtOzw",
+     "categories": [
+      "News & Politics"
+     ],
+     "tags": [
+      "Africa",
+      "News",
+      "CGTN Africa",
+      "Egypt",
+      "Pound",
+      "Currency",
+      "money market"
+     ],
+     "is_live": null,
+     "subtitles": {},
+     "like_count": 0,
+     "dislike_count": 0,
+     "channel": null,
+     "extractor": "youtube",
+     "webpage_url_basename": "gzDjblPtOzw",
+     "extractor_key": "Youtube",
+     "playlist": null,
+     "playlist_index": null,
+     "thumbnail": "https://i.ytimg.com/vi_webp/gzDjblPtOzw/maxresdefault.webp",
+     "display_id": "gzDjblPtOzw",
+     "asr": 44100,
+     "filesize": 6547426,
+     "format_id": "18",
+     "format_note": "360p",
+     "fps": 25,
+     "height": 360,
+     "quality": 2,
+     "tbr": 420.464,
+     "width": 640,
+     "ext": "mp4",
+     "vcodec": "avc1.42001E",
+     "acodec": "mp4a.40.2",
+     "format": "18 - 640x360 (360p)",
+     "protocol": "https",
+     "fulltitle": "Cautious optimism as currency floatation boosts Egyptian economy",
+     "_filename": "videos/gzDjblPtOzw.mp4",
+     "_server_used": "rowandl4",
+     "_ids_fn": "video_ids_quality_channels_from_2019.csv",
+     "_words_per_30s": [
+      88,
+      83,
+      82,
+      81,
+      5
+     ],
+     "_avg_cosine_sim": 0.5240531762441,
+     "_num_coco_objects_expectation": 2.9407663345336914,
+     "_num_bpe_tokens_raw": 351
+    },
+    "subtitles": [
+     {
+      "word": "a",
+      "time": 0.0
+     },
+     {
+      "word": "blessing",
+      "time": 0.41
+     },
+     {
+      "word": "in",
+      "time": 1.41
+     },
+     {
+      "word": "disguise",
+      "time": 1.65
+     },
+     {
+      "word": "for",
+      "time": 1.6800000000000002
+     },
+     {
+      "word": "Egypt",
+      "time": 2.25
+     },
+     {
+      "word": "with",
+      "time": 2.79
+     },
+     {
+      "word": "the",
+      "time": 3.09
+     },
+     {
+      "word": "unpopular",
+      "time": 3.12
+     },
+     {
+      "word": "move",
+      "time": 3.7800000000000002
+     },
+     {
+      "word": "of",
+      "time": 4.02
+     },
+     {
+      "word": "closing",
+      "time": 4.2
+     },
+     {
+      "word": "the",
+      "time": 4.589
+     },
+     {
+      "word": "currency",
+      "time": 4.62
+     },
+     {
+      "word": "now",
+      "time": 5.25
+     },
+     {
+      "word": "being",
+      "time": 5.73
+     },
+     {
+      "word": "touted",
+      "time": 6.0
+     },
+     {
+      "word": "as",
+      "time": 6.21
+     },
+     {
+      "word": "a",
+      "time": 6.569
+     },
+     {
+      "word": "success",
+      "time": 6.66
+     },
+     {
+      "word": "but",
+      "time": 7.23
+     },
+     {
+      "word": "it's",
+      "time": 7.859
+     },
+     {
+      "word": "still",
+      "time": 7.98
+     },
+     {
+      "word": "too",
+      "time": 8.189
+     },
+     {
+      "word": "early",
+      "time": 8.429
+     },
+     {
+      "word": "to",
+      "time": 8.46
+     },
+     {
+      "word": "celebrate",
+      "time": 8.97
+     },
+     {
+      "word": "as",
+      "time": 9.179
+     },
+     {
+      "word": "it",
+      "time": 9.929
+     },
+     {
+      "word": "will",
+      "time": 10.11
+     },
+     {
+      "word": "take",
+      "time": 10.32
+     },
+     {
+      "word": "time",
+      "time": 10.559
+     },
+     {
+      "word": "to",
+      "time": 10.8
+     },
+     {
+      "word": "revive",
+      "time": 11.099
+     },
+     {
+      "word": "the",
+      "time": 11.37
+     },
+     {
+      "word": "budget",
+      "time": 11.519
+     },
+     {
+      "word": "economy",
+      "time": 11.88
+     },
+     {
+      "word": "some",
+      "time": 12.389
+     },
+     {
+      "word": "like",
+      "time": 12.99
+     },
+     {
+      "word": "Egyptian",
+      "time": 13.29
+     },
+     {
+      "word": "billionaire",
+      "time": 13.799
+     },
+     {
+      "word": "semester",
+      "time": 14.009
+     },
+     {
+      "word": "worries",
+      "time": 14.849
+     },
+     {
+      "word": "or",
+      "time": 15.179
+     },
+     {
+      "word": "however",
+      "time": 15.54
+     },
+     {
+      "word": "preaching",
+      "time": 15.809
+     },
+     {
+      "word": "caution",
+      "time": 16.529
+     },
+     {
+      "word": "whether",
+      "time": 17.0
+     },
+     {
+      "word": "it",
+      "time": 18.0
+     },
+     {
+      "word": "goes",
+      "time": 18.18
+     },
+     {
+      "word": "down",
+      "time": 18.3
+     },
+     {
+      "word": "twenty",
+      "time": 18.51
+     },
+     {
+      "word": "percent",
+      "time": 18.93
+     },
+     {
+      "word": "o",
+      "time": 19.23
+     },
+     {
+      "word": "goes",
+      "time": 19.38
+     },
+     {
+      "word": "up",
+      "time": 19.59
+     },
+     {
+      "word": "another",
+      "time": 19.77
+     },
+     {
+      "word": "twenty",
+      "time": 20.279
+     },
+     {
+      "word": "percent",
+      "time": 20.76
+     },
+     {
+      "word": "it",
+      "time": 21.06
+     },
+     {
+      "word": "doesn't",
+      "time": 21.3
+     },
+     {
+      "word": "matter",
+      "time": 21.63
+     },
+     {
+      "word": "but",
+      "time": 21.75
+     },
+     {
+      "word": "this",
+      "time": 22.05
+     },
+     {
+      "word": "means",
+      "time": 22.199
+     },
+     {
+      "word": "there",
+      "time": 22.439
+     },
+     {
+      "word": "is",
+      "time": 22.59
+     },
+     {
+      "word": "a",
+      "time": 22.769
+     },
+     {
+      "word": "market",
+      "time": 22.8
+     },
+     {
+      "word": "with",
+      "time": 23.279
+     },
+     {
+      "word": "supply",
+      "time": 23.82
+     },
+     {
+      "word": "and",
+      "time": 24.21
+     },
+     {
+      "word": "demand",
+      "time": 24.39
+     },
+     {
+      "word": "meeting",
+      "time": 24.51
+     },
+     {
+      "word": "somehow",
+      "time": 25.14
+     },
+     {
+      "word": "and",
+      "time": 25.71
+     },
+     {
+      "word": "that",
+      "time": 25.98
+     },
+     {
+      "word": "is",
+      "time": 26.58
+     },
+     {
+      "word": "the",
+      "time": 26.76
+     },
+     {
+      "word": "crucial",
+      "time": 26.939
+     },
+     {
+      "word": "point",
+      "time": 27.18
+     },
+     {
+      "word": "where",
+      "time": 27.39
+     },
+     {
+      "word": "you",
+      "time": 28.05
+     },
+     {
+      "word": "say",
+      "time": 28.199
+     },
+     {
+      "word": "the",
+      "time": 28.619
+     },
+     {
+      "word": "flotation",
+      "time": 29.099
+     },
+     {
+      "word": "has",
+      "time": 29.73
+     },
+     {
+      "word": "been",
+      "time": 29.91
+     },
+     {
+      "word": "successful",
+      "time": 30.599
+     },
+     {
+      "word": "modern",
+      "time": 31.279
+     },
+     {
+      "word": "six",
+      "time": 32.279
+     },
+     {
+      "word": "years",
+      "time": 32.55
+     },
+     {
+      "word": "of",
+      "time": 32.85
+     },
+     {
+      "word": "political",
+      "time": 33.0
+     },
+     {
+      "word": "shamu",
+      "time": 33.21
+     },
+     {
+      "word": "have",
+      "time": 33.719
+     },
+     {
+      "word": "scared",
+      "time": 34.079
+     },
+     {
+      "word": "of",
+      "time": 34.44
+     },
+     {
+      "word": "investors",
+      "time": 34.59
+     },
+     {
+      "word": "and",
+      "time": 35.19
+     },
+     {
+      "word": "tourists",
+      "time": 35.34
+     },
+     {
+      "word": "a",
+      "time": 35.88
+     },
+     {
+      "word": "major",
+      "time": 36.059
+     },
+     {
+      "word": "blue",
+      "time": 36.54
+     },
+     {
+      "word": "came",
+      "time": 36.809
+     },
+     {
+      "word": "in",
+      "time": 37.11
+     },
+     {
+      "word": "2015",
+      "time": 37.23
+     },
+     {
+      "word": "when",
+      "time": 37.92
+     },
+     {
+      "word": "Islamic",
+      "time": 38.37
+     },
+     {
+      "word": "state",
+      "time": 38.79
+     },
+     {
+      "word": "brought",
+      "time": 39.059
+     },
+     {
+      "word": "down",
+      "time": 39.3
+     },
+     {
+      "word": "a",
+      "time": 39.51
+     },
+     {
+      "word": "Russian",
+      "time": 39.719
+     },
+     {
+      "word": "airliner",
+      "time": 39.75
+     },
+     {
+      "word": "over",
+      "time": 40.559
+     },
+     {
+      "word": "the",
+      "time": 41.16
+     },
+     {
+      "word": "Sinai",
+      "time": 41.28
+     },
+     {
+      "word": "Peninsula",
+      "time": 41.64
+     },
+     {
+      "word": "Russia",
+      "time": 41.87
+     },
+     {
+      "word": "suspended",
+      "time": 42.87
+     },
+     {
+      "word": "all",
+      "time": 43.59
+     },
+     {
+      "word": "flights",
+      "time": 43.739
+     },
+     {
+      "word": "to",
+      "time": 44.1
+     },
+     {
+      "word": "Egypt",
+      "time": 44.309
+     },
+     {
+      "word": "and",
+      "time": 44.7
+     },
+     {
+      "word": "if",
+      "time": 44.85
+     },
+     {
+      "word": "you",
+      "time": 45.149
+     },
+     {
+      "word": "have",
+      "time": 45.27
+     },
+     {
+      "word": "to",
+      "time": 45.36
+     },
+     {
+      "word": "restore",
+      "time": 45.48
+     },
+     {
+      "word": "them",
+      "time": 45.87
+     },
+     {
+      "word": "those",
+      "time": 46.079
+     },
+     {
+      "word": "in",
+      "time": 46.649
+     },
+     {
+      "word": "the",
+      "time": 46.77
+     },
+     {
+      "word": "tourism",
+      "time": 46.86
+     },
+     {
+      "word": "industry",
+      "time": 47.039
+     },
+     {
+      "word": "have",
+      "time": 47.46
+     },
+     {
+      "word": "their",
+      "time": 48.03
+     },
+     {
+      "word": "opinions",
+      "time": 48.21
+     },
+     {
+      "word": "as",
+      "time": 48.66
+     },
+     {
+      "word": "to",
+      "time": 48.93
+     },
+     {
+      "word": "why",
+      "time": 48.96
+     },
+     {
+      "word": "so",
+      "time": 49.35
+     },
+     {
+      "word": "these",
+      "time": 50.19
+     },
+     {
+      "word": "are",
+      "time": 50.28
+     },
+     {
+      "word": "political",
+      "time": 50.34
+     },
+     {
+      "word": "decisions",
+      "time": 51.0
+     },
+     {
+      "word": "really",
+      "time": 51.69
+     },
+     {
+      "word": "packaged",
+      "time": 51.98
+     },
+     {
+      "word": "in",
+      "time": 52.98
+     },
+     {
+      "word": "in",
+      "time": 53.28
+     },
+     {
+      "word": "other",
+      "time": 53.699
+     },
+     {
+      "word": "excuses",
+      "time": 54.3
+     },
+     {
+      "word": "and",
+      "time": 55.14
+     },
+     {
+      "word": "I",
+      "time": 55.35
+     },
+     {
+      "word": "think",
+      "time": 55.89
+     },
+     {
+      "word": "even",
+      "time": 56.129
+     },
+     {
+      "word": "with",
+      "time": 56.43
+     },
+     {
+      "word": "the",
+      "time": 56.55
+     },
+     {
+      "word": "Russians",
+      "time": 56.699
+     },
+     {
+      "word": "it's",
+      "time": 57.059
+     },
+     {
+      "word": "a",
+      "time": 57.3
+     },
+     {
+      "word": "political",
+      "time": 57.449
+     },
+     {
+      "word": "decision",
+      "time": 57.719
+     },
+     {
+      "word": "that",
+      "time": 58.26
+     },
+     {
+      "word": "needs",
+      "time": 58.559
+     },
+     {
+      "word": "to",
+      "time": 58.71
+     },
+     {
+      "word": "be",
+      "time": 58.98
+     },
+     {
+      "word": "taken",
+      "time": 59.16
+     },
+     {
+      "word": "so",
+      "time": 59.55
+     },
+     {
+      "word": "this",
+      "time": 60.059
+     },
+     {
+      "word": "is",
+      "time": 60.66
+     },
+     {
+      "word": "a",
+      "time": 60.84
+     },
+     {
+      "word": "hundred",
+      "time": 60.87
+     },
+     {
+      "word": "percent",
+      "time": 61.53
+     },
+     {
+      "word": "up",
+      "time": 61.649
+     },
+     {
+      "word": "to",
+      "time": 62.129
+     },
+     {
+      "word": "the",
+      "time": 62.399
+     },
+     {
+      "word": "top",
+      "time": 62.579
+     },
+     {
+      "word": "price",
+      "time": 63.51
+     },
+     {
+      "word": "of",
+      "time": 63.809
+     },
+     {
+      "word": "both",
+      "time": 64.14
+     },
+     {
+      "word": "countries",
+      "time": 64.65
+     },
+     {
+      "word": "to",
+      "time": 64.949
+     },
+     {
+      "word": "iron",
+      "time": 65.489
+     },
+     {
+      "word": "out",
+      "time": 66.119
+     },
+     {
+      "word": "whatever",
+      "time": 66.45
+     },
+     {
+      "word": "differences",
+      "time": 66.72
+     },
+     {
+      "word": "and",
+      "time": 67.53
+     },
+     {
+      "word": "get",
+      "time": 67.74
+     },
+     {
+      "word": "the",
+      "time": 68.4
+     },
+     {
+      "word": "ball",
+      "time": 68.58
+     },
+     {
+      "word": "rolling",
+      "time": 68.76
+     },
+     {
+      "word": "again",
+      "time": 69.24
+     },
+     {
+      "word": "because",
+      "time": 69.36
+     },
+     {
+      "word": "it's",
+      "time": 69.9
+     },
+     {
+      "word": "a",
+      "time": 70.47
+     },
+     {
+      "word": "sad",
+      "time": 71.159
+     },
+     {
+      "word": "situation",
+      "time": 71.43
+     },
+     {
+      "word": "for",
+      "time": 71.76
+     },
+     {
+      "word": "us",
+      "time": 72.36
+     },
+     {
+      "word": "you",
+      "time": 72.39
+     },
+     {
+      "word": "know",
+      "time": 72.63
+     },
+     {
+      "word": "but",
+      "time": 72.75
+     },
+     {
+      "word": "a",
+      "time": 73.049
+     },
+     {
+      "word": "government",
+      "time": 73.08
+     },
+     {
+      "word": "and",
+      "time": 73.53
+     },
+     {
+      "word": "parties",
+      "time": 73.68
+     },
+     {
+      "word": "with",
+      "time": 74.13
+     },
+     {
+      "word": "vested",
+      "time": 74.31
+     },
+     {
+      "word": "interests",
+      "time": 74.64
+     },
+     {
+      "word": "have",
+      "time": 75.119
+     },
+     {
+      "word": "been",
+      "time": 75.24
+     },
+     {
+      "word": "trying",
+      "time": 75.299
+     },
+     {
+      "word": "their",
+      "time": 75.689
+     },
+     {
+      "word": "best",
+      "time": 75.93
+     },
+     {
+      "word": "to",
+      "time": 75.96
+     },
+     {
+      "word": "guide",
+      "time": 76.32
+     },
+     {
+      "word": "the",
+      "time": 76.56
+     },
+     {
+      "word": "tourism",
+      "time": 76.71
+     },
+     {
+      "word": "industry",
+      "time": 77.189
+     },
+     {
+      "word": "confidence",
+      "time": 77.28
+     },
+     {
+      "word": "is",
+      "time": 78.24
+     },
+     {
+      "word": "really",
+      "time": 78.36
+     },
+     {
+      "word": "all",
+      "time": 78.72
+     },
+     {
+      "word": "about",
+      "time": 78.9
+     },
+     {
+      "word": "marketing",
+      "time": 78.93
+     },
+     {
+      "word": "that's",
+      "time": 79.47
+     },
+     {
+      "word": "why",
+      "time": 79.83
+     },
+     {
+      "word": "I",
+      "time": 79.95
+     },
+     {
+      "word": "repeated",
+      "time": 79.979
+     },
+     {
+      "word": "the",
+      "time": 80.43
+     },
+     {
+      "word": "word",
+      "time": 80.52
+     },
+     {
+      "word": "three",
+      "time": 80.67
+     },
+     {
+      "word": "times",
+      "time": 80.909
+     },
+     {
+      "word": "we",
+      "time": 81.15
+     },
+     {
+      "word": "just",
+      "time": 81.54
+     },
+     {
+      "word": "need",
+      "time": 81.869
+     },
+     {
+      "word": "to",
+      "time": 82.2
+     },
+     {
+      "word": "spend",
+      "time": 82.5
+     },
+     {
+      "word": "a",
+      "time": 82.979
+     },
+     {
+      "word": "lot",
+      "time": 83.39
+     },
+     {
+      "word": "more",
+      "time": 84.39
+     },
+     {
+      "word": "trying",
+      "time": 84.83
+     },
+     {
+      "word": "to",
+      "time": 85.83
+     },
+     {
+      "word": "initially",
+      "time": 86.21
+     },
+     {
+      "word": "this",
+      "time": 87.21
+     },
+     {
+      "word": "bad",
+      "time": 87.96
+     },
+     {
+      "word": "image",
+      "time": 88.29
+     },
+     {
+      "word": "that",
+      "time": 88.799
+     },
+     {
+      "word": "was",
+      "time": 89.1
+     },
+     {
+      "word": "falsely",
+      "time": 89.28
+     },
+     {
+      "word": "spread",
+      "time": 90.53
+     },
+     {
+      "word": "I",
+      "time": 91.53
+     },
+     {
+      "word": "mean",
+      "time": 91.68
+     },
+     {
+      "word": "at",
+      "time": 91.829
+     },
+     {
+      "word": "the",
+      "time": 91.979
+     },
+     {
+      "word": "end",
+      "time": 92.1
+     },
+     {
+      "word": "of",
+      "time": 92.13
+     },
+     {
+      "word": "the",
+      "time": 92.34
+     },
+     {
+      "word": "day",
+      "time": 92.43
+     },
+     {
+      "word": "we've",
+      "time": 92.579
+     },
+     {
+      "word": "had",
+      "time": 93.06
+     },
+     {
+      "word": "in",
+      "time": 93.09
+     },
+     {
+      "word": "the",
+      "time": 93.63
+     },
+     {
+      "word": "last",
+      "time": 94.32
+     },
+     {
+      "word": "23",
+      "time": 94.35
+     },
+     {
+      "word": "years",
+      "time": 95.189
+     },
+     {
+      "word": "in",
+      "time": 95.22
+     },
+     {
+      "word": "France",
+      "time": 96.5
+     },
+     {
+      "word": "more",
+      "time": 97.729
+     },
+     {
+      "word": "dead",
+      "time": 98.729
+     },
+     {
+      "word": "tourists",
+      "time": 99.329
+     },
+     {
+      "word": "than",
+      "time": 100.2
+     },
+     {
+      "word": "we've",
+      "time": 100.47
+     },
+     {
+      "word": "had",
+      "time": 100.71
+     },
+     {
+      "word": "in",
+      "time": 100.74
+     },
+     {
+      "word": "20",
+      "time": 101.009
+     },
+     {
+      "word": "years",
+      "time": 101.31
+     },
+     {
+      "word": "in",
+      "time": 101.579
+     },
+     {
+      "word": "Egypt",
+      "time": 101.79
+     },
+     {
+      "word": "and",
+      "time": 101.88
+     },
+     {
+      "word": "the",
+      "time": 102.24
+     },
+     {
+      "word": "number",
+      "time": 102.299
+     },
+     {
+      "word": "of",
+      "time": 103.17
+     },
+     {
+      "word": "incidents",
+      "time": 103.29
+     },
+     {
+      "word": "in",
+      "time": 103.799
+     },
+     {
+      "word": "Germany",
+      "time": 104.009
+     },
+     {
+      "word": "in",
+      "time": 104.49
+     },
+     {
+      "word": "France",
+      "time": 104.67
+     },
+     {
+      "word": "in",
+      "time": 104.7
+     },
+     {
+      "word": "Belgium",
+      "time": 105.39
+     },
+     {
+      "word": "combined",
+      "time": 105.899
+     },
+     {
+      "word": "are",
+      "time": 106.68
+     },
+     {
+      "word": "10",
+      "time": 107.009
+     },
+     {
+      "word": "times",
+      "time": 107.97
+     },
+     {
+      "word": "more",
+      "time": 108.24
+     },
+     {
+      "word": "than",
+      "time": 108.39
+     },
+     {
+      "word": "the",
+      "time": 108.57
+     },
+     {
+      "word": "incidents",
+      "time": 108.869
+     },
+     {
+      "word": "that",
+      "time": 109.439
+     },
+     {
+      "word": "have",
+      "time": 109.68
+     },
+     {
+      "word": "resulted",
+      "time": 109.92
+     },
+     {
+      "word": "in",
+      "time": 110.159
+     },
+     {
+      "word": "such",
+      "time": 110.61
+     },
+     {
+      "word": "a",
+      "time": 111.0
+     },
+     {
+      "word": "bad",
+      "time": 111.03
+     },
+     {
+      "word": "image",
+      "time": 111.39
+     },
+     {
+      "word": "for",
+      "time": 111.689
+     },
+     {
+      "word": "Egypt",
+      "time": 112.079
+     },
+     {
+      "word": "through",
+      "time": 112.439
+     },
+     {
+      "word": "the",
+      "time": 113.28
+     },
+     {
+      "word": "media",
+      "time": 113.46
+     },
+     {
+      "word": "at",
+      "time": 113.759
+     },
+     {
+      "word": "present",
+      "time": 114.42
+     },
+     {
+      "word": "surely",
+      "time": 114.72
+     },
+     {
+      "word": "make",
+      "time": 115.5
+     },
+     {
+      "word": "supper",
+      "time": 115.68
+     },
+     {
+      "word": "on",
+      "time": 116.009
+     },
+     {
+      "word": "three",
+      "time": 116.04
+     },
+     {
+      "word": "and",
+      "time": 116.369
+     },
+     {
+      "word": "a",
+      "time": 116.49
+     },
+     {
+      "word": "half",
+      "time": 116.52
+     },
+     {
+      "word": "percent",
+      "time": 116.549
+     },
+     {
+      "word": "of",
+      "time": 116.82
+     },
+     {
+      "word": "the",
+      "time": 117.299
+     },
+     {
+      "word": "country's",
+      "time": 117.42
+     },
+     {
+      "word": "revenue",
+      "time": 117.78
+     },
+     {
+      "word": "compared",
+      "time": 118.229
+     },
+     {
+      "word": "to",
+      "time": 118.95
+     },
+     {
+      "word": "five",
+      "time": 119.189
+     },
+     {
+      "word": "percent",
+      "time": 119.369
+     },
+     {
+      "word": "before",
+      "time": 119.82
+     },
+     {
+      "word": "the",
+      "time": 120.479
+     },
+     {
+      "word": "revolution",
+      "time": 120.689
+     },
+     {
+      "word": "penina",
+      "time": 121.31
+     },
+     {
+      "word": "caribe",
+      "time": 122.31
+     },
+     {
+      "word": "50",
+      "time": 122.729
+     }
+    ],
+    "_te": 0.07828950881958008
+   }
+  },
+  {
+   "title": "7UkhvOHaxuA: Freesoloing a Monstrous 5.10 in Shasta | The Sufferfest with Alex Honnold and Cedar Wright, Ep. 3 — 231 timed words, 158 s",
+   "video_ref": "YouTube 7UkhvOHaxuA",
+   "duration_s": 158,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 20.75,
+     "te": 20.75,
+     "lane": "narration",
+     "text": "our"
+    },
+    {
+     "t": 21.75,
+     "te": 24.87,
+     "lane": "narration",
+     "text": "objective on this graph is to is to climb all the 49ers in California"
+    },
+    {
+     "t": 25.38,
+     "te": 26.46,
+     "lane": "narration",
+     "text": "all the 40,000 fees we're"
+    },
+    {
+     "t": 27.42,
+     "te": 28.02,
+     "lane": "narration",
+     "text": "trying to do them by bicycle"
+    },
+    {
+     "t": 29.54,
+     "te": 29.54,
+     "lane": "narration",
+     "text": "my"
+    },
+    {
+     "t": 30.54,
+     "te": 31.22,
+     "lane": "narration",
+     "text": "very old climbing"
+    },
+    {
+     "t": 32.22,
+     "te": 36.33,
+     "lane": "narration",
+     "text": "mentor and friend Shawn Larry has popped on the scene there is the man"
+    },
+    {
+     "t": 36.48,
+     "te": 36.75,
+     "lane": "narration",
+     "text": "the myth the legend"
+    },
+    {
+     "t": 36.75,
+     "te": 39.92,
+     "lane": "silence",
+     "text": "no speech for 3.2 s"
+    },
+    {
+     "t": 39.92,
+     "te": 39.92,
+     "lane": "narration",
+     "text": "rocking"
+    },
+    {
+     "t": 40.92,
+     "te": 43.65,
+     "lane": "narration",
+     "text": "up the mountain morning light in the temple crag"
+    },
+    {
+     "t": 44.81,
+     "te": 44.81,
+     "lane": "narration",
+     "text": "alive"
+    },
+    {
+     "t": 45.81,
+     "te": 50.15,
+     "lane": "narration",
+     "text": "the 49ers in California have amazing technical routes up their faces and so that"
+    },
+    {
+     "t": 51.15,
+     "te": 53.7,
+     "lane": "narration",
+     "text": "was one of our big goals with the sufferfest was not just to summit"
+    },
+    {
+     "t": 54.24,
+     "te": 57.15,
+     "lane": "narration",
+     "text": "all the 14 errs but to some of them via technical routes up their"
+    },
+    {
+     "t": 57.36,
+     "te": 58.53,
+     "lane": "narration",
+     "text": "steepest phases our ability"
+    },
+    {
+     "t": 59.49,
+     "te": 62.7,
+     "lane": "narration",
+     "text": "to climb without a rope or what climbers call free soloing really gave us"
+    },
+    {
+     "t": 62.88,
+     "te": 66.48,
+     "lane": "narration",
+     "text": "the freedom to be able to accomplish this mission without carrying ropes and a"
+    },
+    {
+     "t": 66.51,
+     "te": 69.51,
+     "lane": "narration",
+     "text": "bunch of other heavy equipment that would have definitely slowed us down and maybe"
+    },
+    {
+     "t": 69.66,
+     "te": 70.68,
+     "lane": "narration",
+     "text": "even made this mission impossible"
+    },
+    {
+     "t": 70.68,
+     "te": 75.78,
+     "lane": "silence",
+     "text": "no speech for 5.1 s"
+    },
+    {
+     "t": 75.78,
+     "te": 79.02,
+     "lane": "narration",
+     "text": "climbing without a rope is one of the most dangerous forms of climbing there's"
+    },
+    {
+     "t": 79.56,
+     "te": 82.47,
+     "lane": "narration",
+     "text": "a Parma planning where a mistake is catastrophic"
+    },
+    {
+     "t": 82.47,
+     "te": 85.22,
+     "lane": "silence",
+     "text": "no speech for 2.8 s"
+    },
+    {
+     "t": 85.22,
+     "te": 85.22,
+     "lane": "narration",
+     "text": "gun"
+    },
+    {
+     "t": 86.22,
+     "te": 86.4,
+     "lane": "narration",
+     "text": "let's go"
+    },
+    {
+     "t": 86.4,
+     "te": 106.61,
+     "lane": "silence",
+     "text": "no speech for 20.2 s"
+    },
+    {
+     "t": 106.61,
+     "te": 107.39,
+     "lane": "narration",
+     "text": "nor pal"
+    },
+    {
+     "t": 107.39,
+     "te": 110.09,
+     "lane": "silence",
+     "text": "no speech for 2.7 s"
+    },
+    {
+     "t": 110.09,
+     "te": 110.09,
+     "lane": "narration",
+     "text": "favorite"
+    },
+    {
+     "t": 111.09,
+     "te": 113.39,
+     "lane": "narration",
+     "text": "peak was probably star like it's"
+    },
+    {
+     "t": 114.39,
+     "te": 117.18,
+     "lane": "narration",
+     "text": "such a small little sliver of"
+    },
+    {
+     "t": 117.18,
+     "te": 122.54,
+     "lane": "silence",
+     "text": "no speech for 5.4 s"
+    },
+    {
+     "t": 122.54,
+     "te": 123.47,
+     "lane": "narration",
+     "text": "Final Four teardown"
+    },
+    {
+     "t": 123.47,
+     "te": 127.82,
+     "lane": "silence",
+     "text": "no speech for 4.3 s"
+    },
+    {
+     "t": 127.82,
+     "te": 128.57,
+     "lane": "narration",
+     "text": "for the day all"
+    },
+    {
+     "t": 129.47,
+     "te": 131.14,
+     "lane": "narration",
+     "text": "right we are back in camp definitely"
+    },
+    {
+     "t": 132.14,
+     "te": 134.06,
+     "lane": "narration",
+     "text": "is worse for wear long hard journey but"
+    },
+    {
+     "t": 135.28,
+     "te": 135.28,
+     "lane": "narration",
+     "text": "you"
+    },
+    {
+     "t": 136.28,
+     "te": 139.22,
+     "lane": "narration",
+     "text": "know long hard journey these are the rewarding journeys in the end is just"
+    },
+    {
+     "t": 139.25,
+     "te": 139.88,
+     "lane": "narration",
+     "text": "the perseverance"
+    }
+   ],
+   "raw_format": "jsonl line",
+   "raw": {
+    "denoised": [
+     {
+      "noisyasr": "our objective on this graph is to is to climb all the 49ers in California all the 40,000 fees we're trying to do them by bicycle my very old climbing mentor and friend Shawn Larry has popped on the scene there is the man the myth the legend rocking up the mountain morning light in the temple crag alive the 49ers in California have amazing technical routes up their faces and so that was one of our big goals with the sufferfest was not just to summit all the 14 errs but to some of them via technical routes up their steepest phases our ability to climb without a rope or what climbers call free soloing really gave us the freedom to be able to accomplish this mission without carrying ropes and a bunch of other heavy equipment that would have definitely slowed us down and maybe even made this mission impossible climbing without a rope is one of the most dangerous forms of climbing there's a Parma planning where a mistake is catastrophic gun let's go nor pal favorite peak was probably star like it's such a small little sliver of Final Four teardown for the day all right we are back in camp definitely is worse for wear long hard journey but you know long hard journey these are the rewarding journeys in the end is just the perseverance",
+      "eos_token": 50266,
+      "cleanasr": "Our objective on this graph is to is to climb all the 49ers in California, all the 40,000 fees. We're trying to do them by bicycle. My very old climbing mentor and friend Shawn Larry has popped on the scene. There is the man, the myth, the legend rocking up the mountain morning light in the temple crag alive. The 49ers in California have amazing technical routes up their faces and so that was one of our big goals with the Sufferfest. Was not just to summit all the 14 errs but to climb some of them via technical routes up their steepest phases. Our ability to climb without a rope or what climbers call free soloing really gave us the freedom to be able to accomplish this mission without carrying ropes and a bunch of other heavy equipment that would have definitely slowed us down and maybe even made this mission impossible. Climbing without a rope is one of the most dangerous forms of climbing. There's a Parma planning where a mistake is catastrophic. No, let's go!! Nor Pal favorite peak was probably star like. It's such a small little sliver of Final Four teardown for the day. All right, we are back in camp. Definitely is worse for wear, long hard journey, but you know, long hard journey, these are the rewarding journeys in the end. Is just the perseverance.",
+      "top_p": 0.94,
+      "ctx_ppl": 149.80873107910156,
+      "model_name": "noisifytext_nov17_2020_medium"
+     }
+    ],
+    "info": {
+     "id": "7UkhvOHaxuA",
+     "title": "Freesoloing a Monstrous 5.10 in Shasta | The Sufferfest with Alex Honnold and Cedar Wright, Ep. 3",
+     "thumbnails": [
+      {
+       "height": 94,
+       "url": "https://i.ytimg.com/vi/7UkhvOHaxuA/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBhDPqT8ujN-lUFyheCr2omizg88A",
+       "width": 168,
+       "resolution": "168x94",
+       "id": "0"
+      },
+      "…[truncated 4 more items]"
+     ],
+     "description": "http://www.epictv.com\n\nJust when you thought The Sufferfest couldn't get any more hardcore, we find out that not only will Cedar Wright, Alex Honnold (and guest Sean Leary) be cycling between all their 14ers, they will be FREESOLOing the routes' technical lines as well. These guys are serious ...ly mental.\n\nAfter a bum-blistering 460 mile ride from Shasta, Honnold and Cedar are questioning the wisdom of trying to climb all of California's 14ers by bike.  They are exhausted and approaching the climbs unpsyched. \n\nBut then, their good friend Sean Leary meets them at the trailhead, bringing a muc…[truncated]",
+     "upload_date": "20140104",
+     "uploader": "EpicTV",
+     "uploader_id": "EpicTVadventure",
+     "uploader_url": "http://www.youtube.com/user/EpicTVadventure",
+     "channel_id": "UCFdWDF3q3R2AphJ1InJWMlg",
+     "channel_url": "https://www.youtube.com/channel/UCFdWDF3q3R2AphJ1InJWMlg",
+     "duration": 158,
+     "view_count": 44064,
+     "average_rating": 4.8911567,
+     "age_limit": 0,
+     "webpage_url": "https://www.youtube.com/watch?v=7UkhvOHaxuA",
+     "categories": [
+      "Sports"
+     ],
+     "tags": [
+      "sports",
+      "Freesoloing a Monstrous 5.10 in Shasta | The Sufferfest with Alex Honnold and Cedar Wright",
+      "Ep. 3",
+      "Rock Climbing (Sport)",
+      "Bouldering (Sport)",
+      "Climbing (Sport)",
+      "climbing videos",
+      "rock climbing videos",
+      "best climbing videos",
+      "hot climbing videos",
+      "epictv",
+      "Extreme Sport (Media Genre)"
+     ],
+     "is_live": null,
+     "subtitles": {},
+     "like_count": 143,
+     "dislike_count": 4,
+     "channel": null,
+     "extractor": "youtube",
+     "webpage_url_basename": "7UkhvOHaxuA",
+     "extractor_key": "Youtube",
+     "playlist": null,
+     "playlist_index": null,
+     "thumbnail": "https://i.ytimg.com/vi/7UkhvOHaxuA/maxresdefault.jpg",
+     "display_id": "7UkhvOHaxuA",
+     "asr": 44100,
+     "filesize": 12251288,
+     "format_id": "18",
+     "format_note": "360p",
+     "fps": 25,
+     "height": 360,
+     "quality": 2,
+     "tbr": 621.92,
+     "width": 640,
+     "ext": "mp4",
+     "vcodec": "avc1.42001E",
+     "acodec": "mp4a.40.2",
+     "format": "18 - 640x360 (360p)",
+     "protocol": "https",
+     "fulltitle": "Freesoloing a Monstrous 5.10 in Shasta | The Sufferfest with Alex Honnold and Cedar Wright, Ep. 3",
+     "_filename": "videos/7UkhvOHaxuA.mp4",
+     "_server_used": "ip-10-112-3-130",
+     "_ids_fn": "video_ids_quality_channels_v2.csv",
+     "_words_per_30s": [
+      27,
+      81,
+      69,
+      15,
+      39
+     ],
+     "_avg_cosine_sim": 0.6473658084869385,
+     "_num_coco_objects_expectation": 1.3271889686584473,
+     "_num_bpe_tokens_raw": 249
+    },
+    "subtitles": [
+     {
+      "word": "our",
+      "time": 20.75
+     },
+     {
+      "word": "objective",
+      "time": 21.75
+     },
+     {
+      "word": "on",
+      "time": 22.2
+     },
+     {
+      "word": "this",
+      "time": 22.32
+     },
+     {
+      "word": "graph",
+      "time": 22.35
+     },
+     {
+      "word": "is",
+      "time": 22.65
+     },
+     {
+      "word": "to",
+      "time": 22.86
+     },
+     {
+      "word": "is",
+      "time": 23.04
+     },
+     {
+      "word": "to",
+      "time": 23.73
+     },
+     {
+      "word": "climb",
+      "time": 23.88
+     },
+     {
+      "word": "all",
+      "time": 24.03
+     },
+     {
+      "word": "the",
+      "time": 24.21
+     },
+     {
+      "word": "49ers",
+      "time": 24.27
+     },
+     {
+      "word": "in",
+      "time": 24.72
+     },
+     {
+      "word": "California",
+      "time": 24.869
+     },
+     {
+      "word": "all",
+      "time": 25.38
+     },
+     {
+      "word": "the",
+      "time": 25.5
+     },
+     {
+      "word": "40,000",
+      "time": 25.59
+     },
+     {
+      "word": "fees",
+      "time": 26.28
+     },
+     {
+      "word": "we're",
+      "time": 26.46
+     },
+     {
+      "word": "trying",
+      "time": 27.42
+     },
+     {
+      "word": "to",
+      "time": 27.63
+     },
+     {
+      "word": "do",
+      "time": 27.689
+     },
+     {
+      "word": "them",
+      "time": 27.81
+     },
+     {
+      "word": "by",
+      "time": 27.93
+     },
+     {
+      "word": "bicycle",
+      "time": 28.02
+     },
+     {
+      "word": "my",
+      "time": 29.54
+     },
+     {
+      "word": "very",
+      "time": 30.54
+     },
+     {
+      "word": "old",
+      "time": 30.779
+     },
+     {
+      "word": "climbing",
+      "time": 31.22
+     },
+     {
+      "word": "mentor",
+      "time": 32.22
+     },
+     {
+      "word": "and",
+      "time": 32.7
+     },
+     {
+      "word": "friend",
+      "time": 32.82
+     },
+     {
+      "word": "Shawn",
+      "time": 32.94
+     },
+     {
+      "word": "Larry",
+      "time": 33.809
+     },
+     {
+      "word": "has",
+      "time": 34.02
+     },
+     {
+      "word": "popped",
+      "time": 34.29
+     },
+     {
+      "word": "on",
+      "time": 34.8
+     },
+     {
+      "word": "the",
+      "time": 34.92
+     },
+     {
+      "word": "scene",
+      "time": 34.98
+     },
+     {
+      "word": "there",
+      "time": 35.16
+     },
+     {
+      "word": "is",
+      "time": 35.82
+     },
+     {
+      "word": "the",
+      "time": 36.0
+     },
+     {
+      "word": "man",
+      "time": 36.33
+     },
+     {
+      "word": "the",
+      "time": 36.48
+     },
+     {
+      "word": "myth",
+      "time": 36.6
+     },
+     {
+      "word": "the",
+      "time": 36.72
+     },
+     {
+      "word": "legend",
+      "time": 36.75
+     },
+     {
+      "word": "rocking",
+      "time": 39.92
+     },
+     {
+      "word": "up",
+      "time": 40.92
+     },
+     {
+      "word": "the",
+      "time": 41.01
+     },
+     {
+      "word": "mountain",
+      "time": 41.16
+     },
+     {
+      "word": "morning",
+      "time": 41.61
+     },
+     {
+      "word": "light",
+      "time": 42.449
+     },
+     {
+      "word": "in",
+      "time": 42.66
+     },
+     {
+      "word": "the",
+      "time": 43.23
+     },
+     {
+      "word": "temple",
+      "time": 43.32
+     },
+     {
+      "word": "crag",
+      "time": 43.65
+     },
+     {
+      "word": "alive",
+      "time": 44.809
+     },
+     {
+      "word": "the",
+      "time": 45.809
+     },
+     {
+      "word": "49ers",
+      "time": 45.96
+     },
+     {
+      "word": "in",
+      "time": 46.379
+     },
+     {
+      "word": "California",
+      "time": 46.62
+     },
+     {
+      "word": "have",
+      "time": 47.25
+     },
+     {
+      "word": "amazing",
+      "time": 47.43
+     },
+     {
+      "word": "technical",
+      "time": 48.059
+     },
+     {
+      "word": "routes",
+      "time": 48.54
+     },
+     {
+      "word": "up",
+      "time": 48.87
+     },
+     {
+      "word": "their",
+      "time": 49.11
+     },
+     {
+      "word": "faces",
+      "time": 49.26
+     },
+     {
+      "word": "and",
+      "time": 49.47
+     },
+     {
+      "word": "so",
+      "time": 49.86
+     },
+     {
+      "word": "that",
+      "time": 50.15
+     },
+     {
+      "word": "was",
+      "time": 51.15
+     },
+     {
+      "word": "one",
+      "time": 51.33
+     },
+     {
+      "word": "of",
+      "time": 51.48
+     },
+     {
+      "word": "our",
+      "time": 51.51
+     },
+     {
+      "word": "big",
+      "time": 51.6
+     },
+     {
+      "word": "goals",
+      "time": 51.84
+     },
+     {
+      "word": "with",
+      "time": 51.87
+     },
+     {
+      "word": "the",
+      "time": 52.35
+     },
+     {
+      "word": "sufferfest",
+      "time": 52.44
+     },
+     {
+      "word": "was",
+      "time": 52.739
+     },
+     {
+      "word": "not",
+      "time": 53.13
+     },
+     {
+      "word": "just",
+      "time": 53.37
+     },
+     {
+      "word": "to",
+      "time": 53.64
+     },
+     {
+      "word": "summit",
+      "time": 53.7
+     },
+     {
+      "word": "all",
+      "time": 54.239
+     },
+     {
+      "word": "the",
+      "time": 54.36
+     },
+     {
+      "word": "14",
+      "time": 54.48
+     },
+     {
+      "word": "errs",
+      "time": 54.809
+     },
+     {
+      "word": "but",
+      "time": 54.96
+     },
+     {
+      "word": "to",
+      "time": 55.23
+     },
+     {
+      "word": "some",
+      "time": 55.59
+     },
+     {
+      "word": "of",
+      "time": 55.77
+     },
+     {
+      "word": "them",
+      "time": 55.86
+     },
+     {
+      "word": "via",
+      "time": 55.95
+     },
+     {
+      "word": "technical",
+      "time": 56.13
+     },
+     {
+      "word": "routes",
+      "time": 56.55
+     },
+     {
+      "word": "up",
+      "time": 56.85
+     },
+     {
+      "word": "their",
+      "time": 57.149
+     },
+     {
+      "word": "steepest",
+      "time": 57.36
+     },
+     {
+      "word": "phases",
+      "time": 57.69
+     },
+     {
+      "word": "our",
+      "time": 58.11
+     },
+     {
+      "word": "ability",
+      "time": 58.53
+     },
+     {
+      "word": "to",
+      "time": 59.489
+     },
+     {
+      "word": "climb",
+      "time": 59.52
+     },
+     {
+      "word": "without",
+      "time": 59.91
+     },
+     {
+      "word": "a",
+      "time": 60.239
+     },
+     {
+      "word": "rope",
+      "time": 60.27
+     },
+     {
+      "word": "or",
+      "time": 60.48
+     },
+     {
+      "word": "what",
+      "time": 60.69
+     },
+     {
+      "word": "climbers",
+      "time": 60.78
+     },
+     {
+      "word": "call",
+      "time": 61.11
+     },
+     {
+      "word": "free",
+      "time": 61.23
+     },
+     {
+      "word": "soloing",
+      "time": 61.5
+     },
+     {
+      "word": "really",
+      "time": 61.89
+     },
+     {
+      "word": "gave",
+      "time": 62.489
+     },
+     {
+      "word": "us",
+      "time": 62.7
+     },
+     {
+      "word": "the",
+      "time": 62.88
+     },
+     {
+      "word": "freedom",
+      "time": 63.09
+     },
+     {
+      "word": "to",
+      "time": 63.239
+     },
+     {
+      "word": "be",
+      "time": 63.75
+     },
+     {
+      "word": "able",
+      "time": 64.32
+     },
+     {
+      "word": "to",
+      "time": 64.379
+     },
+     {
+      "word": "accomplish",
+      "time": 64.5
+     },
+     {
+      "word": "this",
+      "time": 64.949
+     },
+     {
+      "word": "mission",
+      "time": 65.1
+     },
+     {
+      "word": "without",
+      "time": 65.25
+     },
+     {
+      "word": "carrying",
+      "time": 65.489
+     },
+     {
+      "word": "ropes",
+      "time": 65.88
+     },
+     {
+      "word": "and",
+      "time": 66.27
+     },
+     {
+      "word": "a",
+      "time": 66.479
+     },
+     {
+      "word": "bunch",
+      "time": 66.509
+     },
+     {
+      "word": "of",
+      "time": 66.66
+     },
+     {
+      "word": "other",
+      "time": 66.72
+     },
+     {
+      "word": "heavy",
+      "time": 66.869
+     },
+     {
+      "word": "equipment",
+      "time": 67.32
+     },
+     {
+      "word": "that",
+      "time": 67.41
+     },
+     {
+      "word": "would",
+      "time": 68.13
+     },
+     {
+      "word": "have",
+      "time": 68.28
+     },
+     {
+      "word": "definitely",
+      "time": 68.399
+     },
+     {
+      "word": "slowed",
+      "time": 68.67
+     },
+     {
+      "word": "us",
+      "time": 69.03
+     },
+     {
+      "word": "down",
+      "time": 69.149
+     },
+     {
+      "word": "and",
+      "time": 69.18
+     },
+     {
+      "word": "maybe",
+      "time": 69.509
+     },
+     {
+      "word": "even",
+      "time": 69.66
+     },
+     {
+      "word": "made",
+      "time": 69.81
+     },
+     {
+      "word": "this",
+      "time": 70.11
+     },
+     {
+      "word": "mission",
+      "time": 70.259
+     },
+     {
+      "word": "impossible",
+      "time": 70.68
+     },
+     {
+      "word": "climbing",
+      "time": 75.78
+     },
+     {
+      "word": "without",
+      "time": 76.35
+     },
+     {
+      "word": "a",
+      "time": 76.41
+     },
+     {
+      "word": "rope",
+      "time": 76.56
+     },
+     {
+      "word": "is",
+      "time": 76.65
+     },
+     {
+      "word": "one",
+      "time": 76.95
+     },
+     {
+      "word": "of",
+      "time": 77.1
+     },
+     {
+      "word": "the",
+      "time": 77.16
+     },
+     {
+      "word": "most",
+      "time": 77.25
+     },
+     {
+      "word": "dangerous",
+      "time": 77.37
+     },
+     {
+      "word": "forms",
+      "time": 77.97
+     },
+     {
+      "word": "of",
+      "time": 78.51
+     },
+     {
+      "word": "climbing",
+      "time": 78.63
+     },
+     {
+      "word": "there's",
+      "time": 79.02
+     },
+     {
+      "word": "a",
+      "time": 79.56
+     },
+     {
+      "word": "Parma",
+      "time": 79.89
+     },
+     {
+      "word": "planning",
+      "time": 80.61
+     },
+     {
+      "word": "where",
+      "time": 80.94
+     },
+     {
+      "word": "a",
+      "time": 81.57
+     },
+     {
+      "word": "mistake",
+      "time": 81.6
+     },
+     {
+      "word": "is",
+      "time": 82.2
+     },
+     {
+      "word": "catastrophic",
+      "time": 82.47
+     },
+     {
+      "word": "gun",
+      "time": 85.22
+     },
+     {
+      "word": "let's",
+      "time": 86.22
+     },
+     {
+      "word": "go",
+      "time": 86.4
+     },
+     {
+      "word": "nor",
+      "time": 106.61
+     },
+     {
+      "word": "pal",
+      "time": 107.39
+     },
+     {
+      "word": "favorite",
+      "time": 110.09
+     },
+     {
+      "word": "peak",
+      "time": 111.09
+     },
+     {
+      "word": "was",
+      "time": 111.36
+     },
+     {
+      "word": "probably",
+      "time": 111.93
+     },
+     {
+      "word": "star",
+      "time": 112.77
+     },
+     {
+      "word": "like",
+      "time": 113.07
+     },
+     {
+      "word": "it's",
+      "time": 113.39
+     },
+     {
+      "word": "such",
+      "time": 114.39
+     },
+     {
+      "word": "a",
+      "time": 114.9
+     },
+     {
+      "word": "small",
+      "time": 115.8
+     },
+     {
+      "word": "little",
+      "time": 116.61
+     },
+     {
+      "word": "sliver",
+      "time": 116.64
+     },
+     {
+      "word": "of",
+      "time": 117.18
+     },
+     {
+      "word": "Final",
+      "time": 122.54
+     },
+     {
+      "word": "Four",
+      "time": 123.29
+     },
+     {
+      "word": "teardown",
+      "time": 123.47
+     },
+     {
+      "word": "for",
+      "time": 127.82
+     },
+     {
+      "word": "the",
+      "time": 128.33
+     },
+     {
+      "word": "day",
+      "time": 128.42
+     },
+     {
+      "word": "all",
+      "time": 128.57
+     },
+     {
+      "word": "right",
+      "time": 129.47
+     },
+     {
+      "word": "we",
+      "time": 129.68
+     },
+     {
+      "word": "are",
+      "time": 129.979
+     },
+     {
+      "word": "back",
+      "time": 130.009
+     },
+     {
+      "word": "in",
+      "time": 130.25
+     },
+     {
+      "word": "camp",
+      "time": 130.729
+     },
+     {
+      "word": "definitely",
+      "time": 131.14
+     },
+     {
+      "word": "is",
+      "time": 132.14
+     },
+     {
+      "word": "worse",
+      "time": 132.23
+     },
+     {
+      "word": "for",
+      "time": 132.47
+     },
+     {
+      "word": "wear",
+      "time": 132.5
+     },
+     {
+      "word": "long",
+      "time": 133.01
+     },
+     {
+      "word": "hard",
+      "time": 133.79
+     },
+     {
+      "word": "journey",
+      "time": 134.0
+     },
+     {
+      "word": "but",
+      "time": 134.06
+     },
+     {
+      "word": "you",
+      "time": 135.28
+     },
+     {
+      "word": "know",
+      "time": 136.28
+     },
+     {
+      "word": "long",
+      "time": 136.43
+     },
+     {
+      "word": "hard",
+      "time": 136.79
+     },
+     {
+      "word": "journey",
+      "time": 137.0
+     },
+     {
+      "word": "these",
+      "time": 137.03
+     },
+     {
+      "word": "are",
+      "time": 137.33
+     },
+     {
+      "word": "the",
+      "time": 137.48
+     },
+     {
+      "word": "rewarding",
+      "time": 137.84
+     },
+     {
+      "word": "journeys",
+      "time": 138.23
+     },
+     {
+      "word": "in",
+      "time": 138.56
+     },
+     {
+      "word": "the",
+      "time": 138.77
+     },
+     {
+      "word": "end",
+      "time": 138.86
+     },
+     {
+      "word": "is",
+      "time": 139.01
+     },
+     {
+      "word": "just",
+      "time": 139.22
+     },
+     {
+      "word": "the",
+      "time": 139.25
+     },
+     {
+      "word": "perseverance",
+      "time": 139.88
+     }
+    ],
+    "_te": 0.14246034622192383
+   }
+  }
+ ]
+}
