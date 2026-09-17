@@ -1,0 +1,522 @@
+{
+ "slug": "assembly101",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://github.com/assembly-101/assembly101-mistake-detection/tree/main/annots (nusar-2021_action_both_9033-c02a_9033_user_id_2021-02-04_140532.csv, nusar-2021_action_both_9024-c11a_9024_user_id_2021-02-03_144917.csv)",
+  "Assembly101 coarse_labels (public Google Drive annotation folder): assembly_<same recording ids>.txt"
+ ],
+ "access_used": "open download",
+ "note": "Each example is one assembly recording's complete mistake-detection CSV (coarse attach/detach steps labelled correct / mistake / correction with a free-text remark; lanes 'step', 'mistake', 'correction') together with its complete coarse-action label file (lane 'action'). Both files count frames at 30 fps; the timeline divides by 30. No clip: the videos on Hugging Face sit behind an access gate our token is not on, and we did not accept the gate for the user.",
+ "examples": [
+  {
+   "title": "9033-c02a (toy with boom, arm and bucket): 9 mistakes (wrong order, wrong position, unnecessary detach) and 4 corrections — the README's example sequence",
+   "video_ref": "recordings/nusar-2021_action_both_9033-c02a_9033_user_id_2021-02-04_140532 (8 RGB + 4 mono egocentric HMC views)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 232.933,
+     "te": 241.9,
+     "lane": "action",
+     "text": "inspect chassis"
+    },
+    {
+     "t": 241.9,
+     "te": 260.567,
+     "lane": "action",
+     "text": "attach interior"
+    },
+    {
+     "t": 241.9,
+     "te": 260.567,
+     "lane": "step",
+     "text": "attach interior to/from chassis — correct"
+    },
+    {
+     "t": 260.567,
+     "te": 280.633,
+     "lane": "action",
+     "text": "screw chassis"
+    },
+    {
+     "t": 280.633,
+     "te": 291.2,
+     "lane": "action",
+     "text": "detach interior"
+    },
+    {
+     "t": 280.633,
+     "te": 291.2,
+     "lane": "mistake",
+     "text": "detach interior to/from chassis — mistake (shouldn't have happened)"
+    },
+    {
+     "t": 291.2,
+     "te": 304.6,
+     "lane": "action",
+     "text": "attach interior"
+    },
+    {
+     "t": 291.2,
+     "te": 304.6,
+     "lane": "step",
+     "text": "attach interior to/from chassis — correct"
+    },
+    {
+     "t": 304.6,
+     "te": 334.633,
+     "lane": "action",
+     "text": "screw chassis"
+    },
+    {
+     "t": 334.633,
+     "te": 345.167,
+     "lane": "action",
+     "text": "attach body"
+    },
+    {
+     "t": 334.633,
+     "te": 345.167,
+     "lane": "mistake",
+     "text": "attach body to/from chassis — mistake (wrong order)"
+    },
+    {
+     "t": 345.167,
+     "te": 358.3,
+     "lane": "action",
+     "text": "screw chassis"
+    },
+    {
+     "t": 358.3,
+     "te": 372.8,
+     "lane": "action",
+     "text": "attach cabin"
+    },
+    {
+     "t": 358.3,
+     "te": 372.8,
+     "lane": "mistake",
+     "text": "attach cabin to/from interior — mistake (previous one is mistake)"
+    },
+    {
+     "t": 372.8,
+     "te": 386.7,
+     "lane": "action",
+     "text": "inspect toy"
+    },
+    {
+     "t": 372.8,
+     "te": 386.7,
+     "lane": "correction",
+     "text": "interior cabin to/from interior — correction"
+    },
+    {
+     "t": 386.7,
+     "te": 395.467,
+     "lane": "action",
+     "text": "unscrew body"
+    },
+    {
+     "t": 386.7,
+     "te": 393.533,
+     "lane": "correction",
+     "text": "detach body to/from chassis — correction"
+    },
+    {
+     "t": 393.533,
+     "te": 395.467,
+     "lane": "step",
+     "text": "attach cabin to/from interior — correct"
+    },
+    {
+     "t": 395.467,
+     "te": 403.5,
+     "lane": "action",
+     "text": "attach body"
+    },
+    {
+     "t": 395.467,
+     "te": 403.5,
+     "lane": "step",
+     "text": "attach body to/from chassis — correct"
+    },
+    {
+     "t": 403.5,
+     "te": 420.5,
+     "lane": "action",
+     "text": "screw chassis"
+    },
+    {
+     "t": 420.5,
+     "te": 448.1,
+     "lane": "action",
+     "text": "attach roof"
+    },
+    {
+     "t": 420.5,
+     "te": 448.1,
+     "lane": "step",
+     "text": "attach roof to/from cabin — correct"
+    },
+    {
+     "t": 448.1,
+     "te": 481.7,
+     "lane": "action",
+     "text": "attach arm"
+    },
+    {
+     "t": 448.1,
+     "te": 469.933,
+     "lane": "step",
+     "text": "attach arm to/from bucket — correct"
+    },
+    {
+     "t": 469.933,
+     "te": 471.567,
+     "lane": "step",
+     "text": "attach arm to/from boom — correct"
+    },
+    {
+     "t": 481.7,
+     "te": 488.6,
+     "lane": "action",
+     "text": "attempt to attach excavator arm"
+    },
+    {
+     "t": 488.6,
+     "te": 524.3,
+     "lane": "action",
+     "text": "attach arm connector"
+    },
+    {
+     "t": 488.6,
+     "te": 524.3,
+     "lane": "mistake",
+     "text": "attach arm connector to/from chassis — mistake (wrong order)"
+    },
+    {
+     "t": 524.3,
+     "te": 549.667,
+     "lane": "action",
+     "text": "attempt to attach excavator arm"
+    },
+    {
+     "t": 549.667,
+     "te": 561.6,
+     "lane": "action",
+     "text": "detach arm connector"
+    },
+    {
+     "t": 549.667,
+     "te": 561.6,
+     "lane": "correction",
+     "text": "detach arm connector to/from chassis — correction"
+    },
+    {
+     "t": 561.6,
+     "te": 617.733,
+     "lane": "action",
+     "text": "attach arm connector"
+    },
+    {
+     "t": 561.6,
+     "te": 617.733,
+     "lane": "mistake",
+     "text": "attach arm connector to/from boom — mistake (wrong position)"
+    },
+    {
+     "t": 617.733,
+     "te": 644.733,
+     "lane": "action",
+     "text": "attempt to attach excavator arm"
+    },
+    {
+     "t": 617.733,
+     "te": 644.733,
+     "lane": "step",
+     "text": "attach arm connector to/from chassis — correct"
+    },
+    {
+     "t": 644.733,
+     "te": 650.3,
+     "lane": "action",
+     "text": "detach arm connector"
+    },
+    {
+     "t": 644.733,
+     "te": 650.3,
+     "lane": "mistake",
+     "text": "detach arm connector to/from chassis — mistake (shouldn't have happened)"
+    },
+    {
+     "t": 650.3,
+     "te": 661.167,
+     "lane": "action",
+     "text": "detach arm"
+    },
+    {
+     "t": 650.3,
+     "te": 661.167,
+     "lane": "correction",
+     "text": "detach arm to/from boom — correction"
+    },
+    {
+     "t": 661.167,
+     "te": 688.033,
+     "lane": "action",
+     "text": "attach arm connector"
+    },
+    {
+     "t": 661.167,
+     "te": 688.033,
+     "lane": "step",
+     "text": "attach arm connector to/from boom — correct"
+    },
+    {
+     "t": 688.033,
+     "te": 715.867,
+     "lane": "action",
+     "text": "attempt to attach arm"
+    },
+    {
+     "t": 688.033,
+     "te": 715.867,
+     "lane": "step",
+     "text": "attach arm connector to/from chassis — correct"
+    },
+    {
+     "t": 715.867,
+     "te": 717.567,
+     "lane": "action",
+     "text": "detach arm connector"
+    },
+    {
+     "t": 715.867,
+     "te": 716.967,
+     "lane": "mistake",
+     "text": "detach arm connector to/from chassis — mistake (shouldn't have happened)"
+    },
+    {
+     "t": 716.967,
+     "te": 717.567,
+     "lane": "mistake",
+     "text": "detach boom to/from arm connector — mistake (shouldn't have happened)"
+    },
+    {
+     "t": 717.567,
+     "te": 726.5,
+     "lane": "action",
+     "text": "attach arm connector"
+    },
+    {
+     "t": 717.567,
+     "te": 726.5,
+     "lane": "step",
+     "text": "attach arm connector to/from chassis — correct"
+    },
+    {
+     "t": 726.5,
+     "te": 727.667,
+     "lane": "action",
+     "text": "detach arm connector"
+    },
+    {
+     "t": 726.5,
+     "te": 727.667,
+     "lane": "mistake",
+     "text": "detach arm connector to/from chassis — mistake (shouldn't have happened)"
+    },
+    {
+     "t": 727.667,
+     "te": 741.133,
+     "lane": "action",
+     "text": "attach arm connector"
+    },
+    {
+     "t": 727.667,
+     "te": 741.133,
+     "lane": "step",
+     "text": "attach arm connector to/from boom — correct"
+    },
+    {
+     "t": 741.133,
+     "te": 781.467,
+     "lane": "action",
+     "text": "attach arm"
+    },
+    {
+     "t": 741.133,
+     "te": 781.467,
+     "lane": "step",
+     "text": "attach arm connector to/from chassis — correct"
+    },
+    {
+     "t": 781.467,
+     "te": 813.367,
+     "lane": "action",
+     "text": "attach excavator arm"
+    },
+    {
+     "t": 781.467,
+     "te": 813.367,
+     "lane": "step",
+     "text": "attach arm to/from boom — correct"
+    },
+    {
+     "t": 813.367,
+     "te": 857.933,
+     "lane": "action",
+     "text": "attach bumper"
+    },
+    {
+     "t": 813.367,
+     "te": 857.933,
+     "lane": "step",
+     "text": "attach bumper to/from body — correct"
+    },
+    {
+     "t": 857.933,
+     "te": 914.467,
+     "lane": "action",
+     "text": "attach wheel"
+    },
+    {
+     "t": 857.933,
+     "te": 914.467,
+     "lane": "step",
+     "text": "attach wheel to/from chassis — correct"
+    },
+    {
+     "t": 914.467,
+     "te": 919.233,
+     "lane": "action",
+     "text": "demonstrate functionality"
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": {
+    "assembly101-mistake-detection/annots/nusar-2021_action_both_9033-c02a_9033_user_id_2021-02-04_140532.csv (columns: start,end,verb,this,that,label,remark; frames @30fps)": "7257,7817,attach,interior,chassis,correct,\n8419,8736,detach,interior,chassis,mistake,shouldn't have happened\n8736,9138,attach,interior,chassis,correct,\n10039,10355,attach,body,chassis,mistake,wrong order\n10749,11184,attach,cabin,interior,mistake,previous one is mistake\n11184,11601,interior,cabin,interior,correction,\n11601,11806,detach,body,chassis,correction,\n11806,11864,attach,cabin,interior,correct,\n11864,12105,attach,body,chassis,correct,\n12615,13443,attach,roof,cabin,correct,\n13443,14098,attach,arm,bucket,correct,\n14098,14147,attach,arm,boom,correct,\n14658,15729,attach,arm connector,chassis,mistake,wrong order\n16490,16848,detach,arm connector,chassis,correction,\n16848,18532,attach,arm connector,boom,mistake,wrong position\n18532,19342,attach,arm connector,chassis,correct,\n19342,19509,detach,arm connector,chassis,mistake,shouldn't have happened\n19509,19835,detach,arm,boom,correction,\n19835,20641,attach,arm connector,boom,correct,\n20641,21476,attach,arm connector,chassis,correct,\n21476,21509,detach,arm connector,chassis,mistake,shouldn't have happened\n21509,21527,detach,boom,arm connector,mistake,shouldn't have happened\n21527,21795,attach,arm connector,chassis,correct,\n21795,21830,detach,arm connector,chassis,mistake,shouldn't have happened\n21830,22234,attach,arm connector,boom,correct,\n22234,23444,attach,arm connector,chassis,correct,\n23444,24401,attach,arm,boom,correct,\n24401,25738,attach,bumper,body,correct,\n25738,27434,attach,wheel,chassis,correct,",
+    "coarse_labels/assembly_nusar-2021_action_both_9033-c02a_9033_user_id_2021-02-04_140532.txt (start_frame, end_frame, coarse action)": "000006988\t000007257\tinspect chassis\t\n000007257\t000007817\tattach interior\t\n000007817\t000008419\tscrew chassis\t\n000008419\t000008736\tdetach interior\t\n000008736\t000009138\tattach interior\t\n000009138\t000010039\tscrew chassis\t\n000010039\t000010355\tattach body\t\n000010355\t000010749\tscrew chassis\t\n000010749\t000011184\tattach cabin\t\n000011184\t000011601\tinspect toy\t\n000011601\t000011864\tunscrew body\t\n000011864\t000012105\tattach body\t\n000012105\t000012615\tscrew chassis\t\n000012615\t000013443\tattach roof\t\n000013443\t000014451\tattach arm\t\n000014451\t000014658\tattempt to attach excavator arm\t\n000014658\t000015729\tattach arm connector\t\n000015729\t000016490\tattempt to attach excavator arm\t\n000016490\t000016848\tdetach arm connector\t\n000016848\t000018532\tattach arm connector\t\n000018532\t000019342\tattempt to attach excavator arm\t\n000019342\t000019509\tdetach arm connector\t\n000019509\t000019835\tdetach arm\t\n000019835\t000020641\tattach arm connector\t\n000020641\t000021476\tattempt to attach arm\t\n000021476\t000021527\tdetach arm connector\t\n000021527\t000021795\tattach arm connector\t\n000021795\t000021830\tdetach arm connector\t\n000021830\t000022234\tattach arm connector\t\n000022234\t000023444\tattach arm\t\n000023444\t000024401\tattach excavator arm\t\n000024401\t000025738\tattach bumper\t\n000025738\t000027434\tattach wheel\t\n000027434\t000027577\tdemonstrate functionality\t\n"
+   }
+  },
+  {
+   "title": "9024-c11a: bumper attached too early twice, detached each time as correction",
+   "video_ref": "recordings/nusar-2021_action_both_9024-c11a_9024_user_id_2021-02-03_144917",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 106.633,
+     "te": 136.533,
+     "lane": "action",
+     "text": "attach body"
+    },
+    {
+     "t": 106.633,
+     "te": 136.533,
+     "lane": "step",
+     "text": "attach interior to/from chassis — correct"
+    },
+    {
+     "t": 136.533,
+     "te": 163.0,
+     "lane": "action",
+     "text": "attach bumper"
+    },
+    {
+     "t": 136.533,
+     "te": 163.0,
+     "lane": "mistake",
+     "text": "attach bumper to/from body — mistake (wrong order)"
+    },
+    {
+     "t": 163.0,
+     "te": 170.933,
+     "lane": "action",
+     "text": "detach bumper"
+    },
+    {
+     "t": 163.0,
+     "te": 170.933,
+     "lane": "correction",
+     "text": "detach bumper to/from body — correction"
+    },
+    {
+     "t": 170.933,
+     "te": 226.433,
+     "lane": "action",
+     "text": "attach wheel"
+    },
+    {
+     "t": 170.933,
+     "te": 226.433,
+     "lane": "step",
+     "text": "attach wheel to/from chassis — correct"
+    },
+    {
+     "t": 226.433,
+     "te": 229.2,
+     "lane": "action",
+     "text": "attempt to attach nut"
+    },
+    {
+     "t": 229.2,
+     "te": 231.767,
+     "lane": "action",
+     "text": "attempt to attach bumper"
+    },
+    {
+     "t": 229.2,
+     "te": 231.767,
+     "lane": "mistake",
+     "text": "attach bumper to/from body — mistake (wrong order)"
+    },
+    {
+     "t": 231.767,
+     "te": 247.067,
+     "lane": "action",
+     "text": "attach nut"
+    },
+    {
+     "t": 231.767,
+     "te": 235.767,
+     "lane": "correction",
+     "text": "detach bumper to/from body — correction"
+    },
+    {
+     "t": 235.767,
+     "te": 247.067,
+     "lane": "step",
+     "text": "attach nut to/from body — correct"
+    },
+    {
+     "t": 247.067,
+     "te": 261.567,
+     "lane": "action",
+     "text": "attach bumper"
+    },
+    {
+     "t": 247.067,
+     "te": 261.567,
+     "lane": "step",
+     "text": "attach bumper to/from nut — correct"
+    },
+    {
+     "t": 261.567,
+     "te": 268.667,
+     "lane": "action",
+     "text": "demonstrate functionality"
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": {
+    "assembly101-mistake-detection/annots/nusar-2021_action_both_9024-c11a_9024_user_id_2021-02-03_144917.csv (columns: start,end,verb,this,that,label,remark; frames @30fps)": "3199,4096,attach,interior,chassis,correct,\n4096,4890,attach,bumper,body,mistake,wrong order\n4890,5128,detach,bumper,body,correction,\n5128,6793,attach,wheel,chassis,correct,\n6876,6953,attach,bumper,body,mistake,wrong order\n6953,7073,detach,bumper,body,correction,\n7073,7412,attach,nut,body,correct,\n7412,7847,attach,bumper,nut,correct,",
+    "coarse_labels/assembly_nusar-2021_action_both_9024-c11a_9024_user_id_2021-02-03_144917.txt (start_frame, end_frame, coarse action)": "000003199\t000004096\tattach body\t\n000004096\t000004890\tattach bumper\t\n000004890\t000005128\tdetach bumper\t\n000005128\t000006793\tattach wheel\t\n000006793\t000006876\tattempt to attach nut\t\n000006876\t000006953\tattempt to attach bumper\t\n000006953\t000007412\tattach nut\t\n000007412\t000007847\tattach bumper\t\n000007847\t000008060\tdemonstrate functionality\t\n"
+   }
+  }
+ ]
+}

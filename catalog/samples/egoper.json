@@ -1,0 +1,34 @@
+{
+ "slug": "egoper",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://www.khoury.northeastern.edu/home/eelhami/publications/cvpr24_suppmat_EgoPER.pdf (Table 4, text extracted from the PDF)",
+  "https://github.com/robert80203/EgoPER_official/blob/main/libs/datasets/egoper.py (lines 40–61)"
+ ],
+ "access_used": "public sample in paper/repo/card only (full data needs an emailed request to the authors; link expires in two weeks)",
+ "note": "EgoPER videos and annotation.json are shared only by email, so no real per-video record could be read. Example 1 is the supplementary table for the Tea task as extracted from the PDF: the first column lists normal steps and the other five columns list the error steps participants were scripted to perform (the extraction runs columns together line by line, e.g. 'Drop tea bag' is a slip and 'Discard tea bag and place a new one' is its correction). Example 2 is the official loader code, which shows that each video's labels are parallel arrays time_stamp [start,end], action, action_type (normal or error type) and error_description. Neither example has real timestamps.",
+ "examples": [
+  {
+   "title": "Tea task: normal steps and the scripted error steps per type (omission, addition, modification, slip, correction) — supplementary Table 4",
+   "video_ref": null,
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "txt",
+   "raw": "Normal step Error step\nOmission Addition Modification Slip Correction\nMeasure 12 ounces of cold water Forget to discard tea bag Sprinkle cinnamon Directly pour water to kettle Drop tea bag Discard tea bag and place a new one\nTransfer water to a kettle Forget to add honey Put mug into microwave for 5 seconds Stir using knife Pour water into another mug Move the tea bag to the new mug\nPlace tea bag in the mug Forget to check water temperature Add sugar to the mug\nCheck water temperature Forget to measure 12 ounce of cold water\nPour water from kettle into mug\nSteep tea bag in the mug for a few seconds\nPut the tea bag into the trash can\nAdd honey to the mug\nStir using spoon\nHold the cup in front of you\nTable 4. Normal and error steps in Tea."
+  },
+  {
+   "title": "annotation.json layout as read by the official loader (libs/datasets/egoper.py): per-video time_stamp, action, action_type, error_description",
+   "video_ref": null,
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "txt",
+   "raw": "        self.bg_idx = 0\n        self.annotations = {}\n\n        self.feat_path = os.path.join(root_dir, task, 'features_10fps')\n\n        \n        with open(os.path.join(root_dir, task, self.split+'.txt'), 'r') as fp:\n            lines = fp.readlines()\n            self.data_list = [line.strip('\\n') for line in lines]\n        with open(os.path.join(root_dir, 'annotation.json'), 'r') as fp:\n            all_annot = json.load(fp)\n        \n        annot = all_annot[task]\n        for i in range(len(annot['segments'])):\n            video_id = annot['segments'][i]['video_id']\n            if video_id in self.data_list:\n                actions = [int(action) for action in annot['segments'][i]['labels']['action']]\n                action_types = [int(action_type) for action_type in annot['segments'][i]['labels']['action_type']]\n                self.annotations[video_id] = [np.array(annot['segments'][i]['labels']['time_stamp']) * self.default_fps, \n                                              np.array(actions),\n                                              np.array(action_types),\n                                              annot['segments'][i]['labels']['error_description']]"
+  }
+ ]
+}

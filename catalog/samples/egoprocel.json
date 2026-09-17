@@ -1,0 +1,295 @@
+{
+ "slug": "egoprocel",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://drive.google.com/drive/folders/17u7ReqPOJ29lbVZT8PDEd5dN17VBqS5Q → pc_assembly/Head_11.csv (file id 1SHDPhsH67alRtMflFK5zp1MzRMkt84FN)",
+  "… → MECCANO/0003.csv (file id 1FqgYXHRig4zm0lnRbCMW_YFkUIUCuyHz)",
+  "https://drive.google.com/drive/folders/19QofEX1tcfmU3fO2DAwGV8iiBZPAiRuI → pc_assembly/Head_11.mp4 (file id 1cfOWi75WCh7YONW_6GwBo12yRFl0tR4f; moov + 255 MB byte range only)"
+ ],
+ "access_used": "open download",
+ "note": "Each example is one video's complete EgoProceL key-step CSV: headerless rows of start second, end second, and '<key-step id> <key-step name>'; a key step split over several passes appears as several rows with the same id, and background frames have no row. The files carry no license. Only key-step segments exist (no mistakes, narration or dialogue). The clip is cut from the authors' Google-Drive PC-assembly video; MECCANO 0003's video lives on the MECCANO site, so example 2 has no clip.",
+ "examples": [
+  {
+   "title": "pc_assembly/Head_11: assemble a PC — 24 key-step segments (motherboard fixed in 9 passes)",
+   "video_ref": "pc_assembly/Head_11.mp4 (Google Drive, 4.6 GB, 3840×2160 head-mounted GoPro)",
+   "duration_s": 655.17,
+   "clip": "samples/media/egoprocel_1.mp4",
+   "clip_offset_s": 250,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 21.13333333,
+     "te": 44.26666667,
+     "lane": "step",
+     "text": "1 Place the motherboard and fix it"
+    },
+    {
+     "t": 47.4,
+     "te": 68.06666667,
+     "lane": "step",
+     "text": "1 Place the motherboard and fix it"
+    },
+    {
+     "t": 73.2,
+     "te": 89.66666667,
+     "lane": "step",
+     "text": "1 Place the motherboard and fix it"
+    },
+    {
+     "t": 95.66666667,
+     "te": 116.2,
+     "lane": "step",
+     "text": "1 Place the motherboard and fix it"
+    },
+    {
+     "t": 119.3333333,
+     "te": 135.0,
+     "lane": "step",
+     "text": "1 Place the motherboard and fix it"
+    },
+    {
+     "t": 137.8666667,
+     "te": 153.4,
+     "lane": "step",
+     "text": "1 Place the motherboard and fix it"
+    },
+    {
+     "t": 158.7333333,
+     "te": 197.8666667,
+     "lane": "step",
+     "text": "1 Place the motherboard and fix it"
+    },
+    {
+     "t": 201.6666667,
+     "te": 220.8,
+     "lane": "step",
+     "text": "1 Place the motherboard and fix it"
+    },
+    {
+     "t": 230.0,
+     "te": 246.0666667,
+     "lane": "step",
+     "text": "1 Place the motherboard and fix it"
+    },
+    {
+     "t": 250.4,
+     "te": 256.7333333,
+     "lane": "step",
+     "text": "4 Place the Hard disk and fix it"
+    },
+    {
+     "t": 256.9333333,
+     "te": 269.4,
+     "lane": "step",
+     "text": "2 Place the CPU and fix it"
+    },
+    {
+     "t": 269.4,
+     "te": 276.6666667,
+     "lane": "step",
+     "text": "3 Place the CPU Fan and fix it"
+    },
+    {
+     "t": 278.4,
+     "te": 325.9333333,
+     "lane": "step",
+     "text": "3 Place the CPU Fan and fix it"
+    },
+    {
+     "t": 329.7333333,
+     "te": 344.9333333,
+     "lane": "step",
+     "text": "7 Place the cabinet fan and fix it"
+    },
+    {
+     "t": 348.1333333,
+     "te": 352.1333333,
+     "lane": "step",
+     "text": "7 Place the cabinet fan and fix it"
+    },
+    {
+     "t": 354.1333333,
+     "te": 369.1333333,
+     "lane": "step",
+     "text": "7 Place the cabinet fan and fix it"
+    },
+    {
+     "t": 373.1333333,
+     "te": 409.5333333,
+     "lane": "step",
+     "text": "7 Place the cabinet fan and fix it"
+    },
+    {
+     "t": 416.8,
+     "te": 426.9333333,
+     "lane": "step",
+     "text": "5 Place the RAM and fix it"
+    },
+    {
+     "t": 429.9333333,
+     "te": 446.8666667,
+     "lane": "step",
+     "text": "6 Place the SMPS and fix it"
+    },
+    {
+     "t": 450.7333333,
+     "te": 468.2666667,
+     "lane": "step",
+     "text": "6 Place the SMPS and fix it"
+    },
+    {
+     "t": 472.5333333,
+     "te": 493.2666667,
+     "lane": "step",
+     "text": "6 Place the SMPS and fix it"
+    },
+    {
+     "t": 497.0666667,
+     "te": 512.7333333,
+     "lane": "step",
+     "text": "6 Place the SMPS and fix it"
+    },
+    {
+     "t": 515.6,
+     "te": 635.0,
+     "lane": "step",
+     "text": "8 Plug the wires"
+    },
+    {
+     "t": 640.8666667,
+     "te": 646.1333333,
+     "lane": "step",
+     "text": "9 Place the cabinet cover"
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": "21.13333333,44.26666667,1 Place the motherboard and fix it\n47.4,68.06666667,1 Place the motherboard and fix it\n73.2,89.66666667,1 Place the motherboard and fix it\n95.66666667,116.2,1 Place the motherboard and fix it\n119.3333333,135,1 Place the motherboard and fix it\n137.8666667,153.4,1 Place the motherboard and fix it\n158.7333333,197.8666667,1 Place the motherboard and fix it\n201.6666667,220.8,1 Place the motherboard and fix it\n230,246.0666667,1 Place the motherboard and fix it\n250.4,256.7333333,4 Place the Hard disk and fix it\n256.9333333,269.4,2 Place the CPU and fix it\n269.4,276.6666667,3 Place the CPU Fan and fix it\n278.4,325.9333333,3 Place the CPU Fan and fix it\n329.7333333,344.9333333,7 Place the cabinet fan and fix it\n348.1333333,352.1333333,7 Place the cabinet fan and fix it\n354.1333333,369.1333333,7 Place the cabinet fan and fix it\n373.1333333,409.5333333,7 Place the cabinet fan and fix it\n416.8,426.9333333,5 Place the RAM and fix it\n429.9333333,446.8666667,6 Place the SMPS and fix it\n450.7333333,468.2666667,6 Place the SMPS and fix it\n472.5333333,493.2666667,6 Place the SMPS and fix it\n497.0666667,512.7333333,6 Place the SMPS and fix it\n515.6,635,8 Plug the wires\n640.8666667,646.1333333,9 Place the cabinet cover"
+  },
+  {
+   "title": "MECCANO/0003: toy motorbike assembly — 19 key-step segments, step 9 done twice",
+   "video_ref": "MECCANO video 0003 (videos from iplab.dmi.unict.it/MECCANO)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 37.877,
+     "te": 78.31,
+     "lane": "step",
+     "text": "1 Align and screw the “red four perforated junction bar”  “gray perforated bar”  and “white angled perforated bar”"
+    },
+    {
+     "t": 115.719,
+     "te": 158.482,
+     "lane": "step",
+     "text": "1 Align and screw the “red four perforated junction bar”  “gray perforated bar”  and “white angled perforated bar”"
+    },
+    {
+     "t": 165.77,
+     "te": 280.4,
+     "lane": "step",
+     "text": "2 Align and screw the “partial model” with “gray perforated bar” and “white angled perforated bar”"
+    },
+    {
+     "t": 291.197,
+     "te": 319.643,
+     "lane": "step",
+     "text": "2 Align and screw the “partial model” with “gray perforated bar” and “white angled perforated bar”"
+    },
+    {
+     "t": 355.945,
+     "te": 411.74,
+     "lane": "step",
+     "text": "5 Align and screw the “red angled perforated bar” with one “gray angled perforated bar” in the “partial model”"
+    },
+    {
+     "t": 420.49,
+     "te": 465.54,
+     "lane": "step",
+     "text": "6 Align and screw the “red perforated bar” with “gray angled perforated bar” and “red angled perforated bar” in the “partial model”"
+    },
+    {
+     "t": 482.703,
+     "te": 490.37,
+     "lane": "step",
+     "text": "3 Plug “first handlebar” in the “partial model”"
+    },
+    {
+     "t": 491.567,
+     "te": 510.43,
+     "lane": "step",
+     "text": "4 Plug “second handlebar” in the “partial model”"
+    },
+    {
+     "t": 564.286,
+     "te": 617.43,
+     "lane": "step",
+     "text": "8 Align and screw “red angled perforated bar” with the “white angled perforated bar” in the “partial model”"
+    },
+    {
+     "t": 649.88,
+     "te": 699.37,
+     "lane": "step",
+     "text": "9 Align and screw “gray angled perforated bar” with “red angled perforated bar and “washer” in the “partial model”"
+    },
+    {
+     "t": 942.75,
+     "te": 974.798,
+     "lane": "step",
+     "text": "9 Align and screw “gray angled perforated bar” with “red angled perforated bar and “washer” in the “partial model”"
+    },
+    {
+     "t": 991.048,
+     "te": 1050.751,
+     "lane": "step",
+     "text": "10 Align and screw “red perforated bar” with the “partial model”"
+    },
+    {
+     "t": 1071.337,
+     "te": 1092.04,
+     "lane": "step",
+     "text": "11 Align and screw “wheel axel” with the “partial model”"
+    },
+    {
+     "t": 1145.107,
+     "te": 1217.31,
+     "lane": "step",
+     "text": "13 Align and screw “red perforated junction bars” with the “partial model”"
+    },
+    {
+     "t": 1326.878,
+     "te": 1372.074,
+     "lane": "step",
+     "text": "12 Align and screw “red perforated junction bar” with the other “red perforated junction bar”"
+    },
+    {
+     "t": 1387.132,
+     "te": 1433.69,
+     "lane": "step",
+     "text": "14 Fit the “rim” on the “wheel”"
+    },
+    {
+     "t": 1598.286,
+     "te": 1694.59,
+     "lane": "step",
+     "text": "15 Align the “wheel”  “washer”  “partial model” and pass the rod through them"
+    },
+    {
+     "t": 1733.91,
+     "te": 1743.93,
+     "lane": "step",
+     "text": "16 Align and insert the “wheel” in the “wheel axel” in the “partial model”"
+    },
+    {
+     "t": 1764.395,
+     "te": 1820.894,
+     "lane": "step",
+     "text": "17 Align and insert “washers” and “rod” in the “partial model”"
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": "37.877,78.31,1 Align and screw the “red four perforated junction bar”  “gray perforated bar”  and “white angled perforated bar”\n115.719,158.482,1 Align and screw the “red four perforated junction bar”  “gray perforated bar”  and “white angled perforated bar”\n165.77,280.4,2 Align and screw the “partial model” with “gray perforated bar” and “white angled perforated bar”\n291.197,319.643,2 Align and screw the “partial model” with “gray perforated bar” and “white angled perforated bar”\n355.945,411.74,5 Align and screw the “red angled perforated bar” with one “gray angled perforated bar” in the “partial model”\n420.49,465.54,6 Align and screw the “red perforated bar” with “gray angled perforated bar” and “red angled perforated bar” in the “partial model”\n482.703,490.37,3 Plug “first handlebar” in the “partial model”\n491.567,510.43,4 Plug “second handlebar” in the “partial model”\n564.286,617.43,8 Align and screw “red angled perforated bar” with the “white angled perforated bar” in the “partial model”\n649.88,699.37,9 Align and screw “gray angled perforated bar” with “red angled perforated bar and “washer” in the “partial model”\n942.75,974.798,9 Align and screw “gray angled perforated bar” with “red angled perforated bar and “washer” in the “partial model”\n991.048,1050.751,10 Align and screw “red perforated bar” with the “partial model”\n1071.337,1092.04,11 Align and screw “wheel axel” with the “partial model”\n1145.107,1217.31,13 Align and screw “red perforated junction bars” with the “partial model”\n1326.878,1372.074,12 Align and screw “red perforated junction bar” with the other “red perforated junction bar”\n1387.132,1433.69,14 Fit the “rim” on the “wheel”\n1598.286,1694.59,15 Align the “wheel”  “washer”  “partial model” and pass the rod through them\n1733.91,1743.93,16 Align and insert the “wheel” in the “wheel axel” in the “partial model”\n1764.395,1820.894,17 Align and insert “washers” and “rod” in the “partial model”\n"
+  }
+ ]
+}

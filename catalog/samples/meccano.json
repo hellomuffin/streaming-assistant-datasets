@@ -1,0 +1,4836 @@
+{
+ "slug": "meccano",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://iplab.dmi.unict.it/sharing/MECCANO/MECCANO_action_annotations.zip (MECCANO_train_actions.csv, MECCANO_val_actions.csv)",
+  "https://iplab.dmi.unict.it/sharing/MECCANO/MECCANO_RGB_Videos.zip (member MECCANO_RGB_Videos/0006.mp4)"
+ ],
+ "access_used": "open download",
+ "note": "Each example is one video's rows from the action CSV (video_id, action_id, action_name, start_frame, end_frame): overlapping fine verb-object segments, several hundred per ~10-min assembly. Frame names count frames at 12 fps (timeline = frame/12). There are no step, mistake or language labels; undo actions (unscrew, pull_screw) are the only trace of errors. The project states no license.",
+ "examples": [
+  {
+   "title": "0006: toy motorbike assembly — 307 action segments; at 244–256 s the wearer checks the booklet, unscrews and pulls out a screw (undoing a step)",
+   "video_ref": "MECCANO_RGB_Videos/0006.mp4",
+   "duration_s": 693.5,
+   "clip": "samples/media/meccano_1.mp4",
+   "clip_offset_s": 243,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 16.17,
+     "te": 17.17,
+     "lane": "action",
+     "text": "take_white_angled_perforated_bar"
+    },
+    {
+     "t": 17.5,
+     "te": 19.08,
+     "lane": "action",
+     "text": "take_gray_perforated_bar"
+    },
+    {
+     "t": 20.25,
+     "te": 21.25,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 22.33,
+     "te": 22.92,
+     "lane": "action",
+     "text": "take_red_4_perforated_junction_bar"
+    },
+    {
+     "t": 24.42,
+     "te": 25.83,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 26.25,
+     "te": 27.17,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 27.0,
+     "te": 27.58,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 27.58,
+     "te": 28.5,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 29.92,
+     "te": 30.75,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 33.75,
+     "te": 35.08,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 37.08,
+     "te": 38.5,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 39.08,
+     "te": 40.42,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 41.58,
+     "te": 42.17,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 42.17,
+     "te": 45.0,
+     "lane": "action",
+     "text": "tighten_bolt_with_hands"
+    },
+    {
+     "t": 45.33,
+     "te": 48.25,
+     "lane": "action",
+     "text": "screw_screw_with_hands"
+    },
+    {
+     "t": 48.42,
+     "te": 49.0,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 60.17,
+     "te": 63.42,
+     "lane": "action",
+     "text": "screw_screw_with_hands"
+    },
+    {
+     "t": 63.5,
+     "te": 65.75,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 66.58,
+     "te": 67.67,
+     "lane": "action",
+     "text": "take_white_angled_perforated_bar"
+    },
+    {
+     "t": 67.75,
+     "te": 68.75,
+     "lane": "action",
+     "text": "take_gray_perforated_bar"
+    },
+    {
+     "t": 67.83,
+     "te": 68.75,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 69.42,
+     "te": 70.42,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 70.75,
+     "te": 71.58,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 71.08,
+     "te": 71.83,
+     "lane": "action",
+     "text": "put_gray_perforated_bar"
+    },
+    {
+     "t": 71.17,
+     "te": 71.92,
+     "lane": "action",
+     "text": "put_gray_perforated_bar"
+    },
+    {
+     "t": 72.5,
+     "te": 73.25,
+     "lane": "action",
+     "text": "put_bolt"
+    },
+    {
+     "t": 74.42,
+     "te": 75.25,
+     "lane": "action",
+     "text": "take_gray_perforated_bar"
+    },
+    {
+     "t": 77.33,
+     "te": 78.33,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 78.67,
+     "te": 79.5,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 79.17,
+     "te": 79.75,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 79.67,
+     "te": 80.67,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 80.92,
+     "te": 81.75,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 81.75,
+     "te": 83.67,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 83.0,
+     "te": 84.08,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 84.42,
+     "te": 86.25,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 86.75,
+     "te": 90.5,
+     "lane": "action",
+     "text": "screw_screw_with_hands"
+    },
+    {
+     "t": 92.42,
+     "te": 94.0,
+     "lane": "action",
+     "text": "screw_screw_with_hands"
+    },
+    {
+     "t": 96.33,
+     "te": 99.0,
+     "lane": "action",
+     "text": "screw_screw_with_hands"
+    },
+    {
+     "t": 99.0,
+     "te": 99.83,
+     "lane": "action",
+     "text": "take_screwdriver"
+    },
+    {
+     "t": 100.08,
+     "te": 100.75,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 100.83,
+     "te": 103.08,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 105.33,
+     "te": 106.17,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 106.58,
+     "te": 111.08,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 111.17,
+     "te": 111.92,
+     "lane": "action",
+     "text": "put_screwdriver"
+    },
+    {
+     "t": 121.58,
+     "te": 130.0,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 129.75,
+     "te": 131.33,
+     "lane": "action",
+     "text": "take_handlebar"
+    },
+    {
+     "t": 131.83,
+     "te": 132.83,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 132.83,
+     "te": 134.08,
+     "lane": "action",
+     "text": "plug_handlebar"
+    },
+    {
+     "t": 134.92,
+     "te": 135.92,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 135.83,
+     "te": 138.08,
+     "lane": "action",
+     "text": "plug_handlebar"
+    },
+    {
+     "t": 138.08,
+     "te": 141.33,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 142.25,
+     "te": 143.67,
+     "lane": "action",
+     "text": "take_red_perforated_bar"
+    },
+    {
+     "t": 143.33,
+     "te": 144.33,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 146.17,
+     "te": 148.33,
+     "lane": "action",
+     "text": "take_red_angled_perforated_bar"
+    },
+    {
+     "t": 149.17,
+     "te": 149.92,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 149.25,
+     "te": 150.08,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 151.5,
+     "te": 153.67,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 153.67,
+     "te": 154.42,
+     "lane": "action",
+     "text": "put_red_perforated_bar"
+    },
+    {
+     "t": 155.0,
+     "te": 156.0,
+     "lane": "action",
+     "text": "put_screw"
+    },
+    {
+     "t": 156.08,
+     "te": 157.25,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 157.33,
+     "te": 157.83,
+     "lane": "action",
+     "text": "put_bolt"
+    },
+    {
+     "t": 157.75,
+     "te": 158.5,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 158.33,
+     "te": 159.17,
+     "lane": "action",
+     "text": "put_bolt"
+    },
+    {
+     "t": 159.17,
+     "te": 167.17,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 165.5,
+     "te": 167.33,
+     "lane": "action",
+     "text": "take_red_angled_perforated_bar"
+    },
+    {
+     "t": 168.25,
+     "te": 169.33,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 170.58,
+     "te": 171.25,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 171.33,
+     "te": 171.92,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 172.42,
+     "te": 173.42,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 174.25,
+     "te": 175.42,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 175.42,
+     "te": 176.17,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 177.0,
+     "te": 177.83,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 177.42,
+     "te": 178.08,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 178.75,
+     "te": 181.75,
+     "lane": "action",
+     "text": "tighten_bolt_with_hands"
+    },
+    {
+     "t": 181.83,
+     "te": 182.92,
+     "lane": "action",
+     "text": "take_red_perforated_bar"
+    },
+    {
+     "t": 182.75,
+     "te": 183.42,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 183.42,
+     "te": 183.83,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 184.0,
+     "te": 184.67,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 186.25,
+     "te": 189.5,
+     "lane": "action",
+     "text": "tighten_bolt_with_hands"
+    },
+    {
+     "t": 189.83,
+     "te": 190.67,
+     "lane": "action",
+     "text": "take_screwdriver"
+    },
+    {
+     "t": 191.17,
+     "te": 192.67,
+     "lane": "action",
+     "text": "tighten_bolt_with_hands"
+    },
+    {
+     "t": 192.83,
+     "te": 193.5,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 194.75,
+     "te": 200.5,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 201.5,
+     "te": 202.17,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 203.08,
+     "te": 207.17,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 206.33,
+     "te": 207.5,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 207.17,
+     "te": 207.92,
+     "lane": "action",
+     "text": "put_screwdriver"
+    },
+    {
+     "t": 208.67,
+     "te": 215.17,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 211.08,
+     "te": 211.92,
+     "lane": "action",
+     "text": "take_screwdriver"
+    },
+    {
+     "t": 211.5,
+     "te": 216.33,
+     "lane": "action",
+     "text": "put_screwdriver"
+    },
+    {
+     "t": 212.08,
+     "te": 216.0,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 216.83,
+     "te": 218.17,
+     "lane": "action",
+     "text": "take_red_angled_perforated_bar"
+    },
+    {
+     "t": 219.08,
+     "te": 220.08,
+     "lane": "action",
+     "text": "take_gray_angled_perforated_bar"
+    },
+    {
+     "t": 221.0,
+     "te": 221.75,
+     "lane": "action",
+     "text": "put_gray_angled_perforated_bar"
+    },
+    {
+     "t": 222.33,
+     "te": 223.25,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 223.5,
+     "te": 225.25,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 223.83,
+     "te": 225.17,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 225.08,
+     "te": 225.83,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 225.83,
+     "te": 226.75,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 227.08,
+     "te": 227.67,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 228.08,
+     "te": 228.92,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 232.0,
+     "te": 235.17,
+     "lane": "action",
+     "text": "screw_screw_with_hands"
+    },
+    {
+     "t": 235.33,
+     "te": 236.17,
+     "lane": "action",
+     "text": "take_screwdriver"
+    },
+    {
+     "t": 236.92,
+     "te": 237.5,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 238.08,
+     "te": 241.25,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 241.42,
+     "te": 242.17,
+     "lane": "action",
+     "text": "put_screwdriver"
+    },
+    {
+     "t": 243.92,
+     "te": 248.42,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 244.25,
+     "te": 244.92,
+     "lane": "action",
+     "text": "take_screwdriver"
+    },
+    {
+     "t": 244.25,
+     "te": 247.92,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 247.92,
+     "te": 248.67,
+     "lane": "action",
+     "text": "take_screwdriver"
+    },
+    {
+     "t": 248.42,
+     "te": 249.0,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 249.42,
+     "te": 251.83,
+     "lane": "action",
+     "text": "unscrew_screw_with_screwdriver"
+    },
+    {
+     "t": 253.17,
+     "te": 254.58,
+     "lane": "action",
+     "text": "unscrew_screw_with_hands"
+    },
+    {
+     "t": 254.33,
+     "te": 254.58,
+     "lane": "action",
+     "text": "pull_screw"
+    },
+    {
+     "t": 254.67,
+     "te": 255.42,
+     "lane": "action",
+     "text": "put_screw"
+    },
+    {
+     "t": 258.08,
+     "te": 258.67,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 260.08,
+     "te": 260.67,
+     "lane": "action",
+     "text": "put_bolt"
+    },
+    {
+     "t": 260.5,
+     "te": 261.25,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 260.67,
+     "te": 261.25,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 261.5,
+     "te": 262.67,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 263.08,
+     "te": 264.25,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 265.92,
+     "te": 269.33,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 269.83,
+     "te": 275.17,
+     "lane": "action",
+     "text": "tighten_bolt_with_hands"
+    },
+    {
+     "t": 276.83,
+     "te": 277.42,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 278.25,
+     "te": 282.5,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 285.08,
+     "te": 286.08,
+     "lane": "action",
+     "text": "put_screwdriver"
+    },
+    {
+     "t": 285.33,
+     "te": 286.25,
+     "lane": "action",
+     "text": "put_screwdriver"
+    },
+    {
+     "t": 286.75,
+     "te": 289.0,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 289.58,
+     "te": 290.33,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 290.42,
+     "te": 291.25,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 292.5,
+     "te": 292.83,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 292.75,
+     "te": 293.5,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 293.58,
+     "te": 294.17,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 293.75,
+     "te": 294.5,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 293.75,
+     "te": 294.58,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 297.33,
+     "te": 298.67,
+     "lane": "action",
+     "text": "take_gray_perforated_bar"
+    },
+    {
+     "t": 299.0,
+     "te": 300.67,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 301.42,
+     "te": 302.25,
+     "lane": "action",
+     "text": "put_washer"
+    },
+    {
+     "t": 302.0,
+     "te": 302.83,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 307.67,
+     "te": 308.33,
+     "lane": "action",
+     "text": "put_washer"
+    },
+    {
+     "t": 308.17,
+     "te": 309.0,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 312.25,
+     "te": 312.75,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 312.75,
+     "te": 313.25,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 315.58,
+     "te": 317.58,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 322.0,
+     "te": 322.58,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 322.67,
+     "te": 323.17,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 323.25,
+     "te": 329.25,
+     "lane": "action",
+     "text": "tighten_bolt_with_hands"
+    },
+    {
+     "t": 330.33,
+     "te": 332.17,
+     "lane": "action",
+     "text": "put_objects"
+    },
+    {
+     "t": 330.42,
+     "te": 330.58,
+     "lane": "action",
+     "text": "pull_screw"
+    },
+    {
+     "t": 331.17,
+     "te": 331.83,
+     "lane": "action",
+     "text": "pull_partial_model"
+    },
+    {
+     "t": 332.42,
+     "te": 333.0,
+     "lane": "action",
+     "text": "put_washer"
+    },
+    {
+     "t": 332.67,
+     "te": 333.58,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 333.75,
+     "te": 334.33,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 337.42,
+     "te": 339.75,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 339.75,
+     "te": 341.67,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 341.67,
+     "te": 342.67,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 346.75,
+     "te": 354.33,
+     "lane": "action",
+     "text": "tighten_bolt_with_hands"
+    },
+    {
+     "t": 354.42,
+     "te": 355.08,
+     "lane": "action",
+     "text": "take_screwdriver"
+    },
+    {
+     "t": 356.33,
+     "te": 356.92,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 357.17,
+     "te": 359.0,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 359.25,
+     "te": 360.08,
+     "lane": "action",
+     "text": "put_screwdriver"
+    },
+    {
+     "t": 360.08,
+     "te": 361.42,
+     "lane": "action",
+     "text": "browse_booklet"
+    },
+    {
+     "t": 361.83,
+     "te": 364.83,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 364.67,
+     "te": 365.25,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 365.67,
+     "te": 367.5,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 367.25,
+     "te": 367.83,
+     "lane": "action",
+     "text": "take_red_perforated_bar"
+    },
+    {
+     "t": 375.17,
+     "te": 381.42,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 380.92,
+     "te": 381.75,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 381.83,
+     "te": 382.33,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 382.42,
+     "te": 383.5,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 383.5,
+     "te": 384.5,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 385.5,
+     "te": 386.42,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 390.08,
+     "te": 391.67,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 392.83,
+     "te": 393.75,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 396.25,
+     "te": 397.42,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 397.5,
+     "te": 407.67,
+     "lane": "action",
+     "text": "tighten_bolt_with_hands"
+    },
+    {
+     "t": 407.75,
+     "te": 413.0,
+     "lane": "action",
+     "text": "screw_screw_with_hands"
+    },
+    {
+     "t": 408.42,
+     "te": 413.58,
+     "lane": "action",
+     "text": "tighten_bolt_with_hands"
+    },
+    {
+     "t": 416.92,
+     "te": 417.75,
+     "lane": "action",
+     "text": "take_screwdriver"
+    },
+    {
+     "t": 418.08,
+     "te": 418.58,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 419.17,
+     "te": 420.83,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 421.0,
+     "te": 421.67,
+     "lane": "action",
+     "text": "put_screwdriver"
+    },
+    {
+     "t": 424.58,
+     "te": 429.17,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 429.25,
+     "te": 429.83,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 429.92,
+     "te": 430.33,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 431.75,
+     "te": 432.67,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 432.67,
+     "te": 433.42,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 433.42,
+     "te": 437.92,
+     "lane": "action",
+     "text": "tighten_bolt_with_hands"
+    },
+    {
+     "t": 434.5,
+     "te": 435.42,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 437.83,
+     "te": 439.0,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 441.67,
+     "te": 444.08,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 444.92,
+     "te": 447.25,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 447.33,
+     "te": 448.0,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 447.33,
+     "te": 449.58,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 449.67,
+     "te": 451.0,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 451.5,
+     "te": 452.42,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 452.17,
+     "te": 453.0,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 455.83,
+     "te": 456.92,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 460.25,
+     "te": 462.5,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 462.58,
+     "te": 470.92,
+     "lane": "action",
+     "text": "screw_screw_with_hands"
+    },
+    {
+     "t": 472.17,
+     "te": 475.08,
+     "lane": "action",
+     "text": "screw_screw_with_hands"
+    },
+    {
+     "t": 481.92,
+     "te": 482.75,
+     "lane": "action",
+     "text": "take_red_perforated_junction_bar"
+    },
+    {
+     "t": 482.92,
+     "te": 483.75,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 483.83,
+     "te": 485.75,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 486.17,
+     "te": 487.0,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 486.92,
+     "te": 487.75,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 487.67,
+     "te": 488.58,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 488.75,
+     "te": 489.67,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 492.5,
+     "te": 493.5,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 493.08,
+     "te": 493.92,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 494.83,
+     "te": 500.58,
+     "lane": "action",
+     "text": "screw_screw_with_hands"
+    },
+    {
+     "t": 501.83,
+     "te": 502.92,
+     "lane": "action",
+     "text": "take_screwdriver"
+    },
+    {
+     "t": 502.92,
+     "te": 503.92,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 503.92,
+     "te": 504.5,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 505.08,
+     "te": 505.58,
+     "lane": "action",
+     "text": "take_screwdriver"
+    },
+    {
+     "t": 505.5,
+     "te": 506.08,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 506.08,
+     "te": 507.83,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 507.83,
+     "te": 508.83,
+     "lane": "action",
+     "text": "put_screwdriver"
+    },
+    {
+     "t": 511.92,
+     "te": 513.08,
+     "lane": "action",
+     "text": "take_rod"
+    },
+    {
+     "t": 513.08,
+     "te": 515.08,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 515.17,
+     "te": 516.0,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 515.58,
+     "te": 516.17,
+     "lane": "action",
+     "text": "take_tire"
+    },
+    {
+     "t": 516.42,
+     "te": 517.25,
+     "lane": "action",
+     "text": "put_tire"
+    },
+    {
+     "t": 517.17,
+     "te": 517.83,
+     "lane": "action",
+     "text": "take_rim"
+    },
+    {
+     "t": 517.42,
+     "te": 518.0,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 517.92,
+     "te": 526.42,
+     "lane": "action",
+     "text": "fit_rim_tire"
+    },
+    {
+     "t": 526.67,
+     "te": 527.33,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 527.33,
+     "te": 528.08,
+     "lane": "action",
+     "text": "take_rim"
+    },
+    {
+     "t": 527.75,
+     "te": 528.42,
+     "lane": "action",
+     "text": "take_tire"
+    },
+    {
+     "t": 528.5,
+     "te": 529.08,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 529.08,
+     "te": 539.33,
+     "lane": "action",
+     "text": "fit_rim_tire"
+    },
+    {
+     "t": 540.0,
+     "te": 540.75,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 540.58,
+     "te": 542.25,
+     "lane": "action",
+     "text": "take_rod"
+    },
+    {
+     "t": 543.75,
+     "te": 544.5,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 545.0,
+     "te": 546.25,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 548.75,
+     "te": 550.92,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 551.33,
+     "te": 553.0,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 553.58,
+     "te": 554.17,
+     "lane": "action",
+     "text": "put_washer"
+    },
+    {
+     "t": 555.67,
+     "te": 556.67,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 556.67,
+     "te": 558.08,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 558.17,
+     "te": 559.58,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 559.75,
+     "te": 560.92,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 561.17,
+     "te": 562.0,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 561.92,
+     "te": 562.92,
+     "lane": "action",
+     "text": "put_washer"
+    },
+    {
+     "t": 562.0,
+     "te": 564.67,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 562.58,
+     "te": 564.58,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 564.5,
+     "te": 565.75,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 566.08,
+     "te": 566.5,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 567.75,
+     "te": 569.33,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 570.25,
+     "te": 571.33,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 572.25,
+     "te": 572.5,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 572.83,
+     "te": 573.5,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 573.42,
+     "te": 575.0,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 576.0,
+     "te": 576.25,
+     "lane": "action",
+     "text": "pull_partial_model"
+    },
+    {
+     "t": 578.25,
+     "te": 578.92,
+     "lane": "action",
+     "text": "put_washer"
+    },
+    {
+     "t": 579.33,
+     "te": 580.0,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 580.58,
+     "te": 581.17,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 581.83,
+     "te": 582.75,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 582.75,
+     "te": 585.08,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 587.67,
+     "te": 591.0,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 591.58,
+     "te": 592.5,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 594.25,
+     "te": 595.08,
+     "lane": "action",
+     "text": "browse_booklet"
+    },
+    {
+     "t": 597.08,
+     "te": 597.83,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 598.25,
+     "te": 599.5,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 600.25,
+     "te": 601.92,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 602.92,
+     "te": 603.92,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 604.83,
+     "te": 605.5,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 605.17,
+     "te": 605.83,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 605.42,
+     "te": 606.17,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 605.92,
+     "te": 606.75,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 606.83,
+     "te": 609.17,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 609.5,
+     "te": 610.0,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 609.5,
+     "te": 613.17,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 612.58,
+     "te": 613.33,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 613.92,
+     "te": 615.08,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 615.17,
+     "te": 617.17,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 617.17,
+     "te": 618.0,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 622.17,
+     "te": 623.5,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 623.75,
+     "te": 624.33,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 624.33,
+     "te": 625.0,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 625.83,
+     "te": 626.42,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 626.58,
+     "te": 629.0,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 629.0,
+     "te": 630.17,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 633.67,
+     "te": 637.58,
+     "lane": "action",
+     "text": "tighten_bolt_with_hands"
+    },
+    {
+     "t": 644.67,
+     "te": 651.83,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 652.17,
+     "te": 653.0,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 653.17,
+     "te": 653.92,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 653.83,
+     "te": 655.75,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 657.92,
+     "te": 660.33,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 660.58,
+     "te": 661.25,
+     "lane": "action",
+     "text": "take_rod"
+    },
+    {
+     "t": 661.58,
+     "te": 664.83,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 661.83,
+     "te": 662.33,
+     "lane": "action",
+     "text": "take_roller"
+    },
+    {
+     "t": 663.0,
+     "te": 665.08,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 667.08,
+     "te": 668.08,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 668.58,
+     "te": 669.25,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 669.5,
+     "te": 671.08,
+     "lane": "action",
+     "text": "plug_rod"
+    },
+    {
+     "t": 671.25,
+     "te": 672.08,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 671.42,
+     "te": 671.5,
+     "lane": "action",
+     "text": "pull_partial_model"
+    },
+    {
+     "t": 673.08,
+     "te": 673.67,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 674.08,
+     "te": 677.92,
+     "lane": "action",
+     "text": "plug_rod"
+    },
+    {
+     "t": 678.25,
+     "te": 679.17,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 679.83,
+     "te": 681.17,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 681.17,
+     "te": 682.58,
+     "lane": "action",
+     "text": "plug_rod"
+    },
+    {
+     "t": 684.08,
+     "te": 685.17,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 685.67,
+     "te": 686.33,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 686.33,
+     "te": 689.42,
+     "lane": "action",
+     "text": "plug_rod"
+    },
+    {
+     "t": 691.0,
+     "te": 691.83,
+     "lane": "action",
+     "text": "put_partial_model"
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": "video_id,action_id,action_name,start_frame,end_frame\n0006,6,take_white_angled_perforated_bar,00194.jpg,00206.jpg\n0006,59,unscrew_screw_with_hands,03038.jpg,03055.jpg\n0006,36,put_screw,03056.jpg,03065.jpg\n0006,47,align_objects,03097.jpg,03104.jpg\n0006,42,put_bolt,03121.jpg,03128.jpg\n0006,15,take_screw,03126.jpg,03135.jpg\n0006,47,align_objects,03128.jpg,03135.jpg\n0006,51,plug_screw,03138.jpg,03152.jpg\n0006,21,take_bolt,03157.jpg,03171.jpg\n0006,47,align_objects,03191.jpg,03232.jpg\n0006,45,tighten_bolt_with_hands,03238.jpg,03302.jpg\n0006,47,align_objects,00445.jpg,00462.jpg\n0006,47,align_objects,03322.jpg,03329.jpg\n0006,58,screw_screw_with_screwdriver,03339.jpg,03390.jpg\n0006,29,put_screwdriver,03421.jpg,03433.jpg\n0006,21,take_bolt,03441.jpg,03468.jpg\n0006,18,take_washer,03475.jpg,03484.jpg\n0006,26,put_partial_model,03485.jpg,03495.jpg\n0006,5,take_partial_model,03513.jpg,03522.jpg\n0006,15,take_screw,03525.jpg,03534.jpg\n0006,26,put_partial_model,03525.jpg,03535.jpg\n0006,9,take_gray_perforated_bar,03568.jpg,03584.jpg\n0006,0,check_booklet,00469.jpg,00485.jpg\n0006,0,check_booklet,03588.jpg,03608.jpg\n0006,39,put_washer,03617.jpg,03627.jpg\n0006,18,take_washer,03624.jpg,03634.jpg\n0006,39,put_washer,03692.jpg,03700.jpg\n0006,18,take_washer,03698.jpg,03708.jpg\n0006,47,align_objects,03747.jpg,03753.jpg\n0006,51,plug_screw,03753.jpg,03759.jpg\n0006,51,plug_screw,03787.jpg,03811.jpg\n0006,21,take_bolt,03864.jpg,03871.jpg\n0006,47,align_objects,03872.jpg,03878.jpg\n0006,47,align_objects,00499.jpg,00506.jpg\n0006,45,tighten_bolt_with_hands,03879.jpg,03951.jpg\n0006,54,pull_screw,03965.jpg,03967.jpg\n0006,56,pull_partial_model,03974.jpg,03982.jpg\n0006,39,put_washer,03989.jpg,03996.jpg\n0006,18,take_washer,03992.jpg,04003.jpg\n0006,51,plug_screw,04005.jpg,04012.jpg\n0006,5,take_partial_model,04049.jpg,04077.jpg\n0006,47,align_objects,04077.jpg,04100.jpg\n0006,51,plug_screw,04100.jpg,04112.jpg\n0006,45,tighten_bolt_with_hands,04161.jpg,04252.jpg\n0006,45,tighten_bolt_with_hands,00506.jpg,00540.jpg\n0006,8,take_screwdriver,04253.jpg,04261.jpg\n0006,47,align_objects,04276.jpg,04283.jpg\n0006,58,screw_screw_with_screwdriver,04286.jpg,04308.jpg\n0006,29,put_screwdriver,04311.jpg,04321.jpg\n0006,0,check_booklet,04342.jpg,04378.jpg\n0006,5,take_partial_model,04376.jpg,04383.jpg\n0006,0,check_booklet,04388.jpg,04410.jpg\n0006,12,take_red_perforated_bar,04407.jpg,04414.jpg\n0006,0,check_booklet,04502.jpg,04577.jpg\n0006,47,align_objects,04582.jpg,04588.jpg\n0006,57,screw_screw_with_hands,00544.jpg,00579.jpg\n0006,51,plug_screw,04589.jpg,04602.jpg\n0006,0,check_booklet,04602.jpg,04614.jpg\n0006,0,check_booklet,04626.jpg,04637.jpg\n0006,0,check_booklet,04681.jpg,04700.jpg\n0006,21,take_bolt,04714.jpg,04725.jpg\n0006,47,align_objects,04755.jpg,04769.jpg\n0006,45,tighten_bolt_with_hands,04770.jpg,04892.jpg\n0006,57,screw_screw_with_hands,04893.jpg,04956.jpg\n0006,8,take_screwdriver,05003.jpg,05013.jpg\n0006,48,align_screwdriver_to_screw,05017.jpg,05023.jpg\n0006,0,check_booklet,00581.jpg,00588.jpg\n0006,58,screw_screw_with_screwdriver,05030.jpg,05050.jpg\n0006,29,put_screwdriver,05052.jpg,05060.jpg\n0006,0,check_booklet,05095.jpg,05150.jpg\n0006,47,align_objects,05151.jpg,05158.jpg\n0006,51,plug_screw,05159.jpg,05164.jpg\n0006,21,take_bolt,05181.jpg,05192.jpg\n0006,47,align_objects,05192.jpg,05201.jpg\n0006,45,tighten_bolt_with_hands,05201.jpg,05255.jpg\n0006,0,check_booklet,05300.jpg,05329.jpg\n0006,0,check_booklet,05339.jpg,05367.jpg\n0006,57,screw_screw_with_hands,00722.jpg,00761.jpg\n0006,5,take_partial_model,05368.jpg,05376.jpg\n0006,47,align_objects,05368.jpg,05395.jpg\n0006,0,check_booklet,05396.jpg,05412.jpg\n0006,15,take_screw,05418.jpg,05429.jpg\n0006,47,align_objects,05426.jpg,05436.jpg\n0006,21,take_bolt,05470.jpg,05483.jpg\n0006,47,align_objects,05523.jpg,05550.jpg\n0006,57,screw_screw_with_hands,05551.jpg,05651.jpg\n0006,57,screw_screw_with_hands,05666.jpg,05701.jpg\n0006,19,take_red_perforated_junction_bar,05783.jpg,05793.jpg\n0006,0,check_booklet,00762.jpg,00789.jpg\n0006,47,align_objects,05795.jpg,05805.jpg\n0006,0,check_booklet,05806.jpg,05829.jpg\n0006,15,take_screw,05834.jpg,05844.jpg\n0006,47,align_objects,05843.jpg,05853.jpg\n0006,51,plug_screw,05852.jpg,05863.jpg\n0006,21,take_bolt,05865.jpg,05876.jpg\n0006,21,take_bolt,05910.jpg,05922.jpg\n0006,47,align_objects,05917.jpg,05927.jpg\n0006,57,screw_screw_with_hands,05938.jpg,06007.jpg\n0006,8,take_screwdriver,06022.jpg,06035.jpg\n0006,6,take_white_angled_perforated_bar,00799.jpg,00812.jpg\n0006,48,align_screwdriver_to_screw,06035.jpg,06047.jpg\n0006,58,screw_screw_with_screwdriver,06047.jpg,06054.jpg\n0006,8,take_screwdriver,06061.jpg,06067.jpg\n0006,48,align_screwdriver_to_screw,06066.jpg,06073.jpg\n0006,58,screw_screw_with_screwdriver,06073.jpg,06094.jpg\n0006,29,put_screwdriver,06094.jpg,06106.jpg\n0006,13,take_rod,06143.jpg,06157.jpg\n0006,16,take_tire,06187.jpg,06194.jpg\n0006,37,put_tire,06197.jpg,06207.jpg\n0006,17,take_rim,06206.jpg,06214.jpg\n0006,26,put_partial_model,00814.jpg,00825.jpg\n0006,9,take_gray_perforated_bar,00210.jpg,00229.jpg\n0006,47,align_objects,06209.jpg,06216.jpg\n0006,50,fit_rim_tire,06215.jpg,06317.jpg\n0006,26,put_partial_model,06320.jpg,06328.jpg\n0006,17,take_rim,06328.jpg,06337.jpg\n0006,16,take_tire,06333.jpg,06341.jpg\n0006,47,align_objects,06342.jpg,06349.jpg\n0006,50,fit_rim_tire,06349.jpg,06472.jpg\n0006,26,put_partial_model,06480.jpg,06489.jpg\n0006,13,take_rod,06487.jpg,06507.jpg\n0006,0,check_booklet,06525.jpg,06534.jpg\n0006,21,take_bolt,00833.jpg,00845.jpg\n0006,18,take_washer,06540.jpg,06555.jpg\n0006,0,check_booklet,06585.jpg,06611.jpg\n0006,47,align_objects,06616.jpg,06636.jpg\n0006,39,put_washer,06643.jpg,06650.jpg\n0006,0,check_booklet,06668.jpg,06680.jpg\n0006,3,take_booklet,06680.jpg,06697.jpg\n0006,0,check_booklet,06698.jpg,06715.jpg\n0006,24,put_booklet,06717.jpg,06731.jpg\n0006,18,take_washer,06734.jpg,06744.jpg\n0006,0,check_booklet,06744.jpg,06776.jpg\n0006,15,take_screw,00849.jpg,00859.jpg\n0006,0,check_booklet,06793.jpg,06798.jpg\n0006,0,check_booklet,06813.jpg,06832.jpg\n0006,47,align_objects,06843.jpg,06856.jpg\n0006,51,plug_screw,06867.jpg,06870.jpg\n0006,18,take_washer,06874.jpg,06882.jpg\n0006,47,align_objects,06881.jpg,06900.jpg\n0006,56,pull_partial_model,06912.jpg,06915.jpg\n0006,39,put_washer,06939.jpg,06947.jpg\n0006,18,take_washer,06952.jpg,06960.jpg\n0006,18,take_washer,06967.jpg,06974.jpg\n0006,30,put_gray_perforated_bar,00853.jpg,00862.jpg\n0006,47,align_objects,06982.jpg,06993.jpg\n0006,51,plug_screw,06993.jpg,07021.jpg\n0006,51,plug_screw,07052.jpg,07092.jpg\n0006,47,align_objects,07099.jpg,07110.jpg\n0006,1,browse_booklet,07131.jpg,07141.jpg\n0006,18,take_washer,07165.jpg,07174.jpg\n0006,3,take_booklet,07179.jpg,07194.jpg\n0006,24,put_booklet,07203.jpg,07223.jpg\n0006,5,take_partial_model,07235.jpg,07247.jpg\n0006,5,take_partial_model,07258.jpg,07266.jpg\n0006,42,put_bolt,00870.jpg,00879.jpg\n0006,26,put_partial_model,07262.jpg,07270.jpg\n0006,26,put_partial_model,07265.jpg,07274.jpg\n0006,18,take_washer,07271.jpg,07281.jpg\n0006,47,align_objects,07282.jpg,07310.jpg\n0006,47,align_objects,07314.jpg,07320.jpg\n0006,47,align_objects,07314.jpg,07358.jpg\n0006,5,take_partial_model,07367.jpg,07381.jpg\n0006,47,align_objects,07382.jpg,07406.jpg\n0006,51,plug_screw,07406.jpg,07416.jpg\n0006,47,align_objects,07466.jpg,07482.jpg\n0006,9,take_gray_perforated_bar,00893.jpg,00903.jpg\n0006,47,align_objects,07485.jpg,07492.jpg\n0006,51,plug_screw,07492.jpg,07500.jpg\n0006,18,take_washer,07510.jpg,07517.jpg\n0006,47,align_objects,07519.jpg,07548.jpg\n0006,51,plug_screw,07548.jpg,07562.jpg\n0006,45,tighten_bolt_with_hands,07604.jpg,07651.jpg\n0006,0,check_booklet,07736.jpg,07822.jpg\n0006,5,take_partial_model,07826.jpg,07836.jpg\n0006,47,align_objects,07838.jpg,07847.jpg\n0006,51,plug_screw,07846.jpg,07869.jpg\n0006,47,align_objects,00928.jpg,00940.jpg\n0006,0,check_booklet,07895.jpg,07924.jpg\n0006,13,take_rod,07927.jpg,07935.jpg\n0006,22,take_roller,07942.jpg,07948.jpg\n0006,0,check_booklet,07956.jpg,07981.jpg\n0006,0,check_booklet,08005.jpg,08017.jpg\n0006,47,align_objects,08023.jpg,08031.jpg\n0006,52,plug_rod,08034.jpg,08053.jpg\n0006,56,pull_partial_model,08057.jpg,08058.jpg\n0006,5,take_partial_model,08055.jpg,08065.jpg\n0006,47,align_objects,08077.jpg,08084.jpg\n0006,15,take_screw,00944.jpg,00954.jpg\n0006,52,plug_rod,08089.jpg,08135.jpg\n0006,18,take_washer,08139.jpg,08150.jpg\n0006,47,align_objects,08158.jpg,08174.jpg\n0006,52,plug_rod,08174.jpg,08191.jpg\n0006,18,take_washer,08209.jpg,08222.jpg\n0006,47,align_objects,08228.jpg,08236.jpg\n0006,52,plug_rod,08236.jpg,08273.jpg\n0006,26,put_partial_model,08292.jpg,08302.jpg\n0006,9,take_gray_perforated_bar,00813.jpg,00825.jpg\n0006,30,put_gray_perforated_bar,00854.jpg,00863.jpg\n0006,47,align_objects,00950.jpg,00957.jpg\n0006,5,take_partial_model,00996.jpg,01009.jpg\n0006,11,take_red_angled_perforated_bar,01986.jpg,02008.jpg\n0006,5,take_partial_model,02476.jpg,02490.jpg\n0006,0,check_booklet,02504.jpg,02582.jpg\n0006,0,check_booklet,02682.jpg,02703.jpg\n0006,51,plug_screw,02710.jpg,02721.jpg\n0006,8,take_screwdriver,02931.jpg,02939.jpg\n0006,26,put_partial_model,02931.jpg,02975.jpg\n0006,8,take_screwdriver,02975.jpg,02984.jpg\n0006,54,pull_screw,03052.jpg,03055.jpg\n0006,51,plug_screw,00956.jpg,00968.jpg\n0006,29,put_screwdriver,03424.jpg,03435.jpg\n0006,0,check_booklet,03510.jpg,03514.jpg\n0006,0,check_booklet,03523.jpg,03530.jpg\n0006,44,put_objects,03964.jpg,03986.jpg\n0006,1,browse_booklet,04321.jpg,04337.jpg\n0006,15,take_screw,04571.jpg,04581.jpg\n0006,45,tighten_bolt_with_hands,04901.jpg,04963.jpg\n0006,0,check_booklet,05214.jpg,05225.jpg\n0006,0,check_booklet,05254.jpg,05268.jpg\n0006,0,check_booklet,06157.jpg,06181.jpg\n0006,21,take_bolt,00971.jpg,00981.jpg\n0006,47,align_objects,00243.jpg,00255.jpg\n0006,26,put_partial_model,06182.jpg,06192.jpg\n0006,39,put_washer,06743.jpg,06755.jpg\n0006,47,align_objects,06751.jpg,06775.jpg\n0006,18,take_washer,06774.jpg,06789.jpg\n0006,5,take_partial_model,07351.jpg,07360.jpg\n0006,26,put_partial_model,07939.jpg,07978.jpg\n0006,29,put_screwdriver,02538.jpg,02596.jpg\n0006,47,align_objects,00981.jpg,01004.jpg\n0006,47,align_objects,01013.jpg,01035.jpg\n0006,57,screw_screw_with_hands,01041.jpg,01086.jpg\n0006,57,screw_screw_with_hands,01109.jpg,01128.jpg\n0006,57,screw_screw_with_hands,01156.jpg,01188.jpg\n0006,8,take_screwdriver,01188.jpg,01198.jpg\n0006,47,align_objects,01201.jpg,01209.jpg\n0006,58,screw_screw_with_screwdriver,01210.jpg,01237.jpg\n0006,48,align_screwdriver_to_screw,01264.jpg,01274.jpg\n0006,58,screw_screw_with_screwdriver,01279.jpg,01333.jpg\n0006,20,take_red_4_perforated_junction_bar,00268.jpg,00275.jpg\n0006,29,put_screwdriver,01334.jpg,01343.jpg\n0006,0,check_booklet,01459.jpg,01560.jpg\n0006,14,take_handlebar,01557.jpg,01576.jpg\n0006,47,align_objects,01582.jpg,01594.jpg\n0006,53,plug_handlebar,01594.jpg,01609.jpg\n0006,47,align_objects,01619.jpg,01631.jpg\n0006,53,plug_handlebar,01630.jpg,01657.jpg\n0006,0,check_booklet,01657.jpg,01696.jpg\n0006,12,take_red_perforated_bar,01707.jpg,01724.jpg\n0006,26,put_partial_model,01720.jpg,01732.jpg\n0006,47,align_objects,00293.jpg,00310.jpg\n0006,11,take_red_angled_perforated_bar,01754.jpg,01780.jpg\n0006,15,take_screw,01791.jpg,01801.jpg\n0006,15,take_screw,01790.jpg,01799.jpg\n0006,21,take_bolt,01818.jpg,01844.jpg\n0006,33,put_red_perforated_bar,01844.jpg,01853.jpg\n0006,36,put_screw,01860.jpg,01872.jpg\n0006,5,take_partial_model,01873.jpg,01887.jpg\n0006,42,put_bolt,01888.jpg,01894.jpg\n0006,21,take_bolt,01893.jpg,01902.jpg\n0006,42,put_bolt,01900.jpg,01910.jpg\n0006,15,take_screw,00315.jpg,00326.jpg\n0006,0,check_booklet,01910.jpg,02006.jpg\n0006,15,take_screw,02019.jpg,02032.jpg\n0006,47,align_objects,02047.jpg,02055.jpg\n0006,51,plug_screw,02056.jpg,02063.jpg\n0006,15,take_screw,02069.jpg,02081.jpg\n0006,47,align_objects,02091.jpg,02105.jpg\n0006,51,plug_screw,02105.jpg,02114.jpg\n0006,21,take_bolt,02124.jpg,02134.jpg\n0006,47,align_objects,02129.jpg,02137.jpg\n0006,45,tighten_bolt_with_hands,02145.jpg,02181.jpg\n0006,47,align_objects,00324.jpg,00331.jpg\n0006,12,take_red_perforated_bar,02182.jpg,02195.jpg\n0006,47,align_objects,02193.jpg,02201.jpg\n0006,51,plug_screw,02201.jpg,02206.jpg\n0006,21,take_bolt,02208.jpg,02216.jpg\n0006,45,tighten_bolt_with_hands,02235.jpg,02274.jpg\n0006,8,take_screwdriver,02278.jpg,02288.jpg\n0006,45,tighten_bolt_with_hands,02294.jpg,02312.jpg\n0006,48,align_screwdriver_to_screw,02314.jpg,02322.jpg\n0006,58,screw_screw_with_screwdriver,02337.jpg,02406.jpg\n0006,48,align_screwdriver_to_screw,02418.jpg,02426.jpg\n0006,51,plug_screw,00331.jpg,00342.jpg\n0006,58,screw_screw_with_screwdriver,02437.jpg,02486.jpg\n0006,29,put_screwdriver,02486.jpg,02495.jpg\n0006,8,take_screwdriver,02533.jpg,02543.jpg\n0006,26,put_partial_model,02545.jpg,02592.jpg\n0006,11,take_red_angled_perforated_bar,02602.jpg,02618.jpg\n0006,4,take_gray_angled_perforated_bar,02629.jpg,02641.jpg\n0006,25,put_gray_angled_perforated_bar,02652.jpg,02661.jpg\n0006,47,align_objects,02668.jpg,02679.jpg\n0006,15,take_screw,02686.jpg,02702.jpg\n0006,47,align_objects,02701.jpg,02710.jpg\n0006,21,take_bolt,00359.jpg,00369.jpg\n0006,21,take_bolt,02725.jpg,02732.jpg\n0006,47,align_objects,02737.jpg,02747.jpg\n0006,57,screw_screw_with_hands,02784.jpg,02822.jpg\n0006,8,take_screwdriver,02824.jpg,02834.jpg\n0006,48,align_screwdriver_to_screw,02843.jpg,02850.jpg\n0006,58,screw_screw_with_screwdriver,02857.jpg,02895.jpg\n0006,29,put_screwdriver,02897.jpg,02906.jpg\n0006,0,check_booklet,02927.jpg,02981.jpg\n0006,48,align_screwdriver_to_screw,02981.jpg,02988.jpg\n0006,60,unscrew_screw_with_screwdriver,02993.jpg,03022.jpg\n0006,47,align_objects,00405.jpg,00421.jpg"
+  },
+  {
+   "title": "0007 (validation): toy motorbike assembly — 493 action segments",
+   "video_ref": "MECCANO_RGB_Videos/0007.mp4",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 6.0,
+     "te": 7.08,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 6.33,
+     "te": 10.0,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 9.33,
+     "te": 10.0,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 11.75,
+     "te": 20.92,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 12.83,
+     "te": 13.83,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 21.42,
+     "te": 22.08,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 24.0,
+     "te": 24.92,
+     "lane": "action",
+     "text": "take_red_4_perforated_junction_bar"
+    },
+    {
+     "t": 27.42,
+     "te": 28.17,
+     "lane": "action",
+     "text": "take_gray_perforated_bar"
+    },
+    {
+     "t": 28.33,
+     "te": 31.75,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 30.67,
+     "te": 31.5,
+     "lane": "action",
+     "text": "take_gray_angled_perforated_bar"
+    },
+    {
+     "t": 40.17,
+     "te": 41.67,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 41.67,
+     "te": 42.58,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 43.67,
+     "te": 47.92,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 56.83,
+     "te": 57.92,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 57.33,
+     "te": 63.58,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 62.67,
+     "te": 63.67,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 65.33,
+     "te": 66.25,
+     "lane": "action",
+     "text": "put_screw"
+    },
+    {
+     "t": 66.17,
+     "te": 68.33,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 67.83,
+     "te": 68.92,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 69.0,
+     "te": 69.75,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 69.58,
+     "te": 70.33,
+     "lane": "action",
+     "text": "put_objects"
+    },
+    {
+     "t": 70.5,
+     "te": 77.5,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 70.75,
+     "te": 71.92,
+     "lane": "action",
+     "text": "put_objects"
+    },
+    {
+     "t": 72.5,
+     "te": 73.75,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 80.58,
+     "te": 87.42,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 80.83,
+     "te": 82.42,
+     "lane": "action",
+     "text": "take_roller"
+    },
+    {
+     "t": 86.83,
+     "te": 87.92,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 88.17,
+     "te": 89.08,
+     "lane": "action",
+     "text": "take_red_4_perforated_junction_bar"
+    },
+    {
+     "t": 91.25,
+     "te": 94.0,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 94.0,
+     "te": 95.0,
+     "lane": "action",
+     "text": "take_gray_perforated_bar"
+    },
+    {
+     "t": 95.17,
+     "te": 99.58,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 99.75,
+     "te": 100.92,
+     "lane": "action",
+     "text": "take_gray_angled_perforated_bar"
+    },
+    {
+     "t": 102.75,
+     "te": 104.5,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 104.33,
+     "te": 105.33,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 106.08,
+     "te": 109.92,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 109.92,
+     "te": 115.0,
+     "lane": "action",
+     "text": "screw_screw_with_hands"
+    },
+    {
+     "t": 117.17,
+     "te": 119.5,
+     "lane": "action",
+     "text": "unscrew_screw_with_hands"
+    },
+    {
+     "t": 120.33,
+     "te": 121.08,
+     "lane": "action",
+     "text": "put_screw"
+    },
+    {
+     "t": 120.83,
+     "te": 121.92,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 125.42,
+     "te": 128.67,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 129.75,
+     "te": 131.92,
+     "lane": "action",
+     "text": "screw_screw_with_hands"
+    },
+    {
+     "t": 132.58,
+     "te": 133.33,
+     "lane": "action",
+     "text": "take_screwdriver"
+    },
+    {
+     "t": 134.83,
+     "te": 135.5,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 135.5,
+     "te": 140.17,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 143.25,
+     "te": 144.08,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 144.08,
+     "te": 145.67,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 149.92,
+     "te": 150.75,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 150.75,
+     "te": 151.75,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 155.92,
+     "te": 156.58,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 157.83,
+     "te": 159.0,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 158.0,
+     "te": 167.0,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 166.58,
+     "te": 167.42,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 168.08,
+     "te": 169.25,
+     "lane": "action",
+     "text": "take_gray_perforated_bar"
+    },
+    {
+     "t": 174.25,
+     "te": 175.08,
+     "lane": "action",
+     "text": "take_white_angled_perforated_bar"
+    },
+    {
+     "t": 176.0,
+     "te": 182.0,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 176.25,
+     "te": 177.17,
+     "lane": "action",
+     "text": "take_white_angled_perforated_bar"
+    },
+    {
+     "t": 184.0,
+     "te": 193.08,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 188.75,
+     "te": 189.58,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 192.75,
+     "te": 193.92,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 194.0,
+     "te": 194.92,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 195.83,
+     "te": 196.75,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 196.67,
+     "te": 197.5,
+     "lane": "action",
+     "text": "put_screw"
+    },
+    {
+     "t": 199.0,
+     "te": 201.17,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 208.5,
+     "te": 209.67,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 210.25,
+     "te": 211.0,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 211.0,
+     "te": 217.58,
+     "lane": "action",
+     "text": "tighten_bolt_with_hands"
+    },
+    {
+     "t": 222.08,
+     "te": 224.75,
+     "lane": "action",
+     "text": "loosen_bolt_with_hands"
+    },
+    {
+     "t": 224.25,
+     "te": 226.25,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 226.25,
+     "te": 231.17,
+     "lane": "action",
+     "text": "tighten_bolt_with_hands"
+    },
+    {
+     "t": 238.0,
+     "te": 239.0,
+     "lane": "action",
+     "text": "take_screwdriver"
+    },
+    {
+     "t": 239.5,
+     "te": 240.42,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 240.42,
+     "te": 248.0,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 252.25,
+     "te": 253.67,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 253.67,
+     "te": 254.83,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 255.42,
+     "te": 256.25,
+     "lane": "action",
+     "text": "put_screwdriver"
+    },
+    {
+     "t": 257.17,
+     "te": 258.5,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 257.75,
+     "te": 267.83,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 265.33,
+     "te": 266.25,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 267.25,
+     "te": 268.0,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 270.42,
+     "te": 277.75,
+     "lane": "action",
+     "text": "plug_handlebar"
+    },
+    {
+     "t": 278.17,
+     "te": 278.67,
+     "lane": "action",
+     "text": "pull_partial_model"
+    },
+    {
+     "t": 282.83,
+     "te": 286.0,
+     "lane": "action",
+     "text": "plug_handlebar"
+    },
+    {
+     "t": 287.5,
+     "te": 288.42,
+     "lane": "action",
+     "text": "take_handlebar"
+    },
+    {
+     "t": 288.83,
+     "te": 293.17,
+     "lane": "action",
+     "text": "plug_handlebar"
+    },
+    {
+     "t": 294.17,
+     "te": 295.33,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 294.67,
+     "te": 307.67,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 306.5,
+     "te": 307.33,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 308.75,
+     "te": 309.67,
+     "lane": "action",
+     "text": "take_red_angled_perforated_bar"
+    },
+    {
+     "t": 309.83,
+     "te": 310.58,
+     "lane": "action",
+     "text": "put_red_angled_perforated_bar"
+    },
+    {
+     "t": 311.83,
+     "te": 312.67,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 312.33,
+     "te": 314.75,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 314.25,
+     "te": 315.0,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 315.33,
+     "te": 316.17,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 315.58,
+     "te": 316.58,
+     "lane": "action",
+     "text": "put_screw"
+    },
+    {
+     "t": 316.75,
+     "te": 317.42,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 319.17,
+     "te": 320.17,
+     "lane": "action",
+     "text": "take_red_perforated_bar"
+    },
+    {
+     "t": 320.08,
+     "te": 320.92,
+     "lane": "action",
+     "text": "put_red_perforated_bar"
+    },
+    {
+     "t": 321.42,
+     "te": 326.17,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 322.75,
+     "te": 323.75,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 324.67,
+     "te": 325.92,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 325.83,
+     "te": 326.67,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 326.67,
+     "te": 327.58,
+     "lane": "action",
+     "text": "put_bolt"
+    },
+    {
+     "t": 331.17,
+     "te": 346.58,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 334.5,
+     "te": 335.58,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 337.75,
+     "te": 338.83,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 340.42,
+     "te": 341.58,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 346.0,
+     "te": 346.75,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 347.92,
+     "te": 349.0,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 349.17,
+     "te": 349.75,
+     "lane": "action",
+     "text": "put_screw"
+    },
+    {
+     "t": 351.5,
+     "te": 352.5,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 351.67,
+     "te": 371.25,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 370.42,
+     "te": 371.25,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 371.42,
+     "te": 372.25,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 371.92,
+     "te": 372.67,
+     "lane": "action",
+     "text": "put_bolt"
+    },
+    {
+     "t": 374.33,
+     "te": 384.33,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 375.25,
+     "te": 376.17,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 377.17,
+     "te": 378.0,
+     "lane": "action",
+     "text": "take_red_perforated_bar"
+    },
+    {
+     "t": 381.08,
+     "te": 382.58,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 384.08,
+     "te": 384.92,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 385.25,
+     "te": 387.58,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 387.67,
+     "te": 401.25,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 390.67,
+     "te": 391.67,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 393.58,
+     "te": 394.5,
+     "lane": "action",
+     "text": "put_red_perforated_bar"
+    },
+    {
+     "t": 394.42,
+     "te": 395.5,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 402.33,
+     "te": 403.0,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 403.0,
+     "te": 404.25,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 404.25,
+     "te": 405.08,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 405.75,
+     "te": 406.58,
+     "lane": "action",
+     "text": "put_screw"
+    },
+    {
+     "t": 406.0,
+     "te": 416.58,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 411.58,
+     "te": 412.42,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 415.67,
+     "te": 416.42,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 418.17,
+     "te": 419.08,
+     "lane": "action",
+     "text": "take_red_angled_perforated_bar"
+    },
+    {
+     "t": 422.58,
+     "te": 423.17,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 424.25,
+     "te": 425.0,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 425.92,
+     "te": 426.67,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 430.92,
+     "te": 432.08,
+     "lane": "action",
+     "text": "screw_screw_with_hands"
+    },
+    {
+     "t": 432.42,
+     "te": 433.17,
+     "lane": "action",
+     "text": "take_screwdriver"
+    },
+    {
+     "t": 433.25,
+     "te": 433.92,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 433.92,
+     "te": 437.5,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 441.08,
+     "te": 442.0,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 442.0,
+     "te": 445.42,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 446.5,
+     "te": 447.25,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 450.08,
+     "te": 450.83,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 450.83,
+     "te": 452.5,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 453.58,
+     "te": 454.58,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 454.58,
+     "te": 456.33,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 459.92,
+     "te": 460.67,
+     "lane": "action",
+     "text": "put_screwdriver"
+    },
+    {
+     "t": 461.08,
+     "te": 462.83,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 463.17,
+     "te": 463.83,
+     "lane": "action",
+     "text": "take_red_perforated_bar"
+    },
+    {
+     "t": 464.0,
+     "te": 465.0,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 467.08,
+     "te": 468.58,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 469.58,
+     "te": 470.42,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 471.08,
+     "te": 474.75,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 475.67,
+     "te": 476.42,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 476.33,
+     "te": 477.67,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 479.67,
+     "te": 481.25,
+     "lane": "action",
+     "text": "tighten_bolt_with_hands"
+    },
+    {
+     "t": 482.5,
+     "te": 483.33,
+     "lane": "action",
+     "text": "take_screwdriver"
+    },
+    {
+     "t": 483.58,
+     "te": 484.33,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 484.33,
+     "te": 492.17,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 495.83,
+     "te": 496.92,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 496.92,
+     "te": 498.17,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 498.83,
+     "te": 533.25,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 500.58,
+     "te": 501.33,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 500.83,
+     "te": 501.75,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 513.42,
+     "te": 514.5,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 532.83,
+     "te": 533.58,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 536.83,
+     "te": 537.83,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 537.33,
+     "te": 552.58,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 551.58,
+     "te": 552.5,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 554.75,
+     "te": 555.67,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 556.75,
+     "te": 557.67,
+     "lane": "action",
+     "text": "take_white_angled_perforated_bar"
+    },
+    {
+     "t": 558.08,
+     "te": 558.92,
+     "lane": "action",
+     "text": "put_white_angled_perforated_bar"
+    },
+    {
+     "t": 560.0,
+     "te": 565.5,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 563.58,
+     "te": 564.67,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 564.92,
+     "te": 565.83,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 566.75,
+     "te": 570.25,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 567.0,
+     "te": 567.83,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 568.58,
+     "te": 569.42,
+     "lane": "action",
+     "text": "put_screw"
+    },
+    {
+     "t": 571.42,
+     "te": 572.33,
+     "lane": "action",
+     "text": "take_red_angled_perforated_bar"
+    },
+    {
+     "t": 572.25,
+     "te": 573.0,
+     "lane": "action",
+     "text": "put_red_angled_perforated_bar"
+    },
+    {
+     "t": 576.17,
+     "te": 576.92,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 576.75,
+     "te": 577.42,
+     "lane": "action",
+     "text": "put_bolt"
+    },
+    {
+     "t": 577.92,
+     "te": 578.67,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 578.58,
+     "te": 579.33,
+     "lane": "action",
+     "text": "put_washer"
+    },
+    {
+     "t": 579.67,
+     "te": 598.17,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 579.92,
+     "te": 580.92,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 597.42,
+     "te": 598.17,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 600.08,
+     "te": 601.08,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 600.58,
+     "te": 623.67,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 603.0,
+     "te": 603.83,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 609.67,
+     "te": 610.5,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 623.08,
+     "te": 624.33,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 625.83,
+     "te": 628.17,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 627.5,
+     "te": 628.33,
+     "lane": "action",
+     "text": "take_red_angled_perforated_bar"
+    },
+    {
+     "t": 629.33,
+     "te": 630.67,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 631.17,
+     "te": 637.67,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 638.42,
+     "te": 639.17,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 640.92,
+     "te": 642.33,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 644.58,
+     "te": 645.92,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 645.08,
+     "te": 652.67,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 652.17,
+     "te": 653.0,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 652.92,
+     "te": 653.67,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 654.5,
+     "te": 656.33,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 656.33,
+     "te": 660.25,
+     "lane": "action",
+     "text": "tighten_bolt_with_hands"
+    },
+    {
+     "t": 663.0,
+     "te": 664.0,
+     "lane": "action",
+     "text": "take_screwdriver"
+    },
+    {
+     "t": 665.0,
+     "te": 666.08,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 666.08,
+     "te": 671.17,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 671.42,
+     "te": 672.5,
+     "lane": "action",
+     "text": "put_screwdriver"
+    },
+    {
+     "t": 673.58,
+     "te": 674.58,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 673.83,
+     "te": 686.92,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 686.33,
+     "te": 687.17,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 687.33,
+     "te": 688.25,
+     "lane": "action",
+     "text": "take_white_angled_perforated_bar"
+    },
+    {
+     "t": 688.58,
+     "te": 698.67,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 691.17,
+     "te": 692.17,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 696.67,
+     "te": 697.5,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 698.17,
+     "te": 698.92,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 699.67,
+     "te": 700.42,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 700.58,
+     "te": 701.33,
+     "lane": "action",
+     "text": "take_wheels_axle"
+    },
+    {
+     "t": 701.5,
+     "te": 702.33,
+     "lane": "action",
+     "text": "put_wheels_axle"
+    },
+    {
+     "t": 702.25,
+     "te": 703.33,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 703.92,
+     "te": 704.92,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 705.5,
+     "te": 706.5,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 706.0,
+     "te": 709.75,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 706.67,
+     "te": 707.5,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 707.58,
+     "te": 708.5,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 709.17,
+     "te": 710.08,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 710.92,
+     "te": 711.67,
+     "lane": "action",
+     "text": "put_washer"
+    },
+    {
+     "t": 712.5,
+     "te": 713.5,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 713.0,
+     "te": 714.33,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 713.58,
+     "te": 714.33,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 716.33,
+     "te": 717.08,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 719.0,
+     "te": 719.67,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 719.92,
+     "te": 720.75,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 724.92,
+     "te": 725.67,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 727.0,
+     "te": 732.67,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 727.33,
+     "te": 728.25,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 731.75,
+     "te": 732.67,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 732.83,
+     "te": 734.17,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 737.17,
+     "te": 737.92,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 739.42,
+     "te": 744.92,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 746.17,
+     "te": 747.33,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 749.25,
+     "te": 750.5,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 753.42,
+     "te": 754.17,
+     "lane": "action",
+     "text": "put_bolt"
+    },
+    {
+     "t": 754.5,
+     "te": 755.42,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 754.58,
+     "te": 757.67,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 756.92,
+     "te": 758.17,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 763.75,
+     "te": 764.75,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 765.17,
+     "te": 768.17,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 780.0,
+     "te": 781.0,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 780.83,
+     "te": 783.33,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 783.33,
+     "te": 786.0,
+     "lane": "action",
+     "text": "tighten_bolt_with_hands"
+    },
+    {
+     "t": 788.75,
+     "te": 789.58,
+     "lane": "action",
+     "text": "take_screwdriver"
+    },
+    {
+     "t": 789.5,
+     "te": 790.42,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 790.42,
+     "te": 794.08,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 795.92,
+     "te": 796.83,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 796.83,
+     "te": 798.25,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 798.5,
+     "te": 799.25,
+     "lane": "action",
+     "text": "put_screwdriver"
+    },
+    {
+     "t": 803.08,
+     "te": 804.42,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 803.58,
+     "te": 811.0,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 811.0,
+     "te": 814.58,
+     "lane": "action",
+     "text": "browse_booklet"
+    },
+    {
+     "t": 814.67,
+     "te": 816.75,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 817.67,
+     "te": 818.58,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 818.75,
+     "te": 819.58,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 820.08,
+     "te": 820.83,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 820.75,
+     "te": 821.67,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 822.5,
+     "te": 830.67,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 830.75,
+     "te": 831.75,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 831.17,
+     "te": 832.08,
+     "lane": "action",
+     "text": "take_red_perforated_bar"
+    },
+    {
+     "t": 833.08,
+     "te": 834.0,
+     "lane": "action",
+     "text": "take_red_perforated_bar"
+    },
+    {
+     "t": 840.0,
+     "te": 840.92,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 841.0,
+     "te": 842.17,
+     "lane": "action",
+     "text": "put_red_perforated_bar"
+    },
+    {
+     "t": 842.17,
+     "te": 842.75,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 844.5,
+     "te": 847.42,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 849.08,
+     "te": 862.42,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 849.42,
+     "te": 850.67,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 861.67,
+     "te": 862.5,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 867.58,
+     "te": 868.42,
+     "lane": "action",
+     "text": "take_red_perforated_bar"
+    },
+    {
+     "t": 869.25,
+     "te": 870.58,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 871.25,
+     "te": 872.17,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 873.58,
+     "te": 879.75,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 879.83,
+     "te": 884.67,
+     "lane": "action",
+     "text": "screw_screw_with_hands"
+    },
+    {
+     "t": 886.42,
+     "te": 887.33,
+     "lane": "action",
+     "text": "unscrew_screw_with_hands"
+    },
+    {
+     "t": 892.33,
+     "te": 893.08,
+     "lane": "action",
+     "text": "take_screwdriver"
+    },
+    {
+     "t": 892.92,
+     "te": 893.75,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 893.75,
+     "te": 902.67,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 902.83,
+     "te": 903.67,
+     "lane": "action",
+     "text": "put_screwdriver"
+    },
+    {
+     "t": 906.5,
+     "te": 920.0,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 906.92,
+     "te": 908.08,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 916.58,
+     "te": 917.75,
+     "lane": "action",
+     "text": "take_wheels_axle"
+    },
+    {
+     "t": 916.83,
+     "te": 917.67,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 917.58,
+     "te": 918.5,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 919.5,
+     "te": 920.25,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 920.5,
+     "te": 921.5,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 922.75,
+     "te": 923.67,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 923.25,
+     "te": 934.67,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 926.25,
+     "te": 928.25,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 931.92,
+     "te": 932.83,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 933.92,
+     "te": 934.75,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 939.0,
+     "te": 939.75,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 940.83,
+     "te": 941.58,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 941.58,
+     "te": 942.92,
+     "lane": "action",
+     "text": "tighten_bolt_with_hands"
+    },
+    {
+     "t": 943.42,
+     "te": 944.25,
+     "lane": "action",
+     "text": "take_wrench"
+    },
+    {
+     "t": 945.0,
+     "te": 955.08,
+     "lane": "action",
+     "text": "tighten_bolt_with_wrench"
+    },
+    {
+     "t": 958.42,
+     "te": 960.67,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 958.92,
+     "te": 975.58,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 974.33,
+     "te": 975.08,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 975.17,
+     "te": 976.25,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 975.83,
+     "te": 976.58,
+     "lane": "action",
+     "text": "put_wrench"
+    },
+    {
+     "t": 976.67,
+     "te": 977.42,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 977.75,
+     "te": 978.75,
+     "lane": "action",
+     "text": "take_red_perforated_junction_bar"
+    },
+    {
+     "t": 980.83,
+     "te": 986.0,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 985.67,
+     "te": 986.42,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 987.17,
+     "te": 988.92,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 990.0,
+     "te": 992.17,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 993.25,
+     "te": 994.0,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 994.67,
+     "te": 995.42,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 999.25,
+     "te": 1000.17,
+     "lane": "action",
+     "text": "take_screwdriver"
+    },
+    {
+     "t": 999.67,
+     "te": 1000.67,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 1000.67,
+     "te": 1006.08,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 1006.92,
+     "te": 1007.67,
+     "lane": "action",
+     "text": "put_screwdriver"
+    },
+    {
+     "t": 1008.58,
+     "te": 1009.67,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 1008.58,
+     "te": 1030.17,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 1029.0,
+     "te": 1030.17,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 1029.67,
+     "te": 1030.5,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 1032.92,
+     "te": 1033.75,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 1034.08,
+     "te": 1035.0,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 1035.0,
+     "te": 1042.42,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 1042.08,
+     "te": 1043.17,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 1044.75,
+     "te": 1045.75,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 1045.75,
+     "te": 1053.0,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 1052.67,
+     "te": 1053.5,
+     "lane": "action",
+     "text": "put_screwdriver"
+    },
+    {
+     "t": 1055.25,
+     "te": 1056.08,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 1055.75,
+     "te": 1056.5,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 1056.58,
+     "te": 1057.5,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 1058.17,
+     "te": 1061.25,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 1065.58,
+     "te": 1067.17,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 1066.08,
+     "te": 1085.92,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 1085.25,
+     "te": 1086.0,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 1087.33,
+     "te": 1088.42,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 1089.0,
+     "te": 1089.92,
+     "lane": "action",
+     "text": "take_screw"
+    },
+    {
+     "t": 1090.75,
+     "te": 1093.92,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 1094.67,
+     "te": 1095.58,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 1101.0,
+     "te": 1104.0,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 1107.83,
+     "te": 1109.33,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 1109.67,
+     "te": 1111.58,
+     "lane": "action",
+     "text": "pull_screw"
+    },
+    {
+     "t": 1116.33,
+     "te": 1119.58,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 1121.75,
+     "te": 1125.5,
+     "lane": "action",
+     "text": "screw_screw_with_hands"
+    },
+    {
+     "t": 1126.5,
+     "te": 1127.5,
+     "lane": "action",
+     "text": "take_screwdriver"
+    },
+    {
+     "t": 1127.0,
+     "te": 1128.17,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 1128.17,
+     "te": 1139.5,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 1148.08,
+     "te": 1149.25,
+     "lane": "action",
+     "text": "align_screwdriver_to_screw"
+    },
+    {
+     "t": 1149.25,
+     "te": 1153.25,
+     "lane": "action",
+     "text": "screw_screw_with_screwdriver"
+    },
+    {
+     "t": 1155.17,
+     "te": 1156.25,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 1156.67,
+     "te": 1157.5,
+     "lane": "action",
+     "text": "put_screwdriver"
+    },
+    {
+     "t": 1157.67,
+     "te": 1158.75,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 1158.08,
+     "te": 1164.08,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 1163.67,
+     "te": 1164.58,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 1164.5,
+     "te": 1165.42,
+     "lane": "action",
+     "text": "take_rim"
+    },
+    {
+     "t": 1165.08,
+     "te": 1165.75,
+     "lane": "action",
+     "text": "take_tire"
+    },
+    {
+     "t": 1168.58,
+     "te": 1169.5,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 1168.75,
+     "te": 1170.67,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 1170.0,
+     "te": 1170.83,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 1174.75,
+     "te": 1186.5,
+     "lane": "action",
+     "text": "fit_rim_tire"
+    },
+    {
+     "t": 1187.5,
+     "te": 1188.42,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 1189.67,
+     "te": 1190.58,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 1191.25,
+     "te": 1193.83,
+     "lane": "action",
+     "text": "fit_rim_tire"
+    },
+    {
+     "t": 1194.25,
+     "te": 1195.08,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 1195.0,
+     "te": 1195.75,
+     "lane": "action",
+     "text": "take_rim"
+    },
+    {
+     "t": 1195.58,
+     "te": 1196.25,
+     "lane": "action",
+     "text": "take_rim"
+    },
+    {
+     "t": 1197.58,
+     "te": 1205.92,
+     "lane": "action",
+     "text": "fit_rim_tire"
+    },
+    {
+     "t": 1208.92,
+     "te": 1209.75,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 1209.92,
+     "te": 1211.0,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 1210.0,
+     "te": 1211.25,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 1211.25,
+     "te": 1211.25,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 1211.25,
+     "te": 1212.08,
+     "lane": "action",
+     "text": "browse_booklet"
+    },
+    {
+     "t": 1212.08,
+     "te": 1215.17,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 1216.75,
+     "te": 1219.42,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 1217.25,
+     "te": 1218.25,
+     "lane": "action",
+     "text": "take_rod"
+    },
+    {
+     "t": 1218.83,
+     "te": 1219.83,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 1219.58,
+     "te": 1220.58,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 1220.83,
+     "te": 1221.5,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 1222.42,
+     "te": 1223.92,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 1224.0,
+     "te": 1232.83,
+     "lane": "action",
+     "text": "plug_rod"
+    },
+    {
+     "t": 1226.67,
+     "te": 1231.33,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 1235.25,
+     "te": 1236.08,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 1235.75,
+     "te": 1249.33,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 1248.83,
+     "te": 1249.67,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 1251.67,
+     "te": 1253.25,
+     "lane": "action",
+     "text": "pull_rod"
+    },
+    {
+     "t": 1256.25,
+     "te": 1280.58,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 1257.08,
+     "te": 1257.92,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 1258.25,
+     "te": 1259.33,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 1268.17,
+     "te": 1269.58,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 1279.83,
+     "te": 1280.83,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 1281.58,
+     "te": 1282.58,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 1282.08,
+     "te": 1283.25,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 1284.17,
+     "te": 1285.17,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 1285.83,
+     "te": 1286.67,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 1290.5,
+     "te": 1291.33,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 1292.08,
+     "te": 1295.83,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 1297.08,
+     "te": 1301.0,
+     "lane": "action",
+     "text": "plug_rod"
+    },
+    {
+     "t": 1301.5,
+     "te": 1302.42,
+     "lane": "action",
+     "text": "pull_rod"
+    },
+    {
+     "t": 1305.5,
+     "te": 1310.92,
+     "lane": "action",
+     "text": "plug_rod"
+    },
+    {
+     "t": 1310.92,
+     "te": 1311.08,
+     "lane": "action",
+     "text": "pull_rod"
+    },
+    {
+     "t": 1312.33,
+     "te": 1313.58,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 1314.08,
+     "te": 1314.92,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 1314.83,
+     "te": 1318.58,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 1318.67,
+     "te": 1320.92,
+     "lane": "action",
+     "text": "plug_rod"
+    },
+    {
+     "t": 1320.67,
+     "te": 1320.92,
+     "lane": "action",
+     "text": "pull_partial_model"
+    },
+    {
+     "t": 1322.17,
+     "te": 1324.17,
+     "lane": "action",
+     "text": "plug_rod"
+    },
+    {
+     "t": 1324.83,
+     "te": 1325.25,
+     "lane": "action",
+     "text": "pull_rod"
+    },
+    {
+     "t": 1325.42,
+     "te": 1326.33,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 1325.58,
+     "te": 1326.42,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 1328.17,
+     "te": 1341.58,
+     "lane": "action",
+     "text": "plug_rod"
+    },
+    {
+     "t": 1341.92,
+     "te": 1342.83,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 1345.75,
+     "te": 1347.0,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 1347.0,
+     "te": 1349.67,
+     "lane": "action",
+     "text": "plug_rod"
+    },
+    {
+     "t": 1349.92,
+     "te": 1350.58,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 1352.83,
+     "te": 1353.67,
+     "lane": "action",
+     "text": "put_washer"
+    },
+    {
+     "t": 1353.5,
+     "te": 1354.67,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 1355.0,
+     "te": 1355.67,
+     "lane": "action",
+     "text": "put_washer"
+    },
+    {
+     "t": 1355.33,
+     "te": 1358.33,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 1355.83,
+     "te": 1356.67,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 1362.0,
+     "te": 1371.0,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 1370.42,
+     "te": 1371.25,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 1372.92,
+     "te": 1378.5,
+     "lane": "action",
+     "text": "pull_rod"
+    },
+    {
+     "t": 1379.33,
+     "te": 1380.08,
+     "lane": "action",
+     "text": "put_washer"
+    },
+    {
+     "t": 1386.08,
+     "te": 1386.83,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 1386.83,
+     "te": 1387.92,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 1391.42,
+     "te": 1392.25,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 1393.58,
+     "te": 1400.08,
+     "lane": "action",
+     "text": "plug_rod"
+    },
+    {
+     "t": 1401.42,
+     "te": 1402.42,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 1403.33,
+     "te": 1404.75,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 1404.75,
+     "te": 1410.0,
+     "lane": "action",
+     "text": "plug_rod"
+    },
+    {
+     "t": 1410.25,
+     "te": 1411.25,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 1413.0,
+     "te": 1414.58,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 1414.58,
+     "te": 1422.33,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 1422.5,
+     "te": 1423.25,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 1424.0,
+     "te": 1424.67,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 1430.25,
+     "te": 1430.92,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 1430.42,
+     "te": 1441.58,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 1431.42,
+     "te": 1432.17,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 1444.5,
+     "te": 1445.17,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 1445.17,
+     "te": 1445.83,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 1446.75,
+     "te": 1450.67,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 1451.67,
+     "te": 1453.42,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 1453.25,
+     "te": 1453.92,
+     "lane": "action",
+     "text": "take_rod"
+    },
+    {
+     "t": 1453.67,
+     "te": 1454.5,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 1454.08,
+     "te": 1454.92,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 1455.0,
+     "te": 1465.67,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 1458.17,
+     "te": 1459.0,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 1466.92,
+     "te": 1467.67,
+     "lane": "action",
+     "text": "put_rod"
+    },
+    {
+     "t": 1468.0,
+     "te": 1468.92,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 1470.17,
+     "te": 1488.08,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 1471.42,
+     "te": 1472.67,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 1473.17,
+     "te": 1473.92,
+     "lane": "action",
+     "text": "take_rod"
+    },
+    {
+     "t": 1489.33,
+     "te": 1491.58,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 1492.25,
+     "te": 1493.17,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 1492.75,
+     "te": 1499.67,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 1494.67,
+     "te": 1495.33,
+     "lane": "action",
+     "text": "take_roller"
+    },
+    {
+     "t": 1499.5,
+     "te": 1500.25,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 1500.33,
+     "te": 1501.08,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 1505.5,
+     "te": 1506.33,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 1506.58,
+     "te": 1507.42,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 1513.17,
+     "te": 1515.33,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 1516.92,
+     "te": 1519.17,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 1520.25,
+     "te": 1520.92,
+     "lane": "action",
+     "text": "take_rod"
+    },
+    {
+     "t": 1521.75,
+     "te": 1522.58,
+     "lane": "action",
+     "text": "take_roller"
+    },
+    {
+     "t": 1523.92,
+     "te": 1524.92,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 1525.17,
+     "te": 1525.83,
+     "lane": "action",
+     "text": "plug_rod"
+    },
+    {
+     "t": 1526.08,
+     "te": 1526.92,
+     "lane": "action",
+     "text": "take_roller"
+    },
+    {
+     "t": 1527.17,
+     "te": 1528.42,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 1529.0,
+     "te": 1531.17,
+     "lane": "action",
+     "text": "plug_rod"
+    },
+    {
+     "t": 1531.5,
+     "te": 1532.25,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 1531.67,
+     "te": 1534.67,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 1534.17,
+     "te": 1534.75,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 1534.33,
+     "te": 1535.0,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 1536.92,
+     "te": 1544.83,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 1544.92,
+     "te": 1545.67,
+     "lane": "action",
+     "text": "pull_partial_model"
+    },
+    {
+     "t": 1548.83,
+     "te": 1550.17,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 1550.25,
+     "te": 1557.08,
+     "lane": "action",
+     "text": "plug_rod"
+    },
+    {
+     "t": 1558.25,
+     "te": 1559.0,
+     "lane": "action",
+     "text": "take_washer"
+    },
+    {
+     "t": 1560.17,
+     "te": 1567.83,
+     "lane": "action",
+     "text": "plug_screw"
+    },
+    {
+     "t": 1568.67,
+     "te": 1569.67,
+     "lane": "action",
+     "text": "take_booklet"
+    },
+    {
+     "t": 1569.0,
+     "te": 1571.67,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 1573.42,
+     "te": 1574.17,
+     "lane": "action",
+     "text": "take_bolt"
+    },
+    {
+     "t": 1574.42,
+     "te": 1576.67,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 1574.58,
+     "te": 1575.17,
+     "lane": "action",
+     "text": "put_bolt"
+    },
+    {
+     "t": 1576.75,
+     "te": 1577.33,
+     "lane": "action",
+     "text": "browse_booklet"
+    },
+    {
+     "t": 1577.33,
+     "te": 1578.75,
+     "lane": "action",
+     "text": "check_booklet"
+    },
+    {
+     "t": 1579.42,
+     "te": 1580.17,
+     "lane": "action",
+     "text": "put_booklet"
+    },
+    {
+     "t": 1579.67,
+     "te": 1580.5,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 1580.83,
+     "te": 1581.58,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 1589.0,
+     "te": 1589.83,
+     "lane": "action",
+     "text": "take_wrench"
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": "video_id,action_id,action_name,start_frame,end_frame\n0007,0,check_booklet,00076.jpg,00120.jpg\n0007,20,take_red_4_perforated_junction_bar,01058.jpg,01069.jpg\n0007,47,align_objects,01095.jpg,01128.jpg\n0007,9,take_gray_perforated_bar,01128.jpg,01140.jpg\n0007,47,align_objects,01142.jpg,01195.jpg\n0007,4,take_gray_angled_perforated_bar,01197.jpg,01211.jpg\n0007,47,align_objects,01233.jpg,01254.jpg\n0007,15,take_screw,01252.jpg,01264.jpg\n0007,51,plug_screw,01273.jpg,01319.jpg\n0007,57,screw_screw_with_hands,01319.jpg,01380.jpg\n0007,59,unscrew_screw_with_hands,01406.jpg,01434.jpg\n0007,0,check_booklet,03536.jpg,03692.jpg\n0007,36,put_screw,01444.jpg,01453.jpg\n0007,15,take_screw,01450.jpg,01463.jpg\n0007,51,plug_screw,01505.jpg,01544.jpg\n0007,57,screw_screw_with_hands,01557.jpg,01583.jpg\n0007,8,take_screwdriver,01591.jpg,01600.jpg\n0007,47,align_objects,01618.jpg,01626.jpg\n0007,58,screw_screw_with_screwdriver,01626.jpg,01682.jpg\n0007,48,align_screwdriver_to_screw,01719.jpg,01729.jpg\n0007,58,screw_screw_with_screwdriver,01729.jpg,01748.jpg\n0007,48,align_screwdriver_to_screw,01799.jpg,01809.jpg\n0007,0,check_booklet,03748.jpg,03777.jpg\n0007,58,screw_screw_with_screwdriver,01809.jpg,01821.jpg\n0007,26,put_partial_model,01871.jpg,01879.jpg\n0007,3,take_booklet,01894.jpg,01908.jpg\n0007,24,put_booklet,01999.jpg,02009.jpg\n0007,9,take_gray_perforated_bar,02017.jpg,02031.jpg\n0007,6,take_white_angled_perforated_bar,02091.jpg,02101.jpg\n0007,6,take_white_angled_perforated_bar,02115.jpg,02126.jpg\n0007,47,align_objects,02265.jpg,02275.jpg\n0007,47,align_objects,02313.jpg,02327.jpg\n0007,15,take_screw,02328.jpg,02339.jpg\n0007,0,check_booklet,03801.jpg,03809.jpg\n0007,21,take_bolt,02350.jpg,02361.jpg\n0007,36,put_screw,02360.jpg,02370.jpg\n0007,51,plug_screw,02388.jpg,02414.jpg\n0007,21,take_bolt,02502.jpg,02516.jpg\n0007,47,align_objects,02523.jpg,02532.jpg\n0007,45,tighten_bolt_with_hands,02532.jpg,02611.jpg\n0007,23,loosen_bolt_with_hands,02665.jpg,02697.jpg\n0007,47,align_objects,02691.jpg,02715.jpg\n0007,45,tighten_bolt_with_hands,02715.jpg,02774.jpg\n0007,8,take_screwdriver,02856.jpg,02868.jpg\n0007,0,check_booklet,03857.jpg,03914.jpg\n0007,48,align_screwdriver_to_screw,02874.jpg,02885.jpg\n0007,58,screw_screw_with_screwdriver,02885.jpg,02976.jpg\n0007,48,align_screwdriver_to_screw,03027.jpg,03044.jpg\n0007,58,screw_screw_with_screwdriver,03044.jpg,03058.jpg\n0007,29,put_screwdriver,03065.jpg,03075.jpg\n0007,3,take_booklet,03086.jpg,03102.jpg\n0007,24,put_booklet,03184.jpg,03195.jpg\n0007,5,take_partial_model,03207.jpg,03216.jpg\n0007,53,plug_handlebar,03245.jpg,03333.jpg\n0007,56,pull_partial_model,03338.jpg,03344.jpg\n0007,0,check_booklet,03974.jpg,04159.jpg\n0007,53,plug_handlebar,03394.jpg,03432.jpg\n0007,14,take_handlebar,03450.jpg,03461.jpg\n0007,53,plug_handlebar,03466.jpg,03518.jpg\n0007,3,take_booklet,03530.jpg,03544.jpg\n0007,24,put_booklet,03678.jpg,03688.jpg\n0007,11,take_red_angled_perforated_bar,03705.jpg,03716.jpg\n0007,32,put_red_angled_perforated_bar,03718.jpg,03727.jpg\n0007,3,take_booklet,03742.jpg,03752.jpg\n0007,24,put_booklet,03771.jpg,03780.jpg\n0007,15,take_screw,03784.jpg,03794.jpg\n0007,0,check_booklet,04220.jpg,04455.jpg\n0007,36,put_screw,03787.jpg,03799.jpg\n0007,12,take_red_perforated_bar,03830.jpg,03842.jpg\n0007,33,put_red_perforated_bar,03841.jpg,03851.jpg\n0007,3,take_booklet,03873.jpg,03885.jpg\n0007,24,put_booklet,03896.jpg,03911.jpg\n0007,21,take_bolt,03910.jpg,03920.jpg\n0007,42,put_bolt,03920.jpg,03931.jpg\n0007,3,take_booklet,04014.jpg,04027.jpg\n0007,24,put_booklet,04053.jpg,04066.jpg\n0007,3,take_booklet,04085.jpg,04099.jpg\n0007,0,check_booklet,04492.jpg,04612.jpg\n0007,24,put_booklet,04152.jpg,04161.jpg\n0007,15,take_screw,04175.jpg,04188.jpg\n0007,36,put_screw,04190.jpg,04197.jpg\n0007,3,take_booklet,04218.jpg,04230.jpg\n0007,24,put_booklet,04445.jpg,04455.jpg\n0007,21,take_bolt,04457.jpg,04467.jpg\n0007,42,put_bolt,04463.jpg,04472.jpg\n0007,26,put_partial_model,04503.jpg,04514.jpg\n0007,12,take_red_perforated_bar,04526.jpg,04536.jpg\n0007,47,align_objects,04573.jpg,04591.jpg\n0007,0,check_booklet,04652.jpg,04815.jpg\n0007,21,take_bolt,04609.jpg,04619.jpg\n0007,47,align_objects,04623.jpg,04651.jpg\n0007,5,take_partial_model,04688.jpg,04700.jpg\n0007,33,put_red_perforated_bar,04723.jpg,04734.jpg\n0007,15,take_screw,04733.jpg,04746.jpg\n0007,51,plug_screw,04828.jpg,04836.jpg\n0007,15,take_screw,04851.jpg,04861.jpg\n0007,36,put_screw,04869.jpg,04879.jpg\n0007,3,take_booklet,04939.jpg,04949.jpg\n0007,24,put_booklet,04988.jpg,04997.jpg\n0007,0,check_booklet,04836.jpg,04851.jpg\n0007,11,take_red_angled_perforated_bar,05018.jpg,05029.jpg\n0007,51,plug_screw,05071.jpg,05078.jpg\n0007,21,take_bolt,05091.jpg,05100.jpg\n0007,47,align_objects,05111.jpg,05120.jpg\n0007,57,screw_screw_with_hands,05171.jpg,05185.jpg\n0007,8,take_screwdriver,05189.jpg,05198.jpg\n0007,48,align_screwdriver_to_screw,05199.jpg,05207.jpg\n0007,58,screw_screw_with_screwdriver,05207.jpg,05250.jpg\n0007,48,align_screwdriver_to_screw,05293.jpg,05304.jpg\n0007,58,screw_screw_with_screwdriver,05304.jpg,05345.jpg\n0007,0,check_booklet,04872.jpg,04999.jpg\n0007,0,check_booklet,00141.jpg,00251.jpg\n0007,48,align_screwdriver_to_screw,05401.jpg,05410.jpg\n0007,58,screw_screw_with_screwdriver,05410.jpg,05430.jpg\n0007,48,align_screwdriver_to_screw,05443.jpg,05455.jpg\n0007,58,screw_screw_with_screwdriver,05455.jpg,05476.jpg\n0007,29,put_screwdriver,05519.jpg,05528.jpg\n0007,12,take_red_perforated_bar,05558.jpg,05566.jpg\n0007,47,align_objects,05568.jpg,05580.jpg\n0007,15,take_screw,05635.jpg,05645.jpg\n0007,51,plug_screw,05653.jpg,05697.jpg\n0007,15,take_screw,05708.jpg,05717.jpg\n0007,0,check_booklet,05358.jpg,05367.jpg\n0007,47,align_objects,05716.jpg,05732.jpg\n0007,45,tighten_bolt_with_hands,05756.jpg,05775.jpg\n0007,8,take_screwdriver,05790.jpg,05800.jpg\n0007,48,align_screwdriver_to_screw,05803.jpg,05812.jpg\n0007,58,screw_screw_with_screwdriver,05812.jpg,05906.jpg\n0007,48,align_screwdriver_to_screw,05950.jpg,05963.jpg\n0007,58,screw_screw_with_screwdriver,05963.jpg,05978.jpg\n0007,26,put_partial_model,06007.jpg,06016.jpg\n0007,3,take_booklet,06010.jpg,06021.jpg\n0007,5,take_partial_model,06161.jpg,06174.jpg\n0007,0,check_booklet,05533.jpg,05554.jpg\n0007,24,put_booklet,06394.jpg,06403.jpg\n0007,3,take_booklet,06442.jpg,06454.jpg\n0007,24,put_booklet,06619.jpg,06630.jpg\n0007,6,take_white_angled_perforated_bar,06681.jpg,06692.jpg\n0007,27,put_white_angled_perforated_bar,06697.jpg,06707.jpg\n0007,3,take_booklet,06763.jpg,06776.jpg\n0007,24,put_booklet,06779.jpg,06790.jpg\n0007,15,take_screw,06804.jpg,06814.jpg\n0007,36,put_screw,06823.jpg,06833.jpg\n0007,11,take_red_angled_perforated_bar,06857.jpg,06868.jpg\n0007,0,check_booklet,05605.jpg,05623.jpg\n0007,32,put_red_angled_perforated_bar,06867.jpg,06876.jpg\n0007,21,take_bolt,06914.jpg,06923.jpg\n0007,42,put_bolt,06921.jpg,06929.jpg\n0007,18,take_washer,06935.jpg,06944.jpg\n0007,39,put_washer,06943.jpg,06952.jpg\n0007,3,take_booklet,06959.jpg,06971.jpg\n0007,24,put_booklet,07169.jpg,07178.jpg\n0007,3,take_booklet,07201.jpg,07213.jpg\n0007,24,put_booklet,07236.jpg,07246.jpg\n0007,3,take_booklet,07316.jpg,07326.jpg\n0007,0,check_booklet,05986.jpg,06399.jpg\n0007,24,put_booklet,07477.jpg,07492.jpg\n0007,11,take_red_angled_perforated_bar,07530.jpg,07540.jpg\n0007,47,align_objects,07552.jpg,07568.jpg\n0007,15,take_screw,07661.jpg,07670.jpg\n0007,51,plug_screw,07691.jpg,07708.jpg\n0007,3,take_booklet,07735.jpg,07751.jpg\n0007,24,put_booklet,07826.jpg,07836.jpg\n0007,5,take_partial_model,07835.jpg,07844.jpg\n0007,47,align_objects,07854.jpg,07876.jpg\n0007,45,tighten_bolt_with_hands,07876.jpg,07923.jpg\n0007,0,check_booklet,06448.jpg,06631.jpg\n0007,8,take_screwdriver,07956.jpg,07968.jpg\n0007,48,align_screwdriver_to_screw,07980.jpg,07993.jpg\n0007,58,screw_screw_with_screwdriver,07993.jpg,08054.jpg\n0007,29,put_screwdriver,08057.jpg,08070.jpg\n0007,3,take_booklet,08083.jpg,08095.jpg\n0007,24,put_booklet,08236.jpg,08246.jpg\n0007,6,take_white_angled_perforated_bar,08248.jpg,08259.jpg\n0007,47,align_objects,08294.jpg,08306.jpg\n0007,18,take_washer,08360.jpg,08370.jpg\n0007,26,put_partial_model,08378.jpg,08387.jpg\n0007,0,check_booklet,06657.jpg,06668.jpg\n0007,5,take_partial_model,08396.jpg,08405.jpg\n0007,10,take_wheels_axle,08407.jpg,08416.jpg\n0007,31,put_wheels_axle,08418.jpg,08428.jpg\n0007,3,take_booklet,08427.jpg,08440.jpg\n0007,24,put_booklet,08447.jpg,08459.jpg\n0007,3,take_booklet,08466.jpg,08478.jpg\n0007,24,put_booklet,08480.jpg,08490.jpg\n0007,24,put_booklet,08491.jpg,08502.jpg\n0007,18,take_washer,08510.jpg,08521.jpg\n0007,39,put_washer,08531.jpg,08540.jpg\n0007,0,check_booklet,06720.jpg,06786.jpg\n0007,3,take_booklet,08550.jpg,08562.jpg\n0007,24,put_booklet,08563.jpg,08572.jpg\n0007,18,take_washer,08596.jpg,08605.jpg\n0007,51,plug_screw,08628.jpg,08636.jpg\n0007,5,take_partial_model,08639.jpg,08649.jpg\n0007,51,plug_screw,08699.jpg,08708.jpg\n0007,3,take_booklet,08728.jpg,08739.jpg\n0007,24,put_booklet,08781.jpg,08792.jpg\n0007,47,align_objects,08794.jpg,08810.jpg\n0007,18,take_washer,08846.jpg,08855.jpg\n0007,0,check_booklet,06801.jpg,06843.jpg\n0007,47,align_objects,08873.jpg,08939.jpg\n0007,21,take_bolt,08954.jpg,08968.jpg\n0007,47,align_objects,08991.jpg,09006.jpg\n0007,42,put_bolt,09041.jpg,09050.jpg\n0007,3,take_booklet,09054.jpg,09065.jpg\n0007,24,put_booklet,09083.jpg,09098.jpg\n0007,15,take_screw,09165.jpg,09177.jpg\n0007,47,align_objects,09182.jpg,09218.jpg\n0007,21,take_bolt,09360.jpg,09372.jpg\n0007,47,align_objects,09370.jpg,09400.jpg\n0007,0,check_booklet,06956.jpg,07178.jpg\n0007,45,tighten_bolt_with_hands,09400.jpg,09432.jpg\n0007,8,take_screwdriver,09465.jpg,09475.jpg\n0007,48,align_screwdriver_to_screw,09474.jpg,09485.jpg\n0007,58,screw_screw_with_screwdriver,09485.jpg,09529.jpg\n0007,48,align_screwdriver_to_screw,09551.jpg,09562.jpg\n0007,58,screw_screw_with_screwdriver,09562.jpg,09579.jpg\n0007,29,put_screwdriver,09582.jpg,09591.jpg\n0007,3,take_booklet,09637.jpg,09653.jpg\n0007,5,take_partial_model,09812.jpg,09823.jpg\n0007,26,put_partial_model,09825.jpg,09835.jpg\n0007,0,check_booklet,07207.jpg,07484.jpg\n0007,0,check_booklet,00340.jpg,00381.jpg\n0007,15,take_screw,09841.jpg,09850.jpg\n0007,5,take_partial_model,09849.jpg,09860.jpg\n0007,24,put_booklet,09969.jpg,09981.jpg\n0007,12,take_red_perforated_bar,09997.jpg,10008.jpg\n0007,5,take_partial_model,010080.jpg,10091.jpg\n0007,33,put_red_perforated_bar,010092.jpg,10106.jpg\n0007,51,plug_screw,10134.jpg,10169.jpg\n0007,3,take_booklet,010193.jpg,10208.jpg\n0007,24,put_booklet,010340.jpg,10350.jpg\n0007,12,take_red_perforated_bar,010411.jpg,10421.jpg\n0007,0,check_booklet,07510.jpg,07538.jpg\n0007,51,plug_screw,10431.jpg,10447.jpg\n0007,21,take_bolt,010455.jpg,10466.jpg\n0007,47,align_objects,010483.jpg,10557.jpg\n0007,57,screw_screw_with_hands,10558.jpg,10616.jpg\n0007,59,unscrew_screw_with_hands,10637.jpg,10648.jpg\n0007,8,take_screwdriver,010708.jpg,10717.jpg\n0007,48,align_screwdriver_to_screw,010715.jpg,10725.jpg\n0007,58,screw_screw_with_screwdriver,10725.jpg,10832.jpg\n0007,29,put_screwdriver,010834.jpg,10844.jpg\n0007,3,take_booklet,010883.jpg,10897.jpg\n0007,0,check_booklet,07574.jpg,07652.jpg\n0007,10,take_wheels_axle,010999.jpg,11013.jpg\n0007,24,put_booklet,011002.jpg,11012.jpg\n0007,3,take_booklet,011011.jpg,11022.jpg\n0007,24,put_booklet,011034.jpg,11043.jpg\n0007,21,take_bolt,011046.jpg,11058.jpg\n0007,3,take_booklet,011073.jpg,11084.jpg\n0007,3,take_booklet,011115.jpg,11139.jpg\n0007,5,take_partial_model,011183.jpg,11194.jpg\n0007,24,put_booklet,011207.jpg,11217.jpg\n0007,51,plug_screw,11268.jpg,11277.jpg\n0007,0,check_booklet,07741.jpg,07832.jpg\n0007,47,align_objects,011290.jpg,11299.jpg\n0007,45,tighten_bolt_with_hands,11299.jpg,11315.jpg\n0007,7,take_wrench,011321.jpg,11331.jpg\n0007,46,tighten_bolt_with_wrench,11340.jpg,11461.jpg\n0007,3,take_booklet,011501.jpg,11528.jpg\n0007,5,take_partial_model,011692.jpg,11701.jpg\n0007,26,put_partial_model,011702.jpg,11715.jpg\n0007,28,put_wrench,011710.jpg,11719.jpg\n0007,24,put_booklet,011720.jpg,11729.jpg\n0007,19,take_red_perforated_junction_bar,011733.jpg,11745.jpg\n0007,0,check_booklet,08086.jpg,08243.jpg\n0007,15,take_screw,011828.jpg,11837.jpg\n0007,51,plug_screw,11846.jpg,11867.jpg\n0007,21,take_bolt,011919.jpg,11928.jpg\n0007,47,align_objects,011936.jpg,11945.jpg\n0007,8,take_screwdriver,011991.jpg,12002.jpg\n0007,48,align_screwdriver_to_screw,011996.jpg,12008.jpg\n0007,58,screw_screw_with_screwdriver,12008.jpg,12073.jpg\n0007,29,put_screwdriver,012083.jpg,12092.jpg\n0007,3,take_booklet,012103.jpg,12116.jpg\n0007,26,put_partial_model,012356.jpg,12366.jpg\n0007,0,check_booklet,08263.jpg,08384.jpg\n0007,26,put_partial_model,012395.jpg,12405.jpg\n0007,48,align_screwdriver_to_screw,012409.jpg,12420.jpg\n0007,58,screw_screw_with_screwdriver,12420.jpg,12509.jpg\n0007,5,take_partial_model,012505.jpg,12518.jpg\n0007,48,align_screwdriver_to_screw,012537.jpg,12549.jpg\n0007,58,screw_screw_with_screwdriver,12549.jpg,12636.jpg\n0007,29,put_screwdriver,012632.jpg,12642.jpg\n0007,5,take_partial_model,012663.jpg,12673.jpg\n0007,26,put_partial_model,012669.jpg,12678.jpg\n0007,5,take_partial_model,012679.jpg,12690.jpg\n0007,0,check_booklet,08472.jpg,08517.jpg\n0007,47,align_objects,012698.jpg,12735.jpg\n0007,3,take_booklet,012787.jpg,12806.jpg\n0007,24,put_booklet,013023.jpg,13032.jpg\n0007,47,align_objects,013048.jpg,13061.jpg\n0007,15,take_screw,013068.jpg,13079.jpg\n0007,51,plug_screw,13089.jpg,13127.jpg\n0007,21,take_bolt,013136.jpg,13147.jpg\n0007,47,align_objects,013212.jpg,13248.jpg\n0007,51,plug_screw,13294.jpg,13312.jpg\n0007,54,pull_screw,13316.jpg,13339.jpg\n0007,0,check_booklet,08556.jpg,08572.jpg\n0007,51,plug_screw,13396.jpg,13435.jpg\n0007,57,screw_screw_with_hands,13461.jpg,13506.jpg\n0007,8,take_screwdriver,013518.jpg,13530.jpg\n0007,48,align_screwdriver_to_screw,013524.jpg,13538.jpg\n0007,58,screw_screw_with_screwdriver,13538.jpg,13674.jpg\n0007,48,align_screwdriver_to_screw,013777.jpg,13791.jpg\n0007,58,screw_screw_with_screwdriver,13791.jpg,13839.jpg\n0007,26,put_partial_model,013862.jpg,13875.jpg\n0007,29,put_screwdriver,013880.jpg,13890.jpg\n0007,3,take_booklet,013892.jpg,13905.jpg\n0007,0,check_booklet,08724.jpg,08792.jpg\n0007,24,put_booklet,013964.jpg,13975.jpg\n0007,17,take_rim,013974.jpg,13985.jpg\n0007,16,take_tire,013981.jpg,13989.jpg\n0007,3,take_booklet,014023.jpg,14034.jpg\n0007,24,put_booklet,014040.jpg,14050.jpg\n0007,50,fit_rim_tire,14097.jpg,14238.jpg\n0007,26,put_partial_model,014250.jpg,14261.jpg\n0007,5,take_partial_model,014276.jpg,14287.jpg\n0007,50,fit_rim_tire,14295.jpg,14326.jpg\n0007,26,put_partial_model,014331.jpg,14341.jpg\n0007,0,check_booklet,09055.jpg,09092.jpg\n0007,17,take_rim,014340.jpg,14349.jpg\n0007,17,take_rim,014347.jpg,14355.jpg\n0007,50,fit_rim_tire,14371.jpg,14471.jpg\n0007,26,put_partial_model,014507.jpg,14517.jpg\n0007,3,take_booklet,014519.jpg,14532.jpg\n0007,13,take_rod,014607.jpg,14619.jpg\n0007,5,take_partial_model,014626.jpg,14638.jpg\n0007,24,put_booklet,014635.jpg,14647.jpg\n…[truncated 163 more items]"
+  }
+ ]
+}

@@ -1,0 +1,1456 @@
+{
+ "slug": "enigma-360",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://github.com/fpv-iplab/ENIGMA-360/tree/main/annotations/raw_json (101.json, 67.json)",
+  "https://iplab.dmi.unict.it/ENIGMA-360/data/videos/101/101_first_person.mp4 (HTTP range read)",
+  "https://iplab.dmi.unict.it/ENIGMA-360/data/videos/67/67_third_person.mp4"
+ ],
+ "access_used": "open download",
+ "note": "Each example is one video's complete keystep file from the GitHub repo: a list of clips with [start, end] seconds and a numbered procedure-step description written in the third person. Labels are made on the first-person video; the third-person video has the same duration and is synchronized. The only error signal is the step order itself (e.g. in 67 the card is removed before the cables are disconnected); there are no mistake tags.",
+ "examples": [
+  {
+   "title": "101 (ego, low-voltage board): 51 keysteps incl. repeated probe-tip / Auto Set / position-knob cycles — clip on the power-supply knobs",
+   "video_ref": "data/videos/101/101_first_person.mp4 (729 s)",
+   "duration_s": 729.0,
+   "clip": "samples/media/enigma-360_1.mp4",
+   "clip_offset_s": 158,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0,
+     "te": 2.578,
+     "lane": "step",
+     "text": "001 Press the two green buttons on panel A"
+    },
+    {
+     "t": 2.586,
+     "te": 10.789,
+     "lane": "step",
+     "text": "002 Moves to the workbench and sits down"
+    },
+    {
+     "t": 15.734,
+     "te": 19.672,
+     "lane": "step",
+     "text": "055 Takes the low-voltage card"
+    },
+    {
+     "t": 19.672,
+     "te": 22.578,
+     "lane": "step",
+     "text": "004 Places the card on the work area"
+    },
+    {
+     "t": 31.672,
+     "te": 50.125,
+     "lane": "step",
+     "text": "005 Connects the battery to the screwdriver"
+    },
+    {
+     "t": 50.125,
+     "te": 68.609,
+     "lane": "step",
+     "text": "006 Removes the workbench screws using the screwdriver"
+    },
+    {
+     "t": 71.391,
+     "te": 125.594,
+     "lane": "step",
+     "text": "007 Fixes the card to the workbench using the screwdriver"
+    },
+    {
+     "t": 129.625,
+     "te": 138.531,
+     "lane": "step",
+     "text": "045 Disconnects the screwdriver battery and connects it to the battery charger"
+    },
+    {
+     "t": 138.531,
+     "te": 141.656,
+     "lane": "step",
+     "text": "045 Disconnects the screwdriver battery and connects it to the battery charger"
+    },
+    {
+     "t": 141.656,
+     "te": 143.031,
+     "lane": "step",
+     "text": "046 Turns on the screwdriver battery charger via the tower switch"
+    },
+    {
+     "t": 151.328,
+     "te": 152.859,
+     "lane": "step",
+     "text": "008 Turns on the power supply via the tower switch"
+    },
+    {
+     "t": 161.375,
+     "te": 162.859,
+     "lane": "step",
+     "text": "009 Adjusts the power supply current knob until the green LED turns on"
+    },
+    {
+     "t": 162.865,
+     "te": 174.266,
+     "lane": "step",
+     "text": "010 Adjusts the power supply voltage knob setting it to 5 Volts"
+    },
+    {
+     "t": 178.797,
+     "te": 202.672,
+     "lane": "step",
+     "text": "011 Connects the power supply cables to the card's power points"
+    },
+    {
+     "t": 208.797,
+     "te": 223.969,
+     "lane": "step",
+     "text": "030 Turns on the oscilloscope via the tower switch"
+    },
+    {
+     "t": 223.969,
+     "te": 227.188,
+     "lane": "step",
+     "text": "031 Activates the probe channel number 2 using the blue-bordered CH2 MENU button"
+    },
+    {
+     "t": 234.063,
+     "te": 245.156,
+     "lane": "step",
+     "text": "032 Connects the probe ground clip to test point number 1"
+    },
+    {
+     "t": 253.031,
+     "te": 258.203,
+     "lane": "step",
+     "text": "033 Uses the probe tip to check some signal brought to test point number 2 on the card"
+    },
+    {
+     "t": 258.203,
+     "te": 260.422,
+     "lane": "step",
+     "text": "034 Presses the oscilloscope's Auto Set button"
+    },
+    {
+     "t": 273.359,
+     "te": 275.406,
+     "lane": "step",
+     "text": "035 Randomly rotates the position knob"
+    },
+    {
+     "t": 286.078,
+     "te": 292.703,
+     "lane": "step",
+     "text": "036 Uses the probe tip at test point number 3 on the card"
+    },
+    {
+     "t": 292.711,
+     "te": 294.344,
+     "lane": "step",
+     "text": "034 Presses the oscilloscope's Auto Set button"
+    },
+    {
+     "t": 311.375,
+     "te": 315.984,
+     "lane": "step",
+     "text": "035 Randomly rotates the position knob"
+    },
+    {
+     "t": 332.281,
+     "te": 345.25,
+     "lane": "step",
+     "text": "037 Uses the probe tip at test point number 4 on the card"
+    },
+    {
+     "t": 345.25,
+     "te": 347.906,
+     "lane": "step",
+     "text": "034 Presses the oscilloscope's Auto Set button"
+    },
+    {
+     "t": 360.609,
+     "te": 363.031,
+     "lane": "step",
+     "text": "035 Randomly rotates the position knob"
+    },
+    {
+     "t": 379.359,
+     "te": 390.547,
+     "lane": "step",
+     "text": "038 Uses the probe tip at test point number 5 on the card"
+    },
+    {
+     "t": 390.547,
+     "te": 391.859,
+     "lane": "step",
+     "text": "034 Presses the oscilloscope's Auto Set button"
+    },
+    {
+     "t": 406.641,
+     "te": 408.828,
+     "lane": "step",
+     "text": "035 Randomly rotates the position knob"
+    },
+    {
+     "t": 419.281,
+     "te": 423.484,
+     "lane": "step",
+     "text": "043 Uses the probe tip at test point number 6 on the card"
+    },
+    {
+     "t": 423.491,
+     "te": 426.766,
+     "lane": "step",
+     "text": "034 Presses the oscilloscope's Auto Set button"
+    },
+    {
+     "t": 445.797,
+     "te": 448.969,
+     "lane": "step",
+     "text": "035 Randomly rotates the position knob"
+    },
+    {
+     "t": 460.313,
+     "te": 464.078,
+     "lane": "step",
+     "text": "039 Uses the probe tip at test point number 7 on the card"
+    },
+    {
+     "t": 464.089,
+     "te": 468.672,
+     "lane": "step",
+     "text": "034 Presses the oscilloscope's Auto Set button"
+    },
+    {
+     "t": 479.625,
+     "te": 482.734,
+     "lane": "step",
+     "text": "035 Randomly rotates the position knob"
+    },
+    {
+     "t": 485.734,
+     "te": 491.766,
+     "lane": "step",
+     "text": "043 Uses the probe tip at test point number 6 on the card"
+    },
+    {
+     "t": 503.969,
+     "te": 505.531,
+     "lane": "step",
+     "text": "012 Turns off the card's power supply via the tower switch"
+    },
+    {
+     "t": 505.536,
+     "te": 511.25,
+     "lane": "step",
+     "text": "013 Resets the power supply current and voltage knobs to 0"
+    },
+    {
+     "t": 524.219,
+     "te": 529.859,
+     "lane": "step",
+     "text": "040 Disconnects the ground clip and oscilloscope probe"
+    },
+    {
+     "t": 529.865,
+     "te": 533.641,
+     "lane": "step",
+     "text": "014 Disconnects the power supply cables"
+    },
+    {
+     "t": 551.469,
+     "te": 553.656,
+     "lane": "step",
+     "text": "041 Deactivates the probe channel number 2"
+    },
+    {
+     "t": 553.656,
+     "te": 555.313,
+     "lane": "step",
+     "text": "042 Turns off the oscilloscope via the tower switch"
+    },
+    {
+     "t": 565.656,
+     "te": 567.047,
+     "lane": "step",
+     "text": "050 Turns off the screwdriver battery charger via the tower switch"
+    },
+    {
+     "t": 567.049,
+     "te": 573.828,
+     "lane": "step",
+     "text": "005 Connects the battery to the screwdriver"
+    },
+    {
+     "t": 584.453,
+     "te": 620.438,
+     "lane": "step",
+     "text": "015 Removes the card from the workbench using the screwdriver"
+    },
+    {
+     "t": 647.141,
+     "te": 675.609,
+     "lane": "step",
+     "text": "044 Reinserts the screws in the work area using the screwdriver"
+    },
+    {
+     "t": 681.688,
+     "te": 690.281,
+     "lane": "step",
+     "text": "045 Disconnects the screwdriver battery and connects it to the battery charger"
+    },
+    {
+     "t": 690.281,
+     "te": 692.281,
+     "lane": "step",
+     "text": "045 Disconnects the screwdriver battery and connects it to the battery charger"
+    },
+    {
+     "t": 692.281,
+     "te": 693.406,
+     "lane": "step",
+     "text": "046 Turns on the screwdriver battery charger via the tower switch"
+    },
+    {
+     "t": 698.781,
+     "te": 720.531,
+     "lane": "step",
+     "text": "047 Notes the test operation results in the register"
+    },
+    {
+     "t": 727.031,
+     "te": 728.969,
+     "lane": "step",
+     "text": "048 Presses the two red buttons on panel A"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "video_name": "101_first_person.mp4",
+    "clips": [
+     {
+      "clip_id": "101_0",
+      "action_time": [
+       0,
+       2.578
+      ],
+      "action_label": {
+       "id_action": "001",
+       "description": "Press the two green buttons on panel A"
+      }
+     },
+     {
+      "clip_id": "101_1",
+      "action_time": [
+       2.586,
+       10.789
+      ],
+      "action_label": {
+       "id_action": "002",
+       "description": "Moves to the workbench and sits down"
+      }
+     },
+     {
+      "clip_id": "101_2",
+      "action_time": [
+       15.734,
+       19.672
+      ],
+      "action_label": {
+       "id_action": "055",
+       "description": "Takes the low-voltage card"
+      }
+     },
+     {
+      "clip_id": "101_3",
+      "action_time": [
+       19.672,
+       22.578
+      ],
+      "action_label": {
+       "id_action": "004",
+       "description": "Places the card on the work area"
+      }
+     },
+     {
+      "clip_id": "101_4",
+      "action_time": [
+       31.672,
+       50.125
+      ],
+      "action_label": {
+       "id_action": "005",
+       "description": "Connects the battery to the screwdriver"
+      }
+     },
+     {
+      "clip_id": "101_5",
+      "action_time": [
+       50.125,
+       68.609
+      ],
+      "action_label": {
+       "id_action": "006",
+       "description": "Removes the workbench screws using the screwdriver"
+      }
+     },
+     {
+      "clip_id": "101_6",
+      "action_time": [
+       71.391,
+       125.594
+      ],
+      "action_label": {
+       "id_action": "007",
+       "description": "Fixes the card to the workbench using the screwdriver"
+      }
+     },
+     {
+      "clip_id": "101_7",
+      "action_time": [
+       129.625,
+       138.531
+      ],
+      "action_label": {
+       "id_action": "045",
+       "description": "Disconnects the screwdriver battery and connects it to the battery charger"
+      }
+     },
+     {
+      "clip_id": "101_8",
+      "action_time": [
+       138.531,
+       141.656
+      ],
+      "action_label": {
+       "id_action": "045",
+       "description": "Disconnects the screwdriver battery and connects it to the battery charger"
+      }
+     },
+     {
+      "clip_id": "101_9",
+      "action_time": [
+       141.656,
+       143.031
+      ],
+      "action_label": {
+       "id_action": "046",
+       "description": "Turns on the screwdriver battery charger via the tower switch"
+      }
+     },
+     {
+      "clip_id": "101_10",
+      "action_time": [
+       151.328,
+       152.859
+      ],
+      "action_label": {
+       "id_action": "008",
+       "description": "Turns on the power supply via the tower switch"
+      }
+     },
+     {
+      "clip_id": "101_11",
+      "action_time": [
+       161.375,
+       162.859
+      ],
+      "action_label": {
+       "id_action": "009",
+       "description": "Adjusts the power supply current knob until the green LED turns on"
+      }
+     },
+     {
+      "clip_id": "101_12",
+      "action_time": [
+       162.865,
+       174.266
+      ],
+      "action_label": {
+       "id_action": "010",
+       "description": "Adjusts the power supply voltage knob setting it to 5 Volts"
+      }
+     },
+     {
+      "clip_id": "101_13",
+      "action_time": [
+       178.797,
+       202.672
+      ],
+      "action_label": {
+       "id_action": "011",
+       "description": "Connects the power supply cables to the card's power points"
+      }
+     },
+     {
+      "clip_id": "101_14",
+      "action_time": [
+       208.797,
+       223.969
+      ],
+      "action_label": {
+       "id_action": "030",
+       "description": "Turns on the oscilloscope via the tower switch"
+      }
+     },
+     {
+      "clip_id": "101_15",
+      "action_time": [
+       223.969,
+       227.188
+      ],
+      "action_label": {
+       "id_action": "031",
+       "description": "Activates the probe channel number 2 using the blue-bordered CH2 MENU button"
+      }
+     },
+     {
+      "clip_id": "101_16",
+      "action_time": [
+       234.063,
+       245.156
+      ],
+      "action_label": {
+       "id_action": "032",
+       "description": "Connects the probe ground clip to test point number 1"
+      }
+     },
+     {
+      "clip_id": "101_17",
+      "action_time": [
+       253.031,
+       258.203
+      ],
+      "action_label": {
+       "id_action": "033",
+       "description": "Uses the probe tip to check some signal brought to test point number 2 on the card"
+      }
+     },
+     {
+      "clip_id": "101_18",
+      "action_time": [
+       258.203,
+       260.422
+      ],
+      "action_label": {
+       "id_action": "034",
+       "description": "Presses the oscilloscope's Auto Set button"
+      }
+     },
+     {
+      "clip_id": "101_19",
+      "action_time": [
+       273.359,
+       275.406
+      ],
+      "action_label": {
+       "id_action": "035",
+       "description": "Randomly rotates the position knob"
+      }
+     },
+     {
+      "clip_id": "101_20",
+      "action_time": [
+       286.078,
+       292.703
+      ],
+      "action_label": {
+       "id_action": "036",
+       "description": "Uses the probe tip at test point number 3 on the card"
+      }
+     },
+     {
+      "clip_id": "101_21",
+      "action_time": [
+       292.711,
+       294.344
+      ],
+      "action_label": {
+       "id_action": "034",
+       "description": "Presses the oscilloscope's Auto Set button"
+      }
+     },
+     {
+      "clip_id": "101_22",
+      "action_time": [
+       311.375,
+       315.984
+      ],
+      "action_label": {
+       "id_action": "035",
+       "description": "Randomly rotates the position knob"
+      }
+     },
+     {
+      "clip_id": "101_23",
+      "action_time": [
+       332.281,
+       345.25
+      ],
+      "action_label": {
+       "id_action": "037",
+       "description": "Uses the probe tip at test point number 4 on the card"
+      }
+     },
+     {
+      "clip_id": "101_24",
+      "action_time": [
+       345.25,
+       347.906
+      ],
+      "action_label": {
+       "id_action": "034",
+       "description": "Presses the oscilloscope's Auto Set button"
+      }
+     },
+     {
+      "clip_id": "101_25",
+      "action_time": [
+       360.609,
+       363.031
+      ],
+      "action_label": {
+       "id_action": "035",
+       "description": "Randomly rotates the position knob"
+      }
+     },
+     {
+      "clip_id": "101_26",
+      "action_time": [
+       379.359,
+       390.547
+      ],
+      "action_label": {
+       "id_action": "038",
+       "description": "Uses the probe tip at test point number 5 on the card"
+      }
+     },
+     {
+      "clip_id": "101_27",
+      "action_time": [
+       390.547,
+       391.859
+      ],
+      "action_label": {
+       "id_action": "034",
+       "description": "Presses the oscilloscope's Auto Set button"
+      }
+     },
+     {
+      "clip_id": "101_28",
+      "action_time": [
+       406.641,
+       408.828
+      ],
+      "action_label": {
+       "id_action": "035",
+       "description": "Randomly rotates the position knob"
+      }
+     },
+     {
+      "clip_id": "101_29",
+      "action_time": [
+       419.281,
+       423.484
+      ],
+      "action_label": {
+       "id_action": "043",
+       "description": "Uses the probe tip at test point number 6 on the card"
+      }
+     },
+     {
+      "clip_id": "101_30",
+      "action_time": [
+       423.491,
+       426.766
+      ],
+      "action_label": {
+       "id_action": "034",
+       "description": "Presses the oscilloscope's Auto Set button"
+      }
+     },
+     {
+      "clip_id": "101_31",
+      "action_time": [
+       445.797,
+       448.969
+      ],
+      "action_label": {
+       "id_action": "035",
+       "description": "Randomly rotates the position knob"
+      }
+     },
+     {
+      "clip_id": "101_32",
+      "action_time": [
+       460.313,
+       464.078
+      ],
+      "action_label": {
+       "id_action": "039",
+       "description": "Uses the probe tip at test point number 7 on the card"
+      }
+     },
+     {
+      "clip_id": "101_33",
+      "action_time": [
+       464.089,
+       468.672
+      ],
+      "action_label": {
+       "id_action": "034",
+       "description": "Presses the oscilloscope's Auto Set button"
+      }
+     },
+     {
+      "clip_id": "101_34",
+      "action_time": [
+       479.625,
+       482.734
+      ],
+      "action_label": {
+       "id_action": "035",
+       "description": "Randomly rotates the position knob"
+      }
+     },
+     {
+      "clip_id": "101_35",
+      "action_time": [
+       485.734,
+       491.766
+      ],
+      "action_label": {
+       "id_action": "043",
+       "description": "Uses the probe tip at test point number 6 on the card"
+      }
+     },
+     {
+      "clip_id": "101_36",
+      "action_time": [
+       503.969,
+       505.531
+      ],
+      "action_label": {
+       "id_action": "012",
+       "description": "Turns off the card's power supply via the tower switch"
+      }
+     },
+     {
+      "clip_id": "101_37",
+      "action_time": [
+       505.536,
+       511.25
+      ],
+      "action_label": {
+       "id_action": "013",
+       "description": "Resets the power supply current and voltage knobs to 0"
+      }
+     },
+     {
+      "clip_id": "101_38",
+      "action_time": [
+       524.219,
+       529.859
+      ],
+      "action_label": {
+       "id_action": "040",
+       "description": "Disconnects the ground clip and oscilloscope probe"
+      }
+     },
+     {
+      "clip_id": "101_39",
+      "action_time": [
+       529.865,
+       533.641
+      ],
+      "action_label": {
+       "id_action": "014",
+       "description": "Disconnects the power supply cables"
+      }
+     },
+     {
+      "clip_id": "101_40",
+      "action_time": [
+       551.469,
+       553.656
+      ],
+      "action_label": {
+       "id_action": "041",
+       "description": "Deactivates the probe channel number 2"
+      }
+     },
+     {
+      "clip_id": "101_41",
+      "action_time": [
+       553.656,
+       555.313
+      ],
+      "action_label": {
+       "id_action": "042",
+       "description": "Turns off the oscilloscope via the tower switch"
+      }
+     },
+     {
+      "clip_id": "101_42",
+      "action_time": [
+       565.656,
+       567.047
+      ],
+      "action_label": {
+       "id_action": "050",
+       "description": "Turns off the screwdriver battery charger via the tower switch"
+      }
+     },
+     {
+      "clip_id": "101_43",
+      "action_time": [
+       567.049,
+       573.828
+      ],
+      "action_label": {
+       "id_action": "005",
+       "description": "Connects the battery to the screwdriver"
+      }
+     },
+     {
+      "clip_id": "101_44",
+      "action_time": [
+       584.453,
+       620.438
+      ],
+      "action_label": {
+       "id_action": "015",
+       "description": "Removes the card from the workbench using the screwdriver"
+      }
+     },
+     {
+      "clip_id": "101_45",
+      "action_time": [
+       647.141,
+       675.609
+      ],
+      "action_label": {
+       "id_action": "044",
+       "description": "Reinserts the screws in the work area using the screwdriver"
+      }
+     },
+     {
+      "clip_id": "101_46",
+      "action_time": [
+       681.688,
+       690.281
+      ],
+      "action_label": {
+       "id_action": "045",
+       "description": "Disconnects the screwdriver battery and connects it to the battery charger"
+      }
+     },
+     {
+      "clip_id": "101_47",
+      "action_time": [
+       690.281,
+       692.281
+      ],
+      "action_label": {
+       "id_action": "045",
+       "description": "Disconnects the screwdriver battery and connects it to the battery charger"
+      }
+     },
+     {
+      "clip_id": "101_48",
+      "action_time": [
+       692.281,
+       693.406
+      ],
+      "action_label": {
+       "id_action": "046",
+       "description": "Turns on the screwdriver battery charger via the tower switch"
+      }
+     },
+     {
+      "clip_id": "101_49",
+      "action_time": [
+       698.781,
+       720.531
+      ],
+      "action_label": {
+       "id_action": "047",
+       "description": "Notes the test operation results in the register"
+      }
+     },
+     {
+      "clip_id": "101_50",
+      "action_time": [
+       727.031,
+       728.969
+      ],
+      "action_label": {
+       "id_action": "048",
+       "description": "Presses the two red buttons on panel A"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "title": "67 (high-voltage board), shown from the synchronized exocentric camera: card removed from the workbench (749–798 s) while power cables are still being disconnected (787–797 s)",
+   "video_ref": "data/videos/67/67_third_person.mp4 (930.9 s; same length as 67_first_person.mp4, which the labels are made on)",
+   "duration_s": 930.9,
+   "clip": "samples/media/enigma-360_2.mp4",
+   "clip_offset_s": 782,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0,
+     "te": 1.991,
+     "lane": "step",
+     "text": "001 Press the two green buttons on panel A"
+    },
+    {
+     "t": 1.984,
+     "te": 8.297,
+     "lane": "step",
+     "text": "002 Moves to the workbench and sits down"
+    },
+    {
+     "t": 14.953,
+     "te": 23.312,
+     "lane": "step",
+     "text": "003 Takes the high-voltage card"
+    },
+    {
+     "t": 23.312,
+     "te": 25.126,
+     "lane": "step",
+     "text": "004 Places the card on the work area"
+    },
+    {
+     "t": 29.517,
+     "te": 57.704,
+     "lane": "step",
+     "text": "051 Removes the workbench screws using the screwdriver"
+    },
+    {
+     "t": 63.006,
+     "te": 170.164,
+     "lane": "step",
+     "text": "052 Fixes the card to the workbench using the screwdriver"
+    },
+    {
+     "t": 185.422,
+     "te": 187.078,
+     "lane": "step",
+     "text": "008 Turns on the power supply via the tower switch"
+    },
+    {
+     "t": 192.89,
+     "te": 203.275,
+     "lane": "step",
+     "text": "010 Adjusts the power supply voltage knob setting it to 5 Volts"
+    },
+    {
+     "t": 213.437,
+     "te": 227.656,
+     "lane": "step",
+     "text": "011 Connects the power supply cables to the card's power points"
+    },
+    {
+     "t": 236.484,
+     "te": 250.047,
+     "lane": "step",
+     "text": "030 Turns on the oscilloscope via the tower switch"
+    },
+    {
+     "t": 250.047,
+     "te": 252.358,
+     "lane": "step",
+     "text": "031 Activates the probe channel number 2 using the blue-bordered CH2 MENU button"
+    },
+    {
+     "t": 278.765,
+     "te": 296.015,
+     "lane": "step",
+     "text": "032 Connects the probe ground clip to test point number 1"
+    },
+    {
+     "t": 313.062,
+     "te": 315.556,
+     "lane": "step",
+     "text": "033 Uses the probe tip to check some signal brought to test point number 2 on the card"
+    },
+    {
+     "t": 329.89,
+     "te": 332.606,
+     "lane": "step",
+     "text": "034 Presses the oscilloscope's Auto Set button"
+    },
+    {
+     "t": 344.781,
+     "te": 365.571,
+     "lane": "step",
+     "text": "035 Randomly rotates the position knob"
+    },
+    {
+     "t": 397.589,
+     "te": 400.124,
+     "lane": "step",
+     "text": "036 Uses the probe tip at test point number 3 on the card"
+    },
+    {
+     "t": 408.859,
+     "te": 420.203,
+     "lane": "step",
+     "text": "035 Randomly rotates the position knob"
+    },
+    {
+     "t": 464.281,
+     "te": 473.748,
+     "lane": "step",
+     "text": "035 Randomly rotates the position knob"
+    },
+    {
+     "t": 499.518,
+     "te": 502.663,
+     "lane": "step",
+     "text": "034 Presses the oscilloscope's Auto Set button"
+    },
+    {
+     "t": 510.234,
+     "te": 521.078,
+     "lane": "step",
+     "text": "035 Randomly rotates the position knob"
+    },
+    {
+     "t": 543.828,
+     "te": 545.24,
+     "lane": "step",
+     "text": "034 Presses the oscilloscope's Auto Set button"
+    },
+    {
+     "t": 551.937,
+     "te": 578.902,
+     "lane": "step",
+     "text": "035 Randomly rotates the position knob"
+    },
+    {
+     "t": 600.999,
+     "te": 602.077,
+     "lane": "step",
+     "text": "034 Presses the oscilloscope's Auto Set button"
+    },
+    {
+     "t": 608.625,
+     "te": 631.362,
+     "lane": "step",
+     "text": "035 Randomly rotates the position knob"
+    },
+    {
+     "t": 648.555,
+     "te": 654.968,
+     "lane": "step",
+     "text": "013 Resets the power supply current and voltage knobs to 0"
+    },
+    {
+     "t": 700.156,
+     "te": 703.795,
+     "lane": "step",
+     "text": "040 Disconnects the ground clip and oscilloscope probe"
+    },
+    {
+     "t": 712.468,
+     "te": 718.256,
+     "lane": "step",
+     "text": "041 Deactivates the probe channel number 2"
+    },
+    {
+     "t": 749.234,
+     "te": 798.41,
+     "lane": "step",
+     "text": "053 Removes the card from the workbench using the screwdriver"
+    },
+    {
+     "t": 787.406,
+     "te": 796.886,
+     "lane": "step",
+     "text": "014 Disconnects the power supply cables"
+    },
+    {
+     "t": 808.609,
+     "te": 863.674,
+     "lane": "step",
+     "text": "054 Reinserts the screws in the work area using the screwdriver"
+    },
+    {
+     "t": 868.328,
+     "te": 915.224,
+     "lane": "step",
+     "text": "047 Notes the test operation results in the register"
+    },
+    {
+     "t": 928.64,
+     "te": 930.89,
+     "lane": "step",
+     "text": "048 Presses the two red buttons on panel A"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "video_name": "67_first_person.mp4",
+    "clips": [
+     {
+      "clip_id": "67_0",
+      "action_time": [
+       0,
+       1.991
+      ],
+      "action_label": {
+       "id_action": "001",
+       "description": "Press the two green buttons on panel A"
+      }
+     },
+     {
+      "clip_id": "67_1",
+      "action_time": [
+       1.984,
+       8.297
+      ],
+      "action_label": {
+       "id_action": "002",
+       "description": "Moves to the workbench and sits down"
+      }
+     },
+     {
+      "clip_id": "67_2",
+      "action_time": [
+       14.953,
+       23.312
+      ],
+      "action_label": {
+       "id_action": "003",
+       "description": "Takes the high-voltage card"
+      }
+     },
+     {
+      "clip_id": "67_3",
+      "action_time": [
+       23.312,
+       25.126
+      ],
+      "action_label": {
+       "id_action": "004",
+       "description": "Places the card on the work area"
+      }
+     },
+     {
+      "clip_id": "67_4",
+      "action_time": [
+       29.517,
+       57.704
+      ],
+      "action_label": {
+       "id_action": "051",
+       "description": "Removes the workbench screws using the screwdriver"
+      }
+     },
+     {
+      "clip_id": "67_5",
+      "action_time": [
+       63.006,
+       170.164
+      ],
+      "action_label": {
+       "id_action": "052",
+       "description": "Fixes the card to the workbench using the screwdriver"
+      }
+     },
+     {
+      "clip_id": "67_6",
+      "action_time": [
+       185.422,
+       187.078
+      ],
+      "action_label": {
+       "id_action": "008",
+       "description": "Turns on the power supply via the tower switch"
+      }
+     },
+     {
+      "clip_id": "67_7",
+      "action_time": [
+       192.89,
+       203.275
+      ],
+      "action_label": {
+       "id_action": "010",
+       "description": "Adjusts the power supply voltage knob setting it to 5 Volts"
+      }
+     },
+     {
+      "clip_id": "67_8",
+      "action_time": [
+       213.437,
+       227.656
+      ],
+      "action_label": {
+       "id_action": "011",
+       "description": "Connects the power supply cables to the card's power points"
+      }
+     },
+     {
+      "clip_id": "67_9",
+      "action_time": [
+       236.484,
+       250.047
+      ],
+      "action_label": {
+       "id_action": "030",
+       "description": "Turns on the oscilloscope via the tower switch"
+      }
+     },
+     {
+      "clip_id": "67_10",
+      "action_time": [
+       250.047,
+       252.358
+      ],
+      "action_label": {
+       "id_action": "031",
+       "description": "Activates the probe channel number 2 using the blue-bordered CH2 MENU button"
+      }
+     },
+     {
+      "clip_id": "67_11",
+      "action_time": [
+       278.765,
+       296.015
+      ],
+      "action_label": {
+       "id_action": "032",
+       "description": "Connects the probe ground clip to test point number 1"
+      }
+     },
+     {
+      "clip_id": "67_12",
+      "action_time": [
+       313.062,
+       315.556
+      ],
+      "action_label": {
+       "id_action": "033",
+       "description": "Uses the probe tip to check some signal brought to test point number 2 on the card"
+      }
+     },
+     {
+      "clip_id": "67_13",
+      "action_time": [
+       329.89,
+       332.606
+      ],
+      "action_label": {
+       "id_action": "034",
+       "description": "Presses the oscilloscope's Auto Set button"
+      }
+     },
+     {
+      "clip_id": "67_14",
+      "action_time": [
+       344.781,
+       365.571
+      ],
+      "action_label": {
+       "id_action": "035",
+       "description": "Randomly rotates the position knob"
+      }
+     },
+     {
+      "clip_id": "67_15",
+      "action_time": [
+       397.589,
+       400.124
+      ],
+      "action_label": {
+       "id_action": "036",
+       "description": "Uses the probe tip at test point number 3 on the card"
+      }
+     },
+     {
+      "clip_id": "67_16",
+      "action_time": [
+       408.859,
+       420.203
+      ],
+      "action_label": {
+       "id_action": "035",
+       "description": "Randomly rotates the position knob"
+      }
+     },
+     {
+      "clip_id": "67_17",
+      "action_time": [
+       464.281,
+       473.748
+      ],
+      "action_label": {
+       "id_action": "035",
+       "description": "Randomly rotates the position knob"
+      }
+     },
+     {
+      "clip_id": "67_18",
+      "action_time": [
+       499.518,
+       502.663
+      ],
+      "action_label": {
+       "id_action": "034",
+       "description": "Presses the oscilloscope's Auto Set button"
+      }
+     },
+     {
+      "clip_id": "67_19",
+      "action_time": [
+       510.234,
+       521.078
+      ],
+      "action_label": {
+       "id_action": "035",
+       "description": "Randomly rotates the position knob"
+      }
+     },
+     {
+      "clip_id": "67_20",
+      "action_time": [
+       543.828,
+       545.24
+      ],
+      "action_label": {
+       "id_action": "034",
+       "description": "Presses the oscilloscope's Auto Set button"
+      }
+     },
+     {
+      "clip_id": "67_21",
+      "action_time": [
+       551.937,
+       578.902
+      ],
+      "action_label": {
+       "id_action": "035",
+       "description": "Randomly rotates the position knob"
+      }
+     },
+     {
+      "clip_id": "67_22",
+      "action_time": [
+       600.999,
+       602.077
+      ],
+      "action_label": {
+       "id_action": "034",
+       "description": "Presses the oscilloscope's Auto Set button"
+      }
+     },
+     {
+      "clip_id": "67_23",
+      "action_time": [
+       608.625,
+       631.362
+      ],
+      "action_label": {
+       "id_action": "035",
+       "description": "Randomly rotates the position knob"
+      }
+     },
+     {
+      "clip_id": "67_24",
+      "action_time": [
+       648.555,
+       654.968
+      ],
+      "action_label": {
+       "id_action": "013",
+       "description": "Resets the power supply current and voltage knobs to 0"
+      }
+     },
+     {
+      "clip_id": "67_25",
+      "action_time": [
+       700.156,
+       703.795
+      ],
+      "action_label": {
+       "id_action": "040",
+       "description": "Disconnects the ground clip and oscilloscope probe"
+      }
+     },
+     {
+      "clip_id": "67_26",
+      "action_time": [
+       712.468,
+       718.256
+      ],
+      "action_label": {
+       "id_action": "041",
+       "description": "Deactivates the probe channel number 2"
+      }
+     },
+     {
+      "clip_id": "67_27",
+      "action_time": [
+       749.234,
+       798.41
+      ],
+      "action_label": {
+       "id_action": "053",
+       "description": "Removes the card from the workbench using the screwdriver"
+      }
+     },
+     {
+      "clip_id": "67_28",
+      "action_time": [
+       787.406,
+       796.886
+      ],
+      "action_label": {
+       "id_action": "014",
+       "description": "Disconnects the power supply cables"
+      }
+     },
+     {
+      "clip_id": "67_29",
+      "action_time": [
+       808.609,
+       863.674
+      ],
+      "action_label": {
+       "id_action": "054",
+       "description": "Reinserts the screws in the work area using the screwdriver"
+      }
+     },
+     {
+      "clip_id": "67_30",
+      "action_time": [
+       868.328,
+       915.224
+      ],
+      "action_label": {
+       "id_action": "047",
+       "description": "Notes the test operation results in the register"
+      }
+     },
+     {
+      "clip_id": "67_31",
+      "action_time": [
+       928.64,
+       930.89
+      ],
+      "action_label": {
+       "id_action": "048",
+       "description": "Presses the two red buttons on panel A"
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

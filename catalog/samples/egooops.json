@@ -1,0 +1,491 @@
+{
+ "slug": "egooops",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://github.com/Y-Haneji/EgoOops-annotations (meta/metadata.json, meta/mistake_classes.json)",
+  "http://www.lsta.media.kyoto-u.ac.jp/resource/data/EgoOops/videos-processed-720p.zip (members tsumiki/S1750001.MP4, ion/S1730002.MP4)"
+ ],
+ "access_used": "open download",
+ "note": "Each example is one video's full segment list aligned to the task's procedural text: segments with instruction index ≥0 are steps (lane 'step'); labels index the six mistake classes and the caption says what went wrong (lane 'mistake', or 'correction' for class 'correction of mistake actions'); instruction -1 marks off-procedure actions such as grasping the wrong object. The raw also carries the task's instruction list and the class names.",
+ "examples": [
+  {
+   "title": "tsumiki/S1750001 (toy blocks): wrong block sizes, a wrong grasp, wrong colour order, and 2 correction segments (7 labelled segments)",
+   "video_ref": "videos-processed-720p/tsumiki/S1750001.MP4",
+   "duration_s": 175.01,
+   "clip": "samples/media/egooops_1.mp4",
+   "clip_offset_s": 124,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 10.977283,
+     "te": 26.114744,
+     "lane": "step",
+     "text": "step 0: Arrange three cube blocks in a row from left to right in the order of blue, green, and yellow."
+    },
+    {
+     "t": 27.192339,
+     "te": 54.593778,
+     "lane": "mistake",
+     "text": "[working with wrong objects] bridge two short thin cuboid blocks but should bridge two long thin cuboid blocks\n"
+    },
+    {
+     "t": 27.192339,
+     "te": 54.593778,
+     "lane": "step",
+     "text": "step 1: Bridge two long thin cuboid blocks on the square blocks from left to right in the order of blue and green."
+    },
+    {
+     "t": 61.970011,
+     "te": 77.86108,
+     "lane": "mistake",
+     "text": "[working with wrong objects] stand three long thin cuboid blocks but should stand three short thin cuboid blocks"
+    },
+    {
+     "t": 61.970011,
+     "te": 77.86108,
+     "lane": "step",
+     "text": "step 2: Stand three short thin cuboid blocks equally spaced from left to right in the order of blue, green, and yellow."
+    },
+    {
+     "t": 80.210015,
+     "te": 86.189463,
+     "lane": "mistake",
+     "text": "[grasping wrong objects and releasing them without using] grasp a red long thin cuboid block"
+    },
+    {
+     "t": 87.597097,
+     "te": 90.045695,
+     "lane": "correction",
+     "text": "[correction of mistake actions] correct errors in steps 1 and 2"
+    },
+    {
+     "t": 94.548196,
+     "te": 97.260485,
+     "lane": "step",
+     "text": "step 1: Bridge two long thin cuboid blocks on the square blocks from left to right in the order of blue and green."
+    },
+    {
+     "t": 101.233484,
+     "te": 106.887042,
+     "lane": "step",
+     "text": "step 0: Arrange three cube blocks in a row from left to right in the order of blue, green, and yellow."
+    },
+    {
+     "t": 109.168356,
+     "te": 111.786681,
+     "lane": "step",
+     "text": "step 1: Bridge two long thin cuboid blocks on the square blocks from left to right in the order of blue and green."
+    },
+    {
+     "t": 114.909594,
+     "te": 124.949293,
+     "lane": "step",
+     "text": "step 2: Stand three short thin cuboid blocks equally spaced from left to right in the order of blue, green, and yellow."
+    },
+    {
+     "t": 128.334868,
+     "te": 133.787703,
+     "lane": "mistake",
+     "text": "[working in the wrong way or moving] bridge the blocks from left to right in the order of red and yellow but should bridge them in the order of yellow and red"
+    },
+    {
+     "t": 128.334868,
+     "te": 133.787703,
+     "lane": "step",
+     "text": "step 3: Bridge two long thin cuboid blocks on the upright blocks from left to right in the order of yellow and red."
+    },
+    {
+     "t": 134.982872,
+     "te": 141.539439,
+     "lane": "correction",
+     "text": "[correction of mistake actions] correct error in step 3"
+    },
+    {
+     "t": 142.224013,
+     "te": 149.2163,
+     "lane": "step",
+     "text": "step 4: Place two thick cuboid blocks on the bridge, laying them down in order from left to right, yellow to red."
+    },
+    {
+     "t": 150.815111,
+     "te": 154.386916,
+     "lane": "step",
+     "text": "step 5: Lay one blue thick cuboid block down and stack it in the upper center of the yellow and the red bhick cuboid blocks."
+    },
+    {
+     "t": 154.942413,
+     "te": 156.775155,
+     "lane": "mistake",
+     "text": "[grasping wrong objects and releasing them without using] grasp a red triangular prism"
+    },
+    {
+     "t": 157.529973,
+     "te": 173.040886,
+     "lane": "step",
+     "text": "step 6: Place two triangular prism blocks on both sides of the blue thick cuboid block from left to right in the order of blue and red."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "meta/metadata.json videos[] item": {
+     "task_id": "tsumiki",
+     "video_id": "S1750001",
+     "segments": [
+      {
+       "startTime": 10.977283,
+       "endTime": 26.114744,
+       "instruction": 0,
+       "labels": [],
+       "caption": ""
+      },
+      {
+       "startTime": 27.192339,
+       "endTime": 54.593778,
+       "instruction": 1,
+       "labels": [
+        0
+       ],
+       "caption": "bridge two short thin cuboid blocks but should bridge two long thin cuboid blocks\n"
+      },
+      {
+       "startTime": 61.970011,
+       "endTime": 77.86108,
+       "instruction": 2,
+       "labels": [
+        0
+       ],
+       "caption": "stand three long thin cuboid blocks but should stand three short thin cuboid blocks"
+      },
+      {
+       "startTime": 80.210015,
+       "endTime": 86.189463,
+       "instruction": -1,
+       "labels": [
+        1
+       ],
+       "caption": "grasp a red long thin cuboid block"
+      },
+      {
+       "startTime": 87.597097,
+       "endTime": 90.045695,
+       "instruction": -1,
+       "labels": [
+        2
+       ],
+       "caption": "correct errors in steps 1 and 2"
+      },
+      {
+       "startTime": 94.548196,
+       "endTime": 97.260485,
+       "instruction": 1,
+       "labels": [],
+       "caption": ""
+      },
+      {
+       "startTime": 101.233484,
+       "endTime": 106.887042,
+       "instruction": 0,
+       "labels": [],
+       "caption": ""
+      },
+      {
+       "startTime": 109.168356,
+       "endTime": 111.786681,
+       "instruction": 1,
+       "labels": [],
+       "caption": ""
+      },
+      {
+       "startTime": 114.909594,
+       "endTime": 124.949293,
+       "instruction": 2,
+       "labels": [],
+       "caption": ""
+      },
+      {
+       "startTime": 128.334868,
+       "endTime": 133.787703,
+       "instruction": 3,
+       "labels": [
+        4
+       ],
+       "caption": "bridge the blocks from left to right in the order of red and yellow but should bridge them in the order of yellow and red"
+      },
+      {
+       "startTime": 134.982872,
+       "endTime": 141.539439,
+       "instruction": -1,
+       "labels": [
+        2
+       ],
+       "caption": "correct error in step 3"
+      },
+      {
+       "startTime": 142.224013,
+       "endTime": 149.2163,
+       "instruction": 4,
+       "labels": [],
+       "caption": ""
+      },
+      {
+       "startTime": 150.815111,
+       "endTime": 154.386916,
+       "instruction": 5,
+       "labels": [],
+       "caption": ""
+      },
+      {
+       "startTime": 154.942413,
+       "endTime": 156.775155,
+       "instruction": -1,
+       "labels": [
+        1
+       ],
+       "caption": "grasp a red triangular prism"
+      },
+      {
+       "startTime": 157.529973,
+       "endTime": 173.040886,
+       "instruction": 6,
+       "labels": [],
+       "caption": ""
+      }
+     ]
+    },
+    "meta/metadata.json instructions[\"tsumiki\"]": [
+     "Arrange three cube blocks in a row from left to right in the order of blue, green, and yellow.",
+     "Bridge two long thin cuboid blocks on the square blocks from left to right in the order of blue and green.",
+     "Stand three short thin cuboid blocks equally spaced from left to right in the order of blue, green, and yellow.",
+     "Bridge two long thin cuboid blocks on the upright blocks from left to right in the order of yellow and red.",
+     "Place two thick cuboid blocks on the bridge, laying them down in order from left to right, yellow to red.",
+     "Lay one blue thick cuboid block down and stack it in the upper center of the yellow and the red bhick cuboid blocks.",
+     "Place two triangular prism blocks on both sides of the blue thick cuboid block from left to right in the order of blue and red."
+    ],
+    "meta/mistake_classes.json": [
+     "working with wrong objects",
+     "grasping wrong objects and releasing them without using",
+     "correction of mistake actions",
+     "unintended actions",
+     "working in the wrong way or moving",
+     "others"
+    ]
+   }
+  },
+  {
+   "title": "ion/S1730002 (ionic reaction experiment): metal plates put in rows instead of columns, then corrected (131.8–179.0 s)",
+   "video_ref": "videos-processed-720p/ion/S1730002.MP4",
+   "duration_s": 360.03,
+   "clip": "samples/media/egooops_2.mp4",
+   "clip_offset_s": 118,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 2.336148,
+     "te": 6.208483,
+     "lane": "step",
+     "text": "step 0: Put a microplate on a grid of a worksheet."
+    },
+    {
+     "t": 7.659611,
+     "te": 16.883129,
+     "lane": "step",
+     "text": "step 1: Take a pair of tweezers out of a bag."
+    },
+    {
+     "t": 23.657597,
+     "te": 25.361398,
+     "lane": "mistake",
+     "text": "[grasping wrong objects and releasing them without using] grasp case of zinc plates"
+    },
+    {
+     "t": 27.317968,
+     "te": 84.871945,
+     "lane": "mistake",
+     "text": "[working in the wrong way or moving] put three magnesium plates on the bottom row of the microplate but should put them on the right column"
+    },
+    {
+     "t": 27.317968,
+     "te": 84.871945,
+     "lane": "step",
+     "text": "step 4: Put three magnesium plates on the right column of the microplate using the pair of tweezers."
+    },
+    {
+     "t": 86.188091,
+     "te": 124.654285,
+     "lane": "mistake",
+     "text": "[working in the wrong way or moving] put two copper plates on the top row of the microplate but should put them on the left column"
+    },
+    {
+     "t": 86.188091,
+     "te": 124.654285,
+     "lane": "step",
+     "text": "step 2: Put three copper plates on the left column of the microplate using the pair of tweezers."
+    },
+    {
+     "t": 131.832769,
+     "te": 178.95429,
+     "lane": "correction",
+     "text": "[correction of mistake actions] correct errors in step 2 and 4"
+    },
+    {
+     "t": 185.397376,
+     "te": 234.25569,
+     "lane": "step",
+     "text": "step 3: Put three zinc plates on the center column of the microplate using the pair of tweezers."
+    },
+    {
+     "t": 234.74387,
+     "te": 259.380409,
+     "lane": "step",
+     "text": "step 5: Put a drop of copper sulfate aqueous solution on each first row of the metal plates."
+    },
+    {
+     "t": 260.000094,
+     "te": 262.543859,
+     "lane": "mistake",
+     "text": "[grasping wrong objects and releasing them without using] grasp magnesium sulfate aqueous"
+    },
+    {
+     "t": 263.224043,
+     "te": 278.331008,
+     "lane": "step",
+     "text": "step 6: Put a drop of zinc sulfate aqueous solution on each middle row of the metal plates."
+    },
+    {
+     "t": 279.323135,
+     "te": 300.988372,
+     "lane": "step",
+     "text": "step 7: Put a drop of magnesium sulfate aqueous solution on each last row of the metal plates."
+    },
+    {
+     "t": 308.58304,
+     "te": 358.183978,
+     "lane": "step",
+     "text": "step 8: Fill in a table in the worksheet with results, and then write down names of metals in the worksheet frorm the most reactive one."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "meta/metadata.json videos[] item": {
+     "task_id": "ion",
+     "video_id": "S1730002",
+     "segments": [
+      {
+       "startTime": 2.336148,
+       "endTime": 6.208483,
+       "instruction": 0,
+       "labels": [],
+       "caption": ""
+      },
+      {
+       "startTime": 7.659611,
+       "endTime": 16.883129,
+       "instruction": 1,
+       "labels": [],
+       "caption": ""
+      },
+      {
+       "startTime": 23.657597,
+       "endTime": 25.361398,
+       "instruction": -1,
+       "labels": [
+        1
+       ],
+       "caption": "grasp case of zinc plates"
+      },
+      {
+       "startTime": 27.317968,
+       "endTime": 84.871945,
+       "instruction": 4,
+       "labels": [
+        4
+       ],
+       "caption": "put three magnesium plates on the bottom row of the microplate but should put them on the right column"
+      },
+      {
+       "startTime": 86.188091,
+       "endTime": 124.654285,
+       "instruction": 2,
+       "labels": [
+        4
+       ],
+       "caption": "put two copper plates on the top row of the microplate but should put them on the left column"
+      },
+      {
+       "startTime": 131.832769,
+       "endTime": 178.95429,
+       "instruction": -1,
+       "labels": [
+        2
+       ],
+       "caption": "correct errors in step 2 and 4"
+      },
+      {
+       "startTime": 185.397376,
+       "endTime": 234.25569,
+       "instruction": 3,
+       "labels": [],
+       "caption": ""
+      },
+      {
+       "startTime": 234.74387,
+       "endTime": 259.380409,
+       "instruction": 5,
+       "labels": [],
+       "caption": ""
+      },
+      {
+       "startTime": 260.000094,
+       "endTime": 262.543859,
+       "instruction": -1,
+       "labels": [
+        1
+       ],
+       "caption": "grasp magnesium sulfate aqueous"
+      },
+      {
+       "startTime": 263.224043,
+       "endTime": 278.331008,
+       "instruction": 6,
+       "labels": [],
+       "caption": ""
+      },
+      {
+       "startTime": 279.323135,
+       "endTime": 300.988372,
+       "instruction": 7,
+       "labels": [],
+       "caption": ""
+      },
+      {
+       "startTime": 308.58304,
+       "endTime": 358.183978,
+       "instruction": 8,
+       "labels": [],
+       "caption": ""
+      }
+     ]
+    },
+    "meta/metadata.json instructions[\"ion\"]": [
+     "Put a microplate on a grid of a worksheet.",
+     "Take a pair of tweezers out of a bag.",
+     "Put three copper plates on the left column of the microplate using the pair of tweezers.",
+     "Put three zinc plates on the center column of the microplate using the pair of tweezers.",
+     "Put three magnesium plates on the right column of the microplate using the pair of tweezers.",
+     "Put a drop of copper sulfate aqueous solution on each first row of the metal plates.",
+     "Put a drop of zinc sulfate aqueous solution on each middle row of the metal plates.",
+     "Put a drop of magnesium sulfate aqueous solution on each last row of the metal plates.",
+     "Fill in a table in the worksheet with results, and then write down names of metals in the worksheet frorm the most reactive one."
+    ],
+    "meta/mistake_classes.json": [
+     "working with wrong objects",
+     "grasping wrong objects and releasing them without using",
+     "correction of mistake actions",
+     "unintended actions",
+     "working in the wrong way or moving",
+     "others"
+    ]
+   }
+  }
+ ]
+}

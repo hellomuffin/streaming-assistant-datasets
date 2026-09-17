@@ -1,0 +1,1125 @@
+{
+ "slug": "egoems",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://raw.githubusercontent.com/UVA-DSA/EgoEMS/main/Annotations/aaai26_main_annotation_segmentation.json (subjects wa1 / trial 5, opvrs_3 / trial 1)",
+  "https://github.com/UVA-DSA/EgoEMS/blob/main/Benchmarks/ActionRecognition/Audio/manual_check_transcripts/ng3/GX010332_encoded_human.json"
+ ],
+ "access_used": "public sample in paper/repo/card only (full data needs a Harvard Dataverse access request; all 64 files restricted, CC BY-NC-ND 4.0)",
+ "note": "The videos, audio and full timestamped transcripts sit behind a Dataverse access request, but the CC0 GitHub repo ships real annotation files. Examples 1–2 are one trial each from the segmentation JSON, trimmed to that subject/scenario/trial: stream file paths plus keysteps with start_t/end_t in seconds and a class label. Example 3 is a real human-checked transcript from the repo's ASR benchmark folder: a list of utterances tagged First Responder, AED or Background, without times and not linked by id to the segmentation trials. No clip: videos are restricted.",
+ "examples": [
+  {
+   "title": "wa1 cardiac_arrest trial 5 (EMT): 34 keysteps in 291 s — CPR cycles, AED pads, shocks, ventilation",
+   "video_ref": "wa1/cardiac_arrest/5/ego/wa1_cardiacarrest_5_ego_rgb_final.mp4",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 4.092,
+     "te": 4.777,
+     "lane": "step",
+     "text": "approach_patient"
+    },
+    {
+     "t": 4.777,
+     "te": 6.86373,
+     "lane": "step",
+     "text": "check_responsiveness"
+    },
+    {
+     "t": 6.864,
+     "te": 10.268,
+     "lane": "step",
+     "text": "check_pulse"
+    },
+    {
+     "t": 10.268,
+     "te": 21.317,
+     "lane": "step",
+     "text": "chest_compressions"
+    },
+    {
+     "t": 21.317,
+     "te": 26.32195,
+     "lane": "step",
+     "text": "attach_defib_pads"
+    },
+    {
+     "t": 29.316,
+     "te": 30.4,
+     "lane": "step",
+     "text": "ventilate_patient"
+    },
+    {
+     "t": 30.4,
+     "te": 42.22299,
+     "lane": "step",
+     "text": "chest_compressions"
+    },
+    {
+     "t": 42.611,
+     "te": 44.56476,
+     "lane": "step",
+     "text": "clear_for_analysis"
+    },
+    {
+     "t": 44.565,
+     "te": 46.975,
+     "lane": "step",
+     "text": "administer_shock_aed"
+    },
+    {
+     "t": 46.975,
+     "te": 62.09,
+     "lane": "step",
+     "text": "chest_compressions"
+    },
+    {
+     "t": 62.09,
+     "te": 66.10192,
+     "lane": "step",
+     "text": "ventilate_patient"
+    },
+    {
+     "t": 66.102,
+     "te": 82.171,
+     "lane": "step",
+     "text": "chest_compressions"
+    },
+    {
+     "t": 82.171,
+     "te": 86.364,
+     "lane": "step",
+     "text": "ventilate_patient"
+    },
+    {
+     "t": 86.364,
+     "te": 103.88578,
+     "lane": "step",
+     "text": "chest_compressions"
+    },
+    {
+     "t": 103.886,
+     "te": 107.9544,
+     "lane": "step",
+     "text": "ventilate_patient"
+    },
+    {
+     "t": 108.43,
+     "te": 125.2024,
+     "lane": "step",
+     "text": "chest_compressions"
+    },
+    {
+     "t": 125.542,
+     "te": 128.96211,
+     "lane": "step",
+     "text": "ventilate_patient"
+    },
+    {
+     "t": 129.907,
+     "te": 146.926,
+     "lane": "step",
+     "text": "chest_compressions"
+    },
+    {
+     "t": 146.926,
+     "te": 152.11,
+     "lane": "step",
+     "text": "ventilate_patient"
+    },
+    {
+     "t": 152.11,
+     "te": 153.046,
+     "lane": "step",
+     "text": "chest_compressions"
+    },
+    {
+     "t": 153.046,
+     "te": 172.065,
+     "lane": "step",
+     "text": "check_pulse"
+    },
+    {
+     "t": 172.065,
+     "te": 173.065,
+     "lane": "step",
+     "text": "clear_for_shock"
+    },
+    {
+     "t": 174.558,
+     "te": 176.342,
+     "lane": "step",
+     "text": "administer_shock_aed"
+    },
+    {
+     "t": 176.342,
+     "te": 199.28287,
+     "lane": "step",
+     "text": "chest_compressions"
+    },
+    {
+     "t": 199.283,
+     "te": 202.487,
+     "lane": "step",
+     "text": "ventilate_patient"
+    },
+    {
+     "t": 202.487,
+     "te": 219.62271,
+     "lane": "step",
+     "text": "chest_compressions"
+    },
+    {
+     "t": 219.623,
+     "te": 223.7065,
+     "lane": "step",
+     "text": "ventilate_patient"
+    },
+    {
+     "t": 223.707,
+     "te": 240.79868,
+     "lane": "step",
+     "text": "chest_compressions"
+    },
+    {
+     "t": 241.235,
+     "te": 246.075,
+     "lane": "step",
+     "text": "ventilate_patient"
+    },
+    {
+     "t": 246.075,
+     "te": 263.77467,
+     "lane": "step",
+     "text": "chest_compressions"
+    },
+    {
+     "t": 263.775,
+     "te": 267.302,
+     "lane": "step",
+     "text": "ventilate_patient"
+    },
+    {
+     "t": 267.302,
+     "te": 283.774,
+     "lane": "step",
+     "text": "chest_compressions"
+    },
+    {
+     "t": 283.774,
+     "te": 285.594,
+     "lane": "step",
+     "text": "ventilate_patient"
+    },
+    {
+     "t": 285.594,
+     "te": 290.62616,
+     "lane": "step",
+     "text": "clear_for_analysis"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "subject_id": "wa1",
+    "expertise_level": "EMT",
+    "scenarios": [
+     {
+      "scenario_id": "cardiac_arrest",
+      "trials": [
+       {
+        "trial_id": "5",
+        "streams": {
+         "smartwatch_data": {
+          "file_id": "wa1_cardiacarrest_5_smartwatch_imu_data",
+          "file_path": "wa1/cardiac_arrest/5/smartwatch_data/wa1_cardiacarrest_5_smartwatch_imu_data.csv"
+         },
+         "audio": {
+          "file_id": "wa1_cardiacarrest_5_audio_deidentified",
+          "file_path": "wa1/cardiac_arrest/5/audio/wa1_cardiacarrest_5_audio_deidentified.mp3"
+         },
+         "audio_transcript": {
+          "file_id": "wa1_cardiacarrest_5_speech_transcript_deidentified",
+          "file_path": "wa1/cardiac_arrest/5/audio/wa1_cardiacarrest_5_speech_transcript_deidentified.json"
+         },
+         "BBOX_MASKS": {
+          "file_id": "wa1_cardiacarrest_5_bbox_annotations",
+          "file_path": "wa1/cardiac_arrest/5/BBOX_MASKS/wa1_cardiacarrest_5_bbox_annotations.json"
+         },
+         "resnet_ego": {
+          "file_id": "wa1_cardiacarrest_5_resnet_ego_features",
+          "file_path": "wa1/cardiac_arrest/5/resnet_ego/wa1_cardiacarrest_5_resnet_ego_features.npy"
+         },
+         "clip_ego": {
+          "file_id": "wa1_cardiacarrest_5_clip_ego_features",
+          "file_path": "wa1/cardiac_arrest/5/clip_ego/wa1_cardiacarrest_5_clip_ego_features.npy"
+         },
+         "distance_sensor_data": {
+          "file_id": "wa1_cardiacarrest_5_sync_depth_sensor",
+          "file_path": "wa1/cardiac_arrest/5/distance_sensor_data/wa1_cardiacarrest_5_sync_depth_sensor.csv"
+         },
+         "ego": {
+          "file_id": "wa1_cardiacarrest_5_ego_rgb_final",
+          "file_path": "wa1/cardiac_arrest/5/ego/wa1_cardiacarrest_5_ego_rgb_final.mp4"
+         }
+        },
+        "keysteps": [
+         {
+          "keystep_id": "4_YbpmHhu5",
+          "start_t": 4.092,
+          "end_t": 4.777,
+          "label": "approach_patient",
+          "class_id": 0
+         },
+         {
+          "keystep_id": "4_6v4dPsJu",
+          "start_t": 4.777,
+          "end_t": 6.86373,
+          "label": "check_responsiveness",
+          "class_id": 1
+         },
+         {
+          "keystep_id": "4_iPxMrJ2a",
+          "start_t": 6.864,
+          "end_t": 10.268,
+          "label": "check_pulse",
+          "class_id": 2
+         },
+         {
+          "keystep_id": "4_YTpZpXJ4",
+          "start_t": 10.268,
+          "end_t": 21.317,
+          "label": "chest_compressions",
+          "class_id": 4
+         },
+         {
+          "keystep_id": "4_DiBqCrsE",
+          "start_t": 21.317,
+          "end_t": 26.32195,
+          "label": "attach_defib_pads",
+          "class_id": 8
+         },
+         {
+          "keystep_id": "4_b6D7TuQb",
+          "start_t": 29.316,
+          "end_t": 30.4,
+          "label": "ventilate_patient",
+          "class_id": 14
+         },
+         {
+          "keystep_id": "4_z1BWTieI",
+          "start_t": 30.4,
+          "end_t": 42.22299,
+          "label": "chest_compressions",
+          "class_id": 4
+         },
+         {
+          "keystep_id": "4_lEUoahCm",
+          "start_t": 42.611,
+          "end_t": 44.56476,
+          "label": "clear_for_analysis",
+          "class_id": 9
+         },
+         {
+          "keystep_id": "4_1S2QY8nG",
+          "start_t": 44.565,
+          "end_t": 46.975,
+          "label": "administer_shock_aed",
+          "class_id": 11
+         },
+         {
+          "keystep_id": "4_MU91j2Xg",
+          "start_t": 46.975,
+          "end_t": 62.09,
+          "label": "chest_compressions",
+          "class_id": 4
+         },
+         {
+          "keystep_id": "4_W1KuOOxs",
+          "start_t": 62.09,
+          "end_t": 66.10192,
+          "label": "ventilate_patient",
+          "class_id": 14
+         },
+         {
+          "keystep_id": "4_ecOX083e",
+          "start_t": 66.102,
+          "end_t": 82.171,
+          "label": "chest_compressions",
+          "class_id": 4
+         },
+         {
+          "keystep_id": "4_i71sfKNu",
+          "start_t": 82.171,
+          "end_t": 86.364,
+          "label": "ventilate_patient",
+          "class_id": 14
+         },
+         {
+          "keystep_id": "4_BzpauS9Q",
+          "start_t": 86.364,
+          "end_t": 103.88578,
+          "label": "chest_compressions",
+          "class_id": 4
+         },
+         {
+          "keystep_id": "4_2hrJs5NA",
+          "start_t": 103.886,
+          "end_t": 107.9544,
+          "label": "ventilate_patient",
+          "class_id": 14
+         },
+         {
+          "keystep_id": "4_XW04vwTN",
+          "start_t": 108.43,
+          "end_t": 125.2024,
+          "label": "chest_compressions",
+          "class_id": 4
+         },
+         {
+          "keystep_id": "4_SsohEz3R",
+          "start_t": 125.542,
+          "end_t": 128.96211,
+          "label": "ventilate_patient",
+          "class_id": 14
+         },
+         {
+          "keystep_id": "4_zlDsWXrf",
+          "start_t": 129.907,
+          "end_t": 146.926,
+          "label": "chest_compressions",
+          "class_id": 4
+         },
+         {
+          "keystep_id": "4_XEthRkXU",
+          "start_t": 146.926,
+          "end_t": 152.11,
+          "label": "ventilate_patient",
+          "class_id": 14
+         },
+         {
+          "keystep_id": "4_u0GdPnVL",
+          "start_t": 152.11,
+          "end_t": 153.046,
+          "label": "chest_compressions",
+          "class_id": 4
+         },
+         {
+          "keystep_id": "4_YWgRESx0",
+          "start_t": 153.046,
+          "end_t": 172.065,
+          "label": "check_pulse",
+          "class_id": 2
+         },
+         {
+          "keystep_id": "4_XCXxs6LY",
+          "start_t": 172.065,
+          "end_t": 173.065,
+          "label": "clear_for_shock",
+          "class_id": 10
+         },
+         {
+          "keystep_id": "4_AAmplJ78",
+          "start_t": 174.558,
+          "end_t": 176.342,
+          "label": "administer_shock_aed",
+          "class_id": 11
+         },
+         {
+          "keystep_id": "4_TV6FX7rv",
+          "start_t": 176.342,
+          "end_t": 199.28287,
+          "label": "chest_compressions",
+          "class_id": 4
+         },
+         {
+          "keystep_id": "4_HI3TXJ9k",
+          "start_t": 199.283,
+          "end_t": 202.487,
+          "label": "ventilate_patient",
+          "class_id": 14
+         },
+         {
+          "keystep_id": "4_LTYuVmhs",
+          "start_t": 202.487,
+          "end_t": 219.62271,
+          "label": "chest_compressions",
+          "class_id": 4
+         },
+         {
+          "keystep_id": "4_3OW6WJKp",
+          "start_t": 219.623,
+          "end_t": 223.7065,
+          "label": "ventilate_patient",
+          "class_id": 14
+         },
+         {
+          "keystep_id": "4_X4jVDxzl",
+          "start_t": 223.707,
+          "end_t": 240.79868,
+          "label": "chest_compressions",
+          "class_id": 4
+         },
+         {
+          "keystep_id": "4_6KzXFLdA",
+          "start_t": 241.235,
+          "end_t": 246.075,
+          "label": "ventilate_patient",
+          "class_id": 14
+         },
+         {
+          "keystep_id": "4_4Rx1u3vc",
+          "start_t": 246.075,
+          "end_t": 263.77467,
+          "label": "chest_compressions",
+          "class_id": 4
+         },
+         {
+          "keystep_id": "4_T0QecigK",
+          "start_t": 263.775,
+          "end_t": 267.302,
+          "label": "ventilate_patient",
+          "class_id": 14
+         },
+         {
+          "keystep_id": "4_guFq8b1q",
+          "start_t": 267.302,
+          "end_t": 283.774,
+          "label": "chest_compressions",
+          "class_id": 4
+         },
+         {
+          "keystep_id": "4_Ry33tXSI",
+          "start_t": 283.774,
+          "end_t": 285.594,
+          "label": "ventilate_patient",
+          "class_id": 14
+         },
+         {
+          "keystep_id": "4_qyODIW3m",
+          "start_t": 285.594,
+          "end_t": 290.62616,
+          "label": "clear_for_analysis",
+          "class_id": 9
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "title": "opvrs_3 stroke trial 1 (EMT): 33 keysteps in 567 s",
+   "video_ref": "opvrs_3/stroke/1/ego/opvrs3_stroke_1_ego_rgb_final.mp4",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 28.04392,
+     "te": 68.05475,
+     "lane": "step",
+     "text": "approach_patient"
+    },
+    {
+     "t": 68.055,
+     "te": 76.325,
+     "lane": "step",
+     "text": "inquire_hpi_and_pmh"
+    },
+    {
+     "t": 76.325,
+     "te": 84.87986,
+     "lane": "step",
+     "text": "check_a&o"
+    },
+    {
+     "t": 84.88,
+     "te": 96.728,
+     "lane": "step",
+     "text": "inquire_hpi_and_pmh"
+    },
+    {
+     "t": 96.728,
+     "te": 96.803,
+     "lane": "step",
+     "text": "check_oxygen_saturation"
+    },
+    {
+     "t": 96.803,
+     "te": 102.3142,
+     "lane": "step",
+     "text": "check_heart_rate"
+    },
+    {
+     "t": 117.773,
+     "te": 130.19068,
+     "lane": "step",
+     "text": "check_perrl"
+    },
+    {
+     "t": 130.57771,
+     "te": 154.404,
+     "lane": "step",
+     "text": "document_lkw_time"
+    },
+    {
+     "t": 154.404,
+     "te": 166.50271,
+     "lane": "step",
+     "text": "check_grip_strength"
+    },
+    {
+     "t": 166.503,
+     "te": 175.62771,
+     "lane": "step",
+     "text": "speech_abnormality_check"
+    },
+    {
+     "t": 175.628,
+     "te": 181.456,
+     "lane": "step",
+     "text": "face_droop_check"
+    },
+    {
+     "t": 181.456,
+     "te": 216.36028,
+     "lane": "step",
+     "text": "check_blood_pressure"
+    },
+    {
+     "t": 216.678,
+     "te": 220.853,
+     "lane": "step",
+     "text": "inquire_hpi_and_pmh"
+    },
+    {
+     "t": 220.853,
+     "te": 226.38293,
+     "lane": "step",
+     "text": "review_medications"
+    },
+    {
+     "t": 226.383,
+     "te": 231.677,
+     "lane": "step",
+     "text": "inquire_medication_anticoagulants"
+    },
+    {
+     "t": 231.677,
+     "te": 244.83629,
+     "lane": "step",
+     "text": "inquire_hpi_and_pmh"
+    },
+    {
+     "t": 245.507,
+     "te": 251.72771,
+     "lane": "step",
+     "text": "load_patient_to_stretcher"
+    },
+    {
+     "t": 251.72771,
+     "te": 265.48199,
+     "lane": "step",
+     "text": "inquire_hpi_and_pmh"
+    },
+    {
+     "t": 275.403,
+     "te": 295.77128,
+     "lane": "step",
+     "text": "secure_patient_on_stretcher"
+    },
+    {
+     "t": 333.309,
+     "te": 339.093,
+     "lane": "step",
+     "text": "prepare_glucometer_and_strip"
+    },
+    {
+     "t": 339.093,
+     "te": 350.80574,
+     "lane": "step",
+     "text": "read_and_record_glucose_level"
+    },
+    {
+     "t": 364.853,
+     "te": 379.07482,
+     "lane": "step",
+     "text": "check_blood_pressure"
+    },
+    {
+     "t": 414.103,
+     "te": 420.783,
+     "lane": "step",
+     "text": "place_v1_lead"
+    },
+    {
+     "t": 420.783,
+     "te": 430.56063,
+     "lane": "step",
+     "text": "place_v2_lead"
+    },
+    {
+     "t": 431.02771,
+     "te": 437.653,
+     "lane": "step",
+     "text": "place_v4_lead"
+    },
+    {
+     "t": 437.653,
+     "te": 441.928,
+     "lane": "step",
+     "text": "place_right_arm_lead"
+    },
+    {
+     "t": 441.928,
+     "te": 444.478,
+     "lane": "step",
+     "text": "place_v3_lead"
+    },
+    {
+     "t": 444.478,
+     "te": 449.96699,
+     "lane": "step",
+     "text": "place_left_arm_lead"
+    },
+    {
+     "t": 452.624,
+     "te": 453.778,
+     "lane": "step",
+     "text": "place_v6_lead"
+    },
+    {
+     "t": 453.778,
+     "te": 460.673,
+     "lane": "step",
+     "text": "place_right_leg_lead"
+    },
+    {
+     "t": 460.673,
+     "te": 465.028,
+     "lane": "step",
+     "text": "place_v5_lead"
+    },
+    {
+     "t": 465.028,
+     "te": 473.60733,
+     "lane": "step",
+     "text": "place_left_leg_lead"
+    },
+    {
+     "t": 492.528,
+     "te": 566.57771,
+     "lane": "step",
+     "text": "transport"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "subject_id": "opvrs_3",
+    "expertise_level": "EMT",
+    "scenarios": [
+     {
+      "scenario_id": "stroke",
+      "trials": [
+       {
+        "trial_id": "1",
+        "streams": {
+         "i3d_flow": {
+          "file_id": "opvrs3_stroke_1_i3d_flow_ego_features",
+          "file_path": "opvrs_3/stroke/1/i3d_flow/opvrs3_stroke_1_i3d_flow_ego_features.npy"
+         },
+         "smartwatch_data": {
+          "file_id": "opvrs3_stroke_1_smartwatch_imu_data",
+          "file_path": "opvrs_3/stroke/1/smartwatch_data/opvrs3_stroke_1_smartwatch_imu_data.csv"
+         },
+         "audio": {
+          "file_id": "opvrs3_stroke_1_audio_deidentified",
+          "file_path": "opvrs_3/stroke/1/audio/opvrs3_stroke_1_audio_deidentified.mp3"
+         },
+         "audio_transcript": {
+          "file_id": "opvrs3_stroke_1_speech_transcript_deidentified",
+          "file_path": "opvrs_3/stroke/1/audio/opvrs3_stroke_1_speech_transcript_deidentified.json"
+         },
+         "i3d_rgb": {
+          "file_id": "opvrs3_stroke_1_i3d_rgb_ego_features",
+          "file_path": "opvrs_3/stroke/1/i3d_rgb/opvrs3_stroke_1_i3d_rgb_ego_features.npy"
+         },
+         "resnet_ego": {
+          "file_id": "opvrs3_stroke_1_resnet_ego_features",
+          "file_path": "opvrs_3/stroke/1/resnet_ego/opvrs3_stroke_1_resnet_ego_features.npy"
+         },
+         "clip_ego": {
+          "file_id": "opvrs3_stroke_1_clip_ego_features",
+          "file_path": "opvrs_3/stroke/1/clip_ego/opvrs3_stroke_1_clip_ego_features.npy"
+         },
+         "ego": {
+          "file_id": "opvrs3_stroke_1_ego_rgb_final",
+          "file_path": "opvrs_3/stroke/1/ego/opvrs3_stroke_1_ego_rgb_final.mp4"
+         }
+        },
+        "keysteps": [
+         {
+          "keystep_id": "1_vyX3AHOI",
+          "start_t": 28.04392,
+          "end_t": 68.05475,
+          "label": "approach_patient",
+          "class_id": 0
+         },
+         {
+          "keystep_id": "1_fQuLm45X",
+          "start_t": 68.055,
+          "end_t": 76.325,
+          "label": "inquire_hpi_and_pmh",
+          "class_id": 39
+         },
+         {
+          "keystep_id": "1_rEz0h88J",
+          "start_t": 76.325,
+          "end_t": 84.87986,
+          "label": "check_a&o",
+          "class_id": 63
+         },
+         {
+          "keystep_id": "1_RFnBTpvt",
+          "start_t": 84.88,
+          "end_t": 96.728,
+          "label": "inquire_hpi_and_pmh",
+          "class_id": 39
+         },
+         {
+          "keystep_id": "1_uFxFoX1O",
+          "start_t": 96.728,
+          "end_t": 96.803,
+          "label": "check_oxygen_saturation",
+          "class_id": 44
+         },
+         {
+          "keystep_id": "1_Xeqa8czX",
+          "start_t": 96.803,
+          "end_t": 102.3142,
+          "label": "check_heart_rate",
+          "class_id": 43
+         },
+         {
+          "keystep_id": "1_DhQGpfDc",
+          "start_t": 117.773,
+          "end_t": 130.19068,
+          "label": "check_perrl",
+          "class_id": 61
+         },
+         {
+          "keystep_id": "1_zty5KOFG",
+          "start_t": 130.57771,
+          "end_t": 154.404,
+          "label": "document_lkw_time",
+          "class_id": 50
+         },
+         {
+          "keystep_id": "1_f2N06QqA",
+          "start_t": 154.404,
+          "end_t": 166.50271,
+          "label": "check_grip_strength",
+          "class_id": 36
+         },
+         {
+          "keystep_id": "1_g4FAKdJ9",
+          "start_t": 166.503,
+          "end_t": 175.62771,
+          "label": "speech_abnormality_check",
+          "class_id": 48
+         },
+         {
+          "keystep_id": "1_WGvZcIzd",
+          "start_t": 175.628,
+          "end_t": 181.456,
+          "label": "face_droop_check",
+          "class_id": 46
+         },
+         {
+          "keystep_id": "1_p5NrirVc",
+          "start_t": 181.456,
+          "end_t": 216.36028,
+          "label": "check_blood_pressure",
+          "class_id": 42
+         },
+         {
+          "keystep_id": "1_IOWcr2NU",
+          "start_t": 216.678,
+          "end_t": 220.853,
+          "label": "inquire_hpi_and_pmh",
+          "class_id": 39
+         },
+         {
+          "keystep_id": "1_4DzYpwjy",
+          "start_t": 220.853,
+          "end_t": 226.38293,
+          "label": "review_medications",
+          "class_id": 37
+         },
+         {
+          "keystep_id": "1_HjJoogCg",
+          "start_t": 226.383,
+          "end_t": 231.677,
+          "label": "inquire_medication_anticoagulants",
+          "class_id": 38
+         },
+         {
+          "keystep_id": "1_SGXqGqI1",
+          "start_t": 231.677,
+          "end_t": 244.83629,
+          "label": "inquire_hpi_and_pmh",
+          "class_id": 39
+         },
+         {
+          "keystep_id": "1_hS3VY075",
+          "start_t": 245.507,
+          "end_t": 251.72771,
+          "label": "load_patient_to_stretcher",
+          "class_id": 58
+         },
+         {
+          "keystep_id": "1_l5Z0ZZ4w",
+          "start_t": 251.72771,
+          "end_t": 265.48199,
+          "label": "inquire_hpi_and_pmh",
+          "class_id": 39
+         },
+         {
+          "keystep_id": "1_khphi2Ez",
+          "start_t": 275.403,
+          "end_t": 295.77128,
+          "label": "secure_patient_on_stretcher",
+          "class_id": 59
+         },
+         {
+          "keystep_id": "1_XsPLItTh",
+          "start_t": 333.309,
+          "end_t": 339.093,
+          "label": "prepare_glucometer_and_strip",
+          "class_id": 54
+         },
+         {
+          "keystep_id": "1_xABBncXJ",
+          "start_t": 339.093,
+          "end_t": 350.80574,
+          "label": "read_and_record_glucose_level",
+          "class_id": 55
+         },
+         {
+          "keystep_id": "1_mOenO7qF",
+          "start_t": 364.853,
+          "end_t": 379.07482,
+          "label": "check_blood_pressure",
+          "class_id": 42
+         },
+         {
+          "keystep_id": "1_KZMat9FA",
+          "start_t": 414.103,
+          "end_t": 420.783,
+          "label": "place_v1_lead",
+          "class_id": 23
+         },
+         {
+          "keystep_id": "1_KWoX1fFY",
+          "start_t": 420.783,
+          "end_t": 430.56063,
+          "label": "place_v2_lead",
+          "class_id": 24
+         },
+         {
+          "keystep_id": "1_o9OjaEJj",
+          "start_t": 431.02771,
+          "end_t": 437.653,
+          "label": "place_v4_lead",
+          "class_id": 26
+         },
+         {
+          "keystep_id": "1_kmPnYrJ7",
+          "start_t": 437.653,
+          "end_t": 441.928,
+          "label": "place_right_arm_lead",
+          "class_id": 20
+         },
+         {
+          "keystep_id": "1_5vvuP9GI",
+          "start_t": 441.928,
+          "end_t": 444.478,
+          "label": "place_v3_lead",
+          "class_id": 25
+         },
+         {
+          "keystep_id": "1_nHNdhXaj",
+          "start_t": 444.478,
+          "end_t": 449.96699,
+          "label": "place_left_arm_lead",
+          "class_id": 19
+         },
+         {
+          "keystep_id": "1_AOtD4BNd",
+          "start_t": 452.624,
+          "end_t": 453.778,
+          "label": "place_v6_lead",
+          "class_id": 28
+         },
+         {
+          "keystep_id": "1_fBTXuPxX",
+          "start_t": 453.778,
+          "end_t": 460.673,
+          "label": "place_right_leg_lead",
+          "class_id": 22
+         },
+         {
+          "keystep_id": "1_POXyPred",
+          "start_t": 460.673,
+          "end_t": 465.028,
+          "label": "place_v5_lead",
+          "class_id": 27
+         },
+         {
+          "keystep_id": "1_YXKSyXBr",
+          "start_t": 465.028,
+          "end_t": 473.60733,
+          "label": "place_left_leg_lead",
+          "class_id": 21
+         },
+         {
+          "keystep_id": "1_dhiaiWEf",
+          "start_t": 492.528,
+          "end_t": 566.57771,
+          "label": "transport",
+          "class_id": 35
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "title": "GX010332 (subject ng3, cardiac arrest): human-verified, role-tagged transcript of responder, AED voice and background talk (no timestamps)",
+   "video_ref": "GX010332_encoded (GoPro recording id in the audio benchmark folder)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "json",
+   "raw": [
+    {
+     "Role": "Background",
+     "Utterance": "I'm sorry. Yeah, I disconnected from the wifi. Maybe because I got a new person. I'm sorry.  It just happens sometimes. I have some. Actually, yeah. I should have some, I think. I'm so sorry. This thing usually works fine. No. I even got the phone last time. I should do it. I haven't met you before. I'm Debra. Nice to meet you. I'm Tessa. Hi, Tessa. Are you new to the project? Yeah, I've been on it since the summer. Oh, sweet. Yes, you guys need to, because it never, the screaming, the yelling. Yeah, I heard it sometimes pretty. It's terrible. I mean, yeah. Yeah. And there's puke everywhere. I mean, yeah. Oh, there is. For sure. I won't do that anymore. Now we have YouTube"
+    },
+    {
+     "Role": "First Responder",
+     "Utterance": "Hey, are you okay?"
+    },
+    {
+     "Role": "First Responder",
+     "Utterance": "Checking for a pulse."
+    },
+    {
+     "Role": "First Responder",
+     "Utterance": "Checking for breath."
+    },
+    {
+     "Role": "First Responder",
+     "Utterance": "Another"
+    },
+    {
+     "Role": "First Responder",
+     "Utterance": "You call 911. Starting CPR."
+    },
+    {
+     "Role": "First Responder",
+     "Utterance": "Two rescue breaths."
+    },
+    {
+     "Role": "First Responder",
+     "Utterance": "Checking for pulse, no pulse"
+    },
+    {
+     "Role": "AED",
+     "Utterance": "Adult patient."
+    },
+    {
+     "Role": "AED",
+     "Utterance": "If the patient is a child, press the child button."
+    },
+    {
+     "Role": "AED",
+     "Utterance": "Do not touch the patient. Analyzing heart rhythm."
+    },
+    {
+     "Role": "AED",
+     "Utterance": "Do not touch the patient. Analyzing heart rhythm. Shock advised"
+    },
+    {
+     "Role": "AED",
+     "Utterance": "Do not touch the patient."
+    },
+    {
+     "Role": "AED",
+     "Utterance": "Everyone clear."
+    },
+    {
+     "Role": "AED",
+     "Utterance": "Press the flashing shock button."
+    },
+    {
+     "Role": "AED",
+     "Utterance": "Shock delivered."
+    },
+    {
+     "Role": "AED",
+     "Utterance": "Begin CPR."
+    },
+    {
+     "Role": "AED",
+     "Utterance": "10"
+    },
+    {
+     "Role": "AED",
+     "Utterance": "20"
+    },
+    {
+     "Role": "AED",
+     "Utterance": "30. Give two breaths."
+    },
+    {
+     "Role": "AED",
+     "Utterance": "10"
+    },
+    {
+     "Role": "AED",
+     "Utterance": "20"
+    },
+    {
+     "Role": "AED",
+     "Utterance": "30. Give two breaths."
+    },
+    {
+     "Role": "First Responder",
+     "Utterance": "Checking for pulse, no pulse."
+    },
+    {
+     "Role": "AED",
+     "Utterance": "10"
+    },
+    {
+     "Role": "AED",
+     "Utterance": "20"
+    },
+    {
+     "Role": "AED",
+     "Utterance": "30. Give two breaths."
+    }
+   ]
+  }
+ ]
+}

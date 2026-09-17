@@ -1,0 +1,223 @@
+{
+ "slug": "egomagic",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://zenodo.org/records/20089464/files/README.md (skill_labels_by_frame and action_labels_by_frame examples)",
+  "https://github.com/BBN-VISUAL/egomagic_eval/blob/main/data/examples/eval-groundtruth_gap/M2-eval1.skill_labels_by_frame.txt",
+  "https://github.com/BBN-VISUAL/egomagic_eval/blob/main/data/examples/eval-groundtruth_gap/R19-eval1.skill_labels_by_frame.txt"
+ ],
+ "access_used": "public sample in paper/repo/card only (full data sent by email after an access-request form; CC BY-NC 4.0 plus a no-redistribution usage statement)",
+ "note": "Zenodo hosts only the README and the access form. Example 1 is the README's own example of a professional session's skill-step file and hand-action file (start frame, end frame, label; steps may overlap). Examples 2–3 are real ground-truth files for benchmark videos from the public evaluation repo (tab-separated start frame, end frame, skill id, step text; CRLF line endings kept). Frames were converted to seconds assuming 30 fps, the rate the README gives for the professional mp4s; the benchmark videos' rate is not stated. The in-lab error labels (skipped, added or incorrect steps) are described in the README but no example is public. No clip.",
+ "examples": [
+  {
+   "title": "M2 Tourniquet professional session (README example): skill-step labels and hand-action labels by frame",
+   "video_ref": "M2_Tourniquet/raw_videos/professional/M2-N (session not named in the README)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 9.266666666666667,
+     "te": 10.6,
+     "lane": "action",
+     "text": "hands open_up tourniquet"
+    },
+    {
+     "t": 9.266666666666667,
+     "te": 17.3,
+     "lane": "step",
+     "text": "Place tourniquet over affected extremity 2-3 inches above wound site."
+    },
+    {
+     "t": 12.233333333333333,
+     "te": 17.3,
+     "lane": "action",
+     "text": "hands put_tourniquet_around casualty_leg"
+    },
+    {
+     "t": 18.5,
+     "te": 22.133333333333333,
+     "lane": "action",
+     "text": "left_hand pulls_tight tourniquet"
+    },
+    {
+     "t": 18.5,
+     "te": 22.133333333333333,
+     "lane": "step",
+     "text": "Pull tourniquet tight."
+    },
+    {
+     "t": 22.5,
+     "te": 25.8,
+     "lane": "action",
+     "text": "left_hand secures velcro_strap"
+    },
+    {
+     "t": 22.5,
+     "te": 25.8,
+     "lane": "step",
+     "text": "Apply strap to strap body."
+    },
+    {
+     "t": 26.933333333333334,
+     "te": 33.4,
+     "lane": "action",
+     "text": "hands twist windlass"
+    },
+    {
+     "t": 26.933333333333334,
+     "te": 33.4,
+     "lane": "step",
+     "text": "Turn windless clock wise or counter clockwise until hemorrhage is controlled."
+    },
+    {
+     "t": 32.733333333333334,
+     "te": 33.36666666666667,
+     "lane": "action",
+     "text": "both_hands lock_into_windlass_keeper windlass"
+    },
+    {
+     "t": 32.733333333333334,
+     "te": 33.36666666666667,
+     "lane": "step",
+     "text": "Lock windless into the windless keeper."
+    },
+    {
+     "t": 34.733333333333334,
+     "te": 38.36666666666667,
+     "lane": "action",
+     "text": "left_hand secures windlass"
+    },
+    {
+     "t": 34.733333333333334,
+     "te": 38.36666666666667,
+     "lane": "step",
+     "text": "Secure strap and windless keeper with keeper securing device."
+    },
+    {
+     "t": 40.86666666666667,
+     "te": 43.1,
+     "lane": "action",
+     "text": "left_hand writes_on tourniquet_label"
+    },
+    {
+     "t": 40.86666666666667,
+     "te": 43.1,
+     "lane": "step",
+     "text": "Mark time on securing device strap with permanent marker."
+    }
+   ],
+   "raw_format": "txt",
+   "raw": "An example of the file format for a “skill\\_labels\\_by\\_frame” appears below:\n  \n```\n278     519     Place tourniquet over affected extremity 2-3 inches above wound site.\n555     664     Pull tourniquet tight.\n675     774     Apply strap to strap body.\n808     1002    Turn windless clock wise or counter clockwise until hemorrhage is controlled.\n982     1001    Lock windless into the windless keeper.\n1042    1151    Secure strap and windless keeper with keeper securing device.\n1226    1293    Mark time on securing device strap with permanent marker.\n```\n\nThe columns are `start_frame end_frame label` in this data (and would be `start_time end_time label` for the \"seconds\" version). Note that consecutive labels may have overlapping frame/time windows if multiple actions are occurring simultaneously.\n\nThe corresponding \"action_labels_by_frame\" file appears below:\n\n```\n278     318     hands open_up tourniquet\n367     519     hands put_tourniquet_around casualty_leg\n555     664     left_hand pulls_tight tourniquet\n675     774     left_hand secures velcro_strap\n808     1002    hands twist windlass\n982     1001    both_hands lock_into_windlass_keeper windlass\n1042    1151    left_hand secures windlass\n1226    1293    left_hand writes_on tourniquet_label\n```\n\nNote that the first two action labels are combined into one as they are part of a single step.\n\n\nThe"
+  },
+  {
+   "title": "M2-eval1 (tourniquet benchmark video): 8 ground-truth skill steps",
+   "video_ref": "M2 benchmark video eval1 (egomagic_eval data/examples/eval-groundtruth_gap)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 12.9,
+     "te": 18.7,
+     "lane": "step",
+     "text": "Place tourniquet over affected extremity 2-3 inches above wound site."
+    },
+    {
+     "t": 19.533333333333335,
+     "te": 20.933333333333334,
+     "lane": "step",
+     "text": "Pull tourniquet tight."
+    },
+    {
+     "t": 21.633333333333333,
+     "te": 25.466666666666665,
+     "lane": "step",
+     "text": "Apply strap to strap body."
+    },
+    {
+     "t": 28.3,
+     "te": 33.7,
+     "lane": "step",
+     "text": "Turn windless clock wise or counter clockwise until hemorrhage is controlled."
+    },
+    {
+     "t": 33.733333333333334,
+     "te": 35.1,
+     "lane": "step",
+     "text": "Lock windless into the windless keeper."
+    },
+    {
+     "t": 37.233333333333334,
+     "te": 38.86666666666667,
+     "lane": "step",
+     "text": "Pull excess strap over the windless keeper."
+    },
+    {
+     "t": 38.96666666666667,
+     "te": 42.0,
+     "lane": "step",
+     "text": "Secure strap and windless keeper with keeper securing device."
+    },
+    {
+     "t": 43.53333333333333,
+     "te": 51.0,
+     "lane": "step",
+     "text": "Mark time on securing device strap with permanent marker."
+    }
+   ],
+   "raw_format": "txt",
+   "raw": "387\t561\tM2\tPlace tourniquet over affected extremity 2-3 inches above wound site.\r\n586\t628\tM2\tPull tourniquet tight.\r\n649\t764\tM2\tApply strap to strap body.\r\n849\t1011\tM2\tTurn windless clock wise or counter clockwise until hemorrhage is controlled.\r\n1012\t1053\tM2\tLock windless into the windless keeper.\r\n1117\t1166\tM2\tPull excess strap over the windless keeper.\r\n1169\t1260\tM2\tSecure strap and windless keeper with keeper securing device.\r\n1306\t1530\tM2\tMark time on securing device strap with permanent marker."
+  },
+  {
+   "title": "R19-eval1 (needle chest decompression benchmark video): 6 ground-truth skill steps",
+   "video_ref": "R19 benchmark video eval1",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 10.666666666666666,
+     "te": 15.866666666666667,
+     "lane": "step",
+     "text": "Locate insertion site at the second intercostal space at the midclavicular line."
+    },
+    {
+     "t": 31.333333333333332,
+     "te": 35.63333333333333,
+     "lane": "step",
+     "text": "Wipe the insertion site with an alcohol wipe."
+    },
+    {
+     "t": 45.96666666666667,
+     "te": 51.5,
+     "lane": "step",
+     "text": "Prepare catheter and needle."
+    },
+    {
+     "t": 52.3,
+     "te": 59.5,
+     "lane": "step",
+     "text": "Insert needle into insertion site."
+    },
+    {
+     "t": 60.233333333333334,
+     "te": 63.93333333333333,
+     "lane": "step",
+     "text": "Remove needle, keeping catheter inside the patient."
+    },
+    {
+     "t": 66.1,
+     "te": 79.33333333333333,
+     "lane": "step",
+     "text": "Apply tape around catheter to secure it in place."
+    }
+   ],
+   "raw_format": "txt",
+   "raw": "320\t476\tR19\tLocate insertion site at the second intercostal space at the midclavicular line.\r\n940\t1069\tR19\tWipe the insertion site with an alcohol wipe.\r\n1379\t1545\tR19\tPrepare catheter and needle.\r\n1569\t1785\tR19\tInsert needle into insertion site.\r\n1807\t1918\tR19\tRemove needle, keeping catheter inside the patient.\r\n1983\t2380\tR19\tApply tape around catheter to secure it in place."
+  }
+ ]
+}

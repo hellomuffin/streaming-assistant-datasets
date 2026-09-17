@@ -1,0 +1,1829 @@
+{
+ "slug": "enigma-51",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://iplab.dmi.unict.it/sharing/ENIGMA-51/ENIGMA-51_annotations_master.zip → ENIGMA-51_annotations_master.json",
+  "https://iplab.dmi.unict.it/sharing/ENIGMA-51/ENIGMA-51_procedures.zip → high_voltage_screwdriver.txt",
+  "https://iplab.dmi.unict.it/sharing/ENIGMA-51/ENIGMA-51_frames.zip → 44_14914.jpg, 44_15163.jpg, 44_15547.jpg (thumbnail)"
+ ],
+ "access_used": "open download",
+ "note": "Example 1 is every frame annotation of video 44 between 495 and 521 s: key frames where a hand takes, releases, first contacts or de-contacts an object (hand and object boxes, interaction category) plus the unlabelled past frames sampled before each one. The dataset has no step, mistake or language timeline; example 2 is one of the four numbered procedure scripts (no times; the release does not say which scenario_id uses which script). Thumbnail = the three contact key frames. No clip: each video is a 1–2 GB deflated zip member. No license is stated.",
+ "examples": [
+  {
+   "title": "Video 44 (scenario 36), 495–521 s: 6 first-contact / de-contact key frames with hand and object boxes, plus their past frames",
+   "video_ref": "enigma-data/videos/44.mp4 (1276 s, 30 fps)",
+   "duration_s": 1276.13,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": "samples/media/enigma-51_1.jpg",
+   "timeline": [
+    {
+     "t": 497.133,
+     "te": null,
+     "lane": "event",
+     "text": "first_contact: right hand – socket_2 (44_14914)"
+    },
+    {
+     "t": 498.333,
+     "te": null,
+     "lane": "event",
+     "text": "decontact: hand id not boxed in this frame – socket_2 (44_14950)"
+    },
+    {
+     "t": 505.433,
+     "te": null,
+     "lane": "event",
+     "text": "first_contact: right hand – oscilloscope (44_15163)"
+    },
+    {
+     "t": 511.9,
+     "te": null,
+     "lane": "event",
+     "text": "decontact: hand id not boxed in this frame – oscilloscope (44_15357)"
+    },
+    {
+     "t": 518.233,
+     "te": null,
+     "lane": "event",
+     "text": "first_contact: right hand – high_voltage_board (44_15547)"
+    },
+    {
+     "t": 519.7,
+     "te": null,
+     "lane": "event",
+     "text": "decontact: hand id not boxed in this frame – high_voltage_board (44_15591)"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "videos[\"44\"]": {
+     "split": "Valid",
+     "subject_id": 9,
+     "scenario_id": 36,
+     "next_interaction_labels_available": true,
+     "filename": "44.mp4",
+     "fps": 30.0,
+     "frame_count": 38284.0,
+     "duration_seconds": 1276.1333333333334
+    },
+    "interaction_types": {
+     "0": {
+      "class_name": "take"
+     },
+     "1": {
+      "class_name": "release"
+     },
+     "2": {
+      "class_name": "first_contact"
+     },
+     "3": {
+      "class_name": "decontact"
+     },
+     "4": {
+      "class_name": "contact"
+     }
+    },
+    "object_classes": {
+     "0": {
+      "class_name": "power_supply"
+     },
+     "1": {
+      "class_name": "power_supply_cables"
+     },
+     "2": {
+      "class_name": "oscilloscope"
+     },
+     "3": {
+      "class_name": "oscilloscope_probe_tip"
+     },
+     "4": {
+      "class_name": "oscilloscope_ground_clip"
+     },
+     "5": {
+      "class_name": "welder_station"
+     },
+     "6": {
+      "class_name": "welder_base"
+     },
+     "7": {
+      "class_name": "welder_probe_tip"
+     },
+     "8": {
+      "class_name": "electric_screwdriver"
+     },
+     "9": {
+      "class_name": "electric_screwdriver_battery"
+     },
+     "10": {
+      "class_name": "battery_connector"
+     },
+     "11": {
+      "class_name": "screwdriver"
+     },
+     "12": {
+      "class_name": "pliers"
+     },
+     "13": {
+      "class_name": "high_voltage_board"
+     },
+     "14": {
+      "class_name": "low_voltage_board"
+     },
+     "15": {
+      "class_name": "low_voltage_board_screen"
+     },
+     "16": {
+      "class_name": "register"
+     },
+     "17": {
+      "class_name": "left_red_button"
+     },
+     "18": {
+      "class_name": "left_green_button"
+     },
+     "19": {
+      "class_name": "right_red_button"
+     },
+     "20": {
+      "class_name": "right_green_button"
+     },
+     "21": {
+      "class_name": "socket_1"
+     },
+     "22": {
+      "class_name": "socket_2"
+     },
+     "23": {
+      "class_name": "socket_3"
+     },
+     "24": {
+      "class_name": "socket_4"
+     }
+    },
+    "frame_annotations (video 44, 495–521 s)": {
+     "44_14878": {
+      "video_id": 44,
+      "filename": "44_14878.jpg",
+      "timestamp": 495.933,
+      "labels_status": {
+       "hands_status": true,
+       "objects_status": true,
+       "interaction_status": false,
+       "past_frames_status": true
+      },
+      "hands": [],
+      "objects": [
+       {
+        "id": 153437,
+        "x": 0,
+        "y": 0,
+        "w": 800,
+        "h": 675,
+        "class_id": 2
+       },
+       {
+        "id": 153438,
+        "x": 1153,
+        "y": 32,
+        "w": 508,
+        "h": 264,
+        "class_id": 12
+       },
+       {
+        "id": 153439,
+        "x": 1864,
+        "y": 0,
+        "w": 406,
+        "h": 214,
+        "class_id": 5
+       },
+       {
+        "id": 153440,
+        "x": 1415,
+        "y": 308,
+        "w": 506,
+        "h": 435,
+        "class_id": 11
+       },
+       {
+        "id": 153441,
+        "x": 975,
+        "y": 1144,
+        "w": 155,
+        "h": 105,
+        "class_id": 1
+       },
+       {
+        "id": 153442,
+        "x": 1019,
+        "y": 1201,
+        "w": 180,
+        "h": 75,
+        "class_id": 1
+       },
+       {
+        "id": 153443,
+        "x": 1130,
+        "y": 770,
+        "w": 1039,
+        "h": 469,
+        "class_id": 13
+       }
+      ],
+      "interactions": [],
+      "next_object_interaction": [
+       {
+        "id": 257,
+        "id_obj": -1,
+        "next_frame_id": "44_14914",
+        "next_id_obj": 747,
+        "next_interaction_id": 218
+       }
+      ]
+     },
+     "44_14890": {
+      "video_id": 44,
+      "filename": "44_14890.jpg",
+      "timestamp": 496.333,
+      "labels_status": {
+       "hands_status": true,
+       "objects_status": true,
+       "interaction_status": false,
+       "past_frames_status": true
+      },
+      "hands": [],
+      "objects": [
+       {
+        "id": 153445,
+        "x": 2,
+        "y": 775,
+        "w": 62,
+        "h": 230,
+        "class_id": 0
+       },
+       {
+        "id": 153446,
+        "x": 242,
+        "y": 583,
+        "w": 330,
+        "h": 258,
+        "class_id": 21
+       },
+       {
+        "id": 153447,
+        "x": 706,
+        "y": 700,
+        "w": 333,
+        "h": 258,
+        "class_id": 22
+       },
+       {
+        "id": 153448,
+        "x": 893,
+        "y": 866,
+        "w": 1194,
+        "h": 408,
+        "class_id": 2
+       }
+      ],
+      "interactions": [],
+      "next_object_interaction": [
+       {
+        "id": 256,
+        "id_obj": 153447,
+        "next_frame_id": "44_14914",
+        "next_id_obj": 747,
+        "next_interaction_id": 218
+       }
+      ]
+     },
+     "44_14902": {
+      "video_id": 44,
+      "filename": "44_14902.jpg",
+      "timestamp": 496.733,
+      "labels_status": {
+       "hands_status": true,
+       "objects_status": true,
+       "interaction_status": false,
+       "past_frames_status": true
+      },
+      "hands": [
+       {
+        "x": 1265,
+        "y": 948,
+        "w": 374,
+        "h": 328,
+        "hand_side": "right",
+        "id": 33878
+       }
+      ],
+      "objects": [
+       {
+        "id": 153449,
+        "x": 2,
+        "y": 766,
+        "w": 340,
+        "h": 510,
+        "class_id": 0
+       },
+       {
+        "id": 153450,
+        "x": 499,
+        "y": 706,
+        "w": 387,
+        "h": 305,
+        "class_id": 21
+       },
+       {
+        "id": 153451,
+        "x": 1035,
+        "y": 834,
+        "w": 387,
+        "h": 308,
+        "class_id": 22
+       },
+       {
+        "id": 153452,
+        "x": 1561,
+        "y": 1082,
+        "w": 709,
+        "h": 194,
+        "class_id": 2
+       }
+      ],
+      "interactions": [],
+      "next_object_interaction": [
+       {
+        "id": 255,
+        "id_obj": 153451,
+        "next_frame_id": "44_14914",
+        "next_id_obj": 747,
+        "next_interaction_id": 218
+       }
+      ]
+     },
+     "44_14914": {
+      "video_id": 44,
+      "filename": "44_14914.jpg",
+      "timestamp": 497.133,
+      "labels_status": {
+       "hands_status": true,
+       "objects_status": true,
+       "interaction_status": true,
+       "past_frames_status": true
+      },
+      "hands": [
+       {
+        "x": 1231,
+        "y": 682,
+        "w": 272,
+        "h": 317,
+        "hand_side": "right",
+        "id": 138
+       }
+      ],
+      "objects": [
+       {
+        "id": 747,
+        "x": 998.336,
+        "y": 686.153,
+        "w": 416.244,
+        "h": 321.939,
+        "class_id": 22
+       },
+       {
+        "id": 748,
+        "x": 301,
+        "y": 620,
+        "w": 474,
+        "h": 325,
+        "class_id": 21
+       },
+       {
+        "id": 749,
+        "x": 1544,
+        "y": 857,
+        "w": 720,
+        "h": 410,
+        "class_id": 2
+       },
+       {
+        "id": 750,
+        "x": 6,
+        "y": 763,
+        "w": 140,
+        "h": 510,
+        "class_id": 0
+       }
+      ],
+      "interactions": [
+       {
+        "id": 218,
+        "id_hand": 138,
+        "id_obj": 747,
+        "interaction_category": 2
+       }
+      ],
+      "next_object_interaction": [
+       {
+        "id": 260,
+        "id_obj": 747,
+        "next_frame_id": "44_14950",
+        "next_id_obj": 751,
+        "next_interaction_id": 219
+       }
+      ]
+     },
+     "44_14926": {
+      "video_id": 44,
+      "filename": "44_14926.jpg",
+      "timestamp": 497.533,
+      "labels_status": {
+       "hands_status": true,
+       "objects_status": true,
+       "interaction_status": false,
+       "past_frames_status": true
+      },
+      "hands": [
+       {
+        "x": 1199,
+        "y": 602,
+        "w": 253,
+        "h": 262,
+        "hand_side": "right",
+        "id": 33879
+       }
+      ],
+      "objects": [
+       {
+        "id": 153453,
+        "x": 169,
+        "y": 554,
+        "w": 499,
+        "h": 333,
+        "class_id": 21
+       },
+       {
+        "id": 153454,
+        "x": 907,
+        "y": 604,
+        "w": 442,
+        "h": 326,
+        "class_id": 22
+       },
+       {
+        "id": 153455,
+        "x": 1486,
+        "y": 768,
+        "w": 784,
+        "h": 508,
+        "class_id": 2
+       }
+      ],
+      "interactions": [],
+      "next_object_interaction": [
+       {
+        "id": 259,
+        "id_obj": 153454,
+        "next_frame_id": "44_14950",
+        "next_id_obj": 751,
+        "next_interaction_id": 219
+       }
+      ]
+     },
+     "44_14938": {
+      "video_id": 44,
+      "filename": "44_14938.jpg",
+      "timestamp": 497.933,
+      "labels_status": {
+       "hands_status": true,
+       "objects_status": true,
+       "interaction_status": false,
+       "past_frames_status": true
+      },
+      "hands": [
+       {
+        "x": 1192,
+        "y": 567,
+        "w": 267,
+        "h": 301,
+        "hand_side": "right",
+        "id": 33880
+       }
+      ],
+      "objects": [
+       {
+        "id": 153456,
+        "x": 886,
+        "y": 563,
+        "w": 444,
+        "h": 326,
+        "class_id": 22
+       },
+       {
+        "id": 153457,
+        "x": 137,
+        "y": 508,
+        "w": 506,
+        "h": 337,
+        "class_id": 21
+       },
+       {
+        "id": 153458,
+        "x": 1463,
+        "y": 727,
+        "w": 804,
+        "h": 547,
+        "class_id": 2
+       }
+      ],
+      "interactions": [],
+      "next_object_interaction": [
+       {
+        "id": 258,
+        "id_obj": 153456,
+        "next_frame_id": "44_14950",
+        "next_id_obj": 751,
+        "next_interaction_id": 219
+       }
+      ]
+     },
+     "44_14950": {
+      "video_id": 44,
+      "filename": "44_14950.jpg",
+      "timestamp": 498.333,
+      "labels_status": {
+       "hands_status": true,
+       "objects_status": true,
+       "interaction_status": true,
+       "past_frames_status": false
+      },
+      "hands": [
+       {
+        "x": 1131,
+        "y": 551,
+        "w": 288,
+        "h": 401,
+        "hand_side": "right",
+        "id": 139
+       }
+      ],
+      "objects": [
+       {
+        "id": 751,
+        "x": 874.763,
+        "y": 552.824,
+        "w": 439.008,
+        "h": 328.443,
+        "class_id": 22
+       },
+       {
+        "id": 752,
+        "x": 118,
+        "y": 507,
+        "w": 517,
+        "h": 319,
+        "class_id": 21
+       },
+       {
+        "id": 753,
+        "x": 1425,
+        "y": 702,
+        "w": 839,
+        "h": 568,
+        "class_id": 2
+       }
+      ],
+      "interactions": [
+       {
+        "id": 219,
+        "id_hand": -1,
+        "id_obj": 751,
+        "interaction_category": 3
+       }
+      ],
+      "next_object_interaction": []
+     },
+     "44_15127": {
+      "video_id": 44,
+      "filename": "44_15127.jpg",
+      "timestamp": 504.233,
+      "labels_status": {
+       "hands_status": true,
+       "objects_status": true,
+       "interaction_status": false,
+       "past_frames_status": true
+      },
+      "hands": [],
+      "objects": [
+       {
+        "id": 153459,
+        "x": 148,
+        "y": 465,
+        "w": 394,
+        "h": 232,
+        "class_id": 21
+       },
+       {
+        "id": 153460,
+        "x": 360,
+        "y": 551,
+        "w": 1064,
+        "h": 545,
+        "class_id": 2
+       },
+       {
+        "id": 153461,
+        "x": 1910,
+        "y": 1123,
+        "w": 153,
+        "h": 153,
+        "class_id": 11
+       },
+       {
+        "id": 153462,
+        "x": 1677,
+        "y": 877,
+        "w": 472,
+        "h": 180,
+        "class_id": 12
+       }
+      ],
+      "interactions": [],
+      "next_object_interaction": [
+       {
+        "id": 263,
+        "id_obj": 153460,
+        "next_frame_id": "44_15163",
+        "next_id_obj": 754,
+        "next_interaction_id": 221
+       }
+      ]
+     },
+     "44_15139": {
+      "video_id": 44,
+      "filename": "44_15139.jpg",
+      "timestamp": 504.633,
+      "labels_status": {
+       "hands_status": true,
+       "objects_status": true,
+       "interaction_status": false,
+       "past_frames_status": true
+      },
+      "hands": [],
+      "objects": [
+       {
+        "id": 153463,
+        "x": 9,
+        "y": 636,
+        "w": 428,
+        "h": 258,
+        "class_id": 22
+       },
+       {
+        "id": 153464,
+        "x": 246,
+        "y": 709,
+        "w": 1128,
+        "h": 567,
+        "class_id": 2
+       },
+       {
+        "id": 153465,
+        "x": 1889,
+        "y": 1242,
+        "w": 41,
+        "h": 32,
+        "class_id": 11
+       },
+       {
+        "id": 153466,
+        "x": 1634,
+        "y": 991,
+        "w": 469,
+        "h": 187,
+        "class_id": 12
+       },
+       {
+        "id": 153467,
+        "x": 2224,
+        "y": 859,
+        "w": 46,
+        "h": 146,
+        "class_id": 5
+       }
+      ],
+      "interactions": [],
+      "next_object_interaction": [
+       {
+        "id": 262,
+        "id_obj": 153464,
+        "next_frame_id": "44_15163",
+        "next_id_obj": 754,
+        "next_interaction_id": 221
+       }
+      ]
+     },
+     "44_15151": {
+      "video_id": 44,
+      "filename": "44_15151.jpg",
+      "timestamp": 505.033,
+      "labels_status": {
+       "hands_status": true,
+       "objects_status": true,
+       "interaction_status": false,
+       "past_frames_status": true
+      },
+      "hands": [
+       {
+        "x": 1206,
+        "y": 1060,
+        "w": 360,
+        "h": 216,
+        "hand_side": "right",
+        "id": 33881
+       }
+      ],
+      "objects": [
+       {
+        "id": 153468,
+        "x": 292,
+        "y": 581,
+        "w": 1174,
+        "h": 611,
+        "class_id": 2
+       },
+       {
+        "id": 153469,
+        "x": 27,
+        "y": 510,
+        "w": 442,
+        "h": 269,
+        "class_id": 22
+       },
+       {
+        "id": 153470,
+        "x": 1985,
+        "y": 1117,
+        "w": 171,
+        "h": 157,
+        "class_id": 11
+       },
+       {
+        "id": 153471,
+        "x": 1718,
+        "y": 861,
+        "w": 479,
+        "h": 194,
+        "class_id": 12
+       }
+      ],
+      "interactions": [],
+      "next_object_interaction": [
+       {
+        "id": 261,
+        "id_obj": 153468,
+        "next_frame_id": "44_15163",
+        "next_id_obj": 754,
+        "next_interaction_id": 221
+       }
+      ]
+     },
+     "44_15163": {
+      "video_id": 44,
+      "filename": "44_15163.jpg",
+      "timestamp": 505.433,
+      "labels_status": {
+       "hands_status": true,
+       "objects_status": true,
+       "interaction_status": true,
+       "past_frames_status": false
+      },
+      "hands": [
+       {
+        "x": 1430,
+        "y": 605,
+        "w": 437,
+        "h": 573,
+        "hand_side": "right",
+        "id": 140
+       }
+      ],
+      "objects": [
+       {
+        "id": 754,
+        "x": 624.366,
+        "y": 526.809,
+        "w": 1118.657,
+        "h": 549.573,
+        "class_id": 2
+       },
+       {
+        "id": 755,
+        "x": 3,
+        "y": 365,
+        "w": 207,
+        "h": 270,
+        "class_id": 21
+       },
+       {
+        "id": 756,
+        "x": 343,
+        "y": 407,
+        "w": 410,
+        "h": 261,
+        "class_id": 22
+       },
+       {
+        "id": 757,
+        "x": 1963,
+        "y": 893,
+        "w": 298,
+        "h": 185,
+        "class_id": 12
+       },
+       {
+        "id": 758,
+        "x": 2224,
+        "y": 1142,
+        "w": 43,
+        "h": 58,
+        "class_id": 11
+       }
+      ],
+      "interactions": [
+       {
+        "id": 221,
+        "id_hand": 140,
+        "id_obj": 754,
+        "interaction_category": 2
+       }
+      ],
+      "next_object_interaction": []
+     },
+     "44_15321": {
+      "video_id": 44,
+      "filename": "44_15321.jpg",
+      "timestamp": 510.7,
+      "labels_status": {
+       "hands_status": true,
+       "objects_status": true,
+       "interaction_status": false,
+       "past_frames_status": true
+      },
+      "hands": [
+       {
+        "x": 1730,
+        "y": 606,
+        "w": 371,
+        "h": 506,
+        "hand_side": "right",
+        "id": 33882
+       }
+      ],
+      "objects": [
+       {
+        "id": 153472,
+        "x": 0,
+        "y": 164,
+        "w": 148,
+        "h": 524,
+        "class_id": 0
+       },
+       {
+        "id": 153473,
+        "x": 287,
+        "y": 96,
+        "w": 374,
+        "h": 289,
+        "class_id": 21
+       },
+       {
+        "id": 153474,
+        "x": 777,
+        "y": 219,
+        "w": 367,
+        "h": 292,
+        "class_id": 22
+       },
+       {
+        "id": 153475,
+        "x": 1000,
+        "y": 410,
+        "w": 1123,
+        "h": 624,
+        "class_id": 2
+       }
+      ],
+      "interactions": [],
+      "next_object_interaction": [
+       {
+        "id": 266,
+        "id_obj": 153475,
+        "next_frame_id": "44_15357",
+        "next_id_obj": 759,
+        "next_interaction_id": 222
+       }
+      ]
+     },
+     "44_15333": {
+      "video_id": 44,
+      "filename": "44_15333.jpg",
+      "timestamp": 511.1,
+      "labels_status": {
+       "hands_status": true,
+       "objects_status": true,
+       "interaction_status": false,
+       "past_frames_status": true
+      },
+      "hands": [
+       {
+        "x": 1748,
+        "y": 604,
+        "w": 371,
+        "h": 520,
+        "hand_side": "right",
+        "id": 33883
+       }
+      ],
+      "objects": [
+       {
+        "id": 153476,
+        "x": 0,
+        "y": 139,
+        "w": 157,
+        "h": 563,
+        "class_id": 0
+       },
+       {
+        "id": 153477,
+        "x": 303,
+        "y": 91,
+        "w": 369,
+        "h": 294,
+        "class_id": 21
+       },
+       {
+        "id": 153478,
+        "x": 791,
+        "y": 216,
+        "w": 365,
+        "h": 294,
+        "class_id": 22
+       },
+       {
+        "id": 153479,
+        "x": 1007,
+        "y": 406,
+        "w": 1137,
+        "h": 629,
+        "class_id": 2
+       }
+      ],
+      "interactions": [],
+      "next_object_interaction": [
+       {
+        "id": 265,
+        "id_obj": 153479,
+        "next_frame_id": "44_15357",
+        "next_id_obj": 759,
+        "next_interaction_id": 222
+       }
+      ]
+     },
+     "44_15345": {
+      "video_id": 44,
+      "filename": "44_15345.jpg",
+      "timestamp": 511.5,
+      "labels_status": {
+       "hands_status": true,
+       "objects_status": true,
+       "interaction_status": false,
+       "past_frames_status": true
+      },
+      "hands": [
+       {
+        "x": 1741,
+        "y": 622,
+        "w": 340,
+        "h": 526,
+        "hand_side": "right",
+        "id": 33884
+       }
+      ],
+      "objects": [
+       {
+        "id": 153480,
+        "x": 0,
+        "y": 180,
+        "w": 130,
+        "h": 479,
+        "class_id": 0
+       },
+       {
+        "id": 153481,
+        "x": 283,
+        "y": 93,
+        "w": 374,
+        "h": 296,
+        "class_id": 21
+       },
+       {
+        "id": 153482,
+        "x": 768,
+        "y": 226,
+        "w": 369,
+        "h": 294,
+        "class_id": 22
+       },
+       {
+        "id": 153483,
+        "x": 984,
+        "y": 419,
+        "w": 1123,
+        "h": 636,
+        "class_id": 2
+       }
+      ],
+      "interactions": [],
+      "next_object_interaction": [
+       {
+        "id": 264,
+        "id_obj": 153483,
+        "next_frame_id": "44_15357",
+        "next_id_obj": 759,
+        "next_interaction_id": 222
+       }
+      ]
+     },
+     "44_15357": {
+      "video_id": 44,
+      "filename": "44_15357.jpg",
+      "timestamp": 511.9,
+      "labels_status": {
+       "hands_status": true,
+       "objects_status": true,
+       "interaction_status": true,
+       "past_frames_status": false
+      },
+      "hands": [
+       {
+        "x": 1790,
+        "y": 594,
+        "w": 362,
+        "h": 655,
+        "hand_side": "right",
+        "id": 141
+       }
+      ],
+      "objects": [
+       {
+        "id": 759,
+        "x": 991.832,
+        "y": 403.237,
+        "w": 1118.657,
+        "h": 656.885,
+        "class_id": 2
+       },
+       {
+        "id": 760,
+        "x": 276,
+        "y": 76,
+        "w": 392,
+        "h": 286,
+        "class_id": 21
+       },
+       {
+        "id": 761,
+        "x": 766,
+        "y": 204,
+        "w": 377,
+        "h": 295,
+        "class_id": 22
+       },
+       {
+        "id": 762,
+        "x": 3,
+        "y": 67,
+        "w": 143,
+        "h": 614,
+        "class_id": 0
+       }
+      ],
+      "interactions": [
+       {
+        "id": 222,
+        "id_hand": -1,
+        "id_obj": 759,
+        "interaction_category": 3
+       }
+      ],
+      "next_object_interaction": []
+     },
+     "44_15511": {
+      "video_id": 44,
+      "filename": "44_15511.jpg",
+      "timestamp": 517.033,
+      "labels_status": {
+       "hands_status": true,
+       "objects_status": true,
+       "interaction_status": false,
+       "past_frames_status": true
+      },
+      "hands": [],
+      "objects": [
+       {
+        "id": 153484,
+        "x": 232,
+        "y": 2,
+        "w": 1133,
+        "h": 549,
+        "class_id": 2
+       },
+       {
+        "id": 153485,
+        "x": 0,
+        "y": 0,
+        "w": 371,
+        "h": 180,
+        "class_id": 22
+       },
+       {
+        "id": 153486,
+        "x": 1358,
+        "y": 1080,
+        "w": 164,
+        "h": 64,
+        "class_id": 1
+       },
+       {
+        "id": 153487,
+        "x": 1386,
+        "y": 1142,
+        "w": 178,
+        "h": 46,
+        "class_id": 1
+       },
+       {
+        "id": 153488,
+        "x": 1757,
+        "y": 517,
+        "w": 374,
+        "h": 417,
+        "class_id": 11
+       },
+       {
+        "id": 153489,
+        "x": 2101,
+        "y": 84,
+        "w": 169,
+        "h": 469,
+        "class_id": 5
+       },
+       {
+        "id": 153490,
+        "x": 1554,
+        "y": 324,
+        "w": 415,
+        "h": 150,
+        "class_id": 12
+       },
+       {
+        "id": 153491,
+        "x": 1518,
+        "y": 953,
+        "w": 752,
+        "h": 216,
+        "class_id": 13
+       }
+      ],
+      "interactions": [],
+      "next_object_interaction": [
+       {
+        "id": 269,
+        "id_obj": 153491,
+        "next_frame_id": "44_15547",
+        "next_id_obj": 763,
+        "next_interaction_id": 223
+       }
+      ]
+     },
+     "44_15523": {
+      "video_id": 44,
+      "filename": "44_15523.jpg",
+      "timestamp": 517.433,
+      "labels_status": {
+       "hands_status": true,
+       "objects_status": true,
+       "interaction_status": false,
+       "past_frames_status": true
+      },
+      "hands": [],
+      "objects": [
+       {
+        "id": 153493,
+        "x": 2,
+        "y": 9,
+        "w": 962,
+        "h": 702,
+        "class_id": 2
+       },
+       {
+        "id": 153494,
+        "x": 1447,
+        "y": 504,
+        "w": 412,
+        "h": 367,
+        "class_id": 11
+       },
+       {
+        "id": 153495,
+        "x": 1224,
+        "y": 285,
+        "w": 408,
+        "h": 187,
+        "class_id": 12
+       },
+       {
+        "id": 153496,
+        "x": 1782,
+        "y": 2,
+        "w": 89,
+        "h": 91,
+        "class_id": 23
+       },
+       {
+        "id": 153497,
+        "x": 2151,
+        "y": 2,
+        "w": 118,
+        "h": 153,
+        "class_id": 24
+       },
+       {
+        "id": 153498,
+        "x": 1736,
+        "y": 2,
+        "w": 531,
+        "h": 479,
+        "class_id": 5
+       },
+       {
+        "id": 153499,
+        "x": 1144,
+        "y": 1206,
+        "w": 175,
+        "h": 62,
+        "class_id": 1
+       },
+       {
+        "id": 153500,
+        "x": 1112,
+        "y": 1139,
+        "w": 160,
+        "h": 87,
+        "class_id": 1
+       },
+       {
+        "id": 153501,
+        "x": 1272,
+        "y": 889,
+        "w": 802,
+        "h": 321,
+        "class_id": 13
+       }
+      ],
+      "interactions": [],
+      "next_object_interaction": [
+       {
+        "id": 268,
+        "id_obj": 153501,
+        "next_frame_id": "44_15547",
+        "next_id_obj": 763,
+        "next_interaction_id": 223
+       }
+      ]
+     },
+     "44_15535": {
+      "video_id": 44,
+      "filename": "44_15535.jpg",
+      "timestamp": 517.833,
+      "labels_status": {
+       "hands_status": true,
+       "objects_status": true,
+       "interaction_status": false,
+       "past_frames_status": true
+      },
+      "hands": [],
+      "objects": [
+       {
+        "id": 153503,
+        "x": 0,
+        "y": -2,
+        "w": 713,
+        "h": 636,
+        "class_id": 2
+       },
+       {
+        "id": 153504,
+        "x": 1290,
+        "y": 469,
+        "w": 431,
+        "h": 385,
+        "class_id": 11
+       },
+       {
+        "id": 153505,
+        "x": 1041,
+        "y": 235,
+        "w": 447,
+        "h": 201,
+        "class_id": 12
+       },
+       {
+        "id": 153506,
+        "x": 2083,
+        "y": 0,
+        "w": 187,
+        "h": 80,
+        "class_id": 24
+       },
+       {
+        "id": 153507,
+        "x": 1602,
+        "y": 0,
+        "w": 542,
+        "h": 433,
+        "class_id": 5
+       },
+       {
+        "id": 153508,
+        "x": 2128,
+        "y": 112,
+        "w": 141,
+        "h": 319,
+        "class_id": 6
+       },
+       {
+        "id": 153509,
+        "x": 1010,
+        "y": 1251,
+        "w": 96,
+        "h": 23,
+        "class_id": 1
+       },
+       {
+        "id": 153510,
+        "x": 866,
+        "y": 1187,
+        "w": 175,
+        "h": 89,
+        "class_id": 1
+       },
+       {
+        "id": 153511,
+        "x": 1041,
+        "y": 877,
+        "w": 900,
+        "h": 381,
+        "class_id": 13
+       }
+      ],
+      "interactions": [],
+      "next_object_interaction": [
+       {
+        "id": 267,
+        "id_obj": 153511,
+        "next_frame_id": "44_15547",
+        "next_id_obj": 763,
+        "next_interaction_id": 223
+       }
+      ]
+     },
+     "44_15547": {
+      "video_id": 44,
+      "filename": "44_15547.jpg",
+      "timestamp": 518.233,
+      "labels_status": {
+       "hands_status": true,
+       "objects_status": true,
+       "interaction_status": true,
+       "past_frames_status": false
+      },
+      "hands": [
+       {
+        "x": 997,
+        "y": 1218,
+        "w": 286,
+        "h": 52,
+        "hand_side": "right",
+        "id": 142
+       }
+      ],
+      "objects": [
+       {
+        "id": 763,
+        "x": 939.802,
+        "y": 884.519,
+        "w": 1060.122,
+        "h": 390.229,
+        "class_id": 13
+       },
+       {
+        "id": 764,
+        "x": 942,
+        "y": 149,
+        "w": 571,
+        "h": 234,
+        "class_id": 12
+       },
+       {
+        "id": 765,
+        "x": 851,
+        "y": 1237,
+        "w": 73,
+        "h": 36,
+        "class_id": 1
+       },
+       {
+        "id": 766,
+        "x": 6,
+        "y": 3,
+        "w": 602,
+        "h": 623,
+        "class_id": 2
+       },
+       {
+        "id": 767,
+        "x": 1255,
+        "y": 419,
+        "w": 520,
+        "h": 416,
+        "class_id": 11
+       },
+       {
+        "id": 769,
+        "x": 1635,
+        "y": 6,
+        "w": 629,
+        "h": 346,
+        "class_id": 5
+       }
+      ],
+      "interactions": [
+       {
+        "id": 223,
+        "id_hand": 142,
+        "id_obj": 763,
+        "interaction_category": 2
+       }
+      ],
+      "next_object_interaction": []
+     },
+     "44_15555": {
+      "video_id": 44,
+      "filename": "44_15555.jpg",
+      "timestamp": 518.5,
+      "labels_status": {
+       "hands_status": true,
+       "objects_status": true,
+       "interaction_status": false,
+       "past_frames_status": true
+      },
+      "hands": [
+       {
+        "x": 989,
+        "y": 1187,
+        "w": 326,
+        "h": 89,
+        "hand_side": "right",
+        "id": 33885
+       }
+      ],
+      "objects": [
+       {
+        "id": 153513,
+        "x": 2,
+        "y": 2,
+        "w": 586,
+        "h": 572,
+        "class_id": 2
+       },
+       {
+        "id": 153514,
+        "x": 1290,
+        "y": 362,
+        "w": 517,
+        "h": 444,
+        "class_id": 11
+       },
+       {
+        "id": 153515,
+        "x": 1698,
+        "y": 0,
+        "w": 572,
+        "h": 289,
+        "class_id": 5
+       },
+       {
+        "id": 153516,
+        "x": 1003,
+        "y": 77,
+        "w": 536,
+        "h": 260,
+        "class_id": 12
+       },
+       {
+        "id": 153517,
+        "x": 775,
+        "y": 1217,
+        "w": 150,
+        "h": 59,
+        "class_id": 1
+       },
+       {
+        "id": 153518,
+        "x": 918,
+        "y": 859,
+        "w": 1155,
+        "h": 415,
+        "class_id": 13
+       }
+      ],
+      "interactions": [],
+      "next_object_interaction": [
+       {
+        "id": 272,
+        "id_obj": 153518,
+        "next_frame_id": "44_15591",
+        "next_id_obj": 770,
+        "next_interaction_id": 224
+       }
+      ]
+     },
+     "44_15567": {
+      "video_id": 44,
+      "filename": "44_15567.jpg",
+      "timestamp": 518.9,
+      "labels_status": {
+       "hands_status": true,
+       "objects_status": true,
+       "interaction_status": false,
+       "past_frames_status": true
+      },
+      "hands": [
+       {
+        "x": 1010,
+        "y": 1190,
+        "w": 349,
+        "h": 87,
+        "hand_side": "right",
+        "id": 33886
+       }
+      ],
+      "objects": [
+       {
+        "id": 153520,
+        "x": 5,
+        "y": -2,
+        "w": 588,
+        "h": 545,
+        "class_id": 2
+       },
+       {
+        "id": 153521,
+        "x": 1313,
+        "y": 319,
+        "w": 536,
+        "h": 460,
+        "class_id": 11
+       },
+       {
+        "id": 153522,
+        "x": 1019,
+        "y": 23,
+        "w": 556,
+        "h": 267,
+        "class_id": 12
+       },
+       {
+        "id": 153523,
+        "x": 1780,
+        "y": 0,
+        "w": 490,
+        "h": 237,
+        "class_id": 5
+       },
+       {
+        "id": 153524,
+        "x": 741,
+        "y": 1199,
+        "w": 187,
+        "h": 77,
+        "class_id": 1
+       },
+       {
+        "id": 153525,
+        "x": 925,
+        "y": 839,
+        "w": 1201,
+        "h": 435,
+        "class_id": 13
+       }
+      ],
+      "interactions": [],
+      "next_object_interaction": [
+       {
+        "id": 271,
+        "id_obj": 153525,
+        "next_frame_id": "44_15591",
+        "next_id_obj": 770,
+        "next_interaction_id": 224
+       }
+      ]
+     },
+     "44_15579": {
+      "video_id": 44,
+      "filename": "44_15579.jpg",
+      "timestamp": 519.299,
+      "labels_status": {
+       "hands_status": true,
+       "objects_status": true,
+       "interaction_status": false,
+       "past_frames_status": true
+      },
+      "hands": [
+       {
+        "x": 1014,
+        "y": 1155,
+        "w": 367,
+        "h": 121,
+        "hand_side": "right",
+        "id": 33887
+       }
+      ],
+      "objects": [
+       {
+        "id": 153527,
+        "x": 745,
+        "y": 1169,
+        "w": 194,
+        "h": 105,
+        "class_id": 1
+       },
+       {
+        "id": 153528,
+        "x": 1319,
+        "y": 289,
+        "w": 533,
+        "h": 460,
+        "class_id": 11
+       },
+       {
+        "id": 153529,
+        "x": 0,
+        "y": 0,
+        "w": 602,
+        "h": 517,
+        "class_id": 2
+       },
+       {
+        "id": 153530,
+        "x": 1023,
+        "y": 2,
+        "w": 556,
+        "h": 264,
+        "class_id": 12
+       },
+       {
+        "id": 153531,
+        "x": 1800,
+        "y": 0,
+        "w": 469,
+        "h": 214,
+        "class_id": 5
+       },
+       {
+        "id": 153532,
+        "x": 939,
+        "y": 809,
+        "w": 1192,
+        "h": 417,
+        "class_id": 13
+       }
+      ],
+      "interactions": [],
+      "next_object_interaction": [
+       {
+        "id": 270,
+        "id_obj": 153532,
+        "next_frame_id": "44_15591",
+        "next_id_obj": 770,
+        "next_interaction_id": 224
+       }
+      ]
+     },
+     "44_15591": {
+      "video_id": 44,
+      "filename": "44_15591.jpg",
+      "timestamp": 519.7,
+      "labels_status": {
+       "hands_status": true,
+       "objects_status": true,
+       "interaction_status": true,
+       "past_frames_status": false
+      },
+      "hands": [
+       {
+        "x": 1226,
+        "y": 1159,
+        "w": 371,
+        "h": 113,
+        "hand_side": "right",
+        "id": 143
+       }
+      ],
+      "objects": [
+       {
+        "id": 770,
+        "x": 1108.901,
+        "y": 806.473,
+        "w": 1138.168,
+        "h": 412.993,
+        "class_id": 13
+       },
+       {
+        "id": 771,
+        "x": 1203,
+        "y": 24,
+        "w": 538,
+        "h": 258,
+        "class_id": 12
+       },
+       {
+        "id": 772,
+        "x": 954,
+        "y": 1066,
+        "w": 173,
+        "h": 109,
+        "class_id": 1
+       },
+       {
+        "id": 773,
+        "x": 1030,
+        "y": 1185,
+        "w": 173,
+        "h": 76,
+        "class_id": 1
+       },
+       {
+        "id": 775,
+        "x": 6,
+        "y": 3,
+        "w": 811,
+        "h": 517,
+        "class_id": 2
+       },
+       {
+        "id": 776,
+        "x": 1942,
+        "y": 3,
+        "w": 325,
+        "h": 240,
+        "class_id": 5
+       },
+       {
+        "id": 777,
+        "x": 1486,
+        "y": 301,
+        "w": 538,
+        "h": 468,
+        "class_id": 11
+       }
+      ],
+      "interactions": [
+       {
+        "id": 224,
+        "id_hand": -1,
+        "id_obj": 770,
+        "interaction_category": 3
+       }
+      ],
+      "next_object_interaction": []
+     }
+    }
+   }
+  },
+  {
+   "title": "Procedure text: HIGH VOLTAGE board repair with a standard screwdriver (one of the 4 scripts subjects followed)",
+   "video_ref": null,
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "txt",
+   "raw": "1. Sit at the workbench;\n2. Pronounce the voice command \"Record\" to start the recording, a beep will be heard to confirm the operation.                                     \n3. Turn on and off the lamp on the bench while looking at it;\n4. Leave the laboratory;                                   \n5. Enter the laboratory and closes the door;\n6. Head towards panel A and observes it for a few moments;                                     \n7. Press the two green buttons on panel A;\n8. Head towards the workbench and sits down;                                  \n9. Observe the high voltage board for a few moments;\n10. Take the high voltage board and places it on the work area;                                  \n11. Remove the screws from the workbench using the screwdriver;                                   \n12. Fix the board to the workbench using the screwdriver;                                 \n13. Observe the power supply of the board;\n14. Turn on the power supply using the turret switch;                                 \n15. Adjust the current knob of the power supply until the green LED lights up;\n16. Adjust the voltage knob of the power supply setting a voltage of 5 Volts;                                 \n17. Connect the power supply cables to the power points of the board;\n18. Keep an eye on the board for a few seconds to check that the red and green LEDs light up;                                      \n19. Turn off the power supply of the board using the turret switch and waits for the LEDs on the board to go off;\n20. Return the current and voltage knobs of the power supply to 0;                                       \n21. Disconnect the power supply cables;\n22. Remove the board from the workbench using the screwdriver;                                       \n23. Observe the soldering iron;\n24. Turn on the soldering iron using the turret switch;\n25. Set the temperature of the soldering iron to 200 degrees using the yellow button \"UP\";                                       \n26. Grab with pliers the resistor on the board;                                       \n27. Take the tip of the soldering iron;\n28. Touch with the tip of soldering iron, first pin of resistor for 5 seconds;                                      \n29. Touch with tip of soldering iron, second pin of resistor for 5 seconds;                                       \n30. Put down pliers on workbench;\n31. Put down tip of soldering iron;                                      \n32. Put board vertically;\n33. Grab with pliers resistor on board;                                       \n34. Take tip of soldering iron;\n35. Touch with tip of soldering iron, first pin of resistor on back of board for 5 seconds;                                        \n36. Touch with tip of soldering iron, second pin of resistor on back of board for 5 seconds;                                      \n37. Put down tip of soldering iron;\n38. Put down board on work area;\n39. Put down pliers on workbench;                                       \n40. Return to minimum temperature of soldering iron (160 degrees) using yellow button \"DOWN\";\n41. Turn off soldering iron using turret switch;                                      \n42. Fix board to workbench using screwdriver;                                       \n43. Observe power supply of board;\n44. Turn on power supply using turret switch;                                       \n45. Adjust current knob of power supply until green LED lights up;\n46. Adjust voltage knob of power supply setting a voltage of 5 Volts;\n47. Connect the power supply cables to the power points of the board;\n48. Keep an eye on the board for a few seconds to check that the red and green LEDs light up;                                    \n49. Turn on the oscilloscope using the turret switch;\n50. Activate the channel of the probe number 2 using the CH2 MENU button with blue outline;                                       \n51. Connect the ground clip of the probe to test point number 1;                                       \n52. Use the tip of the probe to check some signal carried to test point number 2 on the board;\n53. Press the \"Auto Set\" button of the oscilloscope;                                       \n54. Observe the display of the oscilloscope;\n55. Rotate the \"position\" knob above the CH2 MENU button;\n56. Repeat the previous three points for all remaining test points (from number 3 to number 7);                                        \n57. Turn off the power supply of the board using the turret switch and waits for the LEDs on the board to go off;\n58. Return the current and voltage knobs of the power supply to 0;                                       \n59. Disconnect the ground clip and tip of the oscilloscope;\n60. Disconnect the power supply cables;                                       \n61. Deactivate the channel of the probe number 2;\n62. Turn off the oscilloscope using the turret switch;                                       \n63. Remove the board from the workbench using the screwdriver;                                       \n64. Observe the soldering iron;\n65. Turn on the soldering iron using the turret switch;\n66. Set the temperature of the soldering iron to 200 degrees using the yellow button \"UP\";                                      \n67. Grab with pliers resistor on board;                                       \n68. Take tip of soldering iron;\n69. Touche with tip of soldering iron, first pin of resistor for 5 seconds;                                       \n70. Touche with tip of soldering iron, second pin of resistor for 5 seconds;                                       \n71. Put down pliers on workbench;\n72. Put down tip of soldering iron;                                      \n73. Put board vertically;\n74. Grab with pliers resistor on board;                                      \n75. Take tip of soldering iron;\n76. Touch with tip of soldering iron, first pin of resistor on back of board for 5 seconds;                                       \n77. Touch with tip of soldering iron, second pin of resistor on back of board for 5 seconds;                                       \n78. Put down tip of soldering iron;\n79. Put down board on work area;\n80. Put down pliers on workbench;\n81. Return to minimum temperature of soldering iron (160 degrees) using yellow button \"DOWN\";\n82. Turn off soldering iron using turret switch;                                        \n83. Fix board to workbench using screwdriver;                                       \n84. Observe power supply of board;\n85. Turn on power supply using turret switch;                                       \n86. Adjust current knob of power supply until green LED lights up;\n87. Adjust voltage knob of power supply setting a voltage of 5 Volts;                                       \n88. Connect power supply cables to power points of board;\n89. Keep an eye on board for a few seconds to check that red and green LEDs light up;                                       \n90. Turn on oscilloscope using turret switch;\n91. Activate channel of oscilloscope probe number 2 using CH2 MENU button;                                       \n92. Connect ground clip of probe to test point number 1;                                       \n93. Use tip of probe to check some signal carried to test point number 2 on board;\n94. Press \"Auto Set\" button of oscilloscope;                                       \n95. Observe display of oscilloscope;\n96. Rotate \"position\" knob above CH2 MENU button;\n97. Repeat previous three points for all remaining test points (from number 3 to number 7);                                       \n98. Turn off power supply of board using turret switch and waits for LEDs on board to go off;\n99. Return current and voltage knobs of power supply to 0;                                      \n100. Disconnect ground clip and tip of oscilloscope;\n101. Disconnect power supply cables;                                       \n102. Deactivate channel of probe number 2 using CH2 MENU button;\n103. Turn off oscilloscope using turret switch;                                      \n104. Remove board from workbench using screwdriver;                                       \n105. Screw back screws in work area using screwdriver;                                       \n106. Write down outcome of repair operations in register;                                      \n107. Head towards panel A;\n108. Observe panel A for a few moments;\n109. Press two red buttons on panel A;                                       \n110. Head towards door;\n111. Leave laboratory;                                      \n112. Enter laboratory again;\n113. Pronounce voice command \"Stop\" to stop recording, a beep will be heard to confirm end of recording."
+  }
+ ]
+}

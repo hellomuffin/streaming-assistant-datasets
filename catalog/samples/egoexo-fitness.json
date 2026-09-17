@@ -1,0 +1,104 @@
+{
+ "slug": "egoexo-fitness",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://github.com/iSEE-Laboratory/EgoExo-Fitness/blob/main/Raw_annotations/README.md (example blocks)",
+  "https://github.com/iSEE-Laboratory/EgoExo-Fitness/tree/main/CVSV_benchmark/annotations (train_pairs_open.txt, test_pairs_open.txt, label_bank_coarse.json, label_bank_fine.json)"
+ ],
+ "access_used": "public sample in paper/repo/card only (full data needs the signed EgoExo-Fitness License Agreement, emailed; HF gate denied our token)",
+ "note": "The raw annotation files (boundaries, keypoint verification, quality scores, comments) sit behind a signed license, so example 1 is the README's own verbatim example of each file (with its // comments and '...' elisions; frame numbers at 30 fps converted to seconds in the timeline). Example 2 is real public data from the code repo: the cross-view sequence-verification pair list for record ThEnUZ, whose columns are frame folder, sequence id (action-order code), start frame and end frame for each of two views, plus the label bank that maps the code to the exercise order. No clip: raw videos are not released.",
+ "examples": [
+  {
+   "title": "README samples: interpretable action judgement (ThEnUZ_action_1), action/substep boundaries, meta record",
+   "video_ref": "record ThEnUZ (frames_open/ThEnUZ), CeqSkC, FQPS6Y_4-3-1_ego_m",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 8.033,
+     "te": 23.033,
+     "lane": "commentary",
+     "text": "Kneeling pushing-ups — score 3: The movement was performed according to the instructions, but the back was not kept straight enough and the depth of the descent was insufficient. [Cross your feet.: True; Keep your back straight.: False]"
+    },
+    {
+     "t": 3.333333333333343,
+     "te": 18.333333333333343,
+     "lane": "step",
+     "text": "Kneeling pushing-ups (substep boundary example, FQPS6Y_4-3-1_ego_m; times in that sequence clip)"
+    }
+   ],
+   "raw_format": "txt",
+   "raw": {
+    "Raw_annotations/README.md example of meta_records.json": "{\n    \"records\": [\n        {\n            \"record_id\": \"ThEnUZ\",\n            \"views\": [\n                \"ego_l\",\n                ...\n            ],\n            \"frames\": {\n                \"ego_l\": {\n                    \"path\": \"frames_open/ThEnUZ/ego_l\",\n                    \"num_frames\": 7973\n                },\n                ...\n            },\n            \"num_views\": 6,\n            \"num_sequences\": 3,\n            \"sequences\": {\n                \"sequence_start_end_frame\": [\n                    [\n                        20,\n                        1000\n                    ],\n                    ...\n                ]\n            },\n            \"num_actions\": 12\n        },\n        ...\n  ],\n  \"record_index\": {\n        \"ThEnUZ\": 0,\n        ...\n  }\n}\n",
+    "Raw_annotations/README.md example of action_level_annotations.json": "{\n    \"CeqSkC\": {         // The key is the record ID in meta_records.json\n        \"num_actions\": 16,\n        \"action_info\": [\n            [\n                1,      // action ID\n                106,    // start frame ID\n                496     // end frame ID\n            ],\n            ...\n        ]\n    },\n    ...\n}\n",
+    "Raw_annotations/README.md example of substep_level_annotations.json": "{\n    \"classes\": [\n        \"Kneeling pushing-ups\",\n        \"Push-ups\",\n        ...\n    ],\n    \"database\": {\n        \"FQPS6Y_4-3-1_ego_m\": {\n            \"annotations\": [\n                {\n                    \"label\": \"Kneeling pushing-ups\",\n                    \"segment_time\": [\n                        167,\n                        182\n                    ],\n                    \"segment_frame\": [],\n                    \"segment\": [\n                        3.333333333333343,\n                        18.333333333333343\n                    ],\n                    \"fps\": 30\n                },\n                ...\n            ],\n            \"duration\": 69.66666666666667,\n            \"fps\": 30,\n            \"num_frames\": 2090,\n            \"resolution\": \"\",\n            \"subset\": \"test\",\n            \"view\": \"ego_m\",\n            \"actor\": \"FQPS6Y\",\n            \"path\": \"frames_openFQPS6Y/ego_m/\",\n            \"seq_st\": 4910,\n            \"seq_ed\": 7000\n        },\n        ...\n    }\n}\n",
+    "Raw_annotations/README.md example of interpretable_action_judgement.json": "{\n    \"ThEnUZ_action_1\": {\n        \"annotations\": [\n            {\n                \"key_point_verification\": [\n                    [\n                        \"Cross your feet.\",\n                        \"True\"\n                    ],\n                    [\n                        \"Keep your back straight.\",\n                        \"False\"\n                    ],\n                    ...\n                ]\n                \"action_quality_score\": 3,\n                \"comment\": \"The movement was performed according to the instructions, but the back was not kept straight enough and the depth of the descent was insufficient.\",\n                \"action_name\": \"Kneeling pushing-ups\",\n                \"action_guidance\": \"cross your feet, kneel on the mat, keep your back straight, keep your body in a straight line from the side, and put your hands on both sides of the chest, slightly wider than shoulder-width apart. bend your arms and bend down until your elbows are slightly above your torso, then stretch your arms and get up to restore. \",\n                \"annotator\": \"F03vpUuT3e\"\n            },\n            ...\n        ],\n        \"st_ed_frame\": [\n            241,\n            691\n        ],\n        \"frame_root\": \"frames_open/ThEnUZ\"\n    },\n    ...\n}\n"
+   }
+  },
+  {
+   "title": "ThEnUZ: 3 exercise sequences (3-3-3, 4-2-3, 5-2-1) seen from 6 synchronized views — public pair list",
+   "video_ref": "record ThEnUZ, views ego_l/ego_r/ego_m/exo_l/exo_m/exo_r",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.667,
+     "te": 33.333,
+     "lane": "step",
+     "text": "sequence 3-3-3: Jumping Jacks → Kneeling pushing-ups → High Knee"
+    },
+    {
+     "t": 71.467,
+     "te": 137.267,
+     "lane": "step",
+     "text": "sequence 4-2-3: Left Leg Lunge With Knee Lift → Sit-ups → Kneeling Right-side Torso Twist → Jumping Jacks"
+    },
+    {
+     "t": 175.1,
+     "te": 256.367,
+     "lane": "step",
+     "text": "sequence 5-2-1: Kneeling Right-side Torso Twist → Kneeling pushing-ups → Sit-ups → Jumping Jacks → High Knee"
+    }
+   ],
+   "raw_format": "txt",
+   "raw": {
+    "CVSV_benchmark/annotations/train_pairs_open.txt + test_pairs_open.txt (first 2 lines per sequence of record ThEnUZ)": "/PATH/TO/VIDEO_FRAME/ThEnUZ/ego_l/VID_20230912_164633_00_008 3-3-3 20 1000 /PATH/TO/VIDEO_FRAME/ThEnUZ/ego_r/VID_20230912_164824_00_008 3-3-3 20 1000\n/PATH/TO/VIDEO_FRAME/ThEnUZ/ego_l/VID_20230912_164633_00_008 3-3-3 20 1000 /PATH/TO/VIDEO_FRAME/ThEnUZ/ego_m/GH010723 3-3-3 20 1000\n/PATH/TO/VIDEO_FRAME/ThEnUZ/ego_l/VID_20230912_164633_00_008 4-2-3 2144 4118 /PATH/TO/VIDEO_FRAME/ThEnUZ/ego_r/VID_20230912_164824_00_008 4-2-3 2144 4118\n/PATH/TO/VIDEO_FRAME/ThEnUZ/ego_l/VID_20230912_164633_00_008 4-2-3 2144 4118 /PATH/TO/VIDEO_FRAME/ThEnUZ/ego_m/GH010723 4-2-3 2144 4118\n/PATH/TO/VIDEO_FRAME/ThEnUZ/ego_l/VID_20230912_164633_00_008 5-2-1 5253 7691 /PATH/TO/VIDEO_FRAME/ThEnUZ/ego_r/VID_20230912_164824_00_008 5-2-1 5253 7691\n/PATH/TO/VIDEO_FRAME/ThEnUZ/ego_l/VID_20230912_164633_00_008 5-2-1 5253 7691 /PATH/TO/VIDEO_FRAME/ThEnUZ/ego_m/GH010723 5-2-1 5253 7691",
+    "CVSV_benchmark/annotations/label_bank_coarse.json (entries)": {
+     "3-3-3": [
+      "Jumping Jacks",
+      "Kneeling pushing-ups",
+      "High Knee"
+     ],
+     "4-2-3": [
+      "Left Leg Lunge With Knee Lift",
+      "Sit-ups",
+      "Kneeling Right-side Torso Twist",
+      "Jumping Jacks"
+     ],
+     "5-2-1": [
+      "Kneeling Right-side Torso Twist",
+      "Kneeling pushing-ups",
+      "Sit-ups",
+      "Jumping Jacks",
+      "High Knee"
+     ]
+    },
+    "CVSV_benchmark/annotations/label_bank_fine.json (entries)": {
+     "3-3-3": [
+      "A057, A002, A058"
+     ],
+     "4-2-3": [
+      "A048, A042, A032, A057"
+     ],
+     "5-2-1": [
+      "A032, A002, A042, A057, A058"
+     ]
+    }
+   }
+  }
+ ]
+}

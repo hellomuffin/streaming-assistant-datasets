@@ -1,0 +1,647 @@
+{
+ "slug": "captaincook4d",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://github.com/CaptainCook4D/annotations/blob/main/annotation_json/error_annotations.json (recording_id 1_42, 18_28)",
+  "https://github.com/CaptainCook4D/downloader/blob/main/metadata/download_links.json → gopro_360p Box links for 1_42 and 18_28"
+ ],
+ "access_used": "open download",
+ "note": "Each example is one recording's full entry in error_annotations.json: the recipe steps in performed order with start/end seconds, and for erroneous steps a list of error tags (Preparation, Measurement, Order, Timing, Technique, Temperature, Missing Step, Other) with a free-text description. There is no separate correction label; the timeline marks as 'correction' the error descriptions that themselves describe an undo (e.g. 'Removing the placed lettuce…', 'turn on the correct burner'). Clips keep the GoPro audio.",
+ "examples": [
+  {
+   "title": "1_42 microwave egg sandwich: 12 steps, 14 error tags — egg poured into a bowl before coating, lettuce removed and re-lined at the end",
+   "video_ref": "1_42 GoPro 360p (https://utdallas.box.com/shared/static/v59dt0wqwgxwdqmgel8h01w7tvntm30n.mp4)",
+   "duration_s": 383.92,
+   "clip": "samples/media/captaincook4d_1.mp4",
+   "clip_offset_s": 356,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.071,
+     "te": 31.87,
+     "lane": "mistake",
+     "text": "Preparation Error: bowl instead of ramekin cup"
+    },
+    {
+     "t": 0.071,
+     "te": 31.87,
+     "lane": "mistake",
+     "text": "Order Error: Step performed before coating with cooking spray"
+    },
+    {
+     "t": 0.071,
+     "te": 31.87,
+     "lane": "step",
+     "text": "Pour-Pour 1 egg into the ramekin cup"
+    },
+    {
+     "t": 33.325,
+     "te": 122.061,
+     "lane": "mistake",
+     "text": "Timing Error: 60 instead of 30 seconds"
+    },
+    {
+     "t": 33.325,
+     "te": 122.061,
+     "lane": "mistake",
+     "text": "Temperature Error: medium instead of high"
+    },
+    {
+     "t": 33.325,
+     "te": 122.061,
+     "lane": "mistake",
+     "text": "Order Error: Step performed before coating with cooking spray"
+    },
+    {
+     "t": 33.325,
+     "te": 122.061,
+     "lane": "step",
+     "text": "Microwave-Microwave the ramekin cup uncovered on high for 30 seconds"
+    },
+    {
+     "t": 62.116,
+     "te": 136.67,
+     "lane": "mistake",
+     "text": "Order Error: Step performed before coating with cooking spray"
+    },
+    {
+     "t": 62.116,
+     "te": 136.67,
+     "lane": "step",
+     "text": "stir-stir the ramekin cup"
+    },
+    {
+     "t": 137.161,
+     "te": 147.652,
+     "lane": "mistake",
+     "text": "Preparation Error: use regular oil instead of cooking spray"
+    },
+    {
+     "t": 137.161,
+     "te": 147.652,
+     "lane": "mistake",
+     "text": "Order Error: Step performed after adding egg, microwaving and stirring"
+    },
+    {
+     "t": 137.161,
+     "te": 147.652,
+     "lane": "step",
+     "text": "Coat -Coat a 6-oz. ramekin cup with cooking spray"
+    },
+    {
+     "t": 149.234,
+     "te": 202.324,
+     "lane": "mistake",
+     "text": "Preparation Error: hands instead of knife"
+    },
+    {
+     "t": 149.234,
+     "te": 202.324,
+     "lane": "mistake",
+     "text": "Order Error: Step performed after correct order"
+    },
+    {
+     "t": 149.234,
+     "te": 202.324,
+     "lane": "step",
+     "text": "Cut -Cut the English muffin into two pieces with a knife"
+    },
+    {
+     "t": 202.461,
+     "te": 228.506,
+     "lane": "mistake",
+     "text": "Order Error: Step performed after correct order"
+    },
+    {
+     "t": 202.461,
+     "te": 228.506,
+     "lane": "step",
+     "text": "Line -Line the bottom piece of the English muffin with lettuce"
+    },
+    {
+     "t": 229.025,
+     "te": 274.524,
+     "lane": "mistake",
+     "text": "Technique Error: Not checking if the egg is set or not and microwaving for only 30 seconds"
+    },
+    {
+     "t": 229.025,
+     "te": 274.524,
+     "lane": "step",
+     "text": "Microwave -Continue to Microwave for 15-30 more seconds or until the egg is almost set"
+    },
+    {
+     "t": 246.315,
+     "te": 291.04200000000003,
+     "lane": "mistake",
+     "text": "Measurement Error: 2 instead of 1 tablespoon"
+    },
+    {
+     "t": 246.315,
+     "te": 291.04200000000003,
+     "lane": "step",
+     "text": "Top -Top cup with 1 tablespoon of salsa"
+    },
+    {
+     "t": 292.943,
+     "te": 320.906,
+     "lane": "step",
+     "text": "sprinkle -sprinkle 1 tablespoon of cheese on cup"
+    },
+    {
+     "t": 321.543,
+     "te": 354.832,
+     "lane": "step",
+     "text": "Microwave -Microwave just until cheese melts, about 10 seconds"
+    },
+    {
+     "t": 355.451,
+     "te": 377.415,
+     "lane": "correction",
+     "text": "Order Error: Removing the placed lettuce on one piece of the muffin and placing egg on it and then lining it with lettuce."
+    },
+    {
+     "t": 355.451,
+     "te": 377.415,
+     "lane": "step",
+     "text": "Place -Place the egg from the cup over the lettuce"
+    },
+    {
+     "t": 378.342,
+     "te": 383.7334159237281,
+     "lane": "step",
+     "text": "replace -replace the top of the English muffin"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "recording_id": "1_42",
+    "activity_id": 1,
+    "is_error": true,
+    "step_annotations": [
+     {
+      "description": "Pour-Pour 1 egg into the ramekin cup",
+      "step_id": 1,
+      "errors": [
+       {
+        "tag": "Preparation Error",
+        "description": "bowl instead of ramekin cup"
+       },
+       {
+        "tag": "Order Error",
+        "description": "Step performed before coating with cooking spray"
+       }
+      ],
+      "start_time": 0.071,
+      "end_time": 31.87,
+      "modified_description": "Pour-Pour 1 egg into the bowl"
+     },
+     {
+      "description": "Microwave-Microwave the ramekin cup uncovered on high for 30 seconds",
+      "step_id": 4,
+      "errors": [
+       {
+        "tag": "Timing Error",
+        "description": "60 instead of 30 seconds"
+       },
+       {
+        "tag": "Temperature Error",
+        "description": "medium instead of high"
+       },
+       {
+        "tag": "Order Error",
+        "description": "Step performed before coating with cooking spray"
+       }
+      ],
+      "start_time": 33.325,
+      "end_time": 122.061,
+      "modified_description": "Microwave-Microwave the ramekin cup uncovered on medium for 60 seconds"
+     },
+     {
+      "description": "stir-stir the ramekin cup",
+      "step_id": 11,
+      "errors": [
+       {
+        "tag": "Order Error",
+        "description": "Step performed before coating with cooking spray"
+       }
+      ],
+      "start_time": 62.116,
+      "end_time": 136.67
+     },
+     {
+      "description": "Coat -Coat a 6-oz. ramekin cup with cooking spray",
+      "step_id": 3,
+      "errors": [
+       {
+        "tag": "Preparation Error",
+        "description": "use regular oil instead of cooking spray"
+       },
+       {
+        "tag": "Order Error",
+        "description": "Step performed after adding egg, microwaving and stirring"
+       }
+      ],
+      "start_time": 137.161,
+      "end_time": 147.652,
+      "modified_description": "Put some oil into a 6-oz. ramekin cup"
+     },
+     {
+      "description": "Cut -Cut the English muffin into two pieces with a knife",
+      "step_id": 12,
+      "errors": [
+       {
+        "tag": "Preparation Error",
+        "description": "hands instead of knife"
+       },
+       {
+        "tag": "Order Error",
+        "description": "Step performed after correct order"
+       }
+      ],
+      "start_time": 149.234,
+      "end_time": 202.324,
+      "modified_description": "Cut -Cut the English muffin into two pieces with hands"
+     },
+     {
+      "description": "Line -Line the bottom piece of the English muffin with lettuce",
+      "step_id": 9,
+      "errors": [
+       {
+        "tag": "Order Error",
+        "description": "Step performed after correct order"
+       }
+      ],
+      "start_time": 202.461,
+      "end_time": 228.506
+     },
+     {
+      "description": "Microwave -Continue to Microwave for 15-30 more seconds or until the egg is almost set",
+      "step_id": 8,
+      "errors": [
+       {
+        "tag": "Technique Error",
+        "description": "Not checking if the egg is set or not and microwaving for only 30 seconds"
+       }
+      ],
+      "start_time": 229.025,
+      "end_time": 274.524,
+      "modified_description": "Microwave -Continue to Microwave for 15-30 more seconds or until the egg is almost set"
+     },
+     {
+      "description": "Top -Top cup with 1 tablespoon of salsa",
+      "step_id": 6,
+      "errors": [
+       {
+        "tag": "Measurement Error",
+        "description": "2 instead of 1 tablespoon"
+       }
+      ],
+      "start_time": 246.315,
+      "end_time": 291.04200000000003,
+      "modified_description": "Top -Top cup with 2 tablespoon of salsa"
+     },
+     {
+      "description": "sprinkle -sprinkle 1 tablespoon of cheese on cup",
+      "step_id": 5,
+      "start_time": 292.943,
+      "end_time": 320.906
+     },
+     {
+      "description": "Microwave -Microwave just until cheese melts, about 10 seconds",
+      "step_id": 10,
+      "start_time": 321.543,
+      "end_time": 354.832
+     },
+     {
+      "description": "Place -Place the egg from the cup over the lettuce",
+      "step_id": 2,
+      "errors": [
+       {
+        "tag": "Order Error",
+        "description": "Removing the placed lettuce on one piece of the muffin and placing egg on it and then lining it with lettuce."
+       }
+      ],
+      "start_time": 355.451,
+      "end_time": 377.415,
+      "modified_description": "Place -Place the egg from the cup under the lettuce"
+     },
+     {
+      "description": "replace -replace the top of the English muffin",
+      "step_id": 7,
+      "start_time": 378.342,
+      "end_time": 383.7334159237281
+     }
+    ]
+   }
+  },
+  {
+   "title": "18_28 zoodles: wrong burner turned on then corrected, burnt butter and garlic, spills — 13 steps",
+   "video_ref": "18_28 GoPro 360p (https://utdallas.box.com/shared/static/p4jg5afh5kkod9dsy2tiv7csmff2g1iw.mp4)",
+   "duration_s": 703.1,
+   "clip": "samples/media/captaincook4d_2.mp4",
+   "clip_offset_s": 84,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 25.618784416390728,
+     "te": 78.23505673427152,
+     "lane": "mistake",
+     "text": "Technique Error: Peel improperly"
+    },
+    {
+     "t": 25.618784416390728,
+     "te": 78.23505673427152,
+     "lane": "step",
+     "text": "Peel-Peel 1 garlic cloves"
+    },
+    {
+     "t": 84.2882562044702,
+     "te": 120.14182229718543,
+     "lane": "correction",
+     "text": "Preparation Error: Turn on the wrong burner and turn off the heat and turn on the correct burner"
+    },
+    {
+     "t": 84.2882562044702,
+     "te": 120.14182229718543,
+     "lane": "mistake",
+     "text": "Order Error: Step performed before spiralizing zucchini"
+    },
+    {
+     "t": 84.2882562044702,
+     "te": 120.14182229718543,
+     "lane": "step",
+     "text": "Heat-Heat a large pan on medium heat"
+    },
+    {
+     "t": 123.40123739652319,
+     "te": 228.16815130380795,
+     "lane": "mistake",
+     "text": "Order Error: Step performed after heating the pan and melting the butter"
+    },
+    {
+     "t": 123.40123739652319,
+     "te": 228.16815130380795,
+     "lane": "mistake",
+     "text": "Preparation Error: Using soiled zuccini"
+    },
+    {
+     "t": 123.40123739652319,
+     "te": 228.16815130380795,
+     "lane": "step",
+     "text": "Spiralize-Spiralize 1 medium zucchini into thin noodles using a spiralizer"
+    },
+    {
+     "t": 244.93085752897352,
+     "te": 312.9129438865894,
+     "lane": "mistake",
+     "text": "Temperature Error: Burn the butter by heating on high"
+    },
+    {
+     "t": 244.93085752897352,
+     "te": 312.9129438865894,
+     "lane": "step",
+     "text": "Melt-Melt 1 tablespoons of softened butter"
+    },
+    {
+     "t": 288.7001460057947,
+     "te": 315.2410975289735,
+     "lane": "mistake",
+     "text": "Technique Error: Chop the garlic instead of mincing"
+    },
+    {
+     "t": 288.7001460057947,
+     "te": 315.2410975289735,
+     "lane": "step",
+     "text": "Add-Add 1 large minced garlic cloves to the pan"
+    },
+    {
+     "t": 323.6224506415563,
+     "te": 377.1699844163907,
+     "lane": "mistake",
+     "text": "Timing Error: Cook until the garlic is burnt"
+    },
+    {
+     "t": 323.6224506415563,
+     "te": 377.1699844163907,
+     "lane": "step",
+     "text": "Cook-Cook garlic until fragrant (about 1 minutes). Be careful not to burn garlic"
+    },
+    {
+     "t": 381.826291701159,
+     "te": 392.5357984561258,
+     "lane": "step",
+     "text": "Add-Add the zucchini noodles"
+    },
+    {
+     "t": 416.7485963369205,
+     "te": 453.0677931581126,
+     "lane": "mistake",
+     "text": "Technique Error: Spill while adding grated cheese"
+    },
+    {
+     "t": 416.7485963369205,
+     "te": 453.0677931581126,
+     "lane": "mistake",
+     "text": "Measurement Error: Add 1/3 cup grated parmesan cheese instead of 1/6 cup"
+    },
+    {
+     "t": 416.7485963369205,
+     "te": 453.0677931581126,
+     "lane": "step",
+     "text": "Add-1/6 cup grated parmesan cheese"
+    },
+    {
+     "t": 460.0522540852649,
+     "te": 651,
+     "lane": "mistake",
+     "text": "Technique Error: Spill outside while sauteing to cook"
+    },
+    {
+     "t": 460.0522540852649,
+     "te": 651,
+     "lane": "step",
+     "text": "Cook-Cook for 2 minutes or until the zoodles are done"
+    },
+    {
+     "t": 511.2716342177152,
+     "te": 556.4378148799668,
+     "lane": "step",
+     "text": "season-pepper to taste"
+    },
+    {
+     "t": 562.0253836216887,
+     "te": 579.719351303808,
+     "lane": "step",
+     "text": "season-season with salt"
+    },
+    {
+     "t": 603.9321491846026,
+     "te": 650.9608527607616,
+     "lane": "step",
+     "text": "Remove-Remove from heat"
+    },
+    {
+     "t": 654.2202678600994,
+     "te": 676.1049120985099,
+     "lane": "step",
+     "text": "Top-Top with more parmesan if desired"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "recording_id": "18_28",
+    "activity_id": 18,
+    "is_error": true,
+    "step_annotations": [
+     {
+      "description": "Peel-Peel 1 garlic cloves",
+      "step_id": 200,
+      "errors": [
+       {
+        "tag": "Technique Error",
+        "description": "Peel improperly"
+       }
+      ],
+      "start_time": 25.618784416390728,
+      "end_time": 78.23505673427152,
+      "modified_description": "Peel-Peel 1 garlic clove improperly"
+     },
+     {
+      "description": "Heat-Heat a large pan on medium heat",
+      "step_id": 196,
+      "errors": [
+       {
+        "tag": "Preparation Error",
+        "description": "Turn on the wrong burner and turn off the heat and turn on the correct burner"
+       },
+       {
+        "tag": "Order Error",
+        "description": "Step performed before spiralizing zucchini"
+       }
+      ],
+      "start_time": 84.2882562044702,
+      "end_time": 120.14182229718543,
+      "modified_description": "Heat-Heat the wrong pan; turn off the heat; and turn on the heat for the correct pan"
+     },
+     {
+      "description": "Spiralize-Spiralize 1 medium zucchini into thin noodles using a spiralizer",
+      "step_id": 203,
+      "errors": [
+       {
+        "tag": "Order Error",
+        "description": "Step performed after heating the pan and melting the butter"
+       },
+       {
+        "tag": "Preparation Error",
+        "description": "Using soiled zuccini"
+       }
+      ],
+      "start_time": 123.40123739652319,
+      "end_time": 228.16815130380795
+     },
+     {
+      "description": "Melt-Melt 1 tablespoons of softened butter",
+      "step_id": 204,
+      "errors": [
+       {
+        "tag": "Temperature Error",
+        "description": "Burn the butter by heating on high"
+       }
+      ],
+      "start_time": 244.93085752897352,
+      "end_time": 312.9129438865894,
+      "modified_description": "Melt-Melt 1 tablespoons of softened butter on high heat to burn it"
+     },
+     {
+      "description": "Add-Add 1 large minced garlic cloves to the pan",
+      "step_id": 199,
+      "errors": [
+       {
+        "tag": "Technique Error",
+        "description": "Chop the garlic instead of mincing"
+       }
+      ],
+      "start_time": 288.7001460057947,
+      "end_time": 315.2410975289735,
+      "modified_description": "Add-Add 1 large chopped  garlic clove to the pan"
+     },
+     {
+      "description": "Cook-Cook garlic until fragrant (about 1 minutes). Be careful not to burn garlic",
+      "step_id": 202,
+      "errors": [
+       {
+        "tag": "Timing Error",
+        "description": "Cook until the garlic is burnt"
+       }
+      ],
+      "start_time": 323.6224506415563,
+      "end_time": 377.1699844163907,
+      "modified_description": "Cook-Cook garlic until fragrant (about 1 minutes). burn garlic"
+     },
+     {
+      "description": "Add-Add the zucchini noodles",
+      "step_id": 201,
+      "start_time": 381.826291701159,
+      "end_time": 392.5357984561258,
+      "modified_description": "Add-Drop while add the zucchini noodles into the pan"
+     },
+     {
+      "description": "Add-1/6 cup grated parmesan cheese",
+      "step_id": 193,
+      "errors": [
+       {
+        "tag": "Technique Error",
+        "description": "Spill while adding grated cheese"
+       },
+       {
+        "tag": "Measurement Error",
+        "description": "Add 1/3 cup grated parmesan cheese instead of 1/6 cup"
+       }
+      ],
+      "start_time": 416.7485963369205,
+      "end_time": 453.0677931581126,
+      "modified_description": "Add-1/6 cup grated parmesan cheese; spill"
+     },
+     {
+      "description": "Cook-Cook for 2 minutes or until the zoodles are done",
+      "step_id": 192,
+      "errors": [
+       {
+        "tag": "Technique Error",
+        "description": "Spill outside while sauteing to cook"
+       }
+      ],
+      "start_time": 460.0522540852649,
+      "end_time": 651,
+      "modified_description": "Cook-Spill and burn the zoodles while sauteing to cook"
+     },
+     {
+      "description": "season-pepper to taste",
+      "step_id": 194,
+      "start_time": 511.2716342177152,
+      "end_time": 556.4378148799668
+     },
+     {
+      "description": "season-season with salt",
+      "step_id": 198,
+      "start_time": 562.0253836216887,
+      "end_time": 579.719351303808
+     },
+     {
+      "description": "Remove-Remove from heat",
+      "step_id": 197,
+      "start_time": 603.9321491846026,
+      "end_time": 650.9608527607616
+     },
+     {
+      "description": "Top-Top with more parmesan if desired",
+      "step_id": 195,
+      "start_time": 654.2202678600994,
+      "end_time": 676.1049120985099
+     }
+    ]
+   }
+  }
+ ]
+}

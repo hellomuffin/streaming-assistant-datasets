@@ -1,0 +1,1576 @@
+{
+ "slug": "industreal",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://data.4tu.nl/datasets/b008dd74-020d-4ea4-a8ba-7bb60769d224 → val_p1.zip (05_assy_2_2/…) and test_p1.zip (08_main_0_1/…) members AR_labels.csv, PSR_labels.csv, PSR_labels_with_errors.csv, PSR_labels_raw.csv (zip members read by HTTP range)",
+  "… → all_rgb_videos.zip members 05_assy_2_2.mp4, 08_main_0_1.mp4"
+ ],
+ "access_used": "open download",
+ "note": "Each example is one recording's four label files: AR_labels.csv (fine actions, frame names at 10 fps), PSR_labels_with_errors.csv (frame at which each procedure step is completed, including 'Incorrectly installed …' and 'Remove …' events), PSR_labels.csv (the same without the incorrect installs), and PSR_labels_raw.csv (per-frame assembly-state vector; -1 = component installed incorrectly). Timeline: lane 'mistake' = incorrect installs, 'correction' = removals, 'step' = correct completions (points, no end), 'action' = fine actions.",
+ "examples": [
+  {
+   "title": "05_assy_2_2: toy-car assembly — front bracket installed incorrectly at 148.8 s, loosened and redone by 187.4 s",
+   "video_ref": "all_rgb_videos.zip → 05_assy_2_2.mp4 (recording folder 05_assy_2_2 in val_p1.zip)",
+   "duration_s": 232.3,
+   "clip": "samples/media/industreal_1.mp4",
+   "clip_offset_s": 146,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 1.8,
+     "te": 4.9,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 5.3,
+     "te": 7.5,
+     "lane": "action",
+     "text": "take_objects"
+    },
+    {
+     "t": 5.8,
+     "te": 7.7,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 7.8,
+     "te": 9.5,
+     "lane": "action",
+     "text": "fit_short_brace"
+    },
+    {
+     "t": 9.6,
+     "te": 10.8,
+     "lane": "action",
+     "text": "fit_short_brace"
+    },
+    {
+     "t": 10.8,
+     "te": 11.7,
+     "lane": "action",
+     "text": "take_pin_short"
+    },
+    {
+     "t": 11.7,
+     "te": 12.8,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 12.6,
+     "te": 13.6,
+     "lane": "action",
+     "text": "plug_short_pin"
+    },
+    {
+     "t": 14.5,
+     "te": 15.3,
+     "lane": "action",
+     "text": "take_tooth_washer"
+    },
+    {
+     "t": 15.3,
+     "te": 16.2,
+     "lane": "action",
+     "text": "fit_tooth_washer"
+    },
+    {
+     "t": 16.2,
+     "te": 16.8,
+     "lane": "action",
+     "text": "take_nut"
+    },
+    {
+     "t": 16.7,
+     "te": 17.5,
+     "lane": "action",
+     "text": "fit_nut"
+    },
+    {
+     "t": 18.3,
+     "te": 19.9,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 20.4,
+     "te": 22.0,
+     "lane": "action",
+     "text": "take_long_brace"
+    },
+    {
+     "t": 20.7,
+     "te": null,
+     "lane": "step",
+     "text": "Install front chassis (step 3 completed)"
+    },
+    {
+     "t": 20.7,
+     "te": null,
+     "lane": "step",
+     "text": "Install front chassis pin (step 6 completed)"
+    },
+    {
+     "t": 22.3,
+     "te": 23.3,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 24.1,
+     "te": 26.5,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 26.3,
+     "te": 26.8,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 26.4,
+     "te": 27.6,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 27.8,
+     "te": 29.0,
+     "lane": "action",
+     "text": "take_long_brace"
+    },
+    {
+     "t": 29.5,
+     "te": 35.8,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 31.8,
+     "te": 34.1,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 36.0,
+     "te": 36.9,
+     "lane": "action",
+     "text": "take_pin_short"
+    },
+    {
+     "t": 37.0,
+     "te": 37.9,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 38.3,
+     "te": 39.2,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 39.2,
+     "te": 40.8,
+     "lane": "action",
+     "text": "plug_short_pin"
+    },
+    {
+     "t": 41.2,
+     "te": 42.0,
+     "lane": "action",
+     "text": "take_instruction"
+    },
+    {
+     "t": 42.3,
+     "te": 44.4,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 44.7,
+     "te": 45.8,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 46.1,
+     "te": 46.6,
+     "lane": "action",
+     "text": "take_tooth_washer"
+    },
+    {
+     "t": 46.6,
+     "te": 47.8,
+     "lane": "action",
+     "text": "fit_tooth_washer"
+    },
+    {
+     "t": 48.0,
+     "te": 49.2,
+     "lane": "action",
+     "text": "take_nut"
+    },
+    {
+     "t": 49.2,
+     "te": 50.0,
+     "lane": "action",
+     "text": "fit_nut"
+    },
+    {
+     "t": 50.0,
+     "te": 59.7,
+     "lane": "action",
+     "text": "tighten_nut"
+    },
+    {
+     "t": 53.6,
+     "te": null,
+     "lane": "step",
+     "text": "Install rear chassis (step 9 completed)"
+    },
+    {
+     "t": 53.6,
+     "te": null,
+     "lane": "step",
+     "text": "Install front rear chassis pin (step 15 completed)"
+    },
+    {
+     "t": 59.8,
+     "te": 61.4,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 60.8,
+     "te": 62.0,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 61.5,
+     "te": 62.1,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 62.7,
+     "te": 65.9,
+     "lane": "action",
+     "text": "browse_instruction"
+    },
+    {
+     "t": 68.3,
+     "te": 69.3,
+     "lane": "action",
+     "text": "take_pin_middle"
+    },
+    {
+     "t": 69.8,
+     "te": 71.2,
+     "lane": "action",
+     "text": "plug_pin_middle"
+    },
+    {
+     "t": 70.4,
+     "te": 72.3,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 75.3,
+     "te": 75.8,
+     "lane": "action",
+     "text": "take_round_washer"
+    },
+    {
+     "t": 75.8,
+     "te": 76.8,
+     "lane": "action",
+     "text": "fit_round_washer"
+    },
+    {
+     "t": 79.1,
+     "te": 80.1,
+     "lane": "action",
+     "text": "take_pulley"
+    },
+    {
+     "t": 80.1,
+     "te": 81.0,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 80.9,
+     "te": 82.3,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 81.8,
+     "te": 84.0,
+     "lane": "action",
+     "text": "fit_pulley"
+    },
+    {
+     "t": 83.6,
+     "te": null,
+     "lane": "correction",
+     "text": "Remove rear chassis (step 11 completed)"
+    },
+    {
+     "t": 83.6,
+     "te": null,
+     "lane": "correction",
+     "text": "Remove front rear chassis pin (step 17 completed)"
+    },
+    {
+     "t": 84.0,
+     "te": 87.4,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 87.2,
+     "te": 88.1,
+     "lane": "action",
+     "text": "put_pulley"
+    },
+    {
+     "t": 88.5,
+     "te": 89.6,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 89.6,
+     "te": 89.9,
+     "lane": "action",
+     "text": "take_tooth_washer"
+    },
+    {
+     "t": 89.9,
+     "te": 92.4,
+     "lane": "action",
+     "text": "fit_tooth_washer"
+    },
+    {
+     "t": 92.4,
+     "te": 93.1,
+     "lane": "action",
+     "text": "take_nut"
+    },
+    {
+     "t": 93.3,
+     "te": 95.6,
+     "lane": "action",
+     "text": "fit_nut"
+    },
+    {
+     "t": 95.9,
+     "te": 97.5,
+     "lane": "action",
+     "text": "tighten_nut"
+    },
+    {
+     "t": 97.7,
+     "te": 98.9,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 99.2,
+     "te": null,
+     "lane": "step",
+     "text": "Install rear chassis (step 9 completed)"
+    },
+    {
+     "t": 99.2,
+     "te": null,
+     "lane": "step",
+     "text": "Install front rear chassis pin (step 15 completed)"
+    },
+    {
+     "t": 99.3,
+     "te": 100.3,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 100.6,
+     "te": 101.0,
+     "lane": "action",
+     "text": "take_round_washer"
+    },
+    {
+     "t": 100.9,
+     "te": 101.9,
+     "lane": "action",
+     "text": "fit_round_washer"
+    },
+    {
+     "t": 102.0,
+     "te": 102.6,
+     "lane": "action",
+     "text": "take_pulley"
+    },
+    {
+     "t": 102.6,
+     "te": 104.9,
+     "lane": "action",
+     "text": "fit_pulley"
+    },
+    {
+     "t": 105.0,
+     "te": 106.4,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 106.0,
+     "te": 107.5,
+     "lane": "action",
+     "text": "plug_objects"
+    },
+    {
+     "t": 107.9,
+     "te": 108.5,
+     "lane": "action",
+     "text": "take_round_washer"
+    },
+    {
+     "t": 108.5,
+     "te": 109.0,
+     "lane": "action",
+     "text": "fit_round_washer"
+    },
+    {
+     "t": 109.4,
+     "te": 110.0,
+     "lane": "action",
+     "text": "take_wheel"
+    },
+    {
+     "t": 110.0,
+     "te": 112.6,
+     "lane": "action",
+     "text": "fit_wheel"
+    },
+    {
+     "t": 110.4,
+     "te": 111.7,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 113.2,
+     "te": 114.1,
+     "lane": "action",
+     "text": "take_tooth_washer"
+    },
+    {
+     "t": 114.1,
+     "te": 116.1,
+     "lane": "action",
+     "text": "fit_tooth_washer"
+    },
+    {
+     "t": 116.2,
+     "te": 117.0,
+     "lane": "action",
+     "text": "take_nut"
+    },
+    {
+     "t": 117.0,
+     "te": 118.3,
+     "lane": "action",
+     "text": "fit_nut"
+    },
+    {
+     "t": 119.4,
+     "te": 120.7,
+     "lane": "action",
+     "text": "tighten_nut"
+    },
+    {
+     "t": 120.4,
+     "te": null,
+     "lane": "step",
+     "text": "Install rear wheel assy (step 30 completed)"
+    },
+    {
+     "t": 122.2,
+     "te": 124.0,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 124.8,
+     "te": 125.8,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 125.7,
+     "te": 126.8,
+     "lane": "action",
+     "text": "take_wing_beam"
+    },
+    {
+     "t": 126.1,
+     "te": 127.3,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 128.2,
+     "te": 128.8,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 128.6,
+     "te": 129.7,
+     "lane": "action",
+     "text": "fit_wing_beam"
+    },
+    {
+     "t": 129.8,
+     "te": 131.2,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 132.0,
+     "te": 132.9,
+     "lane": "action",
+     "text": "take_screw_pin"
+    },
+    {
+     "t": 133.2,
+     "te": 134.9,
+     "lane": "action",
+     "text": "plug_screw_pin"
+    },
+    {
+     "t": 135.5,
+     "te": 136.9,
+     "lane": "action",
+     "text": "take_acorn_nut"
+    },
+    {
+     "t": 137.0,
+     "te": 138.9,
+     "lane": "action",
+     "text": "take_tooth_washer"
+    },
+    {
+     "t": 140.0,
+     "te": 141.3,
+     "lane": "action",
+     "text": "fit_tooth_washer"
+    },
+    {
+     "t": 142.5,
+     "te": 143.2,
+     "lane": "action",
+     "text": "put_tooth_washer"
+    },
+    {
+     "t": 143.3,
+     "te": 144.0,
+     "lane": "action",
+     "text": "take_round_washer"
+    },
+    {
+     "t": 145.9,
+     "te": 146.9,
+     "lane": "action",
+     "text": "fit_acorn_nut"
+    },
+    {
+     "t": 146.9,
+     "te": 149.1,
+     "lane": "action",
+     "text": "tighten_acorn_nut"
+    },
+    {
+     "t": 148.8,
+     "te": null,
+     "lane": "mistake",
+     "text": "Incorrectly installed front bracket (step 22 completed)"
+    },
+    {
+     "t": 148.8,
+     "te": null,
+     "lane": "mistake",
+     "text": "Incorrectly installed front bracket screw (step 25 completed)"
+    },
+    {
+     "t": 149.6,
+     "te": 150.7,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 151.2,
+     "te": 152.8,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 155.9,
+     "te": 157.2,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 158.1,
+     "te": 159.0,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 159.4,
+     "te": 166.2,
+     "lane": "action",
+     "text": "loosen_acorn_nut"
+    },
+    {
+     "t": 165.9,
+     "te": 166.6,
+     "lane": "action",
+     "text": "take_objects"
+    },
+    {
+     "t": 167.7,
+     "te": 170.0,
+     "lane": "action",
+     "text": "pull_screw_pin"
+    },
+    {
+     "t": 170.4,
+     "te": 178.3,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 173.6,
+     "te": 174.6,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 180.3,
+     "te": 182.0,
+     "lane": "action",
+     "text": "plug_screw_pin"
+    },
+    {
+     "t": 182.4,
+     "te": 183.7,
+     "lane": "action",
+     "text": "fit_round_washer"
+    },
+    {
+     "t": 183.8,
+     "te": 184.6,
+     "lane": "action",
+     "text": "fit_acorn_nut"
+    },
+    {
+     "t": 184.3,
+     "te": 186.5,
+     "lane": "action",
+     "text": "tighten_acorn_nut"
+    },
+    {
+     "t": 186.4,
+     "te": 187.9,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 187.4,
+     "te": null,
+     "lane": "step",
+     "text": "Install front bracket (step 21 completed)"
+    },
+    {
+     "t": 187.4,
+     "te": null,
+     "lane": "step",
+     "text": "Install front bracket screw (step 24 completed)"
+    },
+    {
+     "t": 187.6,
+     "te": 188.7,
+     "lane": "action",
+     "text": "tighten_acorn_nut"
+    },
+    {
+     "t": 188.5,
+     "te": 189.9,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 190.5,
+     "te": 191.7,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 191.5,
+     "te": 192.7,
+     "lane": "action",
+     "text": "fit_wing"
+    },
+    {
+     "t": 192.9,
+     "te": 194.2,
+     "lane": "action",
+     "text": "take_pin_long"
+    },
+    {
+     "t": 194.2,
+     "te": 195.4,
+     "lane": "action",
+     "text": "take_wheel"
+    },
+    {
+     "t": 196.0,
+     "te": 198.8,
+     "lane": "action",
+     "text": "plug_pin_long"
+    },
+    {
+     "t": 199.1,
+     "te": 201.5,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 199.8,
+     "te": 201.6,
+     "lane": "action",
+     "text": "plug_objects"
+    },
+    {
+     "t": 201.5,
+     "te": 202.2,
+     "lane": "action",
+     "text": "pull_objects"
+    },
+    {
+     "t": 203.0,
+     "te": 203.9,
+     "lane": "action",
+     "text": "take_round_washer"
+    },
+    {
+     "t": 203.9,
+     "te": 205.0,
+     "lane": "action",
+     "text": "fit_round_washer"
+    },
+    {
+     "t": 205.2,
+     "te": 206.1,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 206.5,
+     "te": 215.2,
+     "lane": "action",
+     "text": "plug_objects"
+    },
+    {
+     "t": 206.5,
+     "te": 209.5,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 216.3,
+     "te": 217.0,
+     "lane": "action",
+     "text": "take_round_washer"
+    },
+    {
+     "t": 217.0,
+     "te": 218.0,
+     "lane": "action",
+     "text": "fit_round_washer"
+    },
+    {
+     "t": 218.2,
+     "te": 219.1,
+     "lane": "action",
+     "text": "take_wheel"
+    },
+    {
+     "t": 219.2,
+     "te": 220.3,
+     "lane": "action",
+     "text": "fit_wheel"
+    },
+    {
+     "t": 221.3,
+     "te": 222.1,
+     "lane": "action",
+     "text": "take_tooth_washer"
+    },
+    {
+     "t": 223.0,
+     "te": 223.8,
+     "lane": "action",
+     "text": "take_nut"
+    },
+    {
+     "t": 224.1,
+     "te": 225.0,
+     "lane": "action",
+     "text": "fit_nut"
+    },
+    {
+     "t": 226.9,
+     "te": 228.2,
+     "lane": "action",
+     "text": "tighten_nut"
+    },
+    {
+     "t": 228.1,
+     "te": null,
+     "lane": "step",
+     "text": "Install front wheel assy (step 27 completed)"
+    },
+    {
+     "t": 230.6,
+     "te": 231.5,
+     "lane": "action",
+     "text": "check_instruction"
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": {
+    "05_assy_2_2/PSR_labels_with_errors.csv": "000207.jpg,3,Install front chassis\n000207.jpg,6,Install front chassis pin\n000536.jpg,9,Install rear chassis\n000536.jpg,15,Install front rear chassis pin\n000836.jpg,11,Remove rear chassis\n000836.jpg,17,Remove front rear chassis pin\n000992.jpg,9,Install rear chassis\n000992.jpg,15,Install front rear chassis pin\n001204.jpg,30,Install rear wheel assy\n001488.jpg,22,Incorrectly installed front bracket\n001488.jpg,25,Incorrectly installed front bracket screw\n001874.jpg,21,Install front bracket\n001874.jpg,24,Install front bracket screw\n002281.jpg,27,Install front wheel assy\n",
+    "05_assy_2_2/PSR_labels.csv": "000207.jpg,3,Install front chassis\n000207.jpg,6,Install front chassis pin\n000536.jpg,9,Install rear chassis\n000536.jpg,15,Install front rear chassis pin\n000836.jpg,11,Remove rear chassis\n000836.jpg,17,Remove front rear chassis pin\n000992.jpg,9,Install rear chassis\n000992.jpg,15,Install front rear chassis pin\n001204.jpg,30,Install rear wheel assy\n001874.jpg,21,Install front bracket\n001874.jpg,24,Install front bracket screw\n002281.jpg,27,Install front wheel assy\n",
+    "05_assy_2_2/PSR_labels_raw.csv": "000000.jpg,1,0,0,0,0,0,0,0,0,0,0\n000207.jpg,1,1,1,0,0,0,0,0,0,0,0\n000536.jpg,1,1,1,1,0,1,0,0,0,0,0\n000836.jpg,1,1,1,0,0,0,0,0,0,0,0\n000992.jpg,1,1,1,1,0,1,0,0,0,0,0\n001204.jpg,1,1,1,1,0,1,0,0,0,0,1\n001488.jpg,1,1,1,1,0,1,0,-1,-1,0,1\n001597.jpg,1,1,1,1,0,1,0,0,0,0,1\n001874.jpg,1,1,1,1,0,1,0,1,1,0,1\n002281.jpg,1,1,1,1,0,1,0,1,1,1,1\n",
+    "05_assy_2_2/AR_labels.csv": "05_assy_2_2,7,check_instruction,000018.jpg,000049.jpg\n05_assy_2_2,43,take_objects,000053.jpg,000075.jpg\n05_assy_2_2,7,check_instruction,000058.jpg,000077.jpg\n05_assy_2_2,30,fit_short_brace,000078.jpg,000095.jpg\n05_assy_2_2,30,fit_short_brace,000096.jpg,000108.jpg\n05_assy_2_2,2,take_pin_short,000108.jpg,000117.jpg\n05_assy_2_2,7,check_instruction,000117.jpg,000128.jpg\n05_assy_2_2,3,plug_short_pin,000126.jpg,000136.jpg\n05_assy_2_2,4,take_tooth_washer,000145.jpg,000153.jpg\n05_assy_2_2,31,fit_tooth_washer,000153.jpg,000162.jpg\n05_assy_2_2,5,take_nut,000162.jpg,000168.jpg\n05_assy_2_2,34,fit_nut,000167.jpg,000175.jpg\n05_assy_2_2,7,check_instruction,000183.jpg,000199.jpg\n05_assy_2_2,9,take_long_brace,000204.jpg,000220.jpg\n05_assy_2_2,44,put_partial_model,000223.jpg,000233.jpg\n05_assy_2_2,7,check_instruction,000241.jpg,000265.jpg\n05_assy_2_2,8,take_partial_model,000263.jpg,000268.jpg\n05_assy_2_2,1,align_objects,000264.jpg,000276.jpg\n05_assy_2_2,9,take_long_brace,000278.jpg,000290.jpg\n05_assy_2_2,1,align_objects,000295.jpg,000358.jpg\n05_assy_2_2,7,check_instruction,000318.jpg,000341.jpg\n05_assy_2_2,2,take_pin_short,000360.jpg,000369.jpg\n05_assy_2_2,7,check_instruction,000370.jpg,000379.jpg\n05_assy_2_2,1,align_objects,000383.jpg,000392.jpg\n05_assy_2_2,3,plug_short_pin,000392.jpg,000408.jpg\n05_assy_2_2,11,take_instruction,000412.jpg,000420.jpg\n05_assy_2_2,1,align_objects,000423.jpg,000444.jpg\n05_assy_2_2,1,align_objects,000447.jpg,000458.jpg\n05_assy_2_2,4,take_tooth_washer,000461.jpg,000466.jpg\n05_assy_2_2,31,fit_tooth_washer,000466.jpg,000478.jpg\n05_assy_2_2,5,take_nut,000480.jpg,000492.jpg\n05_assy_2_2,34,fit_nut,000492.jpg,000500.jpg\n05_assy_2_2,6,tighten_nut,000500.jpg,000597.jpg\n05_assy_2_2,1,align_objects,000598.jpg,000614.jpg\n05_assy_2_2,7,check_instruction,000608.jpg,000620.jpg\n05_assy_2_2,44,put_partial_model,000615.jpg,000621.jpg\n05_assy_2_2,29,browse_instruction,000627.jpg,000659.jpg\n05_assy_2_2,20,take_pin_middle,000683.jpg,000693.jpg\n05_assy_2_2,26,plug_pin_middle,000698.jpg,000712.jpg\n05_assy_2_2,7,check_instruction,000704.jpg,000723.jpg\n05_assy_2_2,17,take_round_washer,000753.jpg,000758.jpg\n05_assy_2_2,32,fit_round_washer,000758.jpg,000768.jpg\n05_assy_2_2,27,take_pulley,000791.jpg,000801.jpg\n05_assy_2_2,7,check_instruction,000801.jpg,000810.jpg\n05_assy_2_2,8,take_partial_model,000809.jpg,000823.jpg\n05_assy_2_2,55,fit_pulley,000818.jpg,000840.jpg\n05_assy_2_2,1,align_objects,000840.jpg,000874.jpg\n05_assy_2_2,60,put_pulley,000872.jpg,000881.jpg\n05_assy_2_2,1,align_objects,000885.jpg,000896.jpg\n05_assy_2_2,4,take_tooth_washer,000896.jpg,000899.jpg\n05_assy_2_2,31,fit_tooth_washer,000899.jpg,000924.jpg\n05_assy_2_2,5,take_nut,000924.jpg,000931.jpg\n05_assy_2_2,34,fit_nut,000933.jpg,000956.jpg\n05_assy_2_2,6,tighten_nut,000959.jpg,000975.jpg\n05_assy_2_2,1,align_objects,000977.jpg,000989.jpg\n05_assy_2_2,8,take_partial_model,000993.jpg,001003.jpg\n05_assy_2_2,17,take_round_washer,001006.jpg,001010.jpg\n05_assy_2_2,32,fit_round_washer,001009.jpg,001019.jpg\n05_assy_2_2,27,take_pulley,001020.jpg,001026.jpg\n05_assy_2_2,55,fit_pulley,001026.jpg,001049.jpg\n05_assy_2_2,1,align_objects,001050.jpg,001064.jpg\n05_assy_2_2,71,plug_objects,001060.jpg,001075.jpg\n05_assy_2_2,17,take_round_washer,001079.jpg,001085.jpg\n05_assy_2_2,32,fit_round_washer,001085.jpg,001090.jpg\n05_assy_2_2,21,take_wheel,001094.jpg,001100.jpg\n05_assy_2_2,50,fit_wheel,001100.jpg,001126.jpg\n05_assy_2_2,7,check_instruction,001104.jpg,001117.jpg\n05_assy_2_2,4,take_tooth_washer,001132.jpg,001141.jpg\n05_assy_2_2,31,fit_tooth_washer,001141.jpg,001161.jpg\n05_assy_2_2,5,take_nut,001162.jpg,001170.jpg\n05_assy_2_2,34,fit_nut,001170.jpg,001183.jpg\n05_assy_2_2,6,tighten_nut,001194.jpg,001207.jpg\n05_assy_2_2,7,check_instruction,001222.jpg,001240.jpg\n05_assy_2_2,7,check_instruction,001248.jpg,001258.jpg\n05_assy_2_2,15,take_wing_beam,001257.jpg,001268.jpg\n05_assy_2_2,7,check_instruction,001261.jpg,001273.jpg\n05_assy_2_2,7,check_instruction,001282.jpg,001288.jpg\n05_assy_2_2,56,fit_wing_beam,001286.jpg,001297.jpg\n05_assy_2_2,7,check_instruction,001298.jpg,001312.jpg\n05_assy_2_2,10,take_screw_pin,001320.jpg,001329.jpg\n05_assy_2_2,16,plug_screw_pin,001332.jpg,001349.jpg\n05_assy_2_2,18,take_acorn_nut,001355.jpg,001369.jpg\n05_assy_2_2,4,take_tooth_washer,001370.jpg,001389.jpg\n05_assy_2_2,31,fit_tooth_washer,001400.jpg,001413.jpg\n05_assy_2_2,57,put_tooth_washer,001425.jpg,001432.jpg\n05_assy_2_2,17,take_round_washer,001433.jpg,001440.jpg\n05_assy_2_2,68,fit_acorn_nut,001459.jpg,001469.jpg\n05_assy_2_2,19,tighten_acorn_nut,001469.jpg,001491.jpg\n05_assy_2_2,7,check_instruction,001496.jpg,001507.jpg\n05_assy_2_2,7,check_instruction,001512.jpg,001528.jpg\n05_assy_2_2,7,check_instruction,001559.jpg,001572.jpg\n05_assy_2_2,7,check_instruction,001581.jpg,001590.jpg\n05_assy_2_2,63,loosen_acorn_nut,001594.jpg,001662.jpg\n05_assy_2_2,43,take_objects,001659.jpg,001666.jpg\n05_assy_2_2,61,pull_screw_pin,001677.jpg,001700.jpg\n05_assy_2_2,1,align_objects,001704.jpg,001783.jpg\n05_assy_2_2,7,check_instruction,001736.jpg,001746.jpg\n05_assy_2_2,16,plug_screw_pin,001803.jpg,001820.jpg\n05_assy_2_2,32,fit_round_washer,001824.jpg,001837.jpg\n05_assy_2_2,68,fit_acorn_nut,001838.jpg,001846.jpg\n05_assy_2_2,19,tighten_acorn_nut,001843.jpg,001865.jpg\n05_assy_2_2,1,align_objects,001864.jpg,001879.jpg\n05_assy_2_2,19,tighten_acorn_nut,001876.jpg,001887.jpg\n05_assy_2_2,7,check_instruction,001885.jpg,001899.jpg\n05_assy_2_2,7,check_instruction,001905.jpg,001917.jpg\n05_assy_2_2,69,fit_wing,001915.jpg,001927.jpg\n05_assy_2_2,13,take_pin_long,001929.jpg,001942.jpg\n05_assy_2_2,21,take_wheel,001942.jpg,001954.jpg\n05_assy_2_2,22,plug_pin_long,001960.jpg,001988.jpg\n05_assy_2_2,1,align_objects,001991.jpg,002015.jpg\n05_assy_2_2,71,plug_objects,001998.jpg,002016.jpg\n05_assy_2_2,41,pull_objects,002015.jpg,002022.jpg\n05_assy_2_2,17,take_round_washer,002030.jpg,002039.jpg\n05_assy_2_2,32,fit_round_washer,002039.jpg,002050.jpg\n05_assy_2_2,7,check_instruction,002052.jpg,002061.jpg\n05_assy_2_2,71,plug_objects,002065.jpg,002152.jpg\n05_assy_2_2,1,align_objects,002065.jpg,002095.jpg\n05_assy_2_2,17,take_round_washer,002163.jpg,002170.jpg\n05_assy_2_2,32,fit_round_washer,002170.jpg,002180.jpg\n05_assy_2_2,21,take_wheel,002182.jpg,002191.jpg\n05_assy_2_2,50,fit_wheel,002192.jpg,002203.jpg\n05_assy_2_2,4,take_tooth_washer,002213.jpg,002221.jpg\n05_assy_2_2,5,take_nut,002230.jpg,002238.jpg\n05_assy_2_2,34,fit_nut,002241.jpg,002250.jpg\n05_assy_2_2,6,tighten_nut,002269.jpg,002282.jpg\n05_assy_2_2,7,check_instruction,002306.jpg,002315.jpg\n"
+   }
+  },
+  {
+   "title": "08_main_0_1: maintenance — rear chassis pin installed incorrectly at 66.4 s, short rear chassis removed at 80.3 s and reinstalled",
+   "video_ref": "all_rgb_videos.zip → 08_main_0_1.mp4 (recording folder 08_main_0_1 in test_p1.zip)",
+   "duration_s": 259.5,
+   "clip": "samples/media/industreal_2.mp4",
+   "clip_offset_s": 64,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 1.8,
+     "te": 2.5,
+     "lane": "action",
+     "text": "loosen_nut"
+    },
+    {
+     "t": 2.5,
+     "te": 3.2,
+     "lane": "action",
+     "text": "take_nut"
+    },
+    {
+     "t": 2.8,
+     "te": null,
+     "lane": "correction",
+     "text": "Remove front rear chassis pin (step 17 completed)"
+    },
+    {
+     "t": 3.2,
+     "te": 5.2,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 4.1,
+     "te": 5.1,
+     "lane": "action",
+     "text": "put_tooth_washer"
+    },
+    {
+     "t": 5.4,
+     "te": 6.7,
+     "lane": "action",
+     "text": "pull_pin_short"
+    },
+    {
+     "t": 6.5,
+     "te": 7.0,
+     "lane": "action",
+     "text": "put_pin_short"
+    },
+    {
+     "t": 7.2,
+     "te": 9.1,
+     "lane": "action",
+     "text": "put_objects"
+    },
+    {
+     "t": 10.2,
+     "te": 15.3,
+     "lane": "action",
+     "text": "loosen_nut"
+    },
+    {
+     "t": 15.3,
+     "te": 15.9,
+     "lane": "action",
+     "text": "take_nut"
+    },
+    {
+     "t": 15.7,
+     "te": null,
+     "lane": "correction",
+     "text": "Remove rear chassis (step 11 completed)"
+    },
+    {
+     "t": 15.7,
+     "te": null,
+     "lane": "correction",
+     "text": "Remove rear rear chassis pin (step 20 completed)"
+    },
+    {
+     "t": 15.7,
+     "te": null,
+     "lane": "correction",
+     "text": "Remove rear wheel assy (step 32 completed)"
+    },
+    {
+     "t": 15.9,
+     "te": 16.7,
+     "lane": "action",
+     "text": "take_tooth_washer"
+    },
+    {
+     "t": 16.7,
+     "te": 18.5,
+     "lane": "action",
+     "text": "put_objects"
+    },
+    {
+     "t": 18.9,
+     "te": 20.1,
+     "lane": "action",
+     "text": "pull_pin_short"
+    },
+    {
+     "t": 21.8,
+     "te": 23.4,
+     "lane": "action",
+     "text": "pull_pin_short"
+    },
+    {
+     "t": 23.4,
+     "te": 24.7,
+     "lane": "action",
+     "text": "put_objects"
+    },
+    {
+     "t": 23.8,
+     "te": 24.9,
+     "lane": "action",
+     "text": "put_pin_short"
+    },
+    {
+     "t": 25.7,
+     "te": 27.7,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 27.8,
+     "te": 29.8,
+     "lane": "action",
+     "text": "take_objects"
+    },
+    {
+     "t": 32.8,
+     "te": 38.6,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 39.2,
+     "te": 45.8,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 45.6,
+     "te": 48.4,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 48.3,
+     "te": 50.1,
+     "lane": "action",
+     "text": "take_pin_short"
+    },
+    {
+     "t": 48.8,
+     "te": 51.7,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 51.7,
+     "te": 55.1,
+     "lane": "action",
+     "text": "plug_short_pin"
+    },
+    {
+     "t": 55.8,
+     "te": 56.9,
+     "lane": "action",
+     "text": "take_tooth_washer"
+    },
+    {
+     "t": 57.5,
+     "te": 60.6,
+     "lane": "action",
+     "text": "fit_tooth_washer"
+    },
+    {
+     "t": 60.6,
+     "te": 61.7,
+     "lane": "action",
+     "text": "take_nut"
+    },
+    {
+     "t": 61.7,
+     "te": 64.0,
+     "lane": "action",
+     "text": "fit_nut"
+    },
+    {
+     "t": 64.0,
+     "te": 66.4,
+     "lane": "action",
+     "text": "tighten_nut"
+    },
+    {
+     "t": 66.4,
+     "te": null,
+     "lane": "mistake",
+     "text": "Incorrectly installed front rear chassis pin (step 16 completed)"
+    },
+    {
+     "t": 66.4,
+     "te": null,
+     "lane": "step",
+     "text": "Install short rear chassis (step 12 completed)"
+    },
+    {
+     "t": 67.6,
+     "te": 69.4,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 69.6,
+     "te": 76.9,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 77.1,
+     "te": 78.3,
+     "lane": "action",
+     "text": "take_partial_model"
+    },
+    {
+     "t": 78.9,
+     "te": 80.1,
+     "lane": "action",
+     "text": "loosen_nut"
+    },
+    {
+     "t": 80.3,
+     "te": null,
+     "lane": "correction",
+     "text": "Remove short rear chassis (step 14 completed)"
+    },
+    {
+     "t": 81.5,
+     "te": 83.7,
+     "lane": "action",
+     "text": "browse_instruction"
+    },
+    {
+     "t": 84.8,
+     "te": 85.6,
+     "lane": "action",
+     "text": "pull_objects"
+    },
+    {
+     "t": 86.3,
+     "te": 87.6,
+     "lane": "action",
+     "text": "pull_objects"
+    },
+    {
+     "t": 87.9,
+     "te": 91.7,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 91.7,
+     "te": 93.1,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 93.3,
+     "te": 95.8,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 95.7,
+     "te": 100.2,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 98.8,
+     "te": 99.9,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 100.3,
+     "te": 101.5,
+     "lane": "action",
+     "text": "take_pin_short"
+    },
+    {
+     "t": 101.9,
+     "te": 103.0,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 103.0,
+     "te": 106.1,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 106.6,
+     "te": 108.0,
+     "lane": "action",
+     "text": "plug_short_pin"
+    },
+    {
+     "t": 108.4,
+     "te": 109.3,
+     "lane": "action",
+     "text": "take_tooth_washer"
+    },
+    {
+     "t": 109.3,
+     "te": 110.6,
+     "lane": "action",
+     "text": "fit_tooth_washer"
+    },
+    {
+     "t": 110.6,
+     "te": 111.2,
+     "lane": "action",
+     "text": "take_nut"
+    },
+    {
+     "t": 111.2,
+     "te": 113.1,
+     "lane": "action",
+     "text": "fit_nut"
+    },
+    {
+     "t": 113.1,
+     "te": 119.6,
+     "lane": "action",
+     "text": "tighten_nut"
+    },
+    {
+     "t": 118.3,
+     "te": null,
+     "lane": "step",
+     "text": "Install short rear chassis (step 12 completed)"
+    },
+    {
+     "t": 118.3,
+     "te": null,
+     "lane": "step",
+     "text": "Install front rear chassis pin (step 15 completed)"
+    },
+    {
+     "t": 119.6,
+     "te": 121.0,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 121.9,
+     "te": 124.6,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 123.7,
+     "te": 124.9,
+     "lane": "action",
+     "text": "put_partial_model"
+    },
+    {
+     "t": 125.2,
+     "te": 126.0,
+     "lane": "action",
+     "text": "take_pin_short"
+    },
+    {
+     "t": 126.1,
+     "te": 127.2,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 127.7,
+     "te": 129.2,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 131.0,
+     "te": 132.7,
+     "lane": "action",
+     "text": "plug_short_pin"
+    },
+    {
+     "t": 132.8,
+     "te": 133.9,
+     "lane": "action",
+     "text": "take_tooth_washer"
+    },
+    {
+     "t": 133.9,
+     "te": 135.2,
+     "lane": "action",
+     "text": "fit_tooth_washer"
+    },
+    {
+     "t": 135.4,
+     "te": 136.2,
+     "lane": "action",
+     "text": "take_nut"
+    },
+    {
+     "t": 136.2,
+     "te": 137.6,
+     "lane": "action",
+     "text": "fit_nut"
+    },
+    {
+     "t": 137.6,
+     "te": 139.0,
+     "lane": "action",
+     "text": "tighten_nut"
+    },
+    {
+     "t": 139.2,
+     "te": null,
+     "lane": "step",
+     "text": "Install rear rear chassis pin (step 18 completed)"
+    },
+    {
+     "t": 139.7,
+     "te": 142.3,
+     "lane": "action",
+     "text": "tighten_nut"
+    },
+    {
+     "t": 142.9,
+     "te": 145.7,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 148.2,
+     "te": 150.2,
+     "lane": "action",
+     "text": "take_objects"
+    },
+    {
+     "t": 148.5,
+     "te": 149.9,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 151.5,
+     "te": 152.1,
+     "lane": "action",
+     "text": "loosen_nut"
+    },
+    {
+     "t": 152.7,
+     "te": 153.6,
+     "lane": "action",
+     "text": "take_objects"
+    },
+    {
+     "t": 154.2,
+     "te": 154.9,
+     "lane": "action",
+     "text": "take_wheel"
+    },
+    {
+     "t": 155.1,
+     "te": 157.3,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 156.8,
+     "te": 157.9,
+     "lane": "action",
+     "text": "put_wheel"
+    },
+    {
+     "t": 158.1,
+     "te": 159.1,
+     "lane": "action",
+     "text": "put_round_washer"
+    },
+    {
+     "t": 159.3,
+     "te": 160.3,
+     "lane": "action",
+     "text": "put_long_brace"
+    },
+    {
+     "t": 160.4,
+     "te": 162.1,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 162.0,
+     "te": 163.5,
+     "lane": "action",
+     "text": "put_long_brace"
+    },
+    {
+     "t": 163.8,
+     "te": 165.2,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 168.5,
+     "te": 169.7,
+     "lane": "action",
+     "text": "plug_pin_middle"
+    },
+    {
+     "t": 169.5,
+     "te": 170.9,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 171.4,
+     "te": 173.6,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 173.9,
+     "te": 174.9,
+     "lane": "action",
+     "text": "take_round_washer"
+    },
+    {
+     "t": 174.8,
+     "te": 175.7,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 174.9,
+     "te": 176.3,
+     "lane": "action",
+     "text": "fit_round_washer"
+    },
+    {
+     "t": 176.7,
+     "te": 177.6,
+     "lane": "action",
+     "text": "take_pulley"
+    },
+    {
+     "t": 177.6,
+     "te": 179.7,
+     "lane": "action",
+     "text": "fit_pulley"
+    },
+    {
+     "t": 179.9,
+     "te": 180.7,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 180.7,
+     "te": 181.5,
+     "lane": "action",
+     "text": "put_objects"
+    },
+    {
+     "t": 181.6,
+     "te": 193.4,
+     "lane": "action",
+     "text": "align_objects"
+    },
+    {
+     "t": 192.2,
+     "te": 194.2,
+     "lane": "action",
+     "text": "plug_objects"
+    },
+    {
+     "t": 194.4,
+     "te": 196.8,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 197.3,
+     "te": 198.9,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 197.8,
+     "te": 199.0,
+     "lane": "action",
+     "text": "take_round_washer"
+    },
+    {
+     "t": 199.0,
+     "te": 200.3,
+     "lane": "action",
+     "text": "fit_round_washer"
+    },
+    {
+     "t": 200.4,
+     "te": 202.1,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 205.1,
+     "te": 206.5,
+     "lane": "action",
+     "text": "take_tooth_washer"
+    },
+    {
+     "t": 206.5,
+     "te": 207.4,
+     "lane": "action",
+     "text": "fit_tooth_washer"
+    },
+    {
+     "t": 208.2,
+     "te": 209.2,
+     "lane": "action",
+     "text": "take_wheel"
+    },
+    {
+     "t": 209.6,
+     "te": 210.9,
+     "lane": "action",
+     "text": "fit_wheel"
+    },
+    {
+     "t": 211.6,
+     "te": 212.7,
+     "lane": "action",
+     "text": "take_nut"
+    },
+    {
+     "t": 213.8,
+     "te": 221.0,
+     "lane": "action",
+     "text": "fit_tooth_washer"
+    },
+    {
+     "t": 222.9,
+     "te": 224.4,
+     "lane": "action",
+     "text": "check_instruction"
+    },
+    {
+     "t": 224.4,
+     "te": 226.0,
+     "lane": "action",
+     "text": "fit_nut"
+    },
+    {
+     "t": 226.0,
+     "te": 228.0,
+     "lane": "action",
+     "text": "tighten_nut"
+    },
+    {
+     "t": 226.7,
+     "te": null,
+     "lane": "step",
+     "text": "Install rear wheel assy (step 30 completed)"
+    },
+    {
+     "t": 228.7,
+     "te": 230.4,
+     "lane": "action",
+     "text": "tighten_nut"
+    },
+    {
+     "t": 231.4,
+     "te": 232.5,
+     "lane": "action",
+     "text": "tighten_nut"
+    },
+    {
+     "t": 243.8,
+     "te": 246.6,
+     "lane": "action",
+     "text": "tighten_nut"
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": {
+    "08_main_0_1/PSR_labels_with_errors.csv": "000028.jpg,17,Remove front rear chassis pin\n000157.jpg,11,Remove rear chassis\n000157.jpg,20,Remove rear rear chassis pin\n000157.jpg,32,Remove rear wheel assy\n000664.jpg,12,Install short rear chassis\n000664.jpg,16,Incorrectly installed front rear chassis pin\n000803.jpg,14,Remove short rear chassis\n001183.jpg,12,Install short rear chassis\n001183.jpg,15,Install front rear chassis pin\n001392.jpg,18,Install rear rear chassis pin\n002267.jpg,30,Install rear wheel assy\n",
+    "08_main_0_1/PSR_labels.csv": "000028.jpg,17,Remove front rear chassis pin\n000157.jpg,11,Remove rear chassis\n000157.jpg,20,Remove rear rear chassis pin\n000157.jpg,32,Remove rear wheel assy\n000664.jpg,12,Install short rear chassis\n000803.jpg,14,Remove short rear chassis\n001183.jpg,12,Install short rear chassis\n001183.jpg,15,Install front rear chassis pin\n001392.jpg,18,Install rear rear chassis pin\n002267.jpg,30,Install rear wheel assy\n",
+    "08_main_0_1/PSR_labels_raw.csv": "000000.jpg,1,1,1,1,0,1,1,1,1,1,1\n000028.jpg,1,1,1,1,0,0,1,1,1,1,1\n000157.jpg,1,1,1,0,0,0,0,1,1,1,0\n000664.jpg,1,1,1,0,1,-1,0,1,1,1,0\n000803.jpg,1,1,1,0,0,0,0,1,1,1,0\n001183.jpg,1,1,1,0,1,1,0,1,1,1,0\n001392.jpg,1,1,1,0,1,1,1,1,1,1,0\n002267.jpg,1,1,1,0,1,1,1,1,1,1,1\n",
+    "08_main_0_1/AR_labels.csv": "08_main_0_1,39,loosen_nut,000018.jpg,000025.jpg\n08_main_0_1,5,take_nut,000025.jpg,000032.jpg\n08_main_0_1,7,check_instruction,000032.jpg,000052.jpg\n08_main_0_1,57,put_tooth_washer,000041.jpg,000051.jpg\n08_main_0_1,46,pull_pin_short,000054.jpg,000067.jpg\n08_main_0_1,47,put_pin_short,000065.jpg,000070.jpg\n08_main_0_1,45,put_objects,000072.jpg,000091.jpg\n08_main_0_1,39,loosen_nut,000102.jpg,000153.jpg\n08_main_0_1,5,take_nut,000153.jpg,000159.jpg\n08_main_0_1,4,take_tooth_washer,000159.jpg,000167.jpg\n08_main_0_1,45,put_objects,000167.jpg,000185.jpg\n08_main_0_1,46,pull_pin_short,000189.jpg,000201.jpg\n08_main_0_1,46,pull_pin_short,000218.jpg,000234.jpg\n08_main_0_1,45,put_objects,000234.jpg,000247.jpg\n08_main_0_1,47,put_pin_short,000238.jpg,000249.jpg\n08_main_0_1,7,check_instruction,000257.jpg,000277.jpg\n08_main_0_1,43,take_objects,000278.jpg,000298.jpg\n08_main_0_1,7,check_instruction,000328.jpg,000386.jpg\n08_main_0_1,7,check_instruction,000392.jpg,000458.jpg\n08_main_0_1,1,align_objects,000456.jpg,000484.jpg\n08_main_0_1,2,take_pin_short,000483.jpg,000501.jpg\n08_main_0_1,7,check_instruction,000488.jpg,000517.jpg\n08_main_0_1,3,plug_short_pin,000517.jpg,000551.jpg\n08_main_0_1,4,take_tooth_washer,000558.jpg,000569.jpg\n08_main_0_1,31,fit_tooth_washer,000575.jpg,000606.jpg\n08_main_0_1,5,take_nut,000606.jpg,000617.jpg\n08_main_0_1,34,fit_nut,000617.jpg,000640.jpg\n08_main_0_1,6,tighten_nut,000640.jpg,000664.jpg\n08_main_0_1,7,check_instruction,000676.jpg,000694.jpg\n08_main_0_1,7,check_instruction,000696.jpg,000769.jpg\n08_main_0_1,8,take_partial_model,000771.jpg,000783.jpg\n08_main_0_1,39,loosen_nut,000789.jpg,000801.jpg\n08_main_0_1,29,browse_instruction,000815.jpg,000837.jpg\n08_main_0_1,41,pull_objects,000848.jpg,000856.jpg\n08_main_0_1,41,pull_objects,000863.jpg,000876.jpg\n08_main_0_1,7,check_instruction,000879.jpg,000917.jpg\n08_main_0_1,7,check_instruction,000917.jpg,000931.jpg\n08_main_0_1,7,check_instruction,000933.jpg,000958.jpg\n08_main_0_1,1,align_objects,000957.jpg,001002.jpg\n08_main_0_1,7,check_instruction,000988.jpg,000999.jpg\n08_main_0_1,2,take_pin_short,001003.jpg,001015.jpg\n08_main_0_1,7,check_instruction,001019.jpg,001030.jpg\n08_main_0_1,7,check_instruction,001030.jpg,001061.jpg\n08_main_0_1,3,plug_short_pin,001066.jpg,001080.jpg\n08_main_0_1,4,take_tooth_washer,001084.jpg,001093.jpg\n08_main_0_1,31,fit_tooth_washer,001093.jpg,001106.jpg\n08_main_0_1,5,take_nut,001106.jpg,001112.jpg\n08_main_0_1,34,fit_nut,001112.jpg,001131.jpg\n08_main_0_1,6,tighten_nut,001131.jpg,001196.jpg\n08_main_0_1,1,align_objects,001196.jpg,001210.jpg\n08_main_0_1,7,check_instruction,001219.jpg,001246.jpg\n08_main_0_1,44,put_partial_model,001237.jpg,001249.jpg\n08_main_0_1,2,take_pin_short,001252.jpg,001260.jpg\n08_main_0_1,7,check_instruction,001261.jpg,001272.jpg\n08_main_0_1,7,check_instruction,001277.jpg,001292.jpg\n08_main_0_1,3,plug_short_pin,001310.jpg,001327.jpg\n08_main_0_1,4,take_tooth_washer,001328.jpg,001339.jpg\n08_main_0_1,31,fit_tooth_washer,001339.jpg,001352.jpg\n08_main_0_1,5,take_nut,001354.jpg,001362.jpg\n08_main_0_1,34,fit_nut,001362.jpg,001376.jpg\n08_main_0_1,6,tighten_nut,001376.jpg,001390.jpg\n08_main_0_1,6,tighten_nut,001397.jpg,001423.jpg\n08_main_0_1,7,check_instruction,001429.jpg,001457.jpg\n08_main_0_1,43,take_objects,001482.jpg,001502.jpg\n08_main_0_1,7,check_instruction,001485.jpg,001499.jpg\n08_main_0_1,39,loosen_nut,001515.jpg,001521.jpg\n08_main_0_1,43,take_objects,001527.jpg,001536.jpg\n08_main_0_1,21,take_wheel,001542.jpg,001549.jpg\n08_main_0_1,7,check_instruction,001551.jpg,001573.jpg\n08_main_0_1,36,put_wheel,001568.jpg,001579.jpg\n08_main_0_1,54,put_round_washer,001581.jpg,001591.jpg\n08_main_0_1,48,put_long_brace,001593.jpg,001603.jpg\n08_main_0_1,7,check_instruction,001604.jpg,001621.jpg\n08_main_0_1,48,put_long_brace,001620.jpg,001635.jpg\n08_main_0_1,7,check_instruction,001638.jpg,001652.jpg\n08_main_0_1,26,plug_pin_middle,001685.jpg,001697.jpg\n08_main_0_1,7,check_instruction,001695.jpg,001709.jpg\n08_main_0_1,7,check_instruction,001714.jpg,001736.jpg\n08_main_0_1,17,take_round_washer,001739.jpg,001749.jpg\n08_main_0_1,7,check_instruction,001748.jpg,001757.jpg\n08_main_0_1,32,fit_round_washer,001749.jpg,001763.jpg\n08_main_0_1,27,take_pulley,001767.jpg,001776.jpg\n08_main_0_1,55,fit_pulley,001776.jpg,001797.jpg\n08_main_0_1,1,align_objects,001799.jpg,001807.jpg\n08_main_0_1,45,put_objects,001807.jpg,001815.jpg\n08_main_0_1,1,align_objects,001816.jpg,001934.jpg\n08_main_0_1,71,plug_objects,001922.jpg,001942.jpg\n08_main_0_1,7,check_instruction,001944.jpg,001968.jpg\n08_main_0_1,7,check_instruction,001973.jpg,001989.jpg\n08_main_0_1,17,take_round_washer,001978.jpg,001990.jpg\n08_main_0_1,32,fit_round_washer,001990.jpg,002003.jpg\n08_main_0_1,7,check_instruction,002004.jpg,002021.jpg\n08_main_0_1,4,take_tooth_washer,002051.jpg,002065.jpg\n08_main_0_1,31,fit_tooth_washer,002065.jpg,002074.jpg\n08_main_0_1,21,take_wheel,002082.jpg,002092.jpg\n08_main_0_1,50,fit_wheel,002096.jpg,002109.jpg\n08_main_0_1,5,take_nut,002116.jpg,002127.jpg\n08_main_0_1,31,fit_tooth_washer,002138.jpg,002210.jpg\n08_main_0_1,7,check_instruction,002229.jpg,002244.jpg\n08_main_0_1,34,fit_nut,002244.jpg,002260.jpg\n08_main_0_1,6,tighten_nut,002260.jpg,002280.jpg\n08_main_0_1,6,tighten_nut,002287.jpg,002304.jpg\n08_main_0_1,6,tighten_nut,002314.jpg,002325.jpg\n08_main_0_1,6,tighten_nut,002438.jpg,002466.jpg\n"
+   }
+  }
+ ]
+}

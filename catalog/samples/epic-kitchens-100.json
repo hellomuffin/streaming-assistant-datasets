@@ -1,0 +1,997 @@
+{
+ "slug": "epic-kitchens-100",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://github.com/epic-kitchens/epic-kitchens-100-annotations/blob/master/EPIC_100_train.csv (rows for P01_03, P02_07)",
+  "https://github.com/epic-kitchens/epic-sounds-annotations/blob/main/EPIC_Sounds_train.csv (same videos)",
+  "EPIC_100_video_info.csv (durations)"
+ ],
+ "access_used": "open download",
+ "note": "Each example is one short video's complete rows from EPIC_100_train.csv (the participant's own spoken narration such as 'take knife', its start/stop, parsed verb and noun classes; lane 'narration') and from the EPIC-SOUNDS train CSV (audio-event intervals with a free description and class; lane 'event'). No clip: the videos are under the EPIC-KITCHENS licence and are not redistributed here.",
+ "examples": [
+  {
+   "title": "P01_03 (P01's kitchen, 118.9 s): 42 narrated action segments + 23 audio-event segments",
+   "video_ref": "P01_03.MP4 (1920x1080, 59.94 fps)",
+   "duration_s": 118.85,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.27,
+     "te": 2.11,
+     "lane": "narration",
+     "text": "open door"
+    },
+    {
+     "t": 3.25,
+     "te": 5.88,
+     "lane": "narration",
+     "text": "close door"
+    },
+    {
+     "t": 4.162,
+     "te": 5.662,
+     "lane": "event",
+     "text": "sound: rustle (paper rustle)"
+    },
+    {
+     "t": 4.88,
+     "te": 6.04,
+     "lane": "narration",
+     "text": "switch on lights"
+    },
+    {
+     "t": 6.57,
+     "te": 8.42,
+     "lane": "narration",
+     "text": "adjust lights"
+    },
+    {
+     "t": 8.662,
+     "te": 10.231,
+     "lane": "event",
+     "text": "sound: footstep (footstep)"
+    },
+    {
+     "t": 11.211,
+     "te": 11.651,
+     "lane": "event",
+     "text": "sound: footstep (footstep)"
+    },
+    {
+     "t": 11.61,
+     "te": 13.12,
+     "lane": "narration",
+     "text": "open fridge"
+    },
+    {
+     "t": 13.57,
+     "te": 14.56,
+     "lane": "narration",
+     "text": "take soy milk"
+    },
+    {
+     "t": 14.86,
+     "te": 15.67,
+     "lane": "narration",
+     "text": "take container"
+    },
+    {
+     "t": 16.87,
+     "te": 17.98,
+     "lane": "narration",
+     "text": "put back container"
+    },
+    {
+     "t": 18.54,
+     "te": 19.25,
+     "lane": "narration",
+     "text": "take container"
+    },
+    {
+     "t": 19.68,
+     "te": 22.53,
+     "lane": "narration",
+     "text": "close fridge"
+    },
+    {
+     "t": 21.298,
+     "te": 22.184,
+     "lane": "event",
+     "text": "sound: open / close (scrub / scrape / scour / wipe)"
+    },
+    {
+     "t": 22.731,
+     "te": 24.571,
+     "lane": "event",
+     "text": "sound: footstep (footstep)"
+    },
+    {
+     "t": 24.77,
+     "te": 25.93,
+     "lane": "narration",
+     "text": "put down container"
+    },
+    {
+     "t": 24.93,
+     "te": 25.87,
+     "lane": "narration",
+     "text": "put down soy milk"
+    },
+    {
+     "t": 26.856,
+     "te": 27.69,
+     "lane": "event",
+     "text": "sound: footstep (footstep)"
+    },
+    {
+     "t": 27.36,
+     "te": 28.98,
+     "lane": "narration",
+     "text": "take table cloth"
+    },
+    {
+     "t": 29.565,
+     "te": 31.19,
+     "lane": "event",
+     "text": "sound: footstep (footstep)"
+    },
+    {
+     "t": 30.48,
+     "te": 33.39,
+     "lane": "narration",
+     "text": "move bottle"
+    },
+    {
+     "t": 32.032,
+     "te": 33.866,
+     "lane": "event",
+     "text": "sound: slide object (drag / move / pull object)"
+    },
+    {
+     "t": 32.98,
+     "te": 34.46,
+     "lane": "narration",
+     "text": "move glass"
+    },
+    {
+     "t": 35.74,
+     "te": 39.04,
+     "lane": "narration",
+     "text": "unfold tablecloth"
+    },
+    {
+     "t": 38.09,
+     "te": 42.42,
+     "lane": "narration",
+     "text": "pull down tablecloth"
+    },
+    {
+     "t": 41.038,
+     "te": 43.938,
+     "lane": "event",
+     "text": "sound: scrub / scrape / scour / wipe (scrub / scrape / scour / wipe)"
+    },
+    {
+     "t": 45.67,
+     "te": 47.7,
+     "lane": "narration",
+     "text": "open cupboard"
+    },
+    {
+     "t": 47.693,
+     "te": 49.752,
+     "lane": "event",
+     "text": "sound: open / close (open / close drawer)"
+    },
+    {
+     "t": 48.03,
+     "te": 49.25,
+     "lane": "narration",
+     "text": "take cup"
+    },
+    {
+     "t": 50.75,
+     "te": 51.6,
+     "lane": "narration",
+     "text": "put down cup"
+    },
+    {
+     "t": 51.7,
+     "te": 52.95,
+     "lane": "narration",
+     "text": "take soy milk"
+    },
+    {
+     "t": 52.916,
+     "te": 54.896,
+     "lane": "event",
+     "text": "sound: stir / mix / whisk (stir / mix / whisk food)"
+    },
+    {
+     "t": 53.06,
+     "te": 55.72,
+     "lane": "narration",
+     "text": "shake soy milk"
+    },
+    {
+     "t": 55.68,
+     "te": 57.63,
+     "lane": "narration",
+     "text": "open soy milk"
+    },
+    {
+     "t": 57.87,
+     "te": 64.78,
+     "lane": "narration",
+     "text": "pour soy milk"
+    },
+    {
+     "t": 59.309,
+     "te": 63.639,
+     "lane": "event",
+     "text": "sound: pour (water splash)"
+    },
+    {
+     "t": 64.87,
+     "te": 66.48,
+     "lane": "narration",
+     "text": "close soy milk"
+    },
+    {
+     "t": 66.156,
+     "te": 70.481,
+     "lane": "event",
+     "text": "sound: footstep (footstep)"
+    },
+    {
+     "t": 69.59,
+     "te": 71.17,
+     "lane": "narration",
+     "text": "open fridge"
+    },
+    {
+     "t": 70.571,
+     "te": 71.207,
+     "lane": "event",
+     "text": "sound: open / close (open / close drawer)"
+    },
+    {
+     "t": 71.27,
+     "te": 72.11,
+     "lane": "narration",
+     "text": "put down the soy milk"
+    },
+    {
+     "t": 71.707,
+     "te": 73.106,
+     "lane": "event",
+     "text": "sound: open / close (clang / clatter)"
+    },
+    {
+     "t": 72.14,
+     "te": 73.46000000000001,
+     "lane": "narration",
+     "text": "close fridge"
+    },
+    {
+     "t": 73.73,
+     "te": 75.981,
+     "lane": "event",
+     "text": "sound: footstep (footstep)"
+    },
+    {
+     "t": 76.3,
+     "te": 77.05,
+     "lane": "narration",
+     "text": "open drawer"
+    },
+    {
+     "t": 77.856,
+     "te": 78.961,
+     "lane": "event",
+     "text": "sound: metal-only collision (clang / clatter)"
+    },
+    {
+     "t": 78.34,
+     "te": 79.35,
+     "lane": "narration",
+     "text": "take spoon"
+    },
+    {
+     "t": 79.45,
+     "te": 80.45,
+     "lane": "narration",
+     "text": "close drawer"
+    },
+    {
+     "t": 81.84,
+     "te": 82.6,
+     "lane": "narration",
+     "text": "put down spoon"
+    },
+    {
+     "t": 83.34,
+     "te": 84.22,
+     "lane": "narration",
+     "text": "open cupboard"
+    },
+    {
+     "t": 84.616,
+     "te": 86.106,
+     "lane": "event",
+     "text": "sound: pour (clang / clatter)"
+    },
+    {
+     "t": 85.24,
+     "te": 87.39,
+     "lane": "narration",
+     "text": "take cereals"
+    },
+    {
+     "t": 85.73,
+     "te": 86.889,
+     "lane": "event",
+     "text": "sound: rustle (paper rustle)"
+    },
+    {
+     "t": 87.74,
+     "te": 89.45,
+     "lane": "narration",
+     "text": "close cupboard"
+    },
+    {
+     "t": 89.461,
+     "te": 90.981,
+     "lane": "event",
+     "text": "sound: open / close (open / close drawer)"
+    },
+    {
+     "t": 92.19,
+     "te": 94.94,
+     "lane": "event",
+     "text": "sound: scrub / scrape / scour / wipe (scrub / scrape / scour / wipe)"
+    },
+    {
+     "t": 92.35,
+     "te": 95.00999999999999,
+     "lane": "narration",
+     "text": "put down cereals"
+    },
+    {
+     "t": 94.481,
+     "te": 114.291,
+     "lane": "event",
+     "text": "sound: rustle (paper rustle)"
+    },
+    {
+     "t": 95.00999999999999,
+     "te": 97.28,
+     "lane": "narration",
+     "text": "open cereal bag"
+    },
+    {
+     "t": 97.61,
+     "te": 98.71000000000001,
+     "lane": "narration",
+     "text": "extract bag"
+    },
+    {
+     "t": 100.11,
+     "te": 102.44,
+     "lane": "narration",
+     "text": "unfold bag"
+    },
+    {
+     "t": 103.84,
+     "te": 108.85,
+     "lane": "narration",
+     "text": "pour cereals"
+    },
+    {
+     "t": 107.66,
+     "te": 112.7,
+     "lane": "narration",
+     "text": "still pouring cereals"
+    },
+    {
+     "t": 113.34,
+     "te": 114.65,
+     "lane": "narration",
+     "text": "put down bag"
+    },
+    {
+     "t": 352.2,
+     "te": 522.0,
+     "lane": "event",
+     "text": "sound: kettle / mixer / appliance (tap running)"
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": {
+    "EPIC_100_train.csv (header + rows for P01_03)": "narration_id,participant_id,video_id,narration_timestamp,start_timestamp,stop_timestamp,start_frame,stop_frame,narration,verb,verb_class,noun,noun_class,all_nouns,all_noun_classes\nP01_03_0,P01,P01_03,00:00:00.610,00:00:00.27,00:00:02.11,16,126,open door,open,3,door,3,['door'],[3]\nP01_03_1,P01,P01_03,00:00:03.540,00:00:03.25,00:00:05.88,195,352,close door,close,4,door,3,['door'],[3]\nP01_03_10,P01,P01_03,00:00:24.350,00:00:24.77,00:00:25.93,1486,1555,put down container,put-down,1,container,21,['container'],[21]\nP01_03_11,P01,P01_03,00:00:25.350,00:00:24.93,00:00:25.87,1495,1552,put down soy milk,put-down,1,milk:soy,64,['milk:soy'],[64]\nP01_03_12,P01,P01_03,00:00:28.040,00:00:27.36,00:00:28.98,1641,1738,take table cloth,take,0,cloth:table,17,['cloth:table'],[17]\nP01_03_13,P01,P01_03,00:00:31.680,00:00:30.48,00:00:33.39,1828,2003,move bottle,move,11,bottle,15,['bottle'],[15]\nP01_03_14,P01,P01_03,00:00:33.140,00:00:32.98,00:00:34.46,1978,2067,move glass,move,11,glass,10,['glass'],[10]\nP01_03_15,P01,P01_03,00:00:36.440,00:00:35.74,00:00:39.04,2144,2342,unfold tablecloth,unfold,39,tablecloth,17,['tablecloth'],[17]\nP01_03_16,P01,P01_03,00:00:38.230,00:00:38.09,00:00:42.42,2285,2545,pull down tablecloth,pull-down,31,tablecloth,17,['tablecloth'],[17]\nP01_03_17,P01,P01_03,00:00:46.280,00:00:45.67,00:00:47.70,2740,2862,open cupboard,open,3,cupboard,3,['cupboard'],[3]\nP01_03_18,P01,P01_03,00:00:48.190,00:00:48.03,00:00:49.25,2881,2955,take cup,take,0,cup,13,['cup'],[13]\nP01_03_19,P01,P01_03,00:00:50.700,00:00:50.75,00:00:51.60,3045,3096,put down cup,put-down,1,cup,13,['cup'],[13]\nP01_03_2,P01,P01_03,00:00:04.610,00:00:04.88,00:00:06.04,292,362,switch on lights,switch-on,6,light,114,['light'],[114]\nP01_03_20,P01,P01_03,00:00:52.190,00:00:51.70,00:00:52.95,3102,3177,take soy milk,take,0,milk:soy,64,['milk:soy'],[64]\nP01_03_21,P01,P01_03,00:00:54.309,00:00:53.06,00:00:55.72,3183,3343,shake soy milk,shake,15,milk:soy,64,['milk:soy'],[64]\nP01_03_22,P01,P01_03,00:00:56.460,00:00:55.68,00:00:57.63,3340,3457,open soy milk,open,3,milk:soy,64,['milk:soy'],[64]\nP01_03_23,P01,P01_03,00:00:58.590,00:00:57.87,00:01:04.78,3472,3886,pour soy milk,pour,9,milk:soy,64,['milk:soy'],[64]\nP01_03_24,P01,P01_03,00:01:04.930,00:01:04.87,00:01:06.48,3892,3988,close soy milk,close,4,milk:soy,64,['milk:soy'],[64]\nP01_03_25,P01,P01_03,00:01:10.570,00:01:09.59,00:01:11.17,4175,4270,open fridge,open,3,fridge,12,['fridge'],[12]\nP01_03_26,P01,P01_03,00:01:11.570,00:01:11.27,00:01:12.11,4276,4326,put down the soy milk,put-down,1,milk:soy,64,['milk:soy'],[64]\nP01_03_27,P01,P01_03,00:01:12.740,00:01:12.14,00:01:13.46,4328,4407,close fridge,close,4,fridge,12,['fridge'],[12]\nP01_03_28,P01,P01_03,00:01:16.540,00:01:16.30,00:01:17.05,4578,4623,open drawer,open,3,drawer,8,['drawer'],[8]\nP01_03_29,P01,P01_03,00:01:18.310,00:01:18.34,00:01:19.35,4700,4761,take spoon,take,0,spoon,1,['spoon'],[1]\nP01_03_3,P01,P01_03,00:00:06.450,00:00:06.57,00:00:08.42,394,505,adjust lights,adjust,17,light,114,['light'],[114]\nP01_03_30,P01,P01_03,00:01:19.540,00:01:19.45,00:01:20.45,4767,4827,close drawer,close,4,drawer,8,['drawer'],[8]\nP01_03_31,P01,P01_03,00:01:20.540,00:01:21.84,00:01:22.60,4910,4956,put down spoon,put-down,1,spoon,1,['spoon'],[1]\nP01_03_32,P01,P01_03,00:01:23.240,00:01:23.34,00:01:24.22,5000,5053,open cupboard,open,3,cupboard,3,['cupboard'],[3]\nP01_03_33,P01,P01_03,00:01:26.409,00:01:25.24,00:01:27.39,5114,5243,take cereals,take,0,cereal,99,['cereal'],[99]\nP01_03_34,P01,P01_03,00:01:27.909,00:01:27.74,00:01:29.45,5264,5367,close cupboard,close,4,cupboard,3,['cupboard'],[3]\nP01_03_35,P01,P01_03,00:01:29.010,00:01:32.35,00:01:35.01,5541,5700,put down cereals,put-down,1,cereal,99,['cereal'],[99]\nP01_03_36,P01,P01_03,00:01:35.189,00:01:35.01,00:01:37.28,5700,5836,open cereal bag,open,3,bag:cereal,19,['bag:cereal'],[19]\nP01_03_37,P01,P01_03,00:01:37.890,00:01:37.61,00:01:38.71,5856,5922,extract bag,extract,12,bag,19,['bag'],[19]\nP01_03_38,P01,P01_03,00:01:41.549,00:01:40.11,00:01:42.44,6006,6146,unfold bag,unfold,39,bag,19,['bag'],[19]\nP01_03_39,P01,P01_03,00:01:44.530,00:01:43.84,00:01:48.85,6230,6531,pour cereals,pour,9,cereal,99,['cereal'],[99]\nP01_03_4,P01,P01_03,00:00:11.490,00:00:11.61,00:00:13.12,696,787,open fridge,open,3,fridge,12,['fridge'],[12]\nP01_03_40,P01,P01_03,00:01:50.189,00:01:47.66,00:01:52.70,6459,6762,still pouring cereals,pour,9,cereal,99,['cereal'],[99]\nP01_03_41,P01,P01_03,00:01:51.380,00:01:53.34,00:01:54.65,6800,6879,put down bag,put-down,1,bag,19,['bag'],[19]\nP01_03_5,P01,P01_03,00:00:12.879,00:00:13.57,00:00:14.56,814,873,take soy milk,take,0,milk:soy,64,['milk:soy'],[64]\nP01_03_6,P01,P01_03,00:00:14.539,00:00:14.86,00:00:15.67,891,940,take container,take,0,container,21,['container'],[21]\nP01_03_7,P01,P01_03,00:00:15.539,00:00:16.87,00:00:17.98,1012,1078,put back container,put-back,1,container,21,['container'],[21]\nP01_03_8,P01,P01_03,00:00:18.270,00:00:18.54,00:00:19.25,1112,1155,take container,take,0,container,21,['container'],[21]\nP01_03_9,P01,P01_03,00:00:20.840,00:00:19.68,00:00:22.53,1180,1351,close fridge,close,4,fridge,12,['fridge'],[12]",
+    "EPIC-SOUNDS EPIC_Sounds_train.csv (header + rows for P01_03)": "annotation_id,participant_id,video_id,start_timestamp,stop_timestamp,start_sample,stop_sample,description,class,class_id\nP01_03_0,P01,P01_03,00:00:04.162,00:00:05.662,99888,135888,paper rustle,rustle,4\nP01_03_1,P01,P01_03,00:00:08.662,00:00:10.231,207888,245544,footstep,footstep,7\nP01_03_2,P01,P01_03,00:00:11.211,00:00:11.651,269064,279624,footstep,footstep,7\nP01_03_3,P01,P01_03,00:00:21.298,00:00:22.184,511151,532416,scrub / scrape / scour / wipe,open / close,3\nP01_03_4,P01,P01_03,00:00:22.731,00:00:24.571,545544,589704,footstep,footstep,7\nP01_03_5,P01,P01_03,00:00:26.856,00:00:27.690,644544,664560,footstep,footstep,7\nP01_03_6,P01,P01_03,00:00:29.565,00:00:31.190,709560,748560,footstep,footstep,7\nP01_03_7,P01,P01_03,00:00:32.032,00:00:33.866,768767,812784,drag / move / pull object,slide object,9\nP01_03_8,P01,P01_03,00:00:41.038,00:00:43.938,984911,1054512,scrub / scrape / scour / wipe,scrub / scrape / scour / wipe,1\nP01_03_9,P01,P01_03,00:00:47.693,00:00:49.752,1144632,1194048,open / close drawer,open / close,3\nP01_03_10,P01,P01_03,00:00:52.916,00:00:54.896,1269984,1317504,stir / mix / whisk food,stir / mix / whisk,8\nP01_03_11,P01,P01_03,00:00:59.309,00:01:03.639,1423416,1527336,water splash,pour,19\nP01_03_12,P01,P01_03,00:01:06.156,00:01:10.481,1587744,1691543,footstep,footstep,7\nP01_03_13,P01,P01_03,00:01:10.571,00:01:11.207,1693704,1708967,open / close drawer,open / close,3\nP01_03_14,P01,P01_03,00:01:11.707,00:01:13.106,1720967,1754543,clang / clatter,open / close,3\nP01_03_15,P01,P01_03,00:01:13.730,00:01:15.981,1769520,1823543,footstep,footstep,7\nP01_03_16,P01,P01_03,00:01:17.856,00:01:18.961,1868543,1895064,clang / clatter,metal-only collision,0\nP01_03_17,P01,P01_03,00:01:24.616,00:01:26.106,2030784,2066543,clang / clatter,pour,19\nP01_03_18,P01,P01_03,00:01:25.730,00:01:26.889,2057520,2085336,paper rustle,rustle,4\nP01_03_19,P01,P01_03,00:01:29.461,00:01:30.981,2147064,2183544,open / close drawer,open / close,3\nP01_03_20,P01,P01_03,00:01:32.190,00:01:34.940,2212560,2278560,scrub / scrape / scour / wipe,scrub / scrape / scour / wipe,1\nP01_03_21,P01,P01_03,00:01:34.481,00:01:54.291,2267544,2742984,paper rustle,rustle,4\nP01_03_22,P01,P01_03,00:05:52.200,00:08:42.000,8452800,12528000,tap running,kettle / mixer / appliance,33"
+   }
+  },
+  {
+   "title": "P02_07 (108.6 s): 53 narrated action segments + 41 audio-event segments",
+   "video_ref": "P02_07.MP4",
+   "duration_s": 108.58,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 1.234,
+     "te": 1.876,
+     "lane": "event",
+     "text": "sound: beep (beep)"
+    },
+    {
+     "t": 2.119,
+     "te": 3.132,
+     "lane": "event",
+     "text": "sound: footstep (footstep)"
+    },
+    {
+     "t": 3.12,
+     "te": 4.25,
+     "lane": "narration",
+     "text": "turn off alarm"
+    },
+    {
+     "t": 3.184,
+     "te": 3.884,
+     "lane": "event",
+     "text": "sound: beep (beep)"
+    },
+    {
+     "t": 4.5,
+     "te": 5.61,
+     "lane": "narration",
+     "text": "get oven glove"
+    },
+    {
+     "t": 5.013,
+     "te": 5.501,
+     "lane": "event",
+     "text": "sound: metal / cloth collision (clang / clatter)"
+    },
+    {
+     "t": 5.71,
+     "te": 6.64,
+     "lane": "narration",
+     "text": "wear oven glove"
+    },
+    {
+     "t": 6.862,
+     "te": 10.716,
+     "lane": "event",
+     "text": "sound: open / close (open / close drawer)"
+    },
+    {
+     "t": 6.97,
+     "te": 16.96,
+     "lane": "narration",
+     "text": "open drawer"
+    },
+    {
+     "t": 7.99,
+     "te": 9.44,
+     "lane": "narration",
+     "text": "get tongs"
+    },
+    {
+     "t": 10.74,
+     "te": 12.38,
+     "lane": "narration",
+     "text": "open oven"
+    },
+    {
+     "t": 11.258,
+     "te": 15.987,
+     "lane": "event",
+     "text": "sound: hoover / fan (vacuum machine)"
+    },
+    {
+     "t": 12.73,
+     "te": 14.32,
+     "lane": "narration",
+     "text": "pull drawer"
+    },
+    {
+     "t": 13.426,
+     "te": 14.069,
+     "lane": "event",
+     "text": "sound: scrub / scrape / scour / wipe (scrub / scrape / scour / wipe)"
+    },
+    {
+     "t": 14.42,
+     "te": 16.06,
+     "lane": "narration",
+     "text": "pick up tray"
+    },
+    {
+     "t": 14.626,
+     "te": 17.341,
+     "lane": "event",
+     "text": "sound: metal-only collision (clang / clatter)"
+    },
+    {
+     "t": 16.48,
+     "te": 17.5,
+     "lane": "narration",
+     "text": "put tray"
+    },
+    {
+     "t": 18.883,
+     "te": 19.133,
+     "lane": "event",
+     "text": "sound: metal-only collision (clang / clatter)"
+    },
+    {
+     "t": 19.174,
+     "te": 19.591,
+     "lane": "event",
+     "text": "sound: scrub / scrape / scour / wipe (scrub / scrape / scour / wipe)"
+    },
+    {
+     "t": 19.2,
+     "te": 20.7,
+     "lane": "narration",
+     "text": "turn using tongs"
+    },
+    {
+     "t": 19.934,
+     "te": 35.259,
+     "lane": "event",
+     "text": "sound: scrub / scrape / scour / wipe (scrub / scrape / scour / wipe)"
+    },
+    {
+     "t": 20.091,
+     "te": 22.07,
+     "lane": "event",
+     "text": "sound: metal-only collision (clang / clatter)"
+    },
+    {
+     "t": 20.8,
+     "te": 21.8,
+     "lane": "narration",
+     "text": "turn onion rings"
+    },
+    {
+     "t": 22.758,
+     "te": 23.883,
+     "lane": "event",
+     "text": "sound: metal-only collision (clang / clatter)"
+    },
+    {
+     "t": 22.94,
+     "te": 26.94,
+     "lane": "narration",
+     "text": "turn onion rings"
+    },
+    {
+     "t": 24.279,
+     "te": 24.799,
+     "lane": "event",
+     "text": "sound: metal-only collision (clang / clatter)"
+    },
+    {
+     "t": 25.612,
+     "te": 25.883,
+     "lane": "event",
+     "text": "sound: metal-only collision (clang / clatter)"
+    },
+    {
+     "t": 27.2,
+     "te": 29.16,
+     "lane": "narration",
+     "text": "turn"
+    },
+    {
+     "t": 27.21,
+     "te": 30.06,
+     "lane": "narration",
+     "text": "turn onion rings"
+    },
+    {
+     "t": 27.32,
+     "te": 27.737,
+     "lane": "event",
+     "text": "sound: metal-only collision (clang / clatter)"
+    },
+    {
+     "t": 28.945,
+     "te": 31.529,
+     "lane": "event",
+     "text": "sound: metal-only collision (clang / clatter)"
+    },
+    {
+     "t": 29.66,
+     "te": 32.28,
+     "lane": "narration",
+     "text": "turn potato using tongs"
+    },
+    {
+     "t": 32.58,
+     "te": 33.25,
+     "lane": "narration",
+     "text": "put tongs"
+    },
+    {
+     "t": 34.35,
+     "te": 35.29,
+     "lane": "narration",
+     "text": "pick up tray"
+    },
+    {
+     "t": 35.362,
+     "te": 38.195,
+     "lane": "event",
+     "text": "sound: hoover / fan (vacuum machine)"
+    },
+    {
+     "t": 35.39,
+     "te": 36.12,
+     "lane": "narration",
+     "text": "open oven"
+    },
+    {
+     "t": 36.22,
+     "te": 37.8,
+     "lane": "narration",
+     "text": "put tray"
+    },
+    {
+     "t": 37.71,
+     "te": 38.98,
+     "lane": "narration",
+     "text": "close oven"
+    },
+    {
+     "t": 38.81,
+     "te": 41.54,
+     "lane": "narration",
+     "text": "set alarm"
+    },
+    {
+     "t": 42.404,
+     "te": 42.779,
+     "lane": "event",
+     "text": "sound: metal-only collision (clang / clatter)"
+    },
+    {
+     "t": 44.17,
+     "te": 44.96,
+     "lane": "narration",
+     "text": "open cupboard"
+    },
+    {
+     "t": 44.94,
+     "te": 46.42,
+     "lane": "narration",
+     "text": "pick up plate"
+    },
+    {
+     "t": 47.112,
+     "te": 49.549,
+     "lane": "event",
+     "text": "sound: scrub / scrape / scour / wipe (scrub / scrape / scour / wipe)"
+    },
+    {
+     "t": 47.33,
+     "te": 50.42,
+     "lane": "narration",
+     "text": "put plate"
+    },
+    {
+     "t": 50.013,
+     "te": 50.466,
+     "lane": "event",
+     "text": "sound: ceramic-only collision (clang / clatter)"
+    },
+    {
+     "t": 50.404,
+     "te": 50.799,
+     "lane": "event",
+     "text": "sound: rustle (paper rustle)"
+    },
+    {
+     "t": 50.52,
+     "te": 51.58,
+     "lane": "narration",
+     "text": "open fridge"
+    },
+    {
+     "t": 51.68,
+     "te": 52.86,
+     "lane": "narration",
+     "text": "get mayonnaise"
+    },
+    {
+     "t": 52.73,
+     "te": 56.03,
+     "lane": "narration",
+     "text": "open mayonnaise"
+    },
+    {
+     "t": 56.3,
+     "te": 63.91,
+     "lane": "narration",
+     "text": "remove something"
+    },
+    {
+     "t": 56.633,
+     "te": 56.945,
+     "lane": "event",
+     "text": "sound: open / close (open / close drawer)"
+    },
+    {
+     "t": 57.841,
+     "te": 58.133,
+     "lane": "event",
+     "text": "sound: click (click)"
+    },
+    {
+     "t": 58.862,
+     "te": 59.091,
+     "lane": "event",
+     "text": "sound: click (click)"
+    },
+    {
+     "t": 59.56,
+     "te": 65.11,
+     "lane": "narration",
+     "text": "remove cover"
+    },
+    {
+     "t": 63.64,
+     "te": 65.13,
+     "lane": "narration",
+     "text": "open mayonnaise"
+    },
+    {
+     "t": 63.716,
+     "te": 64.154,
+     "lane": "event",
+     "text": "sound: plastic-only collision (clang / clatter)"
+    },
+    {
+     "t": 64.466,
+     "te": 65.237,
+     "lane": "event",
+     "text": "sound: plastic-only collision (clang / clatter)"
+    },
+    {
+     "t": 65.112,
+     "te": 81.195,
+     "lane": "event",
+     "text": "sound: scrub / scrape / scour / wipe (scrub / scrape / scour / wipe)"
+    },
+    {
+     "t": 66.6,
+     "te": 67.76,
+     "lane": "narration",
+     "text": "open trash bin"
+    },
+    {
+     "t": 67.258,
+     "te": 68.508,
+     "lane": "event",
+     "text": "sound: open / close (clang / clatter)"
+    },
+    {
+     "t": 67.38,
+     "te": 68.57,
+     "lane": "narration",
+     "text": "throw cover"
+    },
+    {
+     "t": 68.77,
+     "te": 70.02,
+     "lane": "narration",
+     "text": "close trash bin"
+    },
+    {
+     "t": 68.82,
+     "te": 69.424,
+     "lane": "event",
+     "text": "sound: rustle (paper rustle)"
+    },
+    {
+     "t": 69.28999999999999,
+     "te": 73.97,
+     "lane": "narration",
+     "text": "close mayonnaise"
+    },
+    {
+     "t": 73.65,
+     "te": 77.49,
+     "lane": "narration",
+     "text": "put mayonnaise into plate"
+    },
+    {
+     "t": 74.65,
+     "te": 77.15,
+     "lane": "narration",
+     "text": "squeeze mayonnaise"
+    },
+    {
+     "t": 80.3,
+     "te": 82.27,
+     "lane": "narration",
+     "text": "close mayonnaise"
+    },
+    {
+     "t": 81.904,
+     "te": 85.654,
+     "lane": "event",
+     "text": "sound: plastic / paper collision (clang / clatter)"
+    },
+    {
+     "t": 82.05,
+     "te": 83.18,
+     "lane": "narration",
+     "text": "open cupboard"
+    },
+    {
+     "t": 82.25,
+     "te": 83.0,
+     "lane": "narration",
+     "text": "open fridge"
+    },
+    {
+     "t": 83.28,
+     "te": 84.45,
+     "lane": "narration",
+     "text": "return mayonnaise"
+    },
+    {
+     "t": 84.53999999999999,
+     "te": 85.98,
+     "lane": "narration",
+     "text": "pick up ketchup"
+    },
+    {
+     "t": 86.737,
+     "te": 87.174,
+     "lane": "event",
+     "text": "sound: plastic-only collision (clang / clatter)"
+    },
+    {
+     "t": 86.74,
+     "te": 87.55,
+     "lane": "narration",
+     "text": "open ketchup"
+    },
+    {
+     "t": 87.28,
+     "te": 90.65,
+     "lane": "narration",
+     "text": "squeeze ketchup into plate"
+    },
+    {
+     "t": 87.508,
+     "te": 93.07,
+     "lane": "event",
+     "text": "sound: scrub / scrape / scour / wipe (scrub / scrape / scour / wipe)"
+    },
+    {
+     "t": 89.5,
+     "te": 90.73,
+     "lane": "narration",
+     "text": "close ketchup"
+    },
+    {
+     "t": 90.695,
+     "te": 91.674,
+     "lane": "event",
+     "text": "sound: plastic-only collision (clang / clatter)"
+    },
+    {
+     "t": 90.85,
+     "te": 93.4,
+     "lane": "narration",
+     "text": "return ketchup"
+    },
+    {
+     "t": 92.987,
+     "te": 93.237,
+     "lane": "event",
+     "text": "sound: plastic-only collision (clang / clatter)"
+    },
+    {
+     "t": 93.5,
+     "te": 94.44,
+     "lane": "narration",
+     "text": "close fridge"
+    },
+    {
+     "t": 93.737,
+     "te": 94.549,
+     "lane": "event",
+     "text": "sound: open / close (open / close drawer)"
+    },
+    {
+     "t": 93.77000000000001,
+     "te": 94.42,
+     "lane": "narration",
+     "text": "open drawer"
+    },
+    {
+     "t": 94.57,
+     "te": 95.35,
+     "lane": "narration",
+     "text": "get spoon"
+    },
+    {
+     "t": 94.59100000000001,
+     "te": 95.09100000000001,
+     "lane": "event",
+     "text": "sound: metal-only collision (clang / clatter)"
+    },
+    {
+     "t": 95.195,
+     "te": 96.84100000000001,
+     "lane": "event",
+     "text": "sound: open / close (open / close drawer)"
+    },
+    {
+     "t": 95.47999999999999,
+     "te": 103.74000000000001,
+     "lane": "narration",
+     "text": "mix mayonnaise and ketchup in plate"
+    },
+    {
+     "t": 96.029,
+     "te": 105.112,
+     "lane": "event",
+     "text": "sound: stir / mix / whisk (stir / mix / whisk food)"
+    },
+    {
+     "t": 96.75,
+     "te": 97.44,
+     "lane": "narration",
+     "text": "hold plate"
+    },
+    {
+     "t": 98.24000000000001,
+     "te": 100.17,
+     "lane": "narration",
+     "text": "mix mayonnaise and ketchup in plate"
+    },
+    {
+     "t": 100.029,
+     "te": 100.529,
+     "lane": "event",
+     "text": "sound: metal / ceramic collision (clang / clatter)"
+    },
+    {
+     "t": 104.68,
+     "te": 105.38,
+     "lane": "narration",
+     "text": "stir sauce"
+    },
+    {
+     "t": 105.424,
+     "te": 106.695,
+     "lane": "event",
+     "text": "sound: metal / ceramic collision (clang / clatter)"
+    },
+    {
+     "t": 105.91,
+     "te": 106.91,
+     "lane": "narration",
+     "text": "put plate"
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": {
+    "EPIC_100_train.csv (header + rows for P02_07)": "narration_id,participant_id,video_id,narration_timestamp,start_timestamp,stop_timestamp,start_frame,stop_frame,narration,verb,verb_class,noun,noun_class,all_nouns,all_noun_classes\nP02_07_0,P02,P02_07,00:00:03.520,00:00:03.12,00:00:04.25,187,255,turn off alarm,turn-off,8,alarm,111,['alarm'],[111]\nP02_07_1,P02,P02_07,00:00:04.980,00:00:04.50,00:00:05.61,270,336,get oven glove,get,0,glove:oven,60,['glove:oven'],[60]\nP02_07_10,P02,P02_07,00:00:22.040,00:00:19.20,00:00:20.70,1152,1242,turn using tongs,turn,23,tongs,142,['tongs'],[142]\nP02_07_11,P02,P02_07,00:00:24.280,00:00:20.80,00:00:21.80,1248,1308,turn onion rings,turn,23,ring:onion,261,['ring:onion'],[261]\nP02_07_12,P02,P02_07,00:00:26.450,00:00:22.94,00:00:26.94,1376,1616,turn onion rings,turn,23,ring:onion,261,['ring:onion'],[261]\nP02_07_13,P02,P02_07,00:00:28.960,00:00:27.20,00:00:29.16,1632,1749,turn,turn,23,ring:onion,261,['ring:onion'],[261]\nP02_07_14,P02,P02_07,00:00:25.330,00:00:27.21,00:00:30.06,1632,1803,turn onion rings,turn,23,ring:onion,261,['ring:onion'],[261]\nP02_07_15,P02,P02_07,00:00:30.500,00:00:29.66,00:00:32.28,1779,1936,turn potato using tongs,turn,23,potato,30,\"['potato', 'tongs']\",\"[30, 142]\"\nP02_07_16,P02,P02_07,00:00:33.070,00:00:32.58,00:00:33.25,1954,1995,put tongs,put,1,tongs,142,['tongs'],[142]\nP02_07_17,P02,P02_07,00:00:34.930,00:00:34.35,00:00:35.29,2061,2117,pick up tray,pick-up,0,tray,35,['tray'],[35]\nP02_07_18,P02,P02_07,00:00:35.930,00:00:35.39,00:00:36.12,2123,2167,open oven,open,3,oven,46,['oven'],[46]\nP02_07_19,P02,P02_07,00:00:37.120,00:00:36.22,00:00:37.80,2173,2268,put tray,put,1,tray,35,['tray'],[35]\nP02_07_2,P02,P02_07,00:00:06.770,00:00:05.71,00:00:06.64,342,398,wear oven glove,wear,68,glove:oven,60,['glove:oven'],[60]\nP02_07_20,P02,P02_07,00:00:38.120,00:00:37.71,00:00:38.98,2262,2338,close oven,close,4,oven,46,['oven'],[46]\nP02_07_21,P02,P02_07,00:00:39.320,00:00:38.81,00:00:41.54,2328,2492,set alarm,set,53,alarm,111,['alarm'],[111]\nP02_07_22,P02,P02_07,00:00:44.790,00:00:44.17,00:00:44.96,2650,2697,open cupboard,open,3,cupboard,3,['cupboard'],[3]\nP02_07_23,P02,P02_07,00:00:46.310,00:00:44.94,00:00:46.42,2696,2785,pick up plate,pick-up,0,plate,2,['plate'],[2]\nP02_07_24,P02,P02_07,00:00:49.910,00:00:47.33,00:00:50.42,2839,3025,put plate,put,1,plate,2,['plate'],[2]\nP02_07_25,P02,P02_07,00:00:50.910,00:00:50.52,00:00:51.58,3031,3094,open fridge,open,3,fridge,12,['fridge'],[12]\nP02_07_26,P02,P02_07,00:00:52.790,00:00:51.68,00:00:52.86,3100,3171,get mayonnaise,get,0,mayonnaise,47,['mayonnaise'],[47]\nP02_07_27,P02,P02_07,00:00:54.850,00:00:52.73,00:00:56.03,3163,3361,open mayonnaise,open,3,mayonnaise,47,['mayonnaise'],[47]\nP02_07_28,P02,P02_07,00:00:59.530,00:00:56.30,00:01:03.91,3378,3834,remove something,remove,12,seal,6,['seal'],[6]\nP02_07_29,P02,P02_07,00:01:02.750,00:00:59.56,00:01:05.11,3573,3906,remove cover,remove,12,cover,89,['cover'],[89]\nP02_07_3,P02,P02_07,00:00:07.770,00:00:06.97,00:00:16.96,418,1017,open drawer,open,3,drawer,8,['drawer'],[8]\nP02_07_30,P02,P02_07,00:01:13.509,00:01:03.64,00:01:05.13,3818,3907,open mayonnaise,open,3,mayonnaise,47,['mayonnaise'],[47]\nP02_07_31,P02,P02_07,00:01:06.899,00:01:06.60,00:01:07.76,3995,4065,open trash bin,open,3,bin:trash,36,['bin:trash'],[36]\nP02_07_32,P02,P02_07,00:01:07.990,00:01:07.38,00:01:08.57,4042,4114,throw cover,throw,13,cover,89,['cover'],[89]\nP02_07_33,P02,P02_07,00:01:08.990,00:01:08.77,00:01:10.02,4126,4201,close trash bin,close,4,bin:trash,36,['bin:trash'],[36]\nP02_07_34,P02,P02_07,00:01:10.350,00:01:09.29,00:01:13.97,4157,4438,close mayonnaise,close,4,mayonnaise,47,['mayonnaise'],[47]\nP02_07_35,P02,P02_07,00:01:15.639,00:01:13.65,00:01:17.49,4419,4649,put mayonnaise into plate,put-into,5,mayonnaise,47,\"['mayonnaise', 'plate']\",\"[47, 2]\"\nP02_07_36,P02,P02_07,00:01:19.869,00:01:14.65,00:01:17.15,4479,4629,squeeze mayonnaise,squeeze,18,mayonnaise,47,['mayonnaise'],[47]\nP02_07_37,P02,P02_07,00:01:20.950,00:01:20.30,00:01:22.27,4818,4936,close mayonnaise,close,4,mayonnaise,47,['mayonnaise'],[47]\nP02_07_38,P02,P02_07,00:01:22.579,00:01:22.05,00:01:23.18,4923,4990,open cupboard,open,3,cupboard,3,['cupboard'],[3]\nP02_07_39,P02,P02_07,00:01:31.829,00:01:22.25,00:01:23.00,4935,4980,open fridge,open,3,fridge,12,['fridge'],[12]\nP02_07_4,P02,P02_07,00:00:09.700,00:00:07.99,00:00:09.44,479,566,get tongs,get,0,tongs,142,['tongs'],[142]\nP02_07_40,P02,P02_07,00:01:23.659,00:01:23.28,00:01:24.45,4996,5067,return mayonnaise,return,1,mayonnaise,47,['mayonnaise'],[47]\nP02_07_41,P02,P02_07,00:01:25.590,00:01:24.54,00:01:25.98,5072,5158,pick up ketchup,pick-up,0,ketchup,47,['ketchup'],[47]\nP02_07_42,P02,P02_07,00:01:27.270,00:01:26.74,00:01:27.55,5204,5253,open ketchup,open,3,ketchup,47,['ketchup'],[47]\nP02_07_43,P02,P02_07,00:01:28.670,00:01:27.28,00:01:30.65,5236,5439,squeeze ketchup into plate,squeeze-into,18,ketchup,47,\"['ketchup', 'plate']\",\"[47, 2]\"\nP02_07_44,P02,P02_07,00:01:30.829,00:01:29.50,00:01:30.73,5370,5443,close ketchup,close,4,ketchup,47,['ketchup'],[47]\nP02_07_45,P02,P02_07,00:01:33.259,00:01:30.85,00:01:33.40,5451,5604,return ketchup,return,1,ketchup,47,['ketchup'],[47]\nP02_07_46,P02,P02_07,00:01:34.259,00:01:33.50,00:01:34.44,5610,5666,close fridge,close,4,fridge,12,['fridge'],[12]\nP02_07_47,P02,P02_07,00:01:35.259,00:01:33.77,00:01:34.42,5626,5665,open drawer,open,3,drawer,8,['drawer'],[8]\nP02_07_48,P02,P02_07,00:01:36.259,00:01:34.57,00:01:35.35,5674,5721,get spoon,get,0,spoon,1,['spoon'],[1]\nP02_07_49,P02,P02_07,00:01:37.259,00:01:35.48,00:01:43.74,5728,6224,mix mayonnaise and ketchup in plate,mix,10,mayonnaise,47,\"['mayonnaise', 'ketchup', 'plate']\",\"[47, 47, 2]\"\nP02_07_5,P02,P02_07,00:00:11.709,00:00:10.74,00:00:12.38,644,742,open oven,open,3,oven,46,['oven'],[46]\nP02_07_50,P02,P02_07,00:01:38.789,00:01:36.75,00:01:37.44,5805,5846,hold plate,hold,34,plate,2,['plate'],[2]\nP02_07_51,P02,P02_07,00:01:39.950,00:01:38.24,00:01:40.17,5894,6010,mix mayonnaise and ketchup in plate,mix,10,mayonnaise,47,\"['mayonnaise', 'ketchup', 'plate']\",\"[47, 47, 2]\"\nP02_07_52,P02,P02_07,00:01:44.249,00:01:44.68,00:01:45.38,6280,6322,stir sauce,stir,10,sauce,47,['sauce'],[47]\nP02_07_53,P02,P02_07,00:01:46.490,00:01:45.91,00:01:46.91,6354,6414,put plate,put,1,plate,2,['plate'],[2]\nP02_07_6,P02,P02_07,00:00:14.760,00:00:12.73,00:00:14.32,763,859,pull drawer,pull,31,drawer,8,['drawer'],[8]\nP02_07_7,P02,P02_07,00:00:16.590,00:00:14.42,00:00:16.06,865,963,pick up tray,pick-up,0,tray,35,['tray'],[35]\nP02_07_8,P02,P02_07,00:00:17.670,00:00:16.48,00:00:17.50,988,1050,put tray,put,1,tray,35,['tray'],[35]",
+    "EPIC-SOUNDS EPIC_Sounds_train.csv (header + rows for P02_07)": "annotation_id,participant_id,video_id,start_timestamp,stop_timestamp,start_sample,stop_sample,description,class,class_id\nP02_07_0,P02,P02_07,00:00:01.234,00:00:01.876,29616,45024,beep,beep,15\nP02_07_1,P02,P02_07,00:00:02.119,00:00:03.132,50856,75168,footstep,footstep,7\nP02_07_2,P02,P02_07,00:00:03.184,00:00:03.884,76416,93216,beep,beep,15\nP02_07_3,P02,P02_07,00:00:05.013,00:00:05.501,120312,132024,clang / clatter,metal / cloth collision,25\nP02_07_4,P02,P02_07,00:00:06.862,00:00:10.716,164688,257183,open / close drawer,open / close,3\nP02_07_5,P02,P02_07,00:00:11.258,00:00:15.987,270192,383688,vacuum machine,hoover / fan,40\nP02_07_6,P02,P02_07,00:00:13.426,00:00:14.069,322224,337656,scrub / scrape / scour / wipe,scrub / scrape / scour / wipe,1\nP02_07_7,P02,P02_07,00:00:14.626,00:00:17.341,351024,416184,clang / clatter,metal-only collision,0\nP02_07_8,P02,P02_07,00:00:18.883,00:00:19.133,453192,459192,clang / clatter,metal-only collision,0\nP02_07_9,P02,P02_07,00:00:19.174,00:00:19.591,460176,470184,scrub / scrape / scour / wipe,scrub / scrape / scour / wipe,1\nP02_07_10,P02,P02_07,00:00:19.934,00:00:35.259,478416,846216,scrub / scrape / scour / wipe,scrub / scrape / scour / wipe,1\nP02_07_11,P02,P02_07,00:00:20.091,00:00:22.070,482184,529680,clang / clatter,metal-only collision,0\nP02_07_12,P02,P02_07,00:00:22.758,00:00:23.883,546192,573192,clang / clatter,metal-only collision,0\nP02_07_13,P02,P02_07,00:00:24.279,00:00:24.799,582696,595176,clang / clatter,metal-only collision,0\nP02_07_14,P02,P02_07,00:00:25.612,00:00:25.883,614688,621192,clang / clatter,metal-only collision,0\nP02_07_15,P02,P02_07,00:00:27.320,00:00:27.737,655680,665688,clang / clatter,metal-only collision,0\nP02_07_16,P02,P02_07,00:00:28.945,00:00:31.529,694680,756696,clang / clatter,metal-only collision,0\nP02_07_17,P02,P02_07,00:00:35.362,00:00:38.195,848688,916680,vacuum machine,hoover / fan,40\nP02_07_18,P02,P02_07,00:00:42.404,00:00:42.779,1017696,1026696,clang / clatter,metal-only collision,0\nP02_07_19,P02,P02_07,00:00:47.112,00:00:49.549,1130688,1189176,scrub / scrape / scour / wipe,scrub / scrape / scour / wipe,1\nP02_07_20,P02,P02_07,00:00:50.013,00:00:50.466,1200312,1211184,clang / clatter,ceramic-only collision,14\nP02_07_21,P02,P02_07,00:00:50.404,00:00:50.799,1209696,1219176,paper rustle,rustle,4\nP02_07_22,P02,P02_07,00:00:56.633,00:00:56.945,1359192,1366680,open / close drawer,open / close,3\nP02_07_23,P02,P02_07,00:00:57.841,00:00:58.133,1388184,1395192,click,click,16\nP02_07_24,P02,P02_07,00:00:58.862,00:00:59.091,1412688,1418184,click,click,16\nP02_07_25,P02,P02_07,00:01:03.716,00:01:04.154,1529184,1539696,clang / clatter,plastic-only collision,6\nP02_07_26,P02,P02_07,00:01:04.466,00:01:05.237,1547183,1565687,clang / clatter,plastic-only collision,6\nP02_07_27,P02,P02_07,00:01:05.112,00:01:21.195,1562687,1948679,scrub / scrape / scour / wipe,scrub / scrape / scour / wipe,1\nP02_07_28,P02,P02_07,00:01:07.258,00:01:08.508,1614192,1644192,clang / clatter,open / close,3\nP02_07_29,P02,P02_07,00:01:08.820,00:01:09.424,1651679,1666176,paper rustle,rustle,4\nP02_07_30,P02,P02_07,00:01:21.904,00:01:25.654,1965696,2055696,clang / clatter,plastic / paper collision,22\nP02_07_31,P02,P02_07,00:01:26.737,00:01:27.174,2081687,2092176,clang / clatter,plastic-only collision,6\nP02_07_32,P02,P02_07,00:01:27.508,00:01:33.070,2100192,2233680,scrub / scrape / scour / wipe,scrub / scrape / scour / wipe,1\nP02_07_33,P02,P02_07,00:01:30.695,00:01:31.674,2176680,2200176,clang / clatter,plastic-only collision,6\nP02_07_34,P02,P02_07,00:01:32.987,00:01:33.237,2231688,2237688,clang / clatter,plastic-only collision,6\nP02_07_35,P02,P02_07,00:01:33.737,00:01:34.549,2249688,2269176,open / close drawer,open / close,3\nP02_07_36,P02,P02_07,00:01:34.591,00:01:35.091,2270184,2282184,clang / clatter,metal-only collision,0\nP02_07_37,P02,P02_07,00:01:35.195,00:01:36.841,2284680,2324184,open / close drawer,open / close,3\nP02_07_38,P02,P02_07,00:01:36.029,00:01:45.112,2304696,2522688,stir / mix / whisk food,stir / mix / whisk,8\nP02_07_39,P02,P02_07,00:01:40.029,00:01:40.529,2400696,2412696,clang / clatter,metal / ceramic collision,12\nP02_07_40,P02,P02_07,00:01:45.424,00:01:46.695,2530176,2560680,clang / clatter,metal / ceramic collision,12"
+   }
+  }
+ ]
+}

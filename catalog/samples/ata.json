@@ -1,0 +1,34 @@
+{
+ "slug": "ata",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://openaccess.thecvf.com/content/ICCV2023/papers/Ghoddoosian_Weakly-Supervised_Action_Segmentation_and_Unseen_Error_Detection_in_Anomalous_Instructional_ICCV_2023_paper.pdf (Fig. 2, Fig. 5, §6.4; text extracted with pypdf)",
+  "https://usa.honda-ri.com/ata (Dataset format section)"
+ ],
+ "access_used": "public sample in paper/repo/card only (full data needs a download request from a university email address; non-commercial use only)",
+ "note": "ATA (Anomalous Toy Assembly) is exocentric and released only on request, so no annotation file could be read. Example 1 is the paper's only concrete label instance: the video-level error ground truth shown in Fig. 5. Example 2 is the label vocabulary as printed in the Fig. 2 legend, where error and action class names run together in the PDF text (errors: idle_time … extra_ring; actions: fasten_screw … hammer_pin, SIL is not defined in the paper and is likely the background label), plus the project page's description of the file names and the per-frame pose/box JSON. Neither example has timestamps.",
+ "examples": [
+  {
+   "title": "Paper Fig. 5: video-level error labels of an incorrectly assembled record player and an airplane (no video ids)",
+   "video_ref": null,
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "txt",
+   "raw": "Figure 5 labels and caption (PDF text):\nOnline Segmentation       Error ground truth: [2 x idle time, 1 x Loose Screw]      Error predicted: [2 x idle time, 1 x Loose Screw]\nOffline Segmentation                        Error ground truth: [2 x idle time]                        Error predicted: [2 x idle time, missing ring]\nFigure 5. Online and offline segmentation of an incorrectly assem-\nbled record player (top) and airplane (bottom). Position of each\nimage in the video is indicated by its corresponding red box.\n\nSection 6.4 text:\nThe top video shows an incorrectly assembled record player, which includes two background segments (idle time) and an unfastened screw. During the idle segments, the cosine similarity drops be- low the threshold, indicating a sequential anomaly. Hence, our proposed Viterbi algorithm is capable of deviating from the seen transcripts and infers these unseen idle segments. Although the Greedy approach detects the idle s"
+  },
+  {
+   "title": "Paper Fig. 2 label vocabulary (11 error classes, 15 actions) + file-naming rule from the project page",
+   "video_ref": "e.g. P13_3_T2_C1 … P13_3_T2_C4 (participant 13, session 3, table, four views; named on the project page)",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "txt",
+   "raw": "Figure 2 legend (PDF text):\nNon anomalous\nAnomalous with Error\nAnomalous without Error\nidle_time\nunfastened_leg\ndropped_item_wo_pickup\nmissing_leg\nmissing_ring\nunfastened_screw\nextra_screw\nno_balancing\nmissing_screw\nmissing_part\nextra_ring\nfasten_screw\ninsert_screw\ntake_block\nSIL\ntake_part\nfasten_nut\ntake_ring\ntake_plate\ntighten_screw\nspin_block\ninsert_pin\nbalance_part\ndrop\npickup\nhammer_pin\nDistribution of unseen 11 error classes\nDistribution of 15 action classes\nStats\nFigure 2\n\nhttps://usa.honda-ri.com/ata, 'Dataset format': Each video/annotaion file is named as P@_$_T#_C&. In this format, @ is the ID of the participant, $ is the recording session number for each assembly, # corresponds to the task number (T1:plane, T2: table, T3: record player), and & indicates the camera view. Specifically, C1, C2, C3 and C4 correspond to the front, top, side and global view points respectively. All views are syncronized at a 30fps frame rate. Json files for spatial annotations contain annotation for each keypoint (Left Shoulder, Right Shoulder, Belly Button, Head, Right Elbow, Left Elbow, Left Palm, Right Palm) for each frame at 30fps. The files also contain bounding box annotations (for all frames) of the object the participant is interacting with along with a label indentifying the class of the dataset."
+  }
+ ]
+}
