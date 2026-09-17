@@ -1,0 +1,304 @@
+{
+ "n_rows": 687,
+ "n_unique_video_names": 685,
+ "duplicate_rows": [
+  "VSYjs5RnlRo-q1",
+  "gB0XyrWGFC4-q1"
+ ],
+ "n_cases": 300,
+ "n_multi_turn_cases": 102,
+ "n_single_turn_cases": 198,
+ "total_video_hours": 10.71,
+ "total_video_gb": 59.36,
+ "case_duration_s": {
+  "mean": 128.5,
+  "median": 73.8,
+  "max": 1222.5
+ },
+ "segment_duration_s": {
+  "mean": 56.1,
+  "median": 46.8,
+  "max": 428.0
+ },
+ "rows_by_subtask": {
+  "II": 22,
+  "AI": 21,
+  "CE": 26,
+  "ER": 16,
+  "AO": 15,
+  "DC": 16,
+  "AR": 27,
+  "LR": 22,
+  "GPF": 61,
+  "OPF": 15,
+  "CR": 20,
+  "SER": 64,
+  "MER": 69,
+  "ST": 114,
+  "CT": 64,
+  "MT": 68,
+  "RC": 47
+ },
+ "cases_by_subtask": {
+  "II": 20,
+  "AI": 21,
+  "CE": 26,
+  "ER": 16,
+  "AO": 15,
+  "DC": 16,
+  "AR": 27,
+  "LR": 22,
+  "GPF": 15,
+  "OPF": 15,
+  "CR": 20,
+  "SER": 16,
+  "MER": 16,
+  "ST": 20,
+  "CT": 16,
+  "MT": 16,
+  "RC": 3
+ },
+ "rows_by_major_task": {
+  "Social perception": 69,
+  "Proactive response": 133,
+  "Referential perception": 49,
+  "Temporal perception": 47,
+  "Context-aware response": 20,
+  "Non-audio prompt following": 76,
+  "Process tracking": 246,
+  "Real-world case": 47
+ },
+ "rows_by_tier": {
+  "Basic": 241,
+  "Advanced": 399,
+  "Real-world": 47
+ },
+ "expected_silence": {
+  "no": 605,
+  "yes": 80,
+  "either": 2
+ },
+ "expected_silence_by_subtask": {
+  "SER": {
+   "yes": 46,
+   "no": 16,
+   "either": 2
+  },
+  "MER": {
+   "no": 45,
+   "yes": 24
+  },
+  "RC": {
+   "no": 37,
+   "yes": 10
+  }
+ },
+ "turns_per_case": {
+  "1": 196,
+  "2": 2,
+  "3": 3,
+  "4": 67,
+  "5": 14,
+  "6": 13,
+  "7": 1,
+  "8": 1,
+  "12": 1,
+  "15": 1,
+  "20": 1
+ },
+ "case_duration_hist": {
+  "0-30s": 34,
+  "30-60s": 84,
+  "60-120s": 81,
+  "120-180s": 42,
+  "180-300s": 31,
+  "300-600s": 24,
+  "600-1300s": 4
+ },
+ "segment_duration_hist": {
+  "0-10s": 28,
+  "10-20s": 83,
+  "20-40s": 194,
+  "40-60s": 135,
+  "60-90s": 124,
+  "90-120s": 76,
+  "120-200s": 43
+ },
+ "key_points_per_turn": {
+  "1": 527,
+  "2": 120,
+  "3": 30,
+  "4": 9,
+  "6": 1
+ },
+ "source": {
+  "Youtube": 571,
+  "filmed": 62,
+  "Mustard++": 25,
+  "Ego4D": 14,
+  "CASTLE/YouTube": 5,
+  "VIRAT": 4,
+  "Assembly101": 2,
+  "BASKET": 2,
+  "MELD": 1,
+  "COIN": 1
+ },
+ "rows_with_example_video": 57,
+ "rows_with_example_text": 93,
+ "rows_with_question_field": 573,
+ "subtask_names": {
+  "II": "identity identification",
+  "AI": "addressee identification",
+  "CE": "complex emotion understanding",
+  "DC": "dynamic counting",
+  "ER": "event retrieval",
+  "AO": "appearance order",
+  "LR": "linguistic reference",
+  "AR": "action reference",
+  "OPF": "OCR-based prompt following",
+  "GPF": "gesture-based prompt following",
+  "CR": "context-aware response",
+  "SER": "single event-triggered response",
+  "MER": "multi events-triggered response",
+  "ST": "step tracking",
+  "CT": "checklist tracking",
+  "MT": "multitask tracking",
+  "RC": "real case"
+ },
+ "major_of": {
+  "II": "Social perception",
+  "AI": "Social perception",
+  "CE": "Social perception",
+  "ER": "Temporal perception",
+  "AO": "Temporal perception",
+  "DC": "Temporal perception",
+  "AR": "Referential perception",
+  "LR": "Referential perception",
+  "GPF": "Non-audio prompt following",
+  "OPF": "Non-audio prompt following",
+  "CR": "Context-aware response",
+  "SER": "Proactive response",
+  "MER": "Proactive response",
+  "ST": "Process tracking",
+  "CT": "Process tracking",
+  "MT": "Process tracking",
+  "RC": "Real-world case"
+ },
+ "tier_of": {
+  "II": "Basic",
+  "AI": "Basic",
+  "CE": "Basic",
+  "ER": "Basic",
+  "AO": "Basic",
+  "DC": "Basic",
+  "AR": "Basic",
+  "LR": "Basic",
+  "GPF": "Basic",
+  "OPF": "Basic",
+  "CR": "Advanced",
+  "SER": "Advanced",
+  "MER": "Advanced",
+  "ST": "Advanced",
+  "CT": "Advanced",
+  "MT": "Advanced",
+  "RC": "Real-world"
+ },
+ "leaderboard_readme": [
+  [
+   "Gemini-3-Pro",
+   63.6,
+   68.2,
+   68.0,
+   66.4
+  ],
+  [
+   "Gemini-2.5-Pro",
+   65.4,
+   66.4,
+   44.8,
+   64.6
+  ],
+  [
+   "Doubao-Seed-2.0-lite",
+   53.2,
+   62.1,
+   35.5,
+   57.3
+  ],
+  [
+   "MiMo-V2-Omni",
+   53.6,
+   55.2,
+   41.0,
+   53.8
+  ],
+  [
+   "Qwen3.5-Omni-Plus",
+   41.6,
+   57.8,
+   50.6,
+   51.6
+  ],
+  [
+   "Qwen3-Omni-Instruct (30B-A3B)",
+   46.4,
+   53.8,
+   53.8,
+   51.2
+  ],
+  [
+   "MiniCPM-o-4.5 (9B)",
+   44.6,
+   47.8,
+   37.8,
+   46.0
+  ],
+  [
+   "Baichuan-Omni-1.5 (7B)",
+   45.0,
+   41.8,
+   44.8,
+   43.2
+  ],
+  [
+   "Qwen2.5-Omni (7B)",
+   37.0,
+   46.6,
+   45.2,
+   43.2
+  ],
+  [
+   "MiniCPM-o-2.6 (8B)",
+   41.8,
+   40.2,
+   31.2,
+   40.2
+  ],
+  [
+   "VITA-1.5 (7B)",
+   24.6,
+   25.8,
+   14.6,
+   24.6
+  ]
+ ],
+ "in_subset": [
+  "fZl_LVU7a18-q1",
+  "c6148208-q1",
+  "1_10495-q1",
+  "HdnJE5S3oNI-q2",
+  "shorts-z1pFq-wYGpM-q1",
+  "Pao-hT2WNhA-q1",
+  "bTmwvIL5eTs-q1",
+  "a1ba567f-q1",
+  "Yt5xifeyx7I",
+  "yuh_fo6OKfQ-q1",
+  "VID20251021095424",
+  "A3WbCRfad-w-2",
+  "QiabTfzORmE",
+  "Mmq_fASrTB4",
+  "bhoMvPJKc24",
+  "acYN7Mkwhh0",
+  "navigation"
+ ]
+}

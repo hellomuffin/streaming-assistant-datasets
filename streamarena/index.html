@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StreamArena Dataset Viewer</title>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2129;
+  --border: #2d3640;
+  --text: #e6e9ed;
+  --muted: #8a949e;
+  --accent: #4dabf7;
+  --good: #51cf66;
+  --bad: #ff6b6b;
+  --highlight: #ffd43b;
+  --purple: #b197fc;
+  --orange: #ffa94d;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.5;
+}
+header {
+  padding: 12px 20px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent);
+}
+header h1 .subtitle {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 400;
+  margin-left: 8px;
+  letter-spacing: 0.3px;
+}
+.control { display: flex; align-items: center; gap: 6px; }
+.control label { color: var(--muted); font-size: 12px; }
+select, input, button {
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 6px 10px;
+  font-family: inherit;
+  font-size: 13px;
+  border-radius: 4px;
+  max-width: 340px;
+}
+button { cursor: pointer; }
+button:hover:not(:disabled) { background: var(--border); }
+button:disabled { opacity: 0.4; cursor: not-allowed; }
+.banner {
+  background: rgba(77, 171, 247, 0.08);
+  border-bottom: 1px solid var(--border);
+  padding: 8px 20px;
+  font-size: 12px;
+  color: var(--muted);
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.banner strong { color: var(--text); }
+.banner a { color: var(--accent); text-decoration: none; }
+.banner a:hover { text-decoration: underline; }
+.back-link { font-weight: 500; }
+.kbd {
+  display: inline-block;
+  padding: 1px 6px;
+  font-family: monospace;
+  font-size: 11px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-bottom-width: 2px;
+  border-radius: 3px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 16px;
+  padding: 16px;
+  max-width: 100%;
+}
+@media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px;
+  overflow: hidden;
+}
+.panel h2, .wide-panel h2 {
+  margin: 0 0 12px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--muted);
+  font-weight: 600;
+}
+.field { margin-bottom: 12px; }
+.field-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.field-value { font-size: 14px; word-break: break-word; }
+.field-value.code {
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 12px;
+  background: var(--bg);
+  padding: 6px 8px;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  color: var(--accent);
+}
+video {
+  width: 100%;
+  max-height: 560px;
+  background: #000;
+  border-radius: 4px;
+}
+.video-missing {
+  padding: 40px;
+  text-align: center;
+  color: var(--muted);
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+}
+.wide-panel {
+  grid-column: 1 / -1;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px 20px;
+}
+.task-desc {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0 0 16px;
+  padding: 10px 14px;
+  background: var(--bg);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 4px 4px 0;
+}
+.task-pill {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-right: 8px;
+}
+.pill-egolongqa   { background: rgba(77, 171, 247, 0.15);  color: var(--accent); border: 1px solid rgba(77, 171, 247, 0.4); }
+.pill-egoconv     { background: rgba(177, 151, 252, 0.15); color: var(--purple); border: 1px solid rgba(177, 151, 252, 0.4); }
+.pill-egoproactive{ background: rgba(255, 169, 77, 0.15);  color: var(--orange); border: 1px solid rgba(255, 169, 77, 0.4); }
+
+/* MCQ (egolongqa) */
+.option-list { list-style: none; padding: 0; margin: 0; }
+.option-list li {
+  padding: 10px 14px;
+  margin: 4px 0;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.option-list li.correct {
+  background: rgba(81, 207, 102, 0.12);
+  border-color: var(--good);
+}
+.option-list .opt-letter {
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-weight: 700;
+  color: var(--muted);
+  flex-shrink: 0;
+  width: 24px;
+}
+.option-list .correct .opt-letter { color: var(--good); }
+.option-list .opt-text { flex: 1; }
+.option-list .opt-badge {
+  color: var(--good);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+/* timeline */
+.timeline-wrap { margin: 4px 0 18px; }
+.timeline {
+  position: relative;
+  height: 34px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.tl-seg {
+  position: absolute;
+  top: 0; bottom: 0;
+  background: rgba(77, 171, 247, 0.28);
+  border-left: 1px solid var(--accent);
+  border-right: 1px solid var(--accent);
+  cursor: pointer;
+}
+.tl-seg:hover { background: rgba(77, 171, 247, 0.45); }
+.tl-seg.interrupt { background: rgba(255, 169, 77, 0.38); border-color: var(--orange); }
+.tl-seg.interrupt:hover { background: rgba(255, 169, 77, 0.55); }
+.tl-seg.silent { background: rgba(138, 148, 158, 0.15); border-color: var(--muted); }
+.tl-seg.silent:hover { background: rgba(138, 148, 158, 0.3); }
+.tl-marker {
+  position: absolute;
+  top: 2px;
+  width: 3px;
+  height: 30px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.tl-marker.q { background: var(--highlight); }
+.tl-marker.a { background: var(--good); }
+.tl-playhead {
+  position: absolute;
+  top: -3px; bottom: -3px;
+  width: 2px;
+  background: var(--highlight);
+  pointer-events: none;
+}
+.timeline-label {
+  font-size: 11px;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  font-family: "SFMono-Regular", Consolas, monospace;
+}
+.legend-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 11px;
+  color: var(--muted);
+  margin: 8px 0 0;
+}
+.legend-row .chip { display: inline-flex; align-items: center; gap: 5px; }
+.legend-row .swatch { width: 10px; height: 10px; border-radius: 3px; border: 1px solid rgba(0,0,0,0.4); }
+
+/* dialog (egoconv) */
+.dialog-list { display: flex; flex-direction: column; gap: 8px; }
+.dturn {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 8px 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+}
+.dturn:hover { border-color: var(--accent); }
+.dturn.active { border-color: var(--highlight); background: rgba(255, 212, 59, 0.06); }
+.dturn .role {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.role-P1 { background: rgba(77, 171, 247, 0.15); color: var(--accent); }
+.role-P2 { background: rgba(177, 151, 252, 0.15); color: var(--purple); }
+.role-Assistant { background: rgba(81, 207, 102, 0.15); color: var(--good); }
+.role-user { background: rgba(77, 171, 247, 0.15); color: var(--accent); }
+.role-assistant { background: rgba(81, 207, 102, 0.15); color: var(--good); }
+.dturn .dtime {
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 11px;
+  color: var(--muted);
+  flex-shrink: 0;
+  margin-top: 3px;
+  width: 92px;
+}
+.dturn .dtext { flex: 1; }
+.qtype-tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--highlight);
+  background: rgba(255, 212, 59, 0.1);
+  border: 1px solid rgba(255, 212, 59, 0.3);
+  border-radius: 8px;
+  padding: 0 6px;
+  margin-left: 6px;
+  vertical-align: 1px;
+}
+
+/* QA table + proactive table */
+.qa-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.qa-table th, .qa-table td {
+  padding: 8px 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.qa-table th {
+  color: var(--muted);
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  background: var(--bg);
+}
+.qa-table td.mono {
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.qa-table tr.seekable { cursor: pointer; }
+.qa-table tr.seekable:hover { background: rgba(77, 171, 247, 0.06); }
+.qa-table tr.active { background: rgba(255, 212, 59, 0.08); }
+.decision-pill {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.decision-pill.interrupt { background: rgba(255, 169, 77, 0.15); color: var(--orange); border: 1px solid rgba(255, 169, 77, 0.4); }
+.decision-pill.silent { background: rgba(138, 148, 158, 0.12); color: var(--muted); border: 1px solid rgba(138, 148, 158, 0.35); }
+
+/* raw json */
+details.raw { margin-top: 4px; }
+details.raw summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-size: 13px;
+  user-select: none;
+}
+.raw pre {
+  margin: 10px 0 0;
+  padding: 12px 14px;
+  background: #0a0d11;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 11.5px;
+  color: var(--text);
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 480px;
+  overflow-y: auto;
+}
+
+/* stats */
+.stats-summary {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 12px;
+  color: var(--muted);
+  font-family: "SFMono-Regular", Consolas, monospace;
+}
+.stats-summary b { color: var(--text); font-weight: 600; margin-left: 3px; }
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+.histogram { display: flex; flex-direction: column; gap: 3px; }
+.hist-title {
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+.hist-row {
+  display: grid;
+  grid-template-columns: 150px 1fr 70px;
+  align-items: center;
+  gap: 10px;
+  font-size: 11.5px;
+  font-family: "SFMono-Regular", Consolas, monospace;
+}
+.hist-label {
+  color: var(--muted);
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hist-bar-wrap { height: 15px; background: var(--bg); border-radius: 3px; overflow: hidden; }
+.hist-bar { height: 100%; background: linear-gradient(90deg, var(--accent), #74c0fc); }
+.hist-bar.purple { background: linear-gradient(90deg, var(--purple), #d0bfff); }
+.hist-bar.orange { background: linear-gradient(90deg, var(--orange), #ffc078); }
+.hist-count { color: var(--text); }
+.note { margin: 10px 0 0; font-size: 12px; color: var(--muted); font-style: italic; }
+
+/* ---- StreamArena additions ---- */
+.fam-RTP  { --fc: var(--accent); }
+.fam-HR   { --fc: var(--purple); }
+.fam-Tool { --fc: var(--good); }
+.fam-Pro  { --fc: var(--orange); }
+.fam-pill {
+  display: inline-block; padding: 2px 9px; border-radius: 10px; font-size: 11px; font-weight: 700;
+  letter-spacing: .4px; color: var(--fc); white-space: nowrap;
+  background: color-mix(in srgb, var(--fc) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--fc) 40%, transparent);
+}
+.kind-pill { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .4px; white-space: nowrap; }
+.kind-ask { color: var(--highlight); }
+.kind-ref { color: var(--orange); }
+.kind-evidence { color: var(--bad); }
+.qcard { background: var(--bg); border: 1px solid var(--border); border-left: 3px solid var(--fc); border-radius: 0 4px 4px 0; padding: 12px 14px; margin-bottom: 14px; }
+.qcard .zh { color: var(--muted); font-size: 13px; margin-top: 4px; }
+.qgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 10px; }
+@media (max-width: 900px) { .qgrid { grid-template-columns: 1fr; } }
+.answer { color: var(--good); font-weight: 600; }
+.pre { white-space: pre-wrap; word-break: break-word; font-size: 12.5px; }
+.tl-cut { position: absolute; top: -2px; bottom: -2px; width: 0; border-left: 2px dashed var(--text); opacity: .7; pointer-events: none; }
+.tl-seg.excerpt { background: rgba(77,171,247,0.10); border-color: transparent; }
+.tl-seg.excerpt.alt { background: rgba(77,171,247,0.20); }
+.tl-seg.window { top: 0; bottom: 0; background: rgba(81,207,102,0.45); border-color: var(--good); min-width: 4px; }
+.tl-marker.ask { background: var(--highlight); }
+.tl-marker.ref { background: var(--orange); width: 4px; }
+.tl-marker.evidence { background: var(--bad); }
+.tl-marker.other { opacity: .38; height: 14px; top: 18px; }
+.seg-labels { position: relative; height: 16px; font-size: 10px; color: var(--muted); font-family: "SFMono-Regular", Consolas, monospace; margin-top: 3px; }
+.seg-labels span { position: absolute; white-space: nowrap; }
+.qa-table tr.primary td:first-child { box-shadow: inset 3px 0 0 var(--fc); }
+.qa-table tr.other td { opacity: .78; }
+.qa-table td .zh { color: var(--muted); font-size: 12px; display: block; margin-top: 2px; }
+.qa-table td.small { font-size: 12px; color: var(--muted); max-width: 320px; word-break: break-word; white-space: pre-wrap; }
+.thread-list { margin-top: 10px; }
+.tag-inclip { font-size: 10px; color: var(--highlight); border: 1px solid rgba(255,212,59,.4); border-radius: 3px; padding: 0 4px; margin-left: 4px; white-space: nowrap; }
+.tag-this { font-size: 10px; color: var(--bg); background: var(--highlight); border-radius: 3px; padding: 0 4px; margin-left: 4px; white-space: nowrap; }
+.hist-bar.green { background: linear-gradient(90deg, var(--good), #8ce99a); }
+.stack { display: flex; height: 100%; }
+.stack span { height: 100%; }
+.video-note { margin-top: 10px; font-size: 12.5px; color: var(--muted); }
+.hist-row { grid-template-columns: 190px 1fr 90px; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "Noto Sans SC", sans-serif; }
+.stats-grid { grid-template-columns: 1fr 1fr !important; gap: 22px 32px !important; }
+@media (max-width: 900px) { .stats-grid { grid-template-columns: 1fr !important; } }
+.hist-count { white-space: nowrap; }
+.hist-count .hist-pct { color: var(--muted); font-size: 11px; margin-left: 6px; }
+.hist-label { overflow: hidden; text-overflow: ellipsis; }
+.qa-table td.small { max-height: 160px; overflow-wrap: anywhere; }
+.hist-bar { display: block; height: 100%; }
+.hist-bar-wrap { display: block; }
+.hist-label.in-subset { color: var(--text); }
+.hist-label.in-subset::after { content: " \2022"; color: var(--highlight); }
+</style>
+</head>
+<body>
+<div class="banner">
+  <a href="https://jxb1st.github.io/datasets/" class="back-link">&larr; Dataset panel</a>
+  <span>Showing a <strong>12-case</strong> representative subset (3 per question family, 5 videos, excerpts re-encoded to 360p h264 with audio). Full benchmark: <strong>243 videos (~360 h) / 3,646 questions</strong> &mdash;
+    <a href="https://huggingface.co/datasets/hkuzxc/StreamArena" target="_blank">HuggingFace dataset</a> ·
+    <a href="https://arxiv.org/abs/2608.05703" target="_blank">paper</a> ·
+    <a href="https://github.com/JIA-Lab-research/StreamArena" target="_blank">code</a> ·
+    <a href="https://hkuzxc.github.io/StreamArena_web/" target="_blank">project page</a>
+  </span>
+</div>
+<header>
+  <h1>StreamArena Viewer <span class="subtitle">hour-long streaming video QA: perception, memory, tools, proactive alerts (HKUST / Xiaohongshu)</span></h1>
+  <div class="control">
+    <label>Family</label>
+    <select id="task-select">
+      <option value="RTP">RTP &mdash; real-time perception</option>
+      <option value="HR">HR &mdash; historical retrospection</option>
+      <option value="Tool">Tool &mdash; search-tool use</option>
+      <option value="Pro">Pro &mdash; proactive interaction</option>
+    </select>
+  </div>
+  <div class="control">
+    <label>Case</label>
+    <select id="case-select"></select>
+  </div>
+  <div class="control">
+    <button id="prev-btn">&larr; Prev</button>
+    <button id="next-btn">Next &rarr;</button>
+  </div>
+  <div style="margin-left:auto;color:var(--muted);font-size:11px;">
+    <span class="kbd">&larr;</span> <span class="kbd">&rarr;</span> switch case (across families) · click rows / timeline to seek
+  </div>
+</header>
+
+<main>
+  <aside class="panel" id="metadata-panel">
+    <h2>Metadata</h2>
+    <div id="metadata-fields"></div>
+  </aside>
+  <section class="panel" id="video-panel">
+    <h2>Video excerpt (360p re-encode, original audio kept)</h2>
+    <div id="video-container"></div>
+    <div class="video-note" id="video-note"></div>
+  </section>
+  <section class="wide-panel" id="task-content"></section>
+  <section class="wide-panel" id="table-panel"></section>
+  <section class="wide-panel" id="thread-panel"></section>
+  <section class="wide-panel" id="raw-panel">
+    <h2>Raw record (all fields)</h2>
+    <details class="raw"><summary>Show full JSON for this case (verbatim English record + <code>_viewer_*</code> keys, incl. Chinese record and the whole video thread)</summary><pre id="raw-json"></pre></details>
+  </section>
+  <section class="wide-panel" id="stats-panel"></section>
+</main>
+
+<script>
+(function() {
+  "use strict";
+
+  const FAMILIES = ["RTP", "HR", "Tool", "Pro"];
+  const FAM_INFO = {
+    RTP: { label: "Real-Time Perception",
+      desc: "The user asks about what is on screen or being said right now. The model may only use the stream up to ask_sec; the answer is in the current frame or the last few seconds of audio. Scored by an LLM judge (Gemini 3.1 Pro, binary: does the reply contain the factual core of answer)." },
+    HR: { label: "Historical Retrospection",
+      desc: "The user asks about something that happened earlier in the stream. evidence_ts_sec lists every moment that supports the answer and evidence_hint describes each one. horizon_layer buckets how far back the evidence is: L1 ≤5 min, L2 5–15, L3 15–30, L4 >30 min. Scored by the same LLM judge." },
+    Tool: { label: "Multimodal Tool Use",
+      desc: "The user asks a question that starts from what is on screen (or was said) but needs an external search to finish, e.g. ‘who directed the film on that billboard, and what was their first film’. qdesc holds the annotator’s reasoning chain and reference URLs. Scored by the LLM judge on the final answer." },
+    Pro: { label: "Proactive Interaction",
+      desc: "At ask_sec the user registers a monitoring request (‘tell me when …’). The model must stay silent and speak up by itself when the event happens. ref_sec is the ground-truth trigger time t_gt. A case is correct only if the FIRST alert lands in [t_gt − 0.5 s, t_gt + 2 s] (green band on the timeline) AND the judge accepts its content; an early false alert fails the case." },
+  };
+  const KIND_DESC = { ask: "ask_sec (user query)", ref: "ref_sec (trigger t_gt)", evidence: "evidence_ts_sec" };
+
+  let data = [], durations = {}, fullStats = null;
+  const state = { fam: "RTP", idx: 0 };
+
+  const $ = id => document.getElementById(id);
+  function escape(s) {
+    if (s == null) return "";
+    return String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  }
+  function hms(t) {
+    if (t == null || !isFinite(t)) return "-";
+    const neg = t < 0; t = Math.abs(t);
+    const h = Math.floor(t / 3600), m = Math.floor((t % 3600) / 60), s = Math.floor(t % 60);
+    const frac = (t % 1) ? "." + String(Math.round((t % 1) * 10)) : "";
+    return (neg ? "-" : "") + (h ? h + ":" + String(m).padStart(2, "0") : m) + ":" + String(s).padStart(2, "0") + frac;
+  }
+  function famCases() { return data.filter(c => c.qtype === state.fam); }
+  function cur() { return famCases()[state.idx]; }
+  function segs(c) { return c._viewer_clip_segments; }
+  function toClip(c, t) {
+    for (const s of segs(c)) if (t >= s.src_start - 1e-6 && t <= s.src_end + 1e-6) return s.clip_start + (t - s.src_start);
+    return null;
+  }
+  function toSrc(c, ct) {
+    for (const s of segs(c)) if (ct >= s.clip_start - 1e-6 && ct <= s.clip_end + 1e-6) return s.src_start + (ct - s.clip_start);
+    return null;
+  }
+  function caseDuration(c) {
+    const d = durations[c._viewer_video];
+    return d != null ? d : segs(c)[segs(c).length - 1].clip_end;
+  }
+  function moments(q) {
+    const m = [{ kind: "ask", t: q.ask_sec }];
+    if (q.ref_sec != null) m.push({ kind: "ref", t: q.ref_sec });
+    (q.evidence_ts_sec || []).forEach((t, i) => m.push({ kind: "evidence", t: t, hint: (q.evidence_hint || [])[i] }));
+    return m;
+  }
+
+  // ---------------- header ----------------
+  function renderSelect() {
+    $("task-select").value = state.fam;
+    const sel = $("case-select");
+    sel.innerHTML = "";
+    famCases().forEach((c, i) => {
+      const opt = document.createElement("option");
+      opt.value = i;
+      opt.textContent = c.video_id + " q" + c.qid + " — " + c._viewer_video_meta_en.L1 +
+        (c.horizon_layer ? " · " + c.horizon_layer : "") + " · ask " + c.ask_time;
+      sel.appendChild(opt);
+    });
+    sel.value = state.idx;
+  }
+  function nav(d) {
+    const n = famCases().length;
+    let fi = FAMILIES.indexOf(state.fam), i = state.idx + d;
+    if (i < 0) { if (fi === 0) return; fi--; state.fam = FAMILIES[fi]; i = famCases().length - 1; }
+    else if (i >= n) { if (fi === FAMILIES.length - 1) return; fi++; state.fam = FAMILIES[fi]; i = 0; }
+    state.idx = i;
+    render();
+  }
+
+  // ---------------- metadata ----------------
+  function field(label, value, isCode) {
+    return '<div class="field"><div class="field-label">' + escape(label) +
+      '</div><div class="field-value' + (isCode ? " code" : "") + '">' + value + "</div></div>";
+  }
+  function renderMetadata(c) {
+    const m = c._viewer_video_meta_en, mz = c._viewer_video_meta_zh;
+    const segTxt = segs(c).map(s => hms(s.src_start) + "–" + hms(s.src_end) + " → clip " + hms(s.clip_start) + "–" + hms(s.clip_end)).join("<br>");
+    $("metadata-fields").innerHTML =
+      '<div style="margin-bottom:12px;" class="fam-' + c.qtype + '"><span class="fam-pill">' + c.qtype + " · " + FAM_INFO[c.qtype].label + "</span></div>" +
+      field("video_id / qid", escape(c.video_id) + " · qid " + c.qid + " of " + m.n_questions, true) +
+      field("title", escape(m.title)) +
+      field("domain (L1 / L2)", escape(m.L1) + " / " + escape(m.L2) + ' <span style="color:var(--muted)">(' + escape(mz.L1) + " / " + escape(mz.L2) + ")</span>") +
+      field("language · was_live · youtube_category", escape(m.language) + " · " + m.was_live + " · " + escape(m.youtube_category)) +
+      field("full video", hms(m.duration_sec) + " (" + m.duration_sec + " s) · <a style='color:var(--accent)' target='_blank' href='" + escape(m.url) + "'>YouTube</a>") +
+      field("excerpt(s): original → clip time", segTxt, true) +
+      field("_viewer_clip_offset_s", String(c._viewer_clip_offset_s) + " (clip time = t − offset within segment 1)", true);
+  }
+
+  // ---------------- video ----------------
+  function renderVideo(c) {
+    const container = $("video-container");
+    container.innerHTML = "";
+    const v = document.createElement("video");
+    v.id = "player"; v.src = c._viewer_video; v.controls = true; v.preload = "metadata";
+    v.addEventListener("error", () => {
+      const ph = document.createElement("div");
+      ph.className = "video-missing";
+      ph.innerHTML = "<div><b>Video not included in this subset</b></div><div style='font-family:monospace;font-size:11px;margin-top:6px;'>" + escape(c._viewer_video) + "</div>";
+      v.replaceWith(ph);
+    });
+    v.addEventListener("timeupdate", () => syncPlayback(c, v.currentTime));
+    container.appendChild(v);
+    $("video-note").innerHTML = "<b style='color:var(--text)'>Why this case:</b> " + escape(c._viewer_note);
+  }
+  function seekClip(ct, lead) {
+    const v = $("player");
+    if (!v || ct == null) return;
+    v.currentTime = Math.max(0, ct - (lead || 0));
+    v.play().catch(() => {});
+  }
+
+  // ---------------- task content ----------------
+  function renderTask(c) {
+    const z = c._viewer_record_zh;
+    let extra = "";
+    if (c.qtype === "HR")
+      extra = field("horizon_layer / horizon_sec", escape(c.horizon_layer) + " / " + c.horizon_sec + " s (" + hms(c.horizon_sec) + ")") +
+        field("evidence_ts_sec → evidence_hint", (c.evidence_ts_sec || []).map((t, i) =>
+          "<div>" + hms(t) + " (" + t + " s): " + escape(c.evidence_hint[i]) + ' <span class="zh" style="color:var(--muted)">' + escape(z.evidence_hint[i]) + "</span></div>").join(""));
+    if (c.qtype === "Pro")
+      extra = field("ref_time / ref_sec (t_gt)", escape(c.ref_time) + " / " + c.ref_sec + " s") +
+        field("scoring window for the first alert", hms(c.ref_sec - 0.5) + " … " + hms(c.ref_sec + 2) + " (original) = clip " +
+          hms(toClip(c, c.ref_sec) - 0.5) + " … " + hms(toClip(c, c.ref_sec) + 2)) +
+        field("horizon_layer / horizon_sec", escape(c.horizon_layer) + " / " + c.horizon_sec + " s (monitoring time; L1 ≤30 s, L2 30 s–4 min, L3 >4 min)");
+    $("task-content").innerHTML =
+      "<h2>" + c.qtype + " — " + FAM_INFO[c.qtype].label + "</h2>" +
+      '<p class="task-desc"><b>What StreamArena tests:</b> a model watches an hour-long YouTube stream causally (only the past) and holds one multi-turn conversation with the user; each video carries 4–29 questions asked at different times. ' +
+      escape(FAM_INFO[c.qtype].desc) +
+      " Fields: <code>question</code>/<code>answer</code> (English file; Chinese original shown grey), <code>qdesc</code> evidence or rationale, <code>ask_time/ask_sec</code>, <code>ref_*</code> (Pro only), <code>horizon_*</code> (HR/Pro), <code>evidence_*</code> (HR only). All times are in ORIGINAL video seconds; the clip time is shown next to them.</p>" +
+      '<div class="qcard fam-' + c.qtype + '">' +
+        '<div class="field-label">question · asked at ' + escape(c.ask_time) + " (clip " + hms(toClip(c, c.ask_sec)) + ")</div>" +
+        '<div style="font-size:15px;">' + escape(c.question) + '</div><div class="zh">' + escape(z.question) + "</div>" +
+        '<div class="qgrid"><div>' +
+          '<div class="field-label">answer</div><div class="answer">' + escape(c.answer) + '</div><div class="zh">' + escape(z.answer) + "</div>" +
+          extra.replace(/class="field"/g, 'class="field" style="margin-top:10px"') +
+        "</div><div>" +
+          '<div class="field-label">qdesc</div><div class="pre">' + escape(c.qdesc) + "</div>" +
+        "</div></div>" +
+      "</div>" +
+      '<div class="timeline-wrap"><div class="timeline" id="timeline"></div>' +
+      '<div class="seg-labels" id="seg-labels"></div>' +
+      '<div class="timeline-label"><span>clip 0:00</span><span id="timeline-end"></span></div>' +
+      '<div class="legend-row">' +
+        '<span class="chip"><span class="swatch" style="background:var(--highlight)"></span>ask_sec</span>' +
+        '<span class="chip"><span class="swatch" style="background:var(--orange)"></span>ref_sec (Pro trigger)</span>' +
+        '<span class="chip"><span class="swatch" style="background:rgba(81,207,102,0.6)"></span>Pro scoring window −0.5 / +2 s</span>' +
+        '<span class="chip"><span class="swatch" style="background:var(--bad)"></span>evidence_ts_sec (HR)</span>' +
+        '<span class="chip"><span class="swatch" style="background:var(--muted)"></span>short faded ticks = other questions of the same thread</span>' +
+        '<span class="chip">dashed line = cut between excerpts (time skipped)</span>' +
+      "</div></div>";
+    buildTimeline(c);
+  }
+
+  function inClipOthers(c) {
+    const out = [];
+    c._viewer_thread_en.forEach((q, i) => {
+      if (q.qid === c.qid) return;
+      moments(q).forEach(mm => { const ct = toClip(c, mm.t); if (ct != null) out.push({ q: q, zh: c._viewer_thread_zh[i], m: mm, ct: ct }); });
+    });
+    return out;
+  }
+
+  function buildTimeline(c) {
+    const dur = caseDuration(c), tl = $("timeline"), pct = t => (t / dur * 100).toFixed(3) + "%";
+    tl.innerHTML = "";
+    const add = (cls, left, width, title, ct) => {
+      const el = document.createElement("div");
+      el.className = cls; el.style.left = pct(left);
+      if (width != null) el.style.width = pct(width);
+      el.title = title;
+      if (ct != null) el.addEventListener("click", ev => { ev.stopPropagation(); seekClip(ct, cls.indexOf("excerpt") >= 0 ? 0 : 2); });
+      tl.appendChild(el);
+    };
+    segs(c).forEach((s, i) => add("tl-seg excerpt" + (i % 2 ? " alt" : ""), s.clip_start, s.clip_end - s.clip_start,
+      "excerpt " + (i + 1) + ": original " + hms(s.src_start) + "–" + hms(s.src_end), s.clip_start));
+    if (c.qtype === "Pro") { const r = toClip(c, c.ref_sec); add("tl-seg window", r - 0.5, 2.5, "scoring window", r - 0.5); }
+    inClipOthers(c).forEach(o => add("tl-marker other " + o.m.kind, o.ct, null,
+      "q" + o.q.qid + " " + o.q.qtype + " " + o.m.kind + " @" + hms(o.m.t) + ": " + o.q.question, o.ct));
+    moments(c).forEach(mm => { const ct = toClip(c, mm.t); add("tl-marker " + mm.kind, ct, null, KIND_DESC[mm.kind] + " @" + hms(mm.t) + (mm.hint ? ": " + mm.hint : ""), ct); });
+    segs(c).slice(1).forEach(s => add("tl-cut", s.clip_start, null, ""));
+    const ph = document.createElement("div"); ph.className = "tl-playhead"; ph.id = "playhead"; tl.appendChild(ph);
+    tl.style.cursor = "pointer";
+    tl.onclick = ev => { const r = tl.getBoundingClientRect(); seekClip((ev.clientX - r.left) / r.width * dur, 0); };
+    $("seg-labels").innerHTML = segs(c).map(s => '<span style="left:' + pct(s.clip_start) + '">✂ orig ' + hms(s.src_start) + "</span>").join("");
+    $("timeline-end").textContent = hms(dur);
+  }
+
+  // ---------------- annotation table ----------------
+  let rows = [];
+  function renderTable(c) {
+    rows = [];
+    moments(c).forEach(mm => rows.push({ q: c, zh: c._viewer_record_zh, m: mm, ct: toClip(c, mm.t), primary: true }));
+    inClipOthers(c).forEach(o => rows.push({ q: o.q, zh: o.zh, m: o.m, ct: o.ct, primary: false }));
+    rows.sort((a, b) => a.ct - b.ct || (b.primary - a.primary));
+    const body = rows.map((r, i) => {
+      const q = r.q;
+      const detail = r.m.kind === "evidence" ? escape(r.m.hint) : escape(q.qdesc);
+      return '<tr class="seekable fam-' + q.qtype + (r.primary ? " primary" : " other") + '" data-i="' + i + '">' +
+        '<td class="mono">q' + q.qid + (r.primary ? '<span class="tag-this">this case</span>' : "") + "</td>" +
+        '<td><span class="fam-pill">' + q.qtype + "</span>" + (q.horizon_layer ? '<div class="mono" style="font-size:11px;color:var(--muted)">' + q.horizon_layer + " · " + q.horizon_sec + "s</div>" : "") + "</td>" +
+        '<td><span class="kind-pill kind-' + r.m.kind + '">' + KIND_DESC[r.m.kind] + "</span></td>" +
+        '<td class="mono">' + hms(r.m.t) + ' <span style="opacity:.6">(' + r.m.t + "s)</span><br>clip " + hms(r.ct) + "</td>" +
+        "<td>" + escape(q.question) + '<span class="zh">' + escape(r.zh.question) + "</span></td>" +
+        '<td><span class="answer">' + escape(q.answer) + '</span><span class="zh">' + escape(r.zh.answer) + "</span></td>" +
+        '<td class="small">' + detail + "</td></tr>";
+    }).join("");
+    $("table-panel").innerHTML = "<h2>Annotations in this excerpt — " + rows.length + " timed moments (" + moments(c).length +
+      " from this case, " + (rows.length - moments(c).length) + " from other thread questions that fall inside the clip)</h2>" +
+      '<table class="qa-table"><thead><tr><th style="width:90px;">qid</th><th style="width:90px;">qtype</th><th style="width:140px;">moment</th><th style="width:140px;">original / clip</th><th>question</th><th style="width:180px;">answer</th><th>qdesc / evidence_hint</th></tr></thead><tbody id="ann-body">' +
+      body + "</tbody></table>";
+    Array.prototype.forEach.call($("ann-body").children, el =>
+      el.addEventListener("click", () => { const r = rows[+el.dataset.i]; seekClip(r.ct, r.m.kind === "ask" || r.m.kind === "ref" ? 3 : 1); }));
+  }
+
+  function renderThread(c) {
+    const items = c._viewer_thread_en.map((q, i) => {
+      const zh = c._viewer_thread_zh[i];
+      const ct = toClip(c, q.ask_sec);
+      const tag = q.qid === c.qid ? '<span class="tag-this">this case</span>' : (moments(q).some(m => toClip(c, m.t) != null) ? '<span class="tag-inclip">in clip</span>' : "");
+      return '<tr class="' + (ct != null ? "seekable" : "") + " fam-" + q.qtype + '" data-ct="' + (ct == null ? "" : ct) + '">' +
+        '<td class="mono">q' + q.qid + tag + "</td>" +
+        '<td><span class="fam-pill">' + q.qtype + "</span></td>" +
+        '<td class="mono">' + escape(q.ask_time) + (q.ref_time ? "<br>→ " + escape(q.ref_time) : "") + "</td>" +
+        "<td>" + escape(q.question) + '<span class="zh">' + escape(zh.question) + "</span></td>" +
+        '<td><span class="answer">' + escape(q.answer) + "</span></td></tr>";
+    }).join("");
+    $("thread-panel").innerHTML =
+      "<h2>Whole conversation thread for this video (" + c._viewer_thread_en.length + " questions)</h2>" +
+      '<details class="raw"><summary>Show every question asked over the full ' + hms(c._viewer_video_meta_en.duration_sec) + " stream, in ask order (only rows marked in clip are playable here)</summary>" +
+      '<table class="qa-table thread-list"><thead><tr><th style="width:120px;">qid</th><th style="width:70px;">qtype</th><th style="width:90px;">ask → ref</th><th>question</th><th style="width:220px;">answer</th></tr></thead><tbody id="thread-body">' +
+      items + "</tbody></table></details>";
+    Array.prototype.forEach.call($("thread-body").children, el => {
+      if (el.dataset.ct !== "") el.addEventListener("click", () => seekClip(parseFloat(el.dataset.ct), 3));
+    });
+  }
+
+  // ---------------- playback sync ----------------
+  function syncPlayback(c, t) {
+    const dur = caseDuration(c), ph = $("playhead");
+    if (ph) ph.style.left = Math.min(100, t / dur * 100).toFixed(2) + "%";
+    const body = $("ann-body");
+    if (!body) return;
+    let cur = -1;
+    rows.forEach((r, i) => { if (r.ct <= t + 0.05) cur = i; });
+    Array.prototype.forEach.call(body.children, (el, i) => el.classList.toggle("active", i === cur));
+  }
+
+  // ---------------- stats ----------------
+  function histBlock(title, obj, cls, highlightKeys) {
+    const entries = Object.entries(obj);
+    const maxN = Math.max.apply(null, entries.map(e => e[1]));
+    const total = entries.reduce((a, e) => a + e[1], 0);
+    return '<div><div class="hist-title">' + title + '</div><div class="histogram">' + entries.map(([k, n]) =>
+      '<div class="hist-row"><span class="hist-label' + (highlightKeys && highlightKeys.indexOf(k) >= 0 ? " in-subset" : "") + '" title="' + escape(k) + '">' + escape(k) + "</span>" +
+      '<span class="hist-bar-wrap"><span class="hist-bar ' + (cls || "") + '" style="width:' + (n / maxN * 100).toFixed(1) + '%"></span></span>' +
+      '<span class="hist-count">' + n + '<span class="hist-pct">' + (n / total * 100).toFixed(0) + "%</span></span></div>").join("") + "</div></div>";
+  }
+  function renderStats() {
+    const p = $("stats-panel");
+    if (!fullStats) { p.innerHTML = "<h2>Full dataset stats</h2><div class='note'>full_dataset_stats.json not found.</div>"; return; }
+    const s = fullStats;
+    const subDomains = Array.from(new Set(data.map(c => c._viewer_video_meta_en.L1)));
+    const hl = {};
+    ["HR", "Pro"].forEach(f => Object.entries(s.horizon_layers[f]).forEach(([k, n]) => { hl[f + " " + k] = n; }));
+    p.innerHTML = "<h2>Full dataset stats (all " + s.total_videos + " videos, " + s.total_questions.toLocaleString() + " questions, computed from question.en.jsonl + video_meta.en.jsonl)</h2>" +
+      '<div class="stats-summary">' +
+      "<span>videos<b>" + s.total_videos + "</b></span><span>questions<b>" + s.total_questions.toLocaleString() + "</b></span>" +
+      "<span>total video<b>" + s.total_hours + " h / " + s.video_bytes_total_gb + " GB tars</b></span>" +
+      "<span>duration<b>" + s.duration_min.min + "–" + s.duration_min.max + " min (mean " + s.duration_min.mean + ")</b></span>" +
+      "<span>questions / video<b>" + s.questions_per_video.min + "–" + s.questions_per_video.max + " (mean " + s.questions_per_video.mean + ")</b></span>" +
+      "<span>was_live<b>" + s.was_live_videos + "</b></span><span>in this subset<b>" + s.subset_cases + " cases / " + s.subset_video_ids.length + " videos</b></span></div>" +
+      '<div class="stats-grid">' +
+      histBlock("Questions by qtype", s.qtype_counts, "") +
+      histBlock("Horizon layers (HR: evidence gap L1 ≤5 min … L4 >30 min; Pro: wait L1 ≤30 s, L2 ≤4 min, L3 >4 min)", hl, "purple") +
+      histBlock("Videos by domain (L1) · • = in subset", s.domain_videos, "", subDomains) +
+      histBlock("Questions by domain (L1)", s.domain_questions, "green") +
+      histBlock("Pro: monitoring horizon (ref_sec − ask_sec), median " + s.pro_horizon_sec.median + " s", s.pro_horizon_hist, "orange") +
+      histBlock("HR: horizon_sec, median " + Math.round(s.hr_horizon_sec.median / 60) + " min", s.hr_horizon_hist, "purple") +
+      histBlock("HR: number of evidence moments per question", s.hr_evidence_count_hist, "purple") +
+      histBlock("Video duration", s.duration_hist_videos, "") +
+      histBlock("Questions per video", s.questions_per_video_hist, "") +
+      histBlock("Spoken language (videos)", s.language_videos, "green") +
+      histBlock("Ask position within the video (ask_sec / duration)", s.ask_position_hist, "") +
+      histBlock("Videos by sub-domain (L2, top 12)", Object.fromEntries(Object.entries(s.l2_videos).slice(0, 12)), "green") +
+      "</div>" +
+      '<div class="note">Data quirks found in the full files: for HR questions with several evidence moments (' + s.hr_horizon_definition_check.ask_minus_max_evidence +
+      "), horizon_sec = ask − LATEST evidence, not ask − earliest as the dataset card says; " + s.hr_horizon_hist["<0 (evidence after ask)"] +
+      " HR items have evidence after the ask time; " + s.pro_ref_not_after_ask + " Pro items have ref_sec ≤ ask_sec; " + s.hr_horizon_definition_check["cumulative_[0,ask]"] +
+      " cumulative-count HR items use evidence [0, ask_sec]. The card lists 8 L1 domains (paper: 7 + one Security & Surveillance video).</div>";
+  }
+
+  // ---------------- main ----------------
+  function render() {
+    const c = cur();
+    renderSelect();
+    const all = FAMILIES.indexOf(state.fam);
+    $("prev-btn").disabled = all === 0 && state.idx === 0;
+    $("next-btn").disabled = all === FAMILIES.length - 1 && state.idx === famCases().length - 1;
+    renderMetadata(c); renderVideo(c); renderTask(c); renderTable(c); renderThread(c);
+    $("raw-json").textContent = JSON.stringify(c, null, 1);
+  }
+
+  $("task-select").addEventListener("change", e => { state.fam = e.target.value; state.idx = 0; render(); });
+  $("case-select").addEventListener("change", e => { state.idx = +e.target.value; render(); });
+  $("prev-btn").addEventListener("click", () => nav(-1));
+  $("next-btn").addEventListener("click", () => nav(1));
+  document.addEventListener("keydown", e => {
+    if (e.target.tagName === "INPUT" || e.target.tagName === "SELECT") return;
+    if (e.key === "ArrowLeft") nav(-1);
+    if (e.key === "ArrowRight") nav(1);
+  });
+
+  Promise.all([
+    fetch("data/streamarena.json").then(r => r.json()),
+    fetch("file_durations.json").then(r => r.json()).catch(() => ({})),
+    fetch("full_dataset_stats.json").then(r => r.json()).catch(() => null),
+  ]).then(([d, durs, stats]) => {
+    data = d; durations = durs; fullStats = stats;
+    const hm = /fam=(RTP|HR|Tool|Pro)(?:&i=(\d+))?/.exec(location.hash);
+    if (hm) { state.fam = hm[1]; state.idx = Math.min(+(hm[2] || 0), famCases().length - 1); }
+    render(); renderStats();
+  }).catch(err => {
+    document.querySelector("main").innerHTML =
+      '<div class="panel" style="grid-column:1/-1;color:var(--bad);">Failed to load data: ' + escape(err.message) +
+      "<br>If opened via file://, run <code>python3 -m http.server</code> and open via http://localhost:8000/</div>";
+  });
+})();
+</script>
+</body>
+</html>

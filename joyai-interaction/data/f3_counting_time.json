@@ -1,0 +1,353 @@
+[
+ {
+  "video_name": "4662.mp4",
+  "task_type": "chat",
+  "source": "GUI-World",
+  "question": [
+   {
+    "content": "这个电路图里右边那个分叉的蓝色线是在连什么？",
+    "time": "5"
+   },
+   {
+    "content": "帮我开个计时，未来 9 秒每秒报一个数。",
+    "time": "8"
+   }
+  ],
+  "response": [
+   [
+    {
+     "content": "看起来是几个1位ALU模块的输出线汇总到一起，连到右边一个多位的输出端口上，应该是ALU的运算结果输出。",
+     "time": "5"
+    },
+    {
+     "content": "1",
+     "time": "9"
+    },
+    {
+     "content": "2",
+     "time": "10"
+    },
+    {
+     "content": "3",
+     "time": "11"
+    },
+    {
+     "content": "4",
+     "time": "12"
+    },
+    {
+     "content": "5",
+     "time": "13"
+    },
+    {
+     "content": "6",
+     "time": "14"
+    },
+    {
+     "content": "7",
+     "time": "15"
+    },
+    {
+     "content": "8",
+     "time": "16"
+    },
+    {
+     "content": "9",
+     "time": "17"
+    }
+   ]
+  ],
+  "_viewer_case_id": "F3-count-guiworld",
+  "_viewer_family": "f3_counting_time",
+  "_viewer_family_name": "Counting & perception over time",
+  "_viewer_subtype": "count_every_n_seconds",
+  "_viewer_timing_class": null,
+  "_viewer_release_location": {
+   "file": "chat/chat_shard_01.json",
+   "record_index": 532616
+  },
+  "_viewer_language": "zh",
+  "_viewer_classification_evidence": "second question is a timing instruction \"every second call out a number for 9 s\"; responses 1..9 one second apart.",
+  "_viewer_gloss_en": {
+   "label": "English translation written by the viewer author; not part of the dataset",
+   "question": [
+    "In this circuit diagram, what is that forked blue wire on the right connecting?",
+    "Start a timer for me: for the next 9 seconds, call out a number every second."
+   ],
+   "response": [
+    "It looks like the output lines of several 1-bit ALU modules merging and feeding a multi-bit output port on the right, so it is probably the ALU result output.",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  },
+  "_viewer_evidence": null,
+  "_viewer_video": "videos/F3-count-guiworld.mp4",
+  "_viewer_video_available": true,
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_clip_end_s": 19.867,
+  "_viewer_source_duration_s": 19.867,
+  "_viewer_source_resolution": [
+   1280,
+   720
+  ],
+  "_viewer_source_has_audio": true,
+  "_viewer_video_note": "GUI-World software/4662.mp4 from HF ONE-Lab/GUI-World.",
+  "_viewer_times_outside_clip": []
+ },
+ {
+  "video_name": "4256.mp4",
+  "task_type": "chat",
+  "source": "GUI-World",
+  "question": [
+   {
+    "content": "Wait 6 seconds, then answer: Why is the Microsoft Store just showing a blank screen with a loading spinner?",
+    "time": "3"
+   }
+  ],
+  "response": [
+   [
+    {
+     "content": "Looks like the page is still loading—probably just taking a moment to fetch content after clicking on something.",
+     "time": "9"
+    }
+   ]
+  ],
+  "_viewer_case_id": "F3-withhold-guiworld",
+  "_viewer_family": "f3_counting_time",
+  "_viewer_family_name": "Counting & perception over time",
+  "_viewer_subtype": "withhold_answer_N_seconds",
+  "_viewer_timing_class": null,
+  "_viewer_release_location": {
+   "file": "chat/chat_shard_01.json",
+   "record_index": 519640
+  },
+  "_viewer_language": "en",
+  "_viewer_classification_evidence": "\"Wait 6 seconds, then answer\": the answer is placed exactly 6 s after the question (withhold-for-N-seconds rule from the paper).",
+  "_viewer_gloss_en": null,
+  "_viewer_evidence": null,
+  "_viewer_video": "videos/F3-withhold-guiworld.mp4",
+  "_viewer_video_available": true,
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_clip_end_s": 16.533,
+  "_viewer_source_duration_s": 16.532,
+  "_viewer_source_resolution": [
+   1920,
+   1080
+  ],
+  "_viewer_source_has_audio": true,
+  "_viewer_video_note": "GUI-World software/4256.mp4 from HF ONE-Lab/GUI-World.",
+  "_viewer_times_outside_clip": []
+ },
+ {
+  "video_name": "24.033-159.9.mp4",
+  "task_type": "chat",
+  "source": "https://www.bilibili.com/video/BV12W4y1o72M",
+  "question": [
+   {
+    "content": "What kind of area does this look like?",
+    "time": "9"
+   },
+   {
+    "content": "What's that person in light blue doing?",
+    "time": "17"
+   },
+   {
+    "content": "For the next 54 seconds, play rapid-fire Q&A with me about what we see.",
+    "time": "43"
+   },
+   {
+    "content": "What's happening near that subway entrance?",
+    "time": "46"
+   },
+   {
+    "content": "What color is the crosswalk they're walking on?",
+    "time": "79"
+   },
+   {
+    "content": "What are people doing at this crosswalk?",
+    "time": "89"
+   }
+  ],
+  "response": [
+   [
+    {
+     "content": "Looks like a busy shopping district with a big sporting goods store and lots of pedestrians walking by.",
+     "time": "9"
+    }
+   ],
+   [
+    {
+     "content": "Looks like they're jogging or running past the storefront.",
+     "time": "17"
+    }
+   ],
+   [
+    {
+     "content": "Got it. I'll answer during the next 54 seconds.",
+     "time": "43"
+    }
+   ],
+   [
+    {
+     "content": "A couple people are heading down the stairs, and there's a guy in a yellow safety vest walking toward it too.",
+     "time": "46"
+    }
+   ],
+   [
+    {
+     "content": "It's a reddish-brown color with white stripes.",
+     "time": "79"
+    }
+   ],
+   [
+    {
+     "content": "They're walking across a wide pedestrian crossing in an urban area. Some are heading toward the buildings with shops and restaurants on the left side.",
+     "time": "89"
+    },
+    {
+     "content": "The timer is done, so this Q&A round is over. What else do you want to discuss?",
+     "time": "97"
+    }
+   ]
+  ],
+  "_viewer_case_id": "F3-timedwindow-bili",
+  "_viewer_family": "f3_counting_time",
+  "_viewer_family_name": "Counting & perception over time",
+  "_viewer_subtype": "timed_QA_window",
+  "_viewer_timing_class": null,
+  "_viewer_release_location": {
+   "file": "chat/chat_shard_01.json",
+   "record_index": 588247
+  },
+  "_viewer_language": "en",
+  "_viewer_classification_evidence": "\"For the next 54 seconds, play rapid-fire Q&A\": questions inside the window are answered, and a closing turn ends the round (bounded time-window rule).",
+  "_viewer_gloss_en": null,
+  "_viewer_evidence": null,
+  "_viewer_video": "videos/F3-timedwindow-bili.mp4",
+  "_viewer_video_available": true,
+  "_viewer_clip_offset_s": 4.0,
+  "_viewer_clip_end_s": 105.0,
+  "_viewer_source_duration_s": 135.867,
+  "_viewer_source_resolution": [
+   852,
+   480
+  ],
+  "_viewer_source_has_audio": true,
+  "_viewer_video_note": "Bilibili BV12W4y1o72M, section 24.033-159.9 s via yt-dlp. Uploader copyright.",
+  "_viewer_times_outside_clip": []
+ },
+ {
+  "video_name": "stu9_31.mp4",
+  "task_type": "chat",
+  "source": "TransRAC",
+  "question": [
+   {
+    "content": "Each time the person completes a jumping jack repetition in the video, report which repetition number it is.",
+    "time": "0"
+   }
+  ],
+  "response": [
+   {
+    "content": "This is the 1st repetition of jumping jack.",
+    "time": "3"
+   },
+   {
+    "content": "This is the 2nd repetition of jumping jack.",
+    "time": "5"
+   },
+   {
+    "content": "This is the 3rd repetition of jumping jack.",
+    "time": "6"
+   },
+   {
+    "content": "This is the 4th repetition of jumping jack.",
+    "time": "7"
+   },
+   {
+    "content": "This is the 5th repetition of jumping jack.",
+    "time": "8"
+   },
+   {
+    "content": "This is the 6th repetition of jumping jack.",
+    "time": "9"
+   },
+   {
+    "content": "This is the 7th repetition of jumping jack.",
+    "time": "10"
+   }
+  ],
+  "_viewer_case_id": "F3-repcount-transrac",
+  "_viewer_family": "f3_counting_time",
+  "_viewer_family_name": "Counting & perception over time",
+  "_viewer_subtype": "repetition_counting",
+  "_viewer_timing_class": "forward",
+  "_viewer_release_location": {
+   "file": "chat/chat_shard_03.json",
+   "record_index": 154437
+  },
+  "_viewer_language": "en",
+  "_viewer_classification_evidence": "source TransRAC; one response per completed repetition with a running count (paper: counting, per-second labels).",
+  "_viewer_gloss_en": null,
+  "_viewer_evidence": {
+   "time_s": 3,
+   "rule": "forward: evidence = first answer/alert second (the model stays silent until then)"
+  },
+  "_viewer_video": "videos/F3-repcount-transrac.mp4",
+  "_viewer_video_available": true,
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_clip_end_s": 11.0,
+  "_viewer_source_duration_s": 11.0,
+  "_viewer_source_resolution": [
+   640,
+   360
+  ],
+  "_viewer_source_has_audio": false,
+  "_viewer_video_note": "RepCountA stu9_31.mp4 (TransRAC / LLSP data) read from the video_blob column of HF lmms-lab-eval/repcounta-lance (test split, row 86). No audio in source.",
+  "_viewer_times_outside_clip": []
+ },
+ {
+  "video_name": "1030555445.mp4",
+  "task_type": "chat",
+  "source": "VideoGPT-plus",
+  "question": [
+   {
+    "content": "The mother in pink just finished massaging her baby's chest and belly with both hands. I'd like to know exactly how long that rubbing lasted from start to finish, and when you answer, lead with the duration in seconds before mentioning anything else about what you observed.",
+    "time": "28"
+   }
+  ],
+  "response": [
+   {
+    "content": "The chest and belly rubbing lasted about 13 seconds. I saw the mother in pink pajamas use both hands to massage the baby's torso starting around the 15-second mark, continuing with gentle circular motions across the chest and belly until she finished right around second 28.",
+    "time": "28"
+   }
+  ],
+  "_viewer_case_id": "F3-duration-videogptplus",
+  "_viewer_family": "f3_counting_time",
+  "_viewer_family_name": "Counting & perception over time",
+  "_viewer_subtype": "duration_estimation",
+  "_viewer_timing_class": "backward",
+  "_viewer_release_location": {
+   "file": "chat/chat_shard_01.json",
+   "record_index": 1931
+  },
+  "_viewer_language": "en",
+  "_viewer_classification_evidence": "source VideoGPT-plus, single question asking how many seconds an action lasted -> duration/time awareness.",
+  "_viewer_gloss_en": null,
+  "_viewer_evidence": {
+   "time_s": null,
+   "rule": "backward: evidence lies before the question; exact second not stored in the release"
+  },
+  "_viewer_video": null,
+  "_viewer_video_available": false,
+  "_viewer_clip_offset_s": 0,
+  "_viewer_clip_end_s": 33,
+  "_viewer_video_note": "Video not included: WebVid (Shutterstock stock footage; WebVid was withdrawn, not redistributable)"
+ }
+]

@@ -1,0 +1,285 @@
+[
+ {
+  "video_name": "_1OJwMEZvPo",
+  "task_type": "narration",
+  "source": "OmniStar-RNG",
+  "question": [
+   {
+    "content": "Describe what you see in the video.",
+    "time": "0"
+   }
+  ],
+  "response": [
+   {
+    "content": "A man and a woman are sitting at a table. The woman in a yellow T-shirt is looking at her phone, and the man in a gray T-shirt has both hands on the table.",
+    "time": "0"
+   },
+   {
+    "content": "Then, two Russian nesting dolls appear in front of them. The woman grabs the larger one from the man's hand.",
+    "time": "8"
+   },
+   {
+    "content": "Subsequently, the man takes apart his nesting doll.",
+    "time": "17"
+   },
+   {
+    "content": "Then, four nesting dolls appear on the table. The man reveals a smug expression.",
+    "time": "22"
+   },
+   {
+    "content": "Afterward, the woman takes apart her nesting doll, only to find it empty. She is shocked.",
+    "time": "32"
+   },
+   {
+    "content": "Finally, the man bursts into laughter and points at the woman. The woman angrily pushes the dolls on the table away and turns to the left.",
+    "time": "40"
+   }
+  ],
+  "_viewer_case_id": "F4-narration-omnistar",
+  "_viewer_family": "f4_narration",
+  "_viewer_family_name": "Live commentary & narration",
+  "_viewer_subtype": "dense_realtime_narration",
+  "_viewer_timing_class": null,
+  "_viewer_release_location": {
+   "file": "narration/narration.json",
+   "record_index": 211393
+  },
+  "_viewer_language": "en",
+  "_viewer_classification_evidence": "task_type narration, source OmniStar-RNG: dense captions re-timed as a running description.",
+  "_viewer_gloss_en": null,
+  "_viewer_evidence": null,
+  "_viewer_video": "videos/F4-narration-omnistar.mp4",
+  "_viewer_video_available": true,
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_clip_end_s": 40.936,
+  "_viewer_source_duration_s": 40.937,
+  "_viewer_source_resolution": [
+   720,
+   1280
+  ],
+  "_viewer_source_has_audio": true,
+  "_viewer_video_note": "OmniStar-RNG videos/_1OJwMEZvPo.mp4 from HF yzy666/OmniStar-RNG (YouTube-sourced short).",
+  "_viewer_times_outside_clip": []
+ },
+ {
+  "video_name": "4318.mp4",
+  "task_type": "narration",
+  "source": "GUI-World",
+  "question": [
+   {
+    "content": "页面上发生啥了，你实时解说下",
+    "time": "0"
+   }
+  ],
+  "response": [
+   {
+    "content": "现在看到的是一个邮件编辑界面，顶部有完整的格式工具栏，目前处于空白编辑状态。",
+    "time": "0"
+   },
+   {
+    "content": "用户点击了颜色按钮，页面上立刻弹出了颜色选择面板，能看到各种主题色和标准色。",
+    "time": "1"
+   },
+   {
+    "content": "鼠标移到了颜色面板的绿色区域，正在挑选具体的颜色，面板上的色块跟着发生了变化。",
+    "time": "4"
+   },
+   {
+    "content": "颜色面板关闭了，说明用户已经选好了颜色，界面回到了邮件编辑的主页面。",
+    "time": "5"
+   },
+   {
+    "content": "用户点击了列表样式按钮，弹出了项目符号和编号列表的格式选择菜单。",
+    "time": "9"
+   },
+   {
+    "content": "用户点击了段落样式下拉框，菜单展开后显示了标题、正文等多种格式层级选项。",
+    "time": "12"
+   }
+  ],
+  "_viewer_case_id": "F4-screen-narration-guiworld",
+  "_viewer_family": "f4_narration",
+  "_viewer_family_name": "Live commentary & narration",
+  "_viewer_subtype": "screen_operation_narration",
+  "_viewer_timing_class": null,
+  "_viewer_release_location": {
+   "file": "narration/narration.json",
+   "record_index": 39953
+  },
+  "_viewer_language": "zh",
+  "_viewer_classification_evidence": "task_type narration, source GUI-World: step-by-step live narration of screen operations.",
+  "_viewer_gloss_en": {
+   "label": "English translation written by the viewer author; not part of the dataset",
+   "question": [
+    "What's happening on the page? Narrate it for me in real time."
+   ],
+   "response": [
+    "What we see now is an email editing screen with a full formatting toolbar at the top; the body is currently empty.",
+    "The user clicked the colour button, and a colour-picker panel popped up immediately, showing theme colours and standard colours.",
+    "The mouse moved onto the green area of the colour panel and is choosing a specific colour; the swatches on the panel change accordingly.",
+    "The colour panel closed, meaning the user has picked a colour; the view is back on the main email-editing page.",
+    "The user clicked the list-style button, and a menu of bullet and numbered-list formats popped up.",
+    "The user clicked the paragraph-style dropdown; the expanded menu shows several formatting levels such as headings and body text."
+   ]
+  },
+  "_viewer_evidence": null,
+  "_viewer_video": "videos/F4-screen-narration-guiworld.mp4",
+  "_viewer_video_available": true,
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_clip_end_s": 13.433,
+  "_viewer_source_duration_s": 13.434,
+  "_viewer_source_resolution": [
+   1920,
+   1080
+  ],
+  "_viewer_source_has_audio": true,
+  "_viewer_video_note": "GUI-World software/4318.mp4 from HF ONE-Lab/GUI-World.",
+  "_viewer_times_outside_clip": []
+ },
+ {
+  "video_name": "aVVcVwEX3VA_0.40-49.15_2.0fps.mp4",
+  "task_type": "narration",
+  "source": "Live-WhisperX-526K",
+  "question": [
+   {
+    "content": "Create commentary for a rare wildlife video showcasing an elusive animal species, highlighting its unique features and behaviors.",
+    "time": "0"
+   }
+  ],
+  "response": [
+   {
+    "content": "The blind shark is one of the most elusive species of shark in New South Wales.",
+    "time": "4"
+   },
+   {
+    "content": "This shark gets its name from the milky colour of its eyes and the fact that they close their eyes when removed from the water.",
+    "time": "10"
+   },
+   {
+    "content": "This shark is mainly nocturnal and spends most of the daylight hours in crevices or under seagrass.",
+    "time": "17"
+   },
+   {
+    "content": "So seeing them out in the open like this is rare and has only ever been recorded very few times.",
+    "time": "22"
+   },
+   {
+    "content": "So this makes this footage unique.",
+    "time": "24"
+   },
+   {
+    "content": "These sharks primarily feed on mollusks and snails.",
+    "time": "28"
+   },
+   {
+    "content": "but we'll go for a small fish when it is available.",
+    "time": "31"
+   },
+   {
+    "content": "As for danger to humans, these sharks pose very little threat to people as they are pretty rare and don't have the hardware to kill people.",
+    "time": "40"
+   },
+   {
+    "content": "This shark has been a long coveted species to find for its wild out there and we finally did it.",
+    "time": "47"
+   }
+  ],
+  "_viewer_case_id": "F4-asr-commentary-livewhisperx",
+  "_viewer_family": "f4_narration",
+  "_viewer_family_name": "Live commentary & narration",
+  "_viewer_subtype": "asr_live_commentary",
+  "_viewer_timing_class": null,
+  "_viewer_release_location": {
+   "file": "narration/narration.json",
+   "record_index": 71301
+  },
+  "_viewer_language": "en",
+  "_viewer_classification_evidence": "task_type narration, source Live-WhisperX-526K: the responses are the original speaker's ASR transcript sentences at their spoken times (paper: commentary recovered with ASR).",
+  "_viewer_gloss_en": null,
+  "_viewer_evidence": null,
+  "_viewer_video": null,
+  "_viewer_video_available": false,
+  "_viewer_clip_offset_s": 0,
+  "_viewer_clip_end_s": 52,
+  "_viewer_video_note": "Video not included: YouTube clip (Live-WhisperX-526K ships no video; YouTube download blocked by bot check from this cluster)"
+ },
+ {
+  "video_name": "nusar-2021_action_both_9023-b05d_9023_user_id_2021-02-03_134815__HMC_21179183_mono10bit.mp4",
+  "task_type": "chat",
+  "source": "assembly101",
+  "question": [
+   {
+    "content": "I want to assemble a toy dump truck.",
+    "time": "154"
+   }
+  ],
+  "response": [
+   {
+    "content": "Great goal! Let's get started. First, attach the rear bumper to the chassis.",
+    "time": "154"
+   },
+   {
+    "content": "Now, screw it into place with your hand, then use a screwdriver to secure it.",
+    "time": "160"
+   },
+   {
+    "content": "Next, let's move on to attaching the dump bed to the chassis. Screw it into place with your hand, then use a screwdriver to secure it.",
+    "time": "194"
+   },
+   {
+    "content": "Now, focus on screwing the interior into place with a screwdriver. Keep going, you're making progress.",
+    "time": "215"
+   },
+   {
+    "content": "Wait, it looks like there was a mistake earlier. You attached the bumper to the wrong position. Let's correct that. Detach the bumper from the chassis.",
+    "time": "244"
+   },
+   {
+    "content": "Now that the bumper is detached, let's reattach it to the correct position. Attach the bumper to the cabin.",
+    "time": "253"
+   },
+   {
+    "content": "Great job! Next, attach the cabin to the chassis and secure it with screws.",
+    "time": "263"
+   },
+   {
+    "content": "Now, screw the front bumper into place with your hand, then use a screwdriver to secure it tightly.",
+    "time": "280"
+   },
+   {
+    "content": "Good progress! Moving on, attach the lid to the dump bed. Start by screwing it into place with your hand.",
+    "time": "289"
+   },
+   {
+    "content": "Use a screwdriver to secure the lid. Make sure it's tightly screwed in.",
+    "time": "307"
+   },
+   {
+    "content": "Give it a last hand-tightening to ensure it's secure.",
+    "time": "313"
+   },
+   {
+    "content": "You're almost done! Now, let's demonstrate the functionality of your assembled toy dump truck.",
+    "time": "329"
+   }
+  ],
+  "_viewer_case_id": "F4-guidance-assembly101",
+  "_viewer_family": "f4_narration",
+  "_viewer_family_name": "Live commentary & narration",
+  "_viewer_subtype": "task_step_guidance",
+  "_viewer_timing_class": null,
+  "_viewer_release_location": {
+   "file": "chat/chat_shard_03.json",
+   "record_index": 692
+  },
+  "_viewer_language": "en",
+  "_viewer_classification_evidence": "guided-task session (Assembly101 / HoloAssist / EPIC / Ego4D / EgoExoLearn goal statement): the assistant issues step instructions at step boundaries and corrects mistakes. The paper has no guidance family; assigned to commentary/narration (judgment call).",
+  "_viewer_gloss_en": null,
+  "_viewer_evidence": null,
+  "_viewer_video": null,
+  "_viewer_video_available": false,
+  "_viewer_clip_offset_s": 0,
+  "_viewer_clip_end_s": 334,
+  "_viewer_video_note": "Video not included: Assembly101 (license-gated; not downloaded by policy)"
+ }
+]

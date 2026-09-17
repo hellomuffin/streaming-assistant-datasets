@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GuideMe Dataset Viewer</title>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2129;
+  --border: #2d3640;
+  --text: #e6e9ed;
+  --muted: #8a949e;
+  --accent: #4dabf7;
+  --good: #51cf66;
+  --bad: #ff6b6b;
+  --highlight: #ffd43b;
+  --purple: #b197fc;
+  --orange: #ffa94d;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.5;
+}
+header {
+  padding: 12px 20px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent);
+}
+header h1 .subtitle {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 400;
+  margin-left: 8px;
+  letter-spacing: 0.3px;
+}
+.control { display: flex; align-items: center; gap: 6px; }
+.control label { color: var(--muted); font-size: 12px; }
+select, input, button {
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 6px 10px;
+  font-family: inherit;
+  font-size: 13px;
+  border-radius: 4px;
+  max-width: 340px;
+}
+button { cursor: pointer; }
+button:hover:not(:disabled) { background: var(--border); }
+button:disabled { opacity: 0.4; cursor: not-allowed; }
+.banner {
+  background: rgba(77, 171, 247, 0.08);
+  border-bottom: 1px solid var(--border);
+  padding: 8px 20px;
+  font-size: 12px;
+  color: var(--muted);
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.banner strong { color: var(--text); }
+.banner a { color: var(--accent); text-decoration: none; }
+.banner a:hover { text-decoration: underline; }
+.back-link { font-weight: 500; }
+.kbd {
+  display: inline-block;
+  padding: 1px 6px;
+  font-family: monospace;
+  font-size: 11px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-bottom-width: 2px;
+  border-radius: 3px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 16px;
+  padding: 16px;
+  max-width: 100%;
+}
+@media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px;
+  overflow: hidden;
+}
+.panel h2, .wide-panel h2 {
+  margin: 0 0 12px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--muted);
+  font-weight: 600;
+}
+.field { margin-bottom: 12px; }
+.field-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.field-value { font-size: 14px; word-break: break-word; }
+.field-value.code {
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 12px;
+  background: var(--bg);
+  padding: 6px 8px;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  color: var(--accent);
+}
+video {
+  width: 100%;
+  max-height: 560px;
+  background: #000;
+  border-radius: 4px;
+}
+.video-missing {
+  padding: 40px;
+  text-align: center;
+  color: var(--muted);
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+}
+.wide-panel {
+  grid-column: 1 / -1;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px 20px;
+}
+.task-desc {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0 0 16px;
+  padding: 10px 14px;
+  background: var(--bg);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 4px 4px 0;
+}
+.src-pill {
+  display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 700;
+  letter-spacing: 0.5px; text-transform: uppercase; margin-right: 8px;
+  color: var(--sc); background: color-mix(in srgb, var(--sc) 15%, transparent); border: 1px solid color-mix(in srgb, var(--sc) 40%, transparent);
+}
+.src-CaptainCook4D { --sc: var(--orange); }
+.src-EgoPER { --sc: var(--purple); }
+.src-QEVD-Fit-Coach { --sc: var(--good); }
+.src-HoloAssist { --sc: var(--accent); }
+
+/* output types */
+.ot-instruction         { --tt: var(--accent); }
+.ot-completion_feedback { --tt: var(--good); }
+.ot-error_detection     { --tt: var(--bad); }
+.ot-corrective_guidance { --tt: var(--orange); }
+.ot-user                { --tt: var(--highlight); }
+.type-pill {
+  display: inline-block; padding: 1px 7px; border-radius: 10px; font-size: 10px; font-weight: 700;
+  letter-spacing: 0.3px; text-transform: uppercase; white-space: nowrap; margin: 1px 3px 1px 0;
+  color: var(--tt); background: color-mix(in srgb, var(--tt) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--tt) 40%, transparent);
+}
+.heur { font-size: 10px; color: var(--muted); margin-top: 3px; white-space: nowrap; }
+.heur b { color: var(--highlight); font-weight: 600; }
+.meta-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.meta-chip {
+  font-family: "SFMono-Regular", Consolas, monospace; font-size: 11px; background: var(--bg);
+  border: 1px solid var(--border); color: var(--muted); padding: 3px 8px; border-radius: 3px;
+}
+.meta-chip b { color: var(--text); margin-left: 3px; }
+.meta-chip .swatch { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--tt); margin-right: 5px; }
+
+/* timeline */
+.timeline-wrap { margin: 4px 0 18px; }
+.timeline { position: relative; height: 38px; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+.tl-silent { position: absolute; top: 0; bottom: 0; background: repeating-linear-gradient(135deg, rgba(138,148,158,0.13) 0 4px, transparent 4px 8px); pointer-events: none; }
+.tl-tick { position: absolute; top: 9px; width: 3px; height: 20px; border-radius: 2px; background: var(--tt); transform: translateX(-1px); cursor: pointer; opacity: 0.9; }
+.tl-tick.ot-error_detection { top: 3px; height: 32px; width: 4px; }
+.tl-tick.ot-user { top: 3px; height: 32px; }
+.tl-tick:hover { opacity: 1; outline: 1px solid var(--text); }
+.tl-playhead { position: absolute; top: -3px; bottom: -3px; width: 2px; background: var(--highlight); pointer-events: none; }
+.timeline-label { font-size: 11px; color: var(--muted); display: flex; justify-content: space-between; margin-top: 6px; font-family: "SFMono-Regular", Consolas, monospace; }
+.legend-row { display: flex; flex-wrap: wrap; gap: 14px; font-size: 11px; color: var(--muted); margin: 8px 0 0; }
+.legend-row .chip { display: inline-flex; align-items: center; gap: 5px; }
+.legend-row .swatch { width: 10px; height: 10px; border-radius: 50%; background: var(--tt); border: 1px solid rgba(0,0,0,0.4); }
+.legend-row .swatch.hatch { border-radius: 2px; background: repeating-linear-gradient(135deg, rgba(138,148,158,0.5) 0 2px, transparent 2px 4px); }
+
+/* table */
+.utt-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.utt-table th, .utt-table td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--border); vertical-align: top; }
+.utt-table th { color: var(--muted); text-transform: uppercase; font-size: 10px; letter-spacing: 0.5px; background: var(--bg); }
+.utt-table td.mono { font-family: "SFMono-Regular", Consolas, monospace; font-size: 12px; color: var(--muted); white-space: nowrap; }
+.utt-table td.mono .sub { display: block; font-size: 10.5px; opacity: 0.75; }
+.utt-table tbody tr { cursor: pointer; }
+.utt-table tbody tr:hover { background: rgba(77, 171, 247, 0.06); }
+.utt-table tr.active { background: rgba(255, 212, 59, 0.08); }
+.utt-table tr.active td { border-bottom-color: var(--highlight); }
+.utt-table tr.outside { opacity: 0.45; cursor: default; }
+.utt-table tr.row-user td.utt-text { color: var(--highlight); }
+.speaker { font-size: 10px; font-weight: 700; letter-spacing: 0.4px; text-transform: uppercase; }
+.row-user .speaker { color: var(--highlight); }
+.row-asst .speaker { color: var(--accent); }
+
+/* raw json */
+details.raw { margin-top: 4px; }
+details.raw summary { cursor: pointer; color: var(--accent); font-size: 13px; user-select: none; }
+.raw pre { margin: 10px 0 0; padding: 12px 14px; background: #0a0d11; border: 1px solid var(--border); border-radius: 4px; font-family: "SFMono-Regular", Consolas, monospace; font-size: 11.5px; color: var(--text); white-space: pre-wrap; word-break: break-word; max-height: 480px; overflow-y: auto; }
+
+/* stats */
+.stats-block { margin-bottom: 26px; }
+.stats-block h3 { margin: 0 0 8px; font-size: 13px; color: var(--text); font-weight: 600; }
+.stats-block h3 .tag { font-size: 10px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; padding: 2px 8px; border-radius: 10px; margin-left: 8px; vertical-align: 1px; }
+.tag.preview { color: var(--highlight); background: rgba(255,212,59,.1); border: 1px solid rgba(255,212,59,.35); }
+.tag.paper { color: var(--purple); background: rgba(177,151,252,.1); border: 1px solid rgba(177,151,252,.35); }
+.stats-summary { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 12px; padding: 10px 14px; background: var(--bg); border: 1px solid var(--border); border-radius: 4px; font-size: 12px; color: var(--muted); font-family: "SFMono-Regular", Consolas, monospace; }
+.stats-summary b { color: var(--text); font-weight: 600; margin-left: 3px; }
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+.histogram { display: flex; flex-direction: column; gap: 3px; }
+.hist-title { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.hist-row { display: grid; grid-template-columns: 150px 1fr 90px; align-items: center; gap: 10px; font-size: 11.5px; font-family: "SFMono-Regular", Consolas, monospace; }
+.hist-row.vrow { grid-template-columns: 210px 1fr 110px; }
+.hist-label { color: var(--muted); text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hist-label.in-subset { color: var(--text); }
+.hist-label.in-subset::after { content: " \2022"; color: var(--highlight); }
+.hist-bar-wrap { height: 15px; background: var(--bg); border-radius: 3px; overflow: hidden; position: relative; }
+.hist-bar { height: 100%; background: linear-gradient(90deg, var(--tt, var(--accent)), color-mix(in srgb, var(--tt, var(--accent)) 60%, #fff)); }
+.hist-bar-err { position: absolute; top: 0; left: 0; height: 100%; background: rgba(255, 107, 107, 0.85); }
+.hist-count { color: var(--text); }
+.hist-count .pct { color: var(--muted); font-size: 10.5px; margin-left: 4px; }
+.res-table { border-collapse: collapse; font-size: 12px; font-family: "SFMono-Regular", Consolas, monospace; width: 100%; }
+.res-table td, .res-table th { padding: 4px 8px; border-bottom: 1px solid var(--border); text-align: left; }
+.res-table th { color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: .5px; }
+.note { margin: 10px 0 0; font-size: 12px; color: var(--muted); font-style: italic; }
+code { font-family: "SFMono-Regular", Consolas, monospace; font-size: 12px; color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="banner">
+  <a href="https://jxb1st.github.io/datasets/" class="back-link">&larr; Dataset panel</a>
+  <span>Showing a <strong>12-video</strong> subset of the released <strong>50-video test preview</strong> (videos as shipped at 2 fps, re-encoded to 360p H.264). Full benchmark (unreleased): <strong>2,458 videos / 223.7 h / 47,775 samples</strong> &mdash;
+    <a href="https://huggingface.co/datasets/alisn/GuideMe_Test_Subset50" target="_blank">HuggingFace preview</a> &middot;
+    <a href="https://arxiv.org/abs/2607.02991" target="_blank">paper</a> &middot;
+    <a href="https://github.com/fawnliu/GuideMe" target="_blank">code</a> &middot;
+    <a href="https://fawnliu.github.io/project/guideme/" target="_blank">project page</a> &middot;
+    <span>ECCV 2026 (CityU HK / Huawei Research)</span>
+  </span>
+</div>
+<header>
+  <h1>GuideMe Viewer <span class="subtitle">streaming task guidance &amp; intervention: speak or stay silent</span></h1>
+  <div class="control">
+    <label>Source</label>
+    <select id="src-select"></select>
+  </div>
+  <div class="control">
+    <label>Case</label>
+    <select id="case-select"></select>
+  </div>
+  <div class="control">
+    <button id="prev-btn">&larr; Prev</button>
+    <button id="next-btn">Next &rarr;</button>
+  </div>
+  <div style="margin-left:auto;color:var(--muted);font-size:11px;">
+    <span class="kbd">&larr;</span> <span class="kbd">&rarr;</span> switch case &middot; click a row or tick to seek
+  </div>
+</header>
+
+<main>
+  <aside class="panel" id="metadata-panel">
+    <h2>Metadata</h2>
+    <div id="metadata-fields"></div>
+  </aside>
+  <section class="panel" id="video-panel">
+    <h2>Video (preview's 2 fps file, 360p H.264 re-encode)</h2>
+    <div id="video-container"></div>
+    <div class="note" id="video-note"></div>
+  </section>
+  <section class="wide-panel" id="task-content">
+    <h2>Streaming guidance dialogue &mdash; <span id="turn-count"></span></h2>
+    <p class="task-desc">
+      <b>What GuideMe tests.</b> A user performs a multi-step task (cooking, daily-life routine, fitness workout, object
+      manipulation) and asks once, at the start, to be guided. The video then streams. At each queried time the model sees
+      the last <b>60 s</b> of video plus the dialogue so far and must either answer <code>Silent</code> or speak one of four
+      outputs: a <b>next-step instruction</b>, <b>completion feedback</b> (the step was done right), <b>error detection</b>
+      (a mistake just happened), or <b>corrective guidance</b> (how to fix it). The reference dialogue is written by an LLM from
+      the source datasets' step/error annotations, placed at action start (instruction) and action end (feedback or
+      error + correction). Default evaluation is <b>anchor-based</b>: every reference assistant timestamp is a speak query, plus
+      an equal number of silent queries at least 5 s from any anchor (hatched on the timeline); predictions are scored as
+      correct-silent / false-alarm / no-response / partly-correct and by time-decayed semantic matching.<br><br>
+      <b>Fields.</b> Each record has <code>video_id</code>, <code>videos</code> (file in <code>videos_2fps/</code>) and
+      <code>conversations</code>: turns with <code>from</code> (<code>user</code> | <code>assistant</code>), <code>value</code>
+      (text) and <code>timestamp</code> (integer seconds in the source video). The release has <b>no output-type field</b>:
+      the type pills below are this viewer's <b>hand labels</b> (<code>_viewer_output_types</code>); a keyword heuristic used
+      for the preview-wide stats is shown underneath only where it disagrees.
+    </p>
+    <div class="timeline-wrap">
+      <div class="timeline" id="timeline"></div>
+      <div class="timeline-label"><span id="timeline-start"></span><span id="timeline-end"></span></div>
+      <div class="legend-row" id="legend-row"></div>
+    </div>
+    <table class="utt-table">
+      <thead><tr><th style="width:36px;">#</th><th style="width:130px;">timestamp (src / clip)</th><th style="width:80px;">from</th><th style="width:200px;">output type</th><th>value</th></tr></thead>
+      <tbody id="utt-body"></tbody>
+    </table>
+  </section>
+  <section class="wide-panel" id="raw-panel">
+    <h2>Raw record (all fields)</h2>
+    <details class="raw"><summary>Show full JSON for this case (verbatim record + <code>_viewer_*</code> keys)</summary><pre id="raw-json"></pre></details>
+  </section>
+  <section class="wide-panel" id="stats-panel"></section>
+</main>
+
+<script>
+(function() {
+  "use strict";
+  const TYPES = [
+    { key: "instruction",         label: "Next-step instruction", desc: "directs the upcoming step" },
+    { key: "completion_feedback", label: "Completion feedback",   desc: "confirms a step / rep was done right" },
+    { key: "error_detection",     label: "Error detection",       desc: "points out a mistake that just happened" },
+    { key: "corrective_guidance", label: "Corrective guidance",   desc: "says how to fix it / get back on track" },
+  ];
+  const TYPE_LABEL = {}; TYPES.forEach(t => TYPE_LABEL[t.key] = t.label);
+  const PRIORITY = ["error_detection", "corrective_guidance", "instruction", "completion_feedback"];
+  const SOURCES = ["CaptainCook4D", "EgoPER", "QEVD-Fit-Coach", "HoloAssist"];
+  const SRC_INFO = {
+    "CaptainCook4D": "Egocentric cooking (GoPro), recipes with scripted mistakes; audio kept",
+    "EgoPER": "Egocentric daily-life kitchen tasks, normal vs error recordings",
+    "QEVD-Fit-Coach": "Fitness sessions filmed by a fixed camera with a live coach",
+    "HoloAssist": "Egocentric object manipulation with an instructor (68% of full benchmark; 0 videos in the preview)",
+  };
+
+  let all = [], cases = [], durations = {}, fullStats = null;
+  const state = { src: "all", idx: 0 };
+  const $ = id => document.getElementById(id);
+  function escape(s) {
+    if (s == null) return "";
+    return String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  }
+  function mmss(t) {
+    if (t == null || !isFinite(t)) return "-";
+    const m = Math.floor(t / 60), s = Math.floor(t % 60);
+    return m + ":" + String(s).padStart(2, "0");
+  }
+  function fmtInt(n) { return Number(n).toLocaleString("en-US"); }
+  function cur() { return cases[state.idx]; }
+  function off(c) { return c._viewer_clip_offset_s || 0; }
+  function clipDur(c) { const d = durations[c._viewer_video]; return d != null ? d : c._viewer_clip_duration_s; }
+  function primary(types) { for (const p of PRIORITY) if (types.indexOf(p) >= 0) return p; return types[0]; }
+  function typeCounts(c) {
+    const n = {};
+    c._viewer_output_types.forEach(ts => { if (ts) ts.forEach(t => n[t] = (n[t] || 0) + 1); });
+    return n;
+  }
+  function inClip(c, t) { const x = t - off(c); return x >= 0 && x <= clipDur(c) + 0.5; }
+
+  // ---------------- header ----------------
+  function renderSrcSelect() {
+    const sel = $("src-select");
+    const counts = {}; all.forEach(c => counts[c._viewer_source] = (counts[c._viewer_source] || 0) + 1);
+    sel.innerHTML = '<option value="all">All sources (' + all.length + ")</option>" +
+      SOURCES.map(s => '<option value="' + s + '"' + (counts[s] ? "" : " disabled") + ">" + s + " (" + (counts[s] || 0) + ")" +
+        (counts[s] ? "" : " — not in preview") + "</option>").join("");
+  }
+  function renderCaseSelect() {
+    const sel = $("case-select");
+    sel.innerHTML = "";
+    cases.forEach((c, i) => {
+      const n = typeCounts(c);
+      const o = document.createElement("option");
+      o.value = i;
+      const task = c._viewer_source === "QEVD-Fit-Coach" ? "fitness" : c._viewer_task.replace(/_/g, " ");
+      o.textContent = c.video_id + " — " + task + " · " + (n.error_detection || 0) + " err";
+      sel.appendChild(o);
+    });
+    sel.value = state.idx;
+  }
+  function nav(d) { state.idx = Math.min(cases.length - 1, Math.max(0, state.idx + d)); render(); }
+
+  // ---------------- metadata ----------------
+  function field(label, value, isCode) {
+    return '<div class="field"><div class="field-label">' + escape(label) + '</div><div class="field-value' + (isCode ? " code" : "") + '">' + value + "</div></div>";
+  }
+  function renderMetadata(c) {
+    const n = typeCounts(c);
+    const a = c.conversations.filter(t => t.from === "assistant");
+    const chips = TYPES.filter(t => n[t.key]).map(t =>
+      '<span class="meta-chip ot-' + t.key + '"><span class="swatch"></span>' + t.label + "<b>" + n[t.key] + "</b></span>").join("");
+    const outside = c.conversations.filter(t => !inClip(c, t.timestamp)).length;
+    const user = c.conversations.find(t => t.from === "user");
+    $("metadata-fields").innerHTML =
+      '<div style="margin-bottom:12px;"><span class="src-pill src-' + c._viewer_source + '">' + escape(c._viewer_source) + "</span></div>" +
+      field("video_id", escape(c.video_id), true) +
+      field("videos", escape(c.videos.join(", ")), true) +
+      field("task", escape(c._viewer_task)) +
+      field("source dataset", escape(SRC_INFO[c._viewer_source])) +
+      field("user query (t=" + (user ? user.timestamp : "-") + "s)", user ? escape(user.value) : "-") +
+      field("source video length", mmss(c._viewer_source_duration_s) + " (" + c._viewer_source_duration_s + " s, 2 fps)") +
+      field("clip shown", off(c) === 0 && Math.abs(clipDur(c) - c._viewer_source_duration_s) < 1 ?
+        "full video (" + mmss(clipDur(c)) + ")" :
+        "excerpt " + mmss(off(c)) + "–" + mmss(off(c) + clipDur(c)) + " of source (clip_offset_s = " + off(c) + "); " + outside + " turn(s) fall outside") +
+      field("assistant turns", a.length + " (speak anchors) · last at " + mmss(a[a.length - 1].timestamp)) +
+      '<div class="field"><div class="field-label">output types (hand-labelled)</div><div class="meta-chips">' + chips + "</div></div>";
+  }
+
+  // ---------------- video ----------------
+  function renderVideo(c) {
+    const box = $("video-container");
+    box.innerHTML = "";
+    const v = document.createElement("video");
+    v.id = "player"; v.src = c._viewer_video; v.controls = true; v.preload = "metadata";
+    v.addEventListener("error", () => {
+      const ph = document.createElement("div");
+      ph.className = "video-missing";
+      ph.innerHTML = "<div><b>Video not included in this subset</b></div>" +
+        '<div style="font-family:monospace;font-size:11px;margin-top:6px;">' + escape(c._viewer_video) + "</div>";
+      v.replaceWith(ph);
+    });
+    v.addEventListener("timeupdate", () => syncPlayback(c, v.currentTime));
+    box.appendChild(v);
+    $("video-note").textContent = c._viewer_note || "";
+  }
+  function seek(tSrc) {
+    const c = cur(), v = $("player");
+    if (!v || !inClip(c, tSrc)) return;
+    v.currentTime = Math.max(0, tSrc - off(c) - 0.5);
+    v.play().catch(() => {});
+  }
+
+  // ---------------- transcript ----------------
+  function renderTranscript(c) {
+    const o = off(c), dur = clipDur(c);
+    const tl = $("timeline");
+    tl.innerHTML = "";
+    // silent-query zones: >= 5 s from every assistant anchor (paper's anchor-based sampling)
+    const anchors = Array.from(new Set(c.conversations.filter(t => t.from === "assistant").map(t => t.timestamp))).sort((a, b) => a - b);
+    const first = Math.min.apply(null, c.conversations.map(t => t.timestamp));
+    const last = anchors[anchors.length - 1];
+    const zones = [];
+    for (let i = 0; i + 1 < anchors.length; i++) {
+      const a = anchors[i] + 5, b = anchors[i + 1] - 5;
+      if (b > a) zones.push([a, b]);
+    }
+    zones.forEach(([a, b]) => {
+      const x0 = Math.max(0, a - o), x1 = Math.min(dur, b - o);
+      if (x1 <= x0) return;
+      const el = document.createElement("div");
+      el.className = "tl-silent";
+      el.style.left = (x0 / dur * 100).toFixed(2) + "%";
+      el.style.width = ((x1 - x0) / dur * 100).toFixed(2) + "%";
+      tl.appendChild(el);
+    });
+    c.conversations.forEach((t, i) => {
+      if (!inClip(c, t.timestamp)) return;
+      const types = c._viewer_output_types[i];
+      const cls = t.from === "user" ? "ot-user" : "ot-" + primary(types);
+      const el = document.createElement("div");
+      el.className = "tl-tick " + cls;
+      el.style.left = ((t.timestamp - o) / dur * 100).toFixed(2) + "%";
+      el.title = "[" + mmss(t.timestamp) + "] " + (t.from === "user" ? "USER" : types.map(k => TYPE_LABEL[k]).join(" + ")) + ": " + t.value;
+      el.addEventListener("click", () => seek(t.timestamp));
+      tl.appendChild(el);
+    });
+    const ph = document.createElement("div");
+    ph.className = "tl-playhead"; ph.id = "playhead"; ph.style.left = "0%";
+    tl.appendChild(ph);
+    $("timeline-start").textContent = "clip 0:00 = source " + mmss(o);
+    $("timeline-end").textContent = "clip " + mmss(dur) + " = source " + mmss(o + dur);
+    $("legend-row").innerHTML =
+      '<span class="chip ot-user"><span class="swatch"></span>User query</span>' +
+      TYPES.map(t => '<span class="chip ot-' + t.key + '"><span class="swatch"></span>' + t.label + " — " + t.desc + "</span>").join("") +
+      '<span class="chip"><span class="swatch hatch"></span>eligible silent-query zone (≥5 s from any anchor)</span>' +
+      '<span class="chip" style="font-style:italic;">tick colour = most severe type of the turn</span>';
+
+    const nA = anchors.length;
+    $("turn-count").textContent = c.conversations.length + " turns (" + nA + " speak anchors + " + nA + " silent queries under anchor-based sampling)";
+    const body = $("utt-body");
+    body.innerHTML = c.conversations.map((t, i) => {
+      const isUser = t.from === "user";
+      const within = inClip(c, t.timestamp);
+      const types = c._viewer_output_types[i];
+      const heur = c._viewer_output_types_heuristic[i];
+      let typeHtml = isUser ? '<span class="type-pill ot-user">task query</span>' : types.map(k => '<span class="type-pill ot-' + k + '">' + TYPE_LABEL[k] + "</span>").join("");
+      if (!isUser && heur && heur.slice().sort().join() !== types.slice().sort().join())
+        typeHtml += '<div class="heur"><b>heuristic:</b> ' + heur.map(k => TYPE_LABEL[k]).join(" + ") + "</div>";
+      return '<tr id="utt-' + i + '" class="' + (isUser ? "row-user" : "row-asst") + (within ? "" : " outside") + '" data-t="' + t.timestamp + '">' +
+        '<td class="mono">' + i + "</td>" +
+        '<td class="mono">' + mmss(t.timestamp) + " (" + t.timestamp + "s)" +
+        '<span class="sub">' + (within ? "clip " + mmss(t.timestamp - off(c)) : "outside clip") + "</span></td>" +
+        '<td><span class="speaker">' + escape(t.from) + "</span></td>" +
+        "<td>" + typeHtml + "</td>" +
+        '<td class="utt-text">' + escape(t.value) + "</td></tr>";
+    }).join("");
+    Array.prototype.forEach.call(body.children, tr => tr.addEventListener("click", () => seek(parseFloat(tr.dataset.t))));
+  }
+  function syncPlayback(c, tClip) {
+    const dur = clipDur(c);
+    const ph = $("playhead");
+    if (ph) ph.style.left = Math.min(100, tClip / dur * 100).toFixed(2) + "%";
+    const tSrc = tClip + off(c);
+    let active = -1;
+    c.conversations.forEach((t, i) => { if (t.timestamp <= tSrc + 0.25 && inClip(c, t.timestamp)) active = i; });
+    Array.prototype.forEach.call($("utt-body").children, (tr, i) => tr.classList.toggle("active", i === active));
+  }
+
+  // ---------------- stats ----------------
+  function histRows(items, cls) {
+    const max = Math.max.apply(null, items.map(x => x.n).concat([1]));
+    const tot = items.reduce((a, x) => a + x.n, 0) || 1;
+    return items.map(x =>
+      '<div class="hist-row ' + (x.cls || "") + '"><span class="hist-label" title="' + escape(x.label) + '">' + escape(x.label) + "</span>" +
+      '<span class="hist-bar-wrap"><span class="hist-bar" style="width:' + (x.n / max * 100).toFixed(1) + '%"></span></span>' +
+      '<span class="hist-count">' + fmtInt(x.n) + '<span class="pct">' + (x.extra != null ? x.extra : (x.n / tot * 100).toFixed(0) + "%") + "</span></span></div>").join("");
+  }
+  function renderStats() {
+    const p = $("stats-panel");
+    if (!fullStats) { p.innerHTML = "<h2>Full dataset stats</h2><div class='note'>full_dataset_stats.json not found.</div>"; return; }
+    const s = fullStats, pb = s.paper_full_benchmark;
+    const srcRows = s.by_source.map(b => ({ label: b.source, n: b.videos, extra: b.hours.toFixed(2) + " h · " + b.assistant_turns + " turns" }));
+    const typeRows = TYPES.map(t => ({ label: t.label, n: s.heuristic_type_counts[t.key] || 0, cls: "ot-" + t.key }));
+    const perSrcType = s.by_source.filter(b => b.videos).map(b =>
+      '<div class="note" style="font-style:normal;">' + escape(b.source) + ": " +
+      TYPES.map(t => t.label.split(" ")[0].toLowerCase() + " " + (b.heuristic_types[t.key] || 0)).join(" · ") + "</div>").join("");
+    const errRec = s.per_video.filter(v => v.source === "EgoPER" && /_error_/.test(v.video));
+    const errRecNoErr = errRec.filter(v => !(v.heuristic_types.error_detection > 0)).length;
+    const maxT = Math.max.apply(null, s.per_video.map(v => v.n_assistant_turns));
+    const vids = s.per_video.slice().sort((a, b) => a.source.localeCompare(b.source) || b.n_assistant_turns - a.n_assistant_turns).map(v =>
+      '<div class="hist-row vrow"><span class="hist-label' + (v.in_subset ? " in-subset" : "") + '" title="' + escape(v.video) + '">' + escape(v.video.replace(/\.mp4$/, "")) + "</span>" +
+      '<span class="hist-bar-wrap"><span class="hist-bar" style="width:' + (v.n_assistant_turns / maxT * 100).toFixed(1) + '%"></span>' +
+      '<span class="hist-bar-err" style="width:' + ((v.heuristic_types.error_detection || 0) / maxT * 100).toFixed(1) + '%"></span></span>' +
+      '<span class="hist-count">' + v.n_assistant_turns + '<span class="pct">' + (v.heuristic_types.error_detection || 0) + " err · " + mmss(v.duration_s) + "</span></span></div>").join("");
+
+    const preview =
+      '<div class="stats-block"><h3>Released test preview &mdash; computed from all 50 records<span class="tag preview">preview only, not the full benchmark</span></h3>' +
+      '<div class="stats-summary">' +
+      "<span>videos<b>" + s.n_videos + "</b></span><span>hours<b>" + s.total_hours + "</b></span>" +
+      "<span>assistant turns<b>" + fmtInt(s.n_assistant_turns) + "</b></span><span>user queries<b>" + s.n_user_turns + "</b></span>" +
+      "<span>video length<b>" + s.min_duration_min + "–" + s.max_duration_min + " min (median " + s.median_duration_min + ")</b></span>" +
+      "<span>anchor-based queries<b>" + fmtInt(s.anchor_queries_est.total) + "</b></span>" +
+      "<span>dense 1 s queries<b>~" + fmtInt(s.dense_1s_queries_est.total) + "</b></span>" +
+      "<span>in this subset<b>" + all.length + "</b></span></div>" +
+      '<div class="stats-grid">' +
+      '<div><div class="hist-title">Videos by source dataset</div><div class="histogram">' + histRows(srcRows) + "</div>" +
+      '<div class="note">HoloAssist is 68% of the full benchmark but absent from the preview.</div></div>' +
+      '<div><div class="hist-title">Assistant turns by output type (heuristic, multi-label)</div><div class="histogram">' + histRows(typeRows) + "</div>" + perSrcType +
+      '<div class="note">' + errRecNoErr + " of " + errRec.length + " EgoPER <code>_error_</code> recordings have no error-detection turn in their dialogue.</div></div>" +
+      '<div><div class="hist-title">Video length (min)</div><div class="histogram">' + histRows(s.hist_duration_min.map(h => ({ label: h.bin, n: h.count }))) + "</div></div>" +
+      '<div><div class="hist-title">Gap between consecutive assistant turns (s) &middot; median ' + s.median_gap_s + " s</div><div class=\"histogram\">" + histRows(s.hist_gap_s.map(h => ({ label: h.bin, n: h.count }))) + "</div>" +
+      '<div class="note">Gaps under 10 s leave no room for a silent query ≥5 s from both neighbouring anchors.</div></div>' +
+      '<div><div class="hist-title">Assistant utterance length (words) &middot; median ' + s.median_words + "</div><div class=\"histogram\">" + histRows(s.hist_words.map(h => ({ label: h.bin, n: h.count }))) + "</div></div>" +
+      '<div><div class="hist-title">Per video: assistant turns (red = error detections) &middot; yellow dot = in subset</div><div class="histogram" style="max-height:360px;overflow-y:auto;">' + vids + "</div></div>" +
+      "</div>" +
+      '<div class="note">' + escape(s.type_label_method) + "</div></div>";
+
+    const pSrc = Object.entries(pb.by_source_videos).map(([k, n]) => ({ label: k, n: n }));
+    const res = pb.results_test.map(r => "<tr><td>" + escape(r.model) + "</td><td>" + r.score + "</td><td>" + r.sF1 + "</td></tr>").join("");
+    const paper =
+      '<div class="stats-block"><h3>Full benchmark &mdash; numbers reported in the paper<span class="tag paper">from arXiv 2607.02991, data not released</span></h3>' +
+      '<div class="stats-summary">' +
+      "<span>videos<b>" + fmtInt(pb.videos) + "</b></span><span>hours<b>" + pb.hours + "</b></span><span>interaction samples<b>" + fmtInt(pb.interaction_samples) + "</b></span>" +
+      "<span>train<b>" + fmtInt(pb.train.videos) + " videos / " + pb.train.hours + " h</b></span>" +
+      "<span>test<b>" + pb.test.videos + " videos / " + pb.test.hours + " h / " + fmtInt(pb.test.samples) + " samples</b></span>" +
+      "<span>length<b>" + pb.duration_min.min + "–" + pb.duration_min.max + " min (median " + pb.duration_min.median + ", mean " + pb.duration_min.mean + ")</b></span></div>" +
+      '<div class="stats-grid">' +
+      '<div><div class="hist-title">Videos by source dataset (paper)</div><div class="histogram">' + histRows(pSrc) + "</div>" +
+      '<div class="note">' + escape(pb.scene_categories) + "</div></div>" +
+      '<div><div class="hist-title">Test-set results (Score = mean of CS/FA/NR/PC classes; sF1 = soft F1)</div>' +
+      '<table class="res-table"><thead><tr><th>model</th><th>Score</th><th>sF1</th></tr></thead><tbody>' + res + "</tbody></table>" +
+      '<div class="note">Per-category sF1 (instruction / error / correction): Gemini 3 Pro 42.0 / 33.8 / 34.3; Doubao-Seed-1.8 49.6 / 41.9 / 42.7.</div></div>' +
+      '<div><div class="hist-title">Protocol &amp; metrics</div><div class="note" style="font-style:normal;">' + escape(pb.protocol) + "</div>" +
+      '<div class="note" style="font-style:normal;">' + escape(pb.metrics) + "</div></div>" +
+      "</div></div>";
+
+    p.innerHTML = "<h2>Full dataset stats</h2>" + preview + paper;
+  }
+
+  // ---------------- main ----------------
+  function applyFilter() {
+    cases = state.src === "all" ? all.slice() : all.filter(c => c._viewer_source === state.src);
+    state.idx = 0;
+  }
+  function render() {
+    const c = cur();
+    renderCaseSelect();
+    $("prev-btn").disabled = state.idx === 0;
+    $("next-btn").disabled = state.idx === cases.length - 1;
+    renderMetadata(c);
+    renderVideo(c);
+    renderTranscript(c);
+    $("raw-json").textContent = JSON.stringify(c, null, 1);
+  }
+  $("src-select").addEventListener("change", e => { state.src = e.target.value; applyFilter(); render(); });
+  $("case-select").addEventListener("change", e => { state.idx = +e.target.value; render(); });
+  $("prev-btn").addEventListener("click", () => nav(-1));
+  $("next-btn").addEventListener("click", () => nav(1));
+  document.addEventListener("keydown", e => {
+    if (e.target.tagName === "INPUT" || e.target.tagName === "SELECT") return;
+    if (e.key === "ArrowLeft") nav(-1);
+    if (e.key === "ArrowRight") nav(1);
+  });
+
+  Promise.all([
+    fetch("data/guideme_subset.json").then(r => r.json()),
+    fetch("file_durations.json").then(r => r.json()).catch(() => ({})),
+    fetch("full_dataset_stats.json").then(r => r.json()).catch(() => null),
+  ]).then(([d, durs, stats]) => {
+    all = d; durations = durs; fullStats = stats;
+    renderSrcSelect(); applyFilter(); render(); renderStats();
+  }).catch(err => {
+    document.querySelector("main").innerHTML =
+      '<div class="panel" style="grid-column:1/-1;color:var(--bad);">Failed to load data: ' + escape(err.message) +
+      "<br>If opened via file://, run <code>python3 -m http.server</code> and open via http://localhost:8000/</div>";
+  });
+})();
+</script>
+</body>
+</html>

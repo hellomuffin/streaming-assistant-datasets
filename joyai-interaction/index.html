@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JoyAI-VL-Interaction Data Viewer</title>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2129;
+  --border: #2d3640;
+  --text: #e6e9ed;
+  --muted: #8a949e;
+  --accent: #4dabf7;
+  --good: #51cf66;
+  --bad: #ff6b6b;
+  --highlight: #ffd43b;
+  --purple: #b197fc;
+  --orange: #ffa94d;
+  --pink: #f783ac;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.5;
+}
+header {
+  padding: 12px 20px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header h1 { margin: 0; font-size: 18px; font-weight: 600; color: var(--accent); }
+header h1 .subtitle { font-size: 11px; color: var(--muted); font-weight: 400; margin-left: 8px; letter-spacing: 0.3px; }
+.control { display: flex; align-items: center; gap: 6px; }
+.control label { color: var(--muted); font-size: 12px; }
+select, input, button {
+  background: var(--bg); color: var(--text); border: 1px solid var(--border);
+  padding: 6px 10px; font-family: inherit; font-size: 13px; border-radius: 4px; max-width: 360px;
+}
+button { cursor: pointer; }
+button:hover:not(:disabled) { background: var(--border); }
+button:disabled { opacity: 0.4; cursor: not-allowed; }
+.banner {
+  background: rgba(77, 171, 247, 0.08); border-bottom: 1px solid var(--border);
+  padding: 8px 20px; font-size: 12px; color: var(--muted);
+  display: flex; gap: 16px; align-items: center; flex-wrap: wrap;
+}
+.banner strong { color: var(--text); }
+.banner a { color: var(--accent); text-decoration: none; }
+.banner a:hover { text-decoration: underline; }
+.kbd { display: inline-block; padding: 1px 6px; font-family: monospace; font-size: 11px; background: var(--bg); border: 1px solid var(--border); border-bottom-width: 2px; border-radius: 3px; }
+main { display: grid; grid-template-columns: 420px 1fr; gap: 16px; padding: 16px; max-width: 100%; }
+@media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+.panel { background: var(--panel); border: 1px solid var(--border); border-radius: 6px; padding: 16px; overflow: hidden; min-width: 0; }
+.panel h2, .wide-panel h2 { margin: 0 0 12px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted); font-weight: 600; }
+.field { margin-bottom: 11px; }
+.field-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); margin-bottom: 3px; }
+.field-value { font-size: 13.5px; word-break: break-word; }
+.field-value.code { font-family: "SFMono-Regular", Consolas, monospace; font-size: 12px; background: var(--bg); padding: 6px 8px; border-radius: 3px; border: 1px solid var(--border); color: var(--accent); }
+video { width: 100%; max-height: 560px; background: #000; border-radius: 4px; }
+.video-missing { padding: 36px 24px; text-align: center; color: var(--muted); border: 1px dashed var(--border); border-radius: 6px; }
+.video-missing b { color: var(--text); }
+.wide-panel { grid-column: 1 / -1; background: var(--panel); border: 1px solid var(--border); border-radius: 6px; padding: 16px 20px; min-width: 0; }
+.task-desc { font-size: 13px; color: var(--muted); margin: 0 0 14px; padding: 10px 14px; background: var(--bg); border-left: 3px solid var(--accent); border-radius: 0 4px 4px 0; }
+.task-desc b { color: var(--text); }
+.task-pill { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; margin: 0 6px 4px 0; color: var(--c); background: color-mix(in srgb, var(--c) 14%, transparent); border: 1px solid color-mix(in srgb, var(--c) 45%, transparent); }
+/* timeline */
+.timeline-wrap { margin: 4px 0 16px; }
+.timeline { position: relative; height: 64px; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+.tl-lane-label { position: absolute; left: 4px; font-size: 9px; color: var(--muted); font-family: "SFMono-Regular", Consolas, monospace; pointer-events: none; }
+.tl-clip { position: absolute; top: 0; bottom: 0; background: rgba(77, 171, 247, 0.07); border-left: 1px dashed rgba(77,171,247,.5); border-right: 1px dashed rgba(77,171,247,.5); pointer-events: none; }
+.tl-marker { position: absolute; width: 4px; height: 14px; border-radius: 2px; cursor: pointer; margin-left: -2px; }
+.tl-marker:hover { transform: scaleY(1.3); }
+.tl-marker.q { background: var(--highlight); }
+.tl-marker.a { background: var(--good); }
+.tl-marker.d { background: var(--pink); width: 6px; margin-left: -3px; }
+.tl-marker.ev { background: transparent; border: 2px solid var(--bad); width: 10px; margin-left: -5px; border-radius: 50%; height: 10px; }
+.tl-grid { position: absolute; top: 0; bottom: 0; width: 1px; background: rgba(138,148,158,0.12); pointer-events: none; }
+.tl-grid span { position: absolute; bottom: 1px; left: 3px; font-size: 9px; color: var(--muted); font-family: "SFMono-Regular", Consolas, monospace; }
+.tl-playhead { position: absolute; top: -3px; bottom: -3px; width: 2px; background: var(--highlight); pointer-events: none; }
+.timeline-label { font-size: 11px; color: var(--muted); display: flex; justify-content: space-between; margin-top: 6px; font-family: "SFMono-Regular", Consolas, monospace; }
+.legend-row { display: flex; flex-wrap: wrap; gap: 14px; font-size: 11px; color: var(--muted); margin: 8px 0 0; }
+.legend-row .chip { display: inline-flex; align-items: center; gap: 5px; }
+.legend-row .swatch { width: 10px; height: 10px; border-radius: 3px; border: 1px solid rgba(0,0,0,0.4); }
+/* turn table */
+.table-scroll { overflow-x: auto; }
+.qa-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.qa-table th, .qa-table td { padding: 7px 9px; text-align: left; border-bottom: 1px solid var(--border); vertical-align: top; }
+.qa-table th { color: var(--muted); text-transform: uppercase; font-size: 10px; letter-spacing: 0.5px; background: var(--bg); position: sticky; top: 0; }
+.qa-table td.mono { font-family: "SFMono-Regular", Consolas, monospace; font-size: 11.5px; color: var(--muted); white-space: nowrap; }
+.qa-table tr.seekable { cursor: pointer; }
+.qa-table tr.seekable:hover { background: rgba(77, 171, 247, 0.06); }
+.qa-table tr.active { background: rgba(255, 212, 59, 0.09); }
+.qa-table tr.outside td { opacity: 0.45; }
+.role { font-size: 10px; font-weight: 700; letter-spacing: 0.4px; text-transform: uppercase; padding: 2px 8px; border-radius: 10px; white-space: nowrap; }
+.role-user { background: rgba(255, 212, 59, 0.12); color: var(--highlight); }
+.role-assistant { background: rgba(81, 207, 102, 0.14); color: var(--good); }
+.role-deleg { background: rgba(247, 131, 172, 0.15); color: var(--pink); }
+.gloss { color: var(--muted); font-size: 12.5px; }
+.gloss-none { color: #5c6670; font-style: italic; font-size: 11.5px; }
+.tok { font-family: "SFMono-Regular", Consolas, monospace; font-size: 11.5px; color: var(--pink); background: rgba(247,131,172,.12); border: 1px solid rgba(247,131,172,.4); border-radius: 3px; padding: 0 4px; white-space: nowrap; }
+.hidden-q { display: block; margin-top: 4px; padding: 4px 8px; border-left: 2px solid var(--pink); background: rgba(247,131,172,.06); color: #f3c4d6; font-size: 12.5px; white-space: pre-wrap; }
+.hidden-q .lbl { display:block; font-size: 9.5px; text-transform: uppercase; letter-spacing: .5px; color: var(--pink); }
+.flag { font-size: 10px; font-weight: 700; color: var(--pink); white-space: nowrap; }
+.pre { white-space: pre-wrap; }
+.tag-out { font-size: 9px; color: var(--muted); border: 1px dashed var(--border); border-radius: 8px; padding: 0 5px; margin-left: 4px; white-space: nowrap; }
+.evidence { font-size: 12px; margin: 0 0 10px; color: var(--muted); }
+.evidence b { color: var(--text); }
+/* raw */
+details.raw { margin-top: 4px; }
+details.raw summary { cursor: pointer; color: var(--accent); font-size: 13px; user-select: none; }
+.raw pre { margin: 10px 0 0; padding: 12px 14px; background: #0a0d11; border: 1px solid var(--border); border-radius: 4px; font-family: "SFMono-Regular", Consolas, monospace; font-size: 11.5px; color: var(--text); white-space: pre-wrap; word-break: break-word; max-height: 480px; overflow-y: auto; }
+/* rules */
+.rules { font-size: 13px; color: var(--text); }
+.rules li { margin: 4px 0; }
+.rules code { font-family: "SFMono-Regular", Consolas, monospace; font-size: 11.5px; color: var(--pink); }
+.rules .muted { color: var(--muted); }
+/* stats */
+.stats-summary { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 14px; padding: 10px 14px; background: var(--bg); border: 1px solid var(--border); border-radius: 4px; font-size: 12px; color: var(--muted); font-family: "SFMono-Regular", Consolas, monospace; }
+.stats-summary b { color: var(--text); font-weight: 600; margin-left: 3px; }
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(440px, 1fr)); gap: 26px; }
+@media (max-width: 520px) { .stats-grid { grid-template-columns: 1fr; } }
+.histogram { display: flex; flex-direction: column; gap: 3px; }
+.hist-title { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.hist-row { display: grid; grid-template-columns: 200px 1fr 120px; align-items: center; gap: 10px; font-size: 11.5px; font-family: "SFMono-Regular", Consolas, monospace; }
+@media (max-width: 520px) { .hist-row { grid-template-columns: 120px 1fr 90px; } }
+.hist-label { color: var(--muted); text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hist-label.in-subset { color: var(--text); }
+.hist-bar-wrap { height: 15px; background: var(--bg); border-radius: 3px; overflow: hidden; display: block; }
+.hist-bar { display: block; height: 100%; background: linear-gradient(90deg, var(--accent), #74c0fc); }
+.hist-bar.purple { background: linear-gradient(90deg, var(--purple), #d0bfff); }
+.hist-bar.orange { background: linear-gradient(90deg, var(--orange), #ffc078); }
+.hist-bar.good { background: linear-gradient(90deg, var(--good), #8ce99a); }
+.hist-bar.pink { background: linear-gradient(90deg, var(--pink), #fcc2d7); }
+.hist-count { color: var(--text); }
+.hist-count small { color: var(--muted); }
+.note { margin: 8px 0 0; font-size: 12px; color: var(--muted); font-style: italic; }
+.xtab { border-collapse: collapse; font-size: 11.5px; font-family: "SFMono-Regular", Consolas, monospace; width: 100%; }
+.xtab th, .xtab td { border-bottom: 1px solid var(--border); padding: 4px 6px; text-align: right; }
+.xtab th:first-child, .xtab td:first-child { text-align: left; color: var(--muted); }
+.xtab th { color: var(--muted); font-weight: 600; font-size: 10.5px; }
+.cur-mark { color: var(--highlight); font-family: "SFMono-Regular", Consolas, monospace; font-size: 11px; margin-left: 8px; text-transform: none; letter-spacing: 0; }
+.warn { font-size: 12px; color: var(--highlight); background: rgba(255, 212, 59, 0.07); border: 1px solid rgba(255, 212, 59, 0.3); border-radius: 4px; padding: 8px 10px; margin-top: 6px; }
+</style>
+</head>
+<body>
+<div class="banner">
+  <span>A <strong>27-case</strong> sample of the <strong>training data</strong> (not a benchmark), 4&ndash;6 cases per data family; <strong>21 cases with a 360p H.264 clip</strong>, 6 with a placeholder. Full release: <strong>3,018,207 records</strong> in 9 JSON files, annotations only (Apache-2.0) &mdash;
+    <a href="https://huggingface.co/datasets/jdopensource/JoyAI-VL-Interaction" target="_blank">HF dataset</a> ·
+    <a href="https://arxiv.org/abs/2606.14777" target="_blank">paper (arXiv 2606.14777)</a> ·
+    <a href="https://github.com/jd-opensource/JoyAI-VL-Interaction" target="_blank">code</a> ·
+    <a href="https://joyai-vl-video-future-academy-jd.github.io/JoyAI-VL-Interaction/" target="_blank">project page</a> ·
+    <a href="https://huggingface.co/jdopensource/JoyAI-VL-Interaction" target="_blank">model</a> ·
+    <span style="color:var(--highlight);">the release has no videos; the clips here were fetched from third-party sources that keep their own licenses</span>
+  </span>
+</div>
+<header>
+  <h1>JoyAI-VL-Interaction Viewer <span class="subtitle">JD · time-aligned streaming data: silence, response and delegation at 1-second steps</span></h1>
+  <div class="control">
+    <label>Family</label>
+    <select id="task-select">
+      <option value="f1_alerting">1 · Proactive alerting &amp; anomaly detection</option>
+      <option value="f2_timed_qa">2 · Time-aligned QA (backward / present / forward)</option>
+      <option value="f3_counting_time">3 · Counting &amp; perception over time</option>
+      <option value="f4_narration">4 · Live commentary &amp; narration</option>
+      <option value="f5_casual_chat">5 · Multi-turn casual chat</option>
+      <option value="f6_delegation">6 · Delegation to a background model</option>
+    </select>
+  </div>
+  <div class="control">
+    <label>Case</label>
+    <select id="case-select"></select>
+  </div>
+  <div class="control">
+    <button id="prev-btn">&larr; Prev</button>
+    <button id="next-btn">Next &rarr;</button>
+  </div>
+  <div style="margin-left:auto;color:var(--muted);font-size:11px;">
+    <span class="kbd">&larr;</span> <span class="kbd">&rarr;</span> switch case · click rows / timeline marks to seek
+  </div>
+</header>
+
+<main>
+  <aside class="panel" id="metadata-panel">
+    <h2>Metadata</h2>
+    <div id="metadata-fields"></div>
+  </aside>
+  <section class="panel" id="video-panel">
+    <h2>Video (360p re-encode, source audio kept) <span class="cur-mark" id="cur-time"></span></h2>
+    <div id="video-container"></div>
+  </section>
+  <section class="wide-panel" id="task-content"></section>
+  <section class="wide-panel" id="raw-panel">
+    <h2>Raw record (all fields)</h2>
+    <details class="raw"><summary>Show full JSON for this case (original fields verbatim; keys starting with _viewer_ were added by this viewer)</summary><pre id="raw-json"></pre></details>
+  </section>
+  <section class="wide-panel" id="rules-panel">
+    <h2>How records were assigned to the six families</h2>
+    <details class="raw" open><summary>Classification rules (applied to every record of the full release; first matching rule wins)</summary>
+    <div class="rules">
+      <p class="muted" style="margin:8px 0;">The release has four <code>task_type</code> values (<code>chat</code>, <code>event_grounding</code>, <code>narration</code>, <code>background</code>), not six families. The paper (§3.2) defines the families but gives no labels, so each record was labelled from its wording, its source and the timing of its responses. The rules are heuristics written by the viewer author, not labels from JD. A record that mixes several behaviours (for example casual questions plus a counting instruction) gets the first family below that matches.</p>
+      <ol>
+        <li><b>6 Delegation</b>: any response contains <code>&lt;/delegation&gt;</code>. Subtype from the holding reply before the token: "合适的工具 / appropriate tool" &rarr; tool/API call; "图像编辑/生成工具" &rarr; image tool; <code>chat</code> file "我帮你查一下" &rarr; search look-up; Molmo2 source and a holding reply that does not mention a background model &rarr; video-grounded knowledge question; code words &rarr; code generation; writing words &rarr; writing / expert text; otherwise STEM / text problem. <span class="muted">No distinct "video reasoning problem" group was found: no delegated query asks a visual question that the frames alone would answer.</span></li>
+        <li>Empty <code>question</code>/<code>response</code> &rarr; <b>unclassified</b>.</li>
+        <li><b>1 Alerting</b>: <code>task_type = event_grounding</code> (subtype: comma-list times = continuous "keep reminding me" alert; VideoGPT-plus = styled alert; timelens = event onset; others = object appearance), or source <code>ucfcrime</code> (surveillance anomaly report).</li>
+        <li><b>4 Commentary</b>: <code>task_type = narration</code> (subtype by source: Live-WhisperX ASR commentary, OmniStar dense narration, Molmo2 LLM-written commentary, GUI-World screen narration).</li>
+        <li><b>3 Counting &amp; time</b>: TransRAC source or "第N次重复 / Nth repetition" replies &rarr; repetition counting; in the chat pipeline (not guided-task, not EgoIT, not the multi-question QA sources): "count every N s" &rarr; count; "Q&amp;A timer / 限时问答 / N-second challenge" &rarr; timed window; "wait / hold N s / N 秒后再回答" &rarr; withhold answer; a nested chat record whose question has a number of seconds plus a timing verb &rarr; timed window (if &ge;2 questions and Q&amp;A words) or withhold; VideoGPT-plus single question asking how long an action lasted &rarr; duration.</li>
+        <li><b>4 Commentary (guidance)</b>: sources assembly101 / holoassist / epickitchens / ego4d, or egoexolearn with a goal statement ("I want to… / 我想…"): a step-by-step guided task session. <span class="muted">Judgment call: the paper has no guidance family; its §5 scenario "live commentary and guidance" is the closest.</span></li>
+        <li><b>Unclassified</b>: every question is bare arithmetic ("计算 9085 * -3235", "Tell me what 7559 / 7110 is") placed on an unrelated video.</li>
+        <li><b>5 Casual chat</b>: <code>chat</code> record with &ge;2 questions, no options or captioning template, source not LLaVA-Video-178K / ego4d_vqa / MovieChat / egoexolearn / egoexo4d. Subtype: EgoIT source with &ge;50% warm or exclamatory replies (!, ~, 呀/呢/啦, Yep, Nice…) &rarr; companionship style, otherwise EgoIT or ego source &rarr; everyday egocentric conversation; YouTube/Bilibili URL source (5-minute segments of long videos) &rarr; extended long-video dialogue.</li>
+        <li><b>2 Time-aligned QA</b>: everything left (offline video-QA re-timed). Timing class: the first answer comes after the question &rarr; <b>forward</b>; answered at the question second with "just now / a moment ago / 刚才 / 回想一下前几秒…" in the first 40 characters &rarr; <b>backward</b>; with "now / right now / 现在 / 正在…" &rarr; <b>present</b>; otherwise <b>at-question (undetermined)</b>, because the release does not store the evidence second.</li>
+      </ol>
+    </div>
+    </details>
+  </section>
+  <section class="wide-panel" id="stats-panel"></section>
+</main>
+
+<script>
+(function() {
+  "use strict";
+
+  const FAMILY_INFO = {
+    f1_alerting: {
+      label: "1 · Alerting & anomaly detection", color: "#ff6b6b",
+      desc: "<b>Paper definition:</b> proactive alerting and anomaly detection on live feeds. The user states once what to watch for; the model stays silent every second until the target appears, then speaks (once, or every second while the event lasts). Built from open temporal-grounding annotations (converted to per-second labels) and from web video with a candidate-trigger pipeline and a dense 1 fps check that the target did not appear earlier. " +
+            "<b>Fields:</b> <code>question[{content, time}]</code> = the watch request and the second it is issued; <code>response[{content, time}]</code> = the alert text and the second(s) it must be spoken. A <code>time</code> like \"20,21,22\" lists every positive second. All seconds not listed are silence.",
+    },
+    f2_timed_qa: {
+      label: "2 · Time-aligned QA", color: "#4dabf7",
+      desc: "<b>Paper definition:</b> offline video-QA whose content is kept but whose timing is re-labelled: a larger VLM marks when the evidence appears. <b>Backward</b>: asked after the evidence, answered at once. <b>Present</b>: asked as the evidence appears, answered at once. <b>Forward</b>: asked before the evidence; the model must stay silent until it appears. " +
+            "<b>Fields:</b> the evidence second itself is not released, so forward cases use the first answer second as evidence, and zero-delay cases are split by wording (see the rules panel). Most of this family is answered at the question second with no timing cue.",
+    },
+    f3_counting_time: {
+      label: "3 · Counting & perception over time", color: "#ffa94d",
+      desc: "<b>Paper definition:</b> counting over time (videos where objects or actions repeat, labelled per second) and perception over time, made by inserting time rules into ready-made dialogues: withhold the answer for N seconds, increment a count every n seconds, or answer only inside a time window. These rules give exact, checkable timing. " +
+            "<b>Fields:</b> the instruction is a <code>question</code> turn; the <code>response</code> times show the rule being followed (e.g. \"1\", \"2\", \"3\" one second apart). <code>response</code> is often a list of lists: one group per conversation, not always one per question.",
+    },
+    f4_narration: {
+      label: "4 · Live commentary & narration", color: "#51cf66",
+      desc: "<b>Paper definition:</b> live commentary and narration collected from real commentary and broadcast footage and transcribed with ASR, so speech and pauses follow a real speaker; silence labels are real pauses. The release also contains LLM-written commentary (Molmo2), dense captions re-timed as narration (OmniStar-RNG) and screen-operation narration (GUI-World). Guided-task sessions (an assistant giving step instructions over Assembly101 / HoloAssist / EPIC / Ego4D video) are placed here too, as a judgment call. " +
+            "<b>Fields:</b> one request <code>question</code> at 0 s, then a <code>response</code> at each second the narrator speaks.",
+    },
+    f5_casual_chat: {
+      label: "5 · Multi-turn casual chat", color: "#b197fc",
+      desc: "<b>Paper definition:</b> multi-turn casual chat in several styles: everyday conversation over egocentric short video, extended dialogue across long videos, and companionship-style exchanges. Two VLM agents converse over a playing video; each turn is placed at a random second and written from the 3 frames around it; a verifier screens grounding. " +
+            "<b>Fields:</b> several <code>question</code> turns at different seconds, each answered at (or right after) its second. The style split (companionship vs everyday) is a heuristic on reply tone.",
+    },
+    f6_delegation: {
+      label: "6 · Delegation to a background model", color: "#f783ac",
+      desc: "<b>Paper definition:</b> hard subtasks the foreground model should route to an asynchronous background model instead of answering inline: pure-text STEM problems, video-grounded knowledge questions, and video reasoning problems woven into chat. The model gives a short holding reply, then emits a hidden <code>&lt;/delegation&gt;</code> token and a query the user never sees; the result is folded back after a random delay. " +
+            "<b>Fields as stored:</b> the response text is <i>holding reply</i> + <code>&lt;/delegation&gt;</code> + <i>hidden query</i> (91% of the time the question copied verbatim). The release stores no returned result and no final answer turn. The release also contains tool/API calls, image edit/generation calls and writing/code tasks routed the same way.",
+    },
+  };
+  const SUBTYPE_LABEL = {
+    continuous_alert_every_second: "continuous alert (every positive second)", event_onset_alert: "event onset alert",
+    object_appearance_alert: "object appearance alert", styled_event_alert: "styled event alert", surveillance_anomaly_report: "surveillance anomaly report",
+    open_QA: "open QA", multiple_choice_QA: "multiple-choice QA", caption_description: "caption / description", temporal_grounding_QA: "temporal grounding QA",
+    count_every_n_seconds: "count every n seconds", withhold_answer_N_seconds: "withhold answer N seconds", timed_QA_window: "timed Q&A window",
+    repetition_counting: "repetition counting", duration_estimation: "duration estimation",
+    asr_live_commentary: "ASR live commentary", dense_realtime_narration: "dense real-time narration", llm_styled_commentary: "LLM-styled commentary",
+    screen_operation_narration: "screen-operation narration", task_step_guidance: "task step guidance",
+    companionship_style: "companionship style", egocentric_everyday: "everyday egocentric conversation", long_video_extended_dialogue: "extended long-video dialogue",
+    stem_text_problem: "STEM / text problem", video_grounded_knowledge: "video-grounded knowledge question", tool_api_call: "tool / API call",
+    tool_image_gen_edit: "image edit / generation tool", tool_search_lookup: "search look-up", writing_expert_text: "writing / expert text", code_generation: "code generation",
+  };
+  const TIMING_LABEL = { forward: "forward", backward: "backward", present: "present", at_question_undetermined: "at question (undetermined)" };
+  const FAMILIES = Object.keys(FAMILY_INFO);
+  const DELEG = "</delegation>";
+
+  let data = {};
+  let durations = {};
+  let fullStats = null;
+  const state = { fam: "f1_alerting", idx: 0 };
+  let turnsCache = [];
+
+  const $ = id => document.getElementById(id);
+  function escape(s) {
+    if (s == null) return "";
+    return String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  }
+  function mmss(t) {
+    if (t == null || !isFinite(t)) return "-";
+    const neg = t < 0; t = Math.abs(t);
+    const m = Math.floor(t / 60), s = Math.floor(t % 60);
+    return (neg ? "-" : "") + m + ":" + String(s).padStart(2, "0");
+  }
+  function cur() { return data[state.fam][state.idx]; }
+  function off(c) { return c._viewer_clip_offset_s || 0; }
+  function hasVideo(c) { return !!c._viewer_video_available; }
+  function clipDur(c) {
+    if (hasVideo(c) && durations[c._viewer_video] != null) return durations[c._viewer_video];
+    return c._viewer_clip_end_s - off(c);
+  }
+  function parseTimes(t) { return String(t).split(",").map(x => parseFloat(x)).filter(x => isFinite(x)); }
+
+  // flatten into turns: user questions + assistant responses (response may be list of lists)
+  function buildTurns(c) {
+    const turns = [];
+    const g = c._viewer_gloss_en;
+    c.question.forEach((q, i) => turns.push({ role: "user", text: q.content, times: parseTimes(q.time), rawTime: q.time,
+      gloss: g ? g.question[i] : null, idx: i, group: null }));
+    let k = 0;
+    const nested = c.response.length && Array.isArray(c.response[0]);
+    const groups = nested ? c.response : [c.response];
+    groups.forEach((grp, gi) => grp.forEach(r => {
+      const d = r.content.indexOf(DELEG) >= 0;
+      turns.push({ role: d ? "deleg" : "assistant", text: r.content, times: parseTimes(r.time), rawTime: r.time,
+        gloss: g ? g.response[k] : null, idx: k, group: nested ? gi : null, deleg: d });
+      k++;
+    }));
+    turns.forEach((t, i) => t.order = i);
+    turns.sort((a, b) => (a.times[0] - b.times[0]) || (a.role === "user" ? -1 : 1) - (b.role === "user" ? -1 : 1) || a.order - b.order);
+    return turns;
+  }
+  function inClip(c, t) { return !hasVideo(c) || (t >= off(c) - 0.01 && t <= off(c) + clipDur(c) + 0.5); }
+
+  // ---------------- header ----------------
+  function caseLabel(c, i) {
+    return (i + 1) + ". " + (SUBTYPE_LABEL[c._viewer_subtype] || c._viewer_subtype) +
+      (c._viewer_timing_class && c.task_type !== "event_grounding" && c._viewer_family === "f2_timed_qa" ? " [" + TIMING_LABEL[c._viewer_timing_class] + "]" : "") +
+      " · " + srcShort(c.source) + " · " + c._viewer_language + (hasVideo(c) ? "" : " · no video");
+  }
+  function srcShort(s) { return s.indexOf("bilibili") >= 0 ? "bilibili-url" : (s.indexOf("youtu") >= 0 ? "youtube-url" : s); }
+  function renderSelect() {
+    const sel = $("case-select");
+    sel.innerHTML = "";
+    data[state.fam].forEach((c, i) => {
+      const opt = document.createElement("option");
+      opt.value = i; opt.textContent = caseLabel(c, i);
+      sel.appendChild(opt);
+    });
+    sel.value = state.idx;
+  }
+  function nav(d) {
+    const n = data[state.fam].length;
+    if (state.idx + d >= n) { const fi = FAMILIES.indexOf(state.fam); if (fi < FAMILIES.length - 1) { state.fam = FAMILIES[fi + 1]; state.idx = 0; } }
+    else if (state.idx + d < 0) { const fi = FAMILIES.indexOf(state.fam); if (fi > 0) { state.fam = FAMILIES[fi - 1]; state.idx = data[state.fam].length - 1; } }
+    else state.idx += d;
+    render();
+  }
+
+  // ---------------- metadata ----------------
+  function field(label, value, isCode) {
+    return '<div class="field"><div class="field-label">' + escape(label) + '</div><div class="field-value' + (isCode ? " code" : "") + '">' + value + "</div></div>";
+  }
+  function renderMetadata(c) {
+    const fi = FAMILY_INFO[c._viewer_family];
+    let html = '<div style="margin-bottom:10px;"><span class="task-pill" style="--c:' + fi.color + '">family ' + escape(fi.label) + "</span>" +
+      '<span class="task-pill" style="--c:#adb5bd">' + escape(SUBTYPE_LABEL[c._viewer_subtype] || c._viewer_subtype) + "</span>" +
+      (c._viewer_timing_class ? '<span class="task-pill" style="--c:#4dabf7">timing: ' + escape(TIMING_LABEL[c._viewer_timing_class]) + "</span>" : "") + "</div>";
+    const srcIsUrl = /^https?:/.test(c.source);
+    html += field("source", srcIsUrl ? '<a style="color:var(--accent)" target="_blank" href="' + escape(c.source) + '">' + escape(c.source) + "</a>" : escape(c.source), !srcIsUrl);
+    html += field("video_name", escape(c.video_name), true);
+    html += field("task_type (release label)", escape(c.task_type), true);
+    html += field("location in release", escape(c._viewer_release_location.file) + " · record #" + c._viewer_release_location.record_index);
+    html += field("language", c._viewer_language === "zh" ? "Chinese (English gloss added by the viewer author)" : "English");
+    html += field("turns", c.question.length + " question(s) · " + turnsCache.filter(t => t.role !== "user").length + " response(s)" +
+      (turnsCache.some(t => t.deleg) ? ' · <span class="flag">' + turnsCache.filter(t => t.deleg).length + " delegated</span>" : ""));
+    html += field("why this family", escape(c._viewer_classification_evidence));
+    if (hasVideo(c)) {
+      html += field("video provenance", escape(c._viewer_video_note));
+      html += field("source file", c._viewer_source_resolution[0] + "×" + c._viewer_source_resolution[1] + " · " + c._viewer_source_duration_s.toFixed(1) + " s" + (c._viewer_source_has_audio ? " · audio" : " · no audio"));
+      html += field("shown clip", "clip 0 s = original " + off(c) + " s; clip length " + clipDur(c).toFixed(1) + " s" + (off(c) > 0 ? ' <span style="color:var(--highlight)">(excerpt)</span>' : " (whole source)"));
+    } else {
+      html += '<div class="warn">' + escape(c._viewer_video_note) + "</div>";
+    }
+    $("metadata-fields").innerHTML = html;
+  }
+
+  // ---------------- video ----------------
+  function renderVideo(c) {
+    const container = $("video-container");
+    container.innerHTML = "";
+    if (!hasVideo(c)) {
+      container.innerHTML = '<div class="video-missing"><div><b>Video not included in this subset</b></div>' +
+        '<div style="margin-top:8px;">source: <span style="font-family:monospace">' + escape(c.source) + "</span></div>" +
+        '<div style="font-family:monospace;font-size:11px;margin-top:4px;">' + escape(c.video_name) + "</div>" +
+        '<div style="font-size:12px;margin-top:10px;">' + escape(c._viewer_video_note.replace(/^Video not included: /, "")) + "</div>" +
+        '<div style="font-size:12px;margin-top:10px;">Timeline and turn table below still show the annotation (0 s = start of the source clip).</div></div>';
+      return;
+    }
+    const v = document.createElement("video");
+    v.id = "player"; v.src = c._viewer_video; v.controls = true; v.preload = "metadata";
+    v.addEventListener("error", () => {
+      const ph = document.createElement("div");
+      ph.className = "video-missing";
+      ph.innerHTML = '<div><b>Video failed to load</b></div><div style="font-family:monospace;font-size:11px;margin-top:6px;">' + escape(c._viewer_video) + "</div>";
+      v.replaceWith(ph);
+    });
+    v.addEventListener("timeupdate", () => syncPlayback(c, v.currentTime));
+    container.appendChild(v);
+  }
+  function seekOrig(c, tOrig) {
+    const v = $("player");
+    if (!v) return;
+    v.currentTime = Math.max(0, Math.min(clipDur(c) - 0.1, tOrig - off(c) - 1.0));
+    v.play().catch(() => {});
+  }
+
+  // ---------------- timeline ----------------
+  function timelineHTML() {
+    return '<div class="timeline-wrap"><div class="timeline" id="timeline"></div>' +
+      '<div class="timeline-label"><span id="timeline-start"></span><span id="timeline-end"></span></div>' +
+      '<div class="legend-row" id="legend-row"></div></div>';
+  }
+  function buildTimeline(c, turns) {
+    // axis in ORIGINAL seconds; for excerpts the axis spans the clip, and marks outside are pinned to the edges
+    const o = hasVideo(c) ? off(c) : 0;
+    const dur = hasVideo(c) ? clipDur(c) : c._viewer_clip_end_s;
+    const tl = $("timeline");
+    tl.innerHTML = "";
+    const step = dur > 240 ? 30 : (dur > 90 ? 15 : (dur > 30 ? 5 : 2));
+    for (let s = 0; s <= dur; s += step) {
+      const g = document.createElement("div");
+      g.className = "tl-grid"; g.style.left = (s / dur * 100) + "%";
+      g.innerHTML = "<span>" + (o + s).toFixed(0) + "s</span>";
+      tl.appendChild(g);
+    }
+    const lanes = { user: 4, assistant: 22, deleg: 22, ev: 40 };
+    const lab = (txt, top) => { const e = document.createElement("div"); e.className = "tl-lane-label"; e.style.top = (top + 1) + "px"; e.style.left = "auto"; e.style.right = "4px"; e.textContent = txt; tl.appendChild(e); };
+    lab("user", lanes.user); lab("assistant", lanes.assistant); lab("evidence", lanes.ev);
+    turns.forEach((t, ti) => {
+      t.times.forEach(x => {
+        const el = document.createElement("div");
+        el.className = "tl-marker " + (t.role === "user" ? "q" : (t.deleg ? "d" : "a"));
+        const rel = Math.max(0, Math.min(dur, x - o));
+        el.style.left = (rel / dur * 100).toFixed(3) + "%";
+        el.style.top = lanes[t.role] + "px";
+        el.title = (t.role === "user" ? "user" : (t.deleg ? "assistant + delegation" : "assistant")) + " @ " + x + "s: " + t.text.slice(0, 160);
+        el.addEventListener("click", () => { seekOrig(c, x); highlightRow(ti); });
+        tl.appendChild(el);
+      });
+    });
+    const ev = c._viewer_evidence;
+    if (ev && ev.time_s != null) {
+      const el = document.createElement("div");
+      el.className = "tl-marker ev";
+      el.style.left = (Math.max(0, Math.min(dur, ev.time_s - o)) / dur * 100).toFixed(3) + "%";
+      el.style.top = (lanes.ev + 2) + "px";
+      el.title = "evidence @ " + ev.time_s + "s — " + ev.rule;
+      el.addEventListener("click", () => seekOrig(c, ev.time_s));
+      tl.appendChild(el);
+    }
+    const ph = document.createElement("div");
+    ph.className = "tl-playhead"; ph.id = "playhead"; ph.style.left = "0%";
+    if (!hasVideo(c)) ph.style.display = "none";
+    tl.appendChild(ph);
+    $("timeline-start").textContent = hasVideo(c) ? ("clip 0:00 = original " + o + "s") : "0 s (no video; axis = annotation span)";
+    $("timeline-end").textContent = hasVideo(c) ? ("clip " + mmss(dur) + " = original " + (o + dur).toFixed(1) + "s") : (dur + " s");
+    $("legend-row").innerHTML =
+      '<span class="chip"><span class="swatch" style="background:var(--highlight)"></span>user question</span>' +
+      '<span class="chip"><span class="swatch" style="background:var(--good)"></span>assistant response</span>' +
+      '<span class="chip"><span class="swatch" style="background:var(--pink)"></span>response with &lt;/delegation&gt;</span>' +
+      '<span class="chip"><span class="swatch" style="background:transparent;border:2px solid var(--bad);border-radius:50%"></span>evidence second (derivable cases only)</span>' +
+      '<span class="chip" style="margin-left:auto;">every second without a mark is a silence step</span>';
+  }
+  function highlightRow(i) { const r = $("row-" + i); if (r) r.scrollIntoView({ behavior: "smooth", block: "nearest" }); }
+
+  // ---------------- turn table ----------------
+  function textCell(t) {
+    if (!t.deleg) return '<span class="pre">' + escape(t.text) + "</span>";
+    const i = t.text.indexOf(DELEG);
+    return '<span class="pre">' + escape(t.text.slice(0, i)) + '</span><span class="tok">' + escape(DELEG) + "</span>" +
+      '<span class="hidden-q"><span class="lbl">hidden query sent to the background (never shown to the user)</span>' + escape(t.text.slice(i + DELEG.length).trim()) + "</span>";
+  }
+  function glossCell(c, t) {
+    if (c._viewer_language !== "zh" && !c._viewer_gloss_en) return '<span class="gloss-none">English original</span>';
+    if (t.gloss == null) return '<span class="gloss-none">—</span>';
+    if (t.gloss === t.text) return '<span class="gloss-none">(same as original)</span>';
+    if (!t.deleg || t.gloss.indexOf(DELEG) < 0) return '<span class="gloss pre">' + escape(t.gloss) + "</span>";
+    const i = t.gloss.indexOf(DELEG);
+    return '<span class="gloss pre">' + escape(t.gloss.slice(0, i)) + '</span><span class="tok">' + escape(DELEG) + '</span><span class="gloss pre"> ' + escape(t.gloss.slice(i + DELEG.length).trim()) + "</span>";
+  }
+  function renderContent(c) {
+    const fi = FAMILY_INFO[c._viewer_family];
+    const turns = turnsCache;
+    const showGloss = c._viewer_language === "zh" || !!c._viewer_gloss_en;
+    const o = hasVideo(c) ? off(c) : 0;
+    const rows = turns.map((t, i) => {
+      const t0 = t.times[0];
+      const outside = hasVideo(c) && t.times.every(x => !inClip(c, x));
+      const timeTxt = t.times.length > 3 ? (t.times[0] + "–" + t.times[t.times.length - 1] + "s (" + t.times.length + " seconds)") : (t.rawTime + "s");
+      const clipTxt = hasVideo(c) ? '<div style="opacity:.65;font-size:10.5px;">clip ' + mmss(t0 - o) + "</div>" : "";
+      const roleHtml = t.role === "user" ? '<span class="role role-user">user</span>' :
+        (t.deleg ? '<span class="role role-deleg">assistant</span>' : '<span class="role role-assistant">assistant</span>');
+      return '<tr class="seekable' + (outside ? " outside" : "") + '" data-i="' + i + '" id="row-' + i + '">' +
+        '<td class="mono">' + (i + 1) + "</td>" +
+        '<td class="mono">' + escape(timeTxt) + clipTxt + (outside ? '<span class="tag-out">outside clip</span>' : "") + "</td>" +
+        "<td>" + roleHtml + (t.group != null ? '<div class="mono" style="font-size:10px;margin-top:3px;">group ' + t.group + "</div>" : "") + "</td>" +
+        "<td>" + textCell(t) + "</td>" +
+        (showGloss ? "<td>" + glossCell(c, t) + "</td>" : "") +
+        '<td class="mono">' + (t.deleg ? '<span class="flag">DELEGATED</span>' : (t.role === "user" ? "" : "inline")) + "</td></tr>";
+    }).join("");
+    const ev = c._viewer_evidence;
+    const evHtml = ev ? '<div class="evidence"><b>Timing class:</b> ' + escape(TIMING_LABEL[c._viewer_timing_class] || c._viewer_timing_class) +
+      " · <b>evidence second:</b> " + (ev.time_s != null ? ev.time_s + " s" : "not derivable") + " — " + escape(ev.rule) + "</div>" : "";
+    const nResp = turns.filter(t => t.role !== "user").reduce((a, t) => a + t.times.length, 0);
+    const maxT = Math.max.apply(null, turns.map(t => t.times[t.times.length - 1]));
+    $("task-content").innerHTML =
+      "<h2>" + escape(fi.label) + " — " + escape(SUBTYPE_LABEL[c._viewer_subtype] || c._viewer_subtype) + "</h2>" +
+      '<p class="task-desc">' + fi.desc + "</p>" + evHtml +
+      '<div class="evidence">Implied per-second labels for this record over 0–' + maxT + " s: <b>" + nResp + "</b> response step(s), <b>" +
+      turns.filter(t => t.deleg).length + "</b> delegation step(s), the other seconds are <code>&lt;/silence&gt;</code> (the release stores only the non-silent steps).</div>" +
+      timelineHTML() +
+      '<div class="table-scroll"><table class="qa-table"><thead><tr><th style="width:32px;">#</th><th style="width:130px;">time (orig s)</th><th style="width:92px;">role</th>' +
+      '<th style="width:' + (showGloss ? "38%" : "70%") + ';">verbatim text</th>' + (showGloss ? '<th>English gloss (viewer author\'s translation)</th>' : "") +
+      '<th style="width:86px;">delegation</th></tr></thead><tbody id="ann-body">' + rows + "</tbody></table></div>";
+    buildTimeline(c, turns);
+    Array.prototype.forEach.call($("ann-body").children, el => {
+      el.addEventListener("click", () => seekOrig(c, turns[+el.dataset.i].times[0]));
+    });
+  }
+
+  // ---------------- playback sync ----------------
+  function syncPlayback(c, t) {
+    const dur = clipDur(c), o = off(c), T = t + o;
+    const ph = $("playhead");
+    if (ph) ph.style.left = Math.min(100, t / dur * 100).toFixed(2) + "%";
+    $("cur-time").textContent = "clip " + mmss(t) + " · original " + T.toFixed(1) + "s";
+    const body = $("ann-body");
+    if (!body) return;
+    Array.prototype.forEach.call(body.children, el => {
+      const tt = turnsCache[+el.dataset.i];
+      el.classList.toggle("active", tt.times.some(x => T >= x - 0.3 && T < x + 1.7));
+    });
+  }
+
+  // ---------------- stats ----------------
+  function histHTML(title, rows, opts) {
+    opts = opts || {};
+    const maxN = Math.max.apply(null, rows.map(r => r[1])) || 1;
+    const total = opts.total || rows.reduce((a, r) => a + r[1], 0);
+    return '<div><div class="hist-title">' + title + '</div><div class="histogram">' +
+      rows.map(r => {
+        const inSub = opts.subset && opts.subset[r[0]];
+        return '<div class="hist-row"><span class="hist-label' + (inSub ? " in-subset" : "") + '" title="' + escape(r[0]) + '">' + escape(opts.map ? (opts.map[r[0]] || r[0]) : r[0]) + (inSub ? " •" : "") + "</span>" +
+          '<span class="hist-bar-wrap"><span class="hist-bar ' + (opts.cls || "") + '" style="width:' + (r[1] / maxN * 100).toFixed(1) + '%"></span></span>' +
+          '<span class="hist-count">' + r[1].toLocaleString() + " <small>" + (r[1] / total * 100).toFixed(1) + "%</small></span></div>";
+      }).join("") + "</div>" + (opts.note ? '<div class="note">' + opts.note + "</div>" : "") + "</div>";
+  }
+  function renderStats() {
+    const p = $("stats-panel");
+    if (!fullStats) { p.innerHTML = "<h2>Full dataset stats</h2><div class='note'>full_dataset_stats.json not found.</div>"; return; }
+    const s = fullStats;
+    const famColor = ["pink", "", "", "orange", "good", "purple", "pink"];
+    const inSubSub = {};
+    FAMILIES.forEach(f => (data[f] || []).forEach(c => inSubSub[c._viewer_subtype] = 1));
+    const subHists = Object.entries(s.subtypes).map(([fam, rows]) =>
+      histHTML("Subtypes · family " + fam + " · • = in this sample", rows, { subset: inSubSub, map: SUBTYPE_LABEL, cls: "purple" })).join("");
+    const tts = ["chat", "event_grounding", "narration", "background"];
+    const famNames = s.families.map(r => r[0]);
+    const xt = '<div><div class="hist-title">Family × release task_type (records) — the mapping is not 1:1</div><table class="xtab"><thead><tr><th>family</th>' +
+      tts.map(t => "<th>" + t + "</th>").join("") + "</tr></thead><tbody>" +
+      famNames.map(fn => "<tr><td>" + escape(fn) + "</td>" + tts.map(t => {
+        const hit = (s.family_by_task_type[t] || []).find(r => r[0] === fn);
+        return "<td>" + (hit ? hit[1].toLocaleString() : "·") + "</td>";
+      }).join("") + "</tr>").join("") + "</tbody></table>" +
+      '<div class="note">Family 4 takes 41,634 chat records (guided-task sessions); family 1 takes 3,708 chat records (UCF-Crime); family 6 takes 184 chat records (search look-ups inside URL chats).</div></div>';
+    const lang = s.language_records, lresp = s.language_responses;
+    const dl = s.delegation;
+    const delegRows = Object.entries(dl.by_subtype).sort((a, b) => b[1].n - a[1].n).map(([k, v]) => [k, v.n]);
+    p.innerHTML = "<h2>Full dataset stats (all 3,018,207 records of the release)</h2>" +
+      '<div class="stats-summary">' +
+      "<span>records<b>" + s.records_total.toLocaleString() + "</b></span>" +
+      "<span>responses<b>" + s.responses_total.toLocaleString() + "</b></span>" +
+      "<span>distinct sources<b>" + s.sources_distinct + "</b></span>" +
+      "<span>zh / en records<b>" + (lang.zh / s.records_total * 100).toFixed(1) + "% / " + (lang.en / s.records_total * 100).toFixed(1) + "%</b></span>" +
+      "<span>responses with &lt;/delegation&gt;<b>" + dl.responses_with_token.toLocaleString() + " (" + (dl.share_of_all_responses * 100).toFixed(1) + "%)</b></span>" +
+      "<span>egocentric-source records<b>" + (s.egocentric_share * 100).toFixed(1) + "%</b></span>" +
+      "<span>paper claims<b>&gt;4M clips</b></span>" +
+      "<span>in this sample<b>27</b></span>" +
+      "</div>" +
+      '<div class="stats-grid">' +
+      histHTML("Records per family (heuristic classifier; see rules above)", s.families, { cls: "", note: "Family 2 is dominated by re-timed offline QA answered at the question second. The unclassified records are bare arithmetic questions on unrelated videos (40,116) and empty background records (326)." }) +
+      histHTML("Family 2 timing class (records)", s.timing_family2.map(r => [r[0], r[1]]), { map: TIMING_LABEL, cls: "orange", note: "Backward and present are separated only by wording, because the evidence second is not in the release." }) +
+      xt +
+      subHists +
+      histHTML("Records per source (top 15 of " + s.sources_distinct + ")", s.sources_top15.concat([["(other " + (s.sources_distinct - 15) + " sources)", s.sources_other_records]]), { cls: "purple", total: s.records_total,
+        note: "Raw bilibili / YouTube URLs are grouped as bilibili-url / youtube-url." }) +
+      histHTML("Records per release task_type", s.task_type, { cls: "" }) +
+      histHTML("Language (by first question; responses by own text)", [["records zh", lang.zh], ["records en", lang.en], ["responses zh", lresp.zh], ["responses en", lresp.en]], { cls: "good", total: s.records_total + s.responses_total,
+        note: "A text counts as zh if it contains any CJK character. Percentages are of records + responses combined; within records zh is " + (lang.zh / s.records_total * 100).toFixed(1) + "%, within responses " + (lresp.zh / s.responses_total * 100).toFixed(1) + "%." }) +
+      histHTML("Questions per record", s.questions_per_record, { cls: "orange", note: "mean " + s.questions_per_record_mean + ", median " + s.questions_per_record_median }) +
+      histHTML("Responses per record", s.responses_per_record, { cls: "good", note: "mean " + s.responses_per_record_mean + ", median " + s.responses_per_record_median + "; a comma time list counts as one response" }) +
+      histHTML("Response delay after the latest preceding question", s.response_delay, { cls: "", note: "over " + s.response_delay_n.toLocaleString() + " response times (each second of a comma list counted); median " + s.response_delay_median_s + " s, p90 " + s.response_delay_p90_s + " s. Silence between turns is implicit." }) +
+      histHTML("Delegated responses by kind", delegRows, { map: SUBTYPE_LABEL, cls: "pink",
+        note: dl.responses_with_token.toLocaleString() + " responses (" + (dl.share_of_all_responses * 100).toFixed(2) + "% of all) in " + dl.records_family6.toLocaleString() + " records. " +
+          (dl.delay_after_question_zero / dl.responses_with_token * 100).toFixed(2) + "% are emitted in the same second as the question; " +
+          (dl.hidden_query_equals_question_verbatim / dl.responses_with_token * 100).toFixed(1) + "% of hidden queries repeat the question verbatim; " +
+          (dl.explicit_request_in_question / dl.responses_with_token * 100).toFixed(1) + "% of questions explicitly ask for the background model (writing/code: >90%). No returned result or final-answer turn is stored." }) +
+      "</div>";
+  }
+
+  // ---------------- main render ----------------
+  function render() {
+    const c = cur();
+    turnsCache = buildTurns(c);
+    renderSelect();
+    $("task-select").value = state.fam;
+    const fi = FAMILIES.indexOf(state.fam);
+    $("prev-btn").disabled = fi === 0 && state.idx === 0;
+    $("next-btn").disabled = fi === FAMILIES.length - 1 && state.idx === data[state.fam].length - 1;
+    $("cur-time").textContent = "";
+    renderMetadata(c);
+    renderVideo(c);
+    renderContent(c);
+    $("raw-json").textContent = JSON.stringify(c, null, 1);
+    try { history.replaceState(null, "", "#" + state.fam + "/" + state.idx); } catch (e) {}
+  }
+
+  $("task-select").addEventListener("change", e => { state.fam = e.target.value; state.idx = 0; render(); });
+  $("case-select").addEventListener("change", e => { state.idx = +e.target.value; render(); });
+  $("prev-btn").addEventListener("click", () => nav(-1));
+  $("next-btn").addEventListener("click", () => nav(1));
+  document.addEventListener("keydown", e => {
+    if (e.target.tagName === "INPUT" || e.target.tagName === "SELECT") return;
+    if (e.key === "ArrowLeft") nav(-1);
+    if (e.key === "ArrowRight") nav(1);
+  });
+
+  Promise.all(FAMILIES.map(f => fetch("data/" + f + ".json").then(r => r.json())).concat([
+    fetch("file_durations.json").then(r => r.json()).catch(() => ({})),
+    fetch("full_dataset_stats.json").then(r => r.json()).catch(() => null),
+  ])).then(res => {
+    FAMILIES.forEach((f, i) => data[f] = res[i]);
+    durations = res[FAMILIES.length];
+    fullStats = res[FAMILIES.length + 1];
+    const h = (location.hash || "").replace("#", "").split("/");
+    if (h[0] && data[h[0]]) { state.fam = h[0]; const k = +h[1]; if (k >= 0 && k < data[h[0]].length) state.idx = k; }
+    render();
+    renderStats();
+  }).catch(err => {
+    document.querySelector("main").innerHTML =
+      '<div class="panel" style="grid-column:1/-1;color:var(--bad);">Failed to load data: ' + escape(err.message) +
+      "<br>If opened via file://, run <code>python3 -m http.server</code> and open via http://localhost:8000/</div>";
+  });
+})();
+</script>
+</body>
+</html>

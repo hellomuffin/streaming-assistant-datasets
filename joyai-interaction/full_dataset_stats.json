@@ -1,0 +1,719 @@
+{
+ "source": "computed by the viewer author over all 9 JSON files of HF jdopensource/JoyAI-VL-Interaction (2026-06-23 revision, downloaded 2026-09-16); family labels come from the heuristic classifier documented in README.md",
+ "records_total": 3018207,
+ "responses_total": 10436907,
+ "paper_reported": {
+  "clips": "more than 4M time-aligned streaming clips",
+  "families": 6
+ },
+ "per_file_records": {
+  "background/background.json": 400443,
+  "chat/chat_shard_01.json": 651764,
+  "chat/chat_shard_02.json": 501456,
+  "chat/chat_shard_03.json": 159242,
+  "chat/chat_shard_04.json": 147540,
+  "chat/chat_shard_05.json": 433085,
+  "chat/chat_shard_06.json": 213709,
+  "event_grounding/event_grounding.json": 243682,
+  "narration/narration.json": 267286
+ },
+ "families": [
+  [
+   "1 Alerting & anomaly",
+   247390
+  ],
+  [
+   "2 Time-aligned QA",
+   1750643
+  ],
+  [
+   "3 Counting & time perception",
+   141319
+  ],
+  [
+   "4 Commentary & narration",
+   308920
+  ],
+  [
+   "5 Casual chat",
+   129249
+  ],
+  [
+   "6 Delegation",
+   400244
+  ],
+  [
+   "Unclassified",
+   40442
+  ]
+ ],
+ "subtypes": {
+  "2 Time-aligned QA": [
+   [
+    "open_QA",
+    1461899
+   ],
+   [
+    "multiple_choice_QA",
+    146815
+   ],
+   [
+    "caption_description",
+    139226
+   ],
+   [
+    "temporal_grounding_QA",
+    2703
+   ]
+  ],
+  "4 Commentary & narration": [
+   [
+    "asr_live_commentary",
+    219298
+   ],
+   [
+    "task_step_guidance",
+    41634
+   ],
+   [
+    "dense_realtime_narration",
+    21171
+   ],
+   [
+    "llm_styled_commentary",
+    16114
+   ],
+   [
+    "screen_operation_narration",
+    10703
+   ]
+  ],
+  "6 Delegation": [
+   [
+    "video_grounded_knowledge",
+    199585
+   ],
+   [
+    "stem_text_problem",
+    181336
+   ],
+   [
+    "tool_api_call",
+    11018
+   ],
+   [
+    "writing_expert_text",
+    7412
+   ],
+   [
+    "code_generation",
+    450
+   ],
+   [
+    "tool_image_gen_edit",
+    259
+   ],
+   [
+    "tool_search_lookup",
+    184
+   ]
+  ],
+  "1 Alerting & anomaly": [
+   [
+    "event_onset_alert",
+    135286
+   ],
+   [
+    "styled_event_alert",
+    73256
+   ],
+   [
+    "continuous_alert_every_second",
+    21325
+   ],
+   [
+    "object_appearance_alert",
+    13815
+   ],
+   [
+    "surveillance_anomaly_report",
+    3708
+   ]
+  ],
+  "3 Counting & time perception": [
+   [
+    "withhold_answer_N_seconds",
+    64937
+   ],
+   [
+    "count_every_n_seconds",
+    43330
+   ],
+   [
+    "timed_QA_window",
+    26731
+   ],
+   [
+    "duration_estimation",
+    4477
+   ],
+   [
+    "repetition_counting",
+    1844
+   ]
+  ],
+  "5 Casual chat": [
+   [
+    "companionship_style",
+    55286
+   ],
+   [
+    "long_video_extended_dialogue",
+    51953
+   ],
+   [
+    "egocentric_everyday",
+    22010
+   ]
+  ],
+  "Unclassified": [
+   [
+    "text_only_arithmetic",
+    40116
+   ],
+   [
+    "empty_record",
+    326
+   ]
+  ]
+ },
+ "timing_family2": [
+  [
+   "at_question_undetermined",
+   1272318
+  ],
+  [
+   "present",
+   118618
+  ],
+  [
+   "backward",
+   12590
+  ],
+  [
+   "forward",
+   347117
+  ]
+ ],
+ "family_by_task_type": {
+  "background": [
+   [
+    "Unclassified",
+    326
+   ],
+   [
+    "2 Time-aligned QA",
+    57
+   ],
+   [
+    "6 Delegation",
+    400060
+   ]
+  ],
+  "chat": [
+   [
+    "Unclassified",
+    40116
+   ],
+   [
+    "1 Alerting & anomaly",
+    3708
+   ],
+   [
+    "2 Time-aligned QA",
+    1750586
+   ],
+   [
+    "3 Counting & time perception",
+    141319
+   ],
+   [
+    "4 Commentary & narration",
+    41634
+   ],
+   [
+    "5 Casual chat",
+    129249
+   ],
+   [
+    "6 Delegation",
+    184
+   ]
+  ],
+  "event_grounding": [
+   [
+    "1 Alerting & anomaly",
+    243682
+   ]
+  ],
+  "narration": [
+   [
+    "4 Commentary & narration",
+    267286
+   ]
+  ]
+ },
+ "family_by_language": {
+  "6 Delegation": {
+   "en": 202028,
+   "zh": 198216
+  },
+  "Unclassified": {
+   "en": 20389,
+   "zh": 20053
+  },
+  "2 Time-aligned QA": {
+   "zh": 932234,
+   "en": 818409
+  },
+  "3 Counting & time perception": {
+   "en": 71431,
+   "zh": 69888
+  },
+  "5 Casual chat": {
+   "zh": 71365,
+   "en": 57884
+  },
+  "4 Commentary & narration": {
+   "en": 124203,
+   "zh": 184717
+  },
+  "1 Alerting & anomaly": {
+   "en": 131909,
+   "zh": 115481
+  }
+ },
+ "family_top_sources": {
+  "6 Delegation": [
+   [
+    "Molmo2-VideoCapQA",
+    260291
+   ],
+   [
+    "TimeLens-100K",
+    62562
+   ],
+   [
+    "Molmo2-AskModelAnything",
+    54393
+   ],
+   [
+    "bilibili-url",
+    11303
+   ],
+   [
+    "Live-WhisperX-526K",
+    4413
+   ],
+   [
+    "OmniStar-RNG",
+    3961
+   ]
+  ],
+  "Unclassified": [
+   [
+    "Molmo2-VideoCapQA",
+    21731
+   ],
+   [
+    "TimeLens-100K",
+    11398
+   ],
+   [
+    "Molmo2-AskModelAnything",
+    4944
+   ],
+   [
+    "Live-WhisperX",
+    908
+   ],
+   [
+    "omnistar",
+    778
+   ],
+   [
+    "EgoIT-99K",
+    248
+   ]
+  ],
+  "2 Time-aligned QA": [
+   [
+    "EgoIT-99K",
+    452704
+   ],
+   [
+    "Molmo2-AskModelAnything",
+    233548
+   ],
+   [
+    "Kinetics-400",
+    195094
+   ],
+   [
+    "shot2story",
+    130994
+   ],
+   [
+    "WebVid2M",
+    108415
+   ],
+   [
+    "gui_world",
+    92232
+   ]
+  ],
+  "3 Counting & time perception": [
+   [
+    "Vript",
+    34979
+   ],
+   [
+    "WebVid2M",
+    25715
+   ],
+   [
+    "Kinetics-400",
+    21124
+   ],
+   [
+    "bilibili-url",
+    11103
+   ],
+   [
+    "ActivityNet",
+    8230
+   ],
+   [
+    "youtube-url",
+    5395
+   ]
+  ],
+  "5 Casual chat": [
+   [
+    "EgoIT",
+    77296
+   ],
+   [
+    "bilibili-url",
+    32064
+   ],
+   [
+    "youtube-url",
+    19889
+   ]
+  ],
+  "4 Commentary & narration": [
+   [
+    "Live-WhisperX-526K",
+    219298
+   ],
+   [
+    "OmniStar-RNG",
+    21171
+   ],
+   [
+    "Molmo2-AskModelAnything",
+    16114
+   ],
+   [
+    "assembly101",
+    15072
+   ],
+   [
+    "holoassist",
+    13838
+   ],
+   [
+    "GUI-World",
+    10703
+   ]
+  ],
+  "1 Alerting & anomaly": [
+   [
+    "timelens",
+    154612
+   ],
+   [
+    "VideoGPT-plus",
+    73256
+   ],
+   [
+    "Vript",
+    6417
+   ],
+   [
+    "webvid2m",
+    4750
+   ],
+   [
+    "ucfcrime",
+    3708
+   ],
+   [
+    "cctv_fights",
+    1999
+   ]
+  ]
+ },
+ "sources_top15": [
+  [
+   "EgoIT-99K",
+   454214
+  ],
+  [
+   "Molmo2-AskModelAnything",
+   309010
+  ],
+  [
+   "Molmo2-VideoCapQA",
+   282047
+  ],
+  [
+   "Live-WhisperX-526K",
+   223733
+  ],
+  [
+   "Kinetics-400",
+   216218
+  ],
+  [
+   "timelens",
+   154612
+  ],
+  [
+   "WebVid2M",
+   134130
+  ],
+  [
+   "shot2story",
+   130994
+  ],
+  [
+   "gui_world",
+   92488
+  ],
+  [
+   "VideoGPT-plus",
+   78485
+  ],
+  [
+   "EgoIT",
+   77328
+  ],
+  [
+   "TimeLens-100K",
+   73978
+  ],
+  [
+   "CharadesEgo",
+   65721
+  ],
+  [
+   "bilibili-url",
+   55182
+  ],
+  [
+   "EgoLife",
+   48752
+  ]
+ ],
+ "sources_distinct": 74,
+ "sources_other_records": 621315,
+ "task_type": [
+  [
+   "chat",
+   2106796
+  ],
+  [
+   "background",
+   400443
+  ],
+  [
+   "narration",
+   267286
+  ],
+  [
+   "event_grounding",
+   243682
+  ]
+ ],
+ "language_records": {
+  "en": 1426253,
+  "zh": 1591954
+ },
+ "language_responses": {
+  "en": 5013980,
+  "zh": 5422927
+ },
+ "questions_per_record": [
+  [
+   "0",
+   326
+  ],
+  [
+   "1",
+   2481734
+  ],
+  [
+   "2",
+   90311
+  ],
+  [
+   "3",
+   77622
+  ],
+  [
+   "4-5",
+   213813
+  ],
+  [
+   "6-10",
+   135806
+  ],
+  [
+   "11-20",
+   11083
+  ],
+  [
+   "21-50",
+   7512
+  ]
+ ],
+ "questions_per_record_mean": 1.73,
+ "questions_per_record_median": 1,
+ "responses_per_record": [
+  [
+   "0",
+   326
+  ],
+  [
+   "1",
+   2080979
+  ],
+  [
+   "2",
+   110924
+  ],
+  [
+   "3-5",
+   379802
+  ],
+  [
+   "6-10",
+   253393
+  ],
+  [
+   "11-20",
+   113776
+  ],
+  [
+   "21-50",
+   63995
+  ],
+  [
+   "51-100",
+   12646
+  ],
+  [
+   "101-200 (capped)",
+   2366
+  ]
+ ],
+ "responses_per_record_mean": 3.45,
+ "responses_per_record_median": 1,
+ "response_delay": [
+  [
+   "0 s",
+   4295195
+  ],
+  [
+   "1 s",
+   312635
+  ],
+  [
+   "2 s",
+   289544
+  ],
+  [
+   "3-5 s",
+   599645
+  ],
+  [
+   "6-10 s",
+   652119
+  ],
+  [
+   "11-30 s",
+   1552542
+  ],
+  [
+   "31-60 s",
+   1222774
+  ],
+  [
+   "61-120 s",
+   874455
+  ],
+  [
+   "121-300 s",
+   483514
+  ],
+  [
+   ">300 s (capped 600)",
+   153860
+  ]
+ ],
+ "response_delay_median_s": 4,
+ "response_delay_p90_s": 84,
+ "response_delay_n": 10436283,
+ "delegation": {
+  "responses_with_token": 445628,
+  "share_of_all_responses": 0.0427,
+  "records_family6": 400244,
+  "explicit_request_in_question": 41861,
+  "hidden_query_equals_question_verbatim": 406010,
+  "delay_after_question_zero": 445324,
+  "by_subtype": {
+   "stem_text_problem": {
+    "n": 214243,
+    "explicit": 15018
+   },
+   "video_grounded_knowledge": {
+    "n": 199585,
+    "explicit": 18244
+   },
+   "writing_expert_text": {
+    "n": 8708,
+    "explicit": 8095
+   },
+   "code_generation": {
+    "n": 469,
+    "explicit": 440
+   },
+   "tool_api_call": {
+    "n": 22148,
+    "explicit": 64
+   },
+   "tool_image_gen_edit": {
+    "n": 273,
+    "explicit": 0
+   },
+   "tool_search_lookup": {
+    "n": 202,
+    "explicit": 0
+   }
+  }
+ },
+ "egocentric_source_records": 756339,
+ "egocentric_share": 0.2506
+}

@@ -1,0 +1,503 @@
+[
+ {
+  "video_name": "2atBkPhI-WY",
+  "task_type": "background",
+  "source": "OmniStar-RNG",
+  "question": [
+   {
+    "content": "Solve the equation \\(\\frac{x}{x+2} + \\frac{2}{x} = -\\frac{5}{2x+4}\\) for \\(x\\).",
+    "time": "0"
+   },
+   {
+    "content": "Solve for \\( x \\): \n\\[\n\\frac{3x}{x+2} + 1 = \\frac{4}{x+1}.\n\\]",
+    "time": "1"
+   }
+  ],
+  "response": [
+   [
+    {
+     "content": "I will have the background model work this out first. </delegation> Solve the equation \\(\\frac{x}{x+2} + \\frac{2}{x} = -\\frac{5}{2x+4}\\) for \\(x\\).",
+     "time": "0"
+    }
+   ],
+   [
+    {
+     "content": "I will have the background model work this out first. </delegation> Solve for \\( x \\): \n\\[\n\\frac{3x}{x+2} + 1 = \\frac{4}{x+1}.\n\\]",
+     "time": "1"
+    }
+   ]
+  ],
+  "_viewer_case_id": "F6-stem-omnistar",
+  "_viewer_family": "f6_delegation",
+  "_viewer_family_name": "Delegation to a background model",
+  "_viewer_subtype": "stem_text_problem",
+  "_viewer_timing_class": null,
+  "_viewer_release_location": {
+   "file": "background/background.json",
+   "record_index": 66062
+  },
+  "_viewer_language": "en",
+  "_viewer_classification_evidence": "response contains </delegation>; holding reply names the background model; hidden query is a text-only math problem unrelated to the video.",
+  "_viewer_gloss_en": null,
+  "_viewer_evidence": null,
+  "_viewer_video": "videos/F6-stem-omnistar.mp4",
+  "_viewer_video_available": true,
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_clip_end_s": 19.876,
+  "_viewer_source_duration_s": 19.876,
+  "_viewer_source_resolution": [
+   720,
+   1280
+  ],
+  "_viewer_source_has_audio": true,
+  "_viewer_video_note": "OmniStar-RNG videos/2atBkPhI-WY.mp4 from HF yzy666/OmniStar-RNG. The STEM question has nothing to do with the video.",
+  "_viewer_times_outside_clip": []
+ },
+ {
+  "video_name": "4300.mp4",
+  "task_type": "background",
+  "source": "gui-world",
+  "question": [
+   {
+    "content": "帮我给一组旅行照配一段诗意浪漫的知乎文案\n先调 background model 生成辅助答案。",
+    "time": "0"
+   }
+  ],
+  "response": [
+   [
+    {
+     "content": "这个更像独立写作任务，我先让后台生成可用初稿。 </delegation> 帮我给一组旅行照配一段诗意浪漫的知乎文案",
+     "time": "0"
+    }
+   ]
+  ],
+  "_viewer_case_id": "F6-writing-guiworld",
+  "_viewer_family": "f6_delegation",
+  "_viewer_family_name": "Delegation to a background model",
+  "_viewer_subtype": "writing_expert_text",
+  "_viewer_timing_class": null,
+  "_viewer_release_location": {
+   "file": "background/background.json",
+   "record_index": 179081
+  },
+  "_viewer_language": "zh",
+  "_viewer_classification_evidence": "response contains </delegation>; holding reply says it is a writing task; the question also carries an explicit \"call the background model\" suffix.",
+  "_viewer_gloss_en": {
+   "label": "English translation written by the viewer author; not part of the dataset",
+   "question": [
+    "Write me a poetic, romantic Zhihu-style caption for a set of travel photos.\nCall the background model first to generate a helper answer."
+   ],
+   "response": [
+    "This is more of a standalone writing task, so I will have the background produce a usable first draft first. </delegation> Write me a poetic, romantic Zhihu-style caption for a set of travel photos"
+   ]
+  },
+  "_viewer_evidence": null,
+  "_viewer_video": "videos/F6-writing-guiworld.mp4",
+  "_viewer_video_available": true,
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_clip_end_s": 14.9,
+  "_viewer_source_duration_s": 14.916,
+  "_viewer_source_resolution": [
+   1920,
+   1080
+  ],
+  "_viewer_source_has_audio": true,
+  "_viewer_video_note": "GUI-World software/4300.mp4 from HF ONE-Lab/GUI-World. The writing request has nothing to do with the video.",
+  "_viewer_times_outside_clip": []
+ },
+ {
+  "video_name": "234.9-275.167.mp4",
+  "task_type": "background",
+  "source": "https://www.bilibili.com/video/BV1Nv411E7zh",
+  "question": [
+   {
+    "content": "这个人在车旁边比划什么呢？",
+    "time": "2"
+   },
+   {
+    "content": "这辆白色的是什么车啊？看起来挺有设计感的",
+    "time": "10"
+   },
+   {
+    "content": "请从全球食谱API获取前20个食谱",
+    "time": "20"
+   },
+   {
+    "content": "这个博主在做什么？",
+    "time": "25"
+   },
+   {
+    "content": "这个博主在做什么手势啊？",
+    "time": "33"
+   },
+   {
+    "content": "使用分页游标'xyz789'获取用户'techcrunch'的推文和回复。",
+    "time": "33"
+   }
+  ],
+  "response": [
+   [
+    {
+     "content": "看起来他在介绍这辆白色SUV，边说边用手势比划车身大小或者空间。",
+     "time": "2"
+    }
+   ],
+   [
+    {
+     "content": "这是Polestar 2，一款纯电动的跨界轿车，外观确实挺简洁现代的。",
+     "time": "10"
+    }
+   ],
+   [
+    {
+     "content": "我来用合适的工具查看一下。 </delegation> 请从全球食谱API获取前20个食谱",
+     "time": "20"
+    }
+   ],
+   [
+    {
+     "content": "他在一辆白色SUV旁边讲话，手里比划着，应该是在介绍这辆车。",
+     "time": "25"
+    }
+   ],
+   [
+    {
+     "content": "他在用手指指向下边，可能是在引导观众点链接或者看评论区。",
+     "time": "33"
+    }
+   ],
+   [
+    {
+     "content": "我来用合适的工具查看一下。 </delegation> 使用分页游标'xyz789'获取用户'techcrunch'的推文和回复。",
+     "time": "33"
+    }
+   ]
+  ],
+  "_viewer_case_id": "F6-toolapi-bili",
+  "_viewer_family": "f6_delegation",
+  "_viewer_family_name": "Delegation to a background model",
+  "_viewer_subtype": "tool_api_call",
+  "_viewer_timing_class": null,
+  "_viewer_release_location": {
+   "file": "background/background.json",
+   "record_index": 393415
+  },
+  "_viewer_language": "zh",
+  "_viewer_classification_evidence": "response contains </delegation> with holding reply \"我来用合适的工具查看一下\" (use the appropriate tool); hidden query is an API-style request inserted into video chat.",
+  "_viewer_gloss_en": {
+   "label": "English translation written by the viewer author; not part of the dataset",
+   "question": [
+    "What is this person gesturing about next to the car?",
+    "What car is this white one? It looks quite well designed.",
+    "Please fetch the top 20 recipes from the global recipes API",
+    "What is this vlogger doing?",
+    "What gesture is this vlogger making?",
+    "Use pagination cursor 'xyz789' to fetch the tweets and replies of user 'techcrunch'."
+   ],
+   "response": [
+    "Looks like he's introducing this white SUV, gesturing to show the size of the body or the interior space as he talks.",
+    "This is a Polestar 2, an all-electric crossover sedan; the exterior really is clean and modern.",
+    "Let me check that with the appropriate tool. </delegation> Please fetch the top 20 recipes from the global recipes API",
+    "He's talking next to a white SUV and gesturing -- probably introducing the car.",
+    "He's pointing downward with his finger, maybe telling viewers to click a link or look at the comments.",
+    "Let me check that with the appropriate tool. </delegation> Use pagination cursor 'xyz789' to fetch the tweets and replies of user 'techcrunch'."
+   ]
+  },
+  "_viewer_evidence": null,
+  "_viewer_video": "videos/F6-toolapi-bili.mp4",
+  "_viewer_video_available": true,
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_clip_end_s": 40.267,
+  "_viewer_source_duration_s": 40.267,
+  "_viewer_source_resolution": [
+   852,
+   480
+  ],
+  "_viewer_source_has_audio": true,
+  "_viewer_video_note": "Bilibili BV1Nv411E7zh, section 234.9-275.167 s via yt-dlp. Uploader copyright.",
+  "_viewer_times_outside_clip": []
+ },
+ {
+  "video_name": "516.773-600.034.mp4",
+  "task_type": "background",
+  "source": "https://www.bilibili.com/video/BV1AJ411u7nd",
+  "question": [
+   {
+    "content": "右边这栋黄色的楼是做什么的呀？",
+    "time": "8"
+   },
+   {
+    "content": "把当前画面：给人物换上西装",
+    "time": "12"
+   },
+   {
+    "content": "这条路看起来好安静啊，旁边那些树是一直都有的吗？",
+    "time": "16"
+   },
+   {
+    "content": "套用复古胶片的滤镜",
+    "time": "18"
+   },
+   {
+    "content": "这条路看起来挺安静的，是住宅区吗？",
+    "time": "28"
+   },
+   {
+    "content": "路边那个红色的小箱子是什么？",
+    "time": "39"
+   },
+   {
+    "content": "那辆白色小车是从哪边开过来的？",
+    "time": "80"
+   }
+  ],
+  "response": [
+   [
+    {
+     "content": "看起来是个街市购物中心，门口有行人路过，周围还挺安静的。",
+     "time": "8"
+    }
+   ],
+   [
+    {
+     "content": "正在为您调用图像编辑工具... </delegation> 把当前画面：给人物换上西装",
+     "time": "12"
+    }
+   ],
+   [
+    {
+     "content": "是啊，路边树木很茂密，看起来有些年头了，和旁边住宅区形成挺自然的对比。",
+     "time": "16"
+    }
+   ],
+   [
+    {
+     "content": "正在为您调用图像编辑工具... </delegation> 套用复古胶片的滤镜",
+     "time": "18"
+    }
+   ],
+   [
+    {
+     "content": "对，右边能看到一排带院子的低层住宅，左边是树林，路上没什么车，挺僻静的。",
+     "time": "28"
+    }
+   ],
+   [
+    {
+     "content": "看起来像是消防栓或者配电箱，在路边绿化带旁边。",
+     "time": "39"
+    }
+   ],
+   [
+    {
+     "content": "从弯道那边开过来的，正往镜头方向靠近呢。",
+     "time": "80"
+    }
+   ]
+  ],
+  "_viewer_case_id": "F6-imagetool-bili",
+  "_viewer_family": "f6_delegation",
+  "_viewer_family_name": "Delegation to a background model",
+  "_viewer_subtype": "tool_image_gen_edit",
+  "_viewer_timing_class": null,
+  "_viewer_release_location": {
+   "file": "background/background.json",
+   "record_index": 397607
+  },
+  "_viewer_language": "zh",
+  "_viewer_classification_evidence": "response contains </delegation> with holding reply \"calling the image-editing tool\"; hidden query is an edit instruction on the current frame.",
+  "_viewer_gloss_en": {
+   "label": "English translation written by the viewer author; not part of the dataset",
+   "question": [
+    "What is that yellow building on the right for?",
+    "For the current frame: put the person in a suit",
+    "This road looks so quiet. Have those trees along it always been there?",
+    "Apply a vintage film filter",
+    "This road looks quite quiet -- is it a residential area?",
+    "What is that small red box by the roadside?",
+    "Which way did that small white car come from?"
+   ],
+   "response": [
+    "Looks like a street-market shopping centre; a few pedestrians pass by the entrance and it's fairly quiet around.",
+    "Calling the image-editing tool for you... </delegation> For the current frame: put the person in a suit",
+    "Yes, the roadside trees are dense and look like they've been there for years -- a natural contrast with the housing next to them.",
+    "Calling the image-editing tool for you... </delegation> Apply a vintage film filter",
+    "Yes, on the right there's a row of low-rise houses with yards, woods on the left, and hardly any cars -- very secluded.",
+    "Looks like a fire hydrant or an electrical cabinet, next to the roadside green strip.",
+    "It came from around the bend and is heading toward the camera."
+   ]
+  },
+  "_viewer_evidence": null,
+  "_viewer_video": "videos/F6-imagetool-bili.mp4",
+  "_viewer_video_available": true,
+  "_viewer_clip_offset_s": 3.0,
+  "_viewer_clip_end_s": 83.268,
+  "_viewer_source_duration_s": 83.261,
+  "_viewer_source_resolution": [
+   960,
+   480
+  ],
+  "_viewer_source_has_audio": true,
+  "_viewer_video_note": "Bilibili BV1AJ411u7nd, section 516.773-600.034 s via yt-dlp. Uploader copyright.",
+  "_viewer_times_outside_clip": []
+ },
+ {
+  "video_name": "2738.233-2750.033.mp4",
+  "task_type": "chat",
+  "source": "https://www.bilibili.com/video/BV1LV41177sw",
+  "question": [
+   {
+    "content": "那个推大箱子的人是在往哪个方向走啊？",
+    "time": "2"
+   },
+   {
+    "content": "那个穿紫色格子裙的女士在往哪边走？",
+    "time": "4"
+   },
+   {
+    "content": "帮我查一下那个穿格子裙戴头巾的女士旁边是谁",
+    "time": "5"
+   },
+   {
+    "content": "那个穿蓝衣服的人在搬什么东西？",
+    "time": "8"
+   },
+   {
+    "content": "那个穿白衣服背棕色背包的人是刚走进画面吗？",
+    "time": "9"
+   }
+  ],
+  "response": [
+   {
+    "content": "往镜头这边走过来呢，箱子还挺大的。",
+    "time": "2"
+   },
+   {
+    "content": "她正往画面左边走，旁边还有个穿红衬衫的男士。",
+    "time": "4"
+   },
+   {
+    "content": "好的，我帮你查一下。</delegation> 帮我查一下那个穿格子裙戴头巾的女士旁边是谁",
+    "time": "5"
+   },
+   {
+    "content": "看起来是个大纸箱，可能是刚送到的货物。",
+    "time": "8"
+   },
+   {
+    "content": "对的，她从右侧走进来，往街道里面走。",
+    "time": "9"
+   }
+  ],
+  "_viewer_case_id": "F6-lookup-bili",
+  "_viewer_family": "f6_delegation",
+  "_viewer_family_name": "Delegation to a background model",
+  "_viewer_subtype": "tool_search_lookup",
+  "_viewer_timing_class": null,
+  "_viewer_release_location": {
+   "file": "chat/chat_shard_01.json",
+   "record_index": 614754
+  },
+  "_viewer_language": "zh",
+  "_viewer_classification_evidence": "task_type chat but a response contains </delegation> (\"OK, let me look that up\"); identity look-up routed to the background.",
+  "_viewer_gloss_en": {
+   "label": "English translation written by the viewer author; not part of the dataset",
+   "question": [
+    "Which way is the person pushing the big box walking?",
+    "Which way is the lady in the purple plaid skirt walking?",
+    "Look up for me who is next to the lady in the plaid skirt wearing a headscarf",
+    "What is the person in blue carrying?",
+    "Did the person in white with the brown backpack just walk into the frame?"
+   ],
+   "response": [
+    "Coming toward the camera -- the box is pretty big.",
+    "She's walking toward the left of the frame, with a man in a red shirt beside her.",
+    "OK, let me look that up for you. </delegation> Look up for me who is next to the lady in the plaid skirt wearing a headscarf",
+    "Looks like a big cardboard box, maybe a delivery that just arrived.",
+    "Yes, she came in from the right and is walking further down the street."
+   ]
+  },
+  "_viewer_evidence": null,
+  "_viewer_video": "videos/F6-lookup-bili.mp4",
+  "_viewer_video_available": true,
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_clip_end_s": 11.8,
+  "_viewer_source_duration_s": 11.8,
+  "_viewer_source_resolution": [
+   852,
+   480
+  ],
+  "_viewer_source_has_audio": true,
+  "_viewer_video_note": "Bilibili BV1LV41177sw, section 2738.233-2750.033 s via yt-dlp. Uploader copyright.",
+  "_viewer_times_outside_clip": []
+ },
+ {
+  "video_name": "fFyNhJDUNJA.mp4",
+  "task_type": "background",
+  "source": "Molmo2-VideoCapQA",
+  "question": [
+   {
+    "content": "这是什么爆炸场面？",
+    "time": "8"
+   },
+   {
+    "content": "这是什么爆炸场面？",
+    "time": "10"
+   },
+   {
+    "content": "这种多排同步起爆形成的波浪状烟云轮廓，是不是利用了炸药爆炸时冲击波在空气中叠加形成的马赫反射效应？能否解释下定向爆破中如何通过毫秒延时雷管序列控制各排起爆时序，来实现特定方向的抛掷或坍塌？\n让辅助模型核实后再回答。",
+    "time": "18"
+   }
+  ],
+  "response": [
+   [
+    {
+     "content": "看起来是大规模的野外爆炸，可能是军事演习或者工程爆破，烟雾特别大。",
+     "time": "8"
+    }
+   ],
+   [
+    {
+     "content": "看起来是大规模的火灾或者爆炸，浓烟滚滚的，可能是森林火灾或者工业事故。",
+     "time": "10"
+    }
+   ],
+   [
+    {
+     "content": "这个爆破烟云的形成机制有点复杂，让我查一下相关的爆炸物理原理。 </delegation> 这种多排同步起爆形成的波浪状烟云轮廓，是不是利用了炸药爆炸时冲击波在空气中叠加形成的马赫反射效应？能否解释下定向爆破中如何通过毫秒延时雷管序列控制各排起爆时序，来实现特定方向的抛掷或坍塌？",
+     "time": "18"
+    }
+   ]
+  ],
+  "_viewer_case_id": "F6-videoknowledge-molmo2",
+  "_viewer_family": "f6_delegation",
+  "_viewer_family_name": "Delegation to a background model",
+  "_viewer_subtype": "video_grounded_knowledge",
+  "_viewer_timing_class": null,
+  "_viewer_release_location": {
+   "file": "background/background.json",
+   "record_index": 178950
+  },
+  "_viewer_language": "zh",
+  "_viewer_classification_evidence": "response contains </delegation>; holding reply does not mention a background model and the hidden query asks for expert knowledge anchored on what is on screen -> video-grounded knowledge question.",
+  "_viewer_gloss_en": {
+   "label": "English translation written by the viewer author; not part of the dataset",
+   "question": [
+    "What kind of explosion scene is this?",
+    "What kind of explosion scene is this?",
+    "Does this wave-shaped smoke-cloud outline, formed by multiple rows detonating simultaneously, exploit the Mach-reflection effect of blast waves superimposing in air? Could you explain how, in directional blasting, millisecond-delay detonator sequences control the firing order of each row to achieve throw or collapse in a specific direction?\nHave the auxiliary model verify before answering."
+   ],
+   "response": [
+    "Looks like a large-scale outdoor explosion, maybe a military exercise or engineering blasting -- there's a huge amount of smoke.",
+    "Looks like a large fire or explosion with billowing thick smoke, maybe a forest fire or an industrial accident.",
+    "The formation mechanism of this blast cloud is a bit complex; let me look up the relevant explosion physics. </delegation> Does this wave-shaped smoke-cloud outline, formed by multiple rows detonating simultaneously, exploit the Mach-reflection effect of blast waves superimposing in air? Could you explain how, in directional blasting, millisecond-delay detonator sequences control the firing order of each row to achieve throw or collapse in a specific direction?"
+   ]
+  },
+  "_viewer_evidence": null,
+  "_viewer_video": null,
+  "_viewer_video_available": false,
+  "_viewer_clip_offset_s": 0,
+  "_viewer_clip_end_s": 23,
+  "_viewer_video_note": "Video not included: YouTube video fFyNhJDUNJA (Molmo2 ships YouTube ids only; YouTube download blocked by bot check from this cluster)"
+ }
+]

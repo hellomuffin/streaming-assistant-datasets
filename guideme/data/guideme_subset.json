@@ -1,0 +1,3269 @@
+[
+ {
+  "video_id": "0012",
+  "conversations": [
+   {
+    "from": "user",
+    "value": "Be my fitness partner: comment on my workouts and correct my technique when needed.",
+    "timestamp": 14
+   },
+   {
+    "from": "assistant",
+    "value": "First up are high knees!",
+    "timestamp": 14
+   },
+   {
+    "from": "assistant",
+    "value": "Pump it up now, more bounce!",
+    "timestamp": 16
+   },
+   {
+    "from": "assistant",
+    "value": "Come on, let's get some juice in those legs. Pick it up!",
+    "timestamp": 21
+   },
+   {
+    "from": "assistant",
+    "value": "I am still waiting! Let's get the heart and knees pumping!",
+    "timestamp": 25
+   },
+   {
+    "from": "assistant",
+    "value": "There is still time! Pick up the pace!",
+    "timestamp": 29
+   },
+   {
+    "from": "assistant",
+    "value": "Let's put in more effort next time.",
+    "timestamp": 36
+   },
+   {
+    "from": "assistant",
+    "value": "Moving on to jumping jacks!",
+    "timestamp": 40
+   },
+   {
+    "from": "assistant",
+    "value": "It's time for jumping jacks!",
+    "timestamp": 42
+   },
+   {
+    "from": "assistant",
+    "value": "You are only moving your arms! It's time to start jumping!",
+    "timestamp": 44
+   },
+   {
+    "from": "assistant",
+    "value": "You're still only moving your arms. Come on! Let's get jumping!",
+    "timestamp": 48
+   },
+   {
+    "from": "assistant",
+    "value": "Yes! Now don't forget your arms!",
+    "timestamp": 51
+   },
+   {
+    "from": "assistant",
+    "value": "I love your jumps! But put the arms up!",
+    "timestamp": 54
+   },
+   {
+    "from": "assistant",
+    "value": "Jump and move your arms together! It's one fluid motion.",
+    "timestamp": 57
+   },
+   {
+    "from": "assistant",
+    "value": "Let's try harder next time.",
+    "timestamp": 62
+   },
+   {
+    "from": "assistant",
+    "value": "Moving on to squats!",
+    "timestamp": 63
+   },
+   {
+    "from": "assistant",
+    "value": "Hey, why aren't you doing the exercise? No free pass here!",
+    "timestamp": 66
+   },
+   {
+    "from": "assistant",
+    "value": "Ok! Try to keep your hands out in front or to your sides!",
+    "timestamp": 69
+   },
+   {
+    "from": "assistant",
+    "value": "Yes! Now give me a nice wide stance, knees further apart.",
+    "timestamp": 71
+   },
+   {
+    "from": "assistant",
+    "value": "Don't stop! Keep it coming!",
+    "timestamp": 75
+   },
+   {
+    "from": "assistant",
+    "value": "Try to go deeper into the squat with a nice wide stance!",
+    "timestamp": 77
+   },
+   {
+    "from": "assistant",
+    "value": "Moving on to pushups!",
+    "timestamp": 86
+   },
+   {
+    "from": "assistant",
+    "value": "Let's get started with the pushups!",
+    "timestamp": 90
+   },
+   {
+    "from": "assistant",
+    "value": "You can start that push-up anytime now!",
+    "timestamp": 94
+   },
+   {
+    "from": "assistant",
+    "value": "You've got time! Let's get started!",
+    "timestamp": 97
+   },
+   {
+    "from": "assistant",
+    "value": "I know pushups can be hard but let's try to do some push ups next time!",
+    "timestamp": 102
+   },
+   {
+    "from": "assistant",
+    "value": "Moving on to quad stretch right!",
+    "timestamp": 112
+   },
+   {
+    "from": "assistant",
+    "value": "Don't play favorites, make sure both legs get a stretch.",
+    "timestamp": 114
+   },
+   {
+    "from": "assistant",
+    "value": "Stretch both legs out.",
+    "timestamp": 117
+   },
+   {
+    "from": "assistant",
+    "value": "Make sure you stretch both legs for an equal amount of time.",
+    "timestamp": 118
+   },
+   {
+    "from": "assistant",
+    "value": "Careful you're not stretching the wrong leg now. We want to stretch both legs.",
+    "timestamp": 122
+   },
+   {
+    "from": "assistant",
+    "value": "Wow... you're crushing it! Let's keep it going",
+    "timestamp": 131
+   },
+   {
+    "from": "assistant",
+    "value": "Moving on to quad stretch left!",
+    "timestamp": 133
+   },
+   {
+    "from": "assistant",
+    "value": "This is your right leg, we're stretching the left right now.",
+    "timestamp": 136
+   },
+   {
+    "from": "assistant",
+    "value": "Nice! That's it! Keep your core tight to maintain your balance!",
+    "timestamp": 140
+   },
+   {
+    "from": "assistant",
+    "value": "Don't give up so soon! Loads to time to go!",
+    "timestamp": 142
+   },
+   {
+    "from": "assistant",
+    "value": "That's not right! Stretch your leg towards your back! The other way!",
+    "timestamp": 145
+   },
+   {
+    "from": "assistant",
+    "value": "Yes! That's it!",
+    "timestamp": 148
+   },
+   {
+    "from": "assistant",
+    "value": "That's the end of the session.",
+    "timestamp": 155
+   }
+  ],
+  "videos": [
+   "0012.mp4"
+  ],
+  "_viewer_source": "QEVD-Fit-Coach",
+  "_viewer_task": "fitness session: high knees, jumping jacks, squats, pushups, quad stretch right, quad stretch left",
+  "_viewer_video": "videos/0012.mp4",
+  "_viewer_clip_offset_s": 0,
+  "_viewer_clip_duration_s": 166.5,
+  "_viewer_source_duration_s": 166.5,
+  "_viewer_output_types": [
+   null,
+   [
+    "instruction"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback",
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback",
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback",
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback",
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ]
+  ],
+  "_viewer_output_types_heuristic": [
+   null,
+   [
+    "instruction"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "instruction",
+    "error_detection"
+   ],
+   [
+    "completion_feedback",
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "completion_feedback",
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback",
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback",
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ]
+  ],
+  "_viewer_note": "QEVD-Fit-Coach fitness session; utterances look like the original QEVD live-coach feedback. Frames are sideways exactly as shipped in the preview (no rotation flag). No audio track in the preview file."
+ },
+ {
+  "video_id": "0033",
+  "conversations": [
+   {
+    "from": "user",
+    "value": "Pretend you're my gym partner. Watch my workout and give me constructive feedback, correcting me when needed.",
+    "timestamp": 10
+   },
+   {
+    "from": "assistant",
+    "value": "First up are good morning beginner!",
+    "timestamp": 10
+   },
+   {
+    "from": "assistant",
+    "value": "It's time for good mornings!",
+    "timestamp": 13
+   },
+   {
+    "from": "assistant",
+    "value": "Time is passing you by!",
+    "timestamp": 16
+   },
+   {
+    "from": "assistant",
+    "value": "Try to bend your upper body forward!",
+    "timestamp": 19
+   },
+   {
+    "from": "assistant",
+    "value": "Hmm that's not it!",
+    "timestamp": 22
+   },
+   {
+    "from": "assistant",
+    "value": "Try to improve next time!",
+    "timestamp": 29
+   },
+   {
+    "from": "assistant",
+    "value": "Moving on to jumping jacks!",
+    "timestamp": 33
+   },
+   {
+    "from": "assistant",
+    "value": "Don't let the time pass by!",
+    "timestamp": 35
+   },
+   {
+    "from": "assistant",
+    "value": "Let's get skipping!",
+    "timestamp": 38
+   },
+   {
+    "from": "assistant",
+    "value": "Yes, good job jumping. But don't forget to move those legs!",
+    "timestamp": 43
+   },
+   {
+    "from": "assistant",
+    "value": "Come on! Move those arms too!",
+    "timestamp": 47
+   },
+   {
+    "from": "assistant",
+    "value": "You gotta work your whole body.",
+    "timestamp": 51
+   },
+   {
+    "from": "assistant",
+    "value": "Don't stop skipping!",
+    "timestamp": 54
+   },
+   {
+    "from": "assistant",
+    "value": "Let's try to move both your arms and legs next time!",
+    "timestamp": 57
+   },
+   {
+    "from": "assistant",
+    "value": "Moving on to squat jumps!",
+    "timestamp": 59
+   },
+   {
+    "from": "assistant",
+    "value": "It's time for squat jumps!",
+    "timestamp": 61
+   },
+   {
+    "from": "assistant",
+    "value": "Hey c'mon, don't leave me hangin'!",
+    "timestamp": 65
+   },
+   {
+    "from": "assistant",
+    "value": "Try to go deeper into the squats and jump higher!",
+    "timestamp": 68
+   },
+   {
+    "from": "assistant",
+    "value": "Yes! That a good jump! Now try to squat deeper with a wider stance.",
+    "timestamp": 70
+   },
+   {
+    "from": "assistant",
+    "value": "Keep squatting and jumping, don't stop!",
+    "timestamp": 73
+   },
+   {
+    "from": "assistant",
+    "value": "You are not really squatting! Come on!",
+    "timestamp": 75
+   },
+   {
+    "from": "assistant",
+    "value": "We need to work harder next time.",
+    "timestamp": 79
+   },
+   {
+    "from": "assistant",
+    "value": "Moving on to squat kicks!",
+    "timestamp": 82
+   },
+   {
+    "from": "assistant",
+    "value": "Let's get squatting!",
+    "timestamp": 85
+   },
+   {
+    "from": "assistant",
+    "value": "Don't forget the kicks!",
+    "timestamp": 88
+   },
+   {
+    "from": "assistant",
+    "value": "Squat kick left squat kick right you got this",
+    "timestamp": 90
+   },
+   {
+    "from": "assistant",
+    "value": "Waiting for you to start kicking!",
+    "timestamp": 95
+   },
+   {
+    "from": "assistant",
+    "value": "Its a squat followed by two kicks! Don't forget the squats.",
+    "timestamp": 98
+   },
+   {
+    "from": "assistant",
+    "value": "Moving on to armcrosschest right!",
+    "timestamp": 103
+   },
+   {
+    "from": "assistant",
+    "value": "It's time to stretch that arm!",
+    "timestamp": 104
+   },
+   {
+    "from": "assistant",
+    "value": "Let's do the arm stretch!",
+    "timestamp": 107
+   },
+   {
+    "from": "assistant",
+    "value": "Wrong arm! Stretch the right arm!",
+    "timestamp": 109
+   },
+   {
+    "from": "assistant",
+    "value": "Yes! Now pull your arm across.",
+    "timestamp": 112
+   },
+   {
+    "from": "assistant",
+    "value": "Don't keep on switching arms! Stretch each arm for at least 20 seconds.",
+    "timestamp": 116
+   },
+   {
+    "from": "assistant",
+    "value": "Hmm I am not sure what you are doing!",
+    "timestamp": 121
+   },
+   {
+    "from": "assistant",
+    "value": "Moving on to armcrosschest left!",
+    "timestamp": 125
+   },
+   {
+    "from": "assistant",
+    "value": "Let's go! This is your time!",
+    "timestamp": 132
+   },
+   {
+    "from": "assistant",
+    "value": "Let's get started!",
+    "timestamp": 135
+   },
+   {
+    "from": "assistant",
+    "value": "That's the wrong arm! Stretch your left arm.",
+    "timestamp": 137
+   },
+   {
+    "from": "assistant",
+    "value": "I am still waiting! Let's stretch that left arm!",
+    "timestamp": 141
+   },
+   {
+    "from": "assistant",
+    "value": "That's the wrong arm!",
+    "timestamp": 144
+   },
+   {
+    "from": "assistant",
+    "value": "That's the end of the session.",
+    "timestamp": 149
+   }
+  ],
+  "videos": [
+   "0033.mp4"
+  ],
+  "_viewer_source": "QEVD-Fit-Coach",
+  "_viewer_task": "fitness session: good morning beginner, jumping jacks, squat jumps, squat kicks, armcrosschest right, armcrosschest left",
+  "_viewer_video": "videos/0033.mp4",
+  "_viewer_clip_offset_s": 0,
+  "_viewer_clip_duration_s": 158.5,
+  "_viewer_source_duration_s": 158.5,
+  "_viewer_output_types": [
+   null,
+   [
+    "instruction"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback",
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback",
+    "corrective_guidance"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "completion_feedback"
+   ]
+  ],
+  "_viewer_output_types_heuristic": [
+   null,
+   [
+    "instruction"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback",
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback",
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "completion_feedback"
+   ]
+  ],
+  "_viewer_note": "QEVD-Fit-Coach; several wrong-arm / not-exercising detections. Frames sideways as shipped; no audio."
+ },
+ {
+  "video_id": "0056",
+  "conversations": [
+   {
+    "from": "user",
+    "value": "You're my training buddy. Comment on my workout performance and correct me whenever it's necessary.",
+    "timestamp": 9
+   },
+   {
+    "from": "assistant",
+    "value": "First up are air jump rope!",
+    "timestamp": 9
+   },
+   {
+    "from": "assistant",
+    "value": "Skip it! Skip it!",
+    "timestamp": 11
+   },
+   {
+    "from": "assistant",
+    "value": "You're crushing it! Let's keep it going",
+    "timestamp": 18
+   },
+   {
+    "from": "assistant",
+    "value": "Yup, this looks good.",
+    "timestamp": 22
+   },
+   {
+    "from": "assistant",
+    "value": "Great pacing.",
+    "timestamp": 25
+   },
+   {
+    "from": "assistant",
+    "value": "Moving on to good morning beginner!",
+    "timestamp": 30
+   },
+   {
+    "from": "assistant",
+    "value": "That's it! Keep it up!",
+    "timestamp": 35
+   },
+   {
+    "from": "assistant",
+    "value": "Be sure to keep your back straight as you go down.",
+    "timestamp": 38
+   },
+   {
+    "from": "assistant",
+    "value": "That's a little better.",
+    "timestamp": 42
+   },
+   {
+    "from": "assistant",
+    "value": "Try to get your back straighter and stick your elbows straight out to the side.",
+    "timestamp": 47
+   },
+   {
+    "from": "assistant",
+    "value": "Moving on to plank taps!",
+    "timestamp": 57
+   },
+   {
+    "from": "assistant",
+    "value": "Good, but bring your hips down.",
+    "timestamp": 62
+   },
+   {
+    "from": "assistant",
+    "value": "Solid as a rock but your hips are still too high.",
+    "timestamp": 66
+   },
+   {
+    "from": "assistant",
+    "value": "Next time let's focus on bringing those hips down. You want to be in a classic plank position with your back, hips, and legs in line.",
+    "timestamp": 72
+   },
+   {
+    "from": "assistant",
+    "value": "Moving on to squat jumps!",
+    "timestamp": 82
+   },
+   {
+    "from": "assistant",
+    "value": "Give me a deep squat then explode up and off the ground!",
+    "timestamp": 85
+   },
+   {
+    "from": "assistant",
+    "value": "This isn't hop scotch, give me a nice squat when you land!",
+    "timestamp": 90
+   },
+   {
+    "from": "assistant",
+    "value": "C'mon, don't leave me hangin'!",
+    "timestamp": 92
+   },
+   {
+    "from": "assistant",
+    "value": "Still lots of time to get it, let's go!",
+    "timestamp": 95
+   },
+   {
+    "from": "assistant",
+    "value": "Don't just stand there, let's move!",
+    "timestamp": 100
+   },
+   {
+    "from": "assistant",
+    "value": "Moving on to toe touchers!",
+    "timestamp": 105
+   },
+   {
+    "from": "assistant",
+    "value": "Okay, now try to reach further down.",
+    "timestamp": 110
+   },
+   {
+    "from": "assistant",
+    "value": "You should feel a nice stretch at the back of your legs.",
+    "timestamp": 117
+   },
+   {
+    "from": "assistant",
+    "value": "Keep this up and you'll be touching your toes in no time.",
+    "timestamp": 122
+   },
+   {
+    "from": "assistant",
+    "value": "Good",
+    "timestamp": 126
+   },
+   {
+    "from": "assistant",
+    "value": "Moving on to shoulder gators!",
+    "timestamp": 129
+   },
+   {
+    "from": "assistant",
+    "value": "Good",
+    "timestamp": 134
+   },
+   {
+    "from": "assistant",
+    "value": "Perfect range and speed.",
+    "timestamp": 138
+   },
+   {
+    "from": "assistant",
+    "value": "Nice, keep this going.",
+    "timestamp": 143
+   },
+   {
+    "from": "assistant",
+    "value": "That's 10 reps. Awesome! Keep it going to the end.",
+    "timestamp": 149
+   },
+   {
+    "from": "assistant",
+    "value": "That's the end of the session.",
+    "timestamp": 154
+   }
+  ],
+  "videos": [
+   "0056.mp4"
+  ],
+  "_viewer_source": "QEVD-Fit-Coach",
+  "_viewer_task": "fitness session: air jump rope, good morning beginner, plank taps, squat jumps, toe touchers, shoulder gators",
+  "_viewer_video": "videos/0056.mp4",
+  "_viewer_clip_offset_s": 0,
+  "_viewer_clip_duration_s": 158.5,
+  "_viewer_source_duration_s": 158.5,
+  "_viewer_output_types": [
+   null,
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "corrective_guidance"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ]
+  ],
+  "_viewer_output_types_heuristic": [
+   null,
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback",
+    "error_detection"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ]
+  ],
+  "_viewer_note": "QEVD-Fit-Coach; form corrections (hips too high, back straight). Frames sideways as shipped; no audio."
+ },
+ {
+  "video_id": "8_45",
+  "conversations": [
+   {
+    "from": "user",
+    "value": "I'm going to try making some spiced hot chocolate. Could you walk me through the steps and let me know if I'm making any mistakes along the way?",
+    "timestamp": 4
+   },
+   {
+    "from": "assistant",
+    "value": "Sure! Start by filling a microwave-safe mug with skimmed milk.",
+    "timestamp": 4
+   },
+   {
+    "from": "assistant",
+    "value": "Be careful, you just spilled some milk while filling the mug.",
+    "timestamp": 30
+   },
+   {
+    "from": "assistant",
+    "value": "Go ahead and microwave the milk for 1 minute.",
+    "timestamp": 39
+   },
+   {
+    "from": "assistant",
+    "value": "Wait, it looks like you only added one piece of chocolate. You should be putting in two pieces instead.",
+    "timestamp": 52
+   },
+   {
+    "from": "assistant",
+    "value": "Now, put the mug back in the microwave for 1 minute.",
+    "timestamp": 62
+   },
+   {
+    "from": "assistant",
+    "value": "Hold on, you just added cumin to the mug. You're supposed to be using 1/5 teaspoon of cinnamon.",
+    "timestamp": 85
+   },
+   {
+    "from": "assistant",
+    "value": "Next, microwave the mixture for another minute.",
+    "timestamp": 97
+   },
+   {
+    "from": "assistant",
+    "value": "Check that label—you added salt instead of the 1 teaspoon of white sugar needed.",
+    "timestamp": 109
+   },
+   {
+    "from": "assistant",
+    "value": "Now microwave the contents of the mug for 1 minute.",
+    "timestamp": 114
+   },
+   {
+    "from": "assistant",
+    "value": "You've left it in too long; it only needs to be microwaved for 1 minute.",
+    "timestamp": 195
+   },
+   {
+    "from": "assistant",
+    "value": "Give the hot chocolate a good stir.",
+    "timestamp": 255
+   },
+   {
+    "from": "assistant",
+    "value": "It seems like you're using a low power setting. You should heat the mug for 1 minute on the correct power level before serving.",
+    "timestamp": 311
+   },
+   {
+    "from": "assistant",
+    "value": "Now, finish up by mixing the contents of the mug.",
+    "timestamp": 373
+   }
+  ],
+  "videos": [
+   "spiced_hot_chocolate-8_45.mp4"
+  ],
+  "_viewer_source": "CaptainCook4D",
+  "_viewer_task": "spiced_hot_chocolate",
+  "_viewer_video": "videos/spiced_hot_chocolate-8_45.mp4",
+  "_viewer_clip_offset_s": 0,
+  "_viewer_clip_duration_s": 376.192,
+  "_viewer_source_duration_s": 376.192,
+  "_viewer_output_types": [
+   null,
+   [
+    "instruction"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ]
+  ],
+  "_viewer_output_types_heuristic": [
+   null,
+   [
+    "instruction"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ]
+  ],
+  "_viewer_note": "CaptainCook4D spiced hot chocolate: alternates next-step instruction with a detected error after almost every step (spill, wrong ingredient, wrong quantity, wrong power)."
+ },
+ {
+  "video_id": "27_49",
+  "conversations": [
+   {
+    "from": "user",
+    "value": "I'm going to make some pimiento cheese. Can you walk me through the steps and let me know if I'm making any mistakes along the way?",
+    "timestamp": 8
+   },
+   {
+    "from": "assistant",
+    "value": "Sounds good! To start, add 1 tablespoon of water to your bowl.",
+    "timestamp": 8
+   },
+   {
+    "from": "assistant",
+    "value": "Great, the water is in. Now, add 1/3 cup of cheddar cheese to a microwave-safe cup.",
+    "timestamp": 27
+   },
+   {
+    "from": "assistant",
+    "value": "Careful, it looks like you spilled some of that cheddar cheese while pouring it.",
+    "timestamp": 60
+   },
+   {
+    "from": "assistant",
+    "value": "Go ahead and melt the cheese in the microwave for 30 seconds. Check it then, and give it another 10 seconds if it needs it.",
+    "timestamp": 63
+   },
+   {
+    "from": "assistant",
+    "value": "The cheese looks perfectly melted. Next, finely chop 1/4 of a red bell pepper into tiny bits.",
+    "timestamp": 106
+   },
+   {
+    "from": "assistant",
+    "value": "Nice job with the chopping. Now, transfer those pepper bits into a microwave-safe bowl.",
+    "timestamp": 167
+   },
+   {
+    "from": "assistant",
+    "value": "Oops, you dropped some of the chopped peppers on the side there.",
+    "timestamp": 191
+   },
+   {
+    "from": "assistant",
+    "value": "Cover the bowl and microwave the peppers for 2 minutes.",
+    "timestamp": 195
+   },
+   {
+    "from": "assistant",
+    "value": "Wait a second, don't use your hands to mix the cheese and peppers. Please use a spoon or another utensil instead.",
+    "timestamp": 213
+   },
+   {
+    "from": "assistant",
+    "value": "Now, add 1/4 teaspoon of pepper to the bowl.",
+    "timestamp": 229
+   },
+   {
+    "from": "assistant",
+    "value": "I noticed you skipped a step to microwave the bowl for 2 minutes first. After that's done, go ahead and add 1/4 teaspoon of salt.",
+    "timestamp": 400
+   },
+   {
+    "from": "assistant",
+    "value": "It looks like you added the pepper instead of the salt just now. Let's get that 1/4 teaspoon of salt in the bowl next.",
+    "timestamp": 430
+   },
+   {
+    "from": "assistant",
+    "value": "Perfect. Now, add 1/2 tablespoon of softened butter to the mixture.",
+    "timestamp": 442
+   },
+   {
+    "from": "assistant",
+    "value": "The butter is in. Now give everything in the bowl a really good mix.",
+    "timestamp": 457
+   },
+   {
+    "from": "assistant",
+    "value": "Actually, use a utensil to stir that together rather than your hands.",
+    "timestamp": 463
+   },
+   {
+    "from": "assistant",
+    "value": "And you're all done! You've finished all the steps.",
+    "timestamp": 490
+   }
+  ],
+  "videos": [
+   "cheese_pimiento-27_49.mp4"
+  ],
+  "_viewer_source": "CaptainCook4D",
+  "_viewer_task": "cheese_pimiento",
+  "_viewer_video": "videos/cheese_pimiento-27_49.mp4",
+  "_viewer_clip_offset_s": 150,
+  "_viewer_clip_duration_s": 360.0,
+  "_viewer_source_duration_s": 533.0,
+  "_viewer_output_types": [
+   null,
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback"
+   ]
+  ],
+  "_viewer_output_types_heuristic": [
+   null,
+   [
+    "instruction"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback"
+   ]
+  ],
+  "_viewer_note": "CaptainCook4D pimiento cheese: spills, hands instead of utensil, skipped step, wrong ingredient. Excerpt 150-510 s of 533 s."
+ },
+ {
+  "video_id": "29_37",
+  "conversations": [
+   {
+    "from": "user",
+    "value": "I'm going to make some caprese bruschetta. Could you walk me through the steps and let me know if I make any mistakes along the way?",
+    "timestamp": 12
+   },
+   {
+    "from": "assistant",
+    "value": "Sure! Let's start by slicing a baguette into two 1/2 inch thick rounds on a slight diagonal.",
+    "timestamp": 12
+   },
+   {
+    "from": "assistant",
+    "value": "Perfect slices. Now, go ahead and add 1/4 teaspoon of salt to a mixing bowl.",
+    "timestamp": 74
+   },
+   {
+    "from": "assistant",
+    "value": "Got it. Next, add 1/8 cup of shredded mozzarella to that bowl.",
+    "timestamp": 132
+   },
+   {
+    "from": "assistant",
+    "value": "It looks like you jumped ahead by toasting the bread until charred and moving the slices to a plate. Let's get back to the mixture—please add 1/16 cup of basil to the bowl.",
+    "timestamp": 339
+   },
+   {
+    "from": "assistant",
+    "value": "Wait, it looks like you added more mozzarella instead of the basil. Let's try that again: add 1/16 cup of basil to the bowl.",
+    "timestamp": 404
+   },
+   {
+    "from": "assistant",
+    "value": "Actually, you're brushing the baguette slices with olive oil right now. Before we finish the bread, we still need to add 1/16 cup of basil to your bowl.",
+    "timestamp": 467
+   },
+   {
+    "from": "assistant",
+    "value": "Nice job with the basil. Now, grab your cherry tomatoes and cut 1/4 cup of them into halves.",
+    "timestamp": 530
+   },
+   {
+    "from": "assistant",
+    "value": "Those are cut perfectly. Now, toss those halved cherry tomatoes into the bowl.",
+    "timestamp": 633
+   },
+   {
+    "from": "assistant",
+    "value": "Tomatoes are in. Now add 1/4 teaspoon of pepper to the mix.",
+    "timestamp": 653
+   },
+   {
+    "from": "assistant",
+    "value": "Hold on, you started mixing everything together, but we still need to add the seasoning. Please spoon the mixture onto the bread once it's ready.",
+    "timestamp": 671
+   },
+   {
+    "from": "assistant",
+    "value": "You just added the 1/4 teaspoon of pepper. Now you can go ahead and spoon that mixture from the bowl onto your bread slices.",
+    "timestamp": 729
+   }
+  ],
+  "videos": [
+   "caprese_bruschetta-29_37.mp4"
+  ],
+  "_viewer_source": "CaptainCook4D",
+  "_viewer_task": "caprese_bruschetta",
+  "_viewer_video": "videos/caprese_bruschetta-29_37.mp4",
+  "_viewer_clip_offset_s": 325,
+  "_viewer_clip_duration_s": 360.0,
+  "_viewer_source_duration_s": 729.0,
+  "_viewer_output_types": [
+   null,
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ]
+  ],
+  "_viewer_output_types_heuristic": [
+   null,
+   [
+    "instruction"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ]
+  ],
+  "_viewer_note": "CaptainCook4D caprese bruschetta: order errors (jumped ahead) corrected back to the task graph. Excerpt 325-685 s of 729 s."
+ },
+ {
+  "video_id": "1_143",
+  "conversations": [
+   {
+    "from": "user",
+    "value": "I'm going to make a microwave egg sandwich. Could you walk me through the steps and keep an eye out for any mistakes I might make?",
+    "timestamp": 18
+   },
+   {
+    "from": "assistant",
+    "value": "To start, use a knife to cut the English muffin into two pieces.",
+    "timestamp": 18
+   },
+   {
+    "from": "assistant",
+    "value": "Wait, it looks like you poured two eggs into the ramekin instead of just one. Please only use one egg.",
+    "timestamp": 59
+   },
+   {
+    "from": "assistant",
+    "value": "Now, go ahead and cut the English muffin into two pieces with a knife.",
+    "timestamp": 64
+   },
+   {
+    "from": "assistant",
+    "value": "Check your microwave settings. You should be microwaving the uncovered ramekin on high for 30 seconds, but you've set it to medium.",
+    "timestamp": 147
+   },
+   {
+    "from": "assistant",
+    "value": "Next, place the lettuce on the bottom half of the English muffin.",
+    "timestamp": 186
+   },
+   {
+    "from": "assistant",
+    "value": "It looks like the egg isn't fully mixed; the yolk is still whole. Give the egg in the ramekin a better stir.",
+    "timestamp": 224
+   },
+   {
+    "from": "assistant",
+    "value": "Now microwave it for another 15 to 30 seconds until the egg is nearly set.",
+    "timestamp": 227
+   },
+   {
+    "from": "assistant",
+    "value": "Careful with the muffin—you only need to cut it into two pieces, and it looks like you're making more cuts than that.",
+    "timestamp": 261
+   },
+   {
+    "from": "assistant",
+    "value": "Let's get back to the egg. Microwave it for 15 to 30 more seconds or until it's almost set.",
+    "timestamp": 272
+   },
+   {
+    "from": "assistant",
+    "value": "Perfect, the egg is almost set. Now, add one tablespoon of salsa on top.",
+    "timestamp": 322
+   },
+   {
+    "from": "assistant",
+    "value": "You've already prepared the lettuce on the muffin. Let's move to the next step: top the egg in the cup with one tablespoon of salsa.",
+    "timestamp": 365
+   },
+   {
+    "from": "assistant",
+    "value": "The cheese should go on the egg in the cup, not on the muffin. Let's try to sprinkle that tablespoon of cheese on the cup instead.",
+    "timestamp": 424
+   },
+   {
+    "from": "assistant",
+    "value": "That's a bit too much cheese. You only need one tablespoon, but it looks like you added two.",
+    "timestamp": 447
+   },
+   {
+    "from": "assistant",
+    "value": "Let's focus on the salsa first. Put one tablespoon of salsa on top of the cup.",
+    "timestamp": 459
+   },
+   {
+    "from": "assistant",
+    "value": "You're trying to melt the cheese, but you've put it in a separate bowl. It needs to be on the egg in the cup.",
+    "timestamp": 484
+   },
+   {
+    "from": "assistant",
+    "value": "Be careful not to overcook the cheese. You only want to microwave it for about 10 seconds until it just melts.",
+    "timestamp": 524
+   },
+   {
+    "from": "assistant",
+    "value": "Go ahead and add one tablespoon of salsa to the cup now.",
+    "timestamp": 538
+   },
+   {
+    "from": "assistant",
+    "value": "You accidentally put the salsa in the cheese bowl instead of the bowl with the egg.",
+    "timestamp": 554
+   },
+   {
+    "from": "assistant",
+    "value": "It looks like you used two tablespoons of salsa instead of one.",
+    "timestamp": 560
+   },
+   {
+    "from": "assistant",
+    "value": "Now, take the egg out of the cup and place it on top of the lettuce.",
+    "timestamp": 566
+   },
+   {
+    "from": "assistant",
+    "value": "Great job. The egg is on the lettuce. Now just put the top half of the English muffin on to finish the sandwich.",
+    "timestamp": 600
+   }
+  ],
+  "videos": [
+   "microwave_egg_sandwich-1_143.mp4"
+  ],
+  "_viewer_source": "CaptainCook4D",
+  "_viewer_task": "microwave_egg_sandwich",
+  "_viewer_video": "videos/microwave_egg_sandwich-1_143.mp4",
+  "_viewer_clip_offset_s": 40,
+  "_viewer_clip_duration_s": 360.0,
+  "_viewer_source_duration_s": 642.112,
+  "_viewer_output_types": [
+   null,
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ]
+  ],
+  "_viewer_output_types_heuristic": [
+   null,
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "error_detection"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ]
+  ],
+  "_viewer_note": "CaptainCook4D microwave egg sandwich: densest error sequence in the preview. Excerpt 40-400 s of 642 s."
+ },
+ {
+  "video_id": "oatmeal_u1_a5_error_002",
+  "conversations": [
+   {
+    "from": "user",
+    "value": "I'm going to make some oatmeal. Can you walk me through the steps and let me know if I make any mistakes along the way?",
+    "timestamp": 2
+   },
+   {
+    "from": "assistant",
+    "value": "Sure! Start by measuring 4 tablespoons of quick-cook oats and putting them in a bowl.",
+    "timestamp": 2
+   },
+   {
+    "from": "assistant",
+    "value": "The oats are ready. Now, go ahead and measure 1/2 cup of water.",
+    "timestamp": 19
+   },
+   {
+    "from": "assistant",
+    "value": "Done with the water. Next, pour that water into the bowl with the oats.",
+    "timestamp": 35
+   },
+   {
+    "from": "assistant",
+    "value": "Wait a second—it looks like you added the water into a different bowl. Please transfer that water into the bowl with the oats before we continue.",
+    "timestamp": 44
+   },
+   {
+    "from": "assistant",
+    "value": "Great, you've moved the water to the correct bowl.",
+    "timestamp": 54
+   },
+   {
+    "from": "assistant",
+    "value": "Now, put it in the microwave for 90 seconds.",
+    "timestamp": 67
+   },
+   {
+    "from": "assistant",
+    "value": "Finished microwaving the oatmeal.",
+    "timestamp": 103
+   },
+   {
+    "from": "assistant",
+    "value": "Add a handful of raisins to the bowl.",
+    "timestamp": 114
+   },
+   {
+    "from": "assistant",
+    "value": "The raisins are in. Now, give it a good stir with a spoon.",
+    "timestamp": 125
+   },
+   {
+    "from": "assistant",
+    "value": "All stirred up!",
+    "timestamp": 140
+   },
+   {
+    "from": "assistant",
+    "value": "Put it back in the microwave for another 30 seconds.",
+    "timestamp": 154
+   },
+   {
+    "from": "assistant",
+    "value": "That's done.",
+    "timestamp": 221
+   },
+   {
+    "from": "assistant",
+    "value": "Stir the mixture one more time using your spoon.",
+    "timestamp": 235
+   },
+   {
+    "from": "assistant",
+    "value": "Perfectly stirred.",
+    "timestamp": 249
+   },
+   {
+    "from": "assistant",
+    "value": "Now, sprinkle some cinnamon over the bowl.",
+    "timestamp": 254
+   },
+   {
+    "from": "assistant",
+    "value": "Cinnamon is on. For the final touch, drizzle some honey into the bowl.",
+    "timestamp": 264
+   },
+   {
+    "from": "assistant",
+    "value": "And you're finished! Enjoy your oatmeal.",
+    "timestamp": 281
+   }
+  ],
+  "videos": [
+   "oatmeal_u1_a5_error_002.mp4"
+  ],
+  "_viewer_source": "EgoPER",
+  "_viewer_task": "oatmeal",
+  "_viewer_video": "videos/oatmeal_u1_a5_error_002.mp4",
+  "_viewer_clip_offset_s": 0,
+  "_viewer_clip_duration_s": 283.5,
+  "_viewer_source_duration_s": 283.5,
+  "_viewer_output_types": [
+   null,
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ]
+  ],
+  "_viewer_output_types_heuristic": [
+   null,
+   [
+    "instruction"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ]
+  ],
+  "_viewer_note": "EgoPER oatmeal (error recording): water poured into the wrong bowl, then corrected. No audio track in the preview file."
+ },
+ {
+  "video_id": "pinwheels_u1_a2_error_036",
+  "conversations": [
+   {
+    "from": "user",
+    "value": "I'm going to make pinwheels. Could you guide me through the steps and let me know if I make any mistakes?",
+    "timestamp": 2
+   },
+   {
+    "from": "assistant",
+    "value": "Start by placing a tortilla on the cutting board.",
+    "timestamp": 2
+   },
+   {
+    "from": "assistant",
+    "value": "Okay, the tortilla is on the board.",
+    "timestamp": 5
+   },
+   {
+    "from": "assistant",
+    "value": "Now, clean your knife.",
+    "timestamp": 16
+   },
+   {
+    "from": "assistant",
+    "value": "Knife is clean.",
+    "timestamp": 23
+   },
+   {
+    "from": "assistant",
+    "value": "Use the knife to scoop out some jelly.",
+    "timestamp": 40
+   },
+   {
+    "from": "assistant",
+    "value": "You've got the jelly. Next, spread it on the nut butter.",
+    "timestamp": 49
+   },
+   {
+    "from": "assistant",
+    "value": "Jelly is spread. Now, clean the knife again.",
+    "timestamp": 64
+   },
+   {
+    "from": "assistant",
+    "value": "Knife is clean. Next up: Roll the tortilla.",
+    "timestamp": 75
+   },
+   {
+    "from": "assistant",
+    "value": "Wait, you folded the tortilla instead of rolling it. Please unfold the tortilla and roll it up properly.",
+    "timestamp": 81
+   },
+   {
+    "from": "assistant",
+    "value": "Great, you've unfolded it and rolled it correctly now.",
+    "timestamp": 94
+   },
+   {
+    "from": "assistant",
+    "value": "Insert a toothpick.",
+    "timestamp": 98
+   },
+   {
+    "from": "assistant",
+    "value": "Toothpick inserted.",
+    "timestamp": 115
+   },
+   {
+    "from": "assistant",
+    "value": "Trim the end.",
+    "timestamp": 123
+   },
+   {
+    "from": "assistant",
+    "value": "End trimmed. Next, discard the two ends.",
+    "timestamp": 136
+   },
+   {
+    "from": "assistant",
+    "value": "Ends discarded.",
+    "timestamp": 143
+   },
+   {
+    "from": "assistant",
+    "value": "Put floss under the tortilla.",
+    "timestamp": 147
+   },
+   {
+    "from": "assistant",
+    "value": "Floss is under the tortilla. Next, use the floss to slice it.",
+    "timestamp": 155
+   },
+   {
+    "from": "assistant",
+    "value": "Nice slice. Continue to slice the entire tortilla similarly.",
+    "timestamp": 160
+   },
+   {
+    "from": "assistant",
+    "value": "You've sliced the entire tortilla.",
+    "timestamp": 184
+   },
+   {
+    "from": "assistant",
+    "value": "Place the pinwheels on a plate.",
+    "timestamp": 193
+   },
+   {
+    "from": "assistant",
+    "value": "Pinwheels are plated. Great job!",
+    "timestamp": 201
+   }
+  ],
+  "videos": [
+   "pinwheels_u1_a2_error_036.mp4"
+  ],
+  "_viewer_source": "EgoPER",
+  "_viewer_task": "pinwheels",
+  "_viewer_video": "videos/pinwheels_u1_a2_error_036.mp4",
+  "_viewer_clip_offset_s": 0,
+  "_viewer_clip_duration_s": 207.5,
+  "_viewer_source_duration_s": 207.5,
+  "_viewer_output_types": [
+   null,
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ]
+  ],
+  "_viewer_output_types_heuristic": [
+   null,
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ]
+  ],
+  "_viewer_note": "EgoPER pinwheels (error recording): tortilla folded instead of rolled. No audio."
+ },
+ {
+  "video_id": "quesadilla_u1_a5_error_006",
+  "conversations": [
+   {
+    "from": "user",
+    "value": "I'm going to make a quesadilla. Can you guide me through the steps and let me know if I make any mistakes along the way?",
+    "timestamp": 3
+   },
+   {
+    "from": "assistant",
+    "value": "Sure! Start by placing a tortilla on the cutting board.",
+    "timestamp": 3
+   },
+   {
+    "from": "assistant",
+    "value": "Wait, it looks like you dropped that tortilla on the floor. Please discard it and grab a fresh one to place on the board.",
+    "timestamp": 12
+   },
+   {
+    "from": "assistant",
+    "value": "Nice, the new tortilla is ready. Now, use a knife to scoop some Nutella.",
+    "timestamp": 26
+   },
+   {
+    "from": "assistant",
+    "value": "Now that you've got the Nutella, go ahead and spread it onto the tortilla.",
+    "timestamp": 37
+   },
+   {
+    "from": "assistant",
+    "value": "That's spread nicely. Next, sprinkle some cinnamon over the tortilla.",
+    "timestamp": 53
+   },
+   {
+    "from": "assistant",
+    "value": "Great, the cinnamon is on.",
+    "timestamp": 62
+   },
+   {
+    "from": "assistant",
+    "value": "Now, fold the tortilla in half.",
+    "timestamp": 81
+   },
+   {
+    "from": "assistant",
+    "value": "Done! Now use your knife to slice it into pieces.",
+    "timestamp": 88
+   },
+   {
+    "from": "assistant",
+    "value": "Excellent. Now just move those tortilla wedges onto a plate.",
+    "timestamp": 99
+   },
+   {
+    "from": "assistant",
+    "value": "And you're all set! The wedges are on the plate.",
+    "timestamp": 104
+   }
+  ],
+  "videos": [
+   "quesadilla_u1_a5_error_006.mp4"
+  ],
+  "_viewer_source": "EgoPER",
+  "_viewer_task": "quesadilla",
+  "_viewer_video": "videos/quesadilla_u1_a5_error_006.mp4",
+  "_viewer_clip_offset_s": 0,
+  "_viewer_clip_duration_s": 106.0,
+  "_viewer_source_duration_s": 106.0,
+  "_viewer_output_types": [
+   null,
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ]
+  ],
+  "_viewer_output_types_heuristic": [
+   null,
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ]
+  ],
+  "_viewer_note": "EgoPER quesadilla (error recording): tortilla dropped on the floor. No audio."
+ },
+ {
+  "video_id": "tea_u1_a2_error_001",
+  "conversations": [
+   {
+    "from": "user",
+    "value": "I'm going to make some tea. Can you walk me through the steps and let me know if I make any mistakes?",
+    "timestamp": 12
+   },
+   {
+    "from": "assistant",
+    "value": "Sure! Start by measuring 12 ounces of cold water.",
+    "timestamp": 12
+   },
+   {
+    "from": "assistant",
+    "value": "Got it, 12 ounces measured. Now, go ahead and place the tea bag in your mug.",
+    "timestamp": 26
+   },
+   {
+    "from": "assistant",
+    "value": "Great, the tea bag is in the mug.",
+    "timestamp": 40
+   },
+   {
+    "from": "assistant",
+    "value": "Now, pour the water from the kettle into the mug.",
+    "timestamp": 44
+   },
+   {
+    "from": "assistant",
+    "value": "Wait a second—it looks like you poured the water into a different mug by mistake. Please transfer the tea bag into the mug with the water.",
+    "timestamp": 58
+   },
+   {
+    "from": "assistant",
+    "value": "Good, the tea bag is in the right mug now. Next, let the tea bag steep for a few seconds.",
+    "timestamp": 67
+   },
+   {
+    "from": "assistant",
+    "value": "That's enough steeping. Now, put the tea bag into the trash can.",
+    "timestamp": 76
+   },
+   {
+    "from": "assistant",
+    "value": "The tea bag is gone. Next, add some honey to your mug.",
+    "timestamp": 86
+   },
+   {
+    "from": "assistant",
+    "value": "Perfect, the honey has been added.",
+    "timestamp": 100
+   },
+   {
+    "from": "assistant",
+    "value": "Give it a good stir using a spoon.",
+    "timestamp": 103
+   },
+   {
+    "from": "assistant",
+    "value": "All stirred up! Finally, just hold the cup in front of you.",
+    "timestamp": 112
+   },
+   {
+    "from": "assistant",
+    "value": "You're all set with your tea!",
+    "timestamp": 116
+   }
+  ],
+  "videos": [
+   "tea_u1_a2_error_001.mp4"
+  ],
+  "_viewer_source": "EgoPER",
+  "_viewer_task": "tea",
+  "_viewer_video": "videos/tea_u1_a2_error_001.mp4",
+  "_viewer_clip_offset_s": 0,
+  "_viewer_clip_duration_s": 119.5,
+  "_viewer_source_duration_s": 119.5,
+  "_viewer_output_types": [
+   null,
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ]
+  ],
+  "_viewer_output_types_heuristic": [
+   null,
+   [
+    "instruction"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "error_detection",
+    "corrective_guidance"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ]
+  ],
+  "_viewer_note": "EgoPER tea (error recording): water poured into the wrong mug. No audio."
+ },
+ {
+  "video_id": "coffee_u1_a7_normal_016",
+  "conversations": [
+   {
+    "from": "user",
+    "value": "I'm about to brew some coffee. Could you walk me through the process step by step?",
+    "timestamp": 0
+   },
+   {
+    "from": "assistant",
+    "value": "Start by folding the paper filter in half to create a semi-circle.",
+    "timestamp": 0
+   },
+   {
+    "from": "assistant",
+    "value": "Good. Now that it's a semi-circle, fold it in half once more into a quarter-circle.",
+    "timestamp": 1
+   },
+   {
+    "from": "assistant",
+    "value": "Perfect. Place that filter into the dripper and spread it out into a cone shape.",
+    "timestamp": 3
+   },
+   {
+    "from": "assistant",
+    "value": "The filter is set. Next, measure out 12 ounces of cold water.",
+    "timestamp": 15
+   },
+   {
+    "from": "assistant",
+    "value": "Water is measured. Go ahead and transfer it into your kettle.",
+    "timestamp": 20
+   },
+   {
+    "from": "assistant",
+    "value": "Got it. Now weigh out 25 grams of coffee beans.",
+    "timestamp": 28
+   },
+   {
+    "from": "assistant",
+    "value": "That's exactly 25 grams. Put those beans into the coffee grinder.",
+    "timestamp": 44
+   },
+   {
+    "from": "assistant",
+    "value": "Beans are in. Grind the coffee for about 20 seconds.",
+    "timestamp": 60
+   },
+   {
+    "from": "assistant",
+    "value": "Grinding complete. Now, transfer the grounds into the filter cone.",
+    "timestamp": 90
+   },
+   {
+    "from": "assistant",
+    "value": "Great, the grounds are in the filter. Place the dripper on top of your mug.",
+    "timestamp": 101
+   },
+   {
+    "from": "assistant",
+    "value": "The dripper is in place. Now, check the water temperature.",
+    "timestamp": 133
+   },
+   {
+    "from": "assistant",
+    "value": "Temperature looks good. Pour just a small amount of water over the grounds.",
+    "timestamp": 150
+   },
+   {
+    "from": "assistant",
+    "value": "Nicely done with the initial pour.",
+    "timestamp": 160
+   },
+   {
+    "from": "assistant",
+    "value": "Now, slowly pour the rest of the water using a circular motion.",
+    "timestamp": 214
+   },
+   {
+    "from": "assistant",
+    "value": "Excellent. Once it's finished dripping, discard the paper filter and the coffee grounds.",
+    "timestamp": 228
+   },
+   {
+    "from": "assistant",
+    "value": "Done! Those grounds are cleared out.",
+    "timestamp": 237
+   },
+   {
+    "from": "assistant",
+    "value": "Pick up your cup of coffee and hold it in front of you.",
+    "timestamp": 258
+   },
+   {
+    "from": "assistant",
+    "value": "You've got your coffee ready.",
+    "timestamp": 399
+   },
+   {
+    "from": "assistant",
+    "value": "You're all finished.",
+    "timestamp": 471
+   },
+   {
+    "from": "assistant",
+    "value": "All steps are complete. Enjoy your coffee!",
+    "timestamp": 485
+   }
+  ],
+  "videos": [
+   "coffee_u1_a7_normal_016.mp4"
+  ],
+  "_viewer_source": "EgoPER",
+  "_viewer_task": "coffee",
+  "_viewer_video": "videos/coffee_u1_a7_normal_016.mp4",
+  "_viewer_clip_offset_s": 0,
+  "_viewer_clip_duration_s": 360.0,
+  "_viewer_source_duration_s": 497.0,
+  "_viewer_output_types": [
+   null,
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback",
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ]
+  ],
+  "_viewer_output_types_heuristic": [
+   null,
+   [
+    "instruction"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "instruction",
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "instruction"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ],
+   [
+    "completion_feedback"
+   ]
+  ],
+  "_viewer_note": "EgoPER coffee (normal recording): no errors; pure instruction + completion-feedback loop, for contrast. Excerpt 0-360 s of 497 s."
+ }
+]

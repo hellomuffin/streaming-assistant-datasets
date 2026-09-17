@@ -1,0 +1,386 @@
+{
+ "source": "computed from annotations/*.json of HF MCG-NJU/VIABench (main, fetched 2026-09-16) + ffprobe of all 600 released mp4 files over HTTP",
+ "paper_reported": {
+  "videos": 761,
+  "hours": 46.9,
+  "annotations": 14526,
+  "pr_subtasks": 21
+ },
+ "released": {
+  "videos": 600,
+  "hours": 45.42,
+  "annotations": 14158,
+  "video_gb": 69.25,
+  "subset_cases": 12,
+  "subset_source_videos": 12
+ },
+ "modes": {
+  "proactive_reminder": {
+   "videos": 530,
+   "annotations": 13152,
+   "task_labels": 24,
+   "task_counts": [
+    [
+     "Obstacle Alert",
+     6776
+    ],
+    [
+     "Active Avoidance",
+     1275
+    ],
+    [
+     "Service Facility Detection",
+     735
+    ],
+    [
+     "Stairs Up/Down",
+     637
+    ],
+    [
+     "Road Branch",
+     500
+    ],
+    [
+     "Exit/Entry Recognition",
+     459
+    ],
+    [
+     "Camera Obstruction",
+     403
+    ],
+    [
+     "Camera Content Anomaly",
+     338
+    ],
+    [
+     "Road Surface Condition",
+     312
+    ],
+    [
+     "Pedestrian Traffic Light",
+     257
+    ],
+    [
+     "Crossing to Other Side",
+     248
+    ],
+    [
+     "Direction Guidance",
+     215
+    ],
+    [
+     "Intersection Recognition",
+     181
+    ],
+    [
+     "Blind Path Recognition",
+     177
+    ],
+    [
+     "Staircase Up/Down",
+     170
+    ],
+    [
+     "Slope Up/Down",
+     107
+    ],
+    [
+     "Direction Deviation",
+     107
+    ],
+    [
+     "Escalator",
+     91
+    ],
+    [
+     "Box Elevator",
+     52
+    ],
+    [
+     "Sign Recognition",
+     44
+    ],
+    [
+     "Crosswalk",
+     41
+    ],
+    [
+     "Sidewalk Detection",
+     25
+    ],
+    [
+     "Simulated Query",
+     1
+    ],
+    [
+     "Blind Person Query",
+     1
+    ]
+   ],
+   "window_len_hist": [
+    [
+     "end<start (bad)",
+     42
+    ],
+    [
+     "end=start",
+     10
+    ],
+    [
+     "0.001–1s",
+     3008
+    ],
+    [
+     "1–2s",
+     4218
+    ],
+    [
+     "2–3s",
+     2181
+    ],
+    [
+     "3–5s",
+     1753
+    ],
+    [
+     "5–10s",
+     1002
+    ],
+    [
+     "10–30s",
+     675
+    ],
+    [
+     "≥30s",
+     263
+    ]
+   ],
+   "window_len_median_s": 1.77,
+   "window_len_mean_s": 6.33,
+   "anomalies": {
+    "end_before_start": 42,
+    "zero_length": 10,
+    "end_after_video_end": 10,
+    "query_labels_in_pr_file": 2
+   },
+   "per_video_hist": [
+    [
+     "1–4",
+     75
+    ],
+    [
+     "5–9",
+     73
+    ],
+    [
+     "10–19",
+     143
+    ],
+    [
+     "20–39",
+     146
+    ],
+    [
+     "40–79",
+     71
+    ],
+    [
+     "80–159",
+     20
+    ],
+    [
+     "≥160",
+     2
+    ]
+   ]
+  },
+  "visual_question_answering": {
+   "videos": 165,
+   "annotations": 340,
+   "task_counts": [
+    [
+     "Simulated Query",
+     230
+    ],
+    [
+     "Blind Person Query",
+     110
+    ]
+   ],
+   "zero_length_question_span": 18,
+   "end_before_start": 1,
+   "per_video_hist": [
+    [
+     "1",
+     71
+    ],
+    [
+     "2",
+     46
+    ],
+    [
+     "3",
+     35
+    ],
+    [
+     "4–5",
+     8
+    ],
+    [
+     "≥6",
+     5
+    ]
+   ],
+   "answer_is_cannot_determine": 10
+  },
+  "vision_guided_interaction": {
+   "episodes": 70,
+   "annotations": 666,
+   "task_counts": [
+    [
+     "Camera Manipulation",
+     301
+    ],
+    [
+     "Target Manipulation",
+     286
+    ],
+    [
+     "Completion",
+     70
+    ],
+    [
+     "Movement Guidance",
+     9
+    ]
+   ],
+   "distinct_target_strings": 145,
+   "per_episode_hist": [
+    [
+     "1–4",
+     1
+    ],
+    [
+     "5–7",
+     12
+    ],
+    [
+     "8–9",
+     29
+    ],
+    [
+     "10–11",
+     13
+    ],
+    [
+     "12–14",
+     11
+    ],
+    [
+     "≥15",
+     4
+    ]
+   ]
+  }
+ },
+ "videos_by_platform": [
+  [
+   "Douyin",
+   234,
+   12.41
+  ],
+  [
+   "YouTube",
+   151,
+   23.15
+  ],
+  [
+   "Bilibili",
+   91,
+   8.04
+  ],
+  [
+   "purpose-filmed (VGI)",
+   70,
+   1.36
+  ],
+  [
+   "YouTube Shorts",
+   54,
+   0.46
+  ]
+ ],
+ "video_duration_hist": [
+  [
+   "0–30s",
+   35
+  ],
+  [
+   "30–60s",
+   76
+  ],
+  [
+   "1–2 min",
+   122
+  ],
+  [
+   "2–4 min",
+   144
+  ],
+  [
+   "4–8 min",
+   114
+  ],
+  [
+   "8–15 min",
+   80
+  ],
+  [
+   "15–30 min",
+   26
+  ],
+  [
+   "≥30 min",
+   3
+  ]
+ ],
+ "video_duration_s": {
+  "median": 174.5,
+  "mean": 272.5,
+  "max": 1959.4
+ },
+ "source_resolution": [
+  [
+   "1080p",
+   341
+  ],
+  [
+   "720p",
+   123
+  ],
+  [
+   "480p",
+   91
+  ],
+  [
+   "360p",
+   14
+  ],
+  [
+   "2160p",
+   10
+  ],
+  [
+   "544p",
+   9
+  ],
+  [
+   "1440p",
+   5
+  ],
+  [
+   "576p",
+   4
+  ]
+ ]
+}

@@ -1,0 +1,1133 @@
+{
+ "scope": "Released 50-video test preview (HF alisn/GuideMe_Test_Subset50), NOT the full benchmark",
+ "n_videos": 50,
+ "n_assistant_turns": 1095,
+ "n_user_turns": 50,
+ "total_hours": 5.75,
+ "median_duration_min": 4.09,
+ "mean_duration_min": 6.91,
+ "min_duration_min": 1.33,
+ "max_duration_min": 32.69,
+ "by_source": [
+  {
+   "source": "HoloAssist",
+   "videos": 0,
+   "assistant_turns": 0,
+   "hours": 0,
+   "heuristic_types": {}
+  },
+  {
+   "source": "CaptainCook4D",
+   "videos": 20,
+   "assistant_turns": 353,
+   "hours": 4.24,
+   "heuristic_types": {
+    "instruction": 220,
+    "completion_feedback": 153,
+    "error_detection": 105,
+    "corrective_guidance": 87
+   }
+  },
+  {
+   "source": "EgoPER",
+   "videos": 17,
+   "assistant_turns": 257,
+   "hours": 0.94,
+   "heuristic_types": {
+    "instruction": 171,
+    "completion_feedback": 179,
+    "error_detection": 6,
+    "corrective_guidance": 6
+   }
+  },
+  {
+   "source": "QEVD-Fit-Coach",
+   "videos": 13,
+   "assistant_turns": 485,
+   "hours": 0.57,
+   "heuristic_types": {
+    "instruction": 100,
+    "completion_feedback": 252,
+    "error_detection": 50,
+    "corrective_guidance": 139
+   }
+  }
+ ],
+ "heuristic_type_counts": {
+  "instruction": 491,
+  "completion_feedback": 584,
+  "error_detection": 161,
+  "corrective_guidance": 232
+ },
+ "type_label_method": "The release has NO output-type field. Types here are assigned by a keyword heuristic written for this viewer (multi-label per turn). On the 12 hand-labelled subset cases (252 assistant turns) it matches the hand label set exactly on 223/252 (88%); per-type precision/recall: instruction .98/.96, completion_feedback .90/.98, error_detection .93/.96, corrective_guidance .96/.84. The heuristic was tuned on those same cases, so true accuracy on the other 38 videos is likely lower.",
+ "anchor_queries_est": {
+  "speak_anchors": 1095,
+  "silent_anchors": 1095,
+  "total": 2190,
+  "note": "Anchor-based querying = every GT assistant timestamp plus an equal number of silent times >=5 s from any anchor (paper Sec. 3.5); counts use distinct timestamps."
+ },
+ "dense_1s_queries_est": {
+  "total": 20171,
+  "note": "Released preprocess (process/data_proprecess.py) builds one sample per second from the first user query to the last assistant turn + random 10-15 s tail (12 s used here), capped at video end."
+ },
+ "hist_duration_min": [
+  {
+   "bin": "<2",
+   "count": 5
+  },
+  {
+   "bin": "2-3",
+   "count": 16
+  },
+  {
+   "bin": "3-5",
+   "count": 8
+  },
+  {
+   "bin": "5-8",
+   "count": 5
+  },
+  {
+   "bin": "8-12",
+   "count": 7
+  },
+  {
+   "bin": "12-20",
+   "count": 7
+  },
+  {
+   "bin": "20-40",
+   "count": 2
+  }
+ ],
+ "hist_gap_s": [
+  {
+   "bin": "0",
+   "count": 0
+  },
+  {
+   "bin": "1-2",
+   "count": 138
+  },
+  {
+   "bin": "3-4",
+   "count": 267
+  },
+  {
+   "bin": "5-9",
+   "count": 210
+  },
+  {
+   "bin": "10-19",
+   "count": 184
+  },
+  {
+   "bin": "20-39",
+   "count": 104
+  },
+  {
+   "bin": "40-59",
+   "count": 60
+  },
+  {
+   "bin": "60-119",
+   "count": 61
+  },
+  {
+   "bin": ">=120",
+   "count": 21
+  }
+ ],
+ "hist_words": [
+  {
+   "bin": "1-2",
+   "count": 54
+  },
+  {
+   "bin": "3-5",
+   "count": 226
+  },
+  {
+   "bin": "6-10",
+   "count": 377
+  },
+  {
+   "bin": "11-15",
+   "count": 283
+  },
+  {
+   "bin": "16-20",
+   "count": 74
+  },
+  {
+   "bin": "21-30",
+   "count": 73
+  },
+  {
+   "bin": ">30",
+   "count": 8
+  }
+ ],
+ "median_gap_s": 7,
+ "median_words": 9,
+ "per_video": [
+  {
+   "video_id": "0009",
+   "video": "0009.mp4",
+   "source": "QEVD-Fit-Coach",
+   "task": "fitness session",
+   "duration_s": 156.5,
+   "n_assistant_turns": 41,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 7,
+    "completion_feedback": 27,
+    "error_detection": 2,
+    "corrective_guidance": 5
+   },
+   "has_audio": false,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "0012",
+   "video": "0012.mp4",
+   "source": "QEVD-Fit-Coach",
+   "task": "fitness session",
+   "duration_s": 166.5,
+   "n_assistant_turns": 38,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 10,
+    "corrective_guidance": 18,
+    "error_detection": 8,
+    "completion_feedback": 9
+   },
+   "has_audio": false,
+   "resolution": "640x360",
+   "in_subset": true
+  },
+  {
+   "video_id": "0016",
+   "video": "0016.mp4",
+   "source": "QEVD-Fit-Coach",
+   "task": "fitness session",
+   "duration_s": 164.0,
+   "n_assistant_turns": 33,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 6,
+    "completion_feedback": 22,
+    "error_detection": 3,
+    "corrective_guidance": 6
+   },
+   "has_audio": false,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "0030",
+   "video": "0030.mp4",
+   "source": "QEVD-Fit-Coach",
+   "task": "fitness session",
+   "duration_s": 159.5,
+   "n_assistant_turns": 36,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 7,
+    "completion_feedback": 22,
+    "corrective_guidance": 10,
+    "error_detection": 2
+   },
+   "has_audio": false,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "0031",
+   "video": "0031.mp4",
+   "source": "QEVD-Fit-Coach",
+   "task": "fitness session",
+   "duration_s": 162.0,
+   "n_assistant_turns": 40,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 10,
+    "completion_feedback": 15,
+    "corrective_guidance": 17,
+    "error_detection": 3
+   },
+   "has_audio": false,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "0033",
+   "video": "0033.mp4",
+   "source": "QEVD-Fit-Coach",
+   "task": "fitness session",
+   "duration_s": 158.5,
+   "n_assistant_turns": 42,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 13,
+    "error_detection": 11,
+    "corrective_guidance": 18,
+    "completion_feedback": 7
+   },
+   "has_audio": false,
+   "resolution": "640x360",
+   "in_subset": true
+  },
+  {
+   "video_id": "0056",
+   "video": "0056.mp4",
+   "source": "QEVD-Fit-Coach",
+   "task": "fitness session",
+   "duration_s": 158.5,
+   "n_assistant_turns": 31,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 6,
+    "completion_feedback": 17,
+    "corrective_guidance": 9,
+    "error_detection": 5
+   },
+   "has_audio": false,
+   "resolution": "640x360",
+   "in_subset": true
+  },
+  {
+   "video_id": "0087",
+   "video": "0087.mp4",
+   "source": "QEVD-Fit-Coach",
+   "task": "fitness session",
+   "duration_s": 158.0,
+   "n_assistant_turns": 27,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 6,
+    "completion_feedback": 21
+   },
+   "has_audio": false,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "0146",
+   "video": "0146.mp4",
+   "source": "QEVD-Fit-Coach",
+   "task": "fitness session",
+   "duration_s": 154.0,
+   "n_assistant_turns": 36,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 10,
+    "completion_feedback": 17,
+    "corrective_guidance": 11,
+    "error_detection": 5
+   },
+   "has_audio": false,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "0170",
+   "video": "0170.mp4",
+   "source": "QEVD-Fit-Coach",
+   "task": "fitness session",
+   "duration_s": 150.5,
+   "n_assistant_turns": 40,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 7,
+    "completion_feedback": 17,
+    "corrective_guidance": 17,
+    "error_detection": 2
+   },
+   "has_audio": false,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "0179",
+   "video": "0179.mp4",
+   "source": "QEVD-Fit-Coach",
+   "task": "fitness session",
+   "duration_s": 160.0,
+   "n_assistant_turns": 46,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 6,
+    "completion_feedback": 31,
+    "corrective_guidance": 14,
+    "error_detection": 1
+   },
+   "has_audio": false,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "0185",
+   "video": "0185.mp4",
+   "source": "QEVD-Fit-Coach",
+   "task": "fitness session",
+   "duration_s": 153.0,
+   "n_assistant_turns": 36,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 6,
+    "completion_feedback": 24,
+    "error_detection": 4,
+    "corrective_guidance": 5
+   },
+   "has_audio": false,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "0205",
+   "video": "0205.mp4",
+   "source": "QEVD-Fit-Coach",
+   "task": "fitness session",
+   "duration_s": 155.0,
+   "n_assistant_turns": 39,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 6,
+    "completion_feedback": 23,
+    "error_detection": 4,
+    "corrective_guidance": 9
+   },
+   "has_audio": false,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "23_18",
+   "video": "broccoli_stir_fry-23_18.mp4",
+   "source": "CaptainCook4D",
+   "task": "broccoli_stir_fry",
+   "duration_s": 1961.5,
+   "n_assistant_turns": 25,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 23,
+    "completion_feedback": 20,
+    "error_detection": 1,
+    "corrective_guidance": 1
+   },
+   "has_audio": true,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "29_37",
+   "video": "caprese_bruschetta-29_37.mp4",
+   "source": "CaptainCook4D",
+   "task": "caprese_bruschetta",
+   "duration_s": 729.0,
+   "n_assistant_turns": 11,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 7,
+    "completion_feedback": 6,
+    "error_detection": 4,
+    "corrective_guidance": 4
+   },
+   "has_audio": true,
+   "resolution": "640x360",
+   "in_subset": true
+  },
+  {
+   "video_id": "27_38",
+   "video": "cheese_pimiento-27_38.mp4",
+   "source": "CaptainCook4D",
+   "task": "cheese_pimiento",
+   "duration_s": 583.53,
+   "n_assistant_turns": 16,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 8,
+    "error_detection": 8,
+    "corrective_guidance": 7,
+    "completion_feedback": 3
+   },
+   "has_audio": true,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "27_49",
+   "video": "cheese_pimiento-27_49.mp4",
+   "source": "CaptainCook4D",
+   "task": "cheese_pimiento",
+   "duration_s": 533.0,
+   "n_assistant_turns": 16,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 9,
+    "completion_feedback": 6,
+    "error_detection": 6,
+    "corrective_guidance": 4
+   },
+   "has_audio": true,
+   "resolution": "640x360",
+   "in_subset": true
+  },
+  {
+   "video_id": "17_19",
+   "video": "cucumber_raita-17_19.mp4",
+   "source": "CaptainCook4D",
+   "task": "cucumber_raita",
+   "duration_s": 986.0,
+   "n_assistant_turns": 10,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 9,
+    "completion_feedback": 8
+   },
+   "has_audio": true,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "17_45",
+   "video": "cucumber_raita-17_45.mp4",
+   "source": "CaptainCook4D",
+   "task": "cucumber_raita",
+   "duration_s": 774.549,
+   "n_assistant_turns": 19,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 9,
+    "completion_feedback": 5,
+    "error_detection": 9,
+    "corrective_guidance": 6
+   },
+   "has_audio": true,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "22_41",
+   "video": "herb_omelet_with_fried_tomatoes-22_41.mp4",
+   "source": "CaptainCook4D",
+   "task": "herb_omelet_with_fried_tomatoes",
+   "duration_s": 508.522,
+   "n_assistant_turns": 20,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 9,
+    "completion_feedback": 5,
+    "error_detection": 10,
+    "corrective_guidance": 7
+   },
+   "has_audio": true,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "1_143",
+   "video": "microwave_egg_sandwich-1_143.mp4",
+   "source": "CaptainCook4D",
+   "task": "microwave_egg_sandwich",
+   "duration_s": 642.112,
+   "n_assistant_turns": 21,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 10,
+    "error_detection": 11,
+    "corrective_guidance": 9,
+    "completion_feedback": 2
+   },
+   "has_audio": true,
+   "resolution": "640x360",
+   "in_subset": true
+  },
+  {
+   "video_id": "1_37",
+   "video": "microwave_egg_sandwich-1_37.mp4",
+   "source": "CaptainCook4D",
+   "task": "microwave_egg_sandwich",
+   "duration_s": 611.221,
+   "n_assistant_turns": 19,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 15,
+    "error_detection": 3,
+    "corrective_guidance": 3,
+    "completion_feedback": 7
+   },
+   "has_audio": true,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "1_43",
+   "video": "microwave_egg_sandwich-1_43.mp4",
+   "source": "CaptainCook4D",
+   "task": "microwave_egg_sandwich",
+   "duration_s": 441.5,
+   "n_assistant_turns": 18,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 11,
+    "error_detection": 5,
+    "corrective_guidance": 5,
+    "completion_feedback": 6
+   },
+   "has_audio": true,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "9_19",
+   "video": "microwave_french_toast-9_19.mp4",
+   "source": "CaptainCook4D",
+   "task": "microwave_french_toast",
+   "duration_s": 834.517,
+   "n_assistant_turns": 12,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 10,
+    "completion_feedback": 7,
+    "error_detection": 1
+   },
+   "has_audio": true,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "3_50",
+   "video": "microwave_mug_pizza-3_50.mp4",
+   "source": "CaptainCook4D",
+   "task": "microwave_mug_pizza",
+   "duration_s": 451.69,
+   "n_assistant_turns": 17,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 6,
+    "completion_feedback": 10,
+    "error_detection": 5,
+    "corrective_guidance": 4
+   },
+   "has_audio": true,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "26_42",
+   "video": "mug_cake-26_42.mp4",
+   "source": "CaptainCook4D",
+   "task": "mug_cake",
+   "duration_s": 834.0,
+   "n_assistant_turns": 21,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 10,
+    "error_detection": 9,
+    "corrective_guidance": 8,
+    "completion_feedback": 8
+   },
+   "has_audio": true,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "10_47",
+   "video": "pinwheels-10_47.mp4",
+   "source": "CaptainCook4D",
+   "task": "pinwheels",
+   "duration_s": 462.506,
+   "n_assistant_turns": 26,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 18,
+    "completion_feedback": 13,
+    "error_detection": 6,
+    "corrective_guidance": 6
+   },
+   "has_audio": true,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "4_22",
+   "video": "ramen-4_22.mp4",
+   "source": "CaptainCook4D",
+   "task": "ramen",
+   "duration_s": 890.5,
+   "n_assistant_turns": 16,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 15,
+    "completion_feedback": 14
+   },
+   "has_audio": true,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "20_39",
+   "video": "sauted_mushrooms-20_39.mp4",
+   "source": "CaptainCook4D",
+   "task": "sauted_mushrooms",
+   "duration_s": 620.0,
+   "n_assistant_turns": 19,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 7,
+    "error_detection": 9,
+    "corrective_guidance": 7,
+    "completion_feedback": 6
+   },
+   "has_audio": true,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "8_45",
+   "video": "spiced_hot_chocolate-8_45.mp4",
+   "source": "CaptainCook4D",
+   "task": "spiced_hot_chocolate",
+   "duration_s": 376.192,
+   "n_assistant_turns": 13,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 6,
+    "error_detection": 6,
+    "corrective_guidance": 5,
+    "completion_feedback": 1
+   },
+   "has_audio": true,
+   "resolution": "640x360",
+   "in_subset": true
+  },
+  {
+   "video_id": "28_42",
+   "video": "spicy_tuna_avocado_wraps-28_42.mp4",
+   "source": "CaptainCook4D",
+   "task": "spicy_tuna_avocado_wraps",
+   "duration_s": 1034.112,
+   "n_assistant_turns": 24,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 17,
+    "error_detection": 6,
+    "corrective_guidance": 6,
+    "completion_feedback": 12
+   },
+   "has_audio": true,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "12_15",
+   "video": "tomato_mozzarella_salad-12_15.mp4",
+   "source": "CaptainCook4D",
+   "task": "tomato_mozzarella_salad",
+   "duration_s": 462.698,
+   "n_assistant_turns": 10,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 8,
+    "completion_feedback": 9
+   },
+   "has_audio": true,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "18_49",
+   "video": "zoodles-18_49.mp4",
+   "source": "CaptainCook4D",
+   "task": "zoodles",
+   "duration_s": 1522.5,
+   "n_assistant_turns": 20,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 13,
+    "error_detection": 6,
+    "corrective_guidance": 5,
+    "completion_feedback": 5
+   },
+   "has_audio": true,
+   "resolution": "640x360",
+   "in_subset": false
+  },
+  {
+   "video_id": "coffee_u1_a7_normal_016",
+   "video": "coffee_u1_a7_normal_016.mp4",
+   "source": "EgoPER",
+   "task": "coffee",
+   "duration_s": 497.0,
+   "n_assistant_turns": 20,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 14,
+    "completion_feedback": 17
+   },
+   "has_audio": true,
+   "resolution": "1280x720",
+   "in_subset": true
+  },
+  {
+   "video_id": "oatmeal_u1_a2_normal_006",
+   "video": "oatmeal_u1_a2_normal_006.mp4",
+   "source": "EgoPER",
+   "task": "oatmeal",
+   "duration_s": 282.5,
+   "n_assistant_turns": 18,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 9,
+    "completion_feedback": 15
+   },
+   "has_audio": false,
+   "resolution": "1280x720",
+   "in_subset": false
+  },
+  {
+   "video_id": "oatmeal_u1_a5_error_001",
+   "video": "oatmeal_u1_a5_error_001.mp4",
+   "source": "EgoPER",
+   "task": "oatmeal",
+   "duration_s": 162.5,
+   "n_assistant_turns": 13,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 8,
+    "completion_feedback": 8
+   },
+   "has_audio": false,
+   "resolution": "1280x720",
+   "in_subset": false
+  },
+  {
+   "video_id": "oatmeal_u1_a5_error_002",
+   "video": "oatmeal_u1_a5_error_002.mp4",
+   "source": "EgoPER",
+   "task": "oatmeal",
+   "duration_s": 283.5,
+   "n_assistant_turns": 17,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 10,
+    "completion_feedback": 10,
+    "error_detection": 1,
+    "corrective_guidance": 1
+   },
+   "has_audio": false,
+   "resolution": "1280x720",
+   "in_subset": true
+  },
+  {
+   "video_id": "pinwheels_u1_a1_error_005",
+   "video": "pinwheels_u1_a1_error_005.mp4",
+   "source": "EgoPER",
+   "task": "pinwheels",
+   "duration_s": 242.5,
+   "n_assistant_turns": 21,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 13,
+    "error_detection": 1,
+    "corrective_guidance": 1,
+    "completion_feedback": 13
+   },
+   "has_audio": false,
+   "resolution": "1280x720",
+   "in_subset": false
+  },
+  {
+   "video_id": "pinwheels_u1_a2_error_031",
+   "video": "pinwheels_u1_a2_error_031.mp4",
+   "source": "EgoPER",
+   "task": "pinwheels",
+   "duration_s": 242.0,
+   "n_assistant_turns": 18,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 12,
+    "completion_feedback": 12
+   },
+   "has_audio": false,
+   "resolution": "1280x720",
+   "in_subset": false
+  },
+  {
+   "video_id": "pinwheels_u1_a2_error_035",
+   "video": "pinwheels_u1_a2_error_035.mp4",
+   "source": "EgoPER",
+   "task": "pinwheels",
+   "duration_s": 183.0,
+   "n_assistant_turns": 17,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 10,
+    "completion_feedback": 10
+   },
+   "has_audio": false,
+   "resolution": "1280x720",
+   "in_subset": false
+  },
+  {
+   "video_id": "pinwheels_u1_a2_error_036",
+   "video": "pinwheels_u1_a2_error_036.mp4",
+   "source": "EgoPER",
+   "task": "pinwheels",
+   "duration_s": 207.5,
+   "n_assistant_turns": 21,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 14,
+    "completion_feedback": 12,
+    "error_detection": 1,
+    "corrective_guidance": 1
+   },
+   "has_audio": false,
+   "resolution": "1280x720",
+   "in_subset": true
+  },
+  {
+   "video_id": "pinwheels_u1_a5_error_025",
+   "video": "pinwheels_u1_a5_error_025.mp4",
+   "source": "EgoPER",
+   "task": "pinwheels",
+   "duration_s": 248.5,
+   "n_assistant_turns": 17,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 12,
+    "completion_feedback": 11
+   },
+   "has_audio": false,
+   "resolution": "1280x720",
+   "in_subset": false
+  },
+  {
+   "video_id": "pinwheels_u1_a5_normal_026",
+   "video": "pinwheels_u1_a5_normal_026.mp4",
+   "source": "EgoPER",
+   "task": "pinwheels",
+   "duration_s": 255.5,
+   "n_assistant_turns": 18,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 16,
+    "completion_feedback": 15
+   },
+   "has_audio": true,
+   "resolution": "1280x720",
+   "in_subset": false
+  },
+  {
+   "video_id": "quesadilla_u1_a2_error_025",
+   "video": "quesadilla_u1_a2_error_025.mp4",
+   "source": "EgoPER",
+   "task": "quesadilla",
+   "duration_s": 80.0,
+   "n_assistant_turns": 10,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 7,
+    "completion_feedback": 7
+   },
+   "has_audio": false,
+   "resolution": "1280x720",
+   "in_subset": false
+  },
+  {
+   "video_id": "quesadilla_u1_a4_error_021",
+   "video": "quesadilla_u1_a4_error_021.mp4",
+   "source": "EgoPER",
+   "task": "quesadilla",
+   "duration_s": 100.0,
+   "n_assistant_turns": 9,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 6,
+    "completion_feedback": 6
+   },
+   "has_audio": false,
+   "resolution": "1280x720",
+   "in_subset": false
+  },
+  {
+   "video_id": "quesadilla_u1_a5_error_006",
+   "video": "quesadilla_u1_a5_error_006.mp4",
+   "source": "EgoPER",
+   "task": "quesadilla",
+   "duration_s": 106.0,
+   "n_assistant_turns": 10,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 7,
+    "error_detection": 1,
+    "corrective_guidance": 1,
+    "completion_feedback": 7
+   },
+   "has_audio": false,
+   "resolution": "1280x720",
+   "in_subset": true
+  },
+  {
+   "video_id": "quesadilla_u1_a5_normal_015",
+   "video": "quesadilla_u1_a5_normal_015.mp4",
+   "source": "EgoPER",
+   "task": "quesadilla",
+   "duration_s": 84.0,
+   "n_assistant_turns": 10,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 8,
+    "completion_feedback": 9
+   },
+   "has_audio": false,
+   "resolution": "1280x720",
+   "in_subset": false
+  },
+  {
+   "video_id": "tea_u1_a1_normal_005",
+   "video": "tea_u1_a1_normal_005.mp4",
+   "source": "EgoPER",
+   "task": "tea",
+   "duration_s": 174.0,
+   "n_assistant_turns": 14,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 10,
+    "completion_feedback": 10
+   },
+   "has_audio": false,
+   "resolution": "1280x720",
+   "in_subset": false
+  },
+  {
+   "video_id": "tea_u1_a2_error_001",
+   "video": "tea_u1_a2_error_001.mp4",
+   "source": "EgoPER",
+   "task": "tea",
+   "duration_s": 119.5,
+   "n_assistant_turns": 12,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 7,
+    "completion_feedback": 9,
+    "error_detection": 1,
+    "corrective_guidance": 1
+   },
+   "has_audio": false,
+   "resolution": "1280x720",
+   "in_subset": true
+  },
+  {
+   "video_id": "tea_u1_a5_error_014",
+   "video": "tea_u1_a5_error_014.mp4",
+   "source": "EgoPER",
+   "task": "tea",
+   "duration_s": 132.5,
+   "n_assistant_turns": 12,
+   "n_user_turns": 1,
+   "heuristic_types": {
+    "instruction": 8,
+    "completion_feedback": 8,
+    "error_detection": 1,
+    "corrective_guidance": 1
+   },
+   "has_audio": false,
+   "resolution": "1280x720",
+   "in_subset": false
+  }
+ ],
+ "paper_full_benchmark": {
+  "source": "arXiv 2607.02991 v1 (Sec. 3.3, Tab. 2-3) and repo README; not recomputable because the full data is unreleased",
+  "videos": 2458,
+  "hours": 223.7,
+  "interaction_samples": 47775,
+  "train": {
+   "videos": 1985,
+   "hours": 177.0
+  },
+  "test": {
+   "videos": 473,
+   "hours": 46.7,
+   "samples": 9876
+  },
+  "by_source_videos": {
+   "HoloAssist": 1671,
+   "CaptainCook4D": 295,
+   "EgoPER": 280,
+   "QEVD-Fit-Coach": 212
+  },
+  "duration_min": {
+   "min": 0.5,
+   "max": 41.2,
+   "mean": 5.5,
+   "median": 3.6
+  },
+  "scene_categories": "7 categories; Home Life 38.4%, Cooking 23.4%, Field Tech + IT Support 38.2% (Fig. 3a)",
+  "protocol": "60 s sliding video window + full dialogue history (GT history by default); anchor-based querying (GT intervention times + equal number of silent times >=5 s from any anchor); dense 1 s mode as ablation",
+  "metrics": "Temporal-semantic bipartite matching -> sPrecision/sRecall/sF1; LLM judge 0-5 (Score_m; code default judge gemini-3-pro-preview); behaviour classes CS / NR / FA / PC averaged into Score",
+  "results_test": [
+   {
+    "model": "Gemini 3 Pro",
+    "score": 44.8,
+    "sF1": 36.5
+   },
+   {
+    "model": "Doubao-Seed-1.8",
+    "score": 38.8,
+    "sF1": 36.8
+   },
+   {
+    "model": "GPT-5.2",
+    "score": 38.9,
+    "sF1": 32.5
+   },
+   {
+    "model": "Gemini 3.1 Pro",
+    "score": 37.8,
+    "sF1": 35.7
+   },
+   {
+    "model": "Qwen3.5-397B-A17B",
+    "score": 45.7,
+    "sF1": 21.7
+   },
+   {
+    "model": "Qwen3-VL-8B",
+    "score": 31.9,
+    "sF1": 35.7
+   },
+   {
+    "model": "Qwen3-VL-30B-A3B",
+    "score": 33.3,
+    "sF1": 35.6
+   },
+   {
+    "model": "Qwen2.5-7B",
+    "score": 37.5,
+    "sF1": 29.3
+   },
+   {
+    "model": "Qwen3-VL-8B fine-tuned on GuideMe-Train",
+    "score": 42.1,
+    "sF1": 39.7
+   }
+  ],
+  "per_category_sF1": {
+   "Gemini 3 Pro": {
+    "instruction": 42.0,
+    "error": 33.8,
+    "correction": 34.3
+   },
+   "Doubao-Seed-1.8": {
+    "instruction": 49.6,
+    "error": 41.9,
+    "correction": 42.7
+   }
+  }
+ }
+}

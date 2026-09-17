@@ -1,0 +1,1112 @@
+[
+ {
+  "_viewer_case_id": "fZl_LVU7a18-q1",
+  "_viewer_task_code": "II",
+  "_viewer_class": "identity identification",
+  "_viewer_major_task": "Social perception",
+  "_viewer_tier": "Basic",
+  "_viewer_video": "videos/fZl_LVU7a18-q1.mp4",
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_n_turns_in_chain": 1,
+  "records": [
+   {
+    "video_full_path": {
+     "path": "fZl_LVU7a18-q1.mp4"
+    },
+    "video_name": "fZl_LVU7a18-q1",
+    "class": "identity identification",
+    "source": "Youtube",
+    "turns": "single",
+    "question": "Who just attempted a shot?",
+    "gt_answer": "Olise.",
+    "key_points": "1. Olise",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 0.0,
+    "_viewer_seg_end_s": 61.1,
+    "_viewer_seg_duration_s": 61.1,
+    "_viewer_orig_seg_start_s": 0.0,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "speech (TTS audio embedded in video)",
+    "_viewer_question_audio_s": [
+     58.7,
+     60.1
+    ],
+    "_viewer_parquet_loc": "data/train-00000-of-00004.parquet row 71"
+   }
+  ]
+ },
+ {
+  "_viewer_case_id": "c6148208-q1",
+  "_viewer_task_code": "AI",
+  "_viewer_class": "addressee identification",
+  "_viewer_major_task": "Social perception",
+  "_viewer_tier": "Basic",
+  "_viewer_video": "videos/c6148208-q1.mp4",
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_n_turns_in_chain": 1,
+  "records": [
+   {
+    "video_full_path": {
+     "path": "c6148208-d643-4735-94d8-ae9f14eacef6-q1.mp4"
+    },
+    "video_name": "c6148208-d643-4735-94d8-ae9f14eacef6-q1",
+    "class": "addressee identification",
+    "source": "Ego4D",
+    "turns": "single",
+    "question": "Who was the person in green directing that comment at?",
+    "gt_answer": "[\"The man wearing white shirt.\",\"The man on the left.\"]",
+    "key_points": "1.[\"white shirt\",\"on the left\"]",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 0.0,
+    "_viewer_seg_end_s": 44.63,
+    "_viewer_seg_duration_s": 44.63,
+    "_viewer_orig_seg_start_s": 0.0,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "speech (TTS audio embedded in video)",
+    "_viewer_question_audio_s": [
+     39.3,
+     43.7
+    ],
+    "_viewer_parquet_loc": "data/train-00000-of-00004.parquet row 30"
+   }
+  ]
+ },
+ {
+  "_viewer_case_id": "1_10495-q1",
+  "_viewer_task_code": "CE",
+  "_viewer_class": "complex emotion understanding",
+  "_viewer_major_task": "Social perception",
+  "_viewer_tier": "Basic",
+  "_viewer_video": "videos/1_10495-q1.mp4",
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_n_turns_in_chain": 1,
+  "records": [
+   {
+    "video_full_path": {
+     "path": "1_10495-q1.mp4"
+    },
+    "video_name": "1_10495-q1",
+    "class": "complex emotion understanding",
+    "source": "Mustard++",
+    "turns": "single",
+    "question": "What emotion is the man expressing with his last words?",
+    "gt_answer": "While he ostensibly agrees with her suggestion, his tone is filled with derision and incredulity, which actually serves as a contemptuous dismissal of the proposal.",
+    "key_points": "1.The man actually disagrees with the woman's suggestion.\\n2.He expresses emotions of derision and incredulity.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 0.0,
+    "_viewer_seg_end_s": 31.77,
+    "_viewer_seg_duration_s": 31.77,
+    "_viewer_orig_seg_start_s": 0.0,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "speech (TTS audio embedded in video)",
+    "_viewer_parquet_loc": "data/train-00000-of-00004.parquet row 27"
+   }
+  ]
+ },
+ {
+  "_viewer_case_id": "HdnJE5S3oNI-q2",
+  "_viewer_task_code": "ER",
+  "_viewer_class": "event retrieval",
+  "_viewer_major_task": "Temporal perception",
+  "_viewer_tier": "Basic",
+  "_viewer_video": "videos/HdnJE5S3oNI-q2.mp4",
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_n_turns_in_chain": 1,
+  "records": [
+   {
+    "video_full_path": {
+     "path": "HdnJE5S3oNI-q2.mp4"
+    },
+    "video_name": "HdnJE5S3oNI-q2",
+    "class": "event retrieval",
+    "source": "Youtube",
+    "turns": "single",
+    "question": "When Jules yelled, 'Why is it so big?', who was petting the dog?",
+    "gt_answer": "The girl who has golden hair and is wearing shorts.",
+    "key_points": "1. The girl who has golden hair.\\n2. Is wearing shorts.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 0.0,
+    "_viewer_seg_end_s": 44.25,
+    "_viewer_seg_duration_s": 44.25,
+    "_viewer_orig_seg_start_s": 0.0,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "speech (TTS audio embedded in video)",
+    "_viewer_question_audio_s": [
+     39.8,
+     43.3
+    ],
+    "_viewer_parquet_loc": "data/train-00000-of-00004.parquet row 65"
+   }
+  ]
+ },
+ {
+  "_viewer_case_id": "shorts-z1pFq-wYGpM-q1",
+  "_viewer_task_code": "AO",
+  "_viewer_class": "appearance order",
+  "_viewer_major_task": "Temporal perception",
+  "_viewer_tier": "Basic",
+  "_viewer_video": "videos/shorts-z1pFq-wYGpM-q1.mp4",
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_n_turns_in_chain": 1,
+  "records": [
+   {
+    "video_full_path": {
+     "path": "shorts-z1pFq-wYGpM-q1.mp4"
+    },
+    "video_name": "shorts-z1pFq-wYGpM-q1",
+    "class": "appearance order  ",
+    "source": "YouTuBe",
+    "turns": "single",
+    "question": "Which appears first, the desk lamp or the over-ear headphones? Your answer must be either 'desk lamp' or 'over-ear headphones.'",
+    "gt_answer": "Desk lamp.",
+    "key_points": "1. Desk lamp.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 0.0,
+    "_viewer_seg_end_s": 26.06,
+    "_viewer_seg_duration_s": 26.06,
+    "_viewer_orig_seg_start_s": 0.0,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "speech (TTS audio embedded in video)",
+    "_viewer_parquet_loc": "data/train-00000-of-00004.parquet row 21"
+   }
+  ]
+ },
+ {
+  "_viewer_case_id": "Pao-hT2WNhA-q1",
+  "_viewer_task_code": "DC",
+  "_viewer_class": "dynamic counting",
+  "_viewer_major_task": "Temporal perception",
+  "_viewer_tier": "Basic",
+  "_viewer_video": "videos/Pao-hT2WNhA-q1.mp4",
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_n_turns_in_chain": 1,
+  "records": [
+   {
+    "video_full_path": {
+     "path": "Pao-hT2WNhA-q1.mp4"
+    },
+    "video_name": "Pao-hT2WNhA-q1",
+    "class": "dynamic counting",
+    "source": "Youtube",
+    "turns": "single",
+    "question": "How many push-ups did he do?",
+    "gt_answer": "The person did 19 push-ups.",
+    "key_points": "1.19.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 0.0,
+    "_viewer_seg_end_s": 37.72,
+    "_viewer_seg_duration_s": 37.72,
+    "_viewer_orig_seg_start_s": 0.0,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "speech (TTS audio embedded in video)",
+    "_viewer_question_audio_s": [
+     33.6,
+     36.9
+    ],
+    "_viewer_parquet_loc": "data/train-00003-of-00004.parquet row 79"
+   }
+  ]
+ },
+ {
+  "_viewer_case_id": "bTmwvIL5eTs-q1",
+  "_viewer_task_code": "AR",
+  "_viewer_class": "action reference",
+  "_viewer_major_task": "Referential perception",
+  "_viewer_tier": "Basic",
+  "_viewer_video": "videos/bTmwvIL5eTs-q1.mp4",
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_n_turns_in_chain": 1,
+  "records": [
+   {
+    "video_full_path": {
+     "path": "bTmwvIL5eTs-q1.mp4"
+    },
+    "video_name": "bTmwvIL5eTs-q1",
+    "class": "action reference",
+    "source": "Youtube",
+    "turns": "single",
+    "question": "What is she pointing at?",
+    "gt_answer": "The glasses made by herself.",
+    "key_points": "1.The glasses.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 0.0,
+    "_viewer_seg_end_s": 19.13,
+    "_viewer_seg_duration_s": 19.13,
+    "_viewer_orig_seg_start_s": 0.0,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "speech (TTS audio embedded in video)",
+    "_viewer_question_audio_s": [
+     16.3,
+     18.9
+    ],
+    "_viewer_parquet_loc": "data/train-00001-of-00004.parquet row 58"
+   }
+  ]
+ },
+ {
+  "_viewer_case_id": "a1ba567f-q1",
+  "_viewer_task_code": "LR",
+  "_viewer_class": "linguistic reference",
+  "_viewer_major_task": "Referential perception",
+  "_viewer_tier": "Basic",
+  "_viewer_video": "videos/a1ba567f-q1.mp4",
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_n_turns_in_chain": 1,
+  "records": [
+   {
+    "video_full_path": {
+     "path": "a1ba567f-9ff5-4def-96ac-87d237749f2d-q1.mp4"
+    },
+    "video_name": "a1ba567f-9ff5-4def-96ac-87d237749f2d-q1",
+    "class": "linguistic reference",
+    "source": "Ego4D",
+    "turns": "single",
+    "question": "Can you tell me what that is, right beside the tomatoes?",
+    "gt_answer": "Those are eggplants.",
+    "key_points": "1.Eggplants",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 0.0,
+    "_viewer_seg_end_s": 41.13,
+    "_viewer_seg_duration_s": 41.13,
+    "_viewer_orig_seg_start_s": 0.0,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "speech (TTS audio embedded in video)",
+    "_viewer_question_audio_s": [
+     36.3,
+     40.7
+    ],
+    "_viewer_parquet_loc": "data/train-00000-of-00004.parquet row 49"
+   }
+  ]
+ },
+ {
+  "_viewer_case_id": "Yt5xifeyx7I",
+  "_viewer_task_code": "GPF",
+  "_viewer_class": "gesture-based prompt following",
+  "_viewer_major_task": "Non-audio prompt following",
+  "_viewer_tier": "Basic",
+  "_viewer_video": "videos/Yt5xifeyx7I.mp4",
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_n_turns_in_chain": 3,
+  "records": [
+   {
+    "video_full_path": {
+     "path": "Yt5xifeyx7I-seg1.mp4"
+    },
+    "video_name": "Yt5xifeyx7I-seg1",
+    "class": "gesture-based prompt following",
+    "source": "Youtube",
+    "turns": "multi",
+    "question": "gesture4: This gesture represents the instruction pointing to which finger of the man on the right is wearing the ring.",
+    "gt_answer": "The man on the right is wearing a ring on his left ring finger.",
+    "key_points": "1.Left ring finger.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": "This gesture represents a command to describe the expression of the person without glasses.The gesture in Figure a represents a command to describe the current video scene,This gesture represents a command to describe the expression of the person with glasses.This gesture represents the instruction pointing to which finger of the man on the right is wearing the ring.",
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 0.0,
+    "_viewer_seg_end_s": 34.92,
+    "_viewer_seg_duration_s": 34.92,
+    "_viewer_orig_seg_start_s": 0.0,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "gesture (picture-in-picture clip)",
+    "_viewer_parquet_loc": "data/train-00000-of-00004.parquet row 75"
+   },
+   {
+    "video_full_path": {
+     "path": "Yt5xifeyx7I-seg2.mp4"
+    },
+    "video_name": "Yt5xifeyx7I-seg2",
+    "class": "gesture-based prompt following",
+    "source": "Youtube",
+    "turns": "multi",
+    "question": "gesture1:This gesture represents a command to describe the expression of the person without glasses.",
+    "gt_answer": "The person without glasses is laughing heartily.",
+    "key_points": "1.Laugh",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 34.92,
+    "_viewer_seg_end_s": 57.77,
+    "_viewer_seg_duration_s": 22.85,
+    "_viewer_orig_seg_start_s": 34.92,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "gesture (picture-in-picture clip)",
+    "_viewer_parquet_loc": "data/train-00000-of-00004.parquet row 76"
+   },
+   {
+    "video_full_path": {
+     "path": "Yt5xifeyx7I-seg3.mp4"
+    },
+    "video_name": "Yt5xifeyx7I-seg3",
+    "class": "gesture-based prompt following",
+    "source": "Youtube",
+    "turns": "multi",
+    "question": "gesture3:This gesture represents a command to describe the expression of the person with glasses.",
+    "gt_answer": "The man with glasses appears friendly and engaged in the conversation.",
+    "key_points": "1.[\"Friendly\",\"Smile\"]",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 57.77,
+    "_viewer_seg_end_s": 84.76,
+    "_viewer_seg_duration_s": 26.99,
+    "_viewer_orig_seg_start_s": 57.77,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "gesture (picture-in-picture clip)",
+    "_viewer_parquet_loc": "data/train-00000-of-00004.parquet row 77"
+   }
+  ]
+ },
+ {
+  "_viewer_case_id": "yuh_fo6OKfQ-q1",
+  "_viewer_task_code": "OPF",
+  "_viewer_class": "OCR-based prompt following",
+  "_viewer_major_task": "Non-audio prompt following",
+  "_viewer_tier": "Basic",
+  "_viewer_video": "videos/yuh_fo6OKfQ-q1.mp4",
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_n_turns_in_chain": 1,
+  "records": [
+   {
+    "video_full_path": {
+     "path": "yuh_fo6OKfQ-q1.mp4"
+    },
+    "video_name": "yuh_fo6OKfQ-q1",
+    "class": "OCR-based prompt following",
+    "source": "Youtube",
+    "turns": "single",
+    "question": "What is the sentence on her notebook now?",
+    "gt_answer": "The sentence is \"The quick brown fox jumps over the lazy dog\".",
+    "key_points": "1. The quick brown fox jumps over the lazy dog.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 0.0,
+    "_viewer_seg_end_s": 30.72,
+    "_viewer_seg_duration_s": 30.72,
+    "_viewer_orig_seg_start_s": 0.0,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "on-screen text (typed / handwritten)",
+    "_viewer_parquet_loc": "data/train-00000-of-00004.parquet row 74"
+   }
+  ]
+ },
+ {
+  "_viewer_case_id": "VID20251021095424",
+  "_viewer_task_code": "CR",
+  "_viewer_class": "context-aware response",
+  "_viewer_major_task": "Context-aware response",
+  "_viewer_tier": "Advanced",
+  "_viewer_video": "videos/VID20251021095424.mp4",
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_n_turns_in_chain": 1,
+  "records": [
+   {
+    "video_full_path": {
+     "path": "VID20251021095424.mp4"
+    },
+    "video_name": "VID20251021095424",
+    "class": "context-aware response",
+    "source": "filmed",
+    "turns": "single",
+    "question": "I want to download FFmpeg for this computer, what should I do now?",
+    "gt_answer": "The user can either download the source code or download the compiled files. To download source code,press the large green button with \"Download Source Code\". Otherwise, it can be inferred that the user is using a Windows computer, so the user should press the blue button to download the executable file for Windows system.",
+    "key_points": "1. [\"The user can download source code by pressing the large green button.\", \"The user can download source code by pressing the button with \"Download Source Code\".\"]\\n2. \"The user can download executable files for their Windows system by pressing the blue button\"",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 0.0,
+    "_viewer_seg_end_s": 33.22,
+    "_viewer_seg_duration_s": 33.22,
+    "_viewer_orig_seg_start_s": 0.0,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "speech (TTS audio embedded in video)",
+    "_viewer_question_audio_s": [
+     26.9,
+     32.4
+    ],
+    "_viewer_parquet_loc": "data/train-00000-of-00004.parquet row 63"
+   }
+  ]
+ },
+ {
+  "_viewer_case_id": "A3WbCRfad-w-2",
+  "_viewer_task_code": "SER",
+  "_viewer_class": "single event-triggered response",
+  "_viewer_major_task": "Proactive response",
+  "_viewer_tier": "Advanced",
+  "_viewer_video": "videos/A3WbCRfad-w-2.mp4",
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_n_turns_in_chain": 4,
+  "records": [
+   {
+    "video_full_path": {
+     "path": "A3WbCRfad-w-2-seg1.mp4"
+    },
+    "video_name": "A3WbCRfad-w-2-seg1",
+    "class": "single event-triggered response",
+    "source": "Youtube",
+    "turns": "multi",
+    "question": "Tell me when Chef Maria enters the kitchen classroom.",
+    "gt_answer": "KEEP_QUIET",
+    "key_points": "1. Chef Maria is not yet in the room.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 0.0,
+    "_viewer_seg_end_s": 11.77,
+    "_viewer_seg_duration_s": 11.77,
+    "_viewer_orig_seg_start_s": 0.0,
+    "_viewer_expects_silence": "yes",
+    "_viewer_question_modality": "speech (TTS audio embedded in video)",
+    "_viewer_question_audio_s": [
+     7.3,
+     9.9
+    ],
+    "_viewer_parquet_loc": "data/train-00000-of-00004.parquet row 100"
+   },
+   {
+    "video_full_path": {
+     "path": "A3WbCRfad-w-2-seg2.mp4"
+    },
+    "video_name": "A3WbCRfad-w-2-seg2",
+    "class": "single event-triggered response",
+    "source": "Youtube",
+    "turns": "multi",
+    "question": "Tell me when Chef Maria enters the kitchen classroom.",
+    "gt_answer": "KEEP_QUIET",
+    "key_points": "1. Chef Maria is not yet in the room.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 11.77,
+    "_viewer_seg_end_s": 21.11,
+    "_viewer_seg_duration_s": 9.34,
+    "_viewer_orig_seg_start_s": 11.77,
+    "_viewer_expects_silence": "yes",
+    "_viewer_question_modality": "none new: standing request from an earlier turn",
+    "_viewer_parquet_loc": "data/train-00000-of-00004.parquet row 101"
+   },
+   {
+    "video_full_path": {
+     "path": "A3WbCRfad-w-2-seg3.mp4"
+    },
+    "video_name": "A3WbCRfad-w-2-seg3",
+    "class": "single event-triggered response",
+    "source": "Youtube",
+    "turns": "multi",
+    "question": "Tell me when Chef Maria enters the kitchen classroom.",
+    "gt_answer": "Chef Maria is walking through the doors into the classroom.",
+    "key_points": "1. Chef Maria is walking through the doors into the classroom.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 21.11,
+    "_viewer_seg_end_s": 31.63,
+    "_viewer_seg_duration_s": 10.52,
+    "_viewer_orig_seg_start_s": 21.11,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "none new: standing request from an earlier turn",
+    "_viewer_parquet_loc": "data/train-00000-of-00004.parquet row 102"
+   },
+   {
+    "video_full_path": {
+     "path": "A3WbCRfad-w-2-seg4.mp4"
+    },
+    "video_name": "A3WbCRfad-w-2-seg4",
+    "class": "single event-triggered response",
+    "source": "Youtube",
+    "turns": "multi",
+    "question": "Tell me when Chef Maria enters the kitchen classroom.",
+    "gt_answer": "KEEP_QUIET",
+    "key_points": "1. Chef Maria has entered the classroom earlier.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 31.63,
+    "_viewer_seg_end_s": 44.21,
+    "_viewer_seg_duration_s": 12.59,
+    "_viewer_orig_seg_start_s": 31.63,
+    "_viewer_expects_silence": "yes",
+    "_viewer_question_modality": "none new: standing request from an earlier turn",
+    "_viewer_parquet_loc": "data/train-00000-of-00004.parquet row 103"
+   }
+  ]
+ },
+ {
+  "_viewer_case_id": "QiabTfzORmE",
+  "_viewer_task_code": "MER",
+  "_viewer_class": "multi events-triggered response",
+  "_viewer_major_task": "Proactive response",
+  "_viewer_tier": "Advanced",
+  "_viewer_video": "videos/QiabTfzORmE.mp4",
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_n_turns_in_chain": 3,
+  "records": [
+   {
+    "video_full_path": {
+     "path": "QiabTfzORmE-seg1.mp4"
+    },
+    "video_name": "QiabTfzORmE-seg1",
+    "class": "multi events-triggered response",
+    "source": "Youtube",
+    "turns": "multi",
+    "question": "Whenever a basket is made, please tell me which team scored.",
+    "gt_answer": "The L.A. Lakers scored.",
+    "key_points": "1.The L.A. Lakers.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 0.0,
+    "_viewer_seg_end_s": 40.75,
+    "_viewer_seg_duration_s": 40.75,
+    "_viewer_orig_seg_start_s": 0.0,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "speech (TTS audio embedded in video)",
+    "_viewer_question_audio_s": [
+     34.2,
+     39.0
+    ],
+    "_viewer_parquet_loc": "data/train-00002-of-00004.parquet row 24"
+   },
+   {
+    "video_full_path": {
+     "path": "QiabTfzORmE-seg2.mp4"
+    },
+    "video_name": "QiabTfzORmE-seg2",
+    "class": "multi events-triggered response",
+    "source": "Youtube",
+    "turns": "multi",
+    "question": "Whenever a basket is made, please tell me which team scored.",
+    "gt_answer": "KEEP QUIET",
+    "key_points": "1.The model should keep quiet.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 40.75,
+    "_viewer_seg_end_s": 74.97,
+    "_viewer_seg_duration_s": 34.22,
+    "_viewer_orig_seg_start_s": 40.75,
+    "_viewer_expects_silence": "yes",
+    "_viewer_question_modality": "none new: standing request from an earlier turn",
+    "_viewer_parquet_loc": "data/train-00002-of-00004.parquet row 25"
+   },
+   {
+    "video_full_path": {
+     "path": "QiabTfzORmE-seg3.mp4"
+    },
+    "video_name": "QiabTfzORmE-seg3",
+    "class": "multi events-triggered response",
+    "source": "Youtube",
+    "turns": "multi",
+    "question": "Whenever a basket is made, please tell me which team scored.",
+    "gt_answer": "The Philadelphia scored.",
+    "key_points": "1.The Philadelphia.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 74.97,
+    "_viewer_seg_end_s": 99.33,
+    "_viewer_seg_duration_s": 24.36,
+    "_viewer_orig_seg_start_s": 74.97,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "none new: standing request from an earlier turn",
+    "_viewer_parquet_loc": "data/train-00002-of-00004.parquet row 26"
+   }
+  ]
+ },
+ {
+  "_viewer_case_id": "Mmq_fASrTB4",
+  "_viewer_task_code": "ST",
+  "_viewer_class": "step tracking",
+  "_viewer_major_task": "Process tracking",
+  "_viewer_tier": "Advanced",
+  "_viewer_video": "videos/Mmq_fASrTB4.mp4",
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_n_turns_in_chain": 6,
+  "records": [
+   {
+    "video_full_path": {
+     "path": "Mmq_fASrTB4-seg1.mp4"
+    },
+    "video_name": "Mmq_fASrTB4-seg1",
+    "class": "step tracking",
+    "source": "Youtube",
+    "turns": "multi",
+    "question": null,
+    "gt_answer": "Secure the CPU by lowering and locking the retention lever.",
+    "key_points": "1.Lower and lock the retention lever.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": "I'm going to assemble a computer according to the following steps:\\n1.Install the CPU in the motherboard socket, aligning the corner markings and securing it with the retention arm.\\n2.Apply thermal paste if needed, then mount and secure the CPU cooler. Plug the fan cable into the CPU_FAN header.\\n3.Install two RAM sticks by aligning each stick's notch with its slot and pressing down until the clips lock. \\n4.Snap the motherboard's I/O shield into the back of the PC case.\\n5.Mount the motherboard in the case, aligning it with the I/O shield and standoffs, and secure it with screws.\\n6.Mount the Power Supply Unit (PSU) in the case and secure it with screws.\\n7.Connect the 24-pin main power and 8-pin CPU power cables to the motherboard.\\n8.Connect the case's front panel cables for power, USB, and audio to the motherboard headers.\\n9.Mount the storage drive in the case, then connect its SATA data and power cables.\\n10.Install the GPU in the top PCIe slot, secure its bracket, and connect its PCIe power cables.\\n11.Tidy up the cables and close the case.",
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 0.0,
+    "_viewer_seg_end_s": 13.17,
+    "_viewer_seg_duration_s": 13.17,
+    "_viewer_orig_seg_start_s": 0.0,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "speech, not stored (\"What's the next step?\"-style TTS; record has no question field); the step plan is given up front as on-screen subtitles (example_text) or a reference video (example_video)",
+    "_viewer_parquet_loc": "data/train-00001-of-00004.parquet row 145"
+   },
+   {
+    "video_full_path": {
+     "path": "Mmq_fASrTB4-seg2.mp4"
+    },
+    "video_name": "Mmq_fASrTB4-seg2",
+    "class": "step tracking",
+    "source": "Youtube",
+    "turns": "multi",
+    "question": null,
+    "gt_answer": "Plug the fan's power cable into the CPU_FAN header.",
+    "key_points": "1.Plug fan power cable into CPU_FAN header.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": "I'm going to assemble a computer according to the following steps:\\n1.Install the CPU in the motherboard socket, aligning the corner markings and securing it with the retention arm.\\n2.Apply thermal paste if needed, then mount and secure the CPU cooler. Plug the fan cable into the CPU_FAN header.\\n3.Install two RAM sticks by aligning each stick's notch with its slot and pressing down until the clips lock. \\n4.Snap the motherboard's I/O shield into the back of the PC case.\\n5.Mount the motherboard in the case, aligning it with the I/O shield and standoffs, and secure it with screws.\\n6.Mount the Power Supply Unit (PSU) in the case and secure it with screws.\\n7.Connect the 24-pin main power and 8-pin CPU power cables to the motherboard.\\n8.Connect the case's front panel cables for power, USB, and audio to the motherboard headers.\\n9.Mount the storage drive in the case, then connect its SATA data and power cables.\\n10.Install the GPU in the top PCIe slot, secure its bracket, and connect its PCIe power cables.\\n11.Tidy up the cables and close the case.",
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 13.17,
+    "_viewer_seg_end_s": 23.17,
+    "_viewer_seg_duration_s": 10.01,
+    "_viewer_orig_seg_start_s": 13.17,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "speech, not stored (\"What's the next step?\"-style TTS; record has no question field); the step plan is given up front as on-screen subtitles (example_text) or a reference video (example_video)",
+    "_viewer_parquet_loc": "data/train-00001-of-00004.parquet row 146"
+   },
+   {
+    "video_full_path": {
+     "path": "Mmq_fASrTB4-seg3.mp4"
+    },
+    "video_name": "Mmq_fASrTB4-seg3",
+    "class": "step tracking",
+    "source": "Youtube",
+    "turns": "multi",
+    "question": null,
+    "gt_answer": "Insert the second stick of RAM into its corresponding slot.",
+    "key_points": "1.Insert second RAM stick into slot.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": "I'm going to assemble a computer according to the following steps:\\n1.Install the CPU in the motherboard socket, aligning the corner markings and securing it with the retention arm.\\n2.Apply thermal paste if needed, then mount and secure the CPU cooler. Plug the fan cable into the CPU_FAN header.\\n3.Install two RAM sticks by aligning each stick's notch with its slot and pressing down until the clips lock. \\n4.Snap the motherboard's I/O shield into the back of the PC case.\\n5.Mount the motherboard in the case, aligning it with the I/O shield and standoffs, and secure it with screws.\\n6.Mount the Power Supply Unit (PSU) in the case and secure it with screws.\\n7.Connect the 24-pin main power and 8-pin CPU power cables to the motherboard.\\n8.Connect the case's front panel cables for power, USB, and audio to the motherboard headers.\\n9.Mount the storage drive in the case, then connect its SATA data and power cables.\\n10.Install the GPU in the top PCIe slot, secure its bracket, and connect its PCIe power cables.\\n11.Tidy up the cables and close the case.",
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 23.17,
+    "_viewer_seg_end_s": 35.95,
+    "_viewer_seg_duration_s": 12.77,
+    "_viewer_orig_seg_start_s": 23.17,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "speech, not stored (\"What's the next step?\"-style TTS; record has no question field); the step plan is given up front as on-screen subtitles (example_text) or a reference video (example_video)",
+    "_viewer_parquet_loc": "data/train-00001-of-00004.parquet row 147"
+   },
+   {
+    "video_full_path": {
+     "path": "Mmq_fASrTB4-seg4.mp4"
+    },
+    "video_name": "Mmq_fASrTB4-seg4",
+    "class": "step tracking",
+    "source": "Youtube",
+    "turns": "multi",
+    "question": null,
+    "gt_answer": "Secure the motherboard to the case standoffs using screws.",
+    "key_points": "1.Screw motherboard to standoffs.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": "I'm going to assemble a computer according to the following steps:\\n1.Install the CPU in the motherboard socket, aligning the corner markings and securing it with the retention arm.\\n2.Apply thermal paste if needed, then mount and secure the CPU cooler. Plug the fan cable into the CPU_FAN header.\\n3.Install two RAM sticks by aligning each stick's notch with its slot and pressing down until the clips lock. \\n4.Snap the motherboard's I/O shield into the back of the PC case.\\n5.Mount the motherboard in the case, aligning it with the I/O shield and standoffs, and secure it with screws.\\n6.Mount the Power Supply Unit (PSU) in the case and secure it with screws.\\n7.Connect the 24-pin main power and 8-pin CPU power cables to the motherboard.\\n8.Connect the case's front panel cables for power, USB, and audio to the motherboard headers.\\n9.Mount the storage drive in the case, then connect its SATA data and power cables.\\n10.Install the GPU in the top PCIe slot, secure its bracket, and connect its PCIe power cables.\\n11.Tidy up the cables and close the case.",
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 35.95,
+    "_viewer_seg_end_s": 43.56,
+    "_viewer_seg_duration_s": 7.62,
+    "_viewer_orig_seg_start_s": 35.95,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "speech, not stored (\"What's the next step?\"-style TTS; record has no question field); the step plan is given up front as on-screen subtitles (example_text) or a reference video (example_video)",
+    "_viewer_parquet_loc": "data/train-00001-of-00004.parquet row 148"
+   },
+   {
+    "video_full_path": {
+     "path": "Mmq_fASrTB4-seg5.mp4"
+    },
+    "video_name": "Mmq_fASrTB4-seg5",
+    "class": "step tracking",
+    "source": "Youtube",
+    "turns": "multi",
+    "question": null,
+    "gt_answer": "Connect the SATA data and power cables to a storage drive.",
+    "key_points": "1.Connect SATA data and power cables.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": "I'm going to assemble a computer according to the following steps:\\n1.Install the CPU in the motherboard socket, aligning the corner markings and securing it with the retention arm.\\n2.Apply thermal paste if needed, then mount and secure the CPU cooler. Plug the fan cable into the CPU_FAN header.\\n3.Install two RAM sticks by aligning each stick's notch with its slot and pressing down until the clips lock. \\n4.Snap the motherboard's I/O shield into the back of the PC case.\\n5.Mount the motherboard in the case, aligning it with the I/O shield and standoffs, and secure it with screws.\\n6.Mount the Power Supply Unit (PSU) in the case and secure it with screws.\\n7.Connect the 24-pin main power and 8-pin CPU power cables to the motherboard.\\n8.Connect the case's front panel cables for power, USB, and audio to the motherboard headers.\\n9.Mount the storage drive in the case, then connect its SATA data and power cables.\\n10.Install the GPU in the top PCIe slot, secure its bracket, and connect its PCIe power cables.\\n11.Tidy up the cables and close the case.",
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 43.56,
+    "_viewer_seg_end_s": 56.15,
+    "_viewer_seg_duration_s": 12.59,
+    "_viewer_orig_seg_start_s": 43.56,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "speech, not stored (\"What's the next step?\"-style TTS; record has no question field); the step plan is given up front as on-screen subtitles (example_text) or a reference video (example_video)",
+    "_viewer_parquet_loc": "data/train-00001-of-00004.parquet row 149"
+   },
+   {
+    "video_full_path": {
+     "path": "Mmq_fASrTB4-seg6.mp4"
+    },
+    "video_name": "Mmq_fASrTB4-seg6",
+    "class": "step tracking",
+    "source": "Youtube",
+    "turns": "multi",
+    "question": null,
+    "gt_answer": "Connect the PCIe power cables to the graphics card.",
+    "key_points": "1.Connect PCIe power cables to GPU.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": "I'm going to assemble a computer according to the following steps:\\n1.Install the CPU in the motherboard socket, aligning the corner markings and securing it with the retention arm.\\n2.Apply thermal paste if needed, then mount and secure the CPU cooler. Plug the fan cable into the CPU_FAN header.\\n3.Install two RAM sticks by aligning each stick's notch with its slot and pressing down until the clips lock. \\n4.Snap the motherboard's I/O shield into the back of the PC case.\\n5.Mount the motherboard in the case, aligning it with the I/O shield and standoffs, and secure it with screws.\\n6.Mount the Power Supply Unit (PSU) in the case and secure it with screws.\\n7.Connect the 24-pin main power and 8-pin CPU power cables to the motherboard.\\n8.Connect the case's front panel cables for power, USB, and audio to the motherboard headers.\\n9.Mount the storage drive in the case, then connect its SATA data and power cables.\\n10.Install the GPU in the top PCIe slot, secure its bracket, and connect its PCIe power cables.\\n11.Tidy up the cables and close the case.",
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 56.15,
+    "_viewer_seg_end_s": 66.44,
+    "_viewer_seg_duration_s": 10.29,
+    "_viewer_orig_seg_start_s": 56.15,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "speech, not stored (\"What's the next step?\"-style TTS; record has no question field); the step plan is given up front as on-screen subtitles (example_text) or a reference video (example_video)",
+    "_viewer_parquet_loc": "data/train-00001-of-00004.parquet row 150"
+   }
+  ]
+ },
+ {
+  "_viewer_case_id": "bhoMvPJKc24",
+  "_viewer_task_code": "CT",
+  "_viewer_class": "checklist tracking",
+  "_viewer_major_task": "Process tracking",
+  "_viewer_tier": "Advanced",
+  "_viewer_video": "videos/bhoMvPJKc24.mp4",
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_n_turns_in_chain": 4,
+  "records": [
+   {
+    "video_full_path": {
+     "path": "bhoMvPJKc24-seg1.mp4"
+    },
+    "video_name": "bhoMvPJKc24-seg1",
+    "class": "checklist tracking",
+    "source": "Youtube",
+    "turns": "multi",
+    "question": "Which apparatus or chemicals have not been utilized up to this point?",
+    "gt_answer": "Aluminium sulphate, dilute Sulphuric acid, alcohol-cold water mixture, cold water, china dish, spatula, crystallising dish, watch glass, filter papers, hot plate.",
+    "key_points": "1.Aluminium sulphate, dilute Sulphuric acid, alcohol-cold water mixture, cold water, china dish, spatula, crystallising dish, watch glass, filter papers, hot plate.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 0.0,
+    "_viewer_seg_end_s": 57.6,
+    "_viewer_seg_duration_s": 57.6,
+    "_viewer_orig_seg_start_s": 0.0,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "speech (TTS audio embedded in video)",
+    "_viewer_parquet_loc": "data/train-00002-of-00004.parquet row 53"
+   },
+   {
+    "video_full_path": {
+     "path": "bhoMvPJKc24-seg2.mp4"
+    },
+    "video_name": "bhoMvPJKc24-seg2",
+    "class": "checklist tracking",
+    "source": "Youtube",
+    "turns": "multi",
+    "question": "Just checking, which apparatus or chemicals haven't been used so far?",
+    "gt_answer": "Alcohol-cold water mixture, cold water, china dish, crystallising dish, watch glass, filter papers.",
+    "key_points": "1.Alcohol-cold water mixture, cold water, china dish, crystallising dish, watch glass, filter papers.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 57.6,
+    "_viewer_seg_end_s": 89.39,
+    "_viewer_seg_duration_s": 31.79,
+    "_viewer_orig_seg_start_s": 57.6,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "speech (TTS audio embedded in video)",
+    "_viewer_parquet_loc": "data/train-00002-of-00004.parquet row 54"
+   }
+  ],
+  "_viewer_note": "Excerpt: first 2 of 4 turns (seg1-seg2). Full chain is 153.8 s."
+ },
+ {
+  "_viewer_case_id": "acYN7Mkwhh0",
+  "_viewer_task_code": "MT",
+  "_viewer_class": "multitask tracking",
+  "_viewer_major_task": "Process tracking",
+  "_viewer_tier": "Advanced",
+  "_viewer_video": "videos/acYN7Mkwhh0.mp4",
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_n_turns_in_chain": 4,
+  "records": [
+   {
+    "video_full_path": {
+     "path": "acYN7Mkwhh0-seg1.mp4"
+    },
+    "video_name": "acYN7Mkwhh0-seg1",
+    "class": "multitask tracking",
+    "source": "Youtube",
+    "turns": "multi",
+    "question": "Which stage of the standard process are the coffees for Table G2 currently in?",
+    "gt_answer": "The first coffee has already created latte art and the barista is currently pouring the milk into the second cup to create latte art patterns.",
+    "key_points": "1.First coffee completed. 2.Second coffee is still creating latte.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": "The barista is making two coffees for table G2 and two coffees for table G4.Please track which stage of the process the coffees for each table are currently in:\n\n1. Extraction Phase:\nIncludes cleaning the portafilter, Grinding the beans, Tamping, and locking the portafilter into the machine to pull the espresso shot.\n\n2. Milk Texturing Phase:\nSelecting the correct milk type (Regular or Oat milk), pouring it into a pitcher, and steaming it using the wand. Note that the barista often performs this in parallel with the extraction phase.\n\n3. Pouring & Art Phase:\nPouring the textured milk into the espresso base to mix and create latte art. This marks the completion of the drink.\n\n4. Service Phase:\nOnce drinks are finished, checking if any Pastries are required, and signaling the runner to serve the table.\n",
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 0.0,
+    "_viewer_seg_end_s": 51.85,
+    "_viewer_seg_duration_s": 51.85,
+    "_viewer_orig_seg_start_s": 0.0,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "speech (TTS audio embedded in video)",
+    "_viewer_question_audio_s": [
+     47.1,
+     50.9
+    ],
+    "_viewer_parquet_loc": "data/train-00003-of-00004.parquet row 155"
+   },
+   {
+    "video_full_path": {
+     "path": "acYN7Mkwhh0-seg2.mp4"
+    },
+    "video_name": "acYN7Mkwhh0-seg2",
+    "class": "multitask tracking",
+    "source": "Youtube",
+    "turns": "multi",
+    "question": "At this moment, what is the specific production status of the coffees for table G4?",
+    "gt_answer": "The barista has started making the first Oat Cappuccinos for Table G4.He is pouring oat milk and preparing to steam.The second coffee has not started yet.",
+    "key_points": "1.First coffee:started.\\n 2.Second coffee:not started.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 51.85,
+    "_viewer_seg_end_s": 107.65,
+    "_viewer_seg_duration_s": 55.8,
+    "_viewer_orig_seg_start_s": 51.85,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "speech (TTS audio embedded in video)",
+    "_viewer_question_audio_s": [
+     100.5,
+     106.8
+    ],
+    "_viewer_parquet_loc": "data/train-00003-of-00004.parquet row 156"
+   }
+  ],
+  "_viewer_note": "Excerpt: first 2 of 4 turns (seg1-seg2). Full chain is 235.9 s."
+ },
+ {
+  "_viewer_case_id": "navigation",
+  "_viewer_task_code": "RC",
+  "_viewer_class": "real case",
+  "_viewer_major_task": "Real-world case",
+  "_viewer_tier": "Real-world",
+  "_viewer_video": "videos/navigation.mp4",
+  "_viewer_clip_offset_s": 456.98,
+  "_viewer_n_turns_in_chain": 20,
+  "records": [
+   {
+    "video_full_path": {
+     "path": "navigation-seg14.mp4"
+    },
+    "video_name": "navigation-seg14",
+    "class": "real case",
+    "source": "filmed",
+    "turns": "multi",
+    "question": "Am I sitting at the correct desk? Please tell me when my friend arrives at his desk.",
+    "gt_answer": "Yes, you're sitting at an empty desk. Your friend's desk is behind you, so I can't see it right now. Could you turn the camera around? ",
+    "key_points": "1. Yes, you are sitting at the correct desk. \\n2. You should turn the camera around so I can see your friend's desk.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 0.0,
+    "_viewer_seg_end_s": 44.88,
+    "_viewer_seg_duration_s": 44.88,
+    "_viewer_orig_seg_start_s": 456.98,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "speech (filmed user's own voice)",
+    "_viewer_parquet_loc": "data/train-00002-of-00004.parquet row 138"
+   },
+   {
+    "video_full_path": {
+     "path": "navigation-seg15.mp4"
+    },
+    "video_name": "navigation-seg15",
+    "class": "real case",
+    "source": "filmed",
+    "turns": "multi",
+    "question": "Can you see my friend's desk now?",
+    "gt_answer": "No, I can't. Your friend's desk is on the left, so could you turn the camera a bit to the left?",
+    "key_points": "1. No. \\n2. You should turn the camera to the left.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 44.88,
+    "_viewer_seg_end_s": 58.19,
+    "_viewer_seg_duration_s": 13.31,
+    "_viewer_orig_seg_start_s": 501.85,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "speech (filmed user's own voice)",
+    "_viewer_question_audio_s": [
+     54.1,
+     57.4
+    ],
+    "_viewer_parquet_loc": "data/train-00002-of-00004.parquet row 139"
+   },
+   {
+    "video_full_path": {
+     "path": "navigation-seg16.mp4"
+    },
+    "video_name": "navigation-seg16",
+    "class": "real case",
+    "source": "filmed",
+    "turns": "multi",
+    "question": "Is this better?",
+    "gt_answer": "Yes, I can see your friend's desk now. I'll remind you when he comes.",
+    "key_points": "1. Yes. Your friend's desk can been seen now.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 58.19,
+    "_viewer_seg_end_s": 69.8,
+    "_viewer_seg_duration_s": 11.61,
+    "_viewer_orig_seg_start_s": 515.16,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "speech (filmed user's own voice)",
+    "_viewer_question_audio_s": [
+     67.2,
+     68.9
+    ],
+    "_viewer_parquet_loc": "data/train-00002-of-00004.parquet row 140"
+   },
+   {
+    "video_full_path": {
+     "path": "navigation-seg17.mp4"
+    },
+    "video_name": "navigation-seg17",
+    "class": "real case",
+    "source": "filmed",
+    "turns": "multi",
+    "question": "Please tell me when my friend arrives at his desk.",
+    "gt_answer": "KEEP QUIET",
+    "key_points": "1.The model should keep quiet.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 69.8,
+    "_viewer_seg_end_s": 92.12,
+    "_viewer_seg_duration_s": 22.33,
+    "_viewer_orig_seg_start_s": 526.77,
+    "_viewer_expects_silence": "yes",
+    "_viewer_question_modality": "none new: standing request from an earlier turn",
+    "_viewer_parquet_loc": "data/train-00002-of-00004.parquet row 141"
+   },
+   {
+    "video_full_path": {
+     "path": "navigation-seg18.mp4"
+    },
+    "video_name": "navigation-seg18",
+    "class": "real case",
+    "source": "filmed",
+    "turns": "multi",
+    "question": "Please tell me when my friend arrives at his desk.",
+    "gt_answer": "KEEP QUIET",
+    "key_points": "1.The model should keep quiet.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 92.12,
+    "_viewer_seg_end_s": 124.46,
+    "_viewer_seg_duration_s": 32.34,
+    "_viewer_orig_seg_start_s": 549.1,
+    "_viewer_expects_silence": "yes",
+    "_viewer_question_modality": "none new: standing request from an earlier turn",
+    "_viewer_parquet_loc": "data/train-00002-of-00004.parquet row 142"
+   },
+   {
+    "video_full_path": {
+     "path": "navigation-seg19.mp4"
+    },
+    "video_name": "navigation-seg19",
+    "class": "real case",
+    "source": "filmed",
+    "turns": "multi",
+    "question": "Please tell me when my friend arrives at his desk.",
+    "gt_answer": "KEEP QUIET",
+    "key_points": "1.The model should keep quiet.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 124.46,
+    "_viewer_seg_end_s": 147.52,
+    "_viewer_seg_duration_s": 23.06,
+    "_viewer_orig_seg_start_s": 581.44,
+    "_viewer_expects_silence": "yes",
+    "_viewer_question_modality": "none new: standing request from an earlier turn",
+    "_viewer_parquet_loc": "data/train-00002-of-00004.parquet row 143"
+   },
+   {
+    "video_full_path": {
+     "path": "navigation-seg20.mp4"
+    },
+    "video_name": "navigation-seg20",
+    "class": "real case",
+    "source": "filmed",
+    "turns": "multi",
+    "question": "Please tell me when my friend arrives at his desk.",
+    "gt_answer": "Your friend has come and is sitting at his desk now.",
+    "key_points": "1. Your friend has come.",
+    "example_video_full_path": null,
+    "example_video": null,
+    "example_text": null,
+    "_viewer_note_bytes": "video_full_path.bytes / example_video_full_path.bytes (embedded mp4) omitted; only .path kept",
+    "_viewer_seg_start_s": 147.52,
+    "_viewer_seg_end_s": 177.07,
+    "_viewer_seg_duration_s": 29.55,
+    "_viewer_orig_seg_start_s": 604.5,
+    "_viewer_expects_silence": "no",
+    "_viewer_question_modality": "none new: standing request from an earlier turn",
+    "_viewer_parquet_loc": "data/train-00002-of-00004.parquet row 144"
+   }
+  ],
+  "_viewer_note": "Excerpt: turns 14-20 of the 20-turn blind-assistance real case (segments 1-13, 457.0 s, omitted). Contains the 'tell me when my friend arrives' proactive request and the three KEEP QUIET turns that follow it."
+ }
+]

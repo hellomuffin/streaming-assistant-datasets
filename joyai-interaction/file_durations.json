@@ -1,0 +1,23 @@
+{
+ "videos/F1-cctv-fight.mp4": 30.0,
+ "videos/F1-ucf-abuse.mp4": 33.088,
+ "videos/F1-timelens-onset.mp4": 33.033,
+ "videos/F1-vript-object.mp4": 12.64,
+ "videos/F2-backward-bili.mp4": 44.933,
+ "videos/F2-present-egolife.mp4": 30.04,
+ "videos/F2-forward-guiworld.mp4": 13.767,
+ "videos/F2-atquestion-egolife.mp4": 30.04,
+ "videos/F3-count-guiworld.mp4": 19.867,
+ "videos/F3-withhold-guiworld.mp4": 16.533,
+ "videos/F3-timedwindow-bili.mp4": 101.0,
+ "videos/F3-repcount-transrac.mp4": 11.0,
+ "videos/F4-narration-omnistar.mp4": 40.936,
+ "videos/F4-screen-narration-guiworld.mp4": 13.433,
+ "videos/F5-longvideo-bili-zh.mp4": 200.0,
+ "videos/F5-longvideo-bili-en.mp4": 35.3,
+ "videos/F6-stem-omnistar.mp4": 19.876,
+ "videos/F6-writing-guiworld.mp4": 14.9,
+ "videos/F6-toolapi-bili.mp4": 40.267,
+ "videos/F6-imagetool-bili.mp4": 80.268,
+ "videos/F6-lookup-bili.mp4": 11.8
+}

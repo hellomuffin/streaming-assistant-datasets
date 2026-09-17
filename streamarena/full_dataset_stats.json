@@ -1,0 +1,208 @@
+{
+ "total_videos": 243,
+ "total_questions": 3646,
+ "total_hours": 359.8,
+ "duration_min": {
+  "min": 52.5,
+  "mean": 88.8,
+  "median": 87.9,
+  "max": 134.2
+ },
+ "video_bytes_total_gb": 321.4,
+ "qtype_counts": {
+  "RTP": 263,
+  "HR": 877,
+  "Tool": 1732,
+  "Pro": 774
+ },
+ "horizon_layers": {
+  "HR": {
+   "L1": 181,
+   "L2": 330,
+   "L3": 184,
+   "L4": 182
+  },
+  "Pro": {
+   "L1": 259,
+   "L2": 422,
+   "L3": 93
+  }
+ },
+ "domain_videos": {
+  "Film & TV": 66,
+  "Tutorial": 57,
+  "Launch Event": 43,
+  "E-commerce Live": 21,
+  "Sports Event": 19,
+  "First-Person POV": 19,
+  "Conference & Interview": 17,
+  "Security & Surveillance": 1
+ },
+ "domain_questions": {
+  "Film & TV": 950,
+  "Tutorial": 901,
+  "Launch Event": 624,
+  "Sports Event": 336,
+  "E-commerce Live": 299,
+  "First-Person POV": 269,
+  "Conference & Interview": 262,
+  "Security & Surveillance": 5
+ },
+ "qtype_by_domain": {
+  "Film & TV": {
+   "Tool": 438,
+   "RTP": 66,
+   "HR": 239,
+   "Pro": 207
+  },
+  "Conference & Interview": {
+   "HR": 66,
+   "Tool": 124,
+   "Pro": 56,
+   "RTP": 16
+  },
+  "Launch Event": {
+   "HR": 153,
+   "Tool": 312,
+   "Pro": 123,
+   "RTP": 36
+  },
+  "E-commerce Live": {
+   "Pro": 66,
+   "RTP": 20,
+   "Tool": 128,
+   "HR": 85
+  },
+  "Tutorial": {
+   "Tool": 413,
+   "HR": 210,
+   "Pro": 201,
+   "RTP": 77
+  },
+  "Sports Event": {
+   "Pro": 72,
+   "HR": 67,
+   "RTP": 26,
+   "Tool": 171
+  },
+  "First-Person POV": {
+   "Tool": 145,
+   "RTP": 22,
+   "HR": 57,
+   "Pro": 45
+  },
+  "Security & Surveillance": {
+   "Tool": 1,
+   "Pro": 4
+  }
+ },
+ "language_videos": {
+  "zh": 189,
+  "zh+en": 26,
+  "en": 25,
+  "other": 3
+ },
+ "was_live_videos": 17,
+ "l2_videos": {
+  "Programming / Software Tutorial": 47,
+  "Movie": 40,
+  "Film & Game Launch": 22,
+  "General Live Commerce (e.g. Dong Yuhui)": 19,
+  "Anime": 16,
+  "Travel Vlog": 16,
+  "Tech Product": 16,
+  "Basketball": 15,
+  "TV Drama / Series": 10,
+  "Academic Lecture": 6,
+  "Academic Education": 6,
+  "Automotive": 5,
+  "Celebrity Interview / Podcast": 5,
+  "News Live": 5,
+  "Other Ball Sports": 4,
+  "Arts & Crafts": 3,
+  "Daily Vlog": 2,
+  "Politics & Economy Forum": 1,
+  "Game Guide / Tutorial": 1,
+  "Store / Office": 1,
+  "Food / General Merchandise": 1,
+  "Game Live": 1,
+  "Beauty": 1
+ },
+ "duration_hist_videos": {
+  "52-65 min": 32,
+  "65-80 min": 48,
+  "80-95 min": 71,
+  "95-110 min": 58,
+  "110-134 min": 34
+ },
+ "questions_per_video_hist": {
+  "1-5": 3,
+  "6-10": 29,
+  "11-15": 95,
+  "16-20": 112,
+  "21-25": 2,
+  "26+": 2
+ },
+ "questions_per_video": {
+  "min": 4,
+  "mean": 15.0,
+  "max": 29
+ },
+ "pro_horizon_hist": {
+  "<=0 s": 2,
+  "1-9 s": 61,
+  "10-29 s": 191,
+  "30-59 s": 149,
+  "1-2 min": 136,
+  "2-4 min": 142,
+  "4-10 min": 78,
+  ">10 min": 15
+ },
+ "pro_horizon_sec": {
+  "median": 55.5,
+  "mean": 113.9,
+  "max": 3470
+ },
+ "hr_horizon_hist": {
+  "<0 (evidence after ask)": 23,
+  "0-5 min": 157,
+  "5-15 min": 331,
+  "15-30 min": 184,
+  "30-60 min": 133,
+  ">60 min": 49
+ },
+ "hr_horizon_sec": {
+  "median": 725,
+  "mean": 1130.2,
+  "max": 7076
+ },
+ "hr_evidence_count_hist": {
+  "1": 627,
+  "2": 154,
+  "3": 37,
+  "4": 28,
+  "5": 8,
+  "6+": 23
+ },
+ "hr_horizon_definition_check": {
+  "ask_minus_min_evidence": 627,
+  "ask_minus_max_evidence": 250,
+  "cumulative_[0,ask]": 24
+ },
+ "ask_position_hist": {
+  "0-20%": 1190,
+  "20-40%": 856,
+  "40-60%": 710,
+  "60-80%": 578,
+  "80-100%": 312
+ },
+ "pro_ref_not_after_ask": 2,
+ "subset_cases": 12,
+ "subset_video_ids": [
+  "Prb_YPSdzH4",
+  "T3BaW1jD4dc",
+  "ajP9V6AbEAM",
+  "jvEuEu65YE8",
+  "wrHVgPEdN5g"
+ ]
+}

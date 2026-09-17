@@ -1,0 +1,803 @@
+[
+ {
+  "_viewer_key": "videos/reminder_vqa/4_bilibili_c/0645.mp4",
+  "video_uid": "4_bilibili_c/0645",
+  "caption": "你能听出广港两地的红绿灯提示声音的不同之处吗？",
+  "annotations": [
+   {
+    "qid": 4077,
+    "start_time": 0.0,
+    "end_time": 7.03,
+    "task": "Pedestrian Traffic Light",
+    "description": "The traffic light at the upcoming intersection is red."
+   },
+   {
+    "qid": 4078,
+    "start_time": 0.0,
+    "end_time": 25.23,
+    "task": "Camera Content Anomaly",
+    "description": "The camera image is tilted counterclockwise. Please rotate clockwise to adjust properly."
+   },
+   {
+    "qid": 4079,
+    "start_time": 7.05,
+    "end_time": 16.4,
+    "task": "Pedestrian Traffic Light",
+    "description": "The traffic light ahead has changed from red to green."
+   },
+   {
+    "qid": 4080,
+    "start_time": 15.59,
+    "end_time": 17.45,
+    "task": "Sidewalk Detection",
+    "description": "Sidewalk ahead. It's recommended to walk on the sidewalk."
+   },
+   {
+    "qid": 4081,
+    "start_time": 16.15,
+    "end_time": 17.55,
+    "task": "Blind Path Recognition",
+    "description": "The tactile paving is ahead of you."
+   },
+   {
+    "qid": 4082,
+    "start_time": 24.63,
+    "end_time": 25.25,
+    "task": "Service Facility Detection",
+    "description": "Trash can ahead on the left."
+   },
+   {
+    "qid": 4083,
+    "start_time": 25.24,
+    "end_time": 26.18,
+    "task": "Camera Content Anomaly",
+    "description": "Camera content is abnormal, affecting the model's perception of the surroundings. Please provide a timely alert."
+   },
+   {
+    "qid": 4084,
+    "start_time": 26.2,
+    "end_time": 29.7,
+    "task": "Pedestrian Traffic Light",
+    "description": "The upcoming intersection has a red light."
+   },
+   {
+    "qid": 4085,
+    "start_time": 28.04,
+    "end_time": 43.28,
+    "task": "Camera Obstruction",
+    "description": "The center of the camera is blocked by a hand or phone."
+   },
+   {
+    "qid": 4086,
+    "start_time": 30.06,
+    "end_time": 44.93,
+    "task": "Pedestrian Traffic Light",
+    "description": "The traffic light ahead has changed from red to green."
+   },
+   {
+    "qid": 4087,
+    "start_time": 44.95,
+    "end_time": 52.01,
+    "task": "Pedestrian Traffic Light",
+    "description": "The traffic light ahead is changing from green to red."
+   },
+   {
+    "qid": 4088,
+    "start_time": 46.94,
+    "end_time": 56.19,
+    "task": "Crosswalk",
+    "description": "You are on the right side of the crosswalk; please walk on the left side."
+   },
+   {
+    "qid": 4089,
+    "start_time": 56.19,
+    "end_time": 58.0,
+    "task": "Camera Content Anomaly",
+    "description": "Camera content is abnormal, affecting the model's perception of the surroundings. Please provide a timely alert."
+   }
+  ],
+  "_viewer_video": "videos/pr_4_bilibili_c_0645.mp4",
+  "_viewer_clip_offset_s": 0,
+  "_viewer_clip_end_s": 58.189,
+  "_viewer_source_duration_s": 58.189,
+  "_viewer_source_file": "videos/reminder_vqa/4_bilibili_c/0645.mp4",
+  "_viewer_source_bytes": 6421245,
+  "_viewer_source_platform": "Bilibili",
+  "_viewer_source_resolution": [
+   852,
+   480
+  ],
+  "_viewer_other_mode_annotations": 0,
+  "_viewer_note": "full video"
+ },
+ {
+  "_viewer_key": "videos/reminder_vqa/5_douyin_1_c/0747.mp4",
+  "video_uid": "5_douyin_1_c/0747",
+  "caption": "2024-10-09 14.45.35_盲人是怎么坐地铁出行的第一视角记录一下暖_video",
+  "annotations": [
+   {
+    "qid": 5945,
+    "start_time": 0.0,
+    "end_time": 1.26,
+    "task": "Obstacle Alert",
+    "description": "Pedestrian ahead on the left, please be cautious."
+   },
+   {
+    "qid": 5946,
+    "start_time": 2.42,
+    "end_time": 4.81,
+    "task": "Staircase Up/Down",
+    "description": "Stairs ahead, going down."
+   },
+   {
+    "qid": 5947,
+    "start_time": 4.92,
+    "end_time": 5.98,
+    "task": "Staircase Up/Down",
+    "description": "Stairs ahead."
+   },
+   {
+    "qid": 5948,
+    "start_time": 19.24,
+    "end_time": 19.86,
+    "task": "Blind Path Recognition",
+    "description": "The tactile path is located ahead of you and to your right."
+   },
+   {
+    "qid": 5949,
+    "start_time": 27.19,
+    "end_time": 28.51,
+    "task": "Blind Path Recognition",
+    "description": "The tactile paving is ahead of you."
+   },
+   {
+    "qid": 5950,
+    "start_time": 35.02,
+    "end_time": 36.42,
+    "task": "Direction Guidance",
+    "description": "The tactile path ahead only turns right."
+   },
+   {
+    "qid": 5951,
+    "start_time": 53.45,
+    "end_time": 55.22,
+    "task": "Road Branch",
+    "description": "There is a road branch on the left side of the tactile paving."
+   },
+   {
+    "qid": 5952,
+    "start_time": 65.46,
+    "end_time": 66.19,
+    "task": "Obstacle Alert",
+    "description": "Pedestrian ahead on the left, please be cautious."
+   },
+   {
+    "qid": 5953,
+    "start_time": 65.9,
+    "end_time": 68.35,
+    "task": "Blind Path Recognition",
+    "description": "The tactile paving is ahead of you."
+   },
+   {
+    "qid": 5954,
+    "start_time": 74.04,
+    "end_time": 75.48,
+    "task": "Direction Guidance",
+    "description": "The tactile path ahead only turns right."
+   },
+   {
+    "qid": 5955,
+    "start_time": 78.86,
+    "end_time": 87.91,
+    "task": "Escalator",
+    "description": "Ahead is a staircase going down. To the right front is a descending escalator, which is operating normally."
+   },
+   {
+    "qid": 5956,
+    "start_time": 78.86,
+    "end_time": 87.91,
+    "task": "Staircase Up/Down",
+    "description": "Ahead is a staircase going down. To the right front is a descending escalator, which is operating normally."
+   },
+   {
+    "qid": 5957,
+    "start_time": 91.77,
+    "end_time": 92.96,
+    "task": "Escalator",
+    "description": "Approaching the end of the escalator, please prepare to step off."
+   },
+   {
+    "qid": 5958,
+    "start_time": 94.49,
+    "end_time": 96.05,
+    "task": "Blind Path Recognition",
+    "description": "The tactile paving is ahead of you."
+   },
+   {
+    "qid": 5959,
+    "start_time": 100.05,
+    "end_time": 101.18,
+    "task": "Road Branch",
+    "description": "There is a road branch on the right side of the tactile paving."
+   },
+   {
+    "qid": 5960,
+    "start_time": 107.29,
+    "end_time": 109.84,
+    "task": "Obstacle Alert",
+    "description": "Railings ahead on the left and right, please be cautious."
+   },
+   {
+    "qid": 5961,
+    "start_time": 110.02,
+    "end_time": 111.47,
+    "task": "Obstacle Alert",
+    "description": "Security staff ahead on the right, please be aware."
+   },
+   {
+    "qid": 5962,
+    "start_time": 114.38,
+    "end_time": 116.2,
+    "task": "Obstacle Alert",
+    "description": "Security personnel ahead on the right, please be aware."
+   },
+   {
+    "qid": 5963,
+    "start_time": 115.31,
+    "end_time": 132.73,
+    "task": "Camera Obstruction",
+    "description": "The area below, to the left, and to the right of the camera is obstructed by fingers, the phone, or a cane."
+   },
+   {
+    "qid": 5964,
+    "start_time": 120.44,
+    "end_time": 122.0,
+    "task": "Obstacle Alert",
+    "description": "Security personnel are behind you to the left. Please be aware."
+   },
+   {
+    "qid": 5965,
+    "start_time": 122.96,
+    "end_time": 124.95,
+    "task": "Obstacle Alert",
+    "description": "A subway staff member is approaching from behind on your right. Please be aware."
+   },
+   {
+    "qid": 5966,
+    "start_time": 125.17,
+    "end_time": 125.74,
+    "task": "Obstacle Alert",
+    "description": "Turnstiles ahead on your left and right. Please be cautious."
+   },
+   {
+    "qid": 5967,
+    "start_time": 135.33,
+    "end_time": 135.53,
+    "task": "Obstacle Alert",
+    "description": "There is a pedestrian ahead on your right walking towards your rear, please be cautious."
+   },
+   {
+    "qid": 5968,
+    "start_time": 136.2,
+    "end_time": 136.87,
+    "task": "Obstacle Alert",
+    "description": "A pedestrian is walking behind you from the right front. Please be cautious."
+   },
+   {
+    "qid": 5969,
+    "start_time": 137.63,
+    "end_time": 138.08,
+    "task": "Obstacle Alert",
+    "description": "Pedestrian ahead on the right moving behind you, please be cautious."
+   },
+   {
+    "qid": 5970,
+    "start_time": 141.84,
+    "end_time": 145.58,
+    "task": "Box Elevator",
+    "description": "I'm sorry, but it seems like there is no content provided for translation. Could you please provide the text you would like me to translate?"
+   },
+   {
+    "qid": 5971,
+    "start_time": 148.82,
+    "end_time": 151.27,
+    "task": "Obstacle Alert",
+    "description": "A pedestrian is approaching from behind on your left. Please be cautious."
+   },
+   {
+    "qid": 5972,
+    "start_time": 149.47,
+    "end_time": 151.47,
+    "task": "Obstacle Alert",
+    "description": "A large number of pedestrians are walking behind you from the right front. Please be cautious."
+   },
+   {
+    "qid": 5973,
+    "start_time": 151.77,
+    "end_time": 155.2,
+    "task": "Active Avoidance",
+    "description": "Handrail ahead, please keep to the left."
+   },
+   {
+    "qid": 5974,
+    "start_time": 159.76,
+    "end_time": 162.8,
+    "task": "Obstacle Alert",
+    "description": "A large number of pedestrians ahead, including strollers. Please be cautious."
+   },
+   {
+    "qid": 5975,
+    "start_time": 171.74,
+    "end_time": 175.35,
+    "task": "Obstacle Alert",
+    "description": "Pedestrian ahead on the right, please be cautious."
+   },
+   {
+    "qid": 5976,
+    "start_time": 172.37,
+    "end_time": 173.68,
+    "task": "Exit/Entry Recognition",
+    "description": "Exit ahead, door is open, you may proceed directly."
+   },
+   {
+    "qid": 5977,
+    "start_time": 172.57,
+    "end_time": 174.7,
+    "task": "Obstacle Alert",
+    "description": "Subway staff ahead on the left, please be aware."
+   },
+   {
+    "qid": 5978,
+    "start_time": 175.49,
+    "end_time": 180.6,
+    "task": "Blind Path Recognition",
+    "description": "The tactile paving is ahead of you."
+   },
+   {
+    "qid": 5979,
+    "start_time": 181.1,
+    "end_time": 182.21,
+    "task": "Sign Recognition",
+    "description": "Ahead is Wuhan Metro Exit A."
+   },
+   {
+    "qid": 5980,
+    "start_time": 186.61,
+    "end_time": 188.48,
+    "task": "Obstacle Alert",
+    "description": "Turnstiles ahead on the left and right, please be cautious."
+   },
+   {
+    "qid": 5981,
+    "start_time": 188.76,
+    "end_time": 189.16,
+    "task": "Obstacle Alert",
+    "description": "Pedestrian ahead on the right, please be cautious."
+   },
+   {
+    "qid": 5982,
+    "start_time": 191.89,
+    "end_time": 196.24,
+    "task": "Exit/Entry Recognition",
+    "description": "Exit ahead, door is open, you may proceed directly."
+   },
+   {
+    "qid": 5983,
+    "start_time": 213.69,
+    "end_time": 215.74,
+    "task": "Sign Recognition",
+    "description": "The emergency exit is ahead on the right."
+   }
+  ],
+  "_viewer_video": "videos/pr_5_douyin_1_c_0747.mp4",
+  "_viewer_clip_offset_s": 71,
+  "_viewer_clip_end_s": 146,
+  "_viewer_source_duration_s": 216.933,
+  "_viewer_source_file": "videos/reminder_vqa/5_douyin_1_c/0747.mp4",
+  "_viewer_source_bytes": 81342313,
+  "_viewer_source_platform": "Douyin",
+  "_viewer_source_resolution": [
+   1080,
+   1920
+  ],
+  "_viewer_other_mode_annotations": 0,
+  "_viewer_note": "excerpt 71.0-146.0 s of 216.9 s source; clip time = original time - 71.0"
+ },
+ {
+  "_viewer_key": "videos/reminder_vqa/5_douyin_1_c/0733.mp4",
+  "video_uid": "5_douyin_1_c/0733",
+  "caption": "2024-10-21 10.31.36_盲人朋友出去买药都是怎样辨别药房的呢我是_video",
+  "annotations": [
+   {
+    "qid": 5642,
+    "start_time": 0.0,
+    "end_time": 4.33,
+    "task": "Exit/Entry Recognition",
+    "description": "Ahead is an exit with a curtain. The door and curtain are open, allowing direct passage."
+   },
+   {
+    "qid": 5643,
+    "start_time": 0.47,
+    "end_time": 169.37,
+    "task": "Camera Obstruction",
+    "description": "The area below, to the left, and to the right of the camera is obstructed by fingers or the phone."
+   },
+   {
+    "qid": 5644,
+    "start_time": 14.91,
+    "end_time": 16.2,
+    "task": "Obstacle Alert",
+    "description": "Traffic cone ahead on the right, please be cautious."
+   },
+   {
+    "qid": 5645,
+    "start_time": 45.06,
+    "end_time": 48.55,
+    "task": "Obstacle Alert",
+    "description": "There is a row of metal posts ahead on the right. Please be cautious."
+   },
+   {
+    "qid": 5646,
+    "start_time": 49.31,
+    "end_time": 50.03,
+    "task": "Obstacle Alert",
+    "description": "There is a railing ahead on the right, please be cautious."
+   },
+   {
+    "qid": 5647,
+    "start_time": 49.58,
+    "end_time": 53.94,
+    "task": "Intersection Recognition",
+    "description": "Ahead is a T-junction."
+   },
+   {
+    "qid": 5648,
+    "start_time": 51.72,
+    "end_time": 53.75,
+    "task": "Blind Path Recognition",
+    "description": "The tactile paving is ahead of you."
+   },
+   {
+    "qid": 5649,
+    "start_time": 61.12,
+    "end_time": 62.12,
+    "task": "Crossing to Other Side",
+    "description": "You are approaching the other side of the street. The tactile paving is ahead of you."
+   },
+   {
+    "qid": 5650,
+    "start_time": 61.12,
+    "end_time": 62.12,
+    "task": "Blind Path Recognition",
+    "description": "You are approaching the other side of the street. The tactile paving is ahead of you."
+   },
+   {
+    "qid": 5651,
+    "start_time": 80.46,
+    "end_time": 81.79,
+    "task": "Road Surface Condition",
+    "description": "The right side of the road has missing tiles and depressions; please walk on the left side."
+   },
+   {
+    "qid": 5652,
+    "start_time": 82.59,
+    "end_time": 85.57,
+    "task": "Active Avoidance",
+    "description": "Traffic cones ahead and to the left. Please walk to the right."
+   },
+   {
+    "qid": 5653,
+    "start_time": 103.86,
+    "end_time": 105.11,
+    "task": "Obstacle Alert",
+    "description": "Caution: There is a stone pillar ahead on your right."
+   },
+   {
+    "qid": 5654,
+    "start_time": 105.13,
+    "end_time": 109.54,
+    "task": "Stairs Up/Down",
+    "description": "Step up ahead on the right."
+   },
+   {
+    "qid": 5655,
+    "start_time": 142.75,
+    "end_time": 145.39,
+    "task": "Service Facility Detection",
+    "description": "There is a row of seats ahead, please keep to the right."
+   },
+   {
+    "qid": 5656,
+    "start_time": 142.75,
+    "end_time": 145.39,
+    "task": "Active Avoidance",
+    "description": "There is a row of seats ahead, please keep to the right."
+   },
+   {
+    "qid": 5657,
+    "start_time": 147.58,
+    "end_time": 155.48,
+    "task": "Exit/Entry Recognition",
+    "description": "Entrance ahead, the door is locked, there is a step up at the doorway."
+   }
+  ],
+  "_viewer_video": "videos/pr_5_douyin_1_c_0733.mp4",
+  "_viewer_clip_offset_s": 35,
+  "_viewer_clip_end_s": 110,
+  "_viewer_source_duration_s": 169.25,
+  "_viewer_source_file": "videos/reminder_vqa/5_douyin_1_c/0733.mp4",
+  "_viewer_source_bytes": 106223226,
+  "_viewer_source_platform": "Douyin",
+  "_viewer_source_resolution": [
+   1080,
+   1920
+  ],
+  "_viewer_other_mode_annotations": 0,
+  "_viewer_note": "excerpt 35.0-110.0 s of 169.2 s source; clip time = original time - 35.0"
+ },
+ {
+  "_viewer_key": "videos/reminder_vqa/5_douyin_1_c/0827.mp4",
+  "video_uid": "5_douyin_1_c/0827",
+  "caption": "2024-06-24 03.17.30_今日盲道路况确实有点忙记录和视障伙伴的出_video",
+  "annotations": [
+   {
+    "qid": 7257,
+    "start_time": 0.0,
+    "end_time": 1.11,
+    "task": "Obstacle Alert",
+    "description": "A row of electric scooters is parked ahead on the right. Please be cautious."
+   },
+   {
+    "qid": 7258,
+    "start_time": 8.84,
+    "end_time": 10.55,
+    "task": "Obstacle Alert",
+    "description": "Electric scooter and pedestrians ahead on the left, please be cautious."
+   },
+   {
+    "qid": 7259,
+    "start_time": 14.88,
+    "end_time": 16.34,
+    "task": "Stairs Up/Down",
+    "description": "Steps ahead."
+   },
+   {
+    "qid": 7260,
+    "start_time": 16.41,
+    "end_time": 18.95,
+    "task": "Obstacle Alert",
+    "description": "Pedestrians passing on the left, please be cautious."
+   },
+   {
+    "qid": 7261,
+    "start_time": 21.48,
+    "end_time": 21.92,
+    "task": "Obstacle Alert",
+    "description": "Pedestrian ahead on the left moving towards your rear, please be cautious."
+   },
+   {
+    "qid": 7262,
+    "start_time": 21.98,
+    "end_time": 23.75,
+    "task": "Obstacle Alert",
+    "description": "A pedestrian is approaching from behind on your left. Please be cautious."
+   },
+   {
+    "qid": 7263,
+    "start_time": 23.5,
+    "end_time": 25.63,
+    "task": "Active Avoidance",
+    "description": "Pedestrians ahead, please slow down."
+   },
+   {
+    "qid": 7264,
+    "start_time": 27.81,
+    "end_time": 32.34,
+    "task": "Obstacle Alert",
+    "description": "Caution: There is a stone pillar ahead."
+   },
+   {
+    "qid": 7265,
+    "start_time": 27.99,
+    "end_time": 29.61,
+    "task": "Obstacle Alert",
+    "description": "There is a row of electric scooters parked ahead on the right. Please be cautious."
+   },
+   {
+    "qid": 7266,
+    "start_time": 32.38,
+    "end_time": 32.94,
+    "task": "Obstacle Alert",
+    "description": "Pedestrian ahead on the right, please be cautious."
+   },
+   {
+    "qid": 7267,
+    "start_time": 32.64,
+    "end_time": 33.83,
+    "task": "Obstacle Alert",
+    "description": "Bicycle parked ahead on the left, please be cautious."
+   },
+   {
+    "qid": 7268,
+    "start_time": 35.73,
+    "end_time": 36.64,
+    "task": "Obstacle Alert",
+    "description": "A pedestrian is walking behind you from the right front. Please be cautious."
+   },
+   {
+    "qid": 7269,
+    "start_time": 36.45,
+    "end_time": 38.08,
+    "task": "Obstacle Alert",
+    "description": "Stone pillar ahead on the left, electric scooter ahead on the right. Please be cautious."
+   },
+   {
+    "qid": 7270,
+    "start_time": 45.04,
+    "end_time": 45.68,
+    "task": "Obstacle Alert",
+    "description": "A pedestrian is walking behind you on the right. Please be cautious."
+   },
+   {
+    "qid": 7271,
+    "start_time": 50.0,
+    "end_time": 53.73,
+    "task": "Obstacle Alert",
+    "description": "There is a row of stone pillars ahead, please be careful."
+   },
+   {
+    "qid": 7272,
+    "start_time": 64.62,
+    "end_time": 67.37,
+    "task": "Direction Deviation",
+    "description": "You have veered towards the 1 o'clock direction, heading towards closely spaced stone pillars. Please walk to the left."
+   },
+   {
+    "qid": 7273,
+    "start_time": 64.62,
+    "end_time": 67.37,
+    "task": "Active Avoidance",
+    "description": "You have veered towards the 1 o'clock direction, heading towards closely spaced stone pillars. Please walk to the left."
+   },
+   {
+    "qid": 7274,
+    "start_time": 70.64,
+    "end_time": 70.98,
+    "task": "Obstacle Alert",
+    "description": "Pedestrian ahead on the left moving behind you, please be cautious."
+   },
+   {
+    "qid": 7275,
+    "start_time": 76.91,
+    "end_time": 77.94,
+    "task": "Obstacle Alert",
+    "description": "A pedestrian is walking behind you from the front left. Please be cautious."
+   },
+   {
+    "qid": 7276,
+    "start_time": 78.95,
+    "end_time": 80.0,
+    "task": "Obstacle Alert",
+    "description": "Stone wall ahead on the left, please be cautious."
+   },
+   {
+    "qid": 7277,
+    "start_time": 84.65,
+    "end_time": 85.88,
+    "task": "Obstacle Alert",
+    "description": "Pedestrian approaching ahead, please be cautious."
+   },
+   {
+    "qid": 7278,
+    "start_time": 90.62,
+    "end_time": 91.95,
+    "task": "Road Surface Condition",
+    "description": "Caution: Sunken manhole cover ahead."
+   },
+   {
+    "qid": 7279,
+    "start_time": 92.21,
+    "end_time": 93.78,
+    "task": "Obstacle Alert",
+    "description": "Pedestrian approaching from the rear right, please be cautious."
+   },
+   {
+    "qid": 7280,
+    "start_time": 93.72,
+    "end_time": 96.12,
+    "task": "Obstacle Alert",
+    "description": "Pedestrian ahead on the right, please be cautious."
+   },
+   {
+    "qid": 7281,
+    "start_time": 94.17,
+    "end_time": 97.44,
+    "task": "Active Avoidance",
+    "description": "Slow down, closely spaced stone pillars ahead."
+   },
+   {
+    "qid": 7282,
+    "start_time": 96.66,
+    "end_time": 100.31,
+    "task": "Active Avoidance",
+    "description": "Electric scooters and bicycles ahead on the left. Please move to the right to avoid them."
+   },
+   {
+    "qid": 7283,
+    "start_time": 109.66,
+    "end_time": 111.65,
+    "task": "Slope Up/Down",
+    "description": "Uphill ahead."
+   },
+   {
+    "qid": 7284,
+    "start_time": 115.98,
+    "end_time": 117.81,
+    "task": "Active Avoidance",
+    "description": "Pedestrians ahead, please slow down."
+   },
+   {
+    "qid": 7285,
+    "start_time": 118.17,
+    "end_time": 121.99,
+    "task": "Obstacle Alert",
+    "description": "Electric scooter ahead on the right, please be cautious."
+   },
+   {
+    "qid": 7286,
+    "start_time": 134.68,
+    "end_time": 139.1,
+    "task": "Active Avoidance",
+    "description": "Diamond-shaped poles ahead, please proceed slowly."
+   },
+   {
+    "qid": 7287,
+    "start_time": 143.7,
+    "end_time": 149.02,
+    "task": "Obstacle Alert",
+    "description": "Pedestrian ahead on the right, please be cautious."
+   },
+   {
+    "qid": 7288,
+    "start_time": 153.41,
+    "end_time": 156.12,
+    "task": "Stairs Up/Down",
+    "description": "There are many pedestrians ahead, and you need to step down. Please be careful."
+   },
+   {
+    "qid": 7289,
+    "start_time": 153.41,
+    "end_time": 156.12,
+    "task": "Obstacle Alert",
+    "description": "There are many pedestrians ahead, and you need to step down. Please be careful."
+   },
+   {
+    "qid": 7290,
+    "start_time": 163.31,
+    "end_time": 163.49,
+    "task": "Service Facility Detection",
+    "description": "Bench ahead on the right."
+   },
+   {
+    "qid": 7291,
+    "start_time": 166.19,
+    "end_time": 168.73,
+    "task": "Obstacle Alert",
+    "description": "Pedestrian ahead, please be cautious."
+   }
+  ],
+  "_viewer_video": "videos/pr_5_douyin_1_c_0827.mp4",
+  "_viewer_clip_offset_s": 60,
+  "_viewer_clip_end_s": 135,
+  "_viewer_source_duration_s": 174.8,
+  "_viewer_source_file": "videos/reminder_vqa/5_douyin_1_c/0827.mp4",
+  "_viewer_source_bytes": 111833532,
+  "_viewer_source_platform": "Douyin",
+  "_viewer_source_resolution": [
+   1920,
+   1080
+  ],
+  "_viewer_other_mode_annotations": 0,
+  "_viewer_note": "excerpt 60.0-135.0 s of 174.8 s source; clip time = original time - 60.0"
+ }
+]

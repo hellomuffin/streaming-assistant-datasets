@@ -1,0 +1,320 @@
+[
+ {
+  "video_name": "YSJP2EGO__YSJP2EGO_short_vt_3_0__interval__79e20cd392c6ff18.mp4",
+  "task_type": "chat",
+  "source": "EgoIT",
+  "question": [
+   {
+    "content": "What's in this room? It looks like a closet or storage area.",
+    "time": "0"
+   },
+   {
+    "content": "Is someone opening a door? I see a white door with a knob.",
+    "time": "4"
+   },
+   {
+    "content": "What's that red sticker on the wooden surface?",
+    "time": "8"
+   }
+  ],
+  "response": [
+   [
+    {
+     "content": "Yeah, looks like a cozy little storage space! I see wooden cabinets, shelves with clothes and boxes, and some towels hanging up. Pretty organized actually!",
+     "time": "0"
+    }
+   ],
+   [
+    {
+     "content": "Yep, someone just opened a door! I can see the white inside panel and a round doorknob now. Nice smooth swing too.",
+     "time": "4"
+    }
+   ],
+   [
+    {
+     "content": "Oh that's a cool red sticker with a white wave logo on it! Looks like a little brand decal someone put on the wood. Adds some personality to the cabinet!",
+     "time": "8"
+    }
+   ]
+  ],
+  "_viewer_case_id": "F5-companionship-egoit",
+  "_viewer_family": "f5_casual_chat",
+  "_viewer_family_name": "Multi-turn casual chat",
+  "_viewer_subtype": "companionship_style",
+  "_viewer_timing_class": null,
+  "_viewer_release_location": {
+   "file": "chat/chat_shard_04.json",
+   "record_index": 7424
+  },
+  "_viewer_language": "en",
+  "_viewer_classification_evidence": "source EgoIT (chat shard 4), >=2 casual questions over an egocentric clip; >=50% of replies are warm/exclamatory (\"Pretty organized actually!\") -> companionship style (heuristic).",
+  "_viewer_gloss_en": null,
+  "_viewer_evidence": null,
+  "_viewer_video": null,
+  "_viewer_video_available": false,
+  "_viewer_clip_offset_s": 0,
+  "_viewer_clip_end_s": 13,
+  "_viewer_video_note": "Video not included: EgoIT interval clip cut from Charades-Ego video YSJP2EGO (interval offset not released; Charades-Ego not fetched)"
+ },
+ {
+  "video_name": "z136-aug-13-22-knarrevik_disassemble__z136-aug-13-22-knarrevik_disassemble_short_122_0__interval__6f41ba5c6b0c9f5f.mp4",
+  "task_type": "chat",
+  "source": "EgoIT",
+  "question": [
+   {
+    "content": "这个人手里拿的是什么工具？",
+    "time": "2"
+   },
+   {
+    "content": "他是在拧紧螺丝还是松开螺丝？",
+    "time": "6"
+   },
+   {
+    "content": "桌上那些黑色小零件是螺丝吗？",
+    "time": "10"
+   },
+   {
+    "content": "这个黑色家具看起来像是什么？",
+    "time": "14"
+   }
+  ],
+  "response": [
+   [
+    {
+     "content": "看起来是个内六角扳手，就是L形的那种小工具，用来拧六角螺丝的。",
+     "time": "2"
+    }
+   ],
+   [
+    {
+     "content": "应该是在拧紧螺丝，动作是在往里旋，不是往外拧。",
+     "time": "6"
+    }
+   ],
+   [
+    {
+     "content": "对，桌上散落的那些黑色小零件应该就是螺丝，还有几个已经拧在架子上了。",
+     "time": "10"
+    }
+   ],
+   [
+    {
+     "content": "看起来像是个小边桌或者置物架的部件，有腿有面板，应该是要组装起来的。",
+     "time": "14"
+    }
+   ]
+  ],
+  "_viewer_case_id": "F5-everyday-egoit",
+  "_viewer_family": "f5_casual_chat",
+  "_viewer_family_name": "Multi-turn casual chat",
+  "_viewer_subtype": "egocentric_everyday",
+  "_viewer_timing_class": null,
+  "_viewer_release_location": {
+   "file": "chat/chat_shard_04.json",
+   "record_index": 69454
+  },
+  "_viewer_language": "zh",
+  "_viewer_classification_evidence": "source EgoIT (chat shard 4), >=2 casual questions over an egocentric clip, plain tone -> everyday egocentric conversation.",
+  "_viewer_gloss_en": {
+   "label": "English translation written by the viewer author; not part of the dataset",
+   "question": [
+    "What tool is this person holding?",
+    "Is he tightening or loosening the screw?",
+    "Are those small black parts on the table screws?",
+    "What does this black piece of furniture look like?"
+   ],
+   "response": [
+    "Looks like a hex key (Allen wrench) -- that small L-shaped tool used for hex screws.",
+    "He's probably tightening it; the motion is turning inward, not unscrewing.",
+    "Yes, those small black parts scattered on the table should be screws, and a few are already screwed into the frame.",
+    "It looks like parts of a small side table or shelf unit -- it has legs and panels, so it's probably about to be assembled."
+   ]
+  },
+  "_viewer_evidence": null,
+  "_viewer_video": null,
+  "_viewer_video_available": false,
+  "_viewer_clip_offset_s": 0,
+  "_viewer_clip_end_s": 19,
+  "_viewer_video_note": "Video not included: EgoIT interval clip cut from HoloAssist video z136 (license-gated; not downloaded by policy)"
+ },
+ {
+  "video_name": "1200-1500.mp4",
+  "task_type": "chat",
+  "source": "https://www.bilibili.com/video/BV1P54y1p7Ua",
+  "question": [
+   {
+    "content": "这些自动售货机里卖的是什么饮料？",
+    "time": "56"
+   },
+   {
+    "content": "这里是在上坡吗？",
+    "time": "78"
+   },
+   {
+    "content": "这条路是往山上走的吗？",
+    "time": "129"
+   },
+   {
+    "content": "这条路是上坡还是下坡？",
+    "time": "168"
+   },
+   {
+    "content": "这是什么地方啊，看起来像个大公园？",
+    "time": "243"
+   }
+  ],
+  "response": [
+   {
+    "content": "主要是各种瓶装水和罐装汽水，有绿茶、可乐、雪碧之类的。",
+    "time": "56"
+   },
+   {
+    "content": "对，画面里能看到一段往上的台阶，旁边还有小路，周围都是绿油油的草地。",
+    "time": "78"
+   },
+   {
+    "content": "对，小路顺着草坡往上延伸，前面有几个人在坡上走呢。",
+    "time": "129"
+   },
+   {
+    "content": "看起来是缓缓的上坡路，往远处延伸。",
+    "time": "168"
+   },
+   {
+    "content": "对，是个很大的城市公园，能看到大片草坪和散步的小路，远处还有高楼。",
+    "time": "243"
+   }
+  ],
+  "_viewer_case_id": "F5-longvideo-bili-zh",
+  "_viewer_family": "f5_casual_chat",
+  "_viewer_family_name": "Multi-turn casual chat",
+  "_viewer_subtype": "long_video_extended_dialogue",
+  "_viewer_timing_class": null,
+  "_viewer_release_location": {
+   "file": "chat/chat_shard_01.json",
+   "record_index": 604563
+  },
+  "_viewer_language": "zh",
+  "_viewer_classification_evidence": "bilibili/youtube URL source, a 5-minute segment of a long video with several casual questions spread across it -> extended dialogue in long video.",
+  "_viewer_gloss_en": {
+   "label": "English translation written by the viewer author; not part of the dataset",
+   "question": [
+    "What drinks do these vending machines sell?",
+    "Is this going uphill?",
+    "Does this road lead up the hill?",
+    "Is this road uphill or downhill?",
+    "What is this place? It looks like a big park."
+   ],
+   "response": [
+    "Mostly bottled water and canned soft drinks -- green tea, cola, Sprite and the like.",
+    "Yes, you can see a flight of steps going up, a small path beside it, and green grass all around.",
+    "Yes, the path runs up along the grassy slope, and a few people are walking up ahead.",
+    "It looks like a gentle uphill road stretching into the distance.",
+    "Right, it's a very large city park -- big lawns and walking paths, with tall buildings in the distance."
+   ]
+  },
+  "_viewer_evidence": null,
+  "_viewer_video": "videos/F5-longvideo-bili-zh.mp4",
+  "_viewer_video_available": true,
+  "_viewer_clip_offset_s": 51.0,
+  "_viewer_clip_end_s": 251.0,
+  "_viewer_source_duration_s": 300.0,
+  "_viewer_source_resolution": [
+   852,
+   480
+  ],
+  "_viewer_source_has_audio": true,
+  "_viewer_video_note": "Bilibili BV1P54y1p7Ua, section 1200-1500 s via yt-dlp. Uploader copyright.",
+  "_viewer_times_outside_clip": []
+ },
+ {
+  "video_name": "1164.733-1200.033.mp4",
+  "task_type": "chat",
+  "source": "https://www.bilibili.com/video/BV1nmCRYrEij",
+  "question": [
+   {
+    "content": "What are those stone buildings used for?",
+    "time": "5"
+   },
+   {
+    "content": "What are these stone buildings?",
+    "time": "11"
+   },
+   {
+    "content": "What are these stone buildings?",
+    "time": "13"
+   },
+   {
+    "content": "What kind of outdoor seating is next to the stone house?",
+    "time": "19"
+   },
+   {
+    "content": "What are those stone structures in the yard?",
+    "time": "24"
+   },
+   {
+    "content": "What are those stone structures in the yard?",
+    "time": "26"
+   },
+   {
+    "content": "What kind of roofs do these mountain houses have?",
+    "time": "32"
+   }
+  ],
+  "response": [
+   {
+    "content": "They look like old mountain cottages or barns, probably used for storage or as rustic homes. The wooden beams on the right one might be for drying hay or vines.",
+    "time": "5"
+   },
+   {
+    "content": "They look like old stone cottages or farm buildings along a narrow grassy path, with wooded hills behind them.",
+    "time": "11"
+   },
+   {
+    "content": "They look like old stone cottages or farm buildings along a narrow grassy path. Probably in a rural European village.",
+    "time": "13"
+   },
+   {
+    "content": "There's a stone picnic table with attached benches on a paved patio area.",
+    "time": "19"
+   },
+   {
+    "content": "It's a stone picnic table with benches, set on a slate patio next to an old stone house.",
+    "time": "24"
+   },
+   {
+    "content": "Looks like a stone picnic table and benches, plus some tall carved pillars—maybe part of a pergola or outdoor art.",
+    "time": "26"
+   },
+   {
+    "content": "They have dark slate or stone tile roofs, which are pretty typical for alpine villages.",
+    "time": "32"
+   }
+  ],
+  "_viewer_case_id": "F5-longvideo-bili-en",
+  "_viewer_family": "f5_casual_chat",
+  "_viewer_family_name": "Multi-turn casual chat",
+  "_viewer_subtype": "long_video_extended_dialogue",
+  "_viewer_timing_class": null,
+  "_viewer_release_location": {
+   "file": "chat/chat_shard_01.json",
+   "record_index": 641343
+  },
+  "_viewer_language": "en",
+  "_viewer_classification_evidence": "bilibili URL source, several casual questions across a long-video segment -> extended dialogue in long video.",
+  "_viewer_gloss_en": null,
+  "_viewer_evidence": null,
+  "_viewer_video": "videos/F5-longvideo-bili-en.mp4",
+  "_viewer_video_available": true,
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_clip_end_s": 35.3,
+  "_viewer_source_duration_s": 35.3,
+  "_viewer_source_resolution": [
+   852,
+   480
+  ],
+  "_viewer_source_has_audio": true,
+  "_viewer_video_note": "Bilibili BV1nmCRYrEij, section 1164.733-1200.033 s via yt-dlp. Uploader copyright.",
+  "_viewer_times_outside_clip": []
+ }
+]

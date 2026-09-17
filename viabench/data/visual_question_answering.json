@@ -1,0 +1,228 @@
+[
+ {
+  "_viewer_key": "videos/reminder_vqa/4_bilibili_c/0524.mp4",
+  "video_uid": "4_bilibili_c/0524",
+  "caption": "第一次在这里坐公交到一个第一次来的小区是否能找对路，先试试看再说公交车盲人正能量",
+  "annotations": [
+   {
+    "qid": 71,
+    "start_time": 9.27,
+    "end_time": 10.43,
+    "task": "Blind Person Query",
+    "question": "Which bus route is this?",
+    "answer": "This is bus number 8."
+   },
+   {
+    "qid": 72,
+    "start_time": 68.98,
+    "end_time": 70.06,
+    "task": "Blind Person Query",
+    "question": "Is it possible to walk here?",
+    "answer": "Proceed, but be cautious of the steps."
+   },
+   {
+    "qid": 73,
+    "start_time": 85.07,
+    "end_time": 86.21,
+    "task": "Blind Person Query",
+    "question": "Is it not possible to go above?",
+    "answer": "Proceed with caution, step up."
+   },
+   {
+    "qid": 74,
+    "start_time": 88.19,
+    "end_time": 89.31,
+    "task": "Blind Person Query",
+    "question": "Where is the tactile paving?",
+    "answer": "The tactile paving is ahead to your right."
+   },
+   {
+    "qid": 75,
+    "start_time": 94.58,
+    "end_time": 95.39,
+    "task": "Blind Person Query",
+    "question": "Is this a tactile paving?",
+    "answer": "This is a tactile path."
+   },
+   {
+    "qid": 76,
+    "start_time": 113.35,
+    "end_time": 114.45,
+    "task": "Blind Person Query",
+    "question": "Is this a residential area?",
+    "answer": "This is a residential area."
+   },
+   {
+    "qid": 77,
+    "start_time": 125.04,
+    "end_time": 126.16,
+    "task": "Blind Person Query",
+    "question": "Can I pass through here?",
+    "answer": "The entrance to the community is ahead on the right; you may proceed."
+   },
+   {
+    "qid": 78,
+    "start_time": 194.9,
+    "end_time": 196.29,
+    "task": "Blind Person Query",
+    "question": "Turn left here?",
+    "answer": "Continue straight for a while, then turn left."
+   },
+   {
+    "qid": 79,
+    "start_time": 230.84,
+    "end_time": 232.02,
+    "task": "Blind Person Query",
+    "question": "Am I on the right route now?",
+    "answer": "On the correct route now."
+   }
+  ],
+  "_viewer_video": "videos/vqa_4_bilibili_c_0524.mp4",
+  "_viewer_clip_offset_s": 60,
+  "_viewer_clip_end_s": 135,
+  "_viewer_source_duration_s": 279.099,
+  "_viewer_source_file": "videos/reminder_vqa/4_bilibili_c/0524.mp4",
+  "_viewer_source_bytes": 29959333,
+  "_viewer_source_platform": "Bilibili",
+  "_viewer_source_resolution": [
+   480,
+   852
+  ],
+  "_viewer_other_mode_annotations": 18,
+  "_viewer_note": "excerpt 60.0-135.0 s of 279.1 s source; clip time = original time - 60.0"
+ },
+ {
+  "_viewer_key": "videos/reminder_vqa/5_douyin_1_c/0739.mp4",
+  "video_uid": "5_douyin_1_c/0739",
+  "caption": "2025-01-09 10.00.00_城市里养狗还是呼吁大家牵好狗绳文明养狗呀_video",
+  "annotations": [
+   {
+    "qid": 148,
+    "start_time": 19.9,
+    "end_time": 20.05,
+    "task": "Simulated Query",
+    "question": "Is there a bus stop nearby?",
+    "answer": "The bus stop is just ahead."
+   },
+   {
+    "qid": 149,
+    "start_time": 35.2,
+    "end_time": 35.2,
+    "task": "Blind Person Query",
+    "question": "Whose puppy is this?",
+    "answer": "Sorry, unable to determine at the moment. Please consider asking a passerby."
+   },
+   {
+    "qid": 150,
+    "start_time": 55.31,
+    "end_time": 55.46,
+    "task": "Simulated Query",
+    "question": "Is there a tactile path nearby?",
+    "answer": "The tactile paving is on your right."
+   }
+  ],
+  "_viewer_video": "videos/vqa_5_douyin_1_c_0739.mp4",
+  "_viewer_clip_offset_s": 0,
+  "_viewer_clip_end_s": 60,
+  "_viewer_source_duration_s": 105.185,
+  "_viewer_source_file": "videos/reminder_vqa/5_douyin_1_c/0739.mp4",
+  "_viewer_source_bytes": 61542313,
+  "_viewer_source_platform": "Douyin",
+  "_viewer_source_resolution": [
+   1080,
+   1920
+  ],
+  "_viewer_other_mode_annotations": 15,
+  "_viewer_note": "excerpt 0.0-60.0 s of 105.2 s source; clip time = original time - 0.0"
+ },
+ {
+  "_viewer_key": "videos/reminder_vqa/6_youtube_c/5gtUXtawqHk.mp4",
+  "video_uid": "6_youtube_c/1127",
+  "caption": "5gtUXtawqHk",
+  "annotations": [
+   {
+    "qid": 205,
+    "start_time": 21.22,
+    "end_time": 22.07,
+    "task": "Blind Person Query",
+    "question": "What's wrong with my cane? Is it bent?",
+    "answer": "Cane is functioning properly, you may continue walking."
+   },
+   {
+    "qid": 206,
+    "start_time": 39.39,
+    "end_time": 40.23,
+    "task": "Simulated Query",
+    "question": "Is there a subway station nearby?",
+    "answer": "Not yet, please keep walking forward."
+   },
+   {
+    "qid": 207,
+    "start_time": 41.89,
+    "end_time": 42.92,
+    "task": "Blind Person Query",
+    "question": "Should I turn left here?",
+    "answer": "You are currently at an intersection. You can turn left to proceed."
+   }
+  ],
+  "_viewer_video": "videos/vqa_6_youtube_c_5gtUXtawqHk.mp4",
+  "_viewer_clip_offset_s": 0,
+  "_viewer_clip_end_s": 50,
+  "_viewer_source_duration_s": 410.681,
+  "_viewer_source_file": "videos/reminder_vqa/6_youtube_c/5gtUXtawqHk.mp4",
+  "_viewer_source_bytes": 112620317,
+  "_viewer_source_platform": "YouTube",
+  "_viewer_source_resolution": [
+   720,
+   1280
+  ],
+  "_viewer_source_url": "https://www.youtube.com/watch?v=5gtUXtawqHk",
+  "_viewer_other_mode_annotations": 37,
+  "_viewer_note": "excerpt 0.0-50.0 s of 410.7 s source; clip time = original time - 0.0"
+ },
+ {
+  "_viewer_key": "videos/reminder_vqa/7_youtube_shorts_c/GkQ_kATde6o.mp4",
+  "video_uid": "7_youtube_shorts_c/1213",
+  "caption": "GkQ_kATde6o",
+  "annotations": [
+   {
+    "qid": 323,
+    "start_time": 3.49,
+    "end_time": 4.77,
+    "task": "Simulated Query",
+    "question": "Is there a car at the upcoming intersection?",
+    "answer": "No cars at the intersection, you can proceed directly."
+   },
+   {
+    "qid": 324,
+    "start_time": 14.39,
+    "end_time": 15.03,
+    "task": "Simulated Query",
+    "question": "What am I touching?",
+    "answer": "It's protruding willow branches, but they won't hinder your progress."
+   },
+   {
+    "qid": 325,
+    "start_time": 29.69,
+    "end_time": 30.46,
+    "task": "Simulated Query",
+    "question": "What's the current traffic situation?",
+    "answer": "Ahead is a sidewalk path with a small crack. Please lift your feet and proceed slowly."
+   }
+  ],
+  "_viewer_video": "videos/vqa_7_youtube_shorts_c_GkQ_kATde6o.mp4",
+  "_viewer_clip_offset_s": 0,
+  "_viewer_clip_end_s": 30.661,
+  "_viewer_source_duration_s": 30.661,
+  "_viewer_source_file": "videos/reminder_vqa/7_youtube_shorts_c/GkQ_kATde6o.mp4",
+  "_viewer_source_bytes": 25852325,
+  "_viewer_source_platform": "YouTube Shorts",
+  "_viewer_source_resolution": [
+   1080,
+   1920
+  ],
+  "_viewer_source_url": "https://www.youtube.com/watch?v=GkQ_kATde6o",
+  "_viewer_other_mode_annotations": 4,
+  "_viewer_note": "full video"
+ }
+]

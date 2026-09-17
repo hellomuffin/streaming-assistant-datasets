@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VIABench Dataset Viewer</title>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2129;
+  --border: #2d3640;
+  --text: #e6e9ed;
+  --muted: #8a949e;
+  --accent: #4dabf7;
+  --good: #51cf66;
+  --bad: #ff6b6b;
+  --highlight: #ffd43b;
+  --purple: #b197fc;
+  --orange: #ffa94d;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.5;
+}
+header {
+  padding: 12px 20px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent);
+}
+header h1 .subtitle {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 400;
+  margin-left: 8px;
+  letter-spacing: 0.3px;
+}
+.control { display: flex; align-items: center; gap: 6px; }
+.control label { color: var(--muted); font-size: 12px; }
+select, input, button {
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 6px 10px;
+  font-family: inherit;
+  font-size: 13px;
+  border-radius: 4px;
+  max-width: 340px;
+}
+button { cursor: pointer; }
+button:hover:not(:disabled) { background: var(--border); }
+button:disabled { opacity: 0.4; cursor: not-allowed; }
+.banner {
+  background: rgba(77, 171, 247, 0.08);
+  border-bottom: 1px solid var(--border);
+  padding: 8px 20px;
+  font-size: 12px;
+  color: var(--muted);
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.banner strong { color: var(--text); }
+.banner a { color: var(--accent); text-decoration: none; }
+.banner a:hover { text-decoration: underline; }
+.back-link { font-weight: 500; }
+.kbd {
+  display: inline-block;
+  padding: 1px 6px;
+  font-family: monospace;
+  font-size: 11px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-bottom-width: 2px;
+  border-radius: 3px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 16px;
+  padding: 16px;
+  max-width: 100%;
+}
+@media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px;
+  overflow: hidden;
+}
+.panel h2, .wide-panel h2 {
+  margin: 0 0 12px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--muted);
+  font-weight: 600;
+}
+.field { margin-bottom: 12px; }
+.field-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.field-value { font-size: 14px; word-break: break-word; }
+.field-value.code {
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 12px;
+  background: var(--bg);
+  padding: 6px 8px;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  color: var(--accent);
+}
+video {
+  width: 100%;
+  max-height: 560px;
+  background: #000;
+  border-radius: 4px;
+}
+.video-missing {
+  padding: 40px;
+  text-align: center;
+  color: var(--muted);
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+}
+.wide-panel {
+  grid-column: 1 / -1;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px 20px;
+}
+.task-desc {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0 0 16px;
+  padding: 10px 14px;
+  background: var(--bg);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 4px 4px 0;
+}
+.task-pill {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-right: 8px;
+}
+.pill-egolongqa   { background: rgba(77, 171, 247, 0.15);  color: var(--accent); border: 1px solid rgba(77, 171, 247, 0.4); }
+.pill-egoconv     { background: rgba(177, 151, 252, 0.15); color: var(--purple); border: 1px solid rgba(177, 151, 252, 0.4); }
+.pill-egoproactive{ background: rgba(255, 169, 77, 0.15);  color: var(--orange); border: 1px solid rgba(255, 169, 77, 0.4); }
+
+/* MCQ (egolongqa) */
+.option-list { list-style: none; padding: 0; margin: 0; }
+.option-list li {
+  padding: 10px 14px;
+  margin: 4px 0;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.option-list li.correct {
+  background: rgba(81, 207, 102, 0.12);
+  border-color: var(--good);
+}
+.option-list .opt-letter {
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-weight: 700;
+  color: var(--muted);
+  flex-shrink: 0;
+  width: 24px;
+}
+.option-list .correct .opt-letter { color: var(--good); }
+.option-list .opt-text { flex: 1; }
+.option-list .opt-badge {
+  color: var(--good);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+/* timeline */
+.timeline-wrap { margin: 4px 0 18px; }
+.timeline {
+  position: relative;
+  height: 34px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.tl-seg {
+  position: absolute;
+  top: 0; bottom: 0;
+  background: rgba(77, 171, 247, 0.28);
+  border-left: 1px solid var(--accent);
+  border-right: 1px solid var(--accent);
+  cursor: pointer;
+}
+.tl-seg:hover { background: rgba(77, 171, 247, 0.45); }
+.tl-seg.interrupt { background: rgba(255, 169, 77, 0.38); border-color: var(--orange); }
+.tl-seg.interrupt:hover { background: rgba(255, 169, 77, 0.55); }
+.tl-seg.silent { background: rgba(138, 148, 158, 0.15); border-color: var(--muted); }
+.tl-seg.silent:hover { background: rgba(138, 148, 158, 0.3); }
+.tl-marker {
+  position: absolute;
+  top: 2px;
+  width: 3px;
+  height: 30px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.tl-marker.q { background: var(--highlight); }
+.tl-marker.a { background: var(--good); }
+.tl-playhead {
+  position: absolute;
+  top: -3px; bottom: -3px;
+  width: 2px;
+  background: var(--highlight);
+  pointer-events: none;
+}
+.timeline-label {
+  font-size: 11px;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  font-family: "SFMono-Regular", Consolas, monospace;
+}
+.legend-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 11px;
+  color: var(--muted);
+  margin: 8px 0 0;
+}
+.legend-row .chip { display: inline-flex; align-items: center; gap: 5px; }
+.legend-row .swatch { width: 10px; height: 10px; border-radius: 3px; border: 1px solid rgba(0,0,0,0.4); }
+
+/* dialog (egoconv) */
+.dialog-list { display: flex; flex-direction: column; gap: 8px; }
+.dturn {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 8px 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+}
+.dturn:hover { border-color: var(--accent); }
+.dturn.active { border-color: var(--highlight); background: rgba(255, 212, 59, 0.06); }
+.dturn .role {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.role-P1 { background: rgba(77, 171, 247, 0.15); color: var(--accent); }
+.role-P2 { background: rgba(177, 151, 252, 0.15); color: var(--purple); }
+.role-Assistant { background: rgba(81, 207, 102, 0.15); color: var(--good); }
+.role-user { background: rgba(77, 171, 247, 0.15); color: var(--accent); }
+.role-assistant { background: rgba(81, 207, 102, 0.15); color: var(--good); }
+.dturn .dtime {
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 11px;
+  color: var(--muted);
+  flex-shrink: 0;
+  margin-top: 3px;
+  width: 92px;
+}
+.dturn .dtext { flex: 1; }
+.qtype-tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--highlight);
+  background: rgba(255, 212, 59, 0.1);
+  border: 1px solid rgba(255, 212, 59, 0.3);
+  border-radius: 8px;
+  padding: 0 6px;
+  margin-left: 6px;
+  vertical-align: 1px;
+}
+
+/* QA table + proactive table */
+.qa-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.qa-table th, .qa-table td {
+  padding: 8px 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.qa-table th {
+  color: var(--muted);
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  background: var(--bg);
+}
+.qa-table td.mono {
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.qa-table tr.seekable { cursor: pointer; }
+.qa-table tr.seekable:hover { background: rgba(77, 171, 247, 0.06); }
+.qa-table tr.active { background: rgba(255, 212, 59, 0.08); }
+.decision-pill {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.decision-pill.interrupt { background: rgba(255, 169, 77, 0.15); color: var(--orange); border: 1px solid rgba(255, 169, 77, 0.4); }
+.decision-pill.silent { background: rgba(138, 148, 158, 0.12); color: var(--muted); border: 1px solid rgba(138, 148, 158, 0.35); }
+
+/* raw json */
+details.raw { margin-top: 4px; }
+details.raw summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-size: 13px;
+  user-select: none;
+}
+.raw pre {
+  margin: 10px 0 0;
+  padding: 12px 14px;
+  background: #0a0d11;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 11.5px;
+  color: var(--text);
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 480px;
+  overflow-y: auto;
+}
+
+/* stats */
+.stats-summary {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 12px;
+  color: var(--muted);
+  font-family: "SFMono-Regular", Consolas, monospace;
+}
+.stats-summary b { color: var(--text); font-weight: 600; margin-left: 3px; }
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+.histogram { display: flex; flex-direction: column; gap: 3px; }
+.hist-title {
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+.hist-row {
+  display: grid;
+  grid-template-columns: 150px 1fr 70px;
+  align-items: center;
+  gap: 10px;
+  font-size: 11.5px;
+  font-family: "SFMono-Regular", Consolas, monospace;
+}
+.hist-label {
+  color: var(--muted);
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hist-bar-wrap { height: 15px; background: var(--bg); border-radius: 3px; overflow: hidden; }
+.hist-bar { height: 100%; background: linear-gradient(90deg, var(--accent), #74c0fc); }
+.hist-bar.purple { background: linear-gradient(90deg, var(--purple), #d0bfff); }
+.hist-bar.orange { background: linear-gradient(90deg, var(--orange), #ffc078); }
+.hist-count { color: var(--text); }
+.note { margin: 10px 0 0; font-size: 12px; color: var(--muted); font-style: italic; }
+
+.meta-chip { font-family: "SFMono-Regular", Consolas, monospace; font-size: 11px; background: var(--bg); border: 1px solid var(--border); color: var(--muted); padding: 3px 8px; border-radius: 3px; }
+.meta-chip b { color: var(--text); font-weight: 600; margin-left: 3px; }
+.meta-chip .swatch { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--tt); margin-right: 5px; }
+/* ---- VIABench additions ---- */
+.pill-pr  { background: rgba(255, 107, 107, 0.15); color: var(--bad); border: 1px solid rgba(255, 107, 107, 0.4); }
+.pill-vqa { background: rgba(77, 171, 247, 0.15);  color: var(--accent); border: 1px solid rgba(77, 171, 247, 0.4); }
+.pill-vgi { background: rgba(81, 207, 102, 0.15);  color: var(--good); border: 1px solid rgba(81, 207, 102, 0.4); }
+.timeline.lanes { height: auto; min-height: 34px; overflow: hidden; }
+.tl-iv {
+  position: absolute;
+  height: 12px;
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--c) 55%, transparent);
+  border: 1px solid var(--c);
+  cursor: pointer;
+  min-width: 4px;
+}
+.tl-iv:hover { background: var(--c); z-index: 2; }
+.tl-iv.point { width: 4px !important; background: var(--c); }
+.tl-grid { position: absolute; top: 0; bottom: 0; width: 1px; background: rgba(138,148,158,0.12); pointer-events: none; }
+.tl-grid span { position: absolute; bottom: 1px; left: 3px; font-size: 9px; color: var(--muted); font-family: "SFMono-Regular", Consolas, monospace; }
+.task-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  color: var(--c);
+  background: color-mix(in srgb, var(--c) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--c) 45%, transparent);
+}
+.meta-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.qa-table tr.outside td { opacity: 0.42; }
+.qa-table .tag-out { font-size: 9px; color: var(--muted); border: 1px dashed var(--border); border-radius: 8px; padding: 0 5px; margin-left: 4px; white-space: nowrap; }
+.qa-table td.q { color: var(--orange); }
+.qa-table td.ans { color: var(--good); }
+.warn {
+  font-size: 12px;
+  color: var(--highlight);
+  background: rgba(255, 212, 59, 0.07);
+  border: 1px solid rgba(255, 212, 59, 0.3);
+  border-radius: 4px;
+  padding: 8px 10px;
+  margin-top: 6px;
+}
+.goal {
+  font-size: 15px;
+  padding: 10px 14px;
+  background: rgba(81, 207, 102, 0.08);
+  border: 1px solid rgba(81, 207, 102, 0.35);
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+.goal .field-label { margin-bottom: 2px; }
+.caption-zh { font-size: 13px; }
+.hist-label.in-subset { color: var(--text); }
+.hist-label.in-subset::after { content: " •"; color: var(--highlight); }
+.hist-bar.good { background: linear-gradient(90deg, var(--good), #8ce99a); }
+.hist-bar.red { background: linear-gradient(90deg, var(--bad), #ffa8a8); }
+.hist-row.wide { grid-template-columns: 190px 1fr 96px; }
+#stats-panel .stats-grid { grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); row-gap: 28px; }
+#stats-panel .hist-row { grid-template-columns: 170px 1fr 90px; }
+#stats-panel .hist-row.wide { grid-template-columns: 200px 1fr 96px; }
+#stats-panel .hist-bar, #stats-panel .hist-bar-wrap { display: block; }
+.cur-mark { color: var(--highlight); font-family: "SFMono-Regular", Consolas, monospace; font-size: 11px; margin-left: 8px; }
+</style>
+</head>
+<body>
+<div class="banner">
+  <span>Showing a <strong>12-case</strong> representative subset (4 per mode, 360p H.264 excerpts with audio). Full release: <strong>600 videos / 45.4 h / 14,158 annotations</strong> (paper: 761 videos / 46.9 h / 14,526) —
+    <a href="https://huggingface.co/datasets/MCG-NJU/VIABench" target="_blank">HuggingFace dataset</a> ·
+    <a href="https://arxiv.org/abs/2607.14660" target="_blank">paper (arXiv 2607.14660)</a> ·
+    <a href="https://github.com/MCG-NJU/VIABench" target="_blank">code (prompts + judge)</a> ·
+    <span>no separate project page found</span> ·
+    <span style="color:var(--highlight);">videos are web-sourced from blind creators (Douyin / Bilibili / YouTube); redistribution rights unclear</span>
+  </span>
+</div>
+<header>
+  <h1>VIABench Viewer <span class="subtitle">visual-impairment assistance benchmark — NJU MCG / Shanghai AI Lab</span></h1>
+  <div class="control">
+    <label>Mode</label>
+    <select id="task-select">
+      <option value="pr">Proactive Reminder — timed alert windows</option>
+      <option value="vqa">VQA — question at a timestamp</option>
+      <option value="vgi">Vision-Guided Interaction — multi-turn guidance</option>
+    </select>
+  </div>
+  <div class="control">
+    <label>Case</label>
+    <select id="case-select"></select>
+  </div>
+  <div class="control">
+    <button id="prev-btn">&larr; Prev</button>
+    <button id="next-btn">Next &rarr;</button>
+  </div>
+  <div style="margin-left:auto;color:var(--muted);font-size:11px;">
+    <span class="kbd">&larr;</span> <span class="kbd">&rarr;</span> switch case · click rows / timeline to seek
+  </div>
+</header>
+
+<main>
+  <aside class="panel" id="metadata-panel">
+    <h2>Metadata</h2>
+    <div id="metadata-fields"></div>
+  </aside>
+  <section class="panel" id="video-panel">
+    <h2>Video (360p re-encode, original audio kept) <span class="cur-mark" id="cur-time"></span></h2>
+    <div id="video-container"></div>
+  </section>
+  <section class="wide-panel" id="task-content"></section>
+  <section class="wide-panel" id="raw-panel">
+    <h2>Raw record (all fields)</h2>
+    <details class="raw"><summary>Show full JSON for this case (original fields verbatim; keys starting with _viewer_ were added by this viewer)</summary><pre id="raw-json"></pre></details>
+  </section>
+  <section class="wide-panel" id="stats-panel"></section>
+</main>
+
+<script>
+(function() {
+  "use strict";
+
+  const MODE_INFO = {
+    pr: {
+      label: "Proactive Reminder",
+      file: "data/proactive_reminder.json",
+      desc: "Streaming, unprompted alerts. The model watches a blind person's first-person walking video and must speak up " +
+            "on its own — no question is asked — whenever something safety- or navigation-relevant appears: an obstacle, stairs, " +
+            "a crosswalk or traffic light, a road branch, a blocked camera, and so on (21 subtasks in the paper; 22 distinct labels in the " +
+            "released file because \"Stairs Up/Down\" and \"Staircase Up/Down\" both occur). Each annotation is a ground-truth " +
+            "alert window [start_time, end_time] in seconds: an alert counts only if it is issued inside the window and describes " +
+            "the right thing. Some events must be flagged at onset; for distance-aware events the window opens when the target " +
+            "enters the safe alert range (about 1.5–2 m ahead, ~50 cm to each side). Fields: qid, start_time, end_time, task " +
+            "(subtask), description (reference reminder text). Record-level: video_uid, caption (the creator's original post title " +
+            "or YouTube id — provenance).",
+    },
+    vqa: {
+      label: "VQA",
+      file: "data/visual_question_answering.json",
+      desc: "Online question answering. At a moment in the video the user asks a question about the surroundings; the model " +
+            "may use only the video up to that moment and must answer. \"Blind Person Query\" = a question the creator actually " +
+            "asked on camera; \"Simulated Query\" = a question written by annotators for that moment. Fields: qid, start_time / " +
+            "end_time (the span of the question; sometimes zero-length), task (query type), question, answer (reference; " +
+            "\"unable to determine\" answers are intentional). Scored by a GPT-5 similarity judge.",
+    },
+    vgi: {
+      label: "Vision-Guided Interaction",
+      file: "data/vision_guided_interaction.json",
+      desc: "Multi-turn guidance toward a goal. A user (purpose-filmed by trained annotators simulating blindness) states a " +
+            "goal (target, e.g. \"find the razor in the drawer\"); the assistant must steer them step by step — move or tilt the " +
+            "camera, walk, reach/touch an object — and finally confirm completion. Each record is one guidance turn with " +
+            "its window [start_time, end_time], task (Camera Manipulation / Target Manipulation / Movement Guidance / Completion), " +
+            "description (the reference instruction), target (the goal, re-worded per turn by translation) and video. Evaluated " +
+            "offline with the ground-truth dialogue history and a GPT-5 judge.",
+    },
+  };
+
+  const PALETTE = ["#ff6b6b","#4dabf7","#51cf66","#ffd43b","#b197fc","#ffa94d","#63e6be","#f783ac","#74c0fc","#c0eb75",
+                   "#e599f7","#ffc078","#38d9a9","#91a7ff","#ff8787","#a9e34b","#fcc2d7","#99e9f2","#d0bfff","#ffe066","#8ce99a","#e8590c","#adb5bd","#fab005"];
+  const FIXED = {
+    "Obstacle Alert": "#ff6b6b", "Active Avoidance": "#ffa94d", "Stairs Up/Down": "#b197fc", "Staircase Up/Down": "#d0bfff",
+    "Pedestrian Traffic Light": "#ffd43b", "Crosswalk": "#fab005", "Crossing to Other Side": "#ffe066",
+    "Camera Obstruction": "#adb5bd", "Camera Content Anomaly": "#868e96",
+    "Service Facility Detection": "#4dabf7", "Exit/Entry Recognition": "#74c0fc", "Sign Recognition": "#99e9f2",
+    "Road Branch": "#51cf66", "Intersection Recognition": "#8ce99a", "Direction Guidance": "#38d9a9", "Direction Deviation": "#63e6be",
+    "Blind Path Recognition": "#f783ac", "Sidewalk Detection": "#fcc2d7", "Road Surface Condition": "#e599f7",
+    "Slope Up/Down": "#c0eb75", "Escalator": "#91a7ff", "Box Elevator": "#e8590c",
+    "Simulated Query": "#4dabf7", "Blind Person Query": "#ffa94d",
+    "Camera Manipulation": "#4dabf7", "Target Manipulation": "#ffa94d", "Movement Guidance": "#b197fc", "Completion": "#51cf66",
+  };
+  let extra = 0;
+  function colorOf(task) {
+    if (!FIXED[task]) FIXED[task] = PALETTE[(extra++) % PALETTE.length];
+    return FIXED[task];
+  }
+
+  let data = { pr: [], vqa: [], vgi: [] };
+  let durations = {};
+  let fullStats = null;
+  const state = { mode: "pr", idx: 0 };
+
+  const $ = id => document.getElementById(id);
+  function escape(s) {
+    if (s == null) return "";
+    return String(s).replace(/[&<>"']/g, c => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+    }[c]));
+  }
+  function mmss(t) {
+    if (t == null || !isFinite(t)) return "-";
+    const neg = t < 0; t = Math.abs(t);
+    const m = Math.floor(t / 60), s = Math.floor(t % 60);
+    return (neg ? "-" : "") + m + ":" + String(s).padStart(2, "0");
+  }
+  function f2(x) { return (Math.round(x * 100) / 100).toFixed(2); }
+  function cur() { return data[state.mode][state.idx]; }
+  function anns(c) { return state.mode === "vgi" ? c._viewer_records : c.annotations; }
+  function off(c) { return c._viewer_clip_offset_s || 0; }
+  function clipDur(c) {
+    const d = durations[c._viewer_video];
+    return d != null ? d : (c._viewer_clip_end_s - off(c));
+  }
+  // where an annotation sits relative to the excerpt: "in" | "partial" | "out"
+  function where(c, a) {
+    const o = off(c), e = o + clipDur(c) + 0.05;
+    const s = a.start_time, t = Math.max(a.start_time, a.end_time);
+    if (s >= o - 0.05 && t <= e) return "in";
+    if (t < o || s > e) return "out";
+    return "partial";
+  }
+  function caseLabel(c, i) {
+    const a = anns(c);
+    if (state.mode === "vgi") {
+      return c._viewer_key + " — " + a[0].target.slice(0, 48) + (a[0].target.length > 48 ? "…" : "") + " (" + a.length + " turns)";
+    }
+    const tasks = {}; a.forEach(x => tasks[x.task] = 1);
+    return c.video_uid + " — " + a.length + " ann, " + Object.keys(tasks).length + " " + (state.mode === "pr" ? "subtasks" : "types") + " · " + c._viewer_source_platform;
+  }
+
+  // ---------------- header ----------------
+  function renderSelect() {
+    const sel = $("case-select");
+    sel.innerHTML = "";
+    data[state.mode].forEach((c, i) => {
+      const opt = document.createElement("option");
+      opt.value = i;
+      opt.textContent = (i + 1) + ". " + caseLabel(c, i);
+      sel.appendChild(opt);
+    });
+    sel.value = state.idx;
+  }
+  function nav(d) {
+    state.idx = Math.min(data[state.mode].length - 1, Math.max(0, state.idx + d));
+    render();
+  }
+
+  // ---------------- metadata ----------------
+  function field(label, value, isCode) {
+    return '<div class="field"><div class="field-label">' + escape(label) +
+      '</div><div class="field-value' + (isCode ? " code" : "") + '">' + value + "</div></div>";
+  }
+  function taskChips(a) {
+    const cnt = {};
+    a.forEach(x => cnt[x.task] = (cnt[x.task] || 0) + 1);
+    return '<div class="meta-chips">' + Object.entries(cnt).sort((x, y) => y[1] - x[1]).map(([k, n]) =>
+      '<span class="meta-chip"><span class="swatch" style="--tt:' + colorOf(k) + '"></span>' + escape(k) + "<b>" + n + "</b></span>"
+    ).join("") + "</div>";
+  }
+  function renderMetadata(c) {
+    const a = anns(c), m = state.mode;
+    const res = c._viewer_source_resolution;
+    let html = '<div style="margin-bottom:12px;"><span class="task-pill pill-' + m + '">' + MODE_INFO[m].label + "</span></div>";
+    if (m === "vgi") {
+      html += field("episode key", escape(c._viewer_key), true);
+      html += field("video", escape(a[0].video), true);
+      html += field("provenance", "purpose-filmed \"informed simulated\" VGI recording by trained annotators (not web-sourced)");
+    } else {
+      html += field("record key (video path)", escape(c._viewer_key), true);
+      html += field("video_uid", escape(c.video_uid), true);
+      html += field("caption (original post title / YouTube id)", '<span class="caption-zh">' + escape(c.caption) + "</span>");
+      let prov = escape(c._viewer_source_platform) + " — footage recorded or shared by a blind creator";
+      if (c._viewer_source_url) prov += '<br><a style="color:var(--accent)" target="_blank" href="' + escape(c._viewer_source_url) + '">' + escape(c._viewer_source_url) + "</a> (derived from caption)";
+      html += field("source platform", prov);
+      if (c._viewer_source_url && c.video_uid.indexOf(c.caption) < 0)
+        html += '<div class="note" style="margin:-6px 0 10px;">note: video_uid (' + escape(c.video_uid) + ") differs from the file name; the YouTube id is in caption.</div>";
+    }
+    html += field("source file", (res ? res[0] + "×" + res[1] + " · " : "") + (c._viewer_source_bytes / 1e6).toFixed(1) + " MB · " +
+      mmss(c._viewer_source_duration_s) + " (" + c._viewer_source_duration_s.toFixed(1) + "s)");
+    html += field("shown clip", c._viewer_note + (off(c) > 0 ? ' <span style="color:var(--highlight)">(offset ' + off(c) + "s)</span>" : ""));
+    const nin = a.filter(x => where(c, x) !== "out").length;
+    html += field("annotations", a.length + " in record · " + nin + " overlap the shown clip");
+    html += '<div class="field"><div class="field-label">' + (m === "pr" ? "subtask" : "task") + " counts</div>" + taskChips(a) + "</div>";
+    if (m !== "vgi" && c._viewer_other_mode_annotations)
+      html += field("same video in other mode", c._viewer_other_mode_annotations + (m === "pr" ? " VQA question(s)" : " Proactive Reminder window(s)") + " (not shown here)");
+    if (m !== "vgi")
+      html += '<div class="warn">Web-sourced video: the release carries an MIT tag, but the footage belongs to the original creator; redistribution rights are not documented.</div>';
+    $("metadata-fields").innerHTML = html;
+  }
+
+  // ---------------- video ----------------
+  function renderVideo(c) {
+    const container = $("video-container");
+    container.innerHTML = "";
+    const v = document.createElement("video");
+    v.id = "player";
+    v.src = c._viewer_video;
+    v.controls = true;
+    v.preload = "metadata";
+    v.addEventListener("error", () => {
+      const ph = document.createElement("div");
+      ph.className = "video-missing";
+      ph.innerHTML = '<div><b>Video not included in this subset</b></div>' +
+        '<div style="font-family:monospace;font-size:11px;margin-top:6px;">' + escape(c._viewer_video) + "</div>";
+      v.replaceWith(ph);
+    });
+    v.addEventListener("timeupdate", () => syncPlayback(c, v.currentTime));
+    container.appendChild(v);
+  }
+  function seekOrig(c, tOrig) {
+    const v = $("player");
+    if (!v) return;
+    v.currentTime = Math.max(0, Math.min(clipDur(c) - 0.1, tOrig - off(c) - 0.5));
+    v.play().catch(() => {});
+  }
+
+  // ---------------- timeline ----------------
+  function timelineHTML() {
+    return '<div class="timeline-wrap"><div class="timeline lanes" id="timeline"></div>' +
+      '<div class="timeline-label"><span id="timeline-start"></span><span id="timeline-end"></span></div>' +
+      '<div class="legend-row" id="legend-row"></div></div>';
+  }
+  function buildTimeline(c, a) {
+    const dur = clipDur(c), o = off(c);
+    const tl = $("timeline");
+    tl.innerHTML = "";
+    // grid every N seconds
+    const step = dur > 60 ? 15 : 10;
+    for (let s = 0; s <= dur; s += step) {
+      const g = document.createElement("div");
+      g.className = "tl-grid";
+      g.style.left = (s / dur * 100) + "%";
+      g.innerHTML = "<span>" + mmss(s + o) + "</span>";
+      tl.appendChild(g);
+    }
+    // lane packing on clip-visible annotations
+    const items = a.map((x, i) => ({ x, i })).filter(it => where(c, it.x) !== "out")
+      .map(it => {
+        const s = Math.max(0, it.x.start_time - o), e = Math.min(dur, Math.max(it.x.start_time, it.x.end_time) - o);
+        return { i: it.i, x: it.x, s, e: Math.max(e, s) };
+      }).sort((p, q) => p.s - q.s);
+    const laneEnds = [];
+    const minW = dur * 0.006;
+    items.forEach(it => {
+      let lane = laneEnds.findIndex(le => le <= it.s - 0.01);
+      if (lane < 0) { lane = laneEnds.length; laneEnds.push(0); }
+      laneEnds[lane] = Math.max(it.e, it.s + minW);
+      it.lane = lane;
+    });
+    const nL = Math.max(1, laneEnds.length);
+    tl.style.height = (nL * 15 + 18) + "px";
+    items.forEach(it => {
+      const el = document.createElement("div");
+      el.className = "tl-iv" + (it.e - it.s < 0.05 ? " point" : "");
+      el.style.setProperty("--c", colorOf(it.x.task));
+      el.style.left = (it.s / dur * 100).toFixed(3) + "%";
+      el.style.width = Math.max(0.35, (it.e - it.s) / dur * 100).toFixed(3) + "%";
+      el.style.top = (4 + it.lane * 15) + "px";
+      const txt = it.x.description || it.x.question || "";
+      el.title = "#" + (it.x.qid != null ? it.x.qid : it.i) + " " + it.x.task + " [" + f2(it.x.start_time) + "–" + f2(it.x.end_time) + "s]: " + txt;
+      el.addEventListener("click", () => { seekOrig(c, it.x.start_time); highlightRow(it.i); });
+      tl.appendChild(el);
+    });
+    const ph = document.createElement("div");
+    ph.className = "tl-playhead";
+    ph.id = "playhead";
+    tl.appendChild(ph);
+    $("timeline-start").textContent = "clip 0:00 = original " + mmss(o) + " (" + o + "s)";
+    $("timeline-end").textContent = "clip " + mmss(dur) + " = original " + mmss(o + dur);
+    const present = {};
+    a.forEach(x => present[x.task] = 1);
+    $("legend-row").innerHTML = Object.keys(present).map(k =>
+      '<span class="chip"><span class="swatch" style="background:' + colorOf(k) + ';"></span>' + escape(k) + "</span>"
+    ).join("") + '<span class="chip" style="margin-left:auto;">bars = annotated [start_time, end_time]; overlapping windows are stacked in lanes</span>';
+  }
+  function highlightRow(i) {
+    const r = $("row-" + i);
+    if (r) r.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
+
+  function timeCell(c, a) {
+    const o = off(c);
+    return '<td class="mono">' + f2(a.start_time) + " – " + f2(a.end_time) +
+      '<div style="opacity:.6;font-size:10.5px;">clip ' + mmss(a.start_time - o) + " – " + mmss(a.end_time - o) +
+      (a.end_time < a.start_time ? ' <span style="color:var(--bad)">end&lt;start</span>' : "") +
+      (a.end_time === a.start_time ? " (point)" : "") + "</div></td>";
+  }
+  function whereTag(c, a) {
+    const w = where(c, a);
+    return w === "out" ? '<span class="tag-out">outside excerpt</span>' : (w === "partial" ? '<span class="tag-out">partly outside</span>' : "");
+  }
+
+  // ---------------- mode renderers ----------------
+  function renderPR(c) {
+    const a = c.annotations;
+    const rows = a.map((x, i) =>
+      '<tr class="seekable' + (where(c, x) === "out" ? " outside" : "") + '" data-i="' + i + '" id="row-' + i + '">' +
+      '<td class="mono">' + x.qid + "</td>" + timeCell(c, x) +
+      '<td class="mono">' + f2(x.end_time - x.start_time) + "s</td>" +
+      '<td><span class="task-tag" style="--c:' + colorOf(x.task) + '">' + escape(x.task) + "</span>" + whereTag(c, x) + "</td>" +
+      "<td>" + escape(x.description) + "</td></tr>").join("");
+    $("task-content").innerHTML =
+      "<h2>Proactive Reminder — ground-truth alert windows</h2>" +
+      '<p class="task-desc">' + escape(MODE_INFO.pr.desc) + "</p>" +
+      timelineHTML() +
+      '<table class="qa-table"><thead><tr><th style="width:56px;">qid</th><th style="width:150px;">start – end (orig s)</th><th style="width:70px;">window</th><th style="width:230px;">task (subtask)</th><th>description (reference reminder)</th></tr></thead><tbody id="ann-body">' +
+      rows + "</tbody></table>";
+    buildTimeline(c, a);
+  }
+
+  function renderVQA(c) {
+    const a = c.annotations;
+    const rows = a.map((x, i) =>
+      '<tr class="seekable' + (where(c, x) === "out" ? " outside" : "") + '" data-i="' + i + '" id="row-' + i + '">' +
+      '<td class="mono">' + x.qid + "</td>" + timeCell(c, x) +
+      '<td><span class="task-tag" style="--c:' + colorOf(x.task) + '">' + escape(x.task) + "</span>" + whereTag(c, x) + "</td>" +
+      '<td class="q">' + escape(x.question) + "</td>" +
+      '<td class="ans">' + escape(x.answer) + "</td></tr>").join("");
+    $("task-content").innerHTML =
+      "<h2>VQA — questions asked during the video</h2>" +
+      '<p class="task-desc">' + escape(MODE_INFO.vqa.desc) + "</p>" +
+      (off(c) > 0 ? '<div class="note" style="margin:0 0 10px;">This excerpt starts at ' + off(c) + "s; in the benchmark the model sees the whole prefix from 0s up to the question.</div>" : "") +
+      timelineHTML() +
+      '<table class="qa-table"><thead><tr><th style="width:56px;">qid</th><th style="width:150px;">start – end (orig s)</th><th style="width:170px;">task</th><th style="width:34%;">question</th><th>answer (reference)</th></tr></thead><tbody id="ann-body">' +
+      rows + "</tbody></table>";
+    buildTimeline(c, a);
+  }
+
+  function renderVGI(c) {
+    const a = c._viewer_records;
+    const targets = [];
+    a.forEach(x => { if (targets.indexOf(x.target) < 0) targets.push(x.target); });
+    const rows = a.map((x, i) =>
+      '<tr class="seekable' + (where(c, x) === "out" ? " outside" : "") + '" data-i="' + i + '" id="row-' + i + '">' +
+      '<td class="mono">' + (i + 1) + "</td>" + timeCell(c, x) +
+      '<td><span class="task-tag" style="--c:' + colorOf(x.task) + '">' + escape(x.task) + "</span>" + whereTag(c, x) + "</td>" +
+      "<td>" + escape(x.description) + "</td>" +
+      '<td style="color:var(--muted);font-size:12px;">' + escape(x.target) + '<div class="mono" style="font-size:10px;opacity:.7;">' + escape(x.video) + "</div></td></tr>").join("");
+    $("task-content").innerHTML =
+      "<h2>Vision-Guided Interaction — guidance turns toward a goal</h2>" +
+      '<p class="task-desc">' + escape(MODE_INFO.vgi.desc) + "</p>" +
+      '<div class="goal"><div class="field-label">user goal (target)' + (targets.length > 1 ? " — " + targets.length + " wordings in the record" : "") + "</div>" +
+      targets.map(t => "<div>" + escape(t) + "</div>").join("") + "</div>" +
+      timelineHTML() +
+      '<table class="qa-table"><thead><tr><th style="width:40px;">turn</th><th style="width:150px;">start – end (orig s)</th><th style="width:180px;">task</th><th style="width:34%;">description (reference guidance)</th><th>target · video</th></tr></thead><tbody id="ann-body">' +
+      rows + "</tbody></table>";
+    buildTimeline(c, a);
+  }
+
+  // ---------------- playback sync ----------------
+  function syncPlayback(c, t) {
+    const dur = clipDur(c), o = off(c), T = t + o;
+    const ph = $("playhead");
+    if (ph) ph.style.left = Math.min(100, t / dur * 100).toFixed(2) + "%";
+    $("cur-time").textContent = "clip " + mmss(t) + " · original " + T.toFixed(1) + "s";
+    const body = $("ann-body");
+    if (!body) return;
+    const a = anns(c);
+    Array.prototype.forEach.call(body.children, el => {
+      const x = a[+el.dataset.i];
+      const pad = x.end_time - x.start_time < 0.5 ? 1.0 : 0.25;
+      el.classList.toggle("active", T >= x.start_time - pad && T <= Math.max(x.start_time, x.end_time) + pad);
+    });
+  }
+
+  // ---------------- stats ----------------
+  function histHTML(title, rows, opts) {
+    opts = opts || {};
+    const maxN = Math.max.apply(null, rows.map(r => r[1])) || 1;
+    return '<div><div class="hist-title">' + title + '</div><div class="histogram">' +
+      rows.map(r => {
+        const inSub = opts.subset && opts.subset[r[0]];
+        const sw = opts.color ? '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;background:' + colorOf(r[0]) + '"></span>' : "";
+        return '<div class="hist-row' + (opts.wide ? " wide" : "") + '"><span class="hist-label' + (inSub ? " in-subset" : "") + '" title="' + escape(r[0]) + '">' + sw + escape(r[0]) + "</span>" +
+          '<span class="hist-bar-wrap"><span class="hist-bar ' + (opts.cls || "") + '" style="width:' + (r[1] / maxN * 100).toFixed(1) + '%"></span></span>' +
+          '<span class="hist-count">' + r[1].toLocaleString() + (r[2] != null ? ' <span style="color:var(--muted);font-size:10.5px;">' + r[2] + "</span>" : "") + "</span></div>";
+      }).join("") + "</div>" + (opts.note ? '<div class="note">' + opts.note + "</div>" : "") + "</div>";
+  }
+  function renderStats() {
+    const p = $("stats-panel");
+    if (!fullStats) { p.innerHTML = "<h2>Full dataset stats</h2><div class='note'>full_dataset_stats.json not found.</div>"; return; }
+    const s = fullStats, M = s.modes, R = s.released, P = s.paper_reported;
+    const sub = { pr: {}, vqa: {}, vgi: {} };
+    ["pr", "vqa", "vgi"].forEach(m => data[m].forEach(c => (m === "vgi" ? c._viewer_records : c.annotations).forEach(x => sub[m][x.task] = 1)));
+    const pr = M.proactive_reminder, vq = M.visual_question_answering, vg = M.vision_guided_interaction;
+    p.innerHTML = "<h2>Full dataset stats (entire public release, all three annotation files)</h2>" +
+      '<div class="stats-summary">' +
+      "<span>videos<b>" + R.videos + "</b> (paper " + P.videos + ")</span>" +
+      "<span>hours<b>" + R.hours + "</b> (paper " + P.hours + ")</span>" +
+      "<span>annotations<b>" + R.annotations.toLocaleString() + "</b> (paper " + P.annotations.toLocaleString() + ")</span>" +
+      "<span>PR<b>" + pr.annotations.toLocaleString() + "</b> on " + pr.videos + " videos</span>" +
+      "<span>VQA<b>" + vq.annotations + "</b> on " + vq.videos + " videos</span>" +
+      "<span>VGI<b>" + vg.annotations + "</b> in " + vg.episodes + " episodes</span>" +
+      "<span>video size<b>" + R.video_gb + " GB</b></span>" +
+      "<span>in this subset<b>12</b></span>" +
+      "</div>" +
+      '<div class="stats-grid">' +
+      histHTML("Proactive Reminder — annotations per subtask (" + pr.task_labels + " labels) · • = in subset", pr.task_counts, { subset: sub.pr, color: true, wide: true, cls: "red",
+        note: "\"Stairs Up/Down\" and \"Staircase Up/Down\" look like one subtask split in two; 2 query labels sit in the PR file by mistake. Merging gives the paper's 21." }) +
+      '<div>' +
+      histHTML("PR alert-window length (end_time − start_time)", pr.window_len_hist, { cls: "orange",
+        note: "median " + pr.window_len_median_s + "s, mean " + pr.window_len_mean_s + "s. Data issues: " + pr.anomalies.end_before_start + " windows end before they start, " +
+          pr.anomalies.zero_length + " zero-length, " + pr.anomalies.end_after_video_end + " end after the video ends." }) +
+      '<div style="height:18px"></div>' +
+      histHTML("PR annotations per video", pr.per_video_hist, { cls: "red" }) +
+      "</div>" +
+      '<div>' +
+      histHTML("VQA — query type", vq.task_counts, { subset: sub.vqa, color: true, note: vq.zero_length_question_span + " questions have a zero-length span; " + vq.answer_is_cannot_determine + " reference answers say \"unable to determine\"; " + vq.end_before_start + " has end < start." }) +
+      '<div style="height:18px"></div>' +
+      histHTML("VQA questions per video", vq.per_video_hist, {}) +
+      "</div>" +
+      '<div>' +
+      histHTML("VGI — turn type", vg.task_counts, { subset: sub.vgi, color: true, cls: "good" }) +
+      '<div style="height:18px"></div>' +
+      histHTML("VGI turns per episode", vg.per_episode_hist, { cls: "good", note: vg.distinct_target_strings + " distinct target strings across " + vg.episodes + " episodes (goals re-worded turn to turn by the translation step)." }) +
+      "</div>" +
+      histHTML("Videos by source platform (count · hours)", s.videos_by_platform.map(r => [r[0], r[1], r[2] + " h"]), { cls: "purple", wide: true,
+        note: "Douyin, Bilibili and YouTube videos were found by keyword search and posted by blind creators; the 70 VGI videos were purpose-filmed. The paper's 761 videos include 161 not in the public release." }) +
+      histHTML("Source video duration (all " + R.videos + " files, ffprobe)", s.video_duration_hist, { cls: "",
+        note: "median " + mmss(s.video_duration_s.median) + ", mean " + mmss(s.video_duration_s.mean) + ", max " + mmss(s.video_duration_s.max) + "; source resolution: " +
+          s.source_resolution.map(r => r[0] + " " + r[1]).join(", ") }) +
+      "</div>";
+  }
+
+  // ---------------- main render ----------------
+  function render() {
+    const c = cur();
+    renderSelect();
+    $("task-select").value = state.mode;
+    $("prev-btn").disabled = state.idx === 0;
+    $("next-btn").disabled = state.idx === data[state.mode].length - 1;
+    $("cur-time").textContent = "";
+    renderMetadata(c);
+    renderVideo(c);
+    if (state.mode === "pr") renderPR(c);
+    else if (state.mode === "vqa") renderVQA(c);
+    else renderVGI(c);
+    Array.prototype.forEach.call($("ann-body").children, el => {
+      el.addEventListener("click", () => seekOrig(c, anns(c)[+el.dataset.i].start_time));
+    });
+    $("raw-json").textContent = JSON.stringify(c, null, 1);
+  }
+
+  $("task-select").addEventListener("change", e => { state.mode = e.target.value; state.idx = 0; render(); });
+  $("case-select").addEventListener("change", e => { state.idx = +e.target.value; render(); });
+  $("prev-btn").addEventListener("click", () => nav(-1));
+  $("next-btn").addEventListener("click", () => nav(1));
+  document.addEventListener("keydown", e => {
+    if (e.target.tagName === "INPUT" || e.target.tagName === "SELECT") return;
+    if (e.key === "ArrowLeft") nav(-1);
+    if (e.key === "ArrowRight") nav(1);
+  });
+
+  Promise.all([
+    fetch(MODE_INFO.pr.file).then(r => r.json()),
+    fetch(MODE_INFO.vqa.file).then(r => r.json()),
+    fetch(MODE_INFO.vgi.file).then(r => r.json()),
+    fetch("file_durations.json").then(r => r.json()).catch(() => ({})),
+    fetch("full_dataset_stats.json").then(r => r.json()).catch(() => null),
+  ]).then(([a, b, g, durs, stats]) => {
+    data.pr = a; data.vqa = b; data.vgi = g;
+    durations = durs;
+    fullStats = stats;
+    const h = (location.hash || "").replace("#", "");
+    if (h && data[h]) state.mode = h;
+    render();
+    renderStats();
+  }).catch(err => {
+    document.querySelector("main").innerHTML =
+      '<div class="panel" style="grid-column:1/-1;color:var(--bad);">Failed to load data: ' + escape(err.message) +
+      "<br>If opened via file://, run <code>python3 -m http.server</code> and open via http://localhost:8000/</div>";
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+[
+ {
+  "video_name": "1711.7-1756.633.mp4",
+  "task_type": "chat",
+  "source": "https://www.bilibili.com/video/BV1ok4y1E7wx",
+  "question": [
+   {
+    "content": "Based on what happened shortly before this, What kind of road is this person driving on?",
+    "time": "21"
+   }
+  ],
+  "response": [
+   [
+    {
+     "content": "Looks like a narrow rural or country road with trees and some hills on the sides.",
+     "time": "21"
+    }
+   ]
+  ],
+  "_viewer_case_id": "F2-backward-bili",
+  "_viewer_family": "f2_timed_qa",
+  "_viewer_family_name": "Time-aligned QA (backward / present / forward)",
+  "_viewer_subtype": "open_QA",
+  "_viewer_timing_class": "backward",
+  "_viewer_release_location": {
+   "file": "chat/chat_shard_01.json",
+   "record_index": 582344
+  },
+  "_viewer_language": "en",
+  "_viewer_classification_evidence": "plain question answered at the question second; wording \"Based on what happened shortly before this\" marks the evidence as already past -> backward.",
+  "_viewer_gloss_en": null,
+  "_viewer_evidence": {
+   "time_s": null,
+   "rule": "backward: evidence lies before the question; exact second not stored in the release"
+  },
+  "_viewer_video": "videos/F2-backward-bili.mp4",
+  "_viewer_video_available": true,
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_clip_end_s": 44.933,
+  "_viewer_source_duration_s": 44.933,
+  "_viewer_source_resolution": [
+   852,
+   480
+  ],
+  "_viewer_source_has_audio": true,
+  "_viewer_video_note": "Bilibili BV1ok4y1E7wx, section 1711.7-1756.633 s downloaded with yt-dlp (the record video_name is that section). Uploader copyright.",
+  "_viewer_times_outside_clip": []
+ },
+ {
+  "video_name": "DAY1_A4_LUCIA_13570000.mp4",
+  "task_type": "chat",
+  "source": "EgoLife",
+  "question": [
+   {
+    "content": "白板上正在进行的主要活动是什么？",
+    "time": "8"
+   }
+  ],
+  "response": [
+   {
+    "content": "有人正在认真地在白板上添加新的公式和笔记。",
+    "time": "8"
+   }
+  ],
+  "_viewer_case_id": "F2-present-egolife",
+  "_viewer_family": "f2_timed_qa",
+  "_viewer_family_name": "Time-aligned QA (backward / present / forward)",
+  "_viewer_subtype": "open_QA",
+  "_viewer_timing_class": "present",
+  "_viewer_release_location": {
+   "file": "chat/chat_shard_02.json",
+   "record_index": 484289
+  },
+  "_viewer_language": "zh",
+  "_viewer_classification_evidence": "question answered at the question second, wording is present progressive (\"正在进行\") -> present.",
+  "_viewer_gloss_en": {
+   "label": "English translation written by the viewer author; not part of the dataset",
+   "question": [
+    "What is the main activity going on at the whiteboard?"
+   ],
+   "response": [
+    "Someone is carefully adding new formulas and notes on the whiteboard."
+   ]
+  },
+  "_viewer_evidence": {
+   "time_s": 8,
+   "rule": "present: evidence appears as the question is asked"
+  },
+  "_viewer_video": "videos/F2-present-egolife.mp4",
+  "_viewer_video_available": true,
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_clip_end_s": 30.04,
+  "_viewer_source_duration_s": 30.04,
+  "_viewer_source_resolution": [
+   1408,
+   1408
+  ],
+  "_viewer_source_has_audio": true,
+  "_viewer_video_note": "EgoLife A4_LUCIA/DAY1/DAY1_A4_LUCIA_13570000.mp4 from HF lmms-lab/EgoLife (not gated). EgoLife footage: see the dataset card license; faces are visible.",
+  "_viewer_times_outside_clip": []
+ },
+ {
+  "video_name": "4197.mp4",
+  "task_type": "chat",
+  "source": "gui_world",
+  "question": [
+   {
+    "content": "用户在 Microsoft Teams 应用中采取了哪些操作步骤来创建新的社区公告？",
+    "time": "9"
+   }
+  ],
+  "response": [
+   {
+    "content": "用户首先导航到左侧边栏的“社区”部分。",
+    "time": "10"
+   },
+   {
+    "content": "然后他们点击选择了“Apex Legends”社区。",
+    "time": "11"
+   },
+   {
+    "content": "进入社区后，他们点击了“公告”按钮，打开了一个带有编辑区域的新界面。",
+    "time": "12"
+   },
+   {
+    "content": "接着用户点击主标题编辑区域，输入“Introduction”来设置公告的标题。",
+    "time": "13"
+   }
+  ],
+  "_viewer_case_id": "F2-forward-guiworld",
+  "_viewer_family": "f2_timed_qa",
+  "_viewer_family_name": "Time-aligned QA (backward / present / forward)",
+  "_viewer_subtype": "open_QA",
+  "_viewer_timing_class": "forward",
+  "_viewer_release_location": {
+   "file": "chat/chat_shard_03.json",
+   "record_index": 28681
+  },
+  "_viewer_language": "zh",
+  "_viewer_classification_evidence": "question at 9 s, answer turns at 10-13 s as the steps appear on screen (delay > 0, no timer instruction) -> forward.",
+  "_viewer_gloss_en": {
+   "label": "English translation written by the viewer author; not part of the dataset",
+   "question": [
+    "What steps did the user take in the Microsoft Teams app to create a new community announcement?"
+   ],
+   "response": [
+    "The user first navigates to the \"Communities\" section of the left sidebar.",
+    "Then they click to select the \"Apex Legends\" community.",
+    "Inside the community, they click the \"Announcement\" button, which opens a new view with an editing area.",
+    "Next the user clicks the main-title editing area and types \"Introduction\" to set the announcement title."
+   ]
+  },
+  "_viewer_evidence": {
+   "time_s": 10,
+   "rule": "forward: evidence = first answer/alert second (the model stays silent until then)"
+  },
+  "_viewer_video": "videos/F2-forward-guiworld.mp4",
+  "_viewer_video_available": true,
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_clip_end_s": 13.767,
+  "_viewer_source_duration_s": 13.767,
+  "_viewer_source_resolution": [
+   2560,
+   1440
+  ],
+  "_viewer_source_has_audio": true,
+  "_viewer_video_note": "GUI-World software/4197.mp4 from HF ONE-Lab/GUI-World (screen recording). Id matched by unique file name.",
+  "_viewer_times_outside_clip": []
+ },
+ {
+  "video_name": "DAY1_A5_KATRINA_19033000.mp4",
+  "task_type": "chat",
+  "source": "EgoLife",
+  "question": [
+   {
+    "content": "What action did I take after realizing the bag was heavy?",
+    "time": "17"
+   }
+  ],
+  "response": [
+   {
+    "content": "You put the bag down and picked up another bag.",
+    "time": "17"
+   }
+  ],
+  "_viewer_case_id": "F2-atquestion-egolife",
+  "_viewer_family": "f2_timed_qa",
+  "_viewer_family_name": "Time-aligned QA (backward / present / forward)",
+  "_viewer_subtype": "open_QA",
+  "_viewer_timing_class": "at_question_undetermined",
+  "_viewer_release_location": {
+   "file": "chat/chat_shard_02.json",
+   "record_index": 456568
+  },
+  "_viewer_language": "en",
+  "_viewer_classification_evidence": "answered at the question second with no timing cue in the wording -> at-question (backward vs present cannot be told from the record; 73% of family 2).",
+  "_viewer_gloss_en": null,
+  "_viewer_evidence": {
+   "time_s": null,
+   "rule": "answered at the question second; backward vs present not derivable from the record"
+  },
+  "_viewer_video": "videos/F2-atquestion-egolife.mp4",
+  "_viewer_video_available": true,
+  "_viewer_clip_offset_s": 0.0,
+  "_viewer_clip_end_s": 30.04,
+  "_viewer_source_duration_s": 30.04,
+  "_viewer_source_resolution": [
+   1408,
+   1408
+  ],
+  "_viewer_source_has_audio": true,
+  "_viewer_video_note": "EgoLife A5_KATRINA/DAY1/DAY1_A5_KATRINA_19033000.mp4 from HF lmms-lab/EgoLife.",
+  "_viewer_times_outside_clip": []
+ }
+]

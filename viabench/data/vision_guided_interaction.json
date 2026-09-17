@@ -1,0 +1,502 @@
+[
+ {
+  "_viewer_key": "4_convert_files/043",
+  "_viewer_records": [
+   {
+    "start_time": 0.0,
+    "end_time": 1.76,
+    "task": "Camera Manipulation",
+    "description": "Please move the camera up.",
+    "target": "Please help me find the package with the pickup code 10025.",
+    "video": "videos/interaction/043.mp4"
+   },
+   {
+    "start_time": 5.6,
+    "end_time": 7.3,
+    "task": "Camera Manipulation",
+    "description": "Please move the camera to the left.",
+    "target": "Please help me find the package with the pickup code 10025.",
+    "video": "videos/interaction/043.mp4"
+   },
+   {
+    "start_time": 12.06,
+    "end_time": 13.68,
+    "task": "Movement Guidance",
+    "description": "Please move forward.",
+    "target": "Please help me find the package with the pickup code 10025.",
+    "video": "videos/interaction/043.mp4"
+   },
+   {
+    "start_time": 18.21,
+    "end_time": 19.32,
+    "task": "Target Manipulation",
+    "description": "Please touch the delivery ahead.",
+    "target": "Please help me find the package with the pickup code 10025.",
+    "video": "videos/interaction/043.mp4"
+   },
+   {
+    "start_time": 23.51,
+    "end_time": 24.13,
+    "task": "Camera Manipulation",
+    "description": "Please move the camera to the right.",
+    "target": "Please help me find the package with the pickup code 10025.",
+    "video": "videos/interaction/043.mp4"
+   },
+   {
+    "start_time": 32.2,
+    "end_time": 33.81,
+    "task": "Target Manipulation",
+    "description": "Please touch the delivery in front of you.",
+    "target": "Help me find the package with the pickup code 10025.",
+    "video": "videos/interaction/043.mp4"
+   },
+   {
+    "start_time": 39.39,
+    "end_time": 42.88,
+    "task": "Target Manipulation",
+    "description": "Please touch the delivery on your right.",
+    "target": "Please help me find the package with the pickup code 10025.",
+    "video": "videos/interaction/043.mp4"
+   },
+   {
+    "start_time": 45.26,
+    "end_time": 48.56,
+    "task": "Target Manipulation",
+    "description": "Please take out the package.",
+    "target": "Please help me find the package with the pickup code 10025.",
+    "video": "videos/interaction/043.mp4"
+   },
+   {
+    "start_time": 56.02,
+    "end_time": 57.87,
+    "task": "Target Manipulation",
+    "description": "Please move the package to the left.",
+    "target": "Please help me find the package with the pickup code 10025.",
+    "video": "videos/interaction/043.mp4"
+   },
+   {
+    "start_time": 60.0,
+    "end_time": 64.55,
+    "task": "Target Manipulation",
+    "description": "Please turn the package to the right.",
+    "target": "Please help me find the package with the pickup code 10025.",
+    "video": "videos/interaction/043.mp4"
+   },
+   {
+    "start_time": 71.28,
+    "end_time": 72.81,
+    "task": "Target Manipulation",
+    "description": "Please move the package to the left.",
+    "target": "Help me find the package with the pickup code 10025.",
+    "video": "videos/interaction/043.mp4"
+   },
+   {
+    "start_time": 74.12,
+    "end_time": 76.41,
+    "task": "Completion",
+    "description": "Confirm it is the correct package.",
+    "target": "Please help me find the package with the pickup code 10025.",
+    "video": "videos/interaction/043.mp4"
+   }
+  ],
+  "_viewer_video": "videos/vgi_interaction_043.mp4",
+  "_viewer_clip_offset_s": 0,
+  "_viewer_clip_end_s": 78.7,
+  "_viewer_source_duration_s": 78.7,
+  "_viewer_source_file": "videos/interaction/043.mp4",
+  "_viewer_source_bytes": 16288954,
+  "_viewer_source_platform": "purpose-filmed (VGI)",
+  "_viewer_source_resolution": [
+   720,
+   1280
+  ],
+  "_viewer_note": "full video"
+ },
+ {
+  "_viewer_key": "4_convert_files/075",
+  "_viewer_records": [
+   {
+    "start_time": 0.0,
+    "end_time": 4.05,
+    "task": "Camera Manipulation",
+    "description": "Please move the camera to the right.",
+    "target": "Help me find an empty chair; I'd like to sit for a while.",
+    "video": "videos/interaction/075.mp4"
+   },
+   {
+    "start_time": 9.73,
+    "end_time": 14.18,
+    "task": "Movement Guidance",
+    "description": "Please move forward.",
+    "target": "Help me find an empty chair; I'd like to sit for a while.",
+    "video": "videos/interaction/075.mp4"
+   },
+   {
+    "start_time": 19.6,
+    "end_time": 23.61,
+    "task": "Camera Manipulation",
+    "description": "Please tilt the camera downward.",
+    "target": "Help me find an empty chair; I'd like to sit for a while.",
+    "video": "videos/interaction/075.mp4"
+   },
+   {
+    "start_time": 26.16,
+    "end_time": 31.48,
+    "task": "Movement Guidance",
+    "description": "Please move forward and look for a chair.",
+    "target": "Help me find an empty chair; I'd like to sit for a while.",
+    "video": "videos/interaction/075.mp4"
+   },
+   {
+    "start_time": 34.75,
+    "end_time": 39.96,
+    "task": "Movement Guidance",
+    "description": "Please move forward.",
+    "target": "Help me find an empty chair; I'd like to sit for a while.",
+    "video": "videos/interaction/075.mp4"
+   },
+   {
+    "start_time": 44.63,
+    "end_time": 48.45,
+    "task": "Target Manipulation",
+    "description": "Please pull the object backward with your hand.",
+    "target": "Help me find an empty chair; I'd like to sit for a while.",
+    "video": "videos/interaction/075.mp4"
+   },
+   {
+    "start_time": 52.03,
+    "end_time": 53.26,
+    "task": "Camera Manipulation",
+    "description": "Please move the camera backward.",
+    "target": "Help me find an empty chair; I'd like to sit for a while.",
+    "video": "videos/interaction/075.mp4"
+   },
+   {
+    "start_time": 57.93,
+    "end_time": 62.03,
+    "task": "Movement Guidance",
+    "description": "Please move forward.",
+    "target": "Help me find an empty chair; I'd like to sit for a while.",
+    "video": "videos/interaction/075.mp4"
+   },
+   {
+    "start_time": 67.21,
+    "end_time": 68.66,
+    "task": "Completion",
+    "description": "Please adjust the chair position with your hand and sit down.",
+    "target": "Help me find an empty chair; I'd like to sit for a while.",
+    "video": "videos/interaction/075.mp4"
+   }
+  ],
+  "_viewer_video": "videos/vgi_interaction_075.mp4",
+  "_viewer_clip_offset_s": 0,
+  "_viewer_clip_end_s": 76.928,
+  "_viewer_source_duration_s": 76.928,
+  "_viewer_source_file": "videos/interaction/075.mp4",
+  "_viewer_source_bytes": 135761227,
+  "_viewer_source_platform": "purpose-filmed (VGI)",
+  "_viewer_source_resolution": [
+   1280,
+   720
+  ],
+  "_viewer_note": "full video"
+ },
+ {
+  "_viewer_key": "4_convert_files/084",
+  "_viewer_records": [
+   {
+    "start_time": 0.0,
+    "end_time": 3.46,
+    "task": "Camera Manipulation",
+    "description": "Please move the camera backward.",
+    "target": "I am looking for a white short-sleeve shirt.",
+    "video": "videos/interaction/084.mp4"
+   },
+   {
+    "start_time": 5.31,
+    "end_time": 10.99,
+    "task": "Target Manipulation",
+    "description": "Please touch the object with your hand.",
+    "target": "I would like to find a white short-sleeve shirt.",
+    "video": "videos/interaction/084.mp4"
+   },
+   {
+    "start_time": 13.21,
+    "end_time": 14.36,
+    "task": "Target Manipulation",
+    "description": "Please pick up the object and pull it backward.",
+    "target": "I am looking for a white short-sleeve shirt.",
+    "video": "videos/interaction/084.mp4"
+   },
+   {
+    "start_time": 16.68,
+    "end_time": 17.03,
+    "task": "Target Manipulation",
+    "description": "Please pick up the object and flip it.",
+    "target": "I am looking for a white short-sleeve shirt.",
+    "video": "videos/interaction/084.mp4"
+   },
+   {
+    "start_time": 20.58,
+    "end_time": 22.27,
+    "task": "Camera Manipulation",
+    "description": "Please move the camera to the right.",
+    "target": "I am looking for a white short-sleeve shirt.",
+    "video": "videos/interaction/084.mp4"
+   },
+   {
+    "start_time": 24.5,
+    "end_time": 26.51,
+    "task": "Target Manipulation",
+    "description": "Please pick up the object and rotate or flip it.",
+    "target": "I am looking for a white short-sleeve shirt.",
+    "video": "videos/interaction/084.mp4"
+   },
+   {
+    "start_time": 28.25,
+    "end_time": 28.63,
+    "task": "Target Manipulation",
+    "description": "Please move the object with your hand.",
+    "target": "I am looking for a white short-sleeve shirt.",
+    "video": "videos/interaction/084.mp4"
+   },
+   {
+    "start_time": 29.47,
+    "end_time": 29.97,
+    "task": "Target Manipulation",
+    "description": "Please touch the object with your hand and pick it up.",
+    "target": "I would like to find a white short-sleeve shirt.",
+    "video": "videos/interaction/084.mp4"
+   },
+   {
+    "start_time": 33.69,
+    "end_time": 34.52,
+    "task": "Target Manipulation",
+    "description": "Please flip the object with your hand.",
+    "target": "I am looking for a white short-sleeve shirt.",
+    "video": "videos/interaction/084.mp4"
+   },
+   {
+    "start_time": 35.62,
+    "end_time": 37.79,
+    "task": "Camera Manipulation",
+    "description": "Please move the camera backward.",
+    "target": "I am looking for a white short-sleeve shirt.",
+    "video": "videos/interaction/084.mp4"
+   },
+   {
+    "start_time": 40.48,
+    "end_time": 43.29,
+    "task": "Target Manipulation",
+    "description": "Please put down the object.",
+    "target": "I am looking for a white short-sleeve shirt.",
+    "video": "videos/interaction/084.mp4"
+   },
+   {
+    "start_time": 45.5,
+    "end_time": 49.94,
+    "task": "Target Manipulation",
+    "description": "Please fold the object.",
+    "target": "I am looking for a white short-sleeve shirt.",
+    "video": "videos/interaction/084.mp4"
+   },
+   {
+    "start_time": 51.6,
+    "end_time": 52.55,
+    "task": "Target Manipulation",
+    "description": "Please touch another object with your hand.",
+    "target": "I am looking for a white short-sleeve shirt.",
+    "video": "videos/interaction/084.mp4"
+   },
+   {
+    "start_time": 56.44,
+    "end_time": 58.14,
+    "task": "Camera Manipulation",
+    "description": "Please move the camera to the right.",
+    "target": "I am looking for a white short-sleeve shirt.",
+    "video": "videos/interaction/084.mp4"
+   },
+   {
+    "start_time": 62.59,
+    "end_time": 64.89,
+    "task": "Target Manipulation",
+    "description": "Please pick up the object and flip it.",
+    "target": "I am looking for a white short-sleeved shirt.",
+    "video": "videos/interaction/084.mp4"
+   },
+   {
+    "start_time": 68.18,
+    "end_time": 70.89,
+    "task": "Completion",
+    "description": "Confirm the target is a white short-sleeve shirt.",
+    "target": "I am looking for a white short-sleeve shirt.",
+    "video": "videos/interaction/084.mp4"
+   }
+  ],
+  "_viewer_video": "videos/vgi_interaction_084.mp4",
+  "_viewer_clip_offset_s": 0,
+  "_viewer_clip_end_s": 74.633,
+  "_viewer_source_duration_s": 74.633,
+  "_viewer_source_file": "videos/interaction/084.mp4",
+  "_viewer_source_bytes": 21740878,
+  "_viewer_source_platform": "purpose-filmed (VGI)",
+  "_viewer_source_resolution": [
+   544,
+   960
+  ],
+  "_viewer_note": "full video"
+ },
+ {
+  "_viewer_key": "4_convert_files/071",
+  "_viewer_records": [
+   {
+    "start_time": 0.0,
+    "end_time": 0.71,
+    "task": "Target Manipulation",
+    "description": "Please reach out and touch the elevator button.",
+    "target": "Please help me connect the mouse to the computer.",
+    "video": "videos/interaction/071.mp4"
+   },
+   {
+    "start_time": 0.0,
+    "end_time": 5.21,
+    "task": "Camera Manipulation",
+    "description": "Please move the camera slightly to the right.",
+    "target": "Please help me connect the mouse to the computer.",
+    "video": "videos/interaction/071.mp4"
+   },
+   {
+    "start_time": 4.72,
+    "end_time": 5.68,
+    "task": "Target Manipulation",
+    "description": "No exact floor button found currently.",
+    "target": "Please help me connect the mouse to the computer.",
+    "video": "videos/interaction/071.mp4"
+   },
+   {
+    "start_time": 6.9,
+    "end_time": 8.5,
+    "task": "Target Manipulation",
+    "description": "No accurate floor button found currently.",
+    "target": "Please help me connect the mouse to the computer.",
+    "video": "videos/interaction/071.mp4"
+   },
+   {
+    "start_time": 9.31,
+    "end_time": 13.18,
+    "task": "Target Manipulation",
+    "description": "Please reach out and touch the mouse.",
+    "target": "Help me connect the mouse to the computer.",
+    "video": "videos/interaction/071.mp4"
+   },
+   {
+    "start_time": 9.92,
+    "end_time": 11.8,
+    "task": "Target Manipulation",
+    "description": "Find the first floor button and press it.",
+    "target": "Please help me connect the mouse to the computer.",
+    "video": "videos/interaction/071.mp4"
+   },
+   {
+    "start_time": 12.91,
+    "end_time": 14.28,
+    "task": "Camera Manipulation",
+    "description": "Please move the camera up a bit.",
+    "target": "Please help me connect the mouse to the computer.",
+    "video": "videos/interaction/071.mp4"
+   },
+   {
+    "start_time": 18.8,
+    "end_time": 20.78,
+    "task": "Target Manipulation",
+    "description": "Pick up the mouse.",
+    "target": "Please help me connect the mouse to the computer.",
+    "video": "videos/interaction/071.mp4"
+   },
+   {
+    "start_time": 21.49,
+    "end_time": 36.74,
+    "task": "Camera Manipulation",
+    "description": "Please move the camera down a bit.",
+    "target": "Please help me connect the mouse to the computer.",
+    "video": "videos/interaction/071.mp4"
+   },
+   {
+    "start_time": 29.98,
+    "end_time": 37.52,
+    "task": "Target Manipulation",
+    "description": "Unplug the mouse USB connector.",
+    "target": "Please help me connect the mouse to the computer.",
+    "video": "videos/interaction/071.mp4"
+   },
+   {
+    "start_time": 39.88,
+    "end_time": 40.48,
+    "task": "Target Manipulation",
+    "description": "Please move your hand to the left to the close button and close the door.",
+    "target": "Please help me connect the mouse to the computer.",
+    "video": "videos/interaction/071.mp4"
+   },
+   {
+    "start_time": 42.78,
+    "end_time": 44.38,
+    "task": "Camera Manipulation",
+    "description": "Please tilt the camera down a bit.",
+    "target": "Please help me connect the mouse to the computer.",
+    "video": "videos/interaction/071.mp4"
+   },
+   {
+    "start_time": 47.27,
+    "end_time": 51.31,
+    "task": "Target Manipulation",
+    "description": "Touch the chassis port with your hand.",
+    "target": "Please help me connect the mouse to the computer.",
+    "video": "videos/interaction/071.mp4"
+   },
+   {
+    "start_time": 48.12,
+    "end_time": 49.23,
+    "task": "Camera Manipulation",
+    "description": "Please move the camera up a bit.",
+    "target": "Please help me connect the mouse to the computer.",
+    "video": "videos/interaction/071.mp4"
+   },
+   {
+    "start_time": 52.97,
+    "end_time": 54.02,
+    "task": "Camera Manipulation",
+    "description": "Please move the camera slightly to the left.",
+    "target": "Please help me connect the mouse to the computer.",
+    "video": "videos/interaction/071.mp4"
+   },
+   {
+    "start_time": 54.84,
+    "end_time": 55.39,
+    "task": "Completion",
+    "description": "Arriving at the first floor.",
+    "target": "Please help me connect the mouse to the computer.",
+    "video": "videos/interaction/071.mp4"
+   },
+   {
+    "start_time": 65.23,
+    "end_time": 68.06,
+    "task": "Completion",
+    "description": "Mouse docking completed.",
+    "target": "Please help me connect the mouse to the computer.",
+    "video": "videos/interaction/071.mp4"
+   }
+  ],
+  "_viewer_video": "videos/vgi_interaction_071.mp4",
+  "_viewer_clip_offset_s": 0,
+  "_viewer_clip_end_s": 70,
+  "_viewer_source_duration_s": 81.153,
+  "_viewer_source_file": "videos/interaction/071.mp4",
+  "_viewer_source_bytes": 116651365,
+  "_viewer_source_platform": "purpose-filmed (VGI)",
+  "_viewer_source_resolution": [
+   1280,
+   720
+  ],
+  "_viewer_note": "excerpt 0.0-70.0 s of 81.2 s source; clip time = original time - 0.0"
+ }
+]
