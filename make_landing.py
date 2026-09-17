@@ -1,6 +1,7 @@
 import os, html
 R = os.path.dirname(os.path.abspath(__file__))
 ENTRIES = [
+ ("catalog", "Training data catalog (start here)", "153 public datasets for training a streaming visual interaction model: size, video domains, what people do in the videos, the annotations on each video and who made them, access and license, grouped by the capability they teach."),
  ("training-data", "Proactive-assistant training data", "Findings on newer benchmarks, leading models and how their training data was annotated, plus a timeline viewer of real training records: EgoProactive, Ambient synthetic labels, ProAssist, JoyAI-VL-Interaction, MMDuet2, LiveCC, ROMA, Gander."),
  ("joyai-interaction", "JoyAI-VL-Interaction training data", "27 real training records from the 3.02M-record release, sorted into its six families: proactive alerting, time-aligned QA, counting over time, commentary, casual chat, and delegation to a background model (arXiv 2606.14777)."),
  ("streamarena", "StreamArena", "Hour-long YouTube streams with human-written real-time, retrospective, tool-use and proactive questions (arXiv 2608.05703)."),
