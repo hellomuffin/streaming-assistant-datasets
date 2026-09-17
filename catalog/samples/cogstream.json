@@ -629,7 +629,7 @@
    }
   },
   {
-   "title": "v_22n4w0uferc chain 1: waxing skis, QA training chain with a recall question",
+   "title": "v_22n4w0uferc chain 1: waxing skis, 23-QA training chain (QA_Dataset format)",
    "video_ref": "v_22n4w0uferc",
    "duration_s": 189.5,
    "clip": "samples/media/cogstream_2.mp4",

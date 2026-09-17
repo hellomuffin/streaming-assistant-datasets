@@ -1,0 +1,67 @@
+{
+ "slug": "kinetics",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://s3.amazonaws.com/kinetics/700_2020/annotations/val.csv",
+  "https://s3.amazonaws.com/kinetics/700_2020/val/k700_val_001.tar.gz (first member stream)",
+  "https://s3.amazonaws.com/kinetics/700_2020/val/k700_val_300.tar.gz (first member stream)"
+ ],
+ "access_used": "open download",
+ "note": "One example = one Kinetics-700-2020 validation row: a single action label for a 10-s window of a YouTube video (times in seconds of the YouTube video). Clips are the CVDF-hosted cut of that window, so clip_offset_s = time_start.",
+ "examples": [
+  {
+   "title": "NHXo1PE12BU: abseiling (75–85 s)",
+   "video_ref": "YouTube NHXo1PE12BU → CVDF file NHXo1PE12BU_000075_000085.mp4",
+   "duration_s": null,
+   "clip": "samples/media/kinetics_1.mp4",
+   "clip_offset_s": 75.0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 75.0,
+     "te": 85.0,
+     "lane": "action",
+     "text": "abseiling"
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": {
+    "header": "label,youtube_id,time_start,time_end,split",
+    "row": {
+     "label": "abseiling",
+     "youtube_id": "NHXo1PE12BU",
+     "time_start": "75",
+     "time_end": "85",
+     "split": "validate"
+    }
+   }
+  },
+  {
+   "title": "QyTugqyK1SU: lock picking (36–46 s)",
+   "video_ref": "YouTube QyTugqyK1SU → CVDF file QyTugqyK1SU_000036_000046.mp4",
+   "duration_s": null,
+   "clip": "samples/media/kinetics_2.mp4",
+   "clip_offset_s": 36.0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 36.0,
+     "te": 46.0,
+     "lane": "action",
+     "text": "lock picking"
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": {
+    "header": "label,youtube_id,time_start,time_end,split",
+    "row": {
+     "label": "lock picking",
+     "youtube_id": "QyTugqyK1SU",
+     "time_start": "36",
+     "time_end": "46",
+     "split": "validate"
+    }
+   }
+  }
+ ]
+}

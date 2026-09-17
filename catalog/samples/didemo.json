@@ -1,0 +1,348 @@
+{
+ "slug": "didemo",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://raw.githubusercontent.com/LisaAnne/LocalizingMoments/master/data/test_data.json",
+  "https://huggingface.co/datasets/friedrichor/DiDeMo DiDeMo_Videos_mp4_test.tar (first members, range read)"
+ ],
+ "access_used": "open download",
+ "note": "One example = every DiDeMo test description of one Flickr video. \"times\" holds four annotators' [start,end] indices of 5-s segments (segment k = k·5 to k·5+5 s; only the first 30 s are annotated). The timeline shows the most common of the four pairs per description, converted to seconds.",
+ "examples": [
+  {
+   "title": "Flickr 13927593445: a finger taps a plant and bugs scatter — 5 descriptions",
+   "video_ref": "7186186@N07_13927593445_96703f1283.mov",
+   "duration_s": 23.136,
+   "clip": "samples/media/didemo_1.mp4",
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0,
+     "te": 5,
+     "lane": "caption",
+     "text": "finger appears on right for first time"
+    },
+    {
+     "t": 5,
+     "te": 10,
+     "lane": "caption",
+     "text": "a man taps a leaf."
+    },
+    {
+     "t": 5,
+     "te": 10,
+     "lane": "caption",
+     "text": "a finger vibrates the leaves of the plant causing the clump of bugs to spread outward."
+    },
+    {
+     "t": 5,
+     "te": 10,
+     "lane": "caption",
+     "text": "the man taps the leaves and bugs start to fly away."
+    },
+    {
+     "t": 5,
+     "te": 10,
+     "lane": "caption",
+     "text": "someone pokes the flower with their finger."
+    }
+   ],
+   "raw_format": "json",
+   "raw": [
+    {
+     "num_segments": 5,
+     "description": "a man taps a leaf.",
+     "dl_link": "https://www.flickr.com/video_download.gne?id=13927593445",
+     "times": [
+      [
+       1,
+       1
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       0,
+       1
+      ]
+     ],
+     "video": "7186186@N07_13927593445_96703f1283.mov",
+     "annotation_id": 716
+    },
+    {
+     "num_segments": 5,
+     "description": "finger appears on right for first time",
+     "dl_link": "https://www.flickr.com/video_download.gne?id=13927593445",
+     "times": [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     "video": "7186186@N07_13927593445_96703f1283.mov",
+     "annotation_id": 44827
+    },
+    {
+     "num_segments": 5,
+     "description": "a finger vibrates the leaves of the plant causing the clump of bugs to spread outward.",
+     "dl_link": "https://www.flickr.com/video_download.gne?id=13927593445",
+     "times": [
+      [
+       1,
+       1
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       0,
+       1
+      ]
+     ],
+     "video": "7186186@N07_13927593445_96703f1283.mov",
+     "annotation_id": 45153
+    },
+    {
+     "num_segments": 5,
+     "description": "the man taps the leaves and bugs start to fly away.",
+     "dl_link": "https://www.flickr.com/video_download.gne?id=13927593445",
+     "times": [
+      [
+       1,
+       1
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       1,
+       2
+      ]
+     ],
+     "video": "7186186@N07_13927593445_96703f1283.mov",
+     "annotation_id": 2437
+    },
+    {
+     "num_segments": 5,
+     "description": "someone pokes the flower with their finger.",
+     "dl_link": "https://www.flickr.com/video_download.gne?id=13927593445",
+     "times": [
+      [
+       1,
+       1
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       1
+      ]
+     ],
+     "video": "7186186@N07_13927593445_96703f1283.mov",
+     "annotation_id": 43628
+    }
+   ]
+  },
+  {
+   "title": "Flickr 4837566494: cars in a tilt-shift parking lot — 5 descriptions",
+   "video_ref": "66814335@N00_4837566494_a2f3ccc1f7.m4v",
+   "duration_s": 64.041,
+   "clip": "samples/media/didemo_2.mp4",
+   "clip_offset_s": 10,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 10,
+     "te": 15,
+     "lane": "caption",
+     "text": "van pulls in"
+    },
+    {
+     "t": 10,
+     "te": 15,
+     "lane": "caption",
+     "text": "black suv pulls into a parking spot."
+    },
+    {
+     "t": 10,
+     "te": 15,
+     "lane": "caption",
+     "text": "a black car enters the middle of the screen and pulls up to the parking spot"
+    },
+    {
+     "t": 10,
+     "te": 15,
+     "lane": "caption",
+     "text": "a black van parks."
+    },
+    {
+     "t": 25,
+     "te": 30,
+     "lane": "caption",
+     "text": "a pink car drives by."
+    }
+   ],
+   "raw_format": "json",
+   "raw": [
+    {
+     "num_segments": 6,
+     "description": "a pink car drives by.",
+     "dl_link": "https://www.flickr.com/video_download.gne?id=4837566494",
+     "times": [
+      [
+       5,
+       5
+      ],
+      [
+       5,
+       5
+      ],
+      [
+       5,
+       5
+      ],
+      [
+       5,
+       5
+      ]
+     ],
+     "video": "66814335@N00_4837566494_a2f3ccc1f7.m4v",
+     "annotation_id": 41080
+    },
+    {
+     "num_segments": 6,
+     "description": "van pulls in",
+     "dl_link": "https://www.flickr.com/video_download.gne?id=4837566494",
+     "times": [
+      [
+       2,
+       2
+      ],
+      [
+       2,
+       2
+      ],
+      [
+       2,
+       2
+      ],
+      [
+       2,
+       2
+      ]
+     ],
+     "video": "66814335@N00_4837566494_a2f3ccc1f7.m4v",
+     "annotation_id": 41359
+    },
+    {
+     "num_segments": 6,
+     "description": "black suv pulls into a parking spot.",
+     "dl_link": "https://www.flickr.com/video_download.gne?id=4837566494",
+     "times": [
+      [
+       2,
+       2
+      ],
+      [
+       2,
+       2
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       2,
+       2
+      ]
+     ],
+     "video": "66814335@N00_4837566494_a2f3ccc1f7.m4v",
+     "annotation_id": 25201
+    },
+    {
+     "num_segments": 6,
+     "description": "a black car enters the middle of the screen and pulls up to the parking spot",
+     "dl_link": "https://www.flickr.com/video_download.gne?id=4837566494",
+     "times": [
+      [
+       2,
+       2
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       2,
+       2
+      ],
+      [
+       2,
+       2
+      ]
+     ],
+     "video": "66814335@N00_4837566494_a2f3ccc1f7.m4v",
+     "annotation_id": 40124
+    },
+    {
+     "num_segments": 6,
+     "description": "a black van parks.",
+     "dl_link": "https://www.flickr.com/video_download.gne?id=4837566494",
+     "times": [
+      [
+       2,
+       2
+      ],
+      [
+       2,
+       2
+      ],
+      [
+       2,
+       2
+      ],
+      [
+       2,
+       5
+      ]
+     ],
+     "video": "66814335@N00_4837566494_a2f3ccc1f7.m4v",
+     "annotation_id": 23965
+    }
+   ]
+  }
+ ]
+}

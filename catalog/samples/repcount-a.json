@@ -1,0 +1,176 @@
+{
+ "slug": "repcount-a",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://raw.githubusercontent.com/sinhasaptarshi/EveryShotCounts/main/datasets/repcount/test_with_fps.csv (RepCount-A test.csv with added fps/duration columns)",
+  "https://huggingface.co/datasets/lmms-lab-eval/repcounta-lance data/test.lance (video_blob for stu8_42.mp4, stu9_31.mp4)"
+ ],
+ "access_used": "open download",
+ "note": "One example = one RepCount-A test video with its annotation row: L1,L2 are the start and end frame of repetition 1, L3,L4 of repetition 2, and so on; count is the total. Timeline converts frames to seconds with the row's fps; the clip is the whole video.",
+ "examples": [
+  {
+   "title": "stu9_31: jumping jacks — 7 repetitions with start/end frames",
+   "video_ref": "stu9_31.mp4",
+   "duration_s": 11.0,
+   "clip": "samples/media/repcount-a_1.mp4",
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 1.4,
+     "te": 3.0,
+     "lane": "event",
+     "text": "jump_jack repetition 1 of 7"
+    },
+    {
+     "t": 3.0,
+     "te": 4.52,
+     "lane": "event",
+     "text": "jump_jack repetition 2 of 7"
+    },
+    {
+     "t": 4.52,
+     "te": 5.64,
+     "lane": "event",
+     "text": "jump_jack repetition 3 of 7"
+    },
+    {
+     "t": 5.64,
+     "te": 6.64,
+     "lane": "event",
+     "text": "jump_jack repetition 4 of 7"
+    },
+    {
+     "t": 6.64,
+     "te": 7.76,
+     "lane": "event",
+     "text": "jump_jack repetition 5 of 7"
+    },
+    {
+     "t": 7.76,
+     "te": 8.84,
+     "lane": "event",
+     "text": "jump_jack repetition 6 of 7"
+    },
+    {
+     "t": 8.88,
+     "te": 9.92,
+     "lane": "event",
+     "text": "jump_jack repetition 7 of 7"
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": {
+    "file": "test_with_fps.csv",
+    "header_note": "empty L-columns (L15…L302) omitted",
+    "row": {
+     "": "86",
+     "Unnamed: 0.2": "86",
+     "Unnamed: 0.1": "86",
+     "Unnamed: 0": "86",
+     "type": "jump_jack",
+     "name": "stu9_31.mp4",
+     "count": "7",
+     "L1": "35.0",
+     "L2": "75.0",
+     "L3": "75.0",
+     "L4": "113.0",
+     "L5": "113.0",
+     "L6": "141.0",
+     "L7": "141.0",
+     "L8": "166.0",
+     "L9": "166.0",
+     "L10": "194.0",
+     "L11": "194.0",
+     "L12": "221.0",
+     "L13": "222.0",
+     "L14": "248.0",
+     "fps": "25.0",
+     "duration": "11.0",
+     "num_frames": "275",
+     "segment_start": "0",
+     "segment_end": "275",
+     "cycle_start_id": "0"
+    }
+   }
+  },
+  {
+   "title": "stu8_42: push-ups — 6 repetitions (vertical phone video)",
+   "video_ref": "stu8_42.mp4",
+   "duration_s": 15.0,
+   "clip": "samples/media/repcount-a_2.mp4",
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 1.4,
+     "lane": "event",
+     "text": "push_up repetition 1 of 6"
+    },
+    {
+     "t": 1.4,
+     "te": 2.933,
+     "lane": "event",
+     "text": "push_up repetition 2 of 6"
+    },
+    {
+     "t": 2.933,
+     "te": 4.733,
+     "lane": "event",
+     "text": "push_up repetition 3 of 6"
+    },
+    {
+     "t": 4.733,
+     "te": 6.633,
+     "lane": "event",
+     "text": "push_up repetition 4 of 6"
+    },
+    {
+     "t": 6.633,
+     "te": 8.433,
+     "lane": "event",
+     "text": "push_up repetition 5 of 6"
+    },
+    {
+     "t": 8.433,
+     "te": 10.567,
+     "lane": "event",
+     "text": "push_up repetition 6 of 6"
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": {
+    "file": "test_with_fps.csv",
+    "header_note": "empty L-columns (L15…L302) omitted",
+    "row": {
+     "": "1",
+     "Unnamed: 0.2": "1",
+     "Unnamed: 0.1": "1",
+     "Unnamed: 0": "1",
+     "type": "push_up",
+     "name": "stu8_42.mp4",
+     "count": "6",
+     "L1": "0.0",
+     "L2": "42.0",
+     "L3": "42.0",
+     "L4": "88.0",
+     "L5": "88.0",
+     "L6": "142.0",
+     "L7": "142.0",
+     "L8": "199.0",
+     "L9": "199.0",
+     "L10": "253.0",
+     "L11": "253.0",
+     "L12": "317.0",
+     "fps": "30.0",
+     "duration": "15.0",
+     "num_frames": "450",
+     "segment_start": "0",
+     "segment_end": "450",
+     "cycle_start_id": "0"
+    }
+   }
+  }
+ ]
+}

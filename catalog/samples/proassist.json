@@ -7,7 +7,7 @@
   "https://www.dropbox.com/scl/fo/rri8hdi1b6xlxude1zv28/h/T24/Video/Video.mpeg?rlkey=xtx9v386hhsqk4ct6ix8kw53u&dl=1 (WTaG source video for the clip)"
  ],
  "access_used": "open download",
- "note": "One example is one video record of generated_dialogs/*.json: an inferred goal/recipe, 20 LLM-generated dialogues (10 per user type x2 in the filtered file; only one kept here and cut after the shown time) and the parsed source annotations with mistake labels. Times are seconds of the source video; WTaG utterance times are the midpoints of the human WTaG utterances. The clip is from the WTaG Dropbox video (silent); Assembly101 video needs its own request, so no clip.",
+ "note": "One example is one video record of generated_dialogs/*.json: an inferred goal and recipe, 20 LLM-generated dialogues for no_talk / talk_some / talk_more simulated users (only one kept here, cut after the times shown), and the parsed source annotations including mistake/correction labels. Times are seconds of the source video; for WTaG the dialogue times are midpoints of the real WTaG utterances. The clip is cut from the silent WTaG Dropbox video; Assembly101 video needs its own request, so example 2 has no clip.",
  "examples": [
   {
    "title": "WTaG T24 (mug cake), talk_some user — LLM dialogue with early \"parchment paper, not the ziploc bag\" corrections",

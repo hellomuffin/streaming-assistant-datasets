@@ -1,0 +1,222 @@
+{
+ "slug": "charades-sta",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://raw.githubusercontent.com/microsoft/VideoX/master/2D-TAN/data/Charades-STA/charades_sta_test.txt (mirror of TALL release)",
+  "Charades_v1_test.csv (AI2 Charades annotations, same mirror)"
+ ],
+ "access_used": "open download",
+ "note": "One example = all Charades-STA test sentences for one Charades video, each \"id start end##sentence\" (seconds); the matching Charades_v1 row (script, action codes as \"cXXX start end\") is included for context. No clip: Charades videos are under AI2's non-commercial, no-redistribution licence.",
+ "examples": [
+  {
+   "title": "9JZO2: eating a sandwich in an entryway — 12 query sentences",
+   "video_ref": "9JZO2",
+   "duration_s": 35.75,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 9.9,
+     "lane": "caption",
+     "text": "person holding a glass cup."
+    },
+    {
+     "t": 0.0,
+     "te": 9.9,
+     "lane": "caption",
+     "text": "person holding a glass of water."
+    },
+    {
+     "t": 0.0,
+     "te": 9.9,
+     "lane": "caption",
+     "text": "person stands in doorway holding a glass."
+    },
+    {
+     "t": 0.0,
+     "te": 9.9,
+     "lane": "caption",
+     "text": "person holding a cup in the doorway."
+    },
+    {
+     "t": 0.0,
+     "te": 12.6,
+     "lane": "caption",
+     "text": "a person eats some food."
+    },
+    {
+     "t": 0.0,
+     "te": 15.1,
+     "lane": "caption",
+     "text": "a person is in a entryway eating a sandwich."
+    },
+    {
+     "t": 0.0,
+     "te": 15.1,
+     "lane": "caption",
+     "text": "person eating a sandwich."
+    },
+    {
+     "t": 11.6,
+     "te": 20.8,
+     "lane": "caption",
+     "text": "the person walks into the house puts down the food."
+    },
+    {
+     "t": 14.1,
+     "te": 20.3,
+     "lane": "caption",
+     "text": "the person puts the cup down."
+    },
+    {
+     "t": 22.9,
+     "te": 29.8,
+     "lane": "caption",
+     "text": "person start smiling as the dress."
+    },
+    {
+     "t": 26.1,
+     "te": 36.0,
+     "lane": "caption",
+     "text": "person put on their shoes."
+    },
+    {
+     "t": 26.1,
+     "te": 36.0,
+     "lane": "caption",
+     "text": "person puts on some shoes."
+    }
+   ],
+   "raw_format": "txt",
+   "raw": {
+    "charades_sta_test.txt lines": [
+     "9JZO2 26.1 36.0##person put on their shoes.",
+     "9JZO2 0.0 9.9##person holding a glass cup.",
+     "9JZO2 0.0 12.6##a person eats some food.",
+     "9JZO2 0.0 15.1##a person is in a entryway eating a sandwich.",
+     "9JZO2 0.0 9.9##person holding a glass of water.",
+     "9JZO2 14.1 20.3##the person puts the cup down.",
+     "9JZO2 0.0 9.9##person stands in doorway holding a glass.",
+     "9JZO2 0.0 15.1##person eating a sandwich.",
+     "9JZO2 26.1 36.0##person puts on some shoes.",
+     "9JZO2 0.0 9.9##person holding a cup in the doorway.",
+     "9JZO2 11.6 20.8##the person walks into the house puts down the food.",
+     "9JZO2 22.9 29.8##person start smiling as the dress."
+    ],
+    "Charades_v1_test.csv row": {
+     "id": "9JZO2",
+     "subject": "ZDKC",
+     "scene": "Entryway (A hall that is generally located at the entrance of a house)",
+     "quality": "6",
+     "relevance": "7",
+     "verified": "Yes",
+     "script": "A person is in a entryway eating a sandwich and holding a glass cup, they then start smiling as the dress and put on their shoes.",
+     "objects": "clothes;cup;doorway;food;glass;sandwich;shelf;shoe;table",
+     "descriptions": "A person ate a sandwich while holding a glass of water.  The person then put away both and put on a jacket and shoes.;Person stands in doorway holding a glass and eating a sandwich then the person walks into the house puts down the food and drink, puts on a jacket and shoes;A person eats some food while holding a cup in the doorway. The person puts the cup down and puts on a jacket and puts on some shoes.",
+     "actions": "c067 0.90 13.30;c107 0.00 9.90;c055 26.10 36.00;c065 0.00 15.10;c068 15.00 20.10;c156 0.00 12.60;c148 22.90 29.80;c001 19.70 34.80;c000 19.50 35.50;c097 10.40 15.40;c061 0.00 18.50;c109 14.10 20.30;c002 17.90 27.30;c062 11.60 20.80;c081 14.50 20.80;c001 33.80 37.00;c000 33.80 37.00;c009 33.80 37.00",
+     "length": "35.75"
+    }
+   }
+  },
+  {
+   "title": "VU996: putting a pillow and blanket in a closet — 10 query sentences (note the light query at 0–4 s vs. the script)",
+   "video_ref": "VU996",
+   "duration_s": 30.21,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 4.0,
+     "lane": "caption",
+     "text": "person turns the light off."
+    },
+    {
+     "t": 0.0,
+     "te": 4.0,
+     "lane": "caption",
+     "text": "the person turns off the closet light."
+    },
+    {
+     "t": 0.0,
+     "te": 14.9,
+     "lane": "caption",
+     "text": "a person walks into their closet holding a pillow."
+    },
+    {
+     "t": 0.0,
+     "te": 14.9,
+     "lane": "caption",
+     "text": "person holding a pillow."
+    },
+    {
+     "t": 0.4,
+     "te": 7.0,
+     "lane": "caption",
+     "text": "person opened up the door."
+    },
+    {
+     "t": 7.4,
+     "te": 14.7,
+     "lane": "caption",
+     "text": "the person put the pillow into the closet."
+    },
+    {
+     "t": 17.2,
+     "te": 24.3,
+     "lane": "caption",
+     "text": "person puts some blankets away inside."
+    },
+    {
+     "t": 23.4,
+     "te": 31.0,
+     "lane": "caption",
+     "text": "person closed the door."
+    },
+    {
+     "t": 23.4,
+     "te": 31.0,
+     "lane": "caption",
+     "text": "a person opens a door to a closet."
+    },
+    {
+     "t": 23.4,
+     "te": 31.0,
+     "lane": "caption",
+     "text": "person closes the door behind them."
+    }
+   ],
+   "raw_format": "txt",
+   "raw": {
+    "charades_sta_test.txt lines": [
+     "VU996 23.4 31.0##person closed the door.",
+     "VU996 17.2 24.3##person puts some blankets away inside.",
+     "VU996 7.4 14.7##the person put the pillow into the closet.",
+     "VU996 0.0 14.9##a person walks into their closet holding a pillow.",
+     "VU996 0.0 4.0##person turns the light off.",
+     "VU996 0.0 14.9##person holding a pillow.",
+     "VU996 23.4 31.0##a person opens a door to a closet.",
+     "VU996 23.4 31.0##person closes the door behind them.",
+     "VU996 0.0 4.0##the person turns off the closet light.",
+     "VU996 0.4 7.0##person opened up the door."
+    ],
+    "Charades_v1_test.csv row": {
+     "id": "VU996",
+     "subject": "SW82",
+     "scene": "Closet / Walk-in closet / Spear closet",
+     "quality": "6",
+     "relevance": "7",
+     "verified": "Yes",
+     "script": "A person walks into their closet holding a pillow and a blanket. The person places them on a shelf. The person turns off the closet light, and leaves the closet.",
+     "objects": "blanket;closet/cabinet;door;light;pillow;shelf;towel",
+     "descriptions": "A person walked over to a door while holding a pillow. The person then opened up the door and walked into a closet. The person put the pillow into the closet and walked out of the room. The person then closed the door.;A person opens a door to a closet and puts some blankets away inside. The person then turns the light off and closes the door behind them.",
+     "actions": "c081 8.90 23.30;c104 0.00 4.00;c071 17.20 24.30;c105 21.20 26.80;c070 0.00 22.70;c006 23.40 31.00;c077 7.40 14.70;c034 0.00 15.60;c113 5.40 17.40;c033 0.00 17.60;c037 0.00 18.70;c075 11.20 21.40;c112 24.30 31.00;c114 7.10 21.80;c076 0.00 14.90;c141 0.60 8.10;c097 0.40 9.70;c008 0.40 7.00",
+     "length": "30.21"
+    }
+   }
+  }
+ ]
+}

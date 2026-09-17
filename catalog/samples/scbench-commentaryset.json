@@ -6,10 +6,10 @@
   "https://huggingface.co/datasets/SCBench/CommentarySet_full_data (gated: 403, our token is not on the authorized list)"
  ],
  "access_used": "public sample in paper/repo/card only (full data needs the HF access request: contact information, academic research only, CC BY-NC-ND 4.0)",
- "note": "Our HF token has no access to CommentarySet_full_data (auto-approval gate, not accepted on the user's behalf), so no JSON record or clip was read. The only verbatim ground-truth text is the six GT commentaries in the paper's Figure 1, one per SCORES dimension, each from a different clip (sports not stated per quote), plus the field list of *_final.json in Appendix D.1. Each real record is one clip (mean 14.5 s) with one merged commentary passage, so there is no within-clip timeline.",
+ "note": "Our HF token has no access to CommentarySet_full_data (auto-approval gate, not accepted on the user's behalf), so no JSON record or clip was read. The only verbatim ground-truth text is the six GT commentaries in the paper's Figure 1, illustrating the six SCORES dimensions (the figure layout decides which quote goes with which dimension, and the extracted text order does not preserve that), each from a different clip (sports not stated per quote), plus the field list of *_final.json in Appendix D.1. Each real record is one clip (mean 14.5 s) with one merged commentary passage, so there is no within-clip timeline.",
  "examples": [
   {
-   "title": "Paper Figure 1: six ground-truth commentaries, one per commentary dimension",
+   "title": "Paper Figure 1: six ground-truth commentaries (text layer as extracted)",
    "video_ref": null,
    "duration_s": null,
    "clip": null,
@@ -17,7 +17,7 @@
    "thumb": null,
    "timeline": [],
    "raw_format": "txt",
-   "raw": "① Key Events:\nGT Commentary: \"And Carescus makes the first free throw.  And the second.\"\n② Technical Detail\nGT Commentary: \"The more horizontal the bat is when it comes into contact with the ball, the more side spin.\"\n③ Background Info\nGT Commentary: \"Well, this woman leads the world this year with a 493 vault earlier in the week.\"\n④ Tactical Analysis\nGT Commentary: \"hey're in the same team, and different roles. They haven't always been two strikers in a 4-4-2.\"\n⑤ Match Situation\nGT Commentary: \"First time, really,  they've been able to find their centre forward in the box.\"\n⑥ Emotional Expression\nGT Commentary: \"These players are so super fit they could play all afternoon.\"\n"
+   "raw": "① Key Events:\n③ Background Info\n⑤ Match Situation\nGT Commentary : \n“First time, really,  \nthey've been able \nto find their \ncentre forward in \nthe box.”\n② Technical Detail\nGT Commentary: \n“The more horizontal \nthe bat is when it \ncomes into contact \nwith the ball, the \nmore side spin.”\n④ Tactical Analysis\nGT Commentary: \n“And Carescus \nmakes the first \nfree throw.  And \nthe second.”\nGT Commentary: \n“hey're in the same \nteam, and different \nroles. They haven't \nalways been two \nstrikers in a 4-4-2.”\nGT Commentary : \n“Well, this woman \nleads the world this \nyear with a 493 \nvault earlier in the \nweek.”\n⑥ Emotional Expression\nGT Commentary: \n“These players are \nso super fit they \ncould play all \nafternoon.”\nFigure 1: A sample from Six-Dimensional Metric and CommentarySet, including six dimensions’\ndescription, frames from videos, and corresponding ground truth commentary."
   },
   {
    "title": "Paper Appendix D.1: fields of each record in <sport>_final.json",

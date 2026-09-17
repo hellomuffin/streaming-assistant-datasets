@@ -1,0 +1,73 @@
+{
+ "slug": "something-something-v2",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/morpheushoc/something-something-v2 validation.json, labels.json, videos/20bn-something-something-v2-00 (head of the split gz tar)"
+ ],
+ "access_used": "open download",
+ "note": "One example = one validation video record: a single clip-level label built from a template with filled [something] placeholders; there are no timestamps, so the timeline is one whole-clip entry. Files came from an unofficial HF mirror of the Qualcomm release; the official download is behind a click-through research licence, so only a 3-frame thumbnail is shown, no clip.",
+ "examples": [
+  {
+   "title": "70671: \"Hitting [something] with [something]\" — stamp pad, remote",
+   "video_ref": "70671.webm",
+   "duration_s": 2.0,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": "samples/media/something-something-v2_1.jpg",
+   "timeline": [
+    {
+     "t": 0,
+     "te": 2.0,
+     "lane": "action",
+     "text": "hitting stamp pad with remote"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "validation.json record": {
+     "id": "70671",
+     "label": "hitting stamp pad with remote",
+     "template": "Hitting [something] with [something]",
+     "placeholders": [
+      "stamp pad",
+      "remote"
+     ]
+    },
+    "labels.json entry": {
+     "Hitting something with something": "15"
+    }
+   }
+  },
+  {
+   "title": "215058: \"Covering [something] with [something]\" — marker, tissue",
+   "video_ref": "215058.webm",
+   "duration_s": 3.0,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": "samples/media/something-something-v2_2.jpg",
+   "timeline": [
+    {
+     "t": 0,
+     "te": 3.0,
+     "lane": "action",
+     "text": "covering marker with tissue"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "validation.json record": {
+     "id": "215058",
+     "label": "covering marker with tissue",
+     "template": "Covering [something] with [something]",
+     "placeholders": [
+      "marker",
+      "tissue"
+     ]
+    },
+    "labels.json entry": {
+     "Covering something with something": "6"
+    }
+   }
+  }
+ ]
+}

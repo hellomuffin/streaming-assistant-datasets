@@ -1,0 +1,31 @@
+{
+ "slug": "proactvl-ego4d-goalstep",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/oaaoaa/game_commentary_sft/resolve/main/DATA/anns/ego4d_final_train.jsonl (403: gated, our token is not on the authorized list)",
+  "https://huggingface.co/datasets/oaaoaa/proactvl_results/resolve/main/results/anns/all_in_one.jsonl (403, same gate; would hold the 134 Ego4D test records)",
+  "https://github.com/microsoft/AnthropomorphicIntelligence/blob/ff6a7d8e7381f9a88f3ae2841848af52134b26da/Proact-VL/data_pipeline/prompt/ego4d_goalstep/new_polish_system_prompt.txt",
+  "https://github.com/microsoft/AnthropomorphicIntelligence/blob/ff6a7d8e7381f9a88f3ae2841848af52134b26da/Proact-VL/proactvl/utils/conversations.py",
+  "https://github.com/microsoft/AnthropomorphicIntelligence/blob/ff6a7d8e7381f9a88f3ae2841848af52134b26da/Proact-VL/proactvl/data/preprocess/merge_anns.py"
+ ],
+ "access_used": "public sample in paper/repo/card only (full data needs the HF gate: CC-BY-NC-4.0 click-through with a no-redistribution clause; auto-approval was not granted to our token, and the repo was listed but every data file returned 403)",
+ "note": "No real record could be read: both HF repos holding the Ego4D annotations (game_commentary_sft, proactvl_results) returned 403 on 2026-09-17, and neither the paper, the README nor the dataset card prints an Ego4D record. The one entry below is not a data record: it is the verbatim input/output schema and system prompts from the public generation code, showing what each record is built from (per-segment user query + timed coaching lines with begin/end seconds).",
+ "examples": [
+  {
+   "title": "Not a record: generation schema and prompts from the public Proact-VL repo",
+   "video_ref": null,
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "txt",
+   "raw": {
+    "new_polish_system_prompt.txt: Input Schema": "{\n  \"query\": \"high-level goal of the video\",\n  \"annotations\": [\n    {\n      \"begin_time\": 0.0,\n      \"end_time\": 0.0,\n      \"step_description\": \"raw atomic action\"\n    }\n  ]\n}\n",
+    "new_polish_system_prompt.txt: Output Format (STRICT)": "[\n  {\n    \"generated_question\": \"...\",\n    \"refined_steps\": [\n      {\n        \"begin_time\": 0.0,\n        \"end_time\": 0.0,\n        \"commentary\": \"...\"\n      }\n    ]\n  }\n]\n",
+    "conversations.py: EGO4D_SYSTEM_PROMPT": "You are an AI assistant that provides real-time, step-by-step guidance from first-person (egocentric) video. Based on the user’s request, prior context, and the current visual scene, decide when and how to respond, and offer only the instruction that matches the user’s current progress as seen in the video. Advance to the next step only after the video shows the previous step is completed, grounding all guidance strictly in visible actions and object states, and avoid giving future steps prematurely or making unsupported assumptions.",
+    "merge_anns.py: record assembly (merge_into_one_file_for_ego4d_annotations, lines 331-361)": "                new_ann = {\n                    'video_path': os.path.join(video_rel_path, video_filename) if video_rel_path != '.' else video_filename,\n                    'video_duration': video_end,\n                    'speakers':{},\n                    'metadata': {'tag': tag, 'dataset_name': dataset_name},\n                    'annotations': []\n                }\n                new_ann['video_path'] = os.path.join(VIDEO_DIR_MAP[dataset_name], new_ann['video_path'])\n                # only one speaker for ego4d goal step\n                speaker_name = ann['speakers']\n                persona = ann.get('persona', PERSONA)\n                new_ann['speakers'][speaker_name] = {'persona': persona}\n                for conversation in ann['annotations']:\n                    query = conversation['query']\n                    sub_annotations = conversation['sub_annotations']\n                    check_ann(sub_annotations[0])\n                    new_ann['annotations'].append({\n                        'query': query,\n                        'speaker': speaker_name,\n                        'start': sub_annotations[0]['begin_time'],\n                        'end': sub_annotations[0]['end_time'],\n                        'text': sub_annotations[0]['commentary']\n                    })\n                    for sub_annotation in sub_annotations[1:]:\n                        check_ann(sub_annotation)\n                        new_ann['annotations'].append({\n                            'speaker': speaker_name,\n                            'start': sub_annotation['begin_time'],\n                            'end': sub_annotation['end_time'],\n                            'text': sub_annotation['commentary']\n                        })"
+   }
+  }
+ ]
+}

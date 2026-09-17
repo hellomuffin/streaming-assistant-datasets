@@ -1,0 +1,90 @@
+{
+ "slug": "countix",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://storage.googleapis.com/deepmind-media/Datasets/countix.tar.gz → countix/countix_val.csv",
+  "https://huggingface.co/datasets/kekeYeah/Countix-QA cut_countix_val.csv and cut_coutix_val.zip members BwVzjnjNJ0Q.mp4, A11I-L1iSiw.mp4"
+ ],
+ "access_used": "open download",
+ "note": "One example = one Countix row: a YouTube id, the 10-s Kinetics window, the sub-window where the action repeats, and the repetition count; times are seconds of the original YouTube video. Official videos are YouTube-only; the clips come from the third-party Countix-QA pre-cut files, which start exactly at repetition_start (clip length = repetition_end − repetition_start).",
+ "examples": [
+  {
+   "title": "BwVzjnjNJ0Q: battle rope training — 28 repetitions in 9 s",
+   "video_ref": "YouTube BwVzjnjNJ0Q (Kinetics clip 6–16 s)",
+   "duration_s": null,
+   "clip": "samples/media/countix_1.mp4",
+   "clip_offset_s": 6.0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 6.0,
+     "te": 16.0,
+     "lane": "other",
+     "text": "Kinetics clip window (battle rope training)"
+    },
+    {
+     "t": 6.0,
+     "te": 14.975642,
+     "lane": "event",
+     "text": "battle rope training: count 28"
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": {
+    "countix_val.csv": {
+     "video_id": "BwVzjnjNJ0Q",
+     "class": "battle rope training",
+     "kinetics_start": "6",
+     "kinetics_end": "16",
+     "repetition_start": "6.000000",
+     "repetition_end": "14.975642",
+     "count": "28"
+    },
+    "Countix-QA cut_countix_val.csv (third-party clip index)": {
+     "Video_Name": "BwVzjnjNJ0Q.mp4",
+     "class_name": "battle rope training",
+     "count": "28"
+    }
+   }
+  },
+  {
+   "title": "A11I-L1iSiw: slicing onion — 22 repetitions in 5 s",
+   "video_ref": "YouTube A11I-L1iSiw (Kinetics clip 13–23 s)",
+   "duration_s": null,
+   "clip": "samples/media/countix_2.mp4",
+   "clip_offset_s": 16.581662,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 13.0,
+     "te": 23.0,
+     "lane": "other",
+     "text": "Kinetics clip window (slicing onion)"
+    },
+    {
+     "t": 16.581662,
+     "te": 21.527766,
+     "lane": "event",
+     "text": "slicing onion: count 22"
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": {
+    "countix_val.csv": {
+     "video_id": "A11I-L1iSiw",
+     "class": "slicing onion",
+     "kinetics_start": "13",
+     "kinetics_end": "23",
+     "repetition_start": "16.581662",
+     "repetition_end": "21.527766",
+     "count": "22"
+    },
+    "Countix-QA cut_countix_val.csv (third-party clip index)": {
+     "Video_Name": "A11I-L1iSiw.mp4",
+     "class_name": "slicing onion",
+     "count": "22"
+    }
+   }
+  }
+ ]
+}
