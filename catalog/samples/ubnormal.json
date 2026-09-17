@@ -1,0 +1,140 @@
+{
+ "slug": "ubnormal",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/Dxuan77/UBnormal UBnormal.zip → Scene4/abnormal_scene_4_scenario_2_fire_annotations/abnormal_scene_4_scenario_2_fire_tracks.txt, Scene4/abnormal_scene_4_scenario_2_annotations/abnormal_scene_4_scenario_2_tracks.txt, abnormal_test.txt, abnormal_training.txt (same file as the official Google Drive zip)",
+  "thumb frames: https://huggingface.co/datasets/Jiaqi-hkust/hawk Videos/UBnormal/Scene4/abnormal_scene_4_scenario_2_fire.mp4"
+ ],
+ "access_used": "open download",
+ "note": "One example is one abnormal video's *_tracks.txt: each row is (track/object id, first frame, last frame) of an abnormal object, written as floats; pixel-level masks sit next to it as PNGs (not copied). The anomaly type is not named in the file. Timeline seconds use 30 fps (the video frame rate). The data is CC BY-NC-ND and synthetic (rendered scenes); thumbnail only.",
+ "examples": [
+  {
+   "title": "abnormal_scene_4_scenario_2_fire (test): fire variant, 4 abnormal tracks",
+   "video_ref": "Scene4/abnormal_scene_4_scenario_2_fire.mp4",
+   "duration_s": 15.03,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": "samples/media/ubnormal_1.jpg",
+   "timeline": [
+    {
+     "t": 0.67,
+     "te": 2.0,
+     "lane": "alert",
+     "text": "abnormal track 1: frames 20–59"
+    },
+    {
+     "t": 2.33,
+     "te": 2.37,
+     "lane": "alert",
+     "text": "abnormal track 1: frames 70–70"
+    },
+    {
+     "t": 2.73,
+     "te": 3.8,
+     "lane": "alert",
+     "text": "abnormal track 1: frames 82–113"
+    },
+    {
+     "t": 4.5,
+     "te": 4.67,
+     "lane": "alert",
+     "text": "abnormal track 1: frames 135–139"
+    },
+    {
+     "t": 0.17,
+     "te": 1.73,
+     "lane": "alert",
+     "text": "abnormal track 2: frames 5–51"
+    },
+    {
+     "t": 2.0,
+     "te": 2.03,
+     "lane": "alert",
+     "text": "abnormal track 2: frames 60–60"
+    },
+    {
+     "t": 2.13,
+     "te": 2.17,
+     "lane": "alert",
+     "text": "abnormal track 2: frames 64–64"
+    },
+    {
+     "t": 2.6,
+     "te": 3.77,
+     "lane": "alert",
+     "text": "abnormal track 2: frames 78–112"
+    },
+    {
+     "t": 3.8,
+     "te": 3.83,
+     "lane": "alert",
+     "text": "abnormal track 2: frames 114–114"
+    },
+    {
+     "t": 3.9,
+     "te": 3.93,
+     "lane": "alert",
+     "text": "abnormal track 2: frames 117–117"
+    },
+    {
+     "t": 4.03,
+     "te": 4.07,
+     "lane": "alert",
+     "text": "abnormal track 2: frames 121–121"
+    },
+    {
+     "t": 4.17,
+     "te": 4.2,
+     "lane": "alert",
+     "text": "abnormal track 2: frames 125–125"
+    },
+    {
+     "t": 4.27,
+     "te": 4.3,
+     "lane": "alert",
+     "text": "abnormal track 2: frames 128–128"
+    },
+    {
+     "t": 0.0,
+     "te": 15.03,
+     "lane": "alert",
+     "text": "abnormal track 3: frames 0–450"
+    },
+    {
+     "t": 3.87,
+     "te": 14.57,
+     "lane": "alert",
+     "text": "abnormal track 4: frames 116–436"
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": {
+    "file": "Scene4/abnormal_scene_4_scenario_2_fire_annotations/abnormal_scene_4_scenario_2_fire_tracks.txt",
+    "split_list": "abnormal_test.txt",
+    "content": "1.000000000000000000e+00,2.000000000000000000e+01,5.900000000000000000e+01\n1.000000000000000000e+00,7.000000000000000000e+01,7.000000000000000000e+01\n1.000000000000000000e+00,8.200000000000000000e+01,1.130000000000000000e+02\n1.000000000000000000e+00,1.350000000000000000e+02,1.390000000000000000e+02\n2.000000000000000000e+00,5.000000000000000000e+00,5.100000000000000000e+01\n2.000000000000000000e+00,6.000000000000000000e+01,6.000000000000000000e+01\n2.000000000000000000e+00,6.400000000000000000e+01,6.400000000000000000e+01\n2.000000000000000000e+00,7.800000000000000000e+01,1.120000000000000000e+02\n2.000000000000000000e+00,1.140000000000000000e+02,1.140000000000000000e+02\n2.000000000000000000e+00,1.170000000000000000e+02,1.170000000000000000e+02\n2.000000000000000000e+00,1.210000000000000000e+02,1.210000000000000000e+02\n2.000000000000000000e+00,1.250000000000000000e+02,1.250000000000000000e+02\n2.000000000000000000e+00,1.280000000000000000e+02,1.280000000000000000e+02\n3.000000000000000000e+00,0.000000000000000000e+00,4.500000000000000000e+02\n4.000000000000000000e+00,1.160000000000000000e+02,4.360000000000000000e+02\n"
+   }
+  },
+  {
+   "title": "abnormal_scene_4_scenario_2 (train): 1 abnormal track, frames 183–270",
+   "video_ref": "Scene4/abnormal_scene_4_scenario_2.mp4",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 6.1,
+     "te": 9.03,
+     "lane": "alert",
+     "text": "abnormal track 1: frames 183–270"
+    }
+   ],
+   "raw_format": "csv rows",
+   "raw": {
+    "file": "Scene4/abnormal_scene_4_scenario_2_annotations/abnormal_scene_4_scenario_2_tracks.txt",
+    "split_list": "abnormal_training.txt",
+    "content": "1,183,270\n"
+   }
+  }
+ ]
+}

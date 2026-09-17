@@ -1,0 +1,100 @@
+{
+ "slug": "cctv-fights",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://rose1.ntu.edu.sg/dataset/cctvFights/ (dataset page; annotations only after the signed ROSE Lab request)",
+  "https://huggingface.co/datasets/jdopensource/JoyAI-VL-Interaction event_grounding/event_grounding.json record 73497 (third-party conversion)"
+ ],
+ "access_used": "public sample in paper/repo/card only (full data needs the signed ROSE Lab licence)",
+ "note": "We could not get the original annotations: the videos and the fight-segment ground truth (start/end of each of 2,414 fight instances) are released only after a signed ROSE Lab request, and the terms forbid redistribution. The only verbatim record we can show is a third-party one: JoyAI-VL-Interaction's per-second alert conversion of fight_0242. It is not the CCTV-Fights file format. No media.",
+ "examples": [
+  {
+   "title": "fight_0242 as converted by JoyAI-VL-Interaction (not the original format): alert every second 20–28 s",
+   "video_ref": "fight_0242.mp4",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 4,
+     "te": null,
+     "lane": "user",
+     "text": "When a fight is happening, keep reminding me."
+    },
+    {
+     "t": 20,
+     "te": null,
+     "lane": "alert",
+     "text": "A brawl is erupting in the scene."
+    },
+    {
+     "t": 21,
+     "te": null,
+     "lane": "alert",
+     "text": "A brawl is erupting in the scene."
+    },
+    {
+     "t": 22,
+     "te": null,
+     "lane": "alert",
+     "text": "A brawl is erupting in the scene."
+    },
+    {
+     "t": 23,
+     "te": null,
+     "lane": "alert",
+     "text": "A brawl is erupting in the scene."
+    },
+    {
+     "t": 24,
+     "te": null,
+     "lane": "alert",
+     "text": "A brawl is erupting in the scene."
+    },
+    {
+     "t": 25,
+     "te": null,
+     "lane": "alert",
+     "text": "A brawl is erupting in the scene."
+    },
+    {
+     "t": 26,
+     "te": null,
+     "lane": "alert",
+     "text": "A brawl is erupting in the scene."
+    },
+    {
+     "t": 27,
+     "te": null,
+     "lane": "alert",
+     "text": "A brawl is erupting in the scene."
+    },
+    {
+     "t": 28,
+     "te": null,
+     "lane": "alert",
+     "text": "A brawl is erupting in the scene."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "video_name": "fight_0242.mp4",
+    "task_type": "event_grounding",
+    "source": "cctv_fights",
+    "question": [
+     {
+      "content": "When a fight is happening, keep reminding me.",
+      "time": "4"
+     }
+    ],
+    "response": [
+     {
+      "content": "A brawl is erupting in the scene.",
+      "time": "20,21,22,23,24,25,26,27,28"
+     }
+    ]
+   }
+  }
+ ]
+}

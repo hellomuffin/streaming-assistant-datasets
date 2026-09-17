@@ -1,0 +1,148 @@
+{
+ "slug": "dota",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://github.com/MoonBlvd/Detection-of-Traffic-Anomaly dataset/DoTA_annotations.zip → annotations/0RJPQ_97dcs_000387.json, annotations/0RJPQ_97dcs_001437.json; dataset/metadata_val.json",
+  "thumb frames: https://huggingface.co/datasets/Jiaqi-hkust/hawk Videos/DoTA/Video/0RJPQ_97dcs_000387_video.mp4 (re-host of the extracted frames)"
+ ],
+ "access_used": "open download",
+ "note": "One example is one clip's annotation JSON: the clip is frames video_start–video_end of a YouTube dashcam video sampled at 10 fps, with the anomaly window (anomaly_start/end, relative to the clip), the anomaly category, ego involvement, and a per-frame list of labels and object boxes (cut to 3 frames here). Timeline seconds are seconds of the YouTube video (frame/10). Thumbnail only (normal, onset, end of anomaly).",
+ "examples": [
+  {
+   "title": "0RJPQ_97dcs_000387 (val): ego car, \"moving_ahead_or_waiting\" collision, anomaly frames 41–94 of 120",
+   "video_ref": "YouTube 0RJPQ_97dcs (frames 387–506 at 10 fps)",
+   "duration_s": 12.0,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": "samples/media/dota_1.jpg",
+   "timeline": [
+    {
+     "t": 38.7,
+     "te": 50.7,
+     "lane": "event",
+     "text": "annotated clip"
+    },
+    {
+     "t": 42.8,
+     "te": 48.1,
+     "lane": "alert",
+     "text": "moving_ahead_or_waiting (accident_id 2, ego_involve=True)"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "annotations/0RJPQ_97dcs_000387.json": {
+     "video_name": "0RJPQ_97dcs_000387",
+     "channel": "AnAn",
+     "num_frames": 120,
+     "ignore": false,
+     "ego_involve": true,
+     "night": false,
+     "anomaly_start": 41,
+     "anomaly_end": 94,
+     "video_start": 387,
+     "video_end": 506,
+     "accident_id": "2",
+     "accident_name": "moving_ahead_or_waiting",
+     "labels": [
+      {
+       "frame_id": 0,
+       "image_path": "frames/0RJPQ_97dcs_000387/images/000000.jpg",
+       "accident_id": 0,
+       "accident_name": "normal",
+       "objects": []
+      },
+      {
+       "frame_id": 1,
+       "image_path": "frames/0RJPQ_97dcs_000387/images/000001.jpg",
+       "accident_id": 0,
+       "accident_name": "normal",
+       "objects": []
+      },
+      {
+       "frame_id": 2,
+       "image_path": "frames/0RJPQ_97dcs_000387/images/000002.jpg",
+       "accident_id": 0,
+       "accident_name": "normal",
+       "objects": []
+      },
+      "…[truncated 117 more items]"
+     ]
+    },
+    "metadata_val.json[0RJPQ_97dcs_000387]": {
+     "video_start": 387,
+     "video_end": 506,
+     "anomaly_start": 41,
+     "anomaly_end": 94,
+     "anomaly_class": "ego: moving_ahead_or_waiting",
+     "num_frames": 120,
+     "subset": "val"
+    }
+   }
+  },
+  {
+   "title": "0RJPQ_97dcs_001437: pedestrian anomaly, frames 37–49 of 111",
+   "video_ref": "YouTube 0RJPQ_97dcs (frames 1437–1547 at 10 fps)",
+   "duration_s": 11.1,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 143.7,
+     "te": 154.8,
+     "lane": "event",
+     "text": "annotated clip"
+    },
+    {
+     "t": 147.4,
+     "te": 148.6,
+     "lane": "alert",
+     "text": "pedestrian (accident_id 6, ego_involve=True)"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "annotations/0RJPQ_97dcs_001437.json": {
+     "video_name": "0RJPQ_97dcs_001437",
+     "channel": "AnAn",
+     "num_frames": 111,
+     "ignore": false,
+     "ego_involve": true,
+     "night": false,
+     "anomaly_start": 37,
+     "anomaly_end": 49,
+     "video_start": 1437,
+     "video_end": 1547,
+     "accident_id": "6",
+     "accident_name": "pedestrian",
+     "labels": [
+      {
+       "frame_id": 0,
+       "image_path": "frames/0RJPQ_97dcs_001437/images/000000.jpg",
+       "accident_id": 0,
+       "accident_name": "normal",
+       "objects": []
+      },
+      {
+       "frame_id": 1,
+       "image_path": "frames/0RJPQ_97dcs_001437/images/000001.jpg",
+       "accident_id": 0,
+       "accident_name": "normal",
+       "objects": []
+      },
+      {
+       "frame_id": 2,
+       "image_path": "frames/0RJPQ_97dcs_001437/images/000002.jpg",
+       "accident_id": 0,
+       "accident_name": "normal",
+       "objects": []
+      },
+      "…[truncated 108 more items]"
+     ]
+    },
+    "metadata_val.json[0RJPQ_97dcs_001437]": null
+   }
+  }
+ ]
+}

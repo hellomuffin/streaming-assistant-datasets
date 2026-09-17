@@ -1,0 +1,268 @@
+{
+ "slug": "oops",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://oops.cs.columbia.edu/data/video_and_anns.tar.gz → oops_dataset/annotations.tar.gz (transition_times.json) and oops_dataset/video.tar.gz (the two mp4 files, streamed)",
+  "https://oops.cs.columbia.edu/data/ lang.tar.gz → svos/train.json"
+ ],
+ "access_used": "open download",
+ "note": "One example is one FailArmy clip with (a) transition_times.json: three annotators' times (s) when the action turns from intentional to unintentional (-1 = not found), and (b) the language annotations: two workers' \"goal\" and \"what went wrong\" sentences with extracted subject-verb-object triples. Captions are video-level, so they span the whole clip in the timeline.",
+ "examples": [
+  {
+   "title": "Man on a children's slide loses balance at the top (onsets 9.3–10.7 s)",
+   "video_ref": "oops_video/train/You're Doing it Wrong _ Fail Compilation by FailArmy 201624.mp4",
+   "duration_s": 11.38,
+   "clip": "samples/media/oops_1.mp4",
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 9.27,
+     "te": null,
+     "lane": "mistake",
+     "text": "failure onset (annotator 1)"
+    },
+    {
+     "t": 9.75,
+     "te": null,
+     "lane": "mistake",
+     "text": "failure onset (annotator 2)"
+    },
+    {
+     "t": 10.66,
+     "te": null,
+     "lane": "mistake",
+     "text": "failure onset (annotator 3)"
+    },
+    {
+     "t": 0,
+     "te": 11.38,
+     "lane": "caption",
+     "text": "goal (1): the guy was trying to slide down a slide"
+    },
+    {
+     "t": 0,
+     "te": 11.38,
+     "lane": "caption",
+     "text": "went wrong (1): he ended up falling off of the slide instead"
+    },
+    {
+     "t": 0,
+     "te": 11.38,
+     "lane": "caption",
+     "text": "goal (2): A man tried to go down a children's slide."
+    },
+    {
+     "t": 0,
+     "te": 11.38,
+     "lane": "caption",
+     "text": "went wrong (2): He fell at the top because he lost his balance."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "annotations/transition_times.json": {
+     "You're Doing it Wrong _ Fail Compilation by FailArmy 201624": {
+      "t": [
+       9.2683,
+       9.746666,
+       10.661769
+      ],
+      "len": 11.5,
+      "rel_t": [
+       0.8059391304347826,
+       0.8475361739130435,
+       0.9271103478260869
+      ],
+      "stdev": 0.7080493608647632,
+      "rel_stdev": 0.061569509640414195,
+      "n_notfound": 0
+     }
+    },
+    "svos/train.json": {
+     "You're Doing it Wrong _ Fail Compilation by FailArmy 201624": [
+      {
+       "goal": "the guy was trying to slide down a slide",
+       "wentwrong": "he ended up falling off of the slide instead",
+       "kgoalsvos": [
+        [
+         "guy",
+         "slide",
+         "slide"
+        ]
+       ],
+       "kwentwrongsvos": [
+        [
+         "he",
+         "end",
+         ""
+        ]
+       ]
+      },
+      {
+       "goal": "A man tried to go down a children's slide.",
+       "wentwrong": "He fell at the top because he lost his balance.",
+       "kgoalsvos": [
+        [
+         "man",
+         "go",
+         "slide"
+        ]
+       ],
+       "kwentwrongsvos": [
+        [
+         "he",
+         "lose",
+         "balance"
+        ],
+        [
+         "he",
+         "fall",
+         "top"
+        ]
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "title": "Backflip off a boat clips the hull (onsets 4.7–8.4 s, annotators disagree)",
+   "video_ref": "oops_video/train/Summer vs Winter Fails (June 2018) _ FailArmy23.mp4",
+   "duration_s": 11.24,
+   "clip": "samples/media/oops_2.mp4",
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 4.73,
+     "te": null,
+     "lane": "mistake",
+     "text": "failure onset (annotator 1)"
+    },
+    {
+     "t": 4.99,
+     "te": null,
+     "lane": "mistake",
+     "text": "failure onset (annotator 2)"
+    },
+    {
+     "t": 8.39,
+     "te": null,
+     "lane": "mistake",
+     "text": "failure onset (annotator 3)"
+    },
+    {
+     "t": 0,
+     "te": 11.24,
+     "lane": "caption",
+     "text": "goal (1): The guy wanted to do a back flip into the water."
+    },
+    {
+     "t": 0,
+     "te": 11.24,
+     "lane": "caption",
+     "text": "went wrong (1): The guy ended up hitting the boat on the way down hurting himself."
+    },
+    {
+     "t": 0,
+     "te": 11.24,
+     "lane": "caption",
+     "text": "goal (2): Man tries to back flip in to water."
+    },
+    {
+     "t": 0,
+     "te": 11.24,
+     "lane": "caption",
+     "text": "went wrong (2): He hit his head on the boat."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "annotations/transition_times.json": {
+     "Summer vs Winter Fails (June 2018) _ FailArmy23": {
+      "t": [
+       4.731712,
+       4.987749,
+       8.391781
+      ],
+      "len": 11.375,
+      "rel_t": [
+       0.4159746813186813,
+       0.4384834285714286,
+       0.737738989010989
+      ],
+      "stdev": 2.0432447188705356,
+      "rel_stdev": 0.17962590935125586,
+      "n_notfound": 0
+     }
+    },
+    "svos/train.json": {
+     "Summer vs Winter Fails (June 2018) _ FailArmy23": [
+      {
+       "goal": "The guy wanted to do a back flip into the water.",
+       "wentwrong": "The guy ended up hitting the boat on the way down hurting himself.",
+       "kgoalsvos": [
+        [
+         "guy",
+         "do",
+         "water"
+        ],
+        [
+         "guy",
+         "do",
+         "flip"
+        ]
+       ],
+       "kwentwrongsvos": [
+        [
+         "guy",
+         "hit",
+         "boat"
+        ],
+        [
+         "way",
+         "hurt",
+         "himself"
+        ],
+        [
+         "guy",
+         "hit",
+         "way"
+        ]
+       ]
+      },
+      {
+       "goal": "Man tries to back flip in to water.",
+       "wentwrong": "He hit his head on the boat.",
+       "kgoalsvos": [
+        [
+         "",
+         "flip",
+         "water"
+        ],
+        [
+         "man",
+         "back",
+         "flip"
+        ]
+       ],
+       "kwentwrongsvos": [
+        [
+         "he",
+         "hit",
+         "head"
+        ],
+        [
+         "he",
+         "hit",
+         "boat"
+        ]
+       ]
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

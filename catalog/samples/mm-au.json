@@ -1,0 +1,116 @@
+{
+ "slug": "mm-au",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://github.com/jeffreychou777/LOTVS-MM-AU video_metadata.json (also on HF JeffreyChou/MM-AU)",
+  "ArA label/val.csv (ara.zip from the MM-AU release)"
+ ],
+ "access_used": "open download",
+ "note": "One example is one video's metadata entry (scene attributes, accident window as frame indices t_ai/t_co/t_ae, and the text description, cause and prevention measure) plus, when it exists, its accident-reason multiple-choice row. ArA rows name videos as <type>-<zero-padded number> (43-001315); we matched this to metadata video_name 43_1315, and the frame counts agree (79). The release gives frame indices without a frame rate in these files, so the timeline is left empty. No media: videos ship only as 525 GB of chunked archives.",
+ "examples": [
+  {
+   "title": "1_1: pedestrian crossing, accident frames 30–115, collision at 63",
+   "video_ref": "1_1",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "json",
+   "raw": {
+    "video_metadata.json": {
+     "7950b19f": {
+      "video_name": "1_1",
+      "id": "1",
+      "type": "1",
+      "weather": "1",
+      "light": "1",
+      "scenes": "4",
+      "linear": "1",
+      "accident occurred": "1",
+      "abnormal_start_frame": "30",
+      "abnormal_end_frame": "115",
+      "accident_frame": "63",
+      "total_frames": "440",
+      "t_ai": "30",
+      "t_co": "63",
+      "t_ae": "115",
+      "texts": "a pedestrian crosses the road",
+      "causes": "Pedestrian does not notice the coming vehicles when crossing the street",
+      "measures": "When passing the zebra crossing, drivers must slow down. When pedestrians or non-motor vehicles cross the zebra crossing, they should stop and give way to other normal running vehicles; When crossing the road, pedestrians must follow the zebra crossing, carefully observe the traffic, and do not cross the road in a hurry."
+     }
+    }
+   }
+  },
+  {
+   "title": "43_1315: evasive action, accident frames 16-49 of 79 + ArA cause question (answer a1 \"drives too fast\")",
+   "video_ref": "43_1315",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "json",
+   "raw": {
+    "video_metadata.json": {
+     "b4c12d9c": {
+      "video_name": "43_1315",
+      "id": "2256",
+      "type": "43",
+      "weather": "3",
+      "light": "1",
+      "scenes": "1",
+      "linear": "1",
+      "accident occurred": "1",
+      "abnormal_start_frame": "16",
+      "abnormal_end_frame": "49",
+      "accident_frame": "31",
+      "total_frames": "79",
+      "t_ai": "16",
+      "t_co": "31",
+      "t_ae": "49",
+      "texts": "a vehicle makes an evasive action",
+      "causes": "vehicles drive too fast with short braking distance",
+      "measures": "Vehicles should not exceed the speed limit during driving, especially in areas with many pedestrians.Vehicles should slow down when passing intersections or crosswalks, and observe the traffic carefully."
+     }
+    },
+    "ArA label/val.csv (header + rows for video_name 43-001315)": [
+     [
+      "video_id",
+      "frame_count",
+      "width",
+      "height",
+      "question",
+      "answer",
+      "qid",
+      "type",
+      "a0",
+      "a1",
+      "a2",
+      "a3",
+      "a4",
+      "video_name",
+      "video"
+     ],
+     [
+      "6838",
+      "79",
+      "",
+      "",
+      "What is the cause of the accident?",
+      "1",
+      "0",
+      "43",
+      "Cyclist drives on the motorway for a long time",
+      "The car drives too fast with short braking distance",
+      "The car drives with a legal speed",
+      "The car tires fall off when driving",
+      "The car driver is in distracted driving",
+      "43-001315",
+      "001315"
+     ]
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,90 @@
+{
+ "slug": "xd-violence",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://roc-ng.github.io/XD-Violence/images/annotations.txt",
+  "https://huggingface.co/datasets/jherng/xd-violence data/test_annotations.txt, data/video/test_videos/v=u5SF4SlqNDQ__#00-00-00_00-01-00_label_G-0-0.mp4 (unofficial mirror, used for the thumb)"
+ ],
+ "access_used": "open download",
+ "note": "One example is one line of the test annotation file: the video name (label code after \"_label_\": A normal, B1 fighting, B2 shooting, B4 riot, B5 abuse, B6 car accident, G explosion; up to 3 codes) followed by start/end frame pairs of the violent segments. Frames are converted at 24 fps (the rate of the released videos). Training videos have only the video-level label in the name. Thumbnail only.",
+ "examples": [
+  {
+   "title": "YouTube u5SF4SlqNDQ 00:00–01:00, label G (explosion): 2 frame ranges",
+   "video_ref": "v=u5SF4SlqNDQ__#00-00-00_00-01-00_label_G-0-0.mp4",
+   "duration_s": 60.1,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": "samples/media/xd-violence_1.jpg",
+   "timeline": [
+    {
+     "t": 26.0,
+     "te": 38.0,
+     "lane": "alert",
+     "text": "violent event (label G-0-0)"
+    },
+    {
+     "t": 39.58,
+     "te": 60.04,
+     "lane": "alert",
+     "text": "violent event (label G-0-0)"
+    }
+   ],
+   "raw_format": "txt",
+   "raw": "v=u5SF4SlqNDQ__#00-00-00_00-01-00_label_G-0-0 624 912 950 1441"
+  },
+  {
+   "title": "YouTube wVey5JDRf_g 01:30–02:41, label B6 (car accident): 7 short ranges",
+   "video_ref": "v=wVey5JDRf_g__#00-01-30_00-02-41_label_B6-0-0.mp4",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 5.92,
+     "te": 12.33,
+     "lane": "alert",
+     "text": "violent event (label B6-0-0)"
+    },
+    {
+     "t": 18.62,
+     "te": 21.17,
+     "lane": "alert",
+     "text": "violent event (label B6-0-0)"
+    },
+    {
+     "t": 25.25,
+     "te": 29.58,
+     "lane": "alert",
+     "text": "violent event (label B6-0-0)"
+    },
+    {
+     "t": 33.33,
+     "te": 36.25,
+     "lane": "alert",
+     "text": "violent event (label B6-0-0)"
+    },
+    {
+     "t": 41.67,
+     "te": 49.38,
+     "lane": "alert",
+     "text": "violent event (label B6-0-0)"
+    },
+    {
+     "t": 58.92,
+     "te": 64.58,
+     "lane": "alert",
+     "text": "violent event (label B6-0-0)"
+    },
+    {
+     "t": 68.12,
+     "te": 70.83,
+     "lane": "alert",
+     "text": "violent event (label B6-0-0)"
+    }
+   ],
+   "raw_format": "txt",
+   "raw": "v=wVey5JDRf_g__#00-01-30_00-02-41_label_B6-0-0 142 296 447 508 606 710 800 870 1000 1185 1414 1550 1635 1700"
+  }
+ ]
+}

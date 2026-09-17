@@ -1,0 +1,1120 @@
+{
+ "slug": "egoexolearn",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/hyf015/EgoExoLearn/resolve/main/bee94890-ac78-11ee-819f-80615f12b59e.mp4",
+  "https://huggingface.co/datasets/hyf015/EgoExoLearn/resolve/main/bee99854-ac78-11ee-819f-80615f12b59e.mp4",
+  "github.com/OpenGVLab/EgoExoLearn annotations/coarse_annotations.tar.gz (l1/<uid>.json)",
+  "annotations/fine_annotation_trainvaltest_en.csv",
+  "video_meta_downsampled.json"
+ ],
+ "access_used": "open download",
+ "note": "Each example is one egocentric kitchen recording (made after watching an exocentric demonstration) with its coarse-step file (lane 'step': numbered sub-descriptions per step class 'attribute') and its fine hand-level English narrations (lane 'action'), plus the video metadata row. The timeline has every fine row; raw for bee99854 keeps the first 45 of 72 CSV rows to stay under 25 KB. There are no mistake labels; the only 'error' is what a narration itself says (e.g. the batter is too thin, so more flour is added).",
+ "examples": [
+  {
+   "title": "bee94890 (ego, kitchen task4): stir-fry a meat dish — 7 coarse steps, 46 fine hand-level narrations",
+   "video_ref": "bee94890-ac78-11ee-819f-80615f12b59e.mp4",
+   "duration_s": 210.48,
+   "clip": "samples/media/egoexolearn_1.mp4",
+   "clip_offset_s": 78,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 2.4,
+     "te": 78.1,
+     "lane": "step",
+     "text": "1. Put an appropriate amount of cooking oil in the pot and turn the pot to evenly distribute the oil.\n2. Turn on the exhaust hood, pour in the chopped scallions, ginger, and garlic, stir-fry until fragrant.\n3. Add the sliced ​​meat to the pot and stir-fry for a few seconds.\n4. Add the fried eggs to the pot and stir-fry for a few seconds.\n5. Add the wood ear fungus and mushrooms to the pot and stir-fry."
+    },
+    {
+     "t": 3.2,
+     "te": 5.5,
+     "lane": "action",
+     "text": "With the right hand, take the bowl with oil from the table and prepare to put it into the pot."
+    },
+    {
+     "t": 6.2,
+     "te": 8.2,
+     "lane": "action",
+     "text": "Right hand holding the bowl, pour a small amount of oil into the pot."
+    },
+    {
+     "t": 8.2,
+     "te": 10.3,
+     "lane": "action",
+     "text": "The right hand puts the bowl with all the oil poured out back onto the table."
+    },
+    {
+     "t": 10.2,
+     "te": 14.0,
+     "lane": "action",
+     "text": "Grip the pot handle with your right hand and gently shake the pot back and forth to evenly distribute the oil inside the pot."
+    },
+    {
+     "t": 15.9,
+     "te": 18.5,
+     "lane": "action",
+     "text": "Right hand presses the button to turn on the fire."
+    },
+    {
+     "t": 18.6,
+     "te": 21.1,
+     "lane": "action",
+     "text": "With the left hand, pick up the plate on the table. The plate contains onion, ginger, and garlic, ready to be stir-fried."
+    },
+    {
+     "t": 21.0,
+     "te": 24.5,
+     "lane": "action",
+     "text": "Left hand holding the plate Right hand using a wooden spatula to scoop the onions, ginger, and garlic from the plate into the pot."
+    },
+    {
+     "t": 25.1,
+     "te": 25.8,
+     "lane": "action",
+     "text": "The left hand puts the plate with chopped scallions, ginger, and garlic back on the table."
+    },
+    {
+     "t": 25.2,
+     "te": 31.0,
+     "lane": "action",
+     "text": "Right hand holds a wooden shovel and stir-fries in the pot."
+    },
+    {
+     "t": 32.3,
+     "te": 34.7,
+     "lane": "action",
+     "text": "The left hand picks up the plate of shredded meat and walks towards the wok."
+    },
+    {
+     "t": 34.7,
+     "te": 36.4,
+     "lane": "action",
+     "text": "With the left hand holding the plate, and the right hand using a wooden shovel to push the shredded meat from the plate into the pot."
+    },
+    {
+     "t": 36.6,
+     "te": 38.5,
+     "lane": "action",
+     "text": "Hold the wooden shovel with your right hand and stir-fry the shredded meat."
+    },
+    {
+     "t": 38.5,
+     "te": 39.1,
+     "lane": "action",
+     "text": "Put the plate back in its original place with your left hand."
+    },
+    {
+     "t": 39.2,
+     "te": 53.6,
+     "lane": "action",
+     "text": "With the right hand, continue to stir-fry in the pot using a wooden shovel."
+    },
+    {
+     "t": 53.6,
+     "te": 57.4,
+     "lane": "action",
+     "text": "Left hand picked up the plate with daylily buds and wood ear. Both hands held the plate and prepared to pour it into the pot."
+    },
+    {
+     "t": 57.4,
+     "te": 59.1,
+     "lane": "action",
+     "text": "With my left hand, I poured the daylily buds and wood ear mushrooms from the plate into the pot. With my right hand, I used a wooden spatula to scrape the daylily buds and wood ear mushrooms off the plate."
+    },
+    {
+     "t": 59.1,
+     "te": 60.0,
+     "lane": "action",
+     "text": "Place the plate back on the table with your right hand."
+    },
+    {
+     "t": 60.0,
+     "te": 68.9,
+     "lane": "action",
+     "text": "Use a wooden spatula in your right hand to stir-fry the daylily buds, wood ear mushrooms, and shredded meat in the pan."
+    },
+    {
+     "t": 69.8,
+     "te": 70.8,
+     "lane": "action",
+     "text": "Left hand picks up the bowl holding the eggs."
+    },
+    {
+     "t": 70.8,
+     "te": 72.1,
+     "lane": "action",
+     "text": "Then, the left hand poured the scrambled eggs in the bowl into the pot."
+    },
+    {
+     "t": 72.1,
+     "te": 72.7,
+     "lane": "action",
+     "text": "Put the bowl back with your left hand."
+    },
+    {
+     "t": 72.7,
+     "te": 77.6,
+     "lane": "action",
+     "text": "With the right hand holding a wooden spatula, continue stir-frying in the wok."
+    },
+    {
+     "t": 78.2,
+     "te": 89.2,
+     "lane": "step",
+     "text": "1. Add an appropriate amount of dark and light soy sauce to the pot."
+    },
+    {
+     "t": 78.9,
+     "te": 79.4,
+     "lane": "action",
+     "text": "Switching the shovel from the right hand to the left hand, the right hand picks up the soy sauce on the table."
+    },
+    {
+     "t": 79.7,
+     "te": 83.1,
+     "lane": "action",
+     "text": "Pour a small amount of soy sauce from the right hand into the pot."
+    },
+    {
+     "t": 83.1,
+     "te": 84.0,
+     "lane": "action",
+     "text": "Put the soy sauce back with your right hand."
+    },
+    {
+     "t": 84.4,
+     "te": 85.2,
+     "lane": "action",
+     "text": "Next, the right hand picked up the light soy sauce beside it."
+    },
+    {
+     "t": 85.2,
+     "te": 88.2,
+     "lane": "action",
+     "text": "The right hand holds the light soy sauce and pours a small amount into the pot."
+    },
+    {
+     "t": 88.2,
+     "te": 89.2,
+     "lane": "action",
+     "text": "Put the soy sauce back in its original place with your right hand."
+    },
+    {
+     "t": 88.8,
+     "te": 102.9,
+     "lane": "step",
+     "text": "1. Stir-fry over high heat until the vegetables are colored."
+    },
+    {
+     "t": 89.2,
+     "te": 102.4,
+     "lane": "action",
+     "text": "With the left hand holding the wooden spatula, it is exchanged to the right hand. The right hand uses the wooden spatula to continue stir-frying the vegetables in the wok."
+    },
+    {
+     "t": 102.9,
+     "te": 108.6,
+     "lane": "step",
+     "text": "1. Add an appropriate amount of salt to the pot."
+    },
+    {
+     "t": 103.9,
+     "te": 106.9,
+     "lane": "action",
+     "text": "Switching the wooden shovel from the right hand to the left hand, Using the right hand to take a spoonful of salt."
+    },
+    {
+     "t": 106.9,
+     "te": 107.6,
+     "lane": "action",
+     "text": "Use a spoon in your right hand to pour a spoonful of salt into the pot."
+    },
+    {
+     "t": 107.7,
+     "te": 108.5,
+     "lane": "action",
+     "text": "Put the spoon back into the salt jar with your right hand."
+    },
+    {
+     "t": 108.5,
+     "te": 120.0,
+     "lane": "action",
+     "text": "Switching the shovel from the left hand to the right hand, the right hand takes the shovel and continues stir-frying the vegetables in the pan."
+    },
+    {
+     "t": 108.6,
+     "te": 120.3,
+     "lane": "step",
+     "text": "1. Continue stir-frying until half-cooked."
+    },
+    {
+     "t": 120.0,
+     "te": 124.0,
+     "lane": "action",
+     "text": "Turning around, he put the shovel in his right hand into his left hand. He then scooped up a spoonful of salt with his right hand."
+    },
+    {
+     "t": 120.4,
+     "te": 125.5,
+     "lane": "step",
+     "text": "1. Add an appropriate amount of MSG to the pot."
+    },
+    {
+     "t": 124.0,
+     "te": 124.6,
+     "lane": "action",
+     "text": "With the right hand, scoop up a spoonful of salt. Pour the spoonful of salt into the vegetables in the pot."
+    },
+    {
+     "t": 124.6,
+     "te": 125.7,
+     "lane": "action",
+     "text": "Put the salt spoon back with your right hand."
+    },
+    {
+     "t": 125.5,
+     "te": 208.4,
+     "lane": "step",
+     "text": "1. Continue to stir-fry with a wooden shovel.\n2. Cover the pan for a moment.\n3. Open the lid and stir-fry for two more times.\n4. Put the cooked dish into the plate.\n5. Return the frying pan to its original position."
+    },
+    {
+     "t": 126.0,
+     "te": 168.4,
+     "lane": "action",
+     "text": "The wooden shovel in the left hand is exchanged for the right hand. The right hand holds the wooden shovel and keeps stirring the vegetables in the pan."
+    },
+    {
+     "t": 168.6,
+     "te": 170.3,
+     "lane": "action",
+     "text": "Switch the wooden shovel from your right hand to your left hand. Pick up the pot lid on the stove with your right hand."
+    },
+    {
+     "t": 170.3,
+     "te": 172.3,
+     "lane": "action",
+     "text": "Place the lid on the pot with your right hand."
+    },
+    {
+     "t": 177.9,
+     "te": 180.1,
+     "lane": "action",
+     "text": "After the vegetables are cooked, turn off the fire with your right hand."
+    },
+    {
+     "t": 182.3,
+     "te": 183.1,
+     "lane": "action",
+     "text": "Left hand exchanges with right hand, holding a shovel. At the same time, the right hand picks up the lid of the pot."
+    },
+    {
+     "t": 183.1,
+     "te": 184.5,
+     "lane": "action",
+     "text": "The right hand puts the pot lid on the stove."
+    },
+    {
+     "t": 184.5,
+     "te": 188.2,
+     "lane": "action",
+     "text": "Right hand holds a wooden spatula to stir-fry the cooked vegetables in the pot."
+    },
+    {
+     "t": 190.3,
+     "te": 192.1775251,
+     "lane": "action",
+     "text": "Lift the pot with your left hand,  hold the wooden spatula with your right hand,  and turn towards the table behind you."
+    },
+    {
+     "t": 191.5,
+     "te": 202.7,
+     "lane": "action",
+     "text": "With the left hand holding the pot and the right hand using a wooden spatula, The cooked vegetables are scooped into a plate one by one, Finally, the edges of the vegetables are pushed towards the center of the plate with the spatula."
+    },
+    {
+     "t": 202.7,
+     "te": 207.1,
+     "lane": "action",
+     "text": "With the left hand holding a pot,  the right hand places the shovel in the pot,  and then the left hand puts the pot back on the stove."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "annotations/coarse_annotations.tar.gz → l1/bee94890-ac78-11ee-819f-80615f12b59e.json": [
+     {
+      "start": 2.4,
+      "end": 78.1,
+      "attribute": "24",
+      "duration": 210.4073,
+      "id": "RoaZvqWx",
+      "type": 0,
+      "textAttribute_en": "1. Put an appropriate amount of cooking oil in the pot and turn the pot to evenly distribute the oil.\n2. Turn on the exhaust hood, pour in the chopped scallions, ginger, and garlic, stir-fry until fragrant.\n3. Add the sliced ​​meat to the pot and stir-fry for a few seconds.\n4. Add the fried eggs to the pot and stir-fry for a few seconds.\n5. Add the wood ear fungus and mushrooms to the pot and stir-fry."
+     },
+     {
+      "start": 78.2,
+      "end": 89.2,
+      "attribute": "25",
+      "duration": 210.4073,
+      "id": "0u4ExXta",
+      "type": 0,
+      "textAttribute_en": "1. Add an appropriate amount of dark and light soy sauce to the pot."
+     },
+     {
+      "start": 88.8,
+      "end": 102.9,
+      "attribute": "24",
+      "duration": 210.4073,
+      "id": "mDVALFst",
+      "type": 0,
+      "textAttribute_en": "1. Stir-fry over high heat until the vegetables are colored."
+     },
+     {
+      "start": 102.9,
+      "end": 108.6,
+      "attribute": "25",
+      "duration": 210.4073,
+      "id": "QQFl7Obx",
+      "type": 0,
+      "textAttribute_en": "1. Add an appropriate amount of salt to the pot."
+     },
+     {
+      "start": 108.6,
+      "end": 120.3,
+      "attribute": "24",
+      "duration": 210.4073,
+      "id": "3CXBy98J",
+      "type": 0,
+      "textAttribute_en": "1. Continue stir-frying until half-cooked."
+     },
+     {
+      "start": 120.4,
+      "end": 125.5,
+      "attribute": "25",
+      "duration": 210.4073,
+      "id": "RoaLOpSH",
+      "type": 0,
+      "textAttribute_en": "1. Add an appropriate amount of MSG to the pot."
+     },
+     {
+      "start": 125.5,
+      "end": 208.4,
+      "attribute": "24",
+      "duration": 210.4073,
+      "id": "Vb8OhR8A",
+      "type": 0,
+      "textAttribute_en": "1. Continue to stir-fry with a wooden shovel.\n2. Cover the pan for a moment.\n3. Open the lid and stir-fry for two more times.\n4. Put the cooked dish into the plate.\n5. Return the frying pan to its original position."
+     }
+    ],
+    "annotations/fine_annotation_trainvaltest_en.csv rows (sorted by start_sec)": "video_uid,annotation_id,subset,view,scene,start_sec,end_sec,narration_en,narration_en_hand_prompt,narration_en_no_hand_prompt\nbee94890-ac78-11ee-819f-80615f12b59e,XLhRAw7M,train,ego,kitchen,3.2,5.5,\"With the right hand, take the bowl with oil from the table and prepare to put it into the pot.\",The right hand picks up the bowl with oil placed on the table and prepares to put it into the pot.,Take the bowl with oil from the table and prepare to put it into the pot.\nbee94890-ac78-11ee-819f-80615f12b59e,w2IBuUG4,train,ego,kitchen,6.2,8.2,\"Right hand holding the bowl, pour a small amount of oil into the pot.\",The right hand holds a bowl and pours a small amount of oil into the pot.,Hold the bowl and pour a small amount of oil into the pot.\nbee94890-ac78-11ee-819f-80615f12b59e,6AuGs2Db,train,ego,kitchen,8.2,10.3,The right hand puts the bowl with all the oil poured out back onto the table.,The right hand puts the bowl back on the table after pouring the oil.,Put the bowl with all the oil poured out back onto the table.\nbee94890-ac78-11ee-819f-80615f12b59e,gPlSCwAI,train,ego,kitchen,10.2,14.0,Grip the pot handle with your right hand and gently shake the pot back and forth to evenly distribute the oil inside the pot.,\"The right hand holds the handle of the pot and gently shakes it back and forth, distributing the oil evenly in the pot.\",Grip the pot handle and gently shake the pot back and forth to evenly distribute the oil inside the pot.\nbee94890-ac78-11ee-819f-80615f12b59e,oY9pDD5s,val,ego,kitchen,15.9,18.5,Right hand presses the button to turn on the fire.,The right hand presses the button to turn on the fire.,Press the button to turn on the fire.\nbee94890-ac78-11ee-819f-80615f12b59e,Holjbyd0,train,ego,kitchen,18.6,21.1,\"With the left hand, pick up the plate on the table. The plate contains onion, ginger, and garlic, ready to be stir-fried.\",\"The left hand picks up the plate on the table, and the plate contains onions, ginger, and garlic, preparing to stir-fry the vegetables.\",\"Pick up the plate on the table containing onion, ginger, and garlic, ready to be stir-fried.\"\nbee94890-ac78-11ee-819f-80615f12b59e,6HxxhRpS,val,ego,kitchen,21.0,24.5,\"Left hand holding the plate Right hand using a wooden spatula to scoop the onions, ginger, and garlic from the plate into the pot.\",\"The left hand holds the plate, the right hand takes a wooden spatula and pushes the scallions, ginger, and garlic from the plate into the pot.\",\"Hold the plate and use a wooden spatula to scoop the onions, ginger, and garlic from the plate into the pot.\"\nbee94890-ac78-11ee-819f-80615f12b59e,fyVdtDeW,val,ego,kitchen,25.1,25.8,\"The left hand puts the plate with chopped scallions, ginger, and garlic back on the table.\",\"The left hand puts the plate with chopped onions, ginger, and garlic back on the table.\",\"Put the plate with chopped scallions, ginger, and garlic back on the table.\"\nbee94890-ac78-11ee-819f-80615f12b59e,gbiHXpAy,test,ego,kitchen,25.2,31.0,Right hand holds a wooden shovel and stir-fries in the pot.,The right hand holds a wooden shovel and stirs/fries it in the pot.,Hold a wooden shovel and stir-fry in the pot.\nbee94890-ac78-11ee-819f-80615f12b59e,2Hl8DLT5,train,ego,kitchen,32.3,34.7,The left hand picks up the plate of shredded meat and walks towards the wok.,The left hand picks up the plate of shredded meat and walks towards the wok.,Pick up the plate of shredded meat and walk towards the wok.\nbee94890-ac78-11ee-819f-80615f12b59e,0ZEC7Dhb,train,ego,kitchen,34.7,36.4,\"With the left hand holding the plate, and the right hand using a wooden shovel to push the shredded meat from the plate into the pot.\",\"The left hand holds the plate, while the right hand uses a wooden spatula to push the shredded meat into the pot.\",Hold the plate and use a wooden shovel to push the shredded meat from the plate into the pot.\nbee94890-ac78-11ee-819f-80615f12b59e,77aBtYyo,train,ego,kitchen,36.6,38.5,Hold the wooden shovel with your right hand and stir-fry the shredded meat.,The right hand flips and stirs the shredded meat with a wooden spatula.,Hold the wooden shovel and stir-fry the shredded meat.\nbee94890-ac78-11ee-819f-80615f12b59e,u2h8NgUs,test,ego,kitchen,38.5,39.1,Put the plate back in its original place with your left hand.,The left hand puts the plate back in its original position.,Put the plate back in its original place.\nbee94890-ac78-11ee-819f-80615f12b59e,5TVEdv3i,test,ego,kitchen,39.2,53.6,\"With the right hand, continue to stir-fry in the pot using a wooden shovel.\",The right hand continues to stir-fry in the pot using a wooden spatula.,Continue to stir-fry in the pot using a wooden shovel.\nbee94890-ac78-11ee-819f-80615f12b59e,34U6SRyQ,val,ego,kitchen,53.6,57.4,Left hand picked up the plate with daylily buds and wood ear. Both hands held the plate and prepared to pour it into the pot.,\"The left hand picks up the plate containing daylily bud vegetable and fungus, while both hands hold the plate and prepare to pour it into the pot.\",Picked up the plate with daylily buds and wood ear. Held the plate and prepared to pour it into the pot.\nbee94890-ac78-11ee-819f-80615f12b59e,3LXW7yOf,train,ego,kitchen,57.4,59.1,\"With my left hand, I poured the daylily buds and wood ear mushrooms from the plate into the pot. With my right hand, I used a wooden spatula to scrape the daylily buds and wood ear mushrooms off the plate.\",\"The left hand pours the daylily buds and fungus from the plate into the pot, and the right hand uses a wooden spatula to scrape the daylily buds and fungus in the plate clean.\",I poured the daylily buds and wood ear mushrooms from the plate into the pot. I used a wooden spatula to scrape the daylily buds and wood ear mushrooms off the plate.\nbee94890-ac78-11ee-819f-80615f12b59e,C7qSgoIn,test,ego,kitchen,59.1,60.0,Place the plate back on the table with your right hand.,The right hand puts the plate back on the table.,Place the plate back on the table.\nbee94890-ac78-11ee-819f-80615f12b59e,HyBcksWJ,test,ego,kitchen,60.0,68.9,\"Use a wooden spatula in your right hand to stir-fry the daylily buds, wood ear mushrooms, and shredded meat in the pan.\",\"The right hand uses a wooden spatula to stir-fry the daylily buds, black fungus, and shredded meat in the wok.\",\"Use a wooden spatula to stir-fry the daylily buds, wood ear mushrooms, and shredded meat in the pan.\"\nbee94890-ac78-11ee-819f-80615f12b59e,tXOi0N8h,train,ego,kitchen,69.8,70.8,Left hand picks up the bowl holding the eggs.,The left hand picks up the bowl with the eggs.,Pick up the bowl holding the eggs.\nbee94890-ac78-11ee-819f-80615f12b59e,mTMbWk3B,train,ego,kitchen,70.8,72.1,\"Then, the left hand poured the scrambled eggs in the bowl into the pot.\",Then the left hand pours the scrambled eggs from the bowl into the pan.,Pour the scrambled eggs from the bowl into the pot.\nbee94890-ac78-11ee-819f-80615f12b59e,tJfmtvpd,test,ego,kitchen,72.1,72.7,Put the bowl back with your left hand.,The left hand puts the bowl back.,Put the bowl back.\nbee94890-ac78-11ee-819f-80615f12b59e,ve6qlUNL,train,ego,kitchen,72.7,77.6,\"With the right hand holding a wooden spatula, continue stir-frying in the wok.\",The right hand continues to stir-fry in the pot with a wooden spatula.,Continue stir-frying in the wok with a wooden spatula.\nbee94890-ac78-11ee-819f-80615f12b59e,N1gDSyna,train,ego,kitchen,78.9,79.4,\"Switching the shovel from the right hand to the left hand, the right hand picks up the soy sauce on the table.\",The right hand switches the shovel to the left hand and picks up the soy sauce on the table with the right hand.,\"Switching the shovel, the right hand picks up the soy sauce on the table.\"\nbee94890-ac78-11ee-819f-80615f12b59e,pyUGt12o,train,ego,kitchen,79.7,83.1,Pour a small amount of soy sauce from the right hand into the pot.,The right hand pours a little soy sauce into the pot.,Pour a small amount of soy sauce into the pot.\nbee94890-ac78-11ee-819f-80615f12b59e,LKcHmuuw,train,ego,kitchen,83.1,84.0,Put the soy sauce back with your right hand.,The right hand puts the soy sauce back.,Put the soy sauce back.\nbee94890-ac78-11ee-819f-80615f12b59e,Po3QYJFx,val,ego,kitchen,84.4,85.2,\"Next, the right hand picked up the light soy sauce beside it.\",\"Next, the right hand picks up the light soy sauce next to it.\",\"Next, picked up the light soy sauce.\"\nbee94890-ac78-11ee-819f-80615f12b59e,TyPNSubU,test,ego,kitchen,85.2,88.2,The right hand holds the light soy sauce and pours a small amount into the pot.,The right hand pours a little light soy sauce into the pot.,Hold the light soy sauce and pour a small amount into the pot.\nbee94890-ac78-11ee-819f-80615f12b59e,9NCdnxVT,test,ego,kitchen,88.2,89.2,Put the soy sauce back in its original place with your right hand.,The right hand puts the soy sauce back in its original place.,Put the soy sauce back in its original place.\nbee94890-ac78-11ee-819f-80615f12b59e,tbG02Ag7,train,ego,kitchen,89.2,102.4,\"With the left hand holding the wooden spatula, it is exchanged to the right hand. The right hand uses the wooden spatula to continue stir-frying the vegetables in the wok.\",\"The left hand takes the wooden spatula back to the right hand, and the right hand continues to stir-fry the vegetables in the pan with the wooden spatula.\",Hold the wooden spatula and exchange it to the right hand. Use the wooden spatula to continue stir-frying the vegetables in the wok.\nbee94890-ac78-11ee-819f-80615f12b59e,ZfPD0c7j,test,ego,kitchen,103.9,106.9,\"Switching the wooden shovel from the right hand to the left hand, Using the right hand to take a spoonful of salt.\",\"The right hand swaps the wooden shovel to the left hand, and the right hand scoops up a spoonful of salt.\",\"Switch the wooden shovel, and use the right hand to take a spoonful of salt.\"\nbee94890-ac78-11ee-819f-80615f12b59e,mBcHurRe,test,ego,kitchen,106.9,107.6,Use a spoon in your right hand to pour a spoonful of salt into the pot.,The right hand pours a spoonful of salt into the pot.,Use a spoon to pour a spoonful of salt into the pot.\nbee94890-ac78-11ee-819f-80615f12b59e,1B16w92X,train,ego,kitchen,107.7,108.5,Put the spoon back into the salt jar with your right hand.,The right hand puts the spoon back into the salt jar.,Put the spoon back into the salt jar.\nbee94890-ac78-11ee-819f-80615f12b59e,xNdTELWv,test,ego,kitchen,108.5,120.0,\"Switching the shovel from the left hand to the right hand, the right hand takes the shovel and continues stir-frying the vegetables in the pan.\",\"The left hand exchanges the shovel it is holding to the right hand, and the right hand continues to stir-fry the food in the skillet with the shovel.\",\"Switching the shovel, the right hand takes it and continues stir-frying the vegetables in the pan.\"\nbee94890-ac78-11ee-819f-80615f12b59e,OcV5ajBy,val,ego,kitchen,120.0,124.0,\"Turning around, he put the shovel in his right hand into his left hand. He then scooped up a spoonful of salt with his right hand.\",\"I turn around and put the shovel in my left hand, then I scoop up a spoonful of salt with my right hand.\",\"Turning around, he put the shovel into his left hand. He then scooped up a spoonful of salt.\"\nbee94890-ac78-11ee-819f-80615f12b59e,sbB9c0eq,test,ego,kitchen,124.0,124.6,\"With the right hand, scoop up a spoonful of salt. Pour the spoonful of salt into the vegetables in the pot.\",The right hand pours a spoonful of salt into the pot of vegetables.,Scoop up a spoonful of salt. Pour the spoonful of salt into the vegetables in the pot.\nbee94890-ac78-11ee-819f-80615f12b59e,jWZeHv1T,train,ego,kitchen,124.6,125.7,Put the salt spoon back with your right hand.,The right hand puts the salt spoon back.,Put the salt spoon back.\nbee94890-ac78-11ee-819f-80615f12b59e,TSANSgqo,train,ego,kitchen,126.0,168.4,The wooden shovel in the left hand is exchanged for the right hand. The right hand holds the wooden shovel and keeps stirring the vegetables in the pan.,\"The left hand switches the wooden spatula back to the right hand, and the right hand continuously flips and stirs the vegetables in the pan.\",The wooden shovel is exchanged and keeps stirring the vegetables in the pan.\nbee94890-ac78-11ee-819f-80615f12b59e,1Dc0Madp,train,ego,kitchen,168.6,170.3,Switch the wooden shovel from your right hand to your left hand. Pick up the pot lid on the stove with your right hand.,Swap the wooden shovel from the right hand to the left hand and the right hand picks up the pot lid on the stove.,Switch the wooden shovel. Pick up the pot lid on the stove.\nbee94890-ac78-11ee-819f-80615f12b59e,aInJlL4I,train,ego,kitchen,170.3,172.3,Place the lid on the pot with your right hand.,The right hand covers the lid on the pot.,Place the lid on the pot.\nbee94890-ac78-11ee-819f-80615f12b59e,ZYgBQYcj,test,ego,kitchen,177.9,180.1,\"After the vegetables are cooked, turn off the fire with your right hand.\",\"After the vegetables are cooked, the right hand turns off the fire.\",\"After the vegetables are cooked, turn off the fire.\"\nbee94890-ac78-11ee-819f-80615f12b59e,fOWKP6Jx,train,ego,kitchen,182.3,183.1,\"Left hand exchanges with right hand, holding a shovel. At the same time, the right hand picks up the lid of the pot.\",\"The left hand holds the shovel and passes it to the right hand, while the right hand takes the pot lid.\",Exchange the shovel with the lid of the pot.\nbee94890-ac78-11ee-819f-80615f12b59e,KiPCmqTr,test,ego,kitchen,183.1,184.5,The right hand puts the pot lid on the stove.,The right hand places the lid on the stove.,Put the pot lid on the stove.\nbee94890-ac78-11ee-819f-80615f12b59e,jB0htCZe,test,ego,kitchen,184.5,188.2,Right hand holds a wooden spatula to stir-fry the cooked vegetables in the pot.,The right hand takes a wooden shovel and stirs the cooked vegetables in the pot.,Hold a wooden spatula to stir-fry the cooked vegetables in the pot.\nbee94890-ac78-11ee-819f-80615f12b59e,ZfiySAdy,test,ego,kitchen,190.3,192.1775251,\"Lift the pot with your left hand,  hold the wooden spatula with your right hand,  and turn towards the table behind you.\",\"The left hand lifts the pot, the right hand holds a wooden spatula, and turns towards the table behind.\",\"Lift the pot, hold the wooden spatula, and turn towards the table behind you.\"\nbee94890-ac78-11ee-819f-80615f12b59e,P2KHuzn3,test,ego,kitchen,191.5,202.7,\"With the left hand holding the pot and the right hand using a wooden spatula, The cooked vegetables are scooped into a plate one by one, Finally, the edges of the vegetables are pushed towards the center of the plate with the spatula.\",\"The left hand holds the pot, the right hand uses a wooden spatula to scoop the cooked vegetables into a plate, and finally uses the spatula to push the vegetables towards the center of the plate.\",\"Hold the pot and use a wooden spatula to scoop the cooked vegetables into a plate one by one. Finally, push the edges of the vegetables towards the center of the plate with the spatula.\"\nbee94890-ac78-11ee-819f-80615f12b59e,5hJMF35y,train,ego,kitchen,202.7,207.1,\"With the left hand holding a pot,  the right hand places the shovel in the pot,  and then the left hand puts the pot back on the stove.\",\"The left hand is holding the pot, the right hand is placing the spatula in the pot, and the left hand is putting the pot back on the stove.\",\"Hold a pot, place the shovel in the pot, and then put the pot back on the stove.\"",
+    "video_meta_downsampled.json item": {
+     "video_uid": "bee94890-ac78-11ee-819f-80615f12b59e",
+     "num_frames": 5262.0,
+     "fps": 25.0,
+     "width": 320.0,
+     "height": 320.0,
+     "view": "ego",
+     "scene": "kitchen",
+     "task": "task4"
+    }
+   }
+  },
+  {
+   "title": "bee99854 (ego, kitchen task5): prep tomato/egg/batter — batter too thin, flour added again",
+   "video_ref": "bee99854-ac78-11ee-819f-80615f12b59e.mp4",
+   "duration_s": 258.36,
+   "clip": "samples/media/egoexolearn_2.mp4",
+   "clip_offset_s": 222,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 6.4,
+     "te": 14.1,
+     "lane": "action",
+     "text": "Open the fridge door. With your left hand, take an egg and put it in your right hand. Then, with your left hand, take a tomato from the bag."
+    },
+    {
+     "t": 7.8,
+     "te": 10.657158438063984,
+     "lane": "step",
+     "text": "1. Take out an egg from the refrigerator."
+    },
+    {
+     "t": 10.7,
+     "te": 25.67849741919607,
+     "lane": "step",
+     "text": "1. Take a tomato out of the refrigerator.\n2. Walk to the cutting board.\n3. Place the egg on the table.\n4. Wash the tomato under the faucet."
+    },
+    {
+     "t": 17.2,
+     "te": 18.1,
+     "lane": "action",
+     "text": "With the right hand holding an egg, Place the egg on the table."
+    },
+    {
+     "t": 18.5,
+     "te": 24.4,
+     "lane": "action",
+     "text": "Open the faucet with your right hand. Hold the tomato with your left hand and rinse it under the faucet. Close the faucet with your right hand."
+    },
+    {
+     "t": 24.5,
+     "te": 26.1,
+     "lane": "action",
+     "text": "Left hand holding a tomato on the cutting board. Right hand picking up a kitchen knife."
+    },
+    {
+     "t": 25.7,
+     "te": 49.03812380311736,
+     "lane": "step",
+     "text": "1. Cut the tomato in half.\n2. Then slice the tomato.\n3. Finally, cut it open from the middle."
+    },
+    {
+     "t": 26.2,
+     "te": 48.5,
+     "lane": "action",
+     "text": "With the left hand pressing the tomato, and the right hand holding the knife, First cut the tomato in half,  Then slice one half into thin pieces,  And cut them into small cubes."
+    },
+    {
+     "t": 48.7,
+     "te": 50.0,
+     "lane": "action",
+     "text": "Pick up the chopped tomatoes with your left hand."
+    },
+    {
+     "t": 49.016675755537335,
+     "te": 54.5,
+     "lane": "step",
+     "text": "1. Put the chopped tomatoes into the plate."
+    },
+    {
+     "t": 50.1,
+     "te": 51.6,
+     "lane": "action",
+     "text": "With the left hand holding the diced tomatoes,  place the tomatoes into the empty plate."
+    },
+    {
+     "t": 51.7,
+     "te": 52.4,
+     "lane": "action",
+     "text": "Left hand picked up the remaining tomatoes on the chopping board."
+    },
+    {
+     "t": 52.5,
+     "te": 53.4,
+     "lane": "action",
+     "text": "With the left hand holding the remaining chopped tomatoes, placed it into an empty plate."
+    },
+    {
+     "t": 53.5,
+     "te": 54.1,
+     "lane": "action",
+     "text": "With the right hand holding a kitchen knife, Place the kitchen knife on the cutting board."
+    },
+    {
+     "t": 54.2,
+     "te": 55.2,
+     "lane": "action",
+     "text": "Pick up a garlic sprout from the plate with your right hand."
+    },
+    {
+     "t": 54.6,
+     "te": 59.56428960951601,
+     "lane": "step",
+     "text": "1. Pick up the scallion from the table. \n2. Rinse it clean under the tap."
+    },
+    {
+     "t": 56.0,
+     "te": 58.8,
+     "lane": "action",
+     "text": "Open the tap with your right hand, Hold the garlic sprouts with both hands, Rinse them under the tap, Close the tap with your right hand."
+    },
+    {
+     "t": 58.9,
+     "te": 60.0,
+     "lane": "action",
+     "text": "Pick up the kitchen knife on the chopping board with your right hand."
+    },
+    {
+     "t": 60.1,
+     "te": 60.6,
+     "lane": "action",
+     "text": "Left hand presses down below, Right hand holds a kitchen knife, Cut a section of garlic sprouts."
+    },
+    {
+     "t": 60.4,
+     "te": 70.2,
+     "lane": "step",
+     "text": "1. Cut off a section of the scallion.\n2. Put the remaining scallion back onto the plate.\n3. Slice the white part of the scallion into pieces."
+    },
+    {
+     "t": 60.7,
+     "te": 61.9,
+     "lane": "action",
+     "text": "Pick up the remaining garlic sprouts with your left hand. Put it back in the plate."
+    },
+    {
+     "t": 62.0,
+     "te": 69.4,
+     "lane": "action",
+     "text": "The left hand is pressing the garlic sprouts on the cutting board. Using the other hand to hold the knife, the garlic sprouts are sliced into thin pieces."
+    },
+    {
+     "t": 69.5,
+     "te": 72.9,
+     "lane": "action",
+     "text": "Pick up the chopped garlic sprouts with your left hand."
+    },
+    {
+     "t": 70.3,
+     "te": 78.949972733388,
+     "lane": "step",
+     "text": "1. Put the chopped green onions into a plate.\n2. Then take the ginger from the windowsill and put it on the cutting board."
+    },
+    {
+     "t": 73.0,
+     "te": 73.7,
+     "lane": "action",
+     "text": "With the left hand holding the chopped garlic sprouts, put them in an empty plate."
+    },
+    {
+     "t": 73.9,
+     "te": 74.9,
+     "lane": "action",
+     "text": "Pick up the chopsticks on the plate with your left hand."
+    },
+    {
+     "t": 75.0,
+     "te": 76.3,
+     "lane": "action",
+     "text": "Holding the chopsticks in my left hand, I placed them in the aluminum basin next to me."
+    },
+    {
+     "t": 76.4,
+     "te": 77.8,
+     "lane": "action",
+     "text": "Pick up the ginger from the windowsill with your left hand."
+    },
+    {
+     "t": 77.9,
+     "te": 79.5,
+     "lane": "action",
+     "text": "Left hand holding ginger, place it on the chopping board."
+    },
+    {
+     "t": 79.05238614602135,
+     "te": 81.06428960951601,
+     "lane": "step",
+     "text": "1. Cut a small piece of ginger."
+    },
+    {
+     "t": 79.6,
+     "te": 80.1,
+     "lane": "action",
+     "text": "Left hand presses on the ginger, Right hand takes the kitchen knife and cuts off a piece."
+    },
+    {
+     "t": 80.41190346,
+     "te": 81.53571039,
+     "lane": "action",
+     "text": "With the left hand, pick up the leftover ginger. Place it back on the windowsill."
+    },
+    {
+     "t": 81.39286882854802,
+     "te": 88.5,
+     "lane": "step",
+     "text": "1. Rinse the cut ginger under the tap."
+    },
+    {
+     "t": 81.63571039,
+     "te": 86.4,
+     "lane": "action",
+     "text": "The left hand is holding the ginger pieces that have been cut. Wash them under the faucet until clean."
+    },
+    {
+     "t": 87.0,
+     "te": 88.9,
+     "lane": "action",
+     "text": "Holding the washed ginger in the left hand. Picking up the kitchen knife from the cutting board with the right hand."
+    },
+    {
+     "t": 88.78809653650534,
+     "te": 104.3,
+     "lane": "step",
+     "text": "1. Cut some clean ginger into slices.\n2. Then cut it into pieces."
+    },
+    {
+     "t": 89.0,
+     "te": 93.08815107,
+     "lane": "action",
+     "text": "Left hand presses down on the ginger piece Right hand uses a knife to cut off a slice."
+    },
+    {
+     "t": 93.1,
+     "te": 99.2,
+     "lane": "action",
+     "text": "With the left hand pressing the ginger slices, and the right hand holding the kitchen knife, cut the ginger into thin strips."
+    },
+    {
+     "t": 99.3,
+     "te": 103.6,
+     "lane": "action",
+     "text": "Rotate the ginger shreds with your left hand, Hold the vegetable knife with your right hand, And chop it into ginger paste."
+    },
+    {
+     "t": 103.7,
+     "te": 104.9,
+     "lane": "action",
+     "text": "Pick up the diced ginger with your left hand."
+    },
+    {
+     "t": 104.4,
+     "te": 128.11656668908932,
+     "lane": "step",
+     "text": "1. Put the chopped ginger pieces into a clean plate.\n2. Take the garlic cloves down from the windowsill and put them on the cutting board.\n3. Press the garlic cloves with the back of a knife and peel off the skin."
+    },
+    {
+     "t": 105.0,
+     "te": 107.9,
+     "lane": "action",
+     "text": "Left hand holds the chopped ginger and puts it in a plate for later use."
+    },
+    {
+     "t": 108.0,
+     "te": 108.7,
+     "lane": "action",
+     "text": "Left hand picks up the remaining ginger on the cutting board."
+    },
+    {
+     "t": 108.8,
+     "te": 111.1,
+     "lane": "action",
+     "text": "With the left hand, hold the remaining ginger and put it in the plate too."
+    },
+    {
+     "t": 112.4,
+     "te": 114.2,
+     "lane": "action",
+     "text": "The right hand took a garlic from the windowsill and split a clove off."
+    },
+    {
+     "t": 114.3,
+     "te": 115.6642896,
+     "lane": "action",
+     "text": "Holding the remaining garlic in his left hand, he put it back on the windowsill."
+    },
+    {
+     "t": 115.7,
+     "te": 116.5,
+     "lane": "action",
+     "text": "Pick up the kitchen knife on the cutting board with your right hand."
+    },
+    {
+     "t": 116.6,
+     "te": 118.1,
+     "lane": "action",
+     "text": "With the right hand holding a kitchen knife, the left hand presses the garlic cloves on the blade and flattens them."
+    },
+    {
+     "t": 118.2,
+     "te": 119.2,
+     "lane": "action",
+     "text": "With the right hand holding a kitchen knife, Place the kitchen knife on the cutting board."
+    },
+    {
+     "t": 119.6,
+     "te": 127.0,
+     "lane": "action",
+     "text": "With the left hand, grip the garlic clove.  With the right hand, peel off the garlic skin."
+    },
+    {
+     "t": 127.1,
+     "te": 128.5,
+     "lane": "action",
+     "text": "After removing the garlic skins, pick up the kitchen knife on the cutting board with your right hand."
+    },
+    {
+     "t": 128.3665939557013,
+     "te": 142.04750478753098,
+     "lane": "step",
+     "text": "1. Divide the garlic cloves in half, then chop them into garlic minced."
+    },
+    {
+     "t": 128.6,
+     "te": 141.9,
+     "lane": "action",
+     "text": "Left hand pressing the garlic clove, Right hand holding a knife, First splitting the garlic clove into two, And then chopping it into small pieces."
+    },
+    {
+     "t": 142.0,
+     "te": 142.4,
+     "lane": "action",
+     "text": "Pick up the chopped garlic with your left hand."
+    },
+    {
+     "t": 142.1,
+     "te": 149.80235887940952,
+     "lane": "step",
+     "text": "1. Put the chopped garlic into a plate."
+    },
+    {
+     "t": 142.5,
+     "te": 146.2,
+     "lane": "action",
+     "text": "With the left hand, hold the chopped garlic cloves.  Place them in a plate for later use."
+    },
+    {
+     "t": 146.3,
+     "te": 147.3,
+     "lane": "action",
+     "text": "With the left hand, pick up the remaining garlic cloves on the cutting board."
+    },
+    {
+     "t": 147.4,
+     "te": 149.6,
+     "lane": "action",
+     "text": "With the left hand holding the chopped garlic cloves, place them in the plate. Put the garlic stuck on the chef's knife into the plate as well for later use."
+    },
+    {
+     "t": 149.7,
+     "te": 150.7,
+     "lane": "action",
+     "text": "With the right hand holding a kitchen knife, Place the knife on the cutting board."
+    },
+    {
+     "t": 150.55715843806385,
+     "te": 175.96428960951596,
+     "lane": "step",
+     "text": "1. Pick up the egg from the table.\n2. Crack the egg into an aluminum basin.\n3. Stir continuously to scramble the egg."
+    },
+    {
+     "t": 150.8,
+     "te": 151.7,
+     "lane": "action",
+     "text": "The right hand picks up an egg from the table."
+    },
+    {
+     "t": 151.8,
+     "te": 160.2,
+     "lane": "action",
+     "text": "Right hand holding an egg,  cracking it on the table  Left hand picking up chopsticks from on top of the bowl  Using both hands to crack the egg into the bowl."
+    },
+    {
+     "t": 160.3,
+     "te": 161.9,
+     "lane": "action",
+     "text": "Right hand holds the eggshell. Place the eggshell on the table."
+    },
+    {
+     "t": 162.0,
+     "te": 162.8,
+     "lane": "action",
+     "text": "With the left hand, hold the aluminum basin containing eggs. With the right hand, hold the chopsticks."
+    },
+    {
+     "t": 162.9,
+     "te": 174.1,
+     "lane": "action",
+     "text": "With the left hand holding a bowl,  and the right hand holding chopsticks stirring the eggs in the bowl,  break the eggs apart."
+    },
+    {
+     "t": 174.2,
+     "te": 175.8,
+     "lane": "action",
+     "text": "With the left hand holding an aluminum basin, Put the beaten egg mixture on the table."
+    },
+    {
+     "t": 176.3,
+     "te": 180.0,
+     "lane": "action",
+     "text": "Open the faucet with your right hand. Rinse the chopsticks under the faucet. Close the faucet with your right hand."
+    },
+    {
+     "t": 176.4,
+     "te": 179.6,
+     "lane": "step",
+     "text": "1. Rinse the chopsticks with egg on them under the faucet to clean them."
+    },
+    {
+     "t": 181.1,
+     "te": 182.7,
+     "lane": "action",
+     "text": "With the left hand holding chopsticks, the right hand picks up the bag of flour."
+    },
+    {
+     "t": 181.2,
+     "te": 252.5,
+     "lane": "step",
+     "text": "1. Pick up the bag of flour and pour some flour into a bowl.\n2. Connect the water pipe, pour a little water, and stir constantly with chopsticks.\n3. The batter is a bit thin, so pick up the bag of flour again and pour some more flour, continue stirring until it becomes sticky, still a bit thin.\n4. Pour in a small amount of flour, stir for a while, and the batter gradually takes shape.\n5. Put down the aluminum pan."
+    },
+    {
+     "t": 182.8,
+     "te": 191.3,
+     "lane": "action",
+     "text": "With both hands holding the bag of flour, shake it gently. Pour a small amount of flour into the bowl."
+    },
+    {
+     "t": 191.4,
+     "te": 192.8,
+     "lane": "action",
+     "text": "With the right hand holding a bag of flour, place it back on the table."
+    },
+    {
+     "t": 192.9,
+     "te": 193.8,
+     "lane": "action",
+     "text": "Holding chopsticks in the left hand, lifting an aluminum basin with the right hand."
+    },
+    {
+     "t": 193.9,
+     "te": 197.2,
+     "lane": "action",
+     "text": "Left hand holding an aluminum basin, Right hand turning on the faucet, Adding a small amount of water into the basin, Closing the faucet."
+    },
+    {
+     "t": 198.7,
+     "te": 208.1976411,
+     "lane": "action",
+     "text": "With the left hand holding an aluminum basin and the right hand holding chopsticks to stir, mix the flour and water thoroughly."
+    },
+    {
+     "t": 208.2,
+     "te": 212.0,
+     "lane": "action",
+     "text": "After stirring for a moment, I held the aluminum basin in my left hand, and placed it on the table."
+    },
+    {
+     "t": 211.9,
+     "te": 212.7,
+     "lane": "action",
+     "text": "The flour in the bowl is a bit less,  and my left hand picks up the bag of flour on the table."
+    },
+    {
+     "t": 212.8,
+     "te": 216.1,
+     "lane": "action",
+     "text": "With both hands holding the bag of flour, shake it gently.  Pour a small amount of flour into the bowl again."
+    },
+    {
+     "t": 216.2,
+     "te": 217.4,
+     "lane": "action",
+     "text": "With the left hand holding a bag of flour,  put it down."
+    },
+    {
+     "t": 217.5,
+     "te": 217.9,
+     "lane": "action",
+     "text": "With left hand holding the aluminum basin,  prepare to stir."
+    },
+    {
+     "t": 218.0,
+     "te": 228.4,
+     "lane": "action",
+     "text": "Left hand holding an aluminum basin, right hand holding chopsticks, stirring and mixing flour and water thoroughly. Gradually solidifying the mixture."
+    },
+    {
+     "t": 228.5,
+     "te": 229.4,
+     "lane": "action",
+     "text": "Holding an aluminum basin in the left hand, Place it on the table."
+    },
+    {
+     "t": 229.5,
+     "te": 230.2,
+     "lane": "action",
+     "text": "After stirring, the batter was still a bit thin, so the left hand picked up the flour on the table once again."
+    },
+    {
+     "t": 230.3,
+     "te": 240.8,
+     "lane": "action",
+     "text": "With both hands holding the bag of flour, shake it lightly. Pour a small amount of flour into the bowl again."
+    },
+    {
+     "t": 240.9,
+     "te": 241.8,
+     "lane": "action",
+     "text": "With the left hand holding the bag of flour, put it back on the table."
+    },
+    {
+     "t": 241.9,
+     "te": 242.8,
+     "lane": "action",
+     "text": "With the left hand, lift up the aluminum basin. Get ready to stir."
+    },
+    {
+     "t": 242.9,
+     "te": 250.2,
+     "lane": "action",
+     "text": "With the left hand holding an aluminum basin and the right hand holding chopsticks to stir, stir the batter until it forms."
+    },
+    {
+     "t": 250.3,
+     "te": 251.6,
+     "lane": "action",
+     "text": "With my left hand holding an aluminum basin,  I placed it back on the table."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "annotations/coarse_annotations.tar.gz → l1/bee99854-ac78-11ee-819f-80615f12b59e.json": [
+     {
+      "start": 7.8,
+      "end": 10.657158438063984,
+      "attribute": "11",
+      "duration": 258.310322,
+      "id": "x85cAqhC",
+      "type": 0,
+      "textAttribute_en": "1. Take out an egg from the refrigerator."
+     },
+     {
+      "start": 10.7,
+      "end": 25.67849741919607,
+      "attribute": "1",
+      "duration": 258.310322,
+      "id": "V2MTw3de",
+      "type": 0,
+      "textAttribute_en": "1. Take a tomato out of the refrigerator.\n2. Walk to the cutting board.\n3. Place the egg on the table.\n4. Wash the tomato under the faucet."
+     },
+     {
+      "start": 25.7,
+      "end": 49.03812380311736,
+      "attribute": "12",
+      "duration": 258.310322,
+      "id": "T4Q0x9nP",
+      "type": 0,
+      "textAttribute_en": "1. Cut the tomato in half.\n2. Then slice the tomato.\n3. Finally, cut it open from the middle."
+     },
+     {
+      "start": 49.016675755537335,
+      "end": 54.5,
+      "attribute": "1",
+      "duration": 258.310322,
+      "id": "BItJLjSp",
+      "type": 0,
+      "textAttribute_en": "1. Put the chopped tomatoes into the plate."
+     },
+     {
+      "start": 54.6,
+      "end": 59.56428960951601,
+      "attribute": "7",
+      "duration": 258.310322,
+      "id": "cej4blnD",
+      "type": 0,
+      "textAttribute_en": "1. Pick up the scallion from the table. \n2. Rinse it clean under the tap."
+     },
+     {
+      "start": 60.4,
+      "end": 70.2,
+      "attribute": "18",
+      "duration": 258.310322,
+      "id": "H1BPqYmL",
+      "type": 0,
+      "textAttribute_en": "1. Cut off a section of the scallion.\n2. Put the remaining scallion back onto the plate.\n3. Slice the white part of the scallion into pieces."
+     },
+     {
+      "start": 70.3,
+      "end": 78.949972733388,
+      "attribute": "7",
+      "duration": 258.310322,
+      "id": "IOvsJ3pf",
+      "type": 0,
+      "textAttribute_en": "1. Put the chopped green onions into a plate.\n2. Then take the ginger from the windowsill and put it on the cutting board."
+     },
+     {
+      "start": 79.05238614602135,
+      "end": 81.06428960951601,
+      "attribute": "18",
+      "duration": 258.310322,
+      "id": "LMwErV7H",
+      "type": 0,
+      "textAttribute_en": "1. Cut a small piece of ginger."
+     },
+     {
+      "start": 81.39286882854802,
+      "end": 88.5,
+      "attribute": "7",
+      "duration": 258.310322,
+      "id": "t3i64kjE",
+      "type": 0,
+      "textAttribute_en": "1. Rinse the cut ginger under the tap."
+     },
+     {
+      "start": 88.78809653650534,
+      "end": 104.3,
+      "attribute": "18",
+      "duration": 258.310322,
+      "id": "7l8AMAIn",
+      "type": 0,
+      "textAttribute_en": "1. Cut some clean ginger into slices.\n2. Then cut it into pieces."
+     },
+     {
+      "start": 104.4,
+      "end": 128.11656668908932,
+      "attribute": "7",
+      "duration": 258.310322,
+      "id": "eNhZQoaf",
+      "type": 0,
+      "textAttribute_en": "1. Put the chopped ginger pieces into a clean plate.\n2. Take the garlic cloves down from the windowsill and put them on the cutting board.\n3. Press the garlic cloves with the back of a knife and peel off the skin."
+     },
+     {
+      "start": 128.3665939557013,
+      "end": 142.04750478753098,
+      "attribute": "18",
+      "duration": 258.310322,
+      "id": "WZWaD1vL",
+      "type": 0,
+      "textAttribute_en": "1. Divide the garlic cloves in half, then chop them into garlic minced."
+     },
+     {
+      "start": 142.1,
+      "end": 149.80235887940952,
+      "attribute": "7",
+      "duration": 258.310322,
+      "id": "fYwM2vBP",
+      "type": 0,
+      "textAttribute_en": "1. Put the chopped garlic into a plate."
+     },
+     {
+      "start": 150.55715843806385,
+      "end": 175.96428960951596,
+      "attribute": "11",
+      "duration": 258.310322,
+      "id": "iBBlEBAj",
+      "type": 0,
+      "textAttribute_en": "1. Pick up the egg from the table.\n2. Crack the egg into an aluminum basin.\n3. Stir continuously to scramble the egg."
+     },
+     {
+      "start": 176.4,
+      "end": 179.6,
+      "attribute": "26",
+      "duration": 258.310322,
+      "id": "pEqur4nZ",
+      "type": 0,
+      "textAttribute_en": "1. Rinse the chopsticks with egg on them under the faucet to clean them."
+     },
+     {
+      "start": 181.2,
+      "end": 252.5,
+      "attribute": "8",
+      "duration": 258.310322,
+      "id": "A90Cef5Y",
+      "type": 0,
+      "textAttribute_en": "1. Pick up the bag of flour and pour some flour into a bowl.\n2. Connect the water pipe, pour a little water, and stir constantly with chopsticks.\n3. The batter is a bit thin, so pick up the bag of flour again and pour some more flour, continue stirring until it becomes sticky, still a bit thin.\n4. Pour in a small amount of flour, stir for a while, and the batter gradually takes shape.\n5. Put down the aluminum pan."
+     }
+    ],
+    "annotations/fine_annotation_trainvaltest_en.csv rows (sorted by start_sec)": "video_uid,annotation_id,subset,view,scene,start_sec,end_sec,narration_en,narration_en_hand_prompt,narration_en_no_hand_prompt\nbee99854-ac78-11ee-819f-80615f12b59e,89nJcdRF,train,ego,kitchen,6.4,14.1,\"Open the fridge door. With your left hand, take an egg and put it in your right hand. Then, with your left hand, take a tomato from the bag.\",Open the refrigerator door. The left hand picks up an egg and places it on the right hand. The left hand then takes out a tomato from the bag.,\"Open the fridge door. Take an egg and put it in your hand. Then, take a tomato from the bag.\"\nbee99854-ac78-11ee-819f-80615f12b59e,xWT7Nod9,train,ego,kitchen,17.2,18.1,\"With the right hand holding an egg, Place the egg on the table.\",The right hand holds the egg and places it on the table.,\"With the right hand holding an egg, place it on the table.\"\nbee99854-ac78-11ee-819f-80615f12b59e,XLeAlAla,test,ego,kitchen,18.5,24.4,Open the faucet with your right hand. Hold the tomato with your left hand and rinse it under the faucet. Close the faucet with your right hand.,\"The right hand opens the faucet, the left hand holds a tomato, rinses it under the faucet, and the right hand closes the faucet.\",Open the faucet. Hold the tomato and rinse it under the faucet. Close the faucet.\nbee99854-ac78-11ee-819f-80615f12b59e,BqCj5e6k,test,ego,kitchen,24.5,26.1,Left hand holding a tomato on the cutting board. Right hand picking up a kitchen knife.,\"The left hand holds the tomato and places it on the cutting board, while the right hand picks up the knife.\",Hold a tomato on the cutting board and pick up a kitchen knife.\nbee99854-ac78-11ee-819f-80615f12b59e,g7gIzU6t,train,ego,kitchen,26.2,48.5,\"With the left hand pressing the tomato, and the right hand holding the knife, First cut the tomato in half,  Then slice one half into thin pieces,  And cut them into small cubes.\",\"The left hand presses the tomato, and the right hand holds the knife. First, the tomato is cut in half, and then one half is sliced into thin slices and diced.\",\"Press the tomato and hold the knife. First cut the tomato in half, then slice one half into thin pieces, and cut them into small cubes.\"\nbee99854-ac78-11ee-819f-80615f12b59e,iTdRPyMh,train,ego,kitchen,48.7,50.0,Pick up the chopped tomatoes with your left hand.,The left hand picks up the sliced tomatoes.,Pick up the chopped tomatoes.\nbee99854-ac78-11ee-819f-80615f12b59e,uuusfJel,train,ego,kitchen,50.1,51.6,\"With the left hand holding the diced tomatoes,  place the tomatoes into the empty plate.\",The left hand holds the cut tomatoes and puts them into an empty plate.,\"With the left hand holding the diced tomatoes, place them on the empty plate.\"\nbee99854-ac78-11ee-819f-80615f12b59e,K3Jwkp0G,test,ego,kitchen,51.7,52.4,Left hand picked up the remaining tomatoes on the chopping board.,The left hand picks up the remaining tomatoes on the cutting board.,Picked up the remaining tomatoes on the chopping board.\nbee99854-ac78-11ee-819f-80615f12b59e,p5u5nWrw,test,ego,kitchen,52.5,53.4,\"With the left hand holding the remaining chopped tomatoes, placed it into an empty plate.\",The left hand holds the remaining chopped tomatoes and puts them into an empty plate.,Hold the remaining chopped tomatoes and place them into an empty plate.\nbee99854-ac78-11ee-819f-80615f12b59e,WSfo1j7j,train,ego,kitchen,53.5,54.1,\"With the right hand holding a kitchen knife, Place the kitchen knife on the cutting board.\",The right hand holds a kitchen knife and places it on the cutting board.,Place the kitchen knife on the cutting board.\nbee99854-ac78-11ee-819f-80615f12b59e,o9aFh67u,val,ego,kitchen,54.2,55.2,Pick up a garlic sprout from the plate with your right hand.,The right hand picks up a garlic shoot from the plate.,Pick up a garlic sprout from the plate.\nbee99854-ac78-11ee-819f-80615f12b59e,WFVacJQm,test,ego,kitchen,56.0,58.8,\"Open the tap with your right hand, Hold the garlic sprouts with both hands, Rinse them under the tap, Close the tap with your right hand.\",\"The right hand opens the faucet, both hands hold the garlic sprout, and wash it under the faucet. The right hand then closes the faucet.\",\"Open the tap, hold the garlic sprouts, rinse them under the tap, close the tap.\"\nbee99854-ac78-11ee-819f-80615f12b59e,0Q11QdkD,train,ego,kitchen,58.9,60.0,Pick up the kitchen knife on the chopping board with your right hand.,The right hand picks up the knife on the chopping board.,Pick up the kitchen knife on the chopping board.\nbee99854-ac78-11ee-819f-80615f12b59e,ENckrx7A,train,ego,kitchen,60.1,60.6,\"Left hand presses down below, Right hand holds a kitchen knife, Cut a section of garlic sprouts.\",\"The left hand presses down underneath, the right hand holds the chef's knife, and cuts a segment of garlic sprouts.\",Press down below with your left hand. Hold a kitchen knife with your right hand. Cut a section of garlic sprouts.\nbee99854-ac78-11ee-819f-80615f12b59e,vnSxLPC1,train,ego,kitchen,60.7,61.9,Pick up the remaining garlic sprouts with your left hand. Put it back in the plate.,The left hand picks up the remaining garlic sprouts and puts them back into the plate.,Pick up the remaining garlic sprouts. Put them back on the plate.\nbee99854-ac78-11ee-819f-80615f12b59e,KCqRXof7,test,ego,kitchen,62.0,69.4,\"The left hand is pressing the garlic sprouts on the cutting board. Using the other hand to hold the knife, the garlic sprouts are sliced into thin pieces.\",The left hand presses the garlic sprouts on the cutting board and cuts them into thin slices with a knife.,Press the garlic sprouts on the cutting board and slice them into thin pieces using the knife.\nbee99854-ac78-11ee-819f-80615f12b59e,iIQKcCXQ,train,ego,kitchen,69.5,72.9,Pick up the chopped garlic sprouts with your left hand.,The left hand picks up the chopped garlic sprouts.,Pick up the chopped garlic sprouts.\nbee99854-ac78-11ee-819f-80615f12b59e,5V1yMgdR,test,ego,kitchen,73.0,73.7,\"With the left hand holding the chopped garlic sprouts, put them in an empty plate.\",The left hand holds the chopped garlic sprouts and puts them into an empty plate.,Hold the chopped garlic sprouts and put them in an empty plate.\nbee99854-ac78-11ee-819f-80615f12b59e,aZOBcsH4,test,ego,kitchen,73.9,74.9,Pick up the chopsticks on the plate with your left hand.,The left hand picks up the chopsticks placed on the plate.,Pick up the chopsticks on the plate.\nbee99854-ac78-11ee-819f-80615f12b59e,cy7pOQh6,train,ego,kitchen,75.0,76.3,\"Holding the chopsticks in my left hand, I placed them in the aluminum basin next to me.\",The left hand holds the chopsticks and places them on the aluminum basin next to it.,Hold the chopsticks and place them in the aluminum basin next to me.\nbee99854-ac78-11ee-819f-80615f12b59e,uCCCpUeL,train,ego,kitchen,76.4,77.8,Pick up the ginger from the windowsill with your left hand.,The left hand picks up the ginger placed on the windowsill.,Pick up the ginger from the windowsill.\nbee99854-ac78-11ee-819f-80615f12b59e,D1D4fpXU,train,ego,kitchen,77.9,79.5,\"Left hand holding ginger, place it on the chopping board.\",The left hand holds the ginger and puts it on the cutting board.,Hold ginger and place it on the chopping board.\nbee99854-ac78-11ee-819f-80615f12b59e,YuLFHfv5,train,ego,kitchen,79.6,80.1,\"Left hand presses on the ginger, Right hand takes the kitchen knife and cuts off a piece.\",\"The left hand holds the ginger, and the right hand cuts off a piece with a knife.\",\"Press on the ginger, take the kitchen knife, and cut off a piece.\"\nbee99854-ac78-11ee-819f-80615f12b59e,jeMatpCk,test,ego,kitchen,80.41190346,81.53571039,\"With the left hand, pick up the leftover ginger. Place it back on the windowsill.\",The left hand picks up the remaining ginger and puts it back on the windowsill.,Pick up the leftover ginger. Place it back on the windowsill.\nbee99854-ac78-11ee-819f-80615f12b59e,ROnN46eu,train,ego,kitchen,81.63571039,86.4,The left hand is holding the ginger pieces that have been cut. Wash them under the faucet until clean.,The left hand holds the cut ginger piece and rinses it under the faucet.,Hold the ginger pieces that have been cut and wash them under the faucet until clean.\nbee99854-ac78-11ee-819f-80615f12b59e,nucOkBOi,test,ego,kitchen,87.0,88.9,Holding the washed ginger in the left hand. Picking up the kitchen knife from the cutting board with the right hand.,\"The left hand holds the cleaned ginger, and the right hand picks up the vegetable knife on the chopping board.\",Holding the washed ginger. Picking up the kitchen knife from the cutting board.\nbee99854-ac78-11ee-819f-80615f12b59e,eX7AoWNF,train,ego,kitchen,89.0,93.08815107,Left hand presses down on the ginger piece Right hand uses a knife to cut off a slice.,\"The left hand presses the ginger, while the right hand cuts off a slice.\",Press down on the ginger piece and use a knife to cut off a slice.\nbee99854-ac78-11ee-819f-80615f12b59e,DWAtCid4,train,ego,kitchen,93.1,99.2,\"With the left hand pressing the ginger slices, and the right hand holding the kitchen knife, cut the ginger into thin strips.\",\"The left hand presses down on the ginger slices, and the right hand holds the kitchen knife to cut it into julienne.\",Press the ginger slices and cut them into thin strips with the kitchen knife.\nbee99854-ac78-11ee-819f-80615f12b59e,T2C0ptZF,train,ego,kitchen,99.3,103.6,\"Rotate the ginger shreds with your left hand, Hold the vegetable knife with your right hand, And chop it into ginger paste.\",The left hand rotates the ginger slices while the right hand holds the knife and chops it into ginger paste.,\"Rotate the ginger shreds, hold the vegetable knife, and chop it into ginger paste.\"\nbee99854-ac78-11ee-819f-80615f12b59e,kp4vgbyc,val,ego,kitchen,103.7,104.9,Pick up the diced ginger with your left hand.,The left hand picks up the finely chopped ginger.,Pick up the diced ginger.\nbee99854-ac78-11ee-819f-80615f12b59e,YYptsEZs,test,ego,kitchen,105.0,107.9,Left hand holds the chopped ginger and puts it in a plate for later use.,The left hand holds the finely chopped ginger and places it in the plate for later use.,Hold the chopped ginger and put it in a plate for later use.\nbee99854-ac78-11ee-819f-80615f12b59e,bsuD21uL,test,ego,kitchen,108.0,108.7,Left hand picks up the remaining ginger on the cutting board.,The left hand picks up the remaining ginger powder on the cutting board.,Pick up the remaining ginger on the cutting board.\nbee99854-ac78-11ee-819f-80615f12b59e,jEMp8faN,train,ego,kitchen,108.8,111.1,\"With the left hand, hold the remaining ginger and put it in the plate too.\",The left hand holds the remaining ginger powder and puts it into the plate.,Hold the remaining ginger and put it in the plate too.\nbee99854-ac78-11ee-819f-80615f12b59e,qg1mgNf9,test,ego,kitchen,112.4,114.2,The right hand took a garlic from the windowsill and split a clove off.,The right hand takes a clove of garlic from the windowsill and breaks it off.,Took a garlic from the windowsill and split a clove off.\nbee99854-ac78-11ee-819f-80615f12b59e,sgHWnvoB,test,ego,kitchen,114.3,115.6642896,\"Holding the remaining garlic in his left hand, he put it back on the windowsill.\",The left hand holds the remaining garlic and puts it back on the windowsill.,He put the remaining garlic back on the windowsill.\nbee99854-ac78-11ee-819f-80615f12b59e,4E6Ui8uo,train,ego,kitchen,115.7,116.5,Pick up the kitchen knife on the cutting board with your right hand.,The right hand picks up the knife on the chopping board.,Pick up the kitchen knife on the cutting board.\nbee99854-ac78-11ee-819f-80615f12b59e,UpBBeRhG,train,ego,kitchen,116.6,118.1,\"With the right hand holding a kitchen knife, the left hand presses the garlic cloves on the blade and flattens them.\",\"The right hand holds a kitchen knife, the left hand presses the garlic cloves onto the blade.\",\"Hold the kitchen knife, press the garlic cloves on the blade, and flatten them.\"\nbee99854-ac78-11ee-819f-80615f12b59e,HWHnNtw7,train,ego,kitchen,118.2,119.2,\"With the right hand holding a kitchen knife, Place the kitchen knife on the cutting board.\",The right hand holds the kitchen knife and places it on the cutting board.,\"With the right hand holding a kitchen knife, place it on the cutting board.\"\nbee99854-ac78-11ee-819f-80615f12b59e,ABZ0ljo1,train,ego,kitchen,119.6,127.0,\"With the left hand, grip the garlic clove.  With the right hand, peel off the garlic skin.\",\"The left hand squeezes the garlic cloves, while the right hand peels off the skin of the garlic.\",Grip the garlic clove and peel off the garlic skin.\nbee99854-ac78-11ee-819f-80615f12b59e,xJZqAVrS,train,ego,kitchen,127.1,128.5,\"After removing the garlic skins, pick up the kitchen knife on the cutting board with your right hand.\",\"After peeling the garlic skin, the right hand picks up the vegetable knife on the cutting board.\",\"After removing the garlic skins, pick up the kitchen knife on the cutting board.\"\nbee99854-ac78-11ee-819f-80615f12b59e,QFgBv6zX,test,ego,kitchen,128.6,141.9,\"Left hand pressing the garlic clove, Right hand holding a knife, First splitting the garlic clove into two, And then chopping it into small pieces.\",\"The left hand presses down on the garlic cloves, the right hand holds a knife, and then the garlic cloves are split in half, followed by cutting them into small pieces.\",\"Press the garlic clove, hold a knife, split the garlic clove into two, and then chop it into small pieces.\"\nbee99854-ac78-11ee-819f-80615f12b59e,V7jog3bJ,train,ego,kitchen,142.0,142.4,Pick up the chopped garlic with your left hand.,The left hand picks up the minced garlic cloves.,Pick up the chopped garlic.\nbee99854-ac78-11ee-819f-80615f12b59e,1E3r6KsF,train,ego,kitchen,142.5,146.2,\"With the left hand, hold the chopped garlic cloves.  Place them in a plate for later use.\",The left hand holds the chopped garlic cloves and puts them in the plate for later use.,Hold the chopped garlic cloves. Place them in a plate for later use.\nbee99854-ac78-11ee-819f-80615f12b59e,5iwoiTdX,train,ego,kitchen,146.3,147.3,\"With the left hand, pick up the remaining garlic cloves on the cutting board.\",The left hand picks up the remaining garlic cloves on the cutting board.,Pick up the remaining garlic cloves on the cutting board.\nbee99854-ac78-11ee-819f-80615f12b59e,Oap8DLWu,train,ego,kitchen,147.4,149.6,\"With the left hand holding the chopped garlic cloves, place them in the plate. Put the garlic stuck on the chef's knife into the plate as well for later use.\",The left hand holds the chopped garlic cloves and places them in the plate. It also puts the garlic cloves stuck on the knife into the plate for later use.,Hold the chopped garlic cloves and place them in the plate. Put the garlic stuck on the chef's knife into the plate as well for later use.\n…[truncated 27 more items]",
+    "video_meta_downsampled.json item": {
+     "video_uid": "bee99854-ac78-11ee-819f-80615f12b59e",
+     "num_frames": 6459.0,
+     "fps": 25.0,
+     "width": 320.0,
+     "height": 320.0,
+     "view": "ego",
+     "scene": "kitchen",
+     "task": "task5"
+    }
+   }
+  }
+ ]
+}

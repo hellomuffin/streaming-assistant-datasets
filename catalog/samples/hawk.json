@@ -1,0 +1,52 @@
+{
+ "slug": "hawk",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/Jiaqi-hkust/hawk Annotation/All_Mix/all_videos_all.json",
+  "https://huggingface.co/datasets/Jiaqi-hkust/hawk Videos/ShanghaiTech/testing/videos/01_0014_video.mp4 (thumb)"
+ ],
+ "access_used": "open download",
+ "note": "One example is one record of all_videos_all.json: the video path on the authors' server, one GPT-4 anomaly description of the whole video, and one generated question-answer pair. There are no timestamps, so the timeline is empty. Thumbnail only; the videos belong to the 7 source datasets.",
+ "examples": [
+  {
+   "title": "ShanghaiTech 01_0014: bicyclist among pedestrians, description + 1 QA",
+   "video_ref": "/remote-home/share/jiaqitang/Data/ShanghaiTechDataset/testing/videos/01_0014_video.mp4",
+   "duration_s": 8.28,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": "samples/media/hawk_1.jpg",
+   "timeline": [],
+   "raw_format": "json",
+   "raw": {
+    "video": "/remote-home/share/jiaqitang/Data/ShanghaiTechDataset/testing/videos/01_0014_video.mp4",
+    "description": "A possible accident that could occur in this situation is the bicyclist colliding with one of the pedestrians on the sidewalk, leading to injuries for both parties involved and potentially damaging.",
+    "QA": [
+     {
+      "q": "How much should I rely on automated systems for video anomaly detection?",
+      "a": "Automated systems for video anomaly detection can be quite powerful and have improved significantly with advancements in artificial intelligence and machine learning, especially in analyzing patterns and detecting anomalies that deviate from normal behavior. However, the reliability of such systems can vary based on several factors:\n\n1. **Algorithm Quality**: The accuracy of automated systems depends on the algorithms used. More sophisticated algorithms that have been trained on more diverse data sets will generally perform better.\n\n2. **Training Data**: The system is only as good as the data it has been trained on. If the system has been trained on a large and varied dataset that includes instances similar to the described accident scenario, it would be more reliable.\n\n3. **Contextual Understanding**: While AI can recognize patterns, its understanding of context is limited. In complex environments, there might be subtle cues that a human would pick up on that an AI might miss.\n\n4. **False Positives/Negatives**: Automated systems might either flag normal behavior as an anomaly (false positive) or miss an actual anomaly (false negative). The frequency of these occurrences affects how much you can rely on the system.\n\n5. **System Updates**: The system's ability to adapt to new types of anomalies and changes in the environment also affects its reliability. Regular updates and retraining can improve performance over time.\n\n6. **Operational Conditions**: Performance can be affected by environmental conditions such as lighting, weather, and camera quality.\n\n7. **Compliance and Privacy**: Depending on the application, there may be legal and privacy considerations that affect the extent to which you can rely on automated surveillance.\n\nGiven these factors, while automated systems can provide a valuable layer of monitoring and can work 24/7 without fatigue, they should not be relied upon as the sole method of anomaly detection. They are best used as a tool to augment human oversight. Human operators can take the output of the system and use their judgment to determine the appropriate response. This combination of human and machine capabilities tends to provide a more robust solution than either would on their own. It's also crucial to regularly assess the system's performance and make adjustments as needed."
+     }
+    ]
+   }
+  },
+  {
+   "title": "UCF-Crime Burglary068: phone-store theft, description + 1 QA",
+   "video_ref": "/remote-home/share/jiaqitang/Data/UCF-Crime/videos/Burglary068_x264.mp4",
+   "duration_s": 22.15,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "json",
+   "raw": {
+    "video": "/remote-home/share/jiaqitang/Data/UCF-Crime/videos/Burglary068_x264.mp4",
+    "description": "The abnormal aspect of the video in relation to a crime is the act of theft committed by two African-American men who entered the mobile phone store. The video captures one of the men, specifically wearing a white vest, forcefully unplugging three mobile phones from the display on the counter and then both individuals quickly fleeing the store with the stolen phones in hand. This incident constitutes a blatant criminal act of theft, as the individuals are seen illegally removing property that they do not own from the premises with the apparent intent to permanently deprive the store of its merchandise. The summary of the video highlights a clear violation of the law, captured on camera, with the two perpetrators leaving the scene of the crime with the stolen goods.",
+    "QA": [
+     {
+      "q": "Who can I consult if I encounter difficulties with my video anomaly detection system?",
+      "a": "If you encounter difficulties with your video anomaly detection system, you might consider consulting the following experts or services:\n\n1. **Software Developers**: If your system is a software-based solution, reaching out to the developers or the company that provided the system would be a good start. They can offer technical support and updates.\n\n2. **Security System Integrators**: Professionals who specialize in integrating various security technologies could help troubleshoot issues and ensure your systems are working together effectively.\n\n3. **IT Support Services**: An IT professional or a service provider with experience in security systems can offer assistance with hardware and software issues.\n\n4. **Artificial Intelligence Experts**: Since anomaly detection often involves AI and machine learning, consulting with experts in this field could help optimize and troubleshoot your system.\n\n5. **Data Scientists**: They can analyze the data captured by your system, help refine the algorithms, and improve the accuracy of anomaly detection.\n\n6. **Video Surveillance Companies**: Companies that specialize in video surveillance may offer technical support and could provide insights into the operation and maintenance of anomaly detection systems.\n\n7. **Cybersecurity Firms**: If the difficulty is related to data breaches or hacking attempts, a cybersecurity firm could help secure your system.\n\n8. **Online Communities and Forums**: Forums like Stack Overflow or specialized groups on LinkedIn might provide assistance as other users may have encountered similar problems.\n\nAlways remember to safeguard any sensitive information or data when consulting with third parties about security-related issues."
+     }
+    ]
+   }
+  }
+ ]
+}

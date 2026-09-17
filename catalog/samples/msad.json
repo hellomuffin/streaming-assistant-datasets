@@ -1,0 +1,39 @@
+{
+ "slug": "msad",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://drive.google.com/drive/folders/1mxFGCcAuEecN0c7MHD12wD4pO2Ej5kLe anomaly_annotation.csv (open feature folder)"
+ ],
+ "access_used": "open download",
+ "note": "The per-video annotation file is open; the videos need the signed research-only agreement, so there is no media. One example is one CSV row: video name (anomaly type + number), scenario, total frames, and the first/last frame of the anomaly. No frame rate is given, so the timeline is left empty rather than guessing seconds.",
+ "examples": [
+  {
+   "title": "Explosion_2 (street, high view): anomaly in frames 700–774 of 774",
+   "video_ref": "Explosion_2",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "csv rows",
+   "raw": [
+    "name,scenario,total frames,starting frame of anomaly,ending frame of anomaly",
+    "Explosion_2,street_highview,774,700,774"
+   ]
+  },
+  {
+   "title": "Assault_3 (restaurant): anomaly in frames 430–480 of 791",
+   "video_ref": "Assault_3",
+   "duration_s": null,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [],
+   "raw_format": "csv rows",
+   "raw": [
+    "name,scenario,total frames,starting frame of anomaly,ending frame of anomaly",
+    "Assault_3,restaurant,791,430,480"
+   ]
+  }
+ ]
+}

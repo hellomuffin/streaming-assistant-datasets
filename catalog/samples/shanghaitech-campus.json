@@ -1,0 +1,86 @@
+{
+ "slug": "shanghaitech-campus",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://huggingface.co/datasets/123zdm/ShanghaiTech shanghaitech.tar.gz.aa → shanghaitech/testing/test_frame_mask/01_0014.npy, 01_0025.npy (mirror of the official OneDrive archive)",
+  "thumb frames: https://huggingface.co/datasets/Jiaqi-hkust/hawk Videos/ShanghaiTech/testing/videos/01_0014_video.mp4"
+ ],
+ "access_used": "open download",
+ "note": "One example is one test video's frame-level mask (test_frame_mask/<scene>_<clip>.npy, one 0/1 per frame, shown here as a digit string; the release also has pixel masks). Timeline seconds assume 24 fps; there is no text label, so the anomaly type is not named in the data. Thumbnail only; the thumb comes from a re-encoded copy whose frame rate differs, so frames were chosen by frame index.",
+ "examples": [
+  {
+   "title": "01_0014: 265 frames, one abnormal run (frames 154–229)",
+   "video_ref": "testing/frames/01_0014 (test_frame_mask/01_0014.npy)",
+   "duration_s": 11.04,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": "samples/media/shanghaitech-campus_1.jpg",
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 6.42,
+     "lane": "silence",
+     "text": "frames 0–153: normal (0)"
+    },
+    {
+     "t": 6.42,
+     "te": 9.58,
+     "lane": "alert",
+     "text": "frames 154–229: abnormal (1)"
+    },
+    {
+     "t": 9.58,
+     "te": 11.04,
+     "lane": "silence",
+     "text": "frames 230–264: normal (0)"
+    }
+   ],
+   "raw_format": "txt",
+   "raw": {
+    "file": "shanghaitech/testing/test_frame_mask/01_0014.npy",
+    "dtype": "uint8",
+    "shape": [
+     265
+    ],
+    "values": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000"
+   }
+  },
+  {
+   "title": "01_0025: 601 frames, one abnormal run (frames 148–202)",
+   "video_ref": "testing/frames/01_0025 (test_frame_mask/01_0025.npy)",
+   "duration_s": 25.04,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0.0,
+     "te": 6.17,
+     "lane": "silence",
+     "text": "frames 0–147: normal (0)"
+    },
+    {
+     "t": 6.17,
+     "te": 8.46,
+     "lane": "alert",
+     "text": "frames 148–202: abnormal (1)"
+    },
+    {
+     "t": 8.46,
+     "te": 25.04,
+     "lane": "silence",
+     "text": "frames 203–600: normal (0)"
+    }
+   ],
+   "raw_format": "txt",
+   "raw": {
+    "file": "shanghaitech/testing/test_frame_mask/01_0025.npy",
+    "dtype": "uint8",
+    "shape": [
+     601
+    ],
+    "values": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+   }
+  }
+ ]
+}

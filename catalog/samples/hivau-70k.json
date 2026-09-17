@@ -1,0 +1,388 @@
+{
+ "slug": "hivau-70k",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://github.com/pipixin321/HolmesVAU/tree/main/HIVAU-70k: ucf_database_train.json, xd_database_test.json, merge_instruction_train_final.jsonl",
+  "thumb frames: https://huggingface.co/datasets/Jiaqi-hkust/hawk Videos/UCF_Crime/videos/Burglary068_x264.mp4"
+ ],
+ "access_used": "open download",
+ "note": "One example is one video's record in the *_database_*.json hierarchy: anomaly events [start, end] s, the short clips inside each event with captions, an event summary per event and one video summary (all LLM-written from the captions). The instruction JSONL turns this into judgement/description/analysis Q&A at video, event and clip level. Videos are UCF-Crime/XD-Violence; thumbnail only.",
+ "examples": [
+  {
+   "title": "UCF-Crime Burglary068 (train): 1 event, clip captions, event + video summaries",
+   "video_ref": "Burglary068_x264",
+   "duration_s": 22.13,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": "samples/media/hivau-70k_1.jpg",
+   "timeline": [
+    {
+     "t": 0,
+     "te": 22.13,
+     "lane": "commentary",
+     "text": "The anomaly exists and the specific name of the anomaly is Burglary. The anomaly event involves a man in a white vest forcibly unplugging three mobile phones displayed on the counter, which is a suspicious and potentially illegal activity, where he intentionally and without authorization disrupts the normal display of merchandise in a typical store or business setting. The basis for judging this anomaly is that the man's behavior is intentional and unauthorized, deviating from the normal and expected actions in a typical store or business setting, indicating a potential criminal act."
+    },
+    {
+     "t": 8.633,
+     "te": 14.967,
+     "lane": "alert",
+     "text": "The anomaly exists and the specific name of the anomaly is Burglary. The anomaly event involves a man in a white vest forcibly unplugging three mobile phones displayed on the counter, which is a suspicious and potentially illegal activity. The basis for judging this anomaly is that the man's behavior is intentional and unauthorized, deviating from the normal and expected actions in a typical store or business setting."
+    },
+    {
+     "t": 8.633,
+     "te": 10.2,
+     "lane": "caption",
+     "text": "The man in a white vest forcibly unplugged the three mobile phones displayed on the counter on one side."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "ucf_database_train.json": {
+     "Burglary068_x264": {
+      "n_frames": 664,
+      "fps": 30.0,
+      "label": [
+       "Burglary"
+      ],
+      "events": [
+       [
+        8.633,
+        14.967
+       ]
+      ],
+      "clips": [
+       [
+        [
+         8.633,
+         10.2
+        ]
+       ]
+      ],
+      "clips_caption": [
+       [
+        "The man in a white vest forcibly unplugged the three mobile phones displayed on the counter on one side."
+       ]
+      ],
+      "events_summary": [
+       "The anomaly exists and the specific name of the anomaly is Burglary. The anomaly event involves a man in a white vest forcibly unplugging three mobile phones displayed on the counter, which is a suspicious and potentially illegal activity. The basis for judging this anomaly is that the man's behavior is intentional and unauthorized, deviating from the normal and expected actions in a typical store or business setting."
+      ],
+      "video_summary": "The anomaly exists and the specific name of the anomaly is Burglary. The anomaly event involves a man in a white vest forcibly unplugging three mobile phones displayed on the counter, which is a suspicious and potentially illegal activity, where he intentionally and without authorization disrupts the normal display of merchandise in a typical store or business setting. The basis for judging this anomaly is that the man's behavior is intentional and unauthorized, deviating from the normal and expected actions in a typical store or business setting, indicating a potential criminal act.",
+      "events_summary_split": [
+       {
+        "judgement": "The anomaly exists and the specific name of the anomaly is Burglary.",
+        "description": "The anomaly event involves a man in a white vest forcibly unplugging three mobile phones displayed on the counter, which is a suspicious and potentially illegal activity",
+        "analysis": "That the man's behavior is intentional and unauthorized, deviating from the normal and expected actions in a typical store or business setting."
+       }
+      ],
+      "video_summary_split": {
+       "judgement": "The anomaly exists and the specific name of the anomaly is Burglary.",
+       "description": "The anomaly event involves a man in a white vest forcibly unplugging three mobile phones displayed on the counter, which is a suspicious and potentially illegal activity, where he intentionally and without authorization disrupts the normal display of merchandise in a typical store or business setting",
+       "analysis": "That the man's behavior is intentional and unauthorized, deviating from the normal and expected actions in a typical store or business setting, indicating a potential criminal act."
+      }
+     }
+    },
+    "merge_instruction_train_final.jsonl (lines for this video)": [
+     {
+      "id": 3041,
+      "type": "clip",
+      "task": "caption",
+      "video": "ucf-crime/clips/train/Burglary068_x264_E0C0.mp4",
+      "conversations": [
+       {
+        "from": "human",
+        "value": "<video>\nProvide a brief description of the given video clip."
+       },
+       {
+        "from": "gpt",
+        "value": "The man in a white vest forcibly unplugged the three mobile phones displayed on the counter on one side."
+       }
+      ]
+     },
+     {
+      "id": 3042,
+      "type": "event",
+      "task": "judgement",
+      "video": "ucf-crime/events/train/Burglary068_x264_E0.mp4",
+      "conversations": [
+       {
+        "from": "human",
+        "value": "<video>\nIdentify any abnormal behaviors depicted in the video."
+       },
+       {
+        "from": "gpt",
+        "value": "The anomaly exists and the specific name of the anomaly is Burglary."
+       }
+      ]
+     },
+     {
+      "id": 3043,
+      "type": "event",
+      "task": "description",
+      "video": "ucf-crime/events/train/Burglary068_x264_E0.mp4",
+      "conversations": [
+       {
+        "from": "human",
+        "value": "<video>\nCould you specify the anomaly events present in the video?"
+       },
+       {
+        "from": "gpt",
+        "value": "The anomaly event involves a man in a white vest forcibly unplugging three mobile phones displayed on the counter, which is a suspicious and potentially illegal activity"
+       }
+      ]
+     },
+     {
+      "id": 3044,
+      "type": "event",
+      "task": "analysis",
+      "video": "ucf-crime/events/train/Burglary068_x264_E0.mp4",
+      "conversations": [
+       {
+        "from": "human",
+        "value": "<video>\nCan you analyze the factors contributing to this anomalous event?"
+       },
+       {
+        "from": "gpt",
+        "value": "That the man's behavior is intentional and unauthorized, deviating from the normal and expected actions in a typical store or business setting."
+       }
+      ]
+     },
+     {
+      "id": 3045,
+      "type": "video",
+      "task": "judgement",
+      "video": "ucf-crime/videos/train/Burglary068_x264.mp4",
+      "conversations": [
+       {
+        "from": "human",
+        "value": "<video>\nPoint out the abnormal actions in the video."
+       },
+       {
+        "from": "gpt",
+        "value": "The anomaly exists and the specific name of the anomaly is Burglary."
+       }
+      ]
+     },
+     {
+      "id": 3046,
+      "type": "video",
+      "task": "description",
+      "video": "ucf-crime/videos/train/Burglary068_x264.mp4",
+      "conversations": [
+       {
+        "from": "human",
+        "value": "<video>\nCould you describe the anomaly events observed in the video?"
+       },
+       {
+        "from": "gpt",
+        "value": "The anomaly event involves a man in a white vest forcibly unplugging three mobile phones displayed on the counter, which is a suspicious and potentially illegal activity, where he intentionally and without authorization disrupts the normal display of merchandise in a typical store or business setting"
+       }
+      ]
+     },
+     "…[truncated 1 more items]"
+    ]
+   }
+  },
+  {
+   "title": "XD-Violence u5SF4SlqNDQ 00:00–01:00 (test): 2 explosion events with per-clip captions",
+   "video_ref": "v=u5SF4SlqNDQ__#00-00-00_00-01-00_label_G-0-0",
+   "duration_s": 60.08,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 0,
+     "te": 60.08,
+     "lane": "commentary",
+     "text": "The anomaly exists and is specifically identified as an \"Explosion Anomaly\". The video anomaly event starts with a sudden and intense release of energy, characterized by rapid expansion and loud noise, deviating from the normal burning process observed in the rest of the video, with the building appearing to be under attack and explosions occurring around it. This is followed by a series of intense and destructive explosions, including a building engulfed in flames, a massive fireball, and a volcanic eruption, with a total of 7 huge explosions captured on camera, resulting in massive destruction, fire, and smoke. The basis for judging this anomaly is the presence of sudden, intense, and catastrophic events that deviate significantly from normal expectations, characterized by massive destruction, fire, and smoke."
+    },
+    {
+     "t": 26.0,
+     "te": 38.0,
+     "lane": "alert",
+     "text": "The anomaly exists, specifically an \"Explosion\" anomaly. The anomaly events occur between 29.0s-32.0s, where the building appears to be under attack, with explosions occurring around it. The basis for judging this anomaly is the sudden and intense release of energy, characterized by rapid expansion and loud noise, deviating from the normal burning process observed in the rest of the video."
+    },
+    {
+     "t": 26.0,
+     "te": 29.0,
+     "lane": "caption",
+     "text": "A man and a woman standing in front of a large, domed building that is engulfed in flames and smoke. the man is wearing a white shirt, while the woman is dressed in a dark, patterned dress. they appear to be observing the destruction unfolding before them."
+    },
+    {
+     "t": 29.0,
+     "te": 32.0,
+     "lane": "caption",
+     "text": "A man and a woman standing in front of a building engulfed in flames and smoke. the building appears to be under attack, with explosions occurring around it."
+    },
+    {
+     "t": 32.0,
+     "te": 35.0,
+     "lane": "caption",
+     "text": "A man and a woman standing in front of a large fire with thick smoke rising into the sky. the fire appears to be consuming a structure, and the couple is observing it from a safe distance."
+    },
+    {
+     "t": 35.0,
+     "te": 38.0,
+     "lane": "caption",
+     "text": "A man and a woman standing in front of a large fire with thick smoke. the man is wearing a white shirt, and the woman is wearing a dark dress with lace details. they are both looking at the fire, which appears to be intense and possibly out of control."
+    },
+    {
+     "t": 39.583,
+     "te": 60.042,
+     "lane": "alert",
+     "text": "The anomaly exists and is specifically identified as an \"Explosion Anomaly.\" The anomaly events consist of a series of intense and destructive explosions, including a building engulfed in flames, a massive fireball, and a volcanic eruption, with a total of 7 huge explosions captured on camera. The basis for judging this anomaly is the presence of sudden, intense, and catastrophic events that deviate significantly from normal expectations, characterized by massive destruction, fire, and smoke."
+    },
+    {
+     "t": 39.583,
+     "te": 42.993,
+     "lane": "caption",
+     "text": "A building engulfed in flames and thick smoke, with debris flying through the air. the building is identified as gotham general hospital."
+    },
+    {
+     "t": 42.993,
+     "te": 46.403,
+     "lane": "caption",
+     "text": "A large explosion in an urban setting, followed by a massive fireball and thick black smoke. the scene then transitions to a close-up of the fireball, showing intense flames and bright orange hues."
+    },
+    {
+     "t": 46.403,
+     "te": 49.812,
+     "lane": "caption",
+     "text": "A large explosion with bright orange flames and thick black smoke. the explosion appears to be in an outdoor setting, possibly near ancient ruins or columns."
+    },
+    {
+     "t": 49.812,
+     "te": 53.222,
+     "lane": "caption",
+     "text": "A dramatic depiction of a volcanic eruption, with thick clouds of smoke and fiery lava spewing from the volcano's peak. the surrounding area is engulfed in flames and smoke, creating a chaotic and destructive scene."
+    },
+    {
+     "t": 53.222,
+     "te": 56.632,
+     "lane": "caption",
+     "text": "A dramatic scene of a volcano erupting, sending plumes of smoke and fire into the sky. the camera then shifts to a cityscape, where the eruption's ash and debris are seen falling from above, causing chaos and destruction."
+    },
+    {
+     "t": 56.632,
+     "te": 60.042,
+     "lane": "caption",
+     "text": "A dark, blurry scene that quickly transitions to a bright explosion. the explosion is intense, with flames and debris flying in all directions. the camera captures the explosion from various angles, showing the scale and intensity of the blast. text appears on the screen, reading \"7 huge explosions on camera,\" indicating the theme of the video."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "v=u5SF4SlqNDQ__#00-00-00_00-01-00_label_G-0-0": {
+     "n_frames": 1442,
+     "fps": 24.0,
+     "label": [
+      "Explosion"
+     ],
+     "events": [
+      [
+       26.0,
+       38.0
+      ],
+      [
+       39.583,
+       60.042
+      ]
+     ],
+     "events(frame)": [
+      [
+       624,
+       912
+      ],
+      [
+       950,
+       1441
+      ]
+     ],
+     "clips": [
+      [
+       [
+        26.0,
+        29.0
+       ],
+       [
+        29.0,
+        32.0
+       ],
+       [
+        32.0,
+        35.0
+       ],
+       [
+        35.0,
+        38.0
+       ]
+      ],
+      [
+       [
+        39.583,
+        42.993
+       ],
+       [
+        42.993,
+        46.403
+       ],
+       [
+        46.403,
+        49.812
+       ],
+       [
+        49.812,
+        53.222
+       ],
+       [
+        53.222,
+        56.632
+       ],
+       [
+        56.632,
+        60.042
+       ]
+      ]
+     ],
+     "clips_caption": [
+      [
+       "A man and a woman standing in front of a large, domed building that is engulfed in flames and smoke. the man is wearing a white shirt, while the woman is dressed in a dark, patterned dress. they appear to be observing the destruction unfolding before them.",
+       "A man and a woman standing in front of a building engulfed in flames and smoke. the building appears to be under attack, with explosions occurring around it.",
+       "A man and a woman standing in front of a large fire with thick smoke rising into the sky. the fire appears to be consuming a structure, and the couple is observing it from a safe distance.",
+       "A man and a woman standing in front of a large fire with thick smoke. the man is wearing a white shirt, and the woman is wearing a dark dress with lace details. they are both looking at the fire, which appears to be intense and possibly out of control."
+      ],
+      [
+       "A building engulfed in flames and thick smoke, with debris flying through the air. the building is identified as gotham general hospital.",
+       "A large explosion in an urban setting, followed by a massive fireball and thick black smoke. the scene then transitions to a close-up of the fireball, showing intense flames and bright orange hues.",
+       "A large explosion with bright orange flames and thick black smoke. the explosion appears to be in an outdoor setting, possibly near ancient ruins or columns.",
+       "A dramatic depiction of a volcanic eruption, with thick clouds of smoke and fiery lava spewing from the volcano's peak. the surrounding area is engulfed in flames and smoke, creating a chaotic and destructive scene.",
+       "A dramatic scene of a volcano erupting, sending plumes of smoke and fire into the sky. the camera then shifts to a cityscape, where the eruption's ash and debris are seen falling from above, causing chaos and destruction.",
+       "A dark, blurry scene that quickly transitions to a bright explosion. the explosion is intense, with flames and debris flying in all directions. the camera captures the explosion from various angles, showing the scale and intensity of the blast. text appears on the screen, reading \"7 huge explosions on camera,\" indicating the theme of the video."
+      ]
+     ],
+     "events_summary": [
+      "The anomaly exists, specifically an \"Explosion\" anomaly. The anomaly events occur between 29.0s-32.0s, where the building appears to be under attack, with explosions occurring around it. The basis for judging this anomaly is the sudden and intense release of energy, characterized by rapid expansion and loud noise, deviating from the normal burning process observed in the rest of the video.",
+      "The anomaly exists and is specifically identified as an \"Explosion Anomaly.\" The anomaly events consist of a series of intense and destructive explosions, including a building engulfed in flames, a massive fireball, and a volcanic eruption, with a total of 7 huge explosions captured on camera. The basis for judging this anomaly is the presence of sudden, intense, and catastrophic events that deviate significantly from normal expectations, characterized by massive destruction, fire, and smoke."
+     ],
+     "video_summary": "The anomaly exists and is specifically identified as an \"Explosion Anomaly\". The video anomaly event starts with a sudden and intense release of energy, characterized by rapid expansion and loud noise, deviating from the normal burning process observed in the rest of the video, with the building appearing to be under attack and explosions occurring around it. This is followed by a series of intense and destructive explosions, including a building engulfed in flames, a massive fireball, and a volcanic eruption, with a total of 7 huge explosions captured on camera, resulting in massive destruction, fire, and smoke. The basis for judging this anomaly is the presence of sudden, intense, and catastrophic events that deviate significantly from normal expectations, characterized by massive destruction, fire, and smoke.",
+     "events_summary_split": [
+      {
+       "judgement": "The anomaly exists, specifically an Explosion anomaly.",
+       "description": "The anomaly events occur between 29.0s-32.0s, where the building appears to be under attack, with explosions occurring around it",
+       "analysis": "The sudden and intense release of energy, characterized by rapid expansion and loud noise, deviating from the normal burning process observed in the rest of the video."
+      },
+      {
+       "judgement": "The anomaly exists and is specifically identified as an Explosion Anomaly.",
+       "description": "The anomaly events consist of a series of intense and destructive explosions, including a building engulfed in flames, a massive fireball, and a volcanic eruption, with a total of 7 huge explosions captured on camera",
+       "analysis": "The presence of sudden, intense, and catastrophic events that deviate significantly from normal expectations, characterized by massive destruction, fire, and smoke."
+      }
+     ],
+     "video_summary_split": {
+      "judgement": "The anomaly exists and is specifically identified as an Explosion Anomaly.",
+      "description": "The video anomaly event starts with a sudden and intense release of energy, characterized by rapid expansion and loud noise, deviating from the normal burning process observed in the rest of the video, with the building appearing to be under attack and explosions occurring around it. This is followed by a series of intense and destructive explosions, including a building engulfed in flames, a massive fireball, and a volcanic eruption, with a total of 7 huge explosions captured on camera, resulting in massive destruction, fire, and smoke",
+      "analysis": "The presence of sudden, intense, and catastrophic events that deviate significantly from normal expectations, characterized by massive destruction, fire, and smoke."
+     }
+    }
+   }
+  }
+ ]
+}

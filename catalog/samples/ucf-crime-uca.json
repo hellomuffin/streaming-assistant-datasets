@@ -1,0 +1,140 @@
+{
+ "slug": "ucf-crime-uca",
+ "retrieved": "2026-09-17",
+ "source_files": [
+  "https://github.com/Xuange923/Surveillance-Video-Understanding/tree/main/UCF%20Annotation (Test.json)",
+  "video frames for the thumb: https://huggingface.co/datasets/Jiaqi-hkust/hawk Videos/UCF_Crime/videos/Burglary068_x264.mp4 (re-host of the UCF-Crime video)"
+ ],
+ "access_used": "open download",
+ "note": "One example is one UCF-Crime video's full UCA record: a list of [start, end] seconds and one English sentence per span (spans may overlap). UCA describes both anomalous and ordinary moments; the category comes from the file name, and UCF-Crime itself only gives video-level labels (plus frame-level ranges for the test set in a separate file). Thumbnail only, no clip (crime footage).",
+ "examples": [
+  {
+   "title": "Burglary068: phone-store theft, 4 captioned spans",
+   "video_ref": "UCF_Crimes/Videos/Burglary/Burglary068_x264.mp4",
+   "duration_s": 22.18,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": "samples/media/ucf-crime-uca_1.jpg",
+   "timeline": [
+    {
+     "t": 1.6,
+     "te": 5.0,
+     "lane": "caption",
+     "text": "Two African-American men opened the door and entered the mobile phone store, wearing black and white vests and jeans respectively."
+    },
+    {
+     "t": 6.9,
+     "te": 10.2,
+     "lane": "caption",
+     "text": "The man in a white vest forcibly unplugged the three mobile phones displayed on the counter on one side."
+    },
+    {
+     "t": 10.9,
+     "te": 16.2,
+     "lane": "caption",
+     "text": "Then quickly fled the store from the gate."
+    },
+    {
+     "t": 19.8,
+     "te": 20.2,
+     "lane": "caption",
+     "text": "Two men appeared again leaving the scene with connected mobile phones in their hands."
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "Burglary068_x264": {
+     "duration": 22.18,
+     "timestamps": [
+      [
+       1.6,
+       5.0
+      ],
+      [
+       6.9,
+       10.2
+      ],
+      [
+       10.9,
+       16.2
+      ],
+      [
+       19.8,
+       20.2
+      ]
+     ],
+     "sentences": [
+      "Two African-American men opened the door and entered the mobile phone store, wearing black and white vests and jeans respectively.",
+      "The man in a white vest forcibly unplugged the three mobile phones displayed on the counter on one side.",
+      "Then quickly fled the store from the gate.",
+      "Two men appeared again leaving the scene with connected mobile phones in their hands."
+     ]
+    }
+   }
+  },
+  {
+   "title": "Stealing080: carjacking at the roadside, 4 spans (last two share one span)",
+   "video_ref": "UCF_Crimes/Videos/Stealing/Stealing080_x264.mp4",
+   "duration_s": 35.23,
+   "clip": null,
+   "clip_offset_s": 0,
+   "thumb": null,
+   "timeline": [
+    {
+     "t": 3.0,
+     "te": 15.8,
+     "lane": "caption",
+     "text": "Two men in black ran to the white car parked on the roadside, opened the door and dragged out the people in the car"
+    },
+    {
+     "t": 15.8,
+     "te": 29.0,
+     "lane": "caption",
+     "text": "The man in white and blue who were dragged out of the car rushed to the white car and pulled out the man in gray."
+    },
+    {
+     "t": 29.8,
+     "te": 35.0,
+     "lane": "caption",
+     "text": "Then the white car drove away."
+    },
+    {
+     "t": 29.8,
+     "te": 35.0,
+     "lane": "caption",
+     "text": "The remaining three people ran away along the sidewalk"
+    }
+   ],
+   "raw_format": "json",
+   "raw": {
+    "Stealing080_x264": {
+     "duration": 35.23,
+     "timestamps": [
+      [
+       3.0,
+       15.8
+      ],
+      [
+       15.8,
+       29.0
+      ],
+      [
+       29.8,
+       35.0
+      ],
+      [
+       29.8,
+       35.0
+      ]
+     ],
+     "sentences": [
+      "Two men in black ran to the white car parked on the roadside, opened the door and dragged out the people in the car",
+      "The man in white and blue who were dragged out of the car rushed to the white car and pulled out the man in gray.",
+      "Then the white car drove away.",
+      "The remaining three people ran away along the sidewalk"
+     ]
+    }
+   }
+  }
+ ]
+}
