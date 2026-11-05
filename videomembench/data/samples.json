@@ -1,0 +1,1853 @@
+[
+ {
+  "video_id": "videomembench-126",
+  "video_name": "videomembench-126.mp4",
+  "video_path": "videos/videomembench-126.mp4",
+  "dialogue": [
+   {
+    "turn_id": "T1",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "On the whiteboard, what is the boxed word written in the upper-right of the brainstorm list?",
+    "options": null,
+    "answer": "DRONE"
+   },
+   {
+    "turn_id": "T2",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T1"
+     ],
+     "dep_type": {
+      "T1": "answer"
+     }
+    },
+    "question": "Where is the clear plastic sleeve located relative to the blue-and-white bag from T1 on the table?",
+    "options": null,
+    "answer": "The clear plastic sleeve sits in front of (lower/closer to the camera than) the blue-and-white bag on the table"
+   },
+   {
+    "turn_id": "T3",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "As the camera pans, how is the table positioned relative to the whiteboard?",
+    "options": null,
+    "answer": "Situated to the right of the whiteboard along the wall"
+   },
+   {
+    "turn_id": "T4",
+    "type": "multi_choice_question",
+    "dependency": {
+     "depends_on": [
+      "T2"
+     ],
+     "dep_type": {
+      "T2": "episodic"
+     }
+    },
+    "question": "How does the Ferris wheel mural align with the top edge of the dark sofa, relative to the object from T2?",
+    "options": {
+     "A": "They form a curved line",
+     "B": "They form a vertical line",
+     "C": "They form a horizontal line",
+     "D": "They form a diagonal line",
+     "E": "They form a right angle",
+     "F": "They form a zigzag line"
+    },
+    "answer": "D"
+   },
+   {
+    "turn_id": "T5",
+    "type": "multi_choice_question",
+    "dependency": null,
+    "question": "How does the bottom edge of the mural align with the top edge of the seating area?",
+    "options": {
+     "A": "The mural's edge curves away from the seating surface.",
+     "B": "The two straight edges are parallel.",
+     "C": "The mural's edge is angled upward relative to the seating surface.",
+     "D": "The mural's edge is angled downward relative to the seating surface.",
+     "E": "The mural's edge is hidden behind the seating surface."
+    },
+    "answer": "D"
+   },
+   {
+    "turn_id": "T6",
+    "type": "multi_choice_question",
+    "dependency": {
+     "depends_on": [
+      "T4"
+     ],
+     "dep_type": {
+      "T4": "answer"
+     }
+    },
+    "question": "Based on the mural alignment from T4, how does the bottom edge of the artwork align with the top surface of the seating?",
+    "options": {
+     "A": "The bottom edge of the artwork is obscured by the top surface of the seating.",
+     "B": "The bottom edge of the artwork slopes upward toward the right, away from the top surface of the seating.",
+     "C": "The bottom edge of the artwork curves upward at both ends, away from the top surface of the seating.",
+     "D": "The bottom edge of the artwork is parallel to, but separated from, the top surface of the seating.",
+     "E": "The bottom edge of the artwork slopes downward toward the right, away from the top surface of the seating.",
+     "F": "The bottom edge of the artwork slopes downward toward the right, meeting the top surface of the seating at its right end."
+    },
+    "answer": "E"
+   },
+   {
+    "turn_id": "T7",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T1",
+      "T2",
+      "T5"
+     ],
+     "dep_type": {
+      "T1": "episodic",
+      "T2": "episodic",
+      "T5": "episodic"
+     }
+    },
+    "question": "Based on the items from T1, T2, and T5, what is the most plausible functional purpose of this space?",
+    "options": null,
+    "answer": "A collaborative breakroom or creative lounge area"
+   }
+  ],
+  "_viewer_release_index": 125,
+  "_viewer_source_duration_s": 18.708333,
+  "_viewer_source_resolution": [
+   640,
+   480
+  ],
+  "_viewer_source_has_audio": false,
+  "_viewer_source_mb": 1.9,
+  "_viewer_stub": false,
+  "_viewer_video_available": true,
+  "_viewer_video": "videos/videomembench-126.mp4",
+  "_viewer_video_note": "Whole release video, re-encoded to 360p H.264."
+ },
+ {
+  "video_id": "videomembench-97",
+  "video_name": "videomembench-97.mp4",
+  "video_path": "videos/videomembench-97.mp4",
+  "dialogue": [
+   {
+    "turn_id": "T1",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "What item is on the sofa seat cushion near the left armrest?",
+    "options": null,
+    "answer": "A red and black backpack"
+   },
+   {
+    "turn_id": "T2",
+    "type": "true_or_false_question",
+    "dependency": {
+     "depends_on": [
+      "T1"
+     ],
+     "dep_type": {
+      "T1": "answer"
+     }
+    },
+    "question": "Does the book on the coffee table have its top edge pointing toward the item from T1?",
+    "options": null,
+    "answer": "False"
+   },
+   {
+    "turn_id": "T3",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T2"
+     ],
+     "dep_type": {
+      "T2": "episodic"
+     }
+    },
+    "question": "What is the primary color of the book from T2?",
+    "options": null,
+    "answer": "White"
+   },
+   {
+    "turn_id": "T4",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T2"
+     ],
+     "dep_type": {
+      "T2": "episodic"
+     }
+    },
+    "question": "When the brown armchair first appears, is it left, right, or behind the item from T2?",
+    "options": null,
+    "answer": "To the left of the table"
+   },
+   {
+    "turn_id": "T5",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T1"
+     ],
+     "dep_type": {
+      "T1": "answer"
+     }
+    },
+    "question": "In the final view, is the item from T1 visible, and where is it relative to the brown armchair?",
+    "options": null,
+    "answer": "Visible and to the right of the brown armchair."
+   },
+   {
+    "turn_id": "T6",
+    "type": "multi_choice_question",
+    "dependency": {
+     "depends_on": [
+      "T1"
+     ],
+     "dep_type": {
+      "T1": "answer"
+     }
+    },
+    "question": "What detail of the item from T1 is visible in its first view but not its final view?",
+    "options": {
+     "A": "The brand logo on the top flap",
+     "B": "The reflective strip on the shoulder strap",
+     "C": "The zipper pull on the front pocket",
+     "D": "The water bottle in the side pocket",
+     "E": "The keychain hanging from the top handle",
+     "F": "The mesh panel on the back",
+     "G": "The name tag on the side",
+     "H": "The buckle on the chest strap"
+    },
+    "answer": "C"
+   },
+   {
+    "turn_id": "T7",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T1",
+      "T3"
+     ],
+     "dep_type": {
+      "T1": "answer",
+      "T3": "episodic"
+     }
+    },
+    "question": "In the final view, is the object from T3 left or right of the item from T1?",
+    "options": null,
+    "answer": "To the left of the backpack"
+   },
+   {
+    "turn_id": "T8",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "In the final view, is the black sofa to the right of the brown armchair?",
+    "options": null,
+    "answer": "Yes."
+   }
+  ],
+  "_viewer_release_index": 96,
+  "_viewer_source_duration_s": 33.666667,
+  "_viewer_source_resolution": [
+   640,
+   480
+  ],
+  "_viewer_source_has_audio": false,
+  "_viewer_source_mb": 4.9,
+  "_viewer_stub": false,
+  "_viewer_video_available": true,
+  "_viewer_video": "videos/videomembench-97.mp4",
+  "_viewer_video_note": "Whole release video, re-encoded to 360p H.264."
+ },
+ {
+  "video_id": "videomembench-69",
+  "video_name": "videomembench-69.mp4",
+  "video_path": "videos/videomembench-69.mp4",
+  "dialogue": [
+   {
+    "turn_id": "T1",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "At 00:12, at the solo diver's maximum jump height, which set is correct: board level, arm posture, trunk color?",
+    "options": null,
+    "answer": "Highest board, arms fully extended upward, blue swimwear"
+   },
+   {
+    "turn_id": "T2",
+    "type": "true_or_false_question",
+    "dependency": {
+     "depends_on": [
+      "T1"
+     ],
+     "dep_type": {
+      "T1": "episodic"
+     }
+    },
+    "question": "During the descent (00:13) of the solo diver from T1, is his body to the right of the Malaysian flag and above the blue pool deck?",
+    "options": null,
+    "answer": "True"
+   },
+   {
+    "turn_id": "T3",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T1"
+     ],
+     "dep_type": {
+      "T1": "answer"
+     }
+    },
+    "question": "Compared with the solo diver's trunk color from T1, how do the first synchronized pair's trunks differ in color and side pattern?",
+    "options": null,
+    "answer": "The pair’s trunks show a white side stripe pattern absent on the solo diver."
+   },
+   {
+    "turn_id": "T4",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "For the first synchronized pair (00:32), what is their board usage and mid-air arm position?",
+    "options": null,
+    "answer": "Highest (top) platform, arms extended overhead/forward."
+   },
+   {
+    "turn_id": "T5",
+    "type": "multi_choice_question",
+    "dependency": {
+     "depends_on": [
+      "T4"
+     ],
+     "dep_type": {
+      "T4": "answer"
+     }
+    },
+    "question": "Compared with the board of the pair from T4, where is the second synchronized pair's board (00:37)?",
+    "options": {
+     "A": "They occupy the board one level lower.",
+     "B": "They occupy the immediately adjacent board to the left, at the same height.",
+     "C": "They occupy the board two spots to the left, at the same height.",
+     "D": "They occupy the same board.",
+     "E": "They occupy the board one level higher."
+    },
+    "answer": "D"
+   },
+   {
+    "turn_id": "T6",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "From the pool water color change and scoreboard text, which Olympic Games edition is this?",
+    "options": null,
+    "answer": "Water shifts blue to green; text shows 'Rio 2016'."
+   },
+   {
+    "turn_id": "T7",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T1"
+     ],
+     "dep_type": {
+      "T1": "answer"
+     }
+    },
+    "question": "What nationality is the athlete in the final close-up, matching the solo diver from T1 and the intro country code?",
+    "options": null,
+    "answer": "Germany (GER)"
+   },
+   {
+    "turn_id": "T8",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "In the intro graphic at 00:02, what element appears directly beneath 'GER' and matches the German flag colors?",
+    "options": null,
+    "answer": "A small flag icon with black, red, and gold colors."
+   }
+  ],
+  "_viewer_release_index": 68,
+  "_viewer_source_duration_s": 61.60254,
+  "_viewer_source_resolution": [
+   640,
+   360
+  ],
+  "_viewer_source_has_audio": true,
+  "_viewer_source_mb": 5.0,
+  "_viewer_stub": false,
+  "_viewer_video_available": true,
+  "_viewer_video": "videos/videomembench-69.mp4",
+  "_viewer_video_note": "Whole release video, re-encoded to 360p H.264."
+ },
+ {
+  "video_id": "videomembench-198",
+  "video_name": "videomembench-198.mp4",
+  "video_path": "videos/videomembench-198.mp4",
+  "dialogue": [
+   {
+    "turn_id": "T1",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "Which ghost wears a black cowboy hat with a red band and has a slightly open mouth during the ride?",
+    "options": null,
+    "answer": "The smaller ghost on the right."
+   },
+   {
+    "turn_id": "T2",
+    "type": "multi_choice_question",
+    "dependency": {
+     "depends_on": [
+      "T1"
+     ],
+     "dep_type": {
+      "T1": "answer"
+     }
+    },
+    "question": "What does the ghost from T1 do when they arrive at the saloon?",
+    "options": {
+     "A": "They order drinks at the bar.",
+     "B": "They hide under a table.",
+     "C": "They sit down and chat.",
+     "D": "They start a fight.",
+     "E": "They play cards with the sheriff.",
+     "F": "They float through the wall.",
+     "G": "They sit down and drink.",
+     "H": "They dance on the stage."
+    },
+    "answer": "C"
+   },
+   {
+    "turn_id": "T3",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T1"
+     ],
+     "dep_type": {
+      "T1": "answer"
+     }
+    },
+    "question": "What shocked the ghosts from T1?",
+    "options": null,
+    "answer": "They were shocked because the sheriff burst into the saloon holding up a wanted poster."
+   },
+   {
+    "turn_id": "T4",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T1",
+      "T3"
+     ],
+     "dep_type": {
+      "T1": "answer",
+      "T3": "episodic"
+     }
+    },
+    "question": "How does the ghost from T1 look during the sheriff's stare in T3?",
+    "options": null,
+    "answer": "Sweaty and nervous."
+   },
+   {
+    "turn_id": "T5",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T1",
+      "T4"
+     ],
+     "dep_type": {
+      "T1": "answer",
+      "T4": "episodic"
+     }
+    },
+    "question": "During the scene from T4, is the red band on the hat of the ghost from T1 still visible?",
+    "options": null,
+    "answer": "Yes, the red band on the hat is still visible (the small star is on the other ghost's hat, not this one)."
+   },
+   {
+    "turn_id": "T6",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "How do the runner and the pursuer differ in how they move?",
+    "options": null,
+    "answer": "The pursuer is running on foot, while the escapees are riding horses."
+   },
+   {
+    "turn_id": "T7",
+    "type": "true_or_false_question",
+    "dependency": null,
+    "question": "Does the wolf cowboy pass in front of the rocks and exit toward the right?",
+    "options": null,
+    "answer": "True"
+   },
+   {
+    "turn_id": "T8",
+    "type": "multi_choice_question",
+    "dependency": null,
+    "question": "How many blue sweat drops are on the larger ghost's forehead, and are any on the smaller one?",
+    "options": {
+     "A": "Two drops on the larger, one on the smaller",
+     "B": "None on either, as they are ghosts",
+     "C": "Three drops on the larger, one on the smaller",
+     "D": "One drop on each character",
+     "E": "One drop on the larger, none on the smaller",
+     "F": "Two drops on the larger, none on the smaller"
+    },
+    "answer": "A"
+   },
+   {
+    "turn_id": "T9",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T4",
+      "T7"
+     ],
+     "dep_type": {
+      "T4": "episodic",
+      "T7": "episodic"
+     }
+    },
+    "question": "Given the wanted poster from T4 and the pursuit from T7, what visual contradiction creates irony about the ghosts' nature?",
+    "options": null,
+    "answer": "The wanted poster portrays the ghosts as solid, tangible beings, while the sheriff's physical pursuit is futile because the characters are clearly non-corporeal ghosts."
+   }
+  ],
+  "_viewer_release_index": 197,
+  "_viewer_source_duration_s": 72.887438,
+  "_viewer_source_resolution": [
+   640,
+   356
+  ],
+  "_viewer_source_has_audio": true,
+  "_viewer_source_mb": 3.1,
+  "_viewer_stub": false,
+  "_viewer_video_available": true,
+  "_viewer_video": "videos/videomembench-198.mp4",
+  "_viewer_video_note": "Whole release video, re-encoded to 360p H.264."
+ },
+ {
+  "video_id": "videomembench-160",
+  "video_name": "videomembench-160.mp4",
+  "video_path": "videos/videomembench-160.mp4",
+  "dialogue": [
+   {
+    "turn_id": "T1",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "In the 2006 match clip, what is the player's jersey number and the opponent shown on the graphic?",
+    "options": null,
+    "answer": "Number 17, IR Iran"
+   },
+   {
+    "turn_id": "T2",
+    "type": "true_or_false_question",
+    "dependency": {
+     "depends_on": [
+      "T1"
+     ],
+     "dep_type": {
+      "T1": "answer"
+     }
+    },
+    "question": "Does the player from T1 control the ball with the same body part before scoring in the 2006 clip as in the 2010 goal?",
+    "options": null,
+    "answer": "False"
+   },
+   {
+    "turn_id": "T3",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T1"
+     ],
+     "dep_type": {
+      "T1": "answer"
+     }
+    },
+    "question": "In the 2018 free-kick sequence, is the player from T1 visible near the goalmouth right after the ball crosses the line?",
+    "options": null,
+    "answer": "Yes."
+   },
+   {
+    "turn_id": "T4",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "In the 2018 free kick vs Spain, how many players are in the wall, what color is the referee's clothing, and which side of the net does the ball enter?",
+    "options": null,
+    "answer": "Six players form the defensive wall, the referee is wearing yellow, and the ball enters the upper right side of the net."
+   },
+   {
+    "turn_id": "T5",
+    "type": "multi_choice_question",
+    "dependency": null,
+    "question": "What is the jersey number of the player on the far right of the defensive wall?",
+    "options": {
+     "A": "5",
+     "B": "4",
+     "C": "6",
+     "D": "3",
+     "E": "8",
+     "F": "15",
+     "G": "2",
+     "H": "10"
+    },
+    "answer": "A"
+   },
+   {
+    "turn_id": "T6",
+    "type": "multi_choice_question",
+    "dependency": {
+     "depends_on": [
+      "T2"
+     ],
+     "dep_type": {
+      "T2": "episodic"
+     }
+    },
+    "question": "For the 2010 opponent's kit in the sequence from T2, which sock color appears on them but not on the Moroccan team's kit?",
+    "options": {
+     "A": "Black",
+     "B": "Blue",
+     "C": "Red",
+     "D": "Green",
+     "E": "White",
+     "F": "Yellow",
+     "G": "Grey",
+     "H": "Orange"
+    },
+    "answer": "E"
+   },
+   {
+    "turn_id": "T7",
+    "type": "true_or_false_question",
+    "dependency": null,
+    "question": "In the goal sequence in this segment, is ball contact made in the 6-yard box with exactly two white-shirted defenders airborne next to the attacker?",
+    "options": null,
+    "answer": "False"
+   },
+   {
+    "turn_id": "T8",
+    "type": "multi_choice_question",
+    "dependency": {
+     "depends_on": [
+      "T1",
+      "T4",
+      "T7"
+     ],
+     "dep_type": {
+      "T1": "answer",
+      "T4": "episodic",
+      "T7": "episodic"
+     }
+    },
+    "question": "For the player from T1, compare his left-arm attire in the sequences from T4 and T7: what is the presence and color of his captain's armband?",
+    "options": {
+     "A": "White.",
+     "B": "Black.",
+     "C": "Red.",
+     "D": "Yellow.",
+     "E": "No armband in either sequence.",
+     "F": "Blue."
+    },
+    "answer": "F"
+   }
+  ],
+  "_viewer_release_index": 159,
+  "_viewer_source_duration_s": 81.78068,
+  "_viewer_source_resolution": [
+   1280,
+   720
+  ],
+  "_viewer_source_has_audio": true,
+  "_viewer_source_mb": 17.2,
+  "_viewer_stub": false,
+  "_viewer_video_available": true,
+  "_viewer_video": "videos/videomembench-160.mp4",
+  "_viewer_video_note": "Whole release video, re-encoded to 360p H.264."
+ },
+ {
+  "video_id": "videomembench-116",
+  "video_name": "videomembench-116.mp4",
+  "video_path": "videos/videomembench-116.mp4",
+  "dialogue": [
+   {
+    "turn_id": "T1",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "In the fire performer close-up near 0:23, what headwear pattern, upper-body clothing, and background bokeh color are visible?",
+    "options": null,
+    "answer": "Patterned (Versace baroque-print) beanie, shirtless, with warm orange bokeh"
+   },
+   {
+    "turn_id": "T2",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T1"
+     ],
+     "dep_type": {
+      "T1": "episodic"
+     }
+    },
+    "question": "Right after the fire-lit scene from T1, what defines the lighting on the swimmer's body in the dark water?",
+    "options": null,
+    "answer": "Shifting, interconnected webs of bright light rippling across the swimmer's body"
+   },
+   {
+    "turn_id": "T3",
+    "type": "true_or_false_question",
+    "dependency": null,
+    "question": "Among the monks standing in a line near 1:32, is the person at the far right shorter than the one immediately to his left?",
+    "options": null,
+    "answer": "True"
+   },
+   {
+    "turn_id": "T4",
+    "type": "multi_choice_question",
+    "dependency": {
+     "depends_on": [
+      "T3"
+     ],
+     "dep_type": {
+      "T3": "episodic"
+     }
+    },
+    "question": "For the young girl in traditional dress from T3, what describes the topmost row of beads on her headdress and the ornaments hanging just below it?",
+    "options": {
+     "A": "White beads with gold coins on the row below",
+     "B": "Orange beads with silver metallic pendants below",
+     "C": "Pink beads matching the tassels with no metallic parts",
+     "D": "Red beads with bronze bells attached below",
+     "E": "Pink beads with gold coins on the row below",
+     "F": "White beads matching the tassels with no metallic parts",
+     "G": "Pink beads with silver metallic pendants below",
+     "H": "Pink and white beads with small bells below"
+    },
+    "answer": "C"
+   },
+   {
+    "turn_id": "T5",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "Comparing the aerial rice-field shot near 0:37 with the one near 1:11, what distinguishes the second from the first?",
+    "options": null,
+    "answer": "It is a tighter, top-down perspective focusing on golden stalks with less forest border."
+   },
+   {
+    "turn_id": "T6",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "In the vlogger's room near 3:50, what black electronic device with propellers sits immediately left of the central monitor?",
+    "options": null,
+    "answer": "A black drone with four propellers"
+   },
+   {
+    "turn_id": "T7",
+    "type": "true_or_false_question",
+    "dependency": {
+     "depends_on": [
+      "T2"
+     ],
+     "dep_type": {
+      "T2": "episodic"
+     }
+    },
+    "question": "Do the boats near the left shoreline keep the same spacing between the first and last appearance of the leaning-palm-tree shot of the person from T2?",
+    "options": null,
+    "answer": "False"
+   },
+   {
+    "turn_id": "T8",
+    "type": "multi_choice_question",
+    "dependency": {
+     "depends_on": [
+      "T6"
+     ],
+     "dep_type": {
+      "T6": "episodic"
+     }
+    },
+    "question": "Based on the drone from T6 (rounded body, gimbal camera), which model is it?",
+    "options": {
+     "A": "DJI Mavic 3",
+     "B": "DJI Mavic Air 2",
+     "C": "DJI Mini 3 Pro",
+     "D": "DJI Mavic 2 Pro",
+     "E": "DJI Phantom 4",
+     "F": "DJI Avata",
+     "G": "DJI Mavic 3 Pro",
+     "H": "Autel EVO II"
+    },
+    "answer": "A"
+   }
+  ],
+  "_viewer_release_index": 115,
+  "_viewer_source_duration_s": 250.89161,
+  "_viewer_source_resolution": [
+   1280,
+   720
+  ],
+  "_viewer_source_has_audio": true,
+  "_viewer_source_mb": 24.3,
+  "_viewer_stub": false,
+  "_viewer_video_available": true,
+  "_viewer_video": "videos/videomembench-116.mp4",
+  "_viewer_video_note": "Whole release video, re-encoded to 360p H.264."
+ },
+ {
+  "video_id": "videomembench-243",
+  "video_name": "videomembench-243.mp4",
+  "video_path": "videos/videomembench-243.mp4",
+  "dialogue": [
+   {
+    "turn_id": "T1",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "How is the chick's head positioned as it tucks under the adult penguin's feathers?",
+    "options": null,
+    "answer": "Facing upward with beak toward the adult's chest"
+   },
+   {
+    "turn_id": "T2",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "What is the primary visual feature of the chick near the adult's feet?",
+    "options": null,
+    "answer": "The chick's dark, pointed beak is clearly visible against the snow."
+   },
+   {
+    "turn_id": "T3",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "Where is the chick's beak currently pointed?",
+    "options": null,
+    "answer": "It is pointed directly toward the snow at the adult's feet."
+   },
+   {
+    "turn_id": "T4",
+    "type": "multi_choice_question",
+    "dependency": {
+     "depends_on": [
+      "T1"
+     ],
+     "dep_type": {
+      "T1": "answer"
+     }
+    },
+    "question": "At 00:28, how does the chick's head position relative to the adult's plumage change compared to the orientation from T1?",
+    "options": {
+     "A": "It shifts up and back, nestling against the adult's upper chest feathers, and its head and beak become hidden",
+     "B": "It shifts down and forward, nestling against the adult's lower belly feathers near the feet, but its head and beak remain visible",
+     "C": "It shifts down and forward, nestling against the adult's lower belly feathers near the feet, and its head and beak become hidden",
+     "D": "It remains in the same upward-facing position against the adult's chest",
+     "E": "It shifts down and forward, but it is now standing away from the adult with no contact",
+     "F": "It shifts up and forward, with the head resting on the adult's foot",
+     "G": "It shifts sideways, nestling against the adult's flank, with only the beak visible",
+     "H": "It shifts down and back, nestling under the adult's tail feathers"
+    },
+    "answer": "B"
+   },
+   {
+    "turn_id": "T5",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "Which part of the chick's body is most clearly visible to the camera?",
+    "options": null,
+    "answer": "The top of its head and back"
+   },
+   {
+    "turn_id": "T6",
+    "type": "multi_choice_question",
+    "dependency": null,
+    "question": "At 00:40, how is the chick's beak positioned relative to the adult penguin's lower belly feathers?",
+    "options": {
+     "A": "Angled upward, touching the belly feathers",
+     "B": "Pointing downward, resting on the snow",
+     "C": "Tucked under the belly feathers and hidden",
+     "D": "Level with the belly feathers and touching them",
+     "E": "Angled upward, separated by a small gap",
+     "F": "Level with the belly feathers but separated by a small gap",
+     "G": "Level with the belly feathers but separated by a large gap",
+     "H": "Pointing downward, resting on the adult's foot"
+    },
+    "answer": "F"
+   },
+   {
+    "turn_id": "T7",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "At 01:21, how is the chick's beak oriented as it nestles under the adult penguin's feathers?",
+    "options": null,
+    "answer": "Pointing downward and slightly forward"
+   },
+   {
+    "turn_id": "T8",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "How is the chick's head positioned relative to the adult penguin's foot at 00:33?",
+    "options": null,
+    "answer": "Nestling directly in front of the adult's foot, partially obscuring it"
+   },
+   {
+    "turn_id": "T9",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "How is the chick's beak positioned relative to the adult's foot at 01:21?",
+    "options": null,
+    "answer": "It points downward and slightly forward near the foot's front edge"
+   }
+  ],
+  "_viewer_release_index": 242,
+  "_viewer_source_duration_s": 259.575873,
+  "_viewer_source_resolution": [
+   1280,
+   720
+  ],
+  "_viewer_source_has_audio": true,
+  "_viewer_source_mb": 16.4,
+  "_viewer_stub": false,
+  "_viewer_video_available": true,
+  "_viewer_video": "videos/videomembench-243.mp4",
+  "_viewer_video_note": "Whole release video, re-encoded to 360p H.264."
+ },
+ {
+  "video_id": "videomembench-80",
+  "video_name": "videomembench-80.mp4",
+  "video_path": "videos/videomembench-80.mp4",
+  "dialogue": [
+   {
+    "turn_id": "T1",
+    "type": "multi_choice_question",
+    "dependency": null,
+    "question": "At the beginning, the close-up of the newborn giraffe shows its lower legs and hooves. What ground surface is the newborn giraffe standing on?",
+    "options": {
+     "A": "Dry, light-colored sand",
+     "B": "Wet, reddish-brown mud",
+     "C": "Smooth concrete with puddles",
+     "D": "Green grass and leaves",
+     "E": "Dry, reddish-brown dirt",
+     "F": "Wet, grey concrete",
+     "G": "Wet straw over dark mud",
+     "H": "Dry hay over concrete"
+    },
+    "answer": "B"
+   },
+   {
+    "turn_id": "T2",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T1"
+     ],
+     "dep_type": {
+      "T1": "episodic"
+     }
+    },
+    "question": "When the smaller animal from T1 nuzzles the adult by the vertical post, which animal is closer to the left beam?",
+    "options": null,
+    "answer": "The adult animal is closer to the left beam."
+   },
+   {
+    "turn_id": "T3",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T2"
+     ],
+     "dep_type": {
+      "T2": "episodic"
+     }
+    },
+    "question": "For the baby rhino from T2, first seen lying on a wet floor, which ground surface is visible during its second appearance?",
+    "options": null,
+    "answer": "Dry, packed dirt with scattered hay and cardboard boxes"
+   },
+   {
+    "turn_id": "T4",
+    "type": "multi_choice_question",
+    "dependency": null,
+    "question": "Among the cubs at the feeding trough, which one pushes its head against the wooden divider while standing on all fours, not the one being held?",
+    "options": {
+     "A": "The cub on the far left of the trough, with its back to the camera and no visible patch.",
+     "B": "The cub on the far right of the trough, with its back to the camera and no visible patch.",
+     "C": "The cub on the far left of the trough, facing the camera with a white patch.",
+     "D": "The cub in the center, partially obscured by the handler’s arm.",
+     "E": "The cub with the white chest patch, on the far right of the trough."
+    },
+    "answer": "A"
+   },
+   {
+    "turn_id": "T5",
+    "type": "multi_choice_question",
+    "dependency": {
+     "depends_on": [
+      "T4"
+     ],
+     "dep_type": {
+      "T4": "answer"
+     }
+    },
+    "question": "After the cub from T4 climbs the tree trunk, what chest marking is visible when it pauses mid-ascent angled away from the camera?",
+    "options": {
+     "A": "No visible marking due to full occlusion by the trunk",
+     "B": "A faint, irregular light patch partially visible on the chest",
+     "C": "A distinct white patch centered on the chest",
+     "D": "The chest appears uniformly dark brown with no distinct marking visible at this distance",
+     "E": "A distinct white patch on the lower belly",
+     "F": "A pale grey stripe running down the chest",
+     "G": "The chest appears light tan with a dark central spot",
+     "H": "A distinct white patch on the throat, not the chest"
+    },
+    "answer": "D"
+   },
+   {
+    "turn_id": "T6",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "In the dry riverbed scene, how many steps does the youngest baby elephant take before its front left foot touches the adult's rear leg?",
+    "options": null,
+    "answer": "4 steps, with the fourth step being the first full contact with the adult’s rear leg."
+   },
+   {
+    "turn_id": "T7",
+    "type": "multi_choice_question",
+    "dependency": null,
+    "question": "At the start of the final lion sequence, how many cubs are near the adult female's head versus her tail?",
+    "options": {
+     "A": "Two cubs near the head, two near the tail",
+     "B": "Four cubs near the head, none near the tail",
+     "C": "Three cubs near the head, one near the tail",
+     "D": "One cub near the head, three near the tail",
+     "E": "Three cubs near the head, none near the tail",
+     "F": "Two cubs near the head, one near the tail",
+     "G": "Three cubs near the head, two near the tail",
+     "H": "One cub near the head, one near the tail"
+    },
+    "answer": "C"
+   },
+   {
+    "turn_id": "T8",
+    "type": "true_or_false_question",
+    "dependency": {
+     "depends_on": [
+      "T7"
+     ],
+     "dep_type": {
+      "T7": "episodic"
+     }
+    },
+    "question": "For the cub from T7 near the adult's tail, does it clinch the dark tail tuft with its mouth and keep the grip as she walks?",
+    "options": null,
+    "answer": "False"
+   },
+   {
+    "turn_id": "T9",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T7",
+      "T8"
+     ],
+     "dep_type": {
+      "T7": "answer",
+      "T8": "answer"
+     }
+    },
+    "question": "During the walking sequence, describe the cub from T7 and T8 that did not interact with the adult's tail or head.",
+    "options": null,
+    "answer": "The cub walks independently beside the adult's left flank, maintaining a consistent distance without physical contact."
+   },
+   {
+    "turn_id": "T10",
+    "type": "multi_choice_question",
+    "dependency": {
+     "depends_on": [
+      "T1",
+      "T3",
+      "T6"
+     ],
+     "dep_type": {
+      "T1": "episodic",
+      "T3": "episodic",
+      "T6": "episodic"
+     }
+    },
+    "question": "Across the video, comparing the first appearances from T1, T3 and T6, which complete set of visual details is consistently present: an adult nearby, a dry-dirt ground surface, or a human handler?",
+    "options": {
+     "A": "None of the above are consistently true across all sequences.",
+     "B": "The ground surface is always dry dirt in every sequence.",
+     "C": "An adult animal is always visible nearby in every sequence.",
+     "D": "A human handler is always visible in every sequence.",
+     "E": "Both an adult animal and a dry-dirt ground surface are consistently present; a human handler is not consistently present.",
+     "F": "Both a human handler and a dry-dirt ground surface are consistently present; an adult animal is not consistently present.",
+     "G": "Both an adult animal and a human handler are consistently present; a dry-dirt ground surface is not consistent across all sequences.",
+     "H": "All three are consistently true across every sequence."
+    },
+    "answer": "A"
+   }
+  ],
+  "_viewer_release_index": 79,
+  "_viewer_source_duration_s": 292.733968,
+  "_viewer_source_resolution": [
+   1280,
+   720
+  ],
+  "_viewer_source_has_audio": true,
+  "_viewer_source_mb": 34.4,
+  "_viewer_stub": false,
+  "_viewer_video_available": true,
+  "_viewer_video": "videos/videomembench-80.mp4",
+  "_viewer_video_note": "Whole release video, re-encoded to 360p H.264."
+ },
+ {
+  "video_id": "videomembench-278",
+  "video_name": "videomembench-278.mp4",
+  "video_path": "videos/videomembench-278.mp4",
+  "dialogue": [
+   {
+    "turn_id": "T1",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "At 00:07, what text is on the brown road sign?",
+    "options": null,
+    "answer": "The brown road sign displays '50 KM ACAPULCO' in white capital letters."
+   },
+   {
+    "turn_id": "T2",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "At 00:15, what is visible in the car's rearview mirror reflection?",
+    "options": null,
+    "answer": "A man wearing a disguise with a red nose and glasses"
+   },
+   {
+    "turn_id": "T3",
+    "type": "multi_choice_question",
+    "dependency": null,
+    "question": "At 00:26, what color are the glasses and how many 4-pointed stars are in the top-right quadrant?",
+    "options": {
+     "A": "Black glasses and 2 stars",
+     "B": "Brown glasses and 4 stars",
+     "C": "Red glasses and 2 stars",
+     "D": "Red glasses and 4 stars",
+     "E": "Black glasses and 3 stars",
+     "F": "Red glasses and 3 stars",
+     "G": "Red glasses and 1 star",
+     "H": "Brown glasses and 3 stars"
+    },
+    "answer": "F"
+   },
+   {
+    "turn_id": "T4",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "In the framed scene around 00:34, what is the soldier on the left doing?",
+    "options": null,
+    "answer": "Pointing a rifle at a blindfolded man"
+   },
+   {
+    "turn_id": "T5",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "At 00:41, what month name is written on the flip calendar, and what decorates its top corners?",
+    "options": null,
+    "answer": "At 00:41 the flip calendar reads 'FEBRUARY' in large red capital letters. Its top corners are decorated with red/pink flowers and curling vine/leaf scrollwork on both sides."
+   },
+   {
+    "turn_id": "T6",
+    "type": "multi_choice_question",
+    "dependency": null,
+    "question": "In the illustration at 01:01, how many blades does the ceiling fan have?",
+    "options": {
+     "A": "2",
+     "B": "4",
+     "C": "3",
+     "D": "5",
+     "E": "6",
+     "F": "1",
+     "G": "8",
+     "H": "No ceiling fan is shown"
+    },
+    "answer": "B"
+   },
+   {
+    "turn_id": "T7",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "At 01:12, how are the three figures on the right side of the tapestry positioned?",
+    "options": null,
+    "answer": "On the tapestry, the three figures on the right are all standing upright: a man extending his arm holding a green crystal, a woman standing with her hands on her hips, and an ornate horse-drawn carriage. None of the figures are kneeling and none holds a staff overhead."
+   },
+   {
+    "turn_id": "T8",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "At 01:20, what color and pattern is the border around the tapestry scene?",
+    "options": null,
+    "answer": "The border is primarily brown/olive on a cream background, with a repeating diamond and chevron pattern."
+   },
+   {
+    "turn_id": "T9",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "At 00:38, what action does the larger figure in the landscape scene perform?",
+    "options": null,
+    "answer": "He is pointing his arm towards the green crystals on the left."
+   }
+  ],
+  "_viewer_release_index": 277,
+  "_viewer_source_duration_s": 330.350295,
+  "_viewer_source_resolution": [
+   1280,
+   720
+  ],
+  "_viewer_source_has_audio": true,
+  "_viewer_source_mb": 20.1,
+  "_viewer_stub": false,
+  "_viewer_video_available": true,
+  "_viewer_video": "videos/videomembench-278.mp4",
+  "_viewer_video_note": "Whole release video, re-encoded to 360p H.264."
+ },
+ {
+  "video_id": "videomembench-185",
+  "video_name": "videomembench-185.mp4",
+  "video_path": "videos/videomembench-185.mp4",
+  "dialogue": [
+   {
+    "turn_id": "T1",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "In the opening shot, what color is the yarn held in the left hand?",
+    "options": null,
+    "answer": "Pink yarn"
+   },
+   {
+    "turn_id": "T2",
+    "type": "multi_choice_question",
+    "dependency": {
+     "depends_on": [
+      "T1"
+     ],
+     "dep_type": {
+      "T1": "answer"
+     }
+    },
+    "question": "Using the yarn of the color from T1, at 00:21 how is the knot tied to the metal pull-tab?",
+    "options": {
+     "A": "The needle is held vertically, piercing the tab from above",
+     "B": "The needle is held horizontally through the tab while the knot is tightened",
+     "C": "The person uses a crochet hook to pull the knot through the tab",
+     "D": "The person uses their teeth to tighten the knot on the tab",
+     "E": "The person is using their fingers to tie the knot without a needle",
+     "F": "The person uses tweezers to tie the knot to the tab",
+     "G": "The knot is tied with a needle threaded through the tab twice"
+    },
+    "answer": "E"
+   },
+   {
+    "turn_id": "T3",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T2"
+     ],
+     "dep_type": {
+      "T2": "episodic"
+     }
+    },
+    "question": "At 00:36, considering the knot-making moment from T2, how is the needle held?",
+    "options": null,
+    "answer": "Held vertically behind the tab, pointing upwards"
+   },
+   {
+    "turn_id": "T4",
+    "type": "multi_choice_question",
+    "dependency": {
+     "depends_on": [
+      "T3"
+     ],
+     "dep_type": {
+      "T3": "answer"
+     }
+    },
+    "question": "Based on the needle orientation from T3, around 00:55 which direction does the needle point as the yarn is pulled taut?",
+    "options": {
+     "A": "It extends diagonally upward and to the right of the ring",
+     "B": "It extends diagonally downward and to the left of the ring",
+     "C": "It points straight up from the ring",
+     "D": "It extends horizontally to the left of the ring",
+     "E": "It points straight down from the ring",
+     "F": "It extends diagonally downward and to the right of the ring",
+     "G": "It extends diagonally upward and to the left of the ring",
+     "H": "It extends horizontally to the right of the ring"
+    },
+    "answer": "G"
+   },
+   {
+    "turn_id": "T5",
+    "type": "multi_choice_question",
+    "dependency": {
+     "depends_on": [
+      "T1"
+     ],
+     "dep_type": {
+      "T1": "answer"
+     }
+    },
+    "question": "Given the yarn color from T1, around 05:07 where is the blue spiral piece positioned relative to the ring?",
+    "options": {
+     "A": "It is lying flat on the table next to the ring",
+     "B": "It is coiled around the bottom-right of the ring",
+     "C": "It extends diagonally down from the left of the ring",
+     "D": "It points straight down from the bottom of the ring",
+     "E": "It points straight up from the top of the ring",
+     "F": "It extends horizontally from the right of the ring",
+     "G": "It is inside the ring, resting at its center",
+     "H": "It extends diagonally up from the right of the ring"
+    },
+    "answer": "E"
+   },
+   {
+    "turn_id": "T6",
+    "type": "multi_choice_question",
+    "dependency": {
+     "depends_on": [
+      "T5"
+     ],
+     "dep_type": {
+      "T5": "answer"
+     }
+    },
+    "question": "Taking into account the spiral piece position from T5, around 05:26 how is the needle inserted into the ring?",
+    "options": {
+     "A": "Pointing straight down through the bottom edge",
+     "B": "Held horizontally behind the ring",
+     "C": "Pointing diagonally towards the bottom-right",
+     "D": "Pointing straight up through the bottom edge",
+     "E": "Pointing diagonally towards the top-left",
+     "F": "Pointing straight up through the top edge",
+     "G": "Pointing straight down through the top edge",
+     "H": "Held horizontally through the center of the ring"
+    },
+    "answer": "F"
+   },
+   {
+    "turn_id": "T7",
+    "type": "multi_choice_question",
+    "dependency": {
+     "depends_on": [
+      "T1",
+      "T5"
+     ],
+     "dep_type": {
+      "T1": "answer",
+      "T5": "episodic"
+     }
+    },
+    "question": "During the glue application moment from T5, with the ring from T1, how is the needle on the far left of the frame positioned?",
+    "options": {
+     "A": "It is held vertically with the tip pointing up",
+     "B": "It is lying horizontally on the surface",
+     "C": "It is inserted through the center of the ring",
+     "D": "It is held diagonally with the tip pointing towards the bottom-left",
+     "E": "It is held diagonally with the tip pointing towards the top-right",
+     "F": "It is held diagonally with the tip pointing towards the top-left",
+     "G": "It is held vertically with the tip pointing down",
+     "H": "It is held diagonally with the tip pointing towards the bottom-right"
+    },
+    "answer": "F"
+   }
+  ],
+  "_viewer_release_index": 184,
+  "_viewer_source_duration_s": 488.640726,
+  "_viewer_source_resolution": [
+   1280,
+   720
+  ],
+  "_viewer_source_has_audio": true,
+  "_viewer_source_mb": 35.4,
+  "_viewer_stub": false,
+  "_viewer_video_available": true,
+  "_viewer_video": "videos/videomembench-185.mp4",
+  "_viewer_video_note": "Whole release video, re-encoded to 360p H.264."
+ },
+ {
+  "video_id": "videomembench-263",
+  "video_name": "videomembench-263.mp4",
+  "video_path": "videos/videomembench-263.mp4",
+  "dialogue": [
+   {
+    "turn_id": "T1",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "Among the three red circular icons, which one shows three figures in uniform?",
+    "options": null,
+    "answer": "The icon on the right"
+   },
+   {
+    "turn_id": "T2",
+    "type": "multi_choice_question",
+    "dependency": {
+     "depends_on": [
+      "T1"
+     ],
+     "dep_type": {
+      "T1": "answer"
+     }
+    },
+    "question": "When a single red icon appears, which symbol is in the same horizontal position as the icon from T1?",
+    "options": {
+     "A": "A person wearing a headset",
+     "B": "Three stylized human figures in uniform",
+     "C": "A hand holding a paper airplane",
+     "D": "A folded newspaper icon",
+     "E": "A globe icon",
+     "F": "A compass icon",
+     "G": "A folded map icon",
+     "H": "A suitcase icon"
+    },
+    "answer": "G"
+   },
+   {
+    "turn_id": "T3",
+    "type": "multi_choice_question",
+    "dependency": {
+     "depends_on": [
+      "T2"
+     ],
+     "dep_type": {
+      "T2": "episodic"
+     }
+    },
+    "question": "After the icon from T2 disappears, which icon appears in the same place?",
+    "options": {
+     "A": "A person wearing a headset.",
+     "B": "A magnifier.",
+     "C": "A folded map.",
+     "D": "A person wearing glasses.",
+     "E": "A person wearing a hat.",
+     "F": "A person wearing a helmet.",
+     "G": "A hand holding a phone.",
+     "H": "A camera."
+    },
+    "answer": "E"
+   },
+   {
+    "turn_id": "T4",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T3"
+     ],
+     "dep_type": {
+      "T3": "answer"
+     }
+    },
+    "question": "Which tool icon appears next to the icon from T3?",
+    "options": null,
+    "answer": "magnifier"
+   },
+   {
+    "turn_id": "T5",
+    "type": "multi_choice_question",
+    "dependency": null,
+    "question": "At 12:38, in which row and column is the icon background not red?",
+    "options": {
+     "A": "First row, first column",
+     "B": "Second row, second column",
+     "C": "First row, third column",
+     "D": "Second row, first column",
+     "E": "Third row, second column",
+     "F": "Second row, third column",
+     "G": "First row, fourth column",
+     "H": "First row, second column"
+    },
+    "answer": "H"
+   }
+  ],
+  "_viewer_release_index": 262,
+  "_viewer_source_duration_s": 1184.233333,
+  "_viewer_source_resolution": [
+   1280,
+   720
+  ],
+  "_viewer_source_has_audio": false,
+  "_viewer_source_mb": 9.2,
+  "_viewer_stub": false,
+  "_viewer_video_available": true,
+  "_viewer_video": "videos/videomembench-263.mp4",
+  "_viewer_video_note": "Whole release video, re-encoded to 360p H.264."
+ },
+ {
+  "video_id": "videomembench-54",
+  "video_name": "videomembench-54.mp4",
+  "video_path": "videos/videomembench-54.mp4",
+  "dialogue": [
+   {
+    "turn_id": "T1",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "What text appears while the yellow balloon is shown?",
+    "options": null,
+    "answer": "Big Bang happened everywhere"
+   },
+   {
+    "turn_id": "T2",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "In the yellow-balloon segment, is any text overlay shown?",
+    "options": null,
+    "answer": "No, there is no text overlay present."
+   },
+   {
+    "turn_id": "T3",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "In the yellow-balloon segment, is any text shown above it?",
+    "options": null,
+    "answer": "No, there is no text displayed above the sphere."
+   },
+   {
+    "turn_id": "T4",
+    "type": "multi_choice_question",
+    "dependency": {
+     "depends_on": [
+      "T3"
+     ],
+     "dep_type": {
+      "T3": "episodic"
+     }
+    },
+    "question": "What is in the background behind the object from T3?",
+    "options": {
+     "A": "A grid-like structure representing spacetime curvature.",
+     "B": "A dark, empty space with no visible features.",
+     "C": "A series of mathematical equations on a chalkboard.",
+     "D": "A bright, glowing nebula with swirling colors.",
+     "E": "A flat, checkerboard floor extending to the horizon.",
+     "F": "A field of stars with a galaxy in the distance.",
+     "G": "A blurred laboratory setting.",
+     "H": "A plain white studio backdrop."
+    },
+    "answer": "A"
+   },
+   {
+    "turn_id": "T5",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T2"
+     ],
+     "dep_type": {
+      "T2": "episodic"
+     }
+    },
+    "question": "Compared to the segment from T2, how does the balloon's final shape interact with the platform?",
+    "options": null,
+    "answer": "It maintains a smaller, more concentrated contact point with the platform."
+   },
+   {
+    "turn_id": "T6",
+    "type": "multi_choice_question",
+    "dependency": {
+     "depends_on": [
+      "T4"
+     ],
+     "dep_type": {
+      "T4": "episodic"
+     }
+    },
+    "question": "For the geometries from T4, what text is shown when the path is on the flat grid?",
+    "options": {
+     "A": "Inflation",
+     "B": "Quantum Tunneling",
+     "C": "True Vacuum",
+     "D": "False Vacuum",
+     "E": "Expansion",
+     "F": "Flat Universe",
+     "G": "Bounce",
+     "H": "Big Bang"
+    },
+    "answer": "H"
+   },
+   {
+    "turn_id": "T7",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "Does the central region turn into a complex swirling nebula as the light fades?",
+    "options": null,
+    "answer": "False"
+   },
+   {
+    "turn_id": "T8",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "How does the yellow balloon on the platform change between 0:33 and 0:38?",
+    "options": null,
+    "answer": "It transitions from a wrinkled, partially collapsed state to a fully inflated, smooth sphere."
+   },
+   {
+    "turn_id": "T9",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "At 15:36, describe the internal-texture differences among the floating spheres.",
+    "options": null,
+    "answer": "At 15:36, some spheres contain dense, intricate, filamentary patterns that resemble web-like networks, while others appear as diffuse, featureless, or semi-transparent orbs without defined internal structures."
+   },
+   {
+    "turn_id": "T10",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "Which visual analogy best represents the expansion of space rather than the energy field's potential state?",
+    "options": null,
+    "answer": "The yellow balloon with ants on its surface."
+   }
+  ],
+  "_viewer_release_index": 53,
+  "_viewer_source_duration_s": 1042.875167,
+  "_viewer_source_resolution": [
+   1280,
+   720
+  ],
+  "_viewer_source_has_audio": false,
+  "_viewer_source_mb": 64.2,
+  "_viewer_stub": false,
+  "_viewer_video_available": true,
+  "_viewer_video": "videos/videomembench-54.mp4",
+  "_viewer_video_note": "Whole release video, re-encoded to 360p H.264."
+ },
+ {
+  "video_id": "videomembench-58",
+  "video_name": "videomembench-58.mp4",
+  "video_path": "videos/videomembench-58.mp4",
+  "dialogue": [
+   {
+    "turn_id": "T1",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "In the gable above the car, how many white diamond patterns are in the timber framing?",
+    "options": null,
+    "answer": "7"
+   },
+   {
+    "turn_id": "T2",
+    "type": "true_or_false_question",
+    "dependency": {
+     "depends_on": [
+      "T1"
+     ],
+     "dep_type": {
+      "T1": "episodic"
+     }
+    },
+    "question": "Is the fire hydrant to the left of the entrance from T1?",
+    "options": null,
+    "answer": "True"
+   },
+   {
+    "turn_id": "T3",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T2"
+     ],
+     "dep_type": {
+      "T2": "episodic"
+     }
+    },
+    "question": "What is the material and surface texture of the wall behind the fire hydrant from T2?",
+    "options": null,
+    "answer": "Red brick with a rough, porous texture"
+   },
+   {
+    "turn_id": "T4",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T2",
+      "T3"
+     ],
+     "dep_type": {
+      "T2": "episodic",
+      "T3": "episodic"
+     }
+    },
+    "question": "Which is closer to the street lamp, the entrance from T2 or the wall section from T3?",
+    "options": null,
+    "answer": "The entrance"
+   },
+   {
+    "turn_id": "T5",
+    "type": "multi_choice_question",
+    "dependency": {
+     "depends_on": [
+      "T3",
+      "T4"
+     ],
+     "dep_type": {
+      "T3": "episodic",
+      "T4": "episodic"
+     }
+    },
+    "question": "Do the timber beams from T3 and the pillars from T4 align vertically or are they offset?",
+    "options": {
+     "A": "They are offset by two beam widths to the right.",
+     "B": "They form a continuous vertical line.",
+     "C": "They are offset by one beam width to the right.",
+     "D": "They are offset by half a beam width to the left.",
+     "E": "They are offset by two beam widths to the left.",
+     "F": "They are offset by one beam width to the left.",
+     "G": "They cross at an angle rather than being offset.",
+     "H": "They are offset by half a beam width to the right."
+    },
+    "answer": "F"
+   },
+   {
+    "turn_id": "T6",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T1",
+      "T5"
+     ],
+     "dep_type": {
+      "T1": "episodic",
+      "T5": "episodic"
+     }
+    },
+    "question": "Based on T1 and T5, what is the purpose of this video?",
+    "options": null,
+    "answer": "An observational test designed to challenge a viewer's attention to fine visual details."
+   }
+  ],
+  "_viewer_release_index": 57,
+  "_viewer_source_duration_s": 2.0,
+  "_viewer_source_resolution": [
+   1920,
+   1080
+  ],
+  "_viewer_source_has_audio": false,
+  "_viewer_source_mb": 0.1,
+  "_viewer_stub": true,
+  "_viewer_video_available": true,
+  "_viewer_video": "videos/videomembench-58.mp4",
+  "_viewer_video_note": "The released file is a 2-second stub (0.1 MB), shown as released. The dialogue clearly refers to a longer video."
+ },
+ {
+  "video_id": "videomembench-36",
+  "video_name": "videomembench-36.mp4",
+  "video_path": "videos/videomembench-36.mp4",
+  "dialogue": [
+   {
+    "turn_id": "T1",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "In the traditional vs digital marketing comparison table, where are the two communication attributes placed?",
+    "options": null,
+    "answer": "Delayed communication is in the left column, while instant communication is in the right column."
+   },
+   {
+    "turn_id": "T2",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T1"
+     ],
+     "dep_type": {
+      "T1": "episodic"
+     }
+    },
+    "question": "In the table from T1, what attribute is listed directly below 'Delayed communication' in the left column?",
+    "options": null,
+    "answer": "Lack of real time results"
+   },
+   {
+    "turn_id": "T3",
+    "type": "multi_choice_question",
+    "dependency": {
+     "depends_on": [
+      "T1",
+      "T2"
+     ],
+     "dep_type": {
+      "T1": "episodic",
+      "T2": "answer"
+     }
+    },
+    "question": "In the table from T1, which right-column digital attribute is in the same row as the attribute from T2?",
+    "options": {
+     "A": "Instant communication",
+     "B": "Easy to reach target audience",
+     "C": "Versatile",
+     "D": "Low cost of distribution",
+     "E": "Two-way communication",
+     "F": "Global audience reach",
+     "G": "Easy to measure",
+     "H": "Instant real time results"
+    },
+    "answer": "H"
+   },
+   {
+    "turn_id": "T4",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "In the Mailchimp template editor, what text is on the button directly below the cookie image?",
+    "options": null,
+    "answer": "ORDER NOW"
+   },
+   {
+    "turn_id": "T5",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T4"
+     ],
+     "dep_type": {
+      "T4": "episodic"
+     }
+    },
+    "question": "What is the background color of the button from T4?",
+    "options": null,
+    "answer": "Orange"
+   },
+   {
+    "turn_id": "T6",
+    "type": "open_structured",
+    "dependency": {
+     "depends_on": [
+      "T3",
+      "T4"
+     ],
+     "dep_type": {
+      "T3": "answer",
+      "T4": "episodic"
+     }
+    },
+    "question": "How many black buttons are aligned side by side below the button from T3 and T4?",
+    "options": null,
+    "answer": "3"
+   },
+   {
+    "turn_id": "T7",
+    "type": "open_structured",
+    "dependency": null,
+    "question": "What model is selected when chatting with Claude?",
+    "options": null,
+    "answer": "Sonnet 4.5"
+   }
+  ],
+  "_viewer_release_index": 35,
+  "_viewer_source_duration_s": 84485.067333,
+  "_viewer_source_resolution": [
+   1280,
+   720
+  ],
+  "_viewer_source_has_audio": false,
+  "_viewer_source_mb": 4946.8,
+  "_viewer_stub": false,
+  "_viewer_video_available": false,
+  "_viewer_video_note": "Not downloaded: the release file is 4.9 GB and ffprobe reports 84,485 s (23.5 h), almost certainly a broken container duration. The dialogue is shown without a video."
+ }
+]

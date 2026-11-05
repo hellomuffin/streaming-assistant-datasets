@@ -8,6 +8,8 @@ ENTRIES = [
  ("viabench", "VIABench", "Egocentric video from blind users: proactive reminders with alert windows, online VQA and guided interaction (arXiv 2607.14660)."),
  ("guideme", "GuideMe", "Streaming task guidance: instruction, completion feedback, error detection and correction on HoloAssist, CaptainCook4D, EgoPER, QEVD (arXiv 2607.02991)."),
  ("omniassistbench", "OmniAssistBench", "Assistant-style omni interaction with spoken, gestured and handwritten questions, proactive responses and process tracking (arXiv 2608.21360)."),
+ ("interactionbench", "InteractionBench", "Real-time interaction on 812 streaming videos: when to speak and when to stay silent, with timed ground truth for Look, Recall, Time, Alert, Track and Commentate, plus silent and near-miss items."),
+ ("videomembench", "VideoMemBench", "In-context video memory: 326 multi-turn video dialogues whose later questions depend on earlier turns through episodic and answer links (arXiv 2610.40131)."),
 ]
 rows = []
 for slug, name, desc in ENTRIES:

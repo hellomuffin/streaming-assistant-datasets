@@ -1,0 +1,385 @@
+{
+ "source": "computed from items.jsonl, mcq/mcq_options_v4.jsonl and suites/nearmiss_verified.jsonl of HF InteractionBench/InteractionBench (main, fetched 2026-11-05)",
+ "items": 1060,
+ "videos": 812,
+ "hours": 35.88,
+ "video_median_s": 143.5,
+ "video_max_s": 940.55,
+ "answers": 3780,
+ "negatives": 69,
+ "mcq_items": 688,
+ "nearmiss_suites": 53,
+ "nearmiss_windows": 106,
+ "items_with_evidence_time": 156,
+ "task": [
+  [
+   "Alert",
+   313
+  ],
+  [
+   "Track",
+   192
+  ],
+  [
+   "Recall",
+   163
+  ],
+  [
+   "Look",
+   159
+  ],
+  [
+   "Time",
+   126
+  ],
+  [
+   "Commentate",
+   107
+  ]
+ ],
+ "capability": [
+  [
+   "PTR",
+   313
+  ],
+  [
+   "CST",
+   191
+  ],
+  [
+   "IVQA",
+   159
+  ],
+  [
+   "LVM",
+   156
+  ],
+  [
+   "TOA",
+   126
+  ],
+  [
+   "LCG",
+   107
+  ],
+  [
+   "CIR",
+   7
+  ],
+  [
+   "BRC",
+   1
+  ]
+ ],
+ "time_type": [
+  [
+   "C",
+   406
+  ],
+  [
+   "B",
+   338
+  ],
+  [
+   "A",
+   316
+  ]
+ ],
+ "interaction_type": [
+  [
+   "QA",
+   626
+  ],
+  [
+   "INS",
+   434
+  ]
+ ],
+ "range_length": [
+  [
+   "0-1min",
+   618
+  ],
+  [
+   "1-5min",
+   431
+  ],
+  [
+   "5-20min",
+   11
+  ]
+ ],
+ "sub_tag": [
+  [
+   "None",
+   776
+  ],
+  [
+   "counting",
+   185
+  ],
+  [
+   "narration",
+   81
+  ],
+  [
+   "goal",
+   18
+  ]
+ ],
+ "task_by_time_type": {
+  "Alert": [
+   [
+    "B",
+    206
+   ],
+   [
+    "C",
+    107
+   ]
+  ],
+  "Track": [
+   [
+    "C",
+    192
+   ]
+  ],
+  "Recall": [
+   [
+    "A",
+    156
+   ],
+   [
+    "B",
+    7
+   ]
+  ],
+  "Look": [
+   [
+    "A",
+    159
+   ]
+  ],
+  "Time": [
+   [
+    "B",
+    125
+   ],
+   [
+    "A",
+    1
+   ]
+  ],
+  "Commentate": [
+   [
+    "C",
+    107
+   ]
+  ]
+ },
+ "negatives_by_task": [
+  [
+   "Alert",
+   39
+  ],
+  [
+   "Track",
+   30
+  ]
+ ],
+ "mcq_by_task": [
+  [
+   "Alert",
+   272
+  ],
+  [
+   "Recall",
+   154
+  ],
+  [
+   "Look",
+   147
+  ],
+  [
+   "Time",
+   114
+  ],
+  [
+   "Track",
+   1
+  ]
+ ],
+ "domain_videos": [
+  [
+   "author",
+   593
+  ],
+  [
+   "open_quick_howto",
+   44
+  ],
+  [
+   "cooking_recipe",
+   42
+  ],
+  [
+   "open_skill_practice",
+   34
+  ],
+  [
+   "open_pov_tasks",
+   24
+  ],
+  [
+   "open_navigation",
+   22
+  ],
+  [
+   "open_observation",
+   10
+  ],
+  [
+   "open_state_change",
+   10
+  ],
+  [
+   "sports_individual_form",
+   9
+  ],
+  [
+   "shorts_crafts",
+   6
+  ],
+  [
+   "shorts_howto_tech",
+   4
+  ],
+  [
+   "shorts_diy_repair",
+   3
+  ],
+  [
+   "shorts_navigation",
+   3
+  ],
+  [
+   "shorts_assembly",
+   2
+  ],
+  [
+   "shorts_cooking",
+   2
+  ],
+  [
+   "shorts_pet_care",
+   2
+  ],
+  [
+   "shorts_music_play",
+   1
+  ],
+  [
+   "shorts_science_demo",
+   1
+  ]
+ ],
+ "answers_per_item": [
+  [
+   "1",
+   688
+  ],
+  [
+   "2",
+   54
+  ],
+  [
+   "3-4",
+   106
+  ],
+  [
+   "5-9",
+   114
+  ],
+  [
+   "10-19",
+   69
+  ],
+  [
+   "20+",
+   29
+  ]
+ ],
+ "answers_per_item_mean": 3.57,
+ "video_duration": [
+  [
+   "0-30 s",
+   13
+  ],
+  [
+   "30-60 s",
+   68
+  ],
+  [
+   "60-120 s",
+   236
+  ],
+  [
+   "120-180 s",
+   207
+  ],
+  [
+   "180-300 s",
+   252
+  ],
+  [
+   "300-600 s",
+   27
+  ],
+  [
+   "600+ s",
+   9
+  ]
+ ],
+ "response_delay": [
+  [
+   "< 0 s",
+   4
+  ],
+  [
+   "0 s",
+   336
+  ],
+  [
+   "0.001-5 s",
+   238
+  ],
+  [
+   "5-15 s",
+   523
+  ],
+  [
+   "15-30 s",
+   571
+  ],
+  [
+   "30-60 s",
+   759
+  ],
+  [
+   "60-120 s",
+   726
+  ],
+  [
+   "120+ s",
+   554
+  ]
+ ],
+ "response_delay_median_s": 36.22,
+ "response_delay_n": 3711,
+ "nearmiss_by_task": [
+  [
+   "CST",
+   53
+  ]
+ ]
+}
