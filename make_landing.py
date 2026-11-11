@@ -10,6 +10,7 @@ ENTRIES = [
  ("omniassistbench", "OmniAssistBench", "Assistant-style omni interaction with spoken, gestured and handwritten questions, proactive responses and process tracking (arXiv 2608.21360)."),
  ("interactionbench", "InteractionBench", "Real-time interaction on 812 streaming videos: when to speak and when to stay silent, with timed ground truth for Look, Recall, Time, Alert, Track and Commentate, plus silent and near-miss items."),
  ("videomembench", "VideoMemBench", "In-context video memory: 326 multi-turn video dialogues whose later questions depend on earlier turns through episodic and answer links (arXiv 2610.40131)."),
+ ("spotbench", "SPOT-Bench", "Fully proactive streaming benchmark (\"Don't Pause!\"): every prediction across the stream is scored with Timeliness-F1 on action boundaries, points of no return, streaming QA, procedural guidance and interventions (arXiv 2604.24317)."),
 ]
 rows = []
 for slug, name, desc in ENTRIES:

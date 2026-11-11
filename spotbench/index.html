@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPOT-Bench Data Viewer</title>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2129;
+  --border: #2d3640;
+  --text: #e6e9ed;
+  --muted: #8a949e;
+  --accent: #4dabf7;
+  --good: #51cf66;
+  --bad: #ff6b6b;
+  --highlight: #ffd43b;
+  --purple: #b197fc;
+  --orange: #ffa94d;
+  --pink: #f783ac;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.5;
+}
+header {
+  padding: 12px 20px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header h1 { margin: 0; font-size: 18px; font-weight: 600; color: var(--accent); }
+header h1 .subtitle { font-size: 11px; color: var(--muted); font-weight: 400; margin-left: 8px; letter-spacing: 0.3px; }
+.control { display: flex; align-items: center; gap: 6px; }
+.control label { color: var(--muted); font-size: 12px; }
+select, input, button {
+  background: var(--bg); color: var(--text); border: 1px solid var(--border);
+  padding: 6px 10px; font-family: inherit; font-size: 13px; border-radius: 4px; max-width: 360px;
+}
+button { cursor: pointer; }
+button:hover:not(:disabled) { background: var(--border); }
+button:disabled { opacity: 0.4; cursor: not-allowed; }
+.banner {
+  background: rgba(77, 171, 247, 0.08); border-bottom: 1px solid var(--border);
+  padding: 8px 20px; font-size: 12px; color: var(--muted);
+  display: flex; gap: 16px; align-items: center; flex-wrap: wrap;
+}
+.banner strong { color: var(--text); }
+.banner a { color: var(--accent); text-decoration: none; }
+.banner a:hover { text-decoration: underline; }
+.kbd { display: inline-block; padding: 1px 6px; font-family: monospace; font-size: 11px; background: var(--bg); border: 1px solid var(--border); border-bottom-width: 2px; border-radius: 3px; }
+main { display: grid; grid-template-columns: 420px 1fr; gap: 16px; padding: 16px; max-width: 100%; }
+@media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+.panel { background: var(--panel); border: 1px solid var(--border); border-radius: 6px; padding: 16px; overflow: hidden; min-width: 0; }
+.panel h2, .wide-panel h2 { margin: 0 0 12px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted); font-weight: 600; }
+.field { margin-bottom: 11px; }
+.field-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); margin-bottom: 3px; }
+.field-value { font-size: 13.5px; word-break: break-word; }
+.field-value.code { font-family: "SFMono-Regular", Consolas, monospace; font-size: 12px; background: var(--bg); padding: 6px 8px; border-radius: 3px; border: 1px solid var(--border); color: var(--accent); }
+video { width: 100%; max-height: 560px; background: #000; border-radius: 4px; }
+.video-missing { padding: 36px 24px; text-align: center; color: var(--muted); border: 1px dashed var(--border); border-radius: 6px; }
+.video-missing b { color: var(--text); }
+.wide-panel { grid-column: 1 / -1; background: var(--panel); border: 1px solid var(--border); border-radius: 6px; padding: 16px 20px; min-width: 0; }
+.task-desc { font-size: 13px; color: var(--muted); margin: 0 0 14px; padding: 10px 14px; background: var(--bg); border-left: 3px solid var(--accent); border-radius: 0 4px 4px 0; }
+.task-desc b { color: var(--text); }
+.task-pill { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; margin: 0 6px 4px 0; color: var(--c); background: color-mix(in srgb, var(--c) 14%, transparent); border: 1px solid color-mix(in srgb, var(--c) 45%, transparent); }
+/* timeline */
+.timeline-wrap { margin: 4px 0 16px; }
+.timeline { position: relative; height: 64px; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+.tl-lane-label { position: absolute; left: 4px; font-size: 9px; color: var(--muted); font-family: "SFMono-Regular", Consolas, monospace; pointer-events: none; }
+.tl-clip { position: absolute; top: 0; bottom: 0; background: rgba(77, 171, 247, 0.07); border-left: 1px dashed rgba(77,171,247,.5); border-right: 1px dashed rgba(77,171,247,.5); pointer-events: none; }
+.tl-marker { position: absolute; width: 4px; height: 14px; border-radius: 2px; cursor: pointer; margin-left: -2px; }
+.tl-marker:hover { transform: scaleY(1.3); }
+.tl-marker.q { background: var(--highlight); }
+.tl-marker.a { background: var(--good); }
+.tl-marker.d { background: var(--pink); width: 6px; margin-left: -3px; }
+.tl-marker.ev { background: transparent; border: 2px solid var(--bad); width: 10px; margin-left: -5px; border-radius: 50%; height: 10px; }
+.tl-grid { position: absolute; top: 0; bottom: 0; width: 1px; background: rgba(138,148,158,0.12); pointer-events: none; }
+.tl-grid span { position: absolute; bottom: 1px; left: 3px; font-size: 9px; color: var(--muted); font-family: "SFMono-Regular", Consolas, monospace; }
+.tl-playhead { position: absolute; top: -3px; bottom: -3px; width: 2px; background: var(--highlight); pointer-events: none; }
+.timeline-label { font-size: 11px; color: var(--muted); display: flex; justify-content: space-between; margin-top: 6px; font-family: "SFMono-Regular", Consolas, monospace; }
+.legend-row { display: flex; flex-wrap: wrap; gap: 14px; font-size: 11px; color: var(--muted); margin: 8px 0 0; }
+.legend-row .chip { display: inline-flex; align-items: center; gap: 5px; }
+.legend-row .swatch { width: 10px; height: 10px; border-radius: 3px; border: 1px solid rgba(0,0,0,0.4); }
+/* turn table */
+.table-scroll { overflow-x: auto; }
+.qa-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.qa-table th, .qa-table td { padding: 7px 9px; text-align: left; border-bottom: 1px solid var(--border); vertical-align: top; }
+.qa-table th { color: var(--muted); text-transform: uppercase; font-size: 10px; letter-spacing: 0.5px; background: var(--bg); position: sticky; top: 0; }
+.qa-table td.mono { font-family: "SFMono-Regular", Consolas, monospace; font-size: 11.5px; color: var(--muted); white-space: nowrap; }
+.qa-table tr.seekable { cursor: pointer; }
+.qa-table tr.seekable:hover { background: rgba(77, 171, 247, 0.06); }
+.qa-table tr.active { background: rgba(255, 212, 59, 0.09); }
+.qa-table tr.outside td { opacity: 0.45; }
+.role { font-size: 10px; font-weight: 700; letter-spacing: 0.4px; text-transform: uppercase; padding: 2px 8px; border-radius: 10px; white-space: nowrap; }
+.role-user { background: rgba(255, 212, 59, 0.12); color: var(--highlight); }
+.role-assistant { background: rgba(81, 207, 102, 0.14); color: var(--good); }
+.role-deleg { background: rgba(247, 131, 172, 0.15); color: var(--pink); }
+.gloss { color: var(--muted); font-size: 12.5px; }
+.gloss-none { color: #5c6670; font-style: italic; font-size: 11.5px; }
+.tok { font-family: "SFMono-Regular", Consolas, monospace; font-size: 11.5px; color: var(--pink); background: rgba(247,131,172,.12); border: 1px solid rgba(247,131,172,.4); border-radius: 3px; padding: 0 4px; white-space: nowrap; }
+.hidden-q { display: block; margin-top: 4px; padding: 4px 8px; border-left: 2px solid var(--pink); background: rgba(247,131,172,.06); color: #f3c4d6; font-size: 12.5px; white-space: pre-wrap; }
+.hidden-q .lbl { display:block; font-size: 9.5px; text-transform: uppercase; letter-spacing: .5px; color: var(--pink); }
+.flag { font-size: 10px; font-weight: 700; color: var(--pink); white-space: nowrap; }
+.pre { white-space: pre-wrap; }
+.tag-out { font-size: 9px; color: var(--muted); border: 1px dashed var(--border); border-radius: 8px; padding: 0 5px; margin-left: 4px; white-space: nowrap; }
+.evidence { font-size: 12px; margin: 0 0 10px; color: var(--muted); }
+.evidence b { color: var(--text); }
+/* raw */
+details.raw { margin-top: 4px; }
+details.raw summary { cursor: pointer; color: var(--accent); font-size: 13px; user-select: none; }
+.raw pre { margin: 10px 0 0; padding: 12px 14px; background: #0a0d11; border: 1px solid var(--border); border-radius: 4px; font-family: "SFMono-Regular", Consolas, monospace; font-size: 11.5px; color: var(--text); white-space: pre-wrap; word-break: break-word; max-height: 480px; overflow-y: auto; }
+/* rules */
+.rules { font-size: 13px; color: var(--text); }
+.rules li { margin: 4px 0; }
+.rules code { font-family: "SFMono-Regular", Consolas, monospace; font-size: 11.5px; color: var(--pink); }
+.rules .muted { color: var(--muted); }
+/* stats */
+.stats-summary { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 14px; padding: 10px 14px; background: var(--bg); border: 1px solid var(--border); border-radius: 4px; font-size: 12px; color: var(--muted); font-family: "SFMono-Regular", Consolas, monospace; }
+.stats-summary b { color: var(--text); font-weight: 600; margin-left: 3px; }
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(440px, 1fr)); gap: 26px; }
+@media (max-width: 520px) { .stats-grid { grid-template-columns: 1fr; } }
+.histogram { display: flex; flex-direction: column; gap: 3px; }
+.hist-title { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.hist-row { display: grid; grid-template-columns: 200px 1fr 120px; align-items: center; gap: 10px; font-size: 11.5px; font-family: "SFMono-Regular", Consolas, monospace; }
+@media (max-width: 520px) { .hist-row { grid-template-columns: 120px 1fr 90px; } }
+.hist-label { color: var(--muted); text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hist-label.in-subset { color: var(--text); }
+.hist-bar-wrap { height: 15px; background: var(--bg); border-radius: 3px; overflow: hidden; display: block; }
+.hist-bar { display: block; height: 100%; background: linear-gradient(90deg, var(--accent), #74c0fc); }
+.hist-bar.purple { background: linear-gradient(90deg, var(--purple), #d0bfff); }
+.hist-bar.orange { background: linear-gradient(90deg, var(--orange), #ffc078); }
+.hist-bar.good { background: linear-gradient(90deg, var(--good), #8ce99a); }
+.hist-bar.pink { background: linear-gradient(90deg, var(--pink), #fcc2d7); }
+.hist-count { color: var(--text); }
+.hist-count small { color: var(--muted); }
+.note { margin: 8px 0 0; font-size: 12px; color: var(--muted); font-style: italic; }
+.xtab { border-collapse: collapse; font-size: 11.5px; font-family: "SFMono-Regular", Consolas, monospace; width: 100%; }
+.xtab th, .xtab td { border-bottom: 1px solid var(--border); padding: 4px 6px; text-align: right; }
+.xtab th:first-child, .xtab td:first-child { text-align: left; color: var(--muted); }
+.xtab th { color: var(--muted); font-weight: 600; font-size: 10.5px; }
+.cur-mark { color: var(--highlight); font-family: "SFMono-Regular", Consolas, monospace; font-size: 11px; margin-left: 8px; text-transform: none; letter-spacing: 0; }
+.warn { font-size: 12px; color: var(--highlight); background: rgba(255, 212, 59, 0.07); border: 1px solid rgba(255, 212, 59, 0.3); border-radius: 4px; padding: 8px 10px; margin-top: 6px; }
+.spot-tl { width: 100%; display: block; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; cursor: crosshair; }
+.spot-tl text { font-family: "SFMono-Regular", Consolas, monospace; font-size: 10px; fill: var(--muted); }
+.tl-scroll { max-height: 460px; overflow-y: auto; border-radius: 6px; }
+.readout { font-family: "SFMono-Regular", Consolas, monospace; font-size: 12px; min-height: 36px; padding: 6px 10px; margin: 6px 0 10px; background: var(--bg); border: 1px solid var(--border); border-radius: 4px; color: var(--muted); }
+.readout b { color: var(--text); }
+.ctx { white-space: pre-wrap; font-family: "SFMono-Regular", Consolas, monospace; font-size: 12px; background: var(--bg); border: 1px solid var(--border); border-radius: 4px; padding: 8px 10px; }
+.lb td, .lb th { padding: 4px 8px; font-size: 12px; border-bottom: 1px solid var(--border); text-align: right; font-family: "SFMono-Regular", Consolas, monospace; }
+.lb td:first-child, .lb th:first-child { text-align: left; font-family: inherit; }
+.lb { border-collapse: collapse; width: 100%; }
+
+</style>
+</head>
+<body>
+<div class="banner">
+  <span>A <strong>30-case</strong> sample of <strong>SPOT-Bench</strong> (NeurIPS 2026 E&amp;D), 4&ndash;6 cases per task; <strong>25 with their whole video</strong> re-encoded to 360p H.264, 5 shown from annotations only. Full release: <strong>662 videos</strong>, <strong>2,914 turns</strong>, <strong>3,845 response slots</strong>; detection tasks in full, interaction and intervention as a validation set &mdash;
+    <a href="https://huggingface.co/datasets/cvml-nus/spot-bench" target="_blank">HF dataset (gated)</a> ·
+    <a href="https://arxiv.org/abs/2604.24317" target="_blank">paper (arXiv 2604.24317)</a> ·
+    <a href="https://github.com/dibschat/SPOT-Bench" target="_blank">code</a> ·
+    <a href="https://dibschat.github.io/SPOT-Bench/" target="_blank">project page</a> ·
+    <span style="color:var(--highlight);">annotations CC BY-NC-SA 4.0; Ego4D, Ego-Exo4D and MovieNet videos are not re-hosted here; other clips keep their source licenses</span>
+  </span>
+</div>
+<header>
+  <h1>SPOT-Bench Viewer <span class="subtitle">"Don't Pause!" &middot; every prediction across the whole stream is scored</span></h1>
+  <div class="control"><label>Task</label><select id="task-select"></select></div>
+  <div class="control"><label>Case</label><select id="case-select"></select></div>
+  <div class="control"><button id="prev-btn">&larr; Prev</button><button id="next-btn">Next &rarr;</button></div>
+  <div style="margin-left:auto;color:var(--muted);font-size:11px;">
+    <span class="kbd">&larr;</span> <span class="kbd">&rarr;</span> switch case · hover the timeline to score a prediction there · click to seek
+  </div>
+</header>
+<main>
+  <aside class="panel" id="metadata-panel"><h2>Metadata</h2><div id="metadata-fields"></div></aside>
+  <section class="panel" id="video-panel">
+    <h2>Video (whole release file, 360p re-encode, no audio in the release) <span class="cur-mark" id="cur-time"></span></h2>
+    <div id="video-container"></div>
+  </section>
+  <section class="wide-panel" id="task-content"></section>
+  <section class="wide-panel" id="raw-panel">
+    <h2>Raw record (all fields)</h2>
+    <details class="raw"><summary>Show the full annotation entry for this video (original fields verbatim; keys starting with _viewer_ were added by this viewer)</summary><pre id="raw-json"></pre></details>
+  </section>
+  <section class="wide-panel" id="rules-panel">
+    <h2>How a stream is scored</h2>
+    <details class="raw" open><summary>Streaming protocol and Timeliness-F1 (from the paper and evals/ in the SPOT-Bench GitHub repository)</summary>
+    <div class="rules">
+      <p class="muted" style="margin:8px 0;">The model watches the whole video as a stream, at 1 Hz in the reported results, and decides at every step whether to respond. Nothing pauses the video at the question. Every response it emits is scored, so a response at the wrong moment costs precision and a missed moment costs recall.</p>
+      <ol>
+        <li><b>Slots</b>: each ground-truth response time <code>t</code> becomes a slot window <code>[t &minus; offset, t + offset]</code>. A prediction inside the window gets Timeliness 1.</li>
+        <li><b>Timeliness outside the window</b> decays as a Gaussian: <code>&sigma;<sub>early</sub></code> before the window, <code>&sigma;<sub>late</sub></code> after it, with <code>&sigma;<sub>early</sub> = 2&sigma;<sub>late</sub></code> (anticipating is penalised less than lagging). Below 0.05 a prediction cannot match. The curves on the timeline are these functions.</li>
+        <li><b>Content check</b>: ABD must say a start word (start, begin, ...) or an end word (end, finish, stop, ...), never both. PNR must say "now". SQA, SPG, SI and UI are judged by <code>gpt-5-mini</code> on a 0&ndash;5 scale and must reach the task threshold (3 for SQA and SPG, 2 for SI and UI). "No", "none" and similar replies count as silence.</li>
+        <li><b>Matching</b>: predictions are taken earliest first and matched greedily to open slots. A slot absorbs at most <code>K</code> = 5 predictions and keeps its best Timeliness. Unmatched predictions are false positives; unmatched slots are false negatives.</li>
+        <li><b>Metrics</b>: <b>T-Score</b> = mean best Timeliness over all slots. <b>Timeliness-F1</b>: precision = &Sigma;T / (matched slots + FP), recall = &Sigma;T / (matched slots + FN), F1 = their harmonic mean. Reported as T-Score@5 / T-F1@5.</li>
+        <li><b>Model input</b>: ABD, PNR and SQA questions arrive at their <code>ask_time</code>. SPG and SI give the task and its ordered step list at 0 s, so the challenge is timing. UI gives only a standing instruction to warn about safety-critical events.</li>
+      </ol>
+    </div>
+    </details>
+  </section>
+  <section class="wide-panel" id="stats-panel"></section>
+</main>
+
+<script>
+(function() {
+  "use strict";
+  const CFG = { PNR: [0.5, 0.74, 0.37, null], ABD: [1.0, 1.48, 0.74, null], SQA: [1.0, 1.48, 0.74, 3], SPG: [1.5, 2.22, 1.11, 3], SI: [1.5, 2.22, 1.11, 2], UI: [0.5, 0.74, 0.37, 2] };
+  const THR = 0.05, K = 5;
+  const INFO = {
+    ABD: { fam: "Detection", color: "#4dabf7", name: "Action Boundary Detection", desc: "Respond the moment a queried action <b>starts</b> or <b>ends</b>, with the word given in the question. Questions arrive mid-stream and can overlap (<i>concurrent</i>) or refer back to an earlier action (<i>referential</i>). Closed vocabulary, scored by keyword." },
+    PNR: { fam: "Detection", color: "#ffa94d", name: "Point-of-No-Return Detection", desc: "Respond <b>\"now\"</b> at the moment a queried action takes effect: the visual state change, such as the item landing in the box. One question can have several slots when the action repeats." },
+    SQA: { fam: "Interaction", color: "#b197fc", name: "Streaming Question Answering", desc: "Answer <b>once enough visual evidence is available</b>, which is usually after the question. Answering at the question time is too early; the answer must wait for the event." },
+    SPG: { fam: "Interaction", color: "#51cf66", name: "Streaming Procedural Guidance", desc: "Give the <b>next step</b> as the current one nears completion. The model is given the task and the ordered step list at 0 s, so the content is known; the difficulty is timing." },
+    SI: { fam: "Intervention", color: "#f783ac", name: "Solicited Intervention", desc: "The user performs a known task; <b>intervene when they hesitate or make a mistake</b>, with the right correction. The model gets the scenario and the action list." },
+    UI: { fam: "Intervention", color: "#ff6b6b", name: "Unsolicited Intervention", desc: "Nobody asks. <b>Warn the user about an imminent risk</b> in egocentric video from blind and low-vision users. The model only gets a standing instruction to monitor for safety-critical events." },
+  };
+  const TASKS = Object.keys(INFO);
+  let data = {}, durations = {}, fullStats = null, slots = [], asks = [], axis = 1;
+  const state = { task: "ABD", idx: 0 };
+  const $ = id => document.getElementById(id);
+  const escape = s => s == null ? "" : String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  function mmss(t) { if (t == null || !isFinite(t)) return "-"; const m = Math.floor(t / 60), s = Math.floor(t % 60); return m + ":" + String(s).padStart(2, "0"); }
+  const cur = () => data[state.task][state.idx];
+  const hasVideo = c => !!c._viewer_video_available;
+  const T = (tau, s, cfg) => { const a = s.t - cfg[0], b = s.t + cfg[0]; if (tau < a) return Math.exp(-((tau - a) ** 2) / (2 * cfg[1] ** 2)); if (tau <= b) return 1; return Math.exp(-((tau - b) ** 2) / (2 * cfg[2] ** 2)); };
+  const reach = sig => sig * Math.sqrt(2 * Math.log(1 / THR));
+
+  function goldWords(task, turn) {
+    const n = turn.response_time.length;
+    if (turn.response && turn.response.length) return turn.response;
+    if (task === "PNR") return Array(n).fill("now");
+    if (task === "ABD") {
+      const decl = String(turn.type || "").split("|").map(x => x.trim()).filter(Boolean);
+      if (decl.length === n) return decl;
+      if (decl.length === 1) return Array(n).fill(decl[0]);
+      return Array(n).fill("start");
+    }
+    return Array(n).fill("");
+  }
+  function askOf(c, turn) { return turn.ask_time != null ? turn.ask_time : (c.ask_time || 0); }
+  function contextText(c) {
+    if (c._viewer_task === "SPG") return "Task: " + c.task + "\nActions:\n" + c.turns[0].response.map((a, i) => (i + 1) + ". " + a).join("\n");
+    if (c._viewer_task === "SI") return "Task: " + c.scenario + "\nActions:\n" + c.actions.map((a, i) => (i + 1) + ". " + a).join("\n");
+    if (c._viewer_task === "UI") return "Monitor and warn about safety-critical events.";
+    return null;
+  }
+  function build(c) {
+    slots = []; asks = [];
+    c.turns.forEach((tn, ti) => {
+      const g = goldWords(c._viewer_task, tn), a = askOf(c, tn);
+      const q = tn.question || (ti === 0 ? contextText(c) : "") || "";
+      asks.push({ turn: ti, t: a, q: q, concurrent: tn.concurrent, referential: tn.referential });
+      tn.response_time.forEach((t, k) => slots.push({ turn: ti, k: k, t: +t, gold: g[k] }));
+    });
+    const maxT = Math.max.apply(null, slots.map(s => s.t).concat(asks.map(a => a.t)));
+    axis = hasVideo(c) ? Math.max(durations[c._viewer_video] || c._viewer_source_duration_s, maxT + 1) : maxT + 5;
+  }
+  function slotColor(task, g) {
+    if (task === "ABD") return /end|finish|stop/.test(g) ? "#ff6b6b" : "#51cf66";
+    if (task === "PNR") return "#ffa94d";
+    return INFO[task].color;
+  }
+  function caseLabel(c, i) {
+    const n = c.turns.length, s = c.turns.reduce((a, t) => a + t.response_time.length, 0);
+    return (i + 1) + ". " + c._viewer_source_label.split(" (")[0] + " · " + n + " turn" + (n > 1 ? "s" : "") + " · " + s + " slot" + (s > 1 ? "s" : "") + (hasVideo(c) ? " · " + mmss(c._viewer_source_duration_s) : " · no video") + " · " + c._viewer_video_id.slice(0, 14);
+  }
+  function renderSelect() {
+    const ts = $("task-select");
+    if (!ts.options.length) TASKS.forEach(t => { const o = document.createElement("option"); o.value = t; o.textContent = INFO[t].fam + " · " + t + " · " + INFO[t].name; ts.appendChild(o); });
+    ts.value = state.task;
+    const sel = $("case-select"); sel.innerHTML = "";
+    data[state.task].forEach((c, i) => { const o = document.createElement("option"); o.value = i; o.textContent = caseLabel(c, i); sel.appendChild(o); });
+    sel.value = state.idx;
+  }
+  function nav(d) {
+    const n = data[state.task].length, ti = TASKS.indexOf(state.task);
+    if (state.idx + d >= n) { if (ti < TASKS.length - 1) { state.task = TASKS[ti + 1]; state.idx = 0; } }
+    else if (state.idx + d < 0) { if (ti > 0) { state.task = TASKS[ti - 1]; state.idx = data[state.task].length - 1; } }
+    else state.idx += d;
+    render();
+  }
+  const field = (l, v, code) => '<div class="field"><div class="field-label">' + escape(l) + '</div><div class="field-value' + (code ? " code" : "") + '">' + v + "</div></div>";
+  const pill = (t, c) => '<span class="task-pill" style="--c:' + c + '">' + escape(t) + "</span>";
+  function deadTime(c) {
+    const cfg = CFG[c._viewer_task], step = 0.1; let dead = 0, n = 0;
+    for (let t = 0; t < axis; t += step) { n++; if (!slots.some(s => T(t, s, cfg) >= THR)) dead++; }
+    return dead / n;
+  }
+  function renderMetadata(c) {
+    const t = c._viewer_task, cfg = CFG[t], nc = c.turns.filter(x => x.concurrent).length, nr = c.turns.filter(x => x.referential).length;
+    let h = '<div style="margin-bottom:10px;">' + pill(INFO[t].fam, "#adb5bd") + pill(t, INFO[t].color) + pill(c.source, "#4dabf7") +
+      (nc ? pill(nc + " concurrent", "#ffd43b") : "") + (nr ? pill(nr + " referential", "#b197fc") : "") + (hasVideo(c) ? "" : pill("annotation only", "#ff6b6b")) + "</div>";
+    h += field("video id", escape(c._viewer_video_id), true);
+    h += field("source dataset", escape(c._viewer_source_label));
+    h += field("location in release", escape(c._viewer_release_file) + " · " + escape(c._viewer_release_zip_path) + " in videos.zip (" + c._viewer_source_mb + " MB)");
+    if (hasVideo(c)) h += field("source file", c._viewer_source_resolution.join("×") + " · " + c._viewer_source_duration_s + " s");
+    h += field("turns / slots", c.turns.length + " turn(s) · " + slots.length + " slot(s)");
+    h += field("scoring for " + t, "window ±" + cfg[0] + " s · σ early " + cfg[1] + " s · σ late " + cfg[2] + " s · matchable from " + (cfg[0] + reach(cfg[1])).toFixed(2) + " s before to " + (cfg[0] + reach(cfg[2])).toFixed(2) + " s after each slot" + (cfg[3] != null ? " · judge score ≥ " + cfg[3] + "/5" : " · keyword match"));
+    h += field("dead time in this stream", (deadTime(c) * 100).toFixed(1) + "% of the time axis has no slot within reach, so any response there is a false positive");
+    const ctx = contextText(c);
+    if (ctx) h += field("context given to the model at 0 s", '<div class="ctx">' + escape(ctx) + "</div>");
+    h += field("video provenance", escape(c._viewer_video_note));
+    $("metadata-fields").innerHTML = h;
+  }
+  function renderVideo(c) {
+    const box = $("video-container"); box.innerHTML = "";
+    if (!hasVideo(c)) { box.innerHTML = '<div class="video-missing"><div><b>Video not included in this sample</b></div><div style="font-family:monospace;font-size:11px;margin-top:6px;">' + escape(c._viewer_release_zip_path) + '</div><div style="font-size:12px;margin-top:10px;">' + escape(c._viewer_video_note) + '</div><div style="font-size:12px;margin-top:10px;">The timeline and table below still show the full annotation.</div></div>'; return; }
+    const v = document.createElement("video"); v.id = "player"; v.src = c._viewer_video; v.controls = true; v.preload = "metadata"; v.muted = true;
+    v.addEventListener("error", () => { const p = document.createElement("div"); p.className = "video-missing"; p.innerHTML = "<b>Video failed to load</b>"; v.replaceWith(p); });
+    v.addEventListener("timeupdate", () => sync(c, v.currentTime));
+    box.appendChild(v);
+  }
+  function seek(c, t) { const v = $("player"); if (!v) return; v.currentTime = Math.max(0, Math.min(axis - 0.1, t)); v.play().catch(() => {}); }
+
+  // ---- SVG timeline: one lane per turn, each slot drawn as its Timeliness curve ----
+  const W = 1000, PADL = 46, PADR = 8;
+  const X = t => PADL + (t / axis) * (W - PADL - PADR);
+  function timelineSVG(c) {
+    const task = c._viewer_task, cfg = CFG[task], nL = c.turns.length, LH = nL > 12 ? 20 : 34, top = 18, H = top + nL * LH + 40;
+    let g = "";
+    const step = axis > 600 ? 60 : axis > 240 ? 30 : axis > 90 ? 10 : axis > 30 ? 5 : 1;
+    for (let s = 0; s <= axis; s += step) g += '<line x1="' + X(s) + '" x2="' + X(s) + '" y1="' + top + '" y2="' + (H - 22) + '" stroke="rgba(138,148,158,.13)"/><text x="' + (X(s) + 2) + '" y="' + (H - 10) + '">' + mmss(s) + "</text>";
+    c.turns.forEach((tn, i) => {
+      const y0 = top + i * LH, base = y0 + LH - 4, amp = LH - 10;
+      g += '<text x="4" y="' + (y0 + LH / 2 + 3) + '">turn ' + (i + 1) + "</text>";
+      g += '<line x1="' + PADL + '" x2="' + (W - PADR) + '" y1="' + base + '" y2="' + base + '" stroke="rgba(138,148,158,.25)"/>';
+      const a = askOf(c, tn), last = tn.response_time.length ? Math.max.apply(null, tn.response_time) : a;
+      g += '<line x1="' + X(a) + '" x2="' + X(Math.max(a, last)) + '" y1="' + (base + 1.5) + '" y2="' + (base + 1.5) + '" stroke="rgba(255,212,59,.45)" stroke-width="2"/>';
+      g += '<path d="M' + X(a) + "," + (y0 + 2) + " l5,-0 l-5,8 l-5,-8 z" + '" fill="var(--highlight)"><title>' + escape("ask @ " + a + "s: " + (tn.question || "(context at 0 s)")) + "</title></path>";
+      slots.filter(s => s.turn === i).forEach(s => {
+        const col = slotColor(task, s.gold), lo = s.t - cfg[0] - reach(cfg[1]), hi = s.t + cfg[0] + reach(cfg[2]);
+        let d = "M" + X(Math.max(0, lo)) + "," + base;
+        for (let k = 0; k <= 60; k++) { const tt = lo + (hi - lo) * k / 60; if (tt < 0 || tt > axis) continue; d += " L" + X(tt).toFixed(2) + "," + (base - T(tt, s, cfg) * amp).toFixed(2); }
+        d += " L" + X(Math.min(axis, hi)) + "," + base + " Z";
+        g += '<path d="' + d + '" fill="' + col + '" fill-opacity=".28" stroke="' + col + '" stroke-width="1.2"><title>' + escape("slot @ " + s.t + "s: " + s.gold) + "</title></path>";
+        g += '<line x1="' + X(s.t) + '" x2="' + X(s.t) + '" y1="' + (base - amp) + '" y2="' + base + '" stroke="' + col + '" stroke-width="1.5"/>';
+      });
+    });
+    // aggregate lane: where any response is matchable
+    const yA = H - 30; let runs = "", inRun = false, st = 0;
+    for (let t = 0; t <= axis + 0.05; t += 0.1) { const on = t <= axis && slots.some(s => T(t, s, cfg) >= THR); if (on && !inRun) { inRun = true; st = t; } if ((!on || t > axis) && inRun) { inRun = false; runs += '<rect x="' + X(st) + '" y="' + yA + '" width="' + Math.max(1, X(t) - X(st)) + '" height="5" fill="rgba(81,207,102,.6)"/>'; } }
+    g += '<rect x="' + PADL + '" y="' + yA + '" width="' + (W - PADL - PADR) + '" height="5" fill="rgba(138,148,158,.18)"/>' + runs + '<text x="4" y="' + (yA + 6) + '">any</text>';
+    g += '<line id="cursor" x1="0" x2="0" y1="' + top + '" y2="' + (H - 22) + '" stroke="var(--text)" stroke-dasharray="3,3" visibility="hidden"/>';
+    g += '<line id="playhead-svg" x1="' + X(0) + '" x2="' + X(0) + '" y1="' + top + '" y2="' + (H - 22) + '" stroke="var(--highlight)" stroke-width="2" visibility="' + (hasVideo(c) ? "visible" : "hidden") + '"/>';
+    return '<div class="tl-scroll"><svg class="spot-tl" id="spot-tl" viewBox="0 0 ' + W + " " + H + '" preserveAspectRatio="none" style="height:' + H + 'px">' + g + "</svg></div>";
+  }
+  function tAt(evt) { const svg = $("spot-tl"), r = svg.getBoundingClientRect(); const x = (evt.clientX - r.left) / r.width * W; return Math.max(0, Math.min(axis, (x - PADL) / (W - PADL - PADR) * axis)); }
+  function readout(c, t) {
+    const cfg = CFG[c._viewer_task];
+    const sc = slots.map(s => ({ s, v: T(t, s, cfg) })).filter(x => x.v >= THR).sort((a, b) => b.v - a.v);
+    if (!sc.length) return "A prediction at <b>" + t.toFixed(1) + " s</b> reaches no slot: it would be a <b style='color:var(--bad)'>false positive</b>.";
+    const b = sc[0], rel = t - b.s.t;
+    return "A prediction at <b>" + t.toFixed(1) + " s</b> saying <b>" + escape(b.s.gold.length > 60 ? b.s.gold.slice(0, 60) + "…" : b.s.gold) + "</b> would score Timeliness <b style='color:var(--good)'>" + b.v.toFixed(2) + "</b> on turn " + (b.s.turn + 1) + "'s slot at " + b.s.t + " s (" + (rel >= 0 ? "+" : "") + rel.toFixed(1) + " s" + (Math.abs(rel) <= cfg[0] ? ", inside the window" : rel < 0 ? ", early" : ", late") + ")" + (sc.length > 1 ? "; " + (sc.length - 1) + " other slot(s) also in reach" : "") + ".";
+  }
+  function renderContent(c) {
+    const task = c._viewer_task;
+    const ev = [];
+    asks.forEach(a => ev.push({ kind: "ask", t: a.t, a }));
+    slots.forEach(s => ev.push({ kind: "slot", t: s.t, s }));
+    ev.sort((x, y) => x.t - y.t || (x.kind === "ask" ? -1 : 1));
+    const cfg = CFG[task];
+    const rows = ev.map((e, i) => {
+      if (e.kind === "ask") {
+        const fl = (e.a.concurrent ? '<span class="flag" style="color:var(--highlight)">concurrent</span> ' : "") + (e.a.referential ? '<span class="flag" style="color:var(--purple)">referential</span>' : "");
+        return '<tr class="seekable" data-t="' + e.t + '"><td class="mono">' + e.t + "s<div style='opacity:.65;font-size:10.5px'>" + mmss(e.t) + '</div></td><td class="mono">turn ' + (e.a.turn + 1) + '</td><td><span class="role role-user">' + (task === "SPG" || task === "SI" || task === "UI" ? "context" : "question") + '</span></td><td><span class="pre">' + escape(e.a.q || "(empty question field)") + "</span></td><td class='mono' style='white-space:normal'>" + fl + "</td></tr>";
+      }
+      const s = e.s, col = slotColor(task, s.gold);
+      return '<tr class="seekable" data-t="' + s.t + '"><td class="mono">' + s.t + "s<div style='opacity:.65;font-size:10.5px'>" + mmss(s.t) + '</div></td><td class="mono">turn ' + (s.turn + 1) + '</td><td><span class="role" style="background:color-mix(in srgb,' + col + ' 15%,transparent);color:' + col + '">gold response</span></td><td><span class="pre">' + escape(s.gold) + "</span></td><td class='mono' style='white-space:normal'>full credit " + Math.max(0, s.t - cfg[0]).toFixed(1) + "–" + (s.t + cfg[0]).toFixed(1) + " s<br>matchable " + Math.max(0, s.t - cfg[0] - reach(cfg[1])).toFixed(1) + "–" + (s.t + cfg[0] + reach(cfg[2])).toFixed(1) + " s</td></tr>";
+    }).join("");
+    const legend = task === "ABD" ? '<span class="chip"><span class="swatch" style="background:#51cf66"></span>start slot</span><span class="chip"><span class="swatch" style="background:#ff6b6b"></span>end slot</span>' :
+      '<span class="chip"><span class="swatch" style="background:' + slotColor(task, "") + '"></span>gold response slot</span>';
+    $("task-content").innerHTML = "<h2>" + escape(INFO[task].fam + " · " + task + " — " + INFO[task].name) + "</h2>" +
+      '<p class="task-desc">' + INFO[task].desc + "</p>" +
+      '<div class="readout" id="readout">Hover over the timeline to see how a prediction at that moment would be scored.</div>' +
+      timelineSVG(c) +
+      '<div class="legend-row"><span class="chip"><span class="swatch" style="background:var(--highlight)"></span>question asked (▼) and turn active</span>' + legend +
+      '<span class="chip">curve height = Timeliness of a prediction at that moment (1 inside the window)</span><span class="chip"><span class="swatch" style="background:rgba(81,207,102,.6)"></span>"any": some slot in reach; grey = dead time</span></div>' +
+      '<div class="table-scroll" style="margin-top:12px"><table class="qa-table"><thead><tr><th style="width:80px">time</th><th style="width:60px">turn</th><th style="width:120px">role</th><th>text (verbatim)</th><th style="width:190px">scoring window</th></tr></thead><tbody id="ann-body">' + rows + "</tbody></table></div>";
+    const svg = $("spot-tl"), cursor = $("cursor");
+    svg.addEventListener("mousemove", e => { const t = tAt(e); cursor.setAttribute("x1", X(t)); cursor.setAttribute("x2", X(t)); cursor.setAttribute("visibility", "visible"); $("readout").innerHTML = readout(c, t); });
+    svg.addEventListener("mouseleave", () => cursor.setAttribute("visibility", "hidden"));
+    svg.addEventListener("click", e => seek(c, tAt(e)));
+    $("ann-body").querySelectorAll("tr").forEach(tr => tr.addEventListener("click", () => seek(c, Math.max(0, +tr.dataset.t - 2))));
+  }
+  function sync(c, t) {
+    const ph = $("playhead-svg"); if (ph) { ph.setAttribute("x1", X(t)); ph.setAttribute("x2", X(t)); }
+    $("cur-time").textContent = mmss(t) + " · " + t.toFixed(1) + "s";
+    const cfg = CFG[c._viewer_task];
+    $("ann-body").querySelectorAll("tr").forEach(tr => { const x = +tr.dataset.t; tr.classList.toggle("active", t >= x - cfg[0] && t <= x + cfg[0] + 0.5); });
+  }
+  function hist(title, rs, o) {
+    o = o || {}; const maxN = Math.max.apply(null, rs.map(r => r[1])) || 1; const tot = rs.reduce((a, r) => a + r[1], 0);
+    return '<div><div class="hist-title">' + title + '</div><div class="histogram">' + rs.map(r => '<div class="hist-row"><span class="hist-label" title="' + escape(r[0]) + '">' + escape(r[0]) + '</span><span class="hist-bar-wrap"><span class="hist-bar ' + (o.cls || "") + '" style="width:' + (r[1] / maxN * 100).toFixed(1) + '%"></span></span><span class="hist-count">' + r[1].toLocaleString() + " <small>" + (r[1] / tot * 100).toFixed(1) + "%</small></span></div>").join("") + "</div>" + (o.note ? '<div class="note">' + o.note + "</div>" : "") + "</div>";
+  }
+  function renderStats() {
+    const p = $("stats-panel"), s = fullStats;
+    if (!s) { p.innerHTML = "<h2>Full dataset stats</h2><div class='note'>full_dataset_stats.json not found.</div>"; return; }
+    const tt = s.tasks, tot = k => TASKS.reduce((a, t) => a + tt[t][k], 0);
+    const tab = '<div><div class="hist-title">Per task (release)</div><table class="xtab"><thead><tr><th>task</th><th>split</th><th>videos</th><th>turns</th><th>slots</th><th>concurrent</th><th>referential</th><th>median ask→1st slot</th><th>window ±</th></tr></thead><tbody>' +
+      TASKS.map(t => "<tr><td>" + t + "</td><td>" + (INFO[t].fam === "Detection" ? "full" : "val") + "</td><td>" + tt[t].videos + "</td><td>" + tt[t].turns.toLocaleString() + "</td><td>" + tt[t].slots.toLocaleString() + "</td><td>" + tt[t].concurrent + "</td><td>" + tt[t].referential + "</td><td>" + tt[t].first_response_delay_median + " s</td><td>" + tt[t].config.offset + " s</td></tr>").join("") +
+      '</tbody></table><div class="note">The interaction and intervention test sets are held out for a challenge; only a validation set of 13&ndash;15 videos per task is public.</div></div>';
+    const lb = s.leaderboard;
+    const lbHTML = '<div style="grid-column:1/-1"><div class="hist-title">Results: T-Score@5 / T-F1@5 (%) at 1 Hz</div><div class="table-scroll"><table class="lb"><thead><tr><th>model</th>' + lb.cols.map(c => "<th>" + c + "</th>").join("") + "</tr></thead><tbody>" +
+      lb.rows.map(r => "<tr><td>" + escape(r[0]) + "</td>" + r.slice(1).map(x => "<td>" + escape(x) + "</td>").join("") + "</tr>").join("") + '</tbody></table></div><div class="note">' + escape(lb.source) + ". Offline Qwen models get high T-Score by answering often but low T-F1, because the false positives count. No model in the GitHub table reaches 10% overall T-F1.</div></div>";
+    const srcAll = s.sources_all.map(r => [r[0], r[1]]);
+    p.innerHTML = "<h2>Full dataset stats (all six annotation files of the release)</h2>" +
+      '<div class="stats-summary"><span>videos<b>' + s.zip_videos + "</b></span><span>video zip<b>" + s.zip_gb + " GB</b></span><span>turns<b>" + tot("turns").toLocaleString() + "</b></span><span>slots<b>" + tot("slots").toLocaleString() + "</b></span>" +
+      "<span>concurrent turns<b>" + tot("concurrent") + "</b></span><span>referential turns<b>" + tot("referential") + "</b></span><span>videos from shareable sources<b>" + (s.shareable_share * 100).toFixed(0) + "%</b></span><span>in this sample<b>" + TASKS.reduce((a, t) => a + data[t].length, 0) + "</b></span></div>" +
+      '<div class="stats-grid">' + tab +
+      hist("Videos per source dataset (all tasks)", srcAll, { cls: "purple", note: "Each video belongs to exactly one task. Ego4D and Ego-Exo4D need a signed license and are not re-hosted in this viewer." }) +
+      hist("ABD boundary type per turn", tt.ABD.abd_type.map(r => [String(r[0]), r[1]]), { cls: "", note: "start|end turns have two slots: one for the start word, one for the end word." }) +
+      hist("ABD: question time to first slot", tt.ABD.first_response_delay, { cls: "orange", note: "median " + tt.ABD.first_response_delay_median + " s; questions arrive before the boundary" }) +
+      hist("PNR: question time to first slot", tt.PNR.first_response_delay, { cls: "orange", note: "median " + tt.PNR.first_response_delay_median + " s" }) +
+      hist("ABD turns per video", tt.ABD.turns_per_video, { cls: "good" }) +
+      hist("PNR slots per turn", tt.PNR.slots_per_turn, { cls: "good", note: "several slots when the action repeats" }) +
+      hist("SQA: question time to answer slot", tt.SQA.first_response_delay, { cls: "pink", note: "median " + tt.SQA.first_response_delay_median + " s: the answer is due after the evidence appears, not at the question" }) +
+      lbHTML + "</div>";
+  }
+  function render() {
+    const c = cur(); build(c); renderSelect();
+    const ti = TASKS.indexOf(state.task);
+    $("prev-btn").disabled = ti === 0 && state.idx === 0;
+    $("next-btn").disabled = ti === TASKS.length - 1 && state.idx === data[state.task].length - 1;
+    $("cur-time").textContent = "";
+    renderMetadata(c); renderVideo(c); renderContent(c);
+    $("raw-json").textContent = JSON.stringify(c, null, 1);
+    try { history.replaceState(null, "", "#" + state.task + "/" + state.idx); } catch (e) {}
+  }
+  $("task-select").addEventListener("change", e => { state.task = e.target.value; state.idx = 0; render(); });
+  $("case-select").addEventListener("change", e => { state.idx = +e.target.value; render(); });
+  $("prev-btn").addEventListener("click", () => nav(-1));
+  $("next-btn").addEventListener("click", () => nav(1));
+  document.addEventListener("keydown", e => { if (e.target.tagName === "INPUT" || e.target.tagName === "SELECT") return; if (e.key === "ArrowLeft") nav(-1); if (e.key === "ArrowRight") nav(1); });
+  Promise.all([fetch("data/samples.json").then(r => r.json()), fetch("file_durations.json").then(r => r.json()).catch(() => ({})), fetch("full_dataset_stats.json").then(r => r.json()).catch(() => null)])
+    .then(([d, du, fs]) => {
+      data = d; durations = du; fullStats = fs;
+      const h = (location.hash || "").replace("#", "").split("/");
+      if (h[0] && data[h[0]]) { state.task = h[0]; const k = +h[1]; if (k >= 0 && k < data[h[0]].length) state.idx = k; }
+      render(); renderStats();
+    }).catch(err => { document.querySelector("main").innerHTML = '<div class="panel" style="grid-column:1/-1;color:var(--bad);">Failed to load data: ' + escape(err.message) + "<br>If opened via file://, run <code>python3 -m http.server</code> and open via http://localhost:8000/</div>"; });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1820 @@
+{
+ "ABD": [
+  {
+   "source": "htstep",
+   "turns": [
+    {
+     "question": "When does the person start and finish adding clam, tomato juice, hot sauce, and serrano chile? Respond at the correct times with the words: start and finish",
+     "ask_time": 24,
+     "response_time": [
+      59,
+      88
+     ],
+     "type": "start|end",
+     "concurrent": true,
+     "referential": false
+    },
+    {
+     "question": "When does the person start and finish pouring lime juice over the tilapia into the same mixture? Respond at the correct times with the words: start and finish",
+     "ask_time": 85,
+     "response_time": [
+      92,
+      95
+     ],
+     "type": "start|end",
+     "concurrent": true,
+     "referential": true
+    }
+   ],
+   "_viewer_video_id": "O9na5DVVkbU",
+   "_viewer_task": "ABD",
+   "_viewer_source_label": "HT-Step (HowTo100M YouTube video)",
+   "_viewer_source_mb": 6.9,
+   "_viewer_release_file": "abd.json",
+   "_viewer_release_zip_path": "videos/O9na5DVVkbU.mp4",
+   "_viewer_video_available": true,
+   "_viewer_video": "videos/O9na5DVVkbU.mp4",
+   "_viewer_source_duration_s": 105.0,
+   "_viewer_source_resolution": [
+    640,
+    360
+   ],
+   "_viewer_source_fps": "25/1",
+   "_viewer_video_note": "Whole release video, re-encoded to 360p H.264 (the release has no audio)."
+  },
+  {
+   "source": "htstep",
+   "turns": [
+    {
+     "question": "When does the person start adding the onion and when do they finish? Respond at the correct times with the words: start and finish",
+     "ask_time": 48,
+     "response_time": [
+      53,
+      56
+     ],
+     "type": "start|end",
+     "concurrent": true,
+     "referential": false
+    },
+    {
+     "question": "When does the person start pouring tomatoes? Respond at the correct time with the word: start",
+     "ask_time": 48,
+     "response_time": [
+      57
+     ],
+     "type": "start",
+     "concurrent": true,
+     "referential": false
+    },
+    {
+     "question": "When does the person start adding the carrot? Respond at the correct time with the word: start",
+     "ask_time": 86,
+     "response_time": [
+      92
+     ],
+     "type": "start",
+     "concurrent": false,
+     "referential": false
+    },
+    {
+     "question": "When does the person start adding the potatoes, and when do they finish adding them? Respond at the correct times with the words: start and finish",
+     "ask_time": 93,
+     "response_time": [
+      98,
+      101
+     ],
+     "type": "start|end",
+     "concurrent": false,
+     "referential": false
+    }
+   ],
+   "_viewer_video_id": "Oi08Mc6hc4w",
+   "_viewer_task": "ABD",
+   "_viewer_source_label": "HT-Step (HowTo100M YouTube video)",
+   "_viewer_source_mb": 9.6,
+   "_viewer_release_file": "abd.json",
+   "_viewer_release_zip_path": "videos/Oi08Mc6hc4w.mp4",
+   "_viewer_video_available": true,
+   "_viewer_video": "videos/Oi08Mc6hc4w.mp4",
+   "_viewer_source_duration_s": 119.04,
+   "_viewer_source_resolution": [
+    640,
+    360
+   ],
+   "_viewer_source_fps": "24000/1001",
+   "_viewer_video_note": "Whole release video, re-encoded to 360p H.264 (the release has no audio)."
+  },
+  {
+   "source": "htstep",
+   "turns": [
+    {
+     "question": "When does the person start seasoning the scallops? Respond at the correct time with the word: start",
+     "ask_time": 1,
+     "response_time": [
+      39
+     ],
+     "type": "start",
+     "concurrent": false,
+     "referential": false
+    },
+    {
+     "question": "When does the person start and finish wrapping the bacon around the scallop? Respond at the correct times with the words: start and finish",
+     "ask_time": 39,
+     "response_time": [
+      58,
+      65
+     ],
+     "type": "start|end",
+     "concurrent": false,
+     "referential": true
+    },
+    {
+     "question": "When does the person start and finish securing the bacon with a toothpick? Respond at the correct times with the words: start and finish",
+     "ask_time": 65,
+     "response_time": [
+      67,
+      70
+     ],
+     "type": "start|end",
+     "concurrent": false,
+     "referential": true
+    }
+   ],
+   "_viewer_video_id": "CCg0mQ1t_qk",
+   "_viewer_task": "ABD",
+   "_viewer_source_label": "HT-Step (HowTo100M YouTube video)",
+   "_viewer_source_mb": 5.5,
+   "_viewer_release_file": "abd.json",
+   "_viewer_release_zip_path": "videos/CCg0mQ1t_qk.mp4",
+   "_viewer_video_available": true,
+   "_viewer_video": "videos/CCg0mQ1t_qk.mp4",
+   "_viewer_source_duration_s": 80.0,
+   "_viewer_source_resolution": [
+    640,
+    360
+   ],
+   "_viewer_source_fps": "25/1",
+   "_viewer_video_note": "Whole release video, re-encoded to 360p H.264 (the release has no audio)."
+  },
+  {
+   "source": "htstep",
+   "turns": [
+    {
+     "question": "When does the person start cutting the kneaded dough, and when do they finish? Respond at the correct times with the words: start and finish",
+     "ask_time": 5,
+     "response_time": [
+      13,
+      16
+     ],
+     "type": "start|end",
+     "concurrent": false,
+     "referential": false
+    },
+    {
+     "question": "When does the person start frying the cut 3 inch squares, and when does the person finish frying them? Respond at the correct times with the words: start and finish",
+     "ask_time": 22,
+     "response_time": [
+      25,
+      27
+     ],
+     "type": "start|end",
+     "concurrent": false,
+     "referential": true
+    }
+   ],
+   "_viewer_video_id": "jQLi1tcqLBY",
+   "_viewer_task": "ABD",
+   "_viewer_source_label": "HT-Step (HowTo100M YouTube video)",
+   "_viewer_source_mb": 4.6,
+   "_viewer_release_file": "abd.json",
+   "_viewer_release_zip_path": "videos/jQLi1tcqLBY.mp4",
+   "_viewer_video_available": true,
+   "_viewer_video": "videos/jQLi1tcqLBY.mp4",
+   "_viewer_source_duration_s": 36.0,
+   "_viewer_source_resolution": [
+    640,
+    360
+   ],
+   "_viewer_source_fps": "30000/1001",
+   "_viewer_video_note": "Whole release video, re-encoded to 360p H.264 (the release has no audio)."
+  },
+  {
+   "source": "egoexo4d",
+   "turns": [
+    {
+     "question": "When does the camera wearer start getting a measuring spoon from the countertop? Respond at the correct time with the word: start",
+     "ask_time": 0,
+     "response_time": [
+      4
+     ],
+     "type": "start",
+     "concurrent": false,
+     "referential": false
+    },
+    {
+     "question": "When does the camera wearer finish getting the container of honey from the countertop? Respond at the correct time with the word: finish",
+     "ask_time": 5,
+     "response_time": [
+      8
+     ],
+     "type": "end",
+     "concurrent": true,
+     "referential": false
+    },
+    {
+     "question": "When does the camera wearer start adding honey to a mixing bowl using that measuring spoon? Respond at the correct time with the word: start",
+     "ask_time": 6,
+     "response_time": [
+      12
+     ],
+     "type": "start",
+     "concurrent": true,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer start getting the container of mustard from the countertop? Respond at the correct time with the word: start",
+     "ask_time": 10,
+     "response_time": [
+      20
+     ],
+     "type": "start",
+     "concurrent": true,
+     "referential": false
+    },
+    {
+     "question": "When does the camera wearer start adding mustard to a mixing bowl using a measuring spoon, and when does the camera wearer finish adding it? Respond at the correct times with the words: start and finish",
+     "ask_time": 18,
+     "response_time": [
+      25,
+      33
+     ],
+     "type": "start|end",
+     "concurrent": true,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer start getting the container of oyster sauce from the countertop, and when do they finish? Respond at the correct times with the words: start and finish",
+     "ask_time": 27,
+     "response_time": [
+      38,
+      41
+     ],
+     "type": "start|end",
+     "concurrent": true,
+     "referential": false
+    },
+    {
+     "question": "When does the camera wearer start adding oyster sauce to a bowl using a measuring spoon, and when does the camera wearer finish adding it? Respond at the correct times with the words: start and finish",
+     "ask_time": 27,
+     "response_time": [
+      42,
+      52
+     ],
+     "type": "start|end",
+     "concurrent": true,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer start getting the container of soy sauce from the countertop? Respond at the correct time with the word: start",
+     "ask_time": 40,
+     "response_time": [
+      54
+     ],
+     "type": "start",
+     "concurrent": true,
+     "referential": false
+    },
+    {
+     "question": "When does the camera wearer start adding soy sauce to a mixing bowl using a measuring spoon, and when does the camera wearer finish adding it? Respond at the correct times with the words: start and finish",
+     "ask_time": 54,
+     "response_time": [
+      59,
+      65
+     ],
+     "type": "start|end",
+     "concurrent": false,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer start getting fresh ginger from the countertop? Respond at the correct time with the word: start",
+     "ask_time": 71,
+     "response_time": [
+      75
+     ],
+     "type": "start",
+     "concurrent": false,
+     "referential": false
+    },
+    {
+     "question": "When does the camera wearer start getting the grater from the countertop? Respond at the correct time with the word: start",
+     "ask_time": 76,
+     "response_time": [
+      84
+     ],
+     "type": "start",
+     "concurrent": true,
+     "referential": false
+    },
+    {
+     "question": "When does the camera wearer start peeling fresh ginger with the grater? Respond at the correct time with the word: start",
+     "ask_time": 83,
+     "response_time": [
+      88
+     ],
+     "type": "start",
+     "concurrent": true,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer start adding fresh ginger to a mixing bowl using a measuring spoon, and when does the camera wearer finish adding it? Respond at the correct times with the words: start and finish",
+     "ask_time": 87,
+     "response_time": [
+      135,
+      138
+     ],
+     "type": "start|end",
+     "concurrent": true,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer start putting away the remaining fresh ginger, and when does the camera wearer finish putting away the remaining fresh ginger? Respond at the correct times with the words: start and finish",
+     "ask_time": 124,
+     "response_time": [
+      138,
+      144
+     ],
+     "type": "start|end",
+     "concurrent": true,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer start getting a garlic clove from the plate on the countertop? Respond at the correct time with the word: start",
+     "ask_time": 132,
+     "response_time": [
+      144
+     ],
+     "type": "start",
+     "concurrent": true,
+     "referential": false
+    },
+    {
+     "question": "When does the camera wearer start adding garlic cloves to a mixing bowl? Respond at the correct time with the word: start",
+     "ask_time": 155,
+     "response_time": [
+      166
+     ],
+     "type": "start",
+     "concurrent": false,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer start getting the container of salt from the countertop? Respond at the correct time with the word: start",
+     "ask_time": 173,
+     "response_time": [
+      178
+     ],
+     "type": "start",
+     "concurrent": true,
+     "referential": false
+    },
+    {
+     "question": "When does the camera wearer start adding salt to the ingredients in the mixing bowl? Respond at the correct time with the word: start",
+     "ask_time": 175,
+     "response_time": [
+      179
+     ],
+     "type": "start",
+     "concurrent": true,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer start putting away the measuring spoon from the cutting board? Respond at the correct time with the word: start",
+     "ask_time": 188,
+     "response_time": [
+      197
+     ],
+     "type": "start",
+     "concurrent": false,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer start getting a carrot from the countertop? Respond at the correct time with the word: start",
+     "ask_time": 210,
+     "response_time": [
+      213
+     ],
+     "type": "start",
+     "concurrent": true,
+     "referential": false
+    },
+    {
+     "question": "When does the camera wearer start cutting the stem off the carrot with a knife? Respond at the correct time with the word: start",
+     "ask_time": 211,
+     "response_time": [
+      214
+     ],
+     "type": "start",
+     "concurrent": true,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer start washing the carrot with water? Respond at the correct time with the word: start",
+     "ask_time": 215,
+     "response_time": [
+      217
+     ],
+     "type": "start",
+     "concurrent": false,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer start peeling the carrot with the grater into the mixing bowl? Respond at the correct time with the word: start",
+     "ask_time": 218,
+     "response_time": [
+      227
+     ],
+     "type": "start",
+     "concurrent": false,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer start getting the red bell pepper from the countertop? Respond at the correct time with the word: start",
+     "ask_time": 321,
+     "response_time": [
+      339
+     ],
+     "type": "start",
+     "concurrent": true,
+     "referential": false
+    },
+    {
+     "question": "When does the camera wearer start removing the seeds from the bell pepper with a knife? Respond at the correct time with the word: start",
+     "ask_time": 336,
+     "response_time": [
+      339
+     ],
+     "type": "start",
+     "concurrent": true,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer start washing bell peppers with water in the kitchen sink? Respond at the correct time with the word: start",
+     "ask_time": 338,
+     "response_time": [
+      347
+     ],
+     "type": "start",
+     "concurrent": true,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer start dicing the bell pepper into smaller pieces with a knife on the cutting board? Respond at the correct time with the word: start",
+     "ask_time": 347,
+     "response_time": [
+      351
+     ],
+     "type": "start",
+     "concurrent": false,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer start adding the diced pepper into a mixing bowl? Respond at the correct time with the word: start",
+     "ask_time": 391,
+     "response_time": [
+      414
+     ],
+     "type": "start",
+     "concurrent": false,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer finish getting celery from the countertop? Respond at the correct time with the word: finish",
+     "ask_time": 416,
+     "response_time": [
+      422
+     ],
+     "type": "end",
+     "concurrent": true,
+     "referential": false
+    },
+    {
+     "question": "When does the camera wearer start washing the celery with water in the kitchen sink? Respond at the correct time with the word: start",
+     "ask_time": 420,
+     "response_time": [
+      423
+     ],
+     "type": "start",
+     "concurrent": true,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer start dicing the celery with a knife on the cutting board, and when does the camera wearer finish dicing the celery? Respond at the correct times with the words: start and finish",
+     "ask_time": 423,
+     "response_time": [
+      429,
+      460
+     ],
+     "type": "start|end",
+     "concurrent": true,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer start adding the diced celeries into a mixing bowl? Respond at the correct time with the word: start",
+     "ask_time": 423,
+     "response_time": [
+      464
+     ],
+     "type": "start",
+     "concurrent": true,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer start getting an onion from the plate on the countertop? Respond at the correct time with the word: start",
+     "ask_time": 460,
+     "response_time": [
+      468
+     ],
+     "type": "start",
+     "concurrent": true,
+     "referential": false
+    },
+    {
+     "question": "When does the camera wearer start peeling the outer skin of the onion with their hands? Respond at the correct time with the word: start",
+     "ask_time": 465,
+     "response_time": [
+      474
+     ],
+     "type": "start",
+     "concurrent": true,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer start dicing the onion into smaller pieces with a knife on the cutting board, and when do they finish? Respond at the correct times with the words: start and finish",
+     "ask_time": 474,
+     "response_time": [
+      478,
+      505
+     ],
+     "type": "start|end",
+     "concurrent": true,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer start adding the diced onion into a mixing bowl? Respond at the correct time with the word: start",
+     "ask_time": 488,
+     "response_time": [
+      506
+     ],
+     "type": "start",
+     "concurrent": true,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer start getting coriander leaves from the countertop? Respond at the correct time with the word: start",
+     "ask_time": 506,
+     "response_time": [
+      514
+     ],
+     "type": "start",
+     "concurrent": false,
+     "referential": false
+    },
+    {
+     "question": "When does the camera wearer start adding coriander leaves into the mixing bowl? Respond at the correct time with the word: start",
+     "ask_time": 575,
+     "response_time": [
+      617
+     ],
+     "type": "start",
+     "concurrent": false,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer start getting the container of chili powder from the countertop? Respond at the correct time with the word: start",
+     "ask_time": 626,
+     "response_time": [
+      634
+     ],
+     "type": "start",
+     "concurrent": false,
+     "referential": false
+    },
+    {
+     "question": "When does the camera wearer start adding chili powder to the salad mixture in the mixing bowl, and when does the camera wearer finish adding chili powder? Respond at the correct times with the words: start and finish",
+     "ask_time": 634,
+     "response_time": [
+      639,
+      653
+     ],
+     "type": "start|end",
+     "concurrent": false,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer start getting the container of sesame seed from the countertop? Respond at the correct time with the word: start",
+     "ask_time": 668,
+     "response_time": [
+      673
+     ],
+     "type": "start",
+     "concurrent": false,
+     "referential": false
+    },
+    {
+     "question": "When does the camera wearer start adding sesame seed to the salad mixture in the mixing bowl, and when does the camera wearer finish adding sesame seed? Respond at the correct times with the words: start and finish",
+     "ask_time": 673,
+     "response_time": [
+      677,
+      685
+     ],
+     "type": "start|end",
+     "concurrent": false,
+     "referential": true
+    },
+    {
+     "question": "When does the camera wearer start pouring the dressing into the salad mixture? Respond at the correct time with the word: start",
+     "ask_time": 685,
+     "response_time": [
+      687
+     ],
+     "type": "start",
+     "concurrent": false,
+     "referential": true
+    }
+   ],
+   "_viewer_video_id": "c7d8eaab-dfb5-45ce-a152-d9f79c60fcca",
+   "_viewer_task": "ABD",
+   "_viewer_source_label": "Ego-Exo4D",
+   "_viewer_source_mb": 46.8,
+   "_viewer_release_file": "abd.json",
+   "_viewer_release_zip_path": "videos/c7d8eaab-dfb5-45ce-a152-d9f79c60fcca.mp4",
+   "_viewer_video_available": false,
+   "_viewer_video_note": "Ego-Exo4D video: redistribution needs a signed Ego-Exo4D license, so it is not re-hosted here."
+  }
+ ],
+ "PNR": [
+  {
+   "source": "thumos14",
+   "turns": [
+    {
+     "question": "When does the batsman hit the ball with his bat? Respond at the correct times with the word: now",
+     "ask_time": 0,
+     "response_time": [
+      2,
+      7,
+      12,
+      16,
+      20,
+      28,
+      35,
+      41
+     ],
+     "concurrent": false,
+     "referential": false
+    }
+   ],
+   "_viewer_video_id": "0000478",
+   "_viewer_task": "PNR",
+   "_viewer_source_label": "THUMOS14",
+   "_viewer_source_mb": 0.8,
+   "_viewer_release_file": "pnr.json",
+   "_viewer_release_zip_path": "videos/0000478.mp4",
+   "_viewer_video_available": true,
+   "_viewer_video": "videos/0000478.mp4",
+   "_viewer_source_duration_s": 47.0,
+   "_viewer_source_resolution": [
+    320,
+    180
+   ],
+   "_viewer_source_fps": "30/1",
+   "_viewer_video_note": "Whole release video, re-encoded to 360p H.264 (the release has no audio)."
+  },
+  {
+   "source": "thumos14",
+   "turns": [
+    {
+     "question": "When does the person spike the volleyball over the net? Respond at the correct times with the word: now",
+     "ask_time": 0,
+     "response_time": [
+      3,
+      14,
+      23,
+      37,
+      51
+     ],
+     "concurrent": false,
+     "referential": false
+    }
+   ],
+   "_viewer_video_id": "0001452",
+   "_viewer_task": "PNR",
+   "_viewer_source_label": "THUMOS14",
+   "_viewer_source_mb": 1.2,
+   "_viewer_release_file": "pnr.json",
+   "_viewer_release_zip_path": "videos/0001452.mp4",
+   "_viewer_video_available": true,
+   "_viewer_video": "videos/0001452.mp4",
+   "_viewer_source_duration_s": 56.0,
+   "_viewer_source_resolution": [
+    320,
+    180
+   ],
+   "_viewer_source_fps": "30/1",
+   "_viewer_video_note": "Whole release video, re-encoded to 360p H.264 (the release has no audio)."
+  },
+  {
+   "source": "thumos14",
+   "turns": [
+    {
+     "question": "When is the ball put into the pocket? Respond at the correct times with the word: now",
+     "ask_time": 0,
+     "response_time": [
+      9,
+      22,
+      39,
+      64
+     ],
+     "concurrent": false,
+     "referential": false
+    }
+   ],
+   "_viewer_video_id": "0000232",
+   "_viewer_task": "PNR",
+   "_viewer_source_label": "THUMOS14",
+   "_viewer_source_mb": 1.2,
+   "_viewer_release_file": "pnr.json",
+   "_viewer_release_zip_path": "videos/0000232.mp4",
+   "_viewer_video_available": true,
+   "_viewer_video": "videos/0000232.mp4",
+   "_viewer_source_duration_s": 65.67,
+   "_viewer_source_resolution": [
+    320,
+    180
+   ],
+   "_viewer_source_fps": "30/1",
+   "_viewer_video_note": "Whole release video, re-encoded to 360p H.264 (the release has no audio)."
+  },
+  {
+   "source": "perception_test",
+   "turns": [
+    {
+     "question": "When does the person zip their backpack shut? Respond at the correct time with the word: now",
+     "ask_time": 0,
+     "response_time": [
+      6
+     ],
+     "concurrent": false,
+     "referential": false
+    }
+   ],
+   "_viewer_video_id": "5752",
+   "_viewer_task": "PNR",
+   "_viewer_source_label": "Perception Test",
+   "_viewer_source_mb": 1.3,
+   "_viewer_release_file": "pnr.json",
+   "_viewer_release_zip_path": "videos/5752.mp4",
+   "_viewer_video_available": true,
+   "_viewer_video": "videos/5752.mp4",
+   "_viewer_source_duration_s": 9.31,
+   "_viewer_source_resolution": [
+    1280,
+    720
+   ],
+   "_viewer_source_fps": "15147/500",
+   "_viewer_video_note": "Whole release video, re-encoded to 360p H.264 (the release has no audio)."
+  },
+  {
+   "source": "perception_test",
+   "turns": [
+    {
+     "question": "When does the person stop hitting the notebook with the pen? Respond at the correct time with the word: now",
+     "ask_time": 0,
+     "response_time": [
+      7
+     ],
+     "concurrent": false,
+     "referential": false
+    }
+   ],
+   "_viewer_video_id": "7380",
+   "_viewer_task": "PNR",
+   "_viewer_source_label": "Perception Test",
+   "_viewer_source_mb": 1.4,
+   "_viewer_release_file": "pnr.json",
+   "_viewer_release_zip_path": "videos/7380.mp4",
+   "_viewer_video_available": true,
+   "_viewer_video": "videos/7380.mp4",
+   "_viewer_source_duration_s": 10.0,
+   "_viewer_source_resolution": [
+    1280,
+    720
+   ],
+   "_viewer_source_fps": "30011/1000",
+   "_viewer_video_note": "Whole release video, re-encoded to 360p H.264 (the release has no audio)."
+  },
+  {
+   "source": "ego4d",
+   "turns": [
+    {
+     "question": "When do I dip the brush in paint? Respond at the correct time with the word: now",
+     "ask_time": 22,
+     "response_time": [
+      36
+     ],
+     "concurrent": true,
+     "referential": false
+    },
+    {
+     "question": "When do I scrub that brush with my left fingers? Respond at the correct time with the word: now",
+     "ask_time": 29,
+     "response_time": [
+      38
+     ],
+     "concurrent": true,
+     "referential": true
+    },
+    {
+     "question": "When do I press the iPad? Respond at the correct time with the word: now",
+     "ask_time": 44,
+     "response_time": [
+      48
+     ],
+     "concurrent": false,
+     "referential": false
+    },
+    {
+     "question": "When do I remove the earpiece from my ear? Respond at the correct time with the word: now",
+     "ask_time": 48,
+     "response_time": [
+      50
+     ],
+     "concurrent": false,
+     "referential": false
+    },
+    {
+     "question": "When do I move the paint plate with my right hand? Respond at the correct time with the word: now",
+     "ask_time": 50,
+     "response_time": [
+      52
+     ],
+     "concurrent": false,
+     "referential": false
+    },
+    {
+     "question": "When do I put the cup on that paint plate? Respond at the correct time with the word: now",
+     "ask_time": 52,
+     "response_time": [
+      54
+     ],
+     "concurrent": true,
+     "referential": true
+    },
+    {
+     "question": "When do I take a pack of tubes? Respond at the correct time with the word: now",
+     "ask_time": 52,
+     "response_time": [
+      55
+     ],
+     "concurrent": true,
+     "referential": false
+    },
+    {
+     "question": "When do I place the tube into that pack? Respond at the correct time with the word: now",
+     "ask_time": 55,
+     "response_time": [
+      58
+     ],
+     "concurrent": true,
+     "referential": true
+    },
+    {
+     "question": "When do I move that tube from left to right? Respond at the correct time with the word: now",
+     "ask_time": 57,
+     "response_time": [
+      59
+     ],
+     "concurrent": true,
+     "referential": true
+    },
+    {
+     "question": "When do I adjust the camera? Respond at the correct time with the word: now",
+     "ask_time": 64,
+     "response_time": [
+      67
+     ],
+     "concurrent": false,
+     "referential": false
+    }
+   ],
+   "_viewer_video_id": "25153242-d4ef-4ae2-b414-310bd5478306",
+   "_viewer_task": "PNR",
+   "_viewer_source_label": "Ego4D",
+   "_viewer_source_mb": 8.3,
+   "_viewer_release_file": "pnr.json",
+   "_viewer_release_zip_path": "videos/25153242-d4ef-4ae2-b414-310bd5478306.mp4",
+   "_viewer_video_available": false,
+   "_viewer_video_note": "Ego4D video: redistribution needs a signed Ego4D license, so it is not re-hosted here."
+  }
+ ],
+ "SQA": [
+  {
+   "source": "htstep",
+   "turns": [
+    {
+     "question": "What does the person put into the mixer?",
+     "ask_time": 0,
+     "response_time": [
+      17,
+      28
+     ],
+     "response": [
+      "Celery stalk.",
+      "Water."
+     ],
+     "concurrent": false,
+     "referential": false
+    }
+   ],
+   "_viewer_video_id": "xZ65iTcC7Ek",
+   "_viewer_task": "SQA",
+   "_viewer_source_label": "HT-Step (HowTo100M YouTube video)",
+   "_viewer_source_mb": 2.0,
+   "_viewer_release_file": "sqa.json",
+   "_viewer_release_zip_path": "videos/xZ65iTcC7Ek.mp4",
+   "_viewer_video_available": true,
+   "_viewer_video": "videos/xZ65iTcC7Ek.mp4",
+   "_viewer_source_duration_s": 37.0,
+   "_viewer_source_resolution": [
+    480,
+    270
+   ],
+   "_viewer_source_fps": "30000/1001",
+   "_viewer_video_note": "Whole release video, re-encoded to 360p H.264 (the release has no audio)."
+  },
+  {
+   "source": "htstep",
+   "turns": [
+    {
+     "question": "What does the person make by placing the frying pan over high heat?",
+     "ask_time": 37,
+     "response_time": [
+      44
+     ],
+     "response": [
+      "Caramel base; sugar syrup."
+     ],
+     "concurrent": false,
+     "referential": false
+    },
+    {
+     "question": "What does the person add to the pan?",
+     "ask_time": 62,
+     "response_time": [
+      69
+     ],
+     "response": [
+      "Butter."
+     ],
+     "concurrent": false,
+     "referential": true
+    }
+   ],
+   "_viewer_video_id": "k9jm_trt1VM",
+   "_viewer_task": "SQA",
+   "_viewer_source_label": "HT-Step (HowTo100M YouTube video)",
+   "_viewer_source_mb": 4.4,
+   "_viewer_release_file": "sqa.json",
+   "_viewer_release_zip_path": "videos/k9jm_trt1VM.mp4",
+   "_viewer_video_available": true,
+   "_viewer_video": "videos/k9jm_trt1VM.mp4",
+   "_viewer_source_duration_s": 79.01,
+   "_viewer_source_resolution": [
+    640,
+    360
+   ],
+   "_viewer_source_fps": "30000/1001",
+   "_viewer_video_note": "Whole release video, re-encoded to 360p H.264 (the release has no audio)."
+  },
+  {
+   "source": "htstep",
+   "turns": [
+    {
+     "question": "To what temperature does the person preheat the oven?",
+     "ask_time": 13,
+     "response_time": [
+      22
+     ],
+     "response": [
+      "360 degrees Fahrenheit."
+     ],
+     "concurrent": true,
+     "referential": false
+    },
+    {
+     "question": "What does the person scoop into the glass bowl?",
+     "ask_time": 20,
+     "response_time": [
+      27
+     ],
+     "response": [
+      "The pumpkin pulp and seeds."
+     ],
+     "concurrent": true,
+     "referential": true
+    }
+   ],
+   "_viewer_video_id": "A_i8qZiITzs_sqa",
+   "_viewer_task": "SQA",
+   "_viewer_source_label": "HT-Step (HowTo100M YouTube video)",
+   "_viewer_source_mb": 13.1,
+   "_viewer_release_file": "sqa.json",
+   "_viewer_release_zip_path": "videos/A_i8qZiITzs_sqa.mp4",
+   "_viewer_video_available": true,
+   "_viewer_video": "videos/A_i8qZiITzs_sqa.mp4",
+   "_viewer_source_duration_s": 31.96,
+   "_viewer_source_resolution": [
+    1920,
+    1080
+   ],
+   "_viewer_source_fps": "25/1",
+   "_viewer_video_note": "Whole release video, re-encoded to 360p H.264 (the release has no audio)."
+  },
+  {
+   "source": "htstep",
+   "turns": [
+    {
+     "question": "What does the person add to the frying pan?",
+     "ask_time": 24,
+     "response_time": [
+      32,
+      87
+     ],
+     "response": [
+      "Sugar.",
+      "Butter."
+     ],
+     "concurrent": false,
+     "referential": false
+    }
+   ],
+   "_viewer_video_id": "sV0G4yuqrqc",
+   "_viewer_task": "SQA",
+   "_viewer_source_label": "HT-Step (HowTo100M YouTube video)",
+   "_viewer_source_mb": 47.6,
+   "_viewer_release_file": "sqa.json",
+   "_viewer_release_zip_path": "videos/sV0G4yuqrqc.mp4",
+   "_viewer_video_available": true,
+   "_viewer_video": "videos/sV0G4yuqrqc.mp4",
+   "_viewer_source_duration_s": 95.01,
+   "_viewer_source_resolution": [
+    1920,
+    1080
+   ],
+   "_viewer_source_fps": "24000/1001",
+   "_viewer_video_note": "Whole release video, re-encoded to 360p H.264 (the release has no audio)."
+  },
+  {
+   "source": "egoexo4d",
+   "turns": [
+    {
+     "question": "What does the camera wearer take from the fridge shelf?",
+     "ask_time": 1,
+     "response_time": [
+      9,
+      11
+     ],
+     "response": [
+      "Spring onion.",
+      "A tomato."
+     ],
+     "concurrent": false,
+     "referential": false
+    },
+    {
+     "question": "What does the camera wearer pick up from the countertop near the window?",
+     "ask_time": 11,
+     "response_time": [
+      18
+     ],
+     "response": [
+      "A chopping board."
+     ],
+     "concurrent": true,
+     "referential": false
+    },
+    {
+     "question": "What does the camera wearer get from the bottom shelf?",
+     "ask_time": 17,
+     "response_time": [
+      24,
+      32,
+      38,
+      40
+     ],
+     "response": [
+      "A steel bowl.",
+      "An egg.",
+      "A fork.",
+      "A knife."
+     ],
+     "concurrent": true,
+     "referential": false
+    },
+    {
+     "question": "What does the camera wearer add to the steel bowl?",
+     "ask_time": 39,
+     "response_time": [
+      61
+     ],
+     "response": [
+      "The chopped spring onions."
+     ],
+     "concurrent": true,
+     "referential": false
+    },
+    {
+     "question": "What does the camera wearer get from the countertop?",
+     "ask_time": 64,
+     "response_time": [
+      84
+     ],
+     "response": [
+      "The black pepper container."
+     ],
+     "concurrent": false,
+     "referential": false
+    },
+    {
+     "question": "What does the camera wearer get from the utensils holder on the bottom shelf?",
+     "ask_time": 102,
+     "response_time": [
+      116
+     ],
+     "response": [
+      "A spoon."
+     ],
+     "concurrent": false,
+     "referential": false
+    },
+    {
+     "question": "What does the camera wearer whisk with the fork?",
+     "ask_time": 128,
+     "response_time": [
+      135
+     ],
+     "response": [
+      "The egg mixture."
+     ],
+     "concurrent": true,
+     "referential": true
+    },
+    {
+     "question": "What does the camera wearer get from the dish rack?",
+     "ask_time": 134,
+     "response_time": [
+      143
+     ],
+     "response": [
+      "A skillet."
+     ],
+     "concurrent": true,
+     "referential": false
+    },
+    {
+     "question": "What does the camera wearer get from the utensils holder?",
+     "ask_time": 162,
+     "response_time": [
+      196
+     ],
+     "response": [
+      "The spatula."
+     ],
+     "concurrent": true,
+     "referential": false
+    },
+    {
+     "question": "What does the camera wearer cut with the knife?",
+     "ask_time": 195,
+     "response_time": [
+      214
+     ],
+     "response": [
+      "A block of butter."
+     ],
+     "concurrent": true,
+     "referential": false
+    },
+    {
+     "question": "What does the camera wearer add it?",
+     "ask_time": 215,
+     "response_time": [
+      220
+     ],
+     "response": [
+      "Into the skillet."
+     ],
+     "concurrent": false,
+     "referential": true
+    },
+    {
+     "question": "What does the camera wearer pour onto the sautéed tomatoes in the pan?",
+     "ask_time": 237,
+     "response_time": [
+      248
+     ],
+     "response": [
+      "The egg mixture."
+     ],
+     "concurrent": false,
+     "referential": false
+    },
+    {
+     "question": "What does the camera wearer get from the dish rack?",
+     "ask_time": 254,
+     "response_time": [
+      316
+     ],
+     "response": [
+      "A black plate."
+     ],
+     "concurrent": false,
+     "referential": false
+    }
+   ],
+   "_viewer_video_id": "8711980a-b71f-46d6-86c8-1607a5478dd0",
+   "_viewer_task": "SQA",
+   "_viewer_source_label": "Ego-Exo4D",
+   "_viewer_source_mb": 30.4,
+   "_viewer_release_file": "sqa.json",
+   "_viewer_release_zip_path": "videos/8711980a-b71f-46d6-86c8-1607a5478dd0.mp4",
+   "_viewer_video_available": false,
+   "_viewer_video_note": "Ego-Exo4D video: redistribution needs a signed Ego-Exo4D license, so it is not re-hosted here."
+  },
+  {
+   "source": "movienet",
+   "turns": [
+    {
+     "question": "What does the woman wearing a gray dress do after entering the room?",
+     "ask_time": 60,
+     "response_time": [
+      63
+     ],
+     "response": [
+      "She talks to the man."
+     ],
+     "concurrent": false,
+     "referential": false
+    },
+    {
+     "question": "Who do the couple sitting on their luggage meet?",
+     "ask_time": 344,
+     "response_time": [
+      365
+     ],
+     "response": [
+      "A group of friends."
+     ],
+     "concurrent": false,
+     "referential": false
+    }
+   ],
+   "_viewer_video_id": "tt0070291",
+   "_viewer_task": "SQA",
+   "_viewer_source_label": "MovieNet",
+   "_viewer_source_mb": 12.0,
+   "_viewer_release_file": "sqa.json",
+   "_viewer_release_zip_path": "videos/tt0070291.mp4",
+   "_viewer_video_available": false,
+   "_viewer_video_note": "MovieNet feature film: copyrighted movie footage, so it is not re-hosted here."
+  }
+ ],
+ "SPG": [
+  {
+   "source": "htstep",
+   "task": "Make grilled artichokes",
+   "turns": [
+    {
+     "question": "",
+     "ask_time": 0,
+     "response_time": [
+      0,
+      17,
+      34,
+      50,
+      66,
+      86
+     ],
+     "response": [
+      "Halve artichokes lengthwise from tip to stem.",
+      "Scoop out the sharp bristly fibers from the center.",
+      "Place artichokes into a steamer pot over boiling water and steam for about 15 minutes.",
+      "Pour Italian dressing marinade over the artichokes and let marinate for 15 to 20 minutes.",
+      "Place marinated artichokes face down on a hot grill and cook until slightly charred.",
+      "Mix mayonnaise, capers, scallions, parsley, mustard, vinegar, tabasco, salt, and pepper to make rémoulade dipping sauce."
+     ],
+     "concurrent": false,
+     "referential": false
+    }
+   ],
+   "_viewer_video_id": "OdfP-QSzI3w_spg",
+   "_viewer_task": "SPG",
+   "_viewer_source_label": "HT-Step (HowTo100M YouTube video)",
+   "_viewer_source_mb": 16.6,
+   "_viewer_release_file": "spg.json",
+   "_viewer_release_zip_path": "videos/OdfP-QSzI3w_spg.mp4",
+   "_viewer_video_available": true,
+   "_viewer_video": "videos/OdfP-QSzI3w_spg.mp4",
+   "_viewer_source_duration_s": 184.0,
+   "_viewer_source_resolution": [
+    432,
+    240
+   ],
+   "_viewer_source_fps": "30/1",
+   "_viewer_video_note": "Whole release video, re-encoded to 360p H.264 (the release has no audio)."
+  },
+  {
+   "source": "htstep",
+   "task": "Make pumpkin puree",
+   "turns": [
+    {
+     "question": "",
+     "ask_time": 0,
+     "response_time": [
+      0,
+      14,
+      17,
+      20,
+      24,
+      31,
+      36,
+      45,
+      60,
+      69
+     ],
+     "response": [
+      "Preheat your oven to 360°F (180°C).",
+      "Start with half a pumpkin.",
+      "Scoop out the pulp and seeds using a spoon.",
+      "Cut the pumpkin into big wedges.",
+      "Place wedges skin-side down in a baking pan, add 1 cup of water, and cover with foil.",
+      "Roast the pumpkin wedges.",
+      "Scoop out the pumpkin flesh and discard the skins.",
+      "Squeeze the pumpkin flesh in a kitchen towel to drain excess liquid.",
+      "Puree in a blender until smooth.",
+      "Transfer the puree to a food-safe bag and store in the refrigerator or freezer."
+     ],
+     "concurrent": false,
+     "referential": false
+    }
+   ],
+   "_viewer_video_id": "A_i8qZiITzs_spg",
+   "_viewer_task": "SPG",
+   "_viewer_source_label": "HT-Step (HowTo100M YouTube video)",
+   "_viewer_source_mb": 69.5,
+   "_viewer_release_file": "spg.json",
+   "_viewer_release_zip_path": "videos/A_i8qZiITzs_spg.mp4",
+   "_viewer_video_available": true,
+   "_viewer_video": "videos/A_i8qZiITzs_spg.mp4",
+   "_viewer_source_duration_s": 83.0,
+   "_viewer_source_resolution": [
+    1920,
+    1080
+   ],
+   "_viewer_source_fps": "25/1",
+   "_viewer_video_note": "Whole release video, re-encoded to 360p H.264 (the release has no audio)."
+  },
+  {
+   "source": "htstep",
+   "task": "Cook a southern fish fry",
+   "turns": [
+    {
+     "question": "",
+     "ask_time": 0,
+     "response_time": [
+      0,
+      40,
+      77,
+      103,
+      139
+     ],
+     "response": [
+      "Prepare and slice your fish fillets into smaller portions.",
+      "Prepare an egg wash with milk and eggs, and mix cornmeal, corn flour, salt, pepper, and paprika in a bowl.",
+      "Dip the fish pieces in the egg wash and coat thoroughly in the cornmeal mixture.",
+      "Fry the coated fish in hot oil until golden brown.",
+      "Remove the fish from the oil and drain on paper towels."
+     ],
+     "concurrent": false,
+     "referential": false
+    }
+   ],
+   "_viewer_video_id": "AC7o-7xWeEU_spg",
+   "_viewer_task": "SPG",
+   "_viewer_source_label": "HT-Step (HowTo100M YouTube video)",
+   "_viewer_source_mb": 78.4,
+   "_viewer_release_file": "spg.json",
+   "_viewer_release_zip_path": "videos/AC7o-7xWeEU_spg.mp4",
+   "_viewer_video_available": true,
+   "_viewer_video": "videos/AC7o-7xWeEU_spg.mp4",
+   "_viewer_source_duration_s": 157.0,
+   "_viewer_source_resolution": [
+    1280,
+    720
+   ],
+   "_viewer_source_fps": "30/1",
+   "_viewer_video_note": "Whole release video, re-encoded to 360p H.264 (the release has no audio)."
+  },
+  {
+   "source": "ego4dgoal",
+   "task": "Making a flatbread",
+   "turns": [
+    {
+     "question": "",
+     "ask_time": 0,
+     "response_time": [
+      0,
+      32,
+      44,
+      58,
+      68
+     ],
+     "response": [
+      "Heat oil in panHeat oil in the frying pan on the gas stove while securing the pan handle with a cloth.",
+      "Gently place the rolled flatbread dough flat into the hot oil inside the pan.",
+      "Use a large metal spoon to baste hot oil over the dough, then flip it to ensure both sides cook until puffed and golden.",
+      "Carefully tilt the pan over the oil container to pour off excess frying oil.",
+      "Lift the cooked flatbread out of the pan using the spoon and place it onto the purple serving plate."
+     ],
+     "concurrent": false,
+     "referential": false
+    }
+   ],
+   "_viewer_video_id": "aa14c20d-cadf-4393-935f-52175427539d_spg",
+   "_viewer_task": "SPG",
+   "_viewer_source_label": "Ego4D GoalStep",
+   "_viewer_source_mb": 50.6,
+   "_viewer_release_file": "spg.json",
+   "_viewer_release_zip_path": "videos/aa14c20d-cadf-4393-935f-52175427539d_spg.mp4",
+   "_viewer_video_available": false,
+   "_viewer_video_note": "Ego4D (GoalStep) video: redistribution needs a signed Ego4D license, so it is not re-hosted here."
+  }
+ ],
+ "SI": [
+  {
+   "source": "holoassist",
+   "actions": [
+    "disassemble lens",
+    "assemble lens",
+    "disassemble lens cover",
+    "assemble lens cover",
+    "turn on dslr",
+    "turn off dslr",
+    "withdraw battery",
+    "insert battery",
+    "withdraw sd card",
+    "insert sd card"
+   ],
+   "turns": [
+    {
+     "ask_time": 0,
+     "question": "",
+     "response_time": [
+      11,
+      18,
+      25,
+      73,
+      92,
+      103,
+      111
+     ],
+     "response": [
+      "That's the lens cover. Please put it back, and detach the lens.",
+      "To detach the lens, you should press on the button that's on the right of the lens.",
+      "You can press on it, and while you press it, rotate the lens.",
+      "You should turn the camera over to let the battery fall out.",
+      "The SD card is on the right, and to open this, you should press on the button that's on the bottom right of the screen.",
+      "You should look at the bottom right of the screen.",
+      "You should press the gray button to release it."
+     ],
+     "concurrent": false,
+     "referential": false
+    }
+   ],
+   "scenario": "Preparing a DSLR camera",
+   "_viewer_video_id": "z094-july-11-22-dslr",
+   "_viewer_task": "SI",
+   "_viewer_source_label": "HoloAssist",
+   "_viewer_source_mb": 28.0,
+   "_viewer_release_file": "si.json",
+   "_viewer_release_zip_path": "videos/z094-july-11-22-dslr.mp4",
+   "_viewer_video_available": true,
+   "_viewer_video": "videos/z094-july-11-22-dslr.mp4",
+   "_viewer_source_duration_s": 131.33,
+   "_viewer_source_resolution": [
+    896,
+    504
+   ],
+   "_viewer_source_fps": "844994/28251",
+   "_viewer_video_note": "Whole release video, re-encoded to 360p H.264 (the release has no audio)."
+  },
+  {
+   "source": "holoassist",
+   "actions": [
+    "assemble leg",
+    "assemble top screw",
+    "assemble bottom screw",
+    "assemble top circle",
+    "assemble tray"
+   ],
+   "turns": [
+    {
+     "ask_time": 0,
+     "question": "",
+     "response_time": [
+      14,
+      43,
+      134
+     ],
+     "response": [
+      "The one that you're holding in your left hand, it was in the correct direction, you should turn it around again.",
+      "You should use the biggest screw to secure the top and one of the smallest for the bottom.",
+      "This piece goes in the other direction. Turn it the other way around."
+     ],
+     "concurrent": false,
+     "referential": false
+    }
+   ],
+   "scenario": "Assembling a Gladom tray table",
+   "_viewer_video_id": "z090-july-08-22-gladom_assemble",
+   "_viewer_task": "SI",
+   "_viewer_source_label": "HoloAssist",
+   "_viewer_source_mb": 36.2,
+   "_viewer_release_file": "si.json",
+   "_viewer_release_zip_path": "videos/z090-july-08-22-gladom_assemble.mp4",
+   "_viewer_video_available": true,
+   "_viewer_video": "videos/z090-july-08-22-gladom_assemble.mp4",
+   "_viewer_source_duration_s": 148.56,
+   "_viewer_source_resolution": [
+    896,
+    504
+   ],
+   "_viewer_source_fps": "116429/4015",
+   "_viewer_video_note": "Whole release video, re-encoded to 360p H.264 (the release has no audio)."
+  },
+  {
+   "source": "holoassist",
+   "actions": [
+    "load water container",
+    "load coffee capsule",
+    "make coffee",
+    "empty capsule container",
+    "assemble drip tray"
+   ],
+   "turns": [
+    {
+     "ask_time": 0,
+     "question": "",
+     "response_time": [
+      50
+     ],
+     "response": [
+      "Put up the drip tray and place the cup on the table."
+     ],
+     "concurrent": false,
+     "referential": false
+    }
+   ],
+   "scenario": "Making coffee using a Nespresso machine",
+   "_viewer_video_id": "R030-12July-Nespresso",
+   "_viewer_task": "SI",
+   "_viewer_source_label": "HoloAssist",
+   "_viewer_source_mb": 54.4,
+   "_viewer_release_file": "si.json",
+   "_viewer_release_zip_path": "videos/R030-12July-Nespresso.mp4",
+   "_viewer_video_available": true,
+   "_viewer_video": "videos/R030-12July-Nespresso.mp4",
+   "_viewer_source_duration_s": 156.29,
+   "_viewer_source_resolution": [
+    896,
+    504
+   ],
+   "_viewer_source_fps": "569646/19363",
+   "_viewer_video_note": "Whole release video, re-encoded to 360p H.264 (the release has no audio)."
+  },
+  {
+   "source": "holoassist",
+   "actions": [
+    "rotate stool",
+    "disassemble middle hex nut",
+    "disassemble first screw",
+    "disassemble second screw",
+    "disassemble third screw",
+    "disassemble fourth screw",
+    "disassemble leg",
+    "rotate leg"
+   ],
+   "turns": [
+    {
+     "ask_time": 0,
+     "question": "",
+     "response_time": [
+      11,
+      86
+     ],
+     "response": [
+      "You should start by slightly unscrewing the middle bolt first.",
+      "You should first remove the legs from the seat."
+     ],
+     "concurrent": false,
+     "referential": false
+    }
+   ],
+   "scenario": "Disassembling a stool",
+   "_viewer_video_id": "z169-sep-02-22-marius_disassemble",
+   "_viewer_task": "SI",
+   "_viewer_source_label": "HoloAssist",
+   "_viewer_source_mb": 35.4,
+   "_viewer_release_file": "si.json",
+   "_viewer_release_zip_path": "videos/z169-sep-02-22-marius_disassemble.mp4",
+   "_viewer_video_available": true,
+   "_viewer_video": "videos/z169-sep-02-22-marius_disassemble.mp4",
+   "_viewer_source_duration_s": 160.89,
+   "_viewer_source_resolution": [
+    896,
+    504
+   ],
+   "_viewer_source_fps": "97934/3339",
+   "_viewer_video_note": "Whole release video, re-encoded to 360p H.264 (the release has no audio)."
+  }
+ ],
+ "UI": [
+  {
+   "source": "egoblind",
+   "ask_time": 0,
+   "question": "",
+   "turns": [
+    {
+     "response_time": [
+      3
+     ],
+     "response": [
+      "the door of the elevator you are approaching is closed"
+     ],
+     "concurrent": false,
+     "referential": false
+    }
+   ],
+   "_viewer_video_id": "00961",
+   "_viewer_task": "UI",
+   "_viewer_source_label": "EgoBlind",
+   "_viewer_source_mb": 8.0,
+   "_viewer_release_file": "ui.json",
+   "_viewer_release_zip_path": "videos/00961.mp4",
+   "_viewer_video_available": true,
+   "_viewer_video": "videos/00961.mp4",
+   "_viewer_source_duration_s": 5.4,
+   "_viewer_source_resolution": [
+    1920,
+    1080
+   ],
+   "_viewer_source_fps": "30/1",
+   "_viewer_video_note": "Whole release video, re-encoded to 360p H.264 (the release has no audio)."
+  },
+  {
+   "source": "egoblind",
+   "ask_time": 0,
+   "question": "",
+   "turns": [
+    {
+     "response_time": [
+      1,
+      6
+     ],
+     "response": [
+      "a white car in front of you is reversing back towards you; stop walking; do not walk",
+      "the car in the front has stopped; the car is blocking your path; move right to go around the car"
+     ],
+     "concurrent": false,
+     "referential": false
+    }
+   ],
+   "_viewer_video_id": "01217",
+   "_viewer_task": "UI",
+   "_viewer_source_label": "EgoBlind",
+   "_viewer_source_mb": 11.4,
+   "_viewer_release_file": "ui.json",
+   "_viewer_release_zip_path": "videos/01217.mp4",
+   "_viewer_video_available": true,
+   "_viewer_video": "videos/01217.mp4",
+   "_viewer_source_duration_s": 7.57,
+   "_viewer_source_resolution": [
+    1920,
+    1080
+   ],
+   "_viewer_source_fps": "30/1",
+   "_viewer_video_note": "Whole release video, re-encoded to 360p H.264 (the release has no audio)."
+  },
+  {
+   "source": "egoblind",
+   "ask_time": 0,
+   "question": "",
+   "turns": [
+    {
+     "response_time": [
+      2,
+      5
+     ],
+     "response": [
+      "careful, you are about to hit a man with your walking stick/cane",
+      "the sidewalk is crowded and there is a scooter/bike on your front left"
+     ],
+     "concurrent": false,
+     "referential": false
+    }
+   ],
+   "_viewer_video_id": "00958",
+   "_viewer_task": "UI",
+   "_viewer_source_label": "EgoBlind",
+   "_viewer_source_mb": 17.7,
+   "_viewer_release_file": "ui.json",
+   "_viewer_release_zip_path": "videos/00958.mp4",
+   "_viewer_video_available": true,
+   "_viewer_video": "videos/00958.mp4",
+   "_viewer_source_duration_s": 11.93,
+   "_viewer_source_resolution": [
+    1920,
+    1080
+   ],
+   "_viewer_source_fps": "30/1",
+   "_viewer_video_note": "Whole release video, re-encoded to 360p H.264 (the release has no audio)."
+  },
+  {
+   "source": "egoblind",
+   "ask_time": 0,
+   "question": "",
+   "turns": [
+    {
+     "response_time": [
+      3,
+      9
+     ],
+     "response": [
+      "some vehicles are crossing the road; a pedestrian is walking in front on the crosswalk; follow the guide dog",
+      "the man in front is walking on the crosswalk and looks to be helping you cross the road"
+     ],
+     "concurrent": false,
+     "referential": false
+    }
+   ],
+   "_viewer_video_id": "00959",
+   "_viewer_task": "UI",
+   "_viewer_source_label": "EgoBlind",
+   "_viewer_source_mb": 20.6,
+   "_viewer_release_file": "ui.json",
+   "_viewer_release_zip_path": "videos/00959.mp4",
+   "_viewer_video_available": true,
+   "_viewer_video": "videos/00959.mp4",
+   "_viewer_source_duration_s": 13.87,
+   "_viewer_source_resolution": [
+    1920,
+    1080
+   ],
+   "_viewer_source_fps": "30/1",
+   "_viewer_video_note": "Whole release video, re-encoded to 360p H.264 (the release has no audio)."
+  },
+  {
+   "source": "egoblind",
+   "ask_time": 0,
+   "question": "",
+   "turns": [
+    {
+     "response_time": [
+      2,
+      9
+     ],
+     "response": [
+      "a bike/scooter is crossing the road on the crosswalk in front of you; the pedestrian crossing light appears to be red; it is not safe to cross the road now",
+      "the pedestrian crossing light is red"
+     ],
+     "concurrent": false,
+     "referential": false
+    }
+   ],
+   "_viewer_video_id": "00970",
+   "_viewer_task": "UI",
+   "_viewer_source_label": "EgoBlind",
+   "_viewer_source_mb": 48.9,
+   "_viewer_release_file": "ui.json",
+   "_viewer_release_zip_path": "videos/00970.mp4",
+   "_viewer_video_available": true,
+   "_viewer_video": "videos/00970.mp4",
+   "_viewer_source_duration_s": 32.63,
+   "_viewer_source_resolution": [
+    1080,
+    1920
+   ],
+   "_viewer_source_fps": "30/1",
+   "_viewer_video_note": "Whole release video, re-encoded to 360p H.264 (the release has no audio)."
+  }
+ ]
+}
